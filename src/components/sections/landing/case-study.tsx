@@ -26,26 +26,30 @@ export function CaseStudy({
   story: Story;
 }) {
   return (
-    <section className="border-t border-border bg-white">
-      <Container className="border-x border-border px-6 py-14 lg:py-20">
-        <p className="font-numeric text-sm font-semibold tracking-[0.08em] text-primary uppercase">
+    <section className="relative overflow-hidden bg-white py-16 md:py-20">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
+      />
+      <Container className="relative">
+        <p className="eyebrow-rule mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
           {eyebrow}
         </p>
 
         {/* Asymmetric split with a gap column: the figures own the left third,
             the story starts at column six rather than five, so the rule has
             air on both sides instead of butting against the text. */}
-        <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-0">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-0">
           <div className="lg:col-span-4">
             <dl className="flex flex-col">
               {story.metrics.map((metric, index) => (
                 <div
                   key={metric.label}
                   className={
-                    index > 0 ? "mt-6 border-t border-border pt-6" : undefined
+                    index > 0 ? "mt-6 border-t border-foreground/10 pt-6" : undefined
                   }
                 >
-                  <dd className="font-numeric text-5xl leading-none font-semibold tracking-tight text-primary tabular-nums lg:text-6xl">
+                  <dd className="font-numeric text-[clamp(2.5rem,6vw,3.75rem)] leading-none font-semibold tracking-[-0.05em] text-primary tabular-nums">
                     {metric.value}
                   </dd>
                   <dt className="mt-2.5 max-w-[16rem] font-numeric text-sm leading-snug text-muted-foreground">
@@ -59,11 +63,11 @@ export function CaseStudy({
             </p>
           </div>
 
-          <div className="lg:col-span-7 lg:col-start-6 lg:border-l lg:border-border lg:pl-10">
-            <h2 className="font-numeric text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
+          <div className="lg:col-span-7 lg:col-start-6 lg:border-l lg:border-foreground/10 lg:pl-10">
+            <h2 className="text-[clamp(1.5rem,3vw,2.15rem)] leading-[1.12] font-semibold tracking-[-0.035em] text-balance text-foreground">
               {story.title ?? story.client}
             </h2>
-            <p className="mt-5 font-numeric text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
               {story.body}
             </p>
           </div>

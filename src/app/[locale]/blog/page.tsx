@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getPathname } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
@@ -8,6 +7,8 @@ import { getCategories, getPosts } from "@/lib/wordpress";
 import { blogListingJsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Container } from "@/components/layout/container";
+import { Reveal } from "@/components/sections/new-home/reveal";
+import { PageHero } from "@/components/sections/shared/page-hero";
 import { HeroFeatured } from "@/components/sections/blog/hero-featured";
 import { CategoryFilter } from "@/components/sections/blog/category-filter";
 import { BlogSearch } from "@/components/sections/blog/blog-search";
@@ -101,72 +102,57 @@ export default async function BlogIndexPage({
         ]}
       />
 
-      {/* Hero, copy + featured story */}
-      <section className="relative overflow-hidden pt-16">
-        <Image
-          src="/images/home/hero-background-sky.png"
-          alt=""
-          fill
-          priority
-          className="object-cover object-center"
+      <PageHero
+        eyebrow={t("eyebrow")}
+        title={t("heroTitle")}
+        subtitle={t("heroSubtitle")}
+        chips={[t("latest")]}
+      >
+        {featured && (
+          <HeroFeatured
+            post={featured}
+            locale={locale}
+            featuredLabel={t("featuredLabel")}
+            readMore={t("readMore")}
+          />
+        )}
+      </PageHero>
+
+      <section className="relative overflow-hidden bg-white py-16 md:py-20">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
         />
-        <Container className="relative px-6 py-14 lg:px-0 lg:py-20">
-          {/* One unified block: frosted copy header fused to the white card. */}
-          <div className="overflow-hidden shadow-[0px_24px_70px_-24px_rgba(11,18,32,0.5)]">
-            <div className="bg-black/20 px-6 py-8 backdrop-blur-sm lg:px-10 lg:py-10">
-              <div className="grid gap-6 lg:grid-cols-2 lg:items-end lg:gap-12">
-                <div>
-                  <p className="font-numeric text-sm font-semibold tracking-[0.12em] text-white/75 uppercase">
-                    {t("eyebrow")}
-                  </p>
-                  <h1 className="mt-3 font-numeric text-4xl font-semibold tracking-tight text-white md:text-5xl">
-                    {t("heroTitle")}
-                  </h1>
-                </div>
-                <p className="font-numeric text-base text-white/90 md:text-lg lg:pb-2">
-                  {t("heroSubtitle")}
+        <Container className="relative">
+          <Reveal>
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="eyebrow-rule mb-4 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
+                  {t("eyebrow")}
+                </p>
+                <h2 className="text-[clamp(1.65rem,3vw,2.25rem)] leading-[1.1] font-semibold tracking-[-0.035em] text-balance text-foreground">
+                  {query ? t("searchResults", { query }) : t("latest")}
+                </h2>
+                <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-foreground">
+                  {query ? t("searchSubtitle") : t("latestSubtitle")}
                 </p>
               </div>
-            </div>
-            {featured && (
-              <HeroFeatured
-                post={featured}
-                locale={locale}
-                featuredLabel={t("featuredLabel")}
-                readMore={t("readMore")}
+              <BlogSearch
+                initialQuery={query}
+                placeholder={t("searchPlaceholder")}
+                label={t("searchLabel")}
+                clearLabel={t("searchClear")}
               />
-            )}
-          </div>
-        </Container>
-      </section>
-
-      {/* Latest articles */}
-      <section className="bg-white">
-        <Container className="px-6 py-12 lg:px-0 lg:py-16">
-          <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <h2 className="font-numeric text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
-                {query ? t("searchResults", { query }) : t("latest")}
-              </h2>
-              <p className="mt-2 font-numeric text-base text-muted-foreground">
-                {query ? t("searchSubtitle") : t("latestSubtitle")}
-              </p>
             </div>
-            <BlogSearch
-              initialQuery={query}
-              placeholder={t("searchPlaceholder")}
-              label={t("searchLabel")}
-              clearLabel={t("searchClear")}
-            />
-          </div>
+          </Reveal>
 
-          <div className="mt-6">
+          <Reveal delay={40} className="mt-6">
             <CategoryFilter
               categories={categories}
               activeSlug={categorySlug}
               allLabel={t("allCategories")}
             />
-          </div>
+          </Reveal>
 
           {posts.length === 0 ? (
             <p className="mt-16 text-center font-numeric text-base text-muted-foreground">

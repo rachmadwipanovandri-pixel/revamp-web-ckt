@@ -20,14 +20,18 @@ export function FeatureTabs({
   const tab = tabs[active];
 
   return (
-    <section className="border-t border-border bg-white">
-      <Container className="border-x border-border px-6 py-12 lg:py-16">
+    <section className="relative overflow-hidden bg-linear-to-b from-white via-primary/[0.04] to-white py-16 md:py-20">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
+      />
+      <Container className="relative">
         {heading && <SectionHeading eyebrow={eyebrow} heading={heading} />}
 
         <div
           role="tablist"
           className={cn(
-            "flex w-fit max-w-full flex-wrap items-center gap-1.5 rounded-xl border border-border bg-surface-muted p-1",
+            "flex w-fit max-w-full flex-wrap items-center gap-1.5 rounded-full border border-foreground/10 bg-white/85 p-1.5 shadow-[0_16px_40px_-32px_rgba(16,24,40,0.35)] backdrop-blur",
             heading && "mt-8",
           )}
         >
@@ -38,10 +42,10 @@ export function FeatureTabs({
               aria-selected={active === index}
               onClick={() => setActive(index)}
               className={cn(
-                "inline-flex cursor-pointer items-center rounded-lg px-3.5 py-1.5 font-numeric text-sm transition-all focus:outline-none",
+                "inline-flex cursor-pointer items-center rounded-full px-5 py-2 font-numeric text-sm transition-all focus:outline-none",
                 active === index
-                  ? "border border-border/60 bg-white font-medium text-foreground shadow-xs"
-                  : "border border-transparent text-muted-foreground hover:text-foreground",
+                  ? "bg-ink-void font-semibold text-white shadow-[0_10px_24px_-14px_rgba(15,31,58,0.8)]"
+                  : "text-muted-foreground hover:bg-surface-muted hover:text-foreground",
               )}
             >
               {item.label}
@@ -57,10 +61,10 @@ export function FeatureTabs({
           )}
         >
           <div>
-            <h3 className="max-w-xl font-numeric text-xl font-semibold text-foreground md:text-2xl">
+            <h3 className="max-w-xl text-[clamp(1.35rem,2.5vw,1.85rem)] leading-[1.15] font-semibold tracking-[-0.03em] text-balance text-foreground">
               {tab.title}
             </h3>
-            <p className="mt-3 max-w-xl font-numeric text-base text-muted-foreground md:text-lg">
+            <p className="mt-3 max-w-xl text-base text-muted-foreground md:text-lg">
               {tab.body}
             </p>
           </div>

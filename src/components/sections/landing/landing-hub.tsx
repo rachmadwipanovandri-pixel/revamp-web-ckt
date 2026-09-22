@@ -6,7 +6,9 @@ import { alternates } from "@/lib/seo";
 import { REGISTRY } from "@/lib/registry";
 import type { FeatureCategory, LandingKind } from "@/lib/registry/types";
 import { Container } from "@/components/layout/container";
-import { RegistryIcon } from "@/components/layout/registry-icon";
+import { Reveal } from "@/components/sections/new-home/reveal";
+import { PageHero } from "@/components/sections/shared/page-hero";
+import { VoidFinalCta } from "@/components/sections/shared/void-final-cta";
 import { EntryGrid } from "./entry-card";
 
 const HUB_TEMPLATE = {
@@ -84,35 +86,41 @@ export async function LandingHub({
   const categories = [...new Set(entries.map((entry) => entry.category))];
   const pathname = `${HUB_TEMPLATE[kind]}/[slug]` as "/features/[slug]";
 
+  // Headline is often one long sentence — put the closing clause on the accent.
+  const heading = t("heading");
+  const splitAt = heading.lastIndexOf(", ");
+  const headingLead =
+    splitAt > 20 && splitAt < heading.length - 20
+      ? heading.slice(0, splitAt)
+      : heading;
+  const headingAccent =
+    splitAt > 20 && splitAt < heading.length - 20
+      ? heading.slice(splitAt + 1)
+      : undefined;
+
   return (
     <>
-      {/* Hero */}
-      <section className="border-b border-border bg-linear-to-b from-surface-muted to-white pt-16">
-        <Container className="border-x border-border px-6 py-14 lg:py-20">
-          <p className="font-numeric text-sm font-semibold tracking-[0.08em] text-primary uppercase">
-            {t("eyebrow")}
-          </p>
-          <h1 className="mt-3 max-w-3xl font-numeric text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
-            {t("heading")}
-          </h1>
-          <p className="mt-4 max-w-2xl font-numeric text-base text-muted-foreground md:text-lg">
-            {t("body")}
-          </p>
-          <div className="mt-6 flex items-center gap-2 font-numeric text-sm text-subtle-foreground">
-            <span
-              className="size-1.5 rounded-full bg-accent-green"
-              aria-hidden
-            />
-            {t("trust")}
-          </div>
-        </Container>
-      </section>
+      <PageHero
+        eyebrow={t("eyebrow")}
+        title={headingLead}
+        accent={headingAccent}
+        subtitle={t("body")}
+        chips={[t("trust")]}
+      />
 
-      {/* Categories */}
-      <section className="bg-white">
-        <Container className="border-x border-border px-6 py-12 lg:py-16">
+      <section className="relative overflow-hidden bg-surface-muted py-16 md:py-20 lg:py-24">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-40"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, rgba(19,82,191,0.1) 1px, transparent 0)",
+            backgroundSize: "26px 26px",
+          }}
+        />
+        <Container className="relative">
           <div className="flex flex-col gap-14">
-            {categories.map((category) => {
+            {categories.map((category, categoryIndex) => {
               const config =
                 kind === "features"
                   ? FEATURE_CATEGORY[category as FeatureCategory]
@@ -120,54 +128,58 @@ export async function LandingHub({
               const items = entries.filter(
                 (entry) => entry.category === category,
               );
-              const heading = config
+              const headingLabel = config
                 ? tn(config.navKey)
                 : t(`category.${category}`);
 
               return (
                 <div key={category}>
-                  <div className="mb-6 flex items-center justify-between gap-4 border-b border-border pb-4">
-                    <div className="flex items-center gap-3">
-                      <span className="flex size-9 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                        <RegistryIcon
-                          name={config?.icon ?? "LayoutGrid"}
-                          className="size-4.5"
-                        />
-                      </span>
-                      <h2 className="font-numeric text-xl font-semibold tracking-tight text-foreground">
-                        {heading}
-                      </h2>
-                      <span className="font-numeric text-sm text-subtle-foreground">
-                        {items.length}
-                      </span>
+                  <Reveal>
+                    <div className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b border-foreground/10 pb-5">
+                      <div className="min-w-0">
+                        <p className="eyebrow-rule mb-3 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
+                          {String(categoryIndex + 1).padStart(2, "0")} ·{" "}
+                          {headingLabel}
+                        </p>
+                        <p className="font-numeric text-sm font-medium text-subtle-foreground">
+                          {items.length}
+                        </p>
+                      </div>
+                      {config?.href && (
+                        <Link
+                          href={config.href}
+                          className="inline-flex min-h-11 items-center gap-2 rounded-full border border-foreground/15 bg-white px-5 py-2.5 font-numeric text-sm font-semibold text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/50 hover:text-primary"
+                        >
+                          {tn(config.navKey)}
+                          <span aria-hidden>&rarr;</span>
+                        </Link>
+                      )}
                     </div>
-                    {config?.href && (
-                      <Link
-                        href={config.href}
-                        className="hidden font-numeric text-sm font-semibold text-primary hover:underline sm:inline"
-                      >
-                        {tn(config.navKey)} →
-                      </Link>
-                    )}
-                  </div>
-                  <EntryGrid
-                    readMore={readMore}
-                    items={items.map((entry) => ({
-                      href: {
-                        pathname,
-                        params: { slug: entry.slugs[locale]! },
-                      },
-                      icon: entry.icon,
-                      title: entry.title[locale]!,
-                      tagline: entry.tagline?.[locale],
-                    }))}
-                  />
+                  </Reveal>
+                  <Reveal delay={60}>
+                    <EntryGrid
+                      readMore={readMore}
+                      items={items.map((entry) => ({
+                        href: {
+                          pathname,
+                          params: { slug: entry.slugs[locale]! },
+                        },
+                        icon: entry.icon,
+                        title: entry.title[locale]!,
+                        tagline: entry.tagline?.[locale],
+                      }))}
+                    />
+                  </Reveal>
                 </div>
               );
             })}
           </div>
         </Container>
       </section>
+
+      <div className="cv-auto">
+        <VoidFinalCta namespace="agentic.finalCta" />
+      </div>
     </>
   );
 }

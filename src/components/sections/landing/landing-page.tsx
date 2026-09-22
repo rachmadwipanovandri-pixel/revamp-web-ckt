@@ -151,21 +151,29 @@ export async function LandingPage({
   return (
     <>
       <JsonLd data={jsonLd} />
-      <LandingHero
-        badge={content.hero.badge}
-        title={content.hero.title}
-        subtitle={content.hero.subtitle}
-        useCases={content.hero.useCases}
-      />
+      <div className="cv-auto">
+        <LandingHero
+          badge={content.hero.badge}
+          title={content.hero.title}
+          subtitle={content.hero.subtitle}
+          useCases={content.hero.useCases}
+        />
+      </div>
       <Breadcrumbs items={crumbs} />
-      <DefinitionBlock
-        definition={content.definition}
-        stats={isIndustry ? undefined : content.stats}
-      />
+      <div className="cv-auto">
+        <DefinitionBlock
+          definition={content.definition}
+          stats={isIndustry ? undefined : content.stats}
+        />
+      </div>
       {isIndustry && content.stats && content.stats.length > 0 && (
-        <StatCards stats={content.stats} />
+        <div className="cv-auto">
+          <StatCards stats={content.stats} />
+        </div>
       )}
-      <LogoMarquee heading={tt("heading")} logos={TRUSTED_LOGOS} />
+      <div className="cv-auto">
+        <LogoMarquee heading={tt("heading")} logos={TRUSTED_LOGOS} />
+      </div>
       {content.painPoints && (
         <PainPoints
           heading={content.painPoints.heading}

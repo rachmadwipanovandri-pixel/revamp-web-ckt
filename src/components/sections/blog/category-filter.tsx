@@ -15,10 +15,10 @@ export function CategoryFilter({
 
   const pill = (active: boolean) =>
     cn(
-      "border px-4 py-1.5 font-numeric text-sm font-medium transition-colors",
+      "inline-flex min-h-10 items-center rounded-full border px-4 py-1.5 font-numeric text-sm font-medium transition-all duration-300",
       active
-        ? "border-primary bg-primary text-white"
-        : "border-border bg-white text-muted-foreground hover:border-primary/40 hover:text-foreground",
+        ? "border-ink-void bg-ink-void text-white shadow-[0_12px_28px_-16px_rgba(15,31,58,0.8)]"
+        : "border-foreground/12 bg-white text-muted-foreground hover:-translate-y-0.5 hover:border-primary/40 hover:text-foreground",
     );
 
   return (

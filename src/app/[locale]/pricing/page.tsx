@@ -10,12 +10,12 @@ import {
   softwareApplicationJsonLd,
 } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/json-ld";
-import { Container } from "@/components/layout/container";
 import { PricingTabs } from "@/components/sections/pricing/pricing-tabs";
 import { LogoMarquee } from "@/components/sections/shared/logo-marquee";
 import { TRUSTED_LOGOS } from "@/components/sections/shared/trusted-logos";
 import { Faq } from "@/components/sections/features/faq";
-import { FinalCTA } from "@/components/sections/home/final-cta";
+import { PageHero } from "@/components/sections/shared/page-hero";
+import { VoidFinalCta } from "@/components/sections/shared/void-final-cta";
 
 const FAQ_COUNT = 6;
 
@@ -104,30 +104,32 @@ export default async function PricingPage({
         ]}
       />
 
-      <section className="border-b border-border bg-white pt-28 lg:pt-32">
-        <Container className="px-4 pb-12 text-center lg:px-0 lg:pb-16">
-          <p className="font-numeric text-sm font-semibold tracking-[0.12em] text-primary uppercase">
-            {t("hero.eyebrow")}
-          </p>
-          <h1 className="mx-auto mt-3 max-w-4xl font-numeric text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
-            {t("hero.title")}
-          </h1>
-          <p className="mx-auto mt-5 max-w-2xl font-numeric text-base text-muted-foreground md:text-lg">
-            {t("hero.subtitle")}
-          </p>
-          <p className="mx-auto mt-4 max-w-2xl font-numeric text-sm text-subtle-foreground">
-            {t("hero.note")}
-          </p>
-        </Container>
-      </section>
+      <PageHero
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+        note={t("hero.note")}
+        chips={[t("tabs.chat"), t("tabs.crm"), t("tabs.marketing")]}
+      />
 
-      <PricingTabs />
+      <div className="cv-auto">
+        <PricingTabs />
+      </div>
 
-      <LogoMarquee heading={t("trustHeading")} logos={TRUSTED_LOGOS} />
+      <div className="cv-auto">
+        <LogoMarquee heading={t("trustHeading")} logos={TRUSTED_LOGOS} />
+      </div>
 
-      <Faq namespace="pricing" count={FAQ_COUNT} />
+      <div className="cv-auto">
+        <Faq namespace="pricing" count={FAQ_COUNT} />
+      </div>
 
-      <FinalCTA namespace="pricing.cta" />
+      <div className="cv-auto">
+        <VoidFinalCta
+          namespace="pricing.cta"
+          headingLead={t("cta.heading")}
+        />
+      </div>
     </>
   );
 }

@@ -15,16 +15,11 @@ export function SectionHeading({
   return (
     <div className={cn("max-w-3xl", className)}>
       {eyebrow && (
-        <p className="font-numeric text-sm font-semibold tracking-[0.08em] text-primary uppercase">
+        <p className="eyebrow-rule mb-4 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
           {eyebrow}
         </p>
       )}
-      <h2
-        className={cn(
-          "font-numeric text-3xl font-semibold tracking-tight text-foreground md:text-4xl",
-          eyebrow && "mt-2",
-        )}
-      >
+      <h2 className="text-[clamp(1.85rem,3.8vw,3rem)] leading-[1.08] font-semibold tracking-[-0.04em] text-balance text-foreground">
         {heading}
       </h2>
       {intro && (

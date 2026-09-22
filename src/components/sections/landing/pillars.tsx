@@ -1,5 +1,5 @@
 import { Container } from "@/components/layout/container";
-import { cn } from "@/lib/utils";
+import { Reveal } from "@/components/sections/new-home/reveal";
 import { SectionHeading } from "./section-heading";
 
 export function Pillars({
@@ -12,37 +12,32 @@ export function Pillars({
   pillars: Array<{ title: string; body: string }>;
 }) {
   return (
-    <section className="border-t border-border bg-white">
-      <Container className="border-x border-border lg:px-0">
-        <div className="px-6 py-12 lg:py-16">
-          <SectionHeading eyebrow={eyebrow} heading={heading} />
-        </div>
-
-        <div
-          className={cn(
-            "grid grid-cols-1 border-t border-border",
-            pillars.length % 2 === 0 ? "md:grid-cols-2" : "md:grid-cols-3",
-          )}
-        >
+    <section className="relative overflow-hidden border-t border-foreground/8 bg-white py-16 md:py-20">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
+      />
+      <Container className="relative">
+        <SectionHeading eyebrow={eyebrow} heading={heading} />
+        <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-3">
           {pillars.map((pillar, index) => (
-            <div
-              key={pillar.title}
-              className={
-                index > 0
-                  ? "border-t border-border px-6 py-8 md:border-t-0 md:border-l lg:py-10"
-                  : "px-6 py-8 lg:py-10"
-              }
-            >
-              <span className="font-numeric text-sm font-semibold text-primary tabular-nums">
-                {String(index + 1).padStart(2, "0")}
-              </span>
-              <h3 className="mt-3 font-numeric text-lg font-semibold text-foreground">
-                {pillar.title}
-              </h3>
-              <p className="mt-3 font-numeric text-base text-muted-foreground">
-                {pillar.body}
-              </p>
-            </div>
+            <Reveal key={pillar.title} delay={index * 60} className="h-full">
+              <article className="group relative flex h-full flex-col overflow-hidden rounded-[1.35rem] border border-foreground/8 bg-surface-muted/60 p-6 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:border-primary/30 hover:bg-white hover:shadow-[0_28px_50px_-32px_rgba(19,82,191,0.4)]">
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute inset-0 bg-linear-to-b from-primary/[0.05] to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                />
+                <span className="relative font-numeric text-[0.7rem] font-bold tracking-[0.16em] text-subtle-foreground">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3 className="relative mt-4 font-numeric text-xl font-semibold tracking-[-0.03em] text-foreground">
+                  {pillar.title}
+                </h3>
+                <p className="relative mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {pillar.body}
+                </p>
+              </article>
+            </Reveal>
           ))}
         </div>
       </Container>

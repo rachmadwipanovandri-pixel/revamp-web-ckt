@@ -9,7 +9,11 @@ export default defineConfig({
     globals: true,
     setupFiles: ["./vitest.setup.ts"],
     passWithNoTests: true,
-    exclude: ["**/node_modules/**", ".claude/worktrees/**"],
+    exclude: [
+      "**/node_modules/**",
+      ".claude/worktrees/**",
+      ".kilo/worktrees/**",
+    ],
     server: {
       deps: {
         // next-intl's ESM build imports "next/navigation" without an

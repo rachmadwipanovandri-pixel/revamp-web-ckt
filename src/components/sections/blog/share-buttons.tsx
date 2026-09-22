@@ -46,11 +46,11 @@ export function ShareButtons({
   };
 
   const btn =
-    "flex size-10 items-center justify-center rounded-lg border border-border text-muted-foreground transition-colors hover:border-primary/40 hover:bg-primary/5 hover:text-primary";
+    "flex size-10 items-center justify-center rounded-full border border-foreground/12 bg-white text-muted-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/5 hover:text-primary";
 
   return (
     <div>
-      <p className="font-numeric text-xs font-semibold tracking-[0.08em] text-subtle-foreground uppercase">
+      <p className="eyebrow-rule mb-1 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.16em] text-primary uppercase">
         {shareLabel}
       </p>
       <div className="mt-3 flex gap-2">

@@ -51,7 +51,7 @@ export function BlogSearch({
         onChange={(event) => setValue(event.target.value)}
         aria-label={label}
         placeholder={placeholder}
-        className="w-full border border-border bg-white py-2 pr-9 pl-9 font-numeric text-sm text-foreground transition-colors outline-none placeholder:text-muted-foreground focus:border-primary"
+        className="w-full rounded-full border border-foreground/12 bg-white py-2.5 pr-10 pl-10 font-numeric text-sm text-foreground shadow-[0_10px_28px_-24px_rgba(16,24,40,0.5)] transition-all outline-none placeholder:text-muted-foreground focus:border-primary/50 focus:shadow-[0_14px_32px_-24px_rgba(19,82,191,0.55)]"
       />
       {value && (
         <button
@@ -61,7 +61,7 @@ export function BlogSearch({
             setValue("");
             submit("");
           }}
-          className="absolute top-1/2 right-2 flex size-6 -translate-y-1/2 items-center justify-center text-muted-foreground transition-colors hover:text-foreground"
+          className="absolute top-1/2 right-3 flex size-7 -translate-y-1/2 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-surface-muted hover:text-foreground"
         >
           <Icon icon={lucideX} className="size-4" />
         </button>

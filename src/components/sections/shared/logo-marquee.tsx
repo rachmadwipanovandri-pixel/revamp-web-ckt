@@ -9,15 +9,13 @@ export function LogoMarquee({
   logos: Logo[];
 }) {
   return (
-    <div className="border-y border-border bg-white">
-      <Container className="border-x border-border">
-        <div className="grid grid-cols-1 divide-y divide-border md:grid-cols-12 md:divide-x md:divide-y-0 md:divide-border">
-          <div className="flex items-center py-8 md:col-span-4 md:pr-6">
-            <h2 className="text-base leading-snug font-semibold text-foreground">
-              {heading}
-            </h2>
-          </div>
-          <div className="flex items-center overflow-hidden pt-6 pb-6 md:col-span-8 md:pt-0 md:pb-0 md:pl-8">
+    <div className="border-y border-foreground/8 bg-white py-6">
+      <Container>
+        <div className="flex flex-col gap-5 rounded-[1.5rem] border border-foreground/8 bg-surface-muted/70 px-6 py-6 shadow-[0_16px_40px_-36px_rgba(16,24,40,0.35)] md:flex-row md:items-center md:gap-10">
+          <h2 className="shrink-0 font-numeric text-sm font-bold tracking-[0.16em] text-foreground uppercase">
+            {heading}
+          </h2>
+          <div className="min-w-0 flex-1 overflow-hidden">
             <MarqueeStrip logos={logos} />
           </div>
         </div>

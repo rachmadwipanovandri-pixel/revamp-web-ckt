@@ -98,7 +98,7 @@ export function TestimonialVideoCard({
               {imageSrc && (
                 <Image
                   src={imageSrc}
-                  alt=""
+                  alt={name}
                   width={48}
                   height={48}
                   className={cn(
@@ -137,7 +137,7 @@ export function TestimonialVideoCard({
           {imageSrc && (
             <Image
               src={imageSrc}
-              alt=""
+              alt={name}
               width={40}
               height={40}
               className="size-9 shrink-0 rounded-full object-cover ring-1 ring-white/20"

@@ -4,6 +4,8 @@ import {
   localizedPath,
   alternates,
   alternatesFor,
+  metaSnippet,
+  reciprocalLanguages,
 } from "@/lib/seo";
 
 describe("htmlLang", () => {
@@ -71,5 +73,42 @@ describe("alternatesFor", () => {
 
   it("throws when the page does not exist in the requested locale", () => {
     expect(() => alternatesFor("en", { id: "/fitur/wa-blast" })).toThrow();
+  });
+});
+
+describe("metaSnippet", () => {
+  it("returns cleaned text under the limit unchanged", () => {
+    expect(metaSnippet("  Short   description.  ")).toBe("Short description.");
+  });
+
+  it("truncates on a sentence boundary when one fits", () => {
+    const text =
+      "Learn how AI agents handle WhatsApp support end to end for retail teams. This is a long trailing clause that must be cut because it blows past the snippet budget for SERPs.";
+    const result = metaSnippet(text, 80);
+    expect(result.endsWith(".")).toBe(true);
+    expect(result.length).toBeLessThanOrEqual(80);
+  });
+
+  it("falls back to a word boundary with an ellipsis", () => {
+    const result = metaSnippet("word ".repeat(40), 40);
+    expect(result.endsWith("…")).toBe(true);
+    expect(result.length).toBeLessThanOrEqual(41);
+  });
+
+  it("returns empty string for missing copy", () => {
+    expect(metaSnippet(undefined)).toBe("");
+    expect(metaSnippet("   ")).toBe("");
+  });
+});
+
+describe("reciprocalLanguages", () => {
+  it("uses en/id keys (not id-ID) with x-default → Indonesian", () => {
+    expect(
+      reciprocalLanguages({ en: "/en/blog/post", id: "/blog/post-id" }),
+    ).toEqual({
+      en: "https://cekat.ai/en/blog/post",
+      id: "https://cekat.ai/blog/post-id",
+      "x-default": "https://cekat.ai/blog/post-id",
+    });
   });
 });

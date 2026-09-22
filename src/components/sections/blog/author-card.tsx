@@ -13,8 +13,8 @@ export function AuthorCard({
   fallbackBio: string;
 }) {
   return (
-    <div className="border border-border bg-surface-muted p-5">
-      <p className="font-numeric text-xs font-semibold tracking-[0.08em] text-subtle-foreground uppercase">
+    <div className="rounded-[1.25rem] border border-foreground/8 bg-white p-5 shadow-[0_18px_40px_-36px_rgba(16,24,40,0.4)]">
+      <p className="eyebrow-rule inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.16em] text-primary uppercase">
         {label}
       </p>
       <div className="mt-4 flex items-center gap-3">

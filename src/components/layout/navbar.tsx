@@ -38,18 +38,27 @@ export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
     return null;
   }
 
-  // Homepage and product pages get a transparent header over the hero by default; any other
-  // route (or an explicit `variant` prop) keeps the solid one.
+  // Pages whose first act is a void/keynote hero get a transparent header
+  // until scroll. Locale pathnames differ (e.g. /harga vs /pricing).
   const transparentPaths = [
     "/",
     "/chat",
     "/crm",
     "/marketing",
     "/order",
+    "/pricing",
+    "/harga",
+    "/features",
+    "/fitur",
+    "/industries",
+    "/industri",
+    "/blog",
   ];
   const resolvedVariant =
     variant ??
-    (transparentPaths.includes(pathname) ? "transparent" : "default");
+    (transparentPaths.includes(pathname) || pathname.startsWith("/blog/")
+      ? "transparent"
+      : "default");
 
   if (pathname !== lastPathname) {
     setLastPathname(pathname);

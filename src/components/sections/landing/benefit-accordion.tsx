@@ -47,8 +47,12 @@ export function BenefitAccordion({
   const active = benefits[open];
 
   return (
-    <section className="bg-white">
-      <Container className="border-x border-border px-6 py-12 lg:py-16">
+    <section className="relative overflow-hidden bg-white py-16 md:py-20">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
+      />
+      <Container className="relative">
         {heading && <SectionHeading eyebrow={eyebrow} heading={heading} />}
 
         <div
@@ -64,10 +68,10 @@ export function BenefitAccordion({
                 <div
                   key={benefit.title}
                   className={cn(
-                    "rounded-lg border transition-colors",
+                    "rounded-[1.25rem] border transition-all duration-300",
                     isOpen
-                      ? "border-primary bg-primary"
-                      : "border-border bg-white hover:border-primary/20",
+                      ? "border-primary/40 bg-ink-void shadow-[0_24px_48px_-32px_rgba(15,31,58,0.75)]"
+                      : "border-foreground/8 bg-surface-muted/60 hover:border-primary/25 hover:bg-white",
                   )}
                 >
                   <h3>
@@ -83,19 +87,15 @@ export function BenefitAccordion({
                         <span
                           className={cn(
                             "font-numeric text-sm font-semibold tabular-nums",
-                            isOpen
-                              ? "text-primary-foreground-muted"
-                              : "text-primary/60",
+                            isOpen ? "text-sky-300" : "text-primary/60",
                           )}
                         >
                           {String(index + 1).padStart(2, "0")}
                         </span>
                         <span
                           className={cn(
-                            "font-numeric text-base font-semibold",
-                            isOpen
-                              ? "text-primary-foreground"
-                              : "text-foreground",
+                            "font-numeric text-base font-semibold tracking-[-0.02em]",
+                            isOpen ? "text-white" : "text-foreground",
                           )}
                         >
                           {benefit.title}
@@ -106,7 +106,7 @@ export function BenefitAccordion({
                         className={cn(
                           "size-5 shrink-0 transition-transform",
                           isOpen
-                            ? "rotate-180 text-primary-foreground"
+                            ? "rotate-180 text-sky-200"
                             : "text-subtle-foreground",
                         )}
                       />
@@ -120,12 +120,17 @@ export function BenefitAccordion({
                     hidden={!isOpen}
                     className="px-5 pb-5"
                   >
-                    <p className="text-sm leading-relaxed text-primary-foreground-muted">
+                    <p
+                      className={cn(
+                        "text-sm leading-relaxed",
+                        isOpen ? "text-sky-50/85" : "text-muted-foreground",
+                      )}
+                    >
                       {benefit.body}
                     </p>
 
                     {benefit.image && seen.includes(index) && (
-                      <div className="relative mt-4 aspect-video w-full overflow-hidden rounded-lg bg-white lg:hidden">
+                      <div className="relative mt-4 aspect-video w-full overflow-hidden rounded-xl bg-white lg:hidden">
                         <Image
                           src={benefit.image}
                           alt={benefit.imageAlt ?? ""}
@@ -145,7 +150,7 @@ export function BenefitAccordion({
               text-only benefit leaves no empty box beside it. */}
           <div
             className={cn(
-              "relative w-full overflow-hidden rounded-lg border border-border bg-surface-muted lg:col-span-6 lg:self-stretch",
+              "relative w-full overflow-hidden rounded-[1.35rem] border border-foreground/10 bg-surface-muted shadow-[0_24px_50px_-40px_rgba(16,24,40,0.45)] lg:col-span-6 lg:self-stretch",
               active.image ? "hidden lg:block" : "hidden",
             )}
           >

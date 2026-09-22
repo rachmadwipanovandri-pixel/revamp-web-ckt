@@ -34,19 +34,23 @@ export async function IndustryRoles({
   if (roles.length === 0) return null;
 
   return (
-    <section className="border-t border-border bg-surface-subtle">
-      <Container className="border-x border-border px-6 py-12 lg:py-16">
-        <p className="font-numeric text-sm font-semibold tracking-[0.08em] text-primary uppercase">
+    <section className="relative overflow-hidden bg-surface-muted py-16 md:py-20">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
+      />
+      <Container className="relative">
+        <p className="eyebrow-rule mb-4 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
           {t("rolesEyebrow")}
         </p>
-        <h2 className="mt-3 max-w-3xl font-numeric text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+        <h2 className="max-w-3xl text-[clamp(1.75rem,3.5vw,2.5rem)] leading-[1.1] font-semibold tracking-[-0.04em] text-balance text-foreground">
           {t("rolesHeading", { industry })}
         </h2>
-        <p className="mt-4 max-w-2xl font-numeric text-base text-muted-foreground md:text-lg">
+        <p className="mt-4 max-w-2xl text-base text-muted-foreground md:text-lg">
           {t("rolesBody")}
         </p>
 
-        <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {roles.map((role) => (
             <Link
               key={role.id}
@@ -54,13 +58,13 @@ export async function IndustryRoles({
                 pathname: "/solutions/[slug]",
                 params: { slug: role.slugs[locale]! },
               }}
-              className="group flex flex-col gap-3 rounded-lg border border-border bg-white p-5 transition-colors hover:border-primary/30"
+              className="group flex h-full flex-col gap-3 rounded-[1.35rem] border border-foreground/8 bg-white p-6 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_28px_50px_-32px_rgba(19,82,191,0.4)]"
             >
-              <span className="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <span className="flex size-12 items-center justify-center rounded-2xl border border-primary/20 bg-surface-muted text-primary">
                 <RegistryIcon name={role.icon} className="size-5" />
               </span>
               <div>
-                <h3 className="font-numeric text-base font-semibold text-foreground">
+                <h3 className="font-numeric text-base font-semibold tracking-[-0.02em] text-foreground">
                   {role.title[locale]}
                 </h3>
                 {role.tagline?.[locale] && (

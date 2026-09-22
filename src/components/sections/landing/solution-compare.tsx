@@ -19,10 +19,14 @@ export function SolutionCompare({ compare }: { compare: Compare }) {
   const [showWith, setShowWith] = useState(true);
 
   return (
-    <section className="border-t border-border bg-white">
-      <Container className="border-x border-border py-16 lg:py-20">
+    <section className="relative overflow-hidden bg-white py-16 md:py-20">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
+      />
+      <Container className="relative">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-12 lg:items-start lg:gap-12">
-          <h2 className="text-3xl font-semibold tracking-tight text-foreground lg:col-span-6 lg:text-4xl">
+          <h2 className="text-[clamp(1.75rem,3.5vw,2.5rem)] leading-[1.1] font-semibold tracking-[-0.04em] text-balance text-foreground lg:col-span-6">
             {compare.heading}
           </h2>
           <p className="text-base text-muted-foreground lg:col-span-6 lg:text-lg">
@@ -31,7 +35,7 @@ export function SolutionCompare({ compare }: { compare: Compare }) {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <div className="inline-flex rounded-full border border-border bg-surface-subtle p-1">
+          <div className="inline-flex rounded-full border border-foreground/10 bg-surface-muted p-1.5">
             {[
               { label: compare.withLabel, value: true },
               { label: compare.withoutLabel, value: false },
@@ -42,9 +46,9 @@ export function SolutionCompare({ compare }: { compare: Compare }) {
                 aria-pressed={showWith === tab.value}
                 onClick={() => setShowWith(tab.value)}
                 className={cn(
-                  "min-h-9 cursor-pointer rounded-full px-5 text-sm font-semibold transition-colors",
+                  "min-h-10 cursor-pointer rounded-full px-5 text-sm font-semibold transition-all",
                   showWith === tab.value
-                    ? "bg-white text-primary shadow-sm"
+                    ? "bg-ink-void text-white shadow-[0_10px_24px_-14px_rgba(15,31,58,0.8)]"
                     : "text-muted-foreground hover:text-foreground",
                 )}
               >
@@ -57,7 +61,7 @@ export function SolutionCompare({ compare }: { compare: Compare }) {
         {showWith ? (
           <div className="mt-10 grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
             {compare.with.image && (
-              <div className="relative h-64 overflow-hidden rounded-lg border border-border bg-surface-muted lg:h-80">
+              <div className="relative h-64 overflow-hidden rounded-[1.35rem] border border-foreground/10 bg-surface-muted shadow-[0_24px_50px_-40px_rgba(16,24,40,0.45)] lg:h-80">
                 <Image
                   src={compare.with.image}
                   alt={compare.with.imageAlt ?? ""}
@@ -68,7 +72,7 @@ export function SolutionCompare({ compare }: { compare: Compare }) {
               </div>
             )}
             <div>
-              <h3 className="font-numeric text-xl font-semibold text-foreground md:text-2xl">
+              <h3 className="text-[clamp(1.35rem,2.5vw,1.75rem)] leading-[1.15] font-semibold tracking-[-0.03em] text-foreground">
                 {compare.with.title}
               </h3>
               <ul className="mt-5 flex flex-col gap-3">
@@ -89,8 +93,8 @@ export function SolutionCompare({ compare }: { compare: Compare }) {
             </div>
           </div>
         ) : (
-          <div className="mx-auto mt-10 max-w-2xl rounded-lg border border-border bg-surface-muted p-8">
-            <h3 className="font-numeric text-xl font-semibold text-foreground md:text-2xl">
+          <div className="mx-auto mt-10 max-w-2xl rounded-[1.35rem] border border-foreground/10 bg-surface-muted p-8">
+            <h3 className="text-[clamp(1.35rem,2.5vw,1.75rem)] leading-[1.15] font-semibold tracking-[-0.03em] text-foreground">
               {compare.without.title}
             </h3>
             <ul className="mt-5 flex flex-col gap-3">

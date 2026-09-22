@@ -4,13 +4,17 @@ import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link, getPathname } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
-import { SITE_URL } from "@/lib/seo";
+import {
+  metaSnippet,
+  reciprocalLanguages,
+  SITE_URL,
+} from "@/lib/seo";
 import {
   counterpartPostSlug,
   getPostBySlug,
   getRelatedPosts,
 } from "@/lib/wordpress";
-import { buildToc } from "@/lib/toc";
+import { buildToc, wordCount } from "@/lib/toc";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Container } from "@/components/layout/container";
@@ -21,6 +25,7 @@ import { ShareButtons } from "@/components/sections/blog/share-buttons";
 import { ArticleReadingBar } from "@/components/sections/blog/article-reading-bar";
 import { TableOfContents } from "@/components/sections/blog/table-of-contents";
 import { AuthorCard } from "@/components/sections/blog/author-card";
+import { VoidFinalCta } from "@/components/sections/shared/void-final-cta";
 
 export const revalidate = 300;
 export const dynamicParams = true;
@@ -32,6 +37,19 @@ export function generateStaticParams() {
 
 function canonicalFor(locale: Locale, slug: string) {
   return `${SITE_URL}${getPathname({ href: { pathname: "/blog/[slug]", params: { slug } }, locale })}`;
+}
+
+function ogImage(post: NonNullable<Awaited<ReturnType<typeof getPostBySlug>>>) {
+  const url = post.seo.ogImage || post.image?.url;
+  if (!url) return [{ url: "/graph-image.jpg", width: 1200, height: 630, alt: post.title }];
+  return [
+    {
+      url,
+      width: post.image?.width ?? 1200,
+      height: post.image?.height ?? 630,
+      alt: post.image?.alt || post.title,
+    },
+  ];
 }
 
 /**
@@ -64,30 +82,43 @@ export async function generateMetadata({
   const { locale: rawLocale, slug } = await params;
   const locale = rawLocale as Locale;
   const post = await getPostBySlug(slug, locale);
-  if (!post) return {};
 
-  const title = post.seo.title || post.title;
-  const description = post.seo.description;
+  // Missing in this locale: do NOT inherit the layout's homepage canonical.
+  // The page component still runs counterpart redirect / 404; noindex here is
+  // belt-and-suspenders if a bot ever inspects the intermediate response.
+  if (!post) {
+    return { robots: { index: false, follow: false } };
+  }
+
+  const title = metaSnippet(post.seo.title || post.title, 70);
+  const description = metaSnippet(
+    post.seo.description || post.excerpt,
+    158,
+  );
   const canonical = canonicalFor(locale, slug);
+  const images = ogImage(post);
 
   // hreflang demands a reciprocal pair. Each translation has its own slug, so
   // advertising this one under both locales points crawlers at a URL that does
-  // not exist. Emit the pair only when the counterpart is actually published,
-  // matching how `sitemap-data.ts` builds its language map.
+  // not exist. Emit the pair only when the counterpart is actually published.
+  // Keys are `en` / `id` (not `id-ID`) so they match the blog sitemap and
+  // `alternates()` — mixed codes on one URL are a crawl-budget smell.
   const other: Locale = locale === "id" ? "en" : "id";
   const counterpart = await counterpartPostSlug(slug, other);
   const languages =
     counterpart.kind === "translated"
-      ? {
-          [locale === "id" ? "id-ID" : "en"]: canonical,
-          [other === "id" ? "id-ID" : "en"]: canonicalFor(other, counterpart.slug),
-          "x-default": locale === "id" ? canonical : canonicalFor(other, counterpart.slug),
-        }
+      ? reciprocalLanguages({
+          en: canonicalFor("en", locale === "en" ? slug : counterpart.slug),
+          id: canonicalFor("id", locale === "id" ? slug : counterpart.slug),
+        })
       : undefined;
 
   return {
     title,
     description,
+    // Explicit index/follow: layout does not set robots, and a stale override
+    // would otherwise be possible after a previous noindex response shape.
+    robots: { index: true, follow: true },
     alternates: {
       canonical,
       ...(languages ? { languages } : {}),
@@ -101,13 +132,15 @@ export async function generateMetadata({
       type: "article",
       publishedTime: post.dateIso,
       modifiedTime: post.modifiedIso,
-      images: [{ url: post.seo.ogImage || "/graph-image.jpg" }],
+      authors: [post.author.name],
+      tags: post.tags,
+      images,
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [post.seo.ogImage || "/graph-image.jpg"],
+      images: images.map((image) => image.url),
     },
   };
 }
@@ -131,6 +164,11 @@ export default async function BlogPostPage({
   const related = await getRelatedPosts(post, 3, locale);
   const url = canonicalFor(locale, slug);
   const { html: bodyHtml, toc } = buildToc(post.content);
+  const description = metaSnippet(post.seo.description || post.excerpt, 158);
+  const showUpdated = post.modifiedIso !== post.dateIso;
+
+  const homeUrl = `${SITE_URL}${getPathname({ href: "/", locale })}`;
+  const blogUrl = `${SITE_URL}${getPathname({ href: "/blog", locale })}`;
 
   return (
     <>
@@ -138,7 +176,7 @@ export default async function BlogPostPage({
         data={[
           articleJsonLd({
             headline: post.title,
-            description: post.seo.description ?? post.excerpt,
+            description,
             url,
             image: post.image,
             authorName: post.author.name,
@@ -147,72 +185,164 @@ export default async function BlogPostPage({
             section: post.category?.name,
             language: locale === "id" ? "id-ID" : "en",
             keywords: post.tags,
+            wordCount: wordCount(post.content),
           }),
           breadcrumbJsonLd([
-            { name: tb("home"), url: `${SITE_URL}${getPathname({ href: "/", locale })}` },
-            { name: t("heroTitle"), url: `${SITE_URL}${getPathname({ href: "/blog", locale })}` },
-            { name: post.title, url },
+            { name: tb("home"), url: homeUrl },
+            { name: t("heroTitle"), url: blogUrl },
+            // Last node: name only (Google's BreadcrumbList examples omit `item`).
+            { name: post.title },
           ]),
         ]}
       />
 
       <ArticleReadingBar title={post.title} backLabel={t("backToBlog")} />
 
-      <article className="bg-white pt-16">
-        {/* Header */}
-        <Container className="px-6 py-10 lg:px-0 lg:py-14">
-          <Link
-            href="/blog"
-            className="font-numeric text-sm font-semibold text-primary"
-          >
-            ← {t("backToBlog")}
-          </Link>
-          {post.category && (
-            <span className="mt-6 block font-numeric text-xs font-semibold tracking-wide text-primary uppercase">
-              {post.category.name}
-            </span>
-          )}
-          <h1 className="mt-3 max-w-3xl font-numeric text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-            {post.title}
-          </h1>
-          <div className="mt-6 flex items-center gap-3">
-            {post.author.avatar && (
-              <Image
-                src={post.author.avatar}
-                alt={post.author.name}
-                width={44}
-                height={44}
-                className="size-11 rounded-full"
-                unoptimized
-              />
+      {/* Void header — same keynote ground as the homepage / listing hero */}
+      <section className="relative isolate overflow-hidden bg-ink-void text-white">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#050b18] via-[#0a1a3d] to-[#0b1220]"
+        />
+        <div
+          aria-hidden
+          className="ink-noise pointer-events-none absolute inset-0 opacity-55"
+        />
+        <div aria-hidden className="pointer-events-none absolute inset-0">
+          <span className="animate-orb-drift absolute top-[10%] left-[8%] h-64 w-64 rounded-full bg-primary/35 blur-[110px]" />
+          <span
+            className="animate-orb-drift absolute top-[30%] right-[6%] h-72 w-72 rounded-full bg-accent-sky/25 blur-[120px]"
+            style={{ animationDelay: "-7s" }}
+          />
+        </div>
+
+        <Container className="relative z-10 pt-28 pb-20 lg:pt-32 lg:pb-24">
+          <div className="hero-stagger mx-auto max-w-3xl text-center lg:text-left">
+            <nav aria-label="Breadcrumb" className="mb-6 flex justify-center lg:justify-start">
+              <ol className="flex flex-wrap items-center justify-center gap-2 font-numeric text-xs text-sky-100/80">
+                <li>
+                  <Link
+                    href="/"
+                    className="rounded-full border border-white/15 bg-white/8 px-3 py-1 transition-colors hover:border-white/40 hover:text-white"
+                  >
+                    {tb("home")}
+                  </Link>
+                </li>
+                <li aria-hidden className="text-sky-200/50">
+                  /
+                </li>
+                <li>
+                  <Link
+                    href="/blog"
+                    className="rounded-full border border-white/15 bg-white/8 px-3 py-1 transition-colors hover:border-white/40 hover:text-white"
+                  >
+                    {t("heroTitle")}
+                  </Link>
+                </li>
+                {post.category && (
+                  <>
+                    <li aria-hidden className="text-sky-200/50">
+                      /
+                    </li>
+                    <li>
+                      <Link
+                        href={{
+                          pathname: "/blog",
+                          query: { category: post.category.slug },
+                        }}
+                        className="rounded-full border border-white/15 bg-white/8 px-3 py-1 transition-colors hover:border-white/40 hover:text-white"
+                      >
+                        {post.category.name}
+                      </Link>
+                    </li>
+                  </>
+                )}
+              </ol>
+            </nav>
+
+            <h1 className="text-[clamp(1.85rem,4vw,3rem)] leading-[1.08] font-semibold tracking-[-0.035em] text-balance text-white">
+              {post.title}
+            </h1>
+
+            {description && (
+              <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-sky-50/85 lg:mx-0">
+                {description}
+              </p>
             )}
-            <div className="font-numeric text-sm">
-              <p className="font-semibold text-foreground">{post.author.name}</p>
-              <time dateTime={post.date} className="text-subtle-foreground">
-                {formatDate(post.date, locale)}
-              </time>
+
+            <div className="mt-7 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 lg:justify-start">
+              {post.author.avatar && (
+                <Image
+                  src={post.author.avatar}
+                  alt={post.author.name}
+                  width={44}
+                  height={44}
+                  className="size-11 rounded-full ring-2 ring-white/20"
+                  unoptimized
+                />
+              )}
+              <div className="font-numeric text-sm text-left">
+                <p className="font-semibold text-white">{post.author.name}</p>
+                <p className="text-sky-100/75">
+                  <time dateTime={post.dateIso}>
+                    {formatDate(post.date, locale)}
+                  </time>
+                  {showUpdated && (
+                    <>
+                      <span aria-hidden> · </span>
+                      <span className="text-sky-100/60">
+                        {locale === "id" ? "Diperbarui" : "Updated"}{" "}
+                      </span>
+                      <time dateTime={post.modifiedIso}>
+                        {formatDate(post.modified, locale)}
+                      </time>
+                    </>
+                  )}
+                </p>
+              </div>
+              {post.tags.length > 0 && (
+                <ul className="flex flex-wrap items-center justify-center gap-2 lg:ml-2">
+                  {post.tags.slice(0, 4).map((tag) => (
+                    <li key={tag}>
+                      <Link
+                        href={{ pathname: "/blog", query: { q: tag } }}
+                        className="rounded-full border border-white/15 bg-white/8 px-3 py-1 font-numeric text-[0.7rem] font-medium text-sky-100/90 backdrop-blur transition-colors hover:border-sky-300/50 hover:text-white"
+                      >
+                        #{tag}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </Container>
 
-        {/* Cover */}
-        {post.image && (
-          <Container className="px-6 lg:px-0">
-            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-border bg-surface-subtle">
-              <Image
-                src={post.image.url}
-                alt={post.image.alt}
-                fill
-                priority
-                sizes="(max-width: 1280px) 100vw, 1280px"
-                className="object-cover"
-              />
-            </div>
-          </Container>
-        )}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-20 bg-linear-to-b from-transparent to-white"
+        />
+      </section>
 
-        {/* Body + sticky sidebar (TOC · author · share) */}
-        <Container className="px-6 py-10 lg:grid lg:grid-cols-[1fr_17rem] lg:gap-14 lg:px-0 lg:py-14">
+      {/* Cover */}
+      {post.image && (
+        <Container className="relative z-10 -mt-8 px-4 sm:px-6 lg:px-8">
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[1.5rem] border border-white/10 bg-surface-subtle shadow-[0_32px_70px_-40px_rgba(11,18,32,0.55)]">
+            <Image
+              src={post.image.url}
+              alt={post.image.alt || post.title}
+              fill
+              priority
+              sizes="(max-width: 1280px) 100vw, 1280px"
+              className="object-cover"
+            />
+          </div>
+        </Container>
+      )}
+
+      {/* Body + sticky sidebar (TOC · author · share) */}
+      <article>
+        <Container className="px-4 py-12 sm:px-6 lg:grid lg:grid-cols-[1fr_17rem] lg:gap-14 lg:px-8 lg:py-16">
           <div className="min-w-0 max-w-3xl">
             <PostBody html={bodyHtml} />
           </div>
@@ -242,6 +372,9 @@ export default async function BlogPostPage({
         heading={t("relatedHeading")}
         locale={locale}
       />
+      <div className="cv-auto">
+        <VoidFinalCta namespace="agentic.finalCta" />
+      </div>
     </>
   );
 }

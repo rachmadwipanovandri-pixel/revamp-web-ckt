@@ -18,8 +18,17 @@ export function RelatedLinks({
   if (links.length === 0) return null;
 
   return (
-    <section className="border-t border-border bg-white">
-      <Container className="border-x border-border px-6 py-12 lg:py-16">
+    <section className="relative overflow-hidden border-t border-foreground/8 bg-surface-muted py-16 md:py-20">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-40"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 1px 1px, rgba(19,82,191,0.1) 1px, transparent 0)",
+          backgroundSize: "26px 26px",
+        }}
+      />
+      <Container className="relative">
         <SectionHeading eyebrow={eyebrow} heading={heading} />
         <div className="mt-8">
           <EntryGrid items={links} readMore={readMore} />

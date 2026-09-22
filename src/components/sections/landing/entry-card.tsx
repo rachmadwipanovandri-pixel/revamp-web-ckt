@@ -9,7 +9,7 @@ export interface EntryCardData {
   tagline?: string;
 }
 
-/** A single flush-grid cell: icon tile + title + tagline (+ optional read-more). */
+/** A single rounded entry card: icon plate + title + tagline (+ optional read-more). */
 export function EntryCard({
   href,
   icon,
@@ -20,13 +20,17 @@ export function EntryCard({
   return (
     <Link
       href={href}
-      className="group flex flex-col gap-3 border-r border-b border-border p-6 transition-colors hover:bg-surface-muted"
+      className="group relative flex h-full flex-col gap-3 overflow-hidden rounded-[1.35rem] border border-foreground/8 bg-white p-6 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_28px_50px_-32px_rgba(19,82,191,0.4)]"
     >
-      <span className="flex size-10 items-center justify-center rounded-lg bg-surface-subtle text-muted-foreground ring-1 ring-transparent transition-colors group-hover:bg-primary/10 group-hover:text-primary group-hover:ring-primary/15">
+      <span
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-linear-to-b from-primary/[0.04] to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+      />
+      <span className="relative flex size-12 items-center justify-center rounded-2xl border border-primary/20 bg-surface-muted text-primary shadow-[0_10px_24px_-16px_rgba(19,82,191,0.45)] transition-colors duration-300 group-hover:bg-white">
         <RegistryIcon name={icon} className="size-5" />
       </span>
-      <div>
-        <h3 className="font-numeric text-base font-semibold text-foreground">
+      <div className="relative">
+        <h3 className="font-numeric text-base font-semibold tracking-[-0.02em] text-foreground">
           {title}
         </h3>
         {tagline && (
@@ -36,7 +40,7 @@ export function EntryCard({
         )}
       </div>
       {readMore && (
-        <span className="mt-auto inline-flex items-center gap-1 pt-2 font-numeric text-sm font-semibold text-primary">
+        <span className="relative mt-auto inline-flex items-center gap-1 pt-2 font-numeric text-sm font-semibold text-primary">
           {readMore}
           <span
             aria-hidden
@@ -46,15 +50,15 @@ export function EntryCard({
           </span>
         </span>
       )}
+      <span
+        aria-hidden
+        className="pointer-events-none absolute inset-x-6 bottom-0 h-px origin-left scale-x-0 bg-linear-to-r from-transparent via-primary/70 to-transparent transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-x-100"
+      />
     </Link>
   );
 }
 
-/**
- * A flush hairline grid of EntryCards. Filler cells pad the list to a multiple
- * of four so the grid stays a clean rectangle in both the 2- and 4-column
- * layouts. Shared by the hub and the related-links section.
- */
+/** Gap grid of EntryCards. */
 export function EntryGrid({
   items,
   readMore,
@@ -62,18 +66,10 @@ export function EntryGrid({
   items: EntryCardData[];
   readMore?: string;
 }) {
-  const fillers = (4 - (items.length % 4)) % 4;
   return (
-    <div className="grid grid-cols-2 border-t border-l border-border lg:grid-cols-4">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {items.map((item) => (
         <EntryCard key={item.title} {...item} readMore={readMore} />
-      ))}
-      {Array.from({ length: fillers }).map((_, i) => (
-        <div
-          key={`filler-${i}`}
-          aria-hidden
-          className="border-r border-b border-border"
-        />
       ))}
     </div>
   );

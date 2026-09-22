@@ -48,7 +48,7 @@ export function ArticleReadingBar({
           : "pointer-events-none -translate-y-full opacity-0",
       )}
     >
-      <Container className="flex h-12 items-center gap-4 lg:px-0">
+      <Container className="flex h-12 items-center gap-4">
         <Link
           href="/blog"
           className="inline-flex shrink-0 items-center gap-1 font-numeric text-sm font-semibold text-primary hover:text-primary-dark"

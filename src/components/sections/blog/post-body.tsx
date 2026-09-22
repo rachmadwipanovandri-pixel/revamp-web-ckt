@@ -17,7 +17,7 @@ export function PostBody({ html }: { html: string }) {
         "[&_li]:mt-2 [&_li]:text-muted-foreground [&_li]:marker:text-primary",
         "[&_a]:font-medium [&_a]:text-primary [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-primary-dark",
         "[&_strong]:font-semibold [&_strong]:text-foreground",
-        "[&_img]:my-6 [&_img]:rounded-xl [&_img]:border [&_img]:border-border",
+        "[&_img]:my-6 [&_img]:h-auto [&_img]:max-w-full [&_img]:rounded-xl [&_img]:border [&_img]:border-border",
         "[&_figcaption]:mt-2 [&_figcaption]:text-center [&_figcaption]:text-sm [&_figcaption]:text-subtle-foreground [&_figure]:my-6",
         "[&_blockquote]:my-6 [&_blockquote]:border-l-4 [&_blockquote]:border-primary [&_blockquote]:pl-5 [&_blockquote]:text-foreground [&_blockquote]:italic",
         "[&_pre]:my-6 [&_pre]:overflow-x-auto [&_pre]:rounded-xl [&_pre]:bg-foreground [&_pre]:p-4 [&_pre]:text-sm [&_pre]:text-white",

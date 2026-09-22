@@ -36,7 +36,7 @@ export function TableOfContents({
 
   return (
     <nav aria-label={label}>
-      <p className="font-numeric text-xs font-semibold tracking-[0.08em] text-subtle-foreground uppercase">
+      <p className="eyebrow-rule mb-1 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.16em] text-primary uppercase">
         {label}
       </p>
       <ul className="mt-4 space-y-1 border-l border-border">
@@ -46,7 +46,11 @@ export function TableOfContents({
               href={`#${item.id}`}
               className={cn(
                 "-ml-px block border-l-2 py-1.5 font-numeric text-sm leading-snug transition-colors",
-                item.level === 3 ? "pl-6" : "pl-4",
+                item.level === 4
+                  ? "pl-8 text-[0.9rem]"
+                  : item.level === 3
+                    ? "pl-6"
+                    : "pl-4",
                 activeId === item.id
                   ? "border-primary font-medium text-primary"
                   : "border-transparent text-muted-foreground hover:text-foreground",

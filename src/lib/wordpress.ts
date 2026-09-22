@@ -1,4 +1,5 @@
 import "server-only";
+import { cache } from "react";
 
 const API_BASE =
   process.env.WORDPRESS_API_URL ??
@@ -289,16 +290,18 @@ export async function getPosts({
  * A post by slug, or null when WordPress positively reports no such post.
  * An unreachable WordPress throws instead, so the caller renders a retryable
  * 5xx rather than a 404 that would deindex a perfectly good article.
+ *
+ * Request-scoped: `generateMetadata` and the page component both need the
+ * post; without `cache()` each article render hit the cold WP host twice.
  */
-export async function getPostBySlug(
-  slug: string,
-  lang?: string,
-): Promise<BlogPost | null> {
-  const res = await wpFetch("/posts", { slug, _embed: "1", lang });
-  if (!res.ok) return null;
-  const data = (await res.json()) as WpPost[];
-  return data[0] ? normalizePost(data[0]) : null;
-}
+export const getPostBySlug = cache(
+  async (slug: string, lang?: string): Promise<BlogPost | null> => {
+    const res = await wpFetch("/posts", { slug, _embed: "1", lang });
+    if (!res.ok) return null;
+    const data = (await res.json()) as WpPost[];
+    return data[0] ? normalizePost(data[0]) : null;
+  },
+);
 
 /**
  * Categories with posts, deduped by name (Polylang creates per-language ids).
@@ -350,6 +353,8 @@ export interface PostSlugInfo {
   modified: string;
   lang: string;
   translations: Record<string, number>;
+  /** Author display name when the lean slug payload includes it. */
+  authorName?: string;
 }
 
 interface WpSlugRow extends Omit<PostSlugInfo, "modified"> {
@@ -358,7 +363,7 @@ interface WpSlugRow extends Omit<PostSlugInfo, "modified"> {
 }
 
 /** Lean slug list for the sitemap: locale + Polylang translation links. */
-export async function getAllPostSlugs(): Promise<PostSlugInfo[]> {
+export const getAllPostSlugs = cache(async (): Promise<PostSlugInfo[]> => {
   try {
     const out: PostSlugInfo[] = [];
     let page = 1;
@@ -384,7 +389,7 @@ export async function getAllPostSlugs(): Promise<PostSlugInfo[]> {
   } catch {
     return [];
   }
-}
+});
 
 /** What a slug resolves to when asked for in a locale it was not written in. */
 export type CounterpartPost =
@@ -408,26 +413,25 @@ export type CounterpartPost =
  * translation should send the reader to the blog index, while a genuinely bad
  * slug must still 404 rather than soft-404 into a listing page.
  */
-export async function counterpartPostSlug(
-  slug: string,
-  target: string,
-): Promise<CounterpartPost> {
-  const posts = await getAllPostSlugs();
-  const source = posts.find((post) => post.slug === slug);
-  if (!source) return { kind: "unknown" };
+export const counterpartPostSlug = cache(
+  async (slug: string, target: string): Promise<CounterpartPost> => {
+    const posts = await getAllPostSlugs();
+    const source = posts.find((post) => post.slug === slug);
+    if (!source) return { kind: "unknown" };
 
-  const translatedId = source.translations?.[target];
-  const translated =
-    translatedId === undefined
-      ? undefined
-      : posts.find((post) => post.id === translatedId);
+    const translatedId = source.translations?.[target];
+    const translated =
+      translatedId === undefined
+        ? undefined
+        : posts.find((post) => post.id === translatedId);
 
-  // A translation id can point at a draft or private post, which never appears
-  // in the published list. Treat that as untranslated, not as a live page.
-  return translated
-    ? { kind: "translated", slug: translated.slug }
-    : { kind: "untranslated" };
-}
+    // A translation id can point at a draft or private post, which never appears
+    // in the published list. Treat that as untranslated, not as a live page.
+    return translated
+      ? { kind: "translated", slug: translated.slug }
+      : { kind: "untranslated" };
+  },
+);
 
 /**
  * Related posts for the article footer. Degrades to an empty list: this is a

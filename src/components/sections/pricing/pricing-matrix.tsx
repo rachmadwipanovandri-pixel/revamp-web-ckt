@@ -18,15 +18,17 @@ export function PricingMatrix({ plan }: { plan: Plan }) {
   const priced = showsPrices(locale);
 
   return (
-    <div className="mt-12">
-      <h3 className="font-numeric text-xl font-semibold tracking-tight text-foreground md:text-2xl">
-        {t("compareHeading")}
-      </h3>
-      <p className="mt-2 font-numeric text-sm text-muted-foreground">
-        {t("compareIntro")}
-      </p>
+    <div className="mt-14">
+      <div className="mx-auto max-w-2xl text-center">
+        <p className="eyebrow-rule mb-4 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
+          {t("compareHeading")}
+        </p>
+        <p className="font-numeric text-base text-muted-foreground">
+          {t("compareIntro")}
+        </p>
+      </div>
 
-      <div className="mt-6 overflow-x-auto rounded-xl border border-border">
+      <div className="mt-8 overflow-x-auto rounded-[1.35rem] border border-foreground/10 bg-white shadow-[0_24px_50px_-40px_rgba(16,24,40,0.45)]">
         <table className="w-full min-w-[46rem] border-collapse text-left">
           <thead>
             <tr className="border-b border-border bg-surface-subtle">

@@ -16,29 +16,26 @@ export function DefinitionBlock({
     <section className="bg-white">
       <Container
         className={cn(
-          "border-x border-border px-6 pt-12 lg:pt-16",
+          "px-4 pt-14 sm:px-6 lg:px-8 lg:pt-18",
           // Stats already carry their own bottom spacing, no extra section pad.
-          stats && stats.length > 0 ? "pb-0" : "pb-12 lg:pb-16",
+          stats && stats.length > 0 ? "pb-0" : "pb-14 lg:pb-18",
         )}
       >
-        <p className="max-w-4xl font-numeric text-xl leading-relaxed font-medium text-foreground md:text-2xl">
+        <p className="max-w-4xl text-[clamp(1.15rem,2.2vw,1.5rem)] leading-[1.55] font-medium tracking-[-0.02em] text-foreground">
           {definition}
         </p>
 
         {stats && stats.length > 0 && (
-          <dl className="mt-10 grid grid-cols-2 border-t border-border md:grid-cols-4">
-            {stats.map((stat, index) => (
+          <dl className="mt-10 grid grid-cols-2 gap-4 border-t border-foreground/10 pt-8 md:grid-cols-4">
+            {stats.map((stat) => (
               <div
                 key={stat.label}
-                className={cn(
-                  "py-6 pr-6",
-                  index > 0 && "md:border-l md:border-border md:pl-6",
-                )}
+                className="rounded-[1.25rem] border border-foreground/8 bg-surface-muted/70 p-5"
               >
-                <dd className="font-numeric text-3xl font-semibold text-primary md:text-4xl">
+                <dd className="font-numeric text-[clamp(1.5rem,3vw,2.25rem)] leading-none font-semibold tracking-[-0.04em] text-primary tabular-nums">
                   {stat.value}
                 </dd>
-                <dt className="mt-1.5 font-numeric text-sm leading-snug text-muted-foreground">
+                <dt className="mt-2 font-numeric text-sm leading-snug text-muted-foreground">
                   {stat.label}
                 </dt>
               </div>

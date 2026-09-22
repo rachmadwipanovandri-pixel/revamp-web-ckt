@@ -56,3 +56,45 @@ export function alternatesFor(locale: Locale, paths: LocalePaths) {
       : undefined;
   return { canonical: `${SITE_URL}${own}`, languages };
 }
+
+/**
+ * Meta description / OG description snippet. WordPress and Yoast can return
+ * empty strings or multi-sentence dumps; search results need a single
+ * scannable line. Prefers the first sentence boundary when it still fits.
+ */
+export function metaSnippet(text: string | undefined, maxLength = 158): string {
+  const cleaned = (text ?? "").replace(/\s+/g, " ").trim();
+  if (!cleaned) return "";
+  if (cleaned.length <= maxLength) return cleaned;
+
+  const cut = cleaned.slice(0, maxLength);
+  const sentenceEnd = Math.max(
+    cut.lastIndexOf(". "),
+    cut.lastIndexOf("! "),
+    cut.lastIndexOf("? "),
+    cut.lastIndexOf("…"),
+  );
+  // Only trust a sentence break once we have a reasonably full line; a break
+  // at word 3 would throw away most of the snippet budget.
+  if (sentenceEnd >= Math.floor(maxLength * 0.55)) {
+    return cut.slice(0, sentenceEnd + 1).trim();
+  }
+  const wordEnd = cut.lastIndexOf(" ");
+  return `${cut.slice(0, wordEnd > 0 ? wordEnd : maxLength).trim()}…`;
+}
+
+/**
+ * Reciprocal hreflang for a page that exists in both locales. Keys match the
+ * blog sitemap and `alternates()` (`en` / `id`), not `id-ID` — mixed codes on
+ * the same URL are a manual-action-shaped inconsistency.
+ */
+export function reciprocalLanguages(paths: {
+  en: string;
+  id: string;
+}): Record<string, string> {
+  return {
+    en: `${SITE_URL}${paths.en}`,
+    id: `${SITE_URL}${paths.id}`,
+    "x-default": `${SITE_URL}${paths.id}`,
+  };
+}

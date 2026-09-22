@@ -58,22 +58,11 @@ export function BlogFeed({
     return () => observer.disconnect();
   }, [loadMore, hasMore]);
 
-  // Complete the last row of the 3-column desktop grid so the hairline grid
-  // stays a clean rectangle. Hidden on mobile (single column always fills).
-  const fillerCount = (3 - (posts.length % 3)) % 3;
-
   return (
     <div>
-      <div className="grid grid-cols-1 border-t border-l border-border md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
           <PostCard key={post.id} post={post} locale={locale} />
-        ))}
-        {Array.from({ length: fillerCount }).map((_, i) => (
-          <div
-            key={`filler-${i}`}
-            aria-hidden
-            className="hidden border-r border-b border-border md:block"
-          />
         ))}
       </div>
 

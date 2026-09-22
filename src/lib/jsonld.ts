@@ -141,23 +141,38 @@ export function articleJsonLd({
   url,
   image,
   authorName,
+  authorUrl,
   datePublished,
   dateModified,
   section,
   language,
   keywords,
+  wordCount,
 }: {
   headline: string;
   description: string;
   url: string;
   image?: { url: string; width?: number; height?: number };
   authorName: string;
+  /** Optional author profile URL when WordPress provides one. */
+  authorUrl?: string;
   datePublished: string;
   dateModified?: string;
   section?: string;
   language?: string;
   keywords?: string[];
+  wordCount?: number;
 }) {
+  const imageObject = image
+    ? {
+        "@type": "ImageObject",
+        url: image.url,
+        ...(image.width ? { width: image.width } : {}),
+        ...(image.height ? { height: image.height } : {}),
+        ...(headline ? { caption: headline } : {}),
+      }
+    : null;
+
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -165,23 +180,35 @@ export function articleJsonLd({
     headline,
     description,
     url,
-    mainEntityOfPage: url,
-    ...(image
-      ? {
-          image: {
-            "@type": "ImageObject",
-            url: image.url,
-            ...(image.width ? { width: image.width } : {}),
-            ...(image.height ? { height: image.height } : {}),
-          },
-        }
-      : {}),
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    // Google's article rich results accept a single ImageObject or an array;
+    // the array form also lets a future gallery grow without a schema change.
+    ...(imageObject ? { image: [imageObject] } : {}),
     ...(section ? { articleSection: section } : {}),
     ...(language ? { inLanguage: language } : {}),
     ...(keywords?.length ? { keywords } : {}),
-    // The named byline is the E-E-A-T signal; the company is the publisher.
-    author: { "@type": "Person", name: authorName },
-    publisher: { "@id": `${SITE_URL}/#organization` },
+    ...(typeof wordCount === "number" && wordCount > 0 ? { wordCount } : {}),
+    // Named byline is the E-E-A-T signal; the company is the publisher.
+    author: {
+      "@type": "Person",
+      name: authorName,
+      ...(authorUrl ? { url: authorUrl } : {}),
+    },
+    publisher: {
+      "@id": `${SITE_URL}/#organization`,
+      "@type": "Organization",
+      name: "Cekat.AI",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/icon.png`,
+      },
+    },
+    isPartOf: {
+      "@type": "Blog",
+      "@id": `${SITE_URL}/blog#blog`,
+      name: "CekatAI Blog",
+      url: `${SITE_URL}/blog`,
+    },
     datePublished,
     dateModified: dateModified ?? datePublished,
   };
@@ -220,7 +247,7 @@ export function faqPageJsonLd(items: Array<{ q: string; a: string }>) {
   };
 }
 
-export function breadcrumbJsonLd(crumbs: Array<{ name: string; url: string }>) {
+export function breadcrumbJsonLd(crumbs: Array<{ name: string; url?: string }>) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -228,7 +255,8 @@ export function breadcrumbJsonLd(crumbs: Array<{ name: string; url: string }>) {
       "@type": "ListItem",
       position: index + 1,
       name: crumb.name,
-      item: crumb.url,
+      // Google's examples omit `item` on the last (current) node.
+      ...(crumb.url && index < crumbs.length - 1 ? { item: crumb.url } : {}),
     })),
   };
 }

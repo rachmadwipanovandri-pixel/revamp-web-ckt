@@ -1,0 +1,118 @@
+import { cn } from "@/lib/utils";
+
+/**
+ * Void keynote hero for secondary pages — same ground language as the
+ * homepage Hero: deep navy gradient, film noise, soft orbs, and a fade into
+ * white so the first light chapter below feels continuous.
+ */
+export function PageHero({
+  eyebrow,
+  title,
+  accent,
+  subtitle,
+  note,
+  chips,
+  children,
+  className,
+  /** Extra top padding when a solid navbar sits above (not transparent). */
+  solidNav = false,
+}: {
+  eyebrow?: string;
+  title: string;
+  /** Optional gradient span appended to the title. */
+  accent?: string;
+  subtitle?: string;
+  note?: string;
+  chips?: string[];
+  /** Optional content (e.g. featured card) rendered under the copy block. */
+  children?: React.ReactNode;
+  className?: string;
+  solidNav?: boolean;
+}) {
+  return (
+    <section
+      className={cn(
+        "relative isolate overflow-hidden bg-ink-void text-white",
+        solidNav ? "pt-28 lg:pt-32" : "pt-36 lg:pt-40",
+        className,
+      )}
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#050b18] via-[#0a1a3d] to-[#0b1220]"
+      />
+      <div
+        aria-hidden
+        className="ink-noise pointer-events-none absolute inset-0 opacity-55"
+      />
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <span className="animate-orb-drift absolute top-[10%] left-[6%] h-72 w-72 rounded-full bg-primary/40 blur-[110px]" />
+        <span
+          className="animate-orb-drift absolute top-[30%] right-[4%] h-80 w-80 rounded-full bg-accent-sky/25 blur-[120px]"
+          style={{ animationDelay: "-7s" }}
+        />
+      </div>
+
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-16 sm:px-6 lg:px-8 lg:pb-20">
+        <div className="hero-stagger mx-auto max-w-3xl text-center lg:max-w-4xl lg:text-left">
+          {eyebrow && (
+            <p className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-1.5 font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-sky-200 uppercase backdrop-blur">
+              <span
+                aria-hidden
+                className="animate-pulse-soft size-1.5 rounded-full bg-sky-300"
+              />
+              {eyebrow}
+            </p>
+          )}
+
+          <h1 className="text-[clamp(2.1rem,5vw,3.5rem)] leading-[1.05] font-semibold tracking-[-0.035em] text-balance text-white">
+            {title}
+            {accent ? (
+              <>
+                {" "}
+                <span className="bg-linear-to-r from-sky-300 to-blue-400 bg-clip-text text-transparent">
+                  {accent}
+                </span>
+              </>
+            ) : null}
+          </h1>
+
+          {subtitle && (
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-sky-50/85 lg:mx-0 lg:text-lg">
+              {subtitle}
+            </p>
+          )}
+          {note && (
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-sky-100/70 lg:mx-0">
+              {note}
+            </p>
+          )}
+
+          {chips && chips.length > 0 && (
+            <ul className="mt-7 flex flex-wrap items-center justify-center gap-2 lg:justify-start">
+              {chips.map((chip) => (
+                <li
+                  key={chip}
+                  className="rounded-full border border-white/15 bg-white/8 px-3.5 py-1.5 font-numeric text-[0.72rem] font-semibold tracking-[0.12em] text-sky-100 uppercase backdrop-blur"
+                >
+                  {chip}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        {children && (
+          <div className="mt-12 lg:mt-14" data-page-hero-children>
+            {children}
+          </div>
+        )}
+      </div>
+
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-24 bg-linear-to-b from-transparent to-white"
+      />
+    </section>
+  );
+}

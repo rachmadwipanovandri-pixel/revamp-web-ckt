@@ -40,10 +40,13 @@ afterEach(() => {
 });
 
 describe("getPostBySlug", () => {
+  // Distinct slugs per case: getPostBySlug is wrapped in React.cache so
+  // generateMetadata + the page share one fetch. A shared slug across tests
+  // would hit the previous mock's cached result.
   it("returns the post when WordPress has it", async () => {
-    fetchMock.mockResolvedValue(json([wpPost()]));
-    const post = await getPostBySlug("retensi-pelanggan", "id");
-    expect(post?.slug).toBe("retensi-pelanggan");
+    fetchMock.mockResolvedValue(json([wpPost({ slug: "cache-hit" })]));
+    const post = await getPostBySlug("cache-hit", "id");
+    expect(post?.slug).toBe("cache-hit");
     // Naive WP timestamps are normalized to an unambiguous UTC instant.
     expect(post?.dateIso).toBe("2026-07-29T10:30:18Z");
   });
@@ -57,14 +60,14 @@ describe("getPostBySlug", () => {
     // Regression guard: a 5xx used to collapse into null -> notFound() -> a
     // cached 404, which tells Google a healthy article is permanently gone.
     fetchMock.mockResolvedValue(json({ error: "bad gateway" }, 502));
-    await expect(getPostBySlug("retensi-pelanggan", "id")).rejects.toThrow(
+    await expect(getPostBySlug("unavailable-post", "id")).rejects.toThrow(
       WordPressUnavailableError,
     );
   });
 
   it("throws when the request itself fails", async () => {
     fetchMock.mockRejectedValue(new Error("ECONNRESET"));
-    await expect(getPostBySlug("retensi-pelanggan", "id")).rejects.toThrow(
+    await expect(getPostBySlug("conn-reset-post", "id")).rejects.toThrow(
       WordPressUnavailableError,
     );
   });
@@ -72,9 +75,9 @@ describe("getPostBySlug", () => {
   it("retries a cold-start 5xx and succeeds on a later attempt", async () => {
     fetchMock
       .mockResolvedValueOnce(json({}, 503))
-      .mockResolvedValueOnce(json([wpPost()]));
-    const post = await getPostBySlug("retensi-pelanggan", "id");
-    expect(post?.slug).toBe("retensi-pelanggan");
+      .mockResolvedValueOnce(json([wpPost({ slug: "cold-start-post" })]));
+    const post = await getPostBySlug("cold-start-post", "id");
+    expect(post?.slug).toBe("cold-start-post");
     expect(fetchMock).toHaveBeenCalledTimes(2);
   });
 
