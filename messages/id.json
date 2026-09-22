@@ -62,8 +62,8 @@
     "hero": {
       "title": "AI Agent & Omnichannel CRM: Dari Chat Pertama Jadi Pelanggan Seumur Hidup",
       "subtitle": "Pakai AI agent, CRM Omnichannel, dan follow-up otomatis untuk mengubah lebih banyak percakapan jadi penjualan, sekaligus tahu persis iklan mana yang berujung closing, dan bikin customer balik lagi.",
-      "ctaPrimary": "WhatsApp Kami",
-      "ctaSecondary": "Mulai Coba Gratis",
+      "ctaPrimary": "Ngobrol via WhatsApp",
+      "ctaSecondary": "Coba Gratis 14 Hari",
       "eyebrow": "#1 AI Agent Customer Service"
     },
     "trustedBy": {
@@ -278,7 +278,7 @@
     "customPrice": "Custom",
     "customPriceNote": "Disesuaikan dengan kebutuhan Anda",
     "ctaPrimary": "Konsultasi Gratis",
-    "ctaSecondary": "Coba Gratis",
+    "ctaSecondary": "Coba Gratis 14 Hari",
     "ctaCustom": "Hubungi Sales",
     "ctaWhatsApp": "Chat via WhatsApp",
     "compareHeading": "Bandingkan Semua Fitur",
@@ -967,148 +967,148 @@
       "eyebrow": "Cekat AI",
       "titleLead": "Ekosistem",
       "titleAccent": "Agentic AI",
-      "subtitle": "Multi agen spesialis. Satu platform terbuka. Independent di mana perlu, integrated di mana penting, dan open by design — supaya setiap percakapan jadi revenue.",
-      "hubLabel": "Peta ekosistem"
+      "subtitle": "Enam fitur yang bantu tim Anda balas lebih cepat, follow-up lebih rapi, dan close lebih banyak — dari chat pertama sampai order beres. Semuanya dalam satu tempat, tanpa ribet ganti sistem.",
+      "hubLabel": "Full Ekosistem"
     },
     "pillars": {
-      "eyebrow": "Our Value",
-      "headingLead": "Independent. Integrated.",
-      "headingAccent": "Open API.",
-      "body": "Tiga prinsip dari keynote yang membentuk cara setiap agen di ekosistem Cekat dibangun, dihubungkan, dan diperluas.",
+      "eyebrow": "Kenapa Cekat",
+      "headingLead": "Mandiri. Terhubung.",
+      "headingAccent": "Terbuka.",
+      "body": "Tiga hal sederhana yang bikin Cekat enak dipakai sehari-hari — mulai pelan-pelan, tetap nyambung, dan tetap fleksibel.",
       "independent": {
-        "title": "Independent",
-        "lead": "Setiap agen punya tugasnya",
-        "body": "Frontline, Mini, OMS, CRM, Marketing, dan Consulting berjalan sebagai unit fokus — deploy satu, scale keenamnya, tanpa menunggu monolit.",
-        "tag1": "Deploy modular",
-        "tag2": "Tools & memory sendiri",
-        "tag3": "Scale satu per satu"
+        "title": "Mandiri",
+        "lead": "Mulai dari yang paling Anda butuh",
+        "body": "Pakai satu agent dulu kalau memang itu yang paling mendesak. Nanti tambah yang lain kalau tim sudah siap — tanpa harus rombak semuanya sekaligus.",
+        "tag1": "Mulai kecil dulu",
+        "tag2": "Tumbuh pelan-pelan",
+        "tag3": "Tanpa proyek raksasa"
       },
       "integrated": {
-        "title": "Integrated",
-        "lead": "Konteks pelanggan bersama",
-        "body": "Order, chat, campaign, dan record CRM mengalir lewat satu core — agen tidak pernah menjawab dari halaman kosong.",
-        "tag1": "Satu customer graph",
-        "tag2": "Handoff antar agen",
-        "tag3": "Pipeline real-time"
+        "title": "Terhubung",
+        "lead": "Semua agent paham konteks yang sama",
+        "body": "Chat, order, campaign, dan data pelanggan berjalan di satu tempat. Jadi jawaban selalu nyambung, dan kalau perlu serah ke tim manusia — mulus.",
+        "tag1": "Satu data pelanggan",
+        "tag2": "Serah-terima mulus",
+        "tag3": "Selalu up to date"
       },
       "openApi": {
-        "title": "Open API",
-        "lead": "Hubungkan stack yang sudah jalan",
-        "body": "REST, webhook, dan OAuth menghubungkan Cekat ke sistem Anda — ERP, sosial media, ads, dan tool internal tanpa ribet.",
-        "tag1": "REST & webhook",
-        "tag2": "OAuth apps",
-        "tag3": "Tanpa lock-in"
+        "title": "Terbuka",
+        "lead": "Tetap pakai tools favorit Anda",
+        "body": "Sambungkan Cekat ke aplikasi yang sudah tim Anda pakai sehari-hari. Data tetap di tangan Anda, dan tidak ada kunci yang bikin susah pindah.",
+        "tag1": "Mudah disambungkan",
+        "tag2": "Integrasi populer",
+        "tag3": "Tanpa terkunci"
       }
     },
     "proof": {
-      "heading": "Dipercaya di Asia",
+      "heading": "Dipercaya bisnis di Asia",
       "stat1Value": "3.000+",
-      "stat1Label": "bisnis di Cekat",
+      "stat1Label": "bisnis memakai Cekat",
       "stat2Value": "10M+",
-      "stat2Label": "token diproses harian",
+      "stat2Label": "percakapan diproses tiap hari",
       "stat3Value": "2Jt+",
-      "stat3Label": "chat bubble harian"
+      "stat3Label": "chat ditangani tiap hari"
     },
     "products": {
-      "eyebrow": "Ekosistemnya",
-      "headingLead": "Enam agen.",
-      "headingAccent": "Satu sistem revenue.",
-      "body": "Dari balasan pertama sampai order terpenuhi — setiap produk di stack agentic dibuat khusus dan menempel ke core yang sama.",
+      "eyebrow": "Apa saja yang bisa dijalankan",
+      "headingLead": "Enam cara",
+      "headingAccent": "bantu bisnis Anda jalan.",
+      "body": "Dari balas chat sampai order beres — tiap agent punya peran jelas, dan semuanya saling kenal dengan pelanggan yang sama.",
       "frontline": {
         "title": "Frontline Chat Agent",
-        "lead": "Menjawab, qualify, dan close 24/7",
-        "body": "AI omnichannel di WhatsApp, IG, web, dan lainnya — serahkan lead panas ke tim begitu siap ditindak.",
+        "lead": "Balas dan bantu pelanggan 24/7",
+        "body": "AI yang stand by di WhatsApp, IG, web, dan kanal lain. Pelanggan dapat jawaban cepat; tim Anda dapat lead yang memang siap diajak ngobrol.",
         "pill1": "Semua kanal, satu inbox",
-        "pill2": "Auto-handoff ke manusia",
-        "pill3": "Balasan always-on"
+        "pill2": "Serah ke tim saat perlu",
+        "pill3": "Siap kapan pun"
       },
       "mini": {
         "title": "Mini Agent",
-        "lead": "Spesialis ringan sesuai kebutuhan",
-        "body": "Spin micro-agent untuk FAQ, lead scoring, atau tugas internal — tanpa bangun ulang seluruh stack.",
-        "pill1": "Cepat di-deploy",
-        "pill2": "Skill terbatas tugas",
-        "pill3": "Komposibel dengan core"
+        "lead": "Bantuan kecil, hasil cepat",
+        "body": "Butuh agent khusus untuk tanya-jawab umum atau rapikan lead? Pasang yang ringan dulu — praktis, tanpa proyek panjang.",
+        "pill1": "Cepat dipasang",
+        "pill2": "Fokus satu tugas",
+        "pill3": "Mudah digabung"
       },
       "oms": {
         "title": "OMS",
-        "lead": "Order langsung dari chat",
-        "body": "Order Management yang hitung ongkir, kirim link bayar, dan track fulfillment tanpa tinggalkan percakapan.",
-        "pill1": "Alur chat-to-order",
-        "pill2": "Ongkir & QR pay",
-        "pill3": "Otomasi no-code"
+        "lead": "Order selesai di dalam chat",
+        "body": "Hitung ongkir, kirim link bayar, dan pantau pengiriman tanpa pindah aplikasi atau catat order manual.",
+        "pill1": "Chat langsung jadi order",
+        "pill2": "Ongkir & pembayaran",
+        "pill3": "Proses lebih ringan"
       },
       "crm": {
         "title": "Cekat CRM",
-        "lead": "Pipeline yang mengisi sendiri",
-        "body": "Setiap pesan, perubahan stage, dan pembelian tertulis sendiri ke record — tanpa input manual sore hari.",
-        "pill1": "Aktivitas auto-log",
-        "pill2": "Pipeline real-time",
-        "pill3": "Riwayat pelanggan penuh"
+        "lead": "Catatan pelanggan terisi sendiri",
+        "body": "Setiap chat, perubahan tahap, dan pembelian otomatis tersimpan. Tim fokus jualan — bukan input data tiap sore.",
+        "pill1": "Aktivitas tercatat otomatis",
+        "pill2": "Pipeline selalu update",
+        "pill3": "Riwayat pelanggan lengkap"
       },
       "marketing": {
         "title": "Cekat Marketing",
-        "lead": "Tahu iklan mana yang close",
-        "body": "Broadcast ter-segmentasi, follow-up terjadwal, dan atribusi yang kaitkan belanja iklan ke revenue nyata.",
+        "lead": "Tahu iklan mana yang menghasilkan",
+        "body": "Broadcast yang tepat sasaran, follow-up terjadwal, dan gambaran jelas iklan mana yang benar-benar menghasilkan penjualan.",
         "pill1": "Broadcast tersegmen",
-        "pill2": "Atribusi ROAS",
-        "pill3": "Siap CAPI"
+        "pill2": "Lihat yang untung",
+        "pill3": "Siap untuk iklan"
       },
       "consulting": {
         "title": "Consulting Agent",
-        "lead": "Strategi berbasis data Anda",
-        "body": "Agen advisory yang baca sinyal ekosistem Anda dan sarankan langkah berikutnya — bukan tips generik.",
-        "pill1": "Saran berbasis data",
-        "pill2": "Playbook prompt",
-        "pill3": "Human-in-the-loop"
+        "lead": "Saran yang nyambung dengan bisnis Anda",
+        "body": "Agent yang bantu baca pola dari data Anda sendiri dan usulkan langkah berikutnya — bukan tips umum dari internet.",
+        "pill1": "Saran dari data Anda",
+        "pill2": "Langkah yang jelas",
+        "pill3": "Tetap diawasi tim"
       }
     },
     "pricing": {
-      "eyebrow": "Harga",
-      "headingLead": "Harga yang menyesuaikan",
-      "headingAccent": "kebutuhan Anda",
-      "body": "Paket Chat di bawah ini yang paling sering dipilih. CRM, Marketing, dan Cekat 360 punya paketnya sendiri, dan semuanya bisa digabung dalam satu kontrak.",
-      "cta": "Lihat detail harga"
+      "eyebrow": "Harga masuk akal",
+      "headingLead": "Start Sharp.",
+      "headingAccent": "Grow Steady.",
+      "body": "Kebanyakan bisnis mulai dari paket Chat di bawah ini. CRM atau Marketing bisa menyusul kalau memang dibutuhkan — semuanya masih bisa digabung di satu tempat.",
+      "cta": "Lihat semua paket"
     },
     "results": {
-      "eyebrow": "Bukti pelanggan",
-      "headingLead": "Bukti Nyata dari Bisnis",
-      "headingAccent": "yang Menggunakan Cekat.AI",
-      "body": "Cekat.AI hadir untuk UMKM yang butuh AI customer service terjangkau hingga brand berkembang yang butuh omnichannel CRM lengkap, semua dalam satu platform untuk bisnis Indonesia.",
+      "eyebrow": "Cerita pelanggan",
+      "headingLead": "Dipakai bisnis",
+      "headingAccent": "yang serupa dengan Anda.",
+      "body": "Dari usaha kecil yang butuh bantuan customer service, sampai brand yang butuh CRM lengkap — semuanya jalan di satu platform yang memang dibuat untuk bisnis Indonesia.",
       "brandTitle": "Dipercaya oleh"
     },
     "openApi": {
-      "eyebrow": "Open by design",
-      "headingLead": "Open API.",
-      "headingAccent": "Stack Anda, tetap milik Anda.",
-      "body": "Ekosistem ini platform, bukan taman berpagar. Sambungkan Cekat ke tools yang sudah dipercaya tim Anda.",
-      "constellationLabel": "Permukaan integrasi",
-      "cta": "Jelajahi integrasi",
+      "eyebrow": "Tetap milik Anda",
+      "headingLead": "Terbuka.",
+      "headingAccent": "Data dan tools tetap di tangan Anda.",
+      "body": "Cekat dirancang supaya mudah disambungkan ke aplikasi yang sudah Anda pakai — dari iklan sampai sistem internal. Tidak ada yang dikunci rapat.",
+      "constellationLabel": "Bisa terhubung ke",
+      "cta": "Lihat integrasi",
       "cap1": {
-        "title": "Endpoint REST",
-        "body": "Baca-tulis pelanggan, chat, order, dan campaign."
+        "title": "Mudah Tersambung",
+        "body": "Akses data pelanggan, chat, order, dan campaign."
       },
       "cap2": {
-        "title": "Webhook",
-        "body": "Dorong event ke Slack, ERP, atau worker sendiri real-time."
+        "title": "Notifikasi real-time",
+        "body": "Kirim update ke Slack, spreadsheet, atau tools tim Anda."
       },
       "cap3": {
-        "title": "OAuth apps",
-        "body": "Instal pihak ketiga aman dengan token ber-scope."
+        "title": "Aman & terkendali",
+        "body": "Izin terbatas untuk aplikasi pihak ketiga."
       },
       "cap4": {
-        "title": "Tanpa lock-in",
-        "body": "Ekspor data Anda dan pertahankan integrasi jika keluar."
+        "title": "Bisa dibawa keluar",
+        "body": "Ekspor data kapan saja — tidak ada yang mengunci Anda di tempat."
       }
     },
     "finalCta": {
-      "eyebrow": "Mulai gratis",
-      "headingLead": "Aktifkan",
-      "headingAccent": "ekosistemnya",
-      "body": "Luncurkan Frontline hari ini, tambah OMS dan CRM saat siap, dan perluas sisanya lewat Open API — Independent, Integrated, Open.",
-      "item1": "Free trial, tanpa kartu",
-      "item2": "Live dalam hitungan menit",
-      "item3": "Scale sampai enam agen"
+      "eyebrow": "Coba dulu, tanpa ribet",
+      "headingLead": "Mulai dari",
+      "headingAccent": "satu agent.",
+      "body": "Lihat dulu rasanya pakai Frontline hari ini. Kalau sudah cocok, tambah order dan CRM kapan pun tim siap. Tidak ada yang harus dipasang sekaligus.",
+      "item1": "Gratis 14 hari, tanpa kartu",
+      "item2": "Siap dipakai dalam hitungan menit",
+      "item3": "Bisa mulai dari satu agent"
     }
   },
   "wireframe": {

@@ -62,9 +62,9 @@
     "hero": {
       "title": "From First Chat to Lifetime Customer.",
       "subtitle": "Use AI agents, CRM, and automated follow-ups to turn more conversations into sales, know exactly which ads end in a closed deal, and keep customers coming back.",
-      "ctaPrimary": "WhatsApp Us",
-      "ctaSecondary": "Start Free Trial",
-      "eyebrow": "#1 AI for Customer Service & Sales"
+      "ctaPrimary": "Let's Chat on WhatsApp",
+      "ctaSecondary": "Try Free for 14 Days",
+      "eyebrow": "#1 AI Agent Customer Service"
     },
     "trustedBy": {
       "heading": "Trusted by 3,000+ businesses across Asia.",
@@ -277,10 +277,10 @@
     "minBilling": "Min. contract {amount}",
     "customPrice": "Custom",
     "customPriceNote": "Built around your requirements",
-    "ctaPrimary": "Talk to Sales",
-    "ctaSecondary": "Start Free",
+    "ctaPrimary": "Free Consultation",
+    "ctaSecondary": "Try Free for 14 Days",
     "ctaCustom": "Contact Sales",
-    "ctaWhatsApp": "Chat on WhatsApp",
+    "ctaWhatsApp": "Chat via WhatsApp",
     "compareHeading": "Compare Every Feature",
     "compareIntro": "The full detail for each plan. Scroll sideways to see every column.",
     "featureColumn": "Feature",
@@ -967,148 +967,148 @@
       "eyebrow": "Cekat AI",
       "titleLead": "The Agentic AI",
       "titleAccent": "Ecosystem",
-      "subtitle": "Six specialized agents. One open platform. Independent where it matters, integrated where it counts, and open by design — so every conversation can become revenue.",
-      "hubLabel": "Ecosystem map"
+      "subtitle": "Six features that help your team reply faster, follow up cleanly, and close more — from first chat to fulfilled order. All in one place, without ripping out what already works.",
+      "hubLabel": "Full Ecosystem"
     },
     "pillars": {
-      "eyebrow": "Our Value",
-      "headingLead": "Independent. Integrated.",
-      "headingAccent": "Open API.",
-      "body": "Three principles from the keynote that shape how every agent in the Cekat ecosystem is built, connected, and extended.",
+      "eyebrow": "Why Cekat",
+      "headingLead": "Independent. Connected.",
+      "headingAccent": "Open.",
+      "body": "Three simple things that make Cekat easy to use every day — start gradually, stay linked, stay flexible.",
       "independent": {
         "title": "Independent",
-        "lead": "Each agent owns its job",
-        "body": "Frontline, Mini, OMS, CRM, Marketing, and Consulting run as focused units — deploy one, scale all six, never wait on a monolith.",
-        "tag1": "Modular deploy",
-        "tag2": "Own tools & memory",
-        "tag3": "Scale one by one"
+        "lead": "Start with what you need most",
+        "body": "Use one agent first if that is what hurts today. Add the others when your team is ready — no need to rebuild everything at once.",
+        "tag1": "Start small first",
+        "tag2": "Grow gradually",
+        "tag3": "No giant project"
       },
       "integrated": {
-        "title": "Integrated",
-        "lead": "Shared customer context",
-        "body": "Orders, chats, campaigns, and CRM records flow through one core — so an agent never answers from a blank page.",
-        "tag1": "One customer graph",
-        "tag2": "Cross-agent handoff",
-        "tag3": "Live pipeline"
+        "title": "Connected",
+        "lead": "Every agent shares the same context",
+        "body": "Chats, orders, campaigns, and customer data live in one place. Answers stay consistent, and handoffs to your team feel smooth.",
+        "tag1": "One customer record",
+        "tag2": "Smooth handoffs",
+        "tag3": "Always up to date"
       },
       "openApi": {
-        "title": "Open API",
-        "lead": "Connect anything you already run",
-        "body": "REST, webhooks, and OAuth plug Cekat into your stack — ERPs, stores, ads, and internal tools without lock-in.",
-        "tag1": "REST & webhooks",
-        "tag2": "OAuth apps",
-        "tag3": "No lock-in"
+        "title": "Open",
+        "lead": "Keep using your favorite tools",
+        "body": "Connect Cekat to the apps your team already uses every day. Your data stays with you, and nothing gets in the way of switching.",
+        "tag1": "Easy to connect",
+        "tag2": "Popular integrations",
+        "tag3": "Not locked in"
       }
     },
     "proof": {
-      "heading": "Trusted across Asia",
+      "heading": "Trusted by businesses across Asia",
       "stat1Value": "3,000+",
-      "stat1Label": "businesses on Cekat",
+      "stat1Label": "businesses using Cekat",
       "stat2Value": "10B+",
-      "stat2Label": "tokens processed daily",
+      "stat2Label": "conversations processed daily",
       "stat3Value": "2M+",
-      "stat3Label": "chat bubbles daily"
+      "stat3Label": "chats handled daily"
     },
     "products": {
-      "eyebrow": "The ecosystem",
-      "headingLead": "Six agents.",
-      "headingAccent": "One revenue system.",
-      "body": "From first reply to fulfilled order — every product in the agentic stack is purpose-built and plugs into the same core.",
+      "eyebrow": "What you can put to work",
+      "headingLead": "Six ways",
+      "headingAccent": "to keep business moving.",
+      "body": "From first reply to fulfilled order — each agent has a clear role, and they all know the same customer.",
       "frontline": {
         "title": "Frontline Chat Agent",
-        "lead": "Answers, qualifies, and closes 24/7",
-        "body": "Omnichannel AI on WhatsApp, IG, web, and more — hands hot leads to your team the moment they are ready.",
+        "lead": "Reply and help customers 24/7",
+        "body": "AI on WhatsApp, IG, web, and other channels. Customers get a fast answer; your team gets leads when they are ready to talk.",
         "pill1": "Every channel, one inbox",
-        "pill2": "Auto-handoff to humans",
-        "pill3": "Always-on replies"
+        "pill2": "Hand off to the team when needed",
+        "pill3": "Ready anytime"
       },
       "mini": {
         "title": "Mini Agent",
-        "lead": "Lightweight specialists on demand",
-        "body": "Spin up focused micro-agents for FAQ, lead scoring, or internal tasks — without rebuilding the whole stack.",
-        "pill1": "Quick to deploy",
-        "pill2": "Task-scoped skills",
-        "pill3": "Composable with core"
+        "lead": "Small helper, quick results",
+        "body": "Need a specialist for FAQs or tidying up leads? Start light — practical, no long project.",
+        "pill1": "Quick to set up",
+        "pill2": "One clear job",
+        "pill3": "Easy to combine"
       },
       "oms": {
         "title": "OMS",
-        "lead": "Orders fulfilled straight from chat",
-        "body": "Order Management that computes shipping, sends payment links, and tracks fulfillment without leaving the conversation.",
-        "pill1": "Chat-to-order flow",
-        "pill2": "Shipping & QR pay",
-        "pill3": "No-code automation"
+        "lead": "Orders closed inside the chat",
+        "body": "Shipping, payment links, and delivery tracking without switching apps or logging orders by hand.",
+        "pill1": "Chat becomes an order",
+        "pill2": "Shipping & payments",
+        "pill3": "Lighter process"
       },
       "crm": {
         "title": "Cekat CRM",
-        "lead": "Pipeline that fills itself",
-        "body": "Every message, stage change, and purchase writes itself into the record — no end-of-day data entry.",
-        "pill1": "Auto-logged activity",
-        "pill2": "Real-time pipeline",
+        "lead": "Customer notes fill themselves in",
+        "body": "Every chat, stage change, and purchase is saved automatically. Your team sells — nobody spends evenings on data entry.",
+        "pill1": "Activity logged for you",
+        "pill2": "Pipeline stays current",
         "pill3": "Full customer history"
       },
       "marketing": {
         "title": "Cekat Marketing",
-        "lead": "Know which ads close deals",
-        "body": "Segmented broadcasts, timed follow-ups, and attribution that ties ad spend to actual revenue.",
-        "pill1": "Segmented broadcast",
-        "pill2": "ROAS attribution",
-        "pill3": "CAPI-ready"
+        "lead": "See which ads actually pay off",
+        "body": "Well-targeted broadcasts, well-timed follow-ups, and a clear picture of which ads bring real sales.",
+        "pill1": "Targeted broadcasts",
+        "pill2": "See what profits",
+        "pill3": "Ready for ads"
       },
       "consulting": {
         "title": "Consulting Agent",
-        "lead": "Strategy grounded in your data",
-        "body": "An advisory agent that reads your ecosystem signals and recommends the next move — not generic tips.",
-        "pill1": "Data-aware advice",
-        "pill2": "Playbook prompts",
-        "pill3": "Human-in-the-loop"
+        "lead": "Advice that fits your business",
+        "body": "An agent that reads patterns in your own data and suggests the next step — not generic tips from the internet.",
+        "pill1": "Advice from your data",
+        "pill2": "Clear next steps",
+        "pill3": "Team stays in control"
       }
     },
     "pricing": {
-      "eyebrow": "Pricing",
-      "headingLead": "Pricing that follows",
-      "headingAccent": "what you need",
-      "body": "The Chat plans below are the ones most businesses start with. CRM, Marketing and Cekat 360 have their own plans, and everything can be combined on a single contract.",
-      "cta": "See pricing details"
+      "eyebrow": "Fair, clear pricing",
+      "headingLead": "Start Sharp.",
+      "headingAccent": "Grow Steady.",
+      "body": "Most businesses start with the Chat plans below. CRM or Marketing can come later if you need them — everything can still live in one place.",
+      "cta": "See all plans"
     },
     "results": {
-      "eyebrow": "Customer proof",
-      "headingLead": "Real Proof From Businesses",
-      "headingAccent": "Using Cekat.AI",
-      "body": "Cekat.AI serves everyone from small businesses that need affordable AI customer service to growing brands that need a full omnichannel CRM, all in one platform built for Indonesian businesses.",
-      "brandTitle": "Covered By"
+      "eyebrow": "Customer stories",
+      "headingLead": "Used by businesses",
+      "headingAccent": "like yours.",
+      "body": "From small teams that need customer service help to brands that need a full CRM — all on one platform built for Indonesian businesses.",
+      "brandTitle": "Trusted by"
     },
     "openApi": {
-      "eyebrow": "Open by design",
-      "headingLead": "Open API.",
-      "headingAccent": "Your stack, still yours.",
-      "body": "The ecosystem is a platform, not a walled garden. Wire Cekat into the tools your team already trusts.",
-      "constellationLabel": "Integration surface",
-      "cta": "Explore integrations",
+      "eyebrow": "Yours to keep",
+      "headingLead": "Open.",
+      "headingAccent": "Your data and tools stay in your hands.",
+      "body": "Cekat is designed to plug easily into the apps you already use — from ads to internal systems. Nothing is locked shut.",
+      "constellationLabel": "Connects to",
+      "cta": "See integrations",
       "cap1": {
-        "title": "REST endpoints",
-        "body": "Read and write customers, chats, orders, and campaigns."
+        "title": "Easy to Connect",
+        "body": "Access customer data, chats, orders, and campaigns."
       },
       "cap2": {
-        "title": "Webhooks",
-        "body": "Push events into Slack, ERP, or your own workers in real time."
+        "title": "Real-time notifications",
+        "body": "Send updates to Slack, spreadsheets, or your team tools."
       },
       "cap3": {
-        "title": "OAuth apps",
-        "body": "Secure third-party installs with scoped tokens."
+        "title": "Safe & controlled",
+        "body": "Limited permissions for third-party apps."
       },
       "cap4": {
-        "title": "No lock-in",
-        "body": "Export your data and keep integrations if you leave."
+        "title": "Take it with you",
+        "body": "Export your data anytime — nothing keeps you stuck here."
       }
     },
     "finalCta": {
-      "eyebrow": "Start free",
-      "headingLead": "Put the ecosystem",
-      "headingAccent": "to work",
-      "body": "Launch Frontline today, add OMS and CRM when you are ready, and extend the rest over Open API — Independent, Integrated, Open.",
-      "item1": "Free trial, no card",
-      "item2": "Live in minutes",
-      "item3": "Scale to six agents"
+      "eyebrow": "Try it first, no hassle",
+      "headingLead": "Start with",
+      "headingAccent": "one agent.",
+      "body": "See how Frontline feels today. When it fits, add orders and CRM whenever your team is ready. You do not have to turn everything on at once.",
+      "item1": "Free 14 days, no card",
+      "item2": "Ready in minutes",
+      "item3": "Can start with a single agent"
     }
   },
   "wireframe": {
