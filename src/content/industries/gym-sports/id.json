@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Sistem Booking Gym & Lapangan Padel via Chat | CekatAI",
+    "description": "Gym, lapangan padel, dan studio pakai Cekat.AI buat booking court dan kelas 24/7, ingetin member sebelum sesi, dan kejar renewal otomatis."
+  },
+  "hero": {
+    "badge": "Gym & Padel",
+    "title": "Jawab Setiap Booking Court dan Kelas, Bahkan Tengah Malam",
+    "subtitle": "Dari booking lapangan, jadwal kelas, sampai perpanjangan membership, Cekat.AI membalas instan di WhatsApp dan Instagram, 24/7, dengan bahasa natural, tanpa admin yang bales satu-satu",
+    "useCases": [
+      "Booking court & kelas",
+      "Jadwal & ketersediaan",
+      "Reminder sesi",
+      "Renewal membership"
+    ]
+  },
+  "definition": "Cekat.AI untuk gym dan olahraga adalah platform AI customer service untuk gym, lapangan padel, futsal, studio, dan klub olahraga di Indonesia, berfungsi sebagai sistem booking gym dan lapangan padel lewat chat 24/7, menjawab jadwal dan harga instan, mengingatkan member sebelum sesi, dan mengejar renewal membership otomatis.",
+  "stats": [
+    {
+      "value": "2×",
+      "label": "peningkatan kunjungan klien terjadwal per bulan di Graha Pesona Cikeas"
+    },
+    {
+      "value": "+10%",
+      "label": "kenaikan omzet membership di Midas Cuan"
+    },
+    {
+      "value": "24/7",
+      "label": "booking court, kelas, dan membership terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Court dan Kelas Ke-Book Sendiri, 24/7",
+      "body": "Orang nyari jadwal main justru malam hari, pas admin udah pulang. Cekat.AI menjawab ketersediaan slot dan mencatat booking court atau kelas langsung dari percakapan, dan lewat integrasi API bisa terhubung ke sistem booking yang sudah kamu pakai, jadi slot kosong keisi tanpa ada chat yang nunggu dibales besok pagi.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI meng-cover booking court dan kelas di luar jam kerja admin di Cekat.AI"
+    },
+    {
+      "title": "Jadwal, Harga, dan Ketersediaan Dijawab Instan",
+      "body": "\"Sabtu jam 7 malam court masih ada?\" \"Kelas pagi apa aja?\" \"Sewa raket bisa?\" Cekat.AI menjawab dari knowledge base berisi jadwal, harga, dan aturan venue-mu, dengan bahasa natural yang paham maksud member, jadi yang nanya dapat kepastian detik itu juga dan langsung ambil slot, bukan pindah ke lapangan sebelah.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab pertanyaan jadwal dan harga di inbox Cekat.AI"
+    },
+    {
+      "title": "Ingetin Member Sebelum Sesi, No-Show Turun",
+      "body": "Slot yang di-book tapi nggak didatangi itu revenue yang hangus, court-nya nggak bisa dijual dua kali. Cekat.AI mengirim reminder otomatis sebelum jadwal main atau kelas dimulai, lengkap dengan opsi konfirmasi atau reschedule di chat yang sama, jadi member yang batal ketahuan lebih awal dan slotnya masih sempat ditawarkan ke member lain.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Reminder otomatis terkirim sebelum jadwal sesi di Cekat.AI"
+    },
+    {
+      "title": "Renewal Membership Dikejar Otomatis, Bukan Pas Udah Telat",
+      "body": "Membership yang habis diam-diam adalah member yang hilang diam-diam. Cekat.AI melacak siklus tiap member di CRM dan mengirim follow-up perpanjangan sebelum masa aktif habis, plus sapaan yang relevan buat yang udah lama nggak datang, jadi renewal terjadi karena diingatkan tepat waktu, bukan keburu pindah gym.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Perjalanan member dari aktif sampai renewal terlacak di CRM Cekat.AI"
+    },
+    {
+      "title": "Promo Nyampe ke Segmen Member yang Tepat",
+      "body": "Blast promo yang sama ke semua kontak itu cara tercepat bikin chat kamu di-mute. Cekat.AI mengelompokkan member dari aktivitasnya, member kelas pagi, pemain padel weekend, yang membership-nya mau habis, lalu mengirim broadcast lewat WhatsApp Business API resmi ke segmen yang relevan, jadi promo open court atau kelas baru dibaca, bukan diabaikan.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi member berdasarkan perilaku untuk broadcast promo di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chat, reminder, dan broadcast berjalan di WhatsApp Business API resmi, bareng Instagram DM dan Facebook Messenger, satu inbox untuk semua cabang dan lapangan, compliant dan andal."
+    },
+    {
+      "title": "AI yang Booking dan Ngingetin",
+      "body": "AI menjawab jadwal dan harga, mencatat booking court dan kelas, mengirim reminder sebelum sesi, dan mengejar renewal, lalu mengoper kasus khusus ke timmu lengkap dengan konteks."
+    },
+    {
+      "title": "Terbukti di 3.000+ Bisnis",
+      "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan CS dan booking di Cekat.AI, dari chat pertama sampai member yang balik lagi minggu depannya."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu gym dan bisnis olahraga?",
+      "a": "Cekat.AI menjawab chat member secara instan 24/7 di WhatsApp, Instagram, dan web chat, dari ketersediaan court, jadwal kelas, harga, sampai status membership, sambil mencatat tiap booking rapi di satu platform. Adminmu fokus ke operasional venue, bukan bales chat yang sama seharian."
+    },
+    {
+      "q": "Member bisa booking court atau kelas langsung lewat chat?",
+      "a": "Bisa. AI menjawab slot yang tersedia dan mencatat booking langsung dari percakapan, lengkap dengan data member dan jadwalnya. Konfirmasi terkirim di chat yang sama, dan reminder menyusul otomatis sebelum sesinya mulai."
+    },
+    {
+      "q": "Bisa kirim reminder sebelum jadwal main atau kelas?",
+      "a": "Bisa. Reminder otomatis terkirim sebelum sesi lewat WhatsApp, lengkap dengan opsi konfirmasi atau reschedule. Member yang batal ketahuan lebih awal, jadi slotnya masih bisa ditawarkan ke member lain dan nggak hangus jadi no-show."
+    },
+    {
+      "q": "Gimana cara Cekat.AI mengejar perpanjangan membership?",
+      "a": "Tiap member terlacak di CRM lengkap dengan status dan riwayatnya, dan follow-up perpanjangan terkirim otomatis sebelum masa aktif habis. Yang belum merespons bisa di-follow-up ulang otomatis, jadi renewal nggak bergantung pada ingatan admin."
+    },
+    {
+      "q": "Bisa integrasi dengan sistem booking yang sudah kami pakai?",
+      "a": "Bisa. Lewat integrasi API, Cekat.AI terhubung ke sistem booking atau membership yang sudah jalan, jadi AI menjawab dari data yang sama dengan sistemmu. Kalau belum pakai sistem apa pun, booking bisa dicatat dan dikelola langsung di Cekat.AI."
+    },
+    {
+      "q": "Apakah pakai WhatsApp Business API resmi?",
+      "a": "Iya. Cekat.AI adalah Official Meta Business Partner, jadi chat, reminder, dan broadcast berjalan di WhatsApp Business API resmi, bukan aplikasi modifikasi yang berisiko bikin nomormu diblokir. Instagram DM, Facebook Messenger, dan live chat website ikut masuk ke inbox yang sama."
+    },
+    {
+      "q": "Berapa lama setup untuk gym atau lapangan?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin jadwal, harga sewa court, paket membership, dan aturan venue ke knowledge base, dan AI langsung menjawab akurat. Tanpa coding sama sekali; semudah briefing admin baru."
+    },
+    {
+      "q": "Kapan chat dialihkan ke staf?",
+      "a": "Sesuai aturan yang kamu set, misalnya komplain, pertanyaan soal cedera, atau member yang minta bicara dengan orang. Percakapan pindah ke staf lengkap dengan riwayat chat-nya, jadi member nggak perlu mengulang cerita dari awal."
+    },
+    {
+      "q": "Apakah data member aman?",
+      "a": "Cekat.AI patuh pada UU PDP, undang-undang pelindungan data pribadi Indonesia, dan sertifikasi ISO 27001 sedang berjalan. Akses tim diatur berbasis role, jadi data member hanya terlihat oleh staf yang memang berwenang."
+    }
+  ],
+  "cta": {
+    "heading": "Bikin Jadwal Court dan Kelasmu Penuh",
+    "body": "Lihat bagaimana gym dan lapangan menjalankan booking, reminder, dan promo 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

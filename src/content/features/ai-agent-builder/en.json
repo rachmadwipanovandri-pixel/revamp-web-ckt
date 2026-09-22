@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "No-Code AI Agent Builder, Launch an Agent in 5 Minutes | CekatAI",
+    "description": "Build a working AI agent in about 5 minutes with no code, paste your SOPs, connect your APIs, and go live. As easy as briefing a CS admin. 3,000+ businesses trust it."
+  },
+  "hero": {
+    "badge": "No-Code AI Agent Builder",
+    "title": "Build a Working AI Agent in About 5 Minutes, No Code",
+    "subtitle": "Cekat.AI's no-code builder is as easy as briefing a new CS admin. Paste your SOPs, connect your APIs, and launch an AI agent that answers customers and closes sales, without writing a single line of code"
+  },
+  "definition": "The AI Agent Builder is a no-code tool on Cekat.AI for creating a working customer-service AI agent in about five minutes, as easy as briefing a CS admin. You paste your SOPs and business info, connect the APIs you use, and the agent starts handling real conversations across WhatsApp, Instagram, Messenger, and website chat, with no coding required.",
+  "stats": [
+    { "value": "5 min", "label": "to build a working agent" },
+    { "value": "0", "label": "lines of code needed" },
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Launch Your First AI Agent the Same Afternoon",
+      "body": "You don't need a developer or a six-week project. The builder walks you through setup in about five minutes, as easy as briefing a CS admin on their first day. Describe what your business does, what the agent should handle, and it's ready to answer real customers today, not next quarter.",
+      "image": "/images/home/simpler-ai-builder.png",
+      "imageAlt": "No-code AI agent builder setup screen in Cekat.AI"
+    },
+    {
+      "title": "Train It the Way You'd Brief a New Hire",
+      "body": "Paste your SOPs, price lists, FAQs, and business info into the knowledge base, and the agent answers from them straight away, accurately and consistently. No prompt engineering, no training datasets. If your team already knows the answer, you can hand that same knowledge to the AI in minutes.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Pasting SOPs into the Cekat.AI knowledge base"
+    },
+    {
+      "title": "Connect the APIs Your Business Already Runs On",
+      "body": "Give your agent the ability to act, not just talk. Connect APIs for checking ongkir, booking appointments, or any other business need, and the agent handles those tasks live inside the chat. It's the difference between a bot that says \"let me check\" and one that actually checks.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Connecting business APIs to an AI agent in Cekat.AI"
+    },
+    {
+      "title": "Spin Up Specialized Agents for Sales, Support, and Billing",
+      "body": "One generic bot can't be great at everything. Build separate agents for sales, support, or billing, each briefed on its own SOPs and tools, so every customer talks to an agent that actually knows that job. Adding another agent takes minutes, not another integration project.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Multiple specialized AI agents configured in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "No Coding",
+      "title": "If You Can Brief a Person, You Can Build This",
+      "body": "The whole builder is point-and-click. You describe the role, paste the knowledge, and switch it on, no code, no technical setup, no waiting on a dev team. Most owners have a working agent running the same day they sign up."
+    },
+    {
+      "label": "Paste SOPs",
+      "title": "Your Knowledge Becomes Its Knowledge",
+      "body": "Drop your SOPs, product info, and FAQs into the knowledge base and the agent answers from them immediately. Update the source once and every answer updates with it, so the AI never drifts from how your business actually works."
+    },
+    {
+      "label": "Connect APIs",
+      "title": "Turn Answers Into Actions",
+      "body": "Connect the APIs you already use, ongkir, appointment booking, and more, so the agent can complete tasks inside the chat. Setup is guided, so you point it at what you need without writing integration code yourself."
+    },
+    {
+      "label": "Chat Flow",
+      "title": "Design Conversations Visually When You Want To",
+      "body": "For flows that need a set path, the visual drag-and-drop chat-flow designer lets you map the conversation step by step, again, with no code. Use it when you want control, and let the AI handle everything free-form when you don't."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "As Easy as Briefing an Admin",
+      "body": "If you can explain the job to a new CS hire, you can build the agent. No coding, no prompt engineering, no technical background needed."
+    },
+    {
+      "title": "One Builder, Every Channel",
+      "body": "Build once and the agent works across WhatsApp, Instagram DM, Facebook Messenger, and website chat, all from one unified inbox, no separate setup per channel."
+    },
+    {
+      "title": "Grows With Your Business",
+      "body": "Add specialized agents, connect new APIs, and set AI working hours as you scale. The agent you build in five minutes keeps expanding without a rebuild."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How do I build an AI agent without coding?",
+      "a": "With Cekat.AI's no-code builder, you create an AI agent by describing its role, pasting your SOPs and business info into the knowledge base, and connecting any APIs you need. There's no programming at any step, it's guided and point-and-click, and a working agent is ready in about five minutes."
+    },
+    {
+      "q": "Do I really need zero coding experience?",
+      "a": "Yes, zero. The entire builder is visual and guided, you brief the agent the way you'd brief a new CS admin. Pasting knowledge and connecting tools is done through the interface, so business owners set up their own agent without a developer or any technical background."
+    },
+    {
+      "q": "How long does it take to build a working agent?",
+      "a": "About five minutes for a basic working agent. You add your business info, paste your SOPs, and switch it on. Most teams have their agent answering real customer chats the same day they start, then refine and expand it over time as they see how it performs."
+    },
+    {
+      "q": "How does the AI agent learn about my business?",
+      "a": "You paste your SOPs, price lists, FAQs, and business information into the knowledge base, and the agent answers from that source. Update the knowledge once and the change applies everywhere, so the agent always reflects how your business currently operates, no retraining required."
+    },
+    {
+      "q": "Can the agent do more than just answer questions?",
+      "a": "Yes. By connecting APIs, the agent can take actions inside the chat, checking ongkir, booking appointments, creating orders, and handling other tasks you connect. That turns it from a bot that only replies into one that completes work for the customer in real time."
+    },
+    {
+      "q": "Which channels does the agent work on?",
+      "a": "One agent works across WhatsApp, Instagram DM, Facebook Messenger, and website live chat, all managed from a single unified inbox. You build it once, and it handles customers on every connected channel without separate setup for each one."
+    },
+    {
+      "q": "Can I build different agents for different jobs?",
+      "a": "Yes. You can create multiple specialized agents, for example one for sales, one for support, one for billing, each briefed on its own SOPs and connected tools. Adding another specialized agent takes minutes, so each customer reaches an agent built for their need."
+    },
+    {
+      "q": "What if I want more control over the conversation?",
+      "a": "Use the visual drag-and-drop chat-flow designer to map conversations step by step, still with no code. It's ideal for flows that must follow a set path, while the AI handles open-ended questions freely, so you choose where to script and where to let it run."
+    },
+    {
+      "q": "What happens when the agent can't handle something?",
+      "a": "It hands off to your team with the full conversation context attached, so no one has to repeat themselves. You can set AI working hours so your team takes chats during business hours and the agent covers everything after hours, always passing along the complete history."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Your SOPs Into a Working AI Agent Today",
+    "body": "Build your first no-code AI agent in about five minutes and let it answer customers across every channel, no developer required."
+  }
+}

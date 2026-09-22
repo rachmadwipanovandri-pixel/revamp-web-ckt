@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Pembayaran QR Otomatis, QR di Chat + Reminder Otomatis | CekatAI",
+    "description": "Pembayaran QR otomatis: AI kirim QR langsung di chat dan nagih order pending pakai reminder otomatis. 3.000+ bisnis nutup loop pembayaran tanpa follow-up manual."
+  },
+  "hero": {
+    "badge": "Pembayaran QR Otomatis di Chat",
+    "title": "Kirim QR Pembayaran, Biarkan AI yang Nagih yang Belum Bayar",
+    "subtitle": "AI agent Cekat.AI mengirim QR pembayaran langsung di percakapan dan follow-up order pending otomatis, jadi pembayaran tertagih tanpa tim harus nagih siapa pun"
+  },
+  "definition": "Pembayaran QR Otomatis adalah fitur Cekat.AI yang mengirim QR pembayaran langsung di dalam chat dan follow-up order belum lunas dengan reminder otomatis, menutup loop pembayaran tanpa tim harus nagih manual.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "AI kirim QR dan reminder" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Pembayaran Terjadi di Dalam Chat",
+      "body": "Begitu order siap, AI agent Cekat.AI mengirim QR pembayaran langsung di percakapan, tanpa link checkout yang harus disalin, tanpa pindah aplikasi, tanpa redirect yang bikin customer ragu. Customer bayar di chat yang sama tempat dia memutuskan beli, selagi niatnya masih tinggi.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI mengirim QR pembayaran di dalam chat"
+    },
+    {
+      "title": "Order Belum Lunas Ditagih Otomatis",
+      "body": "Kebanyakan penjualan yang hilang bukan karena ditolak, tapi order yang diam-diam gak dibayar saat semua orang lagi sibuk. Cekat.AI mengirim reminder otomatis buat pembayaran pending, mendorong customer sebelum ordernya dingin. Follow-up yang bakal dilupakan admin jalan sendiri, tiap kali.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Alur reminder pembayaran otomatis di Cekat.AI"
+    },
+    {
+      "title": "Tim Gak Perlu Nagih Satu-Satu",
+      "body": "Ngecek manual siapa yang sudah bayar dan belum, lalu chat satu-satu, menghabiskan jam yang tim gak punya. Otomatisasi menutup loop-nya: QR terkirim, reminder menyusul kalau pembayaran mandek, dan tim cuma turun tangan saat memang butuh manusia, bukan buat kirim pesan \"konfirmasi ya kak\" yang kelima.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Alur pembayaran end-to-end yang menghapus penagihan manual di Cekat.AI"
+    },
+    {
+      "title": "Tiap Pembayaran Update Data Customer",
+      "body": "Begitu order dibayar, profil CRM customer update sendiri, menggeser mereka di journey Visitor → Lead → Buyer tanpa input manual. Tim lihat progres penjualan real-time, dan campaign berikutnya sudah tahu siapa yang sudah jadi pembeli dan siapa yang masih perlu didorong.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Order lunas tercatat otomatis di profil customer Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "QR di Chat",
+      "title": "QR Pembayaran Dikirim di Percakapan",
+      "body": "Begitu order siap, AI menjatuhkan QR pembayaran ke chat. Customer scan dan bayar tanpa keluar dari percakapan, tanpa link checkout yang harus dikejar, tanpa aplikasi tambahan, tanpa drop-off antara memutuskan dan membayar."
+    },
+    {
+      "label": "Auto Reminder",
+      "title": "Pembayaran Pending Difollow-up Otomatis",
+      "body": "Kalau pembayaran masih pending, Cekat.AI mengirim reminder berbasis event sendiri, dorongan sopan di momen yang tepat, bukan order yang terlupa di antrean. Order jadi lunas, bukan hilang diam-diam."
+    },
+    {
+      "label": "Tanpa Nagih",
+      "title": "Tim Berhenti Jadi Debt Collector",
+      "body": "Otomatisasi menangani follow-up rutin, jadi tim gak perlu chat satu-satu ke tiap customer yang belum bayar. Mereka turun tangan cuma buat kasus yang benar-benar butuh manusia, sisanya closing sendiri."
+    },
+    {
+      "label": "Sinkron CRM",
+      "title": "Order Lunas Tercatat Otomatis",
+      "body": "Tiap pembayaran memperbarui kartu CRM customer dan stage-nya di journey tanpa input manual, jadi pelacakan penjualan tetap akurat real-time dan tiap profil mencerminkan apa yang benar-benar dibayar customer."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Bayar Tanpa Keluar dari Chat",
+      "body": "QR muncul di percakapan yang sama, jadi customer bayar di tempat, bukan drop-off di checkout terpisah."
+    },
+    {
+      "title": "Follow-Up yang Gak Pernah Lupa",
+      "body": "Reminder otomatis nagih pembayaran pending sendiri, rezeki ada di follow-up, dan platform gak pernah melewatkannya."
+    },
+    {
+      "title": "Manusia Cuma buat Kasus Sulit",
+      "body": "Otomatisasi membereskan penagihan rutin, membebaskan tim buat menangani percakapan yang memang butuh manusia."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu pembayaran otomatis?",
+      "a": "Pembayaran otomatis adalah menagih pembayaran order tanpa kerja manual. Di Cekat.AI, AI agent mengirim QR pembayaran langsung di chat begitu order siap, lalu follow-up pembayaran pending dengan reminder otomatis, jadi loop pembayaran tertutup tanpa tim nagih satu-satu."
+    },
+    {
+      "q": "Gimana QR pembayarannya bekerja?",
+      "a": "Begitu order siap, AI agent Cekat.AI mengirim QR pembayaran langsung ke percakapan. Customer scan dan bayar tanpa keluar dari chat atau pindah aplikasi, jadi gak ada drop-off antara memutuskan beli dan benar-benar bayar, tempat banyak order biasanya hilang."
+    },
+    {
+      "q": "Kalau customer gak bayar gimana?",
+      "a": "Cekat.AI mengirim reminder otomatis buat pembayaran pending. Nudge berbasis event terkirim di momen yang tepat buat mendorong customer sebelum ordernya dingin, follow-up yang mungkin dilupakan admin jalan sendiri, jadi order belum lunas tetap tertagih, bukan hilang diam-diam."
+    },
+    {
+      "q": "Aku masih harus nagih manual?",
+      "a": "Gak. Otomatisasi menangani follow-up rutin, QR terkirim dan reminder lanjut kalau pembayaran mandek. Tim turun tangan cuma saat kasus benar-benar butuh manusia, bukan chat satu-satu ke tiap customer buat nanya apakah sudah transfer."
+    },
+    {
+      "q": "Order yang dibayar update otomatis?",
+      "a": "Ya. Begitu pembayaran masuk, profil CRM customer update sendiri, menggeser mereka di journey Visitor → Lead → Buyer tanpa input manual. Tim lihat progres penjualan real-time dan campaign berikutnya tahu persis siapa yang sudah bayar."
+    },
+    {
+      "q": "Pembayaran otomatis jalan di channel apa saja?",
+      "a": "Semua channel yang tersambung ke Cekat.AI: WhatsApp lewat Business API resmi, Instagram DM, Facebook Messenger, live chat website, dan API channel. AI bisa mengirim QR pembayaran dan reminder di channel mana pun tempat customer lagi chat."
+    },
+    {
+      "q": "Pembayaran otomatis aman?",
+      "a": "Aman. Cekat.AI patuh UU PDP, undang-undang perlindungan data pribadi Indonesia, dan merupakan Meta Business Partner resmi, jadi trafik WhatsApp lewat infrastruktur resmi Meta. Role-based team access mengatur siapa di bisnismu yang bisa lihat data customer dan order."
+    },
+    {
+      "q": "Tetap jalan di luar jam kerja?",
+      "a": "Ya. AI mengirim QR pembayaran dan reminder 24/7. Dengan AI working hours, tim menangani chat saat jam kantor dan AI ambil alih setelahnya, jadi order yang masuk malam tetap dapat QR dan follow-up-nya tanpa ada yang jaga shift."
+    },
+    {
+      "q": "Perlu coding?",
+      "a": "Gak perlu coding. Kamu set up AI dengan menempel info bisnis ke knowledge base dan mengatur alur percakapan lewat visual drag-and-drop flow designer. Bikin agent cuma sekitar lima menit, Cekat.AI menyebutnya semudah briefing admin CS."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Order Pending Jadi Lunas",
+    "body": "Biarkan Cekat.AI kirim QR dan nagih tiap order belum bayar otomatis, tanpa follow-up manual, 24/7."
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "AI Solution for Sales Teams | Cekat.AI",
+    "description": "An AI agent that replies to leads in the first second, qualifies them automatically, keeps follow-ups running, and feeds a tidy pipeline. Used by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "Solution for Sales Teams",
+    "title": "Reply to Leads Faster. Let Sales Focus on Closing.",
+    "subtitle": "Cekat.AI replies instantly, qualifies leads, and keeps follow-ups moving so your sales team can focus on the hottest opportunities., not a backlog of overnight chats."
+  },
+  "definition": "The Cekat.AI sales solution combines an AI agent, a CRM, and follow-up automation in one platform: leads from WhatsApp, Instagram, and the web get instant replies, get qualified, and land in a pipeline with full history through to closing.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "leads answered, midnight included"
+    },
+    {
+      "value": ">50%",
+      "label": "revenue growth at Threeland Property"
+    },
+    {
+      "value": "~5 min",
+      "label": "to set up a bot, no code"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "painPoints": {
+    "heading": "Why Deals Slip Away When the Leads Were Right There",
+    "items": [
+      {
+        "icon": "Clock",
+        "title": "Leads answered too late",
+        "body": "A chat that arrives at night gets a reply in the morning. The buyer already has an answer from somewhere else, and the deal is done before your team says hello."
+      },
+      {
+        "icon": "Database",
+        "title": "Customer data scattered",
+        "body": "Contacts and history live on each salesperson's phone. When someone takes leave or resigns, the knowledge walks out with them."
+      },
+      {
+        "icon": "ChartColumn",
+        "title": "Manual follow-ups and reports",
+        "body": "Follow-ups depend on memory, reports get rebuilt every month end. Selling time drains into admin work."
+      }
+    ]
+  },
+  "compare": {
+    "heading": "The Difference With and Without Cekat.AI",
+    "body": "The same workflow, two very different ways of running it. Switch tabs to compare your sales team's day.",
+    "withLabel": "With Cekat.AI",
+    "withoutLabel": "Without Cekat.AI",
+    "with": {
+      "title": "No process repeats itself or gets missed",
+      "bullets": [
+        "Leads from every channel answered by AI in the first second, 24/7",
+        "Contacts, chat history, and deal stages recorded automatically in one CRM",
+        "Follow-ups schedule themselves and stop the moment the prospect replies"
+      ],
+      "image": "/images/crm/manage-work-with-boards.png",
+      "imageAlt": "Sales pipeline managed automatically in Cekat.AI"
+    },
+    "without": {
+      "title": "Admin work prone to being missed",
+      "bullets": [
+        "Chats pile up overnight and get answered after the lead has gone cold",
+        "Customer data sits on each salesperson's phone, hard to trace",
+        "Follow-ups depend on memory, deals disappear without anyone noticing"
+      ]
+    }
+  },
+  "midCta": {
+    "heading": "Grow Sales Without Losing a Single Lead",
+    "body": "Start free today, or ask us first on WhatsApp. First setup takes about 5 minutes."
+  },
+  "benefits": [
+    {
+      "title": "First-Reply Speed That Wins the Deal",
+      "body": "Buyers message five stores at once and buy from whoever answers first. The Cekat.AI agent replies in the first second, asks what they need, and sends the catalog or pricing without waiting for your team to come online.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent replying to leads instantly"
+    },
+    {
+      "title": "Hot and Cold Leads Sort Themselves",
+      "body": "Not every chat deserves a chase today. The AI asks about budget, needs, and timeline, then flags who is ready for a salesperson, so your team's energy goes to prospects who actually intend to buy.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads qualified and organized automatically in the CRM"
+    },
+    {
+      "title": "Follow-Ups That Run Until They Get a Reply",
+      "body": "Deals rarely die from a no. They die from a forgotten follow-up. Set an automated sequence and quiet prospects get nudged at the right moment, with no salesperson trying to remember who to chase.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Prospect journey tracked from first chat to closing"
+    },
+    {
+      "title": "A Pipeline You Can See, Not One in Someone's Head",
+      "body": "Every conversation becomes a contact and a deal on the pipeline board automatically. You see the value queued at each stage, who owns it, and where things are stuck, without asking for manual reports.",
+      "image": "/images/crm/manage-work-with-boards.png",
+      "imageAlt": "Sales pipeline board in the Cekat.AI CRM"
+    },
+    {
+      "title": "An 11 PM Closing Still Counts",
+      "body": "Serious prospects often show up outside working hours. The AI secures the commitment, books the appointment, or routes to on-call sales, and it is all recorded in the CRM along with the ad it came from.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI handling prospects outside working hours"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Instant First Response",
+      "body": "Chats from every channel answered in the first second, 24/7, so no lead goes cold in the queue."
+    },
+    {
+      "title": "A Pipeline With No Manual Entry",
+      "body": "Contacts, chat history, and deal stages are recorded automatically. Sales sells instead of doing admin."
+    },
+    {
+      "title": "Clean Handover to Humans",
+      "body": "The moment a prospect is ready, the AI hands over with full conversation context, never from zero."
+    }
+  ],
+  "testimonial": {
+    "quote": "Our revenue increased by more than 50%! Cekat AI allows us to secure property visits and close deals even while I'm asleep, because no leads are missed.",
+    "name": "Adam Sulaiman",
+    "role": "President Director - Threeland Property",
+    "image": "/images/crm/adam-sulaiman.png"
+  },
+  "faq": [
+    {
+      "q": "What is the Cekat.AI sales solution?",
+      "a": "An AI agent, CRM, and follow-up automation working as one. The AI replies to and qualifies leads from every chat channel, while the CRM records contacts, history, and deal stages automatically through to closing."
+    },
+    {
+      "q": "How is this different from a regular CRM?",
+      "a": "A regular CRM records things after the fact and depends on salespeople filling it in. In Cekat.AI the conversation, qualification, and follow-up happen on the same platform, so the pipeline fills itself from chat."
+    },
+    {
+      "q": "How does the AI know which leads are hot?",
+      "a": "You define the qualifying questions, such as budget, needs, and timing. The AI asks them naturally in conversation and tags the answers on the contact, so sales just filters."
+    },
+    {
+      "q": "When does the AI hand a chat to a human?",
+      "a": "On the rules you set: when a prospect asks to talk to someone, when deal value is high, or when certain keywords appear. The AI stops and your team takes over with the full history on the same screen."
+    },
+    {
+      "q": "Which channels can the sales team use?",
+      "a": "WhatsApp, Instagram, Facebook Messenger, Telegram, and website live chat, all landing in one inbox and one shared pipeline."
+    },
+    {
+      "q": "How long does setup take?",
+      "a": "A first bot can be live in about 5 minutes with no code: connect a channel, upload product knowledge, set the qualification flow. Follow-up sequences and pipeline tuning come after."
+    },
+    {
+      "q": "Do we have to change our WhatsApp number?",
+      "a": "No. The business number your customers already know connects through the WhatsApp Business API, including the green checkmark if you meet Meta's verification requirements."
+    },
+    {
+      "q": "What reporting do sales managers get?",
+      "a": "Deal value per pipeline stage, incoming lead counts per channel and ad source, each rep's response speed, and the deals that have sat still the longest. All readable directly, with no manual recap requested from the team."
+    }
+  ],
+  "cta": {
+    "heading": "Stop Losing Leads Who Actually Wanted to Buy",
+    "body": "Reply first, qualify automatically, and keep the pipeline moving on its own. Try it free, or chat with our team on WhatsApp."
+  }
+}

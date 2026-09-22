@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Pharmacy Software with AI Chat on WhatsApp | CekatAI",
+    "description": "Run your pharmacy on WhatsApp: Cekat.AI answers stock and price checks 24/7, takes delivery orders in chat, and routes consults to your pharmacist."
+  },
+  "hero": {
+    "badge": "Pharmacies",
+    "title": "Stock Checks Answered Automatically, Orders Done in Chat",
+    "subtitle": "From stock and price checks to delivery orders and refill reminders, Cekat.AI replies instantly on WhatsApp, 24/7, and knows when to hand the chat to your pharmacist",
+    "useCases": [
+      "Stock & pricing",
+      "Delivery orders",
+      "Refill reminders",
+      "Pharmacist consultations"
+    ]
+  },
+  "definition": "Cekat.AI for pharmacies is an AI customer service platform for pharmacies and pharmacy businesses in Indonesia, complementing your pharmacy software with AI that answers stock and price checks 24/7, takes delivery orders straight from a WhatsApp chat, and hands consultations to your pharmacist, all in one platform.",
+  "stats": [
+    {
+      "value": "5 sec",
+      "label": "reply time to customer chats at Lunica, down from 15 minutes"
+    },
+    {
+      "value": "200+",
+      "label": "customer chats handled per day at Sociamedic Clinic"
+    },
+    {
+      "value": "24/7",
+      "label": "stock checks, prices, and delivery orders answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Stock and Price Questions Answered from Data, Not Guesses",
+      "body": "\"Do you have this medicine in stock? How much?\" arrives dozens of times a day, and every late reply sends a buyer to the pharmacy next door. Cekat.AI answers from the product list and prices you provide, can connect to stock data through the API, and when the info is missing, it says so and hands over to staff instead of making things up.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Pharmacy product knowledge base powering AI answers in Cekat.AI"
+    },
+    {
+      "title": "Delivery Requests Arrive as Clean Orders, Not Paper Notes",
+      "body": "Cekat.AI turns the chat into your pharmacy's online storefront on WhatsApp. The AI captures items, buyer details, shipping cost via cek ongkir, and a payment QR inside the conversation, orders land complete and consistent without staff retyping, and buyers never have to install an app.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Delivery order created and paid inside a chat in Cekat.AI"
+    },
+    {
+      "title": "Chronic Patients Reminded to Refill on Time",
+      "body": "Patients on monthly medication are usually late because they forgot, not because they left. Cekat.AI sends automated refill reminders through the official WhatsApp Business API based on each patient's purchase history, so their therapy stays on track and they keep coming back to your pharmacy.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Refill reminders based on purchase history in Cekat.AI"
+    },
+    {
+      "title": "Consultations Always End with the Pharmacist, Not the AI",
+      "body": "On dosage, drug interactions, or health complaints, the AI does not guess and does not give medical advice. Those conversations escalate to your pharmacist automatically with the full chat history, so buyers still get fast service without compromising safety or professional responsibility.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Consultation escalating from AI to a pharmacist in Cekat.AI"
+    },
+    {
+      "title": "Someone Still Answers at 11 PM, Without an Extra Shift",
+      "body": "Medicine questions ignore closing time. With AI working hours, Cekat.AI answers stock, price, and ordering questions through the night, flags which chats need a pharmacist, and hands them over with full context when the morning shift starts, so no chat goes stale in the inbox.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours routing between pharmacy staff and AI in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats, orders, and reminders run on the official WhatsApp Business API, alongside Instagram DM and website live chat, one inbox for every pharmacy outlet."
+    },
+    {
+      "title": "An AI That Answers from Your Pharmacy's Data",
+      "body": "Stock, prices, and how to order are answered from the knowledge base and API integrations. When the data is not there, the AI hands over to staff instead of inventing an answer."
+    },
+    {
+      "title": "The Pharmacist at the Moments That Matter",
+      "body": "The AI handles routine questions. Dosage, drug interactions, and health complaints always escalate to your pharmacist with the full conversation context."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help pharmacies?",
+      "a": "It answers buyer chats instantly 24/7 on WhatsApp, Instagram, and web chat, from stock and price checks to delivery orders and refill reminders, while routing consultations to your pharmacist. Staff serve the people at the counter instead of typing the same reply all day."
+    },
+    {
+      "q": "Can the AI answer \"is this medicine in stock?\" accurately?",
+      "a": "Yes, as long as the data exists. The AI answers from the product list and prices in your knowledge base, or reads live stock from your system through an API integration. If a product is not found, it says so honestly and hands over to staff rather than guessing."
+    },
+    {
+      "q": "Can customers order medicine delivery through WhatsApp?",
+      "a": "Yes. The AI captures the order inside the conversation, items, address, shipping cost via cek ongkir, and a payment QR, running on the official WhatsApp Business API. Your pharmacy works like an online store, without buyers installing another app."
+    },
+    {
+      "q": "What about prescription or pharmacist-only medicines?",
+      "a": "The flow follows your pharmacy's SOP. Prescription requests escalate to the pharmacist automatically for verification in line with regulations; the AI only helps collect initial details such as a photo of the prescription and patient data, the decision stays with your pharmacist."
+    },
+    {
+      "q": "Does the AI recommend medicines or dosages?",
+      "a": "No. It answers general information from your pharmacy's data, stock, prices, how to order, opening hours. Questions about choosing a medicine, dosage, or health complaints are always handed to the pharmacist or directed to a doctor's consultation."
+    },
+    {
+      "q": "How do refill reminders for chronic patients work?",
+      "a": "Reminders go out automatically through the official WhatsApp Business API based on purchase history, you set the schedule and template. When a patient replies, the AI processes it into an order, or hands over to the pharmacist if questions come up."
+    },
+    {
+      "q": "Do we have to replace our current pharmacy software or POS?",
+      "a": "No. Cekat.AI complements your existing pharmacy software and POS through APIs and webhooks, reading stock and prices, writing orders. Not ready to integrate? Start with a knowledge base of your product list, it already covers most chats."
+    },
+    {
+      "q": "How is customer data and purchase history secured?",
+      "a": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling user data, with role-based access inside your team. ISO 27001 certification is in progress. Chat and purchase history is only visible to authorized staff."
+    },
+    {
+      "q": "How long does setup take, and how is it priced?",
+      "a": "Minutes, paste your product list, prices, and SOPs into the knowledge base, no coding. Pricing follows subscription plans that scale with your pharmacy and chat volume, and you can start with a free trial or book a demo with the Cekat.AI team."
+    }
+  ],
+  "cta": {
+    "heading": "Keep Your Pharmacy Open 24/7 on WhatsApp",
+    "body": "See how pharmacies run stock checks, delivery orders, and refill reminders 24/7 on Cekat.AI, book a free consultation with our team."
+  }
+}

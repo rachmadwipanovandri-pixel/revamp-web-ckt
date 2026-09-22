@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "AI Customer Service for F&B & Restaurants | CekatAI",
+    "description": "Restaurants use Cekat.AI to answer reservation, menu, and event chats 24/7. Holywings Group hit 100% chat coverage and up to +70% conversion, see how."
+  },
+  "hero": {
+    "badge": "Food & Beverage",
+    "title": "Answer Every Reservation and Order, Even After Last Call",
+    "subtitle": "From table bookings to menu questions to event inquiries, Cekat.AI replies instantly on WhatsApp and Instagram, 24/7, in natural language, without adding front-of-house staff",
+    "useCases": [
+      "24-hour reservations",
+      "Menu, promos, pricing",
+      "Event & catering inquiries",
+      "Chat to order"
+    ]
+  },
+  "definition": "Cekat.AI for F&B is an AI customer service platform for restaurants, cafes, bars, and food businesses in Indonesia, answering reservation, menu, and event inquiries 24/7, taking orders straight from the chat, and keeping every booking organized in one platform.",
+  "stats": [
+    {
+      "value": "+70%",
+      "label": "conversion uplift at Holywings Group"
+    },
+    {
+      "value": "100%",
+      "label": "of chats covered 24/7 at Holywings"
+    },
+    {
+      "value": "24/7",
+      "label": "reservations, orders, and event inquiries answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Reservations and Bookings Answered at Any Hour",
+      "body": "Guests decide to book long after your host stand goes quiet. Cekat.AI's agent answers reservation requests, operating hours, and location questions the moment they arrive, day or night, so a diner planning tonight's dinner or next week's party gets a confirmation instead of silence, and your team walks in to handled chats.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours routing between staff and AI agent in Cekat.AI"
+    },
+    {
+      "title": "Menu, Promo, and Price Questions Answered Instantly",
+      "body": "\"Is there a vegetarian option?\" \"How much for the set menu?\" \"Any promo tonight?\" Cekat.AI answers in natural language, understanding intent rather than matching keywords, so hungry guests get certainty in seconds and decide to come in, instead of scrolling to the next place that replied faster.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering menu and promo questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "Event and Catering Inquiries Never Slip Through",
+      "body": "A birthday, a corporate dinner, a private booking, high-value inquiries that used to sit unread until an admin had time. Cekat.AI captures each one into a CRM card automatically, with full conversation history, so your events team follows up on real leads instead of digging through a crowded inbox.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Event and catering inquiries captured in the Cekat.AI CRM"
+    },
+    {
+      "title": "Turn a Chat Into a Confirmed Order",
+      "body": "For delivery and takeaway, Cekat.AI takes the order inside the conversation, items, customer details, shipping cost via cek ongkir, and a payment QR, without an admin retyping anything into a spreadsheet. Guests go from question to paid order in one chat, and every order lands consistent and complete.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Order created and paid inside a chat conversation in Cekat.AI"
+    }
+  ],
+  "caseStudy": {
+    "client": "Holywings Group",
+    "metrics": [
+      {
+        "value": "100%",
+        "label": "chat coverage at peak hours"
+      },
+      {
+        "value": "+70%",
+        "label": "conversion lift"
+      }
+    ],
+    "body": "Holywings Group was handling event, booking, and pricing inquiries by hand, slow replies during peak hours, messages missed, bookings lost. After implementing Cekat.AI, every chat gets an instant, consistent answer around the clock. The result: 100% chat coverage 24/7, up to +70% conversion, higher guest satisfaction, and more revenue from inquiries that used to go cold."
+  },
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats and campaigns run on the official WhatsApp Business API, alongside Instagram DM and Facebook Messenger, one inbox for every outlet, compliant and reliable."
+    },
+    {
+      "title": "AI That Books and Sells",
+      "body": "The agent handles reservations, answers the menu, and takes orders in conversation, then hands complex requests to your team with full context."
+    },
+    {
+      "title": "Proven in F&B and Entertainment",
+      "body": "Holywings Group went from manual inquiries to 100% chat coverage and up to +70% conversion, real results, from real guest conversations."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help restaurants and F&B businesses?",
+      "a": "It answers guest chats instantly 24/7 on WhatsApp, Instagram, and web chat, handling reservations, menu and promo questions, operating hours, and event inquiries, while organizing every booking and order in one platform. Your front-of-house team focuses on guests in the room, not a buzzing phone."
+    },
+    {
+      "q": "Can the AI handle table reservations and bookings?",
+      "a": "Yes. Cekat.AI answers reservation requests around the clock and, through API integration with your booking system, can confirm and reschedule inside the chat. Every booking is captured with full context, and automated reminders go out before the date to reduce no-shows."
+    },
+    {
+      "q": "Can customers place food orders through the chat?",
+      "a": "Yes. Cekat.AI auto-creates orders from the conversation, including items, customer details, shipping cost via cek ongkir, and a payment QR. A guest goes from question to paid delivery or takeaway order without ever leaving the chat, and nothing gets retyped by hand."
+    },
+    {
+      "q": "What about event, catering, or private-booking inquiries?",
+      "a": "High-value event and catering inquiries are captured into a CRM card automatically, with the full conversation attached. The AI answers first questions instantly at any hour, and your events team follows up on qualified leads instead of scrolling a crowded inbox for the ones that matter."
+    },
+    {
+      "q": "Which channels can a restaurant connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, and website live chat, all flowing into one inbox with a single interaction history per guest. A diner who DMs on Instagram then messages on WhatsApp never has to repeat themselves."
+    },
+    {
+      "q": "What results have F&B businesses seen with Cekat.AI?",
+      "a": "Holywings Group moved from handling event, booking, and pricing inquiries manually to 100% chat coverage 24/7 after implementing Cekat.AI, with up to +70% conversion, higher guest satisfaction, and more revenue from inquiries that previously went unanswered."
+    },
+    {
+      "q": "Does the AI keep up during a busy dinner rush?",
+      "a": "Yes. The AI answers every incoming chat instantly no matter how many arrive at once, so response time stays flat when volume spikes. Anything complex escalates to your team with the full conversation attached, and AI working hours keep coverage running after your staff log off."
+    },
+    {
+      "q": "How long does setup take for a restaurant?",
+      "a": "Building the AI agent takes around five minutes, paste your menu, prices, outlet details, and SOPs into the knowledge base and it starts answering accurately. No coding is required; Cekat.AI describes it as being as easy as briefing a new CS admin."
+    },
+    {
+      "q": "Can Cekat.AI send promos and follow-ups to guests?",
+      "a": "Yes. Broadcast campaigns reach guest segments through the official WhatsApp Business API, weekend promos, new-menu launches, event reminders, built from activity and order history, with automated follow-ups based on each guest's behavior instead of a manual list."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Every Inquiry Into a Booked Table",
+    "body": "See how restaurants run 24/7 reservations, orders, and support on Cekat.AI, book a free consultation with our team."
+  }
+}

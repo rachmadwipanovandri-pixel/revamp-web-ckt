@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "WhatsApp Blast via Official API, Reach Thousands in One Send | CekatAI",
+    "description": "Send WhatsApp blasts to thousands via the official Business API. Segment audiences, automate follow-ups, and track conversions, trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "Official WhatsApp Business API",
+    "title": "Reach Thousands of Customers in One WhatsApp Blast",
+    "subtitle": "Send personalized broadcast campaigns through the official WhatsApp Business API, segmented by real customer behavior, followed up automatically, and measured down to revenue"
+  },
+  "definition": "WhatsApp Blast is a Cekat.AI feature that sends broadcast messages to thousands of customers at once through the official WhatsApp Business API, with audience segmentation, automated reminders, and conversion tracking built into one platform.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "AI follows up every reply" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Segment Your Audience Before You Hit Send",
+      "body": "Blasting the same message to everyone is how businesses get ignored. Cekat.AI segments your audience by activity, purchase history, or events, so a repeat buyer gets a loyalty offer while a ghosting lead gets a nudge back to checkout.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Customer behavior segmentation dashboard in Cekat.AI"
+    },
+    {
+      "title": "Send Promos That Feel Personal, Not Spammy",
+      "body": "Every blast pulls the customer's name and context from your CRM, so \"Hi Steven, your promo ends December 10\" lands instead of a generic announcement. Campaigns that feel relevant get opened, clicked, and answered.",
+      "image": "/images/home/track-and-optimize-your-marketing-performance-in-one-unified-platform.png",
+      "imageAlt": "Campaign performance tracking in one unified Cekat.AI dashboard"
+    },
+    {
+      "title": "Follow Up Automatically When Customers Go Quiet",
+      "body": "The money is in the follow-up, and Cekat.AI never forgets one. Automatic reminders go out before key moments, unpaid orders, expiring promos, replenishment time, based on each customer's actual behavior.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated follow-up workflow builder in Cekat.AI"
+    },
+    {
+      "title": "Measure Replies, Conversions, and Revenue, Not Just Sends",
+      "body": "A blast that doesn't sell is just noise. Track open rates, replies, and the revenue each campaign generates in one analytics dashboard, then double down on the segments and messages that actually convert.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Campaign conversion analytics in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Official API",
+      "title": "Sent Through Meta's Official Infrastructure",
+      "body": "Cekat.AI is an official Meta Business Partner. Blasts go out through the WhatsApp Business API with approved message templates, the compliant way to message customers at scale, without the risks that come with unofficial blast tools."
+    },
+    {
+      "label": "Segmentation",
+      "title": "Audiences Built From Real Behavior",
+      "body": "Segment by activity, purchase history, or event, first-time buyers, repeat customers, leads who clicked but never paid. Every campaign goes to the people it was actually written for."
+    },
+    {
+      "label": "Auto Reminder",
+      "title": "Event-Based Reminders on Autopilot",
+      "body": "Payment still pending? Promo ending? Restock time? Cekat.AI sends the right reminder at the right moment automatically, so no revenue slips away because your team was busy."
+    },
+    {
+      "label": "CRM Sync",
+      "title": "Every Campaign Recorded on the Customer Profile",
+      "body": "Each blast a customer receives is logged in their CRM profile alongside chats, purchases, and website behavior, so your team and your AI agent always know the full context before the next conversation."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Campaigns run on the official WhatsApp Business API, compliant, reliable, and built to scale with your customer list."
+    },
+    {
+      "title": "One Platform, Not Five Tools",
+      "body": "Blast, segmentation, follow-up automation, CRM, and analytics live in one dashboard. No exporting contact lists between disconnected apps."
+    },
+    {
+      "title": "AI Handles the Replies",
+      "body": "A blast creates conversations, Cekat.AI's agent answers them 24/7, qualifies the leads, and closes orders straight from the chat."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a WhatsApp blast?",
+      "a": "A WhatsApp blast is a broadcast message sent to many customers at once on WhatsApp. With Cekat.AI, blasts are sent through the official WhatsApp Business API using approved templates, segmented by customer behavior, and tracked through to replies and conversions."
+    },
+    {
+      "q": "Is WhatsApp blast with Cekat.AI safe for my number?",
+      "a": "Yes. Cekat.AI is an official Meta Business Partner and sends every campaign through the official WhatsApp Business API with Meta-approved message templates, the compliant method for bulk messaging, unlike unofficial tools that put your number at risk."
+    },
+    {
+      "q": "How is this different from WhatsApp Business broadcast lists?",
+      "a": "The free WhatsApp Business app limits broadcasts to small lists and only reaches people who saved your number. The official API through Cekat.AI reaches your full customer list, personalizes each message, and adds segmentation, automation, and analytics."
+    },
+    {
+      "q": "Can I choose exactly who receives each campaign?",
+      "a": "Yes. Audiences are segmented by activity, purchase history, or events, for example, customers who bought last month, leads who never completed payment, or everyone who joined a recent promo. Each campaign targets only the segment you pick."
+    },
+    {
+      "q": "Can the messages be personalized?",
+      "a": "Every message can pull customer data like names and order details from the CRM, so each recipient gets a message that reads like it was written for them, which is exactly why personalized campaigns get more opens and replies."
+    },
+    {
+      "q": "What happens when customers reply to a blast?",
+      "a": "Replies land in the Cekat.AI inbox, where your AI agent answers instantly, 24/7, in natural language. It can answer questions, check shipping costs, and close the order right in the chat, escalating to your team only when needed."
+    },
+    {
+      "q": "Can I see whether a campaign actually made money?",
+      "a": "Yes. The analytics dashboard tracks each campaign from send to reply to conversion, so you see revenue per campaign, not just delivery counts. Winning segments and messages become obvious, and budget follows what works."
+    },
+    {
+      "q": "Do I need technical skills to run a blast?",
+      "a": "No. Building a campaign is point-and-click: pick a segment, write the message, send or automate it. No coding is needed anywhere in Cekat.AI, most teams run their first campaign the same day they start."
+    },
+    {
+      "q": "Does WhatsApp blast work together with the other Cekat.AI products?",
+      "a": "Yes, that's the point. Blasts use CRM data for segmentation, the AI agent handles replies, order automation closes sales in chat, and results feed back into your customer profiles. One platform covers the whole loop."
+    }
+  ],
+  "cta": {
+    "heading": "Turn One Broadcast Into a Thousand Conversations",
+    "body": "Send your first segmented WhatsApp blast and let AI handle every reply, 24/7, without adding headcount."
+  }
+}

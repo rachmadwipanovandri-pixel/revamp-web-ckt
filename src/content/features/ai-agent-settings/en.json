@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Advanced AI Agent Settings: Memory, Tone, Guardrails | Cekat.AI",
+    "description": "Tune your AI agent's behavior: memory and context limits, reply styles from consistent to creative, a quality watcher, timezones, and message limits."
+  },
+  "hero": {
+    "badge": "Advanced AI Settings",
+    "title": "An AI You Can Tune, Not a Black Box",
+    "subtitle": "How much conversation it remembers, how creative its answers get, when it stops replying, and a watcher monitoring quality. Every behavior of your AI agent is open to adjustment, no code involved."
+  },
+  "definition": "Advanced AI settings in Cekat.AI are the behavior controls of the AI agent: limits on history, context, and files read, answer creativity level, reply delays and message caps, a quality watcher, timezone, and session-only memory.",
+  "stats": [
+    {
+      "value": "~5 min",
+      "label": "to set up a bot, no code"
+    },
+    {
+      "value": "24/7",
+      "label": "AI behavior consistent with your rules"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Decide How Far Back the AI Remembers",
+      "body": "Message history limits, knowledge-source context limits, and file reading limits are yours to set. Long conversations stay relevant without the AI dragging in a topic from three days ago.",
+      "image": "/images/chat/train-your-ai-agent.png",
+      "imageAlt": "AI agent memory and context settings"
+    },
+    {
+      "title": "A Reply Style That Follows Your Business",
+      "body": "Three temperature presets: Consistent for the same answer every time, Balanced for the everyday, Creative for looser conversation. A clinic and a fashion brand should not sound alike.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "AI reply style presets from consistent to creative"
+    },
+    {
+      "title": "A Watcher Guarding Answer Quality",
+      "body": "The watcher monitors your AI's responses and action execution. When something drifts from expectations, you hear it from the system, not from a customer complaint a week later.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "Watcher monitoring AI response quality"
+    },
+    {
+      "title": "A Reply Rhythm That Feels Human",
+      "body": "Message wait adds a pause before the AI answers, so customers finish their burst of messages first. A per-conversation response cap keeps the AI from monopolizing chats that need a human.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI reply delay and message limit settings"
+    },
+    {
+      "title": "Session Memory and the Right Timezone",
+      "body": "Session-only memory restricts recall to the running conversation, useful for topics that must not carry over. Timezone keeps promised hours and scheduling on your business clock.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Session memory and timezone settings"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Control Without Code",
+      "body": "Everything changes from the dashboard through clearly named presets, not a config file."
+    },
+    {
+      "title": "Predictable Behavior",
+      "body": "The AI you tune today answers the same way tomorrow, because the rules are written down, not accidental."
+    },
+    {
+      "title": "Change It Anytime",
+      "body": "Peak season wants fast, strict answers; the low season can loosen up. The settings follow."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What can the advanced AI settings control?",
+      "a": "Message history limits, knowledge-source context limits, file reading limits, answer temperature, reply delay, response caps, the watcher, timezone, and session-only memory."
+    },
+    {
+      "q": "What is AI temperature?",
+      "a": "The variation level of answers. Consistent keeps replies nearly identical every time, right for policy and pricing; Balanced suits the everyday; Creative allows improvisation for casual conversation."
+    },
+    {
+      "q": "What does the watcher do?",
+      "a": "It monitors response quality and the AI's action execution: a supervising layer so drift gets caught by the system rather than by your customers."
+    },
+    {
+      "q": "When is session-only memory useful?",
+      "a": "When the AI should not carry information between conversations, such as sensitive data or closed cases. Recall is limited to the running session."
+    },
+    {
+      "q": "What is message wait for?",
+      "a": "A pause before the AI replies. Customers often type several messages in a burst; the pause lets the AI answer the whole thought once instead of interrupting each message."
+    },
+    {
+      "q": "Do these settings need a developer?",
+      "a": "No. Everything is adjusted from the AI agent dashboard through clearly labeled options, and can be changed again anytime without a redeploy."
+    },
+    {
+      "q": "Do settings apply per agent or per account?",
+      "a": "Per agent. A sales AI and a support AI can carry different memory, style, and limits while running on the same account."
+    },
+    {
+      "q": "How does this relate to AI Working Hours?",
+      "a": "AI Working Hours decides when the AI is active; advanced settings decide how it behaves while active. Used together they give full control."
+    }
+  ],
+  "cta": {
+    "heading": "Tune Your AI Like Training Your Best Employee",
+    "body": "Memory, tone, and guardrails on your terms. Try it free and feel the difference a controlled AI makes."
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "WhatsApp Auto Reply: Answer Every Question 24/7 | CekatAI",
+    "description": "WhatsApp auto reply that answers the real question, not a canned greeting, AI replies 24/7 so no lead slips away at night. Trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "Smart WhatsApp Auto Reply",
+    "title": "Auto Reply That Answers the Question, Not Just \"We'll Get Back to You\"",
+    "subtitle": "Replace canned greeting messages with an AI that reads each WhatsApp chat, understands what the customer actually wants, and answers it instantly, 24/7, in their own language, capturing every lead along the way"
+  },
+  "definition": "WhatsApp Auto Reply is a Cekat.AI feature that answers incoming WhatsApp messages automatically with a humanlike AI agent, understanding the customer's intent and replying with a real answer 24/7, instead of sending a fixed greeting or away message.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "auto-replies, never offline" },
+    { "value": "~5 min", "label": "to build your AI agent" }
+  ],
+  "benefits": [
+    {
+      "title": "Answer the Actual Question, Not With a Canned Greeting",
+      "body": "\"Thanks for your message, we'll reply soon\" doesn't sell anything. Cekat.AI's humanlike agent reads what the customer is really asking, price, stock, how to order, and replies with a real answer in seconds. It understands intent and context, not keywords, so it responds like a trained CS admin, not an autoresponder.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI AI agent auto-replying to a WhatsApp question"
+    },
+    {
+      "title": "Never Miss a Lead Because It Came In at Midnight",
+      "body": "Most leads message after hours, and a reply that lands the next morning is often a sale lost to whoever answered first. With AI working hours, your team handles chats while online and the AI takes over nights and weekends automatically, so every WhatsApp message gets an instant answer, whatever time it arrives.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours settings for after-hours auto reply in Cekat.AI"
+    },
+    {
+      "title": "Every Auto Reply Becomes a Lead in Your CRM",
+      "body": "An answered question is only worth something if you can follow up. Cekat.AI captures every WhatsApp conversation into the CRM automatically, no manual input, building a living customer record and moving each contact through Visitor, Lead, and Buyer stages with suggested next steps for your team.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "WhatsApp leads captured automatically in the Cekat.AI CRM"
+    },
+    {
+      "title": "Set It Up in About 5 Minutes, No Coding",
+      "body": "You don't script hundreds of keyword rules. Paste your SOPs and business info into the knowledge base and the AI is ready to answer real questions, building it is about as easy as briefing a new CS admin. Need branching logic? Use the visual drag-and-drop flow designer, still with zero code.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base setup powering WhatsApp auto reply in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Smart Replies",
+      "title": "Understands Intent, Not Just Keywords",
+      "body": "The AI reads what customers mean and answers in natural language, in whatever language they write. It works from the knowledge base you built, so replies stay accurate about your prices, products, and policies, not generic filler."
+    },
+    {
+      "label": "After Hours",
+      "title": "AI Covers the Night Shift, Automatically",
+      "body": "AI working hours match your team's schedule: agents take chats during the day, the AI answers after hours, and every handoff carries the full conversation context in both directions. Customers never wait until morning for a reply."
+    },
+    {
+      "label": "Lead Capture",
+      "title": "Auto Replies That Build Your Pipeline",
+      "body": "Every conversation creates or updates a CRM card automatically, contact, chat history, and behavior in one living record. Customer Stages track each person from Visitor to Lead to Buyer, so an auto reply turns into a follow-up, not a dead end."
+    },
+    {
+      "label": "One Inbox",
+      "title": "WhatsApp Beside Every Other Channel",
+      "body": "WhatsApp runs on the official Business API and lands in the same unified inbox as Instagram DM, Facebook Messenger, and website live chat, one dashboard with fast search, auto-labeling, and case prioritization across every channel."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Real Answers, Not Autoresponders",
+      "body": "A humanlike agent understands the question and replies with a real answer 24/7, the opposite of a fixed greeting that makes customers wait."
+    },
+    {
+      "title": "Official WhatsApp Business API",
+      "body": "Cekat.AI is an official Meta Business Partner, so auto replies run on the official WhatsApp Business API, compliant and reliable at scale."
+    },
+    {
+      "title": "Answers That Turn Into Sales",
+      "body": "Every reply is captured as a lead, follow-ups fire automatically, and the AI can close the order right in the chat instead of leaving it hanging."
+    }
+  ],
+  "testimonial": {
+    "quote": "Customer responses became faster",
+    "name": "Silica Brenda",
+    "role": "Founder, Moir Salon",
+    "image": "/images/home/testimonial-silica-brenda.jpg"
+  },
+  "faq": [
+    {
+      "q": "What is WhatsApp auto reply?",
+      "a": "WhatsApp auto reply is an automatic response sent when a customer messages your business. With Cekat.AI, it's not a fixed greeting, a humanlike AI agent reads the question, understands the intent, and replies with a real answer 24/7 through the official WhatsApp Business API."
+    },
+    {
+      "q": "How is this different from the auto reply in WhatsApp Business?",
+      "a": "The free WhatsApp Business app only sends fixed greeting and away messages, the same text no matter what the customer asks. Cekat.AI actually answers the question: it reads intent, pulls from your knowledge base, replies in the customer's language, and captures the conversation as a lead in the CRM."
+    },
+    {
+      "q": "Does the auto reply work 24/7, even at night?",
+      "a": "Yes, that's the point. The AI agent answers around the clock, so a lead messaging at midnight gets the same instant reply as one at noon. With AI working hours, your team covers chats while online and the AI takes over nights and weekends automatically."
+    },
+    {
+      "q": "Can the AI really answer questions about my business?",
+      "a": "Yes. The agent works from a knowledge base you build with your own SOPs, prices, and product details, and it understands intent and context rather than matching keywords. Anything it shouldn't handle is escalated to your team with the full chat history attached."
+    },
+    {
+      "q": "Do I need to write keyword rules for every question?",
+      "a": "No. You don't script keyword-by-keyword replies. You paste your business information into the knowledge base and the AI answers naturally, Cekat.AI describes it as about as easy as briefing a new CS admin, with most teams live in around 5 minutes."
+    },
+    {
+      "q": "What happens when a customer needs a human?",
+      "a": "The conversation is handed to your team with the complete chat history attached, so the customer never repeats themselves. With AI working hours, this runs on a schedule: the AI covers after-hours messages and your team takes over automatically when they come online."
+    },
+    {
+      "q": "Is auto reply through Cekat.AI safe for my WhatsApp number?",
+      "a": "Yes. Cekat.AI is an official Meta Business Partner and runs auto replies through the official WhatsApp Business API, the compliant way to message customers at scale, unlike unofficial bots that put your number at risk."
+    },
+    {
+      "q": "Does it capture leads or just answer questions?",
+      "a": "Both. Every WhatsApp conversation is captured into the CRM automatically with no manual input, contact details, chat history, and behavior in one record. Customer Stages track each contact from Visitor to Lead to Buyer, so answers turn into follow-ups and sales."
+    },
+    {
+      "q": "Can it reply in more than one language?",
+      "a": "Yes. The AI agent is multilingual and replies in the language the customer writes in. Minori Group, serving Japan and Indonesia, handles 100% of inquiries with multilingual AI on Cekat.AI, two languages and two timezones on one platform."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Every WhatsApp Message Into an Instant Answer",
+    "body": "Switch off the canned greeting and let AI reply with real answers 24/7, while your CRM fills with leads you can follow up."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "AI Customer Service untuk Lembaga Sosial & Yayasan | CekatAI",
+    "description": "Solusi AI & WhatsApp API lembaga sosial Cekat.ai: jawab chat donatur 24/7, jalankan broadcast campaign, & tingkatkan donasi. Coba gratis!"
+  },
+  "hero": {
+    "badge": "Lembaga Sosial & Yayasan",
+    "title": "Jawab Setiap Donatur, Pas Mereka Mau Berdonasi",
+    "subtitle": "Pertanyaan soal cara donasi, ke mana dana disalurkan, dan program kamu, dijawab instan di WhatsApp, Instagram, dan web chat, 24/7, tanpa nambah beban tim",
+    "useCases": [
+      "Pertanyaan donatur",
+      "Terhubung 24/7",
+      "Campaign donasi",
+      "Data supporter terpusat"
+    ]
+  },
+  "definition": "Cekat.AI untuk lembaga sosial adalah platform AI customer service untuk yayasan, lembaga amal, dan organisasi sosial di Indonesia, menjawab pertanyaan donatur dan supporter 24/7, menjalankan campaign donasi lewat WhatsApp broadcast, dan menjaga setiap percakapan tetap rapi dalam satu tempat.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "pertanyaan donatur & supporter terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "organisasi & bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "percakapan ditangani"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Pertanyaan Donatur Terjawab Begitu Mereka Nanya",
+      "body": "Orang yang lagi siap berdonasi nggak bakal nunggu jam kantor buka. Cekat.AI jawab cara donasi, ke mana dana disalurkan, dan apa isi tiap program begitu pertanyaan masuk, pakai bahasa natural, jam berapa pun, jadi niat baik langsung jadi donasi, bukan pesan yang keburu dingin sebelum sempat dibales.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab pertanyaan donatur di inbox Cekat.AI"
+    },
+    {
+      "title": "Bisa Dihubungi 24/7, Bahkan Setelah Kantor Tutup",
+      "body": "Dukungan dan kebaikan nggak jalan di jadwal 9-ke-5. AI working hours bikin AI meng-cover chat setelah tim pulang dan balik ke tim lengkap dengan konteks pas jam kerja, jadi donatur tengah malam atau penerima manfaat yang butuh bantuan di akhir pekan selalu ketemu organisasi yang responsif, bukan inbox kosong.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours menjaga organisasi tetap bisa dihubungi di luar jam kerja di Cekat.AI"
+    },
+    {
+      "title": "Jalankan Campaign Donasi lewat Broadcast",
+      "body": "Broadcast dikirim lewat WhatsApp Business API resmi ke segmen dari data nyata, donatur rutin, donatur sekali, peserta event, dengan nama dan riwayat dari CRM. Ajakan penggalangan dana atau update program nyampe ke supporter yang paling mungkin bergerak, dan follow-up otomatis ngingetin berdasarkan aktivitas masing-masing.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi donatur untuk campaign di Cekat.AI"
+    },
+    {
+      "title": "Semua Supporter dan Percakapan di Satu Tempat",
+      "body": "WhatsApp, Instagram DM, Facebook Messenger, dan chat website masuk ke satu inbox dengan riwayat lengkap per supporter, pertanyaan yang diajukan, campaign yang diterima, donasi yang dibahas. Tim langsung lihat seluruh relasinya, dan yang sensitif dialihkan ke orang beserta percakapannya. Supporter nggak perlu ngulang cerita.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Percakapan supporter terorganisir di CRM Cekat.AI"
+    },
+    {
+      "title": "Jawaban Berdasar Programmu, Bukan Ngarang",
+      "body": "Kepercayaan bergantung pada akurasi, donatur pengin tahu persis ke mana uang mereka pergi. Kamu paste detail program, alokasi dana, dan FAQ ke knowledge base, dan AI menjawab dari situ, bukan ngarang. Setup-nya sekitar lima menit dan tanpa coding, jadi informasimu tetap benar dan konsisten di tiap balasan.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base menjaga jawaban tetap akurat di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Compliant dari Awal",
+      "body": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam pengelolaan data pengguna, fondasi yang bisa dipercaya donatur dan komunitas yang kamu layani."
+    },
+    {
+      "title": "Meta Business Partner Resmi",
+      "body": "Chat dan broadcast campaign jalan di atas WhatsApp Business API resmi, andal dan aman buat nomor tempat supporter menghubungi kamu."
+    },
+    {
+      "title": "Manusia di Momen yang Penting",
+      "body": "AI menangani pertanyaan rutin; percakapan sensitif dialihkan ke tim lengkap dengan konteks, jadi setiap orang merasa didengar."
+    }
+  ],
+  "testimonial": {
+    "quote": "Di luar jam kerja kami mengandalkan teknologi AI. Rumah Zakat bisa dihubungi 24/7, dan kami memaksimalkan AI begitu jam kerja selesai.",
+    "name": "Tantan Supriatna",
+    "role": "Customer Relation Department Head, Rumah Zakat",
+    "image": "/images/chat/tantan-supriatna.png"
+  },
+  "faq": [
+    {
+      "q": "Gimana Cekat.AI bantu lembaga sosial dan yayasan?",
+      "a": "Cekat.AI jawab chat donatur dan supporter instan 24/7 di WhatsApp, Instagram, dan web chat, cara donasi, ke mana dana disalurkan, detail program, sambil merapikan semua percakapan dalam satu inbox. Tim tetap bisa dihubungi sepanjang waktu tanpa nambah beban, dan nggak ada pesan yang keburu dingin sebelum dibales."
+    },
+    {
+      "q": "AI bisa jawab pertanyaan soal ke mana donasi disalurkan?",
+      "a": "Bisa. Kamu paste detail program, alokasi dana, dan FAQ ke knowledge base, dan AI menjawab dari situ, akurat dan konsisten, bukan ngarang. Donatur dapat jawaban jelas dan terpercaya soal bagaimana kontribusinya dipakai, begitu mereka nanya."
+    },
+    {
+      "q": "Bisa dihubungi di luar jam kantor?",
+      "a": "Bisa. AI working hours bikin AI meng-cover chat setelah tim pulang dan balik lagi ke tim lengkap dengan konteks pas jam kerja. Rumah Zakat mengandalkan AI begitu jam kerja selesai, tetap bisa dihubungi 24/7 jadi supporter selalu ketemu organisasi yang responsif."
+    },
+    {
+      "q": "Bisa jalanin campaign penggalangan dana lewat ini?",
+      "a": "Bisa. Broadcast dikirim lewat WhatsApp Business API resmi ke segmen dari aktivitas dan riwayat, donatur rutin, donatur sekali, peserta event. Pesannya ambil nama dan konteks dari CRM, dan follow-up otomatis ngingetin berdasarkan aktivitas masing-masing supporter."
+    },
+    {
+      "q": "Channel apa aja yang bisa dihubungkan organisasi kami?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, dan live chat website, semuanya masuk ke satu inbox. Tiap supporter punya satu riwayat percakapan, jadi pertanyaan yang mulai di Instagram dan lanjut di WhatsApp tetap nyatu di satu tempat."
+    },
+    {
+      "q": "Data supporter dan donatur aman nggak?",
+      "a": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam menangani dan mengelola data pengguna. Akses di dalam tim diatur berbasis peran, jadi kontak dan riwayat percakapan donatur cuma terlihat oleh orang yang memang berwenang."
+    },
+    {
+      "q": "Berapa lama setup-nya?",
+      "a": "Bikin AI agent-nya sekitar lima menit dan rasanya kayak briefing anggota tim baru, kamu paste program, detail dana, dan SOP, lalu AI mulai menjawab. Nggak butuh coding, jadi kamu nggak perlu developer atau budget besar buat mulai."
+    },
+    {
+      "q": "Gimana kalau percakapannya sensitif atau kompleks?",
+      "a": "Percakapan otomatis dialihkan ke tim lengkap dengan riwayatnya, jadi manusia yang menangani hal sensitif sementara AI menjawab volume pertanyaan rutin di sekitarnya. Supporter nggak perlu ngulang cerita pas dialihkan."
+    },
+    {
+      "q": "Kami butuh tim besar buat ngelolanya?",
+      "a": "Nggak. Satu AI agent menangani chat serentak tanpa batas, menjawab pertanyaan rutin 24/7 jadi tim yang ada fokus ke kerjaan yang butuh manusia. Cekat.AI dipakai 3.000+ bisnis dan organisasi, dari tim kecil sampai operasi besar."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Pertanyaan Jadi Dukungan",
+    "body": "Lihat gimana lembaga sosial tetap bisa dihubungi 24/7 dan menjalankan campaign di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "AI Customer Service for Tour & Travel | CekatAI",
+    "description": "AI & travel CRM by Cekat.ai: answer itineraries, packages, & pricing 24/7 in multi-languages. Minori Group boosted revenue +60% & conversions +80%!"
+  },
+  "hero": {
+    "badge": "Tour & Travel",
+    "title": "Answer Every Traveler, in Any Language, Any Timezone",
+    "subtitle": "Itinerary, package, and price questions replied instantly on WhatsApp, Instagram, and web chat, 24/7, in the traveler's own language, without hiring for every peak season",
+    "useCases": [
+      "Seasonal inquiry surges",
+      "Multilingual 24/7",
+      "Repeat bookings",
+      "Traveler & trip data"
+    ]
+  },
+  "definition": "Cekat.AI for tour & travel is an AI customer service platform for travel agencies, tour operators, and OTAs in Indonesia, answering itinerary, package, and price questions 24/7 in multiple languages, handling seasonal inquiry spikes, and turning past travelers into repeat bookings.",
+  "stats": [
+    {
+      "value": "+60%",
+      "label": "revenue growth at Minori Group"
+    },
+    {
+      "value": "+80%",
+      "label": "conversion increase at Minori Group"
+    },
+    {
+      "value": "100%",
+      "label": "of inquiries handled by AI"
+    },
+    {
+      "value": "24/7",
+      "label": "inquiries answered across timezones"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Handle Seasonal Inquiry Spikes Without Hiring",
+      "body": "Travel demand comes in waves, a holiday launch or a viral destination can flood your chats overnight. Cekat.AI answers every itinerary, package, and price question the instant it lands, no matter how many arrive at once, so response time stays flat during peak season and you don't scramble to hire temporary staff you'll let go by month's end.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent handling a surge of travel inquiries in the Cekat.AI inbox"
+    },
+    {
+      "title": "Reply in the Traveler's Language, Around the Clock",
+      "body": "Travelers ask from different countries and timezones, in different languages. Cekat.AI's agent is multilingual and understands intent, not just keywords, so a question in Japanese at 2 AM and one in Indonesian at noon both get an instant, accurate answer. Coverage never sleeps, and no inquiry waits for an agent to come online.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "24/7 multilingual coverage across timezones in Cekat.AI"
+    },
+    {
+      "title": "Turn Past Travelers Into Repeat Bookings",
+      "body": "Broadcast campaigns go through the official WhatsApp Business API to segments built from real data, past travelers, seasonal bookers, leads who asked but never paid, with names and trip history pulled from the CRM. A well-timed seasonal promo reaches the people most likely to book again, instead of a blast everyone ignores.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Traveler segmentation for seasonal promos in Cekat.AI"
+    },
+    {
+      "title": "Every Traveler and Trip, Organized in One Place",
+      "body": "WhatsApp, Instagram DM, and website chat flow into one inbox, and every chat updates the traveler's CRM card automatically, past trips, questions, campaigns received. Your team sees full context instantly, and complex or high-value bookings escalate to a human with the whole conversation attached, so no lead slips through in a busy season.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Traveler journey tracked in the Cekat.AI CRM"
+    }
+  ],
+  "caseStudy": {
+    "client": "Minori Group",
+    "metrics": [
+      {
+        "value": "+60%",
+        "label": "revenue growth"
+      },
+      {
+        "value": "+80%",
+        "label": "conversion lift"
+      }
+    ],
+    "body": "Minori Group serves travelers across Japan and Indonesia, two languages, two timezones, and a small CS team stretched thin. After implementing Cekat.AI, a multilingual AI now handles 100% of inquiries around the clock, answering instantly in each traveler's language. The result: +60% revenue, +80% conversion, and the ability to scale without hiring more staff."
+  },
+  "pillars": [
+    {
+      "title": "Multilingual by Design",
+      "body": "The AI understands intent and replies naturally in multiple languages, so travelers from any market get an accurate answer in their own words."
+    },
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats and promo broadcasts run on the official WhatsApp Business API, reliable and safe for the number your bookings depend on."
+    },
+    {
+      "title": "Scales Without Hiring",
+      "body": "One agent handles unlimited simultaneous chats, so peak-season volume never means peak-season payroll or slower replies."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help tour and travel businesses?",
+      "a": "It answers traveler chats instantly 24/7 on WhatsApp, Instagram, and web chat, itineraries, packages, prices, and availability, in multiple languages and across timezones. Every conversation stays organized in one inbox, so seasonal inquiry spikes get handled without your team drowning or leads going cold."
+    },
+    {
+      "q": "Can the AI answer in different languages?",
+      "a": "Yes. Cekat.AI's agent is multilingual and understands intent and context rather than matching keywords, so it replies naturally in the traveler's own language. Minori Group used this to serve travelers across Japan and Indonesia with a single AI handling 100% of inquiries."
+    },
+    {
+      "q": "What results have travel businesses seen?",
+      "a": "Minori Group grew revenue +60% and conversion +80% after implementing Cekat.AI, with a multilingual AI handling 100% of inquiries around the clock across two languages and timezones, letting a small CS team scale without hiring more staff."
+    },
+    {
+      "q": "Can it handle a surge of inquiries during peak season?",
+      "a": "Yes. The AI answers every incoming chat instantly, no matter how many arrive at once, so response time stays flat when a holiday launch or viral destination floods your inbox. Anything complex escalates to your team with full context, and coverage runs 24/7."
+    },
+    {
+      "q": "Which channels can a travel business connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, website live chat, and API channels, all flowing into one unified inbox. Every traveler keeps a single conversation history, so an inquiry that spans channels and timezones stays in one place."
+    },
+    {
+      "q": "Can I send seasonal promos to past travelers?",
+      "a": "Yes. Broadcast campaigns go through the official WhatsApp Business API to segments built from activity and trip history, past travelers, seasonal bookers, leads who asked but never paid. Messages pull names and context from the CRM, so a seasonal offer feels relevant, not generic."
+    },
+    {
+      "q": "Does the AI work across timezones?",
+      "a": "Yes. Coverage runs 24/7, so a traveler asking at 2 AM in one country and another asking at noon somewhere else both get an instant answer. AI working hours let the agent cover chats after your team logs off and hand back with full context during working hours."
+    },
+    {
+      "q": "How does the AI learn our packages and itineraries?",
+      "a": "You paste your packages, itineraries, prices, and SOPs into the knowledge base, no coding required. Building the agent takes around five minutes and works like briefing a new CS admin, and from then on it answers from your actual offerings rather than guessing."
+    },
+    {
+      "q": "What happens with a complex or high-value booking?",
+      "a": "The conversation escalates to your team automatically with the full history attached, so a human closes the high-value or complicated trips while the AI handles the routine question volume around them. No traveler repeats themselves during the handoff."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Inquiries Into Booked Trips",
+    "body": "See how travel businesses run 24/7 multilingual sales and support on Cekat.AI, book a free consultation with our team."
+  }
+}

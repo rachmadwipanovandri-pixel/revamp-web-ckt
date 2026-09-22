@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": "AI Solution for HR Teams | Cekat.AI",
+    "description": "AI answers candidate and employee questions 24/7 from your policy knowledge base, sends segmented announcement broadcasts, and keeps sensitive topics with humans."
+  },
+  "hero": {
+    "badge": "Solution for HR Teams",
+    "title": "One Number for Every Candidate and Employee Question",
+    "subtitle": "Hiring season, onboarding, and the same leave-balance questions on repeat: AI answers from your official policies, and anything sensitive goes straight to the HR team."
+  },
+  "definition": "The Cekat.AI HR solution uses an AI agent, a shared inbox, and broadcasts to handle candidate questions during recruitment and everyday employee questions, with automatic escalation to the HR team for anything that needs a human.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "candidate and employee questions answered"
+    },
+    {
+      "value": "~5 min",
+      "label": "to set up a bot, no code"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "painPoints": {
+    "heading": "What Eats the HR Team's Day",
+    "items": [
+      {
+        "icon": "Users",
+        "title": "The same questions every day",
+        "body": "Leave balance, benefit claims, reimbursement steps. The answers already live in documents, yet each one still gets asked to a person in HR."
+      },
+      {
+        "icon": "Layers",
+        "title": "Important info drowns in groups",
+        "body": "Announcements go to busy groups and get read by some. Those who missed it still ask, and the cycle repeats."
+      },
+      {
+        "icon": "Clock",
+        "title": "Recruitment slowed by manual replies",
+        "body": "Hundreds of applicants ask the same requirements and status. Good candidates withdraw first because the wait ran too long."
+      }
+    ]
+  },
+  "compare": {
+    "heading": "The Difference With and Without Cekat.AI",
+    "body": "The same questions will always come. What changes is who answers them. Switch tabs to compare.",
+    "withLabel": "With Cekat.AI",
+    "withoutLabel": "Without Cekat.AI",
+    "with": {
+      "title": "HR answers once, the system answers forever",
+      "bullets": [
+        "AI answers candidate and employee FAQs from official policy documents",
+        "Announcements go out segmented by division with measurable read rates",
+        "Sensitive topics escalate automatically to the HR team with context"
+      ],
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "A policy knowledge base powering AI answers"
+    },
+    "without": {
+      "title": "Everything depends on who has a minute",
+      "bullets": [
+        "Policy answers vary depending on who gets asked",
+        "Announcements get buried under hundreds of group messages a day",
+        "Applicants wait days for a reply and choose to withdraw"
+      ]
+    }
+  },
+  "midCta": {
+    "heading": "Cut the Repeat Chats, Give HR Its Time Back",
+    "body": "Upload your policies and let AI answer starting today. Try it free or ask us first."
+  },
+  "benefits": [
+    {
+      "title": "Hiring Season Without an Exploding Inbox",
+      "body": "One vacancy can bring hundreds of applicants asking the same requirements, schedules, and status. The AI answers from the job details you upload, and the recruitment team screens instead of replying.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Applicant questions from every channel in one inbox"
+    },
+    {
+      "title": "Employee FAQs Answered From One Source",
+      "body": "Leave balance, benefit claims, reimbursement steps: the answers already live in your policy documents. Upload them once to the knowledge base and every employee gets the same consistent answer, whenever they ask.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "HR policy knowledge base powering AI answers"
+    },
+    {
+      "title": "Candidates Organized Like a Pipeline",
+      "body": "Every applicant becomes a contact with chat history attached, moving from screening to interview to offer on one board. No good candidate disappears into a spreadsheet.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Recruitment candidate pipeline on a Cekat.AI board"
+    },
+    {
+      "title": "Announcements That Arrive, Not Drown in Groups",
+      "body": "Segmented broadcasts by division or location for important announcements, interview invitations, and deadline reminders. Delivered officially over WhatsApp, read, and measured, instead of buried under hundreds of group messages.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Announcements delivered to the right employee segments"
+    },
+    {
+      "title": "Sensitive Matters Go Straight to Humans",
+      "body": "Salaries, conflicts, and personal data are not bot territory. You define the topics that always escalate, and the AI hands them to the HR team with context instead of improvising.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Sensitive topics escalated from AI to the HR team"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Answers Consistent With Policy",
+      "body": "The AI answers only from the official documents you upload, so there is never a different version per staff member."
+    },
+    {
+      "title": "Recruitment That Moves Faster",
+      "body": "Applicants get instant answers and sit organized in a pipeline, so your best candidates are not snapped up elsewhere first."
+    },
+    {
+      "title": "Boundaries You Define",
+      "body": "Sensitive topics always reach a human, on escalation rules you set from day one."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the Cekat.AI HR solution?",
+      "a": "An AI agent answering candidate and employee questions from your policy knowledge base, a shared inbox for the HR team, segmented announcement broadcasts, and automatic escalation for sensitive topics."
+    },
+    {
+      "q": "Does it work for recruitment?",
+      "a": "Yes. The AI answers applicant questions about requirements and process, reminds candidates of interview schedules via broadcast, and organizes candidates in a pipeline from screening to offer."
+    },
+    {
+      "q": "How does the AI know our company policies?",
+      "a": "From the documents you upload: company regulations, benefit guides, SOPs, or internal FAQs. The AI answers only from those sources, and you can update them anytime."
+    },
+    {
+      "q": "How are sensitive topics handled?",
+      "a": "You define the list of topics that always go to a human, salary and personal issues for example. The AI does not answer them; it hands over to the HR team with the chat history."
+    },
+    {
+      "q": "Can we broadcast announcements to employees?",
+      "a": "Yes, segmented by division, location, or status. Sent through the official WhatsApp Business API with approved templates, with read rates you can measure."
+    },
+    {
+      "q": "Which channels are supported?",
+      "a": "WhatsApp, Instagram, Facebook Messenger, Telegram, and live chat on your careers page, all landing in the same HR inbox."
+    },
+    {
+      "q": "How long until it is usable?",
+      "a": "A first bot is live in about 5 minutes with no code. Uploading policy documents and setting escalation rules is usually done the same day."
+    },
+    {
+      "q": "Can several HR staff share one number?",
+      "a": "Yes. Through the WhatsApp Business API, one HR number is served by several staff at once with clean conversation assignment, so no employee chat gets double-handled or missed entirely."
+    }
+  ],
+  "cta": {
+    "heading": "Let HR Focus on People, Not the Same Chat Again",
+    "body": "Repeat questions answered by AI, announcements that reach the right people, and sensitive matters kept in human hands. Try it free, or chat with our team."
+  }
+}

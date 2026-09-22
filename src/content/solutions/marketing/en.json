@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "title": "AI Solution for Marketing Teams | Cekat.AI",
+    "description": "Segmented WhatsApp broadcasts, ad leads answered instantly, and real conversions sent back to Meta and TikTok via CAPI. Campaigns proven down to revenue."
+  },
+  "hero": {
+    "badge": "Solution for Marketing Teams",
+    "title": "Campaigns Proven Down to Revenue, Not Just Clicks",
+    "subtitle": "Ad leads get an AI reply in the first second, customer data accumulates from chat, and real conversions flow back to the ad platforms. You know exactly which campaign makes money."
+  },
+  "definition": "The Cekat.AI marketing solution connects WhatsApp broadcasts, customer data from conversations, and conversion signals to Meta and TikTok through the Conversion API, so campaigns are optimized on real sales rather than clicks.",
+  "stats": [
+    {
+      "value": "3,000+",
+      "label": "businesses run campaigns on Cekat.AI"
+    },
+    {
+      "value": "+70%",
+      "label": "conversion lift at Holywings Group"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "interactions turned into recorded contacts"
+    },
+    {
+      "value": "24/7",
+      "label": "ad leads answered instantly"
+    }
+  ],
+  "painPoints": {
+    "heading": "Where Ad Budget Quietly Leaks",
+    "items": [
+      {
+        "icon": "MousePointerClick",
+        "title": "Plenty of clicks, unclear conversions",
+        "body": "Reports stop at clicks and impressions. How many became actual sales, nobody can answer with certainty."
+      },
+      {
+        "icon": "Send",
+        "title": "One flat blast for everyone",
+        "body": "A single message to every contact. The irrelevant ignore it, some report it as spam, and your business number takes the hit."
+      },
+      {
+        "icon": "Clock",
+        "title": "Ad leads left waiting",
+        "body": "People click an ad at peak buying intent. Every minute waiting for a reply, that intent drops and cost per result climbs."
+      }
+    ]
+  },
+  "compare": {
+    "heading": "The Difference With and Without Cekat.AI",
+    "body": "The same budget, different outcomes. Switch tabs to compare how your campaigns work.",
+    "withLabel": "With Cekat.AI",
+    "withoutLabel": "Without Cekat.AI",
+    "with": {
+      "title": "Campaigns that learn from real sales",
+      "bullets": [
+        "Leads from Click-to-WhatsApp Ads answered by AI in the first second",
+        "Broadcasts segmented by CRM labels, history, and buying stage",
+        "Chat conversions sent back to Meta and TikTok via CAPI"
+      ],
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Campaign attribution down to sales in Cekat.AI"
+    },
+    "without": {
+      "title": "Optimization running on incomplete data",
+      "bullets": [
+        "Pixels never see the deals closed in chat",
+        "The same blast to every contact gets ignored or reported",
+        "ROAS calculated by hand from exports that are always late"
+      ]
+    }
+  },
+  "midCta": {
+    "heading": "Prove Your Ads Earn, Not Just Reach",
+    "body": "Connect your channel and first campaign today, free. Or ask us first on WhatsApp."
+  },
+  "benefits": [
+    {
+      "title": "Broadcast to Segments, Not Blind Blasts",
+      "body": "The same message to everyone gets ignored by everyone. Segment your audience by chat history, labels, and pipeline stage in the CRM, then send each group an offer that is actually relevant.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Customer segmentation built from conversation data"
+    },
+    {
+      "title": "Ad Leads Answered the Second They Click",
+      "body": "Ad budget burns for nothing when the leads who click are left waiting. From Click-to-WhatsApp Ads, the AI greets, answers, and qualifies in the same minute the lead still intends to buy.",
+      "image": "/images/marketing/improve-performance-and-lower-cac.png",
+      "imageAlt": "Ad leads handled instantly by AI"
+    },
+    {
+      "title": "Every Meta Ad on One Dashboard",
+      "body": "Stop bouncing through Ads Manager. Each campaign, ad set, and ad reads on one dashboard next to its conversations and sales, so the weekly review stops being a screenshot collage.",
+      "image": "/images/marketing/review-all-meta-ads-in-one-dashboard.png",
+      "imageAlt": "All Meta Ads monitored on one Cekat.AI dashboard"
+    },
+    {
+      "title": "Chat Conversions Sent Back to the Ad Platforms",
+      "body": "Browser pixels never see a deal closed in WhatsApp. Cekat.AI sends real conversions, the leads that replied and the orders that happened, to Meta and TikTok through the Conversion API, so the algorithms learn from actual buyers.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Conversion signals sent to ad platforms via CAPI"
+    },
+    {
+      "title": "Know Which Campaign Makes Money",
+      "body": "Every contact carries its ad source all the way to the order. You see revenue per campaign, not just cost per click, and can move budget to what is proven to work.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Per-campaign sales attribution in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Customer Data That Stays Alive",
+      "body": "Every chat enriches the profile: interests, history, and buying stage. Segments always run on fresh data."
+    },
+    {
+      "title": "ROAS, Not Vanity Metrics",
+      "body": "What gets counted is completed sales, not impressions. Budget decisions stand on revenue numbers."
+    },
+    {
+      "title": "Broadcasts Through Official Rails",
+      "body": "Sent via the WhatsApp Business API with approved templates, not rogue blasts that gamble your business number."
+    }
+  ],
+  "testimonial": {
+    "quote": "We used to rely entirely on people. Our First Contact team had hit a ceiling, productivity simply could not go any higher. With Cekat AI filtering out the low-quality leads first, our conversion went from around 20% to 28%. That is a real number we are seeing.",
+    "name": "Bayu",
+    "role": "Head of Digital Marketing, Wall Street English Indonesia"
+  },
+  "faq": [
+    {
+      "q": "What is the Cekat.AI marketing solution?",
+      "a": "Segmented WhatsApp broadcasts, AI handling of ad leads, an ads performance dashboard, and conversion signals sent to ad platforms through the Conversion API, all in one platform."
+    },
+    {
+      "q": "Are WhatsApp broadcasts safe from bans?",
+      "a": "Broadcasts go through the official WhatsApp Business API with Meta-approved templates, the channel built for business messaging, not unofficial blast tools that gamble your number."
+    },
+    {
+      "q": "What can we segment on?",
+      "a": "Contact labels, conversation history, pipeline stage, ad source, and custom attributes you define. Segments can be saved and reused for the next campaign."
+    },
+    {
+      "q": "What is the Conversion API and why does it matter?",
+      "a": "A way to send conversion events server-to-server to ad platforms. Deals closed in chat are invisible to browser pixels, so without CAPI your ad algorithms learn from incomplete data."
+    },
+    {
+      "q": "Which ad platforms are connected?",
+      "a": "Meta and TikTok. All three receive the same real conversion signals, so optimization on each platform stands on accurate data."
+    },
+    {
+      "q": "Can we see ROAS per campaign?",
+      "a": "Yes. Every contact carries its campaign source through to the order, so revenue per campaign reads on the dashboard and budget can shift to what is proven to earn."
+    },
+    {
+      "q": "Are ad leads handled by AI immediately?",
+      "a": "Yes. Leads from Click-to-WhatsApp Ads get an AI greeting in the first second, their questions answered, and qualification done, then a handover to sales once they are ready."
+    },
+    {
+      "q": "Can broadcasts be scheduled to send later?",
+      "a": "Yes. Build the campaign, pick the segment, then schedule it for the hour most likely to be read. Delivery results appear on the same dashboard once it has run."
+    }
+  ],
+  "cta": {
+    "heading": "Prove Your Campaigns With Revenue Numbers",
+    "body": "The right segments, instant responses, and conversions tracked to the order. Try it free, or chat with our team on WhatsApp."
+  }
+}

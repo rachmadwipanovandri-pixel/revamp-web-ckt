@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "Solusi AI untuk Tim Sales | Cekat.AI",
+    "description": "AI agent balas leads di detik pertama, kualifikasi otomatis, follow-up jalan sendiri, dan pipeline rapi di satu CRM. Dipakai 3.000+ bisnis di Indonesia."
+  },
+  "hero": {
+    "badge": "Solusi untuk Tim Sales",
+    "title": "Leads Dibalas Duluan, Sales Fokus ke yang Mau Closing",
+    "subtitle": "Cekat.AI membalas chat masuk di detik pertama, mengualifikasi prospek, dan menjaga follow-up tetap jalan. Tim sales-mu buka hari dengan daftar leads panas, bukan tumpukan chat semalam."
+  },
+  "definition": "Solusi sales dari Cekat.AI adalah AI agent, CRM, dan automasi follow-up dalam satu platform: leads dari WhatsApp, Instagram, dan web dibalas instan, terkualifikasi, dan masuk pipeline dengan riwayat lengkap sampai closing.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "leads dibalas, termasuk tengah malam"
+    },
+    {
+      "value": ">50%",
+      "label": "kenaikan revenue Threeland Property"
+    },
+    {
+      "value": "±5 menit",
+      "label": "setup bot, tanpa coding"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "painPoints": {
+    "heading": "Kenapa Deal Bisa Lepas Padahal Leads-nya Ada",
+    "items": [
+      {
+        "icon": "Clock",
+        "title": "Leads dibalas terlalu lama",
+        "body": "Chat yang masuk malam baru dibalas pagi. Calon pembeli sudah dapat jawaban dari tempat lain, dan deal selesai sebelum tim-mu sempat menyapa."
+      },
+      {
+        "icon": "Database",
+        "title": "Data pelanggan tercecer",
+        "body": "Kontak dan riwayat nempel di HP masing-masing sales. Saat orangnya cuti atau resign, pengetahuannya ikut pergi."
+      },
+      {
+        "icon": "ChartColumn",
+        "title": "Follow-up dan laporan manual",
+        "body": "Follow-up bergantung ingatan, laporan disusun ulang tiap akhir bulan. Waktu jualan habis untuk pekerjaan admin."
+      }
+    ]
+  },
+  "compare": {
+    "heading": "Bedanya Pakai Cekat.AI dan Tidak",
+    "body": "Alur kerja yang sama, dua cara menjalankan yang berbeda. Pilih tab untuk membandingkan hari-hari tim sales-mu.",
+    "withLabel": "Dengan Cekat.AI",
+    "withoutLabel": "Tanpa Cekat.AI",
+    "with": {
+      "title": "Tidak ada proses yang berulang dan terlewat",
+      "bullets": [
+        "Leads dari semua channel dibalas AI di detik pertama, 24/7",
+        "Kontak, riwayat chat, dan tahap deal tercatat otomatis di satu CRM",
+        "Follow-up terjadwal sendiri dan berhenti begitu prospek membalas"
+      ],
+      "image": "/images/crm/manage-work-with-boards.png",
+      "imageAlt": "Pipeline penjualan terkelola otomatis di Cekat.AI"
+    },
+    "without": {
+      "title": "Proses administrasi rawan terlewat",
+      "bullets": [
+        "Chat menumpuk semalaman dan dibalas saat leads sudah dingin",
+        "Data pelanggan terpisah di HP tiap sales dan sulit ditelusuri",
+        "Follow-up bergantung ingatan, deal hilang tanpa ketahuan"
+      ]
+    }
+  },
+  "midCta": {
+    "heading": "Tingkatkan Penjualan Tanpa Kehilangan Satu Leads Pun",
+    "body": "Mulai gratis hari ini, atau tanya dulu lewat WhatsApp. Setup pertama sekitar 5 menit."
+  },
+  "benefits": [
+    {
+      "title": "Kecepatan Balas Pertama yang Menang Deal",
+      "body": "Calon pembeli chat lima toko sekaligus dan beli di yang jawab duluan. AI agent Cekat.AI membalas di detik pertama, menanyakan kebutuhan, dan mengirim katalog atau harga tanpa menunggu tim online.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent membalas chat leads secara instan"
+    },
+    {
+      "title": "Leads Panas dan Dingin Terpisah Sendiri",
+      "body": "Tidak semua chat layak dikejar hari ini. AI menanyakan budget, kebutuhan, dan timeline, lalu menandai mana yang siap dihubungi sales, jadi tenaga tim habis untuk prospek yang benar-benar mau beli.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads terkualifikasi dan terorganisir otomatis di CRM"
+    },
+    {
+      "title": "Follow-up Jalan Sendiri Sampai Dijawab",
+      "body": "Deal jarang mati karena ditolak, lebih sering karena lupa di-follow-up. Atur urutan follow-up otomatis, dan prospek yang diam disapa lagi di waktu yang tepat tanpa sales harus mengingat-ingat.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Perjalanan prospek terlacak dari chat pertama sampai closing"
+    },
+    {
+      "title": "Pipeline yang Kelihatan, Bukan di Kepala Sales",
+      "body": "Setiap percakapan otomatis jadi kontak dan deal di board pipeline. Kamu lihat berapa nilai yang antre di tiap tahap, siapa yang pegang, dan mana yang macet, tanpa minta laporan manual.",
+      "image": "/images/crm/manage-work-with-boards.png",
+      "imageAlt": "Board pipeline penjualan di CRM Cekat.AI"
+    },
+    {
+      "title": "Closing Jam 11 Malam Tetap Kehitung",
+      "body": "Prospek serius sering muncul di luar jam kerja. AI mengamankan komitmen, menjadwalkan janji, atau meneruskan ke sales on-call, dan semuanya tercatat di CRM lengkap dengan sumber iklannya.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI menangani prospek di luar jam kerja"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Respons Pertama Instan",
+      "body": "Chat dari semua channel dibalas di detik pertama, 24/7, jadi tidak ada leads yang keburu dingin."
+    },
+    {
+      "title": "Pipeline Tanpa Input Manual",
+      "body": "Kontak, riwayat chat, dan tahap deal tercatat otomatis. Sales tinggal jual, bukan jadi admin."
+    },
+    {
+      "title": "Serah Terima Mulus ke Manusia",
+      "body": "Begitu prospek siap, AI oper ke sales lengkap dengan konteks percakapan, bukan mulai dari nol."
+    }
+  ],
+  "testimonial": {
+    "quote": "Revenue kami naik lebih dari 50%! Cekat AI membantu kami mengamankan kunjungan properti dan closing bahkan saat saya tidur, karena tidak ada leads yang terlewat.",
+    "name": "Adam Sulaiman",
+    "role": "President Director - Threeland Property",
+    "image": "/images/crm/adam-sulaiman.png"
+  },
+  "faq": [
+    {
+      "q": "Apa itu solusi sales Cekat.AI?",
+      "a": "Gabungan AI agent, CRM, dan automasi follow-up untuk tim sales. AI membalas dan mengualifikasi leads dari semua channel chat, lalu CRM mencatat kontak, riwayat, dan tahap deal secara otomatis sampai closing."
+    },
+    {
+      "q": "Apa bedanya dengan CRM biasa?",
+      "a": "CRM biasa mencatat setelah kejadian dan bergantung pada kerajinan sales mengisi data. Di Cekat.AI, percakapan, kualifikasi, dan follow-up terjadi di platform yang sama, jadi pipeline terisi sendiri dari chat."
+    },
+    {
+      "q": "Bagaimana AI tahu leads mana yang panas?",
+      "a": "Kamu menentukan pertanyaan kualifikasinya, misalnya budget, kebutuhan, dan kapan mau mulai. AI menanyakannya secara natural di percakapan dan menandai hasilnya di kontak, jadi sales tinggal menyaring."
+    },
+    {
+      "q": "Kapan AI menyerahkan chat ke sales manusia?",
+      "a": "Sesuai aturan yang kamu set: saat prospek minta dihubungi, saat nilai deal besar, atau saat kata kunci tertentu muncul. AI berhenti, tim ambil alih dengan riwayat lengkap di layar yang sama."
+    },
+    {
+      "q": "Channel apa saja yang bisa dipakai tim sales?",
+      "a": "WhatsApp, Instagram, Facebook Messenger, Telegram, dan live chat website, semuanya masuk ke satu inbox dan satu pipeline yang sama."
+    },
+    {
+      "q": "Berapa lama setup sampai jalan?",
+      "a": "Bot pertama bisa aktif sekitar 5 menit tanpa coding: hubungkan channel, unggah pengetahuan produk, atur alur kualifikasi. Menyetel alur follow-up dan pipeline menyusul bertahap."
+    },
+    {
+      "q": "Apakah harus ganti nomor WhatsApp?",
+      "a": "Tidak. Nomor bisnis yang sudah dikenal pelanggan bisa dihubungkan lewat WhatsApp Business API, lengkap dengan centang hijau bila memenuhi syarat verifikasi Meta."
+    },
+    {
+      "q": "Laporan apa yang bisa dilihat manajer sales?",
+      "a": "Nilai deal per tahap pipeline, jumlah leads masuk per channel dan per sumber iklan, kecepatan respons tiap sales, dan deal yang macet paling lama. Semuanya terbaca langsung tanpa minta rekap manual ke tim."
+    }
+  ],
+  "cta": {
+    "heading": "Berhenti Kehilangan Leads yang Sebenarnya Mau Beli",
+    "body": "Balas duluan, kualifikasi otomatis, dan pipeline yang bergerak sendiri. Coba gratis, atau chat tim kami lewat WhatsApp."
+  }
+}

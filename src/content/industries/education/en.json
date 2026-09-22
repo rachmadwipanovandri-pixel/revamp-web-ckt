@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "AI Customer Service for Education & Campuses | CekatAI",
+    "description": "Schools and campuses use Cekat.AI to answer prospective students 24/7 through admission season. Matana University increased student enrolment by nearly 60–70%."
+  },
+  "hero": {
+    "badge": "Education",
+    "title": "Answer Every Prospective Student Before They Apply Elsewhere",
+    "subtitle": "From program questions to fees to schedules, Cekat.AI replies instantly on WhatsApp and Instagram, 24/7 through admission season, capturing every lead without adding admissions staff",
+    "useCases": [
+      "Admission season",
+      "24/7 answers",
+      "Applicant lead capture",
+      "Prospect nurturing"
+    ]
+  },
+  "definition": "Cekat.AI for education is an AI customer service platform for schools, campuses, and course providers in Indonesia, answering questions from prospective students and parents 24/7, capturing every inquiry as a lead, and nurturing applicants through automated follow-ups in one platform.",
+  "stats": [
+    {
+      "value": "+60–70%",
+      "label": "increase in student enrolment at Matana University"
+    },
+    {
+      "value": "~100",
+      "label": "student inquiries handled daily at Matana University"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Survive the Admission-Season Chat Flood",
+      "body": "During PMB, inquiries arrive faster than any admissions team can type. Cekat.AI answers every one instantly, programs, requirements, tuition, deadlines, no matter how many land at once, so response time stays flat when volume spikes and no prospective student waits days for a reply they needed today.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering admission questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "Parents and Students Ask at 10 PM. You Answer at 10 PM.",
+      "body": "Families research schools after work and after dinner, long past office hours. Cekat.AI replies at any hour with accurate answers on programs, fees, scholarships, and schedules, so a parent deciding tonight gets certainty instead of a voicemail, and your counselors arrive to handled conversations, not a backlog.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours routing between counselors and AI agent in Cekat.AI"
+    },
+    {
+      "title": "Every Inquiry Becomes a Captured Lead",
+      "body": "A prospective student who asks and disappears is a lost enrollment. Cekat.AI records every inquiry into a CRM card automatically, no manual input, with the full conversation, program of interest, and contact details, so your team wakes up to a list of real applicants instead of scattered unread chats.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Prospective students captured as leads in the Cekat.AI CRM"
+    },
+    {
+      "title": "Nurture Applicants From Inquiry to Enrollment",
+      "body": "Most applicants go quiet, not away. Cekat.AI sends follow-up nudges matched to each applicant's stage, a reminder before a registration deadline, a check-in after a campus-tour question, triggered by schedules, chat keywords, or changes in their data. No candidate is forgotten because admissions got busy.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated applicant follow-up workflows in Cekat.AI"
+    },
+    {
+      "title": "One AI for Every Faculty and Program",
+      "body": "Set up specialized AI agents per faculty, program, or campus, each answering from its own knowledge base, and route conversations to the right team automatically. When a question needs a real counselor, it escalates with the full history attached, the applicant never repeats themselves.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Multiple specialized AI agents per program in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Built for Peak Season",
+      "body": "When PMB inquiries spike, Cekat.AI answers every chat instantly, response time stays flat whether ten or ten thousand messages arrive."
+    },
+    {
+      "title": "Human Where It Matters",
+      "body": "The AI handles routine questions; anything that needs a counselor escalates with full context. Prospective families never repeat themselves."
+    },
+    {
+      "title": "Proven in Education",
+      "body": "Matana University increased student enrolment by nearly 60–70% with Cekat.AI, thanks to faster responses and stronger prospective-student engagement."
+    }
+  ],
+  "testimonial": {
+    "quote": "Cekat.AI helps us respond to prospective students faster, build engagement, and increase student enrolment by nearly 60–70%.",
+    "name": "Hansen Iskandar",
+    "role": "Head of Marketing, Admission & Sales of Matana University",
+    "image": "/images/home/hansen-iskandar.png"
+  },
+  "faq": [
+    {
+      "q": "How does Cekat.AI help schools, campuses, and course providers?",
+      "a": "It answers questions from prospective students and parents instantly 24/7 on WhatsApp, Instagram, and web chat, programs, tuition, requirements, schedules, while capturing each inquiry as a lead. Your admissions team stops drowning in repetitive chats and focuses on the applicants closest to enrolling."
+    },
+    {
+      "q": "Can it handle the admission-season (PMB) chat surge?",
+      "a": "Yes. The AI answers every incoming chat instantly no matter how many arrive at once, so response time stays flat during PMB peaks. Complex questions escalate to a counselor with full context, and AI working hours keep coverage running after your admissions office closes."
+    },
+    {
+      "q": "What questions can the AI answer for prospective students?",
+      "a": "Programs and majors, entry requirements, tuition and fees, scholarships, class schedules, registration deadlines, and campus details, answered in natural language from the knowledge you provide. It understands intent rather than matching keywords, so students get accurate answers even when they phrase questions their own way."
+    },
+    {
+      "q": "Does it capture leads from prospective students and parents?",
+      "a": "Yes. Every inquiry is recorded into a CRM card automatically, no manual input, with the full conversation, program of interest, and contact details. Your team gets an organized list of real applicants instead of scattered unread chats across channels."
+    },
+    {
+      "q": "How does Cekat.AI follow up with applicants?",
+      "a": "Automated follow-up nudges are triggered by schedules, chat keywords, or changes in an applicant's data, a reminder before a registration deadline, a check-in after a campus question. Each candidate is nurtured through the funnel without a counselor having to remember every name."
+    },
+    {
+      "q": "Which channels can a school or campus connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, and website live chat, all flowing into one inbox with a single interaction history per prospective student, so a family moving from Instagram to WhatsApp never has to repeat themselves."
+    },
+    {
+      "q": "What results have education institutions seen with Cekat.AI?",
+      "a": "Matana University increased student enrolment by nearly 60–70% with Cekat.AI, according to its Head of Marketing, Admission & Sales. Faster, more consistent responses helped build prospective-student engagement and let the team work more efficiently."
+    },
+    {
+      "q": "When does a human counselor take over the conversation?",
+      "a": "Whenever a question needs a person, a nuanced program decision, a special case, the conversation escalates to your team with the full chat history attached. With AI working hours, counselors handle chats during office hours and the AI covers everything after."
+    },
+    {
+      "q": "How long does setup take for a school or campus?",
+      "a": "Building the AI agent takes around five minutes, paste your program information, fees, requirements, and SOPs into the knowledge base and it starts answering accurately. No coding is required; Cekat.AI describes it as being as easy as briefing a new admissions admin."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Admission-Season Chats Into Enrollments",
+    "body": "See how schools and campuses answer every prospective student on Cekat.AI, book a free consultation with our team."
+  }
+}

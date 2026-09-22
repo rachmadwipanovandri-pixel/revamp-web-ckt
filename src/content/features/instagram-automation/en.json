@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Instagram API Auto Reply, Never Leave a DM on Read | CekatAI",
+    "description": "Auto-reply Instagram DMs with AI via the official Instagram API. DMs from ads, stories, and comments answered 24/7, trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "Official Instagram API Integration",
+    "title": "Never Leave a Follower on Read Again",
+    "subtitle": "Cekat.AI answers every Instagram DM with a humanlike AI agent, whether it came from an ad, a story reply, or a comment, in the same unified inbox as WhatsApp, 24/7"
+  },
+  "definition": "Instagram auto reply is a Cekat.AI feature that answers Instagram DMs automatically using a humanlike AI agent connected through the official Instagram API. DMs triggered by ads, story replies, and comments land in one unified inbox alongside WhatsApp and Facebook Messenger.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "DMs answered, even at 2 AM" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Answer Every DM in Seconds, Around the Clock",
+      "body": "A follower who DMs about price is a buyer in that moment, three hours later, they've bought elsewhere. Cekat.AI's agent replies in seconds, in natural language, at any hour. It understands intent and context, not just keywords, so \"is this still available?\" gets a real answer, not a canned menu.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI agent answering Instagram DMs automatically"
+    },
+    {
+      "title": "Catch the DMs Your Ads Are Already Paying For",
+      "body": "Every unanswered DM from an Instagram ad is ad budget burned. When someone taps your ad and starts a conversation, the AI qualifies them on the spot, answering questions, capturing their details into the CRM as a lead, and nudging them toward checkout while your ad spend is still warm.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads from Instagram captured automatically into the Cekat.AI CRM"
+    },
+    {
+      "title": "Story Replies and Comment DMs Never Get Buried",
+      "body": "Post a story or promo and the replies flood in, then get lost under yesterday's chats. In Cekat.AI, every conversation is auto-labeled and prioritized, so a hot buying question surfaces above the small talk and nothing scrolls out of sight before it's answered.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "Auto-labeled and prioritized Instagram conversations in Cekat.AI"
+    },
+    {
+      "title": "One Inbox for Instagram, WhatsApp, and Messenger",
+      "body": "Your customers hop between channels; your team shouldn't have to. Instagram DMs sit in the same unified inbox as WhatsApp, Facebook Messenger, and website live chat, one screen, one customer history, one AI agent that remembers the context wherever the conversation continues.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Instagram, WhatsApp, and Messenger unified in one Cekat.AI inbox"
+    },
+    {
+      "title": "Trained on Your Business, Ready in Minutes",
+      "body": "Paste your SOPs, product details, and store policies into the knowledge base and the agent is ready in about 5 minutes, no coding, as easy as briefing a CS admin. A visual drag-and-drop designer lets you shape specific flows, like routing collab inquiries straight to your team.",
+      "image": "/images/chat/train-your-ai-agent.png",
+      "imageAlt": "Training the Cekat.AI agent with SOPs and business info"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Auto Reply",
+      "title": "Replies That Sound Like You, Not a Bot",
+      "body": "The AI answers in natural, humanlike language and handles multiple languages, so international followers get answers too. It reads what the customer means, not just which word they typed."
+    },
+    {
+      "label": "Unified Inbox",
+      "title": "Every Channel, One Screen",
+      "body": "Instagram DMs flow into the same inbox as WhatsApp, Messenger, and live chat, with fast search, auto-labeling, and case prioritization keeping the queue organized for your whole team."
+    },
+    {
+      "label": "Lead Capture",
+      "title": "From DM to CRM, Automatically",
+      "body": "Every Instagram conversation creates or updates a CRM card, no manual input. Followers move through Visitor, Lead, and Buyer stages with next-step suggestions your team can act on."
+    },
+    {
+      "label": "Human Handoff",
+      "title": "Your Team Steps In With Full Context",
+      "body": "When a conversation needs a human, the AI hands it off with the entire chat history attached. Set AI working hours so your team leads by day and the agent covers the night shift."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official API, Safe Account",
+      "body": "Cekat.AI is an official Meta Business Partner, Instagram DMs are handled through the official API, not risky third-party workarounds."
+    },
+    {
+      "title": "Intent, Not Keyword Triggers",
+      "body": "The AI understands what followers mean, misspellings, slang, mixed languages, instead of waiting for an exact keyword to fire a canned reply."
+    },
+    {
+      "title": "Scales Without New Hires",
+      "body": "Whether a post brings 10 DMs or 1,000, the same AI agent answers them all instantly, no extra admins, no overtime, no backlog."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is an Instagram auto reply?",
+      "a": "An Instagram auto reply is an automated response to DMs on your Instagram business account. With Cekat.AI, replies come from a humanlike AI agent connected through the official Instagram API, it understands the question's intent and context, answers naturally 24/7, and escalates to your team when a human touch is needed."
+    },
+    {
+      "q": "How is this different from a keyword-based Instagram bot?",
+      "a": "Keyword bots fire canned replies when they spot an exact word, and fall apart on typos, slang, or real questions. Cekat.AI's agent understands intent and context, it can answer product questions, qualify leads, and hold a genuine conversation, in multiple languages, without a script for every possible phrasing."
+    },
+    {
+      "q": "Can it reply to DMs that come from Instagram ads?",
+      "a": "Yes. When someone taps an ad and opens a DM, the conversation lands in the Cekat.AI inbox and the AI responds immediately, answering questions, capturing the person as a lead in the CRM, and moving them toward a purchase. That means ad-driven DMs get worked at any hour, not just when an admin is online."
+    },
+    {
+      "q": "Does it handle story replies and comment-driven DMs too?",
+      "a": "Yes. DMs sparked by story replies and comments arrive in the same unified inbox as everything else, where they're auto-labeled, prioritized, and answered by the AI. Promo-day floods stop burying real buying questions, because the important conversations are surfaced instead of scrolling away."
+    },
+    {
+      "q": "Is Instagram automation safe for my account?",
+      "a": "Yes, when it runs through official channels. Cekat.AI is an official Meta Business Partner and connects to Instagram through the official API, the sanctioned way to automate DMs. That's fundamentally different from unofficial tools that simulate app activity and put accounts at risk."
+    },
+    {
+      "q": "Can my team take over a conversation from the AI?",
+      "a": "Anytime. The AI hands off with the full conversation history attached, so your team never asks a customer to repeat themselves. With AI working hours, the handoff is automatic on a schedule too: your team covers business hours, the AI covers nights and weekends."
+    },
+    {
+      "q": "Can it capture leads from Instagram into a CRM?",
+      "a": "Yes. Every Instagram conversation automatically creates or updates a customer card in the Cekat.AI CRM, profile, chat history, and stage in the journey from Visitor to Lead to Buyer, with suggested next steps. No copy-pasting usernames into spreadsheets."
+    },
+    {
+      "q": "How long does it take to set up Instagram auto reply?",
+      "a": "About 5 minutes for the agent itself: paste your SOPs, product info, and policies into the knowledge base, no coding required, as easy as briefing a CS admin. Connect your Instagram account, and the same agent can cover WhatsApp and Messenger from day one."
+    },
+    {
+      "q": "Does the AI reply in Indonesian, English, or both?",
+      "a": "Both, and more, the agent is multilingual and detects the language each follower uses. A DM in Indonesian gets an Indonesian answer, an English inquiry gets English, without you building separate flows per language. That's how Minori Group serves customers across Japan and Indonesia with one small team."
+    },
+    {
+      "q": "Does Instagram auto reply work together with WhatsApp?",
+      "a": "Yes, that's the point of the unified inbox. Instagram, WhatsApp, Messenger, and website live chat share one screen, one CRM, and one AI agent. A follower who DMs on Instagram today and messages your WhatsApp tomorrow is recognized as the same customer, with full history carried across."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Instagram DMs Into Closed Sales",
+    "body": "Connect your Instagram in minutes and let AI answer every DM, from ads, stories, and comments, before your competitors even open the app."
+  }
+}

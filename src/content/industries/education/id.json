@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "CS Otomatis Kampus & Sekolah, Bales PMB 24/7 | CekatAI",
+    "description": "Kampus & sekolah pakai Cekat.AI buat jawab calon mahasiswa 24/7 di musim PMB. Matana University meningkatkan jumlah mahasiswa hampir 60–70%."
+  },
+  "hero": {
+    "badge": "Pendidikan",
+    "title": "Jawab Setiap Calon Siswa Sebelum Mereka Daftar ke Tempat Lain",
+    "subtitle": "Dari pertanyaan program, biaya, sampai jadwal, Cekat.AI membalas instan di WhatsApp dan Instagram, 24/7 sepanjang musim PMB, menangkap setiap leads tanpa nambah staf admisi",
+    "useCases": [
+      "Musim PMB",
+      "Jawab 24/7",
+      "Tangkap leads pendaftar",
+      "Nurture calon siswa"
+    ]
+  },
+  "definition": "Cekat.AI untuk pendidikan adalah platform AI customer service untuk kampus, sekolah, dan lembaga kursus di Indonesia, menjawab pertanyaan calon siswa dan orang tua 24/7, menangkap setiap inquiry jadi leads, dan menurture calon pendaftar lewat follow-up otomatis dalam satu platform.",
+  "stats": [
+    {
+      "value": "+60–70%",
+      "label": "kenaikan jumlah mahasiswa di Matana University"
+    },
+    {
+      "value": "~100",
+      "label": "inquiry calon mahasiswa tertangani per hari di Matana University"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Tahan Banjir Chat di Musim PMB",
+      "body": "Pas PMB, chat masuk lebih cepat dari kecepatan tim admisi ngetik. Cekat.AI menjawab semuanya instan, program, syarat, biaya, deadline, berapa pun banyaknya yang masuk sekaligus, jadi waktu respons tetap stabil saat volume melonjak dan nggak ada calon siswa yang nunggu berhari-hari untuk jawaban yang dibutuhin hari itu juga.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab pertanyaan pendaftaran di inbox Cekat.AI"
+    },
+    {
+      "title": "Orang Tua dan Siswa Nanya Jam 10 Malam? Kamu Jawab Jam 10 Malam.",
+      "body": "Keluarga sering cari info sekolah setelah kerja dan setelah makan malam, jauh di luar jam kantor. Cekat.AI menjawab kapan pun dengan info akurat soal program, biaya, beasiswa, dan jadwal, jadi orang tua yang lagi mutusin malam ini dapat kepastian, bukan voicemail, dan konselor datang pagi ke percakapan yang udah beres.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI dan konselor di Cekat.AI"
+    },
+    {
+      "title": "Setiap Inquiry Jadi Leads yang Tertangkap",
+      "body": "Calon siswa yang nanya lalu hilang artinya pendaftaran yang lepas. Cekat.AI mencatat tiap inquiry ke kartu CRM otomatis, tanpa input manual, lengkap dengan percakapan, program yang diminati, dan kontaknya, jadi timmu bangun pagi dengan daftar calon pendaftar beneran, bukan chat berserakan yang belum kebaca.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Calon siswa tertangkap sebagai leads di CRM Cekat.AI"
+    },
+    {
+      "title": "Nurture Calon Pendaftar dari Inquiry sampai Daftar",
+      "body": "Kebanyakan calon pendaftar cuma diam, bukan mundur. Cekat.AI mengirim follow-up sesuai tahap masing-masing, reminder sebelum deadline pendaftaran, sapaan setelah nanya campus tour, dipicu jadwal, keyword chat, atau perubahan datanya. Nggak ada kandidat yang terlupakan cuma karena tim admisi lagi sibuk.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Alur follow-up otomatis calon pendaftar di Cekat.AI"
+    },
+    {
+      "title": "Satu AI untuk Tiap Fakultas dan Program",
+      "body": "Bikin AI agent spesialis per fakultas, program, atau kampus, masing-masing menjawab dari knowledge base-nya sendiri, dan arahkan percakapan ke tim yang tepat otomatis. Saat pertanyaan butuh konselor beneran, dialihkan lengkap dengan riwayatnya, calon siswa nggak perlu mengulang cerita.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Beberapa AI agent spesialis per program di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Tetap Responsif Saat Jumlah Pesan Membludak",
+      "body": "Saat chat PMB melonjak, Cekat.AI menjawab setiap chat instan, waktu respons tetap stabil, mau sepuluh atau sepuluh ribu pesan yang masuk."
+    },
+    {
+      "title": "Manusia di Momen yang Penting",
+      "body": "AI menangani pertanyaan rutin; yang butuh konselor dialihkan lengkap dengan konteks. Calon siswa dan orang tua nggak pernah mengulang cerita."
+    },
+    {
+      "title": "Terbukti di Pendidikan",
+      "body": "Matana University meningkatkan jumlah mahasiswa hampir 60–70% dengan Cekat.AI, berkat respons yang lebih cepat dan engagement calon mahasiswa yang lebih kuat."
+    }
+  ],
+  "testimonial": {
+    "quote": "Cekat.AI membantu kami merespons calon mahasiswa lebih cepat, membangun engagement, dan meningkatkan jumlah mahasiswa hampir 60–70%.",
+    "name": "Hansen Iskandar",
+    "role": "Head of Marketing, Admission & Sales of Matana University",
+    "image": "/images/home/hansen-iskandar.png"
+  },
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu kampus, sekolah, dan lembaga kursus?",
+      "a": "Cekat.AI menjawab pertanyaan calon siswa dan orang tua secara instan 24/7 di WhatsApp, Instagram, dan web chat, program, biaya, syarat, jadwal, sambil menangkap tiap inquiry jadi leads. Tim admisi berhenti kewalahan chat yang berulang dan fokus ke calon yang paling dekat mendaftar."
+    },
+    {
+      "q": "Bisa menangani lonjakan chat musim PMB?",
+      "a": "Bisa. AI menjawab setiap chat masuk secara instan berapa pun banyaknya sekaligus, jadi waktu respons tetap stabil saat puncak PMB. Pertanyaan kompleks dialihkan ke konselor lengkap dengan konteks, dan AI working hours menjaga coverage tetap jalan setelah kantor admisi tutup."
+    },
+    {
+      "q": "Pertanyaan apa saja yang bisa dijawab AI untuk calon siswa?",
+      "a": "Program dan jurusan, syarat masuk, biaya kuliah, beasiswa, jadwal, deadline pendaftaran, dan detail kampus, dijawab dengan bahasa natural dari pengetahuan yang kamu berikan. AI paham maksud, bukan cuma cocokin keyword, jadi siswa dapat jawaban akurat walau nanya dengan gaya bahasa sendiri."
+    },
+    {
+      "q": "Cekat.AI menangkap leads dari calon siswa dan orang tua?",
+      "a": "Ya. Setiap inquiry dicatat ke kartu CRM otomatis, tanpa input manual, lengkap dengan percakapan, program yang diminati, dan kontaknya. Timmu dapat daftar calon pendaftar yang rapi, bukan chat berserakan yang belum kebaca di berbagai channel."
+    },
+    {
+      "q": "Bagaimana Cekat.AI follow-up calon pendaftar?",
+      "a": "Follow-up otomatis dipicu jadwal, keyword chat, atau perubahan data calon pendaftar, reminder sebelum deadline pendaftaran, sapaan setelah nanya kampus. Tiap kandidat di-nurture sepanjang funnel tanpa konselor harus mengingat setiap nama satu per satu."
+    },
+    {
+      "q": "Channel apa saja yang bisa dihubungkan kampus atau sekolah?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, dan live chat website, semua masuk ke satu inbox dengan satu riwayat interaksi per calon siswa, jadi keluarga yang pindah dari Instagram ke WhatsApp nggak perlu mengulang cerita."
+    },
+    {
+      "q": "Hasil apa yang sudah dirasakan lembaga pendidikan dengan Cekat.AI?",
+      "a": "Matana University meningkatkan jumlah mahasiswa hampir 60–70% dengan Cekat.AI, menurut Head of Marketing, Admission & Sales-nya. Respons yang lebih cepat dan konsisten membantu membangun engagement calon mahasiswa dan membuat tim bekerja lebih efisien."
+    },
+    {
+      "q": "Kapan konselor manusia mengambil alih percakapan?",
+      "a": "Setiap kali pertanyaan butuh manusia, keputusan program yang nuansanya rumit, kasus khusus, percakapan dialihkan ke timmu lengkap dengan seluruh riwayat chat. Dengan AI working hours, konselor menangani chat di jam kantor dan AI meng-cover sisanya."
+    },
+    {
+      "q": "Berapa lama setup untuk kampus atau sekolah?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin info program, biaya, syarat, dan SOP ke knowledge base, dan AI langsung menjawab akurat. Tanpa coding sama sekali; semudah briefing admin admisi baru."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Chat Musim PMB Jadi Pendaftaran",
+    "body": "Lihat bagaimana kampus dan sekolah menjawab setiap calon siswa di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

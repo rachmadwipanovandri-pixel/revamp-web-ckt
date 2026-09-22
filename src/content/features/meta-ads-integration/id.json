@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Integrasi Meta Ads: CTWA, Atribusi, Balasan Instan | Cekat.AI",
+    "description": "Hubungkan Meta Ads ke Cekat.AI: klik iklan langsung jadi chat WhatsApp, leads beratribusi kampanyenya, dibalas AI di detik pertama, dan konversinya kelacak."
+  },
+  "hero": {
+    "badge": "Integrasi Meta Ads",
+    "title": "Iklan Meta-mu Berhenti Jadi Tebak-Tebakan",
+    "subtitle": "Klik iklan langsung membuka chat WhatsApp, lengkap dengan kampanye asalnya. AI membalas di detik pertama, leads masuk CRM dengan label iklannya, dan kamu tahu campaign mana yang benar-benar menghasilkan."
+  },
+  "definition": "Integrasi Meta Ads di Cekat.AI menghubungkan campaign Click-to-WhatsApp ke inbox dan CRM-mu: klik iklan membuka percakapan WhatsApp dengan pesan pembuka yang kamu atur, leads tercatat beratribusi kampanyenya, dan hasilnya terbaca sampai closing.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "leads dari iklan langsung dibalas"
+    },
+    {
+      "value": "+70%",
+      "label": "kenaikan konversi di Holywings Group"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis jalanin campaign di Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi jadi kontak tercatat"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Klik Iklan Langsung Jadi Percakapan",
+      "body": "Campaign Click-to-WhatsApp membawa orang dari feed langsung ke chat, tanpa mampir landing page yang bikin niatnya menguap. Pesan pembuka dan pre-filled message kamu atur, jadi percakapan mulai tanpa canggung.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Klik iklan Meta langsung membuka percakapan WhatsApp"
+    },
+    {
+      "title": "Leads Iklan Dibalas Saat Niatnya Masih Panas",
+      "body": "Orang mengklik iklan di momen paling niat. AI membalas detik itu juga, menanyakan kebutuhan, dan mengunci langkah berikutnya, bukan membiarkan klik mahal mendingin di antrean chat.",
+      "image": "/images/marketing/improve-performance-and-lower-cac.png",
+      "imageAlt": "AI membalas leads iklan Meta secara instan"
+    },
+    {
+      "title": "Setiap Leads Membawa Nama Kampanyenya",
+      "body": "Leads yang masuk tercatat berikut iklan asalnya di CRM. Saat deal closing, kamu tidak menebak iklan mana yang membawanya, datanya sudah menempel sejak chat pertama.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Leads Meta Ads beratribusi kampanye di CRM"
+    },
+    {
+      "title": "Semua Meta Ads Terbaca di Satu Dashboard",
+      "body": "Performa tiap campaign, adset, dan iklan terbaca tanpa bolak-balik Ads Manager. Yang menghasilkan chat kelihatan, yang cuma menghasilkan klik juga kelihatan.",
+      "image": "/images/marketing/review-all-meta-ads-in-one-dashboard.png",
+      "imageAlt": "Semua iklan Meta terbaca dalam satu dashboard"
+    },
+    {
+      "title": "Konversi Kembali ke Meta Lewat CAPI",
+      "body": "Penjualan yang closing di chat dikirim balik ke Meta lewat Conversions API, jadi algoritmanya belajar dari pembeli sungguhan, bukan sekadar pengklik. Budget-mu makin lama makin pintar.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Sinyal konversi terkirim kembali ke Meta"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Dari Klik sampai Closing",
+      "body": "Satu garis lurus: iklan, chat, CRM, penjualan. Tidak ada mata rantai yang datanya hilang."
+    },
+    {
+      "title": "Kecepatan yang Menjaga CAC",
+      "body": "Klik yang dibalas cepat lebih sering jadi penjualan, dan biaya per hasil ikut turun."
+    },
+    {
+      "title": "Algoritma Diberi Makan Data Nyata",
+      "body": "Sinyal closing dari chat dikirim balik, jadi Meta mengoptimasi ke pembeli, bukan penonton."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu integrasi Meta Ads di Cekat.AI?",
+      "a": "Sambungan antara campaign Click-to-WhatsApp di Meta dan inbox Cekat.AI: klik iklan membuka chat WhatsApp, leads tercatat beratribusi kampanyenya, dibalas AI, dan hasilnya terbaca sampai closing."
+    },
+    {
+      "q": "Apa yang dibutuhkan untuk mulai?",
+      "a": "Halaman Facebook, akun WhatsApp Business dengan nomornya, dan keduanya terhubung di Meta Ads Manager. Campaign dibuat dengan objective Leads dan WhatsApp sebagai tujuan percakapan."
+    },
+    {
+      "q": "Apakah bisa mengatur pesan pembuka dari iklan?",
+      "a": "Bisa. Welcome message dan pre-filled message diatur saat setup campaign, jadi orang yang datang dari iklan langsung disambut dengan konteks yang tepat."
+    },
+    {
+      "q": "Bagaimana leads dari iklan tercatat di CRM?",
+      "a": "Setiap chat yang datang dari iklan masuk sebagai kontak lengkap dengan atribusi kampanyenya, jadi pipeline-mu bisa disaring per campaign dan closing-nya kelacak ke iklan asalnya."
+    },
+    {
+      "q": "Apa bedanya dengan halaman Conversion API (CAPI)?",
+      "a": "Integrasi ini soal membawa leads masuk dan membaca performanya; CAPI soal mengirim sinyal konversi kembali ke Meta. Keduanya dipakai bersama untuk lingkaran penuh."
+    },
+    {
+      "q": "Apakah AI langsung membalas leads dari iklan?",
+      "a": "Ya. Leads dari Click-to-WhatsApp diperlakukan seperti chat masuk lain: dibalas di detik pertama, dikualifikasi, dan diteruskan ke tim saat siap closing."
+    },
+    {
+      "q": "Bisakah melihat performa iklan tanpa buka Ads Manager?",
+      "a": "Bisa. Dashboard marketing menampilkan performa campaign Meta-mu berdampingan dengan data chat dan penjualan, jadi evaluasinya satu layar."
+    },
+    {
+      "q": "Apakah budget iklan dikelola dari Cekat.AI?",
+      "a": "Pengelolaan budget tetap di Meta Ads Manager. Cekat.AI melengkapinya dengan data sisi percakapan: leads, kualitas, dan penjualan yang tidak terlihat dari metrik klik."
+    }
+  ],
+  "cta": {
+    "heading": "Sambungkan Meta Ads-mu, Lihat Iklan Mana yang Menghasilkan",
+    "body": "Dari klik jadi chat, dari chat jadi penjualan yang kelacak. Coba gratis atau tanya tim kami."
+  }
+}

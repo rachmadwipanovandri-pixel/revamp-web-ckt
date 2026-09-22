@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Booking & Customer Service for Barbershops | CekatAI",
+    "description": "Barbershops use Cekat.AI to take chair bookings 24/7 on WhatsApp, send reminders that cut no-shows, and bring lapsed clients back for a fresh cut."
+  },
+  "hero": {
+    "badge": "Barbershops",
+    "title": "Take Bookings 24/7, Even When Every Barber Is Mid-Cut",
+    "subtitle": "From chair bookings to barber picks to pre-appointment reminders, Cekat.AI replies instantly on WhatsApp and Instagram, 24/7, without a dedicated front-desk admin",
+    "useCases": [
+      "Booking without stopping",
+      "Chair & barber slots",
+      "No-show reminders",
+      "Win-back promos"
+    ]
+  },
+  "definition": "Cekat.AI for barbershops is an AI customer service platform for barbershops and grooming studios in Indonesia, working as a barbershop booking system on WhatsApp that answers chats 24/7, manages chair and barber slots, sends reminders before every appointment, and brings regulars back for their next cut, all in one platform.",
+  "stats": [
+    {
+      "value": "28%",
+      "label": "conversion from lead to appointment at Wall Street English, up from 20%"
+    },
+    {
+      "value": "75%",
+      "label": "cost saving on Customer Service at Gamal Men by using AI agents"
+    },
+    {
+      "value": "24/7",
+      "label": "chair bookings and schedule questions answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Bookings Answered While Your Hands Hold the Clippers",
+      "body": "Booking chats tend to arrive exactly when every barber is mid-fade and nobody can touch a phone. Cekat.AI answers booking requests, prices, and opening hours the moment they land, day or night, so a client planning tomorrow's trim gets a confirmed slot instead of silence, and never books the shop next door out of impatience.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours routing between staff and AI agent in Cekat.AI"
+    },
+    {
+      "title": "Clear Chair and Barber Slots, Walk-ins Without the Chaos",
+      "body": "Without a tidy system, the front desk guesses which chair is free and walk-ins collide with clients who already booked. Through API integration with your calendar or booking tool, Cekat.AI confirms schedules and reschedules right inside the chat, every booking recorded with name, time, and chosen barber, so your team knows exactly which chairs are still open for walk-ins.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "API integration between a booking system and Cekat.AI"
+    },
+    {
+      "title": "Automatic Reminders Before Every Cut, Fewer No-Shows",
+      "body": "One no-show is a chair sitting idle for half an hour while someone else wanted that exact slot. Cekat.AI sends automatic reminders ahead of each appointment, with confirm and reschedule options built into the chat, so cancellations surface early and the slot goes to another client instead of going empty without a word.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated booking reminder flow built without code in Cekat.AI"
+    },
+    {
+      "title": "Bring Clients Back Before the Haircut Grows Out",
+      "body": "Happy clients rarely leave, they just forget. Cekat.AI keeps each client's visit history in the CRM and sends an automatic rebooking nudge a few weeks after their last cut, on the interval you choose, so their next appointment is locked in before they ever think about trying another shop.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Client visit history tracked in the Cekat.AI CRM"
+    },
+    {
+      "title": "Blast Promos to Clients Who Have Not Been In for a While",
+      "body": "Your contact list is an asset, not an archive. Cekat.AI segments clients by activity and last visit, then sends broadcasts through the official WhatsApp Business API, weekday promos, grooming bundles, or a comeback offer for anyone gone three months, without copying numbers one by one.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Customer behavior segments powering campaigns in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Bookings and broadcasts run on the official WhatsApp Business API, alongside Instagram DM and Facebook Messenger, one inbox for every branch, compliant and reliable."
+    },
+    {
+      "title": "AI That Books and Follows Up",
+      "body": "The agent takes bookings, answers prices and schedules, sends reminders before each cut, then hands special requests to your admin with full context."
+    },
+    {
+      "title": "Proven Across 3,000+ Businesses",
+      "body": "From restaurants to education institutions, more than 3,000 businesses in Indonesia run their chats, bookings, and campaigns on Cekat.AI every day."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help barbershops?",
+      "a": "It answers client chats instantly 24/7 on WhatsApp, Instagram, and web chat, covering booking requests, prices, opening hours, and barber picks, while keeping every schedule organized in one platform. Your barbers focus on the head in the chair, not a buzzing phone."
+    },
+    {
+      "q": "Can the AI take chair bookings and barber preferences?",
+      "a": "Yes. Cekat.AI answers booking requests around the clock and, through API integration with your calendar or booking tool, confirms and reschedules inside the chat. Every booking is recorded with name, time, and chosen barber, and automatic reminders go out before the appointment."
+    },
+    {
+      "q": "How does Cekat.AI reduce no-shows?",
+      "a": "Automatic reminders go out before each appointment, with confirm and reschedule options right in the chat. Cancellations surface early, so the slot can be released to another client instead of a chair sitting empty with no word."
+    },
+    {
+      "q": "Can it bring lapsed clients back for another cut?",
+      "a": "Yes. Cekat.AI keeps visit history in the CRM and sends automatic rebooking follow-ups a few weeks after the last visit, on the interval you set. Clients who have been away for months can be re-engaged with a dedicated campaign."
+    },
+    {
+      "q": "Do promo broadcasts run on official WhatsApp?",
+      "a": "Yes. Broadcast campaigns run on the official WhatsApp Business API, Cekat.AI is an Official Meta Business Partner, so promos to thousands of contacts stay compliant instead of risking a ban on a regular WhatsApp number."
+    },
+    {
+      "q": "Does it work for barbershops with multiple branches?",
+      "a": "Yes. Every channel and branch flows into one inbox with a single history per client, and you can build a separate AI agent per branch with its own hours, prices, and barber roster. Owners watch every conversation from one dashboard."
+    },
+    {
+      "q": "When does a human admin take over the chat?",
+      "a": "Whenever a conversation needs a person, a complaint, a special request, a large group booking, it escalates to your admin with the full history attached. With AI working hours, your team handles chats during the day and the AI covers the rest."
+    },
+    {
+      "q": "How long does setup take for a barbershop?",
+      "a": "Building the AI agent takes around five minutes, paste your price list, opening hours, barber roster, and booking rules into the knowledge base and it starts answering accurately. No coding required; as easy as briefing a new front-desk hire."
+    },
+    {
+      "q": "What does it cost, and can we try it first?",
+      "a": "Plans scale with your business, from a single chair to multiple branches, and you can watch everything run in a live demo with our team before deciding. Book a free consultation to get a recommendation that fits."
+    }
+  ],
+  "cta": {
+    "heading": "Keep Every Chair Booked",
+    "body": "See how barbershops run 24/7 bookings, reminders, and promos on Cekat.AI, book a free consultation with our team."
+  }
+}

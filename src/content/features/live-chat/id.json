@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Live Chat Website dengan AI, Jawab Instan 24/7 | CekatAI",
+    "description": "Pasang live chat AI di website: jawaban instan 24/7, tiap pengunjung tertangkap jadi leads CRM, handoff ke tim dengan konteks penuh. Dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "Live Chat Website Bertenaga AI",
+    "title": "Live Chat yang Menjawab Sebelum Pengunjung Pergi",
+    "subtitle": "Tambahkan widget chat bertenaga AI ke website-mu, pengunjung dapat jawaban instan 24/7, setiap percakapan tertangkap jadi leads di CRM, dan timmu masuk dengan konteks penuh saat memang perlu"
+  },
+  "definition": "Live Chat Website adalah fitur Cekat.AI yang memasang widget chat bertenaga AI di website-mu, menjawab pertanyaan pengunjung secara instan 24/7, menangkap setiap percakapan jadi leads di CRM bawaan, dan mengalihkannya ke timmu dengan konteks penuh saat sentuhan manusia dibutuhkan.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "pengunjung dijawab instan" },
+    { "value": "~5 menit", "label": "bikin AI agent-mu" }
+  ],
+  "benefits": [
+    {
+      "title": "Jawab dalam Hitungan Detik, Sebelum Pengunjung Kabur",
+      "body": "Pengunjung dengan pertanyaan yang tidak terjawab itu customer yang lagi jalan ke pintu keluar. AI agent Cekat.AI yang humanlike membalas instan, paham maksud dan konteks, bukan sekadar keyword, dan menjawab pakai bahasa pengunjung, jadi pertanyaan berubah jadi percakapan, bukan bounce.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI menjawab pertanyaan pengunjung website di live chat"
+    },
+    {
+      "title": "Setiap Chat Jadi Leads di CRM, Otomatis",
+      "body": "Kebanyakan tool live chat membiarkan percakapan menguap begitu tab ditutup. Cekat.AI menangkap setiap percakapan website ke CRM otomatis, tanpa input manual, membentuk catatan customer yang hidup dan menggeser tiap kontak lewat stage Visitor, Lead, dan Buyer lengkap dengan saran langkah berikutnya buat timmu.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads website tertangkap dan terorganisir di CRM Cekat.AI"
+    },
+    {
+      "title": "Alihkan ke Manusia Tanpa Mengulang Sepatah Kata",
+      "body": "Saat percakapan butuh timmu, AI mengalihkannya lengkap dengan riwayat chat terlampir, pengunjung tidak perlu mengulang cerita. Atur AI working hours biar tim menangani chat pas online dan AI menjaga malam serta weekend, dengan handoff otomatis yang membawa konteks lengkap dua arah.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Handoff AI ke manusia dengan konteks percakapan lengkap di Cekat.AI"
+    },
+    {
+      "title": "Live di Website-mu dalam Sekitar 5 Menit",
+      "body": "Tanpa developer, tanpa coding, tanpa implementasi berbulan-bulan. Tempel SOP dan info bisnismu ke knowledge base dan AI agent langsung siap menjawab pertanyaan pengunjung asli, bikinnya semudah nge-brief admin CS baru. Butuh logika lanjutan? Pakai flow designer drag-and-drop visual.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Setup knowledge base untuk AI agent Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Jawaban Instan",
+      "title": "AI Humanlike di Setiap Halaman",
+      "body": "AI paham maksud pengunjung, bukan cuma keyword yang mereka ketik. AI menjawab dengan bahasa natural, menangani banyak bahasa, dan tetap akurat soal bisnismu karena bekerja dari knowledge base yang kamu susun."
+    },
+    {
+      "label": "Tangkap Leads",
+      "title": "Dari Pengunjung Anonim Jadi Leads Bernama",
+      "body": "Setiap percakapan website otomatis bikin atau update kartu CRM, kontak, riwayat chat, dan perilaku website dalam satu catatan hidup. Customer Stages melacak tiap orang dari Visitor ke Lead ke Buyer, lengkap dengan saran langkah berikutnya."
+    },
+    {
+      "label": "Handoff Pintar",
+      "title": "AI di Luar Jam, Manusia Saat Online",
+      "body": "AI working hours menyesuaikan jadwal timmu: agent jawab percakapan siang hari, AI ambil alih di luar jam kerja, dan setiap handoff otomatis membawa konteks percakapan lengkap dua arah."
+    },
+    {
+      "label": "Satu Inbox",
+      "title": "Chat Website Sebelah Semua Channel",
+      "body": "Percakapan live chat masuk ke inbox terpadu yang sama dengan WhatsApp, Instagram DM, dan Facebook Messenger, satu dashboard dengan search cepat, auto-labeling, dan prioritas case di semuanya."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Lebih dari Sekadar Widget Chat",
+      "body": "Widget-nya adalah pintu depan ke platform lengkap: CRM, campaign broadcast, otomatisasi order, dan analitik semuanya terhubung ke tiap percakapan website."
+    },
+    {
+      "title": "Humanlike, Bukan Skrip Kaku",
+      "body": "AI paham maksud dan konteks, bukan cocokin keyword, jadi pengunjung dapat jawaban asli dengan bahasa natural, dalam bahasa mereka."
+    },
+    {
+      "title": "Dibangun untuk Tim",
+      "body": "Private notes, collaborator, akses berbasis role, dan prioritas case menjaga seluruh tim kerja di inbox yang sama tanpa saling tabrakan."
+    }
+  ],
+  "testimonial": {
+    "quote": "Response rate kami meningkat 90%",
+    "name": "Hargyo",
+    "role": "Director, Multimedia Nusantara Polytechnic",
+    "image": "/images/home/testimonial-hargyo.jpg"
+  },
+  "faq": [
+    {
+      "q": "Apa itu live chat website?",
+      "a": "Live chat website adalah widget chat yang tertanam di website-mu, memungkinkan pengunjung chat langsung dari halaman. Di Cekat.AI, widget-nya digerakkan AI agent yang menjawab instan 24/7, menangkap tiap percakapan jadi leads di CRM, dan mengalihkannya ke timmu dengan konteks penuh saat perlu."
+    },
+    {
+      "q": "Gimana cara memasang live chat di website-ku?",
+      "a": "Di Cekat.AI, kamu bikin AI agent, tempel SOP dan info bisnismu ke knowledge base, lalu pasang widget chat di situsmu. Tanpa coding, dan bikin agent-nya sekitar 5 menit; semudah nge-brief admin CS baru."
+    },
+    {
+      "q": "AI-nya benar-benar bisa jawab pertanyaan soal bisnisku?",
+      "a": "Bisa. AI bekerja dari knowledge base yang kamu susun dari SOP, detail produk, dan info bisnismu sendiri. AI paham maksud dan konteks, bukan cocokin keyword, jadi jawabannya akurat dan natural, dan hal yang tidak seharusnya dia tangani dialihkan ke timmu."
+    },
+    {
+      "q": "Apa yang terjadi saat pengunjung mau bicara dengan manusia?",
+      "a": "Percakapan dialihkan ke timmu lengkap dengan riwayat chat terlampir, jadi pengunjung tidak perlu mengulang cerita. Dengan AI working hours, handoff-nya otomatis: tim menangani chat pas online, dan AI ambil alih di luar jam itu."
+    },
+    {
+      "q": "Live chat-nya menangkap leads?",
+      "a": "Ya, otomatis. Setiap percakapan website bikin atau update kartu CRM tanpa input manual: kontak, riwayat chat, dan perilaku website dalam satu catatan. Customer Stages lalu melacak tiap kontak dari Visitor ke Lead ke Buyer, lengkap dengan saran langkah berikutnya."
+    },
+    {
+      "q": "Bisa jalan di luar jam kerja?",
+      "a": "Justru itu yang dibangun. AI agent menjawab 24/7, jadi pengunjung yang browsing tengah malam dapat jawaban instan sama seperti yang siang hari. Organisasi seperti Rumah Zakat mengandalkan AI di luar jam kerja biar tetap bisa dihubungi sepanjang waktu."
+    },
+    {
+      "q": "Bisa dipakai buat WhatsApp dan Instagram juga?",
+      "a": "Bisa. Live chat website adalah salah satu channel di inbox terpadu Cekat.AI, bareng WhatsApp lewat Business API resmi, Instagram DM, Facebook Messenger, dan API channel. Tim jawab semuanya dari satu dashboard, dan riwayat tiap customer tetap di satu profil."
+    },
+    {
+      "q": "Widget chat-nya mendukung banyak bahasa?",
+      "a": "Ya. AI agent-nya multibahasa dan membalas sesuai bahasa yang dipakai pengunjung, yang penting saat website-mu melayani customer lintas wilayah. Minori Group, yang melayani Jepang dan Indonesia, menangani 100% inquiry dengan AI multibahasa di Cekat.AI, dua bahasa, dua timezone, satu platform."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Trafik Website Jadi Percakapan yang Closing",
+    "body": "Pasang live chat Cekat.AI dan beri setiap pengunjung jawaban instan, sementara CRM-mu diam-diam terisi leads."
+  }
+}

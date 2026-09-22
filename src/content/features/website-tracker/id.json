@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Cekat Tracker: Tahu Asal Setiap Kunjungan dan Chat | Cekat.AI",
+    "description": "Satu script JS melacak asal tiap pengunjung: iklan, organik, UTM apa pun, sampai rujukan dari AI seperti ChatGPT. Event-nya terbaca di dashboard dan terkirim via API."
+  },
+  "hero": {
+    "badge": "Cekat Tracker",
+    "title": "Setiap Kunjungan Punya Asal-Usul. Sekarang Kamu Tahu Semuanya.",
+    "subtitle": "Satu script di website-mu mencatat dari mana tiap pengunjung datang: iklan, pencarian organik, UTM apa pun, sampai rujukan dari AI seperti ChatGPT, lalu mengikat kunjungan itu ke chat dan penjualannya."
+  },
+  "definition": "Cekat Tracker adalah script JS dan pixel dari Cekat.AI yang dipasang di website untuk mencatat kunjungan, klik CTA, dan submit form berikut sumbernya, iklan, organik, parameter UTM, maupun rujukan AI, lalu menampilkannya di dashboard performa dan meneruskannya lewat API.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "sumber tiap kunjungan tercatat"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi jadi kontak tercatat"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Satu Script, Semua Sumber Kebaca",
+      "body": "Tempel satu kode JS sebelum penutup head, dan setiap kunjungan tercatat berikut asalnya: campaign iklan, pencarian organik, atau link UTM buatanmu sendiri. Tidak ada lagi kolom sumber yang isinya tebakan.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Sumber trafik terbaca dari satu script pelacak"
+    },
+    {
+      "title": "Rujukan dari ChatGPT dan AI Lain Ikut Terlacak",
+      "body": "Makin banyak pembeli datang karena disebut AI, dan trafik itu biasanya tercatat sebagai direct yang misterius. Cekat Tracker mengenali rujukan dari asisten AI, jadi kanal baru ini kelihatan nilainya.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Rujukan dari asisten AI dikenali sebagai sumber"
+    },
+    {
+      "title": "Kunjungan, CTA, dan Form dalam Satu Garis Cerita",
+      "body": "Visit, klik CTA, dan submit form terekam sebagai satu perjalanan, bukan tiga angka terpisah. Kamu melihat halaman mana yang mengantar orang sampai menghubungi, bukan cuma halaman mana yang ramai.",
+      "image": "/images/marketing/allocate-budget-with-precision.png",
+      "imageAlt": "Perjalanan pengunjung dari visit sampai submit form"
+    },
+    {
+      "title": "Event Custom Sesuai Bisnismu",
+      "body": "Definisikan event-mu sendiri, order_completed, booking_confirmed, apa pun, lengkap sampai sepuluh properti bertipe. Ditembak lewat API, terbaca di dashboard yang sama dengan event bawaan.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Event custom dikirim lewat API ke Cekat Tracker"
+    },
+    {
+      "title": "Datanya Mengalir ke CRM, Analytics, dan Automasimu",
+      "body": "Sumber kunjungan menempel ke kontak di CRM, terbaca di dashboard Sales, Leads, dan Events, dan bisa diteruskan lewat API untuk memicu automasi atau mengisi stack analytics-mu.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Data tracker mengalir ke dashboard dan sistem lain"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Pasang Sekali, Mencatat Terus",
+      "body": "Satu script di head website, dan setiap halaman ikut terpantau tanpa pemasangan ulang."
+    },
+    {
+      "title": "Sumber yang Jujur",
+      "body": "Iklan, organik, UTM, dan rujukan AI dibedakan dengan jelas, jadi keputusan budget berdiri di data."
+    },
+    {
+      "title": "Terhubung, Bukan Terkunci",
+      "body": "Event bisa dikirim dan ditarik lewat API, jadi data trafikmu ikut bekerja di sistem lain."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu Cekat Tracker?",
+      "a": "Script JS dan pixel yang dipasang di website untuk mencatat kunjungan, klik CTA, dan submit form berikut sumber trafiknya, lalu menampilkannya di dashboard performa Cekat.AI."
+    },
+    {
+      "q": "Bagaimana cara memasangnya?",
+      "a": "Salin kode JS-nya dan tempel di bagian head website sebelum tag penutup, lalu deploy. Sejak itu semua event di halaman terdeteksi tanpa konfigurasi per halaman."
+    },
+    {
+      "q": "Sumber trafik apa saja yang dikenali?",
+      "a": "Campaign iklan, pencarian organik, semua parameter UTM termasuk yang custom, dan rujukan dari asisten AI seperti ChatGPT. Masing-masing dibedakan, bukan digabung jadi direct."
+    },
+    {
+      "q": "Apa itu event custom?",
+      "a": "Event yang kamu definisikan sendiri dengan label, key unik, dan sampai sepuluh properti bertipe, misalnya order_completed dengan nilai transaksinya. Ditembak lewat API dan terbaca di dashboard."
+    },
+    {
+      "q": "Di mana datanya bisa dilihat?",
+      "a": "Di dashboard Performance yang terbagi tiga: Sales, Leads, dan Events. Dari sana kamu memantau funnel, kualitas leads, dan pergerakan event."
+    },
+    {
+      "q": "Apakah datanya terhubung ke chat dan CRM?",
+      "a": "Ya. Kunjungan yang berlanjut jadi chat membawa sumbernya, jadi kontak di CRM tahu asal-usulnya dan closing bisa ditelusuri sampai kanal awalnya."
+    },
+    {
+      "q": "Bisakah datanya dipakai sistem lain?",
+      "a": "Bisa. Event dikirim dan dibaca lewat API, jadi kamu bisa meneruskannya ke stack analytics, CDP, atau memicu automasi di alur kerja yang sudah ada."
+    },
+    {
+      "q": "Apakah pemasangannya butuh developer?",
+      "a": "Menempel satu script di head cukup dilakukan siapa pun yang memegang akses website. Developer baru diperlukan bila kamu mendefinisikan event custom yang ditembak dari sistemmu."
+    }
+  ],
+  "cta": {
+    "heading": "Berhenti Menebak Asal Trafikmu",
+    "body": "Satu script, semua sumber kebaca, sampai ke closing-nya. Coba gratis atau tanya tim kami."
+  }
+}

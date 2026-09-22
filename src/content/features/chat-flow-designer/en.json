@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Chatbot Flow Builder, Route Every Chat, No Coding | CekatAI",
+    "description": "Design chat flows with drag-and-drop and route customers to specialized sales, support, or billing AI agents, no coding. Trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "Drag-and-Drop Flow Builder",
+    "title": "Drag, Drop, and Route Every Chat to the Right Agent",
+    "subtitle": "Design visual chat flows that send each customer to the right specialized AI or human agent, sales, support, or billing, with zero code and full context at every step"
+  },
+  "definition": "The Visual Chat Flow Builder is a Cekat.AI feature for designing customer conversation flows with drag-and-drop, routing each chat to the right specialized AI or human agent (sales, support, or billing) without writing any code.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses build flows on Cekat.AI" },
+    { "value": "~5 min", "label": "to build your first AI agent" },
+    { "value": "1,000,000+", "label": "customer interactions routed" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Map Your Entire Customer Journey With Drag-and-Drop",
+      "body": "Chat logic shouldn't sit in a developer's backlog for weeks. On Cekat.AI's visual canvas you drag, drop, and connect every step yourself, greetings, qualifying questions, routing rules, handoffs, then publish the same day you sketch it. If you can brief a CS admin, you can build a chat flow.",
+      "image": "/images/home/visual-flow-designer.png",
+      "imageAlt": "Visual drag-and-drop chat flow designer in Cekat.AI"
+    },
+    {
+      "title": "Route Every Customer to a Specialist, Not a Generalist",
+      "body": "One bot that answers everything usually answers everything halfway. Cekat.AI runs multiple specialized agents, sales, support, billing, and your flow routes each customer to the one trained for their exact question. Buyers reach a closer, complaints reach a problem-solver, and invoice questions land with billing.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Multiple specialized AI agents for sales, support, and billing in Cekat.AI"
+    },
+    {
+      "title": "Hand Off to Humans Without Losing the Thread",
+      "body": "Some conversations need a person, and nothing kills trust faster than making customers repeat themselves. When a chat crosses your escalation rules, or your team comes online, Cekat.AI hands it to a human with the full conversation attached, so the customer continues instead of starting over."
+    },
+    {
+      "title": "Build Once, Run on Every Channel",
+      "body": "The same flow serves WhatsApp, Instagram DM, Facebook Messenger, and website live chat, with every conversation landing in one unified inbox. No duplicate logic to maintain per channel, no separate bots drifting out of sync, and no customer treated differently because of where they messaged you."
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Drag & Drop",
+      "title": "Logic You Can See, Not Scripts You Decode",
+      "body": "Every branch of your flow lives on one visual canvas, what the AI asks, where each answer leads, who takes over when. Anyone on the team can read it, question it, and improve it without opening a line of code."
+    },
+    {
+      "label": "Smart Routing",
+      "title": "Routing on Intent, Not Keyword Guessing",
+      "body": "Cekat.AI's agent understands what customers mean, not just the words they type. \"My order never arrived\" reaches support even without the word \"complaint\", in whatever language the customer writes."
+    },
+    {
+      "label": "Specialized Agents",
+      "title": "Sales, Support, and Billing, Each With Its Own Job",
+      "body": "Build a dedicated AI agent per function and let the flow dispatch between them. Each agent stays sharp on its own knowledge instead of averaging across everything your business does."
+    },
+    {
+      "label": "Human Handoff",
+      "title": "Escalation That Carries the Context",
+      "body": "Set AI working hours so agents cover the night shift and your team takes over in the morning, automatically, with the full conversation history handed across every single time."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Built for Non-Technical Teams",
+      "body": "Drag-and-drop design, an agent live in about 5 minutes, and no coding anywhere, building a flow is as easy as briefing a CS admin."
+    },
+    {
+      "title": "Understanding Over Keywords",
+      "body": "Flows route on what customers actually mean, in any language, so the right agent answers even when the wording is unexpected."
+    },
+    {
+      "title": "Humans Exactly Where They Belong",
+      "body": "Escalation rules and AI working hours bring your team into the conversation at the right moment, with full context carried over."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a chatbot flow builder?",
+      "a": "A chatbot flow builder is a visual tool for designing how automated conversations run, what the bot asks, how it responds, and where each customer gets routed. Cekat.AI's builder is drag-and-drop: you connect steps on a canvas, assign specialized AI agents to branches, and publish without writing code."
+    },
+    {
+      "q": "Do I need coding skills to build a chat flow?",
+      "a": "No. The entire flow is built by dragging and connecting blocks on a visual canvas, and the AI agents behind it are trained by pasting your business info, Cekat.AI describes it as being as easy as briefing a CS admin. Most teams have their first agent running in about 5 minutes."
+    },
+    {
+      "q": "Can I route different topics to different AI agents?",
+      "a": "Yes. Cekat.AI supports multiple specialized agents, for example one for sales, one for support, one for billing, and your flow decides which agent takes each conversation. Every customer talks to the agent trained for their exact type of question instead of a single generalist bot."
+    },
+    {
+      "q": "How does the flow know where to send each customer?",
+      "a": "Routing runs on intent, not keyword matching. Cekat.AI's agent reads what the customer actually means from context, in multiple languages, so \"the thing I ordered never showed up\" routes to support even though it contains none of the obvious keywords a rule-based bot would need."
+    },
+    {
+      "q": "What happens when a customer needs a human agent?",
+      "a": "The flow hands the conversation to your team with the complete chat history attached, so nobody asks the customer to start over. With AI working hours, this also runs on a schedule: AI covers conversations after hours, and your team takes over automatically when they come online."
+    },
+    {
+      "q": "Which channels do chat flows work on?",
+      "a": "Flows run on WhatsApp through the official Business API, Instagram DM, Facebook Messenger, website live chat, and API channels. You design the logic once, and every conversation, regardless of channel, arrives in one unified inbox for your team to monitor."
+    },
+    {
+      "q": "Can I change a flow after it goes live?",
+      "a": "Yes. Open the canvas, move or edit the blocks, and the updated flow applies to new conversations immediately. There is no developer hand-off or redeploy cycle, which means you can test a routing idea in the morning and refine it by lunch."
+    },
+    {
+      "q": "How long does it take to launch my first flow?",
+      "a": "About 5 minutes to get an AI agent running: paste your business info, drop the agent into a flow, and connect your channels. From there, most teams spend their time refining routing rules and adding specialized agents, not fighting technical setup."
+    },
+    {
+      "q": "How is this different from a rule-based chatbot builder?",
+      "a": "Rule-based builders break the moment a customer phrases something unexpectedly, because they match exact keywords and menus. Cekat.AI flows are powered by a humanlike AI that understands intent and context in any language, then escalates to your team with full history when a conversation needs a person."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Chat Chaos Into Flows That Route Themselves",
+    "body": "Design your first drag-and-drop chat flow and send every customer straight to the agent who can close, solve, or answer."
+  }
+}

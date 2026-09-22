@@ -1,0 +1,26 @@
+# Cekat.AI
+
+> Cekat.AI is an Indonesian AI agent platform that combines AI-powered customer service, omnichannel CRM, automated ordering, and broadcast marketing in one platform. It is trusted by 3,000+ businesses across 15+ industries in Indonesia, handling over 1,000,000 customer interactions. Cekat.AI is an official Meta Business Partner and complies with Indonesia's Personal Data Protection Law (UU PDP).
+
+Cekat.AI (PT. Teknologi Cekat Indonesia, launched August 2023) helps businesses reply to customers 24/7 with natural, human-like AI agents on WhatsApp (Official Business API), Instagram DM, Facebook Messenger, and website live chat, with no coding required and setup in minutes. Offices in Jakarta, Tangerang, Singapore, and Kuala Lumpur.
+
+## Products
+
+- [Chat](https://cekat.ai/chat): 24/7 AI super agent for customer conversations across every channel, with seamless human handoff.
+- [CRM](https://cekat.ai/crm): Conversation-native CRM, leads, pipelines, customer journeys, and follow-ups tracked automatically.
+- [Marketing](https://cekat.ai/marketing): Broadcast campaigns with customer segmentation, plus ads performance and conversion tracking (Meta, Google, TikTok CAPI).
+- [Order](https://cekat.ai/order): Order automation from chat, shipping cost checks, QR payments, tickets, and workflow automation.
+
+## Key pages
+
+- [Features](https://cekat.ai/features): all feature landing pages (Bahasa Indonesia: https://cekat.ai/id/fitur)
+- [Industries](https://cekat.ai/industries): solutions per industry (Bahasa Indonesia: https://cekat.ai/id/industri)
+- [Contact](https://cekat.ai/contact): free consultation with the sales team
+- [Blog](https://cekat.ai/blog)
+
+## Facts
+
+- 3,000+ businesses use Cekat.AI, including Hollywings Group, Vio Optical Clinic, Minori Group, Rumah Zakat, Moir Salon, and Threeland Property.
+- Customer results include up to 70% higher conversion rates, +60% revenue after implementation, and 100% chat coverage with 24/7 availability.
+- AI agents can be built in about 5 minutes by pasting business SOPs, no coding needed.
+- Supported channels: WhatsApp Business API (official), Instagram, Facebook Messenger, web live chat, and custom API channels.

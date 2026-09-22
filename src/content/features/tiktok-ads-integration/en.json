@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "TikTok Ads Integration: Into DMs or WhatsApp | Cekat.AI",
+    "description": "Connect TikTok Ads to Cekat.AI: ad clicks become chats in TikTok DMs or WhatsApp, answered by AI, attributed to their campaign, with conversions sent back via Events API."
+  },
+  "hero": {
+    "badge": "TikTok Ads Integration",
+    "title": "From the FYP Straight Into a Closing Chat",
+    "subtitle": "Two routes from one ad: into TikTok DMs for quick consultations, or straight to WhatsApp for serious follow-up. Both are answered by AI and recorded with their campaign attached."
+  },
+  "definition": "The TikTok Ads integration in Cekat.AI connects TikTok ads to conversations: the TikTok Inbox route takes clickers into TikTok DMs, the Click-to-WhatsApp route takes them to WhatsApp Business, and both land in one inbox with campaign attribution and conversion signals sent back.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "ad leads answered instantly"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run campaigns on Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Two Routes, One Inbox",
+      "body": "Ads into TikTok DMs suit quick questions and bookings; ads into WhatsApp suit sales with a longer follow-up. Whichever way they point, the chats land in the same inbox.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Chats from TikTok Ads landing in one inbox"
+    },
+    {
+      "title": "Viewers Become Conversations Without Switching Apps",
+      "body": "The TikTok Inbox route answers people inside the app they already have open, with opening message templates included. Buying intent does not die in an app switch.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "TikTok DMs connected to the Cekat.AI inbox"
+    },
+    {
+      "title": "The WhatsApp Route for Deals That Need Nurturing",
+      "body": "Click-to-WhatsApp moves serious buyers onto your business number, where AI qualifies, the team takes over, and the CRM records everything through to closing.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "TikTok leads arriving on WhatsApp, answered by AI"
+    },
+    {
+      "title": "The Origin Campaign Sticks to Every Lead",
+      "body": "Every chat carries its TikTok campaign's name into the CRM. You see what your viral content actually produces: viewers, or buyers.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "TikTok leads attributed to campaigns in the CRM"
+    },
+    {
+      "title": "Conversions Sent Back to TikTok",
+      "body": "Deals closed in chat flow back through the pixel and Events API, so TikTok optimizes toward people who actually buy, not people who merely stop scrolling.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Conversion signals sent back to TikTok"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "The Route Follows the Intent",
+      "body": "Light consultation in TikTok DMs, serious purchases on WhatsApp. You choose per campaign."
+    },
+    {
+      "title": "Few Platforms Have This",
+      "body": "On our comparison table, TikTok integration sits among the rows competitors most rarely tick."
+    },
+    {
+      "title": "A Full Loop to the Algorithm",
+      "body": "From ad to chat to closing, then the signal returns to TikTok for the next optimization."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the TikTok Ads integration in Cekat.AI?",
+      "a": "The connection from TikTok ads to conversations via two routes: TikTok Inbox Ads opening TikTok DMs, and Click-to-WhatsApp opening WhatsApp Business chats. Both land in one inbox with campaign attribution."
+    },
+    {
+      "q": "When should we use the TikTok DM route?",
+      "a": "For light lead generation, product consultation, and bookings, when you want to answer people without moving them out of the app they already have open."
+    },
+    {
+      "q": "When is the WhatsApp route the better fit?",
+      "a": "For sales needing intensive follow-up. WhatsApp brings the conversation onto your business number with the CRM, automated follow-ups, and one unified history."
+    },
+    {
+      "q": "Can both routes run at the same time?",
+      "a": "Yes. The route is chosen per campaign, and all the chats still land in the same inbox, so the team never switches tools."
+    },
+    {
+      "q": "How does attribution work?",
+      "a": "Chats arriving from ads carry their origin campaign into the CRM, so you read leads and closings per TikTok campaign without manual recaps."
+    },
+    {
+      "q": "Are conversions sent back to TikTok?",
+      "a": "Yes, through the TikTok Pixel and Events API. Sales that happen in chat become optimization signals, so the next ads find people who resemble your buyers."
+    },
+    {
+      "q": "Does the AI answer TikTok leads too?",
+      "a": "Yes. Chats from both routes are treated the same: answered in the first second, qualified, and handed to the team when ready to close."
+    },
+    {
+      "q": "Do competitors have TikTok integration too?",
+      "a": "Mostly not yet. On our comparison page, TikTok DM and TikTok Ads sit among the rows other platforms most rarely tick."
+    }
+  ],
+  "cta": {
+    "heading": "Turn TikTok Viewers Into Recorded Buyers",
+    "body": "Two routes, one inbox, full attribution. Try it free or ask our team on WhatsApp."
+  }
+}

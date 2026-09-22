@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "AI Customer Service untuk Klinik & Kesehatan | CekatAI",
+    "description": "Solusi AI & WhatsApp API untuk industri kesehatan. Otomatiskan pendaftaran pasien, pengingat konsultasi, & jadwal dokter 24/7 bersama Cekat.ai!"
+  },
+  "hero": {
+    "badge": "Klinik & Kesehatan",
+    "title": "Jawab Setiap Pasien, Bahkan Setelah Klinik Tutup",
+    "subtitle": "Dari permintaan jadwal sampai pertanyaan layanan, Cekat.AI membalas instan di WhatsApp dan Instagram, 24/7, dengan bahasa natural, tanpa nambah staf front desk",
+    "useCases": [
+      "Jawab pasien 24/7",
+      "Booking dari chat",
+      "Riwayat pasien terpusat",
+      "Tiket komplain"
+    ]
+  },
+  "definition": "Cekat.AI untuk kesehatan adalah platform AI customer service untuk klinik, rumah sakit, dan bisnis kesehatan di Indonesia, menjawab chat pasien 24/7, mengatur jadwal langsung dari percakapan, dan menjaga setiap pertanyaan tetap rapi dalam satu platform yang compliant.",
+  "stats": [
+    {
+      "value": "+50%",
+      "label": "pertumbuhan revenue Vio Optical Clinic dalam sebulan"
+    },
+    {
+      "value": "4% → 30%",
+      "label": "booking rate dari Euromedica"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Pasien Nanya Jam 9 Malam? Klinikmu Jawab Jam 9 Malam.",
+      "body": "Pertanyaan soal kesehatan tidak menunggu jam buka. AI agent Cekat.AI menjawab instan kapan pun, jadwal praktik, ketersediaan layanan, harga, persiapan sebelum kunjungan, pasien dapat kepastian, dan staf datang pagi ke percakapan yang sudah beres, bukan tumpukan chat.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI dan staf di Cekat.AI"
+    },
+    {
+      "title": "Booking Jadwal Langsung dari Chat",
+      "body": "Hubungkan Cekat.AI ke sistem jadwal klinik lewat API, dan AI bisa booking, konfirmasi, sampai reschedule langsung di dalam percakapan. Tanpa telepon bolak-balik, tanpa booking yang kelewat, plus reminder otomatis yang menekan angka no-show.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Integrasi API untuk booking jadwal di Cekat.AI"
+    },
+    {
+      "title": "Semua Percakapan Pasien Rapi di Satu Tempat",
+      "body": "WhatsApp, Instagram DM, dan live chat website masuk ke satu inbox dengan riwayat interaksi lengkap per pasien. Tim front desk langsung paham konteks, dan pertanyaan yang kompleks atau sensitif dialihkan ke manusia beserta seluruh percakapannya.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Percakapan pasien terorganisir di CRM Cekat.AI"
+    },
+    {
+      "title": "Komplain Jadi Tiket, Bukan Pesan yang Tenggelam",
+      "body": "Komplain yang tenggelam di inbox sibuk artinya pasien yang hilang. Cekat.AI melabeli keluhan secara otomatis, membuat tiket, dan memberi notifikasi ke tim yang tepat, setiap keluhan terlacak dari pesan pertama sampai selesai.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Pembuatan tiket otomatis untuk komplain pasien di Cekat.AI"
+    }
+  ],
+  "caseStudy": {
+    "client": "Vio Optical Clinic",
+    "metrics": [
+      {
+        "value": "+50%",
+        "label": "revenue dalam sebulan"
+      }
+    ],
+    "body": "Saat permintaan melonjak, tim Vio Optical Clinic, termasuk owner-nya, kewalahan chat dan merangkap dua-tiga peran sekaligus. Setelah pakai Cekat.AI, customer service berjalan penuh dengan AI: respons cepat dan konsisten sepanjang hari. Hasilnya: revenue tumbuh +50% dibanding bulan sebelumnya, alur kerja lebih efisien, dan support 24/7."
+  },
+  "pillars": [
+    {
+      "title": "Compliant dari Awal",
+      "body": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam pengelolaan data pengguna, fondasi yang bisa diandalkan bisnis kesehatan."
+    },
+    {
+      "title": "Manusia di Momen yang Penting",
+      "body": "AI menangani pertanyaan rutin; yang kompleks atau sensitif dialihkan ke stafmu lengkap dengan konteks. Pasien tidak pernah mengulang cerita."
+    },
+    {
+      "title": "Terbukti di Dunia Kesehatan",
+      "body": "Klinik seperti Vio Optical menjalankan customer service sepenuhnya di Cekat.AI, hasil nyata, dari percakapan pasien sungguhan."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu klinik dan bisnis kesehatan?",
+      "a": "Cekat.AI menjawab chat pasien secara instan 24/7 di WhatsApp, Instagram, dan web chat, dari permintaan jadwal, pertanyaan layanan, sampai harga, sambil merapikan semua percakapan dalam satu platform. Staf fokus ke pasien di ruangan, bukan ke ponsel."
+    },
+    {
+      "q": "Pasien bisa booking jadwal lewat AI?",
+      "a": "Bisa. Lewat integrasi API dengan sistem jadwal klinikmu, AI bisa booking, konfirmasi, dan reschedule langsung di chat, plus reminder otomatis sebelum kunjungan untuk menekan angka no-show."
+    },
+    {
+      "q": "Bagaimana kalau pertanyaannya terlalu kompleks atau sensitif untuk AI?",
+      "a": "Percakapan otomatis dialihkan ke stafmu lengkap dengan riwayat chat-nya. Tim kamu yang menjawab pertanyaan medis atau sensitif; AI menangani volume pertanyaan rutin di sekitarnya."
+    },
+    {
+      "q": "Apakah data pasien ditangani dengan aman?",
+      "a": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam menangani dan mengelola data pengguna. Akses di dalam tim diatur berbasis peran, jadi data percakapan hanya terlihat oleh orang yang memang berwenang."
+    },
+    {
+      "q": "Hasil apa yang sudah dirasakan bisnis kesehatan dengan Cekat.AI?",
+      "a": "Vio Optical Clinic mencatat pertumbuhan revenue +50% dibanding bulan sebelumnya setelah pakai Cekat.AI, customer service sepenuhnya ditangani AI dengan support 24/7, setelah sebelumnya kewalahan menangani chat manual saat permintaan melonjak."
+    },
+    {
+      "q": "Channel apa saja yang bisa dihubungkan klinik?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, dan live chat website, semuanya mengalir ke satu inbox dengan satu riwayat interaksi per pasien, jadi tidak ada pertanyaan yang jatuh di antara channel."
+    },
+    {
+      "q": "Berapa lama setup untuk klinik?",
+      "a": "AI agent dibuat dengan menyalin SOP dan info layanan klinikmu, kebanyakan tim sudah punya AI yang menjawab akurat dalam hitungan menit, bukan minggu. Tidak ada coding di langkah mana pun."
+    },
+    {
+      "q": "Bisa untuk klinik dengan banyak cabang atau departemen?",
+      "a": "Bisa. Kamu bisa mengatur tim dengan akses berbasis peran, membuat AI agent spesialis per lini layanan, dan mengarahkan percakapan ke cabang atau departemen yang tepat secara otomatis."
+    },
+    {
+      "q": "Apakah Cekat.AI juga membantu promosi dan follow-up klinik?",
+      "a": "Ya. Campaign broadcast menjangkau segmen pasien lewat WhatsApp API resmi, reminder checkup, promo musiman, ajakan kontrol ulang, dengan follow-up otomatis berdasarkan aktivitas masing-masing pasien."
+    }
+  ],
+  "cta": {
+    "heading": "Beri Setiap Pasien Jawaban Instan",
+    "body": "Lihat bagaimana klinik menjalankan customer service 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

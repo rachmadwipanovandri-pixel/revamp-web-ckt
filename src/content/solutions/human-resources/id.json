@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": "Solusi AI untuk Tim HRD | Cekat.AI",
+    "description": "AI menjawab pertanyaan kandidat dan karyawan 24/7 dari knowledge base kebijakanmu, broadcast pengumuman tersegmen, dan hal sensitif tetap ke manusia."
+  },
+  "hero": {
+    "badge": "Solusi untuk Tim HRD",
+    "title": "Satu Nomor untuk Semua Pertanyaan Kandidat dan Karyawan",
+    "subtitle": "Musim rekrutmen, onboarding, sampai pertanyaan cuti yang itu-itu lagi: AI menjawab dari kebijakan resmimu, dan hal yang sensitif langsung diteruskan ke tim HR."
+  },
+  "definition": "Solusi HR dari Cekat.AI memakai AI agent, inbox bersama, dan broadcast untuk menangani pertanyaan kandidat saat rekrutmen dan pertanyaan karyawan sehari-hari, dengan eskalasi otomatis ke tim HR untuk hal yang membutuhkan manusia.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "pertanyaan kandidat dan karyawan terjawab"
+    },
+    {
+      "value": "±5 menit",
+      "label": "setup bot, tanpa coding"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "painPoints": {
+    "heading": "Yang Menyita Hari Tim HR",
+    "items": [
+      {
+        "icon": "Users",
+        "title": "Pertanyaan sama berulang tiap hari",
+        "body": "Sisa cuti, klaim benefit, prosedur reimbursement. Jawabannya sudah ada di dokumen, tapi tetap ditanyakan satu per satu ke orang HR."
+      },
+      {
+        "icon": "Layers",
+        "title": "Info penting tenggelam di grup",
+        "body": "Pengumuman dikirim ke grup ramai dan terbaca sebagian. Yang tidak baca tetap bertanya, dan siklusnya berulang."
+      },
+      {
+        "icon": "Clock",
+        "title": "Rekrutmen lambat karena balasan manual",
+        "body": "Ratusan pelamar menanyakan syarat dan status yang sama. Kandidat bagus mundur duluan karena menunggu terlalu lama."
+      }
+    ]
+  },
+  "compare": {
+    "heading": "Bedanya Pakai Cekat.AI dan Tidak",
+    "body": "Pertanyaan yang sama akan selalu datang. Yang berbeda adalah siapa yang menjawabnya. Pilih tab untuk membandingkan.",
+    "withLabel": "Dengan Cekat.AI",
+    "withoutLabel": "Tanpa Cekat.AI",
+    "with": {
+      "title": "HR menjawab sekali, sistem menjawab seterusnya",
+      "bullets": [
+        "AI menjawab FAQ kandidat dan karyawan dari dokumen kebijakan resmi",
+        "Pengumuman terkirim tersegmen per divisi dan terukur terbacanya",
+        "Topik sensitif otomatis dieskalasi ke tim HR dengan konteks"
+      ],
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base kebijakan menjadi sumber jawaban AI"
+    },
+    "without": {
+      "title": "Semua bergantung siapa yang sempat",
+      "bullets": [
+        "Jawaban kebijakan berbeda-beda tergantung siapa yang ditanya",
+        "Pengumuman tertimbun ratusan chat grup dalam sehari",
+        "Pelamar menunggu balasan berhari-hari lalu memilih mundur"
+      ]
+    }
+  },
+  "midCta": {
+    "heading": "Kurangi Chat Berulang, Kembalikan Waktu Tim HR",
+    "body": "Unggah kebijakanmu dan biarkan AI yang menjawab mulai hari ini. Coba gratis atau tanya dulu."
+  },
+  "benefits": [
+    {
+      "title": "Musim Rekrutmen Tanpa Inbox Meledak",
+      "body": "Satu lowongan bisa mendatangkan ratusan pelamar yang menanyakan syarat, jadwal, dan status yang sama. AI menjawabnya dari detail lowongan yang kamu unggah, dan tim rekrutmen fokus menyeleksi, bukan membalas.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Pertanyaan pelamar dari berbagai channel masuk satu inbox"
+    },
+    {
+      "title": "FAQ Karyawan Dijawab dari Satu Sumber",
+      "body": "Sisa cuti, klaim benefit, prosedur reimbursement: jawabannya sudah ada di dokumen kebijakan. Unggah sekali ke knowledge base, dan semua karyawan menerima jawaban yang sama dan konsisten, kapan pun bertanya.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base kebijakan HR sebagai sumber jawaban AI"
+    },
+    {
+      "title": "Kandidat Terorganisir Seperti Pipeline",
+      "body": "Setiap pelamar jadi kontak dengan riwayat chat yang menempel, bergerak dari screening ke interview sampai offer di board yang sama. Tidak ada kandidat bagus yang hilang di spreadsheet.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Pipeline kandidat rekrutmen di board Cekat.AI"
+    },
+    {
+      "title": "Pengumuman Sampai, Bukan Tenggelam di Grup",
+      "body": "Broadcast tersegmen per divisi atau lokasi untuk pengumuman penting, undangan interview, dan pengingat deadline. Terkirim resmi lewat WhatsApp, terbaca, dan terukur, bukan tertimbun ratusan chat grup.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Pengumuman terkirim ke segmen karyawan yang tepat"
+    },
+    {
+      "title": "Hal Sensitif Langsung ke Manusia",
+      "body": "Gaji, konflik, dan data pribadi bukan urusan bot. Kamu menentukan topik yang selalu dieskalasi, dan AI meneruskannya ke tim HR dengan konteks tanpa berimprovisasi.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Topik sensitif dieskalasi dari AI ke tim HR"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Jawaban Konsisten dengan Kebijakan",
+      "body": "AI menjawab hanya dari dokumen resmi yang kamu unggah, jadi tidak ada versi jawaban yang berbeda antar staf."
+    },
+    {
+      "title": "Rekrutmen Bergerak Lebih Cepat",
+      "body": "Pelamar terjawab instan dan tersusun di pipeline, jadi kandidat terbaik tidak keburu diambil perusahaan lain."
+    },
+    {
+      "title": "Batas yang Kamu Tentukan",
+      "body": "Topik sensitif selalu ke manusia, sesuai aturan eskalasi yang kamu set sejak awal."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu solusi HR Cekat.AI?",
+      "a": "AI agent yang menjawab pertanyaan kandidat dan karyawan dari knowledge base kebijakanmu, inbox bersama untuk tim HR, broadcast pengumuman tersegmen, dan eskalasi otomatis untuk topik sensitif."
+    },
+    {
+      "q": "Apakah cocok untuk proses rekrutmen?",
+      "a": "Ya. AI menjawab pertanyaan pelamar soal syarat dan proses, mengingatkan jadwal interview lewat broadcast, dan menyusun kandidat di pipeline dari screening sampai offer."
+    },
+    {
+      "q": "Dari mana AI tahu kebijakan perusahaan kami?",
+      "a": "Dari dokumen yang kamu unggah: peraturan perusahaan, panduan benefit, SOP, atau FAQ internal. AI menjawab hanya dari sumber itu dan bisa diperbarui kapan saja."
+    },
+    {
+      "q": "Bagaimana topik sensitif ditangani?",
+      "a": "Kamu menentukan daftar topik yang selalu diteruskan ke manusia, misalnya gaji dan masalah personal. AI tidak menjawabnya, melainkan langsung mengoper ke tim HR dengan riwayat chat."
+    },
+    {
+      "q": "Bisakah broadcast pengumuman ke karyawan?",
+      "a": "Bisa, tersegmen per divisi, lokasi, atau status. Terkirim lewat WhatsApp Business API resmi dengan template ter-approve, dan tingkat terbacanya terukur."
+    },
+    {
+      "q": "Channel apa saja yang didukung?",
+      "a": "WhatsApp, Instagram, Facebook Messenger, Telegram, dan live chat di halaman karier, semuanya masuk ke inbox HR yang sama."
+    },
+    {
+      "q": "Berapa lama sampai bisa dipakai?",
+      "a": "Bot pertama aktif sekitar 5 menit tanpa coding. Mengunggah dokumen kebijakan dan menyusun aturan eskalasi biasanya selesai di hari yang sama."
+    },
+    {
+      "q": "Bisakah beberapa anggota tim HR memegang satu nomor yang sama?",
+      "a": "Bisa. Lewat WhatsApp Business API, satu nomor HR dilayani beberapa staf sekaligus dengan pembagian percakapan yang rapi, jadi tidak ada chat karyawan yang dipegang dua orang atau terlewat sama sekali."
+    }
+  ],
+  "cta": {
+    "heading": "HR Fokus ke Orangnya, Bukan ke Chat yang Itu-Itu Lagi",
+    "body": "Pertanyaan berulang dijawab AI, pengumuman sampai ke orangnya, dan hal sensitif tetap di tangan manusia. Coba gratis, atau chat tim kami."
+  }
+}

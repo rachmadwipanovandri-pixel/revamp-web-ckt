@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "AI Customer Service for Nonprofits & Social Orgs | CekatAI",
+    "description": "AI & WhatsApp API solutions for nonprofit organizations by Cekat.ai: answer donor queries 24/7, run broadcast campaigns, & boost engagement!"
+  },
+  "hero": {
+    "badge": "Nonprofits & Social Organizations",
+    "title": "Answer Every Donor, the Moment They Want to Give",
+    "subtitle": "Questions about how to give, where funds go, and your programs, answered instantly on WhatsApp, Instagram, and web chat, 24/7, without adding to your team's workload",
+    "useCases": [
+      "Donor questions",
+      "Reachable 24/7",
+      "Donation campaigns",
+      "Centralized supporter data"
+    ]
+  },
+  "definition": "Cekat.AI for nonprofits is an AI customer service platform for foundations, charities, and social organizations in Indonesia, answering donor and supporter questions 24/7, running donation campaigns through WhatsApp broadcast, and keeping every conversation organized in one place.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "donor and supporter questions answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "organizations run on Cekat.AI"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "conversations handled"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Donor Questions Answered the Moment They Ask",
+      "body": "Someone ready to give won't wait for office hours to open. Cekat.AI answers how to donate, where funds go, and what each program does the instant the question arrives, in natural language, at any hour, so a moment of generosity turns into a gift instead of a message that goes cold before anyone replies.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering donor questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "Reachable 24/7, Even After the Office Closes",
+      "body": "Support and generosity don't run on a 9-to-5 schedule. AI working hours let the agent cover chats after your team logs off and hand back during office hours with full context, so a donor at midnight or a beneficiary in need on the weekend always reaches a responsive organization, not an empty inbox.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours keeping the organization reachable after hours in Cekat.AI"
+    },
+    {
+      "title": "Run Donation Campaigns Through Broadcast",
+      "body": "Broadcast campaigns go out through the official WhatsApp Business API to segments built from real data, recurring donors, one-time givers, event attendees, with names and history pulled from the CRM. A fundraising appeal or program update reaches the supporters most likely to act, and follow-ups nudge automatically based on each person's activity.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Donor segmentation for campaigns in Cekat.AI"
+    },
+    {
+      "title": "Every Supporter and Conversation in One Place",
+      "body": "WhatsApp, Instagram DM, Facebook Messenger, and website chat flow into one inbox with a full history per supporter, questions asked, campaigns received, gifts discussed. Your team sees the whole relationship instantly, and anything sensitive escalates to a person with the conversation attached, so no supporter repeats themselves.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Supporter conversations organized in the Cekat.AI CRM"
+    },
+    {
+      "title": "Answers Grounded in Your Programs, Not Guesses",
+      "body": "Trust depends on accuracy, donors want to know exactly where their money goes. You paste your program details, fund allocation, and FAQs into the knowledge base, and the agent answers from that, not guesses. Setup takes around five minutes and needs no coding, so your information stays correct and consistent in every reply.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base grounding accurate answers in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Compliant by Design",
+      "body": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling user data, a foundation the donors and communities you serve can trust."
+    },
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats and campaign broadcasts run on the official WhatsApp Business API, reliable and safe for the number your supporters reach you on."
+    },
+    {
+      "title": "Human Where It Matters",
+      "body": "The AI handles routine questions; sensitive conversations route to your team with full context, so people always feel heard."
+    }
+  ],
+  "testimonial": {
+    "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+    "name": "Tantan Supriatna",
+    "role": "Customer Relation Department Head, Rumah Zakat",
+    "image": "/images/chat/tantan-supriatna.png"
+  },
+  "faq": [
+    {
+      "q": "How does Cekat.AI help nonprofits and social organizations?",
+      "a": "It answers donor and supporter chats instantly 24/7 on WhatsApp, Instagram, and web chat, how to give, where funds go, program details, while keeping every conversation organized in one inbox. Your team stays reachable around the clock without extra workload, and no message goes cold before someone replies."
+    },
+    {
+      "q": "Can the AI answer questions about where donations go?",
+      "a": "Yes. You paste your program details, fund allocation, and FAQs into the knowledge base, and the agent answers from that, accurately and consistently, not from guesses. Donors get clear, trustworthy answers about how their contribution is used, the moment they ask."
+    },
+    {
+      "q": "Is it reachable outside office hours?",
+      "a": "Yes. AI working hours let the agent cover chats after your team logs off and hand back with full context during office hours. Rumah Zakat relies on AI once working hours end, staying reachable 24/7 so supporters always reach a responsive organization."
+    },
+    {
+      "q": "Can we run fundraising campaigns through it?",
+      "a": "Yes. Broadcast campaigns go through the official WhatsApp Business API to segments built from activity and history, recurring donors, one-time givers, event attendees. Messages pull names and context from the CRM, and automated follow-ups nudge based on each supporter's activity."
+    },
+    {
+      "q": "Which channels can our organization connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, and website live chat, all flowing into one unified inbox. Every supporter keeps a single conversation history, so a question that started on Instagram and continued on WhatsApp stays in one place."
+    },
+    {
+      "q": "Is supporter and donor data handled safely?",
+      "a": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling and managing user data. Access within your team is role-based, so donor contact details and conversation history are only visible to the people who should see them."
+    },
+    {
+      "q": "How long does it take to set up?",
+      "a": "Building the AI agent takes around five minutes and works like briefing a new team member, you paste your programs, fund details, and SOPs, and it starts answering. No coding is required, so you don't need a developer or a large budget to launch."
+    },
+    {
+      "q": "What happens with a sensitive or complex conversation?",
+      "a": "The conversation escalates to your team automatically with the full history attached, so a person handles sensitive matters while the AI answers the routine question volume around them. The supporter never repeats themselves during the handoff."
+    },
+    {
+      "q": "Do we need a big team to manage it?",
+      "a": "No. One AI agent handles unlimited simultaneous chats, answering routine questions 24/7 so your existing team focuses on the work that needs a human. Cekat.AI is used by 3,000+ businesses and organizations, from small teams to large operations."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Questions Into Support",
+    "body": "See how nonprofits stay reachable 24/7 and run campaigns on Cekat.AI, book a free consultation with our team."
+  }
+}

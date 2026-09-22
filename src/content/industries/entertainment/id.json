@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Sistem Tiket dan CS Event Otomatis via Chat | CekatAI",
+    "description": "Bioskop, klub, dan venue event pakai Cekat.AI buat jawab showtime, jual tiket, dan atur guest list langsung di chat, 24/7, tanpa nambah admin."
+  },
+  "hero": {
+    "badge": "Hiburan",
+    "title": "Jawab Setiap Chat Tiket dan Guest List, Bahkan Jam 2 Pagi",
+    "subtitle": "Dari showtime, harga tiket, sampai booking table dan guest list, Cekat.AI membalas instan di WhatsApp dan Instagram, 24/7, dengan bahasa natural, tanpa admin yang harus standby semalaman",
+    "useCases": [
+      "Showtime & harga",
+      "Jual tiket di chat",
+      "Guest list & table",
+      "Broadcast perubahan event"
+    ]
+  },
+  "definition": "Cekat.AI untuk hiburan adalah platform AI customer service untuk bioskop, klub, venue live event, dan promotor di Indonesia, berfungsi sebagai sistem tiket dan CS event dalam satu chat, menjawab showtime dan harga instan, menjual dan mengonfirmasi tiket, dan menangani booking table serta guest list 24/7.",
+  "stats": [
+    {
+      "value": "2×",
+      "label": "kenaikan omzet booking di Puffy Cotton Candy"
+    },
+    {
+      "value": "2×",
+      "label": "peningkatan kapasitas penanganan chat di Kezka Printing dalam 6 bulan"
+    },
+    {
+      "value": "24/7",
+      "label": "pertanyaan showtime, tiket, dan booking terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Pertanyaan Showtime dan Harga Dijawab Detik Itu Juga",
+      "body": "\"Malam ini main jam berapa?\" \"Presale masih ada?\" \"Harga tiket on the spot berapa?\" Menjelang event, pertanyaan yang sama masuk ratusan kali, dan makin dekat show, makin nggak sabar penanyanya. Cekat.AI menjawab instan dengan bahasa natural dari knowledge base venue-mu, jadi calon penonton dapat kepastian dan mutusin datang, bukan pindah ke acara lain.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab pertanyaan showtime dan harga tiket di inbox Cekat.AI"
+    },
+    {
+      "title": "Jual dan Konfirmasi Tiket Langsung di Chat",
+      "body": "Cekat.AI mengambil order tiket di dalam percakapan, jumlah tiket, data pembeli, sampai QR pembayaran, tanpa nyuruh penonton pindah aplikasi dan tanpa admin ngetik ulang ke spreadsheet. Penonton jalan dari nanya sampai tiket terkonfirmasi dalam satu chat, dan tiap order masuk rapi dan lengkap.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Order tiket dibuat dan dibayar langsung dalam percakapan di Cekat.AI"
+    },
+    {
+      "title": "Guest List dan Booking Table Beres, Admin Nggak Perlu Begadang",
+      "body": "DM guest list dan booking table justru paling ramai tengah malam, pas admin udah offline. Cekat.AI menjawab dan mencatat tiap permintaan begitu masuk, lengkap ke kartu CRM dengan riwayat chat-nya, jadi nggak ada nama yang kelewat dan tim di pintu tinggal buka daftar yang udah rapi.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI meng-cover chat guest list dan booking di luar jam kerja di Cekat.AI"
+    },
+    {
+      "title": "Event Berubah? Kabari Semua Pemegang Tiket Sekali Jalan",
+      "body": "Jadwal mundur, lineup ganti, atau event batal, biasanya inbox langsung banjir. Lewat broadcast di WhatsApp Business API resmi, kamu bisa umumkan perubahan ke segmen pemegang tiket duluan, dan AI menjawab pertanyaan refund yang menyusul dengan jawaban konsisten sesuai kebijakanmu, bukan jawaban beda-beda dari admin yang panik.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi penonton untuk broadcast pengumuman event di Cekat.AI"
+    }
+  ],
+  "caseStudy": {
+    "client": "Puffy Cotton Candy",
+    "title": "Bagaimana Puffy Cotton Candy Menggandakan Omzet Booking — dan 2–4× di High Season",
+    "metrics": [
+      {
+        "value": "2×",
+        "label": "kenaikan omzet booking di Puffy Cotton Candy"
+      },
+      {
+        "value": "2×",
+        "label": "peningkatan kapasitas penanganan chat di Kezka Printing dalam 6 bulan"
+      }
+    ],
+    "body": "Puffy Cotton Candy mengelola 35 gerai mall dan divisi home service yang membawa booth cotton candy ke ulang tahun, acara perusahaan, dan pesta. Pertanyaan event masuk lewat WhatsApp dan dibalas manual: lambat, tidak konsisten, sering kurang informatif. Setelah divisi home service dipindahkan ke Cekat.AI, setiap pertanyaan dijawab instan dan informatif. Hasilnya: leads tertangani naik, handling time lebih cepat, omzet booking sekitar dua kali dari sebelum AI, dan 2–4× saat Lebaran, Natal, dan Tahun Baru."
+  },
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chat, broadcast, dan konfirmasi tiket berjalan di WhatsApp Business API resmi, bareng Instagram DM dan Facebook Messenger, satu inbox untuk semua venue dan event, compliant dan andal."
+    },
+    {
+      "title": "AI yang Jualan Tiket dan Booking",
+      "body": "AI menjawab showtime dan harga, menjual tiket di percakapan, dan mencatat guest list serta booking table, lalu mengoper kasus rumit ke timmu lengkap dengan konteks."
+    },
+    {
+      "title": "Terbukti di F&B dan Entertainment",
+      "body": "Puffy Cotton Candy memindahkan booking event dan pesta dari balasan manual ke AI instan: omzet booking naik dua kali, dan 2–4× di high season."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu bisnis hiburan dan event?",
+      "a": "Cekat.AI jadi sistem tiket dan CS event dalam satu chat: menjawab showtime, harga, dan lokasi instan 24/7 di WhatsApp, Instagram, dan web chat, menjual tiket di percakapan, dan mencatat guest list serta booking table otomatis. Timmu fokus menjalankan acaranya, bukan bales chat yang itu-itu terus."
+    },
+    {
+      "q": "Penonton bisa beli tiket langsung lewat chat?",
+      "a": "Bisa. Cekat.AI membuat order tiket dari percakapan, jumlah tiket, data pembeli, dan QR pembayaran, tanpa keluar dari chat. Order masuk rapi dan lengkap, dan nggak ada yang perlu diketik ulang manual."
+    },
+    {
+      "q": "Bisa handle guest list dan booking table?",
+      "a": "Bisa. Permintaan guest list dan table yang masuk tengah malam dijawab dan dicatat AI saat itu juga, masuk ke kartu CRM lengkap dengan riwayat chat-nya. Tim di pintu tinggal buka daftar yang sudah rapi, bukan scroll DM semalaman."
+    },
+    {
+      "q": "Gimana kalau event diundur atau dibatalkan?",
+      "a": "Umumkan duluan lewat broadcast WhatsApp Business API resmi ke segmen pemegang tiket, lalu AI menjawab pertanyaan refund dan penukaran yang menyusul dengan jawaban konsisten sesuai kebijakanmu. Kasus yang butuh keputusan dialihkan ke timmu lengkap dengan konteks."
+    },
+    {
+      "q": "AI-nya kuat pas chat melonjak menjelang show?",
+      "a": "Kuat. AI menjawab setiap chat masuk secara instan berapa pun banyaknya sekaligus, jadi jam-jam menjelang open gate tetap terjawab semua. Waktu respons nggak ikut antre walau ribuan orang nanya bareng."
+    },
+    {
+      "q": "Channel apa saja yang bisa dihubungkan?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, dan live chat website, semua masuk ke satu inbox dengan satu riwayat per penonton. Yang DM di Instagram lalu lanjut di WhatsApp nggak perlu mengulang cerita."
+    },
+    {
+      "q": "Berapa lama setup untuk venue atau promotor?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin jadwal show, harga tiket, aturan venue, dan SOP ke knowledge base, dan AI langsung menjawab akurat. Tanpa coding sama sekali; semudah briefing admin baru."
+    },
+    {
+      "q": "Hasil apa yang sudah dirasakan bisnis entertainment?",
+      "a": "Puffy Cotton Candy memindahkan booking event dan pesta dari balasan manual ke AI instan: omzet booking naik dua kali, dan 2–4× di high season."
+    },
+    {
+      "q": "Bisa coba dulu sebelum berlangganan?",
+      "a": "Bisa. Jadwalkan demo gratis dengan tim kami, bawa kasus event-mu sendiri, dan lihat AI-nya menjawab pertanyaan penontonmu secara live. Soal paket, harga mengikuti kebutuhan channel dan volume chat, tim kami bantu hitung yang pas."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Setiap Chat Jadi Tiket yang Terjual",
+    "body": "Lihat bagaimana venue dan promotor menjalankan tiket, booking, dan CS event 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

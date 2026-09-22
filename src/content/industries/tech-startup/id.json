@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Customer Service untuk Startup & Teknologi | CekatAI",
+    "description": "Startup pakai Cekat.AI buat scale support tanpa nambah headcount. Satu inbox semua channel, automation, analitik percakapan. Founder bisa tidur."
+  },
+  "hero": {
+    "badge": "Teknologi & Startup",
+    "title": "User Nambah Terus, Tim Support Nggak Harus Ikut Nambah",
+    "subtitle": "Cekat.AI menjawab chat pelanggan 24/7 di WhatsApp, Instagram, dan web chat dari satu inbox, mengotomasi alur yang berulang, jadi support ikut scale tanpa buka lowongan baru dan founder berhenti bales chat tengah malam",
+    "useCases": [
+      "Skala tanpa nambah biaya",
+      "Satu inbox semua channel",
+      "Automasi alur berulang",
+      "Metrik support"
+    ]
+  },
+  "definition": "Cekat.AI untuk teknologi dan startup adalah platform AI customer service untuk startup di Indonesia yang sedang tumbuh cepat, menjawab chat pelanggan 24/7 di semua channel, mengotomasi alur yang berulang, dan menjaga support tetap scale tanpa nambah headcount.",
+  "stats": [
+    {
+      "value": "+70%",
+      "label": "kenaikan konversi di Holywings Group"
+    },
+    {
+      "value": "100%",
+      "label": "chat ter-cover 24/7 di Holywings"
+    },
+    {
+      "value": "24/7",
+      "label": "chat pelanggan terjawab di semua channel"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Volume Chat Naik Terus, Biaya Support Nggak Ikut Naik",
+      "body": "Growth yang sehat biasanya dibayar dengan antrean chat yang makin panjang. AI agent Cekat.AI menjawab setiap chat secara instan berapa pun volumenya, dengan jawaban yang sama konsistennya di jam 2 siang maupun jam 2 pagi, jadi kamu menambah user tanpa harus menambah shift, dan kualitas respons nggak turun pas lagi ramai-ramainya.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI menjawab volume chat yang tinggi secara instan"
+    },
+    {
+      "title": "Semua Channel Masuk Satu Inbox, Satu Riwayat per Pelanggan",
+      "body": "WhatsApp, Instagram DM, Facebook Messenger, dan web chat masuk ke satu inbox dengan satu riwayat per pelanggan. Nggak ada lagi buka lima tab dan saling tanya \"ini udah dibales belum?\", tim kecilmu lihat semua percakapan di satu tempat, dan pelanggan yang pindah channel nggak perlu mengulang cerita.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Semua channel chat terhubung ke satu inbox Cekat.AI"
+    },
+    {
+      "title": "Alur yang Berulang Jalan Sendiri, Tanpa Nyuri Waktu Engineering",
+      "body": "Cek status, kualifikasi lead, kirim follow-up, update ke tim internal, alur yang tiap hari diulang bisa diotomasi lewat builder drag and drop, tanpa coding. Timmu berhenti jadi mesin copy paste, dan roadmap engineering nggak kepotong buat bikin tooling support internal.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automation builder tanpa coding di Cekat.AI"
+    },
+    {
+      "title": "Founder Berhenti Jadi CS Tengah Malam",
+      "body": "Di awal, founder bales semua chat sendiri, masalahnya kebiasaan itu nggak scale. Dengan AI working hours, AI mengambil alih penuh di luar jam kerja dan berbagi beban dengan tim di jam sibuk, kasus penting tetap dioper ke manusia lengkap dengan konteksnya, dan kamu buka laptop pagi-pagi ke inbox yang sudah beres, bukan yang minta dibales semua.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI dan tim di Cekat.AI"
+    },
+    {
+      "title": "Angka Support yang Siap Ditanya Investor",
+      "body": "Berapa percakapan per bulan, berapa yang selesai tanpa manusia, topik apa yang paling sering muncul, semua terekam di dashboard analitik. Kamu bisa jawab pertanyaan soal efisiensi operasional dengan data, dan membaca sinyal produk dari percakapan pelanggan sungguhan, bukan dari feeling.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Dashboard analitik percakapan pelanggan di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "WhatsApp Business API resmi, Instagram DM, Facebook Messenger, dan web chat jalan dari satu inbox, compliant, andal, dan siap untuk volume yang terus tumbuh."
+    },
+    {
+      "title": "Dibangun untuk Scale",
+      "body": "AI menjawab lonjakan chat tanpa antre, automation menangani alur yang berulang, dan timmu masuk hanya untuk kasus yang benar-benar butuh manusia."
+    },
+    {
+      "title": "Dipercaya 3.000+ Bisnis",
+      "body": "Dari startup tahap awal sampai grup besar di Indonesia, Cekat.AI menangani percakapan pelanggan setiap hari, teruji di volume chat yang nyata."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu startup yang lagi tumbuh cepat?",
+      "a": "Cekat.AI menjawab chat pelanggan secara instan 24/7 di semua channel, mengotomasi alur yang berulang, dan mengoper kasus kompleks ke timmu lengkap dengan konteks. Volume chat boleh naik berkali-kali lipat, tim support-mu nggak harus ikut membengkak."
+    },
+    {
+      "q": "Chat kami bisa melonjak tiba-tiba setelah campaign atau momen viral. AI-nya kuat?",
+      "a": "Kuat. AI menjawab setiap chat yang masuk secara instan berapa pun banyaknya sekaligus, jadi waktu respons tetap stabil saat launch produk, campaign besar, atau momen viral. Nggak perlu nyiapin admin cadangan tiap mau launching."
+    },
+    {
+      "q": "Channel apa saja yang bisa dihubungkan?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, dan live chat website, semua masuk ke satu inbox dengan satu riwayat per pelanggan. Pelanggan yang DM di Instagram lalu lanjut di WhatsApp nggak perlu mengulang cerita."
+    },
+    {
+      "q": "Kami bisa bikin automation tanpa ngerepotin engineer?",
+      "a": "Bisa. Alur seperti kualifikasi lead, follow-up otomatis, dan notifikasi ke tim internal dibangun lewat builder drag and drop, tanpa coding. Tim ops atau CS bisa merakitnya sendiri, dan engineering tetap fokus ke produk."
+    },
+    {
+      "q": "Bisa integrasi dengan tool internal atau produk kami?",
+      "a": "Bisa. Lewat integrasi API, Cekat.AI terhubung dengan CRM, database, atau sistem internalmu, jadi AI bisa menjawab dengan data yang relevan dan percakapan bisa memicu proses di tool yang sudah kamu pakai."
+    },
+    {
+      "q": "Kapan chat dioper ke manusia?",
+      "a": "Sesuai aturan yang kamu atur, misalnya keluhan sensitif, pembahasan harga enterprise, atau user yang minta bicara dengan orang. AI mengoper percakapan lengkap dengan riwayatnya, jadi timmu langsung lanjut tanpa tanya ulang dari awal."
+    },
+    {
+      "q": "Bagaimana keamanan data pelanggan kami?",
+      "a": "Data percakapan dan pelanggan tersimpan aman dengan akses berbasis peran, hanya anggota tim yang kamu beri izin yang bisa mengaksesnya. Sertifikasi ISO 27001 sedang dalam proses, dan praktik keamanan data mengikuti standar industri."
+    },
+    {
+      "q": "Berapa lama sampai live? Kami nggak punya banyak waktu.",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin FAQ, deskripsi produk, dan SOP ke knowledge base, hubungkan channel-mu, dan AI mulai menjawab. Tanpa coding, jadi bisa live minggu ini juga, bukan jadi proyek satu kuartal."
+    },
+    {
+      "q": "Bagaimana model harganya untuk startup?",
+      "a": "Harga mengikuti skala penggunaan, mulai dari paket kecil dan naik seiring volume percakapanmu tumbuh, jadi biayanya sejalan dengan traction, bukan lompat duluan. Jadwalkan konsultasi gratis dan tim kami bantu pilih paket yang pas."
+    }
+  ],
+  "cta": {
+    "heading": "Scale Support-mu Tanpa Nambah Headcount",
+    "body": "Lihat bagaimana startup menjalankan customer service 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

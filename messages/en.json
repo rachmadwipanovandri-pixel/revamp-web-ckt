@@ -1,0 +1,1122 @@
+{
+  "seo": {
+    "title": "CekatAI: AI Agent Platform for Customer Service & Sales",
+    "description": "Scale customer support & automate sales with Cekat.ai AI Agent. Omnichannel CRM & WhatsApp AI trusted by 3,000+ businesses."
+  },
+  "common": {
+    "cta": "Free Trial",
+    "languageName": "English"
+  },
+  "nav": {
+    "fitur": "Features",
+    "crm": "CRM",
+    "chat": "Chat",
+    "ai": "AI",
+    "marketing": "Marketing",
+    "order": "Order",
+    "industries": "Industries",
+    "blog": "Blog",
+    "contact": "Contact",
+    "masuk": "Log in",
+    "ctaWhatsapp": "WhatsApp Us",
+    "ctaTrial": "Free Trial",
+    "floatingWhatsapp": "Ask Clara",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "viewAllFeatures": "View all features",
+    "viewAllIndustries": "View all industries",
+    "industriesByLabel": "By industry",
+    "megaFeaturedEyebrow": "Featured",
+    "megaFeaturedTitle": "WhatsApp Call AI",
+    "megaFeaturedBody": "Every call summarized by AI, key points and next steps, automatically.",
+    "megaFeaturedCta": "Explore the feature",
+    "megaTrust": "Trusted by 3,000+ businesses in Indonesia",
+    "harga": "Pricing",
+    "solutions": "Solutions",
+    "viewAllSolutions": "View all solutions",
+    "solutionsByLabel": "Solutions by role"
+  },
+  "footer": {
+    "productHeading": "Product",
+    "legalHeading": "Legal",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "refund": "Return, Refund & Delivery Policy",
+    "rights": "All rights reserved.",
+    "metaPartner": "Cekat.AI is Official Meta Business Partner",
+    "officeHeading": "Our Office",
+    "jakartaOfficeName": "Jakarta Office",
+    "jakartaOfficeAddress": "Prosperity Tower unit 16i, Jl. Jenderal Sudirman No.Kav. 52-53, District 8, SCBD, South Jakarta 12190",
+    "tangerangOfficeName": "Tangerang Office",
+    "tangerangOfficeAddress": "Ruko Hampton Avenue Blok A no.10, Paramount, Gading Serpong, Tangerang, 15810",
+    "companyLegalName": "PT. Teknologi Cekat Indonesia",
+    "singaporeOfficeName": "Singapore Office",
+    "singaporeCompanyName": "Cekat Pte. LTD.",
+    "singaporeOfficeAddress": "101 Upper Cross Street, 05-16, People's Park Centre, Singapore, 058357",
+    "malaysiaOfficeName": "Kuala Lumpur Office",
+    "malaysiaCompanyName": "CekatAI Sdn. Bhd.",
+    "malaysiaOfficeAddress": "Level 7, Mercu 3, No. 3, Jalan Bangsar, KL Eco City 59200, Kuala Lumpur W.P. Kuala Lumpur Malaysia",
+    "downloadApp": "Download Cekat Mobile App"
+  },
+  "home": {
+    "hero": {
+      "title": "From First Chat to Lifetime Customer.",
+      "subtitle": "Use AI agents, CRM, and automated follow-ups to turn more conversations into sales, know exactly which ads end in a closed deal, and keep customers coming back.",
+      "ctaPrimary": "WhatsApp Us",
+      "ctaSecondary": "Start Free Trial",
+      "eyebrow": "#1 AI for Customer Service & Sales"
+    },
+    "trustedBy": {
+      "heading": "Trusted by 3,000+ businesses across Asia.",
+      "stat1Value": "10,000,000,000+",
+      "stat1Label": "tokens processed daily",
+      "stat2Value": "2,000,000+",
+      "stat2Label": "chat bubbles processed daily",
+      "partnersHeading": "Trusted by our partners & customers",
+      "moreClients": "and thousands more businesses",
+      "quote": "Customer responses became faster",
+      "quoteAuthorName": "Silica Brenda",
+      "quoteAuthorRole": "Founder",
+      "quoteAuthorCompany": "Moir Salon",
+      "quoteWiji": "The change of closing the deal are very high",
+      "quoteAuthorNameWiji": "Wiji Astuti",
+      "quoteAuthorRoleWiji": "Head of Customer Experience",
+      "quoteAuthorCompanyWiji": "Rumah Zakat",
+      "quoteHargyo": "Our response rate increased by 90%",
+      "quoteAuthorNameHargyo": "Hargyo",
+      "quoteAuthorRoleHargyo": "Director",
+      "quoteAuthorCompanyHargyo": "Multimedia Nusantara Polytechnic"
+    },
+    "testimonials": {
+      "heading": "Revenue up by as much as 40%, not just faster replies.",
+      "body": "Every figure below was reported directly by a Cekat.AI customer in a recorded interview.",
+      "natureCraft": {
+        "quote": "Our closing rate used to sit below 20%. Last week I reviewed it with the team and it is above 40%, where the standard is 30%. And because the closing rate went up, our revenue climbed sharply too, up to 50%.",
+        "industry": "Retail & Consumer Goods",
+        "function": "Customer Service",
+        "name": "Hariyudi",
+        "role": "Direktur",
+        "company": "Nature Craft Indonesia",
+        "metricValue": "+50%",
+        "metricLabel": "revenue, after closing rate rose from under 20% to over 40%"
+      },
+      "wallStreet": {
+        "quote": "We used to rely entirely on people. Our First Contact team had hit a ceiling, productivity simply could not go any higher. With Cekat AI filtering out the low-quality leads first, our conversion went from around 20% to 28%. That is a real number we are seeing.",
+        "industry": "Education",
+        "function": "Digital Marketing",
+        "name": "Bayu",
+        "role": "Head of Digital Marketing",
+        "company": "Wall Street English Indonesia",
+        "metricValue": "20% → 28%",
+        "metricLabel": "lead conversion, once low-quality leads were filtered first"
+      },
+      "putiih": {
+        "quote": "A single chat used to take us more than 20 minutes to answer, and that was driving prospective customers away. Now replies go out in under 2 minutes, and we have set it to 30 seconds. There are no more complaints about slow replies, and revenue is up roughly 30 to 40%.",
+        "industry": "Healthcare & Aesthetics",
+        "function": "Operations",
+        "name": "Gamal",
+        "role": "Founder & CEO",
+        "company": "Putiih Skin Clinic",
+        "metricValue": "+30-40%",
+        "metricLabel": "revenue, with replies down from 20 minutes to under 2"
+      },
+      "threeland": {
+        "quote": "Property buyers see our ads at 11pm, at 1am. I used to stay up all night answering them. Now I sleep through the night and wake up to a queue of people asking for site visits. Location, payment terms, even mortgage simulations, all already answered. Sales are up by almost 50%.",
+        "industry": "Real Estate & Property",
+        "function": "Sales",
+        "name": "Adam Sulaiman",
+        "role": "Direktur Utama",
+        "company": "Threeland Property",
+        "metricValue": "~+50%",
+        "metricLabel": "sales growth, from leads that used to be missed overnight"
+      },
+      "rumahZakat": {
+        "quote": "Our contact center only ran Monday to Friday, 8 to 5. Outside those hours donor messages were always delayed, and by the time we replied on Monday they had stopped responding. Now AMIRA answers 24 hours a day in under a minute. We do not lose donors, and the chance of closing is far higher.",
+        "industry": "Non-Profit & Social Impact",
+        "function": "Customer Experience",
+        "name": "Wiji Astuti",
+        "role": "Customer Experience Department Head",
+        "company": "Rumah Zakat",
+        "metricValue": "24 hours",
+        "metricLabel": "responses under 1 minute, up from weekdays only"
+      }
+    },
+    "featureAccordion": {
+      "heading": "Four products, one platform",
+      "body": "Explore how AI supports every part of your business, from sales through to operations.",
+      "chat": {
+        "title": "AI Sales Chat",
+        "lead": "Qualifying, closing, and follow-up run 24/7.",
+        "body": "AI replies, qualifies prospects, and hands over to your team once they are ready to close. Every channel lands in one inbox.",
+        "pill1": "Every channel, one inbox",
+        "pill2": "Auto-handoff to your team",
+        "pill3": "Runs 24/7"
+      },
+      "crm": {
+        "title": "CRM & Customer Data",
+        "lead": "Tidy data with no manual entry",
+        "body": "Every conversation, purchase, and pipeline stage records itself from chat. No more end-of-day catch-up.",
+        "pill1": "Fills itself from chat",
+        "pill2": "Real-time pipeline",
+        "pill3": "Full history per customer"
+      },
+      "marketing": {
+        "title": "Marketing & Broadcast",
+        "lead": "Know exactly which ads end in a closed deal.",
+        "body": "Segmented broadcasts, automatic follow-up, and attribution that ties ad spend to actual sales.",
+        "pill1": "Segmented broadcasts",
+        "pill2": "ROAS dashboard",
+        "pill3": "CAPI integration"
+      },
+      "order": {
+        "title": "Order & Automation",
+        "lead": "Orders processed straight from chat",
+        "body": "AI works out shipping, sends the payment link, and runs the follow-on steps with no coding required.",
+        "pill1": "Automatic shipping quotes",
+        "pill2": "QR payments",
+        "pill3": "No coding"
+      }
+    },
+    "industries": {
+      "heading": "One platform, tuned to how your industry works",
+      "body": "Every industry has its own conversation patterns. Cekat.AI already understands the questions, booking flows, and order processes specific to your field.",
+      "useCases": "Our Solutions",
+      "learnMore": "Learn more",
+      "previous": "Previous industry",
+      "next": "Next industry"
+    },
+    "integrations": {
+      "eyebrow": "Integrations",
+      "heading": "Connect Every Business Tool in One Platform",
+      "body": "WhatsApp Business API, Instagram, TikTok, Telegram, and email land in one inbox. Chat conversions flow to your ad platforms, and your internal systems connect over API.",
+      "cta": "See integrations"
+    },
+    "platformOverview": {
+      "feature1": {
+        "title": "Track and Optimize Your Marketing Performance in One Unified Platform",
+        "description": "Track campaign performance and conversions in real time, then activate automation to maximize your marketing results."
+      },
+      "feature2": {
+        "title": "Automate Your Business Logic, No Coding Needed",
+        "description": "Let AI reply to chats, manage leads, and follow up with customers automatically, 24/7."
+      },
+      "feature3": {
+        "title": "Your CRM, Built for Growth & Real Conversations",
+        "description": "All lead data stays organized, follow-ups run automatically, and sales progress is tracked in real time."
+      }
+    },
+    "buildAiAgent": {
+      "heading": "Build an AI Agent in 5 Minutes",
+      "body": "Manage every chat with an AI agent that's easy to build. Train it with your business data and connect it to other systems, hassle-free.",
+      "feature1": {
+        "title": "Simpler AI Builder",
+        "description": "Build a powerful AI agent without coding in just 5 minutes, as easy as briefing a CS admin."
+      },
+      "feature2": {
+        "title": "Knowledge Source",
+        "description": "Just paste your SOPs and business info, and the AI can answer accurately right away."
+      },
+      "feature3": {
+        "title": "API Integration",
+        "description": "Connect the AI to various APIs for shipping cost checks, scheduling, and other business needs."
+      }
+    },
+    "aiAgentFlow": {
+      "heading": "AI Agents & Chat Flow",
+      "body": "Easily set up chat flows and route customers to the right AI or human agent.",
+      "feature1": {
+        "title": "Multiple Specialized Agents",
+        "description": "Create dedicated AI agents for sales, support, billing, and more, each with its own data."
+      },
+      "feature2": {
+        "title": "Visual Flow Designer",
+        "description": "Design chat flows with drag and drop, no coding required."
+      },
+      "feature3": {
+        "title": "AI Working Hours",
+        "description": "Set the AI's working hours so your team handles chats while online, with automatic handoff to AI after hours."
+      }
+    },
+    "pricingTeaser": {
+      "heading": "Pricing that follows what you need",
+      "body": "The Chat plans below are the ones most businesses start with. CRM, Marketing and Cekat 360 have their own plans, and everything can be combined on a single contract.",
+      "cta": "See pricing details"
+    },
+    "realResults": {
+      "heading": "Real Proof From Businesses Using Cekat.AI",
+      "body": "Cekat.AI serves everyone from small businesses that need affordable AI customer service to growing brands that need a full omnichannel CRM, all in one platform built for Indonesian businesses.",
+      "brandTitle": "Covered By"
+    },
+    "finalCta": {
+      "heading": "Turn Every Conversation Into a Sale",
+      "body": "See how AI helps your team reply faster, follow up automatically, and close more deals without growing headcount.",
+      "item1": "10-minute setup",
+      "item2": "14-day free trial",
+      "item3": "1-on-1 consultation"
+    }
+  },
+  "pricing": {
+    "meta": {
+      "title": "Cekat.AI Pricing | Chat, CRM & Marketing Plans for Every Business Size",
+      "description": "See Cekat.AI pricing: AI chat agents, omnichannel CRM, and marketing automation. Transparent plans, no hidden fees."
+    },
+    "hero": {
+      "eyebrow": "Pricing",
+      "title": "Clear Pricing That Scales With Your Business",
+      "subtitle": "Pick what you need: an AI agent that answers chats 24/7, a CRM that keeps customer data in order, or marketing automation that measures every rupiah of ad spend. Combine them any time.",
+      "note": "Start with one product and add the others whenever you are ready. Quoted prices exclude VAT."
+    },
+    "tabs": {
+      "chat": "Chat",
+      "crm": "CRM",
+      "marketing": "Marketing",
+      "threeSixty": "Cekat 360"
+    },
+    "perMonth": "/month",
+    "popular": "Most Popular",
+    "minBilling": "Min. contract {amount}",
+    "customPrice": "Custom",
+    "customPriceNote": "Built around your requirements",
+    "ctaPrimary": "Talk to Sales",
+    "ctaSecondary": "Start Free",
+    "ctaCustom": "Contact Sales",
+    "ctaWhatsApp": "Chat on WhatsApp",
+    "compareHeading": "Compare Every Feature",
+    "compareIntro": "The full detail for each plan. Scroll sideways to see every column.",
+    "featureColumn": "Feature",
+    "values": {
+      "custom": "Custom",
+      "unlimited": "Unlimited",
+      "upTo": "Up to",
+      "aiSimple": "AI Simple",
+      "aiFull": "AI Full",
+      "supportStarter": "Hotline Support",
+      "supportPro": "Hotline Support + Account Manager",
+      "supportBusiness": "Hotline Support + General Account Manager",
+      "supportEnterprise": "Hotline Support + WA Group + Key Account Manager",
+      "agentsUpgradable": "Up to 3 agents, upgradable",
+      "included": "Included",
+      "notIncluded": "Not included"
+    },
+    "chat": {
+      "label": "Chat Plans",
+      "intro": "An AI agent that replies, qualifies, and closes across WhatsApp, Instagram, and every other channel. One inbox for the whole team.",
+      "tiers": {
+        "starter": {
+          "name": "Starter"
+        },
+        "pro": {
+          "name": "Pro"
+        },
+        "business": {
+          "name": "Business"
+        },
+        "custom": {
+          "name": "Custom"
+        },
+        "enterprise": {
+          "name": "Enterprise"
+        }
+      },
+      "taglines": {
+        "entry": "For small teams starting to drown in chats.",
+        "mid": "For full automation and tidy workflows at scale.",
+        "top": "For high chat volumes with a structured CS team.",
+        "custom": "For custom integrations and enterprise scale."
+      },
+      "rows": {
+        "channels": "Multiple Channels",
+        "waba": "WhatsApp Business API (WABA)",
+        "mau": "MAU (Monthly Active Users)",
+        "aiCredits": "AI Credits",
+        "aiType": "AI Type",
+        "seats": "Seats",
+        "openApi": "Open API",
+        "analytics": "Analytics",
+        "support": "Support",
+        "flow": "Flow Builder",
+        "followUp": "Automated Follow-up",
+        "ticketing": "Ticketing",
+        "automation": "Automation",
+        "csat": "CSAT"
+      }
+    },
+    "crm": {
+      "label": "CRM Plans",
+      "intro": "Every customer detail in one place: conversations, purchases, and a pipeline that updates itself straight from chat.",
+      "tiers": {
+        "pro": {
+          "name": "CRM Pro"
+        },
+        "business": {
+          "name": "CRM Business"
+        },
+        "enterprise": {
+          "name": "CRM Enterprise"
+        },
+        "custom": {
+          "name": "CRM Custom"
+        }
+      },
+      "taglines": {
+        "entry": "For sales teams still tracking deals by hand.",
+        "mid": "For a customer database that keeps growing.",
+        "top": "For large customer bases across multiple branches.",
+        "custom": "For bespoke data and integration requirements."
+      },
+      "rows": {
+        "contactList": "Contact & Company List",
+        "unifiedData": "Unified Customer Data Platform",
+        "boards": "Unlimited Boards",
+        "views": "Unlimited Views",
+        "contactStorage": "Contact Storage",
+        "agents": "Agents",
+        "automations": "CRM Automations",
+        "openApi": "CRM Open API"
+      }
+    },
+    "marketing": {
+      "label": "Marketing Plans",
+      "intro": "Broadcasts, segmentation, and retargeting you can actually measure. Know exactly which ads turned into sales.",
+      "tiers": {
+        "pro": {
+          "name": "Pro"
+        },
+        "business": {
+          "name": "Business"
+        },
+        "enterprise": {
+          "name": "Enterprise"
+        },
+        "custom": {
+          "name": "Custom"
+        }
+      },
+      "taglines": {
+        "entry": "To start broadcasting and measuring the results.",
+        "mid": "For regular campaigns to a large audience.",
+        "top": "For marketing teams running many campaigns at once.",
+        "custom": "For bespoke volume and integration requirements."
+      },
+      "rows": {
+        "mau": "MAU (Monthly Active Users)",
+        "support": "Support",
+        "analytics": "Performance Analytics",
+        "adsTracking": "Ads Tracking & Attribution",
+        "tools": "Complete Cekat Marketing Tools",
+        "setup": "1-on-1 Setup With an Ads Analyst"
+      }
+    },
+    "threeSixty": {
+      "eyebrow": "Cekat 360",
+      "heading": "One Team, One System, One Contract",
+      "body": "Chat, CRM, and Marketing brought together, with our team building it for you. Made for businesses that would rather not stitch it together themselves.",
+      "includesLabel": "What you get",
+      "include1": "Every Chat, CRM, and Marketing feature on one platform",
+      "include2": "Full onboarding: we set up your AI agent, chat flows, and pipeline",
+      "include3": "A dedicated success manager watching your performance",
+      "include4": "Custom integrations into the systems you already run",
+      "include5": "Priority support and a direct WhatsApp group with our team",
+      "forLabel": "Right for you if you",
+      "for1": "Have CS, sales, and marketing teams still working in separate tools",
+      "for2": "Already use several tools whose data never quite connects",
+      "for3": "Need results quickly without adding load to your internal team",
+      "priceNote": "Pricing is built around your team size and conversation volume.",
+      "cta": "Talk to Our Team",
+      "ctaNote": "A free 30-minute consultation, no commitment. We map out what you actually need first."
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Pricing Questions",
+      "q1": "Do your quotes include VAT?",
+      "a1": "No. Quotes from our sales team exclude VAT as required by local regulation, and you get the full breakdown before you subscribe.",
+      "q2": "What counts as an MAU (Monthly Active User)?",
+      "a2": "An MAU is a unique customer who interacts with your business in a given month. One customer counts once, no matter how many messages they send that month.",
+      "q3": "What is the difference between AI Simple and AI Full?",
+      "a3": "AI Simple answers questions from the knowledge base you provide. AI Full adds the ability to run more complex flows such as lead qualification, follow-ups, and taking action inside the chat.",
+      "q4": "Can I start with just one plan?",
+      "a4": "Yes. Many businesses start with Chat and add CRM or Marketing once the team settles in. Everything runs on the same platform, so your data connects the moment you add a product.",
+      "q5": "What if I need more than the largest plan?",
+      "a5": "Take the Custom plan. We size the capacity, seats, and integrations around your requirements, and confirm the commercial terms with you first.",
+      "q6": "Are there setup fees or minimum contracts?",
+      "a6": "Regular plans carry no separate setup fee and no minimum contract. For Custom, the commercial terms are agreed with our sales team before you begin."
+    },
+    "cta": {
+      "heading": "Not Sure Which One Fits?",
+      "body": "Tell us about your team and your chat volume. We will point you at the plan that actually makes sense, not the most expensive one.",
+      "item1": "30-minute consultation",
+      "item2": "A plan recommendation for your needs",
+      "item3": "No commitment"
+    },
+    "excludesVat": "Excludes VAT",
+    "trustHeading": "Trusted by 3,000+ businesses and leading brands in Indonesia"
+  },
+  "crm": {
+    "meta": {
+      "title": "AI-Powered CRM for Sales & Leads | Automated Pipeline Management | CekatAI",
+      "description": "Manage your sales pipeline, leads, and customer relationships in one integrated AI CRM. Set targets, monitor deals, and automate follow-ups, all in one CekatAI dashboard."
+    },
+    "hero": {
+      "title": "Stop Losing Customers to Your Competitors",
+      "subtitle": "What if your customer data could predict retention? See how AI makes it possible"
+    },
+    "whatMakes": {
+      "heading": "What Makes Cekat.AI CRM Different",
+      "card1": {
+        "title": "Built for Conversations",
+        "description": "Unlike traditional CRM, Cekat connects directly to your customer conversations. Every chat, call, and interaction automatically becomes a trackable record."
+      },
+      "card2": {
+        "title": "CRM + Automation in One System",
+        "description": "Trigger follow-ups, assign leads, and move deals automatically. Reduce manual work and make sure no opportunity is missed."
+      },
+      "card3": {
+        "title": "See the Full Customer Journey",
+        "description": "Know exactly where customers come from, website, ads, WhatsApp, or social media. Track every action from the first interaction to conversion."
+      }
+    },
+    "howItWorks": {
+      "heading": "How it Works",
+      "step1": {
+        "title": "Capture & Organize Customers",
+        "description": "Cekat CRM captures leads and customer data from your website, WhatsApp, and social media. All interactions are organized in one place."
+      },
+      "step2": {
+        "title": "Track Customer Journey",
+        "description": "See where customers come from and what actions they take. Track the full journey from first contact to conversion."
+      },
+      "step3": {
+        "title": "Filter & Find Faster",
+        "description": "Quickly search and filter customers, deals, or activities. Focus on the leads that matter most."
+      },
+      "step4": {
+        "title": "Manage Work with Boards",
+        "description": "Create boards to organize your workflows, deals, or pipelines. Each board represents a clear process."
+      }
+    },
+    "realResult": {
+      "heading": "Real Results for Growing Businesses",
+      "body": "See how teams across industries use AI to save time, increase revenue, and deliver better customer experiences.",
+      "quote": "Our revenue increased by more than 50%! Cekat AI allows us to secure property visits and close deals even while I'm asleep, because no leads are missed.",
+      "name": "Adam Sulaiman",
+      "role": "President Director - Threeland Property"
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Frequently Asked Questions about Cekat.AI CRM",
+      "q1": "How does Cekat.AI CRM help sales teams?",
+      "a1": "Cekat.AI CRM helps sales teams capture and manage leads from multiple channels in one dashboard. Teams can track conversations, organize deals in pipelines, and focus on the leads most likely to convert.",
+      "q2": "How does Cekat.AI CRM support customer service teams?",
+      "a2": "Cekat.AI CRM keeps all customer interactions in one place, so support teams can quickly understand the customer's history and context. This helps agents respond faster and resolve issues more efficiently.",
+      "q3": "Can I track where my leads come from?",
+      "a3": "Yes. Cekat.AI CRM records the entry point of each lead, such as your website, ads, WhatsApp, or social channels. This helps you understand customer journeys and identify the channels that drive the most conversions."
+    },
+    "cta": {
+      "heading": "Turn Every Customer Interaction Into Your Next Deal",
+      "body": "See every conversation, track every journey, and automate follow-ups, all in one AI-powered CRM."
+    }
+  },
+  "chat": {
+    "meta": {
+      "title": "24/7 AI Chat Agent | A Super Agent That Closes Automatically | CekatAI",
+      "description": "CekatAI's AI Agent answers thousands of chats at once, natural, accurate, and ready to close 24/7. Serve customers on WhatsApp, Instagram, and every channel without adding CS staff."
+    },
+    "hero": {
+      "title": "Boost Admin Productivity by 10× with an AI Super Agent",
+      "subtitle": "Never miss a message. Never miss a sale. AI handles every channel, 24/7"
+    },
+    "whatMakes": {
+      "heading": "What Makes Cekat.AI Chat Different",
+      "card1": {
+        "title": "AI That Understands Intent (Not Just Keywords)",
+        "description": "Cekat.AI's chat agents understand natural language and context, enabling intent-aware, multilingual conversations that feel human, not robotic."
+      },
+      "card2": {
+        "title": "Omnichannel Chat Coverage",
+        "description": "Cekat.AI supports and engages users across WhatsApp (Official API), Instagram, website live chat, and other integrated platforms, with all interactions unified into a single, centralized chat interface."
+      },
+      "card3": {
+        "title": "Seamless Escalation to Human Agents",
+        "description": "If the AI detects complex or sensitive queries, it routes them to human agents with full context, no repeating previous messages needed."
+      }
+    },
+    "howItWorks": {
+      "heading": "How it Works",
+      "step1": {
+        "title": "Connect Channels",
+        "description": "Sync WhatsApp, Instagram, Web Chat, and other platforms into one system so all customer messages go straight into Cekat.AI."
+      },
+      "step2": {
+        "title": "Train Your AI Agent",
+        "description": "Configure AI to follow your business rules and tone, no coding needed. Train it with example phrases and intents specific to your business."
+      },
+      "step3": {
+        "title": "AI Handles Conversations",
+        "description": "AI responds in real time by automatically answering FAQs, clarifying user intent, capturing lead details, and triggering follow-up actions, ensuring every customer message is accurate and contextual."
+      },
+      "step4": {
+        "title": "Escalate & Sync",
+        "description": "When needed, conversations escalate to live agents with full context, and data syncs back to your CRM or automation workflows."
+      },
+      "step5": {
+        "title": "Analyze & Improve",
+        "description": "Track message volume, response accuracy, user satisfaction, and intent categories, so you can continuously optimize AI performance and drive better business outcomes."
+      }
+    },
+    "realResult": {
+      "heading": "Real Results for Growing Businesses",
+      "body": "See how teams across industries use AI to save time, increase revenue, and deliver better customer experiences.",
+      "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+      "name": "Tantan Supriatna",
+      "role": "Customer Relation Department Head - Rumah Zakat"
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Frequently Asked Questions about Cekat.AI Chat",
+      "q1": "What is Cekat.AI Chat?",
+      "a1": "Cekat.AI Chat is an AI-powered conversational agent that automatically engages, understands, and responds to customer messages across platforms.",
+      "q2": "Can Cekat.AI Chat handle multiple channels?",
+      "a2": "Yes. It supports omnichannel messaging including WhatsApp, Instagram, and website live chat.",
+      "q3": "Is coding required to set up chat automation?",
+      "a3": "No. You can configure and train the AI using business rules and sample phrases, no coding skills needed."
+    },
+    "cta": {
+      "heading": "Turn Every Chat into a Conversation That Converts",
+      "body": "Engage customers faster, reduce operational load, and scale your business with AI-powered chat."
+    }
+  },
+  "marketing": {
+    "meta": {
+      "title": "WhatsApp Broadcast & Marketing Automation | CekatAI",
+      "description": "Send marketing messages to 100,000+ customers in one click. CekatAI's AI automatically follows up ghosting leads, upsells, and drives conversions, without extra marketing staff."
+    },
+    "hero": {
+      "title": "Know Which Ads Actually Grow Your Sales",
+      "subtitle": "See the full picture of your marketing performance with insights backed by data, not assumptions"
+    },
+    "whatMakes": {
+      "heading": "What Makes Cekat.AI Marketing Different",
+      "card1": {
+        "title": "End-to-End Ads Attribution",
+        "description": "Cekat.AI connects ad performance directly to real business outcomes. You can see which campaigns generate leads, conversions, and actual sales, not just clicks."
+      },
+      "card2": {
+        "title": "Real Customer Behavior Tracking",
+        "description": "Track what customers do after clicking your ads from website visits and button clicks to form submissions and custom events. See how they move from ads to conversion."
+      },
+      "card3": {
+        "title": "One Dashboard for Marketing Performance",
+        "description": "Review your Meta Ads performance directly inside Cekat.AI. Campaign data, leads, and conversion insights are centralized so teams can analyze and optimize faster."
+      }
+    },
+    "howItWorks": {
+      "heading": "How it Works",
+      "step1": {
+        "title": "Review All Meta Ads in One Dashboard",
+        "description": "Analyze Facebook, Instagram, and Meta Ads directly in Cekat.AI without switching tabs. All campaign data is centralized in one view."
+      },
+      "step2": {
+        "title": "Understand Customer Behavior",
+        "description": "See how users interact with your website, chat, and app after clicking your ads. You don't just see traffic, you see intent."
+      },
+      "step3": {
+        "title": "See What Actually Works",
+        "description": "Track campaign performance, identify winning ads, and spot profitable angles instantly. Decisions happen in real time."
+      },
+      "step4": {
+        "title": "Allocate Budget with Precision",
+        "description": "Use real tracking data to invest only in campaigns and audiences that drive conversions and revenue."
+      },
+      "step5": {
+        "title": "Improve Performance & Lower CAC",
+        "description": "By combining ads data and customer behavior, you can accelerate conversions and significantly lower Customer Acquisition Cost (CAC)."
+      }
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Frequently Asked Questions about Cekat.AI Marketing",
+      "q1": "What is Cekat.AI Marketing?",
+      "a1": "Cekat.AI Marketing is an AI-powered marketing analytics platform that helps you track ads performance, customer behavior, and ROI in one unified dashboard.",
+      "q2": "Can Cekat.AI show which ads increase sales?",
+      "a2": "Yes. Cekat.AI connects ads data with real customer behavior and conversions, so you can clearly see which campaigns drive revenue.",
+      "q3": "Does Cekat.AI track customer behavior beyond ads?",
+      "a3": "Yes. Cekat.AI tracks website behavior, chat interactions, and custom events to build complete customer profiles.",
+      "q4": "Can I personalize marketing based on customer behavior?",
+      "a4": "Absolutely. You can segment customers based on behavior and run personalized campaigns and broadcasts that are proven to work."
+    },
+    "cta": {
+      "heading": "Turn Your Marketing Data Into Real Revenue",
+      "body": "Stop guessing which campaigns work. Track ads, understand customer behavior, and optimize every marketing dollar with Cekat.AI."
+    }
+  },
+  "order": {
+    "meta": {
+      "title": "Automated Orders & Transactions via Chat | AI Sales Autopilot | CekatAI",
+      "description": "Process orders, check shipping rates, and close deals right in chat, fully automated with no manual cashier. CekatAI's AI sells 24/7 and sends payment follow-ups automatically."
+    },
+    "hero": {
+      "title": "Automate Complex Operations & Scale Your Business without Friction",
+      "subtitle": "From complex logic to seamless automation. Explore how AI keeps your business running 24/7"
+    },
+    "whatMakes": {
+      "heading": "What Makes Cekat.AI Automation Different",
+      "card1": {
+        "title": "Powerful, Customizable Workflow Logic",
+        "description": "Built for real operational complexity, automation adapts to your business with multi-step logic, connected actions, and context-aware workflows."
+      },
+      "card2": {
+        "title": "Flexible Trigger Options",
+        "description": "Workflows can be triggered by time-based schedules, specific events like chat keywords, or changes in customer data such as when a new lead is detected."
+      },
+      "card3": {
+        "title": "Connects All Cekat.AI Features",
+        "description": "Automation works seamlessly with core capabilities such as auto-labeling, auto ticket creation, admin notifications, and automatic data syncing between tools, so everything flows smoothly across systems."
+      }
+    },
+    "howItWorks": {
+      "heading": "How it Works",
+      "step1": {
+        "title": "Conversations Come In from Every Channel",
+        "description": "All incoming chats from WhatsApp, Instagram, Live Chat, and other channels are automatically captured by Cekat.AI, no manual forwarding or switching tools."
+      },
+      "step2": {
+        "title": "Automation Triggers Instantly",
+        "description": "The moment a message arrives, predefined rules take action by automatically labeling conversations by intent and turning important messages into tickets without manual effort."
+      },
+      "step3": {
+        "title": "Auto Create Ticket",
+        "description": "Turn high-priority conversations into tickets automatically, so no request, complaint, or opportunity is missed or handled too late."
+      },
+      "step4": {
+        "title": "Automatic Notifications to the Right Team",
+        "description": "Route every ticket and update to the right team instantly, ensuring faster response times and clear ownership across workflows."
+      },
+      "step5": {
+        "title": "Full Visibility Across Every Automation Step",
+        "description": "Track data flow, ticket status, and workflow bottlenecks in real time, so teams always know what's happening and can act immediately when issues arise."
+      },
+      "step6": {
+        "title": "End-to-End Operational Efficiency",
+        "description": "Eliminate manual data entry, fragmented systems, and repetitive tasks through full automation, so teams reduce errors and focus on work that truly drives growth."
+      }
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Frequently Asked Questions about Cekat.AI Automation",
+      "q1": "What is Cekat.AI Automation?",
+      "a1": "A visual, AI-powered workflow builder that automates business processes without coding, handling triggers and actions across connected systems.",
+      "q2": "What can be automated with Cekat.AI?",
+      "a2": "From chat flows and lead follow-ups to ticket creation, team notifications, and cross-system data synchronization, everything in one seamless workflow.",
+      "q3": "Can I automate workflows without technical knowledge?",
+      "a3": "Yes. The drag-and-drop visual logic builder allows anyone to create automated workflows."
+    },
+    "cta": {
+      "heading": "Ready to Put Your Business on Autopilot?",
+      "body": "Let automation handle repetitive work so your team can focus on growth and customer experience."
+    }
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "features": "Features",
+    "industries": "Industries",
+    "solutions": "Solutions"
+  },
+  "landing": {
+    "readMore": "Read more",
+    "benefitsEyebrow": "How it works",
+    "benefitsHeading": "Built to Turn Conversations Into Revenue",
+    "tabsEyebrow": "Inside the product",
+    "tabsHeading": "Key Capabilities",
+    "pillarsEyebrow": "Why Cekat.AI",
+    "pillarsHeading": "Why Businesses Choose Cekat.AI",
+    "testimonialEyebrow": "Proof",
+    "testimonialHeading": "Real Results for Growing Businesses",
+    "faqLabel": "FAQ",
+    "faqHeading": "Frequently Asked Questions about {title}",
+    "relatedEyebrow": "Keep exploring",
+    "related": {
+      "features": "Explore More Features",
+      "industries": "Explore More Industries",
+      "solutions": "Explore More Solutions"
+    },
+    "rolesEyebrow": "By Team Role",
+    "rolesHeading": "Solutions for Every Team in {industry}",
+    "rolesBody": "The same platform, put to work differently by each team. See the workflow closest to your own job.",
+    "caseStudyEyebrow": "Customer Story",
+    "caseStudyAttribution": "Figures reported directly by Cekat.AI customers."
+  },
+  "featuresHub": {
+    "metaTitle": "Features: AI Agent, Omnichannel CRM & Automation | CekatAI",
+    "metaDescription": "Explore every Cekat.AI feature: AI chat agents, WhatsApp automation, omnichannel CRM, broadcast marketing, and order automation, all in one platform.",
+    "eyebrow": "Features",
+    "heading": "Everything Your Team Needs to Turn Chats Into Sales",
+    "body": "From AI agents that reply in seconds to CRM and automation that never drop a lead, explore the features 3,000+ Indonesian businesses run on.",
+    "trust": "Trusted by 3,000+ businesses across 15+ industries"
+  },
+  "industriesHub": {
+    "metaTitle": "Industries: AI Customer Service for Every Business | CekatAI",
+    "metaDescription": "See how businesses across 15+ industries use Cekat.AI to automate customer service, capture leads, and grow sales, healthcare, retail, F&B, education, and more.",
+    "eyebrow": "Industries",
+    "heading": "Built for Your Industry",
+    "body": "From clinics to retail brands, Cekat.AI adapts to how your business actually talks to customers. See real results from your industry.",
+    "trust": "Real results from businesses like yours",
+    "category": {
+      "industry": "By industry"
+    }
+  },
+  "solutionsHub": {
+    "metaTitle": "Solutions by Team Role | Cekat.AI",
+    "metaDescription": "See how sales, customer service, marketing, HR, and operations teams use Cekat.AI: AI agents, CRM, and automation in one platform.",
+    "eyebrow": "Solutions",
+    "heading": "One Platform That Makes Every Team's Work Lighter",
+    "body": "The same AI agents, CRM, broadcast, and automation, put to work differently by each team. Pick your role and see the workflow.",
+    "trust": "Trusted by 3,000+ businesses in Indonesia",
+    "category": {
+      "role": "By Role"
+    }
+  },
+  "integrations": {
+    "metaTitle": "Cekat.AI Integrations: Channels, Ad Platforms, and APIs | Cekat.AI",
+    "metaDescription": "Connect WhatsApp Business API, Instagram, TikTok, Telegram, and email to one inbox, send conversions to Meta and TikTok, then wire in your systems via API.",
+    "badge": "Integrations",
+    "heading": "Connect Every Business Tool in One Platform",
+    "subtitle": "Conversation channels, ad platforms, and your internal systems in one place. The stack you already run does not need replacing, only connecting.",
+    "missingHeading": "Not Seeing the Tool You Use?",
+    "missingBody": "The Open API and webhooks make almost any system connectable, including an ERP, a warehouse system, or an internal database you built yourself. Tell our team about your stack and we will help map the flow.",
+    "ctaHeading": "Connect Your Stack, Starting Today",
+    "ctaBody": "Wire up your first channel in minutes, then add the rest as you need them."
+  },
+  "notFound": {
+    "title": "This page doesn't exist",
+    "description": "The page you're looking for was moved or never existed. Let's get you back to turning conversations into sales.",
+    "backHome": "Back to Home"
+  },
+  "blog": {
+    "metaTitle": "Blog: AI, Automation & Customer Growth | CekatAI",
+    "metaDescription": "Practical guides on AI customer service, WhatsApp automation, CRM, and growing sales, from the team behind Cekat.AI.",
+    "eyebrow": "Blog",
+    "heroTitle": "Cekat Blog",
+    "heroSubtitle": "Practical playbooks on AI customer service, automation, and turning conversations into revenue.",
+    "heroLede": "Guides and product deep-dives from the team helping 3,000+ Indonesian businesses reply faster and sell more.",
+    "latest": "Latest Articles",
+    "latestSubtitle": "Fresh insights on AI, automation, and growing sales.",
+    "featuredLabel": "Featured",
+    "readMore": "Read More",
+    "allCategories": "All",
+    "relatedHeading": "Related Articles",
+    "backToBlog": "Back to Blog",
+    "share": "Share this article",
+    "copyLink": "Copy link",
+    "copied": "Link copied!",
+    "onThisPage": "On this page",
+    "aboutAuthor": "About the author",
+    "authorRole": "Content Team",
+    "authorBio": "The Cekat.AI content team, writing about AI customer service, automation, and growing sales for Indonesian businesses.",
+    "empty": "No articles yet. Check back soon.",
+    "searchPlaceholder": "Search articles...",
+    "searchLabel": "Search articles",
+    "searchClear": "Clear search",
+    "searchResults": "Search results for \"{query}\"",
+    "searchSubtitle": "Articles matching your search.",
+    "searchEmpty": "No articles match \"{query}\". Try a different keyword."
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact | CekatAI",
+      "description": "Serve customers 24/7 with CekatAI's WhatsApp AI Agent and Omnichannel CRM."
+    },
+    "heading": "Start your free consultation session with our sales team today",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Full name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "e.g., Bryan.Smith@perusahaan.com",
+      "whatsappLabel": "WhatsApp Number",
+      "whatsappPlaceholder": "e.g., 0812 3456 7890",
+      "submit": "Submit",
+      "submitting": "Submitting…",
+      "success": "Thank you! Our team will contact you soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "support": {
+      "note": "For any product or service issues, please contact our customer support team.",
+      "helpCentre": "Help Centre",
+      "emailSupport": "Email Support",
+      "contactCentre": "Contact Centre"
+    }
+  },
+  "comparison": {
+    "metaTitle": "Cekat.AI vs Qontak, SleekFlow, Qiscus & Others Compared",
+    "metaDescription": "Compare Cekat.AI with Mekari Qontak, SleekFlow, Qiscus, Halo AI and respond.io across omnichannel inbox, WhatsApp CRM, marketing automation and support.",
+    "eyebrow": "Comparison",
+    "heading": "Why Cekat.AI is the Smarter Choice",
+    "body": "We compared Cekat.AI with leading omnichannel and chatbot platforms so you can see the difference.",
+    "pillars": {
+      "heading": "One Platform for Awareness, Conversion, and Retention",
+      "body": "Cekat.AI tracks every lead from the first ad click, closes 24/7, and keeps customers coming back. All three run on one platform instead of three tools you have to wire together yourself.",
+      "diagramLabel": "Diagram of Cekat.AI's three overlapping pillars: Marketing, Conversational AI, and CRM",
+      "circles": {
+        "marketing": "Marketing",
+        "chatLine1": "Conversational",
+        "chatLine2": "AI",
+        "crm": "CRM"
+      },
+      "awareness": {
+        "title": "Awareness",
+        "lead": "Every lead tracked.",
+        "body": "From first click to closed deal."
+      },
+      "conversion": {
+        "title": "Conversion",
+        "lead": "Closes 24/7.",
+        "body": "Never sleeps, so chats never pile up."
+      },
+      "retention": {
+        "title": "Retention",
+        "lead": "Customers keep buying.",
+        "body": "Follow-ups run automatically. LTV grows, re-acquisition cost drops."
+      },
+      "tagline": "First messages become lifetime revenue.",
+      "coverage": "In the table below, Cekat.AI meets {ours} of the {total} capability rows across these three pillars.",
+      "coverageLead": "In the table below, Cekat.AI meets {ours} of the {total} capability rows across these three pillars, more than any other platform on this page."
+    },
+    "note": "Compiled from publicly available information as of August 2026. Platform capabilities change, so check directly with each vendor for the latest.",
+    "legendYes": "Available",
+    "legendNo": "Not available",
+    "diffHeading": "Where Cekat.AI differs",
+    "diff1Title": "Four products, one subscription",
+    "diff1Body": "AI agent, omnichannel CRM, marketing automation and order automation run from one dashboard. On many other platforms, CRM or marketing is sold as a separate package or reserved for the top tier.",
+    "diff2Title": "TikTok, not just WhatsApp and Instagram",
+    "diff2Body": "TikTok DMs and comments land in the same inbox. That is still uncommon: most platforms on this list do not support it, even though TikTok has become a primary lead source for many Indonesian brands.",
+    "diff3Title": "Live in under a week",
+    "diff3Body": "Onboarding is guided over remote desktop rather than queued through tickets. The minimum contract is 3 months, shorter than most platforms here, which ask for 6 months to a year.",
+    "diff4Title": "An Account Manager who follows your account",
+    "diff4Body": "Quarterly and annual reviews with an Account Manager who actually knows your account. Of the eight other platforms in this table, not one includes it in the standard service.",
+    "honestHeading": "What we do not do",
+    "honestBody": "Cekat.AI does not support Google Ads. If Google Ads performance is central to how you work today, that is worth weighing before you choose. TikTok Ads, Meta Ads, WhatsApp Broadcast and ROAS analytics are all covered.",
+    "faq": {
+      "label": "FAQ",
+      "heading": "Questions people ask when choosing",
+      "q1": "What is a Mekari Qontak alternative that supports TikTok?",
+      "a1": "Cekat.AI handles TikTok DMs and comments in the same inbox as WhatsApp, Instagram, email and website live chat. Based on publicly available information as of August 2026, Mekari Qontak does not support the TikTok channel.",
+      "q2": "How is Cekat.AI different from SleekFlow?",
+      "a2": "Both are strong on chat and automation. The main differences are the TikTok channel, which SleekFlow does not cover, and onboarding: Cekat.AI guides setup over remote desktop and includes periodic account reviews.",
+      "q3": "Which WhatsApp CRM platform is fastest to get running?",
+      "a3": "Cekat.AI sets up in under a week on a 3-month minimum contract. For comparison, Mekari Qontak is around 3 weeks, Halo AI around 2 months and Sierra up to 6 months, on minimum terms of 6 months to a year.",
+      "q4": "Do I need a separate subscription for CRM and marketing?",
+      "a4": "No. Chat, CRM, marketing and order automation are all included in one Cekat.AI subscription. On some other platforms, CRM is only available on Pro or Enterprise tiers, or billed separately per agent.",
+      "q5": "Does Cekat.AI support Google Ads?",
+      "a5": "Not yet. Cekat.AI supports TikTok Ads, Meta Ads, WhatsApp Broadcast, ROAS analytics and customer segmentation, but is not connected to Google Ads.",
+      "q6": "Where does this comparison data come from?",
+      "a6": "From publicly available information on each vendor's own site, compiled as of August 2026. Platform capabilities change over time, so confirm directly with the vendor before deciding."
+    },
+    "featureColumn": "Feature",
+    "tables": {
+      "channels": {
+        "heading": "Chat & Omnichannel",
+        "intro": "Which channels land in one inbox. The more that do, the fewer tabs your team keeps open.",
+        "rows": {
+          "whatsapp": "WhatsApp",
+          "instagram": "Instagram DM & comments",
+          "tiktok": "TikTok DM & comments",
+          "sms": "SMS",
+          "otherChannels": "WeChat / Telegram / Line / X",
+          "webliveChat": "Website live chat",
+          "email": "Email"
+        }
+      },
+      "marketing": {
+        "heading": "Marketing",
+        "intro": "What each platform can run and measure, from ad click through to the conversation that closes.",
+        "rows": {
+          "tiktokAds": "TikTok Ads",
+          "metaAds": "Meta Ads",
+          "googleAds": "Google Ads",
+          "waBroadcast": "WhatsApp Broadcast",
+          "roasAnalytics": "ROAS analytics",
+          "segmentation": "Customer segmentation & labeling"
+        }
+      },
+      "crm": {
+        "heading": "CRM",
+        "intro": "How deeply customer data is stored and actually used, rather than kept as a contact list.",
+        "rows": {
+          "customerData": "End-to-end customer data management",
+          "leadManagement": "Lead management",
+          "pipelineManagement": "Pipeline management",
+          "complaintManagement": "Complaint management"
+        }
+      },
+      "support": {
+        "heading": "Onboarding & support",
+        "intro": "Usually skipped when comparing, but it decides when you are actually up and running.",
+        "rows": {
+          "freeOnboarding": "Free onboarding & training",
+          "remoteDesktop": "Guided setup over remote desktop",
+          "accountReview": "Quarterly & annual review by an AM team",
+          "whatsappGroup": "Troubleshooting via WhatsApp group",
+          "freeSetup": "Free dashboard setup",
+          "setupTime": "Setup time",
+          "minimumContract": "Minimum contract"
+        }
+      }
+    }
+  },
+  "agentic": {
+    "hero": {
+      "eyebrow": "Cekat AI",
+      "titleLead": "The Agentic AI",
+      "titleAccent": "Ecosystem",
+      "subtitle": "Six specialized agents. One open platform. Independent where it matters, integrated where it counts, and open by design — so every conversation can become revenue.",
+      "hubLabel": "Ecosystem map"
+    },
+    "pillars": {
+      "eyebrow": "Our Value",
+      "headingLead": "Independent. Integrated.",
+      "headingAccent": "Open API.",
+      "body": "Three principles from the keynote that shape how every agent in the Cekat ecosystem is built, connected, and extended.",
+      "independent": {
+        "title": "Independent",
+        "lead": "Each agent owns its job",
+        "body": "Frontline, Mini, OMS, CRM, Marketing, and Consulting run as focused units — deploy one, scale all six, never wait on a monolith.",
+        "tag1": "Modular deploy",
+        "tag2": "Own tools & memory",
+        "tag3": "Scale one by one"
+      },
+      "integrated": {
+        "title": "Integrated",
+        "lead": "Shared customer context",
+        "body": "Orders, chats, campaigns, and CRM records flow through one core — so an agent never answers from a blank page.",
+        "tag1": "One customer graph",
+        "tag2": "Cross-agent handoff",
+        "tag3": "Live pipeline"
+      },
+      "openApi": {
+        "title": "Open API",
+        "lead": "Connect anything you already run",
+        "body": "REST, webhooks, and OAuth plug Cekat into your stack — ERPs, stores, ads, and internal tools without lock-in.",
+        "tag1": "REST & webhooks",
+        "tag2": "OAuth apps",
+        "tag3": "No lock-in"
+      }
+    },
+    "proof": {
+      "heading": "Trusted across Asia",
+      "stat1Value": "3,000+",
+      "stat1Label": "businesses on Cekat",
+      "stat2Value": "10B+",
+      "stat2Label": "tokens processed daily",
+      "stat3Value": "2M+",
+      "stat3Label": "chat bubbles daily"
+    },
+    "products": {
+      "eyebrow": "The ecosystem",
+      "headingLead": "Six agents.",
+      "headingAccent": "One revenue system.",
+      "body": "From first reply to fulfilled order — every product in the agentic stack is purpose-built and plugs into the same core.",
+      "frontline": {
+        "title": "Frontline Chat Agent",
+        "lead": "Answers, qualifies, and closes 24/7",
+        "body": "Omnichannel AI on WhatsApp, IG, web, and more — hands hot leads to your team the moment they are ready.",
+        "pill1": "Every channel, one inbox",
+        "pill2": "Auto-handoff to humans",
+        "pill3": "Always-on replies"
+      },
+      "mini": {
+        "title": "Mini Agent",
+        "lead": "Lightweight specialists on demand",
+        "body": "Spin up focused micro-agents for FAQ, lead scoring, or internal tasks — without rebuilding the whole stack.",
+        "pill1": "Quick to deploy",
+        "pill2": "Task-scoped skills",
+        "pill3": "Composable with core"
+      },
+      "oms": {
+        "title": "OMS",
+        "lead": "Orders fulfilled straight from chat",
+        "body": "Order Management that computes shipping, sends payment links, and tracks fulfillment without leaving the conversation.",
+        "pill1": "Chat-to-order flow",
+        "pill2": "Shipping & QR pay",
+        "pill3": "No-code automation"
+      },
+      "crm": {
+        "title": "Cekat CRM",
+        "lead": "Pipeline that fills itself",
+        "body": "Every message, stage change, and purchase writes itself into the record — no end-of-day data entry.",
+        "pill1": "Auto-logged activity",
+        "pill2": "Real-time pipeline",
+        "pill3": "Full customer history"
+      },
+      "marketing": {
+        "title": "Cekat Marketing",
+        "lead": "Know which ads close deals",
+        "body": "Segmented broadcasts, timed follow-ups, and attribution that ties ad spend to actual revenue.",
+        "pill1": "Segmented broadcast",
+        "pill2": "ROAS attribution",
+        "pill3": "CAPI-ready"
+      },
+      "consulting": {
+        "title": "Consulting Agent",
+        "lead": "Strategy grounded in your data",
+        "body": "An advisory agent that reads your ecosystem signals and recommends the next move — not generic tips.",
+        "pill1": "Data-aware advice",
+        "pill2": "Playbook prompts",
+        "pill3": "Human-in-the-loop"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Pricing",
+      "headingLead": "Pricing that follows",
+      "headingAccent": "what you need",
+      "body": "The Chat plans below are the ones most businesses start with. CRM, Marketing and Cekat 360 have their own plans, and everything can be combined on a single contract.",
+      "cta": "See pricing details"
+    },
+    "results": {
+      "eyebrow": "Customer proof",
+      "headingLead": "Real Proof From Businesses",
+      "headingAccent": "Using Cekat.AI",
+      "body": "Cekat.AI serves everyone from small businesses that need affordable AI customer service to growing brands that need a full omnichannel CRM, all in one platform built for Indonesian businesses.",
+      "brandTitle": "Covered By"
+    },
+    "openApi": {
+      "eyebrow": "Open by design",
+      "headingLead": "Open API.",
+      "headingAccent": "Your stack, still yours.",
+      "body": "The ecosystem is a platform, not a walled garden. Wire Cekat into the tools your team already trusts.",
+      "constellationLabel": "Integration surface",
+      "cta": "Explore integrations",
+      "cap1": {
+        "title": "REST endpoints",
+        "body": "Read and write customers, chats, orders, and campaigns."
+      },
+      "cap2": {
+        "title": "Webhooks",
+        "body": "Push events into Slack, ERP, or your own workers in real time."
+      },
+      "cap3": {
+        "title": "OAuth apps",
+        "body": "Secure third-party installs with scoped tokens."
+      },
+      "cap4": {
+        "title": "No lock-in",
+        "body": "Export your data and keep integrations if you leave."
+      }
+    },
+    "finalCta": {
+      "eyebrow": "Start free",
+      "headingLead": "Put the ecosystem",
+      "headingAccent": "to work",
+      "body": "Launch Frontline today, add OMS and CRM when you are ready, and extend the rest over Open API — Independent, Integrated, Open.",
+      "item1": "Free trial, no card",
+      "item2": "Live in minutes",
+      "item3": "Scale to six agents"
+    }
+  },
+  "wireframe": {
+    "title": "Homepage copy editor",
+    "intro": "Edit the fields below and hit Save. The homepage picks up the new copy after revalidate.",
+    "save": "Save to homepage",
+    "saving": "Saving…",
+    "reset": "Discard changes",
+    "openHome": "Open homepage"
+  }
+}

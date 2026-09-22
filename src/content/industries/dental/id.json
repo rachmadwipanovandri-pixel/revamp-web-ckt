@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Software Klinik Gigi, AI Jawab Pasien 24/7 | CekatAI",
+    "description": "Lengkapi software klinik gigi dengan AI yang jawab harga scaling sampai behel secara instan, booking konsultasi, dan kirim reminder kontrol otomatis."
+  },
+  "hero": {
+    "badge": "Klinik Gigi",
+    "title": "Jawab Harga Scaling Sampai Behel Sebelum Pasien Menghilang",
+    "subtitle": "Dari kisaran harga perawatan sampai booking konsultasi dan reminder kontrol, Cekat.AI membalas instan di WhatsApp dan Instagram, 24/7, dengan bahasa natural, tanpa nambah admin",
+    "useCases": [
+      "Tanya harga tindakan",
+      "Jadwal konsultasi",
+      "Reminder kontrol",
+      "Edukasi aftercare"
+    ]
+  },
+  "definition": "Cekat.AI untuk klinik gigi adalah platform AI customer service untuk praktik dokter gigi di Indonesia, melengkapi software klinik gigi dengan AI yang menjawab pertanyaan perawatan dan kisaran harga secara instan, booking konsultasi langsung dari chat, dan menjalankan reminder kontrol otomatis dalam satu platform.",
+  "stats": [
+    {
+      "value": "+70%",
+      "label": "kenaikan konversi di Holywings Group"
+    },
+    {
+      "value": "100%",
+      "label": "chat ter-cover 24/7 di Holywings"
+    },
+    {
+      "value": "24/7",
+      "label": "pertanyaan perawatan, harga, dan booking terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Tanya Harga Scaling, Behel, Bleaching? Terjawab Detik Itu Juga",
+      "body": "Pasien yang bertanya harga lalu didiamkan sejam biasanya nggak balik lagi. Cekat.AI menjawab pertanyaan perawatan dan kisaran harga dari daftar harga klinikmu secara instan, dengan bahasa natural, lalu mengarahkan ke konsultasi untuk penawaran pastinya, jadi minat pasien nggak keburu dingin.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab pertanyaan perawatan dan harga di inbox Cekat.AI"
+    },
+    {
+      "title": "Dari Chat Harga Langsung Jadi Jadwal Konsultasi",
+      "body": "Begitu pasien tertarik, AI menawarkan slot dan booking konsultasi langsung di percakapan, terhubung ke jadwal klinik lewat integrasi API, lengkap dengan reminder sebelum harinya. \"Nanti saya kabari ya\" berubah jadi janji temu yang beneran masuk kalender.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Integrasi API untuk booking konsultasi klinik gigi di Cekat.AI"
+    },
+    {
+      "title": "Kontrol 6 Bulan dan Kontrol Behel Diingatkan Otomatis",
+      "body": "Recall yang diandalkan ke ingatan admin pasti ada yang kelewat. Cekat.AI mengirim reminder otomatis lewat WhatsApp Business API resmi berdasarkan riwayat tiap pasien, scaling rutin enam bulan, kontrol behel bulanan, sampai jadwal lepas behel, jadi kursi perawatan terisi dari pasien lama, bukan cuma pasien baru.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Reminder kontrol berjalan dari riwayat pasien di Cekat.AI"
+    },
+    {
+      "title": "Pasien Cemas Jam 11 Malam Tetap Dapat Jawaban",
+      "body": "Nyeri setelah cabut gigi, gusi bengkak, bracket behel lepas, kecemasan nggak menunggu jam praktik. AI menjawab dengan panduan aftercare dari knowledge base klinikmu, termasuk kapan kondisi perlu segera ditangani, lalu meneruskan kasusnya ke tim medis lengkap dengan konteks begitu klinik buka.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI menjawab pertanyaan pasien di luar jam praktik di Cekat.AI"
+    },
+    {
+      "title": "Edukasi Aftercare yang Konsisten di Setiap Chat",
+      "body": "Pantangan setelah pasang behel, perawatan pasca bleaching, cara pakai retainer, semua jawaban diambil dari materi edukasi yang ditulis klinikmu sendiri. Setiap pasien menerima instruksi yang sama persis dengan standar dokternya, kapan pun mereka bertanya, siapa pun yang sedang jaga.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base sumber jawaban edukasi pasien di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chat, booking, dan reminder kontrol jalan di WhatsApp Business API resmi, bareng Instagram DM dan Facebook Messenger, satu inbox untuk seluruh praktik."
+    },
+    {
+      "title": "AI yang Paham Bahasa Pasien Gigi",
+      "body": "Dari scaling sampai behel, AI menjawab pertanyaan perawatan dan kisaran harga dengan natural, lalu mengubah minat jadi jadwal konsultasi yang terisi."
+    },
+    {
+      "title": "Dokter Gigi Tetap Pegang Keputusan Medis",
+      "body": "AI menangani info dan edukasi. Keluhan, diagnosis, dan keputusan perawatan selalu dialihkan ke dokter gigimu lengkap dengan riwayat percakapan."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu klinik gigi?",
+      "a": "Cekat.AI menjawab chat pasien secara instan 24/7 di WhatsApp, Instagram, dan web chat, dari pertanyaan perawatan dan kisaran harga, booking konsultasi, sampai reminder kontrol dan edukasi aftercare, semuanya rapi dalam satu inbox. Admin fokus ke pasien di kursi, bukan ke HP."
+    },
+    {
+      "q": "AI bisa menjawab pertanyaan harga scaling, behel, atau veneer?",
+      "a": "Bisa. AI menjawab dari daftar perawatan dan harga yang klinikmu masukkan ke knowledge base, menyebut kisaran dengan jujur dan mengarahkan ke konsultasi untuk penawaran finalnya. Kalau datanya nggak ada, AI mengoper ke admin, bukan mengarang angka."
+    },
+    {
+      "q": "Pasien sering menghilang setelah tanya harga. Apa yang bisa dilakukan?",
+      "a": "Dua hal. Pertama, jawaban instan menjaga minat pasien tetap hangat di momen mereka bertanya. Kedua, follow-up otomatis menyapa kembali pasien yang belum booking, mengajak konsultasi atau mengingatkan promo yang relevan, jadi tanya-tanya harga nggak berhenti jadi chat mati."
+    },
+    {
+      "q": "Bagaimana reminder kontrol 6 bulan atau kontrol behel bekerja?",
+      "a": "Reminder dikirim otomatis lewat WhatsApp Business API resmi berdasarkan riwayat perawatan tiap pasien, kamu tentukan jaraknya, scaling tiap enam bulan, kontrol behel tiap bulan, dan AI yang menjawab balasan pasien sampai jadi booking."
+    },
+    {
+      "q": "Apakah AI memberi diagnosis atau saran medis?",
+      "a": "Tidak. AI hanya menjawab info layanan, harga, dan edukasi umum dari materi yang klinikmu setujui. Keluhan medis, diagnosis, dan keputusan perawatan selalu dialihkan ke dokter gigi lengkap dengan riwayat chat-nya."
+    },
+    {
+      "q": "Apakah harus mengganti software klinik gigi yang sudah dipakai?",
+      "a": "Nggak. Cekat.AI melengkapi software klinik gigi yang ada lewat API dan webhook, membaca jadwal, menulis booking, dan menyinkronkan data pasien. Belum pakai sistem apa pun? Knowledge base saja sudah cukup untuk mulai."
+    },
+    {
+      "q": "Bagaimana keamanan data pasien?",
+      "a": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam mengelola data pengguna, dengan akses berbasis peran di dalam tim. Sertifikasi ISO 27001 sedang dalam proses. Riwayat percakapan pasien hanya terlihat oleh staf yang berwenang."
+    },
+    {
+      "q": "Berapa lama setup untuk klinik gigi?",
+      "a": "Hitungan menit, bukan minggu. Salin daftar perawatan, kisaran harga, jadwal praktik dokter, dan SOP aftercare ke knowledge base, dan AI langsung menjawab dengan akurat. Tanpa coding, semudah briefing admin baru."
+    },
+    {
+      "q": "Bagaimana soal harga Cekat.AI, bisa coba dulu?",
+      "a": "Harga mengikuti paket berlangganan sesuai skala praktik dan volume chat, dari satu dokter sampai jaringan klinik. Kamu bisa mulai dari trial gratis, atau jadwalkan demo dengan tim Cekat.AI untuk melihat cara kerjanya dengan alur klinikmu."
+    }
+  ],
+  "cta": {
+    "heading": "Dari Tanya Harga Jadi Booking Perawatan Gigi",
+    "body": "Lihat bagaimana klinik gigi menjalankan chat pasien, booking konsultasi, dan recall 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "WhatsApp Bot AI, Bukan Bot WA Kaku yang Nyuruh Tekan 1 | CekatAI",
+    "description": "Pensiunkan bot WA jadul. WhatsApp bot ber-AI dari Cekat.AI paham bahasa natural customer dan bales beneran 24/7, dipakai 3.000+ bisnis, tanpa coding."
+  },
+  "hero": {
+    "badge": "AI Agent, Bukan Bot Kaku",
+    "title": "Bot WA yang Ngerti Omongan Customer, Bukan Nyuruh Tekan Angka",
+    "subtitle": "Customer benci bot yang jawabannya \"maaf, saya tidak mengerti\". WhatsApp bot Cekat.AI paham bahasa sehari-hari, nyambung sama konteks, dan melayani sampai closing, 24 jam nonstop"
+  },
+  "definition": "WhatsApp Bot dari Cekat.AI adalah AI agent di WhatsApp Business API resmi yang memahami bahasa natural customer, berbeda dari bot WA berbasis rule yang hanya merespons menu dan keyword tertentu, sehingga bisa menjawab, melayani, dan closing layaknya CS manusia, 24 jam sehari.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis sudah pindah ke Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer ditangani AI" },
+    { "value": "±5 menit", "label": "dari daftar sampai bot aktif" },
+    { "value": "24/7", "label": "bot standby tanpa lembur" }
+  ],
+  "benefits": [
+    {
+      "title": "Customer Nanya Sesukanya, Bot Tetap Nyambung",
+      "body": "Bot WA jadul cuma kenal skenario: salah ketik satu huruf, langsung buntu. Bot Cekat.AI membaca maksud, bukan keyword, \"kak ini ready ga si yg kemarin\" tetap dipahami dan dijawab dengan benar. Nggak ada lagi customer yang nyerah karena botnya nggak ngerti-ngerti.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Bot WhatsApp Cekat.AI memahami pertanyaan berbahasa santai"
+    },
+    {
+      "title": "Nggak Ada Lagi Balasan \"Maaf, Saya Tidak Mengerti\"",
+      "body": "Kalimat itu adalah momen customer menutup chat dan pindah ke kompetitor. Karena bot Cekat.AI menjawab dari knowledge base bisnismu dan paham berbagai bahasa, termasuk bahasa campur dan typo, hampir semua pertanyaan dapat jawaban beneran, bukan pengakuan kalah.",
+      "image": "/images/chat/train-your-ai-agent.png",
+      "imageAlt": "Melatih bot WhatsApp dengan pengetahuan bisnis di Cekat.AI"
+    },
+    {
+      "title": "Dari Bot Penjawab Jadi Bot Penjual",
+      "body": "Bot lama berhenti di kasih info. Bot Cekat.AI lanjut kerja: kualifikasi mana leads yang serius, cek ongkir di tengah percakapan, kirim QR pembayaran, dan kawal order sampai beres. Holywings Group membuktikannya, 100% chat tertangani 24/7 dengan konversi naik sampai 70%.",
+      "image": "/images/home/hero-dashboard.png",
+      "imageAlt": "Dashboard Cekat.AI memantau bot yang menangani penjualan"
+    },
+    {
+      "title": "Kalau Butuh Manusia, Bot-nya Tahu Diri",
+      "body": "Bot jadul memaksa customer muter-muter di menu tanpa jalan keluar. Bot Cekat.AI mengenali kapan percakapan butuh manusia, lalu mengoper otomatis ke tim lengkap dengan seluruh riwayat chat, plus jam kerja AI yang membagi shift antara tim dan bot secara otomatis.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Bot mengoper percakapan ke tim manusia dengan konteks penuh"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Bahasa Natural",
+      "title": "Ngerti Bahasa Sehari-hari, Bukan Cuma Perintah",
+      "body": "Singkatan, typo, bahasa gaul, campuran Indonesia-Inggris, bot tetap paham karena membaca maksud percakapan, bukan mencocokkan kata. Customer nggak perlu belajar \"cara ngomong sama bot\"."
+    },
+    {
+      "label": "Flow Designer",
+      "title": "Alur Terstruktur Kalau Kamu Butuh",
+      "body": "Untuk proses yang harus rapi seperti booking atau pendaftaran, susun alurnya di visual designer drag-and-drop. Bot tetap luwes menjawab di luar alur, tapi patuh mengikuti langkah di dalam alur."
+    },
+    {
+      "label": "Multi-Agent",
+      "title": "Beberapa Bot Spesialis, Satu Inbox",
+      "body": "Bikin bot khusus sales, bot khusus support, bot khusus billing, masing-masing dilatih untuk perannya. Semua percakapan tetap masuk satu inbox terpadu dengan label dan prioritas otomatis."
+    },
+    {
+      "label": "Jam Kerja AI",
+      "title": "Tim Pegang Siang, Bot Jaga Malam",
+      "body": "Atur jam online tim, dan bot otomatis ambil alih di luar jam itu. Pagi harinya tim tinggal melanjutkan percakapan yang sudah lengkap konteksnya, tanpa customer harus mengulang cerita."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Paham Maksud, Bukan Keyword",
+      "body": "Inti bedanya dengan bot WA jadul: AI membaca arti kalimat customer, jadi percakapan mengalir natural dari sapaan sampai closing."
+    },
+    {
+      "title": "Jalan di API Resmi Meta",
+      "body": "Cekat.AI adalah Meta Business Partner resmi, bot berjalan di WhatsApp Business API, bukan aplikasi modifikasi yang mengancam nomormu."
+    },
+    {
+      "title": "Aktif dalam 5 Menit, Tanpa Coding",
+      "body": "Paste SOP dan info produk, bot langsung siap kerja. Semudah briefing admin baru, nggak perlu developer atau bikin skrip."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa bedanya bot WA biasa dengan WhatsApp bot ber-AI?",
+      "a": "Bot WA biasa berbasis rule: dia cuma merespons keyword atau menu yang sudah diprogram, dan buntu di luar itu. WhatsApp bot ber-AI seperti Cekat.AI memahami bahasa natural, maksud, konteks, bahkan typo, jadi bisa menjawab pertanyaan bebas, melayani customer, dan closing order tanpa skenario kaku."
+    },
+    {
+      "q": "Apakah bot WA dari Cekat.AI pakai menu tekan angka?",
+      "a": "Nggak perlu. Customer langsung ngetik pertanyaannya seperti chat biasa, dan bot menjawab dengan bahasa natural. Kalau kamu tetap mau alur terstruktur untuk proses tertentu, misalnya booking, ada visual flow designer drag-and-drop, tapi percakapan sehari-hari nggak dipaksa lewat menu."
+    },
+    {
+      "q": "Kenapa customer sering kesal sama bot WA?",
+      "a": "Karena kebanyakan bot cuma mengenali keyword. Sekali pertanyaan keluar dari skenario, jawabannya \"maaf, saya tidak mengerti\" berulang-ulang, dan customer merasa dilempar ke mesin. Bot ber-AI menghilangkan frustrasi itu dengan memahami maksud kalimat, sehingga jawaban selalu relevan dengan yang ditanyakan."
+    },
+    {
+      "q": "Bot WA Cekat.AI bisa jawab pertanyaan di luar skrip?",
+      "a": "Bisa, karena memang nggak ada skrip. Bot menjawab dari knowledge base berisi SOP, produk, harga, dan kebijakan yang kamu paste sendiri. Selama jawabannya ada di pengetahuan bisnismu, bot bisa menjelaskannya dengan bahasanya sendiri, sekalipun pertanyaannya diketik dengan gaya yang belum pernah muncul."
+    },
+    {
+      "q": "Gimana cara bikin WhatsApp bot di Cekat.AI?",
+      "a": "Hubungkan nomor bisnismu lewat WhatsApp Business API resmi, lalu isi knowledge base dengan paste SOP dan info produk, prosesnya sekitar lima menit dan tanpa coding sama sekali. Setelah itu bot langsung aktif menjawab chat yang masuk, 24 jam."
+    },
+    {
+      "q": "Bot-nya bisa bahasa daerah atau bahasa asing?",
+      "a": "Bot Cekat.AI multibahasa dan otomatis mengikuti bahasa yang dipakai customer, termasuk bahasa campur. Minori Group memakainya untuk melayani customer Indonesia dan Jepang sekaligus, bot menangani 100% pertanyaan di dua bahasa dan dua zona waktu tanpa nambah tim CS."
+    },
+    {
+      "q": "Kalau customer marah atau kasusnya rumit, bot ngapain?",
+      "a": "Bot mengenali percakapan yang butuh penanganan manusia dan mengopernya otomatis ke tim, lengkap dengan riwayat chat, konteks customer, dan private notes. Tim tinggal melanjutkan, customer nggak perlu cerita ulang, beda jauh dari bot jadul yang menjebak customer muter-muter di menu."
+    },
+    {
+      "q": "Bot WA ini bisa dipakai buat jualan, bukan cuma CS?",
+      "a": "Bisa, dan justru di situ nilainya. Bot mengkualifikasi leads, merekomendasikan produk, cek ongkir langsung di chat, dan mengirim QR pembayaran sampai order selesai. Jadi bot bukan sekadar penjaga pesan masuk, tapi tenaga penjual yang kerja 24/7."
+    },
+    {
+      "q": "Pakai bot WA aman nggak buat nomor bisnisku?",
+      "a": "Aman kalau lewat jalur resmi. Cekat.AI adalah Meta Business Partner resmi dan menjalankan bot di WhatsApp Business API, bukan aplikasi WhatsApp modifikasi yang rawan membuat nomor bermasalah. Cekat.AI juga patuh UU PDP, dan sertifikasi ISO 27001 sedang berjalan."
+    },
+    {
+      "q": "Berapa banyak chat yang sanggup ditangani bot?",
+      "a": "Semua yang masuk, secara bersamaan, nggak ada antrean seperti admin manusia. Cekat.AI sudah menangani lebih dari 1.000.000 interaksi customer untuk 3.000+ bisnis di 15+ industri, jadi banjir chat di hari promo bukan hal baru buat sistemnya."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Bot WA Kaku Jadi Mesin Closing 24/7",
+    "body": "Pensiunkan bot tekan-angka dan aktifkan AI agent yang beneran ngerti customer, jadi dalam sekitar lima menit, tanpa coding."
+  }
+}

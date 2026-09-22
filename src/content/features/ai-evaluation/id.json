@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "AI Feedback & Evaluasi: Koreksi Jawaban AI Agent | Cekat.AI",
+    "description": "Tandai jawaban AI yang kurang tepat, uji perubahan di AI Playground sebelum tayang, dan kelola riwayat evaluasi. AI-mu membaik karena kamu yang mengoreksi."
+  },
+  "hero": {
+    "badge": "AI Feedback & Evaluasi",
+    "title": "Koreksi Sekali, AI-mu Nurut Seterusnya",
+    "subtitle": "Jawaban AI yang kurang pas kamu tandai langsung dari percakapan, perbaikannya diuji di AI Playground sebelum customer melihatnya, dan setiap evaluasi tersimpan rapi untuk ditinjau ulang."
+  },
+  "definition": "AI Feedback & Evaluasi di Cekat.AI adalah alur perbaikan kualitas AI agent: menandai respons yang kurang tepat langsung dari percakapan live, menguji jawaban di AI Playground sebelum dipakai, dan mengelola riwayat evaluasi dari satu halaman.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "kualitas jawaban terpantau"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi pelanggan ditangani"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Tandai Jawaban Kurang Pas Tanpa Keluar dari Chat",
+      "body": "Dari percakapan live, tim tinggal memberi thumbs down pada respons yang melenceng. Tidak ada tiket internal, tidak ada spreadsheet keluhan, koreksinya terjadi di tempat masalahnya terlihat.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Menandai respons AI langsung dari percakapan"
+    },
+    {
+      "title": "Uji di Playground, Bukan di Customer",
+      "body": "AI Playground membiarkanmu menguji pertanyaan dan melihat jawaban AI sebelum dipakai di percakapan nyata. Perubahan knowledge base atau pengaturan dicoba dulu, customer tidak jadi kelinci percobaan.",
+      "image": "/images/chat/train-your-ai-agent.png",
+      "imageAlt": "Menguji jawaban AI di AI Playground"
+    },
+    {
+      "title": "Setiap Evaluasi Tersimpan dan Bisa Diedit",
+      "body": "Halaman Evaluation menampilkan seluruh riwayat feedback: mana yang sudah dikoreksi, mana yang usang dan bisa dihapus. Perbaikan AI-mu terdokumentasi, bukan tersebar di chat tim.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "Halaman pengelolaan evaluasi AI"
+    },
+    {
+      "title": "AI yang Membaik dari Kasus Nyata",
+      "body": "Koreksi diambil dari percakapan sungguhan dengan customer-mu, bukan skenario buatan. Jawaban yang diperbaiki hari ini mencegah kesalahan yang sama di ribuan chat berikutnya.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Perbaikan AI berbasis percakapan nyata"
+    },
+    {
+      "title": "Tim CS-mu Jadi Pelatih, Bukan Tukang Tambal",
+      "body": "Daripada mengambil alih chat yang sama berulang kali, tim mengoreksi sumbernya sekali. Waktu yang tadinya habis menambal jawaban AI berpindah ke kasus yang benar-benar butuh manusia.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Tim mengoreksi AI alih-alih menambal jawaban"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Koreksi di Tempat Kejadian",
+      "body": "Feedback diberikan dari percakapan itu sendiri, saat konteksnya masih utuh."
+    },
+    {
+      "title": "Aman Sebelum Tayang",
+      "body": "Playground memisahkan eksperimen dari percakapan nyata, jadi perbaikan tidak menciptakan masalah baru."
+    },
+    {
+      "title": "Terdokumentasi, Bukan Tersirat",
+      "body": "Riwayat evaluasi bisa dibuka, diedit, dan dihapus, jadi kamu tahu persis apa yang pernah dikoreksi."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu AI Feedback & Evaluasi di Cekat.AI?",
+      "a": "Alur perbaikan kualitas AI: menandai respons kurang tepat dari percakapan live dengan thumbs down, menguji jawaban di AI Playground, dan mengelola seluruh riwayat evaluasi dari satu halaman."
+    },
+    {
+      "q": "Bagaimana cara memberi feedback pada jawaban AI?",
+      "a": "Dari percakapan live, arahkan kursor ke bagian Resolve lalu klik ikon thumbs down pada respons yang ingin dikoreksi. Evaluasinya tercatat tanpa meninggalkan chat."
+    },
+    {
+      "q": "Apa itu AI Playground?",
+      "a": "Tempat menguji AI sebelum jawabannya dipakai ke customer. Kamu bisa melempar pertanyaan, melihat responsnya, dan menilai hasilnya di lingkungan yang terpisah dari percakapan nyata."
+    },
+    {
+      "q": "Apakah evaluasi lama bisa diubah atau dihapus?",
+      "a": "Bisa. Halaman Evaluation menampilkan riwayat feedback untuk ditinjau, diedit ketika koreksinya perlu diperhalus, dan dihapus ketika sudah tidak relevan."
+    },
+    {
+      "q": "Siapa yang sebaiknya memberi feedback?",
+      "a": "Tim yang paling tahu jawaban benarnya, biasanya CS atau supervisor. Karena caranya satu klik dari chat, koreksi bisa jadi kebiasaan harian, bukan proyek khusus."
+    },
+    {
+      "q": "Apa bedanya dengan melatih ulang knowledge base?",
+      "a": "Knowledge base adalah sumber pengetahuan; evaluasi adalah koreksi atas cara AI menjawab. Keduanya saling melengkapi: feedback sering menunjukkan bagian knowledge yang perlu diperjelas."
+    },
+    {
+      "q": "Apakah feedback langsung mengubah jawaban AI?",
+      "a": "Evaluasi tercatat dan menjadi acuan perbaikan yang bisa kamu kelola. Perubahannya kamu uji dulu di Playground, jadi tidak ada koreksi yang tayang tanpa diperiksa."
+    },
+    {
+      "q": "Apakah fitur ini butuh keahlian teknis?",
+      "a": "Tidak. Memberi feedback itu satu klik, Playground berupa percakapan biasa, dan halaman evaluasi berbentuk daftar yang bisa dicari. Semuanya dirancang untuk tim non-teknis."
+    }
+  ],
+  "cta": {
+    "heading": "Jadikan Setiap Kesalahan AI yang Terakhir Kalinya",
+    "body": "Tandai, uji, terapkan. AI-mu membaik dari koreksi timmu sendiri. Coba gratis sekarang."
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Manajemen Lead, Tangkap, Kualifikasi, Closing Otomatis | CekatAI",
+    "description": "Tangkap leads dari website, WhatsApp, dan sosmed otomatis. AI kualifikasi dan follow-up 24/7 biar tidak ada leads yang lolos, dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "Manajemen Lead Bertenaga AI",
+    "title": "Berhenti Buang Leads yang Sudah Kamu Bayar Mahal",
+    "subtitle": "Tangkap setiap lead dari website, WhatsApp, dan sosmed secara otomatis, biarkan AI mengkualifikasi, lalu follow-up sampai closing, dengan jalur masuk tiap lead terlacak dari klik pertama sampai deal"
+  },
+  "definition": "Manajemen lead adalah fitur Cekat.AI untuk menangkap leads dari website, WhatsApp, dan media sosial secara otomatis, mengkualifikasinya dengan AI, melacak jalur masuk tiap lead, dan menjalankan follow-up otomatis sampai closing.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "AI kualifikasi leads masuk" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Tangkap Semua Leads Otomatis, dari Semua Channel",
+      "body": "Leads datang tengah malam, akhir pekan, pas jam makan siang, dan setiap yang tidak terjawab itu budget iklan yang hangus. Cekat.AI menangkap leads dari website, WhatsApp, dan sosmed begitu mereka menghubungi, langsung membuat kartu CRM otomatis, tidak bergantung admin yang ingat buat nyatet.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads tertangkap dan terorganisir otomatis di CRM Cekat.AI"
+    },
+    {
+      "title": "Kualifikasi Pakai AI, Bukan Perasaan",
+      "body": "Tidak semua yang nanya layak dapat satu jam waktu tim sales. AI agent Cekat.AI mengajak tiap lead ngobrol natural, memahami maksud dan konteks, bukan sekadar keyword, lalu menggerakkan kontak lewat Customer Stages: Visitor, Lead, Buyer. Manusia turun tangan hanya di momen yang benar-benar penting.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI mengkualifikasi leads lewat percakapan"
+    },
+    {
+      "title": "Tahu Persis Tiap Lead Datang dari Mana",
+      "body": "Kalau jalur masuknya tidak kelihatan, kamu tidak akan tahu channel mana yang layak dapat budget. Cekat.AI melacak titik masuk tiap lead, website, WhatsApp, atau sosmed, plus mencatat aktivitas dan event log di profilnya. Keputusan gaspol di channel mana jadi soal data, bukan debat.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Pelacakan jalur masuk dan perjalanan tiap lead di Cekat.AI"
+    },
+    {
+      "title": "Fokus ke Leads yang Paling Mungkin Closing",
+      "body": "Tumpukan chat yang tidak dipilah menyembunyikan pembeli di dalamnya. Dengan Customer Stages, saran langkah berikutnya, plus filter dan boards, timmu langsung tahu siapa yang paling dekat ke pembelian dan harus diapain, bukan ngerjain daftar dari atas ke bawah sambil berharap.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Filter dan prioritas leads berpotensi tinggi di Cekat.AI"
+    },
+    {
+      "title": "Follow-Up Jalan Sendiri Sampai Deal Tercapai",
+      "body": "Kebanyakan leads tidak bilang tidak, mereka cuma diam, dan tidak ada yang balik nanya. Cekat.AI mengirim follow-up dan reminder otomatis sesuai perilaku tiap lead, dari pembayaran pending sampai promo yang mau habis, jadi setiap peluang tergarap tanpa timmu ngandelin ingatan.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Alur follow-up leads otomatis di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Auto Capture",
+      "title": "Setiap Chat Masuk Jadi Data Lead",
+      "body": "Leads dari website, WhatsApp, Instagram, Facebook Messenger, dan live chat tertangkap otomatis ke CRM, kartu terbentuk atau ter-update dari tiap interaksi, tanpa input manual sama sekali."
+    },
+    {
+      "label": "Kualifikasi AI",
+      "title": "Maksud Customer Dipahami, Bukan Ditebak",
+      "body": "AI agent ngobrol natural dengan tiap lead, 24/7 dan multibahasa, memahami apa yang sebenarnya mereka cari. Lead serius maju lewat Customer Stages; yang cuma tanya-tanya tidak menuhin antrean sales."
+    },
+    {
+      "label": "Lacak Sumber",
+      "title": "Jalur Masuk Tercatat di Tiap Lead",
+      "body": "Profil tiap lead mencatat dia datang dari mana dan ngapain aja, aktivitas website, event log, campaign yang diterima, jadi kamu selalu tahu channel mana yang menghasilkan leads yang beneran konversi."
+    },
+    {
+      "label": "Auto Follow-Up",
+      "title": "Follow-Up yang Tidak Pernah Kelupaan",
+      "body": "Workflow trigger jalan berdasarkan jadwal, keyword chat, atau perubahan data customer, misalnya lead baru masuk, untuk mengirim follow-up dan reminder otomatis, plus notifikasi ke tim saat sentuhan manusia dibutuhkan."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Tidak Ada Leads yang Lolos",
+      "body": "AI agent membalas instan sepanjang hari, dan AI working hours mengoper percakapan ke timmu lengkap dengan konteksnya saat mereka online, chat jam 2 pagi dilayani sebaik chat jam 2 siang."
+    },
+    {
+      "title": "Satu Inbox, Satu CRM",
+      "body": "Leads dari website, WhatsApp, dan sosmed masuk ke satu inbox dan satu data customer, tidak ada lead yang nyelip di antara aplikasi yang terpisah-pisah."
+    },
+    {
+      "title": "Dari Visitor sampai Buyer",
+      "body": "Customer Stages memetakan perjalanan tiap kontak dari Visitor ke Lead sampai Buyer, dengan saran langkah berikutnya di setiap tahap."
+    }
+  ],
+  "testimonial": {
+    "quote": "Revenue kami naik lebih dari 50%! Cekat AI membantu kami mengamankan kunjungan properti dan closing bahkan saat saya tidur, karena tidak ada leads yang terlewat.",
+    "name": "Adam Sulaiman",
+    "role": "President Director, Threeland Property",
+    "image": "/images/crm/adam-sulaiman.png"
+  },
+  "faq": [
+    {
+      "q": "Apa itu manajemen lead?",
+      "a": "Manajemen lead adalah proses menangkap calon pelanggan, mengkualifikasinya, dan follow-up sampai mereka membeli. Di Cekat.AI, leads dari website, WhatsApp, dan sosmed tertangkap otomatis, dikualifikasi AI agent lewat percakapan, dan di-follow-up dengan reminder otomatis, semua langkahnya tercatat di CRM."
+    },
+    {
+      "q": "Gimana cara Cekat.AI menangkap leads otomatis?",
+      "a": "Setiap chat dari website, WhatsApp, Instagram DM, Facebook Messenger, atau live chat masuk ke satu inbox, dan kartu CRM langsung terbentuk atau ter-update dari interaksi itu. Tidak ada form yang harus diekspor, tidak ada spreadsheet yang harus diurus, lead-nya sudah ada di database begitu dia bilang halo."
+    },
+    {
+      "q": "Gimana AI mengkualifikasi lead?",
+      "a": "AI agent Cekat.AI ngobrol dengan tiap lead pakai bahasa natural, memahami maksud dan konteks, bukan sekadar mencocokkan keyword. Dari percakapan itu, kontak bergerak lewat Customer Stages: Visitor, Lead, Buyer. Timmu tinggal lihat sekilas untuk tahu siapa yang serius dan siap di-follow-up manusia."
+    },
+    {
+      "q": "Bisa lihat lead datang dari channel mana?",
+      "a": "Bisa. Cekat.AI melacak titik masuk tiap lead, website, WhatsApp, atau media sosial, dan mencatat aktivitas website serta event log di profilnya. Lama-lama kelihatan jelas channel mana yang menghasilkan leads yang closing, dan mana yang cuma ramai doang."
+    },
+    {
+      "q": "Leads yang masuk tengah malam gimana nasibnya?",
+      "a": "Langsung dijawab. AI agent kerja 24/7, mengkualifikasi dan membalas leads kapan pun mereka datang. Dengan AI working hours, percakapan dioper ke timmu begitu mereka online, lengkap dengan seluruh riwayat chat, jadi tidak ada lead yang nunggu dan tidak ada konteks yang hilang."
+    },
+    {
+      "q": "Follow-up otomatisnya jalan gimana?",
+      "a": "Workflow trigger merespons jadwal, keyword chat, atau perubahan data customer, misalnya lead baru masuk. Cekat.AI lalu mengirim follow-up dan reminder otomatis, pembayaran pending, promo mau berakhir, waktunya beli lagi, dan bisa memberi notifikasi ke anggota tim yang tepat saat perlu ditangani langsung."
+    },
+    {
+      "q": "Dari sekian banyak leads, tahu dari mana yang harus diduluin?",
+      "a": "Customer Stages menunjukkan posisi tiap kontak, Visitor, Lead, atau Buyer, dan tiap profil punya saran langkah berikutnya. Gabungkan dengan filter dan boards, tim sales mulai hari dengan daftar leads paling potensial yang sudah tersortir, bukan inbox yang campur aduk."
+    },
+    {
+      "q": "Manajemen lead nyambung sama broadcast WhatsApp?",
+      "a": "Nyambung. Leads yang tertangkap di CRM bisa disegmentasi berdasarkan aktivitas, riwayat pembelian, atau event, lalu di-nurture pakai broadcast WhatsApp personal lewat Business API resmi. Begitu mereka reply, AI agent langsung melanjutkan percakapannya, seluruh siklus jalan di satu platform."
+    },
+    {
+      "q": "Perlu skill teknis buat setup manajemen lead?",
+      "a": "Tidak. Tidak ada coding sama sekali di Cekat.AI, sambungkan channel, kasih AI agent brief berisi SOP dan info bisnismu, dan penangkapan leads langsung jalan. Setup AI agent cuma sekitar 5 menit, semudah nge-brief admin CS baru."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Chat yang Terlewat Jadi Deal yang Closing",
+    "body": "Tangkap, kualifikasi, dan follow-up setiap lead secara otomatis, bahkan saat kamu tidur."
+  }
+}

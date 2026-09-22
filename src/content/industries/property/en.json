@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "AI Customer Service for Property & Real Estate | CekatAI",
+    "description": "AI & property CRM by Cekat.ai: qualify leads, schedule site visits, & auto follow-up 24/7. Threeland Property boosted revenue by over 50%!"
+  },
+  "hero": {
+    "badge": "Property & Real Estate",
+    "title": "Your Ads Bring Leads at Midnight. Cekat.AI Answers Them.",
+    "subtitle": "Cekat.AI qualifies every inquiry from your ads and listings, schedules property visits, and follows up automatically on WhatsApp, 24/7, even while your agents sleep",
+    "useCases": [
+      "Ad lead response",
+      "Lead qualification",
+      "Viewing scheduling",
+      "Follow-up to closing"
+    ]
+  },
+  "definition": "Cekat.AI for property is an AI customer service platform for real estate developers and agencies in Indonesia, qualifying leads from ads 24/7, scheduling property visits straight from chat, and tracking every deal in one sales pipeline.",
+  "stats": [
+    {
+      "value": ">50%",
+      "label": "revenue growth at Threeland Property"
+    },
+    {
+      "value": "24/7",
+      "label": "leads answered, even while agents sleep"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Ad Leads Get an Answer in Seconds, Not the Next Morning",
+      "body": "A lead who chats at midnight and hears nothing until 9 AM has usually contacted three other agencies by then. Cekat.AI replies instantly on WhatsApp, Instagram, and web chat, answering questions about units, prices, and locations in natural language at any hour, so the fastest response is always yours.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI agent answering property inquiries instantly"
+    },
+    {
+      "title": "Every Inquiry Becomes a Qualified Lead in Your CRM",
+      "body": "The AI asks the questions your agents would, budget, preferred location, unit type, timeline, and every answer lands in a CRM card created automatically, with no manual input. Your team wakes up to a list of qualified prospects with full conversation history, not a pile of unread chats.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Property leads captured and organized in the Cekat.AI CRM"
+    },
+    {
+      "title": "Site Visits Scheduled Straight From the Chat",
+      "body": "Connect your calendar through API integration and the AI books property visits inside the conversation, date confirmed, reminder sent, no phone tag. A prospect who asks at midnight walks into your show unit on Saturday, and automated reminders make sure they actually show up.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Property visit booking via API integration in Cekat.AI"
+    },
+    {
+      "title": "Follow-Up Runs Automatically Until the Deal Moves",
+      "body": "Most property deals die from silence, not rejection. Cekat.AI sends follow-up nudges matched to each prospect's behavior, a reminder before a promo ends, a nudge when a lead goes quiet after a visit, triggered by schedules, chat keywords, or changes in customer data. No lead is forgotten because an agent got busy.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated follow-up workflows in Cekat.AI"
+    },
+    {
+      "title": "One Pipeline Shows Every Deal From Lead to Closing",
+      "body": "Every prospect moves through Customer Stages, Visitor, Lead, Buyer, with next-step suggestions at each point, and the sales pipeline shows deal progress in real time. You see exactly how many visits, negotiations, and closings are in motion without asking anyone for a recap.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Sales pipeline and customer journey tracking in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Developers & Agencies",
+      "title": "Lead Qualification and Unit Visits, Running 24/7",
+      "body": "Ad leads are asked about budget, location, and unit type the moment they chat, then land in a pipeline per project. Show-unit visits get booked in the conversation with automatic reminders, and follow-ups keep every deal moving to closing."
+    },
+    {
+      "label": "Malls & Retail",
+      "title": "Visitors and Prospective Tenants Served in One Inbox",
+      "body": "Opening hours, events, and promo questions are answered instantly on WhatsApp and Instagram. Leasing inquiries from prospective tenants are qualified automatically into their own pipeline, while facility complaints become tickets with a clear owner."
+    },
+    {
+      "label": "Office Buildings",
+      "title": "Tenant Requests Become Tracked Tickets",
+      "body": "Maintenance, access, and parking requests turn into tickets automatically, assigned to the right building team and tracked to resolution. Building announcements reach every tenant at once through WhatsApp broadcast."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Speed Wins the Deal",
+      "body": "In property, the first agency to respond usually gets the visit. Cekat.AI makes your response time seconds, every hour, every day."
+    },
+    {
+      "title": "A Pipeline That Never Leaks",
+      "body": "Every inquiry is captured, qualified, and tracked to closing. Deals stall from forgotten follow-ups, Cekat.AI removes that failure mode."
+    },
+    {
+      "title": "Proven in Property",
+      "body": "Threeland Property closes deals while its director sleeps, revenue up more than 50%, because no lead goes unanswered."
+    }
+  ],
+  "testimonial": {
+    "quote": "Our revenue increased by more than 50%! Cekat AI allows us to secure property visits and close deals even while I'm asleep, because no leads are missed.",
+    "name": "Adam Sulaiman",
+    "role": "President Director, Threeland Property",
+    "image": "/images/crm/adam-sulaiman.png"
+  },
+  "faq": [
+    {
+      "q": "How does AI customer service work for property and real estate businesses?",
+      "a": "Cekat.AI connects to your WhatsApp, Instagram, and website chat, then answers property inquiries instantly using knowledge you provide, listings, prices, locations, payment schemes. It qualifies each lead, schedules site visits, follows up automatically, and records everything in a CRM pipeline, working 24/7 alongside your sales team."
+    },
+    {
+      "q": "Can the AI qualify property leads coming from ads?",
+      "a": "Yes. When someone clicks your ad and starts a chat, the AI responds in seconds, asks qualifying questions, budget, location, unit type, and saves the answers to a CRM card automatically. Cekat.AI also integrates CAPI with Meta and TikTok, sending better signal quality back to your ad platforms so campaigns improve over time."
+    },
+    {
+      "q": "Can prospects schedule a property visit through the chat?",
+      "a": "Yes. Through API integration with your scheduling system, the AI books, confirms, and reschedules property visits directly inside the conversation, and automated reminders go out before the appointment, so more prospects who book a visit actually arrive at the show unit."
+    },
+    {
+      "q": "What happens to leads who go quiet after asking about a unit?",
+      "a": "Cekat.AI follows up automatically. Workflow triggers based on time, chat keywords, or customer-data changes send the right nudge at the right moment, a reminder before a promo ends, a check-in after a site visit, so leads re-engage without an agent having to remember each one."
+    },
+    {
+      "q": "When does a human agent take over the conversation?",
+      "a": "Whenever negotiation or a complex request needs a person, the conversation escalates to your team with the full chat history attached. With AI working hours, your agents handle chats during online hours and the AI covers everything after, the handoff is automatic and carries complete context."
+    },
+    {
+      "q": "Can I track my sales pipeline in Cekat.AI?",
+      "a": "Yes. Every lead moves through Customer Stages, Visitor, Lead, Buyer, with next-step suggestions, and the sales pipeline shows real-time progress on every deal. Filters and boards let you slice by project, agent, or stage, so nothing sits unnoticed."
+    },
+    {
+      "q": "Which channels can a property business connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, website live chat, and API channels, all flowing into one unified inbox with a single interaction history per prospect, so a lead who moves from Instagram to WhatsApp never has to repeat themselves."
+    },
+    {
+      "q": "What results have property companies seen with Cekat.AI?",
+      "a": "Threeland Property grew revenue by more than 50% after implementing Cekat.AI. Its president director credits the platform with securing property visits and closing deals even while he sleeps, because no leads are missed at any hour."
+    },
+    {
+      "q": "How long does it take to set up for a property business?",
+      "a": "Building the AI agent takes around five minutes, paste your project information, price lists, and SOPs into the knowledge base, and it starts answering accurately. No coding is required; Cekat.AI describes it as being as easy as briefing a CS admin."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Midnight Inquiries Into Signed Deals",
+    "body": "See how property teams sell faster with Cekat.AI, book a free consultation with our team."
+  }
+}

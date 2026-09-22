@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "WhatsApp Chatbot on Official API, Close Orders in Chat | CekatAI",
+    "description": "Deploy an official WhatsApp Business API AI Chatbot. Answer FAQs, qualify leads, & close 24/7 with zero queues. Trusted by 3,000+ Indonesian businesses."
+  },
+  "hero": {
+    "badge": "Official WhatsApp Business API",
+    "title": "The WhatsApp Chatbot That Closes Orders While You Sleep",
+    "subtitle": "Answer every FAQ, qualify every lead, check shipping costs, and take the order, all inside WhatsApp, handled by a humanlike AI on the official Business API"
+  },
+  "definition": "A WhatsApp Chatbot from Cekat.AI is an AI agent running on the official WhatsApp Business API that answers customer questions, qualifies leads, checks shipping costs, and closes orders directly in the chat, 24/7, in natural humanlike language.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "WhatsApp chats answered instantly" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Answer Every FAQ Instantly, Even at 2 AM",
+      "body": "Price lists, stock checks, opening hours, how-to questions: the same twenty questions eat your admin's entire day. Feed your SOPs and product info into the knowledge base once, and the chatbot answers each one accurately, instantly, at any hour, while your team does higher-value work.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base powering instant FAQ answers in Cekat.AI"
+    },
+    {
+      "title": "Qualify Leads Before Your Team Even Says Hello",
+      "body": "Not every \"halo kak\" deserves the same attention. The chatbot asks the right questions, understands the answers, and prioritizes serious buyers, so when a conversation does reach your sales team, it arrives labeled, qualified, and ready to close instead of starting from zero.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI chatbot qualifying a lead inside WhatsApp"
+    },
+    {
+      "title": "From \"Berapa Ongkir?\" to Paid Order in One Chat",
+      "body": "Shipping cost is where most WhatsApp sales stall. Cekat.AI's chatbot checks ongkir in real time inside the conversation, confirms the order details, and sends a payment QR, the customer never leaves WhatsApp, and the sale never waits for an admin to wake up.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "API integration for shipping cost checks in Cekat.AI chat"
+    },
+    {
+      "title": "Hands Over to Your Team With Full Context",
+      "body": "Complex complaint? Big B2B deal? The chatbot escalates automatically and the human picks up a conversation that already contains the full history, customer details, and private notes. With AI working hours, your team covers the day and the bot owns the night shift.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Automatic escalation from AI to human agent with context"
+    },
+    {
+      "title": "See What Your Chatbot Is Actually Doing",
+      "body": "Every conversation is searchable, auto-labeled, and prioritized in one inbox. Review how the AI answers, spot the questions it gets most, and sharpen its knowledge base over time, the same way you'd coach a promising new admin into a great one.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "Conversation analytics and improvement dashboard in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Official API",
+      "title": "Built on Meta's Official Infrastructure",
+      "body": "Cekat.AI is an official Meta Business Partner, and every chatbot runs on the official WhatsApp Business API, the compliant, reliable way to automate WhatsApp at scale, without the account risks of unofficial bot tools."
+    },
+    {
+      "label": "Knowledge Base",
+      "title": "Trained on Your Business in About 5 Minutes",
+      "body": "Paste SOPs, catalogs, prices, and policies, no coding, no flowchart marathons. The chatbot answers strictly from what you teach it, and updating its knowledge is as easy as editing text."
+    },
+    {
+      "label": "In-Chat Tools",
+      "title": "Ongkir, Payments, and Images Inside the Chat",
+      "body": "The AI checks shipping costs, generates payment QR codes, and even edits images without leaving the conversation, everything a customer needs to go from question to paid order in one thread."
+    },
+    {
+      "label": "AI Call Summary",
+      "title": "WhatsApp Calls, Summarized by AI",
+      "body": "WhatsApp calls are processed by AI into instant summaries with key points and recommended next steps, so a phone conversation becomes actionable record, not a memory your team has to reconstruct."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Meta Business Partner",
+      "body": "Official API, approved and compliant, your WhatsApp number stays safe while the chatbot works at full scale."
+    },
+    {
+      "title": "Humanlike, Not a Menu Bot",
+      "body": "It understands intent and context in natural language, so customers get real answers instead of \"type 1 for pricing\"."
+    },
+    {
+      "title": "Sales, Not Just Support",
+      "body": "Lead qualification, ongkir checks, payment QRs, and order closing happen in the chat, revenue you can trace to the bot."
+    }
+  ],
+  "testimonial": {
+    "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+    "name": "Tantan Supriatna",
+    "role": "Customer Relation Department Head, Rumah Zakat",
+    "image": "/images/chat/tantan-supriatna.png"
+  },
+  "faq": [
+    {
+      "q": "What is a WhatsApp chatbot?",
+      "a": "A WhatsApp chatbot is software that automatically answers customer messages on WhatsApp. Cekat.AI's version is an AI agent on the official WhatsApp Business API that understands natural language, answers FAQs from your business knowledge, qualifies leads, checks shipping costs, and closes orders in the chat, 24/7."
+    },
+    {
+      "q": "Does a WhatsApp chatbot need the official Business API?",
+      "a": "For a business that wants to automate safely at scale, yes. Cekat.AI is an official Meta Business Partner and runs every chatbot on the official WhatsApp Business API, the compliant route Meta supports, unlike unofficial mod-based bots that put your business number at risk."
+    },
+    {
+      "q": "Will the chatbot sound robotic to my customers?",
+      "a": "No. The AI understands intent and context rather than matching keywords, so it handles slang, typos, and follow-up questions naturally, in multiple languages. Customers chat normally and get relevant answers, many conversations feel like talking to a well-trained admin."
+    },
+    {
+      "q": "Can the chatbot take orders and check shipping costs?",
+      "a": "Yes. Inside the conversation, the AI checks ongkir in real time, confirms order details, and sends a payment QR so the customer can pay without leaving WhatsApp. The whole journey from question to paid order happens in a single chat thread."
+    },
+    {
+      "q": "How do I train the WhatsApp chatbot on my business?",
+      "a": "Paste your SOPs, product catalog, pricing, and policies into the knowledge base, it works like briefing a new CS admin and takes about five minutes. No coding is needed, and a visual drag-and-drop flow designer is available for structured processes like bookings or promos."
+    },
+    {
+      "q": "What happens when a question is too complex for the bot?",
+      "a": "The conversation escalates to your team automatically, carrying the full chat history, customer context, and private notes. You can also set AI working hours so humans handle chats during office hours and the chatbot takes over after hours, with seamless handoffs both ways."
+    },
+    {
+      "q": "Can the chatbot handle high chat volume on promo days?",
+      "a": "Yes. It answers every conversation simultaneously, so a flash-sale flood of messages gets the same instant response as a quiet Tuesday. Across 3,000+ businesses, Cekat.AI has handled over 1,000,000 customer interactions, volume is the problem it was built for."
+    },
+    {
+      "q": "Does the WhatsApp chatbot work alongside my human team?",
+      "a": "That's the default setup. Conversations live in one shared inbox with auto-labeling, case prioritization, private notes, collaborators, and role-based access. The AI handles the volume; your team handles the judgment calls, and everyone sees the same customer history."
+    },
+    {
+      "q": "How fast can I launch a WhatsApp chatbot with Cekat.AI?",
+      "a": "Most businesses build a working agent in about five minutes: connect WhatsApp through the official Business API, paste business knowledge into the knowledge base, and the chatbot starts answering. No developers or coding required at any step."
+    },
+    {
+      "q": "Is a WhatsApp chatbot safe for customer data?",
+      "a": "Cekat.AI complies with UU PDP, Indonesia's personal data protection law, and ISO 27001 certification is in progress. Combined with the official WhatsApp Business API and role-based team access, customer conversations are handled with proper governance."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Your WhatsApp Into a 24/7 Sales Machine",
+    "body": "Launch an AI chatbot on the official Business API in minutes, and stop losing orders to slow replies."
+  }
+}

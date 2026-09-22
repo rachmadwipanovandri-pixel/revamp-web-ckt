@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Platform Contact Center BPO, AI Tier-1 24/7 | CekatAI",
+    "description": "BPO pakai Cekat.AI buat jalanin CS banyak klien di satu platform: workspace terpisah, AI bales tier-1 24/7, SLA per klien kebaca tanpa rekap manual."
+  },
+  "hero": {
+    "badge": "Outsourcing",
+    "title": "Tambah Klien Baru Tanpa Nambah Satu Tim Agent",
+    "subtitle": "Cekat.AI menjalankan CS banyak klien di satu platform, workspace terpisah per akun, AI menangani tier-1 24/7, dan agent-mu cukup turun di eskalasi yang benar-benar butuh manusia",
+    "useCases": [
+      "Workspace per klien",
+      "Tier-1 otomatis",
+      "Knowledge base per akun",
+      "SLA & analitik per klien"
+    ]
+  },
+  "definition": "Cekat.AI untuk outsourcing adalah platform AI customer service untuk penyedia BPO dan contact center di Indonesia yang menangani CS banyak klien, menyatukan workspace terpisah per akun, AI tier-1 24/7, dan laporan SLA per klien dalam satu platform contact center BPO.",
+  "stats": [
+    {
+      "value": "75%",
+      "label": "penghematan biaya Customer Service di Gamal Men dengan AI agent"
+    },
+    {
+      "value": "+30%",
+      "label": "kenaikan omzet bulanan di Happy GSR"
+    },
+    {
+      "value": "24/7",
+      "label": "chat tier-1 semua akun klien terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Workspace Terpisah untuk Setiap Klien",
+      "body": "Setiap klien dapat ruang kerjanya sendiri, channel, AI agent, knowledge base, dan datanya nggak campur dengan akun lain. Kamu tetap memegang kendali dari satu platform, klien A nggak akan pernah kelihatan oleh tim klien B, dan onboarding akun baru berarti membuka workspace baru, bukan membangun sistem dari nol.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Beberapa AI agent terpisah untuk tiap akun klien di Cekat.AI"
+    },
+    {
+      "title": "AI Menangani Tier-1 di Semua Akun, 24/7",
+      "body": "Status pesanan, jam operasional, kebijakan retur, tipe chat yang menghabiskan sebagian besar jam kerja agent, dijawab AI secara instan di semua akun klien sekaligus. Volume melonjak pun waktu respons tetap stabil, dan headcount nggak lagi harus ikut naik tiap kali kontrak baru masuk.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab chat tier-1 pelanggan di inbox Cekat.AI"
+    },
+    {
+      "title": "Knowledge Base per Akun, Jawaban Nggak Ketukar",
+      "body": "SOP klien fashion beda dengan klien elektronik, dan jawaban yang ketukar antar akun itu mimpi buruk BPO. Di Cekat.AI tiap akun punya knowledge base sendiri, salin dokumen, FAQ, dan SOP klien ke sana, dan AI di workspace itu menjawab hanya dari sumber tersebut, konsisten dengan brand voice masing-masing klien.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base terpisah per akun klien di Cekat.AI"
+    },
+    {
+      "title": "Agent Cukup Pegang Eskalasi, Bukan Semua Chat",
+      "body": "Kasus yang rumit atau sensitif dialihkan ke agent manusia lengkap dengan riwayat percakapan dan data pelanggannya, jadi nggak ada tanya ulang dari awal. Akses berbasis peran mengatur siapa memegang akun mana, dan utilisasi tim berubah jadi soal kualitas penanganan, bukan kecepatan mengetik.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Eskalasi chat ke agent manusia dengan konteks penuh di Cekat.AI"
+    },
+    {
+      "title": "SLA dan Analitik per Klien Tanpa Rekap Manual",
+      "body": "Laporan bulanan nggak perlu lagi disusun dari export spreadsheet tiap akhir bulan. Setiap workspace punya dashboard sendiri, volume chat, waktu respons, tingkat penyelesaian, performa AI dan agent, jadi review SLA tinggal membuka angka yang sama dengan klien, data hidup, bukan rekapan minggu lalu.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Dashboard performa dan SLA per akun klien di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Nomor WhatsApp tiap klien jalan di WhatsApp Business API resmi, bareng Instagram DM dan Facebook Messenger, semua akun compliant dari satu platform."
+    },
+    {
+      "title": "Satu Platform, Banyak Klien",
+      "body": "Workspace terpisah, knowledge base per akun, dan akses berbasis peran menjaga tiap klien terisolasi rapi, sementara AI menangani tier-1 di semuanya."
+    },
+    {
+      "title": "Dipakai 3.000+ Bisnis di Indonesia",
+      "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan customer service di Cekat.AI."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu BPO dan penyedia contact center?",
+      "a": "Cekat.AI menyatukan CS semua klienmu di satu platform, tiap akun punya workspace, channel, dan AI agent sendiri. AI menangani chat tier-1 24/7 di semua akun, agent-mu fokus ke eskalasi, dan performa tiap klien terbaca di dashboard-nya masing-masing, tanpa pindah-pindah tool."
+    },
+    {
+      "q": "Data antar klien benar-benar terpisah?",
+      "a": "Iya. Setiap klien hidup di workspace terpisah dengan percakapan, kontak, dan knowledge base-nya sendiri, dan akses berbasis peran (RBAC) memastikan tiap orang hanya melihat akun yang memang jadi tanggung jawabnya. Supervisor bisa lintas akun, agent cukup melihat akun yang dipegangnya."
+    },
+    {
+      "q": "Tiap klien bisa punya AI agent dengan gaya bahasa berbeda?",
+      "a": "Bisa. AI agent dibangun per workspace, masing-masing dengan knowledge base, instruksi, dan brand voice sesuai kliennya. Akun yang satu bisa formal, akun yang lain santai, dan semuanya jalan bersamaan tanpa saling mengganggu."
+    },
+    {
+      "q": "Bisa pakai nomor WhatsApp masing-masing klien?",
+      "a": "Bisa. Tiap workspace terhubung ke channel milik klien itu sendiri, nomor WhatsApp Business API resmi, Instagram DM, Facebook Messenger, dan live chat website. Cekat.AI adalah Official Meta Business Partner, jadi semua nomor jalan resmi dan compliant, bukan lewat WhatsApp biasa yang rawan kena blokir."
+    },
+    {
+      "q": "Bagaimana laporan SLA per klien?",
+      "a": "Setiap workspace punya dashboard analitik sendiri, volume percakapan, waktu respons, tingkat penyelesaian, dan porsi yang ditangani AI vs agent. Laporan ke klien jadi soal membuka dashboard yang sama, bukan menyusun rekap manual dari beberapa sistem tiap akhir bulan."
+    },
+    {
+      "q": "Kapan agent manusia turun tangan?",
+      "a": "Saat kasusnya rumit, sensitif, atau di luar knowledge base, percakapan dialihkan ke agent lengkap dengan seluruh riwayatnya, pelanggan nggak perlu mengulang cerita. Aturan eskalasi bisa disetel per akun, mengikuti SOP dan SLA masing-masing klien."
+    },
+    {
+      "q": "Berapa lama onboarding klien baru?",
+      "a": "Membangun AI agent untuk satu akun sekitar lima menit, buka workspace, salin FAQ, SOP, dan kebijakan klien ke knowledge base, sambungkan channel-nya, dan AI mulai menjawab. Tanpa coding, jadi tim delivery bisa onboard klien baru tanpa antre ke tim IT."
+    },
+    {
+      "q": "Bagaimana keamanan data klien?",
+      "a": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam menangani dan mengelola data pengguna, dan sertifikasi ISO 27001 sedang dalam proses. Ditambah workspace terpisah dan akses berbasis peran, data tiap klien hanya terlihat oleh orang yang berwenang atas akun itu."
+    },
+    {
+      "q": "Gimana arah harganya untuk model BPO?",
+      "a": "Paket menyesuaikan jumlah akun, seat agent, dan volume percakapan, jadi biaya mengikuti pertumbuhan portofolio klienmu, bukan bayar besar di depan. Ada free trial 14 hari buat menguji di satu akun dulu, dan lewat konsultasi gratis tim kami bantu hitung struktur yang paling pas."
+    }
+  ],
+  "cta": {
+    "heading": "Tingkatkan Jumlah Klien, Tanpa Meningkatkan Headcount",
+    "body": "Lihat bagaimana BPO menjalankan CS banyak klien 24/7 di satu platform, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

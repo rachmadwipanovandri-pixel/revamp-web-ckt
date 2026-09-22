@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Customer Service Maskapai Otomatis dengan AI | CekatAI",
+    "description": "Maskapai pakai Cekat.AI buat jawab jadwal, bagasi, dan refund 24/7 dalam banyak bahasa, tetap responsif saat delay bikin chat melonjak."
+  },
+  "hero": {
+    "badge": "Maskapai",
+    "title": "Jawab Setiap Penumpang, Bahkan Saat Ribuan Chat Masuk Serentak",
+    "subtitle": "Dari perubahan jadwal, aturan bagasi, sampai status refund, Cekat.AI membalas instan di WhatsApp dan Instagram, 24/7, dalam bahasa si penumpang, tanpa nambah agen contact center",
+    "useCases": [
+      "Lonjakan chat disrupsi",
+      "Tarif, bagasi, check-in",
+      "Multi-bahasa 24/7",
+      "Notifikasi proaktif"
+    ]
+  },
+  "definition": "Cekat.AI untuk maskapai adalah platform AI customer service untuk maskapai dan operator perjalanan udara di Indonesia, menjawab pertanyaan jadwal, bagasi, dan refund penumpang 24/7 dalam banyak bahasa, menyerap lonjakan chat saat delay dan reschedule, dan menjaga customer service maskapai tetap cepat di setiap zona waktu.",
+  "stats": [
+    {
+      "value": "75%",
+      "label": "penghematan biaya Customer Service di Gamal Men dengan AI agent"
+    },
+    {
+      "value": "5 detik",
+      "label": "waktu balas chat pelanggan di Lunica, turun dari 15 menit"
+    },
+    {
+      "value": "24/7",
+      "label": "pertanyaan jadwal, bagasi, dan refund terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Lonjakan Chat Saat Disrupsi Terserap Otomatis",
+      "body": "Satu delay bisa bikin ratusan penumpang chat dalam hitungan menit, dan penerbangan berikutnya nambah ratusan lagi. Cekat.AI menjawab setiap chat yang masuk secara instan berapa pun jumlahnya sekaligus, jadi waktu respons tetap stabil di hari paling kacau, dan agen fokus ke kasus yang benar-benar butuh manusia, bukan ngetik jawaban yang sama ratusan kali.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menyerap lonjakan chat penumpang di inbox Cekat.AI"
+    },
+    {
+      "title": "Pertanyaan Tarif, Bagasi, dan Check-in Dijawab Instan",
+      "body": "\"Bagasi kabin maksimal berapa kilo?\" \"Check-in online sampai jam berapa?\" \"Boleh bawa power bank?\" Cekat.AI menjawab dari knowledge base berisi aturan tarif, kebijakan bagasi, dan prosedur maskapaimu, dengan bahasa natural yang paham maksud penumpang, jadi jawaban di chat ke seribu sama konsistennya dengan chat pertama.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Kebijakan maskapai tersimpan sebagai knowledge base di Cekat.AI"
+    },
+    {
+      "title": "Melayani Penumpang dalam Bahasa Mereka, 24/7",
+      "body": "Penumpangmu chat dari zona waktu yang berbeda-beda dan nggak semuanya pakai bahasa Indonesia. Cekat.AI mendeteksi bahasa penumpang dan membalas dalam bahasa yang sama, tengah malam sekalipun, jadi penumpang di Tokyo, Jeddah, atau Amsterdam dapat jawaban secepat penumpang di Jakarta.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Beberapa AI agent melayani penumpang dalam banyak bahasa di Cekat.AI"
+    },
+    {
+      "title": "Kabari Penumpang Duluan, Sebelum Mereka Bertanya",
+      "body": "Perubahan jadwal, informasi penerbangan, dan progres refund bisa dikirim proaktif ke segmen penumpang yang terdampak lewat broadcast di WhatsApp Business API resmi. Penumpang yang sudah dikabari nggak ikut membanjiri inbox, jadi volume chat turun sebelum sempat naik, dan sisa pertanyaannya dijawab AI secara instan.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Notifikasi otomatis terkirim ke segmen penumpang yang tepat di Cekat.AI"
+    },
+    {
+      "title": "Kasus Kompleks Naik ke Agen, Lengkap dengan Konteks",
+      "body": "Kompensasi delay, bagasi hilang, refund yang nyangkut, ada kasus yang memang harus dipegang manusia. Cekat.AI mengalihkan percakapan seperti ini ke agenmu lengkap dengan riwayat chat dan data penumpangnya, dan lewat integrasi API, AI bisa membaca sistem booking yang sudah kamu pakai, jadi penumpang nggak perlu mengulang cerita dari awal.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Percakapan dieskalasi ke agen manusia dengan konteks lengkap di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chat dan notifikasi berjalan di WhatsApp Business API resmi, bareng Instagram DM dan Facebook Messenger, satu inbox untuk semua rute dan penumpang, compliant dan andal."
+    },
+    {
+      "title": "AI yang Siap di Hari Terkacau",
+      "body": "AI menyerap lonjakan chat saat disrupsi, menjawab tarif, bagasi, dan jadwal instan dalam banyak bahasa, lalu mengoper kasus kompleks ke agen lengkap dengan konteks."
+    },
+    {
+      "title": "Nyambung ke Sistem yang Sudah Ada",
+      "body": "Lewat integrasi API, Cekat.AI terhubung ke sistem booking dan operasional maskapaimu, jadi AI menjawab dengan data terkini tanpa mengubah stack yang sudah jalan."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu customer service maskapai?",
+      "a": "Cekat.AI menjawab chat penumpang secara instan 24/7 di WhatsApp, Instagram, dan web chat, dari jadwal, tarif, bagasi, check-in, sampai status refund, dalam banyak bahasa. Saat disrupsi bikin chat melonjak, AI menyerap volumenya dan agenmu fokus ke kasus yang butuh keputusan manusia."
+    },
+    {
+      "q": "AI-nya kuat saat delay bikin ribuan chat masuk sekaligus?",
+      "a": "Kuat. AI menjawab setiap chat yang masuk secara instan berapa pun banyaknya sekaligus, jadi waktu respons tetap stabil justru di momen paling ramai. Nggak ada antrian, nggak ada penumpang yang didiamkan berjam-jam."
+    },
+    {
+      "q": "Bisa melayani penumpang dalam bahasa yang berbeda-beda?",
+      "a": "Bisa. Cekat.AI mendeteksi bahasa penumpang dan membalas dalam bahasa yang sama, jadi penumpang internasional dilayani secepat penumpang domestik, tanpa perlu membangun tim CS terpisah per bahasa."
+    },
+    {
+      "q": "Bisa kirim notifikasi proaktif soal perubahan jadwal?",
+      "a": "Bisa. Lewat broadcast di WhatsApp Business API resmi, kamu bisa mengabari segmen penumpang yang terdampak soal perubahan jadwal, informasi penerbangan, atau update refund. Penumpang tahu duluan dari kamu, dan volume chat masuk ikut turun."
+    },
+    {
+      "q": "Bagaimana integrasinya dengan sistem booking dan check-in yang sudah ada?",
+      "a": "Cekat.AI menyediakan integrasi API, jadi AI bisa terhubung ke sistem booking, check-in, atau CRM yang sudah kamu pakai. Penumpang bertanya di chat, AI mengambil jawabannya dari sistemmu, tanpa mengganti stack yang sudah berjalan."
+    },
+    {
+      "q": "Kapan percakapan dialihkan ke agen manusia?",
+      "a": "Sesuai aturan yang kamu tentukan, misalnya klaim kompensasi, laporan bagasi hilang, atau penumpang yang minta bicara dengan agen. Percakapan berpindah lengkap dengan riwayat chat-nya, jadi agen langsung menangani tanpa minta penumpang mengulang cerita."
+    },
+    {
+      "q": "Berapa lama setup untuk maskapai?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin kebijakan bagasi, aturan tarif, dan SOP ke knowledge base, dan AI langsung menjawab akurat. Integrasi API ke sistem internal dikerjakan bertahap bareng tim kami, jadi kamu bisa mulai tanpa menunggu semuanya siap sekaligus."
+    },
+    {
+      "q": "Apakah data penumpang aman?",
+      "a": "Cekat.AI patuh pada UU PDP, undang-undang pelindungan data pribadi Indonesia, dan sertifikasi ISO 27001 sedang berjalan. Akses tim diatur berbasis role, jadi data penumpang hanya terlihat oleh agen yang memang berwenang menanganinya."
+    },
+    {
+      "q": "Bagaimana model harganya untuk volume chat maskapai?",
+      "a": "Harga mengikuti skala kebutuhanmu, jumlah agen, channel, dan volume percakapan, bukan satu paket pukul rata. Jadwalkan konsultasi gratis dengan tim kami untuk menghitung paket yang pas dengan trafik penumpangmu."
+    }
+  ],
+  "cta": {
+    "heading": "Tetap Responsif di Setiap Disrupsi",
+    "body": "Lihat bagaimana maskapai menjalankan CS penumpang 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

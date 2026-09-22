@@ -1,0 +1,1799 @@
+{
+  "source": "https://cekat.ai (Framer)",
+  "extractedAt": "2026-07-13",
+  "note": "URL tanpa query param = resolusi asli. Font woff2 TIDAK diunduh (verifikasi lisensi dulu, lihat PRD).",
+  "images": [
+    {
+      "url": "https://framerusercontent.com/images/0DB8r3IPZ9SwgJmBRlGRhoChqw.png",
+      "file": "images/0DB8r3IPZ9SwgJmBRlGRhoChqw.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 892
+    },
+    {
+      "url": "https://framerusercontent.com/images/0TMZmWZBRNM8Tb7tM8zui9fVyAo.png",
+      "file": "images/0TMZmWZBRNM8Tb7tM8zui9fVyAo.png",
+      "pages": [
+        "marketing"
+      ],
+      "bytes": 71652
+    },
+    {
+      "url": "https://framerusercontent.com/images/1q5QASU3oPY50wiOvTlu1zQV1o.png",
+      "file": "images/1q5QASU3oPY50wiOvTlu1zQV1o.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 8448
+    },
+    {
+      "url": "https://framerusercontent.com/images/1vcczzjg1qD2YZDXtZ1fxfPGs.png",
+      "file": "images/1vcczzjg1qD2YZDXtZ1fxfPGs.png",
+      "pages": [
+        "order"
+      ],
+      "bytes": 34948
+    },
+    {
+      "url": "https://framerusercontent.com/images/2x03wdnFtqHGXg9lWd7LvMBOzo.png",
+      "file": "images/2x03wdnFtqHGXg9lWd7LvMBOzo.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 57870
+    },
+    {
+      "url": "https://framerusercontent.com/images/3Qe4nEMsIe8lIecvxWxlWR6L1o.png",
+      "file": "images/3Qe4nEMsIe8lIecvxWxlWR6L1o.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 368831
+    },
+    {
+      "url": "https://framerusercontent.com/images/4AiwLwaidSY7oV8Dm0TOQyE6oWE.png",
+      "file": "images/4AiwLwaidSY7oV8Dm0TOQyE6oWE.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 286916
+    },
+    {
+      "url": "https://framerusercontent.com/images/4R2uI4R5FwEDLNycpZ2e71roIg.jpg",
+      "file": "images/4R2uI4R5FwEDLNycpZ2e71roIg.jpg",
+      "pages": [
+        "chat",
+        "crm",
+        "marketing",
+        "order"
+      ],
+      "bytes": 228088
+    },
+    {
+      "url": "https://framerusercontent.com/images/4wzq3JEWRZnydCsb9cr8iQDrM9E.png",
+      "file": "images/4wzq3JEWRZnydCsb9cr8iQDrM9E.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 11104
+    },
+    {
+      "url": "https://framerusercontent.com/images/5d5WGhoFMfnt9GyziumHPX9nY.webp",
+      "file": "images/5d5WGhoFMfnt9GyziumHPX9nY.webp",
+      "pages": [
+        "home"
+      ],
+      "bytes": 5312
+    },
+    {
+      "url": "https://framerusercontent.com/images/6IVlYunVL7y13aFAYKJpa6xj4E.png",
+      "file": "images/6IVlYunVL7y13aFAYKJpa6xj4E.png",
+      "pages": [
+        "marketing"
+      ],
+      "bytes": 91462
+    },
+    {
+      "url": "https://framerusercontent.com/images/75FUYSybwZxtzwdlfK8KjwKLLpA.png",
+      "file": "images/75FUYSybwZxtzwdlfK8KjwKLLpA.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 3506
+    },
+    {
+      "url": "https://framerusercontent.com/images/9NP5F7YioOEoXj2e9k9bbUWK4A0.png",
+      "file": "images/9NP5F7YioOEoXj2e9k9bbUWK4A0.png",
+      "pages": [
+        "contact",
+        "home"
+      ],
+      "bytes": 877173
+    },
+    {
+      "url": "https://framerusercontent.com/images/BsVZHMLbdudEn98aIazpj1FAu3E.jpg",
+      "file": "images/BsVZHMLbdudEn98aIazpj1FAu3E.jpg",
+      "pages": [
+        "home"
+      ],
+      "bytes": 165465
+    },
+    {
+      "url": "https://framerusercontent.com/images/DBd7QtoKyHa2W2FnwQdY3op1OE.png",
+      "file": "images/DBd7QtoKyHa2W2FnwQdY3op1OE.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 20763
+    },
+    {
+      "url": "https://framerusercontent.com/images/DUmqwTQRIVuhj1sO9O80H8Q0s.png",
+      "file": "images/DUmqwTQRIVuhj1sO9O80H8Q0s.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 1113
+    },
+    {
+      "url": "https://framerusercontent.com/images/FcnmdvwXQc6UHhm1rlaZCfCRp14.webp",
+      "file": "images/FcnmdvwXQc6UHhm1rlaZCfCRp14.webp",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 8382
+    },
+    {
+      "url": "https://framerusercontent.com/images/H7hy1FyrbIdwyDX6z1Re7IaBuE.png",
+      "file": "images/H7hy1FyrbIdwyDX6z1Re7IaBuE.png",
+      "pages": [
+        "chat",
+        "crm"
+      ],
+      "bytes": 70594
+    },
+    {
+      "url": "https://framerusercontent.com/images/HQIVzXYZzSVnjCw8AzmpjkDziKc.webp",
+      "file": "images/HQIVzXYZzSVnjCw8AzmpjkDziKc.webp",
+      "pages": [
+        "home"
+      ],
+      "bytes": 64120
+    },
+    {
+      "url": "https://framerusercontent.com/images/I6Vgz4u8qgyVqm34vXasOGPAI2A.png",
+      "file": "images/I6Vgz4u8qgyVqm34vXasOGPAI2A.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 4633
+    },
+    {
+      "url": "https://framerusercontent.com/images/IpZVi62oagxrtztmd4SG5hTRCc.png",
+      "file": "images/IpZVi62oagxrtztmd4SG5hTRCc.png",
+      "pages": [
+        "chat"
+      ],
+      "bytes": 42771
+    },
+    {
+      "url": "https://framerusercontent.com/images/JbHRXHKHmw3iFtvpBvsM5AkxLIk.png",
+      "file": "images/JbHRXHKHmw3iFtvpBvsM5AkxLIk.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 41641
+    },
+    {
+      "url": "https://framerusercontent.com/images/JdWdWrnTMhtdfWxGAiMaCOJSks.jpg",
+      "file": "images/JdWdWrnTMhtdfWxGAiMaCOJSks.jpg",
+      "pages": [
+        "home"
+      ],
+      "bytes": 95905
+    },
+    {
+      "url": "https://framerusercontent.com/images/KnZmq3DGQN2lfnZQEbLawKKd1w.png",
+      "file": "images/KnZmq3DGQN2lfnZQEbLawKKd1w.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 113917
+    },
+    {
+      "url": "https://framerusercontent.com/images/MbiY0j2OlFXljAOft6U3uJZXlo.png",
+      "file": "images/MbiY0j2OlFXljAOft6U3uJZXlo.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 6396
+    },
+    {
+      "url": "https://framerusercontent.com/images/NEVhH6zqI6vxZ0xuUsUDqrUcACU.png",
+      "file": "images/NEVhH6zqI6vxZ0xuUsUDqrUcACU.png",
+      "pages": [
+        "marketing"
+      ],
+      "bytes": 78427
+    },
+    {
+      "url": "https://framerusercontent.com/images/NMxZ0cE5ajsvREuZRr3wrIteWo.png",
+      "file": "images/NMxZ0cE5ajsvREuZRr3wrIteWo.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 10317
+    },
+    {
+      "url": "https://framerusercontent.com/images/NpIgmXrJice5oWCWMrHYw3Q.jpg",
+      "file": "images/NpIgmXrJice5oWCWMrHYw3Q.jpg",
+      "pages": [
+        "home"
+      ],
+      "bytes": 188789
+    },
+    {
+      "url": "https://framerusercontent.com/images/OqD47IvEXobMqWnUTC8XrSHWSs.png",
+      "file": "images/OqD47IvEXobMqWnUTC8XrSHWSs.png",
+      "pages": [
+        "chat",
+        "crm"
+      ],
+      "bytes": 34038
+    },
+    {
+      "url": "https://framerusercontent.com/images/PoFgDOt2yX8U4DmFf0CzCRxs.svg",
+      "file": "images/PoFgDOt2yX8U4DmFf0CzCRxs.svg",
+      "pages": [
+        "home"
+      ],
+      "bytes": 2293
+    },
+    {
+      "url": "https://framerusercontent.com/images/Q9w5c4ECPk2gl3auUOkoYA82tis.jpg",
+      "file": "images/Q9w5c4ECPk2gl3auUOkoYA82tis.jpg",
+      "pages": [
+        "home"
+      ],
+      "bytes": 220029
+    },
+    {
+      "url": "https://framerusercontent.com/images/RH0ArCY98j1Jjq622AvrFqTME8c.png",
+      "file": "images/RH0ArCY98j1Jjq622AvrFqTME8c.png",
+      "pages": [
+        "chat",
+        "crm"
+      ],
+      "bytes": 96261
+    },
+    {
+      "url": "https://framerusercontent.com/images/Rq6TIJnRYLc22jk20SfbAB10.png",
+      "file": "images/Rq6TIJnRYLc22jk20SfbAB10.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 2310
+    },
+    {
+      "url": "https://framerusercontent.com/images/RzFtVwWcvbS8hEWDHwLMQ09oees.png",
+      "file": "images/RzFtVwWcvbS8hEWDHwLMQ09oees.png",
+      "pages": [
+        "chat"
+      ],
+      "bytes": 56057
+    },
+    {
+      "url": "https://framerusercontent.com/images/SZJy6TPRSNoQMYHaRkqIdcnfE.svg",
+      "file": "images/SZJy6TPRSNoQMYHaRkqIdcnfE.svg",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 2593
+    },
+    {
+      "url": "https://framerusercontent.com/images/TEwSzt2LFMlrGRhBd1tnzJfMK8.png",
+      "file": "images/TEwSzt2LFMlrGRhBd1tnzJfMK8.png",
+      "pages": [
+        "marketing"
+      ],
+      "bytes": 48586
+    },
+    {
+      "url": "https://framerusercontent.com/images/TdWixadEnJmZkpHiVRj948UZR0.png",
+      "file": "images/TdWixadEnJmZkpHiVRj948UZR0.png",
+      "pages": [
+        "order"
+      ],
+      "bytes": 45493
+    },
+    {
+      "url": "https://framerusercontent.com/images/Udv5r0Gga2jZqb9S5R0OuDfSv4.jpg",
+      "file": "images/Udv5r0Gga2jZqb9S5R0OuDfSv4.jpg",
+      "pages": [
+        "contact"
+      ],
+      "bytes": 566092
+    },
+    {
+      "url": "https://framerusercontent.com/images/W618dtarUPSKmORq3OHLgRQI.png",
+      "file": "images/W618dtarUPSKmORq3OHLgRQI.png",
+      "pages": [
+        "chat"
+      ],
+      "bytes": 51981
+    },
+    {
+      "url": "https://framerusercontent.com/images/WCWYwtyMiGVhcQ69dAQWidQgjrc.png",
+      "file": "images/WCWYwtyMiGVhcQ69dAQWidQgjrc.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 1145
+    },
+    {
+      "url": "https://framerusercontent.com/images/WihQlaXPh6heaEK9c635GuAToM.png",
+      "file": "images/WihQlaXPh6heaEK9c635GuAToM.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 43925
+    },
+    {
+      "url": "https://framerusercontent.com/images/X2bTlDKT7b3HS61y1WAeDhUNbo.png",
+      "file": "images/X2bTlDKT7b3HS61y1WAeDhUNbo.png",
+      "pages": [
+        "order"
+      ],
+      "bytes": 56905
+    },
+    {
+      "url": "https://framerusercontent.com/images/XBOrBVJBhKPWFWYFR9eYmbIz8M.png",
+      "file": "images/XBOrBVJBhKPWFWYFR9eYmbIz8M.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 39925
+    },
+    {
+      "url": "https://framerusercontent.com/images/XvX6ip6loaUdZynIRPAM7nFQ.png",
+      "file": "images/XvX6ip6loaUdZynIRPAM7nFQ.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 355307
+    },
+    {
+      "url": "https://framerusercontent.com/images/YBL0iZeG4dTzndd9Zo2otZhe4lc.jpg",
+      "file": "images/YBL0iZeG4dTzndd9Zo2otZhe4lc.jpg",
+      "pages": [
+        "chat"
+      ],
+      "bytes": 90890
+    },
+    {
+      "url": "https://framerusercontent.com/images/aBlpXEWvHxmMvzH2f2jheHAJkQ0.png",
+      "file": "images/aBlpXEWvHxmMvzH2f2jheHAJkQ0.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 82625
+    },
+    {
+      "url": "https://framerusercontent.com/images/bOaslXy1VJSsJW4em6qgkGN5Q.svg",
+      "file": "images/bOaslXy1VJSsJW4em6qgkGN5Q.svg",
+      "pages": [
+        "home"
+      ],
+      "bytes": 1697
+    },
+    {
+      "url": "https://framerusercontent.com/images/brKf3vjMRNPGWWZQ9XLhxMaO4.svg",
+      "file": "images/brKf3vjMRNPGWWZQ9XLhxMaO4.svg",
+      "pages": [
+        "home"
+      ],
+      "bytes": 7548
+    },
+    {
+      "url": "https://framerusercontent.com/images/c56Pk2JotT1oH9omGPJCL97Yw.png",
+      "file": "images/c56Pk2JotT1oH9omGPJCL97Yw.png",
+      "pages": [
+        "order"
+      ],
+      "bytes": 62007
+    },
+    {
+      "url": "https://framerusercontent.com/images/dW8fAA1LXlpePNMEajqg9e8vE.png",
+      "file": "images/dW8fAA1LXlpePNMEajqg9e8vE.png",
+      "pages": [
+        "marketing"
+      ],
+      "bytes": 51826
+    },
+    {
+      "url": "https://framerusercontent.com/images/e6x4ZdiMqfuIWecCd4OCse8hsu4.png",
+      "file": "images/e6x4ZdiMqfuIWecCd4OCse8hsu4.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 48750
+    },
+    {
+      "url": "https://framerusercontent.com/images/ebpScM1qkz06Gr7flbN4guQ87Q8.png",
+      "file": "images/ebpScM1qkz06Gr7flbN4guQ87Q8.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 810
+    },
+    {
+      "url": "https://framerusercontent.com/images/gnzJyLJncRihk4ip17OL2Ez1I58.png",
+      "file": "images/gnzJyLJncRihk4ip17OL2Ez1I58.png",
+      "pages": [
+        "order"
+      ],
+      "bytes": 94380
+    },
+    {
+      "url": "https://framerusercontent.com/images/h2rjMFraA2ocTRZS99IuPgg.svg",
+      "file": "images/h2rjMFraA2ocTRZS99IuPgg.svg",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 3064
+    },
+    {
+      "url": "https://framerusercontent.com/images/hNRoQFE2ze6luBc2fbLss9TRBC0.png",
+      "file": "images/hNRoQFE2ze6luBc2fbLss9TRBC0.png",
+      "pages": [
+        "chat"
+      ],
+      "bytes": 42329
+    },
+    {
+      "url": "https://framerusercontent.com/images/jkqHSw6UMNBGlMF4ow7uipIkpoA.png",
+      "file": "images/jkqHSw6UMNBGlMF4ow7uipIkpoA.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 4381
+    },
+    {
+      "url": "https://framerusercontent.com/images/kdRodh5WvbdW9fSV3i8woCupiI.png",
+      "file": "images/kdRodh5WvbdW9fSV3i8woCupiI.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 20948
+    },
+    {
+      "url": "https://framerusercontent.com/images/l2tGQEvvKIRFybuLPGnazTTcxho.png",
+      "file": "images/l2tGQEvvKIRFybuLPGnazTTcxho.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 7897
+    },
+    {
+      "url": "https://framerusercontent.com/images/l5RuiMA7vzM54GbxBHe1qJbjtKo.jpg",
+      "file": "images/l5RuiMA7vzM54GbxBHe1qJbjtKo.jpg",
+      "pages": [
+        "chat",
+        "crm",
+        "marketing",
+        "order"
+      ],
+      "bytes": 490191
+    },
+    {
+      "url": "https://framerusercontent.com/images/lSIdMLGQ5Y5Q7KEQIr1DFAX58A.jpg",
+      "file": "images/lSIdMLGQ5Y5Q7KEQIr1DFAX58A.jpg",
+      "pages": [
+        "crm",
+        "home"
+      ],
+      "bytes": 62659
+    },
+    {
+      "url": "https://framerusercontent.com/images/lk7uPGoimFO1ILCrew8ykXthnPU.png",
+      "file": "images/lk7uPGoimFO1ILCrew8ykXthnPU.png",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 1364
+    },
+    {
+      "url": "https://framerusercontent.com/images/lo508BPiyRgnvdYc4yGfbulwsg.png",
+      "file": "images/lo508BPiyRgnvdYc4yGfbulwsg.png",
+      "pages": [
+        "home"
+      ],
+      "bytes": 54173
+    },
+    {
+      "url": "https://framerusercontent.com/images/nVOE15tar3bXye35kqi31Mm43lE.png",
+      "file": "images/nVOE15tar3bXye35kqi31Mm43lE.png",
+      "pages": [
+        "chat"
+      ],
+      "bytes": 37375
+    },
+    {
+      "url": "https://framerusercontent.com/images/nehdrZkQwM6cRLlNkkcKZoaGI.png",
+      "file": "images/nehdrZkQwM6cRLlNkkcKZoaGI.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 5358
+    },
+    {
+      "url": "https://framerusercontent.com/images/oHDxKwtjrKzcRIzORsyOeSro.png",
+      "file": "images/oHDxKwtjrKzcRIzORsyOeSro.png",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 1984
+    },
+    {
+      "url": "https://framerusercontent.com/images/pksOQwrYRO7iCWl5dUNT78FDI.png",
+      "file": "images/pksOQwrYRO7iCWl5dUNT78FDI.png",
+      "pages": [
+        "order"
+      ],
+      "bytes": 38384
+    },
+    {
+      "url": "https://framerusercontent.com/images/twuwxIt6ioaEBbGJE4y1uqRaqw.png",
+      "file": "images/twuwxIt6ioaEBbGJE4y1uqRaqw.png",
+      "pages": [
+        "chat",
+        "crm",
+        "home",
+        "marketing",
+        "order"
+      ],
+      "bytes": 1665
+    },
+    {
+      "url": "https://framerusercontent.com/images/uDqQdyO7atcNTuVxhHKiRUgGhK4.jpg",
+      "file": "images/uDqQdyO7atcNTuVxhHKiRUgGhK4.jpg",
+      "pages": [
+        "home"
+      ],
+      "bytes": 158393
+    },
+    {
+      "url": "https://framerusercontent.com/images/xMUhHrT00SkDexZfb6QM1ctQo8Q.png",
+      "file": "images/xMUhHrT00SkDexZfb6QM1ctQo8Q.png",
+      "pages": [
+        "chat",
+        "crm"
+      ],
+      "bytes": 37019
+    },
+    {
+      "url": "https://framerusercontent.com/images/y1hFU5czcfLZpg5NDab5EDVEIWg.png",
+      "file": "images/y1hFU5czcfLZpg5NDab5EDVEIWg.png",
+      "pages": [
+        "demo"
+      ],
+      "bytes": 518348
+    }
+  ],
+  "fonts": [
+    {
+      "url": "https://framerusercontent.com/assets/05KsVHGDmqXSBXM4yRZ65P8i0s.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/0E7IMbDzcGABpBwwqNEt60wU0w.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/0iDmxkizU9goZoclqIqsV5rvETU.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/3ZmXbBKToJifDV9gwcifVd1tEY.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/3exmuO07FP19gMM08TQrpXl3BGQ.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/5A3Ce6C9YYmCjpQx9M4inSaKU.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/5HcVoGak8k5agFJSaKa4floXVu0.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/6FI2EneKzM3qBy5foOZXey7coCA.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/6mJuEAguuIuMog10gGvH5d3cl8.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/867QObYax8ANsfX4TGEVU9YiCM.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/A0Wcc7NgXMjUuFdquHDrIZpzZw0.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/Bo5CNzBv77CafbxOtKIkpw9egw.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/DOfvtmE1UplCq161m6Hj8CSQYg.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/DXD0Q7LSl7HEvDzucnyLnGBHM.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/DolVirEGb34pEXEp8t8FQBSK4.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/F3kdpd2N0cToWV5huaZjjgM.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/FNfhX3dt4ChuLJq2PwdlxHO7PU.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/HJY4SY2JywrSZ2l1AEW9Tm9cO8.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/Ii21jnSJkulBKsHHXKlapi7fv9w.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/JEXmejW8mXOYMtt0hyRg811kHac.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/NHHeAKJVP0ZWHk5YZnQQChIsBM.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/NTJ0nQgIF0gcDelS14zQ9NR9Q.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/NeGmSOXrPBfEFIy5YZeHq17LEDA.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/P2Bw01CtL0b9wqygO0sSVogWbo.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/QrcNhgEPfRl0LS8qz5Ln8olanl8.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/Qx95Xyt0Ka3SGhinnbXIGpEIyP4.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/QxmhnWTzLtyjIiZcfaLIJ8EFBXU.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/V3j1L0o5vPFKe26Sw4HcpXCfHo.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/X5hj6qzcHUYv7h1390c8Rhm6550.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/b8ezwLrN7h2AUoPEENcsTMVJ0.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/cRJyLNuTJR5jbyKzGi33wU9cqIQ.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/cugnVhSraaRyANCaUtI5FV17wk.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/ePuN3mCjzajIHnyCdvKBFiZkyY0.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/efTfQcBJ53kM2pB1hezSZ3RDUFs.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/fuyXZpVvOjq8NesCOfgirHCWyg.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/gQhNpS3tN86g8RcVKYUUaKt2oMQ.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/gcnfba68tfm7qAyrWRCf9r34jg.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/hG3wmGmFwadB6X5XPVXkMlmLr8o.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/hyOgCu0Xnghbimh0pE8QTvtt2AU.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/iwWTDc49ENF2tCHbqlNARXw6Ug.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/khkJkwSL66WFg8SX6Wa726c.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/ky8ovPukK4dJ1Pxq74qGhOqCYI.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/lEJLP4R0yuCaMCjSXYHtJw72M.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/mkY5Sgyq51ik0AMrSBwhm9DJg.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/mvNEIBLyHbscgHtwfsByjXUz3XY.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/oYaAX5himiTPYuN8vLWnqBbfD2s.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/otTaNuNpVK4RbdlT7zDDdKvQBA.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/pKRFNWFoZl77qYCAIp84lN1h944.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/r0mv3NegmA0akcQsNFotG32Las.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/rZ5DdENNqIdFTIyQQiP5isO7M.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/sh6WdegxUPLwf6maNVTPdFTJOG8.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/syRNPWzAMIrcJ3wIlPIP43KjQs.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/uy9s0iWuxiNnVt8EpTI3gzohpwo.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/vFzuJY0c65av44uhEKB6vyjFMg.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/vvNSqIj42qeQ2bvCRBIWKHscrc.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/vxBnBhH8768IFAXAb4Qf6wQHKs.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/xYYWaj7wCU5zSQH0eXvSaS19wo.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/assets/zSsEuoJdh8mcFVk976C05ZfQr8.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/3RZHWSNONLLWJK3RLPEKUZOMM56GO4LJ/BPDRY7AHVI3MCDXXVXTQQ76H3UXA63S3/SB2OEB6IKZPRR6JT4GFJ2TFT6HBB6AZN.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/4BEU2H62BE4J563L6WLMVQKHOL2QMEWK/KH4J4NPLOSGQTTA3TD7LQA62CQTZ5NMO/J6GZW3TVVNILH7PYSPMC3JPNPGFXNPSF.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/6U2SGH566NSNERG6RGEV3DSNEK7DL2RF/JRDYRKMSAW2H35IWEQIPL67HAJQ35MG5/JNU3GNMUBPWW6V6JTED3S27XL5HN7NM5.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/BNWG6MUI4RTC6WEND2VPDH4MHMIVU3XZ/R5YXY5FMVG6PXU36GNEEA24MIPMEPGSM/CIM4KQCLZSMMLWPVH25IDDSTY4ENPHEY.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/IZAMKIKJNFHYAA4XTXOGUSQUJWNXQHPE/2S5HU7TKNAV6MHTRNU2NPZD7U4OT6VKE/HCZ5OQRTYQOAVSHRS6UOFWUZ5CGI6JRO.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/KWXO5X3YW4X7OLUMPO4X24HQJGJU7E2Q/VOWUQZS3YLP66ZHPTXAFSH6YACY4WJHT/NIQ54PVBBIWVK3PFSOIOUJSXIJ5WTNDP.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/MFQT7HFGCR2L5ULQTW6YXYZXXHMPKLJ3/YWQ244D6TACUX5JBKATPOW5I5MGJ3G73/7YY3ZAAE3TRV2LANYOLXNHTPHLXVWTKH.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/NGBUP45ES3F7RD5XGKPEDJ6QEPO4TMOK/EXDVWJ2EDDVVV65UENMX33EDDYBX6OF7/6P4FPMFQH7CCC7RZ4UU4NKSGJ2RLF7V5.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/ST6AL2GVQRSWVDOXZNSHY2SMWYYSVFEK/WJ26NN5JS6IPLBXEKX7WHB7HACXDTAKH/H7W54QQR2V6KL5KMDA2PD2KSQRCZHPRE.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/XUKZCD4YXMROH2RFN7AVQI3ZBPZDZBBJ/TICF42Y6EVCHCW6VT7HP2KTG7LYEAL6Y/QJ44H4IY5JEWLICE2IBFYKPCK7EJANPW.woff2",
+      "pages": [
+        "chat",
+        "contact",
+        "crm",
+        "demo",
+        "home",
+        "marketing",
+        "order"
+      ]
+    }
+  ]
+}

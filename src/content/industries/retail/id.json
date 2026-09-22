@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "CS Otomatis Toko Online, Bales Chat & Closing 24/7 | CekatAI",
+    "description": "CS toko online otomatis 24/7 Cekat.ai: tangani FAQ produk, proses pesanan, cek ongkir, & kirim pengingat pembayaran otomatis. Coba gratis!"
+  },
+  "hero": {
+    "badge": "Ritel & E-Commerce",
+    "title": "Jawab Setiap Pembeli Sebelum Mereka Belanja di Tempat Lain",
+    "subtitle": "Dari \"ready stok?\" sampai order dibayar, Cekat.AI bales instan di WhatsApp, Instagram, dan web chat, cek ongkir, dan closing pakai QR pembayaran, 24/7",
+    "useCases": [
+      "Tanya produk",
+      "Cek ongkir sampai lunas",
+      "Kejar checkout tertinggal",
+      "Broadcast promo tersegmen"
+    ]
+  },
+  "definition": "Cekat.AI untuk ritel & e-commerce adalah platform AI customer service untuk toko online dan brand ritel di Indonesia, menjawab pertanyaan produk secara instan, memproses order langsung di chat lengkap dengan ongkir dan QR pembayaran, serta mengejar checkout yang ditinggal lewat follow-up otomatis.",
+  "stats": [
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "pertanyaan pembeli terjawab, order terproses"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Pertanyaan Produk Dijawab Saat Pembeli Masih Mikir",
+      "body": "Pembeli yang nunggu balesan itu pembeli yang lagi buka toko sebelah. Cekat.AI menjawab pertanyaan stok, varian, harga, dan pengiriman detik itu juga, dengan bahasa natural dan paham maksud, bukan sekadar cocokin keyword, jadi pembeli dapat kepastian tepat di momen mereka siap belanja.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab pertanyaan produk di inbox Cekat.AI"
+    },
+    {
+      "title": "Dari \"Berapa Ongkirnya?\" Sampai Lunas, Tanpa Keluar Chat",
+      "body": "AI agent Cekat.AI cek ongkir, konfirmasi alamat, bikin order lengkap dengan data customer, lalu kirim QR pembayaran, semuanya di percakapan yang sama. Tanpa link checkout yang setengah pembelimu tidak pernah selesaikan, tanpa admin salin-tempel order ke spreadsheet.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Order dibuat dan dibayar langsung di dalam chat lewat Cekat.AI"
+    },
+    {
+      "title": "Kejar Balik Checkout yang Ditinggal Pembeli",
+      "body": "Kebanyakan checkout yang ditinggal bukan penjualan yang hilang, cuma belum selesai. Cekat.AI follow-up otomatis saat pembayaran masih pending, promo mau habis, atau waktunya beli lagi, tiap nudge dipicu perilaku customer beneran, bukan daftar reminder yang dikerjakan manual.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Alur follow-up otomatis untuk pembayaran pending di Cekat.AI"
+    },
+    {
+      "title": "Broadcast Promo ke Pembeli yang Paling Mungkin Beli",
+      "body": "Campaign terkirim lewat WhatsApp Business API resmi ke segmen dari data nyata, pelanggan setia, customer yang lama diam, leads yang klik tapi belum bayar, dengan nama dan konteks dari CRM. Promo yang relevan dibuka dan dibales; yang generik di-skip.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi customer berdasarkan perilaku belanja di Cekat.AI"
+    },
+    {
+      "title": "Tahu Posisi Tiap Pembeli, Visitor, Lead, atau Langganan",
+      "body": "Setiap chat, pembelian, dan campaign otomatis memperbarui kartu CRM customer, tanpa input manual. Customer Stages melacak tiap kontak dari Visitor ke Lead ke Buyer lengkap dengan saran langkah berikutnya, jadi tim kamu selalu tahu siapa yang masih lihat-lihat, siapa yang hampir beli, dan siapa yang waktunya di-follow-up repeat order.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Tahapan customer journey terlacak di CRM Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Meta Business Partner Resmi",
+      "body": "Chat dan campaign broadcast berjalan di WhatsApp Business API resmi, compliant, andal, dan aman untuk nomor yang jadi andalan tokomu."
+    },
+    {
+      "title": "Satu Platform dari Chat Pertama Sampai Repeat Order",
+      "body": "Inbox, CRM, broadcast, dan otomatisasi order dalam satu dashboard, tanpa ekspor-impor kontak antara aplikasi chat, spreadsheet, dan tool blast."
+    },
+    {
+      "title": "AI yang Closing, Bukan Cuma Bales Chat",
+      "body": "AI agent cek ongkir, bikin order, dan kirim QR pembayaran di percakapan, dan dialihkan ke timmu lengkap dengan konteks kalau memang perlu."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu CS otomatis untuk toko online?",
+      "a": "CS otomatis adalah sistem yang membalas chat tokomu secara otomatis. Cekat.AI menjawab pertanyaan produk, stok, harga, dan pengiriman secara instan di WhatsApp, Instagram, dan web chat, 24/7 dengan bahasa natural, dan bisa memproses order langsung di percakapan, dari cek ongkir sampai QR pembayaran."
+    },
+    {
+      "q": "AI-nya beneran bisa proses order di chat?",
+      "a": "Bisa. Cekat.AI otomatis membuat order dari percakapan, lengkap dengan ongkir, pembayaran, dan data customer. AI agent bisa cek ongkir lewat integrasi API dan mengirim QR pembayaran, pembeli jalan dari tanya-tanya sampai order lunas tanpa keluar dari chat."
+    },
+    {
+      "q": "Gimana cara kerja follow-up checkout yang ditinggal?",
+      "a": "Cekat.AI mengirim reminder otomatis sesuai perilaku tiap customer, pembayaran masih pending, promo mau berakhir, waktunya restock. Nudge follow-up terkirim lewat WhatsApp API resmi di momen yang pas, jadi checkout yang menggantung berubah jadi order selesai tanpa timmu ngejar satu-satu."
+    },
+    {
+      "q": "Channel apa saja yang bisa dihubungkan?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, live chat website, dan channel API, semua masuk ke satu inbox terpadu. Tiap pembeli punya satu riwayat percakapan, jadi tidak ada order atau pertanyaan yang jatuh di antara channel."
+    },
+    {
+      "q": "Bisa kirim broadcast promo ke pelanggan?",
+      "a": "Bisa. Campaign broadcast terkirim lewat WhatsApp Business API resmi ke segmen berdasarkan aktivitas, riwayat pembelian, atau event, pembeli baru, pelanggan setia, leads yang ghosting. Pesan menarik nama dan konteks dari CRM, dan hasilnya terlacak sampai reply dan revenue."
+    },
+    {
+      "q": "Gimana AI-nya belajar katalog produkku?",
+      "a": "Tinggal salin info produk, harga, dan SOP tokomu ke knowledge base, tanpa coding. Bikin AI agent cuma butuh sekitar lima menit, semudah briefing admin CS baru; setelah itu dia menjawab dari katalogmu yang sebenarnya, bukan nebak-nebak."
+    },
+    {
+      "q": "Kalau lagi flash sale dan chat membludak gimana?",
+      "a": "AI membalas setiap chat yang masuk secara instan berapa pun jumlahnya, jadi kecepatan respon tidak drop saat volume melonjak. Pertanyaan yang rumit dialihkan ke timmu lengkap dengan riwayat percakapan, dan AI working hours menjaga toko tetap dilayani setelah admin offline."
+    },
+    {
+      "q": "Customer bakal sadar lagi chat sama AI?",
+      "a": "AI agent Cekat.AI humanlike, paham maksud dan konteks, bukan sekadar mencocokkan keyword, membalas dengan bahasa natural, dan bisa multi-bahasa. Saat percakapan butuh manusia, otomatis dialihkan ke timmu beserta seluruh riwayat chat, jadi customer tidak perlu mengulang cerita."
+    },
+    {
+      "q": "Bisa lihat campaign mana yang benar-benar menghasilkan?",
+      "a": "Bisa. Dashboard analitik menampilkan ad spend, ROAS, biaya, revenue, dan progres customer di satu tempat, plus integrasi CAPI dengan Meta dan TikTok yang mengirim sinyal lebih akurat ke iklanmu. Budget jalan ke campaign yang terbukti konversi, bukan yang cuma terkirim."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Chat Tanya-Tanya Jadi Order Lunas",
+    "body": "Lihat bagaimana toko online jualan dan melayani 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

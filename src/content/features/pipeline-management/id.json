@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Software Manajemen Pipeline Sales | CekatAI",
+    "description": "Lihat setiap deal bergerak di pipeline visual secara real-time. Cekat.AI menggeser deal dan trigger follow-up otomatis biar tidak ada yang mandek."
+  },
+  "hero": {
+    "badge": "Sales Pipeline",
+    "title": "Setiap Deal Kelihatan, Setiap Tahap Terus Bergerak",
+    "subtitle": "Lacak deal di pipeline visual sesuai prosesmu, dengan otomatisasi yang menggeser tahapan dan trigger follow-up, jadi tidak ada peluang yang cuma nyangkut di kepala seseorang"
+  },
+  "definition": "Manajemen pipeline di Cekat.AI adalah sistem visual untuk melacak deal penjualan antar tahapan yang bisa disesuaikan, di mana otomatisasi menggeser deal dan trigger follow-up secara otomatis, memberi tim visibilitas real-time posisi setiap peluang.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "deal terlacak otomatis" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Lihat Posisi Nyata Setiap Deal",
+      "body": "Deal yang tersembunyi di thread chat dan spreadsheet adalah deal yang hilang. Cekat.AI menaruh setiap peluang di pipeline visual, jadi sekali lihat kamu tahu deal mana yang dekat closing, mana yang mandek, dan di mana revenue sebenarnya, real-time.",
+      "image": "/images/crm/manage-work-with-boards.png",
+      "imageAlt": "Pipeline sales visual di Cekat.AI"
+    },
+    {
+      "title": "Bikin Board Sesuai Prosesmu",
+      "body": "Setiap bisnis jualan dengan cara berbeda. Bikin board dan tahapan pipeline yang sesuai cara tim kamu bekerja, dari kontak pertama sampai deal closing, jadi pipeline mencerminkan kenyataan, bukan memaksa prosesmu masuk template kaku.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Board pipeline custom di Cekat.AI"
+    },
+    {
+      "title": "Deal Bergerak Sendiri",
+      "body": "Otomatisasi menggeser deal antar tahapan, assign ke orang yang tepat, dan trigger follow-up saat kondisi terpenuhi. Alih-alih ngejar update status, tim kamu melihat pipeline tetap terkini dengan sendirinya.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Perpindahan tahapan pipeline otomatis di Cekat.AI"
+    },
+    {
+      "title": "Filter dan Fokus ke yang Closing",
+      "body": "Filter dan cari deal berdasarkan tahap, nilai, sumber, atau aktivitas untuk fokuskan energi ke peluang yang paling mungkin konversi, bukan yang sudah mulai dingin.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Filter deal di pipeline Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Visibilitas Real-Time",
+      "body": "Manajer tahu persis posisi revenue tanpa minta update, pipeline selalu terkini karena ter-update dari aktivitas nyata."
+    },
+    {
+      "title": "Otomatisasi Bawaan",
+      "body": "Perpindahan tahap, assign, dan follow-up jalan otomatis, jadi deal tidak pernah mandek nunggu orang buat ingat."
+    },
+    {
+      "title": "Diisi dari Percakapan",
+      "body": "Leads yang ditangkap di chat langsung mengalir ke pipeline, jadi tidak ada yang hilang antara percakapan dan proses sales-mu."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu manajemen pipeline sales?",
+      "a": "Manajemen pipeline sales adalah proses melacak deal melalui tahapan yang jelas dari kontak pertama sampai closing. Di Cekat.AI, deal ada di pipeline visual dengan otomatisasi yang menggeser tahapan dan trigger follow-up, memberi visibilitas real-time setiap peluang."
+    },
+    {
+      "q": "Bisa custom tahapan pipeline-nya?",
+      "a": "Bisa. Bikin board dan tahapan pipeline yang sesuai cara tim kamu jualan, jadi pipeline mencerminkan proses nyatamu bukan template baku. Setiap board mewakili satu workflow yang kamu tentukan sendiri."
+    },
+    {
+      "q": "Bagaimana otomatisasi membantu pipeline saya?",
+      "a": "Otomatisasi menggeser deal antar tahapan, assign ke anggota tim yang tepat, dan mengirim reminder follow-up saat kondisi terpenuhi. Pipeline tetap terkini sendiri, jadi deal tidak mandek nunggu update manual."
+    },
+    {
+      "q": "Bisa lihat posisi revenue secara real-time?",
+      "a": "Bisa. Karena pipeline ter-update dari aktivitas nyata, manajer melihat deal mana yang dekat closing, mana yang mandek, dan total nilai pipeline sekali lihat, tanpa ngejar laporan status dari tim."
+    },
+    {
+      "q": "Bagaimana leads masuk ke pipeline?",
+      "a": "Leads dari WhatsApp, Instagram, live chat website, dan channel lain langsung mengalir ke pipeline lewat CRM yang terhubung, jadi tidak ada peluang yang hilang antara percakapan dan proses sales-mu."
+    },
+    {
+      "q": "Bisa filter deal untuk fokus ke prioritas?",
+      "a": "Bisa. Filter dan cari deal berdasarkan tahap, nilai, sumber, atau aktivitas untuk fokus ke peluang yang paling mungkin konversi, bukan memperlakukan semua deal sama."
+    },
+    {
+      "q": "Apakah manajemen pipeline nyambung dengan fitur Cekat.AI lain?",
+      "a": "Ya. Ia bagian dari CRM, jadi deal terhubung ke profil customer lengkap, leads yang ditangkap AI, dan follow-up otomatis, satu platform dari pesan pertama sampai deal closing."
+    },
+    {
+      "q": "Perlu skill teknis untuk setup?",
+      "a": "Tidak. Board dan tahapan diatur tanpa coding, dan otomatisasi diatur dengan aturan sederhana. Kebanyakan tim sudah punya pipeline yang rapi di hari pertama."
+    },
+    {
+      "q": "Bisa beberapa tim pakai pipeline terpisah?",
+      "a": "Bisa. Bikin beberapa board untuk tim, produk, atau proses berbeda, dengan akses berbasis peran jadi tiap tim fokus ke deal yang relevan buat mereka."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Daftar Deal yang Berantakan Jadi Pipeline yang Bergerak",
+    "body": "Lihat bagaimana pipeline visual dan otomatisasi menjaga setiap deal terus maju, tanpa ngejar update status."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Customer Support SaaS Otomatis dengan AI 24/7 | CekatAI",
+    "description": "Tim SaaS pakai Cekat.AI buat jawab pertanyaan produk dari docs 24/7, kawal user trial, dan ubah bug jadi tiket rapi. Tim kecil, coverage penuh."
+  },
+  "hero": {
+    "badge": "SaaS",
+    "title": "Support yang Hafal Produkmu, Tanpa Nambah Tim CS",
+    "subtitle": "Dari pertanyaan fitur, kendala login, sampai laporan bug, Cekat.AI menjawab dari dokumentasi produkmu di web chat dan WhatsApp, 24/7, jadi tim CS kecilmu berhenti tenggelam di tiket yang itu-itu lagi",
+    "useCases": [
+      "Jawaban dari docs",
+      "Onboarding trial",
+      "Tiket laporan bug",
+      "Analitik pertanyaan user"
+    ]
+  },
+  "definition": "Cekat.AI untuk SaaS adalah platform AI customer service untuk perusahaan SaaS di Indonesia, menjalankan customer support SaaS 24/7 dengan menjawab pertanyaan produk langsung dari dokumentasi, mengawal user trial sampai aktif, dan mengubah laporan bug jadi tiket yang rapi dalam satu platform.",
+  "stats": [
+    {
+      "value": "+30%",
+      "label": "kenaikan jumlah pelanggan di Lintas Jaringan Nusantara"
+    },
+    {
+      "value": "+8%",
+      "label": "kenaikan lead terkualifikasi di Multi Flashindo Karisma dalam 4 bulan"
+    },
+    {
+      "value": "24/7",
+      "label": "pertanyaan produk, onboarding, dan tiket terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Docs yang Nggak Pernah Dibaca, Sekarang Kejawab di Chat",
+      "body": "User jarang buka dokumentasi, mereka langsung chat. Cekat.AI dilatih dari docs, FAQ, dan knowledge base produkmu, lalu menjawab pertanyaan fitur, harga, dan cara pakai dengan bahasa natural dalam hitungan detik. Update docs sekali, jawaban AI ikut terbarui, nggak ada lagi tiga admin kasih tiga jawaban yang beda.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base produk menjadi sumber jawaban AI di Cekat.AI"
+    },
+    {
+      "title": "User Trial Dikawal Sampai Aktif, Bukan Dibiarkan Menghilang",
+      "body": "Kebanyakan user trial berhenti sebelum sempat merasakan value produkmu. Cekat.AI menyapa user baru, menjawab pertanyaan setup di momen mereka stuck, dan mengirim follow-up otomatis lewat WhatsApp berdasarkan perjalanan masing-masing user, jadi lebih banyak trial yang sampai ke aha moment, bukan menghilang diam-diam di hari kedua.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Perjalanan user trial terpantau di CRM Cekat.AI"
+    },
+    {
+      "title": "Laporan Bug Langsung Jadi Tiket untuk Tim Engineering",
+      "body": "Bug yang dilaporkan lewat chat sering hilang sebelum sampai ke engineer. Cekat.AI mengubah laporan bug jadi tiket otomatis, lengkap dengan kronologi dari user, lalu meneruskannya ke tim yang tepat. Engineering dapat konteks yang utuh tanpa ikut piket bales chat, dan user bisa nanya update-nya kapan saja.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Laporan bug otomatis menjadi tiket di Cekat.AI"
+    },
+    {
+      "title": "Kasus Kompleks Dioper ke Timmu, Lengkap dengan Konteks",
+      "body": "AI menangani pertanyaan yang berulang, timmu menangani yang butuh manusia. Saat ada kasus billing yang sensitif atau permintaan enterprise, percakapan dioper ke agent manusia lengkap dengan seluruh riwayatnya, user nggak perlu mengulang cerita, dan engineer cuma dipanggil saat memang dibutuhkan.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Eskalasi percakapan dari AI ke agent manusia di Cekat.AI"
+    },
+    {
+      "title": "Tahu Apa yang Ditanya User, dan Seberapa Puas Mereka",
+      "body": "Setiap percakapan jadi data. Kamu bisa lihat topik yang paling sering ditanya, di mana user sering stuck, dan skor CSAT dari tiap interaksi, jadi keputusan roadmap dan perbaikan onboarding berangkat dari percakapan user sungguhan, bukan tebakan di meeting.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Analitik percakapan dan kepuasan pelanggan di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Web chat di aplikasimu, WhatsApp Business API resmi, Instagram DM, dan Facebook Messenger masuk ke satu inbox, satu riwayat per user, compliant dan andal."
+    },
+    {
+      "title": "AI yang Ngerti Produkmu",
+      "body": "Dilatih dari dokumentasi dan knowledge base-mu, AI menjawab pertanyaan produk dengan akurat, lalu mengoper kasus kompleks ke timmu lengkap dengan konteks."
+    },
+    {
+      "title": "Dipercaya 3.000+ Bisnis",
+      "body": "Dari startup sampai grup besar di Indonesia, Cekat.AI menangani percakapan pelanggan setiap hari, teruji di volume chat yang nyata."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu perusahaan SaaS?",
+      "a": "Cekat.AI menjawab pertanyaan produk secara instan 24/7 di web chat, WhatsApp, dan media sosial, mengawal user trial sampai aktif, dan mengubah laporan bug jadi tiket yang rapi. Tim CS kecilmu fokus ke kasus yang butuh manusia, dan engineer nggak perlu ikut piket bales chat."
+    },
+    {
+      "q": "Bagaimana AI-nya belajar tentang produk kami?",
+      "a": "Salin dokumentasi, FAQ, changelog, dan SOP-mu ke knowledge base, dan AI langsung menjawab berdasarkan materi itu. Saat produk berubah, cukup update knowledge base-nya sekali, jawaban AI ikut terbarui, tanpa proyek retraining yang ribet atau nunggu tim engineering."
+    },
+    {
+      "q": "Bisa bantu onboarding user trial?",
+      "a": "Bisa. AI menyapa user baru, menjawab pertanyaan setup di momen mereka stuck, dan mengirim follow-up otomatis lewat WhatsApp berdasarkan perilaku masing-masing user. Tujuannya satu, lebih banyak user trial yang merasakan value produkmu sebelum masa trialnya habis."
+    },
+    {
+      "q": "Bagaimana laporan bug ditangani?",
+      "a": "Laporan bug dari chat diubah jadi tiket otomatis, lengkap dengan kronologi dan data user, lalu diteruskan ke tim yang tepat. Statusnya bisa dipantau dalam satu tampilan, jadi nggak ada bug yang hilang di inbox dan user bisa dapat kabar begitu masalahnya beres."
+    },
+    {
+      "q": "Kapan percakapan dioper dari AI ke tim kami?",
+      "a": "Sesuai aturan yang kamu tentukan, misalnya kasus billing, permintaan refund, atau prospek enterprise yang minta demo. AI mengoper percakapan lengkap dengan riwayatnya ke agent yang tepat, jadi user nggak perlu mengulang cerita dari awal."
+    },
+    {
+      "q": "Apakah ada tracking kepuasan pelanggan?",
+      "a": "Ada. CSAT terukur dari percakapan, dan dashboard analitik menunjukkan topik yang paling sering ditanya, jam tersibuk, serta performa AI dan agent manusia. Kamu jadi tahu di mana user sering stuck dan bagian produk mana yang paling banyak memicu pertanyaan."
+    },
+    {
+      "q": "Bagaimana keamanan data user kami?",
+      "a": "Data percakapan dan pelanggan tersimpan aman dengan akses berbasis peran, hanya anggota tim yang kamu beri izin yang bisa melihatnya. Sertifikasi ISO 27001 sedang dalam proses, dan praktik keamanan data mengikuti standar industri."
+    },
+    {
+      "q": "Berapa lama setup-nya? Perlu waktu engineering?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin docs dan FAQ produkmu ke knowledge base, pasang widget web chat, dan AI mulai menjawab. Tanpa coding untuk mulai, dan integrasi API tersedia kalau mau menghubungkan data dari aplikasimu."
+    },
+    {
+      "q": "Bagaimana soal harga untuk SaaS yang masih kecil?",
+      "a": "Harga mengikuti skala penggunaan, jadi kamu bisa mulai dari paket kecil saat user masih sedikit dan naik seiring pertumbuhan. Jadwalkan konsultasi gratis, tim kami bantu hitung paket yang pas dengan volume percakapanmu."
+    }
+  ],
+  "cta": {
+    "heading": "Kasih User Jawaban Secepat Produkmu",
+    "body": "Lihat bagaimana perusahaan SaaS menjalankan customer support 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

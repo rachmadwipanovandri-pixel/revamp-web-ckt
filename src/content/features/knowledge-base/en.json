@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "AI Knowledge Base, Accurate CS Answers From Your SOPs | CekatAI",
+    "description": "Build an AI-powered knowledge base for your business. Upload your SOPs & FAQs, and let AI deliver accurate 24/7 customer answers across all channels."
+  },
+  "hero": {
+    "badge": "AI Knowledge Base",
+    "title": "Paste Your SOPs, and Your AI Answers Accurately From Day One",
+    "subtitle": "Cekat.AI's knowledge base turns your SOPs and business info into instant, accurate answers, consistent across every agent, team member, and channel. Update it once, and the change applies everywhere"
+  },
+  "definition": "A knowledge base on Cekat.AI is where you paste your SOPs and business information so the AI agent answers customer questions accurately and consistently. Update an answer once and it applies across every channel and team member, WhatsApp, Instagram, Messenger, and website chat all draw from the same source of truth.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "accurate answers, day or night" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Answer Accurately From the Moment You Launch",
+      "body": "There's no long training phase. Paste your SOPs, price lists, and business info into the knowledge base, and the AI answers from them straight away, grounded in your real policies, not guesses. Customers get correct answers on day one, and your team stops repeating the same explanations.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Business SOPs and information loaded into the Cekat.AI knowledge base"
+    },
+    {
+      "title": "One Source of Truth, the Same Answer Every Time",
+      "body": "When answers live in people's heads, every agent replies a little differently. The knowledge base gives your AI and your team one shared source, so a customer gets the same correct answer whether they ask at 2pm or 2am, on WhatsApp or Instagram. Consistency is what customers read as trust.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI answering consistently from the Cekat.AI knowledge base"
+    },
+    {
+      "title": "Update Once, and It Applies Everywhere",
+      "body": "Change a price, a policy, or an opening hour in one place, and every future answer reflects it instantly, across all channels and every agent. No re-training, no combing through scripts, no risk of the AI quoting a promo that ended last month. The knowledge base stays in sync with your business.",
+      "image": "/images/chat/train-your-ai-agent.png",
+      "imageAlt": "Updating the Cekat.AI knowledge base once to apply everywhere"
+    },
+    {
+      "title": "Feed Each Specialized Agent the Knowledge It Needs",
+      "body": "Sales, support, and billing don't answer the same questions. Give each specialized agent the slice of your knowledge base that fits its job, so every customer reaches an agent that answers accurately for their need, without one bot trying to know everything at once.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Specialized AI agents drawing from the Cekat.AI knowledge base"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Paste SOPs",
+      "title": "Your Documents Become Instant Answers",
+      "body": "Drop in your SOPs, FAQs, product details, and policies, and the AI answers from them right away. No prompt engineering or datasets, if your team already knows it, the knowledge base lets the AI know it too, within minutes."
+    },
+    {
+      "label": "Consistent",
+      "title": "The Same Correct Answer, Every Channel",
+      "body": "Because the AI and your team pull from one source, customers get identical answers on WhatsApp, Instagram, Messenger, and website chat. No more contradicting replies depending on who or what happened to respond."
+    },
+    {
+      "label": "Update Once",
+      "title": "Change It in One Place, Live Everywhere",
+      "body": "Edit a price or policy once and every answer updates with it, instantly and across all channels. The AI never quotes outdated information, because there's only one version of the truth to keep current."
+    },
+    {
+      "label": "Accurate",
+      "title": "Grounded in Your Business, Not Guesswork",
+      "body": "Answers come from the SOPs and info you provide, so the AI stays factual and on-brand instead of improvising. When a question falls outside the knowledge base, it hands off to your team with full context rather than making something up."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Built From Your Own SOPs",
+      "body": "The AI answers from the policies and info you paste in, not a generic model guessing. Every reply reflects how your business actually works."
+    },
+    {
+      "title": "Consistent Across Team and AI",
+      "body": "One shared source means your AI and your human agents give the same answer, on every channel, at every hour. Consistency customers can trust."
+    },
+    {
+      "title": "Always Current",
+      "body": "Update the knowledge base once and it applies everywhere immediately. No stale scripts, no outdated prices, no retraining cycle to manage."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a knowledge base in customer service?",
+      "a": "A customer-service knowledge base is a central store of your SOPs, FAQs, policies, and product information that answers stem from. On Cekat.AI, the AI agent draws from this knowledge base to reply accurately and consistently, so customers get correct answers and agents don't repeat the same explanations."
+    },
+    {
+      "q": "How does an AI knowledge base work?",
+      "a": "You paste your SOPs and business information into the knowledge base, and the AI agent uses it as the source for its answers. Instead of guessing, the AI replies based on your real policies and details, across WhatsApp, Instagram, Messenger, and website chat, all from one shared source of truth."
+    },
+    {
+      "q": "How do I set up the knowledge base?",
+      "a": "You paste in your SOPs, price lists, FAQs, and any business info, with no coding involved. The AI starts answering from that content immediately, so most teams have accurate answers running the same day. You refine and add to the knowledge base over time as new questions come up."
+    },
+    {
+      "q": "Will the AI give accurate answers right away?",
+      "a": "Yes. Because answers are grounded in the SOPs and information you provide, the AI replies accurately from launch rather than needing a long training period. When a question falls outside what's in the knowledge base, it hands off to your team instead of inventing an answer."
+    },
+    {
+      "q": "How do I keep answers up to date?",
+      "a": "Update the knowledge base in one place and the change applies everywhere instantly, across all channels and every agent. Change a price, policy, or opening hour once, and every future answer reflects it, so the AI never quotes information that's already out of date."
+    },
+    {
+      "q": "Does everyone give the same answer across channels?",
+      "a": "Yes. Because the AI and your team draw from one shared knowledge base, a customer gets the same correct answer whether they message on WhatsApp, Instagram, Messenger, or website chat, and whether it's the AI or a human replying. That consistency is what builds customer trust."
+    },
+    {
+      "q": "Can different agents use different knowledge?",
+      "a": "Yes. You can give each specialized agent, sales, support, or billing, the part of the knowledge base that fits its role, so every customer reaches an agent that answers accurately for their need. One bot doesn't have to try to know everything at once."
+    },
+    {
+      "q": "What happens when a question isn't in the knowledge base?",
+      "a": "The AI hands the conversation off to your team with the full context attached, rather than guessing. You can add the missing answer to the knowledge base afterward, so the same question is handled automatically next time and the AI keeps getting more capable."
+    },
+    {
+      "q": "Does the knowledge base work with the rest of Cekat.AI?",
+      "a": "Yes. The same knowledge base powers your AI agent across every channel, feeds your specialized agents, and supports order automation and follow-ups. It's the shared source of truth the whole platform relies on, so answers and actions stay aligned everywhere."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Your SOPs Into Accurate Answers, Everywhere",
+    "body": "Paste your knowledge once and let your AI answer customers correctly and consistently across every channel, 24/7."
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "title": "Solusi AI untuk Tim Marketing | Cekat.AI",
+    "description": "Broadcast WhatsApp tersegmen, leads iklan dibalas instan, dan konversi terkirim balik ke Meta dan TikTok lewat CAPI. Campaign kebukti sampai penjualan."
+  },
+  "hero": {
+    "badge": "Solusi untuk Tim Marketing",
+    "title": "Campaign yang Kebukti Sampai Penjualan, Bukan Cuma Klik",
+    "subtitle": "Leads dari iklan dibalas AI di detik pertama, data pelanggan terkumpul dari chat, dan konversi nyata dikirim balik ke platform iklan. Kamu tahu persis campaign mana yang menghasilkan uang."
+  },
+  "definition": "Solusi marketing dari Cekat.AI menghubungkan broadcast WhatsApp, data pelanggan dari percakapan, dan sinyal konversi ke Meta dan TikTok lewat Conversion API, jadi campaign dioptimasi pakai penjualan nyata, bukan sekadar klik.",
+  "stats": [
+    {
+      "value": "3.000+",
+      "label": "bisnis jalanin campaign di Cekat.AI"
+    },
+    {
+      "value": "+70%",
+      "label": "kenaikan konversi di Holywings Group"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi jadi kontak tercatat"
+    },
+    {
+      "value": "24/7",
+      "label": "leads dari iklan langsung dibalas"
+    }
+  ],
+  "painPoints": {
+    "heading": "Ke Mana Budget Iklan Bocor Diam-Diam",
+    "items": [
+      {
+        "icon": "MousePointerClick",
+        "title": "Klik banyak, konversi tidak jelas",
+        "body": "Laporan berhenti di klik dan impresi. Berapa yang benar-benar jadi penjualan, tidak ada yang bisa menjawab pasti."
+      },
+      {
+        "icon": "Send",
+        "title": "Blast rata untuk semua orang",
+        "body": "Satu pesan untuk seluruh kontak. Yang tidak relevan meng-ignore, sebagian melaporkan spam, dan nomor bisnismu yang menanggung."
+      },
+      {
+        "icon": "Clock",
+        "title": "Leads iklan menunggu dibalas",
+        "body": "Orang klik iklan saat niat belinya di puncak. Tiap menit menunggu balasan, niat itu turun dan biaya per hasil naik."
+      }
+    ]
+  },
+  "compare": {
+    "heading": "Bedanya Pakai Cekat.AI dan Tidak",
+    "body": "Budget yang sama, hasil yang berbeda. Pilih tab untuk membandingkan cara campaign-mu bekerja.",
+    "withLabel": "Dengan Cekat.AI",
+    "withoutLabel": "Tanpa Cekat.AI",
+    "with": {
+      "title": "Campaign yang belajar dari penjualan nyata",
+      "bullets": [
+        "Leads dari Click-to-WhatsApp Ads dibalas AI di detik pertama",
+        "Broadcast tersegmen dari label, riwayat, dan tahap pembelian di CRM",
+        "Konversi chat terkirim balik ke Meta dan TikTok lewat CAPI"
+      ],
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Atribusi campaign sampai penjualan di Cekat.AI"
+    },
+    "without": {
+      "title": "Optimasi berjalan di atas data bolong",
+      "bullets": [
+        "Pixel tidak melihat closing yang terjadi di chat",
+        "Blast yang sama untuk semua kontak berakhir di-ignore atau dilaporkan",
+        "ROAS dihitung manual dari ekspor yang selalu telat"
+      ]
+    }
+  },
+  "midCta": {
+    "heading": "Buktikan Iklanmu Menghasilkan, Bukan Sekadar Menjangkau",
+    "body": "Hubungkan channel dan campaign pertamamu hari ini, gratis. Atau tanya dulu lewat WhatsApp."
+  },
+  "benefits": [
+    {
+      "title": "Broadcast ke Segmen, Bukan Blast Buta",
+      "body": "Pesan yang sama untuk semua orang berakhir di-ignore. Segmentasikan audiens dari riwayat chat, label, dan tahap pembelian di CRM, lalu kirim penawaran yang memang relevan untuk tiap grup.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi pelanggan dari data percakapan"
+    },
+    {
+      "title": "Leads dari Iklan Dibalas Detik Itu Juga",
+      "body": "Budget iklan terbakar percuma kalau leads yang klik dibiarkan menunggu. Dari Click-to-WhatsApp Ads, AI langsung menyapa, menjawab, dan mengualifikasi, di menit yang sama leads masih niat beli.",
+      "image": "/images/marketing/improve-performance-and-lower-cac.png",
+      "imageAlt": "Leads dari iklan ditangani AI secara instan"
+    },
+    {
+      "title": "Semua Meta Ads di Satu Dashboard",
+      "body": "Berhenti bolak-balik Ads Manager. Performa tiap campaign, ad set, dan iklan terbaca di satu dashboard bersama data percakapan dan penjualannya, jadi evaluasi mingguan tidak lagi menyusun screenshot.",
+      "image": "/images/marketing/review-all-meta-ads-in-one-dashboard.png",
+      "imageAlt": "Semua Meta Ads terpantau di satu dashboard Cekat.AI"
+    },
+    {
+      "title": "Konversi Chat Terkirim Balik ke Platform Iklan",
+      "body": "Pixel browser tidak melihat closing yang terjadi di WhatsApp. Cekat.AI mengirim konversi nyata, leads yang membalas dan order yang jadi, ke Meta dan TikTok lewat Conversion API, jadi algoritma belajar dari pembeli sungguhan.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Sinyal konversi terkirim ke platform iklan lewat CAPI"
+    },
+    {
+      "title": "Tahu Campaign Mana yang Menghasilkan",
+      "body": "Setiap kontak membawa sumber iklannya sampai ke order. Kamu lihat revenue per campaign, bukan cuma cost per klik, dan bisa memindahkan budget ke yang terbukti jalan.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Atribusi penjualan per campaign di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Data Pelanggan yang Hidup",
+      "body": "Setiap chat memperkaya profil pelanggan: minat, riwayat, dan tahap belinya. Segmentasi selalu pakai data terbaru."
+    },
+    {
+      "title": "ROAS, Bukan Vanity Metrics",
+      "body": "Yang dihitung penjualan yang jadi, bukan impresi. Keputusan budget berdiri di atas angka revenue."
+    },
+    {
+      "title": "Broadcast Lewat Jalur Resmi",
+      "body": "Kirim lewat WhatsApp Business API dengan template ter-approve, bukan blast liar yang mempertaruhkan nomor bisnismu."
+    }
+  ],
+  "testimonial": {
+    "quote": "Sebelumnya kami benar-benar mengandalkan manusia. Tim First Contact kami sudah sampai titik di mana produktivitasnya tidak bisa naik lagi. Dengan Cekat AI, leads yang low quality difilter dulu, dan konversi kami naik dari sekitar 20% menjadi 28%. Itu angka riil yang kami lihat.",
+    "name": "Bayu",
+    "role": "Head of Digital Marketing, Wall Street English Indonesia"
+  },
+  "faq": [
+    {
+      "q": "Apa itu solusi marketing Cekat.AI?",
+      "a": "Gabungan broadcast WhatsApp tersegmen, penanganan leads iklan oleh AI, dashboard performa ads, dan pengiriman sinyal konversi ke platform iklan lewat Conversion API, dalam satu platform."
+    },
+    {
+      "q": "Apakah broadcast WhatsApp aman dari blokir?",
+      "a": "Broadcast dikirim lewat WhatsApp Business API resmi dengan template yang di-approve Meta, jalur yang memang disediakan untuk bisnis, bukan blast dari aplikasi tidak resmi yang mempertaruhkan nomormu."
+    },
+    {
+      "q": "Segmentasi bisa berdasarkan apa saja?",
+      "a": "Label kontak, riwayat percakapan, tahap di pipeline, sumber iklan, dan atribut yang kamu tentukan sendiri. Segmen bisa disimpan dan dipakai ulang untuk campaign berikutnya."
+    },
+    {
+      "q": "Apa itu Conversion API dan kenapa penting?",
+      "a": "Cara mengirim event konversi langsung dari server ke platform iklan. Closing yang terjadi di chat tidak terlihat pixel browser, jadi tanpa CAPI algoritma iklanmu belajar dari data bolong."
+    },
+    {
+      "q": "Platform iklan mana saja yang terhubung?",
+      "a": "Meta dan TikTok. Ketiganya menerima sinyal konversi nyata yang sama, jadi optimasi di tiap platform berdiri di atas data yang akurat."
+    },
+    {
+      "q": "Bisakah melihat ROAS per campaign?",
+      "a": "Bisa. Setiap kontak membawa sumber campaign-nya sampai ke order, jadi revenue per campaign terbaca di dashboard dan budget bisa dialihkan ke yang terbukti menghasilkan."
+    },
+    {
+      "q": "Apakah leads dari iklan langsung ditangani AI?",
+      "a": "Ya. Leads dari Click-to-WhatsApp Ads disapa AI di detik pertama, dijawab pertanyaannya, dan dikualifikasi, lalu diteruskan ke sales begitu siap."
+    },
+    {
+      "q": "Bisakah broadcast dijadwalkan untuk dikirim nanti?",
+      "a": "Bisa. Campaign disusun lebih dulu, dipilih segmennya, lalu dijadwalkan di jam yang paling mungkin dibaca. Hasil pengirimannya terbaca di dashboard yang sama setelah campaign jalan."
+    }
+  ],
+  "cta": {
+    "heading": "Buktikan Campaign-mu dengan Angka Penjualan",
+    "body": "Segmen yang tepat, respons instan, dan konversi yang terlacak sampai order. Coba gratis, atau chat tim kami lewat WhatsApp."
+  }
+}

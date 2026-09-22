@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Segmentasi Pelanggan, Campaign Relevan, Closing Naik | CekatAI",
+    "description": "Segmentasi pelanggan otomatis dari data CRM, berdasarkan aktivitas, riwayat pembelian, dan event. 3.000+ bisnis kirim campaign yang benar-benar dibuka."
+  },
+  "hero": {
+    "badge": "Segmentasi Berbasis CRM",
+    "title": "Segmentasi Pelanggan yang Nyusun Dirinya Sendiri",
+    "subtitle": "Kelompokkan customer berdasarkan aktivitas, riwayat pembelian, dan event, pakai data yang CRM kumpulkan otomatis dari tiap chat, order, dan klik, biar setiap campaign sampai ke orang yang tepat"
+  },
+  "definition": "Segmentasi Pelanggan adalah fitur Cekat.AI untuk mengelompokkan customer berdasarkan aktivitas, riwayat pembelian, dan event, memakai data CRM yang terkumpul otomatis dari setiap percakapan, sehingga campaign selalu sampai ke orang yang memang jadi targetnya.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai segmentasi Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer jadi sumber data" },
+    { "value": "24/7", "label": "profil ter-update di tiap interaksi" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Segmen Terbentuk Sendiri dari Setiap Interaksi",
+      "body": "Kebanyakan proyek segmentasi mati di spreadsheet yang tidak pernah di-update. Cekat.AI otomatis membuat dan memperbarui kartu CRM dari setiap interaksi, chat, pembelian, campaign yang diterima, aktivitas website, jadi segmenmu selalu dibangun dari data hidup, tanpa input manual dari tim.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Profil customer terkumpul dan terorganisir otomatis di CRM Cekat.AI"
+    },
+    {
+      "title": "Bagi Daftar Customer Sesuai Aktivitas, Pembelian, atau Event",
+      "body": "Filter dan board mengubah satu daftar kontak jadi audiens apa pun yang kamu butuhkan: customer yang belanja bulan lalu, leads yang nanya produk tapi belum bayar, semua peserta promo kemarin. Bikin segmennya beberapa klik, langsung siap dipakai campaign berikutnya.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Memfilter customer jadi segmen di Cekat.AI"
+    },
+    {
+      "title": "Pantau Customer dari Visitor, Leads, sampai Buyer",
+      "body": "Customer Stages menunjukkan posisi tiap orang, Visitor, Lead, atau Buyer, lengkap dengan saran langkah berikutnya. Bukan satu daftar datar, tapi pipeline yang jelas: siapa yang perlu diedukasi, siapa yang siap closing, siapa yang pantas dapat penawaran loyalty.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Customer Stages dari Visitor ke Lead ke Buyer di Cekat.AI"
+    },
+    {
+      "title": "Campaign Relevan Dibuka, Campaign Generik Diabaikan",
+      "body": "Pesan yang sama untuk semua orang adalah alasan performa broadcast anjlok. Dengan segmen, pelanggan setia dapat reward loyalty, leads yang ghosting dapat ajakan balik ke checkout, pengunjung baru dapat promo perkenalan, tiap pesan personal dari data CRM, tiap pesan cukup relevan untuk dibuka.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Insight perilaku customer untuk penargetan campaign di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Aktivitas",
+      "title": "Segmentasi dari yang Customer Lakukan",
+      "body": "Siapa yang chat minggu ini, siapa yang diam sebulan, siapa yang bolak-balik lihat website tapi belum beli, segmentasi aktivitas menemukan semuanya, jadi campaign re-engagement menyasar yang diam, bukan menembak semua orang."
+    },
+    {
+      "label": "Pembelian",
+      "title": "Segmentasi dari Riwayat Belanja",
+      "body": "Riwayat pembelian memisahkan pembeli pertama dari pelanggan setia, big spender dari yang cuma lihat-lihat. Kirim reminder restock ke pembeli produk tertentu, upsell ke repeat customer, dan penawaran win-back ke yang lama menghilang."
+    },
+    {
+      "label": "Event",
+      "title": "Segmentasi dari Momen Penting",
+      "body": "Semua yang ikut promo, daftar event, atau memicu keyword tertentu di chat langsung jadi audiens tersendiri. Segmen event-based bikin campaign follow-up terasa seperti kelanjutan obrolan, bukan gangguan."
+    },
+    {
+      "label": "Stages",
+      "title": "Segmentasi dari Posisi di Funnel",
+      "body": "Customer Stages mengelompokkan semua kontak jadi Visitor, Lead, atau Buyer, lengkap dengan saran langkah berikutnya. Campaign menyesuaikan: edukasi buat visitor, dorongan closing buat leads, penawaran loyalty buat buyer."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Nol Tagging Manual",
+      "body": "Kartu CRM terbentuk dan ter-update otomatis dari setiap interaksi. Tanpa entri data, tanpa spreadsheet basi, segmen merawat dirinya sendiri."
+    },
+    {
+      "title": "Satu Profil Customer yang Hidup",
+      "body": "Chat, pembelian, campaign yang diterima, dan aktivitas website ada di satu profil, segmen mencerminkan customer seutuhnya, bukan sepotong datanya."
+    },
+    {
+      "title": "Segmen Menghidupi Semua Campaign",
+      "body": "Broadcast, follow-up otomatis, dan analitik jalan di atas segmen yang sama, bangun audiens sekali, pakai di seluruh platform."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu segmentasi pelanggan?",
+      "a": "Segmentasi pelanggan adalah cara membagi customer ke dalam kelompok dengan kesamaan yang berarti, aktivitas terakhir, riwayat pembelian, atau event yang diikuti, supaya tiap kelompok menerima pesan yang sesuai. Di Cekat.AI, kelompok itu dibangun dari data CRM yang ter-update otomatis di setiap interaksi."
+    },
+    {
+      "q": "Kenapa segmentasi pelanggan penting buat marketing di WhatsApp?",
+      "a": "WhatsApp itu channel personal, pesan massal yang generik cepat diabaikan atau malah di-report. Segmentasi memastikan pelanggan setia lihat penawaran loyalty sementara leads baru lihat promo perkenalan. Relevansi itu menjaga reputasi nomormu dan mengubah campaign jadi percakapan, bukan noise."
+    },
+    {
+      "q": "Data apa saja yang bisa dipakai untuk segmentasi di Cekat.AI?",
+      "a": "Segmen bisa dibangun dari aktivitas, riwayat pembelian, dan event, plus semua isi profil CRM customer: chat, campaign yang diterima, aktivitas website, dan Customer Stage dari Visitor sampai Buyer. Filter dan board membantumu menggabungkan semuanya jadi audiens yang persis kamu butuhkan."
+    },
+    {
+      "q": "Gimana caranya segmen tetap up to date?",
+      "a": "Otomatis. Cekat.AI membuat dan memperbarui kartu CRM dari setiap interaksi, pembelian baru, chat, campaign yang diterima, kunjungan website, tanpa input manual. Begitu data customer berubah, dia langsung pindah ke segmen yang sesuai, jadi tidak ada audiens yang basi."
+    },
+    {
+      "q": "Perlu impor spreadsheet atau tagging manual?",
+      "a": "Tidak. Cekat.AI menangkap leads dari website, WhatsApp, dan media sosial, lalu membangun profil tiap customer dari interaksi nyata. Pekerjaan tagging manual yang biasanya bikin proyek segmentasi mangkrak memang tidak ada di sini, profil dan segmen terawat sendiri seiring customer berinteraksi."
+    },
+    {
+      "q": "Apa itu Customer Stages?",
+      "a": "Customer Stages adalah klasifikasi funnel bawaan Cekat.AI: setiap kontak berstatus Visitor, Lead, atau Buyer, dan platform memberi saran langkah berikutnya untuk memajukan masing-masing. Stages sekaligus berfungsi sebagai segmen, kirim dorongan closing ke leads dan campaign loyalty ke buyer dalam beberapa klik."
+    },
+    {
+      "q": "Segmennya bisa dipakai buat broadcast WhatsApp?",
+      "a": "Bisa, justru itu tujuan utamanya. Setiap broadcast di Cekat.AI menyasar sebuah segmen, dan setiap pesan dipersonalisasi dari data CRM customer tersebut. Campaign terkirim lewat WhatsApp Business API resmi ke audiens yang kamu bangun, dan hasilnya terlacak sampai revenue."
+    },
+    {
+      "q": "Perubahan data customer bisa memicu otomatisasi?",
+      "a": "Bisa. Trigger workflow di Cekat.AI menyala saat data customer berubah, misalnya saat sebuah kontak jadi leads baru atau naik stage. Perubahan itu bisa otomatis memulai rangkaian follow-up, menempelkan label, memberi notifikasi ke tim, atau membuat tiket."
+    },
+    {
+      "q": "Data customer aman tidak?",
+      "a": "Cekat.AI mematuhi UU PDP, undang-undang pelindungan data pribadi Indonesia, dan menyediakan akses tim berbasis role sehingga tiap orang hanya melihat data sesuai perannya. Data customermu dipakai untuk segmen dan campaign di dalam platform, tetap sepenuhnya dalam kendalimu."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Satu Daftar Kontak Jadi Ratusan Pesan yang Tepat",
+    "body": "Biarkan CRM menyusun segmennya, kamu tinggal kirim campaign yang benar-benar dibuka customer."
+  }
+}

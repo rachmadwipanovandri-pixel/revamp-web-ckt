@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Open API, Hubungkan Cekat.AI ke Sistemmu | CekatAI",
+    "description": "Open API menghubungkan Cekat.AI ke sistemmu: API channel membawa percakapan masuk, integrasi API bikin AI cek ongkir, booking appointment, dan akses sistem bisnismu."
+  },
+  "hero": {
+    "badge": "Open API",
+    "title": "Hubungkan Cekat.AI ke Sistem yang Sudah Kamu Pakai",
+    "subtitle": "Bawa percakapan masuk lewat API channel dan biarkan AI menjangkau lewat integrasi API, cek ongkir, booking appointment, dan mengakses sistem bisnismu dari dalam chat"
+  },
+  "definition": "Open API adalah kemampuan Cekat.AI yang menghubungkan platform ke sistemmu sendiri, API channel membawa percakapan ke inbox terpadu, sementara integrasi API membuat AI bisa cek ongkir, booking appointment, dan mengakses sistem bisnismu saat chat berlangsung.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "5", "label": "tipe channel dalam satu inbox" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Bawa Channel Apa Pun ke Satu Inbox",
+      "body": "Selain WhatsApp, Instagram, Messenger, dan chat website, API channel memungkinkan kamu mengalirkan percakapan dari aplikasi dan sistemmu sendiri ke inbox terpadu yang sama. Di mana pun customer menghubungimu, pesannya masuk ke satu tempat tempat AI menjawab dan tim bisa turun tangan, tanpa tool terpisah buat dipantau.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Menyambungkan banyak channel termasuk API channel ke satu inbox Cekat.AI"
+    },
+    {
+      "title": "Biarkan AI Bertindak di Sistemmu",
+      "body": "Integrasi API mengubah AI dari sekadar ngobrol jadi bertindak. Di tengah percakapan, AI bisa cek ongkir, booking appointment, atau menarik dan mengirim data ke sistem bisnis yang sudah kamu pakai, jadi customer dapat jawaban beneran atau aksi yang selesai, bukan janji bakal dicek dulu.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Integrasi API membuat AI bertindak di sistem bisnis di Cekat.AI"
+    },
+    {
+      "title": "Stack-mu Terhubung, Bukan Diganti",
+      "body": "Kamu gak perlu buang tools yang kamu andalkan. Open API menghubungkan Cekat.AI ke tools itu, jadi percakapan customer dan sistem yang ada akhirnya saling ngobrol. Data mengalir dua arah, dan AI bekerja dengan informasi yang sama yang sudah jadi dasar bisnismu, bukan salinan yang terpisah.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Aliran data dua arah antara Cekat.AI dan sistem yang tersambung"
+    },
+    {
+      "title": "Otomatiskan Aksi, Bukan Cuma Balasan",
+      "body": "Dengan sistem terhubung, workflow dan AI bisa lebih dari sekadar kirim pesan. Trigger menembakkan aksi nyata ke integrasimu, booking dibuat, record diperbarui, sistem dicek, jadi proses utuh selesai di dalam percakapan, bukan berakhir dengan diserahkan ke tim lain dan nunggu lagi.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Aksi otomatis end-to-end di seluruh sistem tersambung di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "API Channel",
+      "title": "Percakapan Masuk Lewat API",
+      "body": "API channel memungkinkan kamu menyambungkan aplikasi dan sistemmu sendiri sebagai sumber pesan, mengalirkan percakapan ke inbox terpadu yang sama dengan WhatsApp, Instagram, Messenger, dan chat website, jadi gak ada yang hidup di silo terpisah."
+    },
+    {
+      "label": "Integrasi",
+      "title": "AI Menjangkau Sistemmu",
+      "body": "Integrasi API membuat AI bisa cek ongkir, booking appointment, dan mengakses sistem bisnis lain saat chat. AI gak cuma menjawab, dia bertindak di sistemmu dan kembali dengan hasil beneran."
+    },
+    {
+      "label": "Data Dua Arah",
+      "title": "Informasi Mengalir Dua Arah",
+      "body": "Data bergerak antara Cekat.AI dan tools yang tersambung dua arah, jadi CRM, sistem, dan percakapanmu tetap sinkron, bukan memegang versi berbeda dari customer yang sama."
+    },
+    {
+      "label": "Otomatisasi",
+      "title": "Aksi Terhubung ke Workflow",
+      "body": "Digabung dengan automasi workflow, integrasi API membuat trigger menembakkan aksi nyata ke sistemmu, booking, update, lookup, jadi proses utuh selesai otomatis di dalam chat."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Percakapan Masuk",
+      "body": "API channel membawa pesan dari sistemmu sendiri ke inbox terpadu, bareng semua channel lain yang kamu pakai."
+    },
+    {
+      "title": "Aksi Keluar",
+      "body": "Integrasi API membuat AI cek ongkir, booking appointment, dan menjangkau sistem bisnismu di tengah chat, aksi nyata, bukan cuma jawaban."
+    },
+    {
+      "title": "Satu Stack Terhubung",
+      "body": "Cekat.AI tersambung ke tools yang sudah kamu pakai, jadi percakapan dan sistem berbagi data yang sama, bukan jalan sendiri-sendiri."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu Open API Cekat.AI?",
+      "a": "Open API adalah cara Cekat.AI terhubung ke sistemmu sendiri. API channel membawa percakapan dari aplikasimu ke inbox terpadu, dan integrasi API membuat AI bisa cek ongkir, booking appointment, dan mengakses sistem bisnismu saat chat, jadi platform bekerja dengan tools yang sudah kamu pakai."
+    },
+    {
+      "q": "Apa itu API channel?",
+      "a": "API channel adalah cara menyambungkan aplikasi atau sistemmu sendiri sebagai sumber pesan di Cekat.AI. Percakapan dari sana masuk ke inbox terpadu yang sama dengan WhatsApp, Instagram DM, Facebook Messenger, dan live chat website, jadi tiap channel ditangani di satu tempat, bukan tool terpisah."
+    },
+    {
+      "q": "Integrasi API bikin AI bisa ngapain?",
+      "a": "Integrasi API membuat AI mengambil aksi nyata saat percakapan, cek ongkir, booking appointment, atau mengakses sistem bisnis lain buat lihat atau update data. Alih-alih cuma menjawab pertanyaan, AI menyelesaikan aksi di sistemmu dan mengembalikan hasil beneran di chat."
+    },
+    {
+      "q": "Bisa hubungkan Cekat.AI ke tools yang sudah ada?",
+      "a": "Bisa. Open API dibangun buat menghubungkan Cekat.AI ke sistem yang sudah kamu pakai, bukan menggantinya. Data mengalir dua arah lewat integrasinya, jadi CRM, sistem bisnis, dan percakapan customer berbagi informasi yang sama, bukan hidup di silo terpisah."
+    },
+    {
+      "q": "Perlu developer buat pakai Open API?",
+      "a": "Menyambungkan sistem lewat API memang setup teknis, tapi menjalankan Cekat.AI tidak. Begitu integrasi terpasang, kamu bikin dan sesuaikan AI dengan menempel info bisnis ke knowledge base dan pakai visual flow designer, tanpa coding buat mengoperasikan agent sehari-hari."
+    },
+    {
+      "q": "Open API cuma buat ongkir dan appointment?",
+      "a": "Gak. Cek ongkir dan booking appointment cuma contoh umum, tapi integrasi API dibangun buat sistem bisnis apa pun yang kamu pakai, AI bisa menjangkau sistem yang kamu sambungkan buat cek atau update data di tengah percakapan, jadi use case-nya ikut stack-mu, bukan daftar tetap."
+    },
+    {
+      "q": "Gimana Open API bekerja dengan otomatisasi?",
+      "a": "Bareng automasi workflow, integrasi API membuat trigger menembakkan aksi nyata ke sistem yang tersambung, booking, update data, lookup. Jadi workflow gak berhenti di kasih label atau kirim notifikasi; dia bisa menyelesaikan aksi di sistem lain otomatis, di dalam percakapan."
+    },
+    {
+      "q": "Data aman saat aku sambungkan sistemku?",
+      "a": "Aman. Cekat.AI patuh UU PDP, undang-undang perlindungan data pribadi Indonesia, dan merupakan Meta Business Partner resmi, jadi trafik WhatsApp lewat infrastruktur resmi Meta. Role-based team access mengatur siapa di bisnismu yang bisa lihat data customer yang mengalir lewat sistem tersambung."
+    },
+    {
+      "q": "API-nya mendukung semua channel-ku?",
+      "a": "Cekat.AI menyatukan WhatsApp lewat Business API resmi, Instagram DM, Facebook Messenger, dan live chat website secara bawaan, dan API channel memungkinkan kamu menambah sistemmu sendiri sebagai sumber. Semuanya mengalir ke satu inbox, jadi AI dan tim menangani tiap percakapan dari satu tempat."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Stack-mu Jadi Satu Sistem Terhubung",
+    "body": "Bawa percakapan masuk lewat API channel dan biarkan AI bertindak di sistemmu, semua dari dalam chat."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "CS Otomatis FMCG, Order Distributor via Chat 24/7 | CekatAI",
+    "description": "Brand FMCG pakai Cekat.AI buat terima order distributor via chat, blast promo ke toko, dan routing komplain per wilayah. Order otomatis, CS 24/7."
+  },
+  "hero": {
+    "badge": "FMCG",
+    "title": "Terima Order Distributor dan Toko, Tanpa Telepon Bolak-Balik",
+    "subtitle": "Dari order distributor, permintaan restock toko, sampai pertanyaan promo konsumen, Cekat.AI membalas instan di WhatsApp, 24/7, dan meneruskan komplain ke region yang tepat, tanpa nambah admin",
+    "useCases": [
+      "Order distributor",
+      "Restock toko",
+      "Promo per segmen toko",
+      "Komplain per region"
+    ]
+  },
+  "definition": "Cekat.AI untuk FMCG adalah platform AI customer service untuk brand consumer goods dan distributor utama di Indonesia, menerima order distributor otomatis lewat chat, menjawab pertanyaan promo dan produk 24/7, meneruskan komplain ke region yang tepat, dan merapikan data setiap outlet dalam satu platform.",
+  "stats": [
+    {
+      "value": "+50%",
+      "label": "kenaikan omzet bulanan di Nature Craft"
+    },
+    {
+      "value": "2×",
+      "label": "peningkatan kapasitas penanganan chat di Kezka Printing dalam 6 bulan"
+    },
+    {
+      "value": "24/7",
+      "label": "order distributor, restock, dan komplain terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Order Distributor Masuk Sendiri, Rapi Tanpa Ketik Ulang",
+      "body": "Order yang biasanya masuk lewat telepon pagi atau catatan salesman sekarang jalan lewat chat. Distributor dan toko tinggal kirim daftar SKU dan jumlahnya, Cekat.AI menyusunnya jadi order otomatis lengkap dengan data outlet, tanpa admin nyalin ulang ke spreadsheet, jadi salah catat dan order dobel berhenti di sini.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Order distributor dibuat otomatis dari chat di Cekat.AI"
+    },
+    {
+      "title": "Permintaan Restock Toko Terjawab Kapan Pun",
+      "body": "Pemilik toko sering baru sempat cek stok setelah tutup, dan nggak mau nunggu salesman datang minggu depan. Cekat.AI menjawab ketersediaan produk, harga, dan minimal order jam berapa pun, mencatat permintaan restock jadi order, dan meneruskannya ke tim penjualan area begitu jam kerja mulai.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI menjawab permintaan restock di luar jam kerja di Cekat.AI"
+    },
+    {
+      "title": "Promo Sampai ke Segmen Toko yang Tepat",
+      "body": "Program trade promo, poin, dan launching varian baru nggak lagi berhenti di grup WhatsApp yang tenggelam. Cekat.AI mem-broadcast promo lewat WhatsApp Business API resmi ke segmen outlet yang kamu pilih, per wilayah, tipe toko, atau riwayat order, lengkap dengan follow-up otomatis buat outlet yang belum merespons.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi outlet untuk broadcast promo di Cekat.AI"
+    },
+    {
+      "title": "Komplain Langsung ke Region yang Tepat, Bukan Muter-Muter",
+      "body": "Kemasan rusak, varian salah kirim, hadiah promo belum sampai, komplain konsumen dan toko otomatis dibuatkan tiket dan diteruskan ke tim region atau distributor yang menangani wilayahnya, lengkap dengan riwayat chat. Notifikasi otomatis memastikan tim yang tepat tahu duluan, sebelum komplainnya naik ke media sosial.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Komplain diteruskan otomatis ke tim region di Cekat.AI"
+    },
+    {
+      "title": "Satu Tampilan Utuh untuk Setiap Outlet",
+      "body": "Setiap chat memperkaya profil outlet: riwayat order, promo yang diikuti, komplain yang pernah masuk, semuanya tercatat otomatis jadi customer data platform. Kamu bisa lihat outlet mana yang berhenti order dan segmen mana yang paling responsif ke promo, jadi tim sales datang ke kunjungan dengan data, bukan kira-kira.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Riwayat perjalanan tiap outlet tercatat di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Order, promo, dan broadcast jalan di WhatsApp Business API resmi, bareng Instagram DM dan web chat, satu inbox untuk ribuan outlet, compliant dan andal."
+    },
+    {
+      "title": "AI yang Terima Order dan Jualan",
+      "body": "AI mencatat order distributor, menjawab pertanyaan promo dan produk, lalu mengoper negosiasi dan kasus khusus ke timmu lengkap dengan konteks."
+    },
+    {
+      "title": "Terbukti di 3.000+ Bisnis",
+      "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan customer service di Cekat.AI."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu brand FMCG dan distributor?",
+      "a": "Cekat.AI memindahkan alur yang biasanya lewat telepon dan catatan manual ke chat: order distributor tercatat otomatis, pertanyaan promo dan produk terjawab instan 24/7, dan komplain diteruskan ke region yang tepat. Semua percakapan dari ribuan outlet masuk ke satu inbox yang rapi."
+    },
+    {
+      "q": "Distributor dan toko bisa order langsung lewat WhatsApp?",
+      "a": "Bisa. Mereka tinggal kirim daftar produk dan jumlahnya di chat, Cekat.AI menyusunnya jadi order lengkap dengan data outlet dan konfirmasi total. Order masuk dengan format konsisten, tanpa admin ngetik ulang, dan bisa diteruskan ke sistemmu lewat integrasi API."
+    },
+    {
+      "q": "Bisa broadcast promo ke ribuan toko sekaligus?",
+      "a": "Bisa. Lewat WhatsApp Business API resmi, kamu bisa mem-broadcast promo trade, program poin, atau launching produk ke segmen outlet tertentu, per wilayah, tipe toko, atau riwayat order. Follow-up otomatis mengejar outlet yang belum merespons, tanpa daftar manual."
+    },
+    {
+      "q": "Komplain bisa di-routing per wilayah atau per produk?",
+      "a": "Bisa. Kamu tentukan aturannya, misalnya komplain dari Jawa Timur ke tim region timur, atau komplain SKU tertentu ke tim quality. Cekat.AI membuat tiket otomatis dari chat dan mengirim notifikasi ke tim yang tepat, lengkap dengan percakapan aslinya."
+    },
+    {
+      "q": "Bisa integrasi dengan ERP atau sistem sales force kami?",
+      "a": "Bisa. Lewat integrasi API, order dari chat bisa diteruskan ke ERP, sistem distribusi, atau tools sales force yang sudah kamu pakai, jadi Cekat.AI melengkapi alur yang ada, bukan menggantinya. Tim kami bantu memetakan integrasinya saat onboarding."
+    },
+    {
+      "q": "Berapa lama setup untuk brand dengan katalog SKU besar?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin katalog produk, harga per tier, syarat promo, dan SOP ke knowledge base, dan AI langsung menjawab akurat. Katalog besar tetap terjawab rapi karena AI paham konteks pertanyaan, bukan sekadar mencocokkan keyword."
+    },
+    {
+      "q": "Kapan chat dialihkan ke salesman atau CS manusia?",
+      "a": "Kamu yang atur batasnya. Negosiasi harga, keluhan serius, atau permintaan khusus otomatis dialihkan ke tim dengan riwayat chat lengkap, jadi nggak ada yang mulai dari nol. Di luar itu, AI menangani pertanyaan rutin supaya timmu fokus ke yang penting."
+    },
+    {
+      "q": "Bagaimana keamanan data outlet dan harga kami?",
+      "a": "Data harga per tier dan daftar outlet adalah informasi sensitif, karena itu akses di Cekat.AI diatur berbasis peran dan percakapan tersimpan aman. Sertifikasi ISO 27001 sedang dalam proses, dan tim kami siap membahas kebutuhan compliance perusahaanmu lebih detail."
+    },
+    {
+      "q": "Bagaimana model harga Cekat.AI, dan bisa lihat demonya dulu?",
+      "a": "Harga berbasis paket berlangganan yang menyesuaikan volume percakapan dan fitur, jadi bisa mulai dari satu brand dulu sebelum meluas ke semua region. Jadwalkan konsultasi gratis dan tim kami tunjukkan demo dengan skenario order dan promo khas FMCG."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Telepon Order Pagi Jadi Chat yang Rapi Sendiri",
+    "body": "Lihat bagaimana brand FMCG menjalankan order distributor, promo, dan komplain 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "title": "WhatsApp Business API, One Number for Your Whole Team | CekatAI",
+    "description": "Get the official WhatsApp Business API through a Meta Business Partner. One number for your whole team, AI replies 24/7, trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "Official Meta Business Partner",
+    "title": "Put Your Whole Business on One Official WhatsApp Number",
+    "subtitle": "Cekat.AI connects you to the official WhatsApp Business API, one number shared by your entire team, Meta-approved message templates, automation, and an AI agent answering 24/7. Our team guides your onboarding from day one"
+  },
+  "definition": "The WhatsApp Business API is Meta's official infrastructure for businesses that message customers at scale. Through Cekat.AI, an official Meta Business Partner, businesses connect one WhatsApp number to a shared team inbox with approved templates, workflow automation, and a humanlike AI agent on top.",
+  "stats": [
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    },
+    {
+      "value": "24/7",
+      "label": "AI answers on your number"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "One Number, Your Entire Team Logged In",
+      "body": "The free WhatsApp Business app chains your number to one phone, so admins take turns, replies stall, and customers wait. On the API, your whole team works the same number at once, with role-based access, private notes, and collaborators added to any conversation that needs backup.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Team members collaborating on one WhatsApp number in the Cekat.AI inbox"
+    },
+    {
+      "title": "Get Onboarded Without Fighting Meta's Paperwork",
+      "body": "API access means business verification, number registration, and template approvals, a maze if you go alone. As an official Meta Business Partner, Cekat.AI's team walks you through the whole onboarding process, so you go live without decoding Meta's documentation yourself.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Connecting an official WhatsApp Business API channel in Cekat.AI"
+    },
+    {
+      "title": "An AI Agent Answering on Your Number 24/7",
+      "body": "The API alone is plumbing, Cekat.AI puts a brain on it. A humanlike AI agent reads intent and context instead of matching keywords, answers in multiple languages, checks shipping costs, sends payment QR codes, and closes orders inside the chat while your team sleeps.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI agent handling WhatsApp conversations automatically"
+    },
+    {
+      "title": "Templates and Automation That Start Conversations",
+      "body": "Meta-approved message templates let you reach customers first, order updates, payment reminders, promo announcements, the compliant way. Workflow triggers fire on schedules, chat keywords, or customer-data changes, so follow-ups go out the moment they matter instead of when someone remembers.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Drag-and-drop automation builder for WhatsApp workflows in Cekat.AI"
+    },
+    {
+      "title": "Even WhatsApp Calls Get Processed by AI",
+      "body": "Conversations on the API aren't limited to text. WhatsApp calls are processed by AI into instant summaries, key points, and recommended next steps, so a ten-minute call becomes a record your team can act on, not a memory that fades by lunch.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "AI-generated call summaries and insights in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Official API",
+      "title": "Built on Meta's Official Infrastructure",
+      "body": "Cekat.AI is an official Meta Business Partner, so your number runs on the real WhatsApp Business API, approved templates, compliant messaging, and none of the account risks that come with unofficial gateways."
+    },
+    {
+      "label": "Team Inbox",
+      "title": "One Number, Organized for a Whole Team",
+      "body": "Fast search, auto-labeling, and case prioritization keep high-stakes chats on top. Private notes and role-based access mean every teammate sees what they should and nothing they shouldn't."
+    },
+    {
+      "label": "AI Agent",
+      "title": "Train It Like You'd Brief a CS Admin",
+      "body": "Paste your SOPs and business info into the knowledge base and your agent is ready in about 5 minutes, no coding. AI working hours take over after your team logs off, and handoffs carry full context back."
+    },
+    {
+      "label": "Onboarding",
+      "title": "Guided Setup from a Real Team",
+      "body": "Cekat.AI's team helps with verification, number setup, and template submission, then stays with you as you launch. You focus on what to say to customers, we handle how it gets delivered."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Direct access to the WhatsApp Business API with approved templates, compliant, reliable, and safe for the number your business depends on."
+    },
+    {
+      "title": "One Inbox for Every Channel",
+      "body": "WhatsApp sits alongside Instagram DM, Facebook Messenger, and website live chat in a single unified inbox, one screen for every customer conversation."
+    },
+    {
+      "title": "AI First, Humans When It Counts",
+      "body": "Multiple specialized agents handle sales, support, and billing around the clock, then hand off to your team with the full conversation context attached."
+    }
+  ],
+  "testimonial": {
+    "heading": "A Business WhatsApp That Answers Around the Clock",
+    "quote": "Response time is faster, and the biggest thing is that it works 24 hours. Our business WhatsApp number is connected to Cekat AI.",
+    "name": "dr. Geri Wilianto",
+    "role": "Founder & CEO, Dokter Hub"
+  },
+  "faq": [
+    {
+      "q": "What is the WhatsApp Business API?",
+      "a": "The WhatsApp Business API is Meta's official platform for medium and large-scale business messaging on WhatsApp. Unlike the free app, it has no single-phone limit, it connects your number to software like Cekat.AI, where a whole team plus an AI agent can send, receive, and automate messages on one number."
+    },
+    {
+      "q": "What's the difference between the WhatsApp Business app and the API?",
+      "a": "The free WhatsApp Business app is built for one person on one phone, with manual replies and small broadcast lists. The API removes those limits: unlimited team members on one number, Meta-approved templates for outbound campaigns, automation triggers, and AI agents, all managed through a platform like Cekat.AI rather than a phone."
+    },
+    {
+      "q": "How do I get access to the WhatsApp Business API?",
+      "a": "Access goes through Meta's official channels, typically via a Business Partner. Cekat.AI is an official Meta Business Partner, so you sign up, and the Cekat.AI team guides business verification, number registration, and template approval until your API number is live and answering customers."
+    },
+    {
+      "q": "Can my whole team use one WhatsApp number at the same time?",
+      "a": "Yes, that's one of the main reasons businesses move to the API. In Cekat.AI, every teammate logs into the same shared inbox with role-based access. You can add collaborators to specific conversations, leave private notes, and prioritize cases, all on a single official number."
+    },
+    {
+      "q": "Is the WhatsApp Business API safe for my number?",
+      "a": "Yes, when accessed officially. Cekat.AI is an official Meta Business Partner, so messages travel through Meta's own infrastructure with approved templates, the compliant route for business messaging. That's the opposite of unofficial blast tools, which operate outside Meta's rules and put numbers at risk."
+    },
+    {
+      "q": "Do I need a developer to use the WhatsApp Business API?",
+      "a": "No. The API itself is technical, but Cekat.AI wraps it in a no-code platform: a visual drag-and-drop chat-flow designer, a knowledge base you fill by pasting SOPs, and an AI agent you can build in about 5 minutes. It's as easy as briefing a CS admin."
+    },
+    {
+      "q": "What can the AI agent do on my WhatsApp number?",
+      "a": "It answers customers 24/7 in natural language, understanding intent and context rather than keywords. It can respond in multiple languages, check shipping costs, send payment QR codes, create orders from the conversation, and escalate to your team with full context when a human is needed."
+    },
+    {
+      "q": "Can I send broadcast campaigns through the API?",
+      "a": "Yes. Meta-approved templates let you message customers first at scale, promos, payment reminders, replenishment nudges. In Cekat.AI, campaigns are segmented by activity, purchase history, or events, and every reply comes back to the same inbox where AI answers it."
+    },
+    {
+      "q": "What happens to conversations outside working hours?",
+      "a": "Cekat.AI's AI working hours mirror your team's schedule: while your team is online, they lead; after hours, the AI takes over automatically. When your team returns, handoff carries the full conversation context, so customers never repeat themselves and no overnight lead goes cold."
+    },
+    {
+      "q": "Is customer data on the API handled securely?",
+      "a": "Cekat.AI complies with UU PDP, Indonesia's personal data protection law, and runs WhatsApp messaging through Meta's official Business API infrastructure. Conversations, customer profiles, and campaign data stay inside one governed platform with role-based team access instead of scattered across personal phones."
+    }
+  ],
+  "cta": {
+    "heading": "Turn One WhatsApp Number Into Your Hardest-Working Sales Channel",
+    "body": "Get on the official WhatsApp Business API with Cekat.AI's team guiding every step, and an AI agent answering before you finish reading this."
+  }
+}

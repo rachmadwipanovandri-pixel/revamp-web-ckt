@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "CS Pemerintahan, Layanan Publik Digital 24/7 | CekatAI",
+    "description": "Instansi pemerintah pakai Cekat.AI untuk menjawab pertanyaan warga 24/7, mengubah komplain jadi tiket terlacak ke unit yang tepat, patuh UU PDP."
+  },
+  "hero": {
+    "badge": "Pemerintahan & Layanan Publik",
+    "title": "Layani Setiap Warga Secara Instan, Sepanjang Waktu",
+    "subtitle": "Cekat.AI menjawab pertanyaan warga 24/7 di WhatsApp dan web chat, mengubah komplain jadi tiket terlacak yang diarahkan ke unit yang tepat, dan menjaga setiap kasus tetap terpantau, patuh UU PDP",
+    "useCases": [
+      "Pertanyaan warga berulang",
+      "Layanan tanpa jam tutup",
+      "Tiket pengaduan",
+      "Satu inbox kanal warga"
+    ]
+  },
+  "definition": "Cekat.AI untuk pemerintahan adalah platform AI customer service untuk instansi dan lembaga layanan publik di Indonesia, menjawab pertanyaan warga 24/7, mengubah komplain jadi tiket terlacak yang diarahkan ke unit yang tepat, dan memberi petugas visibilitas penuh, semuanya patuh UU PDP.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "pertanyaan warga terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis dan organisasi pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Jawab Pertanyaan yang Sama, Ribuan Kali, Secara Instan",
+      "body": "Layanan publik menerima pertanyaan yang sama tanpa henti, dokumen persyaratan, prosedur, jam layanan, lokasi kantor, status pengajuan. Cekat.AI menjawab setiap pertanyaan begitu masuk, dengan bahasa natural, jadi warga mendapat informasi akurat seketika dan petugas terbebas dari balasan berulang untuk fokus ke kasus yang benar-benar butuh perhatian.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab pertanyaan warga di inbox Cekat.AI"
+    },
+    {
+      "title": "Layanan Publik yang Tidak Pernah Tutup",
+      "body": "Warga sering menghubungi setelah jam kerja, di malam hari, atau akhir pekan, jauh setelah loket layanan tutup. Cekat.AI merespons kapan pun dengan jawaban yang konsisten dan akurat, jadi tidak ada yang harus menunggu sampai Senin untuk informasi yang dibutuhkan hari ini, dan petugas kembali ke percakapan yang sudah tertangani, bukan tumpukan antrean.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI dan petugas di Cekat.AI"
+    },
+    {
+      "title": "Setiap Komplain Jadi Tiket Terlacak, Diarahkan ke Unit yang Tepat",
+      "body": "Komplain warga yang hilang menggerus kepercayaan publik. Cekat.AI melabeli setiap laporan yang masuk secara otomatis, membuat tiket, dan mengarahkannya ke unit yang bertanggung jawab beserta notifikasi, jadi setiap komplain terlacak dari pesan pertama sampai selesai, dan akuntabilitas melekat dalam proses, bukan bergantung pada ingatan.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Komplain diarahkan ke unit yang tepat sebagai tiket terlacak di Cekat.AI"
+    },
+    {
+      "title": "Visibilitas Penuh dari Laporan sampai Penyelesaian",
+      "body": "Status, penanggung jawab, dan jalur penyelesaian setiap percakapan terlihat di satu tempat, dengan catatan yang terbentuk otomatis dari tiap interaksi, tanpa logging manual. Saat evaluasi atau audit menanyakan apa yang ditangani dan kapan, jejaknya sudah tersedia, bukan berserakan di perangkat dan channel pribadi.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Visibilitas penuh di setiap kasus warga di Cekat.AI"
+    },
+    {
+      "title": "Satu Inbox untuk Setiap Channel yang Dipakai Warga",
+      "body": "WhatsApp, Instagram, Facebook Messenger, dan chat website mengalir ke satu inbox dengan satu riwayat interaksi per warga. Warga yang bertanya di satu channel lalu menindaklanjuti di channel lain tetap membawa konteks yang sama, jadi tidak ada yang jatuh di antara platform dan tidak ada yang diminta mengulang kasusnya.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Percakapan warga dari setiap channel disatukan di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Compliant dari Awal",
+      "body": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP), dan akses berbasis peran memastikan data warga hanya terlihat oleh petugas yang berwenang."
+    },
+    {
+      "title": "Akuntabel dan Transparan",
+      "body": "Setiap laporan jadi tiket terlacak dengan visibilitas penuh dari pesan pertama sampai selesai, jadi akuntabilitas melekat dalam proses, bukan bergantung pada ingatan."
+    },
+    {
+      "title": "Manusia di Momen yang Penting",
+      "body": "AI menangani pertanyaan rutin; kasus yang butuh pertimbangan diarahkan ke petugas yang bertanggung jawab lengkap dengan konteks, jadi warga tidak perlu mengulang."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu instansi dan lembaga layanan publik?",
+      "a": "Cekat.AI menjawab pertanyaan warga secara instan 24/7 di WhatsApp, Instagram, dan web chat, dokumen persyaratan, prosedur, jam layanan, status pengajuan, sambil mengubah komplain jadi tiket terlacak yang diarahkan ke unit yang tepat. Pertanyaan rutin yang berulang ditangani otomatis, petugas fokus ke kasus yang butuh pertimbangan."
+    },
+    {
+      "q": "Apakah bisa menjawab pertanyaan warga sepanjang waktu?",
+      "a": "Bisa. Cekat.AI merespons secara instan kapan pun, jadi warga mendapat informasi akurat di malam hari atau akhir pekan tanpa menunggu loket buka kembali. AI menjawab setiap chat yang masuk berapa pun banyaknya sekaligus, menjaga waktu respons tetap konsisten bahkan saat puncak."
+    },
+    {
+      "q": "Bagaimana komplain dan laporan warga ditangani?",
+      "a": "Setiap komplain dilabeli otomatis, diubah jadi tiket, dan diarahkan ke unit yang bertanggung jawab beserta notifikasi. Setelah itu dilacak dari pesan pertama sampai selesai, jadi tidak ada laporan yang hilang di inbox sibuk dan akuntabilitas melekat dalam alur kerjanya."
+    },
+    {
+      "q": "Apakah data warga ditangani dengan aman dan compliant?",
+      "a": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam menangani dan mengelola data pengguna, dan sertifikasi ISO 27001 sedang dalam proses. Akses berbasis peran memastikan data percakapan dan data warga hanya terlihat oleh petugas yang berwenang."
+    },
+    {
+      "q": "Apakah pertanyaan bisa diarahkan ke dinas atau unit yang tepat?",
+      "a": "Bisa. Percakapan dan komplain diarahkan otomatis ke tim atau unit yang bertanggung jawab, dan Anda bisa membuat AI agent spesialis untuk layanan berbeda, masing-masing menjawab dari knowledge base-nya sendiri, jadi setiap pertanyaan sampai ke tempat yang tepat tanpa penyortiran manual."
+    },
+    {
+      "q": "Channel apa saja yang bisa dihubungkan lembaga layanan publik?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, live chat website, dan channel API, semua mengalir ke satu inbox dengan satu riwayat interaksi per warga, jadi kasus yang berpindah antar channel tetap membawa konteks lengkapnya."
+    },
+    {
+      "q": "Apa yang terjadi saat sebuah kasus butuh petugas manusia?",
+      "a": "AI menangani pertanyaan rutin dan mengalihkan apa pun yang butuh pertimbangan ke petugas yang bertanggung jawab secara otomatis, lengkap dengan seluruh percakapannya. Dengan AI working hours, petugas menangani kasus di jam layanan dan AI meng-cover sisanya, dengan handoff otomatis."
+    },
+    {
+      "q": "Apakah beberapa instansi atau dinas bisa memakai satu platform?",
+      "a": "Bisa. Anda dapat mengatur petugas dalam tim dengan akses berbasis peran, membuat AI agent spesialis per layanan atau dinas, dan mengarahkan percakapan ke unit yang tepat otomatis, jadi beberapa layanan bisa berjalan di satu platform sambil menjaga datanya tetap terpisah."
+    },
+    {
+      "q": "Berapa lama setup untuk lembaga layanan publik?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin prosedur, persyaratan, dan SOP ke knowledge base, dan AI langsung menjawab dengan akurat. Tanpa coding sama sekali; semudah memberi arahan ke admin layanan baru."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Pertanyaan Warga Jadi Layanan Instan yang Terlacak",
+    "body": "Lihat bagaimana tim layanan publik melayani warga 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

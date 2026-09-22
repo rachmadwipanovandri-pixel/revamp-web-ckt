@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "BPO Contact Center Platform, AI Tier-1 CS 24/7 | CekatAI",
+    "description": "BPOs run every client on one Cekat.AI platform: separate workspaces, AI answering tier-1 24/7, and per-client SLA views without manual reporting."
+  },
+  "hero": {
+    "badge": "Outsourcing & BPO",
+    "title": "Take On New Clients Without Hiring Another Team",
+    "subtitle": "Cekat.AI runs customer service for every client on one platform, separate workspaces per account, AI handling tier-1 24/7, and your agents stepping in only on escalations that truly need a human",
+    "useCases": [
+      "Workspace per client",
+      "Automated tier-1",
+      "Per-account knowledge base",
+      "Per-client SLA & analytics"
+    ]
+  },
+  "definition": "Cekat.AI for outsourcing is an AI customer service platform for BPO and contact center providers in Indonesia running CS for many clients, uniting separate workspaces per account, tier-1 AI coverage 24/7, and per-client SLA reporting in one BPO contact center platform.",
+  "stats": [
+    {
+      "value": "75%",
+      "label": "cost saving on Customer Service at Gamal Men by using AI agents"
+    },
+    {
+      "value": "+30%",
+      "label": "increase in monthly revenue at Happy GSR"
+    },
+    {
+      "value": "24/7",
+      "label": "tier-1 chats answered across every client account"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "A Separate Workspace for Every Client",
+      "body": "Each client gets its own working space, channels, AI agent, knowledge base, with nothing bleeding into other accounts. You keep control from one platform, client A is never visible to client B's team, and onboarding a new account means opening a new workspace, not building a system from scratch.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Multiple separate AI agents for each client account in Cekat.AI"
+    },
+    {
+      "title": "AI Handles Tier-1 Across Every Account, 24/7",
+      "body": "Order status, opening hours, return policies, the chat types that eat most of an agent's shift, are answered instantly by AI across every client account at once. Response times stay flat when volume spikes, and headcount no longer has to climb every time a new contract lands.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering tier-1 customer chats in the Cekat.AI inbox"
+    },
+    {
+      "title": "A Knowledge Base per Account, No Mixed-Up Answers",
+      "body": "A fashion client's SOP is nothing like an electronics client's, and answers crossing between accounts is a BPO's nightmare. In Cekat.AI each account has its own knowledge base, paste the client's documents, FAQs, and SOPs into it, and the AI in that workspace answers only from those sources, in that client's brand voice.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Separate knowledge base per client account in Cekat.AI"
+    },
+    {
+      "title": "Agents Handle Escalations, Not Every Chat",
+      "body": "Complex or sensitive cases hand over to a human agent with the conversation history and customer data attached, so nobody starts the story over. Role-based access controls who works which accounts, and team utilization becomes a matter of how well cases are handled, not how fast people type.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Chat escalation to a human agent with full context in Cekat.AI"
+    },
+    {
+      "title": "Per-Client SLA and Analytics, No Manual Recaps",
+      "body": "Monthly reports stop being an end-of-month spreadsheet assembly job. Every workspace has its own dashboard, chat volume, response times, resolution rates, AI versus agent performance, so an SLA review means opening the same numbers your client sees, live data instead of last week's recap.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Per-client performance and SLA dashboard in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Every client's WhatsApp number runs on the official WhatsApp Business API, alongside Instagram DM and Facebook Messenger, all accounts compliant from one platform."
+    },
+    {
+      "title": "One Platform, Many Clients",
+      "body": "Separate workspaces, a knowledge base per account, and role-based access keep every client neatly isolated, while AI handles tier-1 across all of them."
+    },
+    {
+      "title": "Running 3,000+ Businesses in Indonesia",
+      "body": "More than 3,000 businesses in Indonesia run customer service on Cekat.AI."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help BPOs and contact center providers?",
+      "a": "It brings every client's customer service onto one platform, each account with its own workspace, channels, and AI agent. The AI handles tier-1 chats 24/7 across all accounts, your agents focus on escalations, and each client's performance shows up in its own dashboard, no tool-hopping."
+    },
+    {
+      "q": "Is client data truly separated?",
+      "a": "Yes. Each client lives in a separate workspace with its own conversations, contacts, and knowledge base, and role-based access (RBAC) ensures people only see the accounts they are responsible for. Supervisors can work across accounts, agents see only the ones assigned to them."
+    },
+    {
+      "q": "Can each client have an AI agent with a different voice?",
+      "a": "Yes. AI agents are built per workspace, each with its own knowledge base, instructions, and brand voice to match the client. One account can be formal while another stays casual, and they all run side by side without interfering."
+    },
+    {
+      "q": "Can we use each client's own WhatsApp number?",
+      "a": "Yes. Each workspace connects to that client's own channels, an official WhatsApp Business API number, Instagram DM, Facebook Messenger, and website live chat. Cekat.AI is an Official Meta Business Partner, so every number runs officially and compliantly, not on a regular WhatsApp account that risks getting blocked."
+    },
+    {
+      "q": "How does per-client SLA reporting work?",
+      "a": "Every workspace has its own analytics dashboard, conversation volume, response times, resolution rates, and the share handled by AI versus agents. Reporting to a client means opening the same dashboard together, not assembling a manual recap from several systems at month-end."
+    },
+    {
+      "q": "When do human agents step in?",
+      "a": "When a case is complex, sensitive, or outside the knowledge base, the conversation hands over to an agent with the full history attached, so the customer never repeats themselves. Escalation rules are configurable per account, following each client's SOP and SLA."
+    },
+    {
+      "q": "How long does onboarding a new client take?",
+      "a": "Building the AI agent for one account takes around five minutes, open a workspace, paste the client's FAQs, SOPs, and policies into the knowledge base, connect their channels, and it starts answering. No coding, so your delivery team can onboard new clients without queueing for IT."
+    },
+    {
+      "q": "How is client data kept secure?",
+      "a": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling and managing user data, and ISO 27001 certification is in progress. Combined with separate workspaces and role-based access, each client's data is visible only to the people authorized for that account."
+    },
+    {
+      "q": "How does pricing work for a BPO model?",
+      "a": "Plans scale with the number of accounts, agent seats, and conversation volume, so cost grows with your client portfolio instead of demanding a big upfront commitment. There is a 14-day free trial to test one account first, and a free consultation where our team helps you shape the right structure."
+    }
+  ],
+  "cta": {
+    "heading": "Scale Clients, Not Headcount",
+    "body": "See how BPOs run customer service for every client 24/7 on one platform, book a free consultation with our team."
+  }
+}

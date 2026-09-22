@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "CRM Otomatis, Data Update Sendiri Tanpa Ketik Manual | CekatAI",
+    "description": "Tiap chat, order, dan campaign otomatis update kartu CRM, tanpa input manual, minim salah ketik, data selalu fresh. 3.000+ bisnis jualan, bukan ngetik data."
+  },
+  "hero": {
+    "badge": "CRM Tanpa Ribet",
+    "title": "CRM yang Ngisi Sendiri, Tim Kamu Tinggal Jualan",
+    "subtitle": "Setiap percakapan, order, dan campaign otomatis bikin atau update data customer, tanpa form, tanpa numpuk input di akhir hari, jadi tim sales-mu habiskan waktu buat closing, bukan ngetik"
+  },
+  "definition": "CRM Otomatis adalah fitur Cekat.AI yang otomatis membuat dan memperbarui kartu CRM setiap customer dari tiap interaksi, chat, order, campaign, sampai aktivitas website, tanpa input data manual.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tercatat" },
+    { "value": "24/7", "label": "data update real-time" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "CRM-nya Update Sendiri, Kamu Nggak Perlu",
+      "body": "Kebanyakan CRM jadi basi karena update-nya kerjaan yang paling males dilakuin. Cekat.AI kebalikannya: tiap chat, order, dan campaign otomatis bikin atau update kartu customer. Nggak ada form yang harus diisi, nggak ada numpuk input di akhir hari, datanya kebangun sendiri begitu interaksinya terjadi.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Kartu customer dibuat dan di-update otomatis di Cekat.AI"
+    },
+    {
+      "title": "Jauh Lebih Minim Salah Dibanding Input Manual",
+      "body": "Input manual itu artinya salah ketik nomor, kontak dobel, dan kolom setengah kosong yang baru ketahuan pas dibutuhin. Kalau datanya ditarik langsung dari percakapan, nggak ada yang bisa salah ketik. Data tetap bersih dan konsisten, jadi tiap follow-up, broadcast, dan laporan jalan di atas data yang beneran bisa dipercaya.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Logika CRM berjalan otomatis tanpa input manual di Cekat.AI"
+    },
+    {
+      "title": "Balikin Jam Kerja Sales buat Jualan",
+      "body": "Tiap menit yang dipakai sales buat nyatet kontak itu menit yang hilang buat closing. Cekat.AI yang urus adminnya, nangkep leads dari website, WhatsApp, dan sosmed lalu nyimpen otomatis, jadi tim kamu garap pipeline, bukan keyboard. Orang yang kamu rekrut buat jualan akhirnya beneran jualan.",
+      "image": "/images/crm/manage-work-with-boards.png",
+      "imageAlt": "Tim sales menggarap pipeline lewat boards di Cekat.AI"
+    },
+    {
+      "title": "Data Selalu Fresh, Satu Tim Bisa Percaya",
+      "body": "CRM cuma berguna kalau isinya nggambarin kondisi sekarang. Karena kartu ter-update real-time dari tiap interaksi, siapa pun yang buka profil, sales, support, atau AI agent, lihat pembelian, chat, dan campaign terbaru. Nggak ada catatan basi, nggak ada \"sebentar saya cek dulu ya.\"",
+      "image": "/images/home/your-crm-built-for-growth-and-real-conversations.png",
+      "imageAlt": "CRM Cekat.AI yang dibangun dari percakapan nyata dan selalu update"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Auto-Capture",
+      "title": "Leads Tertangkap Begitu Masuk",
+      "body": "Leads baru dari website, WhatsApp, dan channel sosmed otomatis masuk ke CRM, nggak perlu copy-paste kontak, nggak ada leads yang nyangkut di inbox nunggu dicatat sampai keburu kelupaan."
+    },
+    {
+      "label": "Auto-Update",
+      "title": "Tiap Interaksi Nulis ke Kartunya",
+      "body": "Chat baru, order kelar, campaign diterima, aktivitas website, masing-masing update kartu CRM customer dengan sendirinya. Profilnya nggambarin semua yang terjadi tanpa satu pun edit manual."
+    },
+    {
+      "label": "Tanpa Coding",
+      "title": "Atur Aturannya Sekali, Tanpa Coding",
+      "body": "Workflow trigger nyambungin semuanya, auto-labeling, notifikasi, dan sinkron data antar tools, pakai jadwal waktu, keyword chat, atau perubahan data seperti leads baru. Kamu atur sekali tanpa coding, sisanya jalan sendiri."
+    },
+    {
+      "label": "Pipeline",
+      "title": "Progress Penjualan Terpantau Real-Time",
+      "body": "Leads yang tertangkap mengalir ke sales pipeline yang bisa kamu pantau real-time, jadi kamu selalu tahu berapa deal yang jalan, posisinya di mana, dan tim harus garap yang mana berikutnya."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Tanpa Input Manual",
+      "body": "Kartu dibuat dan di-update langsung dari percakapan, order, dan campaign, nggak ada lagi tim yang ngetik data customer ke dalam form."
+    },
+    {
+      "title": "Selalu Akurat",
+      "body": "Karena datanya datang dari interaksinya langsung, nggak ada salah ketik, kontak dobel, atau kolom basi, cuma data yang bisa dipercaya buat tiap keputusan."
+    },
+    {
+      "title": "Dibangun dari Percakapan Nyata",
+      "body": "WhatsApp, Instagram, Messenger, dan live chat semua ngisi CRM, jadi profilnya nggambarin yang beneran terjadi, bukan yang sempat diinget buat dicatat."
+    }
+  ],
+  "testimonial": {
+    "quote": "Our revenue increased by more than 50%! Cekat AI allows us to secure property visits and close deals even while I'm asleep, because no leads are missed.",
+    "name": "Adam Sulaiman",
+    "role": "President Director, Threeland Property",
+    "image": "/images/crm/adam-sulaiman.png"
+  },
+  "faq": [
+    {
+      "q": "Apa itu CRM otomatis?",
+      "a": "CRM otomatis adalah cara membuat dan memperbarui data customer tanpa input manual. Di Cekat.AI, tiap interaksi, chat, order, campaign yang diterima, aktivitas website, otomatis bikin atau update kartu CRM customer, jadi database-mu tetap lengkap dan terkini tanpa ada yang mengetiknya."
+    },
+    {
+      "q": "Gimana Cekat.AI update CRM secara otomatis?",
+      "a": "Saat percakapan terjadi di WhatsApp, Instagram, Messenger, dan live chat, Cekat.AI menangkap detailnya dan menuliskannya ke kartu customer, kontak baru, pembelian, campaign yang diterima, dan aktivitas website semua masuk ke profil dengan sendirinya. Workflow trigger yang urus labeling, notifikasi, dan sinkron antar tools."
+    },
+    {
+      "q": "Masih perlu input data customer manual nggak?",
+      "a": "Nggak, justru itu intinya. Leads ditangkap otomatis dari website, WhatsApp, dan sosmed, dan tiap interaksi berikutnya update kartunya sendiri. Input manual itu justru yang bikin kebanyakan CRM jadi basi, makanya Cekat.AI hapus sepenuhnya dari kerjaan tim kamu."
+    },
+    {
+      "q": "Apakah otomatisasi CRM mengurangi kesalahan?",
+      "a": "Iya. Input manual bikin salah ketik, kontak dobel, dan kolom setengah kosong. Kalau datanya ditarik langsung dari percakapan, nggak ada yang bisa salah ketik atau kelupaan. Data tetap bersih dan konsisten, jadi follow-up, broadcast, dan laporan jalan di atas data yang bisa dipercaya."
+    },
+    {
+      "q": "Info apa saja yang tercatat di tiap kartu?",
+      "a": "Tiap profil customer berisi pembelian, riwayat chat lengkap, campaign yang diterima, plus aktivitas dan event log website, ditambah Customer Stage-nya, Visitor, Lead, atau Buyer. Seluruh relasi ada dalam satu data hidup, bukan tercecer di berbagai aplikasi dan spreadsheet."
+    },
+    {
+      "q": "Bisa atur aturan otomatisasinya sendiri?",
+      "a": "Bisa. Workflow trigger jalan berdasarkan jadwal waktu, keyword chat, atau perubahan data customer seperti leads baru, dan bisa memicu auto-labeling, tiket, notifikasi admin, dan sinkron data antar tools. Kamu atur aturannya sekali tanpa coding, dan seterusnya jalan otomatis."
+    },
+    {
+      "q": "Gimana CRM otomatis bantu tim sales?",
+      "a": "Balikin jam jualan mereka. Alih-alih nyatet kontak dan update spreadsheet, sales garap pipeline yang ngisi dan update sendiri. Mereka lihat progress penjualan real-time dan profil yang selalu fresh, jadi waktunya buat percakapan yang closing, bukan buat input data."
+    },
+    {
+      "q": "Channel apa saja yang ngisi CRM?",
+      "a": "Percakapan dari WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, live chat website, dan channel API semua masuk ke satu inbox terpadu, dan tiap-tiapnya otomatis update kartu CRM customer, bareng aktivitas dan event log website mereka."
+    },
+    {
+      "q": "Data customer-nya aman nggak?",
+      "a": "Aman. Cekat.AI patuh pada UU PDP, undang-undang perlindungan data pribadi Indonesia, dan pakai akses tim berbasis peran jadi kamu yang kontrol siapa boleh lihat dan kelola data customer. Sebagai Meta Business Partner resmi, trafik WhatsApp juga lewat infrastruktur resmi Meta."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Tiap Percakapan Jadi Update CRM",
+    "body": "Biarkan Cekat.AI menangkap dan menyimpan tiap kontak otomatis, jadi tim kamu jualan bukan ngetik, dengan data yang selalu fresh dengan sendirinya."
+  }
+}

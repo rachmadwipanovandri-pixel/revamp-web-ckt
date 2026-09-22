@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "WhatsApp Call AI, Ringkasan Otomatis Setiap Telepon | CekatAI",
+    "description": "Rangkum panggilan WhatsApp otomatis dengan AI: dapatkan ringkasan instan, poin penting, & rincian follow-up langsung ke CRM. Coba fitur gratisnya!"
+  },
+  "hero": {
+    "badge": "WhatsApp Call + AI",
+    "title": "Setiap WhatsApp Call Dirangkum AI dalam Hitungan Detik",
+    "subtitle": "Terima WhatsApp call di platform yang sama dengan chat, dan biarkan AI mengubah setiap percakapan jadi ringkasan instan, poin penting, dan langkah berikutnya untuk timmu"
+  },
+  "definition": "WhatsApp Call AI adalah fitur Cekat.AI yang memproses setiap panggilan WhatsApp dengan AI untuk menghasilkan ringkasan instan, poin-poin penting, dan rekomendasi langkah berikutnya, jadi tidak ada isi telepon yang hilang dan setiap follow-up jalan tepat waktu.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "15+", "label": "industri terlayani" },
+    { "value": "24/7", "label": "percakapan tercakup, chat dan call" }
+  ],
+  "benefits": [
+    {
+      "title": "Telepon dan Chat, Satu Tempat",
+      "body": "Customer yang lebih suka telepon daripada mengetik tidak lagi hilang ke sistem terpisah. WhatsApp call berlangsung di dalam Cekat.AI, bersebelahan dengan riwayat chat customer yang sama, satu platform, satu konteks, satu catatan.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Channel WhatsApp terhubung dalam satu inbox Cekat.AI"
+    },
+    {
+      "title": "AI Menulis Ringkasan Sebelum Tim Keburu Lupa",
+      "body": "Detail telepon menguap dalam hitungan jam, harga yang dibahas, keberatan customer, janji yang diucapkan. AI memproses setiap call jadi ringkasan instan dengan poin penting, jadi isi telepon berubah dari ingatan jadi catatan.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Ringkasan percakapan otomatis dari AI di Cekat.AI"
+    },
+    {
+      "title": "Rekomendasi Langkah Berikutnya, Bukan Sekadar Transkrip",
+      "body": "Ringkasan yang berakhir dengan \"terus ngapain?\" tidak membantu siapa-siapa. Cekat.AI merekomendasikan langkah konkret setelah tiap call, kirim penawaran, jadwalkan kunjungan, follow-up hari Jumat, keputusan jadi lebih cepat, bukan menggantung.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "Insight call dan rekomendasi aksi di Cekat.AI"
+    },
+    {
+      "title": "Semua Tersinkron ke Profil Customer di CRM",
+      "body": "Ringkasan call masuk ke profil customer yang sama dengan chat, order, dan campaign. Siapa pun yang menangani customer itu berikutnya, manusia atau AI agent, mulai dengan cerita lengkap, tanpa minta customer mengulang dari awal.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Konteks call tersinkron ke CRM di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Kerja Manual Berkurang",
+      "body": "Tidak ada lagi yang mengetik notulen telepon. AI mendokumentasikan setiap call otomatis, dan jam yang hemat dipakai tim buat jualan."
+    },
+    {
+      "title": "Catatan Lebih Akurat",
+      "body": "Catatan manusia suka bolong; ringkasan AI menangkap poin penting secara konsisten. Salah paham berkurang, komitmen tidak ada yang jatuh."
+    },
+    {
+      "title": "Keputusan Lebih Cepat",
+      "body": "Ringkasan dan rekomendasi langkah tiba begitu telepon selesai, manajer dan tim bergerak berdasarkan fakta, bukan ingatan."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu WhatsApp Call AI di Cekat.AI?",
+      "a": "Fitur yang memproses setiap panggilan WhatsApp dengan AI untuk menghasilkan ringkasan instan, poin-poin penting, dan rekomendasi langkah berikutnya. Telepon berubah dari percakapan tanpa jejak jadi catatan yang bisa ditindaklanjuti di CRM."
+    },
+    {
+      "q": "Kenapa ringkasan call penting buat tim sales?",
+      "a": "Karena deal sering mandek di jeda antara telepon dan follow-up-nya. Saat AI mencatat harga yang dibahas, keberatan customer, dan langkah yang disepakati, follow-up jalan tepat waktu dan tidak ada ucapan customer yang terlupakan."
+    },
+    {
+      "q": "Perlu sistem telepon terpisah?",
+      "a": "Tidak. Panggilan berlangsung lewat WhatsApp, channel yang memang dipakai customermu setiap hari, dan ditangani di platform Cekat.AI yang sama dengan chat, jadi tidak ada tool baru yang harus dipelajari tim."
+    },
+    {
+      "q": "Apa saja yang dihasilkan AI setelah telepon selesai?",
+      "a": "Tiga hal: ringkasan singkat percakapan, poin-poin penting yang layak diingat, dan rekomendasi langkah berikutnya untuk tim. Semuanya muncul begitu call berakhir, siap ditindaklanjuti."
+    },
+    {
+      "q": "Ringkasannya tersimpan di mana?",
+      "a": "Di profil customer di CRM Cekat.AI, bersama riwayat chat, order, dan campaign yang pernah diterima. Siapa pun yang menangani customer itu berikutnya, termasuk AI agent, langsung punya konteks lengkap."
+    },
+    {
+      "q": "Fitur ini nyambung dengan AI agent di chat?",
+      "a": "Nyambung. Chat dan call berbagi satu catatan customer, jadi AI agent yang membalas pesan tahu apa yang dibahas di telepon terakhir, dan tim manusia melihat riwayat percakapan lengkap dari kedua jalur."
+    },
+    {
+      "q": "Fitur ini cocok buat siapa?",
+      "a": "Semua tim yang closing atau melayani lewat telepon WhatsApp: tim sales yang membahas deal, konsultan properti dan otomotif, klinik yang mengatur jadwal pasien, sampai tim support yang menangani kasus kompleks lewat suara."
+    },
+    {
+      "q": "Bagaimana cara mulai pakai WhatsApp Call AI?",
+      "a": "Coba demo atau mulai gratis, hubungkan akun WhatsApp Business kamu, dan panggilan yang ditangani di Cekat.AI otomatis diproses AI. Tanpa coding, tanpa setup terpisah untuk ringkasannya."
+    }
+  ],
+  "cta": {
+    "heading": "Jangan Biarkan Isi Telepon Customer Menguap",
+    "body": "Biarkan AI mendokumentasikan setiap WhatsApp call, ringkasan, poin penting, langkah berikutnya, sementara timmu fokus closing."
+  }
+}

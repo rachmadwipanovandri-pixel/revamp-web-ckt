@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Aplikasi Omnichannel, Semua Channel dalam Satu Inbox | CekatAI",
+    "description": "Kelola WhatsApp, Instagram, Messenger, live chat, dan channel API dalam satu inbox omnichannel. AI bales 24/7 di semua channel, dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "Satu Inbox untuk Semua Channel",
+    "title": "Semua Channel Customer, Diurus dari Satu Inbox",
+    "subtitle": "WhatsApp, Instagram, Messenger, live chat website, dan channel API masuk ke satu inbox omnichannel, tim dan AI bales setiap pesan dengan konteks yang sama, tanpa gonta-ganti HP atau buka banyak tab"
+  },
+  "definition": "Aplikasi Omnichannel adalah fitur Cekat.AI untuk menyatukan WhatsApp, Instagram, Facebook Messenger, live chat website, dan channel API dalam satu inbox, jadi setiap percakapan customer ditangani di satu tempat dengan konteks yang lengkap.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "AI bales di semua channel" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Berhenti Gonta-Ganti HP, Tab, dan Aplikasi",
+      "body": "Kebanyakan tim bales WhatsApp di satu HP, Instagram di HP lain, dan live chat di tab browser, ujung-ujungnya ada chat yang kelewat. Cekat.AI menarik WhatsApp, Instagram, Messenger, live chat website, dan channel API ke satu inbox, jadi tidak ada yang terlewat dan tim tidak perlu pindah perangkat cuma buat bales.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Semua channel customer terhubung ke satu inbox Cekat.AI"
+    },
+    {
+      "title": "Semua Channel Dapat Jawaban yang Sama Cepat dan Konsisten",
+      "body": "Customer yang tanya lewat Instagram berhak dapat jawaban yang sama seperti di WhatsApp. Karena semua channel jalan lewat satu AI agent dan satu knowledge base, jawabannya konsisten, akurat, dan sesuai brand, mau pesannya masuk dari DM, widget live chat, atau thread WhatsApp.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI menjawab percakapan dari semua channel di Cekat.AI"
+    },
+    {
+      "title": "Biarkan AI Jaga Semua Channel 24/7",
+      "body": "Tim kamu tidak mungkin melototin lima channel non-stop, AI agent bisa. AI paham maksud dan konteks, bales pakai bahasa customer, dan menjaga semua channel siang-malam. Kalau ada yang butuh manusia, AI langsung oper ke tim lengkap dengan seluruh isi percakapannya.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours menjaga semua channel setelah tim selesai jam kerja"
+    },
+    {
+      "title": "Lihat Customer Utuh, Bukan Cuma Satu Chat",
+      "body": "Customer yang sama bisa DM hari ini dan WhatsApp minggu depan. Cekat.AI mengikat semua channel ke satu profil CRM, jadi tim melihat riwayat chat, pembelian, dan campaign dari mana pun percakapan dimulai, dan bisa bales dengan konteks penuh tanpa nyuruh customer ngulang cerita.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Profil customer tersatukan lintas channel di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Semua Channel",
+      "title": "WhatsApp, Instagram, Messenger, Chat, API",
+      "body": "Hubungkan WhatsApp Business API resmi, Instagram DM, Facebook Messenger, live chat website, dan channel API custom. Setiap pesan dari setiap channel masuk ke inbox yang sama, tidak ada lagi channel yang nyangkut di aplikasi terpisah."
+    },
+    {
+      "label": "Satu Inbox",
+      "title": "Semua Percakapan di Satu Tempat",
+      "body": "Alih-alih lima antrian yang harus dipantau, tim kerja di satu inbox bersama. Sortir, cari, kasih label, dan prioritaskan case lintas channel sekaligus, jadi balasan tercepat selalu ke customer yang paling lama nunggu."
+    },
+    {
+      "label": "AI + Tim",
+      "title": "AI dan Agent Kerja di Inbox yang Sama",
+      "body": "AI agent langsung bales pertanyaan rutin di semua channel, sementara tim menangani percakapan yang butuh sentuhan manusia. Oper-operannya membawa konteks penuh, jadi customer tidak perlu ngulang penjelasan."
+    },
+    {
+      "label": "Konteks Sama",
+      "title": "Satu Data Customer di Balik Semua Channel",
+      "body": "Setiap channel mengisi profil CRM yang sama, riwayat chat, pembelian, dan campaign yang diterima. Mau customer nulis di Messenger bulan lalu atau WhatsApp hari ini, balasan berikutnya sudah tahu ceritanya."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Meta Business Partner Resmi",
+      "body": "WhatsApp, Instagram, dan Messenger terhubung lewat channel resmi Meta, jadi pesan bisnismu tetap compliant dan andal seiring volume yang terus bertambah."
+    },
+    {
+      "title": "Satu Platform, Semua Channel",
+      "body": "Inbox, AI agent, CRM, dan analitik jadi satu. Nambah channel baru tidak berarti nambah tool atau login baru yang harus dipelajari tim."
+    },
+    {
+      "title": "AI Bales, Tim Turun Tangan",
+      "body": "AI menangani pertanyaan rutin di semua channel 24/7 dan mengoper ke manusia, lengkap dengan konteks, cuma saat percakapan memang butuh."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu aplikasi omnichannel?",
+      "a": "Aplikasi omnichannel menyatukan semua channel pesan customer di satu tempat. Di Cekat.AI, WhatsApp, Instagram, Facebook Messenger, live chat website, dan channel API semuanya masuk ke satu inbox, jadi tim dan AI bales semua percakapan dari satu layar dengan konteks customer yang sama."
+    },
+    {
+      "q": "Channel apa saja yang bisa dihubungkan ke Cekat.AI?",
+      "a": "Kamu bisa menghubungkan WhatsApp Business API resmi, Instagram DM, Facebook Messenger, live chat website, dan channel API custom. Semuanya masuk ke satu inbox terpadu, jadi tidak ada channel yang jalan sendiri di aplikasi atau perangkat terpisah."
+    },
+    {
+      "q": "Masih perlu aplikasi terpisah buat WhatsApp, Instagram, dan Messenger?",
+      "a": "Tidak. Justru itu inti inbox omnichannel, semua channel jadi satu tempat. Tim berhenti gonta-ganti HP dan tab browser, dan pesan dari channel mana pun dibales dari dashboard Cekat.AI yang sama."
+    },
+    {
+      "q": "Apakah satu AI agent bisa jalan di semua channel?",
+      "a": "Bisa. AI agent yang sama bales di WhatsApp, Instagram, Messenger, dan live chat, menarik dari satu knowledge base. AI paham maksud dan konteks, bukan cuma keyword, jadi jawabannya konsisten dan akurat dari channel mana pun customer nulis."
+    },
+    {
+      "q": "Bisa tim dan AI kerja di inbox yang sama?",
+      "a": "Bisa. AI langsung bales pertanyaan rutin di semua channel, sementara agent menangani percakapan yang butuh manusia. Oper-operannya membawa percakapan penuh, plus ada private note, label, dan akses berbasis peran biar tim tetap rapi."
+    },
+    {
+      "q": "Pesan yang masuk di luar jam kerja gimana?",
+      "a": "Dengan AI working hours, AI agent menjaga semua channel begitu tim selesai kerja, lalu mengoper case aktif balik saat tim online lagi. Customer tetap terjawab 24/7, dan tidak ada pesan yang nganggur sampai besok pagi."
+    },
+    {
+      "q": "Apakah inbox omnichannel menyimpan riwayat customer di satu tempat?",
+      "a": "Ya. Setiap channel mengisi profil CRM yang sama, jadi chat, pembelian, campaign yang diterima, dan aktivitas website ada di satu data. Dari mana pun customer memulai percakapan, tim dan AI sudah lihat riwayat lengkapnya sebelum bales."
+    },
+    {
+      "q": "Menghubungkan WhatsApp dan Instagram aman dan resmi?",
+      "a": "Aman. Cekat.AI adalah Meta Business Partner resmi dan menghubungkan WhatsApp lewat Business API resmi, plus Instagram dan Messenger lewat channel resmi Meta, cara yang compliant untuk mengelola pesan bisnis dalam skala besar."
+    },
+    {
+      "q": "Berapa lama setup inbox omnichannel?",
+      "a": "Menghubungkan channel tinggal klik, dan bikin AI agent cuma sekitar lima menit tanpa coding, semudah nge-brief admin CS. Kebanyakan tim sudah menyatukan channel dan AI-nya jalan di hari yang sama saat mulai."
+    }
+  ],
+  "testimonial": {
+    "quote": "Response rate kami meningkat 90%",
+    "name": "Hargyo",
+    "role": "Director, Multimedia Nusantara Polytechnic",
+    "image": "/images/home/testimonial-hargyo.jpg"
+  },
+  "cta": {
+    "heading": "Ubah Lima Channel yang Berserakan Jadi Satu Percakapan",
+    "body": "Bawa semua channel ke satu inbox dan biarkan AI bales sepanjang waktu, sementara tim tetap pegang konteks penuh tiap customer."
+  }
+}

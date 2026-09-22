@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "WA Blast Resmi Meta, Kirim Ribuan Pesan Sekali Klik | CekatAI",
+    "description": "Kirim WA blast ke ribuan pelanggan lewat WhatsApp Business API resmi. Segmentasi audiens, follow-up otomatis, konversi terlacak, dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "WhatsApp Business API Resmi",
+    "title": "Jangkau Ribuan Pelanggan dengan Sekali WA Blast",
+    "subtitle": "Kirim campaign broadcast yang personal lewat WhatsApp Business API resmi, tersegmentasi sesuai perilaku customer, follow-up jalan otomatis, hasilnya terukur sampai ke penjualan"
+  },
+  "definition": "WA Blast adalah fitur Cekat.AI untuk mengirim pesan broadcast ke ribuan pelanggan sekaligus lewat WhatsApp Business API resmi, lengkap dengan segmentasi audiens, reminder otomatis, dan pelacakan konversi dalam satu platform.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "AI bales setiap reply" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Segmentasi Audiens Dulu, Baru Kirim",
+      "body": "Kirim pesan yang sama ke semua orang itu cara tercepat di-ignore customer. Cekat.AI membagi audiens berdasarkan aktivitas, riwayat pembelian, atau event, pelanggan setia dapat penawaran loyalty, leads yang ghosting dapat ajakan balik ke checkout.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Dashboard segmentasi perilaku customer di Cekat.AI"
+    },
+    {
+      "title": "Kirim Promo yang Terasa Personal, Bukan Spam",
+      "body": "Setiap blast otomatis menarik nama dan konteks customer dari CRM, \"Halo Steven, promo kamu berakhir 10 Desember\" jelas lebih nendang daripada pengumuman generik. Pesan yang relevan itu yang dibuka, diklik, dan dibales.",
+      "image": "/images/home/track-and-optimize-your-marketing-performance-in-one-unified-platform.png",
+      "imageAlt": "Pelacakan performa campaign dalam satu dashboard Cekat.AI"
+    },
+    {
+      "title": "Follow-Up Otomatis Saat Customer Mulai Diam",
+      "body": "Rezeki ada di follow-up, dan Cekat.AI tidak pernah lupa satu pun. Reminder otomatis terkirim sebelum momen penting, order belum dibayar, promo mau habis, waktunya restock, sesuai perilaku masing-masing customer.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Builder alur follow-up otomatis di Cekat.AI"
+    },
+    {
+      "title": "Ukur Reply, Konversi, dan Revenue, Bukan Cuma Terkirim",
+      "body": "Blast yang tidak menghasilkan penjualan cuma jadi noise. Pantau open rate, reply, dan revenue tiap campaign dalam satu dashboard analitik, lalu gaspol di segmen dan pesan yang terbukti konversi.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Analitik konversi campaign di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "API Resmi",
+      "title": "Terkirim Lewat Infrastruktur Resmi Meta",
+      "body": "Cekat.AI adalah Meta Business Partner resmi. Blast terkirim lewat WhatsApp Business API dengan template pesan yang sudah disetujui, cara yang compliant untuk mengirim pesan massal, tanpa risiko seperti tool blast tidak resmi."
+    },
+    {
+      "label": "Segmentasi",
+      "title": "Audiens Dibentuk dari Perilaku Nyata",
+      "body": "Segmentasi berdasarkan aktivitas, riwayat pembelian, atau event, pembeli baru, pelanggan setia, leads yang klik tapi belum bayar. Setiap campaign sampai ke orang yang memang jadi targetnya."
+    },
+    {
+      "label": "Auto Reminder",
+      "title": "Reminder Berbasis Event, Jalan Sendiri",
+      "body": "Pembayaran masih pending? Promo mau berakhir? Waktunya beli lagi? Cekat.AI mengirim reminder yang tepat di momen yang tepat secara otomatis, tidak ada revenue yang lolos karena tim lagi sibuk."
+    },
+    {
+      "label": "Sinkron CRM",
+      "title": "Setiap Campaign Tercatat di Profil Customer",
+      "body": "Semua blast yang diterima customer tercatat di profil CRM-nya bersama chat, pembelian, dan aktivitas website, tim dan AI agent selalu tahu konteks lengkap sebelum percakapan berikutnya."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Meta Business Partner Resmi",
+      "body": "Campaign berjalan di WhatsApp Business API resmi, compliant, andal, dan siap scale bareng daftar pelanggan yang terus tumbuh."
+    },
+    {
+      "title": "Satu Platform, Bukan Lima Tools",
+      "body": "Blast, segmentasi, follow-up otomatis, CRM, dan analitik ada dalam satu dashboard. Tidak perlu ekspor-impor kontak antar aplikasi."
+    },
+    {
+      "title": "AI yang Bales Reply-nya",
+      "body": "Blast menciptakan percakapan, AI agent Cekat.AI membalasnya 24/7, mengkualifikasi leads, dan closing order langsung dari chat."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu WA blast?",
+      "a": "WA blast adalah pesan broadcast yang dikirim ke banyak pelanggan sekaligus lewat WhatsApp. Di Cekat.AI, blast terkirim lewat WhatsApp Business API resmi dengan template yang disetujui Meta, tersegmentasi sesuai perilaku customer, dan terlacak sampai reply dan konversi."
+    },
+    {
+      "q": "Apakah WA blast di Cekat.AI aman buat nomor bisnisku?",
+      "a": "Aman. Cekat.AI adalah Meta Business Partner resmi dan setiap campaign terkirim lewat WhatsApp Business API resmi dengan template yang sudah disetujui, metode yang compliant untuk pesan massal, beda dengan tool tidak resmi yang membahayakan nomormu."
+    },
+    {
+      "q": "Apa bedanya dengan broadcast list di aplikasi WhatsApp Business biasa?",
+      "a": "Broadcast list di aplikasi gratis terbatas jumlahnya dan hanya sampai ke orang yang menyimpan nomormu. Lewat API resmi di Cekat.AI, pesan menjangkau seluruh daftar customer, terpersonalisasi per orang, plus ada segmentasi, otomatisasi, dan analitik."
+    },
+    {
+      "q": "Bisa pilih siapa saja yang menerima campaign?",
+      "a": "Bisa. Audiens disegmentasi berdasarkan aktivitas, riwayat pembelian, atau event, misalnya customer yang belanja bulan lalu, leads yang belum menyelesaikan pembayaran, atau semua peserta promo kemarin. Campaign hanya terkirim ke segmen yang kamu pilih."
+    },
+    {
+      "q": "Pesannya bisa dipersonalisasi?",
+      "a": "Setiap pesan bisa menarik data customer seperti nama dan detail order dari CRM, jadi tiap penerima merasa pesannya memang ditulis untuk dia, dan itulah kenapa campaign personal lebih banyak dibuka dan dibales."
+    },
+    {
+      "q": "Kalau customer bales blast-nya, siapa yang jawab?",
+      "a": "Reply masuk ke inbox Cekat.AI dan langsung dijawab AI agent, 24/7 dengan bahasa yang natural. AI bisa jawab pertanyaan, cek ongkir, sampai closing order langsung di chat, dan baru dialihkan ke tim kalau memang perlu."
+    },
+    {
+      "q": "Bisa lihat campaign mana yang benar-benar menghasilkan?",
+      "a": "Bisa. Dashboard analitik melacak tiap campaign dari terkirim, dibales, sampai konversi, jadi kelihatan revenue per campaign, bukan cuma jumlah pesan terkirim. Segmen dan pesan yang menang langsung ketahuan."
+    },
+    {
+      "q": "Perlu skill teknis untuk mulai?",
+      "a": "Tidak. Bikin campaign tinggal klik: pilih segmen, tulis pesan, kirim atau otomatiskan. Tidak ada coding sama sekali di Cekat.AI, kebanyakan tim sudah kirim campaign pertama di hari yang sama."
+    },
+    {
+      "q": "WA blast nyambung dengan produk Cekat.AI lainnya?",
+      "a": "Nyambung, justru itu kekuatannya. Blast pakai data CRM untuk segmentasi, AI agent menangani reply, otomatisasi order closing di chat, dan hasilnya balik lagi memperkaya profil customer. Satu platform menutup seluruh siklus."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Satu Broadcast Jadi Ribuan Percakapan yang Menambah Omzet",
+    "body": "Kirim WA blast tersegmentasi pertamamu dan biarkan AI membalas setiap reply, 24/7, tanpa nambah tim."
+  }
+}

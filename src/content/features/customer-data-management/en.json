@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Customer Data Management, One Living Customer Record | CekatAI",
+    "description": "Cekat.ai customer data management: unify chat logs, orders, & web activity into one automated profile. Privacy-compliant & trusted by 3,000+ brands!"
+  },
+  "hero": {
+    "badge": "The Living Customer Record",
+    "title": "Every Customer, One Complete Profile That Updates Itself",
+    "subtitle": "Purchases, chat history, campaigns received, and website behavior, captured automatically from every conversation into one living record, so every decision your team makes comes with full context"
+  },
+  "definition": "Customer Data Management is a Cekat.AI feature that keeps each customer's purchases, chat history, campaigns received, and website behavior in one living profile, created and updated automatically from every interaction, with no manual data entry.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions captured" },
+    { "value": "24/7", "label": "profiles update in real time" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "See the Whole Customer, Not Just a Phone Number",
+      "body": "Purchases in one app, chats in another, campaign lists in a spreadsheet, that's how context gets lost and customers get asked the same questions twice. Cekat.AI keeps purchases, full chat history, every campaign received, and website behavior in one profile, so anyone who opens it understands the customer in seconds.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Complete customer journey view in a Cekat.AI profile"
+    },
+    {
+      "title": "Data That Maintains Itself",
+      "body": "CRM data usually dies because nobody fills it in. Cekat.AI creates and updates customer cards automatically from every interaction, a new chat, a purchase, a campaign received, a website event, so the record stays accurate without your team typing a single field.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Customer cards created and organized automatically in Cekat.AI"
+    },
+    {
+      "title": "Find and Segment Any Customer in Seconds",
+      "body": "A database you can't search is just storage. With filters and boards, you can pull up repeat buyers, customers from last month's campaign, or leads who went quiet, then use those same segments to power broadcasts and follow-ups that actually convert.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Filtering customer data with boards and filters in Cekat.AI"
+    },
+    {
+      "title": "Make Decisions With Full Context, Not Guesswork",
+      "body": "Customer Stages track every contact from Visitor to Lead to Buyer, with next-step suggestions on each profile. Your team sees who is close to buying and what to do next, and your AI agent uses the same record to personalize every conversation it handles.",
+      "image": "/images/home/your-crm-built-for-growth-and-real-conversations.png",
+      "imageAlt": "Cekat.AI CRM built from real customer conversations"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "One Record",
+      "title": "Everything About a Customer in One Place",
+      "body": "Each profile holds purchases, complete chat history across channels, every campaign the customer received, and their website behavior and event logs. No switching between tools to piece the story together."
+    },
+    {
+      "label": "Auto Update",
+      "title": "Created and Updated From Every Interaction",
+      "body": "Customer cards are created and updated automatically from every conversation on WhatsApp, Instagram, Messenger, and live chat. No manual input, no stale records, no data-entry backlog at the end of the week."
+    },
+    {
+      "label": "Customer Stages",
+      "title": "From Visitor to Lead to Buyer",
+      "body": "Every customer is staged as Visitor, Lead, or Buyer, with next-step suggestions on the profile. Your team always knows where each relationship stands and what action moves it forward."
+    },
+    {
+      "label": "Compliance",
+      "title": "Handled Under Indonesia's Data-Protection Law",
+      "body": "Cekat.AI complies with UU PDP, Indonesia's personal data protection law, and role-based team access controls who can see and manage customer data, so growth never comes at the cost of trust."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Built From Real Conversations",
+      "body": "Every WhatsApp, Instagram, Messenger, and live-chat interaction feeds the profile, your customer data reflects what actually happened, not what someone remembered to log."
+    },
+    {
+      "title": "Zero Manual Data Entry",
+      "body": "Cards are auto-created and auto-updated from every interaction, so your CRM stays complete even on the busiest days."
+    },
+    {
+      "title": "Compliant by Design",
+      "body": "UU PDP compliance and role-based access keep customer data protected while your whole team works from the same record."
+    }
+  ],
+  "testimonial": {
+    "heading": "Complete Customer Data, Sharper Follow-Ups",
+    "quote": "Cekat AI makes it far easier for our team to build a patient database for follow-ups in as much detail as we want, without an admin typing each one by hand.",
+    "name": "Gamal",
+    "role": "Founder & CEO, Putiih Skin Clinic"
+  },
+  "faq": [
+    {
+      "q": "What is customer data management?",
+      "a": "Customer data management is the practice of collecting, organizing, and maintaining customer information in one place. In Cekat.AI, it means one living profile per customer, purchases, chat history, campaigns received, and website behavior, created and updated automatically from every interaction across your channels."
+    },
+    {
+      "q": "What information does each customer profile contain?",
+      "a": "Each Cekat.AI profile holds the customer's purchases, complete chat history, every campaign they've received, and their website behavior and event logs, plus their Customer Stage, Visitor, Lead, or Buyer, with suggested next steps. It's the full relationship in one view."
+    },
+    {
+      "q": "Do I have to enter customer data manually?",
+      "a": "No. Cekat.AI creates and updates customer cards automatically from every interaction, new chats, purchases, campaigns, and website events all flow into the profile on their own. Manual data entry is exactly why most CRMs go stale, so Cekat.AI removed it."
+    },
+    {
+      "q": "Which channels feed the customer profiles?",
+      "a": "Conversations from WhatsApp (official Business API), Instagram DM, Facebook Messenger, website live chat, and API channels all land in one unified inbox, and every one of those interactions updates the customer's profile automatically, along with website behavior and event logs."
+    },
+    {
+      "q": "Is Cekat.AI compliant with UU PDP?",
+      "a": "Yes. Cekat.AI complies with UU PDP, Indonesia's personal data protection law, so the customer data you collect and manage on the platform is handled under the standards the law requires. Role-based team access adds another layer of control over who sees what."
+    },
+    {
+      "q": "Can I control who on my team can access customer data?",
+      "a": "Yes. Cekat.AI uses role-based team access, so you decide which team members can view and manage customer data. Combined with features like private notes and collaborator assignment, sensitive information stays with the people who need it."
+    },
+    {
+      "q": "What are Customer Stages?",
+      "a": "Customer Stages classify every contact as a Visitor, Lead, or Buyer, and each profile shows suggested next steps to move the relationship forward. Instead of a flat contact list, you get a database that tells you who is close to buying and what to do about it."
+    },
+    {
+      "q": "Can I use customer data for marketing campaigns?",
+      "a": "Yes, that's one of its biggest payoffs. Profiles power broadcast segmentation by activity, purchase history, and events, and personalize each message with CRM data. Every campaign a customer receives is then logged back to their profile, keeping the record complete."
+    },
+    {
+      "q": "Does the AI agent use this customer data?",
+      "a": "Yes. Cekat.AI's AI agent reads the same profile your team sees, so it answers with full context, past purchases, previous chats, campaigns received. When a conversation is handed to a human, the complete history transfers with it, so customers never repeat themselves."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Scattered Data Into One Living Customer Record",
+    "body": "Let every conversation build your customer database automatically, complete, current, and UU PDP compliant."
+  }
+}

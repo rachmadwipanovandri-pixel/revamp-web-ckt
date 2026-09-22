@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Order Automation, AI Creates Orders From Chat | CekatAI",
+    "description": "Order automation with AI: complete orders created in chat, shipping cost, payment QR, and customer details included. 3,000+ businesses sell 24/7 without a cashier."
+  },
+  "hero": {
+    "badge": "AI Order Automation",
+    "title": "AI That Takes the Order Straight From the Conversation",
+    "subtitle": "Cekat.AI's agent captures customer details, checks the shipping cost, and sends the payment QR, turning chats into completed orders 24/7, without anyone retyping a thing"
+  },
+  "definition": "Order Automation is a Cekat.AI feature that lets an AI agent create complete orders directly from a chat conversation, customer details, shipping cost, and payment included, so sales close 24/7 without manual entry.",
+  "stats": [
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    },
+    {
+      "value": "24/7",
+      "label": "AI takes orders around the clock"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Orders Flow In From Every Channel You Sell On",
+      "body": "WhatsApp, Instagram DM, Facebook Messenger, website live chat, every conversation lands in one unified inbox, and the AI treats each one as a potential sale. When a customer says they want to buy, the order starts right there in the chat, on whichever channel they picked, without redirecting them anywhere.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Conversations from every sales channel entering one Cekat.AI inbox"
+    },
+    {
+      "title": "No Manual Cashier, No Typos, No Lost Orders",
+      "body": "Manual order-taking means retyping names, addresses, and totals, and dropping orders whenever the admin gets busy. Cekat.AI's agent captures the customer's details inside the conversation, checks the shipping cost, and builds the order automatically. Nothing depends on someone copying data into a spreadsheet before it slips their mind.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI agent handling an order conversation automatically"
+    },
+    {
+      "title": "Sell at 2 AM Without Being Awake for It",
+      "body": "Buying intent doesn't keep office hours. The AI agent answers, quotes shipping, and completes orders around the clock, so the customer who is ready to pay at midnight doesn't wait for morning, or drift off to a competitor who replied first. Holywings Group used this coverage to lift conversions by up to 70%.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "End-to-end automated order flow in Cekat.AI"
+    },
+    {
+      "title": "Every Order Updates Your CRM by Itself",
+      "body": "Each completed order lands on the customer's CRM profile automatically, next to their chats, campaigns, and purchase history. No manual input, no separate order log. Your team watches sales progress in real time, and your next broadcast campaign already knows exactly who bought what and when.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Full visibility of automated order steps in the Cekat.AI dashboard"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "In-Chat Orders",
+      "title": "The Whole Order Happens Inside the Conversation",
+      "body": "The AI collects the item, quantity, address, and contact details while chatting naturally, then creates the order with everything attached. The customer never leaves the chat, and your team never retypes a single field."
+    },
+    {
+      "label": "Shipping Cost",
+      "title": "Shipping Costs Checked Automatically",
+      "body": "Through API integration, the AI checks the shipping cost during the conversation and adds it straight into the order total, no admin flipping between tabs to look up rates while the buyer waits."
+    },
+    {
+      "label": "Payment",
+      "title": "Payment QR Sent in the Chat",
+      "body": "Once the order is ready, the AI sends a payment QR right in the conversation. If payment stays pending, automatic reminders follow up, so orders get paid instead of forgotten."
+    },
+    {
+      "label": "CRM Sync",
+      "title": "Orders Recorded on Every Customer Profile",
+      "body": "Every order auto-creates or updates the customer's CRM card and moves them along the Visitor → Lead → Buyer journey, complete with next-step suggestions your team can act on."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "From Hello to Paid in One Chat",
+      "body": "Details, shipping cost, and payment all happen inside the conversation, no checkout links to juggle, no app switching for the customer."
+    },
+    {
+      "title": "Zero Manual Entry",
+      "body": "The AI captures order data as it chats. No spreadsheets, no retyping, no orders lost to human error or a busy afternoon."
+    },
+    {
+      "title": "A Sales Channel That Never Closes",
+      "body": "Orders come in and get completed 24/7, nights, weekends, and holidays included, without adding a single shift."
+    }
+  ],
+  "testimonial": {
+    "quote": "The chance of closing the deal is very high",
+    "name": "Wiji Astuti",
+    "role": "Head of Customer Experience, Rumah Zakat",
+    "image": "/images/home/testimonial-wiji-astuti.jpg"
+  },
+  "faq": [
+    {
+      "q": "What is order automation?",
+      "a": "Order automation is the process of creating and completing customer orders without manual work. In Cekat.AI, an AI agent builds the order directly from the chat conversation, capturing customer details, checking the shipping cost through API integration, and sending a payment QR, so a sale closes without an admin typing anything."
+    },
+    {
+      "q": "How does the AI create an order from a chat?",
+      "a": "Cekat.AI's agent understands intent and context, not just keywords. As the customer chats, it collects the product, quantity, address, and contact details, checks the shipping cost, and assembles the complete order, then sends a payment QR to finish the sale inside the same conversation."
+    },
+    {
+      "q": "Does order automation include shipping costs?",
+      "a": "Yes. The AI checks shipping costs automatically through API integration while the conversation is happening, then includes the amount in the order. The customer gets an accurate total in seconds instead of waiting for an admin to look up rates manually."
+    },
+    {
+      "q": "How do customers pay for an automated order?",
+      "a": "The AI sends a payment QR directly in the chat once the order is ready, so the customer pays without leaving the conversation. If the payment stays pending, Cekat.AI sends automatic payment reminders until the order is settled, no manual chasing by your team."
+    },
+    {
+      "q": "What happens if a customer stops responding before paying?",
+      "a": "Cekat.AI follows up automatically. Pending payments trigger event-based reminders, and follow-up nudges go out based on the customer's behavior, so the order your admin would have forgotten still gets a polite push toward completion. The money is in the follow-up, and the platform never forgets one."
+    },
+    {
+      "q": "Which channels does order automation work on?",
+      "a": "Every channel connected to Cekat.AI: WhatsApp through the official Business API, Instagram DM, Facebook Messenger, website live chat, and custom API channels. All conversations flow into one unified inbox, and the AI can take an order on any of them."
+    },
+    {
+      "q": "Can my team still step into an automated order?",
+      "a": "Yes. Conversations escalate to your team whenever needed, with the automatic handoff carrying full context, chat history, order details, private notes. Your team can add collaborators, leave internal notes, and take over any conversation without asking the customer to repeat themselves."
+    },
+    {
+      "q": "Do I need to code anything to set this up?",
+      "a": "No coding is needed. You train the AI by pasting your SOPs and business information into the knowledge base, and shape conversations with a visual drag-and-drop flow designer. Building an agent takes around five minutes, Cekat.AI describes it as being as easy as briefing a CS admin."
+    },
+    {
+      "q": "Is customer order data handled safely?",
+      "a": "Yes. Cekat.AI complies with UU PDP, Indonesia's personal data protection law, and is an official Meta Business Partner, so WhatsApp traffic runs through Meta's official infrastructure. Role-based team access controls who inside your business can see and manage customer data."
+    },
+    {
+      "q": "Does order automation keep working outside business hours?",
+      "a": "Yes, that's one of its biggest payoffs. With AI working hours, your team handles chats during office hours and the AI takes over automatically after, so orders placed at night or on weekends still get captured, quoted, and paid without anyone on shift."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Conversations Into Completed Orders",
+    "body": "Let Cekat.AI's agent capture the details, check the shipping, and collect the payment, 24/7, without a cashier."
+  }
+}

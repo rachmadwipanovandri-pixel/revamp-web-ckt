@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Manajemen Data Pelanggan, Satu Profil Customer Lengkap | CekatAI",
+    "description": "Sistem manajemen data pelanggan Cekat.ai: satukan riwayat chat, pembelian, & aktivitas web dalam satu profil otomatis. Patuh UU PDP & tepercaya!"
+  },
+  "hero": {
+    "badge": "Profil Customer yang Hidup",
+    "title": "Satu Customer, Satu Profil Lengkap yang Update Sendiri",
+    "subtitle": "Pembelian, riwayat chat, campaign yang diterima, sampai aktivitas website, semua tercatat otomatis dari setiap percakapan, jadi setiap keputusan bisnismu selalu pakai konteks lengkap"
+  },
+  "definition": "Manajemen data pelanggan adalah fitur Cekat.AI untuk menyimpan pembelian, riwayat chat, campaign yang diterima, dan aktivitas website tiap customer dalam satu profil yang hidup, terbentuk dan ter-update otomatis dari setiap interaksi, tanpa input manual.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tercatat" },
+    { "value": "24/7", "label": "profil update real time" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Lihat Customer Seutuhnya, Bukan Sekadar Nomor HP",
+      "body": "Data pembelian di satu aplikasi, chat di aplikasi lain, daftar campaign di spreadsheet, begitulah konteks hilang dan customer ditanya hal yang sama dua kali. Di Cekat.AI, pembelian, riwayat chat lengkap, campaign yang diterima, dan aktivitas website ada dalam satu profil, siapa pun yang buka langsung paham customer-nya dalam hitungan detik.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Tampilan perjalanan customer lengkap di profil Cekat.AI"
+    },
+    {
+      "title": "Data yang Ngisi Dirinya Sendiri",
+      "body": "Data CRM biasanya mati karena tidak ada yang rajin mengisi. Cekat.AI membuat dan meng-update kartu customer otomatis dari setiap interaksi, chat baru, pembelian, campaign masuk, aktivitas website, jadi datanya selalu akurat tanpa timmu mengetik satu kolom pun.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Kartu customer terbentuk dan terorganisir otomatis di Cekat.AI"
+    },
+    {
+      "title": "Cari dan Segmentasi Customer dalam Hitungan Detik",
+      "body": "Database yang tidak bisa dicari itu cuma gudang. Dengan filter dan boards, kamu bisa langsung tarik daftar pelanggan setia, customer dari campaign bulan lalu, atau leads yang mulai diam, lalu pakai segmen yang sama untuk broadcast dan follow-up yang benar-benar konversi.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Filter data customer dengan boards di Cekat.AI"
+    },
+    {
+      "title": "Ambil Keputusan Pakai Konteks, Bukan Tebakan",
+      "body": "Customer Stages melacak setiap kontak dari Visitor ke Lead sampai Buyer, lengkap dengan saran langkah berikutnya di tiap profil. Timmu tahu siapa yang sudah dekat closing dan harus diapain, dan AI agent-mu pakai data yang sama untuk mempersonalisasi setiap percakapan.",
+      "image": "/images/home/your-crm-built-for-growth-and-real-conversations.png",
+      "imageAlt": "CRM Cekat.AI yang terbentuk dari percakapan nyata"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Satu Profil",
+      "title": "Semua Tentang Customer di Satu Tempat",
+      "body": "Tiap profil menyimpan pembelian, riwayat chat lengkap lintas channel, semua campaign yang pernah diterima, plus aktivitas website dan event log. Tidak perlu buka-tutup aplikasi buat menyambung ceritanya."
+    },
+    {
+      "label": "Auto Update",
+      "title": "Terbentuk dan Ter-update dari Setiap Interaksi",
+      "body": "Kartu customer terbentuk dan ter-update otomatis dari setiap percakapan di WhatsApp, Instagram, Messenger, dan live chat. Tanpa input manual, tanpa data basi, tanpa lembur ngisi CRM di akhir minggu."
+    },
+    {
+      "label": "Customer Stages",
+      "title": "Dari Visitor ke Lead sampai Buyer",
+      "body": "Setiap customer terpetakan sebagai Visitor, Lead, atau Buyer, dengan saran langkah berikutnya di profilnya. Timmu selalu tahu posisi tiap hubungan dan aksi apa yang bikin maju ke tahap berikutnya."
+    },
+    {
+      "label": "UU PDP",
+      "title": "Dikelola Sesuai Hukum Perlindungan Data",
+      "body": "Cekat.AI patuh pada UU PDP, undang-undang pelindungan data pribadi Indonesia, dan akses tim berbasis role mengatur siapa yang boleh lihat dan kelola data customer, bisnismu tumbuh tanpa mengorbankan kepercayaan."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Terbentuk dari Percakapan Nyata",
+      "body": "Setiap interaksi di WhatsApp, Instagram, Messenger, dan live chat mengisi profil, data customer-mu mencerminkan yang benar-benar terjadi, bukan yang kebetulan sempat dicatat."
+    },
+    {
+      "title": "Nol Input Manual",
+      "body": "Kartu customer terbentuk dan ter-update otomatis dari setiap interaksi, jadi CRM tetap lengkap bahkan di hari paling ramai."
+    },
+    {
+      "title": "Aman Sesuai Aturan",
+      "body": "Kepatuhan UU PDP dan akses berbasis role menjaga data pelanggan tetap terlindungi sementara seluruh tim kerja dari data yang sama."
+    }
+  ],
+  "testimonial": {
+    "heading": "Data Customer Lengkap, Follow-Up Jadi Lebih Tepat",
+    "quote": "Cekat AI sangat memudahkan tim kami membuat database pasien untuk follow-up serinci mungkin, tanpa admin harus mengetik satu per satu.",
+    "name": "Gamal",
+    "role": "Founder & CEO, Putiih Skin Clinic"
+  },
+  "faq": [
+    {
+      "q": "Apa itu manajemen data pelanggan?",
+      "a": "Manajemen data pelanggan adalah cara mengumpulkan, merapikan, dan menjaga data customer di satu tempat. Di Cekat.AI, wujudnya satu profil hidup per customer, pembelian, riwayat chat, campaign yang diterima, dan aktivitas website, yang terbentuk dan ter-update otomatis dari setiap interaksi di semua channel."
+    },
+    {
+      "q": "Data apa saja yang tersimpan di profil customer?",
+      "a": "Tiap profil Cekat.AI menyimpan pembelian customer, riwayat chat lengkap, semua campaign yang pernah dia terima, plus aktivitas website dan event log, ditambah Customer Stage-nya (Visitor, Lead, atau Buyer) beserta saran langkah berikutnya. Satu tampilan, seluruh hubungan."
+    },
+    {
+      "q": "Apakah datanya harus diinput manual?",
+      "a": "Tidak. Cekat.AI membuat dan meng-update kartu customer otomatis dari setiap interaksi, chat baru, pembelian, campaign, dan aktivitas website masuk sendiri ke profil. Input manual itu alasan utama CRM jadi basi, makanya Cekat.AI menghilangkannya."
+    },
+    {
+      "q": "Data pelanggan diambil dari channel mana saja?",
+      "a": "Percakapan dari WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, live chat website, dan channel API semuanya masuk ke satu inbox, dan setiap interaksi itu otomatis meng-update profil customer, bersama aktivitas website dan event log."
+    },
+    {
+      "q": "Apakah Cekat.AI patuh UU PDP?",
+      "a": "Ya. Cekat.AI patuh pada UU PDP, undang-undang pelindungan data pribadi Indonesia, jadi data pelanggan yang kamu kumpulkan dan kelola di platform ditangani sesuai standar hukum yang berlaku. Akses tim berbasis role menambah kontrol soal siapa boleh lihat apa."
+    },
+    {
+      "q": "Bisa atur siapa saja di tim yang boleh akses data customer?",
+      "a": "Bisa. Cekat.AI pakai akses tim berbasis role, jadi kamu yang menentukan anggota tim mana yang boleh lihat dan kelola data pelanggan. Ditambah fitur private notes dan add collaborator, informasi sensitif hanya sampai ke orang yang memang perlu."
+    },
+    {
+      "q": "Apa itu Customer Stages?",
+      "a": "Customer Stages mengelompokkan setiap kontak sebagai Visitor, Lead, atau Buyer, dan tiap profil menampilkan saran langkah berikutnya untuk memajukan hubungan. Jadi bukan sekadar daftar kontak datar, tapi database yang kasih tahu siapa yang hampir closing dan harus diapain."
+    },
+    {
+      "q": "Datanya bisa dipakai buat campaign marketing?",
+      "a": "Bisa, justru di situ untungnya paling terasa. Profil customer jadi bahan segmentasi broadcast berdasarkan aktivitas, riwayat pembelian, dan event, plus personalisasi tiap pesan dari data CRM. Campaign yang diterima customer juga tercatat balik ke profilnya, jadi datanya makin lengkap."
+    },
+    {
+      "q": "Apakah AI agent ikut pakai data pelanggan ini?",
+      "a": "Iya. AI agent Cekat.AI membaca profil yang sama dengan yang dilihat timmu, jadi jawabannya selalu pakai konteks penuh, pembelian sebelumnya, chat lama, campaign yang diterima. Saat percakapan dialihkan ke manusia, seluruh riwayat ikut pindah, jadi customer tidak perlu mengulang cerita."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Data Berserakan Jadi Satu Profil Customer yang Hidup",
+    "body": "Biarkan setiap percakapan membangun database pelangganmu otomatis, lengkap, selalu terbaru, dan patuh UU PDP."
+  }
+}

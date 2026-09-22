@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "CS Otomatis Logistik & Ekspedisi, Bales 24/7 | CekatAI",
+    "description": "Kurir dan ekspedisi pakai Cekat.AI buat jawab cek resi, jadwal pickup, dan kendala COD 24/7 via WhatsApp. Customer service logistik jadi otomatis."
+  },
+  "hero": {
+    "badge": "Logistik",
+    "title": "Jawab \"Paket Saya di Mana?\" Otomatis, Bahkan Tengah Malam",
+    "subtitle": "Dari cek resi, jadwal pickup, sampai kendala COD, Cekat.AI membalas instan di WhatsApp dengan data pengiriman terbaru, 24/7, tanpa nambah agen CS",
+    "useCases": [
+      "Lacak kiriman",
+      "Update status proaktif",
+      "Eskalasi paket bermasalah",
+      "Jadwal pickup"
+    ]
+  },
+  "definition": "Cekat.AI untuk logistik adalah platform AI customer service untuk kurir, ekspedisi, 3PL, dan freight forwarder di Indonesia, menjawab cek resi dan status paket 24/7 langsung dari data order, mengirim update pengiriman otomatis via WhatsApp, dan meneruskan kendala paket ke tim yang tepat, customer service logistik yang rapi dalam satu platform.",
+  "stats": [
+    {
+      "value": "+50%",
+      "label": "kenaikan omzet di GPS Supertrack"
+    },
+    {
+      "value": "2×",
+      "label": "peningkatan kapasitas penanganan chat di Kezka Printing dalam 6 bulan"
+    },
+    {
+      "value": "24/7",
+      "label": "cek resi, pickup, dan kendala COD terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Pertanyaan \"Paket Saya di Mana\" Terjawab Sendiri",
+      "body": "Sebagian besar chat yang masuk ke CS logistik nanyain satu hal: posisi paket. Lewat integrasi API dengan sistem order atau tracking-mu, Cekat.AI membaca status kiriman terbaru dan menjawab cek resi secara instan, 24/7, dengan bahasa natural. Pelanggan dapat kepastian dalam hitungan detik, dan agen CS-mu berhenti copy-paste nomor resi seharian.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Integrasi API Cekat.AI menjawab cek resi dari data order"
+    },
+    {
+      "title": "Update Status Terkirim Duluan, Sebelum Pelanggan Nanya",
+      "body": "Paket dijemput, transit di hub, kurir menuju alamat, Cekat.AI mengirim update otomatis via WhatsApp di tiap tahap yang kamu tentukan. Pelanggan nggak perlu nanya karena udah dikabari duluan, volume chat masuk turun, dan gagal antar COD berkurang karena penerima tahu kapan harus siap di rumah.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Notifikasi status pengiriman terkirim otomatis dari Cekat.AI"
+    },
+    {
+      "title": "Paket Bermasalah Langsung Naik, Bukan Tenggelam di Inbox",
+      "body": "Gagal COD, alamat susah ketemu, paket rusak atau hilang, kasus sensitif begini nggak boleh antre. Cekat.AI membuat tiket otomatis dari percakapan, meneruskannya ke tim lapangan atau tim claim yang tepat lengkap dengan riwayat chat, dan pelanggan tetap dapat kabar sementara kasusnya dikerjakan.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Komplain paket hilang otomatis jadi tiket di Cekat.AI"
+    },
+    {
+      "title": "Jadwal Pickup Beres Langsung di Chat",
+      "body": "Seller dan pengirim rutin bisa request pickup langsung di chat, tanpa telepon bolak-balik. AI menanyakan alamat, jumlah paket, dan jam jemput, lalu mencatatnya jadi order yang rapi untuk tim operasional. Alurnya mengikuti business logic yang kamu atur sendiri, tanpa coding, jadi proses pickup konsisten di semua cabang.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Alur request pickup otomatis dengan business logic di Cekat.AI"
+    },
+    {
+      "title": "Leads Klien Korporat Terkualifikasi Otomatis",
+      "body": "Di antara ratusan chat cek resi, ada perusahaan yang nanyain tarif kontrak dan kiriman rutin. Cekat.AI mengenali inquiry bernilai tinggi ini, menanyakan volume, rute, dan frekuensinya, lalu menangkapnya ke kartu CRM lengkap dengan percakapan, jadi tim sales follow-up ke leads yang serius, bukan scroll inbox penuh.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads klien korporat tertangkap di CRM Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chat, update status, dan broadcast jalan di WhatsApp Business API resmi, bareng Instagram DM dan web chat, satu inbox untuk semua cabang, compliant dan andal."
+    },
+    {
+      "title": "AI yang Jawab dari Data Kiriman",
+      "body": "AI menjawab cek resi dan status paket langsung dari sistem order lewat integrasi API, lalu mengoper kasus rumit ke timmu lengkap dengan konteks."
+    },
+    {
+      "title": "Terbukti di 3.000+ Bisnis",
+      "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan customer service di Cekat.AI."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu bisnis logistik dan ekspedisi?",
+      "a": "Cekat.AI menjawab chat pelanggan secara instan 24/7 di WhatsApp, Instagram, dan web chat, dari cek resi, jadwal pickup, tarif kirim, sampai kendala COD, sambil meneruskan kasus paket bermasalah ke tim yang tepat. Agen CS-mu fokus ke kasus yang butuh manusia, bukan copy-paste status resi."
+    },
+    {
+      "q": "AI bisa menjawab cek resi langsung dari sistem kami?",
+      "a": "Bisa. Lewat integrasi API, Cekat.AI terhubung ke sistem order, tracking, atau TMS yang kamu pakai, jadi jawaban status paket selalu diambil dari data terbaru, bukan template kosong. Pelanggan cukup kirim nomor resi di chat dan AI membalas posisi paketnya saat itu juga."
+    },
+    {
+      "q": "Bisa kirim update status pengiriman otomatis ke pelanggan?",
+      "a": "Bisa. Cekat.AI mengirim notifikasi otomatis via WhatsApp Business API resmi di tahap yang kamu tentukan, paket dijemput, sampai di hub, kurir menuju alamat, atau gagal antar. Pelanggan dikabari duluan, jadi chat \"paket saya di mana\" turun drastis."
+    },
+    {
+      "q": "Bagaimana penanganan komplain paket hilang atau rusak?",
+      "a": "Kasus sensitif seperti paket hilang, rusak, atau gagal COD otomatis dibuatkan tiket dan dialihkan ke tim manusia lengkap dengan riwayat percakapannya. Kamu bisa atur aturan eskalasinya sendiri, jadi kasus berat selalu ditangani orang, sementara AI tetap menjawab pertanyaan ringan di saat yang sama."
+    },
+    {
+      "q": "Apakah saya perlu WhatsApp Business API untuk pakai Cekat.AI?",
+      "a": "Untuk volume chat logistik yang besar, WhatsApp Business API memang jalur yang tepat, dan sebagai Official Meta Business Partner, Cekat.AI membantu proses pendaftarannya sampai aktif. Nomor bisnismu terverifikasi, bisa dipakai banyak agen sekaligus, dan aman untuk broadcast."
+    },
+    {
+      "q": "Berapa lama setup untuk bisnis logistik?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin daftar tarif, area coverage, dan SOP ke knowledge base, dan AI langsung bisa menjawab. Integrasi ke sistem tracking atau order menyusul lewat API, dibantu tim kami, tanpa mengganggu operasional yang jalan."
+    },
+    {
+      "q": "Kuat menghadapi lonjakan chat saat harbolnas atau tanggal kembar?",
+      "a": "Kuat. AI menjawab setiap chat masuk secara instan berapa pun banyaknya sekaligus, jadi waktu respons tetap stabil saat volume kiriman melonjak. Kasus yang butuh manusia dialihkan ke agen dengan konteks lengkap, dan sisanya tetap terjawab otomatis."
+    },
+    {
+      "q": "Bagaimana keamanan data pelanggan dan pengiriman?",
+      "a": "Data percakapan dan pelanggan tersimpan aman dengan akses berbasis peran, jadi tiap tim hanya melihat yang relevan. Untuk standar keamanan, sertifikasi ISO 27001 sedang dalam proses, dan tim kami terbuka membahas kebutuhan compliance spesifik perusahaanmu."
+    },
+    {
+      "q": "Bagaimana harga Cekat.AI untuk bisnis logistik, dan bisa coba dulu?",
+      "a": "Harga mengikuti paket berlangganan yang menyesuaikan volume percakapan dan fitur yang dipakai, jadi ekspedisi kecil sampai 3PL besar sama-sama dapat paket yang masuk akal. Jadwalkan konsultasi gratis, tim kami tunjukkan demonya dengan skenario bisnismu sebelum kamu memutuskan."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Banjir Chat Cek Resi Jadi CS yang Selalu Siap",
+    "body": "Lihat bagaimana bisnis logistik menjalankan tracking, pickup, dan support 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Desain Alur Chat, Arahkan Tiap Chat, Tanpa Coding | CekatAI",
+    "description": "Desain alur chat drag-and-drop dan arahkan customer ke AI agent sales, support, atau billing yang tepat, tanpa coding. Dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "Flow Builder Drag-and-Drop",
+    "title": "Drag, Drop, dan Arahkan Tiap Chat ke Agent yang Tepat",
+    "subtitle": "Desain alur chat visual yang mengirim tiap customer ke AI atau agent manusia spesialis yang tepat, sales, support, atau billing, tanpa satu baris coding dan dengan konteks penuh di setiap langkah"
+  },
+  "definition": "Desain Alur Chat adalah fitur Cekat.AI untuk merancang alur percakapan customer secara drag-and-drop, mengarahkan tiap chat ke AI atau agent manusia spesialis yang tepat (sales, support, atau billing) tanpa menulis satu baris kode pun.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis bikin alur di Cekat.AI" },
+    { "value": "~5 menit", "label": "bikin AI agent pertamamu" },
+    { "value": "1.000.000+", "label": "interaksi customer terarahkan" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Petakan Seluruh Perjalanan Customer dengan Drag-and-Drop",
+      "body": "Logika chat tidak seharusnya nyangkut di backlog developer berminggu-minggu. Di kanvas visual Cekat.AI kamu drag, drop, dan hubungkan tiap langkah sendiri, salam, pertanyaan kualifikasi, aturan routing, handoff, lalu publish di hari yang sama kamu menggambarnya. Kalau bisa nge-brief admin CS, kamu bisa bikin alur chat.",
+      "image": "/images/home/visual-flow-designer.png",
+      "imageAlt": "Flow designer chat drag-and-drop visual di Cekat.AI"
+    },
+    {
+      "title": "Arahkan Tiap Customer ke Spesialis, Bukan Generalis",
+      "body": "Satu bot yang menjawab semuanya biasanya menjawab semuanya setengah-setengah. Cekat.AI menjalankan beberapa agent spesialis, sales, support, billing, dan alurmu mengarahkan tiap customer ke yang dilatih untuk pertanyaannya. Pembeli ketemu closer, komplain ketemu problem-solver, dan pertanyaan invoice masuk ke billing.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Beberapa AI agent spesialis untuk sales, support, dan billing di Cekat.AI"
+    },
+    {
+      "title": "Alihkan ke Manusia Tanpa Kehilangan Benang Merah",
+      "body": "Sebagian percakapan butuh manusia, dan tidak ada yang lebih cepat merusak kepercayaan daripada bikin customer mengulang cerita. Saat chat melewati aturan eskalasimu, atau timmu online, Cekat.AI mengalihkannya ke manusia lengkap dengan percakapan terlampir, jadi customer lanjut, bukan mulai dari awal."
+    },
+    {
+      "title": "Bikin Sekali, Jalan di Semua Channel",
+      "body": "Alur yang sama melayani WhatsApp, Instagram DM, Facebook Messenger, dan live chat website, dengan setiap percakapan masuk ke satu inbox terpadu. Tidak ada logika ganda yang harus dirawat per channel, tidak ada bot terpisah yang melenceng, dan tidak ada customer diperlakukan beda gara-gara dari mana dia chat."
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Drag & Drop",
+      "title": "Logika yang Kelihatan, Bukan Skrip yang Dibaca Susah",
+      "body": "Tiap cabang alurmu ada di satu kanvas visual, apa yang AI tanya, ke mana tiap jawaban mengarah, siapa yang ambil alih kapan. Siapa pun di tim bisa baca, mempertanyakan, dan memperbaikinya tanpa buka satu baris kode."
+    },
+    {
+      "label": "Routing Pintar",
+      "title": "Routing Berbasis Maksud, Bukan Tebak Keyword",
+      "body": "AI agent Cekat.AI paham apa yang customer maksud, bukan cuma kata yang mereka ketik. \"Pesananku belum sampai\" masuk ke support meski tanpa kata \"komplain\", dalam bahasa apa pun yang ditulis customer."
+    },
+    {
+      "label": "Agent Spesialis",
+      "title": "Sales, Support, dan Billing, Masing-Masing Punya Tugas",
+      "body": "Bikin AI agent khusus per fungsi dan biarkan alur mengoper di antaranya. Tiap agent tetap tajam di knowledge-nya sendiri, bukan rata-rata di semua hal yang bisnismu kerjakan."
+    },
+    {
+      "label": "Handoff Manusia",
+      "title": "Eskalasi yang Membawa Konteks",
+      "body": "Atur AI working hours biar agent jaga shift malam dan timmu ambil alih pagi hari, otomatis, dengan riwayat percakapan lengkap yang dioper setiap kali tanpa terkecuali."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Dibangun untuk Tim Non-Teknis",
+      "body": "Desain drag-and-drop, agent live sekitar 5 menit, dan tanpa coding di mana pun, bikin alur semudah nge-brief admin CS."
+    },
+    {
+      "title": "Paham Maksud, Bukan Keyword",
+      "body": "Alur mengarahkan berdasarkan apa yang customer benar-benar maksud, dalam bahasa apa pun, jadi agent yang tepat menjawab meski kalimatnya tak terduga."
+    },
+    {
+      "title": "Manusia Tepat di Tempatnya",
+      "body": "Aturan eskalasi dan AI working hours membawa timmu ke percakapan di momen yang tepat, dengan konteks penuh yang terbawa."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu chatbot flow builder?",
+      "a": "Chatbot flow builder adalah tool visual untuk merancang bagaimana percakapan otomatis berjalan, apa yang bot tanya, bagaimana ia merespons, dan ke mana tiap customer diarahkan. Builder Cekat.AI berbasis drag-and-drop: kamu hubungkan langkah di kanvas, tugaskan AI agent spesialis ke tiap cabang, dan publish tanpa coding."
+    },
+    {
+      "q": "Perlu skill coding untuk bikin alur chat?",
+      "a": "Tidak. Seluruh alur dibangun dengan drag dan menghubungkan blok di kanvas visual, dan AI agent di baliknya dilatih dengan menempel info bisnismu, Cekat.AI menggambarkannya semudah nge-brief admin CS. Kebanyakan tim sudah menjalankan agent pertamanya sekitar 5 menit."
+    },
+    {
+      "q": "Bisa mengarahkan topik berbeda ke AI agent berbeda?",
+      "a": "Bisa. Cekat.AI mendukung beberapa agent spesialis, misalnya satu untuk sales, satu untuk support, satu untuk billing, dan alurmu memutuskan agent mana yang ambil tiap percakapan. Tiap customer bicara dengan agent yang dilatih untuk jenis pertanyaannya, bukan satu bot generalis."
+    },
+    {
+      "q": "Bagaimana alur tahu ke mana mengirim tiap customer?",
+      "a": "Routing berjalan berdasarkan maksud, bukan cocokin keyword. AI agent Cekat.AI membaca apa yang sebenarnya customer maksud dari konteks, dalam banyak bahasa, jadi \"barang yang aku pesan nggak muncul-muncul\" masuk ke support meski tanpa keyword jelas yang dibutuhkan bot berbasis aturan."
+    },
+    {
+      "q": "Apa yang terjadi saat customer butuh agent manusia?",
+      "a": "Alur mengalihkan percakapan ke timmu lengkap dengan riwayat chat terlampir, jadi tidak ada yang minta customer mulai dari awal. Dengan AI working hours, ini juga jalan sesuai jadwal: AI menangani percakapan di luar jam kerja, dan tim ambil alih otomatis begitu online."
+    },
+    {
+      "q": "Alur chat jalan di channel apa saja?",
+      "a": "Alur jalan di WhatsApp lewat Business API resmi, Instagram DM, Facebook Messenger, live chat website, dan API channel. Kamu desain logikanya sekali, dan tiap percakapan, apa pun channel-nya, masuk ke satu inbox terpadu buat dipantau timmu."
+    },
+    {
+      "q": "Bisa ubah alur setelah live?",
+      "a": "Bisa. Buka kanvas, geser atau edit bloknya, dan alur yang diperbarui langsung berlaku untuk percakapan baru. Tidak ada serah-terima ke developer atau siklus redeploy, jadi kamu bisa uji ide routing pagi hari dan menyempurnakannya sebelum makan siang."
+    },
+    {
+      "q": "Apa bedanya dengan chatbot berbasis aturan?",
+      "a": "Builder berbasis aturan langsung rusak begitu customer menulis sesuatu yang tak terduga, karena ia cocokin keyword dan menu persis. Alur Cekat.AI digerakkan AI humanlike yang paham maksud dan konteks dalam bahasa apa pun, lalu eskalasi ke timmu dengan riwayat penuh saat percakapan butuh manusia."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Chat yang Kacau Jadi Alur yang Mengarahkan Sendiri",
+    "body": "Desain alur chat drag-and-drop pertamamu dan kirim tiap customer langsung ke agent yang bisa closing, menyelesaikan, atau menjawab."
+  }
+}

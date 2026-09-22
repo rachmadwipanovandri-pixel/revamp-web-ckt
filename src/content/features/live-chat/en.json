@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Embedded Live Chat with AI, Answer Visitors Instantly | CekatAI",
+    "description": "Add AI live chat to your website: instant answers 24/7, every visitor captured as a CRM lead, human handoff with full context. Trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "AI-Powered Website Live Chat",
+    "title": "Embedded Live Chat That Answers Before Visitors Leave",
+    "subtitle": "Add an AI-powered chat widget to your website, visitors get instant answers 24/7, every conversation is captured as a lead in your CRM, and your team steps in with full context when it matters"
+  },
+  "definition": "Embedded Live Chat is a Cekat.AI feature that puts an AI-powered chat widget on your website, answering visitor questions instantly 24/7, capturing every conversation as a lead in the built-in CRM, and escalating to your team with full context when a human touch is needed.",
+  "stats": [
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    },
+    {
+      "value": "24/7",
+      "label": "visitors answered instantly"
+    },
+    {
+      "value": "~5 min",
+      "label": "to build your AI agent"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Answer in Seconds, Before Visitors Click Away",
+      "body": "A visitor with an unanswered question is a customer walking out the door. Cekat.AI's humanlike agent replies instantly, understands intent and context, not just keywords, and answers in the visitor's own language, so questions turn into conversations instead of bounces.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI agent answering website visitor questions in live chat"
+    },
+    {
+      "title": "Every Chat Becomes a Lead in Your CRM, Automatically",
+      "body": "Most live chat tools let conversations evaporate when the tab closes. Cekat.AI captures every website conversation into the CRM automatically, no manual input, building a living customer record and moving each contact through Visitor, Lead, and Buyer stages with next-step suggestions for your team.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Website leads captured and organized in the Cekat.AI CRM"
+    },
+    {
+      "title": "Hand Off to a Human Without Repeating a Word",
+      "body": "When a conversation needs your team, the AI escalates with the full chat history attached, the visitor never repeats themselves. Set AI working hours so your team handles chats while online and the AI covers nights and weekends, with automatic handoff carrying complete context both ways.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "AI-to-human escalation with full conversation context in Cekat.AI"
+    },
+    {
+      "title": "Live on Your Website in About 5 Minutes",
+      "body": "No developers, no coding, no month-long implementation. Paste your SOPs and business information into the knowledge base and the AI agent is ready to answer real visitor questions, building it is about as easy as briefing a new CS admin. Need advanced logic? Use the visual drag-and-drop flow designer.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base setup for the Cekat.AI agent"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Instant Answers",
+      "title": "A Humanlike Agent on Every Page",
+      "body": "The AI understands what visitors mean, not just the keywords they type. It answers in natural language, handles multiple languages, and stays accurate about your business because it works from the knowledge base you built."
+    },
+    {
+      "label": "Lead Capture",
+      "title": "From Anonymous Visitor to Named Lead",
+      "body": "Every website conversation creates or updates a CRM card automatically, contact details, chat history, and website behavior in one living record. Customer Stages track each person from Visitor to Lead to Buyer, with next-step suggestions."
+    },
+    {
+      "label": "Smart Handoff",
+      "title": "AI After Hours, Humans When Online",
+      "body": "AI working hours match your team's schedule: your agents take conversations during the day, the AI takes over after hours, and every handoff automatically carries the full conversation context in both directions."
+    },
+    {
+      "label": "One Inbox",
+      "title": "Website Chat Beside Every Other Channel",
+      "body": "Live chat conversations land in the same unified inbox as WhatsApp, Instagram DM, and Facebook Messenger, one dashboard with fast search, auto-labeling, and case prioritization across all of them."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "More Than a Chat Widget",
+      "body": "The widget is the front door to a full platform: CRM, broadcast campaigns, order automation, and analytics all connect to every website conversation."
+    },
+    {
+      "title": "Humanlike, Not Scripted",
+      "body": "The AI understands intent and context instead of matching keywords, so visitors get real answers in natural language, in their language."
+    },
+    {
+      "title": "Built for Teams",
+      "body": "Private notes, collaborators, role-based access, and case prioritization keep your whole team working the same inbox without stepping on each other."
+    }
+  ],
+  "testimonial": {
+    "quote": "Our response rate increased by 90%",
+    "name": "Hargyo",
+    "role": "Director, Multimedia Nusantara Polytechnic",
+    "image": "/images/home/testimonial-hargyo.jpg"
+  },
+  "faq": [
+    {
+      "q": "What is embedded live chat?",
+      "a": "Embedded live chat is a chat widget built into your website that lets visitors message your business directly from the page. With Cekat.AI, the widget is powered by an AI agent that answers instantly 24/7, captures each conversation as a lead in the CRM, and escalates to your team with full context when needed."
+    },
+    {
+      "q": "How do I add live chat to my website?",
+      "a": "With Cekat.AI, you create an AI agent, paste your SOPs and business information into the knowledge base, then embed the chat widget on your site. No coding is required, and building the agent takes about 5 minutes; it's about as easy as briefing a new CS admin."
+    },
+    {
+      "q": "Can the AI really answer questions about my business?",
+      "a": "Yes. The agent works from the knowledge base you build with your own SOPs, product details, and business information. It understands intent and context rather than matching keywords, so it gives accurate, natural answers, and anything it shouldn't handle gets escalated to your team."
+    },
+    {
+      "q": "What happens when a visitor wants to talk to a human?",
+      "a": "The conversation is handed to your team with the complete chat history attached, so the visitor never repeats themselves. With AI working hours, the handoff is automatic: your team covers chats while online, and the AI takes over outside those hours."
+    },
+    {
+      "q": "Does the live chat capture leads?",
+      "a": "Yes, automatically. Every website conversation creates or updates a CRM card with no manual input: contact details, chat history, and website behavior in one record. Customer Stages then track each contact from Visitor to Lead to Buyer, with suggested next steps for your team."
+    },
+    {
+      "q": "Does it work outside business hours?",
+      "a": "That's exactly what it's built for. The AI agent answers 24/7, so a visitor browsing at midnight gets the same instant answer as one at noon. Organizations like Rumah Zakat rely on AI after working hours to stay reachable around the clock."
+    },
+    {
+      "q": "Can I use the same platform for WhatsApp and Instagram too?",
+      "a": "Yes. Website live chat is one of the channels in Cekat.AI's unified inbox, alongside WhatsApp via the official Business API, Instagram DM, Facebook Messenger, and API channels. Your team answers everything from one dashboard, and each customer's history stays in one profile."
+    },
+    {
+      "q": "Does the chat widget support multiple languages?",
+      "a": "Yes. The AI agent is multilingual and replies in the language the visitor uses, which matters when your website serves customers across regions. Minori Group, serving Japan and Indonesia, handles 100% of inquiries with multilingual AI on Cekat.AI, two languages, two timezones, one platform."
+    },
+    {
+      "q": "Is visitor data handled safely?",
+      "a": "Cekat.AI complies with UU PDP, Indonesia's personal data protection law, in handling user data. Conversations and customer records live in one platform with role-based team access, so you control exactly who on your team can see what."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Website Traffic Into Conversations That Close",
+    "body": "Embed Cekat.AI's live chat and give every visitor an instant answer, while your CRM quietly fills with leads."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Customer Service for FMCG & Distributors | CekatAI",
+    "description": "FMCG brands use Cekat.AI to take distributor orders in chat, broadcast promos to retailer segments, and route complaints by region, automated 24/7."
+  },
+  "hero": {
+    "badge": "FMCG",
+    "title": "Take Distributor Orders Without the Morning Phone Marathon",
+    "subtitle": "From distributor orders to retailer restock requests to consumer promo questions, Cekat.AI replies instantly on WhatsApp, 24/7, and routes every complaint to the right region, without adding admins",
+    "useCases": [
+      "Distributor orders",
+      "Store restocking",
+      "Store-segment promos",
+      "Regional complaints"
+    ]
+  },
+  "definition": "Cekat.AI for FMCG is an AI customer service platform for consumer goods brands and principal distributors in Indonesia, taking distributor orders automatically through chat, answering promo and product questions 24/7, routing complaints to the right region, and keeping every outlet's data organized in one platform.",
+  "stats": [
+    {
+      "value": "+50%",
+      "label": "increase in monthly revenue at Nature Craft"
+    },
+    {
+      "value": "2×",
+      "label": "increase in chat handling capacity at Kezka Printing within 6 months"
+    },
+    {
+      "value": "24/7",
+      "label": "distributor orders, restocks, and complaints answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Distributor Orders Arrive Clean, Nothing Retyped",
+      "body": "Orders that used to come through morning phone calls and salesman notebooks now flow through chat. Distributors and stores simply send a list of SKUs and quantities, and Cekat.AI builds the order automatically with outlet details attached, no admin copying anything into a spreadsheet, so miskeyed and duplicated orders stop here.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Distributor order created automatically from a chat in Cekat.AI"
+    },
+    {
+      "title": "Retailer Restock Requests Answered at Any Hour",
+      "body": "Store owners check their shelves after closing time, and they will not wait a week for the next sales visit. Cekat.AI answers product availability, pricing, and minimum order quantities at any hour, logs the restock request as an order, and hands it to the area sales team the moment the workday starts.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI answering restock requests outside working hours in Cekat.AI"
+    },
+    {
+      "title": "Promos Reach the Right Retailer Segments",
+      "body": "Trade promos, loyalty points, and new-variant launches no longer die in a buried WhatsApp group. Cekat.AI broadcasts through the official WhatsApp Business API to the outlet segments you choose, by region, store type, or order history, with automatic follow-ups chasing the outlets that have not responded.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Outlet segmentation for promo broadcasts in Cekat.AI"
+    },
+    {
+      "title": "Complaints Route Straight to the Right Region",
+      "body": "Damaged packaging, a wrong variant shipped, a promo prize that never arrived, consumer and store complaints become tickets automatically and route to the regional team or distributor covering that area, full chat history attached. Automatic notifications make sure the right team knows first, before the complaint reaches social media.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Complaint routed automatically to the regional team in Cekat.AI"
+    },
+    {
+      "title": "One Complete View of Every Outlet",
+      "body": "Every chat enriches the outlet's profile: order history, promos joined, complaints filed, all recorded automatically into a customer data platform. You can see which outlets stopped ordering and which segments respond best to promos, so your sales team walks into every visit with data instead of guesswork.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Each outlet's journey tracked in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Orders, promos, and broadcasts run on the official WhatsApp Business API, alongside Instagram DM and web chat, one inbox for thousands of outlets, compliant and reliable."
+    },
+    {
+      "title": "AI That Takes Orders and Sells",
+      "body": "The agent logs distributor orders, answers promo and product questions, then hands negotiations and special cases to your team with full context."
+    },
+    {
+      "title": "Proven Across 3,000+ Businesses",
+      "body": "More than 3,000 businesses in Indonesia run customer service on Cekat.AI."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help FMCG brands and distributors?",
+      "a": "It moves the flows that used to live in phone calls and paper notes into chat: distributor orders are logged automatically, promo and product questions get instant answers 24/7, and complaints route to the right region. Conversations from thousands of outlets land in one organized inbox."
+    },
+    {
+      "q": "Can distributors and stores order directly through WhatsApp?",
+      "a": "Yes. They simply send a list of products and quantities in the chat, and Cekat.AI assembles it into a complete order with outlet details and a confirmed total. Orders arrive in a consistent format, nothing gets retyped by an admin, and they can flow into your system via API integration."
+    },
+    {
+      "q": "Can we broadcast promos to thousands of stores at once?",
+      "a": "Yes. Through the official WhatsApp Business API, you can broadcast trade promos, loyalty programs, or product launches to specific outlet segments, by region, store type, or order history. Automatic follow-ups chase the outlets that have not responded, no manual lists involved."
+    },
+    {
+      "q": "Can complaints be routed by region or by product?",
+      "a": "Yes. You set the rules, for example complaints from East Java go to the eastern regional team, or complaints about a specific SKU go to quality. Cekat.AI creates a ticket from the chat automatically and notifies the right team, original conversation attached."
+    },
+    {
+      "q": "Can it integrate with our ERP or sales force system?",
+      "a": "Yes. Through API integration, orders from chat can flow into the ERP, distribution system, or sales force tools you already run, so Cekat.AI complements your existing stack instead of replacing it. Our team helps map the integration during onboarding."
+    },
+    {
+      "q": "How long does setup take for a brand with a large SKU catalog?",
+      "a": "Building the AI agent takes around five minutes, paste your product catalog, tier pricing, promo terms, and SOPs into the knowledge base and it starts answering accurately. Large catalogs stay manageable because the AI understands the context of a question instead of just matching keywords."
+    },
+    {
+      "q": "When does a chat hand over to a salesman or human CS?",
+      "a": "You set the boundaries. Price negotiations, serious complaints, or special requests escalate to your team automatically with the full chat history, so nobody starts from zero. Everything else stays with the AI, keeping your people focused on what matters."
+    },
+    {
+      "q": "How secure is our outlet and pricing data?",
+      "a": "Tier pricing and outlet lists are sensitive information, which is why access in Cekat.AI is role-based and conversations are stored securely. ISO 27001 certification is in progress, and our team is glad to go deeper on your company's compliance requirements."
+    },
+    {
+      "q": "How is Cekat.AI priced, and can we see a demo first?",
+      "a": "Pricing is subscription-based and scales with conversation volume and features, so you can start with one brand before rolling out across regions. Book a free consultation and our team will run a demo with FMCG-style order and promo scenarios."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Morning Order Calls Into Chats That File Themselves",
+    "body": "See how FMCG brands run distributor orders, promos, and complaints 24/7 on Cekat.AI, book a free consultation with our team."
+  }
+}

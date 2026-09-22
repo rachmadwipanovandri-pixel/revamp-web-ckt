@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Customer Service for Transport Operators | CekatAI",
+    "description": "Shuttle, bus, and travel operators use Cekat.AI to answer schedules and fares, book seats in chat, and handle reschedules 24/7 on WhatsApp."
+  },
+  "hero": {
+    "badge": "Transport Services",
+    "title": "Answer Every Schedule Question, Even After the Counter Closes",
+    "subtitle": "From departure times to fares to seat bookings and reschedules, Cekat.AI replies instantly on WhatsApp, 24/7, in natural language, without adding counter staff",
+    "useCases": [
+      "Schedules & fares",
+      "Seat booking",
+      "Reschedule & refunds",
+      "Schedule change alerts"
+    ]
+  },
+  "definition": "Cekat.AI for transport services is an AI customer service platform for shuttle, bus, travel, rental, and ferry operators in Indonesia, answering schedule and fare questions instantly 24/7, taking seat bookings straight from the chat, and handling reschedules, an automated transport booking system in one platform.",
+  "stats": [
+    {
+      "value": "+50%",
+      "label": "increase in revenue at GPS Supertrack"
+    },
+    {
+      "value": "<1 min",
+      "label": "response time from the AI contact centre at Rumah Zakat"
+    },
+    {
+      "value": "24/7",
+      "label": "schedules, fares, and seat bookings answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "The Same Schedule and Fare Questions, Answered by AI",
+      "body": "\"What time is tomorrow's first departure?\" \"How much to Bandung?\" \"Any seats left this afternoon?\" The questions repeating dozens of times a day are now answered instantly by Cekat.AI from a knowledge base of your routes, departure times, and fares, in natural language, so passengers get certainty without waiting for an admin to clear the queue.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base of routes, schedules, and fares in Cekat.AI"
+    },
+    {
+      "title": "A Seat Booked in a Single Conversation",
+      "body": "From first question to a locked seat, everything happens in one chat. Cekat.AI records the route, date, seat count, and passenger details, then sends a payment QR and confirms once it is paid. No more phone bookings with misheard names or dates, every order arrives complete and consistent.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Seat booking created and paid inside a chat in Cekat.AI"
+    },
+    {
+      "title": "Reschedules and Refunds Stop Being a Mess",
+      "body": "Late passengers, shifted timetables, cancelled plans, reschedule requests come in every day. Cekat.AI handles them by your rules, checking seats on the replacement departure and logging the change, then escalates refund requests to your team with the full chat history, so passengers get certainty instead of being bounced around.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Refund request escalated to the team with full context in Cekat.AI"
+    },
+    {
+      "title": "Route Changes Reach Passengers Before Departure",
+      "body": "A vehicle issue, a delayed departure, a diverted route, news like this has to travel fast. Through the official WhatsApp Business API, Cekat.AI broadcasts announcements to passengers on the affected routes and departures only, plus automatic departure reminders, so empty seats caused by uninformed passengers become an old story.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Schedule change broadcast sent automatically from Cekat.AI"
+    },
+    {
+      "title": "Every Booking Channel in One Inbox",
+      "body": "WhatsApp, Instagram DM, and website live chat flow into one inbox with a single history per passenger, so someone who asks on Instagram and books on WhatsApp never repeats their story. Regular passengers are captured in the CRM with their favorite routes, ready for a follow-up when a promo or new schedule launches.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Every chat channel connected to one Cekat.AI inbox"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Bookings, reminders, and broadcasts run on the official WhatsApp Business API, alongside Instagram DM and web chat, one inbox for every route and depot, compliant and reliable."
+    },
+    {
+      "title": "AI That Books and Reschedules",
+      "body": "The agent answers schedules and fares, locks seats inside the conversation, and handles reschedules by your rules, then hands special cases to your team with context."
+    },
+    {
+      "title": "Proven Across 3,000+ Businesses",
+      "body": "More than 3,000 businesses in Indonesia run customer service on Cekat.AI."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help transport operators?",
+      "a": "It answers schedule, fare, and seat availability questions instantly 24/7 on WhatsApp, Instagram, and web chat, takes bookings straight from the conversation, and handles reschedules by your rules. Your staff focus on passengers at the counter and on the road, not on a buzzing phone."
+    },
+    {
+      "q": "Can the AI take seat bookings inside the chat?",
+      "a": "Yes. The AI asks for the route, date, seat count, and passenger details, then creates the order complete with a payment QR in the same conversation. Bookings arrive clean and consistent, without the misheard names and dates that come with phone bookings."
+    },
+    {
+      "q": "Can it connect to the reservation or ticketing system we already use?",
+      "a": "Yes. Through API integration, Cekat.AI links to your existing booking or ticketing system, so the seat availability and schedules the AI quotes follow live data, and bookings from chat land in your system. Our team helps map the integration during onboarding."
+    },
+    {
+      "q": "How does the AI handle reschedules and refunds?",
+      "a": "Reschedules are handled by the AI following your policy, checking the replacement departure, logging the change, and confirming with the passenger. Refunds and special cases escalate to a human automatically with the full conversation, so sensitive decisions stay with your team and passengers never repeat their story."
+    },
+    {
+      "q": "Can it send departure reminders and schedule change alerts?",
+      "a": "Yes. Departure reminders go out automatically before the trip to reduce no-shows, and when a delay or route change happens, a broadcast through the official WhatsApp Business API reaches only the passengers on the affected departures, not your whole contact list."
+    },
+    {
+      "q": "Do we need the WhatsApp Business API to start?",
+      "a": "For broadcasts and serious chat volume, yes, and you do not have to handle the process alone. As an Official Meta Business Partner, Cekat.AI assists your WhatsApp Business API registration until it is live, with a verified number that the AI and multiple agents can use at once."
+    },
+    {
+      "q": "How long does setup take for an operator with many routes?",
+      "a": "Building the AI agent takes around five minutes, paste your route list, departure times, fares, and reschedule policy into the knowledge base and it starts answering accurately. No coding involved, and new routes can be added to the knowledge base at any time."
+    },
+    {
+      "q": "Is passenger data safe on Cekat.AI?",
+      "a": "Passenger and conversation data are stored securely with role-based access, so only authorized team members can see them. ISO 27001 certification is in progress, and our team is open to discussing the specific data security needs of your operation."
+    },
+    {
+      "q": "How is it priced, and can we try it before subscribing?",
+      "a": "Pricing follows subscription tiers based on conversation volume and features, so a single-route operator and a large fleet each get a plan that fits. Book a free consultation, our team will demo it with your own routes and schedules before you decide."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Schedule Questions Into Booked Seats",
+    "body": "See how transport operators run 24/7 bookings, reschedules, and support on Cekat.AI, book a free consultation with our team."
+  }
+}

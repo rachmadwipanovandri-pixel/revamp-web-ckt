@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Cara Buat AI Agent Tanpa Coding, Jadi dalam 5 Menit | CekatAI",
+    "description": "Buat AI agent yang langsung kerja dalam 5 menit tanpa coding, tempel SOP, sambungin API, langsung live. Segampang brief admin CS. Dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "Buat AI Agent Tanpa Coding",
+    "title": "Buat AI Agent yang Langsung Kerja dalam 5 Menit",
+    "subtitle": "Builder no-code Cekat.AI segampang ngasih brief ke admin CS baru. Tempel SOP, sambungin API, dan luncurkan AI agent yang bales customer sampai closing, tanpa nulis satu baris coding pun"
+  },
+  "definition": "AI Agent Builder adalah tool no-code di Cekat.AI untuk bikin AI agent customer service yang langsung kerja dalam waktu sekitar 5 menit, segampang ngasih brief ke admin CS. Kamu tinggal tempel SOP dan info bisnis, sambungin API yang kamu pakai, dan agent-nya mulai menangani percakapan nyata di WhatsApp, Instagram, Messenger, dan live chat website, tanpa coding sama sekali.",
+  "stats": [
+    { "value": "5 menit", "label": "buat agent siap kerja" },
+    { "value": "0", "label": "baris coding dibutuhkan" },
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Luncurkan AI Agent Pertamamu Sore Ini Juga",
+      "body": "Kamu nggak butuh developer atau proyek enam minggu. Builder-nya nuntun setup sekitar 5 menit, segampang ngasih brief ke admin CS di hari pertamanya. Jelasin bisnismu ngapain, agent-nya mau nangani apa, dan dia langsung siap bales customer nyata hari ini, bukan kuartal depan.",
+      "image": "/images/home/simpler-ai-builder.png",
+      "imageAlt": "Layar setup builder AI agent no-code di Cekat.AI"
+    },
+    {
+      "title": "Training-nya Kayak Ngasih Brief Karyawan Baru",
+      "body": "Tempel SOP, daftar harga, FAQ, dan info bisnis ke knowledge base, dan agent-nya langsung jawab dari situ, akurat dan konsisten. Nggak perlu prompt engineering, nggak perlu dataset training. Kalau tim kamu udah tahu jawabannya, kamu bisa kasih pengetahuan yang sama ke AI dalam hitungan menit.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Menempel SOP ke knowledge base Cekat.AI"
+    },
+    {
+      "title": "Sambungin API yang Bisnismu Udah Pakai",
+      "body": "Kasih agent-mu kemampuan bertindak, bukan cuma ngomong. Sambungin API buat cek ongkir, booking jadwal, atau kebutuhan bisnis lain, dan agent-nya ngerjain tugas itu langsung di chat. Ini beda antara bot yang bilang \"sebentar saya cek\" dan bot yang benar-benar ngecek.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Menyambungkan API bisnis ke AI agent di Cekat.AI"
+    },
+    {
+      "title": "Bikin Agent Khusus buat Sales, Support, dan Billing",
+      "body": "Satu bot generik nggak bisa jago di semua hal. Bikin agent terpisah buat sales, support, atau billing, masing-masing di-brief pakai SOP dan tools-nya sendiri, jadi tiap customer ngobrol sama agent yang beneran ngerti tugasnya. Nambah agent baru cuma butuh menit, bukan proyek integrasi lagi.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Beberapa AI agent khusus yang diatur di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Tanpa Coding",
+      "title": "Kalau Bisa Brief Orang, Kamu Bisa Bikin Ini",
+      "body": "Seluruh builder-nya tinggal klik. Kamu jelasin perannya, tempel pengetahuannya, lalu nyalain, tanpa coding, tanpa setup teknis, tanpa nunggu tim developer. Kebanyakan owner udah punya agent yang jalan di hari yang sama pas daftar."
+    },
+    {
+      "label": "Tempel SOP",
+      "title": "Pengetahuanmu Jadi Pengetahuannya",
+      "body": "Masukin SOP, info produk, dan FAQ ke knowledge base dan agent-nya langsung jawab dari situ. Update sumbernya sekali dan semua jawaban ikut ter-update, jadi AI-nya nggak pernah melenceng dari cara bisnismu beneran jalan."
+    },
+    {
+      "label": "Sambung API",
+      "title": "Ubah Jawaban Jadi Aksi",
+      "body": "Sambungin API yang udah kamu pakai, ongkir, booking jadwal, dan lainnya, biar agent-nya bisa nyelesaiin tugas di dalam chat. Setup-nya dituntun, jadi kamu tinggal arahin ke yang kamu butuh tanpa nulis kode integrasi sendiri."
+    },
+    {
+      "label": "Chat Flow",
+      "title": "Desain Percakapan Secara Visual Kalau Perlu",
+      "body": "Buat alur yang butuh jalur tetap, chat-flow designer drag-and-drop visual bikin kamu bisa memetakan percakapan langkah demi langkah, lagi-lagi tanpa coding. Pakai pas kamu mau kontrol, dan biarin AI yang urus sisanya secara bebas pas nggak."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Segampang Brief Admin",
+      "body": "Kalau kamu bisa jelasin tugasnya ke CS baru, kamu bisa bikin agent-nya. Tanpa coding, tanpa prompt engineering, tanpa latar belakang teknis."
+    },
+    {
+      "title": "Satu Builder, Semua Channel",
+      "body": "Bikin sekali dan agent-nya jalan di WhatsApp, Instagram DM, Facebook Messenger, dan live chat website, semua dari satu inbox terpadu, tanpa setup terpisah per channel."
+    },
+    {
+      "title": "Tumbuh Bareng Bisnismu",
+      "body": "Tambah agent khusus, sambungin API baru, dan atur jam kerja AI seiring kamu scale. Agent yang kamu bikin dalam 5 menit terus berkembang tanpa perlu dibangun ulang."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Gimana cara buat AI agent tanpa coding?",
+      "a": "Pakai builder no-code Cekat.AI, kamu bikin AI agent dengan menjelaskan perannya, menempel SOP dan info bisnis ke knowledge base, dan menyambungkan API yang kamu butuh. Nggak ada pemrograman di langkah mana pun, semuanya dituntun dan tinggal klik, dan agent yang siap kerja jadi dalam sekitar 5 menit."
+    },
+    {
+      "q": "Beneran nggak butuh pengalaman coding sama sekali?",
+      "a": "Iya, nol. Seluruh builder-nya visual dan dituntun, kamu nge-brief agent-nya kayak nge-brief admin CS baru. Nempel pengetahuan dan nyambungin tools dilakukan lewat tampilan, jadi owner bisnis bisa setup agent sendiri tanpa developer atau latar belakang teknis."
+    },
+    {
+      "q": "Berapa lama bikin agent yang siap kerja?",
+      "a": "Sekitar 5 menit buat agent dasar yang siap kerja. Kamu masukin info bisnis, tempel SOP, lalu nyalain. Kebanyakan tim udah punya agent yang bales chat customer nyata di hari yang sama, lalu dirapikan dan dikembangkan seiring waktu sambil lihat performanya."
+    },
+    {
+      "q": "Gimana AI agent-nya belajar soal bisnisku?",
+      "a": "Kamu tempel SOP, daftar harga, FAQ, dan info bisnis ke knowledge base, dan agent-nya jawab dari sumber itu. Update pengetahuannya sekali dan perubahannya berlaku di mana-mana, jadi agent-nya selalu mencerminkan cara bisnismu beroperasi sekarang, tanpa perlu training ulang."
+    },
+    {
+      "q": "Agent-nya bisa lebih dari sekadar jawab pertanyaan?",
+      "a": "Bisa. Dengan menyambungkan API, agent-nya bisa ambil aksi di dalam chat, cek ongkir, booking jadwal, bikin order, dan menangani tugas lain yang kamu sambungin. Itu mengubahnya dari bot yang cuma bales jadi bot yang benar-benar menyelesaikan pekerjaan buat customer secara real-time."
+    },
+    {
+      "q": "Agent-nya jalan di channel apa saja?",
+      "a": "Satu agent jalan di WhatsApp, Instagram DM, Facebook Messenger, dan live chat website, semua dikelola dari satu inbox terpadu. Kamu bikin sekali, dan dia menangani customer di setiap channel yang tersambung tanpa setup terpisah per channel."
+    },
+    {
+      "q": "Bisa bikin agent berbeda buat tugas berbeda?",
+      "a": "Bisa. Kamu bisa bikin beberapa agent khusus, misalnya satu buat sales, satu buat support, satu buat billing, masing-masing di-brief pakai SOP dan tools-nya sendiri. Nambah agent khusus lagi cuma butuh menit, jadi tiap customer ketemu agent yang dibuat sesuai kebutuhannya."
+    },
+    {
+      "q": "Kalau aku mau kontrol lebih atas percakapannya gimana?",
+      "a": "Pakai chat-flow designer drag-and-drop visual buat memetakan percakapan langkah demi langkah, tetap tanpa coding. Cocok buat alur yang harus ikut jalur tetap, sementara AI menangani pertanyaan terbuka secara bebas, jadi kamu pilih mana yang di-script dan mana yang dibiarkan jalan sendiri."
+    },
+    {
+      "q": "Apa yang terjadi kalau agent-nya nggak bisa nangani sesuatu?",
+      "a": "Dia mengalihkan ke tim kamu dengan konteks percakapan lengkap, jadi nggak ada yang perlu ngulang cerita. Kamu bisa atur jam kerja AI biar tim yang pegang chat pas jam kerja dan agent-nya meng-cover di luar jam kerja, selalu meneruskan riwayat lengkapnya."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah SOP-mu Jadi AI Agent yang Siap Kerja Hari Ini",
+    "body": "Bikin AI agent no-code pertamamu dalam sekitar 5 menit dan biarin dia bales customer di semua channel, tanpa perlu developer."
+  }
+}

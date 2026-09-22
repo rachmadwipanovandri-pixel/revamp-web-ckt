@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Aplikasi WhatsApp Bulk Resmi, Pesan Massal Tanpa Risiko Blokir | CekatAI",
+    "description": "Aplikasi WhatsApp bulk berbasis API resmi Meta: kirim pesan massal ke seluruh database customer, personal per penerima, dengan reply yang dijawab AI 24/7. Coba gratis."
+  },
+  "hero": {
+    "badge": "WhatsApp Business API Resmi",
+    "title": "Kirim Pesan WhatsApp Massal, Tetap Terasa Personal",
+    "subtitle": "Aplikasi WhatsApp bulk dengan API resmi Meta, pesan massal yang tersegmentasi, terpersonalisasi, dan setiap balasannya ditangani AI agent"
+  },
+  "definition": "Aplikasi WhatsApp bulk adalah software untuk mengirim pesan WhatsApp secara massal ke banyak penerima sekaligus. Cekat.AI menjalankannya lewat WhatsApp Business API resmi, dengan segmentasi audiens dari data CRM dan AI agent yang membalas setiap reply 24/7.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "AI bales setiap reply" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Pesan Massal Lewat Jalur Resmi, Bukan Aplikasi Abal-Abal",
+      "body": "Banyak tool pesan massal memakai jalur tidak resmi yang berisiko. Cekat.AI adalah Meta Business Partner resmi, pesan bulk terkirim lewat WhatsApp Business API dengan template yang disetujui, jadi operasional bisnismu tetap aman dan compliant.",
+      "image": "/images/home/track-and-optimize-your-marketing-performance-in-one-unified-platform.png",
+      "imageAlt": "Dashboard campaign WhatsApp bulk di Cekat.AI"
+    },
+    {
+      "title": "Bukan Sekadar Massal, Tepat Sasaran",
+      "body": "Database customer dibagi otomatis berdasarkan aktivitas, riwayat belanja, dan event. Pesan bulk ke 10.000 orang percuma kalau isinya tidak relevan; segmentasi memastikan tiap penerima dapat pesan yang memang buat dia.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi audiens berdasarkan perilaku customer"
+    },
+    {
+      "title": "Nama dan Konteks Customer Terisi Otomatis",
+      "body": "Setiap pesan menarik data dari CRM, nama, order terakhir, promo yang pernah diikuti. Pesan massal yang menyapa dengan benar dan nyambung dengan riwayat customer jauh lebih sering dibales daripada broadcast polos.",
+      "image": "/images/home/your-crm-built-for-growth-and-real-conversations.png",
+      "imageAlt": "Data customer di CRM Cekat.AI"
+    },
+    {
+      "title": "Reply Membludak? AI yang Menangani",
+      "body": "Kirim pesan ke ribuan orang artinya ratusan balasan masuk sekaligus, mimpi buruk kalau dijawab manual. AI agent Cekat.AI membalas semuanya secara instan, mengkualifikasi leads, dan meneruskan ke tim hanya saat dibutuhkan.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI menangani percakapan customer"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Resmi dan Aman",
+      "body": "Meta Business Partner resmi dengan WhatsApp Business API, bukan tool modifikasi yang mempertaruhkan nomor bisnismu."
+    },
+    {
+      "title": "Terhubung ke CRM dan Order",
+      "body": "Data penerima dari CRM, hasil campaign balik ke CRM, dan order yang masuk langsung diproses otomatis, satu siklus penuh."
+    },
+    {
+      "title": "Follow-Up Jalan Sendiri",
+      "body": "Reminder pembayaran, promo yang mau habis, ajakan repeat order, semuanya terkirim otomatis sesuai perilaku customer."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu aplikasi WhatsApp bulk?",
+      "a": "Aplikasi WhatsApp bulk adalah software untuk mengirim pesan WhatsApp ke banyak nomor sekaligus, biasanya untuk promo, pengumuman, atau follow-up. Cekat.AI menjalankan pesan bulk lewat WhatsApp Business API resmi dengan segmentasi, personalisasi, dan analitik konversi."
+    },
+    {
+      "q": "Apakah kirim pesan massal berisiko kena blokir?",
+      "a": "Risiko itu datang dari tool tidak resmi. Cekat.AI mengirim lewat WhatsApp Business API resmi Meta dengan template pesan yang disetujui, jalur yang memang disediakan untuk bisnis mengirim pesan dalam jumlah besar secara compliant."
+    },
+    {
+      "q": "Berapa banyak pesan yang bisa dikirim sekaligus?",
+      "a": "Pesan bulk lewat API resmi bisa menjangkau seluruh database customer yang sudah opt-in, dari ratusan sampai ribuan penerima per campaign, menyesuaikan messaging tier nomor WhatsApp Business milikmu dari Meta."
+    },
+    {
+      "q": "Apa bedanya WhatsApp bulk dengan WA blast?",
+      "a": "Istilahnya beda, praktiknya sama: mengirim pesan ke banyak penerima sekaligus. Di Cekat.AI keduanya berjalan di sistem broadcast yang sama, lewat API resmi, dengan segmentasi audiens dan pelacakan hasil sampai konversi."
+    },
+    {
+      "q": "Pesan massal bisa dipersonalisasi per penerima?",
+      "a": "Bisa. Template pesan menarik data tiap customer dari CRM, nama, riwayat order, event yang diikuti, jadi 5.000 penerima mendapat 5.000 pesan yang terasa personal, bukan satu pengumuman generik."
+    },
+    {
+      "q": "Siapa yang menjawab kalau ada yang membalas?",
+      "a": "AI agent Cekat.AI. Setiap reply dijawab instan 24/7 dengan bahasa natural, dari pertanyaan produk, cek ongkir, sampai proses order langsung di chat. Percakapan yang kompleks dialihkan ke tim beserta konteks lengkapnya."
+    },
+    {
+      "q": "Bisa jadwalkan follow-up untuk yang tidak membalas?",
+      "a": "Bisa. Otomatisasi Cekat.AI mengirim reminder berbasis event, misalnya order yang belum dibayar atau promo yang hampir berakhir, sehingga leads yang diam bisa diaktifkan lagi tanpa tim harus mengecek satu per satu."
+    },
+    {
+      "q": "Bagaimana cara mulai pakai WhatsApp bulk di Cekat.AI?",
+      "a": "Daftar, hubungkan nomor WhatsApp Business API kamu (tim Cekat.AI membantu prosesnya), impor atau sinkronkan data customer, lalu buat campaign pertama, pilih segmen, tulis pesan, kirim. Tanpa coding, selesai dalam hitungan menit."
+    }
+  ],
+  "cta": {
+    "heading": "Pesan Massal yang Menghasilkan, Bukan Sekadar Terkirim",
+    "body": "Jangkau ribuan customer lewat jalur resmi dan biarkan AI mengubah balasan jadi penjualan, 24/7 tanpa nambah tim."
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Bot Facebook Messenger, Bales Chat Page 24/7 | CekatAI",
+    "description": "Bot Facebook Messenger yang bales chat Page-mu instan 24/7 dan menyatukannya dengan WhatsApp dan Instagram di satu inbox AI. Dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "AI untuk Facebook Messenger",
+    "title": "Bales Semua Chat Facebook Messenger, Siang dan Malam",
+    "subtitle": "Hubungkan Facebook Page-mu ke Cekat.AI dan biarkan AI agent membalas percakapan Messenger secara instan, 24/7, di inbox terpadu yang sama dengan WhatsApp, Instagram DM, dan live chat website"
+  },
+  "definition": "Facebook Messenger di Cekat.AI adalah integrasi channel yang menghubungkan Facebook Page-mu ke inbox bertenaga AI, AI agent yang humanlike membalas percakapan Messenger otomatis 24/7, dan setiap pesan masuk ke inbox terpadu yang sama dengan channel lainmu.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "chat Messenger terjawab" },
+    { "value": "~5 menit", "label": "bikin AI agent-mu" }
+  ],
+  "benefits": [
+    {
+      "title": "Bales Chat Page dalam Hitungan Detik, Bukan Jam",
+      "body": "Leads Facebook yang nunggu balasan berjam-jam sudah chat ke tiga kompetitor. AI agent Cekat.AI membalas percakapan Messenger instan, paham maksud dan konteks, bukan keyword, dan menjawab pakai bahasa customer. Pertanyaan soal harga, stok, atau cara order langsung dapat jawaban asli selagi minatnya masih panas.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI membalas percakapan Facebook Messenger"
+    },
+    {
+      "title": "Satu Inbox buat Messenger, WhatsApp, dan Instagram",
+      "body": "Loncat-loncat antara app Facebook Page, WhatsApp, dan Instagram itu cara pesan jadi kelewat. Cekat.AI menarik Messenger ke satu inbox terpadu bareng WhatsApp lewat Business API resmi, Instagram DM, dan live chat website, dengan search cepat, auto-labeling, dan prioritas case di semua channel.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Facebook Messenger terhubung ke inbox terpadu Cekat.AI"
+    },
+    {
+      "title": "Setiap Chat Messenger Jadi Leads di CRM",
+      "body": "Percakapan Facebook tidak seharusnya hilang begitu chat ditutup. Cekat.AI menangkap setiap percakapan Messenger ke CRM otomatis, tanpa input manual, membentuk catatan customer yang hidup dan menggeser tiap kontak lewat stage Visitor, Lead, dan Buyer lengkap dengan saran langkah berikutnya.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads Facebook Messenger tertangkap di CRM Cekat.AI"
+    },
+    {
+      "title": "Alihkan ke Timmu dengan Konteks Lengkap",
+      "body": "Saat chat Messenger butuh manusia, AI mengalihkannya lengkap dengan riwayat terlampir, jadi customer tidak perlu mengulang cerita. Atur AI working hours biar tim jawab chat pas online dan AI menangani malam serta weekend, dengan handoff otomatis yang membawa konteks dua arah.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Handoff AI ke manusia untuk Facebook Messenger dengan konteks lengkap di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Hubungkan Page",
+      "title": "Facebook Page-mu, Dijawab AI",
+      "body": "Hubungkan Facebook Page dan AI agent mulai membalas percakapan Messenger dari knowledge base yang kamu susun. Tanpa coding, dan bikin agent-nya semudah nge-brief admin CS baru, kebanyakan tim sudah live sekitar 5 menit."
+    },
+    {
+      "label": "Satu Inbox",
+      "title": "Messenger Sebelah Channel Lainnya",
+      "body": "Percakapan Messenger masuk ke inbox terpadu yang sama dengan WhatsApp, Instagram DM, dan live chat website. Tim kerja di satu dashboard dengan search cepat, auto-labeling, private notes, dan akses berbasis role, bukan loncat-loncat app."
+    },
+    {
+      "label": "Tangkap Leads",
+      "title": "Dari Chat Page Jadi Leads CRM",
+      "body": "Setiap percakapan Messenger otomatis bikin atau update kartu CRM, kontak, riwayat chat, dan perilaku dalam satu catatan hidup. Customer Stages melacak tiap orang dari Visitor ke Lead ke Buyer, lengkap dengan saran langkah berikutnya."
+    },
+    {
+      "label": "Handoff Pintar",
+      "title": "AI di Luar Jam, Manusia Saat Online",
+      "body": "AI working hours menyesuaikan jadwal timmu: agent jawab chat siang hari, AI membalas di luar jam kerja, dan setiap handoff membawa konteks percakapan lengkap dua arah, jadi tidak ada chat Messenger yang dimulai ulang."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Humanlike, Bukan Skrip Kaku",
+      "body": "AI paham maksud customer Facebook, bukan cocokin keyword, jadi balasan Messenger terasa kayak jawaban asli dengan bahasa customer."
+    },
+    {
+      "title": "Inbox yang Benar-Benar Terpadu",
+      "body": "Messenger gabung dengan WhatsApp, Instagram, dan live chat website di satu dashboard, satu profil customer, satu tim, tanpa loncat app."
+    },
+    {
+      "title": "Jawaban yang Berujung Penjualan",
+      "body": "Tiap chat Messenger tertangkap jadi leads, follow-up jalan otomatis, dan AI bisa closing order langsung di percakapannya."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu bot Facebook Messenger?",
+      "a": "Bot Facebook Messenger otomatis membalas pesan yang masuk ke Facebook Page-mu. Di Cekat.AI, ini AI agent yang humanlike, memahami maksud customer, menjawab dengan informasi asli 24/7, dan menaruh setiap percakapan ke inbox terpadu yang sama dengan channel lainmu."
+    },
+    {
+      "q": "Gimana cara menghubungkan Facebook Page ke Cekat.AI?",
+      "a": "Kamu menghubungkan Facebook Page sebagai channel, lalu bikin AI agent dengan menempel SOP dan info bisnis ke knowledge base. Tanpa coding, dan bikin agent-nya sekitar 5 menit, semudah nge-brief admin CS baru."
+    },
+    {
+      "q": "AI-nya bisa jawab pertanyaan soal produkku di Messenger?",
+      "a": "Bisa. AI bekerja dari knowledge base yang kamu susun dari detail produk, harga, dan SOP-mu sendiri, dan paham maksud serta konteks, bukan cocokin keyword. Hal yang tidak seharusnya dia tangani dialihkan ke timmu lengkap dengan riwayat chat."
+    },
+    {
+      "q": "Bisa jawab pesan Messenger di luar jam kerja?",
+      "a": "Bisa. AI agent menjawab 24/7, jadi customer yang chat Page-mu tengah malam dapat balasan instan. Dengan AI working hours, tim jawab chat pas online dan AI ambil alih malam serta weekend otomatis, dengan konteks lengkap di tiap handoff."
+    },
+    {
+      "q": "Bisa kelola Messenger, WhatsApp, dan Instagram sekaligus?",
+      "a": "Bisa. Facebook Messenger adalah salah satu channel di inbox terpadu Cekat.AI, bareng WhatsApp lewat Business API resmi, Instagram DM, live chat website, dan API channel. Tim jawab semuanya dari satu dashboard, dan riwayat tiap customer ada di satu profil."
+    },
+    {
+      "q": "Bisa menangkap leads dari percakapan Facebook?",
+      "a": "Bisa, otomatis. Setiap percakapan Messenger bikin atau update kartu CRM tanpa input manual: kontak, riwayat chat, dan perilaku dalam satu catatan. Customer Stages lalu melacak tiap kontak dari Visitor ke Lead ke Buyer, lengkap dengan saran langkah berikutnya."
+    },
+    {
+      "q": "Kalau chat Messenger butuh manusia, gimana?",
+      "a": "Percakapan dialihkan ke timmu lengkap dengan riwayat terlampir, jadi customer tidak perlu mengulang cerita. Dengan AI working hours, ini jalan sesuai jadwal: AI menangani chat di luar jam kerja dan tim ambil alih otomatis begitu online."
+    },
+    {
+      "q": "Bisa bales pakai lebih dari satu bahasa?",
+      "a": "Bisa. AI agent-nya multibahasa dan membalas sesuai bahasa yang dipakai customer. Minori Group, yang melayani Jepang dan Indonesia, menangani 100% inquiry dengan AI multibahasa di Cekat.AI, dua bahasa dan dua timezone dalam satu platform."
+    },
+    {
+      "q": "Data customer dari Messenger ditangani dengan aman?",
+      "a": "Cekat.AI mematuhi UU PDP, undang-undang perlindungan data pribadi Indonesia, dalam menangani data pengguna. Percakapan Messenger dan catatan customer ada di satu platform dengan akses tim berbasis role, jadi kamu mengontrol persis siapa yang bisa lihat apa."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Pesan Facebook Page Jadi Deal yang Closing",
+    "body": "Hubungkan Page-mu ke Cekat.AI dan biarkan AI bales setiap chat Messenger 24/7, sambil CRM-mu terisi leads."
+  }
+}

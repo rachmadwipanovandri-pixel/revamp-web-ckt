@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Bot Instagram, DM IG Dibales AI 24/7, Anti Slow Respon | CekatAI",
+    "description": "Bot IG dengan AI yang paham konteks: DM dari ads, story, dan komentar dibales otomatis 24/7, satu inbox bareng WhatsApp. Dipakai 3.000+ bisnis di Indonesia."
+  },
+  "hero": {
+    "badge": "Terhubung API Resmi Instagram",
+    "title": "Jangan Biarkan Followers Ke-Read Doang",
+    "subtitle": "Bot IG dari Cekat.AI membalas setiap DM dengan AI yang humanlike, mau datangnya dari ads, reply story, atau komentar, semuanya masuk satu inbox bareng WhatsApp, dibales 24/7"
+  },
+  "definition": "Bot Instagram adalah fitur Cekat.AI yang membalas DM Instagram secara otomatis dengan AI agent humanlike lewat API resmi Instagram. DM dari ads, reply story, dan komentar masuk ke satu inbox terpadu bersama WhatsApp dan Facebook Messenger, lalu dijawab 24/7.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "DM dibales, jam 2 pagi pun" },
+    { "value": "±5 menit", "label": "setup bot, tanpa coding" }
+  ],
+  "benefits": [
+    {
+      "title": "DM Dibales Hitungan Detik, Bukan Besok Pagi",
+      "body": "Followers yang nanya harga itu lagi panas-panasnya mau beli, tiga jam kemudian, dia sudah checkout di toko sebelah. AI Cekat.AI membalas dalam hitungan detik dengan bahasa natural, kapan pun. Dia paham maksud pertanyaan, bukan cuma keyword, \"ini masih ready?\" dijawab beneran, bukan dilempar menu.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI membalas DM Instagram otomatis"
+    },
+    {
+      "title": "DM dari Ads Jangan Sampai Hangus",
+      "body": "Setiap DM dari iklan Instagram yang tidak dibales artinya budget ads terbakar sia-sia. Begitu orang tap iklanmu dan mulai chat, AI langsung menyambut: menjawab pertanyaan, menyimpan datanya sebagai leads di CRM, dan menggiringnya ke checkout selagi minatnya masih hangat.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads dari Instagram otomatis tersimpan di CRM Cekat.AI"
+    },
+    {
+      "title": "Reply Story dan DM Komentar Tidak Tenggelam",
+      "body": "Habis posting story promo, DM banjir, lalu pertanyaan serius ketimbun basa-basi. Di Cekat.AI, setiap percakapan otomatis dilabeli dan diprioritaskan: pertanyaan yang siap beli naik ke atas, dan tidak ada chat yang keburu tenggelam sebelum sempat dibales.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "Percakapan Instagram terlabeli dan terprioritas otomatis di Cekat.AI"
+    },
+    {
+      "title": "Satu Inbox: IG, WhatsApp, Messenger",
+      "body": "Customer pindah-pindah channel; timmu tidak perlu ikut pindah-pindah aplikasi. DM Instagram duduk di inbox yang sama dengan WhatsApp, Facebook Messenger, dan live chat website, satu layar, satu riwayat customer, satu AI yang ingat konteksnya di mana pun obrolan berlanjut.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Instagram, WhatsApp, dan Messenger dalam satu inbox Cekat.AI"
+    },
+    {
+      "title": "Dilatih Pakai SOP-mu, Jadi dalam Hitungan Menit",
+      "body": "Tempel SOP, detail produk, dan aturan toko ke knowledge base, sekitar 5 menit kemudian bot-mu siap melayani, tanpa coding, semudah briefing admin CS baru. Mau alur khusus seperti meneruskan tawaran endorse langsung ke tim? Rangkai lewat visual drag-and-drop designer.",
+      "image": "/images/chat/train-your-ai-agent.png",
+      "imageAlt": "Melatih AI agent Cekat.AI dengan SOP dan info bisnis"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Auto Reply",
+      "title": "Balasan yang Kayak Kamu, Bukan Kayak Robot",
+      "body": "AI menjawab dengan bahasa natural dan multibahasa, followers luar negeri pun terlayani. Dia membaca maksud customer, bukan menunggu keyword persis untuk melempar balasan kaleng."
+    },
+    {
+      "label": "Inbox Terpadu",
+      "title": "Semua Channel, Satu Layar",
+      "body": "DM Instagram mengalir ke inbox yang sama dengan WhatsApp, Messenger, dan live chat, lengkap dengan pencarian cepat, auto-labeling, dan prioritas kasus biar antrean tetap rapi."
+    },
+    {
+      "label": "Tangkap Leads",
+      "title": "Dari DM Langsung Masuk CRM",
+      "body": "Setiap percakapan Instagram otomatis membuat atau meng-update kartu CRM, tanpa input manual. Followers bergerak dari Visitor, Lead, sampai Buyer lengkap dengan saran langkah berikutnya."
+    },
+    {
+      "label": "Oper Manusia",
+      "title": "Tim Masuk dengan Konteks Lengkap",
+      "body": "Saat percakapan butuh manusia, AI mengoper beserta seluruh riwayat chat. Atur AI working hours: tim pegang jam kerja, bot pegang shift malam dan weekend."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "API Resmi, Akun Aman",
+      "body": "Cekat.AI adalah Meta Business Partner resmi, DM Instagram ditangani lewat API resmi, bukan tool abal-abal yang membahayakan akunmu."
+    },
+    {
+      "title": "Paham Maksud, Bukan Sekadar Keyword",
+      "body": "Typo, bahasa gaul, campur Inggris, AI tetap paham apa yang followers maksud, tanpa harus dibuatkan script untuk setiap kemungkinan kalimat."
+    },
+    {
+      "title": "Scale Tanpa Nambah Admin",
+      "body": "Postingan viral bawa 10 atau 1.000 DM, AI yang sama membalas semuanya seketika, tanpa lembur, tanpa antrean, tanpa rekrut dadakan."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu bot Instagram?",
+      "a": "Bot Instagram adalah sistem yang membalas DM akun bisnis Instagram secara otomatis. Di Cekat.AI, yang membalas adalah AI agent humanlike yang terhubung lewat API resmi Instagram, dia memahami maksud dan konteks pertanyaan, menjawab dengan bahasa natural 24/7, dan mengoper ke timmu saat percakapan butuh sentuhan manusia."
+    },
+    {
+      "q": "Apa bedanya bot IG Cekat.AI dengan bot keyword biasa?",
+      "a": "Bot keyword melempar balasan kaleng saat menangkap kata persis, dan langsung bingung ketemu typo, singkatan, atau pertanyaan beneran. AI Cekat.AI memahami maksud dan konteks: bisa menjawab pertanyaan produk, mengkualifikasi leads, dan mengobrol secara natural dalam banyak bahasa tanpa script untuk tiap kemungkinan kalimat."
+    },
+    {
+      "q": "DM yang datang dari iklan Instagram bisa dibales otomatis?",
+      "a": "Bisa. Begitu orang tap iklan dan membuka DM, percakapannya masuk ke inbox Cekat.AI dan AI langsung merespons, menjawab pertanyaan, menyimpan orangnya sebagai leads di CRM, dan menggiringnya ke pembelian. DM hasil ads tergarap jam berapa pun, bukan cuma saat admin online."
+    },
+    {
+      "q": "Reply story dan DM dari komentar juga ketangkap?",
+      "a": "Ketangkap. DM yang berawal dari reply story maupun komentar masuk ke inbox terpadu yang sama, otomatis dilabeli, diprioritaskan, dan dijawab AI. Banjir chat saat hari promo tidak lagi menenggelamkan pertanyaan yang serius mau beli, percakapan penting justru diangkat ke atas."
+    },
+    {
+      "q": "Pakai bot IG aman nggak buat akunku?",
+      "a": "Aman, selama lewat jalur resmi. Cekat.AI adalah Meta Business Partner resmi dan terhubung ke Instagram lewat API resmi, cara yang memang direstui untuk otomatisasi DM. Ini beda jauh dengan tool tidak resmi yang meniru-niru aktivitas aplikasi dan bikin akun terancam."
+    },
+    {
+      "q": "Timku bisa ambil alih chat dari bot?",
+      "a": "Kapan saja. AI mengoper percakapan lengkap dengan seluruh riwayatnya, jadi customer tidak pernah disuruh mengulang cerita. Dengan AI working hours, pergantiannya juga otomatis mengikuti jadwal: tim pegang jam kerja, AI pegang malam dan akhir pekan."
+    },
+    {
+      "q": "Leads dari Instagram bisa masuk CRM otomatis?",
+      "a": "Bisa. Setiap percakapan Instagram otomatis membuat atau meng-update kartu customer di CRM Cekat.AI, profil, riwayat chat, dan tahapnya dari Visitor, Lead, sampai Buyer lengkap dengan saran langkah berikutnya. Tidak ada lagi salin-tempel username ke spreadsheet."
+    },
+    {
+      "q": "Berapa lama setup bot IG-nya?",
+      "a": "Bot-nya sendiri jadi sekitar 5 menit: tempel SOP, info produk, dan aturan toko ke knowledge base, tanpa coding, semudah briefing admin CS. Hubungkan akun Instagram-mu, dan agent yang sama bisa sekalian menjaga WhatsApp dan Messenger sejak hari pertama."
+    },
+    {
+      "q": "Bot-nya bisa bales pakai bahasa Inggris juga?",
+      "a": "Bisa, AI-nya multibahasa dan menyesuaikan bahasa tiap followers. DM bahasa Indonesia dijawab bahasa Indonesia, yang bahasa Inggris dijawab bahasa Inggris, tanpa bikin alur terpisah per bahasa. Dengan cara ini Minori Group melayani pelanggan Jepang dan Indonesia sekaligus dengan tim kecil."
+    },
+    {
+      "q": "Bot IG ini nyambung sama WhatsApp bisnisku?",
+      "a": "Nyambung, justru itu inti inbox terpadunya. Instagram, WhatsApp, Messenger, dan live chat website berbagi satu layar, satu CRM, dan satu AI agent. Followers yang DM di Instagram hari ini lalu chat WhatsApp besok tetap dikenali sebagai customer yang sama, dengan riwayat yang terbawa utuh."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah DM yang Ke-Read Jadi Orderan Masuk",
+    "body": "Hubungkan Instagram-mu dalam hitungan menit dan biarkan AI bales setiap DM, dari ads, story, sampai komentar, sebelum kompetitor sempat buka aplikasi."
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "AI Customer Service for Hotels & Hospitality | CekatAI",
+    "description": "AI & hospitality CRM by Cekat.ai: handle reservations, rates, & events 24/7. Holywings Group hit 100% chat coverage & +70% conversion!"
+  },
+  "hero": {
+    "badge": "Hotels & Hospitality",
+    "title": "Never Miss a Booking, Even at 3 AM",
+    "subtitle": "Reservation, rate, and event inquiries answered instantly on WhatsApp, Instagram, and web chat, 24/7, in natural language, without a night shift on the front desk",
+    "useCases": [
+      "Reservations & rates",
+      "Event & venue booking",
+      "One inbox for all guests",
+      "Low-season promos"
+    ]
+  },
+  "definition": "Cekat.AI for hospitality is an AI customer service platform for hotels, villas, restaurants, and event venues in Indonesia, answering reservation, rate, and event inquiries 24/7, closing bookings inside the chat, and keeping every guest conversation organized in one place.",
+  "stats": [
+    {
+      "value": "2×",
+      "label": "increase in booking revenue at Puffy Cotton Candy"
+    },
+    {
+      "value": "5 sec",
+      "label": "reply time to customer chats at Lunica, down from 15 minutes"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Reservation and Rate Questions Answered Around the Clock",
+      "body": "Guests plan trips at midnight and compare rates on their phones. Cekat.AI answers availability, pricing, check-in details, and facilities the moment the question lands, in natural language, at any hour, so an inquiry becomes a booking instead of a message that sits unread until morning, by which time the guest has booked elsewhere.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours covering guest inquiries after front-desk hours in Cekat.AI"
+    },
+    {
+      "title": "Close Event and Venue Bookings Inside the Chat",
+      "body": "Event and group inquiries used to mean a long back-and-forth of manual questions. Cekat.AI captures the details, dates, headcount, package, budget, right in the conversation, connects to your systems through API, and hands warm, qualified inquiries to your team with everything already gathered, so nothing stalls waiting for a reply.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Event booking handled through API integration in Cekat.AI"
+    },
+    {
+      "title": "One Inbox for Every Guest, Across Every Channel",
+      "body": "WhatsApp, Instagram DM, Facebook Messenger, and website chat flow into one inbox with a full history per guest. Your team sees past stays, requests, and questions instantly, and anything that needs a human, a special request, a complaint, escalates with the whole conversation attached, so no guest repeats themselves.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Guest conversations organized in the Cekat.AI CRM"
+    },
+    {
+      "title": "Fill Quiet Dates With Promos Guests Actually Open",
+      "body": "Broadcast campaigns go out through the official WhatsApp Business API to segments built from real data, past guests, event clients, lapsed bookings, with names and context pulled from the CRM. A weekday-rate offer or a seasonal package reaches the guests most likely to say yes, instead of a generic blast everyone ignores.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Guest segmentation for hospitality promos in Cekat.AI"
+    }
+  ],
+  "caseStudy": {
+    "client": "Holywings Group",
+    "metrics": [
+      {
+        "value": "100%",
+        "label": "chat coverage after hours"
+      },
+      {
+        "value": "+70%",
+        "label": "conversion lift"
+      }
+    ],
+    "body": "Holywings Group was handling event, booking, and pricing inquiries manually, and losing the ones that came in after hours. After implementing Cekat.AI, chats are covered 100% around the clock, with the AI answering instantly and routing serious inquiries to the team. The result: up to +70% conversion, higher guest satisfaction, and more revenue from inquiries that used to go unanswered."
+  },
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Guest chats and promo broadcasts run on the official WhatsApp Business API, reliable and safe for the number your bookings come through."
+    },
+    {
+      "title": "24/7 Without a Night Shift",
+      "body": "The AI covers inquiries after your front desk clocks out and hands back during working hours, so coverage never has a gap and payroll never grows."
+    },
+    {
+      "title": "Human Where It Matters",
+      "body": "Routine questions are handled instantly; VIP requests, complaints, and complex bookings route to your team with full context attached."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help hotels and hospitality businesses?",
+      "a": "It answers guest chats instantly 24/7 on WhatsApp, Instagram, and web chat, reservations, rates, facilities, check-in details, and event inquiries, while keeping every conversation organized in one inbox. Guests get instant answers at any hour, and your front desk isn't buried in repetitive questions."
+    },
+    {
+      "q": "Can the AI handle reservations and bookings?",
+      "a": "Yes. The agent answers availability and rate questions and captures booking details in the conversation. Through API integration it connects to your systems, and complex or high-value bookings route to your team with everything already gathered, so nothing stalls waiting for a manual reply."
+    },
+    {
+      "q": "Can it handle event and group inquiries?",
+      "a": "Yes. Cekat.AI gathers event details, dates, headcount, package, budget, inside the chat and hands qualified inquiries to your team with the full context. Holywings Group used this to reach 100% chat coverage and up to +70% conversion on inquiries that used to be handled manually."
+    },
+    {
+      "q": "What results have hospitality businesses seen?",
+      "a": "Holywings Group moved from handling event, booking, and pricing inquiries manually to 100% chat coverage 24/7 after implementing Cekat.AI, with up to +70% conversion, higher guest satisfaction, and more revenue from inquiries that previously went unanswered after hours."
+    },
+    {
+      "q": "Which channels can a hotel or venue connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, and website live chat, all flowing into one unified inbox. Every guest keeps a single conversation history, so an inquiry that started on Instagram and continued on WhatsApp stays in one place."
+    },
+    {
+      "q": "Does it work outside office hours?",
+      "a": "Yes. AI working hours let the agent cover chats around the clock, then hand back to your team during working hours with full context. Guests booking at midnight or comparing rates late at night get an instant answer instead of waiting until morning."
+    },
+    {
+      "q": "Can I send promotions to past guests?",
+      "a": "Yes. Broadcast campaigns go through the official WhatsApp Business API to segments built from activity and stay history, past guests, event clients, lapsed bookings. Messages pull names and context from the CRM, so a weekday offer or seasonal package feels relevant instead of generic."
+    },
+    {
+      "q": "How long does setup take?",
+      "a": "Building the AI agent takes around five minutes and works like briefing a new front-desk admin, you paste your rates, facilities, policies, and SOPs, and it starts answering. No coding is required, so you don't need a developer or a long IT project to launch."
+    },
+    {
+      "q": "What happens with complaints or special requests?",
+      "a": "Complaints are labeled automatically, turned into a ticket, and routed to the right team with the full conversation attached, tracked from first message to resolution. Special requests and VIP conversations escalate to a human, so sensitive moments always get a personal touch."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Every Inquiry Into a Booking",
+    "body": "See how hotels and venues run 24/7 reservations and support on Cekat.AI, book a free consultation with our team."
+  }
+}

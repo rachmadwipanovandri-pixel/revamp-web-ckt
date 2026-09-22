@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "WhatsApp Business API, Satu Nomor untuk Seluruh Tim | CekatAI",
+    "description": "Pakai WhatsApp Business API resmi lewat Meta Business Partner. Satu nomor untuk semua tim, AI bales chat 24/7, sudah dipercaya 3.000+ bisnis di Indonesia."
+  },
+  "hero": {
+    "badge": "Meta Business Partner Resmi",
+    "title": "Satu Nomor WhatsApp Resmi untuk Seluruh Bisnismu",
+    "subtitle": "Cekat.AI menghubungkan bisnismu ke WhatsApp Business API resmi, satu nomor dipakai seluruh tim, template pesan yang disetujui Meta, otomatisasi, plus AI agent yang bales chat 24/7. Tim Cekat mendampingi proses onboarding dari awal"
+  },
+  "definition": "WhatsApp Business API adalah infrastruktur resmi dari Meta untuk bisnis yang melayani pelanggan lewat WhatsApp dalam skala besar. Lewat Cekat.AI, Meta Business Partner resmi, satu nomor WhatsApp terhubung ke inbox tim bersama, lengkap dengan template resmi, otomatisasi workflow, dan AI agent yang humanlike.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "AI standby di nomormu" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Satu Nomor, Semua Tim Bisa Kerja Bareng",
+      "body": "Aplikasi WhatsApp Business gratis mengunci nomormu di satu HP, admin gantian pegang, reply telat, customer nunggu. Di API, seluruh tim login ke nomor yang sama sekaligus: ada role-based access, private notes, dan kolaborator bisa ditarik masuk ke percakapan yang butuh bantuan.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Tim berkolaborasi di satu nomor WhatsApp lewat inbox Cekat.AI"
+    },
+    {
+      "title": "Onboarding Dikawal, Bukan Dilepas Sendirian",
+      "body": "Akses API artinya verifikasi bisnis, registrasi nomor, dan approval template, ribet kalau jalan sendiri. Sebagai Meta Business Partner resmi, tim Cekat.AI mendampingi seluruh proses onboarding sampai nomormu live, jadi kamu tidak perlu pusing menerjemahkan dokumentasi Meta.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Menghubungkan channel WhatsApp Business API resmi di Cekat.AI"
+    },
+    {
+      "title": "AI Agent Jaga Nomormu 24/7",
+      "body": "API saja cuma saluran, Cekat.AI yang kasih otaknya. AI agent yang humanlike memahami maksud dan konteks chat, bukan sekadar mencocokkan keyword. Dia bisa jawab dalam banyak bahasa, cek ongkir, kirim QR pembayaran, sampai closing order di dalam chat saat timmu sudah tidur.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI menangani percakapan WhatsApp secara otomatis"
+    },
+    {
+      "title": "Template dan Otomatisasi yang Memulai Percakapan",
+      "body": "Template yang disetujui Meta membuatmu bisa menyapa customer duluan, update order, reminder pembayaran, info promo, dengan cara yang compliant. Workflow trigger jalan berdasarkan jadwal, keyword chat, atau perubahan data customer, jadi follow-up terkirim tepat waktu tanpa nunggu ada yang ingat.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Builder otomatisasi drag-and-drop untuk workflow WhatsApp di Cekat.AI"
+    },
+    {
+      "title": "Telepon WhatsApp Pun Diproses AI",
+      "body": "Percakapan di API bukan cuma teks. Telepon WhatsApp diproses AI jadi ringkasan instan, poin-poin penting, dan rekomendasi langkah berikutnya, telepon sepuluh menit berubah jadi catatan yang bisa langsung ditindaklanjuti tim, bukan ingatan yang hilang setelah makan siang.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "Ringkasan telepon dan insight yang dibuat AI di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "API Resmi",
+      "title": "Jalan di Infrastruktur Resmi Meta",
+      "body": "Cekat.AI adalah Meta Business Partner resmi, jadi nomormu berjalan di WhatsApp Business API yang asli, template resmi, pesan yang compliant, tanpa risiko akun seperti gateway tidak resmi."
+    },
+    {
+      "label": "Inbox Tim",
+      "title": "Satu Nomor, Rapi untuk Satu Tim",
+      "body": "Pencarian cepat, auto-labeling, dan prioritas kasus bikin chat penting selalu di atas. Private notes dan role-based access memastikan tiap anggota tim lihat yang perlu saja."
+    },
+    {
+      "label": "AI Agent",
+      "title": "Melatihnya Seperti Briefing Admin CS",
+      "body": "Tempel SOP dan info bisnismu ke knowledge base, agent siap dalam sekitar 5 menit, tanpa coding. AI working hours ambil alih setelah tim offline, dan handoff balik membawa konteks lengkap."
+    },
+    {
+      "label": "Onboarding",
+      "title": "Disiapkan Bareng Tim yang Nyata",
+      "body": "Tim Cekat.AI bantu verifikasi, setup nomor, dan pengajuan template, lalu tetap mendampingi saat kamu launch. Kamu fokus ke isi pesannya, urusan teknis biar kami yang pegang."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Meta Business Partner Resmi",
+      "body": "Akses langsung ke WhatsApp Business API dengan template resmi, compliant, andal, dan aman untuk nomor yang jadi tumpuan bisnismu."
+    },
+    {
+      "title": "Satu Inbox Semua Channel",
+      "body": "WhatsApp berdampingan dengan Instagram DM, Facebook Messenger, dan live chat website dalam satu inbox terpadu, satu layar untuk semua percakapan customer."
+    },
+    {
+      "title": "AI Duluan, Manusia Saat Dibutuhkan",
+      "body": "Beberapa agent spesialis menangani sales, support, dan billing sepanjang hari, lalu oper ke timmu lengkap dengan seluruh konteks percakapannya."
+    }
+  ],
+  "testimonial": {
+    "heading": "WhatsApp Bisnis Tetap Responsif 24 Jam",
+    "quote": "Response time lebih cepat, dan yang paling utama jam kerjanya 24 jam. Nomor WhatsApp bisnis kami tersambung dengan Cekat AI.",
+    "name": "dr. Geri Wilianto",
+    "role": "Founder & CEO, Dokter Hub"
+  },
+  "faq": [
+    {
+      "q": "Apa itu WhatsApp Business API?",
+      "a": "WhatsApp Business API adalah platform resmi Meta untuk bisnis yang melayani pelanggan lewat WhatsApp dalam skala besar. Beda dengan aplikasi gratis, API tidak terikat satu HP, nomormu terhubung ke platform seperti Cekat.AI, tempat seluruh tim plus AI agent bisa kirim, terima, dan mengotomatiskan pesan di satu nomor."
+    },
+    {
+      "q": "Apa bedanya aplikasi WhatsApp Business dan WhatsApp Business API?",
+      "a": "Aplikasi WhatsApp Business gratis dirancang untuk satu orang di satu HP: reply manual dan broadcast list terbatas. API menghapus batasan itu, tim tanpa batas di satu nomor, template resmi Meta untuk campaign keluar, workflow otomatis, dan AI agent. Semuanya dikelola lewat platform seperti Cekat.AI, bukan lewat HP."
+    },
+    {
+      "q": "Gimana cara dapat akses WhatsApp Business API?",
+      "a": "Akses diberikan lewat jalur resmi Meta, umumnya melalui Business Partner. Cekat.AI adalah Meta Business Partner resmi: kamu daftar, lalu tim Cekat.AI mengawal verifikasi bisnis, registrasi nomor, dan approval template sampai nomor API-mu aktif dan siap melayani customer."
+    },
+    {
+      "q": "Bisa satu nomor WhatsApp dipakai banyak admin sekaligus?",
+      "a": "Bisa, ini salah satu alasan utama bisnis pindah ke API. Di Cekat.AI, semua anggota tim login ke inbox bersama dengan role-based access. Kamu bisa menambah kolaborator ke percakapan tertentu, meninggalkan private notes, dan memprioritaskan kasus, semuanya di satu nomor resmi."
+    },
+    {
+      "q": "WhatsApp Business API aman buat nomor bisnisku?",
+      "a": "Aman, selama lewat jalur resmi. Cekat.AI adalah Meta Business Partner resmi, jadi pesan berjalan di infrastruktur Meta sendiri dengan template yang sudah disetujui, jalur yang compliant untuk pesan bisnis. Kebalikan dari tool blast tidak resmi yang beroperasi di luar aturan Meta dan membahayakan nomormu."
+    },
+    {
+      "q": "Perlu developer untuk pakai WhatsApp Business API?",
+      "a": "Tidak. API-nya memang teknis, tapi Cekat.AI membungkusnya jadi platform tanpa coding: chat-flow designer drag-and-drop, knowledge base yang diisi cukup dengan menempel SOP, dan AI agent yang jadi dalam sekitar 5 menit. Semudah briefing admin CS baru."
+    },
+    {
+      "q": "AI agent-nya bisa ngapain aja di nomorku?",
+      "a": "Dia bales customer 24/7 dengan bahasa natural, memahami maksud dan konteks, bukan sekadar keyword. Bisa jawab dalam banyak bahasa, cek ongkir, kirim QR pembayaran, membuat order langsung dari percakapan, dan mengoper ke timmu lengkap dengan konteks saat memang butuh manusia."
+    },
+    {
+      "q": "Bisa kirim broadcast lewat API?",
+      "a": "Bisa. Template resmi Meta membuatmu bisa menghubungi customer duluan dalam jumlah besar, promo, reminder pembayaran, ajakan beli lagi. Di Cekat.AI, campaign disegmentasi berdasarkan aktivitas, riwayat pembelian, atau event, dan setiap reply masuk ke inbox yang sama untuk dijawab AI."
+    },
+    {
+      "q": "Kalau chat masuk di luar jam kerja gimana?",
+      "a": "AI working hours di Cekat.AI mengikuti jadwal timmu: saat tim online, mereka yang pegang; setelah jam kerja, AI otomatis ambil alih. Begitu tim kembali, handoff membawa seluruh konteks percakapan, customer tidak perlu mengulang cerita dan leads tengah malam tidak keburu dingin."
+    },
+    {
+      "q": "Data pelanggan di API dikelola dengan aman?",
+      "a": "Cekat.AI patuh pada UU PDP, undang-undang pelindungan data pribadi Indonesia, dan menjalankan pesan WhatsApp lewat infrastruktur resmi Business API milik Meta. Percakapan, profil customer, dan data campaign tersimpan dalam satu platform dengan role-based access, bukan tercecer di HP pribadi admin."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Satu Nomor WhatsApp Jadi Kanal Penjualan Paling Rajin",
+    "body": "Naik ke WhatsApp Business API resmi dengan pendampingan penuh tim Cekat.AI, dan AI agent yang sudah bales chat sebelum kamu selesai baca ini."
+  }
+}

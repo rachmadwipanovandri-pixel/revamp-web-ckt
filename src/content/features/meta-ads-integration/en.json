@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Meta Ads Integration: CTWA, Attribution, Instant Replies | Cekat.AI",
+    "description": "Connect Meta Ads to Cekat.AI: ad clicks open WhatsApp chats, leads arrive attributed to their campaign, AI replies in the first second, conversions stay traceable."
+  },
+  "hero": {
+    "badge": "Meta Ads Integration",
+    "title": "Your Meta Ads Stop Being Guesswork",
+    "subtitle": "An ad click opens a WhatsApp chat carrying its campaign of origin. AI replies in the first second, the lead lands in the CRM labeled with its ad, and you know which campaign actually produces revenue."
+  },
+  "definition": "The Meta Ads integration in Cekat.AI connects Click-to-WhatsApp campaigns to your inbox and CRM: an ad click opens a WhatsApp conversation with the opening message you configure, leads are recorded attributed to their campaign, and results stay readable through to closing.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "ad leads answered instantly"
+    },
+    {
+      "value": "+70%",
+      "label": "conversion lift at Holywings Group"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run campaigns on Cekat.AI"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "interactions became recorded contacts"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "An Ad Click Becomes a Conversation",
+      "body": "Click-to-WhatsApp campaigns take people from the feed straight into a chat, skipping the landing page where intent evaporates. You set the welcome and pre-filled messages, so the conversation starts without awkwardness.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "A Meta ad click opening a WhatsApp conversation"
+    },
+    {
+      "title": "Ad Leads Answered While Intent Is Hot",
+      "body": "People click ads at their moment of highest intent. The AI replies that second, asks what they need, and locks in the next step, instead of letting an expensive click go cold in a queue.",
+      "image": "/images/marketing/improve-performance-and-lower-cac.png",
+      "imageAlt": "AI replying to Meta ad leads instantly"
+    },
+    {
+      "title": "Every Lead Carries Its Campaign's Name",
+      "body": "Incoming leads are recorded with their ad of origin in the CRM. When the deal closes, you are not guessing which ad brought it, the data has been attached since the first chat.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Meta ad leads attributed to campaigns in the CRM"
+    },
+    {
+      "title": "All Your Meta Ads Readable on One Dashboard",
+      "body": "Campaign, ad set, and ad performance reads without bouncing back to Ads Manager. The ads producing chats are visible, and so are the ones only producing clicks.",
+      "image": "/images/marketing/review-all-meta-ads-in-one-dashboard.png",
+      "imageAlt": "All Meta ads readable in one dashboard"
+    },
+    {
+      "title": "Conversions Flow Back to Meta via CAPI",
+      "body": "Sales that close in chat are sent back to Meta through the Conversions API, so the algorithm learns from real buyers rather than clickers. Your budget gets smarter over time.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Conversion signals sent back to Meta"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "From Click to Closing",
+      "body": "One straight line: ad, chat, CRM, sale. No link in the chain loses its data."
+    },
+    {
+      "title": "Speed That Protects CAC",
+      "body": "Clicks answered fast become sales more often, and cost per result falls with them."
+    },
+    {
+      "title": "The Algorithm Fed Real Data",
+      "body": "Closing signals from chat flow back, so Meta optimizes toward buyers, not spectators."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the Meta Ads integration in Cekat.AI?",
+      "a": "The connection between Click-to-WhatsApp campaigns on Meta and the Cekat.AI inbox: ad clicks open WhatsApp chats, leads are recorded attributed to their campaign, answered by AI, and readable through to closing."
+    },
+    {
+      "q": "What do we need to start?",
+      "a": "A Facebook Page, a WhatsApp Business account with its number, and the two connected in Meta Ads Manager. Campaigns are built with the Leads objective and WhatsApp as the conversation destination."
+    },
+    {
+      "q": "Can we control the opening message from the ad?",
+      "a": "Yes. Welcome and pre-filled messages are configured during campaign setup, so people arriving from an ad are greeted with the right context."
+    },
+    {
+      "q": "How do ad leads get recorded in the CRM?",
+      "a": "Every chat arriving from an ad becomes a contact complete with campaign attribution, so your pipeline filters per campaign and closings trace back to the ad of origin."
+    },
+    {
+      "q": "How is this different from the Conversion API (CAPI) page?",
+      "a": "This integration is about bringing leads in and reading performance; CAPI is about sending conversion signals back to Meta. Used together they close the loop."
+    },
+    {
+      "q": "Does the AI answer ad leads immediately?",
+      "a": "Yes. Click-to-WhatsApp leads are treated like any incoming chat: answered in the first second, qualified, and handed to the team when ready to close."
+    },
+    {
+      "q": "Can we see ad performance without opening Ads Manager?",
+      "a": "Yes. The marketing dashboard shows your Meta campaign performance alongside chat and sales data, so evaluation is one screen."
+    },
+    {
+      "q": "Is ad budget managed from Cekat.AI?",
+      "a": "Budget management stays in Meta Ads Manager. Cekat.AI completes it with the conversation side: leads, quality, and the sales that click metrics never show."
+    }
+  ],
+  "cta": {
+    "heading": "Connect Your Meta Ads and See Which Ones Earn",
+    "body": "From click to chat, from chat to a traceable sale. Try it free or ask our team."
+  }
+}

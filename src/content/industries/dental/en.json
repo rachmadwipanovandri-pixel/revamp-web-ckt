@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Dental Clinic Software with 24/7 AI Chat | CekatAI",
+    "description": "Dental clinics use Cekat.AI to answer treatment and price questions instantly, book consults, and run recall reminders on WhatsApp, 24/7."
+  },
+  "hero": {
+    "badge": "Dental Clinics",
+    "title": "Answer Scaling to Braces Prices Before the Patient Goes Quiet",
+    "subtitle": "From treatment price ranges to consultation bookings and recall reminders, Cekat.AI replies instantly on WhatsApp and Instagram, 24/7, in natural language, without adding admins",
+    "useCases": [
+      "Treatment pricing",
+      "Consultation booking",
+      "Check-up reminders",
+      "Aftercare guidance"
+    ]
+  },
+  "definition": "Cekat.AI for dental clinics is an AI customer service platform for dental practices in Indonesia, complementing your dental clinic software with AI that answers treatment and price-range questions instantly, books consultations straight from the chat, and runs recall reminders automatically in one platform.",
+  "stats": [
+    {
+      "value": "+70%",
+      "label": "conversion uplift at Holywings Group"
+    },
+    {
+      "value": "100%",
+      "label": "of chats covered 24/7 at Holywings"
+    },
+    {
+      "value": "24/7",
+      "label": "treatment, pricing, and booking questions answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Scaling, Braces, or Whitening Prices? Answered in Seconds",
+      "body": "A patient who asks for a price and waits an hour usually never comes back. Cekat.AI answers treatment and price-range questions from your clinic's own price list instantly, in natural language, then steers the chat toward a consultation for the exact quote, so interest never has time to go cold.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering treatment and price questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "From a Price Chat Straight to a Booked Consultation",
+      "body": "The moment a patient shows interest, the AI offers a slot and books the consultation inside the conversation, connected to your clinic schedule through the API, with a reminder before the day. \"I'll let you know\" turns into an appointment that actually lands on the calendar.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "API integration booking dental consultations in Cekat.AI"
+    },
+    {
+      "title": "Six-Month Recalls and Braces Checks Run Automatically",
+      "body": "Recalls that depend on an admin's memory always leak. Cekat.AI sends automated reminders through the official WhatsApp Business API based on each patient's history, six-month scaling, monthly braces adjustments, braces-removal schedules, so your chairs fill with returning patients, not just new ones.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Recall reminders running from patient history in Cekat.AI"
+    },
+    {
+      "title": "Anxious Questions at 11 PM Still Get an Answer",
+      "body": "Pain after an extraction, a swollen gum, a loose bracket, anxiety does not wait for practice hours. The AI replies with aftercare guidance from your clinic's own knowledge base, including when something needs urgent care, then hands the case to your medical team with full context when the clinic opens.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI answering patient questions outside practice hours in Cekat.AI"
+    },
+    {
+      "title": "Aftercare Education That Stays Consistent in Every Chat",
+      "body": "What not to eat after getting braces, post-whitening care, how to wear a retainer, every answer comes from education material your clinic wrote itself. Each patient gets instructions that match the dentist's standard exactly, whenever they ask, whoever is on shift.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base powering patient education answers in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats, bookings, and recall reminders run on the official WhatsApp Business API, alongside Instagram DM and Facebook Messenger, one inbox for the whole practice."
+    },
+    {
+      "title": "An AI Fluent in Dental Questions",
+      "body": "From scaling to braces, the AI answers treatment and price-range questions naturally, then turns interest into consultations that actually get booked."
+    },
+    {
+      "title": "Your Dentists Keep Every Medical Decision",
+      "body": "The AI handles information and education. Complaints, diagnoses, and treatment decisions always escalate to your dentists with the full conversation attached."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help dental clinics?",
+      "a": "It answers patient chats instantly 24/7 on WhatsApp, Instagram, and web chat, from treatment and price-range questions to consultation bookings, recall reminders, and aftercare education, all organized in one inbox. Your admins focus on the patient in the chair, not the phone."
+    },
+    {
+      "q": "Can the AI answer price questions for scaling, braces, or veneers?",
+      "a": "Yes. It answers from the treatment list and prices your clinic puts into the knowledge base, quoting ranges honestly and steering patients to a consultation for the final quote. If the data is not there, the AI hands over to your admin instead of making up a number."
+    },
+    {
+      "q": "Patients often disappear after asking for prices. What can be done?",
+      "a": "Two things. First, an instant answer keeps interest warm in the exact moment a patient asks. Second, automated follow-ups re-engage patients who have not booked, inviting a consultation or surfacing a relevant promo, so price inquiries stop dying as unanswered chats."
+    },
+    {
+      "q": "How do six-month recall or braces-check reminders work?",
+      "a": "Reminders go out automatically through the official WhatsApp Business API based on each patient's treatment history, you set the interval, scaling every six months, braces checks monthly, and the AI handles the replies until they become bookings."
+    },
+    {
+      "q": "Does the AI give diagnoses or medical advice?",
+      "a": "No. It only answers service information, pricing, and general education from material your clinic approves. Medical complaints, diagnoses, and treatment decisions always escalate to a dentist with the full chat history attached."
+    },
+    {
+      "q": "Do we have to replace our current dental clinic software?",
+      "a": "No. Cekat.AI complements your existing dental clinic software through APIs and webhooks, reading schedules, writing bookings, and syncing patient data. Not using any system yet? The knowledge base alone is enough to start."
+    },
+    {
+      "q": "How is patient data secured?",
+      "a": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling user data, with role-based access inside your team. ISO 27001 certification is in progress. Patient conversation history is only visible to authorized staff."
+    },
+    {
+      "q": "How long does setup take for a dental clinic?",
+      "a": "Minutes, not weeks. Paste your treatment list, price ranges, doctor schedules, and aftercare SOPs into the knowledge base and the AI starts answering accurately. No coding, as easy as briefing a new admin."
+    },
+    {
+      "q": "How is Cekat.AI priced, and can we try it first?",
+      "a": "Pricing follows subscription plans that scale with your practice and chat volume, from a single dentist to a clinic network. You can start with a free trial, or book a demo with the Cekat.AI team to see it working with your clinic's flow."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Price Shoppers Into Filled Chairs",
+    "body": "See how dental clinics run patient chats, consultation bookings, and recalls 24/7 on Cekat.AI, book a free consultation with our team."
+  }
+}

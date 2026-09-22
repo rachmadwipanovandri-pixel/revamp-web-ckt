@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "CRM Application Built for Conversations & Sales | CekatAI",
+    "description": "A conversation-native CRM where every chat, call, and order becomes trackable data automatically. Manage pipelines and follow-ups in one platform."
+  },
+  "hero": {
+    "badge": "Conversation-Native CRM",
+    "title": "A CRM That Lives Where Your Sales Actually Happen",
+    "subtitle": "Every chat, call, and order becomes a customer record automatically, so your team manages pipelines and follows up on time, without typing a single note by hand"
+  },
+  "definition": "Cekat.AI CRM is a conversation-native customer relationship management application where every interaction, chat, call, order, campaign, automatically becomes a trackable customer record, connecting sales pipelines, follow-ups, and customer data in one platform.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "records updated automatically" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Every Conversation Becomes a Record, Automatically",
+      "body": "Traditional CRMs die from empty fields no one fills in. Cekat.AI connects straight to your conversations, so every chat, call, and order turns into a trackable customer record on its own. Your pipeline stays complete without anyone doing data entry.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Customer records captured from conversations in Cekat.AI"
+    },
+    {
+      "title": "See the Whole Customer in One Profile",
+      "body": "Purchases, chat history, campaigns received, and website behavior sit on one profile. When a customer messages, your team, and your AI agent, already know who they are and what they need, so no one starts from scratch.",
+      "image": "/images/home/your-crm-built-for-growth-and-real-conversations.png",
+      "imageAlt": "Unified customer profile in the Cekat.AI CRM"
+    },
+    {
+      "title": "Organize Work With Boards and Pipelines",
+      "body": "Create boards for your deals, workflows, or processes, and move customers through pipeline stages as they progress. Filter and search to focus on the leads that matter most, instead of scrolling an endless inbox.",
+      "image": "/images/crm/manage-work-with-boards.png",
+      "imageAlt": "Pipeline boards in the Cekat.AI CRM"
+    },
+    {
+      "title": "Automate Follow-Ups So No Deal Slips",
+      "body": "Trigger follow-ups, assign leads, and move deals automatically. The CRM nudges customers before payment deadlines and re-engages quiet leads on its own, so opportunities close instead of going cold in someone's inbox.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated CRM follow-up workflows in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Living Record",
+      "title": "A Customer Profile That Updates Itself",
+      "body": "Every purchase, chat, campaign, and website action lands on the customer's profile in real time. The record is always current because it builds itself from real activity, not from someone remembering to log it."
+    },
+    {
+      "label": "Pipeline",
+      "title": "Deals You Can Actually See Move",
+      "body": "Track every deal across pipeline stages with boards built for your process. Sales progress is visible in real time, so managers know exactly where revenue stands without asking for an update."
+    },
+    {
+      "label": "Automation",
+      "title": "Follow-Ups and Assignments on Autopilot",
+      "body": "Assign leads to the right person, move deals when conditions are met, and fire follow-up reminders automatically. Manual busywork disappears and nothing waits on someone to remember it."
+    },
+    {
+      "label": "Omnichannel",
+      "title": "One Record Across Every Channel",
+      "body": "WhatsApp, Instagram, Messenger, and live chat feed the same customer record. Wherever a customer reaches you, the history is unified, no duplicate contacts, no lost context."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Built for How You Sell",
+      "body": "Cekat.AI CRM is designed around conversations, not spreadsheets, matching how Indonesian businesses actually win customers: in chat."
+    },
+    {
+      "title": "Zero Manual Entry",
+      "body": "Records create and update themselves from real interactions, so your team spends time closing deals instead of filling in fields."
+    },
+    {
+      "title": "One Platform End to End",
+      "body": "CRM, AI agent, automation, and marketing share one system, leads captured in chat flow straight into pipelines and follow-ups."
+    }
+  ],
+  "testimonial": {
+    "heading": "A Tidier Database, No Follow-Up Missed",
+    "quote": "With Cekat AI our customer database is far better monitored. We can classify which leads are hot and which are warm, so no customer slips away and every one still gets a follow-up.",
+    "name": "Adam Sulaiman",
+    "role": "President Director, Threeland Property",
+    "image": "/images/crm/adam-sulaiman.png"
+  },
+  "faq": [
+    {
+      "q": "What is Cekat.AI CRM?",
+      "a": "It's a conversation-native CRM application where every chat, call, and order automatically becomes a trackable customer record. It connects sales pipelines, customer data, and follow-up automation in one platform, built for businesses that sell through conversations."
+    },
+    {
+      "q": "How is it different from a traditional CRM?",
+      "a": "Traditional CRMs rely on staff manually entering data, so records go stale. Cekat.AI connects directly to your customer conversations, so every interaction becomes a record automatically, the pipeline stays complete without manual data entry."
+    },
+    {
+      "q": "Does it help sales teams or support teams?",
+      "a": "Both. Sales teams capture and manage leads from every channel in one pipeline and focus on the deals most likely to close. Support teams see each customer's full history and context instantly, so they respond faster and resolve issues more efficiently."
+    },
+    {
+      "q": "Can I track where my leads come from?",
+      "a": "Yes. The CRM records each lead's entry point, website, ads, WhatsApp, or social channels, so you understand customer journeys and see which channels drive the most conversions."
+    },
+    {
+      "q": "Can I organize deals into pipelines and boards?",
+      "a": "Yes. Create boards for your workflows, deals, or processes, and move customers through clear pipeline stages. Filter and search to focus on priority leads, and track sales progress in real time."
+    },
+    {
+      "q": "Does the CRM automate follow-ups?",
+      "a": "Yes. It triggers follow-ups, assigns leads, and moves deals automatically based on your rules, reminding customers before payment deadlines and re-engaging quiet leads so no opportunity is missed."
+    },
+    {
+      "q": "Does it connect to WhatsApp and other channels?",
+      "a": "Yes. WhatsApp, Instagram, Facebook Messenger, and website live chat all feed the same customer record, so every conversation across channels is unified in one profile without duplicate contacts."
+    },
+    {
+      "q": "Is my customer data handled securely?",
+      "a": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling and managing user data, with role-based access so records are only visible to the team members who should see them."
+    },
+    {
+      "q": "Do I need coding to set it up?",
+      "a": "No. The CRM works out of the box with your connected channels, and automations are configured without code. Most teams have records flowing and pipelines organized on day one."
+    },
+    {
+      "q": "Does it work with the AI agent and marketing tools?",
+      "a": "Yes. Leads the AI agent captures in chat flow straight into the CRM, campaign data lands on customer profiles, and segments for broadcasts are built from CRM data, one connected platform end to end."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Every Conversation Into a Tracked Opportunity",
+    "body": "See how a conversation-native CRM keeps your pipeline complete and your follow-ups automatic, without manual data entry."
+  }
+}

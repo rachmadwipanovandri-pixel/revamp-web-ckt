@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Jam Kerja AI, CS 24 Jam Tanpa Shift Malam | CekatAI",
+    "description": "Jam kerja AI: tim tangani chat saat jam kantor, AI ambil alih otomatis setelahnya, CS 24 jam buat 3.000+ bisnis tanpa perlu staf shift malam."
+  },
+  "hero": {
+    "badge": "Jam Kerja AI",
+    "title": "Tim saat Siang, AI di Luar Jam Kerja, Otomatis",
+    "subtitle": "Atur jam tim kamu online dan Cekat.AI ambil alih begitu mereka log off, jadi customer tetap dibales jam 2 pagi, akhir pekan, dan hari libur tanpa ada yang jaga shift malam"
+  },
+  "definition": "Jam Kerja AI adalah fitur Cekat.AI yang membuat tim menangani chat saat jam online yang diatur sementara AI agent ambil alih otomatis setelahnya, memberi customer coverage 24 jam dengan handoff otomatis yang membawa konteks lengkap.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "coverage tanpa shift malam" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "CS 24 Jam Tanpa Jaga Malam",
+      "body": "Customer chat kapan pun mereka mau, larut malam, akhir pekan, hari libur. Jam Kerja AI berarti chat itu dibales, bukan numpuk sampai pagi. Tim menangani jam kantor, AI menangani sisanya, dan gak ada yang harus begadang biar bisnis tetap bisa dihubungi sepanjang waktu.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Coverage jam kerja AI dengan handoff antara tim dan AI di Cekat.AI"
+    },
+    {
+      "title": "Handoff Membawa Konteks Lengkap",
+      "body": "Saat AI ambil alih di luar jam kerja, gak ada yang terlewat. Handoff otomatis membawa riwayat chat lengkap, detail order, dan private notes, jadi customer gak perlu mengulang. Sebaliknya juga begitu, saat tim online lagi, mereka lanjut persis dari tempat AI berhenti.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Handoff otomatis membawa konteks lengkap di Cekat.AI"
+    },
+    {
+      "title": "Gak Ada Leads yang Dingin Semalaman",
+      "body": "Customer yang siap beli tengah malam gak bakal nunggu sampai jam 9 pagi, dia chat kompetitor yang bales duluan. Dengan AI membalas di luar jam kerja, leads yang siap beli itu dapat respons beneran, ongkir, bahkan order yang selesai semalaman, bukan mengendap gak terbaca di antrean.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI membalas percakapan customer di luar jam kerja di Cekat.AI"
+    },
+    {
+      "title": "Eskalasi ke Manusia Saat Memang Perlu",
+      "body": "AI di luar jam kerja bukan berarti customer nyangkut sama bot buat kasus sulit. Saat percakapan butuh manusia, itu ditandai dan menunggu tim begitu mereka balik, lengkap dengan konteksnya. Pertanyaan rutin ditangani instan; yang butuh pertimbangan sampai ke manusia tanpa customer kehilangan alur.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "AI agent spesialis dengan eskalasi rapi ke manusia di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Atur Jam",
+      "title": "Kamu yang Tentukan Kapan Tim Online",
+      "body": "Atur jam online tim, dan Cekat.AI yang menangani pergantiannya. Di jam itu, chat masuk ke tim; di luar itu, AI membalas otomatis, tanpa harus toggle manual di ujung tiap shift."
+    },
+    {
+      "label": "Handoff",
+      "title": "Konteks Ikut Percakapan",
+      "body": "Pergantian antara tim dan AI membawa konteks lengkap, riwayat chat, detail order, private notes. Siapa pun yang lanjut, manusia atau AI, sudah tahu situasinya, jadi customer gak perlu mengulang."
+    },
+    {
+      "label": "Luar Jam",
+      "title": "AI Menangani Malam dan Akhir Pekan",
+      "body": "Begitu tim log off, AI menjawab pertanyaan, hitung ongkir, kirim QR pembayaran, dan closing order, jadi jam yang dulu bikin bisnismu sepi berubah jadi jam yang tetap jualan."
+    },
+    {
+      "label": "Eskalasi",
+      "title": "Kasus Sulit Menunggu Manusia",
+      "body": "Saat sesuatu memang butuh manusia, AI menandainya dan menyimpan konteks, jadi tim bisa lanjut begitu online lagi, tanpa customer harus menjelaskan semuanya dari awal."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Selalu Bisa Dihubungi",
+      "body": "Customer dibales jam berapa pun, AI menutup waktu yang tim gak bisa, jadi bisnis gak pernah benar-benar tutup."
+    },
+    {
+      "title": "Gak Ada yang Hilang saat Ganti",
+      "body": "Handoff otomatis membawa konteks lengkap dua arah, jadi gak ada percakapan yang mulai dari nol saat jam berganti."
+    },
+    {
+      "title": "Manusia di Tempat yang Penting",
+      "body": "Tim menghabiskan jam kantor buat percakapan yang butuh mereka, sementara AI menangani beban di luar jam kerja."
+    }
+  ],
+  "testimonial": {
+    "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+    "name": "Tantan Supriatna",
+    "role": "Customer Relation Department Head, Rumah Zakat",
+    "image": "/images/chat/tantan-supriatna.png"
+  },
+  "faq": [
+    {
+      "q": "Apa itu jam kerja AI?",
+      "a": "Jam kerja AI adalah pengaturan di Cekat.AI di mana tim menangani chat saat jam online yang diatur dan AI agent ambil alih otomatis di luar itu. Ini memberi customer coverage 24 jam tanpa shift malam, dan handoff antara tim dan AI membawa konteks percakapan lengkap dua arah."
+    },
+    {
+      "q": "Gimana CS 24 jam bekerja di Cekat.AI?",
+      "a": "Kamu atur jam tim online. Di jam itu, chat masuk ke tim; begitu mereka log off, AI membalas otomatis, menjawab pertanyaan, hitung ongkir, kirim QR pembayaran, dan closing order. Saat tim balik, percakapan diserahkan lagi dengan konteks utuh."
+    },
+    {
+      "q": "Handoff AI kehilangan konteks gak?",
+      "a": "Gak. Handoff otomatis membawa riwayat chat lengkap, detail order, dan private notes saat AI ambil alih dan saat tim ambil balik. Customer gak perlu mengulang, dan siapa pun yang menangani chat selalu tahu persis apa yang sudah terjadi."
+    },
+    {
+      "q": "Customer masih bisa ngobrol sama manusia?",
+      "a": "Bisa. Saat percakapan memang butuh manusia, AI menandainya dan menyimpan konteks biar tim bisa lanjut begitu online lagi. Pertanyaan rutin ditangani instan di luar jam kerja; kasus yang butuh pertimbangan manusia sudah menunggu, lengkap dengan brief, esok paginya."
+    },
+    {
+      "q": "Aku perlu jaga shift malam?",
+      "a": "Gak, justru itu intinya. Jam kerja AI berarti AI menutup malam, akhir pekan, dan hari libur, jadi kamu dapat coverage 24 jam tanpa bayar orang buat begadang. Tim fokus di jam kantor, dan bisnis tetap bisa dihubungi sisanya."
+    },
+    {
+      "q": "AI bisa ngapain aja di luar jam kerja?",
+      "a": "AI menjawab pertanyaan dengan bahasa natural, cek ongkir lewat integrasi API, kirim QR pembayaran, dan menyelesaikan order, semua di dalam chat. Jalan di WhatsApp, Instagram DM, Facebook Messenger, live chat website, dan API channel, jadi coverage luar jam kerja mencakup semua channel jualanmu."
+    },
+    {
+      "q": "Customer bakal tahu mereka ngobrol sama AI?",
+      "a": "AI-nya humanlike dan paham maksud serta konteks, bukan sekadar keyword, jadi percakapan di luar jam kerja terasa natural, bukan kaku. Saat kasus butuh manusia, eskalasinya rapi, customer dapat jawaban cepat kapan pun dan manusia beneran buat situasi yang memang perlu."
+    },
+    {
+      "q": "AI luar jam kerja andal buat bisnis seperti kami?",
+      "a": "Cekat.AI jalan 24/7 di 3.000+ bisnis di 15+ industri dan sudah menangani lebih dari 1.000.000 interaksi customer. Rumah Zakat, misalnya, mengandalkan AI di luar jam kerja biar tetap bisa dihubungi sepanjang waktu, memaksimalkan AI begitu jam tim mereka selesai."
+    },
+    {
+      "q": "Data aman di luar jam kerja?",
+      "a": "Aman. Cekat.AI patuh UU PDP, undang-undang perlindungan data pribadi Indonesia, dan merupakan Meta Business Partner resmi, jadi trafik WhatsApp lewat infrastruktur resmi Meta. Role-based team access mengatur siapa yang bisa lihat percakapan customer, baik masuk saat jam kantor maupun tengah malam."
+    }
+  ],
+  "cta": {
+    "heading": "Chat Tetap Terbalas Meski Tim Sudah Pulang",
+    "body": "Cekat.AI tetap membalas calon pelanggan 24/7, bahkan saat tim kamu sedang offline."
+  }
+}

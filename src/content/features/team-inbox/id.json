@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Multichat WA, Satu Nomor WA Banyak Admin & AI | CekatAI",
+    "description": "Satu nomor WA dikerjakan banyak admin plus AI dalam satu inbox, label, private note, akses per peran, dan search cepat. Dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "Satu Nomor, Banyak Admin",
+    "title": "Satu Nomor WA, Dikerjakan Seluruh Tim Bareng",
+    "subtitle": "Banyak admin dan AI menangani satu nomor WhatsApp Business bareng-bareng, lengkap dengan private note, label, akses per peran, dan prioritas case, jadi tidak ada chat yang nganggur dan tidak ada balasan yang dobel"
+  },
+  "definition": "Multichat WA adalah fitur Cekat.AI supaya banyak admin dan AI bisa mengerjakan satu nomor WhatsApp Business bareng dalam satu inbox, lengkap dengan label, private note, kolaborator, akses per peran, dan prioritas case.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "AI jaga inbox nonstop" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Satu Nomor WA, Semua Admin Bisa Masuk",
+      "body": "Zaman satu HP dioper-oper keliling kantor sudah lewat. Cekat.AI bikin seluruh tim bisa login ke nomor WhatsApp Business yang sama dan kerja di inbox bareng. Percakapan di-assign ke admin yang tepat, jadi semua tahu persis chat mana miliknya dan tidak ada yang nganggur.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Tim mengerjakan satu nomor WA di inbox bersama Cekat.AI"
+    },
+    {
+      "title": "Kolaborasi Tanpa Keluar dari Chat",
+      "body": "Butuh second opinion sebelum bales? Tinggal tulis private note yang cuma bisa dilihat tim, tag kolaborator, atau alihkan percakapan, semua di dalam chat yang sama. Customer lihat satu thread yang mulus, sementara tim koordinasi diam-diam di belakangnya, jadi jawaban tetap akurat dan konsisten.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Private note dan oper kolaborator di dalam percakapan Cekat.AI"
+    },
+    {
+      "title": "Prioritaskan Case, Temukan Chat dalam Hitungan Detik",
+      "body": "Saat ratusan chat menumpuk, yang urgent tidak bisa antre di belakang basa-basi. Prioritas case mendorong percakapan penting ke atas, auto-label menjaga inbox tetap rapi, dan search cepat menarik chat lama mana pun seketika, tanpa scroll riwayat berminggu-minggu.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Prioritas case dan search cepat di inbox Cekat.AI"
+    },
+    {
+      "title": "AI Ikut Jaga Nomornya Bareng Admin",
+      "body": "AI agent itu anggota tim juga di nomor yang sama, langsung bales pertanyaan rutin biar admin fokus ke percakapan yang butuh manusia. Dengan AI working hours, AI jaga nomor setelah tim selesai kerja dan mengoper case balik lengkap dengan konteks saat semua online lagi.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI dan admin berbagi satu nomor WA di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Inbox Bersama",
+      "title": "Satu Nomor, Semua Admin Login",
+      "body": "Seluruh tim mengerjakan nomor WhatsApp Business yang sama dari login masing-masing. Percakapan di-assign, bukan ditebak-tebak, jadi dua admin tidak bales customer yang sama dan tidak ada chat yang terbengkalai."
+    },
+    {
+      "label": "Private Note",
+      "title": "Koordinasi di Balik Tiap Percakapan",
+      "body": "Tinggalkan catatan internal yang cuma bisa dibaca tim, tambah kolaborator, atau oper chat ke orang yang tepat, tanpa customer lihat ping-pongnya. Konteks ikut jalan bareng percakapannya."
+    },
+    {
+      "label": "Peran & Akses",
+      "title": "Akses yang Pas untuk Tiap Peran",
+      "body": "Akses berbasis peran menentukan siapa yang bisa lihat, bales, assign, atau atur setting. Sales, support, dan billing masing-masing dapat yang mereka butuhkan, dan tidak lebih, di nomor yang sama."
+    },
+    {
+      "label": "Prioritas Case",
+      "title": "Chat Urgent Naik ke Paling Atas",
+      "body": "Prioritas case dan auto-label menjaga antrian tetap teratur, sementara search cepat memunculkan percakapan lama mana pun dalam hitungan detik. Tim habiskan waktu buat bales, bukan nyari chat."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "WhatsApp Business API Resmi",
+      "body": "Satu nomor bisnis resmi, banyak admin, compliant dan andal lewat WhatsApp Business API, bukan HP yang diam-diam dibagi antar staf."
+    },
+    {
+      "title": "Tim dan AI, Satu Inbox",
+      "body": "Admin dan AI agent mengerjakan nomor yang sama bareng, dengan oper-operan bersih yang membawa konteks penuh dua arah."
+    },
+    {
+      "title": "Tidak Ada yang Lolos",
+      "body": "Assign, label, private note, dan prioritas case memastikan setiap chat punya pemilik dan setiap customer dibales tepat waktu."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu multichat WA?",
+      "a": "Multichat WA memungkinkan beberapa anggota tim mengerjakan satu nomor WhatsApp Business sekaligus. Di Cekat.AI, admin dan AI berbagi satu inbox, percakapan di-assign ke pemiliknya, dan fitur seperti private note, label, serta akses per peran menjaga seluruh tim tetap terkoordinasi."
+    },
+    {
+      "q": "Apakah banyak admin bisa pakai satu nomor WA bersamaan?",
+      "a": "Bisa. Seluruh tim login ke nomor WhatsApp Business yang sama, masing-masing dengan akun sendiri, dan kerja dari satu inbox bersama. Tidak ada lagi satu HP yang dioper, semua bisa lihat dan bales percakapan sekaligus."
+    },
+    {
+      "q": "Gimana biar admin tidak bales customer yang sama dua kali?",
+      "a": "Percakapan di-assign ke admin tertentu, jadi kepemilikannya selalu jelas. Digabung dengan label dan status, tim bisa lihat siapa menangani apa sekilas saja, jadi tidak ada dua orang yang jawab chat yang sama."
+    },
+    {
+      "q": "Bisa atur apa yang boleh dilihat atau dilakukan tiap anggota tim?",
+      "a": "Bisa. Akses berbasis peran membuatmu menentukan siapa yang boleh bales, assign percakapan, atau ubah setting. Sales, support, dan billing masing-masing dapat akses sesuai perannya, dan tidak lebih, di nomor yang sama."
+    },
+    {
+      "q": "Admin bisa tinggalkan catatan internal di percakapan?",
+      "a": "Bisa. Private note cuma terlihat oleh tim, bukan customer. Admin bisa menandai konteks, minta masukan rekan, atau mencatat apa yang terjadi, jadi siapa pun yang lanjut menangani chat itu sudah tahu ceritanya."
+    },
+    {
+      "q": "Gimana memastikan chat urgent dibales duluan?",
+      "a": "Prioritas case mendorong percakapan penting ke paling atas antrian, dan auto-label menjaga inbox tersortir per jenis. Tim lihat apa yang butuh perhatian sekarang, bukan menggarap chat sesuai urutan kedatangannya."
+    },
+    {
+      "q": "Bisa cari percakapan lama dengan cepat?",
+      "a": "Bisa. Search cepat menarik chat atau customer mana pun dalam hitungan detik, jadi admin tidak perlu scroll riwayat berminggu-minggu. Setiap percakapan juga terikat ke profil CRM customer buat konteks lengkap sebelum bales."
+    },
+    {
+      "q": "Apakah AI kerja di inbox yang sama dengan tim?",
+      "a": "Ya. AI agent langsung bales pertanyaan rutin di nomor itu, dan dengan AI working hours ia jaga inbox setelah tim selesai kerja. Oper-operan antara AI dan admin membawa percakapan penuh, jadi tidak ada yang diulang."
+    },
+    {
+      "q": "Ini pakai WhatsApp Business API resmi?",
+      "a": "Ya. Cekat.AI adalah Meta Business Partner resmi dan menjalankan nomormu di WhatsApp Business API resmi, cara compliant menaruh seluruh tim di satu nomor bisnis, beda dengan trik multi-device tidak resmi."
+    },
+    {
+      "q": "Berapa cepat tim bisa mulai?",
+      "a": "Cepat. Menghubungkan nomor tinggal klik, menambah anggota tim cuma beberapa menit, dan bikin AI agent sekitar lima menit tanpa coding. Kebanyakan tim sudah bales dari inbox bersama di hari yang sama saat mulai."
+    }
+  ],
+  "testimonial": {
+    "quote": "Respon pelanggan menjadi lebih cepat",
+    "name": "Silica Brenda",
+    "role": "Founder, Moir Salon",
+    "image": "/images/home/testimonial-silica-brenda.jpg"
+  },
+  "cta": {
+    "heading": "Ubah Satu Nomor WA Jadi Kerja Bareng Satu Tim",
+    "body": "Kasih setiap admin dan AI-mu satu inbox bersama, biar balasan lebih cepat, lebih rapi, dan tidak pernah dobel."
+  }
+}

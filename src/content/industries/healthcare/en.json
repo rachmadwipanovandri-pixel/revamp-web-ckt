@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "AI Customer Service for Healthcare & Clinics | CekatAI",
+    "description": "AI & WhatsApp API solutions for healthcare industries. Automate patient registrations, consultation reminders, & doctor schedules with Cekat.ai!"
+  },
+  "hero": {
+    "badge": "Healthcare & Clinics",
+    "title": "Answer Every Patient, Even After the Clinic Closes",
+    "subtitle": "From appointment requests to product questions, Cekat.AI replies instantly on WhatsApp and Instagram, 24/7, in natural language, without adding front-desk staff",
+    "useCases": [
+      "24/7 patient answers",
+      "Booking from chat",
+      "Centralized patient history",
+      "Complaint tickets"
+    ]
+  },
+  "definition": "Cekat.AI for healthcare is an AI customer service platform for clinics, hospitals, and health businesses in Indonesia, answering patient chats 24/7, scheduling appointments from conversations, and keeping every inquiry organized in one compliant platform.",
+  "stats": [
+    {
+      "value": "+50%",
+      "label": "revenue growth at Vio Optical Clinic in one month"
+    },
+    {
+      "value": "4% → 30%",
+      "label": "booking rate at Euromedica"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Patients Ask at 9 PM. Your Clinic Answers at 9 PM.",
+      "body": "Health questions don't wait for opening hours. Cekat.AI's agent answers instantly at any hour, operating schedules, service availability, pricing, pre-visit prep, so patients get certainty and your staff arrive to closed conversations, not a backlog.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours routing between staff and AI agent in Cekat.AI"
+    },
+    {
+      "title": "Book Appointments Straight From the Chat",
+      "body": "Connect Cekat.AI to your scheduling system via API and the AI books, confirms, and reschedules appointments inside the conversation. No phone tag, no missed bookings, and automated reminders reduce no-shows before they happen.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "API integration for appointment booking in Cekat.AI"
+    },
+    {
+      "title": "Every Patient Conversation, Organized in One Place",
+      "body": "WhatsApp, Instagram DM, and website chat flow into one inbox with a complete interaction history per patient. Front-desk teams see full context instantly, and complex or sensitive questions escalate to a human with the whole conversation attached.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Patient conversations organized in the Cekat.AI CRM"
+    },
+    {
+      "title": "Complaints Become Tickets, Not Lost Messages",
+      "body": "A complaint buried in a busy inbox becomes a lost patient. Cekat.AI labels incoming issues automatically, creates a ticket, and notifies the right team, so every concern is tracked from first message to resolution.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Automatic ticket creation for patient complaints in Cekat.AI"
+    }
+  ],
+  "caseStudy": {
+    "client": "Vio Optical Clinic",
+    "metrics": [
+      {
+        "value": "+50%",
+        "label": "revenue in one month"
+      }
+    ],
+    "body": "When demand surged, Vio Optical Clinic's team, including the owner, was buried in chats and juggling double roles. After implementing Cekat.AI, customer service runs fully on AI with fast, consistent responses around the clock. The result: +50% revenue growth compared to the previous month, with more efficient workflows and 24/7 support."
+  },
+  "pillars": [
+    {
+      "title": "Compliant by Design",
+      "body": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling user data, a foundation healthcare businesses can build on."
+    },
+    {
+      "title": "Human Where It Matters",
+      "body": "The AI handles routine inquiries; anything complex or sensitive routes to your staff with full context. Patients never repeat themselves."
+    },
+    {
+      "title": "Proven in Healthcare",
+      "body": "Clinics like Vio Optical run their customer service fully on Cekat.AI, real results, from real patient conversations, at clinic scale."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help clinics and healthcare businesses?",
+      "a": "It answers patient chats instantly 24/7 on WhatsApp, Instagram, and web chat, handling appointment requests, service questions, and pricing, while organizing every conversation in one platform. Staff focus on patients in the room, not the phone."
+    },
+    {
+      "q": "Can patients book appointments through the AI?",
+      "a": "Yes. Through API integration with your scheduling system, the AI books, confirms, and reschedules appointments directly in the chat, and automated reminders go out before the visit to reduce no-shows."
+    },
+    {
+      "q": "What happens when a question is too complex or sensitive for AI?",
+      "a": "The conversation escalates to your staff automatically, with the full chat history attached. Your team answers medical or sensitive questions; the AI handles the routine volume around them."
+    },
+    {
+      "q": "Is patient data handled safely?",
+      "a": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling and managing user data. Access within your team is role-based, so conversation data is only visible to the people who should see it."
+    },
+    {
+      "q": "What results have healthcare businesses seen with Cekat.AI?",
+      "a": "Vio Optical Clinic grew revenue +50% compared to the previous month after implementing Cekat.AI, with customer service fully handled by AI and 24/7 support, after previously drowning in manual chats during a demand surge."
+    },
+    {
+      "q": "Which channels can a clinic connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, and website live chat, all flowing into one inbox with a single interaction history per patient, so no inquiry falls between channels."
+    },
+    {
+      "q": "How long does setup take for a clinic?",
+      "a": "The AI agent is built by pasting your clinic's SOPs and service information, most teams have it answering accurately in minutes, not weeks. No coding is required at any step."
+    },
+    {
+      "q": "Can Cekat.AI handle multiple branches or departments?",
+      "a": "Yes. You can organize human agents into teams with role-based access, create specialized AI agents per service line, and route conversations to the right branch or department automatically."
+    },
+    {
+      "q": "Does it also help clinics with promotions and follow-ups?",
+      "a": "Yes. Broadcast campaigns reach patient segments through the official WhatsApp API, checkup reminders, seasonal promos, replenishment nudges, with automated follow-ups based on each patient's activity."
+    }
+  ],
+  "cta": {
+    "heading": "Give Every Patient an Instant Answer",
+    "body": "See how clinics run 24/7 customer service on Cekat.AI, book a free consultation with our team."
+  }
+}

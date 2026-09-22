@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Agentic AI for Customer Service, AI That Takes Action | CekatAI",
+    "description": "Agentic AI does the work, not just the talking, it creates orders, checks ongkir, opens tickets, and updates your CRM automatically. Trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "Agentic AI",
+    "title": "AI That Doesn't Just Reply, It Gets the Work Done",
+    "subtitle": "Cekat.AI's agentic AI goes beyond answering questions. It creates orders, checks shipping costs, opens tickets, triggers follow-ups, and updates your CRM, taking real actions inside every conversation, 24/7"
+  },
+  "definition": "Agentic AI is artificial intelligence that takes actions to complete tasks, not just answering questions, but doing the work like creating orders, checking shipping costs, and opening tickets. On Cekat.AI, agentic AI acts inside every conversation across WhatsApp, Instagram, Messenger, and website chat, so each chat ends in a completed action instead of a promise to follow up later.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "AI takes action on every chat" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Turn Chats Into Completed Orders, Not To-Do Lists",
+      "body": "A regular chatbot answers \"yes, we have that in stock\" and stops. Cekat.AI's agentic AI keeps going, it creates the order right in the conversation, including shipping cost, payment, and customer details. The customer confirms, the order is booked, and no one on your team has to touch a spreadsheet.",
+      "image": "/images/order/automation-triggers-instantly.png",
+      "imageAlt": "Agentic AI creating an order automatically inside a Cekat.AI conversation"
+    },
+    {
+      "title": "Check Ongkir and Book Appointments Without a Human",
+      "body": "Customers ask \"how much is shipping to Surabaya?\" or \"can I book Friday?\" all day. Instead of waiting for an admin, the agentic AI calls your connected APIs to check ongkir and book appointments right in the chat, pulling live answers, not canned ones, so no reply is left hanging.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Agentic AI checking shipping cost through a connected API in Cekat.AI"
+    },
+    {
+      "title": "Every Complaint Becomes a Tracked Ticket Automatically",
+      "body": "When a customer raises an issue, the AI captures it, auto-creates a ticket, assigns it to the right team, and sends the notification, all without manual input. The complaint is tracked to resolution instead of getting lost in a busy inbox, so nothing slips through and customers actually get answers.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Agentic AI auto-creating and routing a support ticket in Cekat.AI"
+    },
+    {
+      "title": "Your CRM Updates Itself After Every Conversation",
+      "body": "Manual CRM entry never happens when the team is slammed. Cekat.AI's agentic AI creates and updates customer cards from every interaction and moves each contact through the stages, Visitor to Lead to Buyer, with next-step suggestions. Your pipeline stays accurate without anyone typing it in.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Agentic AI moving a customer card through CRM stages in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Takes Action",
+      "title": "From Answering to Actually Doing",
+      "body": "Agentic AI is the difference between a chatbot that talks and one that works. Inside a single conversation it can create an order, check shipping cost, open a ticket, and update the CRM, completing the task instead of handing it back to your team."
+    },
+    {
+      "label": "Follow-Ups",
+      "title": "It Triggers the Follow-Up You'd Forget",
+      "body": "The AI sends reminders and follow-up nudges on its own, unpaid orders, expiring promos, replenishment time, based on each customer's real behavior. Revenue that usually leaks away because no one chased it gets recovered automatically."
+    },
+    {
+      "label": "Triggers",
+      "title": "Actions Fire on Rules You Set",
+      "body": "Workflow triggers run on time-based schedules, chat keywords, or customer-data changes, like a new lead appearing. Each trigger can connect auto-labeling, tickets, admin notifications, and data sync between your tools, so the right action happens the moment it's needed."
+    },
+    {
+      "label": "Handoff",
+      "title": "Knows When to Bring in a Human",
+      "body": "When something needs a person, the AI hands off to your team with the full conversation context attached, no repeating, no re-explaining. During AI working hours it acts on its own; after hours it keeps the business running and passes anything sensitive to the right teammate."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Beyond a Chatbot",
+      "body": "Most bots answer and stop. Agentic AI completes the task, orders, ongkir, tickets, follow-ups, and CRM updates happen inside the chat, not on a to-do list for later."
+    },
+    {
+      "title": "One Platform, Actions Connected",
+      "body": "Orders, tickets, CRM, and follow-ups all live in Cekat.AI, so an action in one place updates everything else automatically. No copy-pasting between disconnected tools."
+    },
+    {
+      "title": "Safe and Accountable",
+      "body": "Cekat.AI is an official Meta Business Partner and complies with Indonesia's UU PDP. Sensitive cases hand off to a human with full context, so automation never means losing control."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is agentic AI?",
+      "a": "Agentic AI is artificial intelligence that takes actions to complete tasks, not just answer questions. Where a normal chatbot replies with information, agentic AI does the work, like creating an order, checking a shipping cost, opening a ticket, or updating a customer record, directly inside the conversation."
+    },
+    {
+      "q": "How is agentic AI different from a normal chatbot?",
+      "a": "A normal chatbot recognizes questions and returns answers. Agentic AI understands intent and then acts on it, completing orders, calling APIs to check ongkir, routing complaints into tickets, and updating the CRM. The customer gets a finished result, not just a reply telling them what to do next."
+    },
+    {
+      "q": "What actions can Cekat.AI's agentic AI actually take?",
+      "a": "It can create orders from a conversation with shipping cost and payment, check ongkir and book appointments through connected APIs, auto-create and route support tickets, trigger reminders and follow-ups, and create or update CRM cards, moving contacts through Visitor, Lead, and Buyer stages automatically."
+    },
+    {
+      "q": "Can the AI create an order by itself?",
+      "a": "Yes. During a chat, the agentic AI can build the order including shipping cost, payment, and customer details, then confirm it with the customer. The order is captured without your team opening a spreadsheet or a separate system, the whole thing happens inside the conversation."
+    },
+    {
+      "q": "Does it work across WhatsApp, Instagram, and other channels?",
+      "a": "Yes. The agentic AI acts inside conversations on WhatsApp, Instagram DM, Facebook Messenger, and website live chat, all through one unified inbox. The same actions, orders, tickets, follow-ups, CRM updates, are available no matter which channel the customer messages from."
+    },
+    {
+      "q": "What happens when a task needs a human?",
+      "a": "The AI hands off to the right team member with the full conversation context attached, so the customer never has to repeat themselves. You set which cases stay with the AI and which escalate, and during set working hours your team handles chats while the AI covers everything after hours."
+    },
+    {
+      "q": "How does the AI decide when to act?",
+      "a": "Actions run on workflow triggers you define, time-based schedules, specific chat keywords, or changes in customer data such as a new lead. When a trigger fires, the AI carries out the connected action, whether that's sending a reminder, opening a ticket, or notifying a teammate."
+    },
+    {
+      "q": "Is my data safe with agentic AI acting on it?",
+      "a": "Cekat.AI is an official Meta Business Partner and complies with Indonesia's UU PDP data-protection law. You control which actions the AI can take and which cases require human approval, so automation stays accountable and sensitive decisions always reach a person."
+    },
+    {
+      "q": "Do I need to code to set up agentic actions?",
+      "a": "No. Actions and workflow triggers are configured with no coding, you connect the APIs you use, set the rules, and the AI handles the rest. Most teams get their agent taking real actions the same day they start, without a developer."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Every Conversation Into a Completed Action",
+    "body": "Let agentic AI create orders, open tickets, and update your CRM inside every chat, 24/7, without adding headcount."
+  }
+}

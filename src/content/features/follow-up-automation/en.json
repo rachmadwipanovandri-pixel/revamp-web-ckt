@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Automated Follow-Up for Sales & Customer Chats | CekatAI",
+    "description": "The money is in the follow-up, and Cekat.AI never forgets one. Auto reminders for unpaid orders, expiring promos, and quiet leads, 24/7. Trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "Follow-Up Automation",
+    "title": "Every Follow-Up Sent on Time, Without Anyone Remembering",
+    "subtitle": "Reactivate ghosting leads, recover unpaid orders, and nudge customers at the right moment, automatically, based on real behavior, 24/7"
+  },
+  "definition": "Follow-up automation in Cekat.AI sends timely reminders and nudges to customers automatically, before payment deadlines, when promos expire, or when leads go quiet, triggered by each customer's real behavior, so no opportunity is lost to a missed follow-up.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "follow-ups sent automatically" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Ghosting Leads Get a Second Chance, Automatically",
+      "body": "Most leads don't say no; they just go quiet. Cekat.AI notices when a conversation stalls and sends a relevant nudge on its own, so leads you'd otherwise lose get pulled back toward a decision without your team lifting a finger.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated lead follow-up workflow in Cekat.AI"
+    },
+    {
+      "title": "Recover Unpaid Orders Before They Vanish",
+      "body": "An order that's not paid is revenue slipping away. Automatic reminders go out before the payment window closes, friendly, timed, and specific to that order, so more carts convert into completed sales instead of quietly disappearing.",
+      "image": "/images/order/automation-triggers-instantly.png",
+      "imageAlt": "Automatic payment reminder in Cekat.AI"
+    },
+    {
+      "title": "Right Message, Right Moment",
+      "body": "Reminders fire based on behavior and events, replenishment time, an expiring promo, a booking coming up. Because they're triggered by what the customer actually did, follow-ups feel helpful instead of spammy, and they get answered.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Behavior-based follow-up triggers in Cekat.AI"
+    },
+    {
+      "title": "Follow-Ups That Close, Not Just Remind",
+      "body": "When a customer replies to a follow-up, the AI agent picks up the conversation instantly, answering questions, checking shipping, and closing the order right in chat. The follow-up doesn't just restart the conversation, it finishes it.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent handling a follow-up reply in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Never Forgotten",
+      "body": "Automation sends every follow-up on schedule, so revenue never leaks because a busy team forgot to circle back."
+    },
+    {
+      "title": "Behavior-Driven",
+      "body": "Reminders are triggered by real customer activity and events, so each one is relevant and timed, not a generic blast."
+    },
+    {
+      "title": "Closes in Chat",
+      "body": "Replies flow to the AI agent that finishes the sale, so follow-ups turn into orders instead of just reopening conversations."
+    }
+  ],
+  "testimonial": {
+    "quote": "The chance of closing the deal is very high",
+    "name": "Wiji Astuti",
+    "role": "Head of Customer Experience - Rumah Zakat",
+    "image": "/images/home/testimonial-wiji-astuti.jpg"
+  },
+  "faq": [
+    {
+      "q": "What is automated follow-up?",
+      "a": "Automated follow-up sends reminders and nudges to customers without manual effort, for unpaid orders, expiring promos, or quiet leads. In Cekat.AI, these are triggered by each customer's real behavior so follow-ups are timely and relevant."
+    },
+    {
+      "q": "What kinds of follow-ups can I automate?",
+      "a": "Payment reminders for pending orders, re-engagement nudges for leads who went quiet, replenishment prompts, and reminders before key moments like bookings or expiring promos, all triggered automatically by behavior or schedule."
+    },
+    {
+      "q": "How does it know when to follow up?",
+      "a": "Follow-ups are triggered by events and customer behavior, an unpaid order, a stalled conversation, a promo about to expire, using data from the CRM, so each reminder fires at the right moment for that specific customer."
+    },
+    {
+      "q": "Won't automated follow-ups feel spammy?",
+      "a": "No, because they're behavior-based and personalized, not mass blasts. A reminder only goes out when it's relevant to that customer, and it references their actual order or activity, so it reads as helpful."
+    },
+    {
+      "q": "What happens when a customer replies?",
+      "a": "The AI agent picks up the conversation instantly, answering questions, checking shipping costs, and closing the order right in chat, 24/7. The follow-up doesn't just restart the conversation, it moves it toward a sale."
+    },
+    {
+      "q": "Does it work across WhatsApp and other channels?",
+      "a": "Yes. Follow-ups reach customers on WhatsApp through the official Business API and across other connected channels, with every interaction recorded on the customer's profile."
+    },
+    {
+      "q": "Do I need coding to set up follow-up flows?",
+      "a": "No. Follow-up rules and triggers are built with Cekat.AI's visual automation, so your team can create and adjust flows without any code."
+    },
+    {
+      "q": "Can I follow up with specific customer segments?",
+      "a": "Yes. Combine follow-up automation with segmentation to target reminders by activity, purchase history, or events, so the right group gets the right nudge at the right time."
+    },
+    {
+      "q": "How does this connect to the rest of Cekat.AI?",
+      "a": "Follow-up automation uses CRM data to decide who to reach, the AI agent handles the replies, and results update the customer profile, one connected loop from trigger to closed sale."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Forgotten Follow-Ups Into Recovered Revenue",
+    "body": "Let automation send every reminder on time and let AI close the replies, 24/7, without adding headcount."
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Aplikasi CRM untuk Percakapan & Penjualan | CekatAI",
+    "description": "CRM berbasis percakapan: setiap chat, telepon, dan order otomatis jadi data yang terlacak. Kelola pipeline dan follow-up dalam satu platform, dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "CRM Berbasis Percakapan",
+    "title": "CRM yang Hidup di Tempat Penjualanmu Terjadi",
+    "subtitle": "Setiap chat, telepon, dan order otomatis jadi catatan customer, tim kamu kelola pipeline dan follow-up tepat waktu, tanpa perlu ngetik catatan satu per satu"
+  },
+  "definition": "Aplikasi CRM Cekat.AI adalah customer relationship management berbasis percakapan, di mana setiap interaksi, chat, telepon, order, campaign, otomatis jadi catatan customer yang terlacak, menyatukan sales pipeline, follow-up, dan data customer dalam satu platform.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "catatan ter-update otomatis" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Setiap Percakapan Jadi Catatan, Otomatis",
+      "body": "CRM konvensional mati karena field-nya kosong tidak ada yang isi. Cekat.AI nyambung langsung ke percakapanmu, jadi setiap chat, telepon, dan order berubah jadi catatan customer dengan sendirinya. Pipeline tetap lengkap tanpa ada yang input data manual.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Catatan customer terekam dari percakapan di Cekat.AI"
+    },
+    {
+      "title": "Lihat Customer Seutuhnya dalam Satu Profil",
+      "body": "Pembelian, riwayat chat, campaign yang diterima, dan aktivitas website ada di satu profil. Saat customer chat, tim, dan AI agent, sudah tahu dia siapa dan butuh apa, jadi tidak ada yang mulai dari nol.",
+      "image": "/images/home/your-crm-built-for-growth-and-real-conversations.png",
+      "imageAlt": "Profil customer terpadu di CRM Cekat.AI"
+    },
+    {
+      "title": "Atur Kerja dengan Board dan Pipeline",
+      "body": "Bikin board untuk deal, workflow, atau prosesmu, dan geser customer antar tahapan pipeline seiring progresnya. Filter dan cari untuk fokus ke leads yang paling penting, bukan scroll inbox tanpa ujung.",
+      "image": "/images/crm/manage-work-with-boards.png",
+      "imageAlt": "Board pipeline di CRM Cekat.AI"
+    },
+    {
+      "title": "Follow-Up Otomatis Biar Tidak Ada Deal Lolos",
+      "body": "Trigger follow-up, assign leads, dan geser deal secara otomatis. CRM mengingatkan customer sebelum jatuh tempo pembayaran dan mengaktifkan lagi leads yang diam, jadi peluang closing bukannya jadi dingin di inbox seseorang.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Alur follow-up CRM otomatis di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Living Record",
+      "title": "Profil Customer yang Update Sendiri",
+      "body": "Setiap pembelian, chat, campaign, dan aktivitas website masuk ke profil customer secara real-time. Catatan selalu terkini karena terbentuk sendiri dari aktivitas nyata, bukan dari orang yang harus ingat mencatatnya."
+    },
+    {
+      "label": "Pipeline",
+      "title": "Deal yang Benar-Benar Kelihatan Bergerak",
+      "body": "Lacak setiap deal antar tahapan pipeline dengan board sesuai prosesmu. Progres penjualan kelihatan real-time, jadi manajer tahu persis posisi revenue tanpa harus minta update."
+    },
+    {
+      "label": "Otomatisasi",
+      "title": "Follow-Up dan Assign Jalan Sendiri",
+      "body": "Assign leads ke orang yang tepat, geser deal saat kondisi terpenuhi, dan kirim reminder follow-up otomatis. Kerja manual hilang dan tidak ada yang nunggu orang buat ingat."
+    },
+    {
+      "label": "Omnichannel",
+      "title": "Satu Catatan di Semua Channel",
+      "body": "WhatsApp, Instagram, Messenger, dan live chat mengisi catatan customer yang sama. Di mana pun customer menghubungimu, riwayatnya terpadu, tanpa kontak dobel, tanpa konteks hilang."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Dibuat Sesuai Cara Kamu Jualan",
+      "body": "CRM Cekat.AI dirancang seputar percakapan, bukan spreadsheet, sesuai cara bisnis Indonesia benar-benar dapat customer: lewat chat."
+    },
+    {
+      "title": "Nol Input Manual",
+      "body": "Catatan dibuat dan di-update sendiri dari interaksi nyata, jadi tim fokus closing bukan isi field."
+    },
+    {
+      "title": "Satu Platform End-to-End",
+      "body": "CRM, AI agent, otomatisasi, dan marketing berbagi satu sistem, leads yang ditangkap di chat langsung mengalir ke pipeline dan follow-up."
+    }
+  ],
+  "testimonial": {
+    "heading": "Database Lebih Rapi, Follow-Up Tidak Terlewat",
+    "quote": "Dengan Cekat AI, database konsumen jadi lebih termonitoring. Kami bisa klasifikasikan mana yang hot dan warm, jadi konsumen tidak lepas dan tetap bisa di-follow up.",
+    "name": "Adam Sulaiman",
+    "role": "President Director, Threeland Property",
+    "image": "/images/crm/adam-sulaiman.png"
+  },
+  "faq": [
+    {
+      "q": "Apa itu CRM Cekat.AI?",
+      "a": "CRM berbasis percakapan di mana setiap chat, telepon, dan order otomatis jadi catatan customer yang terlacak. Ia menyatukan sales pipeline, data customer, dan follow-up otomatis dalam satu platform, dibuat untuk bisnis yang jualan lewat percakapan."
+    },
+    {
+      "q": "Apa bedanya dengan CRM konvensional?",
+      "a": "CRM konvensional bergantung pada staf yang input data manual, jadi catatannya cepat basi. Cekat.AI nyambung langsung ke percakapan customer, jadi setiap interaksi otomatis jadi catatan, pipeline tetap lengkap tanpa input manual."
+    },
+    {
+      "q": "Berguna buat tim sales atau tim support?",
+      "a": "Dua-duanya. Tim sales menangkap dan mengelola leads dari semua channel dalam satu pipeline dan fokus ke deal yang paling mungkin closing. Tim support melihat riwayat lengkap tiap customer secara instan, jadi respons lebih cepat dan masalah selesai lebih efisien."
+    },
+    {
+      "q": "Bisa lacak leads datang dari mana?",
+      "a": "Bisa. CRM mencatat titik masuk tiap lead, website, ads, WhatsApp, atau channel sosial, jadi kamu paham customer journey dan tahu channel mana yang paling banyak menghasilkan konversi."
+    },
+    {
+      "q": "Bisa atur deal dalam pipeline dan board?",
+      "a": "Bisa. Bikin board untuk workflow, deal, atau prosesmu, dan geser customer antar tahapan pipeline yang jelas. Filter dan cari untuk fokus ke leads prioritas, dan lacak progres penjualan secara real-time."
+    },
+    {
+      "q": "Apakah CRM ini mengotomatiskan follow-up?",
+      "a": "Ya. Ia trigger follow-up, assign leads, dan geser deal otomatis sesuai aturanmu, mengingatkan customer sebelum jatuh tempo pembayaran dan mengaktifkan lagi leads yang diam, jadi tidak ada peluang terlewat."
+    },
+    {
+      "q": "Apakah terhubung ke WhatsApp dan channel lain?",
+      "a": "Ya. WhatsApp, Instagram, Facebook Messenger, dan live chat website semuanya mengisi catatan customer yang sama, jadi setiap percakapan lintas channel terpadu dalam satu profil tanpa kontak dobel."
+    },
+    {
+      "q": "Apakah data customer aman?",
+      "a": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam menangani dan mengelola data pengguna, dengan akses berbasis peran sehingga catatan hanya terlihat oleh anggota tim yang berwenang."
+    },
+    {
+      "q": "Perlu coding untuk setup?",
+      "a": "Tidak. CRM langsung jalan dengan channel yang terhubung, dan otomatisasi diatur tanpa coding. Kebanyakan tim sudah punya catatan yang mengalir dan pipeline yang rapi di hari pertama."
+    },
+    {
+      "q": "Apakah nyambung dengan AI agent dan tools marketing?",
+      "a": "Ya. Leads yang ditangkap AI agent di chat langsung mengalir ke CRM, data campaign masuk ke profil customer, dan segmen untuk broadcast dibentuk dari data CRM, satu platform yang terhubung end-to-end."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Setiap Percakapan Jadi Peluang yang Terlacak",
+    "body": "Lihat bagaimana CRM berbasis percakapan menjaga pipeline tetap lengkap dan follow-up otomatis, tanpa input data manual."
+  }
+}

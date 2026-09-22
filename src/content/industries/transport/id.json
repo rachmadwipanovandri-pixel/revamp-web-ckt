@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Booking Transportasi Otomatis, CS Bales 24/7 | CekatAI",
+    "description": "Operator shuttle, bus, dan travel pakai Cekat.AI buat jawab jadwal, tarif, dan booking kursi via chat 24/7. Reschedule dan info rute juga otomatis."
+  },
+  "hero": {
+    "badge": "Transportasi",
+    "title": "Jawab Setiap Pertanyaan Jadwal, Bahkan Saat Loket Tutup",
+    "subtitle": "Dari jadwal keberangkatan, tarif, sampai booking kursi dan reschedule, Cekat.AI membalas instan di WhatsApp, 24/7, dengan bahasa natural, tanpa nambah petugas loket",
+    "useCases": [
+      "Jadwal & tarif",
+      "Booking kursi",
+      "Reschedule & refund",
+      "Info perubahan jadwal"
+    ]
+  },
+  "definition": "Cekat.AI untuk transportasi adalah platform AI customer service untuk operator shuttle, bus, travel, rental, dan penyeberangan di Indonesia, menjawab jadwal dan tarif secara instan 24/7, menerima booking kursi langsung dari chat, dan menjadikan sistem booking transportasi berjalan rapi dalam satu platform.",
+  "stats": [
+    {
+      "value": "+50%",
+      "label": "kenaikan omzet di GPS Supertrack"
+    },
+    {
+      "value": "<1 menit",
+      "label": "waktu respons contact center AI di Rumah Zakat"
+    },
+    {
+      "value": "24/7",
+      "label": "jadwal, tarif, dan booking kursi terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Pertanyaan Jadwal dan Tarif Dijawab Instan, Tanpa Antre",
+      "body": "\"Besok berangkat jam berapa?\" \"Ke Bandung tarifnya berapa?\" \"Masih ada kursi buat sore?\" Pertanyaan yang sama diulang puluhan kali sehari sekarang dijawab Cekat.AI secara instan dari knowledge base berisi rute, jam keberangkatan, dan tarifmu, dengan bahasa natural, jadi calon penumpang dapat kepastian tanpa nunggu admin selesai melayani antrean.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base rute, jadwal, dan tarif di Cekat.AI"
+    },
+    {
+      "title": "Booking Kursi Selesai dalam Satu Percakapan",
+      "body": "Dari nanya jadwal sampai kursi terkunci, semuanya di chat yang sama. Cekat.AI mencatat rute, tanggal, jumlah kursi, dan data penumpang, lalu mengirim QR pembayaran sampai lunas. Nggak ada lagi booking via telepon yang salah dengar nama atau tanggal, tiap order masuk rapi dan lengkap.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Booking kursi dibuat dan dibayar langsung di chat Cekat.AI"
+    },
+    {
+      "title": "Reschedule dan Refund Berhenti Jadi Drama",
+      "body": "Penumpang telat, jadwal berubah, rencana batal, permintaan reschedule datang tiap hari. Cekat.AI menanganinya sesuai aturanmu, cek kursi di jadwal pengganti dan catat perubahannya, lalu mengalihkan permintaan refund ke timmu lengkap dengan riwayat chat, jadi penumpang dapat kepastian, bukan dilempar-lempar.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Permintaan refund dialihkan ke tim dengan konteks lengkap di Cekat.AI"
+    },
+    {
+      "title": "Info Perubahan Jadwal Sampai Sebelum Penumpang Berangkat",
+      "body": "Armada bermasalah, jadwal mundur, rute dialihkan, kabar seperti ini harus sampai cepat. Lewat WhatsApp Business API resmi, Cekat.AI mem-broadcast pengumuman ke penumpang di rute dan jadwal yang terdampak saja, plus reminder keberangkatan otomatis, jadi kursi kosong gara-gara penumpang belum dapat kabar jadi cerita lama.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Broadcast perubahan jadwal terkirim otomatis dari Cekat.AI"
+    },
+    {
+      "title": "Semua Channel Booking Masuk Satu Inbox",
+      "body": "WhatsApp, Instagram DM, dan live chat website masuk ke satu inbox dengan satu riwayat per penumpang, jadi pelanggan yang nanya di Instagram lalu booking di WhatsApp nggak perlu mengulang cerita. Penumpang langganan tercatat di CRM lengkap dengan rute favoritnya, siap di-follow-up saat ada promo atau jadwal baru.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Semua channel chat terhubung ke satu inbox Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Booking, reminder, dan broadcast jalan di WhatsApp Business API resmi, bareng Instagram DM dan web chat, satu inbox untuk semua rute dan pool, compliant dan andal."
+    },
+    {
+      "title": "AI yang Booking dan Mengatur Ulang",
+      "body": "AI menjawab jadwal dan tarif, mengunci kursi di percakapan, dan menangani reschedule sesuai aturanmu, lalu mengoper kasus khusus ke timmu dengan konteks."
+    },
+    {
+      "title": "Terbukti di 3.000+ Bisnis",
+      "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan customer service di Cekat.AI."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu operator transportasi?",
+      "a": "Cekat.AI menjawab pertanyaan jadwal, tarif, dan ketersediaan kursi secara instan 24/7 di WhatsApp, Instagram, dan web chat, menerima booking langsung dari percakapan, dan menangani reschedule sesuai aturanmu. Petugasmu fokus ke penumpang di loket dan di jalan, bukan ke HP yang bunyi terus."
+    },
+    {
+      "q": "AI bisa terima booking kursi langsung di chat?",
+      "a": "Bisa. AI menanyakan rute, tanggal, jumlah kursi, dan data penumpang, lalu membuat order lengkap dengan QR pembayaran di percakapan yang sama. Booking masuk rapi dan konsisten, tanpa salah catat nama atau tanggal seperti booking via telepon."
+    },
+    {
+      "q": "Bisa terhubung dengan sistem reservasi atau ticketing yang sudah kami pakai?",
+      "a": "Bisa. Lewat integrasi API, Cekat.AI terhubung ke sistem booking atau ticketing yang ada, jadi ketersediaan kursi dan jadwal yang dijawab AI mengikuti data terbaru, dan booking dari chat tercatat ke sistemmu. Tim kami bantu memetakan integrasinya saat onboarding."
+    },
+    {
+      "q": "Bagaimana AI menangani reschedule dan refund?",
+      "a": "Reschedule ditangani AI sesuai kebijakanmu, cek jadwal pengganti, catat perubahan, dan konfirmasi ke penumpang. Refund dan kasus khusus otomatis dialihkan ke tim manusia lengkap dengan riwayat percakapan, jadi keputusan sensitif tetap di tanganmu tanpa penumpang mengulang cerita."
+    },
+    {
+      "q": "Bisa kirim reminder keberangkatan dan info perubahan jadwal?",
+      "a": "Bisa. Reminder keberangkatan terkirim otomatis sebelum jadwal untuk menekan penumpang yang batal muncul, dan saat ada delay atau perubahan rute, broadcast lewat WhatsApp Business API resmi menjangkau penumpang di jadwal terdampak saja, bukan semua kontak."
+    },
+    {
+      "q": "Apakah perlu WhatsApp Business API untuk mulai?",
+      "a": "Untuk broadcast dan volume chat yang serius, iya, dan prosesnya nggak perlu kamu urus sendiri. Sebagai Official Meta Business Partner, Cekat.AI membantu pendaftaran WhatsApp Business API sampai aktif, dengan nomor terverifikasi yang bisa dipakai AI dan banyak agen sekaligus."
+    },
+    {
+      "q": "Berapa lama setup untuk operator dengan banyak rute?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin daftar rute, jam keberangkatan, tarif, dan kebijakan reschedule ke knowledge base, dan AI langsung menjawab akurat. Tanpa coding, dan rute baru cukup ditambahkan ke knowledge base kapan saja."
+    },
+    {
+      "q": "Data penumpang aman di Cekat.AI?",
+      "a": "Data penumpang dan percakapan tersimpan aman dengan akses berbasis peran, jadi hanya tim yang berwenang yang bisa melihatnya. Sertifikasi ISO 27001 sedang dalam proses, dan tim kami terbuka membahas kebutuhan keamanan data spesifik operasimu."
+    },
+    {
+      "q": "Bagaimana harganya, dan bisa coba dulu sebelum langganan?",
+      "a": "Harga mengikuti paket berlangganan berdasarkan volume percakapan dan fitur yang dipakai, jadi operator satu rute sampai armada besar dapat paket yang sesuai. Jadwalkan konsultasi gratis, tim kami tunjukkan demo dengan skenario rute dan jadwalmu sebelum kamu memutuskan."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Pertanyaan Jadwal Jadi Kursi yang Ke-Booking",
+    "body": "Lihat bagaimana operator transportasi menjalankan booking, reschedule, dan support 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

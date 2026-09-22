@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "CRM Automation, Records That Update Themselves | CekatAI",
+    "description": "Every chat, order, and campaign auto-updates the CRM card, zero manual entry, fewer errors, always-current records. 3,000+ businesses sell instead of typing."
+  },
+  "hero": {
+    "badge": "Hands-Off CRM",
+    "title": "A CRM That Fills Itself In, So Your Team Can Sell",
+    "subtitle": "Every conversation, order, and campaign automatically creates or updates the customer's record, no forms, no data-entry backlog, so your sales team spends its hours closing instead of typing"
+  },
+  "definition": "CRM Automation is a Cekat.AI feature that automatically creates and updates each customer's CRM card from every interaction, chats, orders, campaigns, and website events, with no manual data entry.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions captured" },
+    { "value": "24/7", "label": "records update in real time" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Your CRM Updates Itself, You Don't",
+      "body": "Most CRMs go stale because updating them is somebody's least favorite chore. Cekat.AI flips that: every chat, order, and campaign automatically creates or updates the customer's card. No forms to fill, no end-of-day data entry, the record builds itself the moment an interaction happens.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Customer cards created and updated automatically in Cekat.AI"
+    },
+    {
+      "title": "Fewer Errors Than Any Manual Process",
+      "body": "Manual entry means typos in phone numbers, duplicate contacts, and half-filled fields nobody catches until it matters. When the platform captures data straight from the conversation, there is nothing to mistype. Your records stay clean and consistent, so every follow-up, broadcast, and report runs on data you can actually trust.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated CRM logic running without manual entry in Cekat.AI"
+    },
+    {
+      "title": "Give Your Sales Team Back the Selling Hours",
+      "body": "Every minute a rep spends logging contacts is a minute not spent closing. Cekat.AI handles the admin, capturing leads from your website, WhatsApp, and socials and filing them automatically, so your team works the pipeline instead of the keyboard. The people you hired to sell get to actually sell.",
+      "image": "/images/crm/manage-work-with-boards.png",
+      "imageAlt": "Sales team working a pipeline on boards in Cekat.AI"
+    },
+    {
+      "title": "Always-Current Records the Whole Team Can Trust",
+      "body": "A CRM is only useful if it reflects reality right now. Because cards update in real time from every interaction, anyone who opens a profile, sales, support, or the AI agent, sees the latest purchases, chats, and campaigns. No stale notes, no \"let me check and get back to you.\"",
+      "image": "/images/home/your-crm-built-for-growth-and-real-conversations.png",
+      "imageAlt": "Cekat.AI CRM built from real, up-to-date conversations"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Auto-Capture",
+      "title": "Leads Captured the Moment They Arrive",
+      "body": "New leads from your website, WhatsApp, and social channels are captured into the CRM automatically, no copy-pasting contact details, no lead sitting in an inbox waiting to be logged before someone forgets it."
+    },
+    {
+      "label": "Auto-Update",
+      "title": "Every Interaction Writes to the Card",
+      "body": "A new chat, a completed order, a campaign received, a website event, each one updates the customer's CRM card on its own. The profile reflects everything that happened without a single manual edit."
+    },
+    {
+      "label": "No Coding",
+      "title": "Set the Rules Once, No Coding",
+      "body": "Workflow triggers connect the pieces, auto-labeling, notifications, and data sync between tools, using time schedules, chat keywords, or data changes like a new lead. You configure it once with no coding, and it runs on its own."
+    },
+    {
+      "label": "Pipeline",
+      "title": "Sales Progress You Can Watch in Real Time",
+      "body": "Captured leads flow into a sales pipeline you track in real time, so you always know how many deals are moving, where each one sits, and what your team should work next."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Zero Manual Entry",
+      "body": "Cards are created and updated straight from conversations, orders, and campaigns, nobody on your team types customer data into a form again."
+    },
+    {
+      "title": "Always Accurate",
+      "body": "Because the data comes from the interaction itself, there are no typos, duplicates, or stale fields, just records you can trust for every decision."
+    },
+    {
+      "title": "Built From Real Conversations",
+      "body": "WhatsApp, Instagram, Messenger, and live chat all feed the CRM, so the profile reflects what actually happened, not what someone remembered to log."
+    }
+  ],
+  "testimonial": {
+    "quote": "Our revenue increased by more than 50%! Cekat AI allows us to secure property visits and close deals even while I'm asleep, because no leads are missed.",
+    "name": "Adam Sulaiman",
+    "role": "President Director, Threeland Property",
+    "image": "/images/crm/adam-sulaiman.png"
+  },
+  "faq": [
+    {
+      "q": "What is CRM automation?",
+      "a": "CRM automation is the practice of creating and updating customer records without manual data entry. In Cekat.AI, every interaction, a chat, an order, a campaign received, a website event, automatically creates or updates the customer's CRM card, so your database stays complete and current with no one typing it in."
+    },
+    {
+      "q": "How does Cekat.AI update the CRM automatically?",
+      "a": "As conversations happen across WhatsApp, Instagram, Messenger, and live chat, Cekat.AI captures the details and writes them to the customer's card, new contacts, purchases, campaigns received, and website behavior all land on the profile on their own. Workflow triggers handle labeling, notifications, and syncing between tools."
+    },
+    {
+      "q": "Do I still need to enter customer data by hand?",
+      "a": "No, that's the entire point. Leads are captured from your website, WhatsApp, and socials automatically, and every later interaction updates the card by itself. Manual entry is exactly what makes most CRMs go stale, so Cekat.AI removes it from your team's day completely."
+    },
+    {
+      "q": "Does automating the CRM reduce errors?",
+      "a": "Yes. Manual entry produces typos, duplicate contacts, and half-filled fields. When data is captured directly from the conversation, there is nothing to mistype and nothing to forget. Your records stay clean and consistent, so follow-ups, broadcasts, and reports all run on data you can trust."
+    },
+    {
+      "q": "What information gets captured on each card?",
+      "a": "Each customer profile holds purchases, full chat history, campaigns received, and website behavior and event logs, plus their Customer Stage, Visitor, Lead, or Buyer. The whole relationship sits in one living record instead of scattered across separate apps and spreadsheets."
+    },
+    {
+      "q": "Can I set my own automation rules?",
+      "a": "Yes. Workflow triggers run on time-based schedules, chat keywords, or customer-data changes such as a new lead, and can fire auto-labeling, tickets, admin notifications, and data sync between tools. You set the rules once with no coding, and they run automatically from then on."
+    },
+    {
+      "q": "How does CRM automation help my sales team?",
+      "a": "It gives them back their selling hours. Instead of logging contacts and updating spreadsheets, reps work a pipeline that fills and updates itself. They see real-time sales progress and always-current profiles, so their time goes into conversations that close deals rather than into data entry."
+    },
+    {
+      "q": "Which channels feed the CRM?",
+      "a": "Conversations from WhatsApp (official Business API), Instagram DM, Facebook Messenger, website live chat, and API channels all arrive in one unified inbox, and every one of them updates the customer's CRM card automatically, alongside their website behavior and event logs."
+    },
+    {
+      "q": "Is the customer data handled securely?",
+      "a": "Yes. Cekat.AI complies with UU PDP, Indonesia's personal data protection law, and uses role-based team access so you control who can see and manage customer data. As an official Meta Business Partner, WhatsApp traffic also runs through Meta's official infrastructure."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Every Conversation Into a CRM Update",
+    "body": "Let Cekat.AI capture and file every contact automatically, so your team sells instead of typing, with records that stay current on their own."
+  }
+}

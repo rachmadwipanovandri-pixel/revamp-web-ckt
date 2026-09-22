@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Layanan Pelanggan Internet 24/7 untuk ISP | CekatAI",
+    "description": "ISP pakai Cekat.AI buat jawab lonjakan komplain gangguan, tagihan, dan jadwal pasang 24/7 di WhatsApp. Respons cepat, pelanggan nggak pindah."
+  },
+  "hero": {
+    "badge": "Internet Service Provider",
+    "title": "Jaringan Boleh Gangguan, Chat Pelanggan Tetap Terjawab",
+    "subtitle": "Dari laporan gangguan, pertanyaan tagihan, sampai jadwal pemasangan, Cekat.AI membalas instan di WhatsApp, 24/7, bahkan saat komplain lagi banjir-banjirnya, tanpa nambah admin",
+    "useCases": [
+      "Lonjakan komplain gangguan",
+      "Tagihan & pembayaran",
+      "Jadwal teknisi",
+      "Notifikasi WhatsApp"
+    ]
+  },
+  "definition": "Cekat.AI untuk ISP adalah platform AI customer service untuk internet service provider di Indonesia, dari RT/RW Net sampai fiber regional, yang menangani layanan pelanggan internet 24/7, dari laporan gangguan, pertanyaan tagihan, sampai jadwal pemasangan, dalam satu platform.",
+  "stats": [
+    {
+      "value": "+30%",
+      "label": "kenaikan jumlah pelanggan di Lintas Jaringan Nusantara"
+    },
+    {
+      "value": "5 detik",
+      "label": "waktu balas chat pelanggan di Lunica, turun dari 15 menit"
+    },
+    {
+      "value": "24/7",
+      "label": "laporan gangguan, tagihan, dan jadwal pasang terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Lonjakan Komplain Saat Gangguan Terserap Otomatis",
+      "body": "Satu titik fiber putus, ratusan chat masuk barengan, dan admin cuma dua orang. AI agent Cekat.AI menjawab setiap laporan gangguan secara instan berapa pun jumlahnya, menyampaikan status penanganan dan estimasi pemulihan yang kamu update di knowledge base, jadi pelanggan merasa didengar dan nggak lanjut komplain ke media sosial.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab lonjakan laporan gangguan di inbox Cekat.AI"
+    },
+    {
+      "title": "Pertanyaan Tagihan dan Pembayaran Dijawab Instan",
+      "body": "\"Tagihan bulan ini berapa?\" \"Bayar lewat mana?\" \"Udah transfer kok belum aktif?\" Pertanyaan yang sama datang tiap hari dan menyita waktu admin. Cekat.AI menjawabnya dari knowledge base dengan bahasa natural, mengirim detail cara bayar, dan mengoper kasus pembayaran yang janggal ke timmu lengkap dengan riwayat chat-nya.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base Cekat.AI menjawab pertanyaan tagihan pelanggan"
+    },
+    {
+      "title": "Jadwal Pasang Baru dan Kunjungan Teknisi Langsung Ke-Book",
+      "body": "Calon pelanggan nanya coverage, langsung dijawab. Mau pasang, AI mengumpulkan alamat dan data yang dibutuhkan, lalu menjadwalkan slot pemasangan atau kunjungan teknisi langsung di percakapan. Semua permintaan tercatat rapi dengan konteksnya, jadi tim lapangan berangkat dengan info lengkap, bukan nebak-nebak dari chat yang kepotong.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Penjadwalan pemasangan dan kunjungan teknisi dari percakapan di Cekat.AI"
+    },
+    {
+      "title": "Notifikasi Otomatis ke Pelanggan Lewat WhatsApp",
+      "body": "Reminder jatuh tempo, konfirmasi pembayaran, info maintenance terjadwal, sampai update saat gangguan area sudah pulih, semua terkirim otomatis lewat WhatsApp Business API resmi. Pelanggan tahu duluan sebelum sempat komplain, dan tim billing berhenti nagih satu-satu secara manual.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Notifikasi otomatis Cekat.AI terkirim ke pelanggan lewat WhatsApp"
+    },
+    {
+      "title": "Komplain Jadi Tiket Rapi untuk Tim Area yang Tepat",
+      "body": "Setiap laporan gangguan yang masuk diubah jadi tiket otomatis, lengkap dengan data pelanggan dan lokasinya, lalu diteruskan ke tim teknis area terkait. Kamu bisa lihat semua tiket yang masih terbuka dalam satu tampilan, jadi nggak ada komplain yang tenggelam di inbox dan pelanggan nggak perlu chat tiga kali buat masalah yang sama.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Komplain pelanggan otomatis menjadi tiket di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chat, notifikasi, dan broadcast jalan di WhatsApp Business API resmi, bareng Instagram DM dan web chat, satu inbox untuk semua area layanan, compliant dan andal."
+    },
+    {
+      "title": "AI yang Kuat Digempur Lonjakan",
+      "body": "Saat gangguan massal, AI menjawab semua chat sekaligus tanpa antre, lalu mengoper kasus teknis ke tim lapangan lengkap dengan konteks dan lokasinya."
+    },
+    {
+      "title": "Dipercaya 3.000+ Bisnis",
+      "body": "Dari bisnis lokal sampai grup besar di Indonesia, Cekat.AI menangani percakapan pelanggan setiap hari, teruji di volume chat yang nyata."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu ISP dan penyedia internet lokal?",
+      "a": "Cekat.AI menjawab chat pelanggan secara instan 24/7 di WhatsApp, web chat, dan media sosial, dari laporan gangguan, pertanyaan tagihan dan paket, sampai permintaan pasang baru, sambil mengubah komplain jadi tiket yang rapi. Cocok untuk RT/RW Net, ISP lokal, sampai operator fiber regional yang adminnya kewalahan."
+    },
+    {
+      "q": "AI-nya sanggup menangani banjir komplain saat gangguan massal?",
+      "a": "Sanggup. AI menjawab setiap chat yang masuk secara instan berapa pun banyaknya sekaligus, jadi waktu respons tetap stabil saat satu area down dan ratusan pelanggan chat barengan. Kamu cukup update status penanganan sekali di knowledge base, dan semua pelanggan dapat info yang sama dan konsisten."
+    },
+    {
+      "q": "Pelanggan bisa atur jadwal pemasangan atau kunjungan teknisi lewat chat?",
+      "a": "Bisa. AI mengumpulkan alamat dan kebutuhan pelanggan, lalu menjadwalkan slot pemasangan baru atau kunjungan teknisi langsung di percakapan. Permintaannya tercatat sebagai tiket dengan data lengkap, dan reminder otomatis bisa dikirim sebelum jadwalnya biar pelanggan nggak lupa."
+    },
+    {
+      "q": "Apakah pakai WhatsApp Business API resmi?",
+      "a": "Ya. Cekat.AI adalah Official Meta Business Partner, jadi nomor WhatsApp bisnismu terhubung ke WhatsApp Business API resmi, aman dari blokir, bisa mengajukan centang hijau, dan mendukung notifikasi serta broadcast ke banyak pelanggan sekaligus, bukan WhatsApp biasa yang dibagi-bagi ke banyak admin."
+    },
+    {
+      "q": "Bisa integrasi dengan sistem billing atau tool yang sudah kami pakai?",
+      "a": "Bisa. Lewat integrasi API, Cekat.AI bisa terhubung dengan sistem billing, CRM, atau tool internal lain, jadi AI menjawab dengan data yang relevan dan tiket mengalir ke alur kerja yang sudah ada, tanpa mengubah cara kerja tim dari nol."
+    },
+    {
+      "q": "Kapan chat dioper ke tim manusia?",
+      "a": "Kapan pun dibutuhkan. Kamu yang atur aturannya, misalnya kasus teknis di lapangan, negosiasi tagihan, atau pelanggan yang minta bicara dengan orang. AI mengoper percakapan lengkap dengan riwayatnya, jadi tim nggak perlu tanya ulang dari awal, dan sisanya tetap dijawab AI."
+    },
+    {
+      "q": "Bagaimana keamanan data pelanggan kami?",
+      "a": "Data percakapan dan pelanggan tersimpan aman dan hanya bisa diakses tim yang kamu beri izin, dengan pengaturan akses berbasis peran. Sertifikasi ISO 27001 sedang dalam proses, dan praktik keamanan data mengikuti standar industri."
+    },
+    {
+      "q": "Berapa lama setup untuk ISP?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin daftar paket, harga, area coverage, cara pembayaran, dan SOP penanganan gangguan ke knowledge base, dan AI langsung menjawab akurat. Tanpa coding sama sekali, semudah briefing admin CS baru."
+    },
+    {
+      "q": "Bagaimana soal harga untuk ISP kecil?",
+      "a": "Harga mengikuti skala penggunaan, jadi RT/RW Net dengan ratusan pelanggan nggak bayar seperti operator besar. Mulai dari paket kecil dan naik seiring pelangganmu bertambah. Jadwalkan konsultasi gratis dan tim kami bantu hitung paket yang pas untuk ukuran bisnismu."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Banjir Komplain Jadi Pelanggan yang Bertahan",
+    "body": "Lihat bagaimana ISP menjalankan layanan pelanggan internet 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

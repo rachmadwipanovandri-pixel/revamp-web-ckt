@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "AI Feedback & Evaluation: Correct Your AI Agent | Cekat.AI",
+    "description": "Flag off-target AI replies from live chats, test changes in the AI Playground before they ship, and manage evaluation history. Your AI improves because you correct it."
+  },
+  "hero": {
+    "badge": "AI Feedback & Evaluation",
+    "title": "Correct It Once, and the AI Stays Corrected",
+    "subtitle": "Flag an off-target reply straight from the conversation, test the fix in the AI Playground before customers see it, and keep every evaluation on record for review."
+  },
+  "definition": "AI Feedback & Evaluation in Cekat.AI is the quality loop for the AI agent: flagging off-target responses from live conversations, testing answers in the AI Playground before they are used, and managing the evaluation history from one page.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "answer quality under watch"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Flag a Bad Answer Without Leaving the Chat",
+      "body": "From a live conversation, the team gives an off-target response a thumbs down. No internal ticket, no complaint spreadsheet: the correction happens where the problem was spotted.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Flagging an AI response from a live conversation"
+    },
+    {
+      "title": "Test in the Playground, Not on Customers",
+      "body": "The AI Playground lets you throw questions at the AI and inspect its answers before they reach a real conversation. Knowledge and settings changes get tried first; customers are not the test bench.",
+      "image": "/images/chat/train-your-ai-agent.png",
+      "imageAlt": "Testing AI answers in the AI Playground"
+    },
+    {
+      "title": "Every Evaluation Kept, Editable, Removable",
+      "body": "The Evaluation page holds the whole feedback history: what was corrected, what is stale and can go. Your AI's improvement is documented rather than scattered across team chats.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "The AI evaluation management page"
+    },
+    {
+      "title": "An AI That Improves From Real Cases",
+      "body": "Corrections come from genuine conversations with your customers, not invented scenarios. An answer fixed today prevents the same mistake across the next thousand chats.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "AI improvement grounded in real conversations"
+    },
+    {
+      "title": "Your CS Team Becomes the Coach, Not the Patch",
+      "body": "Instead of taking over the same chat again and again, the team corrects the source once. Time that went into patching AI answers moves to the cases that truly need a human.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "A team coaching the AI instead of patching answers"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Corrected at the Scene",
+      "body": "Feedback is given from the conversation itself, while the context is still whole."
+    },
+    {
+      "title": "Safe Before It Ships",
+      "body": "The Playground separates experiments from real conversations, so a fix cannot create a new problem."
+    },
+    {
+      "title": "Documented, Not Implied",
+      "body": "Evaluation history can be opened, edited, and removed, so you know exactly what has been corrected."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is AI Feedback & Evaluation in Cekat.AI?",
+      "a": "The AI quality loop: flag off-target responses from live chats with a thumbs down, test answers in the AI Playground, and manage the whole evaluation history from one page."
+    },
+    {
+      "q": "How do I give feedback on an AI reply?",
+      "a": "From a live conversation, hover over the Resolve section and click the thumbs-down icon on the response you want corrected. The evaluation is recorded without leaving the chat."
+    },
+    {
+      "q": "What is the AI Playground?",
+      "a": "A place to test the AI before its answers reach customers. Ask it questions, inspect the responses, and judge the results in an environment separate from real conversations."
+    },
+    {
+      "q": "Can old evaluations be edited or removed?",
+      "a": "Yes. The Evaluation page lists the feedback history for review, editing when a correction needs refining, and removal once it is no longer relevant."
+    },
+    {
+      "q": "Who should be giving the feedback?",
+      "a": "Whoever knows the right answer best, usually CS or a supervisor. Because it is one click from the chat, correcting becomes a daily habit rather than a special project."
+    },
+    {
+      "q": "How is this different from retraining the knowledge base?",
+      "a": "The knowledge base is the source of what the AI knows; evaluation corrects how it answers. They complement each other: feedback often reveals which part of the knowledge needs sharpening."
+    },
+    {
+      "q": "Does feedback change the AI's answers immediately?",
+      "a": "Evaluations are recorded and become managed corrections. You test the change in the Playground first, so no correction ships unreviewed."
+    },
+    {
+      "q": "Does this feature need technical skill?",
+      "a": "No. Feedback is one click, the Playground is an ordinary conversation, and the evaluation page is a searchable list. All of it is built for non-technical teams."
+    }
+  ],
+  "cta": {
+    "heading": "Make Every AI Mistake Its Last",
+    "body": "Flag it, test it, ship it. Your AI improves on your own team's corrections. Try it free."
+  }
+}

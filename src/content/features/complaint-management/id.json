@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Sistem Manajemen Komplain untuk Customer Service | CekatAI",
+    "description": "Aplikasi manajemen komplain terpadu: ubah chat pelanggan jadi tiket terlacak & assign otomatis ke tim yang tepat. Setiap keluhan punya PIC!"
+  },
+  "hero": {
+    "badge": "Alur Komplain",
+    "title": "Tidak Ada Komplain yang Tenggelam, Tidak Ada Customer Terlupakan",
+    "subtitle": "Komplain bergerak lewat alur terstruktur, ditangkap di chat, dilabeli, di-assign ke tim yang tepat, dan dilacak sampai selesai, jadi setiap keluhan terjawab, bukan hilang di inbox sibuk"
+  },
+  "definition": "Manajemen komplain di Cekat.AI adalah alur terstruktur yang menangkap keluhan customer dari chat, otomatis melabeli dan mengubahnya jadi tiket, meng-assign ke tim yang tepat, dan melacak tiap komplain sampai selesai, jadi tidak ada keluhan yang terlewat atau tertangani terlambat.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "komplain tertangkap otomatis" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Komplain Tertangkap Begitu Masuk",
+      "body": "Komplain yang tenggelam di inbox sibuk artinya customer yang hilang. Cekat.AI menangkap keluhan langsung dari percakapan dan otomatis melabelinya berdasarkan intent, jadi keluhan mendesak ditandai detik itu juga, bukan berjam-jam kemudian saat ada yang akhirnya scroll ke atas.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Komplain otomatis tertangkap dan dilabeli di Cekat.AI"
+    },
+    {
+      "title": "Diarahkan ke Tim yang Tepat Otomatis",
+      "body": "Setiap komplain jadi tiket dan menuju tim yang benar-benar bisa menyelesaikannya, dengan notifikasi otomatis jadi tidak ada yang menggantung. Kepemilikan yang jelas berarti komplain tidak lempar-lemparan antar orang sementara customer menunggu.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Pengarahan komplain dan notifikasi otomatis di Cekat.AI"
+    },
+    {
+      "title": "Terlacak dari Pesan Pertama sampai Selesai",
+      "body": "Setiap komplain punya status yang bisa kamu ikuti, tertangkap, di-assign, diproses, selesai. Tim melihat mana yang masih terbuka dan mana yang lewat tenggat secara real-time, jadi masalah ditutup bukannya diam-diam terlupakan.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Pelacakan status komplain di Cekat.AI"
+    },
+    {
+      "title": "Konteks Lengkap, Tanpa Mengulang",
+      "body": "Saat komplain dialihkan ke human agent, seluruh riwayat percakapan ikut. Customer tidak perlu mengulang ceritanya, dan agent menyelesaikan lebih cepat karena melihat gambaran lengkap sejak awal.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Eskalasi komplain dengan konteks lengkap di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Tidak Ada yang Lolos",
+      "body": "Auto-capture dan ticketing memastikan setiap komplain tercatat dan ada penanggung jawabnya, bukan hilang di keramaian inbox."
+    },
+    {
+      "title": "Penyelesaian Lebih Cepat",
+      "body": "Pengarahan otomatis dan konteks lengkap membawa komplain ke orang yang tepat seketika, memangkas waktu antara masalah dan solusi."
+    },
+    {
+      "title": "Akuntabilitas by Design",
+      "body": "Setiap tiket punya penanggung jawab dan status, jadi manajer tahu mana yang terbuka, mana yang lewat tenggat, dan di mana macetnya."
+    }
+  ],
+  "testimonial": {
+    "quote": "Cekat.AI membantu kami memberikan layanan yang lebih cepat dan meningkatkan kepuasan customer.",
+    "name": "Wiji",
+    "role": "Customer Experience Department Head, Rumah Zakat",
+    "image": "/images/home/testimonial-wiji-astuti.jpg"
+  },
+  "faq": [
+    {
+      "q": "Apa itu sistem manajemen komplain?",
+      "a": "Ini cara terstruktur untuk menangkap, mengarahkan, melacak, dan menyelesaikan keluhan customer. Di Cekat.AI, komplain ditangkap dari chat, otomatis dilabeli, diubah jadi tiket, di-assign ke tim yang tepat, dan dilacak sampai selesai dalam satu alur."
+    },
+    {
+      "q": "Bagaimana komplain ditangkap?",
+      "a": "Komplain ditangkap langsung dari percakapan customer di WhatsApp, Instagram, Messenger, dan live chat. Cekat.AI otomatis melabeli pesan berdasarkan intent, jadi komplain ditandai begitu masuk, bukan ditemukan belakangan."
+    },
+    {
+      "q": "Bagaimana komplain sampai ke tim yang tepat?",
+      "a": "Setiap komplain jadi tiket yang otomatis diarahkan ke tim yang bertanggung jawab atas jenis masalah itu, dengan notifikasi jadi cepat ditangani. Kepemilikan yang jelas mencegah komplain lempar-lemparan antar orang."
+    },
+    {
+      "q": "Bisa lacak status setiap komplain?",
+      "a": "Bisa. Setiap komplain punya status yang bisa diikuti dari tertangkap sampai selesai, dan tim melihat mana yang terbuka dan lewat tenggat secara real-time, jadi masalah ditutup bukannya terlupakan."
+    },
+    {
+      "q": "Apa yang terjadi kalau komplain butuh manusia?",
+      "a": "Komplain dialihkan ke human agent dengan seluruh riwayat percakapan terlampir. Customer tidak mengulang apa pun, dan agent menyelesaikan lebih cepat karena punya konteks lengkap sejak awal."
+    },
+    {
+      "q": "Apakah AI menangani komplain sendiri?",
+      "a": "AI menangani masalah rutin secara instan dan menangkap sisanya ke dalam alur. Komplain sensitif atau kompleks dialihkan ke tim kamu, jadi AI mengurangi volume tanpa membiarkan kasus sulit terbengkalai."
+    },
+    {
+      "q": "Apakah ini jalan di semua channel saya?",
+      "a": "Ya. Komplain dari setiap channel yang terhubung mengalir ke satu alur dan satu catatan customer, jadi komplain ditangani dengan cara yang sama entah datang dari WhatsApp, Instagram, atau live chat website."
+    },
+    {
+      "q": "Perlu coding untuk setup alurnya?",
+      "a": "Tidak. Aturan pelabelan, pembuatan tiket, pengarahan, dan notifikasi diatur tanpa coding lewat otomatisasi visual Cekat.AI, jadi tim kamu bisa menyusun alur komplain sendiri."
+    },
+    {
+      "q": "Bagaimana data komplain membantu bisnis saya membaik?",
+      "a": "Komplain yang terlacak menunjukkan masalah mana yang berulang, seberapa cepat diselesaikan, dan di mana bottleneck-nya, mengubah keluhan jadi data yang bisa ditindaklanjuti untuk memperbaiki produk, layanan, dan waktu respons."
+    }
+  ],
+  "cta": {
+    "heading": "Kelola Komplain Tanpa Ada Chat yang Terlewat.",
+    "body": "Lihat bagaimana alur komplain terstruktur memberi setiap keluhan penanggung jawab dan penyelesaian, otomatis."
+  }
+}

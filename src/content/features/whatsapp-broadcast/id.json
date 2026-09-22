@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "Aplikasi Broadcast WhatsApp, Bikin Customer Balik Lagi | CekatAI",
+    "description": "Aplikasi broadcast WhatsApp resmi Meta: sebar promo, campaign event-based, dan reminder restock dari data CRM. 3.000+ bisnis panen repeat order tiap bulan."
+  },
+  "hero": {
+    "badge": "Campaign Retensi & Retargeting",
+    "title": "Aplikasi Broadcast WhatsApp yang Bikin Customer Belanja Lagi",
+    "subtitle": "Ubah data customer jadi repeat order, sebar promo, campaign event-based, dan reminder restock yang datang tepat di momen customer siap beli, semua dari satu platform"
+  },
+  "definition": "Aplikasi Broadcast WhatsApp adalah fitur Cekat.AI untuk mengubah data customer jadi pembelian berulang, menyebarkan promo, pesan event-based, dan reminder restock ke segmen yang tepat lewat WhatsApp Business API resmi.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis jalanin campaign di Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "AI bales setiap reply campaign" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Jualan Lagi ke Customer yang Sudah Pernah Beli",
+      "body": "Dapetin customer baru itu bagian paling mahalnya, tapi banyak bisnis malah membiarkan pembeli lama nganggur di daftar kontak. Cekat.AI menyimpan riwayat pembelian, chat, dan campaign tiap customer, jadi kamu bisa broadcast penawaran yang pas ke orang yang sudah percaya sama bisnismu. Mereka jauh lebih gampang closing daripada leads dingin.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Riwayat pembelian dan perjalanan customer di CRM Cekat.AI"
+    },
+    {
+      "title": "Kirim Campaign Berdasarkan Momen, Bukan Feeling",
+      "body": "Sebar promo di hari acak itu untung-untungan. Broadcast event-based terkirim saat sesuatu benar-benar terjadi, promo masuk hari terakhir, customer ikut campaign, atau datanya berubah di CRM, jadi setiap pesan datang bawa alasan untuk dibuka.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi aktivitas dan perilaku customer di Cekat.AI"
+    },
+    {
+      "title": "Reminder Restock Datang Sebelum Barangnya Habis",
+      "body": "Kalau produkmu dipakai habis, skincare, kopi, suplemen, softlens, reorder itu rezekimu, jangan sampai lari. Cekat.AI membaca riwayat pembelian dan mengingatkan customer sebelum stoknya habis. Pembeli sekali jadi langganan, tanpa kamu harus bikin program subscription.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Alur reminder restock otomatis di Cekat.AI"
+    },
+    {
+      "title": "Broadcast yang Kelihatan Hasilnya, Bukan Cuma Terkirim",
+      "body": "Laporan \"pesan terkirim\" tidak bikin omzet naik. Dashboard analitik menghubungkan tiap campaign ke reply, konversi, dan revenue, plus progres customer dari leads jadi pembeli. Begitu customer bales, AI agent langsung ambil alih percakapan dan closing order di chat.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Analitik revenue dan konversi campaign di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Promo",
+      "title": "Sebar Promo Tanpa Copy-Paste Ratusan Chat",
+      "body": "Tulis campaign sekali, pilih segmennya, dan Cekat.AI mengirimkannya lengkap dengan nama dan konteks tiap customer dari CRM. Tidak ada lagi forward promo manual ke ratusan chat, dan tidak ada customer yang dapat penawaran yang tidak nyambung sama dia."
+    },
+    {
+      "label": "Event-Based",
+      "title": "Broadcast yang Nyala Sendiri Sesuai Perilaku Customer",
+      "body": "Trigger otomatis jalan dari jadwal, keyword di chat, atau perubahan data customer, leads baru masuk, promo mau berakhir, status berubah. Campaign bereaksi ke perilaku nyata, bukan nunggu tim ingat."
+    },
+    {
+      "label": "Restock",
+      "title": "Reminder Reorder dari Riwayat Pembelian",
+      "body": "Cekat.AI tahu customer beli apa dan kapan. Reminder restock terkirim sebelum produknya habis, jadi obrolan reorder terjadi di chat bisnismu, bukan di chat kompetitor."
+    },
+    {
+      "label": "Reaktivasi",
+      "title": "Bangunkan Customer yang Lama Menghilang",
+      "body": "Filter daftar customer berdasarkan aktivitas untuk menemukan siapa yang sudah lama tidak belanja, lalu kirim alasan untuk balik. Leads yang ghosting dapat ajakan ke checkout, pelanggan setia yang kabur dapat penawaran win-back yang sesuai riwayatnya."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Repeat Order Jalan Otomatis",
+      "body": "Promo, campaign event-based, dan reminder restock jalan lewat trigger, daftar customermu terus menghasilkan revenue sementara tim fokus ke hal lain."
+    },
+    {
+      "title": "Ditenagai CRM yang Selalu Hidup",
+      "body": "Setiap chat, pembelian, dan campaign otomatis memperbarui profil customer, tanpa input manual, jadi broadcast selalu menyasar dengan data terbaru, bukan ekspor bulan lalu."
+    },
+    {
+      "title": "WhatsApp Business API Resmi",
+      "body": "Cekat.AI adalah Meta Business Partner resmi. Broadcast lewat jalur compliant dari infrastruktur Meta, dengan skala sebesar daftar customermu."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu aplikasi broadcast WhatsApp?",
+      "a": "Aplikasi broadcast WhatsApp adalah tool untuk mengirim satu campaign ke banyak customer sekaligus lewat WhatsApp. Di Cekat.AI, broadcast berjalan lewat WhatsApp Business API resmi, tersegmentasi berdasarkan aktivitas, riwayat pembelian, dan event, terpersonalisasi dari data CRM, dan terlacak sampai reply, konversi, dan revenue."
+    },
+    {
+      "q": "Apa bedanya dengan fitur broadcast bawaan aplikasi WhatsApp?",
+      "a": "Broadcast bawaan aplikasi WhatsApp Business jumlahnya terbatas dan cuma sampai ke kontak yang menyimpan nomormu. Lewat API resmi di Cekat.AI, campaign menjangkau seluruh daftar customer, terpersonalisasi per penerima, plus dilengkapi segmentasi, reminder otomatis, dan analitik revenue."
+    },
+    {
+      "q": "Apa bedanya broadcast WhatsApp dengan WA blast?",
+      "a": "Dua-duanya mengirim pesan massal lewat WhatsApp Business API resmi. Bedanya di pola pakai: blast biasanya pengumuman sekali kirim, sementara broadcast di Cekat.AI adalah program berkelanjutan, sebar promo, campaign event-based, dan reminder restock yang dirancang bikin customer lama belanja lagi, campaign demi campaign."
+    },
+    {
+      "q": "Bisa kirim broadcast khusus ke customer yang sudah pernah beli?",
+      "a": "Bisa. Segmentasi riwayat pembelian membuatmu bisa menyasar pembeli tertentu saja, semua yang belanja bulan lalu, pembeli satu produk spesifik, atau pelanggan setia yang layak dapat reward. Campaign hanya terkirim ke segmen yang kamu pilih."
+    },
+    {
+      "q": "Apa itu broadcast event-based?",
+      "a": "Broadcast event-based adalah campaign yang terkirim karena sesuatu terjadi, bukan karena dikirim manual. Di Cekat.AI, trigger-nya bisa jadwal tertentu, keyword di chat, atau perubahan data customer, misalnya pesan yang otomatis keluar saat promo masuk hari terakhir atau saat ada leads baru."
+    },
+    {
+      "q": "Gimana cara kerja reminder restock?",
+      "a": "Cekat.AI memakai riwayat pembelian tiap customer untuk mengirim reminder sebelum produknya habis. Reminder datang sebagai pesan WhatsApp personal, customer tinggal bales, dan AI agent bisa langsung memproses reorder di chat, lengkap dengan cek ongkir dan detail pembayaran."
+    },
+    {
+      "q": "Kalau customer bales broadcast, siapa yang jawab?",
+      "a": "AI agent Cekat.AI yang jawab, 24/7. AI-nya paham maksud dan konteks, bukan sekadar keyword, bisa jawab pertanyaan dengan bahasa natural, cek ongkir, sampai closing order di chat, dan baru oper ke tim lengkap dengan konteks kalau memang perlu."
+    },
+    {
+      "q": "Broadcast sering-sering apa tidak dianggap spam sama customer?",
+      "a": "Spam itu pesan yang salah ke orang yang salah. Broadcast Cekat.AI tersegmentasi berdasarkan aktivitas, riwayat pembelian, dan event, lalu dipersonalisasi dari data CRM, pelanggan setia lihat penawaran loyalty, leads baru lihat promo perkenalan. Pesan yang relevan dibuka, bukan di-report."
+    },
+    {
+      "q": "Bisa lihat broadcast mana yang benar-benar menghasilkan omzet?",
+      "a": "Bisa. Dashboard analitik melacak tiap campaign dari terkirim, dibales, sampai konversi, kelihatan revenue per campaign plus progres customer dari leads jadi pembeli. Segmen dan pesan yang menang langsung ketahuan, bukan cuma jumlah pesan terkirim."
+    },
+    {
+      "q": "Perlu skill teknis buat jalanin campaign broadcast?",
+      "a": "Tidak. Bikin campaign tinggal klik: pilih segmen, tulis pesan, kirim atau pasang trigger-nya. Otomatisasi dibangun lewat visual designer drag-and-drop, tanpa coding sama sekali, kebanyakan tim sudah kirim campaign pertama di hari yang sama."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Daftar Customer Jadi Repeat Order",
+    "body": "Kirim broadcast WhatsApp tersegmentasi pertamamu dan biarkan AI mengawal setiap reply sampai checkout, 24/7."
+  }
+}

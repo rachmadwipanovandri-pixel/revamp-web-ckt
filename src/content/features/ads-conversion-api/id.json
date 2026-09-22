@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Integrasi Conversion API (CAPI) Meta & TikTok | CekatAI",
+    "description": "Kirim sinyal konversi nyata dari chat dan order ke Meta dan TikTok. Signal quality lebih baik berarti ads lebih perform dan CAC turun."
+  },
+  "hero": {
+    "badge": "Integrasi CAPI",
+    "title": "Suapi Iklanmu dengan Konversi Nyata, Bukan Cuma Klik",
+    "subtitle": "Cekat.AI terhubung langsung ke Meta dan TikTok lewat Conversion API, mengirim sinyal penjualan nyata balik agar platform optimasi ke revenue, bukan metrik semu"
+  },
+  "definition": "Integrasi Conversion API (CAPI) di Cekat.AI mengirim event konversi nyata, leads, order, dan penjualan dari chat-mu, secara server-to-server ke Meta dan TikTok, meningkatkan signal quality agar platform iklan optimasi ke revenue nyata dan cost per acquisition-mu turun.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "2", "label": "platform iklan terhubung: Meta, TikTok" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Kasih Tahu Platform Iklan Apa yang Benar-Benar Konversi",
+      "body": "Pixel browser melewatkan konversi yang terjadi di chat, jadi iklanmu optimasi pakai data bolong. Cekat.AI mengirim event konversi nyata, leads yang bales, order yang closing, server-to-server, jadi Meta dan TikTok belajar dari apa yang betul-betul menghasilkan revenue.",
+      "image": "/images/marketing/review-all-meta-ads-in-one-dashboard.png",
+      "imageAlt": "Sinyal konversi terhubung ke platform iklan di Cekat.AI"
+    },
+    {
+      "title": "Signal Quality Lebih Baik, Performa Lebih Baik",
+      "body": "Algoritma iklan cuma sepintar data yang kamu suapi. Dengan sinyal konversi akurat dan lengkap dari CAPI, platform menemukan lebih banyak orang yang benar-benar beli, meningkatkan performa tanpa menyentuh kreatif atau budget-mu.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Performa iklan meningkat dari data konversi di Cekat.AI"
+    },
+    {
+      "title": "Turunkan Cost per Acquisition",
+      "body": "Saat platform iklan optimasi ke konversi nyata bukan klik, spend yang terbuang berkurang dan CAC turun. Kamu investasi ke campaign dan audiens yang betul-betul menghasilkan penjualan, dan potong yang cuma kelihatan sibuk.",
+      "image": "/images/marketing/improve-performance-and-lower-cac.png",
+      "imageAlt": "Cost per acquisition turun di Cekat.AI"
+    },
+    {
+      "title": "Lihat Ad Spend, ROAS, dan Revenue dalam Satu Tempat",
+      "body": "Begitu konversi mengalir balik, dashboard analitik menampilkan ad spend, ROAS, cost, dan revenue bersama, jadi setiap keputusan budget berpijak pada apa yang campaign benar-benar hasilkan, bukan tebakan.",
+      "image": "/images/marketing/allocate-budget-with-precision.png",
+      "imageAlt": "Dashboard ad spend dan ROAS di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Tiga Platform, Satu Integrasi",
+      "body": "Meta dan TikTok sama-sama menerima sinyal konversi nyata dari Cekat.AI, jadi setiap channel optimasi pakai data akurat yang sama."
+    },
+    {
+      "title": "Akurasi Server-Side",
+      "body": "Konversi dikirim server-to-server, menangkap penjualan yang dilewatkan pixel browser, termasuk yang closing di chat."
+    },
+    {
+      "title": "Dioptimasi untuk Revenue",
+      "body": "Menyuapi hasil nyata balik berarti platform mengejar pembeli, bukan klik, meningkatkan performa dan menurunkan CAC seiring waktu."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu Conversion API (CAPI)?",
+      "a": "Conversion API adalah cara mengirim event konversi langsung dari server-mu ke platform iklan, bukan cuma mengandalkan pixel browser. Cekat.AI memakainya untuk mengirim event penjualan dan leads nyata ke Meta dan TikTok agar optimasi iklan lebih akurat."
+    },
+    {
+      "q": "Kenapa CAPI lebih baik dari pixel browser saja?",
+      "a": "Pixel browser melewatkan konversi yang diblokir pengaturan privasi atau yang terjadi di luar situs, seperti di chat. CAPI menangkap event itu server-to-server, memberi platform iklan data lengkap agar mereka optimasi ke pembeli nyata."
+    },
+    {
+      "q": "Platform iklan mana saja yang terhubung ke Cekat.AI?",
+      "a": "Cekat.AI terhubung ke Meta dan TikTok, mengirim sinyal konversi nyata ke keduanya jadi tiap platform optimasi pakai data akurat yang sama tentang apa yang benar-benar mendorong penjualan."
+    },
+    {
+      "q": "Bagaimana ini menurunkan cost per acquisition saya?",
+      "a": "Saat platform optimasi ke konversi nyata bukan klik, mereka menemukan lebih banyak orang yang benar-benar beli dan lebih sedikit membuang budget ke yang tidak. Seiring waktu ini meningkatkan performa dan menurunkan CAC-mu."
+    },
+    {
+      "q": "Apakah menangkap konversi yang terjadi di chat?",
+      "a": "Ya. Itu keunggulan utamanya, leads dan order yang closing di WhatsApp atau chat lain dikirim balik sebagai event konversi, jadi iklanmu belajar dari penjualan yang tidak akan pernah dilihat pixel website."
+    },
+    {
+      "q": "Bisa lihat dampaknya ke performa iklan?",
+      "a": "Bisa. Dashboard analitik menampilkan ad spend, ROAS, cost, dan revenue bersama, jadi kamu bisa lihat bagaimana signal quality yang lebih baik berubah jadi campaign yang lebih perform dan mengambil keputusan budget dari data nyata."
+    },
+    {
+      "q": "Perlu developer untuk setup CAPI?",
+      "a": "Cekat.AI menangani pelacakan konversinya jadi kamu tidak perlu membangun integrasinya sendiri. Konversi dari chat dan order-mu dikirim ke platform iklan yang terhubung tanpa development khusus."
+    },
+    {
+      "q": "Apakah ini nyambung dengan fitur Cekat.AI lain?",
+      "a": "Ya. Konversi yang terlacak dari AI agent, order, dan CRM menyuapi platform iklan, sementara data yang sama menggerakkan dashboard analitik marketing-mu, satu tampilan terhubung dari klik iklan sampai penjualan closing."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Konversi Chat Jadi Ad Spend yang Lebih Cerdas",
+    "body": "Kirim sinyal penjualan nyata ke Meta dan TikTok, dan lihat performa naik saat CAC turun."
+  }
+}

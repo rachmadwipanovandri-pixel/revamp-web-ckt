@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "CS Otomatis Properti, Leads Malam Tetap Closing | CekatAI",
+    "description": "Solusi AI & CRM properti Cekat.ai: kualifikasi leads, jadwalkan survei, & follow-up 24/7. Threeland Property sukses naikkan revenue >50%!"
+  },
+  "hero": {
+    "badge": "Properti & Real Estate",
+    "title": "Leads Nanya Tengah Malam, Agen Tidur? Deal Tetap Jalan.",
+    "subtitle": "Cekat.AI mengkualifikasi setiap leads dari iklan, menjadwalkan kunjungan properti, dan follow-up otomatis di WhatsApp, 24/7, tanpa nambah tim sales",
+    "useCases": [
+      "Respons leads iklan",
+      "Kualifikasi leads",
+      "Jadwal kunjungan",
+      "Follow-up sampai closing"
+    ]
+  },
+  "definition": "Cekat.AI untuk properti adalah platform AI customer service untuk developer dan agensi real estate di Indonesia, mengkualifikasi leads dari iklan 24/7, menjadwalkan kunjungan properti langsung dari chat, dan melacak setiap deal dalam satu sales pipeline.",
+  "stats": [
+    {
+      "value": ">50%",
+      "label": "kenaikan revenue Threeland Property"
+    },
+    {
+      "value": "24/7",
+      "label": "leads terjawab, bahkan saat agen tidur"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Leads dari Iklan Dibales Hitungan Detik, Bukan Besok Pagi",
+      "body": "Leads yang chat jam 12 malam dan baru dibales jam 9 pagi biasanya sudah kontak tiga agensi lain. Cekat.AI membalas instan di WhatsApp, Instagram, dan web chat, menjawab pertanyaan soal unit, harga, dan lokasi dengan bahasa natural, jam berapa pun. Respons tercepat selalu jadi milikmu.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI menjawab pertanyaan properti secara instan"
+    },
+    {
+      "title": "Setiap Chat Jadi Leads Terkualifikasi di CRM",
+      "body": "AI menanyakan hal yang biasa ditanya agenmu, budget, lokasi incaran, tipe unit, kapan mau beli, dan semua jawabannya masuk ke kartu CRM yang dibuat otomatis, tanpa input manual. Timmu bangun pagi dengan daftar prospek terkualifikasi lengkap dengan riwayat chat, bukan tumpukan pesan belum dibaca.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads properti tertangkap dan terorganisir di CRM Cekat.AI"
+    },
+    {
+      "title": "Kunjungan Properti Terjadwal Langsung dari Chat",
+      "body": "Hubungkan kalender lewat integrasi API dan AI langsung booking jadwal kunjungan di dalam percakapan, tanggal terkonfirmasi, reminder terkirim, tanpa telepon bolak-balik. Prospek yang nanya tengah malam datang ke show unit hari Sabtu, dan reminder otomatis memastikan mereka benar-benar datang.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Booking kunjungan properti lewat integrasi API di Cekat.AI"
+    },
+    {
+      "title": "Follow-Up Jalan Otomatis Sampai Deal Bergerak",
+      "body": "Kebanyakan deal properti mati karena didiamkan, bukan ditolak. Cekat.AI mengirim follow-up sesuai perilaku tiap prospek, reminder sebelum promo berakhir, nudge saat leads mulai diam setelah kunjungan, dipicu jadwal, keyword chat, atau perubahan data customer. Tidak ada leads yang terlupakan cuma karena agen lagi sibuk.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Alur follow-up otomatis di Cekat.AI"
+    },
+    {
+      "title": "Satu Pipeline untuk Semua Deal, dari Leads sampai Closing",
+      "body": "Setiap prospek bergerak lewat Customer Stages, Visitor, Lead, Buyer, lengkap dengan saran langkah berikutnya, dan sales pipeline menampilkan progres deal secara real-time. Kamu tahu persis berapa kunjungan, negosiasi, dan closing yang sedang jalan tanpa perlu minta rekap ke siapa pun.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Pelacakan sales pipeline dan customer journey di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Developer & Agensi",
+      "title": "Kualifikasi Leads dan Kunjungan Unit, Jalan 24/7",
+      "body": "Leads dari iklan langsung ditanya budget, lokasi, dan tipe unit, lalu masuk pipeline per proyek. Kunjungan show unit terjadwal dari chat lengkap dengan reminder, dan follow-up otomatis menjaga deal tetap bergerak sampai closing."
+    },
+    {
+      "label": "Mall & Ritel",
+      "title": "Pengunjung dan Calon Tenant Terlayani di Satu Inbox",
+      "body": "Pertanyaan jam operasional, event, dan promo dijawab AI di WhatsApp dan Instagram tanpa antre. Inquiry leasing dari calon tenant terkualifikasi otomatis dan masuk pipeline tersendiri, sementara komplain fasilitas jadi tiket dengan penanggung jawab yang jelas."
+    },
+    {
+      "label": "Gedung Kantor",
+      "title": "Permintaan Tenant Jadi Tiket yang Terlacak",
+      "body": "Permintaan maintenance, akses, dan parkir dari tenant otomatis jadi tiket, ter-assign ke tim gedung yang tepat, dan terpantau sampai selesai. Pengumuman gedung terkirim serentak ke semua tenant lewat broadcast WhatsApp."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Kecepatan Menentukan Deal",
+      "body": "Di properti, agensi yang bales duluan biasanya yang dapat kunjungan. Cekat.AI bikin waktu responsmu hitungan detik, tiap jam, tiap hari."
+    },
+    {
+      "title": "Pipeline yang Tidak Bocor",
+      "body": "Setiap inquiry tertangkap, terkualifikasi, dan terlacak sampai closing. Deal sering gagal karena follow-up terlupa, Cekat.AI menutup celah itu."
+    },
+    {
+      "title": "Terbukti di Properti",
+      "body": "Threeland Property closing deal bahkan saat direkturnya tidur, revenue naik lebih dari 50%, karena tidak ada leads yang terlewat."
+    }
+  ],
+  "testimonial": {
+    "quote": "Revenue kami naik lebih dari 50%! Cekat AI membantu kami mengamankan kunjungan properti dan closing bahkan saat saya tidur, karena tidak ada leads yang terlewat.",
+    "name": "Adam Sulaiman",
+    "role": "President Director, Threeland Property",
+    "image": "/images/crm/adam-sulaiman.png"
+  },
+  "faq": [
+    {
+      "q": "Bagaimana CS otomatis bekerja untuk bisnis properti?",
+      "a": "Cekat.AI terhubung ke WhatsApp, Instagram, dan live chat website-mu, lalu menjawab pertanyaan properti secara instan dari pengetahuan yang kamu berikan, daftar unit, harga, lokasi, skema pembayaran. AI mengkualifikasi tiap leads, menjadwalkan kunjungan, follow-up otomatis, dan mencatat semuanya di pipeline CRM, jalan 24/7 mendampingi tim sales."
+    },
+    {
+      "q": "AI bisa mengkualifikasi leads yang masuk dari iklan?",
+      "a": "Bisa. Begitu seseorang klik iklanmu dan mulai chat, AI membalas dalam hitungan detik, menanyakan budget, lokasi, dan tipe unit, lalu menyimpan jawabannya ke kartu CRM secara otomatis. Cekat.AI juga terintegrasi CAPI dengan Meta dan TikTok, kualitas sinyal iklanmu makin bagus, performa campaign ikut naik."
+    },
+    {
+      "q": "Prospek bisa booking jadwal kunjungan properti lewat chat?",
+      "a": "Bisa. Lewat integrasi API dengan sistem jadwalmu, AI bisa booking, konfirmasi, dan reschedule kunjungan langsung di dalam percakapan, plus reminder otomatis sebelum jadwalnya, jadi lebih banyak prospek yang benar-benar datang ke show unit."
+    },
+    {
+      "q": "Gimana nasib leads yang tiba-tiba diam setelah nanya unit?",
+      "a": "Cekat.AI yang follow-up. Trigger otomatis berbasis waktu, keyword chat, atau perubahan data customer mengirim nudge di momen yang pas, reminder sebelum promo berakhir, sapaan setelah kunjungan, jadi leads aktif lagi tanpa agen harus mengingat satu per satu."
+    },
+    {
+      "q": "Kapan agen manusia mengambil alih percakapan?",
+      "a": "Saat negosiasi atau permintaan kompleks butuh manusia, percakapan dialihkan ke timmu lengkap dengan seluruh riwayat chat. Dengan AI working hours, agen menangani chat di jam online dan AI meng-cover sisanya, handoff otomatis dan konteksnya terbawa penuh."
+    },
+    {
+      "q": "Sales pipeline bisa dipantau di Cekat.AI?",
+      "a": "Bisa. Setiap leads bergerak lewat Customer Stages, Visitor, Lead, Buyer, dengan saran langkah berikutnya, dan sales pipeline menampilkan progres tiap deal secara real-time. Filter dan board memudahkanmu memilah per proyek, per agen, atau per tahap."
+    },
+    {
+      "q": "Channel apa saja yang bisa dihubungkan bisnis properti?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, live chat website, dan channel API, semua masuk ke satu inbox dengan satu riwayat interaksi per prospek. Leads yang pindah dari Instagram ke WhatsApp tidak perlu mengulang cerita."
+    },
+    {
+      "q": "Hasil apa yang sudah dirasakan bisnis properti dengan Cekat.AI?",
+      "a": "Threeland Property mencatat revenue naik lebih dari 50% setelah pakai Cekat.AI. Presiden direkturnya menyebut platform ini membantu mengamankan kunjungan properti dan closing bahkan saat ia tidur, karena tidak ada leads yang terlewat di jam berapa pun."
+    },
+    {
+      "q": "Berapa lama setup untuk bisnis properti?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin info proyek, price list, dan SOP ke knowledge base, dan AI langsung menjawab dengan akurat. Tanpa coding sama sekali; semudah briefing admin CS baru."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Chat Tengah Malam Jadi Deal yang Diteken",
+    "body": "Lihat bagaimana bisnis properti closing lebih cepat dengan Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

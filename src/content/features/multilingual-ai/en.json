@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "Multilingual AI Agent, One AI for Every Language | CekatAI",
+    "description": "One AI agent that serves customers in any language they write in, 24/7. Minori Group handled 100% of inquiries across 2 countries and grew revenue +60%."
+  },
+  "hero": {
+    "badge": "Multilingual Customer Service",
+    "title": "One AI Agent That Speaks Every Customer's Language",
+    "subtitle": "Serve customers in the language they write in, instantly, naturally, on WhatsApp, Instagram, and web chat, 24/7, without hiring a CS team for every market"
+  },
+  "definition": "Multilingual AI Agent is a Cekat.AI feature that serves customers in multiple languages with a single AI agent, it understands intent and context in the language each customer writes, replies naturally in that same language, and works 24/7 across WhatsApp, Instagram DM, Facebook Messenger, and website live chat.",
+  "stats": [
+    { "value": "+60%", "label": "revenue growth at Minori Group" },
+    { "value": "+80%", "label": "conversion increase with multilingual AI" },
+    { "value": "100%", "label": "of inquiries handled across 2 timezones" },
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" }
+  ],
+  "benefits": [
+    {
+      "title": "Reply in the Customer's Language, Not Yours",
+      "body": "Customers buy in the language they think in. Cekat.AI's agent understands intent and context, not keywords, so a question in Indonesian gets a natural Indonesian reply and a question in English gets a natural English one, from the same agent in the same inbox. No copy-pasting through a translator, no stiff machine-translation tone.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI agent replying to customers in multiple languages"
+    },
+    {
+      "title": "Cover Two Timezones Without a Night Shift",
+      "body": "Your team can't be awake in every timezone your customers live in. With AI working hours, your agents handle chats when they're online and the AI takes over after hours, with automatic handoff that carries the full conversation, so nobody starts from zero the next morning.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours routing between team and AI agent in Cekat.AI"
+    },
+    {
+      "title": "Every Market, One Inbox",
+      "body": "WhatsApp, Instagram DM, Facebook Messenger, and website live chat flow into one inbox, whatever language or country the message comes from. Fast search, auto-labeling, and case prioritization keep multi-market volume organized, and role-based access means each team only sees the conversations they own.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "All customer channels connected to one Cekat.AI inbox"
+    },
+    {
+      "title": "Train It Once, in Your Own Words",
+      "body": "There is no separate training per language. Paste your SOPs, product details, and business rules once, and that knowledge base powers accurate answers in every conversation, whichever language the customer opens with. Building the agent takes about 5 minutes and zero code.",
+      "image": "/images/chat/train-your-ai-agent.png",
+      "imageAlt": "Training a Cekat.AI agent by pasting SOPs and business info"
+    },
+    {
+      "title": "How Minori Group Served Japan and Indonesia With One Small Team",
+      "body": "Minori Group ran customer service across two languages and two timezones with a small CS team, inquiries slipped through outside working hours, and every new market meant more hiring. With Cekat.AI's multilingual agent handling conversations in both languages, 100% of inquiries now get answered, conversion rose +80%, and revenue grew +60%, without adding headcount."
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Intent AI",
+      "title": "Understands Meaning, Not Keywords",
+      "body": "Keyword bots break the moment customers phrase things differently, and across languages, they always do. Cekat.AI's humanlike agent reads intent and context, so the same question asked five ways in two languages still gets the right answer."
+    },
+    {
+      "label": "Auto Handoff",
+      "title": "Humans Take Over With Full Context",
+      "body": "When a conversation needs your team, it escalates automatically with the entire chat history attached, whatever language it happened in. Customers never repeat themselves, and your staff answer with everything in front of them."
+    },
+    {
+      "label": "Specialized Agents",
+      "title": "One Agent per Job, Not per Language",
+      "body": "Instead of duplicating agents for every language, you create specialized agents by function, sales, support, billing, and each one serves customers multilingually. Less to maintain, nothing lost in translation."
+    },
+    {
+      "label": "AI Tools",
+      "title": "Close the Sale Inside the Chat",
+      "body": "The agent does more than talk. In-chat AI tools check shipping costs, generate payment QR codes, and edit images, so a conversation that starts in any language can end in a completed order."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Proven Across Borders",
+      "body": "Minori Group runs Japan–Indonesia customer service on Cekat.AI, 100% of inquiries handled in two languages, +60% revenue, +80% conversion."
+    },
+    {
+      "title": "Human Where It Matters",
+      "body": "The AI carries the routine volume in every language; complex or sensitive conversations route to your team with full context attached."
+    },
+    {
+      "title": "Compliant by Design",
+      "body": "Cekat.AI is an official Meta Business Partner and complies with Indonesia's Personal Data Protection Law (UU PDP) in handling customer data."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a multilingual AI agent?",
+      "a": "A multilingual AI agent is an AI customer service agent that can understand and reply to customers in multiple languages. On Cekat.AI, one agent detects the intent behind each message and answers naturally in the language the customer used, across WhatsApp, Instagram DM, Facebook Messenger, and website live chat, 24/7."
+    },
+    {
+      "q": "Which languages can the Cekat.AI agent handle?",
+      "a": "The agent is multilingual by design: it replies in the language each customer writes in, rather than being locked to a preset list. Minori Group, for example, uses it to serve customers across Japan and Indonesia, two languages and two timezones, with a single small CS team."
+    },
+    {
+      "q": "Do I need a separate AI agent for each language?",
+      "a": "No. One Cekat.AI agent serves every language your customers write in, powered by one knowledge base. If you want to split agents, you split them by function, sales, support, billing, not by language, so there is far less to build and maintain."
+    },
+    {
+      "q": "How did Minori Group use multilingual AI?",
+      "a": "Minori Group operates services between Japan and Indonesia, two languages, two timezones, and a small CS team that couldn't cover both around the clock. After moving to Cekat.AI, the multilingual AI agent handles 100% of inquiries, conversion increased +80%, and revenue grew +60%, all without hiring more staff."
+    },
+    {
+      "q": "Will the replies sound natural, or like machine translation?",
+      "a": "The agent is built to be humanlike: it understands intent and context instead of matching keywords, and composes its reply natively in the customer's language. That is different from bolting a translator onto a scripted bot, answers read like they came from a fluent CS admin."
+    },
+    {
+      "q": "What happens when a customer needs a human?",
+      "a": "The conversation hands off to your team automatically, with the full chat history attached regardless of language. You can also set AI working hours, your team answers during online hours, the AI covers everything after, so the handoff between human and AI is seamless in both directions."
+    },
+    {
+      "q": "Which channels does the multilingual agent work on?",
+      "a": "WhatsApp through the official Business API, Instagram DM, Facebook Messenger, website live chat, and custom API channels, all unified in one inbox. A customer can ask in any language on any channel and get the same quality of answer from the same agent."
+    },
+    {
+      "q": "How do I train the AI for my business?",
+      "a": "Paste your SOPs and business information into the knowledge base, that single source powers answers in every language customers use. Building a working agent takes about 5 minutes with no coding; Cekat.AI describes it as being as easy as briefing a CS admin."
+    },
+    {
+      "q": "Can the AI serve customers in different timezones?",
+      "a": "Yes. The AI answers 24/7, so a customer messaging from another country at 3 AM your time gets an instant reply. With AI working hours, you decide when your human team is on duty and the AI automatically covers every hour outside that window."
+    },
+    {
+      "q": "Is customer data handled safely across markets?",
+      "a": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling and managing user data, and is an official Meta Business Partner. Inside your workspace, role-based team access controls who can see which conversations."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Language Barriers Into New Revenue",
+    "body": "Let one AI agent serve every market you sell to, in the customer's own language, 24/7, without new hires."
+  }
+}

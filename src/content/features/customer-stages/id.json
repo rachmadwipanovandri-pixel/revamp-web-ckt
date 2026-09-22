@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Tahapan Customer, Antar Tiap Kontak Sampai Jadi Buyer | CekatAI",
+    "description": "Pantau kontak bergerak dari Visitor, Lead, ke Buyer otomatis, plus saran langkah berikutnya biar konversi naik. 3.000+ bisnis tahu posisi tiap customer."
+  },
+  "hero": {
+    "badge": "Visitor → Lead → Buyer",
+    "title": "Lihat Posisi Tiap Customer, dan Apa yang Bikin Dia Maju",
+    "subtitle": "Cekat.AI otomatis nempatin tiap kontak sebagai Visitor, Lead, atau Buyer dan ngasih saran langkah berikutnya, jadi nggak ada yang mandek di tengah jalan dan makin banyak chat yang berujung closing"
+  },
+  "definition": "Tahapan Customer adalah fitur Cekat.AI yang otomatis menggerakkan tiap kontak melewati tahap Visitor, Lead, dan Buyer serta menyarankan langkah berikutnya untuk mendorongnya sampai closing.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "tahapan update real-time" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Tahu Persis Posisi Tiap Customer",
+      "body": "Daftar kontak yang datar nggak ngasih tahu siapa yang udah mepet mau beli. Cekat.AI nempatin tiap kontak sebagai Visitor, Lead, atau Buyer, jadi sekali lihat pipeline langsung kelihatan berapa yang masih lihat-lihat, mulai panas, atau siap closing, bukan satu daftar panjang yang harus kamu tebak dari ingatan.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Tahapan customer dari Visitor ke Lead ke Buyer di Cekat.AI"
+    },
+    {
+      "title": "Sistemnya Kasih Tahu Langkah Berikutnya",
+      "body": "Tahu satu lead lagi panas cuma berguna kalau kamu tahu harus ngapain. Tiap profil bawa saran langkah berikutnya yang pas sama tahap customer, follow-up, penawaran, atau ajakan balik ke checkout. Tim kamu berhenti nebak-nebak mau kirim apa dan mulai gerak dari petunjuk yang dirancang buat naikin konversi.",
+      "image": "/images/home/your-crm-built-for-growth-and-real-conversations.png",
+      "imageAlt": "Saran langkah berikutnya di profil customer Cekat.AI"
+    },
+    {
+      "title": "Tahapan Gerak Sendiri Sesuai Aksi Customer",
+      "body": "Kamu nggak perlu seret-seret kartu antar kolom biar pipeline tetap jujur. Saat customer chat, beli, dan lihat-lihat, Cekat.AI otomatis majuin mereka dari Visitor ke Lead ke Buyer. Perjalanannya nggambarin perilaku nyata secara real-time, jadi tampilannya selalu akurat tanpa perlu diurus manual.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Kontak maju melewati tahapan secara otomatis di Cekat.AI"
+    },
+    {
+      "title": "Kenali Leads yang Mau Beli, dan yang Mulai Kabur",
+      "body": "Kalau tiap kontak udah punya tahap, prioritas jadi jelas. Kamu lihat leads mana yang tinggal satu dorongan buat beli dan buyer mana yang mulai diam sejak order terakhir. Filter dan boards bikin tiap grup ketarik dalam hitungan detik, jadi kamu gerak selagi momennya masih ada, bukan pas udah lewat.",
+      "image": "/images/crm/manage-work-with-boards.png",
+      "imageAlt": "Filter leads dan buyer per tahap lewat boards di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Tiga Tahap",
+      "title": "Visitor, Lead, dan Buyer",
+      "body": "Tiap kontak ada di salah satu dari tiga tahap yang jelas, Visitor, Lead, atau Buyer. Daftar kontak yang tadinya nggak berbentuk berubah jadi perjalanan yang bisa kamu baca, jadi satu tim punya bahasa yang sama soal posisi customer."
+    },
+    {
+      "label": "Gerak Otomatis",
+      "title": "Maju Berdasarkan Perilaku Nyata",
+      "body": "Kontak pindah tahap otomatis begitu berinteraksi, chat pertama, pertanyaan yang menandai minat, order kelar. Nggak ada seret manual, nggak ada pipeline basi, nggak ada kartu nyangkut di kolom yang salah karena nggak ada yang update."
+    },
+    {
+      "label": "Langkah Lanjut",
+      "title": "Saran Aksi di Tiap Profil",
+      "body": "Tiap tahap datang dengan saran langkah berikutnya buat mendorong relasi maju. Tim kamu selalu tahu gerakan paling bernilai untuk tiap customer, dan itulah yang bikin makin banyak percakapan berubah jadi closing."
+    },
+    {
+      "label": "Pipeline",
+      "title": "Progress Penjualan Real-Time",
+      "body": "Tahapan terangkum jadi sales pipeline yang hidup, jadi kamu pantau progress di seluruh funnel real-time dan lihat persis di mana deal numpuk atau mandek, insight yang kamu butuhin buat buka jalan revenue."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Tiap Tahap Kelihatan",
+      "body": "Visitor, Lead, dan Buyer tampil sekali lihat, jadi tim kamu selalu tahu posisi tiap relasi tanpa harus ngubek-ubek chat."
+    },
+    {
+      "title": "Aksi Berikutnya Terpandu",
+      "body": "Tiap tahap nyaranin langkah terbaik berikutnya, ngubah daftar kontak yang pasif jadi petunjuk yang mendorong customer menuju pembelian."
+    },
+    {
+      "title": "Gerak dengan Sendirinya",
+      "body": "Kontak maju melewati tahapan otomatis dari perilaku nyata, jadi perjalanannya tetap akurat tanpa ada yang ngurus manual."
+    }
+  ],
+  "testimonial": {
+    "quote": "Peluang closing sangat tinggi",
+    "name": "Wiji Astuti",
+    "role": "Head of Customer Experience, Rumah Zakat",
+    "image": "/images/home/testimonial-wiji-astuti.jpg"
+  },
+  "faq": [
+    {
+      "q": "Apa itu tahapan customer journey?",
+      "a": "Tahapan customer journey adalah langkah-langkah yang dilewati kontak dalam perjalanannya jadi pelanggan. Di Cekat.AI, tiap kontak otomatis ditempatkan sebagai Visitor, Lead, atau Buyer, dengan saran aksi berikutnya di tiap profil, jadi kamu bisa lihat siapa yang mepet mau beli dan apa yang harus dilakukan untuk membawanya ke sana."
+    },
+    {
+      "q": "Apa saja tahapannya di Cekat.AI?",
+      "a": "Cekat.AI pakai tiga tahap: Visitor, Lead, dan Buyer. Visitor itu kontak awal, Lead itu yang mulai nunjukin niat beli, dan Buyer itu yang sudah membeli. Tiap tahap dilengkapi saran langkah berikutnya, jadi tim kamu selalu tahu gerakan yang tepat buat memajukan relasi."
+    },
+    {
+      "q": "Gimana customer pindah antar tahapan?",
+      "a": "Otomatis, berdasarkan perilaku nyata. Saat kontak chat, nanya soal produk, atau menyelesaikan order, Cekat.AI majuin mereka dari Visitor ke Lead ke Buyer dengan sendirinya. Nggak ada seret manual antar kolom, jadi pipeline nggambarin yang beneran terjadi, bukan yang sempat diinget buat di-update."
+    },
+    {
+      "q": "Apa itu saran langkah berikutnya?",
+      "a": "Tiap profil customer bawa saran aksi berikutnya yang pas sama tahapnya, pesan follow-up, penawaran yang tertarget, atau ajakan balik ke checkout. Alih-alih nebak mau kirim apa, tim kamu gerak dari petunjuk yang dirancang buat memajukan customer dan naikin konversi."
+    },
+    {
+      "q": "Gimana tahapan customer bantu konversi naik?",
+      "a": "Bikin prioritas jadi jelas dan hapus tebak-tebakan. Kamu langsung lihat leads mana yang tinggal satu langkah buat beli, dan tiap profil ngasih tahu gerakan berikutnya. Fokus di kontak yang tepat pada momen yang tepat itulah yang menaikkan konversi, bukan nyebar follow-up asal banyak."
+    },
+    {
+      "q": "Bisa lihat seluruh pipeline sekaligus?",
+      "a": "Bisa. Tahapan terangkum jadi sales pipeline real-time, jadi kamu lihat berapa kontak yang Visitor, Lead, dan Buyer serta pantau progress di seluruh funnel secara live. Gampang buat nemuin di mana deal numpuk atau mandek, dan di situlah perhatianmu paling berbuah."
+    },
+    {
+      "q": "Tahapan customer nyambung dengan AI agent?",
+      "a": "Nyambung. AI agent Cekat.AI baca profil customer yang sama dengan yang tim kamu lihat, termasuk tahap dan riwayatnya, jadi tiap percakapan ditangani dengan konteks penuh. Saat customer beraksi, kerja si agent juga ngisi data yang bikin tahapnya tetap terkini."
+    },
+    {
+      "q": "Bisa filter customer per tahap?",
+      "a": "Bisa. Dengan filter dan boards kamu bisa narik grup apa pun dalam hitungan detik, semua Leads aktif, Buyer yang mulai diam, atau Visitor dari campaign terakhir. Segmen yang sama itu jadi bahan campaign broadcast dan follow-up, jadi tampilan tahap ini mendorong aksi, bukan cuma laporan."
+    },
+    {
+      "q": "Perlu atur tahapannya manual nggak?",
+      "a": "Nggak. Kontak ditangkap dan ditempatkan ke tahap otomatis dari interaksi di WhatsApp, Instagram, Messenger, dan live chat, dan maju sendiri saat perilakunya berubah. Nggak ada input manual buat bikin perjalanannya tetap terkini, jadi walau hari lagi sibuk pipeline-nya tetap akurat."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Daftar Kontak yang Datar Jadi Pipeline yang Bergerak",
+    "body": "Biarkan Cekat.AI menempatkan tiap customer ke tahapnya otomatis dan menyarankan gerakan berikutnya, jadi makin banyak percakapan yang berujung closing."
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "Solusi AI untuk Customer Service | Cekat.AI",
+    "description": "Satu inbox untuk semua channel, AI menjawab pertanyaan berulang 24/7, dan kasus sulit sampai ke agen manusia lengkap dengan konteks. Dipakai 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "Solusi untuk Tim Customer Service",
+    "title": "Pelanggan Nanya Kapan Saja, Terjawab Kapan Saja",
+    "subtitle": "Semua channel masuk ke satu inbox. AI menjawab pertanyaan yang berulang, tim-mu fokus ke kasus yang benar-benar butuh manusia, dan tidak ada chat yang tenggelam."
+  },
+  "definition": "Solusi customer service dari Cekat.AI menyatukan WhatsApp, Instagram, dan channel lain ke satu inbox, membiarkan AI menjawab pertanyaan berulang 24/7, dan meneruskan kasus sulit ke agen manusia lengkap dengan konteks dan tiketnya.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "pertanyaan pelanggan terjawab"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi pelanggan ditangani"
+    },
+    {
+      "value": "100%",
+      "label": "chat ter-cover 24/7 di Holywings"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "painPoints": {
+    "heading": "Yang Membuat Skor Layanan Turun Pelan-Pelan",
+    "items": [
+      {
+        "icon": "Clock",
+        "title": "Antrean menumpuk di jam sibuk",
+        "body": "Chat datang lebih cepat daripada tim bisa mengetik. Pelanggan menunggu, lalu bertanya lagi, dan antrean makin panjang."
+      },
+      {
+        "icon": "Layers",
+        "title": "Channel terpisah, jawaban beda-beda",
+        "body": "WhatsApp, Instagram, dan email dipegang orang berbeda. Pertanyaan yang sama dijawab dengan versi yang berbeda."
+      },
+      {
+        "icon": "LifeBuoy",
+        "title": "Komplain hilang tanpa tiket",
+        "body": "Keluhan diteruskan lewat grup internal lalu tenggelam. Tidak ada yang tahu statusnya sampai pelanggannya marah."
+      }
+    ]
+  },
+  "compare": {
+    "heading": "Bedanya Pakai Cekat.AI dan Tidak",
+    "body": "Volume chat yang sama, pengalaman pelanggan yang berbeda. Pilih tab untuk membandingkan.",
+    "withLabel": "Dengan Cekat.AI",
+    "withoutLabel": "Tanpa Cekat.AI",
+    "with": {
+      "title": "Semua terjawab, yang sulit sampai ke manusia",
+      "bullets": [
+        "Pertanyaan berulang dijawab AI 24/7 dari knowledge base resmi",
+        "Semua channel masuk satu inbox dengan riwayat yang menyatu",
+        "Komplain otomatis jadi tiket dan terlacak sampai selesai"
+      ],
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Eskalasi mulus dari AI ke agen di Cekat.AI"
+    },
+    "without": {
+      "title": "Pelanggan menunggu dan mengulang cerita",
+      "bullets": [
+        "Chat di jam sibuk terjawab berjam-jam kemudian",
+        "Pelanggan mengulang cerita setiap pindah channel atau ganti agen",
+        "Komplain diteruskan lewat grup dan hilang tanpa status"
+      ]
+    }
+  },
+  "midCta": {
+    "heading": "Jawab Pelanggan Lebih Cepat Mulai Hari Ini",
+    "body": "AI menangani yang berulang, tim-mu menangani yang penting. Coba gratis atau chat kami dulu."
+  },
+  "benefits": [
+    {
+      "title": "Semua Channel, Satu Layar",
+      "body": "WhatsApp, Instagram, Messenger, Telegram, dan live chat web masuk ke satu inbox yang sama. Tim tidak lagi pindah-pindah aplikasi, dan tidak ada channel yang kelupaan dicek.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Semua channel chat masuk ke satu inbox Cekat.AI"
+    },
+    {
+      "title": "Pertanyaan Berulang Dijawab AI, Bukan Copy-Paste Tim",
+      "body": "Cek ongkir, status pesanan, jam buka, cara retur: pertanyaan yang sama datang ratusan kali sehari. AI menjawabnya dari knowledge base-mu, konsisten dan langsung, tanpa menyentuh antrean tim.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI menjawab pertanyaan pelanggan yang berulang"
+    },
+    {
+      "title": "Kasus Sulit Sampai ke Manusia dengan Konteks",
+      "body": "Komplain dan kasus rumit dieskalasi otomatis ke agen, lengkap dengan riwayat percakapan. Pelanggan tidak perlu mengulang cerita, dan agen tidak mulai dari nol.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Eskalasi chat dari AI ke agen manusia dengan riwayat lengkap"
+    },
+    {
+      "title": "Tiket Terbuat dan Terarah Sendiri",
+      "body": "Laporan pelanggan otomatis jadi tiket dan diarahkan ke tim yang tepat, teknisi, gudang, atau billing. Statusnya terlacak sampai selesai, bukan hilang di grup chat internal.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Tiket terbuat otomatis dari percakapan pelanggan"
+    },
+    {
+      "title": "Tahu Apa yang Paling Sering Ditanyakan",
+      "body": "Dashboard menunjukkan topik terbanyak, jam tersibuk, dan performa tiap agen. Kamu tahu jawaban mana yang perlu diperbaiki dan kapan harus menambah orang, dari data, bukan perasaan.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "Analitik percakapan customer service di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Cepat di Jam Sibuk",
+      "body": "Antrean chat panjang tidak saling menunggu. AI menjawab berbarengan, bukan satu-satu."
+    },
+    {
+      "title": "Manusia untuk Momen Sulit",
+      "body": "Komplain dan kasus sensitif dieskalasi ke agen dengan riwayat lengkap, di aturan yang kamu tentukan."
+    },
+    {
+      "title": "Terukur Tiap Minggu",
+      "body": "Topik terbanyak, jam tersibuk, dan performa agen kelihatan di dashboard, siap jadi bahan evaluasi."
+    }
+  ],
+  "testimonial": {
+    "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+    "name": "Tantan Supriatna",
+    "role": "Customer Relation Department Head, Rumah Zakat",
+    "image": "/images/chat/tantan-supriatna.png"
+  },
+  "faq": [
+    {
+      "q": "Apa itu solusi customer service Cekat.AI?",
+      "a": "Satu inbox untuk semua channel chat, AI agent yang menjawab pertanyaan berulang 24/7, sistem tiket, dan dashboard performa, dalam satu platform yang sama."
+    },
+    {
+      "q": "Dari mana AI tahu jawaban soal bisnis kami?",
+      "a": "Dari knowledge base yang kamu unggah: dokumen produk, kebijakan retur, daftar harga, atau halaman website. AI menjawab hanya dari sumber itu, dan kamu bisa memperbaruinya kapan saja."
+    },
+    {
+      "q": "Bagaimana kalau AI tidak tahu jawabannya?",
+      "a": "AI tidak mengarang. Sesuai aturanmu, dia bertanya balik untuk memperjelas atau langsung mengoper ke agen manusia dengan riwayat percakapan lengkap."
+    },
+    {
+      "q": "Bisakah AI aktif hanya di luar jam kerja?",
+      "a": "Bisa. Atur jam kerja AI: misalnya tim menangani chat di jam kantor dan AI mengambil alih setelahnya, seperti yang dilakukan Rumah Zakat."
+    },
+    {
+      "q": "Channel apa saja yang didukung?",
+      "a": "WhatsApp, Instagram, Facebook Messenger, Telegram, dan live chat website, semuanya masuk ke inbox yang sama dengan riwayat yang menyatu."
+    },
+    {
+      "q": "Bisakah satu nomor WhatsApp dipakai banyak agen?",
+      "a": "Bisa. Lewat WhatsApp Business API, satu nomor bisa dilayani banyak agen sekaligus dengan pembagian percakapan yang rapi, tanpa rebutan HP."
+    },
+    {
+      "q": "Metrik apa saja yang bisa dipantau?",
+      "a": "Volume chat per channel dan per jam, topik yang paling sering muncul, kecepatan respons, dan beban tiap agen, semuanya di dashboard yang sama."
+    },
+    {
+      "q": "Apakah AI bisa menjawab dalam bahasa selain Indonesia?",
+      "a": "Bisa. AI membalas mengikuti bahasa yang dipakai pelanggan di chat, jadi bisnis yang melayani pelanggan lintas negara tidak perlu tim terpisah per bahasa."
+    }
+  ],
+  "cta": {
+    "heading": "Pelanggan Tidak Suka Menunggu. Sekarang Tidak Perlu.",
+    "body": "AI menjawab yang berulang, tim-mu menangani yang penting. Coba gratis, atau chat tim kami lewat WhatsApp."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Conversion API Integration for Meta & TikTok | CekatAI",
+    "description": "Send real conversion signals from chats and orders to Meta and TikTok. Better signal quality means better ad performance and lower CAC."
+  },
+  "hero": {
+    "badge": "CAPI Integration",
+    "title": "Feed Your Ads the Real Conversions, Not Just Clicks",
+    "subtitle": "Cekat.AI connects directly to Meta and TikTok via Conversion API, sending real sales signals back so the platforms optimize toward revenue, not vanity metrics"
+  },
+  "definition": "Conversion API (CAPI) integration in Cekat.AI sends real conversion events, leads, orders, and sales from your chats, server-to-server to Meta and TikTok, improving signal quality so ad platforms optimize toward actual revenue and your cost per acquisition drops.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "2", "label": "ad platforms connected: Meta, TikTok" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Tell the Ad Platforms What Actually Converted",
+      "body": "Browser pixels miss conversions that happen in chat, so your ads optimize on incomplete data. Cekat.AI sends real conversion events, the lead that replied, the order that closed, server-to-server, so Meta and TikTok learn from what truly drove revenue.",
+      "image": "/images/marketing/review-all-meta-ads-in-one-dashboard.png",
+      "imageAlt": "Conversion signals connected to ad platforms in Cekat.AI"
+    },
+    {
+      "title": "Better Signal Quality, Better Performance",
+      "body": "Ad algorithms are only as smart as the data you feed them. With accurate, complete conversion signals from CAPI, the platforms find more of the people who actually buy, improving performance without touching your creative or budget.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Improved ads performance from conversion data in Cekat.AI"
+    },
+    {
+      "title": "Lower Your Cost per Acquisition",
+      "body": "When ad platforms optimize toward real conversions instead of clicks, wasted spend falls and CAC drops. You invest in the campaigns and audiences that genuinely produce sales, and cut the ones that only look busy.",
+      "image": "/images/marketing/improve-performance-and-lower-cac.png",
+      "imageAlt": "Lower customer acquisition cost in Cekat.AI"
+    },
+    {
+      "title": "See Ad Spend, ROAS, and Revenue in One Place",
+      "body": "Once conversions flow back, the analytics dashboard shows ad spend, ROAS, cost, and revenue together, so every budget decision is grounded in what campaigns actually earn, not guesswork.",
+      "image": "/images/marketing/allocate-budget-with-precision.png",
+      "imageAlt": "Ad spend and ROAS dashboard in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Three Platforms, One Integration",
+      "body": "Meta and TikTok all receive real conversion signals from Cekat.AI, so every channel optimizes on the same accurate data."
+    },
+    {
+      "title": "Server-Side Accuracy",
+      "body": "Conversions are sent server-to-server, capturing sales that browser pixels miss, including the ones that close in chat."
+    },
+    {
+      "title": "Optimized for Revenue",
+      "body": "Feeding real outcomes back means platforms chase buyers, not clicks, improving performance and lowering CAC over time."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is Conversion API (CAPI)?",
+      "a": "Conversion API is a way to send conversion events directly from your server to ad platforms, instead of relying only on browser pixels. Cekat.AI uses it to send real sales and lead events to Meta and TikTok for more accurate ad optimization."
+    },
+    {
+      "q": "Why is CAPI better than a browser pixel alone?",
+      "a": "Browser pixels miss conversions blocked by privacy settings or that happen off-site, like in a chat. CAPI captures those events server-to-server, giving ad platforms complete data so they optimize toward real buyers."
+    },
+    {
+      "q": "Which ad platforms does Cekat.AI connect to?",
+      "a": "Cekat.AI connects to Meta and TikTok, sending real conversion signals to both so each platform optimizes on the same accurate data about what actually drives sales."
+    },
+    {
+      "q": "How does this lower my cost per acquisition?",
+      "a": "When platforms optimize toward real conversions instead of clicks, they find more people who actually buy and waste less budget on those who don't. Over time this improves performance and lowers your CAC."
+    },
+    {
+      "q": "Does it capture conversions that happen in chat?",
+      "a": "Yes. That's a key advantage, leads and orders that close in WhatsApp or other chats are sent back as conversion events, so your ads learn from sales a website pixel would never see."
+    },
+    {
+      "q": "Can I see the impact on ad performance?",
+      "a": "Yes. The analytics dashboard shows ad spend, ROAS, cost, and revenue together, so you can see how improved signal quality translates into better-performing campaigns and make budget decisions from real data."
+    },
+    {
+      "q": "Do I need a developer to set up CAPI?",
+      "a": "Cekat.AI handles the conversion tracking so you don't have to build the integration yourself. Conversions from your chats and orders are sent to the connected ad platforms without custom development."
+    },
+    {
+      "q": "Does this work with the rest of Cekat.AI?",
+      "a": "Yes. Conversions tracked from the AI agent, orders, and CRM feed the ad platforms, while the same data powers your marketing analytics dashboard, one connected view from ad click to closed sale."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Chat Conversions Into Smarter Ad Spend",
+    "body": "Send real sales signals to Meta and TikTok, and watch performance rise as CAC falls."
+  }
+}

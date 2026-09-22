@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "UTM & wa.me Generator: Every Link Accounted For | Cekat.AI",
+    "description": "Build custom UTM and wa.me links from inside Cekat.AI. Organic posts, UGC, and creator bios become measurable sources, all the way to the chat and the closing."
+  },
+  "hero": {
+    "badge": "UTM & wa.me Generator",
+    "title": "Every Link You Share Is Accounted For",
+    "subtitle": "Build UTM and wa.me links in one place, drop them into organic posts, creator UGC, or any bio. When they get clicked, you know which link delivered the chat, and which chat became a sale."
+  },
+  "definition": "The UTM & wa.me Generator in Cekat.AI builds trackable links without hand-assembling parameters: custom UTM links for any page and wa.me links that open a chat with your WhatsApp number, both carrying a source readable on dashboards and attached to contacts.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "chats from any link arrive attributed"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "interactions became recorded contacts"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Assemble UTMs Without a Formula Spreadsheet",
+      "body": "Source, medium, campaign, and custom parameters are filled in through a form, not stitched by hand until something typos. The links come out consistent, so reports stop fracturing over one capital letter.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Assembling UTM parameters through a generator form"
+    },
+    {
+      "title": "wa.me Links That Know Their Origin",
+      "body": "Create wa.me links that open a chat straight to your business number, source attached. Chats from your Instagram bio and from an event poster stop blending into one indistinguishable pile.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "A wa.me link opening a chat with its source attached"
+    },
+    {
+      "title": "Organic Content Finally Gets a Verdict",
+      "body": "Organic posts and creator UGC are usually treated as free and unmeasurable at once. Give each its own link, and you learn which creator delivers chats, not just likes.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Organic and UGC content measured through tracked links"
+    },
+    {
+      "title": "The Source Sticks Through to Closing",
+      "body": "Clicks on tracked links are read by Cekat Tracker, tied to their chat, and attached to the CRM contact. Which link earns gets answered with sales, not clicks.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Link attribution holding from click to closing"
+    },
+    {
+      "title": "One Campaign, Many Doors, One Report",
+      "body": "Spread one campaign across channels, bios, broadcasts, offline posters, each with its own link. The dashboard reunites the results per source, so evaluation stops being a guess.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Many campaign channels read in one report"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Consistency Without Extra Discipline",
+      "body": "The generator keeps parameter naming uniform, the one thing UTM spreadsheets never manage."
+    },
+    {
+      "title": "Organic and UGC Get Measured",
+      "body": "Channels treated as a bonus finally get numbers: chats and closings, not just reach."
+    },
+    {
+      "title": "One System With Tracker and CRM",
+      "body": "Generated links are read by Cekat Tracker and attach to contacts, so nothing lives in a separate tool."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the UTM & wa.me Generator in Cekat.AI?",
+      "a": "A tool for building trackable links without hand-assembling parameters: UTM links for any page and wa.me links that open a chat with your business WhatsApp, both with a source readable through to the CRM."
+    },
+    {
+      "q": "How is it different from building UTMs by hand?",
+      "a": "The parameters are the same; the difference is consistency. The form keeps naming uniform, so reports stop splitting over spelling or capitalization differences between teammates."
+    },
+    {
+      "q": "What are tracked wa.me links for?",
+      "a": "So chats arriving via a bio, a poster, or creator content reveal their door. Without them, every WhatsApp chat looks identical and the channel doing the work never gets credit."
+    },
+    {
+      "q": "Can it measure UGC and creator content?",
+      "a": "Yes, that is one of its main uses. Give each creator their own link and you read chats and closings per creator, not just their content's impressions."
+    },
+    {
+      "q": "Are custom parameters supported?",
+      "a": "Yes. Beyond the standard source, medium, and campaign, you can add your own parameters to match how you report."
+    },
+    {
+      "q": "Where do the clicks show up?",
+      "a": "Clicks and visits are read through Cekat Tracker on the performance dashboards, and chats born from the link carry their source into the inbox and CRM."
+    },
+    {
+      "q": "Does the source persist to the sale?",
+      "a": "Yes. Because the source attaches to the contact from the first chat, a closing that happens later still traces back to the originating link."
+    },
+    {
+      "q": "Does it need technical skill?",
+      "a": "No. Filling the form and copying the link is as easy as shortening a URL, and wa.me links need nothing installed on a website at all."
+    }
+  ],
+  "cta": {
+    "heading": "Give Every Channel Its Own Link, Then See Which One Works",
+    "body": "Clean UTMs, tracked wa.me, attribution through to closing. Try it free."
+  }
+}

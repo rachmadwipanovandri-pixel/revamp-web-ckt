@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "CRM Otomotif & AI CS Dealer, Leads Dibales 24/7 | CekatAI",
+    "description": "Dealer mobil dan motor pakai Cekat.AI buat bales leads iklan 24/7, booking test drive dan servis, sinkron ke CRM otomotif. Leads nggak dingin lagi."
+  },
+  "hero": {
+    "badge": "Otomotif",
+    "title": "Jawab Setiap Lead Iklan, Bahkan yang Masuk Tengah Malam",
+    "subtitle": "Dari pertanyaan harga dan tukar tambah, jadwal test drive, sampai booking servis, Cekat.AI membalas instan di WhatsApp dan Instagram, 24/7, dan mengalirkan tiap lead ke pipeline CRM tanpa nambah admin",
+    "useCases": [
+      "Respons leads iklan",
+      "Kualifikasi budget & model",
+      "Booking test drive",
+      "Reminder servis"
+    ]
+  },
+  "definition": "Cekat.AI untuk otomotif adalah platform AI customer service untuk dealer mobil, dealer motor, brand principal, dan bengkel resmi di Indonesia, membalas leads iklan 24/7, menjadwalkan test drive dan booking servis, dan menjaga setiap leads dealer mobil tetap rapi di pipeline CRM otomotif dalam satu platform.",
+  "stats": [
+    {
+      "value": "2×",
+      "label": "peningkatan kunjungan klien terjadwal per bulan di Graha Pesona Cikeas"
+    },
+    {
+      "value": "28%",
+      "label": "konversi dari lead ke appointment di Wall Street English, naik dari 20%"
+    },
+    {
+      "value": "24/7",
+      "label": "leads iklan, test drive, dan booking servis terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Leads Iklan Nggak Lagi Dingin Semalaman",
+      "body": "Orang klik iklan mobil jam 10 malam, nanya harga, lalu didiamkan sampai sales masuk pagi, biasanya dia keburu nanya ke dealer lain. AI agent Cekat.AI membalas detik itu juga, jam berapa pun, menjawab pertanyaan harga, stok, dan skema kredit dari knowledge base-mu, jadi tiap lead dapat respons pas niat belinya lagi panas.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI dan tim sales di Cekat.AI"
+    },
+    {
+      "title": "AI Mengkualifikasi: Budget, Model, Tukar Tambah",
+      "body": "Nggak semua chat itu pembeli serius. Cekat.AI menanyakan hal yang biasa ditanya sales di awal, model yang diincar, budget atau rencana pembiayaan, ada unit lama buat tukar tambah atau nggak, dengan bahasa natural, jadi sales-mu menerima leads yang jelas profilnya dan langsung masuk ke penawaran, bukan mulai dari nol.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent mengkualifikasi leads pembeli mobil di inbox Cekat.AI"
+    },
+    {
+      "title": "Test Drive dan Booking Servis Terjadwal dari Chat",
+      "body": "Jadwal test drive nggak perlu lagi telepon bolak-balik, dan antrean booking servis nggak menumpuk di satu admin. Cekat.AI mengambil jadwal langsung di percakapan, mengirim notifikasi ke sales atau service advisor yang tepat, dan lewat integrasi API bisa tersambung ke sistem booking bengkelmu, pelanggan tinggal datang sesuai slot.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Notifikasi jadwal test drive dan servis otomatis ke tim yang tepat di Cekat.AI"
+    },
+    {
+      "title": "Reminder Servis Berkala Jalan Otomatis",
+      "body": "Pelanggan lupa jadwal servis, bengkel kehilangan pemasukan paling rutin. Cekat.AI mengirim reminder servis berkala lewat WhatsApp Business API resmi berdasarkan riwayat tiap pelanggan, sekalian membuka slot booking di chat yang sama, jadi unit balik ke bengkelmu, bukan ke bengkel yang kebetulan lebih dekat.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Campaign reminder servis berbasis riwayat pelanggan di Cekat.AI"
+    },
+    {
+      "title": "Setiap Lead Masuk Pipeline CRM, Bukan Catatan di HP Sales",
+      "body": "Leads yang nyangkut di HP masing-masing sales itu leads yang bocor. Cekat.AI menangkap tiap percakapan jadi kartu CRM otomatis, lengkap dengan riwayat chat, model incaran, dan status follow-up, tersusun di pipeline dari leads baru sampai deal, jadi supervisor lihat posisi tiap prospek tanpa nanya satu-satu.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Pipeline leads dealer dari prospek sampai deal di CRM Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Leads dari iklan click-to-WhatsApp dan Instagram masuk lewat WhatsApp Business API resmi, satu inbox untuk semua cabang dealer, compliant dan andal."
+    },
+    {
+      "title": "AI yang Kualifikasi dan Booking",
+      "body": "AI membalas leads, menanyakan budget, model, dan tukar tambah, menjadwalkan test drive dan servis, lalu mengoper negosiasi ke sales lengkap dengan konteks."
+    },
+    {
+      "title": "Dipakai 3.000+ Bisnis di Indonesia",
+      "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan customer service di Cekat.AI."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu dealer dan bengkel?",
+      "a": "Cekat.AI membalas chat calon pembeli dan pelanggan servis secara instan 24/7 di WhatsApp, Instagram, dan web chat, dari harga dan stok unit, jadwal test drive, sampai booking servis, sambil merapikan semua leads di pipeline CRM otomotif. Sales fokus closing, bukan mengetik jawaban yang sama seharian."
+    },
+    {
+      "q": "AI bisa mengkualifikasi leads yang masuk dari iklan?",
+      "a": "Bisa. Leads dari iklan click-to-WhatsApp langsung dibalas dan ditanyai hal penting di awal, model yang diincar, budget atau rencana pembiayaan, dan ada tidaknya unit tukar tambah. Hasilnya tercatat di kartu leads, jadi sales menerima prospek yang jelas profilnya, bukan chat kosong."
+    },
+    {
+      "q": "Prospek bisa booking test drive lewat chat?",
+      "a": "Bisa. Cekat.AI menawarkan slot dan mencatat jadwal test drive langsung di percakapan, lalu mengirim notifikasi ke sales yang bertugas. Reminder otomatis sebelum harinya menekan no-show, dan kalau prospek minta ganti jadwal, reschedule beres di chat yang sama."
+    },
+    {
+      "q": "Booking servis dan reminder servis berkala gimana?",
+      "a": "Pelanggan pilih slot servis langsung di chat, dan lewat integrasi API Cekat.AI bisa tersambung ke sistem booking atau antrean bengkelmu. Setelah itu reminder servis berkala terkirim otomatis lewat WhatsApp berdasarkan riwayat tiap unit, jadi pelanggan balik tanpa harus diteleponin satu-satu."
+    },
+    {
+      "q": "Bisa terhubung ke CRM atau sistem dealer yang sudah ada?",
+      "a": "Bisa. Cekat.AI punya CRM pipeline bawaan yang siap pakai, dan lewat integrasi API serta webhook data leads bisa dialirkan ke CRM, DMS, atau sistem internal yang sudah dipakai dealermu, tanpa admin merekap manual dari chat ke sistem."
+    },
+    {
+      "q": "Kapan sales manusia mengambil alih percakapan?",
+      "a": "Kapan pun dibutuhkan. Negosiasi harga, pengajuan kredit, atau keluhan sensitif bisa dialihkan ke sales atau service advisor dalam satu langkah, lengkap dengan seluruh riwayat chat dan data kualifikasinya. Jam kerja AI juga bisa diatur, jadi jelas kapan AI menjawab dan kapan tim yang pegang."
+    },
+    {
+      "q": "Berapa lama setup untuk dealer?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin price list, spesifikasi unit, promo, dan SOP ke knowledge base, dan AI langsung menjawab akurat. Tanpa coding sama sekali; semudah briefing sales counter baru."
+    },
+    {
+      "q": "Chat jalan di WhatsApp resmi atau nomor biasa?",
+      "a": "Cekat.AI adalah Official Meta Business Partner, jadi chat dan broadcast jalan di WhatsApp Business API resmi, bukan WhatsApp biasa yang rawan kena blokir saat volume naik. Instagram DM, Facebook Messenger, dan live chat website ikut masuk ke satu inbox yang sama."
+    },
+    {
+      "q": "Ada trial dan gimana arah harganya?",
+      "a": "Ada free trial 14 hari buat mencoba langsung di alur chat dealermu. Soal harga, paket menyesuaikan ukuran tim dan volume percakapan, dari showroom satu titik sampai jaringan banyak cabang, jadwalkan konsultasi gratis dan tim kami bantu pilih paket yang paling masuk akal."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Setiap Lead Iklan Jadi Jadwal Test Drive",
+    "body": "Lihat bagaimana dealer menjalankan leads, test drive, dan booking servis 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

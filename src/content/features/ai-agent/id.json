@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "Chatbot AI yang Ngobrol Kayak Manusia & Closing 24/7 | CekatAI",
+    "description": "Chatbot AI yang ngobrolnya kayak manusia dan closing kayak sales terbaikmu. Paham maksud customer dan bales ribuan chat 24/7. Dipakai 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "AI Agent Humanlike",
+    "title": "Chatbot AI yang Ngobrolnya Kayak Manusia, Jualannya Kayak Sales Terbaikmu",
+    "subtitle": "AI agent Cekat.AI paham maksud customer beneran, bales ribuan chat sekaligus, kualifikasi leads, dan closing 24/7 di WhatsApp, Instagram, Messenger, dan website bisnismu"
+  },
+  "definition": "Chatbot di Cekat.AI adalah AI agent humanlike yang memahami maksud dan konteks percakapan, bukan sekadar mencocokkan keyword, sehingga bisa menjawab pertanyaan, mengkualifikasi leads, dan closing penjualan di WhatsApp, Instagram DM, Facebook Messenger, dan live chat website, 24 jam nonstop.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "±5 menit", "label": "bikin AI agent, tanpa coding" },
+    { "value": "24/7", "label": "jawaban humanlike di semua channel" }
+  ],
+  "benefits": [
+    {
+      "title": "Paham Maksud Customer, Bukan Cuma Kata yang Diketik",
+      "body": "Chatbot zaman dulu cuma mencocokkan keyword, sekali customer nulis dengan gaya beda, langsung buntu. AI agent Cekat.AI membaca maksud dan konteks di bahasa apa pun, jadi \"masih ada yang warna hitam?\" dijawab dengan info stok beneran, bukan menu tombol yang harus dipencet.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI menjawab percakapan customer secara natural"
+    },
+    {
+      "title": "Bales Ribuan Chat Sekaligus Tanpa Nambah Tim",
+      "body": "Satu admin cuma bisa pegang satu chat dalam satu waktu. AI agent pegang semuanya sekaligus, hari promo, tengah malam, tanggal merah. Minori Group menyerahkan 100% pertanyaan customer di dua bahasa ke AI dan revenue-nya naik 60% tanpa rekrut orang baru.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Semua channel chat terhubung ke satu inbox Cekat.AI"
+    },
+    {
+      "title": "Dilatih Kayak Ngajarin Admin Baru, Jadi dalam Hitungan Menit",
+      "body": "Tanpa skrip, tanpa decision tree, tanpa coding. Tinggal paste SOP, info produk, dan harga ke knowledge base, AI langsung jawab kayak orang yang sudah baca semua panduan bisnismu. Kebanyakan bisnis selesai bikin agent pertamanya dalam sekitar lima menit.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Mengisi knowledge base Cekat.AI dengan SOP bisnis"
+    },
+    {
+      "title": "Closing Penjualan, Bukan Cuma Nutup Percakapan",
+      "body": "Jawab pertanyaan itu standar. AI agent Cekat.AI melangkah lebih jauh: kualifikasi leads, cek ongkir langsung di chat, kirim QR pembayaran, dan antar customer sampai transaksi beres, channel chat tersibukmu berubah jadi mesin closing, bukan sekadar halaman FAQ berjalan.",
+      "image": "/images/home/simpler-ai-builder.png",
+      "imageAlt": "Membangun AI agent siap jualan di Cekat.AI"
+    },
+    {
+      "title": "Tahu Kapan Waktunya Oper ke Manusia",
+      "body": "Atur jam kerja AI: tim pegang chat di jam kantor, AI jaga malam dan akhir pekan. Kalau ada percakapan yang butuh manusia, handoff jalan otomatis lengkap dengan seluruh riwayat chat, customer nggak perlu ngulang cerita, tim nggak mulai dari nol.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI dengan handoff otomatis ke tim"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Maksud & Konteks",
+      "title": "Membaca Arti, Bukan Keyword",
+      "body": "AI paham singkatan, typo, bahasa campur, sampai pertanyaan lanjutan yang nyambung ke chat sebelumnya. Customer bisa ngetik sesantai chat ke teman, jawabannya tetap akurat, diambil dari knowledge base bisnismu."
+    },
+    {
+      "label": "Multi-Agent",
+      "title": "Agent Khusus untuk Sales, Support, dan Billing",
+      "body": "Jalankan beberapa AI agent sekaligus, masing-masing dilatih untuk tugas berbeda, ada yang jualan, ada yang menyelesaikan keluhan, ada yang mengurus tagihan. Setiap chat dialihkan ke spesialisnya, persis tim CS yang rapi."
+    },
+    {
+      "label": "Flow Designer",
+      "title": "Alur Visual Kalau Mau Kontrol Penuh",
+      "body": "Untuk proses yang terstruktur seperti booking atau promo, tinggal drag-and-drop alur chat di visual designer. Fleksibilitas AI di bagian yang butuh luwes, langkah pasti di bagian yang butuh rapi, dua-duanya tanpa coding."
+    },
+    {
+      "label": "Handoff Manusia",
+      "title": "Eskalasi yang Bawa Cerita Lengkap",
+      "body": "Saat AI mengoper chat ke tim, seluruh percakapan, konteks customer, dan private notes ikut pindah. Akses berbasis role dan fitur kolaborator memastikan orang yang tepat pegang kasus yang tepat."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Humanlike, Bukan Robotik",
+      "body": "Customer dapat jawaban natural dan multibahasa yang paham maksud, bukan pengalaman bot kaku yang bikin orang minta disambungkan ke manusia."
+    },
+    {
+      "title": "Semua Channel, Satu Inbox",
+      "body": "WhatsApp lewat Business API resmi, Instagram DM, Facebook Messenger, dan live chat website, semua masuk ke satu inbox terpadu."
+    },
+    {
+      "title": "Dari Menjawab Jadi Closing",
+      "body": "AI kualifikasi leads, cek ongkir, kirim QR pembayaran, dan closing order di chat, hasilnya revenue yang terukur, bukan cuma balasan lebih cepat."
+    }
+  ],
+  "testimonial": {
+    "quote": "Peluang closing sangat tinggi",
+    "name": "Wiji Astuti",
+    "role": "Head of Customer Experience, Rumah Zakat",
+    "image": "/images/home/testimonial-wiji-astuti.jpg"
+  },
+  "faq": [
+    {
+      "q": "Apa itu chatbot AI?",
+      "a": "Chatbot AI adalah program yang membalas chat customer secara otomatis. Chatbot AI modern seperti agent Cekat.AI memahami maksud dan konteks dalam bahasa natural, jadi bisa menjawab pertanyaan beneran, mengkualifikasi leads, sampai closing penjualan, beda dengan chatbot lama berbasis rule yang cuma merespons keyword dan menu tertentu."
+    },
+    {
+      "q": "Apa bedanya chatbot AI Cekat.AI dengan chatbot biasa?",
+      "a": "Chatbot biasa jalan pakai skrip kaku: ketik 1 untuk harga, ketik 2 untuk jam buka, dan langsung bingung begitu ada pertanyaan di luar skenario. Agent Cekat.AI paham maksud customer, ngerti typo, singkatan, dan bahasa campur, lalu menjawab dari knowledge base bisnismu. Rasanya kayak chat sama admin terlatih, bukan mesin penjawab."
+    },
+    {
+      "q": "Chatbot AI beneran bisa closing, bukan cuma jawab pertanyaan?",
+      "a": "Bisa. AI agent Cekat.AI mengkualifikasi leads, merekomendasikan produk, cek ongkir langsung di percakapan, dan mengirim QR pembayaran untuk menyelesaikan transaksi. Holywings Group mencapai 100% chat tertangani 24/7 dan konversinya naik sampai 70% setelah menyerahkan pertanyaan customer ke AI."
+    },
+    {
+      "q": "Berapa lama bikin chatbot AI di Cekat.AI?",
+      "a": "Sekitar lima menit untuk agent yang sudah bisa jalan. Kamu tinggal paste SOP, detail produk, dan info bisnis ke knowledge base, semudah briefing admin CS baru, dan AI langsung mulai menjawab. Tanpa coding sama sekali, plus ada visual designer drag-and-drop untuk alur yang terstruktur."
+    },
+    {
+      "q": "Chatbot-nya jalan di channel apa saja?",
+      "a": "WhatsApp lewat Business API resmi, Instagram DM, Facebook Messenger, live chat website, dan channel API custom. Semua percakapan dari semua channel masuk ke satu inbox terpadu, jadi AI dan tim kerja dari satu tampilan customer yang sama."
+    },
+    {
+      "q": "Kalau AI nggak bisa jawab, gimana?",
+      "a": "Chat otomatis dioper ke tim, lengkap dengan seluruh riwayat percakapan dan konteksnya, customer nggak perlu mengulang cerita dari awal. Kamu juga bisa atur jam kerja AI: manusia pegang jam kantor, AI jaga malam, akhir pekan, dan saat chat lagi banjir."
+    },
+    {
+      "q": "Chatbot AI ini bisa bahasa Indonesia dan bahasa lain?",
+      "a": "Bisa. Agent-nya multibahasa dan mendeteksi bahasa customer secara otomatis. Minori Group memakainya untuk melayani customer berbahasa Indonesia dan Jepang di dua zona waktu, AI menangani 100% pertanyaan di kedua bahasa, dan revenue mereka tumbuh 60% tanpa nambah karyawan."
+    },
+    {
+      "q": "Gimana cara chatbot belajar soal bisnisku?",
+      "a": "Lewat knowledge base yang kamu isi dengan paste SOP, katalog produk, harga, dan kebijakan, teks biasa, tanpa format teknis. AI menjawab hanya dari pengetahuan itu, jadi jawabannya selalu akurat sesuai bisnismu. Mau update? Tinggal edit teksnya."
+    },
+    {
+      "q": "Sanggup nggak menangani ribuan chat bersamaan?",
+      "a": "Sanggup, justru itu keunggulan utamanya dibanding tim manusia. AI membalas semua chat yang masuk secara bersamaan tanpa antrean, dan Cekat.AI sudah menangani lebih dari 1.000.000 interaksi customer di 3.000+ bisnis. Lonjakan chat di hari promo bukan lagi masalah kekurangan admin."
+    },
+    {
+      "q": "Data customer aman nggak di chatbot AI?",
+      "a": "Cekat.AI patuh pada UU PDP, undang-undang pelindungan data pribadi Indonesia, dan sedang dalam proses sertifikasi ISO 27001. Akses tim diatur berbasis role, jadi agent, supervisor, dan admin hanya melihat sesuai wewenangnya masing-masing, disiplin yang sama seperti operasional CS profesional."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Setiap Chat Masuk Jadi Penjualan",
+    "body": "Bikin AI agent humanlike-mu dalam sekitar lima menit dan biarkan dia menjawab, kualifikasi, dan closing, 24/7 tanpa nambah tim."
+  }
+}

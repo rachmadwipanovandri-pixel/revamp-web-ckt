@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": "Solusi AI untuk Tim Operasional | Cekat.AI",
+    "description": "Order tercatat dari chat, ongkir terhitung otomatis, tiket terarah ke tim yang tepat, dan tiap langkahnya kelihatan. Operasional jalan tanpa salin-tempel."
+  },
+  "hero": {
+    "badge": "Solusi untuk Tim Operasional",
+    "title": "Order Masuk, Proses Jalan Sendiri Sampai Selesai",
+    "subtitle": "Dari chat jadi order tercatat, ongkir terhitung, tim ternotifikasi, dan status terlacak. Pekerjaan rutin yang biasa disalin manual sekarang jalan otomatis, dengan jejak yang bisa diperiksa."
+  },
+  "definition": "Solusi operasional dari Cekat.AI mengubah percakapan menjadi proses yang berjalan sendiri: order tercatat dari chat, ongkir terhitung otomatis, tiket terbuat dan terarah ke tim yang tepat, dan setiap langkahnya terlihat di satu tempat.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "AI kasih ongkir sepanjang waktu"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "±5 menit",
+      "label": "dari daftar sampai bot aktif"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "painPoints": {
+    "heading": "Yang Membuat Operasional Tersendat",
+    "items": [
+      {
+        "icon": "Layers",
+        "title": "Order disalin manual antar aplikasi",
+        "body": "Dari chat ke spreadsheet, dari spreadsheet ke sistem gudang. Setiap salinan adalah kesempatan salah ketik dan langkah terlewat."
+      },
+      {
+        "icon": "Radio",
+        "title": "Notifikasi ke semua orang sekaligus",
+        "body": "Grup yang menerima semua kabar berakhir dibaca tidak ada. Kabar penting tenggelam bersama yang tidak penting."
+      },
+      {
+        "icon": "LifeBuoy",
+        "title": "Masalah ketahuan setelah komplain",
+        "body": "Order macet dan tiket menggantung baru terlihat saat pelanggan bertanya. Perbaikannya selalu dalam mode darurat."
+      }
+    ]
+  },
+  "compare": {
+    "heading": "Bedanya Pakai Cekat.AI dan Tidak",
+    "body": "Volume order yang sama, beban tim yang berbeda. Pilih tab untuk membandingkan alurnya.",
+    "withLabel": "Dengan Cekat.AI",
+    "withoutLabel": "Tanpa Cekat.AI",
+    "with": {
+      "title": "Proses jalan sendiri dengan jejak yang jelas",
+      "bullets": [
+        "Order tercatat langsung dari chat, ongkir terhitung otomatis",
+        "Tiket terbuat dan terarah ke tim yang tepat sesuai aturanmu",
+        "Setiap langkah terlihat, yang gagal ketahuan sejak dini"
+      ],
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Visibilitas penuh langkah automasi di Cekat.AI"
+    },
+    "without": {
+      "title": "Semua jalur lewat tangan",
+      "bullets": [
+        "Salin-tempel antar aplikasi dengan risiko salah ketik tiap hari",
+        "Kabar antar tim mengandalkan grup yang ramai",
+        "Status order gelap sampai pelanggan sendiri yang bertanya"
+      ]
+    }
+  },
+  "midCta": {
+    "heading": "Automasi Alur Pertamamu Hari Ini",
+    "body": "Mulai dari satu proses yang paling menyita waktu. Coba gratis atau konsultasi dulu lewat WhatsApp."
+  },
+  "benefits": [
+    {
+      "title": "Dari Chat Jadi Order Tanpa Salin Manual",
+      "body": "Pesanan yang disalin dari chat ke spreadsheet adalah pesanan yang menunggu salah ketik. Di Cekat.AI, order tercatat langsung dari percakapan, lengkap dengan ongkir yang terhitung otomatis, dan memicu proses berikutnya saat itu juga.",
+      "image": "/images/order/automation-triggers-instantly.png",
+      "imageAlt": "Order dari chat memicu automasi secara instan"
+    },
+    {
+      "title": "Semua Channel Masuk Satu Pintu",
+      "body": "Order dan permintaan datang dari WhatsApp, Instagram, dan web sekaligus. Semuanya masuk satu antrean dengan format yang sama, jadi tim operasional memproses dari satu tempat, bukan menyisir lima aplikasi.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Permintaan dari semua channel masuk ke satu antrean"
+    },
+    {
+      "title": "Tiket Terbuat Sendiri, Sampai ke Tim yang Benar",
+      "body": "Keluhan pengiriman ke logistik, kendala pembayaran ke finance, kerusakan ke teknisi. Tiket terbuat otomatis dari chat dan terarah sesuai aturanmu, tanpa ada yang harus jadi operator penyortir.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Tiket terbuat otomatis dan terarah ke tim yang tepat"
+    },
+    {
+      "title": "Notifikasi ke Orang yang Tepat, Bukan ke Semua Orang",
+      "body": "Grup yang menerima semua notifikasi berakhir tidak dibaca siapa-siapa. Automasi Cekat.AI mengirim kabar hanya ke tim yang harus bertindak: gudang saat order dibayar, kurir saat siap kirim, CS saat ada kendala.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Notifikasi otomatis terkirim ke tim yang harus bertindak"
+    },
+    {
+      "title": "Setiap Langkah Kelihatan, Bukan Hilang di Tengah",
+      "body": "Order macet di mana, tiket menunggu siapa, automasi mana yang gagal: semuanya terbaca di satu tampilan. Masalah ketahuan saat masih kecil, bukan saat pelanggan sudah komplain.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Visibilitas penuh atas setiap langkah automasi"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Lebih Sedikit Titik Gagal Manual",
+      "body": "Salin-tempel antar aplikasi digantikan alur otomatis, jadi kesalahan ketik dan langkah terlewat ikut hilang."
+    },
+    {
+      "title": "Proses Standar Tiap Kali",
+      "body": "Alur yang sama berjalan dengan cara yang sama, siapa pun yang sedang piket. SOP hidup di sistem, bukan di ingatan."
+    },
+    {
+      "title": "Skala Tanpa Drama",
+      "body": "Volume naik dua kali lipat berarti automasi berjalan dua kali lebih sering, bukan lembur dua kali lebih panjang."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu solusi operasional Cekat.AI?",
+      "a": "Automasi yang mengubah percakapan jadi proses: order tercatat dari chat, ongkir terhitung, tiket terbuat dan terarah, notifikasi terkirim ke tim yang tepat, dan semua langkahnya terlihat di satu tempat."
+    },
+    {
+      "q": "Proses apa saja yang bisa diautomasi?",
+      "a": "Pencatatan order dari chat, perhitungan ongkir, pembuatan dan perutean tiket, notifikasi antar tim, follow-up status, dan alur kerja lain yang kamu susun sendiri lewat workflow automation tanpa coding."
+    },
+    {
+      "q": "Bagaimana cek ongkir otomatis bekerja?",
+      "a": "Pelanggan menyebut alamat, AI menghitung ongkir kurir-kurir utama di Indonesia langsung di percakapan, dan angkanya ikut tercatat di order. Tanpa buka tab kurir satu-satu."
+    },
+    {
+      "q": "Bisakah terhubung dengan sistem yang sudah kami pakai?",
+      "a": "Bisa lewat API dan webhook, jadi order dan status bisa mengalir ke sistem internal, dan sistem internal bisa memicu pesan keluar dari Cekat.AI."
+    },
+    {
+      "q": "Bagaimana kalau ada langkah yang butuh keputusan manusia?",
+      "a": "Automasi bisa berhenti di titik persetujuan: tiket menunggu konfirmasi, lalu lanjut setelah disetujui. Kasus di luar pola langsung dieskalasi ke tim dengan konteks lengkap."
+    },
+    {
+      "q": "Harus langsung mengautomasi semuanya?",
+      "a": "Tidak. Kebanyakan tim mulai dari satu alur yang paling makan waktu, misalnya pencatatan order, lalu menambah alur lain setelah yang pertama terbukti jalan."
+    },
+    {
+      "q": "Berapa lama setup-nya?",
+      "a": "Dari daftar sampai bot aktif sekitar 5 menit. Menyusun alur automasi pertama biasanya selesai di hari yang sama, tanpa coding."
+    },
+    {
+      "q": "Bagaimana kalau sebuah automasi gagal jalan?",
+      "a": "Langkah yang gagal terlihat di tampilan automasi, lengkap dengan titik berhentinya, jadi bisa diperbaiki dan dijalankan ulang. Masalahnya ketahuan dari sistem, bukan dari komplain pelanggan."
+    }
+  ],
+  "cta": {
+    "heading": "Proses Rutin Tidak Butuh Orang, Butuh Alur",
+    "body": "Biarkan order, tiket, dan notifikasi berjalan sendiri, dan tim-mu menangani yang benar-benar butuh manusia. Coba gratis, atau chat tim kami."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Sistem Booking Barbershop, AI Bales Chat 24/7 | CekatAI",
+    "description": "Barbershop pakai Cekat.AI buat terima booking kursi 24/7 di WhatsApp, kirim reminder biar no-show turun, dan ajak pelanggan lama balik cukur."
+  },
+  "hero": {
+    "badge": "Barbershop",
+    "title": "Terima Booking 24/7, Bahkan Saat Semua Barber Lagi Nyukur",
+    "subtitle": "Dari booking kursi, pilih capster favorit, sampai reminder sebelum jadwal, Cekat.AI membalas instan di WhatsApp dan Instagram, 24/7, tanpa perlu admin khusus",
+    "useCases": [
+      "Booking tanpa berhenti",
+      "Slot kursi & capster",
+      "Reminder no-show",
+      "Promo pelanggan lama"
+    ]
+  },
+  "definition": "Cekat.AI untuk barbershop adalah platform AI customer service untuk barbershop dan grooming studio di Indonesia, bekerja sebagai sistem booking barbershop di WhatsApp yang menjawab chat 24/7, mengatur slot kursi dan capster, mengirim reminder sebelum jadwal, dan mengajak pelanggan lama balik cukur, semua dalam satu platform.",
+  "stats": [
+    {
+      "value": "28%",
+      "label": "konversi dari lead ke appointment di Wall Street English, naik dari 20%"
+    },
+    {
+      "value": "75%",
+      "label": "penghematan biaya Customer Service di Gamal Men dengan AI agent"
+    },
+    {
+      "value": "24/7",
+      "label": "booking kursi dan pertanyaan jadwal terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Booking Kejawab Meski Tangan Lagi Pegang Gunting",
+      "body": "Chat booking paling sering masuk justru pas semua barber lagi nyukur dan nggak ada yang bisa pegang HP. Cekat.AI menjawab permintaan booking, harga, dan jam buka begitu chat masuk, siang atau malam, jadi pelanggan yang mau rapi buat besok langsung dapat kepastian slot, bukan didiamkan sampai dia booking ke barbershop sebelah.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI dan staf barbershop di Cekat.AI"
+    },
+    {
+      "title": "Slot Kursi dan Capster Jelas, Walk-in Tetap Terkendali",
+      "body": "Tanpa sistem yang rapi, admin nebak kursi mana yang kosong dan walk-in sering tabrakan sama yang udah booking. Lewat integrasi API dengan kalender atau sistem booking-mu, Cekat.AI bisa konfirmasi jadwal dan reschedule langsung di chat, tiap booking tercatat dengan nama, jam, dan capster pilihan, jadi tim di depan tahu persis kursi mana yang masih bebas untuk walk-in.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Integrasi API sistem booking barbershop dengan Cekat.AI"
+    },
+    {
+      "title": "Reminder Otomatis Sebelum Jadwal, No-Show Turun",
+      "body": "Satu no-show artinya satu kursi nganggur setengah jam, padahal ada pelanggan lain yang mau slot itu. Cekat.AI mengirim reminder otomatis sebelum jadwal cukur, lengkap dengan opsi konfirmasi atau reschedule kalau memang berhalangan, jadi pembatalan ketahuan lebih awal dan slotnya bisa dilepas ke pelanggan lain, bukan kosong tanpa kabar.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Alur reminder booking otomatis tanpa coding di Cekat.AI"
+    },
+    {
+      "title": "Ajak Pelanggan Balik Sebelum Rambutnya Berantakan Lagi",
+      "body": "Pelanggan puas biasanya bukan pindah, cuma lupa. Cekat.AI menyimpan riwayat kunjungan tiap pelanggan di CRM dan mengirim ajakan re-booking otomatis beberapa minggu setelah cukur terakhir, jedanya kamu yang atur, jadi jadwal rapi berikutnya udah ke-booking sebelum dia sempat mikir cari tempat lain.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Riwayat kunjungan pelanggan barbershop di CRM Cekat.AI"
+    },
+    {
+      "title": "Blast Promo ke Pelanggan yang Udah Lama Nggak Mampir",
+      "body": "Daftar kontak pelanggan itu aset, bukan arsip. Cekat.AI mensegmentasi pelanggan dari aktivitas dan kunjungan terakhirnya, lalu mengirim broadcast lewat WhatsApp Business API resmi, promo weekday, paket grooming, atau penawaran comeback khusus yang tiga bulan nggak kelihatan, tanpa copy-paste nomor satu per satu.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi pelanggan barbershop untuk campaign di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Booking dan broadcast jalan di WhatsApp Business API resmi, bareng Instagram DM dan Facebook Messenger, satu inbox untuk semua cabang, compliant dan andal."
+    },
+    {
+      "title": "AI yang Booking dan Follow-up",
+      "body": "AI menerima booking, menjawab harga dan jadwal, mengirim reminder sebelum jadwal cukur, lalu mengoper permintaan khusus ke admin lengkap dengan konteksnya."
+    },
+    {
+      "title": "Terbukti di 3.000+ Bisnis",
+      "body": "Dari restoran sampai lembaga pendidikan, 3.000+ bisnis di Indonesia menjalankan chat, booking, dan campaign mereka di Cekat.AI setiap hari."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu barbershop?",
+      "a": "Cekat.AI menjawab chat pelanggan secara instan 24/7 di WhatsApp, Instagram, dan web chat, dari permintaan booking, harga, jam buka, sampai pilihan capster, sambil merapikan semua jadwal dalam satu platform. Barber fokus ke kepala yang lagi dicukur, bukan ke HP yang bunyi terus."
+    },
+    {
+      "q": "AI bisa terima booking kursi dan pilihan capster?",
+      "a": "Bisa. Cekat.AI menjawab permintaan booking sepanjang hari dan, lewat integrasi API dengan kalender atau sistem booking-mu, bisa konfirmasi jadwal dan reschedule langsung di chat. Tiap booking tercatat dengan nama, jam, dan capster yang dipilih, plus reminder otomatis sebelum jadwalnya."
+    },
+    {
+      "q": "Gimana cara Cekat.AI mengurangi no-show?",
+      "a": "Reminder otomatis dikirim sebelum jadwal cukur, dengan opsi konfirmasi atau reschedule langsung di chat. Pelanggan yang batal ketahuan lebih awal, jadi slotnya bisa dilepas ke pelanggan lain dan kursi tidak nganggur tanpa kabar."
+    },
+    {
+      "q": "Bisa ajak pelanggan lama buat balik cukur?",
+      "a": "Bisa. Cekat.AI menyimpan riwayat kunjungan di CRM dan mengirim follow-up re-booking otomatis beberapa minggu setelah kunjungan terakhir, jeda waktunya kamu yang tentukan. Pelanggan yang udah lama banget menghilang bisa disapa lagi lewat campaign khusus."
+    },
+    {
+      "q": "Broadcast promonya pakai WhatsApp resmi?",
+      "a": "Ya. Campaign broadcast jalan lewat WhatsApp Business API resmi, Cekat.AI adalah Official Meta Business Partner, jadi promo ke ribuan kontak tetap compliant, bukan lewat WhatsApp biasa yang berisiko kena blokir."
+    },
+    {
+      "q": "Cocok untuk barbershop yang punya beberapa cabang?",
+      "a": "Cocok. Semua channel dan cabang masuk ke satu inbox dengan riwayat interaksi per pelanggan, dan kamu bisa bikin AI agent terpisah per cabang dengan jam buka, harga, dan daftar capster masing-masing. Owner memantau semua percakapan dari satu dashboard."
+    },
+    {
+      "q": "Kapan admin manusia mengambil alih chat?",
+      "a": "Setiap kali percakapan butuh manusia, komplain, permintaan khusus, atau booking rombongan, chat dialihkan ke admin lengkap dengan seluruh riwayatnya. Dengan AI working hours, admin pegang chat di jam kerja dan AI meng-cover sisanya."
+    },
+    {
+      "q": "Berapa lama setup untuk barbershop?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin daftar harga, jam buka, daftar capster, dan aturan booking ke knowledge base, dan AI langsung menjawab akurat. Tanpa coding sama sekali; semudah briefing kasir baru."
+    },
+    {
+      "q": "Berapa biayanya, dan bisa coba dulu?",
+      "a": "Paket Cekat.AI mengikuti skala bisnismu, dari satu kursi sampai multi-cabang, dan kamu bisa lihat semuanya jalan dulu lewat demo bareng tim kami sebelum memutuskan. Jadwalkan konsultasi gratis untuk dapat rekomendasi paket yang pas."
+    }
+  ],
+  "cta": {
+    "heading": "Biar Kursi Barbershop-mu Terisi Terus",
+    "body": "Lihat bagaimana barbershop menjalankan booking, reminder, dan promo 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

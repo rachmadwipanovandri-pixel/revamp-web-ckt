@@ -1,0 +1,1122 @@
+{
+  "seo": {
+    "title": "CekatAI: Platform AI Agent Customer Service & Sales 24/7",
+    "description": "AI Agent & Omnichannel CRM Cekat.ai: layani ribuan pelanggan & closing otomatis via WhatsApp AI. Dipercaya 3.000+ bisnis. Garansi hasil!"
+  },
+  "common": {
+    "cta": "Coba Gratis",
+    "languageName": "Bahasa Indonesia"
+  },
+  "nav": {
+    "fitur": "Fitur",
+    "crm": "CRM",
+    "chat": "Chat",
+    "ai": "AI",
+    "marketing": "Marketing",
+    "order": "Order",
+    "industries": "Industri",
+    "blog": "Blog",
+    "contact": "Kontak",
+    "masuk": "Login",
+    "ctaWhatsapp": "WhatsApp Kami",
+    "ctaTrial": "Coba Gratis",
+    "floatingWhatsapp": "Tanya Clara",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "viewAllFeatures": "Lihat semua fitur",
+    "viewAllIndustries": "Lihat semua industri",
+    "industriesByLabel": "Berdasarkan industri",
+    "megaFeaturedEyebrow": "Unggulan",
+    "megaFeaturedTitle": "WhatsApp Call AI",
+    "megaFeaturedBody": "Setiap telepon dirangkum AI, poin penting dan langkah berikutnya, otomatis.",
+    "megaFeaturedCta": "Jelajahi fitur",
+    "megaTrust": "Dipercaya 3.000+ bisnis di Indonesia",
+    "harga": "Harga",
+    "solutions": "Solusi",
+    "viewAllSolutions": "Lihat semua solusi",
+    "solutionsByLabel": "Solusi berdasarkan peran"
+  },
+  "footer": {
+    "productHeading": "Produk",
+    "legalHeading": "Legal",
+    "terms": "Syarat & Ketentuan",
+    "privacy": "Kebijakan Privasi",
+    "refund": "Kebijakan Retur, Pengembalian Dana & Pengiriman",
+    "rights": "Seluruh hak cipta dilindungi.",
+    "metaPartner": "Cekat.AI adalah Meta Business Partner Resmi",
+    "officeHeading": "Kantor Kami",
+    "jakartaOfficeName": "Kantor Jakarta",
+    "jakartaOfficeAddress": "Prosperity Tower unit 16i, Jl. Jenderal Sudirman No.Kav. 52-53, District 8, SCBD, Jakarta Selatan 12190",
+    "tangerangOfficeName": "Kantor Tangerang",
+    "tangerangOfficeAddress": "Ruko Hampton Avenue Blok A no.10, Paramount, Gading Serpong, Tangerang, 15810",
+    "companyLegalName": "PT. Teknologi Cekat Indonesia",
+    "singaporeOfficeName": "Kantor Singapura",
+    "singaporeCompanyName": "Cekat Pte. LTD.",
+    "singaporeOfficeAddress": "101 Upper Cross Street, 05-16, People's Park Centre, Singapore, 058357",
+    "malaysiaOfficeName": "Kantor Kuala Lumpur",
+    "malaysiaCompanyName": "CekatAI Sdn. Bhd.",
+    "malaysiaOfficeAddress": "Level 7, Mercu 3, No. 3, Jalan Bangsar, KL Eco City 59200, Kuala Lumpur W.P. Kuala Lumpur Malaysia",
+    "downloadApp": "Unduh Aplikasi Mobile Cekat"
+  },
+  "home": {
+    "hero": {
+      "title": "AI Agent & Omnichannel CRM: Dari Chat Pertama Jadi Pelanggan Seumur Hidup",
+      "subtitle": "Pakai AI agent, CRM Omnichannel, dan follow-up otomatis untuk mengubah lebih banyak percakapan jadi penjualan, sekaligus tahu persis iklan mana yang berujung closing, dan bikin customer balik lagi.",
+      "ctaPrimary": "WhatsApp Kami",
+      "ctaSecondary": "Mulai Coba Gratis",
+      "eyebrow": "#1 AI Agent Customer Service"
+    },
+    "trustedBy": {
+      "heading": "Dipercaya oleh 3.000+ bisnis di Asia.",
+      "stat1Value": "10.000.000.000+",
+      "stat1Label": "token diproses setiap hari",
+      "stat2Value": "2.000.000+",
+      "stat2Label": "percakapan diproses setiap hari",
+      "partnersHeading": "Dipercaya oleh partner & customer kami",
+      "moreClients": "dan ribuan bisnis lainnya",
+      "quote": "Respon pelanggan menjadi lebih cepat",
+      "quoteAuthorName": "Silica Brenda",
+      "quoteAuthorRole": "Founder",
+      "quoteAuthorCompany": "Moir Salon",
+      "quoteWiji": "Peluang closing sangat tinggi",
+      "quoteAuthorNameWiji": "Wiji Astuti",
+      "quoteAuthorRoleWiji": "Head of Customer Experience",
+      "quoteAuthorCompanyWiji": "Rumah Zakat",
+      "quoteHargyo": "Response rate kami meningkat 90%",
+      "quoteAuthorNameHargyo": "Hargyo",
+      "quoteAuthorRoleHargyo": "Direktur",
+      "quoteAuthorCompanyHargyo": "Multimedia Nusantara Polytechnic"
+    },
+    "testimonials": {
+      "heading": "Omzet naik hingga 40%, bukan cuma balas lebih cepat.",
+      "body": "Semua angka di bawah ini disampaikan langsung oleh pelanggan Cekat.AI dalam wawancara terekam.",
+      "natureCraft": {
+        "quote": "Yang sebelumnya closing rate di kami itu masih di bawah 20%. Minggu kemarin saya evaluasi dengan teman-teman, itu sudah di atas 40%, padahal standarnya 30%. Dan karena closing rate naik, omzet kami juga naik drastis, bisa di angka 50%.",
+        "industry": "Retail & Consumer Goods",
+        "function": "Customer Service",
+        "name": "Hariyudi",
+        "role": "Direktur",
+        "company": "Nature Craft Indonesia",
+        "metricValue": "+50%",
+        "metricLabel": "omzet, setelah closing rate naik dari bawah 20% ke atas 40%"
+      },
+      "wallStreet": {
+        "quote": "Sebelumnya kami benar-benar mengandalkan manusia. Tim First Contact kami sudah sampai titik di mana produktivitasnya tidak bisa naik lagi. Dengan Cekat AI, leads yang low quality difilter dulu, dan konversi kami naik dari sekitar 20% menjadi 28%. Itu angka riil yang kami lihat.",
+        "industry": "Education",
+        "function": "Digital Marketing",
+        "name": "Bayu",
+        "role": "Head of Digital Marketing",
+        "company": "Wall Street English Indonesia",
+        "metricValue": "20% → 28%",
+        "metricLabel": "konversi leads, setelah yang low quality difilter lebih dulu"
+      },
+      "putiih": {
+        "quote": "Dulu satu chat bisa kami balas lebih dari 20 menit, dan itu membuat calon customer kami lari. Sekarang balasan di bawah 2 menit, kami set di 30 detik. Sudah tidak ada lagi komplain soal balas chat lama, dan omzet naik sekitar 30 sampai 40%.",
+        "industry": "Healthcare & Aesthetics",
+        "function": "Operations",
+        "name": "Gamal",
+        "role": "Founder & CEO",
+        "company": "Putiih Skin Clinic",
+        "metricValue": "+30-40%",
+        "metricLabel": "omzet, dengan balasan turun dari 20 menit ke bawah 2 menit"
+      },
+      "threeland": {
+        "quote": "Konsumen properti itu lihat iklan jam 11 malam, jam 1 pagi. Dulu saya harus begadang membalas mereka. Sekarang saya tidur nyenyak, dan pagi-pagi sudah antre orang minta jadwal survei. Lokasi, cara bayar, bahkan simulasi KPR sudah dijawab semua. Peningkatan penjualan hampir 50% lebih.",
+        "industry": "Real Estate & Property",
+        "function": "Sales",
+        "name": "Adam Sulaiman",
+        "role": "Direktur Utama",
+        "company": "Threeland Property",
+        "metricValue": "~+50%",
+        "metricLabel": "peningkatan penjualan, dari leads yang dulu terlewat tengah malam"
+      },
+      "rumahZakat": {
+        "quote": "Contact center kami dulu hanya Senin sampai Jumat, jam 8 sampai jam 5. Di luar jam itu pesan donatur pasti delay, dan waktu kami balas hari Senin, mereka sudah tidak merespons lagi. Sekarang AMIRA menjawab 24 jam, kurang dari 1 menit. Kami tidak kehilangan donatur, dan peluang closing-nya besar sekali.",
+        "industry": "Non-Profit & Social Impact",
+        "function": "Customer Experience",
+        "name": "Wiji Astuti",
+        "role": "Customer Experience Department Head",
+        "company": "Rumah Zakat",
+        "metricValue": "24 jam",
+        "metricLabel": "respons di bawah 1 menit, dari sebelumnya hanya Senin sampai Jumat"
+      }
+    },
+    "featureAccordion": {
+      "heading": "Empat produk, satu platform",
+      "body": "Jelajahi bagaimana AI membantu setiap proses bisnis Anda, dari sales hingga operasional.",
+      "chat": {
+        "title": "AI Sales Chat",
+        "lead": "Qualify, closing, dan follow-up jalan 24/7.",
+        "body": "AI membalas chat, mengualifikasi calon pembeli, dan meneruskan ke tim saat sudah siap closing. Semua channel masuk ke satu inbox.",
+        "pill1": "Semua channel dalam satu inbox",
+        "pill2": "Auto-handoff ke tim",
+        "pill3": "Jalan 24/7"
+      },
+      "crm": {
+        "title": "CRM & Data Pelanggan",
+        "lead": "Data rapi tanpa input manual",
+        "body": "Setiap percakapan, pembelian, dan tahap pipeline tercatat sendiri dari chat. Tidak ada lagi rekap manual di akhir hari.",
+        "pill1": "Terisi otomatis dari chat",
+        "pill2": "Pipeline real-time",
+        "pill3": "Riwayat lengkap per pelanggan"
+      },
+      "marketing": {
+        "title": "Marketing & Broadcast",
+        "lead": "Tahu persis iklan mana yang berujung closing.",
+        "body": "Broadcast tersegmentasi, follow-up otomatis, dan atribusi yang menghubungkan belanja iklan ke penjualan nyata.",
+        "pill1": "Broadcast tersegmentasi",
+        "pill2": "Dashboard ROAS",
+        "pill3": "Integrasi CAPI"
+      },
+      "order": {
+        "title": "Order & Automation",
+        "lead": "Order diproses langsung dari chat",
+        "body": "AI menghitung ongkir, mengirim tautan pembayaran, dan menjalankan alur lanjutan tanpa perlu coding.",
+        "pill1": "Cek ongkir otomatis",
+        "pill2": "Pembayaran QR",
+        "pill3": "Tanpa coding"
+      }
+    },
+    "industries": {
+      "heading": "Satu platform, disesuaikan dengan industri Anda",
+      "body": "Setiap industri punya pola percakapan sendiri. Cekat.AI sudah memahami pertanyaan, alur booking, dan proses order yang khas di bidang Anda.",
+      "useCases": "Solusi Kami",
+      "learnMore": "Pelajari lebih lanjut",
+      "previous": "Industri sebelumnya",
+      "next": "Industri berikutnya"
+    },
+    "integrations": {
+      "eyebrow": "Integrasi",
+      "heading": "Hubungkan Semua Tools Bisnismu dalam Satu Platform",
+      "body": "WhatsApp Business API, Instagram, TikTok, Telegram, dan email masuk ke satu inbox. Konversi chat dikirim ke platform iklanmu, dan sistem internalmu tersambung lewat API.",
+      "cta": "Lihat integrasi"
+    },
+    "platformOverview": {
+      "feature1": {
+        "title": "Pantau dan Optimalkan Performa Marketing dalam Satu Platform Terpadu",
+        "description": "Kelola performa campaign dan konversi secara real-time, lalu aktifkan otomatisasi untuk maksimalkan hasil marketing."
+      },
+      "feature2": {
+        "title": "Otomatisasi Alur Bisnis Anda, Tanpa Perlu Coding",
+        "description": "Biarkan AI bales chat, mengelola leads, dan menindaklanjuti customer secara otomatis, 24/7."
+      },
+      "feature3": {
+        "title": "CRM Anda, Dibangun untuk Pertumbuhan & Percakapan Nyata",
+        "description": "Semua data lead tersimpan rapi, follow-up otomatis, dan progres penjualan bisa dipantau real-time."
+      }
+    },
+    "buildAiAgent": {
+      "heading": "Buat AI Agent dalam 5 Menit",
+      "body": "Kelola semua chat dengan AI yang mudah dibuat. Latih pakai data bisnismu dan hubungkan ke sistem lain tanpa ribet.",
+      "feature1": {
+        "title": "Builder AI Lebih Sederhana",
+        "description": "Buat AI Agent yang powerful tanpa coding, cukup 5 menit, semudah briefing admin CS."
+      },
+      "feature2": {
+        "title": "Sumber Pengetahuan",
+        "description": "Cukup salin SOP dan info bisnismu, AI langsung bisa jawab dengan tepat."
+      },
+      "feature3": {
+        "title": "API Integration",
+        "description": "Hubungkan AI dengan berbagai API untuk cek ongkir, booking jadwal, dan kebutuhan bisnis lainnya."
+      }
+    },
+    "aiAgentFlow": {
+      "heading": "AI Agent & Alur Chat",
+      "body": "Atur alur chat dengan mudah, arahkan customer ke AI atau human agent yang tepat.",
+      "feature1": {
+        "title": "AI Agent Spesialis",
+        "description": "Buat AI khusus untuk sales, support, billing, dan lainnya, masing-masing dengan data sendiri."
+      },
+      "feature2": {
+        "title": "Designer Alur Visual",
+        "description": "Atur alur chat dengan drag & drop, tanpa coding."
+      },
+      "feature3": {
+        "title": "Jam Kerja AI",
+        "description": "Atur jam kerja AI agar chat dijawab tim saat online dan otomatis dialihkan ke AI di luar jam kerja."
+      }
+    },
+    "pricingTeaser": {
+      "heading": "Harga yang menyesuaikan kebutuhan Anda",
+      "body": "Paket Chat di bawah ini yang paling sering dipilih. CRM, Marketing, dan Cekat 360 punya paketnya sendiri, dan semuanya bisa digabung dalam satu kontrak.",
+      "cta": "Lihat detail harga"
+    },
+    "realResults": {
+      "heading": "Bukti Nyata dari Bisnis yang Menggunakan Cekat.AI",
+      "body": "Cekat.AI hadir untuk UMKM yang butuh AI customer service terjangkau hingga brand berkembang yang butuh omnichannel CRM lengkap, semua dalam satu platform untuk bisnis Indonesia.",
+      "brandTitle": "Dipercaya oleh"
+    },
+    "finalCta": {
+      "heading": "Ubah Setiap Percakapan Jadi Penjualan",
+      "body": "Lihat bagaimana AI membantu tim balas lebih cepat, follow-up otomatis, dan closing lebih banyak tanpa nambah tim.",
+      "item1": "Setup 10 menit",
+      "item2": "14 hari free trial",
+      "item3": "1-on-1 konsultasi"
+    }
+  },
+  "pricing": {
+    "meta": {
+      "title": "Harga Cekat.AI | Paket Chat, CRM & Marketing untuk Semua Skala Bisnis",
+      "description": "Lihat paket Cekat.AI: AI agent chat, omnichannel CRM, dan marketing automation. Paket transparan, tanpa biaya tersembunyi."
+    },
+    "hero": {
+      "eyebrow": "Harga",
+      "title": "Harga yang Jelas, Sesuai Skala Bisnis Anda",
+      "subtitle": "Pilih paket sesuai kebutuhan: AI agent yang membalas chat 24/7, CRM yang merapikan data pelanggan, atau marketing automation yang mengukur tiap rupiah iklan. Semua bisa digabung.",
+      "note": "Bisa mulai dari satu produk, lalu tambah yang lain kapan saja. Penawaran harga belum termasuk PPN."
+    },
+    "tabs": {
+      "chat": "Chat",
+      "crm": "CRM",
+      "marketing": "Marketing",
+      "threeSixty": "Cekat 360"
+    },
+    "perMonth": "/bulan",
+    "popular": "Paling Dipilih",
+    "minBilling": "Min. kontrak {amount}",
+    "customPrice": "Custom",
+    "customPriceNote": "Disesuaikan dengan kebutuhan Anda",
+    "ctaPrimary": "Konsultasi Gratis",
+    "ctaSecondary": "Coba Gratis",
+    "ctaCustom": "Hubungi Sales",
+    "ctaWhatsApp": "Chat via WhatsApp",
+    "compareHeading": "Bandingkan Semua Fitur",
+    "compareIntro": "Detail lengkap tiap paket. Geser ke samping untuk melihat semua kolom.",
+    "featureColumn": "Fitur",
+    "values": {
+      "custom": "Custom",
+      "unlimited": "Tanpa Batas",
+      "upTo": "Hingga",
+      "aiSimple": "AI Simple",
+      "aiFull": "AI Full",
+      "supportStarter": "Hotline Support",
+      "supportPro": "Hotline Support",
+      "supportBusiness": "Hotline Support + Account Manager",
+      "supportEnterprise": "Hotline Support + Grup WA + Key Account Manager",
+      "agentsUpgradable": "Hingga 3 agent, bisa ditambah",
+      "included": "Termasuk",
+      "notIncluded": "Tidak termasuk"
+    },
+    "chat": {
+      "label": "Paket Chat",
+      "intro": "AI agent yang membalas, mengualifikasi, dan closing di WhatsApp, Instagram, dan semua channel lain. Satu inbox untuk seluruh tim.",
+      "tiers": {
+        "pro": {
+          "name": "Pro"
+        },
+        "business": {
+          "name": "Business"
+        },
+        "enterprise": {
+          "name": "Enterprise"
+        },
+        "custom": {
+          "name": "Custom"
+        },
+        "starter": {
+          "name": "Starter"
+        }
+      },
+      "taglines": {
+        "entry": "Untuk tim kecil yang mulai kewalahan balas chat.",
+        "mid": "Untuk bisnis yang butuh otomatisasi penuh dan alur kerja rapi.",
+        "top": "Untuk volume chat besar dengan tim CS terstruktur.",
+        "custom": "Untuk kebutuhan khusus, integrasi, dan skala korporat."
+      },
+      "rows": {
+        "channels": "Multi Channel",
+        "waba": "WhatsApp Business API (WABA)",
+        "mau": "MAU (Monthly Active Users)",
+        "aiCredits": "AI Credits",
+        "aiType": "Tipe AI",
+        "seats": "Seats",
+        "openApi": "Open API",
+        "analytics": "Analytics",
+        "support": "Support",
+        "flow": "Flow Builder",
+        "followUp": "Follow-up Otomatis",
+        "ticketing": "Ticketing",
+        "automation": "Automation",
+        "csat": "CSAT"
+      }
+    },
+    "crm": {
+      "label": "Paket CRM",
+      "intro": "Semua data pelanggan dalam satu tempat: percakapan, pembelian, dan pipeline yang update sendiri dari chat.",
+      "tiers": {
+        "pro": {
+          "name": "CRM Pro"
+        },
+        "business": {
+          "name": "CRM Business"
+        },
+        "enterprise": {
+          "name": "CRM Enterprise"
+        },
+        "custom": {
+          "name": "CRM Custom"
+        }
+      },
+      "taglines": {
+        "entry": "Untuk tim sales yang masih mencatat manual.",
+        "mid": "Untuk database pelanggan yang terus bertumbuh.",
+        "top": "Untuk basis pelanggan besar lintas cabang.",
+        "custom": "Untuk kebutuhan data dan integrasi khusus."
+      },
+      "rows": {
+        "contactList": "Daftar Kontak & Perusahaan",
+        "unifiedData": "Unified Customer Data Platform",
+        "boards": "Board Tanpa Batas",
+        "views": "View Tanpa Batas",
+        "contactStorage": "Kapasitas Kontak",
+        "agents": "Agent",
+        "automations": "CRM Automation",
+        "openApi": "CRM Open API"
+      }
+    },
+    "marketing": {
+      "label": "Paket Marketing",
+      "intro": "Broadcast, segmentasi, dan retargeting yang terukur. Tahu persis iklan mana yang jadi penjualan.",
+      "tiers": {
+        "pro": {
+          "name": "Pro"
+        },
+        "business": {
+          "name": "Business"
+        },
+        "enterprise": {
+          "name": "Enterprise"
+        },
+        "custom": {
+          "name": "Custom"
+        }
+      },
+      "taglines": {
+        "entry": "Untuk mulai broadcast dan mengukur hasilnya.",
+        "mid": "Untuk campaign rutin dengan audiens yang besar.",
+        "top": "Untuk tim marketing yang menjalankan banyak campaign.",
+        "custom": "Untuk kebutuhan volume dan integrasi khusus."
+      },
+      "rows": {
+        "mau": "MAU (Monthly Active Users)",
+        "support": "Support",
+        "analytics": "Performance Analytics",
+        "adsTracking": "Ads Tracking & Attribution",
+        "tools": "Cekat Marketing Tools Lengkap",
+        "setup": "Setup 1-on-1 dengan Ads Analyst"
+      }
+    },
+    "threeSixty": {
+      "eyebrow": "Cekat 360",
+      "heading": "Satu Tim, Satu Sistem, Satu Kontrak",
+      "body": "Chat, CRM, dan Marketing dijadikan satu, plus tim kami yang membangunkannya untuk Anda. Cocok untuk bisnis yang tidak mau pusing menyatukan sendiri.",
+      "includesLabel": "Yang Anda dapatkan",
+      "include1": "Semua fitur Chat, CRM, dan Marketing dalam satu platform",
+      "include2": "Onboarding penuh: AI agent, alur chat, dan pipeline disiapkan tim kami",
+      "include3": "Dedicated success manager yang memantau performa Anda",
+      "include4": "Integrasi khusus ke sistem yang sudah Anda pakai",
+      "include5": "Prioritas support dan grup WhatsApp langsung dengan tim kami",
+      "forLabel": "Cocok untuk Anda yang",
+      "for1": "Punya tim CS, sales, dan marketing yang masih jalan sendiri-sendiri",
+      "for2": "Sudah pakai beberapa tool tapi datanya tidak nyambung",
+      "for3": "Butuh hasil cepat tanpa menambah beban tim internal",
+      "priceNote": "Harga disusun berdasarkan skala tim dan volume percakapan Anda.",
+      "cta": "Bicara dengan Tim Kami",
+      "ctaNote": "Konsultasi 30 menit, gratis, tanpa komitmen. Kami petakan kebutuhan Anda dulu."
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Pertanyaan Seputar Harga",
+      "q1": "Apakah penawaran harga sudah termasuk PPN?",
+      "a1": "Belum. Penawaran dari tim sales belum termasuk PPN sesuai ketentuan yang berlaku, dan rincian lengkapnya diberikan sebelum Anda berlangganan.",
+      "q2": "Apa itu MAU (Monthly Active Users)?",
+      "a2": "MAU adalah jumlah pelanggan unik yang berinteraksi dengan bisnis Anda dalam satu bulan. Satu pelanggan tetap dihitung satu meskipun mengirim banyak pesan di bulan yang sama.",
+      "q3": "Apa bedanya AI Simple dan AI Full?",
+      "a3": "AI Simple menjawab pertanyaan berdasarkan knowledge base yang Anda siapkan. AI Full menambah kemampuan menjalankan alur lebih kompleks seperti kualifikasi lead, follow-up, dan tindakan lanjutan di dalam chat.",
+      "q4": "Bisakah saya mulai dari satu paket saja?",
+      "a4": "Bisa. Banyak bisnis mulai dari paket Chat, lalu menambah CRM atau Marketing setelah timnya terbiasa. Semua produk berjalan di platform yang sama, jadi datanya langsung nyambung saat ditambahkan.",
+      "q5": "Bagaimana kalau kebutuhan saya melebihi paket Enterprise?",
+      "a5": "Ambil paket Custom. Kami susun kapasitas, jumlah seat, dan integrasi sesuai kebutuhan Anda, dan detail komersialnya kami konfirmasi lebih dulu.",
+      "q6": "Apakah ada biaya setup atau kontrak minimum?",
+      "a6": "Untuk paket reguler tidak ada biaya setup terpisah dan tidak ada kontrak minimum. Untuk paket Custom, detail komersialnya disepakati bersama tim sales sebelum Anda mulai."
+    },
+    "cta": {
+      "heading": "Masih Bingung Pilih yang Mana?",
+      "body": "Ceritakan kondisi tim dan volume chat Anda. Kami bantu pilihkan paket yang paling masuk akal, tanpa memaksa Anda ambil yang paling mahal.",
+      "item1": "Konsultasi 30 menit",
+      "item2": "Rekomendasi paket sesuai kebutuhan",
+      "item3": "Tanpa komitmen"
+    },
+    "excludesVat": "Belum termasuk PPN",
+    "trustHeading": "Dipercaya oleh 3.000+ bisnis dan brand terkemuka di Indonesia"
+  },
+  "crm": {
+    "meta": {
+      "title": "CRM Berbasis AI untuk Sales & Leads | Kelola Pipeline Otomatis | CekatAI",
+      "description": "Kelola sales pipeline, leads, dan relasi pelanggan dalam satu CRM AI terintegrasi. Set target, pantau deals, dan otomatisasi follow-up, semua dalam satu dashboard CekatAI."
+    },
+    "hero": {
+      "title": "Stop Kehilangan Customer ke Kompetitor",
+      "subtitle": "Cekat.AI CRM adalah software CRM berbasis AI yang membedah data customer secara real-time, tahu kapan harus follow-up dan siapa yang siap closing"
+    },
+    "whatMakes": {
+      "heading": "Apa yang Membuat Cekat.AI CRM Berbeda",
+      "card1": {
+        "title": "Kelola Semua Percakapan Customer dengan Mudah",
+        "description": "Berbeda dari CRM tradisional, Cekat.AI terhubung langsung dengan percakapan customer Anda. Setiap chat, panggilan, dan interaksi otomatis tercatat sehingga mudah dilacak."
+      },
+      "card2": {
+        "title": "CRM + Otomatisasi dalam Satu Sistem",
+        "description": "Follow-up otomatis, leads langsung terdistribusi, dan semua peluang tetap terpantau."
+      },
+      "card3": {
+        "title": "Pahami Journey Customer Anda",
+        "description": "Lihat dari mana customer datang dan bagaimana mereka berinteraksi hingga akhirnya membeli."
+      }
+    },
+    "howItWorks": {
+      "heading": "Cara Kerja",
+      "step1": {
+        "title": "Hubungkan Semua Channel",
+        "description": "Mengumpulkan leads dan data customer dari website, WhatsApp, dan media sosial Anda. Semua interaksi tersimpan di satu tempat sehingga tim Anda bisa memantau setiap customer dengan mudah."
+      },
+      "step2": {
+        "title": "Tracking Aktivitas Customer",
+        "description": "Lacak journey customer dari interaksi pertama sampai terjadi transaksi."
+      },
+      "step3": {
+        "title": "Temukan Lead Lebih Cepat",
+        "description": "Cari dan filter customer, deal, atau aktivitas dengan mudah. Fokus pada leads yang paling potensial dan kelola pipeline dengan lebih rapi."
+      },
+      "step4": {
+        "title": "Atur Workflow dengan Board",
+        "description": "Buat board untuk mengatur alur kerja, deal, atau pipeline customer. Setiap board bisa digunakan untuk proses seperti pipeline penjualan, manajemen customer, atau tracking proyek."
+      }
+    },
+    "realResult": {
+      "heading": "Bukti Nyata dari Bisnis yang Menggunakan Cekat.AI",
+      "body": "Lihat bagaimana perusahaan dari berbagai industri menggunakan AI untuk menghemat waktu, meningkatkan pendapatan, dan memberikan pengalaman customer yang lebih baik.",
+      "quote": "Omset kami naik lebih dari 50%! Cekat AI memungkinkan kami mendapatkan janji visit dan closing properti bahkan saat saya tidur nyenyak, karena leads tidak ada yang lolos.",
+      "name": "Adam Sulaiman",
+      "role": "President Director - Threeland Property"
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Pertanyaan Umum tentang Cekat.AI CRM",
+      "q1": "Bagaimana Cekat.AI CRM membantu tim sales?",
+      "a1": "Cekat.AI membantu kelola sales pipeline, leads, dan relasi pelanggan dalam satu CRM AI terintegrasi. Set target, pantau deals, dan otomatisasi follow-up, semua dalam satu dashboard Cekat.AI.",
+      "q2": "Bagaimana Cekat.AI CRM membantu tim customer service?",
+      "a2": "Cekat.AI CRM menyimpan semua interaksi customer di satu tempat sehingga tim support dapat dengan cepat memahami riwayat dan kebutuhan customer. Hal ini membantu tim merespons lebih cepat dan menyelesaikan masalah dengan lebih efisien.",
+      "q3": "Apakah saya bisa mengetahui dari mana asal leads saya?",
+      "a3": "Ya. Cekat.AI CRM mencatat sumber setiap lead, seperti website, iklan, WhatsApp, atau media sosial. Dengan begitu, Anda dapat melihat perjalanan customer dan mengetahui channel mana yang paling banyak menghasilkan konversi."
+    },
+    "cta": {
+      "heading": "Ubah Setiap Interaksi Customer Menjadi Peluang Penjualan",
+      "body": "Cekat.AI CRM bukan sekadar software CRM untuk bisnis, ini adalah sistem manajemen pelanggan. Dengan ratusan deals aktif, sales pipeline AI CekatAI siap mengelola semuanya dalam satu platform."
+    }
+  },
+  "chat": {
+    "meta": {
+      "title": "AI Agent Chat 24/7 | Super Agent yang Closing Otomatis | CekatAI",
+      "description": "AI Agent CekatAI menjawab ribuan chat sekaligus, natural, akurat, dan siap closing 24/7. Layani pelanggan di WhatsApp, Instagram, dan semua channel tanpa tambah CS."
+    },
+    "hero": {
+      "title": "Produktivitas Admin Naik 10X dengan AI Super Agent 24/7",
+      "subtitle": "Cekat.AI adalah AI agent untuk customer service dan penjualan yang menjawab seperti manusia, memahami konteks, logat daerah, singkatan, dan bahasa campur."
+    },
+    "whatMakes": {
+      "heading": "Kenapa Cekat.AI Chat Berbeda",
+      "card1": {
+        "title": "AI Paham Maksud Chat, Bukan Sekadar Kata Kunci",
+        "description": "AI chat Cekat.AI memahami pertanyaan customer dengan baik sehingga percakapan terasa manusiawi, bukan seperti robot."
+      },
+      "card2": {
+        "title": "Cakupan Chat Omnichannel",
+        "description": "Cekat.AI melayani customer di WhatsApp (Official API), Instagram, dan live chat website. Semua percakapan terintegrasi dalam satu inbox."
+      },
+      "card3": {
+        "title": "Kolaborasi AI & Agen Manusia",
+        "description": "Saat AI mendeteksi pertanyaan kompleks atau sensitif, chat otomatis diteruskan ke agen manusia beserta konteksnya."
+      }
+    },
+    "howItWorks": {
+      "heading": "Cara Kerja",
+      "step1": {
+        "title": "Hubungkan Semua Channel",
+        "description": "Sinkronkan WhatsApp, Instagram, Live Chat website, dan platform lain ke satu sistem, sehingga semua pesan langsung masuk ke Cekat.AI."
+      },
+      "step2": {
+        "title": "Latih AI Agent Anda",
+        "description": "Atur AI sesuai aturan dan gaya komunikasi bisnis Anda, tanpa coding."
+      },
+      "step3": {
+        "title": "Chat Otomatis dengan AI",
+        "description": "AI menangani percakapan secara real-time, menjawab FAQ, memahami maksud/tujuan, mengumpulkan data lead, dan menjalankan follow-up otomatis."
+      },
+      "step4": {
+        "title": "Eskalasi & Sinkronisasi",
+        "description": "Saat dibutuhkan, chat diteruskan ke agen manusia dengan konteks lengkap dan data otomatis tersinkron ke CRM atau workflow automation."
+      },
+      "step5": {
+        "title": "Analisis & Optimasi",
+        "description": "Pantau volume chat, akurasi respons, kepuasan dan tujuan untuk terus mengoptimalkan performa AI."
+      }
+    },
+    "realResult": {
+      "heading": "Bukti Nyata dari Bisnis yang Menggunakan Cekat.AI",
+      "body": "Lihat bagaimana perusahaan dari berbagai industri menggunakan AI untuk menghemat waktu, meningkatkan pendapatan, dan memberikan pengalaman customer yang lebih baik.",
+      "quote": "Di luar jam kerja, kami mengandalkan teknologi AI. Rumah Zakat tetap bisa dihubungi 24/7, dan kami memaksimalkan penggunaan AI setelah jam kerja selesai.",
+      "name": "Tantan Supriatna",
+      "role": "Customer Relation Department Head - Rumah Zakat"
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Pertanyaan Umum tentang Cekat.AI Chat",
+      "q1": "Apa itu Cekat.AI Chat?",
+      "a1": "AI Agent Cekat.AI menjawab ribuan chat sekaligus, natural, akurat, dan siap closing 24/7. Layani pelanggan di WhatsApp, Instagram, dan semua channel tanpa tambah CS.",
+      "q2": "Apakah Cekat.AI Chat mendukung banyak channel?",
+      "a2": "Ya. Mendukung omnichannel seperti WhatsApp, Instagram, dan live chat website.",
+      "q3": "Apakah perlu coding untuk setup chat automation?",
+      "a3": "Tidak. AI dapat dikonfigurasi dan dilatih menggunakan aturan bisnis dan contoh percakapan tanpa coding."
+    },
+    "cta": {
+      "heading": "Ubah Setiap Chat Menjadi Percakapan yang Menghasilkan Konversi",
+      "body": "Jadikan AI agent Cekat.AI sebagai solusi layanan pelanggan otomatis bisnis Anda, dari menjawab pertanyaan, konsultasi produk, follow-up, hingga closing transaksi."
+    }
+  },
+  "marketing": {
+    "meta": {
+      "title": "Broadcast & Marketing Otomatis via WhatsApp | CekatAI",
+      "description": "Kirim pesan marketing ke 100.000+ pelanggan dengan satu klik. AI CekatAI otomatis follow-up leads yang ghosting, upselling, dan dorong konversi, tanpa tim marketing tambahan."
+    },
+    "hero": {
+      "title": "Ketahui Iklan Mana yang Meningkatkan Penjualan",
+      "subtitle": "Fitur marketing Cekat.AI dapat mengirim broadcast WhatsApp, follow up leads otomatis, dan mendorong konversi"
+    },
+    "whatMakes": {
+      "heading": "Kenapa Marketing Cekat.AI Berbeda",
+      "card1": {
+        "title": "Pantau ROI secara Jelas",
+        "description": "Cekat.AI menghubungkan performa iklan langsung dengan hasil bisnis. Anda bisa melihat campaign mana yang menghasilkan leads, konversi, hingga penjualan, bukan sekadar klik."
+      },
+      "card2": {
+        "title": "Analisis Perilaku Customer Secara Real-Time",
+        "description": "Pantau perilaku customer secara real-time, mulai dari page view, klik, isi form, hingga event khusus untuk memahami apa yang mendorong konversi."
+      },
+      "card3": {
+        "title": "Kelola Semua Campaign dalam Satu Dashboard",
+        "description": "Pantau performa Meta Ads langsung di Cekat.AI. Data campaign, leads, dan insight konversi tersusun dalam satu tempat, jadi tim bisa analisis dan optimasi lebih cepat."
+      }
+    },
+    "howItWorks": {
+      "heading": "Cara Kerja",
+      "step1": {
+        "title": "Semua Meta Ads di Satu Dashboard",
+        "description": "Analisis Facebook, Instagram, dan Meta Ads langsung di Cekat.AI. Semua data campaign terpusat dalam satu tampilan."
+      },
+      "step2": {
+        "title": "Memahami Perilaku Customer",
+        "description": "Lihat bagaimana customer berinteraksi dengan website, chat, dan aplikasi setelah klik iklan. Bukan cuma traffic, tapi tujuan customer."
+      },
+      "step3": {
+        "title": "Ketahui Campaign yang Mendatangkan Closing",
+        "description": "Pantau performa campaign, temukan iklan terbaik, dan identifikasi angle paling menguntungkan secara real-time."
+      },
+      "step4": {
+        "title": "Alokasi Budget dengan Tepat",
+        "description": "Gunakan data tracking untuk fokus berinvestasi hanya pada campaign dan audiens yang benar-benar menghasilkan konversi dan pendapatan."
+      },
+      "step5": {
+        "title": "Naikkan Konversi & Turunkan CAC",
+        "description": "Gabungkan data iklan dan perilaku customer untuk mempercepat konversi dan menurunkan biaya akuisisi secara signifikan."
+      }
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Pertanyaan Umum tentang Cekat.AI Marketing",
+      "q1": "Apa itu Cekat.AI Marketing?",
+      "a1": "Cekat.AI Marketing adalah platform untuk kirim pesan marketing ke 100.000+ pelanggan dengan satu klik. AI Cekat.AI otomatis follow-up leads yang ghosting, upselling, dan dorong konversi, tanpa tim marketing tambahan.",
+      "q2": "Apakah Cekat.AI bisa menunjukkan iklan mana yang meningkatkan penjualan?",
+      "a2": "Bisa. Cekat.AI menghubungkan data iklan dengan perilaku dan konversi customer sehingga Anda tahu campaign mana yang benar-benar menghasilkan revenue.",
+      "q3": "Apakah Cekat.AI melacak perilaku customer di luar iklan?",
+      "a3": "Ya. Cekat.AI melacak aktivitas website, interaksi chat, dan custom event untuk membangun profil customer yang lengkap.",
+      "q4": "Apakah saya bisa melakukan marketing yang lebih personal?",
+      "a4": "Bisa. Anda dapat melakukan segmentasi berdasarkan perilaku customer dan menjalankan campaign atau broadcast yang lebih relevan dan terbukti efektif."
+    },
+    "cta": {
+      "heading": "Siap Mengubah Data Menjadi Closing?",
+      "body": "Klien Cekat.AI meningkatkan conversion rate hingga 50% hanya dengan mengaktifkan follow up leads otomatis. Inilah campaign AI yang benar-benar menghasilkan revenue."
+    }
+  },
+  "order": {
+    "meta": {
+      "title": "Transaksi & Order Otomatis via Chat | AI Sales Autopilot | CekatAI",
+      "description": "Proses order, cek ongkir, dan closing langsung di chat, full otomatis tanpa kasir manual. AI CekatAI jualan 24/7 dan kirim followup pembayaran secara otomatis."
+    },
+    "hero": {
+      "title": "Otomatiskan Operasional Bisnis dengan AI",
+      "subtitle": "Fitur Order Cekat.AI adalah sistem order otomatis dari tanya harga, cek ongkir otomatis hingga followup pembayaran, semua diproses oleh AI"
+    },
+    "whatMakes": {
+      "heading": "Kenapa Automation Cekat.AI Berbeda",
+      "card1": {
+        "title": "Workflow yang Fleksibel dan Mudah Disesuaikan",
+        "description": "Buat workflow otomatis sesuai proses bisnis Anda. Atur langkah-langkah seperti follow-up customer, distribusi leads ke tim, atau update status deal secara otomatis."
+      },
+      "card2": {
+        "title": "Trigger Otomatis yang Fleksibel",
+        "description": "Workflow dapat berjalan otomatis berdasarkan berbagai kondisi, seperti waktu, pesan customer, atau ketika ada data customer baru."
+      },
+      "card3": {
+        "title": "Terhubung dengan Semua Fitur Cekat.AI",
+        "description": "Automation terintegrasi dengan berbagai fitur Cekat.AI, seperti auto-labeling, pembuatan tiket otomatis, notifikasi admin, dan sinkronisasi data antarsistem. Semua proses berjalan lebih rapi dan efisien."
+      }
+    },
+    "howItWorks": {
+      "heading": "Cara Kerja",
+      "step1": {
+        "title": "Semua Percakapan Masuk Otomatis",
+        "description": "Chat dari WhatsApp, Instagram, Live Chat, dan channel lain masuk ke satu sistem."
+      },
+      "step2": {
+        "title": "Automation Langsung Jalan",
+        "description": "Begitu pesan masuk, workflow otomatis aktif sesuai aturan yang Anda buat."
+      },
+      "step3": {
+        "title": "Tiket Auto-Create",
+        "description": "Pesan penting langsung dikonversi menjadi tiket agar tidak terlewat dan bisa ditangani tepat waktu."
+      },
+      "step4": {
+        "title": "Notifikasi Otomatis ke Tim yang Tepat",
+        "description": "Setiap update dan tiket langsung dikirim ke tim terkait agar respons lebih cepat dan jelas siapa penanggung jawabnya."
+      },
+      "step5": {
+        "title": "Visibilitas Penuh di Setiap Tahap Automation",
+        "description": "Pantau posisi data, status tiket, dan hambatan workflow secara real time, sehingga tim selalu tahu apa yang terjadi dan bisa bertindak cepat."
+      },
+      "step6": {
+        "title": "Efisiensi Operasional Menyeluruh",
+        "description": "Hilangkan input data manual, sistem yang terpisah, dan tugas berulang dengan otomatisasi penuh agar tim fokus pada pertumbuhan."
+      }
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Pertanyaan Umum tentang Cekat.AI Automation",
+      "q1": "Apa itu Cekat.AI Automation?",
+      "a1": "Cekat.AI Automation adalah pembuat workflow visual berbasis AI untuk mengotomatiskan proses bisnis tanpa coding, dengan trigger dan aksi lintas sistem yang saling terhubung.",
+      "q2": "Apa saja yang bisa diotomatisasi dengan Cekat.AI?",
+      "a2": "Cekat.AI Automation adalah pembuat workflow visual berbasis AI untuk otomatisasi follow-up, routing chat, notifikasi, dan alur kerja bisnis dengan AI Cekat.AI. Drag-and-drop tanpa coding, dari jam kerja human agent hingga off-hours AI agent.",
+      "q3": "Apakah saya bisa menggunakan Cekat.AI tanpa kemampuan teknis?",
+      "a3": "Bisa. Workflow dibuat dengan builder visual drag & drop, sehingga mudah digunakan tanpa latar belakang teknis."
+    },
+    "cta": {
+      "heading": "Siap Menjalankan Bisnis Secara Otomatis?",
+      "body": "Lebih dari sekedar chatbot, Cekat.AI Order adalah mesin closing otomatis 24/7. Bisnis Anda bisa melayani dan menutup transaksi bahkan tanpa satu pun admin yang online."
+    }
+  },
+  "breadcrumb": {
+    "home": "Beranda",
+    "features": "Fitur",
+    "industries": "Industri",
+    "solutions": "Solusi"
+  },
+  "landing": {
+    "readMore": "Selengkapnya",
+    "benefitsEyebrow": "Cara kerja",
+    "benefitsHeading": "Dirancang untuk Ubah Percakapan Jadi Revenue",
+    "tabsEyebrow": "Di dalam produk",
+    "tabsHeading": "Kemampuan Utama",
+    "pillarsEyebrow": "Kenapa Cekat.AI",
+    "pillarsHeading": "Kenapa Bisnis Pilih Cekat.AI",
+    "testimonialEyebrow": "Bukti",
+    "testimonialHeading": "Bukti Nyata dari Bisnis yang Berkembang",
+    "faqLabel": "FAQ",
+    "faqHeading": "Pertanyaan yang Sering Diajukan seputar {title}",
+    "relatedEyebrow": "Jelajahi lagi",
+    "related": {
+      "features": "Jelajahi Fitur Lainnya",
+      "industries": "Jelajahi Industri Lainnya",
+      "solutions": "Jelajahi Solusi Lainnya"
+    },
+    "rolesEyebrow": "Per Peran Tim",
+    "rolesHeading": "Solusi untuk Setiap Tim di {industry}",
+    "rolesBody": "Platform yang sama, dipakai dengan cara berbeda oleh tiap tim. Lihat alur kerja yang paling dekat dengan pekerjaanmu.",
+    "caseStudyEyebrow": "Cerita Pelanggan",
+    "caseStudyAttribution": "Angka disampaikan langsung oleh pelanggan Cekat.AI."
+  },
+  "featuresHub": {
+    "metaTitle": "Fitur: AI Agent, Omnichannel CRM & Otomatisasi | CekatAI",
+    "metaDescription": "Jelajahi semua fitur Cekat.AI: AI agent, otomatisasi WhatsApp, omnichannel CRM, broadcast marketing, dan otomatisasi order, semua dalam satu platform.",
+    "eyebrow": "Fitur",
+    "heading": "Semua yang Tim Kamu Butuhkan untuk Ubah Chat Jadi Penjualan",
+    "body": "Dari AI agent yang bales chat dalam hitungan detik sampai CRM dan otomatisasi yang menjaga semua leads, jelajahi fitur yang dipakai 3.000+ bisnis Indonesia.",
+    "trust": "Dipercaya 3.000+ bisnis di 15+ industri"
+  },
+  "industriesHub": {
+    "metaTitle": "Industri: AI Customer Service untuk Semua Bisnis | CekatAI",
+    "metaDescription": "Lihat bagaimana bisnis di 15+ industri memakai Cekat.AI untuk otomatisasi customer service, menangkap leads, dan meningkatkan penjualan, kesehatan, ritel, F&B, pendidikan, dan lainnya.",
+    "eyebrow": "Industri",
+    "heading": "Dibangun untuk Industri Kamu",
+    "body": "Dari klinik sampai brand ritel, Cekat.AI menyesuaikan dengan cara bisnismu berinteraksi dengan customer. Lihat hasil nyata dari industrimu.",
+    "trust": "Hasil nyata dari bisnis seperti kamu",
+    "category": {
+      "industry": "Berdasarkan industri"
+    }
+  },
+  "solutionsHub": {
+    "metaTitle": "Solusi per Peran Tim | Cekat.AI",
+    "metaDescription": "Lihat bagaimana Cekat.AI dipakai tim sales, customer service, marketing, HRD, dan operasional: AI agent, CRM, dan automasi dalam satu platform.",
+    "eyebrow": "Solusi",
+    "heading": "Satu Platform, Kerja Tiap Tim Jadi Lebih Ringan",
+    "body": "AI agent, CRM, broadcast, dan automasi yang sama, dipakai dengan cara berbeda oleh tiap tim. Pilih peranmu dan lihat alur kerjanya.",
+    "trust": "Dipercaya 3.000+ bisnis di Indonesia",
+    "category": {
+      "role": "Berdasarkan Peran"
+    }
+  },
+  "integrations": {
+    "metaTitle": "Integrasi Cekat.AI: Channel, Platform Iklan, dan API | Cekat.AI",
+    "metaDescription": "Hubungkan WhatsApp Business API, Instagram, TikTok, Telegram, dan email ke satu inbox, kirim konversi ke Meta dan TikTok, lalu sambungkan sistemmu lewat API.",
+    "badge": "Integrasi",
+    "heading": "Hubungkan Semua Tools Bisnismu dalam Satu Platform",
+    "subtitle": "Channel percakapan, platform iklan, dan sistem internalmu masuk ke satu tempat. Stack yang sudah jalan tidak perlu diganti, cukup dihubungkan.",
+    "missingHeading": "Tools yang Kamu Pakai Belum Ada di Daftar?",
+    "missingBody": "Open API dan webhook membuat hampir semua sistem bisa dihubungkan, termasuk ERP, sistem gudang, atau database internal yang dibangun sendiri. Ceritakan stack-mu ke tim kami dan kami bantu petakan alurnya.",
+    "ctaHeading": "Sambungkan Stack-mu, Mulai Hari Ini",
+    "ctaBody": "Hubungkan channel pertamamu dalam hitungan menit, lalu tambah integrasi lain sesuai kebutuhan."
+  },
+  "notFound": {
+    "title": "Halaman ini tidak ditemukan",
+    "description": "Halaman yang kamu cari sudah dipindahkan atau memang tidak ada. Yuk balik dan ubah percakapan jadi penjualan.",
+    "backHome": "Kembali ke Beranda"
+  },
+  "blog": {
+    "metaTitle": "Blog: AI, Otomatisasi & Pertumbuhan Bisnis | CekatAI",
+    "metaDescription": "Panduan praktis seputar AI customer service, otomatisasi WhatsApp, CRM, dan meningkatkan penjualan, dari tim Cekat.AI.",
+    "eyebrow": "Blog",
+    "heroTitle": "Blog Cekat",
+    "heroSubtitle": "Panduan praktis soal AI customer service, otomatisasi, dan mengubah percakapan jadi penjualan.",
+    "heroLede": "Panduan dan pembahasan produk dari tim yang membantu 3.000+ bisnis Indonesia bales lebih cepat dan jualan lebih banyak.",
+    "latest": "Artikel Terbaru",
+    "latestSubtitle": "Wawasan terbaru soal AI, otomatisasi, dan meningkatkan penjualan.",
+    "featuredLabel": "Unggulan",
+    "readMore": "Baca Selengkapnya",
+    "allCategories": "Semua",
+    "relatedHeading": "Artikel Terkait",
+    "backToBlog": "Kembali ke Blog",
+    "share": "Bagikan artikel ini",
+    "copyLink": "Salin tautan",
+    "copied": "Tautan tersalin!",
+    "onThisPage": "Di halaman ini",
+    "aboutAuthor": "Tentang penulis",
+    "authorRole": "Tim Konten",
+    "authorBio": "Tim konten Cekat.AI, menulis soal AI customer service, otomatisasi, dan meningkatkan penjualan untuk bisnis Indonesia.",
+    "empty": "Belum ada artikel. Nantikan segera.",
+    "searchPlaceholder": "Cari artikel...",
+    "searchLabel": "Cari artikel",
+    "searchClear": "Hapus pencarian",
+    "searchResults": "Hasil pencarian \"{query}\"",
+    "searchSubtitle": "Artikel yang cocok dengan pencarian Anda.",
+    "searchEmpty": "Tidak ada artikel yang cocok dengan \"{query}\". Coba kata kunci lain."
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact | CekatAI",
+      "description": "Layani Pelanggan 24/7 dengan WhatsApp AI Agent dan Omnichannel CRM CekatAI"
+    },
+    "heading": "Mulai sesi konsultasi gratis Anda dengan tim sales kami sekarang",
+    "form": {
+      "nameLabel": "Nama Lengkap",
+      "namePlaceholder": "Nama lengkap",
+      "emailLabel": "Email",
+      "emailPlaceholder": "contoh: Bryan.Smith@perusahaan.com",
+      "whatsappLabel": "Nomor Whatsapp",
+      "whatsappPlaceholder": "contoh: 0812 3456 7890",
+      "submit": "Kirim",
+      "submitting": "Mengirim…",
+      "success": "Terima kasih! Tim kami akan segera menghubungi Anda.",
+      "error": "Terjadi kesalahan. Silakan coba lagi."
+    },
+    "support": {
+      "note": "Untuk kendala produk atau layanan, silakan hubungi customer support kami.",
+      "helpCentre": "Help Centre",
+      "emailSupport": "Email Support",
+      "contactCentre": "Whatsapp Contact Centre"
+    }
+  },
+  "comparison": {
+    "metaTitle": "Perbandingan Cekat.AI vs Qontak, Sleekflow, Qiscus & Lainnya",
+    "metaDescription": "Bandingkan Cekat.AI dengan Mekari Qontak, SleekFlow, Qiscus, Halo AI, respond.io: fitur omnichannel, CRM WhatsApp, marketing automation, dan support.",
+    "eyebrow": "Perbandingan",
+    "heading": "Kenapa Cekat.AI Pilihan yang Lebih Tepat",
+    "body": "Kami membandingkan Cekat.AI dengan platform omnichannel dan chatbot terkemuka, supaya Anda bisa melihat sendiri bedanya.",
+    "pillars": {
+      "heading": "Satu Platform untuk Awareness, Conversion, dan Retention",
+      "body": "Cekat.AI melacak setiap lead sejak klik iklan pertama, closing jalan 24/7, dan pelanggan balik beli lagi. Ketiganya jalan di satu platform, bukan di tiga tools yang harus kamu sambung sendiri.",
+      "diagramLabel": "Diagram tiga pilar Cekat.AI: Marketing, AI Percakapan, dan CRM yang saling beririsan",
+      "circles": {
+        "marketing": "Marketing",
+        "chatLine1": "AI",
+        "chatLine2": "Percakapan",
+        "crm": "CRM"
+      },
+      "awareness": {
+        "title": "Awareness",
+        "lead": "Setiap lead terlacak.",
+        "body": "Dari klik pertama sampai closing."
+      },
+      "conversion": {
+        "title": "Conversion",
+        "lead": "Closing jalan 24/7.",
+        "body": "AI-nya nggak pernah tidur, chat nggak numpuk."
+      },
+      "retention": {
+        "title": "Retention",
+        "lead": "Pelanggan balik beli lagi.",
+        "body": "Follow-up jalan otomatis. LTV naik, biaya akuisisi ulang turun."
+      },
+      "tagline": "Dari pesan pertama jadi revenue jangka panjang.",
+      "coverage": "Di tabel di bawah, Cekat.AI memenuhi {ours} dari {total} baris kemampuan di tiga pilar ini.",
+      "coverageLead": "Di tabel di bawah, Cekat.AI memenuhi {ours} dari {total} baris kemampuan di tiga pilar ini, lebih banyak dibanding platform lain di halaman ini."
+    },
+    "note": "Dirangkum dari informasi yang tersedia publik per Agustus 2026. Kemampuan setiap platform bisa berubah, silakan cek langsung ke vendor terkait untuk data terbaru.",
+    "legendYes": "Tersedia",
+    "legendNo": "Tidak tersedia",
+    "diffHeading": "Yang membedakan Cekat.AI",
+    "diff1Title": "Empat produk, satu langganan",
+    "diff1Body": "AI agent, omnichannel CRM, marketing automation, dan otomatisasi order jalan di satu dashboard. Di banyak platform lain, CRM atau marketing dijual sebagai paket terpisah atau hanya tersedia di tier tertinggi.",
+    "diff2Title": "TikTok, bukan cuma WhatsApp dan Instagram",
+    "diff2Body": "DM dan komentar TikTok tertangani di inbox yang sama. Ini masih jarang: sebagian besar platform di daftar ini belum mendukungnya, padahal TikTok jadi sumber leads utama untuk banyak brand di Indonesia.",
+    "diff3Title": "Setup di bawah 1 minggu",
+    "diff3Body": "Onboarding dipandu langsung lewat remote desktop, bukan lewat antrean tiket. Kontrak minimum 3 bulan, lebih pendek dari mayoritas platform yang mensyaratkan 6 bulan sampai 1 tahun.",
+    "diff4Title": "Account Manager yang ikut memantau akunmu",
+    "diff4Body": "Ada review kuartalan dan tahunan bareng Account Manager yang benar-benar tahu kondisi akunmu. Dari delapan platform lain di tabel ini, tidak ada satu pun yang memasukkannya ke layanan standar.",
+    "honestHeading": "Yang belum kami punya",
+    "honestBody": "Cekat.AI belum mendukung Google Ads. Kalau performa Google Ads jadi kebutuhan utama Anda hari ini, itu satu hal yang perlu dipertimbangkan sebelum memilih. Untuk TikTok Ads, Meta Ads, WhatsApp Broadcast, dan analitik ROAS, semuanya sudah tersedia.",
+    "faq": {
+      "label": "FAQ",
+      "heading": "Pertanyaan seputar memilih platform",
+      "q1": "Apa alternatif Mekari Qontak yang mendukung TikTok?",
+      "a1": "Cekat.AI menangani DM dan komentar TikTok di inbox yang sama dengan WhatsApp, Instagram, email, dan live chat website. Berdasarkan informasi publik per Agustus 2026, Mekari Qontak belum mendukung channel TikTok.",
+      "q2": "Apa bedanya Cekat.AI dengan SleekFlow?",
+      "a2": "Keduanya kuat di sisi chat dan otomatisasi. Perbedaan utamanya ada di channel TikTok, yang belum tersedia di SleekFlow, serta pada onboarding: Cekat.AI memandu setup lewat remote desktop dan menyediakan review berkala oleh Account Manager.",
+      "q3": "Platform CRM WhatsApp mana yang paling cepat dipakai?",
+      "a3": "Waktu setup Cekat.AI di bawah 1 minggu dengan kontrak minimum 3 bulan. Sebagai perbandingan, Mekari Qontak sekitar 3 minggu, Halo AI sekitar 2 bulan, dan Sierra sampai 6 bulan, dengan kontrak minimum 6 bulan hingga 1 tahun.",
+      "q4": "Apakah saya perlu langganan terpisah untuk CRM dan marketing?",
+      "a4": "Tidak. Chat, CRM, marketing, dan otomatisasi order termasuk dalam satu langganan Cekat.AI. Di beberapa platform lain, CRM hanya tersedia pada paket Pro atau Enterprise, atau ditagih terpisah per agent.",
+      "q5": "Apakah Cekat.AI mendukung Google Ads?",
+      "a5": "Belum. Cekat.AI mendukung TikTok Ads, Meta Ads, WhatsApp Broadcast, analitik ROAS, dan segmentasi customer, tetapi belum terhubung ke Google Ads.",
+      "q6": "Data perbandingan ini dari mana?",
+      "a6": "Dari informasi yang tersedia publik di situs masing-masing vendor, dirangkum per Agustus 2026. Kemampuan platform berubah dari waktu ke waktu, jadi sebaiknya dikonfirmasi langsung ke vendor terkait sebelum mengambil keputusan."
+    },
+    "featureColumn": "Fitur",
+    "tables": {
+      "channels": {
+        "heading": "Chat & Omnichannel",
+        "intro": "Channel yang bisa ditangani dalam satu inbox. Semakin lengkap, semakin sedikit tab yang perlu dibuka tim Anda.",
+        "rows": {
+          "whatsapp": "WhatsApp",
+          "instagram": "Instagram DM & komentar",
+          "tiktok": "TikTok DM & komentar",
+          "sms": "SMS",
+          "otherChannels": "WeChat / Telegram / Line / X",
+          "webliveChat": "Live chat website",
+          "email": "Email"
+        }
+      },
+      "marketing": {
+        "heading": "Marketing",
+        "intro": "Kemampuan menjalankan campaign dan mengukur hasilnya, dari klik iklan sampai percakapan yang closing.",
+        "rows": {
+          "tiktokAds": "TikTok Ads",
+          "metaAds": "Meta Ads",
+          "googleAds": "Google Ads",
+          "waBroadcast": "WhatsApp Broadcast",
+          "roasAnalytics": "Analitik ROAS",
+          "segmentation": "Segmentasi & labeling customer"
+        }
+      },
+      "crm": {
+        "heading": "CRM",
+        "intro": "Seberapa dalam data customer tersimpan dan terpakai, bukan sekadar daftar kontak.",
+        "rows": {
+          "customerData": "Manajemen data customer end-to-end",
+          "leadManagement": "Manajemen lead",
+          "pipelineManagement": "Manajemen pipeline",
+          "complaintManagement": "Manajemen komplain"
+        }
+      },
+      "support": {
+        "heading": "Onboarding & dukungan",
+        "intro": "Sering diabaikan saat membandingkan, tapi ini yang menentukan kapan Anda benar-benar mulai jalan.",
+        "rows": {
+          "freeOnboarding": "Onboarding & training gratis",
+          "remoteDesktop": "Pendampingan via remote desktop",
+          "accountReview": "Review kuartalan & tahunan oleh tim AM",
+          "whatsappGroup": "Troubleshooting via grup WhatsApp",
+          "freeSetup": "Setup dashboard gratis",
+          "setupTime": "Waktu setup",
+          "minimumContract": "Kontrak minimum"
+        }
+      }
+    }
+  },
+  "agentic": {
+    "hero": {
+      "eyebrow": "Cekat AI",
+      "titleLead": "Ekosistem",
+      "titleAccent": "Agentic AI",
+      "subtitle": "Enam agen spesialis. Satu platform terbuka. Independent di mana perlu, integrated di mana penting, dan open by design — supaya setiap percakapan jadi revenue.",
+      "hubLabel": "Peta ekosistem"
+    },
+    "pillars": {
+      "eyebrow": "Our Value",
+      "headingLead": "Independent. Integrated.",
+      "headingAccent": "Open API.",
+      "body": "Tiga prinsip dari keynote yang membentuk cara setiap agen di ekosistem Cekat dibangun, dihubungkan, dan diperluas.",
+      "independent": {
+        "title": "Independent",
+        "lead": "Setiap agen punya tugasnya",
+        "body": "Frontline, Mini, OMS, CRM, Marketing, dan Consulting berjalan sebagai unit fokus — deploy satu, scale keenamnya, tanpa menunggu monolit.",
+        "tag1": "Deploy modular",
+        "tag2": "Tools & memory sendiri",
+        "tag3": "Scale satu per satu"
+      },
+      "integrated": {
+        "title": "Integrated",
+        "lead": "Konteks pelanggan bersama",
+        "body": "Order, chat, campaign, dan record CRM mengalir lewat satu core — agen tidak pernah menjawab dari halaman kosong.",
+        "tag1": "Satu customer graph",
+        "tag2": "Handoff antar agen",
+        "tag3": "Pipeline real-time"
+      },
+      "openApi": {
+        "title": "Open API",
+        "lead": "Hubungkan stack yang sudah jalan",
+        "body": "REST, webhook, dan OAuth menghubungkan Cekat ke sistem Anda — ERP, sosial media, ads, dan tool internal tanpa ribet.",
+        "tag1": "REST & webhook",
+        "tag2": "OAuth apps",
+        "tag3": "Tanpa lock-in"
+      }
+    },
+    "proof": {
+      "heading": "Dipercaya di Asia",
+      "stat1Value": "3.000+",
+      "stat1Label": "bisnis di Cekat",
+      "stat2Value": "10M+",
+      "stat2Label": "token diproses harian",
+      "stat3Value": "2Jt+",
+      "stat3Label": "chat bubble harian"
+    },
+    "products": {
+      "eyebrow": "Ekosistemnya",
+      "headingLead": "Enam agen.",
+      "headingAccent": "Satu sistem revenue.",
+      "body": "Dari balasan pertama sampai order terpenuhi — setiap produk di stack agentic dibuat khusus dan menempel ke core yang sama.",
+      "frontline": {
+        "title": "Frontline Chat Agent",
+        "lead": "Menjawab, qualify, dan close 24/7",
+        "body": "AI omnichannel di WhatsApp, IG, web, dan lainnya — serahkan lead panas ke tim begitu siap ditindak.",
+        "pill1": "Semua kanal, satu inbox",
+        "pill2": "Auto-handoff ke manusia",
+        "pill3": "Balasan always-on"
+      },
+      "mini": {
+        "title": "Mini Agent",
+        "lead": "Spesialis ringan sesuai kebutuhan",
+        "body": "Spin micro-agent untuk FAQ, lead scoring, atau tugas internal — tanpa bangun ulang seluruh stack.",
+        "pill1": "Cepat di-deploy",
+        "pill2": "Skill terbatas tugas",
+        "pill3": "Komposibel dengan core"
+      },
+      "oms": {
+        "title": "OMS",
+        "lead": "Order langsung dari chat",
+        "body": "Order Management yang hitung ongkir, kirim link bayar, dan track fulfillment tanpa tinggalkan percakapan.",
+        "pill1": "Alur chat-to-order",
+        "pill2": "Ongkir & QR pay",
+        "pill3": "Otomasi no-code"
+      },
+      "crm": {
+        "title": "Cekat CRM",
+        "lead": "Pipeline yang mengisi sendiri",
+        "body": "Setiap pesan, perubahan stage, dan pembelian tertulis sendiri ke record — tanpa input manual sore hari.",
+        "pill1": "Aktivitas auto-log",
+        "pill2": "Pipeline real-time",
+        "pill3": "Riwayat pelanggan penuh"
+      },
+      "marketing": {
+        "title": "Cekat Marketing",
+        "lead": "Tahu iklan mana yang close",
+        "body": "Broadcast ter-segmentasi, follow-up terjadwal, dan atribusi yang kaitkan belanja iklan ke revenue nyata.",
+        "pill1": "Broadcast tersegmen",
+        "pill2": "Atribusi ROAS",
+        "pill3": "Siap CAPI"
+      },
+      "consulting": {
+        "title": "Consulting Agent",
+        "lead": "Strategi berbasis data Anda",
+        "body": "Agen advisory yang baca sinyal ekosistem Anda dan sarankan langkah berikutnya — bukan tips generik.",
+        "pill1": "Saran berbasis data",
+        "pill2": "Playbook prompt",
+        "pill3": "Human-in-the-loop"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Harga",
+      "headingLead": "Harga yang menyesuaikan",
+      "headingAccent": "kebutuhan Anda",
+      "body": "Paket Chat di bawah ini yang paling sering dipilih. CRM, Marketing, dan Cekat 360 punya paketnya sendiri, dan semuanya bisa digabung dalam satu kontrak.",
+      "cta": "Lihat detail harga"
+    },
+    "results": {
+      "eyebrow": "Bukti pelanggan",
+      "headingLead": "Bukti Nyata dari Bisnis",
+      "headingAccent": "yang Menggunakan Cekat.AI",
+      "body": "Cekat.AI hadir untuk UMKM yang butuh AI customer service terjangkau hingga brand berkembang yang butuh omnichannel CRM lengkap, semua dalam satu platform untuk bisnis Indonesia.",
+      "brandTitle": "Dipercaya oleh"
+    },
+    "openApi": {
+      "eyebrow": "Open by design",
+      "headingLead": "Open API.",
+      "headingAccent": "Stack Anda, tetap milik Anda.",
+      "body": "Ekosistem ini platform, bukan taman berpagar. Sambungkan Cekat ke tools yang sudah dipercaya tim Anda.",
+      "constellationLabel": "Permukaan integrasi",
+      "cta": "Jelajahi integrasi",
+      "cap1": {
+        "title": "Endpoint REST",
+        "body": "Baca-tulis pelanggan, chat, order, dan campaign."
+      },
+      "cap2": {
+        "title": "Webhook",
+        "body": "Dorong event ke Slack, ERP, atau worker sendiri real-time."
+      },
+      "cap3": {
+        "title": "OAuth apps",
+        "body": "Instal pihak ketiga aman dengan token ber-scope."
+      },
+      "cap4": {
+        "title": "Tanpa lock-in",
+        "body": "Ekspor data Anda dan pertahankan integrasi jika keluar."
+      }
+    },
+    "finalCta": {
+      "eyebrow": "Mulai gratis",
+      "headingLead": "Aktifkan",
+      "headingAccent": "ekosistemnya",
+      "body": "Luncurkan Frontline hari ini, tambah OMS dan CRM saat siap, dan perluas sisanya lewat Open API — Independent, Integrated, Open.",
+      "item1": "Free trial, tanpa kartu",
+      "item2": "Live dalam hitungan menit",
+      "item3": "Scale sampai enam agen"
+    }
+  },
+  "wireframe": {
+    "title": "Editor copy beranda",
+    "intro": "Ubah teks di bawah lalu klik Simpan. Beranda (/) akan memakai copy terbaru setelah revalidate.",
+    "save": "Simpan ke beranda",
+    "saving": "Menyimpan…",
+    "reset": "Batalkan perubahan",
+    "openHome": "Buka beranda"
+  }
+}

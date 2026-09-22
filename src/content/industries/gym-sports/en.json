@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Booking & CS for Gyms, Padel & Sports Clubs | CekatAI",
+    "description": "Gyms, padel courts, and studios use Cekat.AI to book courts and classes 24/7, remind members before sessions, and chase renewals automatically."
+  },
+  "hero": {
+    "badge": "Fitness & Sports",
+    "title": "Answer Every Court and Class Booking, Even at Midnight",
+    "subtitle": "From court bookings and class schedules to membership renewals, Cekat.AI replies instantly on WhatsApp and Instagram, 24/7, in natural language, without an admin replying one by one",
+    "useCases": [
+      "Court & class booking",
+      "Schedules & availability",
+      "Session reminders",
+      "Membership renewals"
+    ]
+  },
+  "definition": "Cekat.AI for fitness and sports is an AI customer service platform for gyms, padel and tennis courts, futsal venues, studios, and sports clubs in Indonesia, working as a gym and padel court booking system in chat 24/7, answering schedules and prices instantly, reminding members before sessions, and chasing membership renewals automatically.",
+  "stats": [
+    {
+      "value": "2×",
+      "label": "increase in booked client visits per month at Graha Pesona Cikeas"
+    },
+    {
+      "value": "+10%",
+      "label": "increase in membership revenue at Midas Cuan"
+    },
+    {
+      "value": "24/7",
+      "label": "court, class, and membership questions answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Courts and Classes Book Themselves, 24/7",
+      "body": "People hunt for a slot at night, right after your admin logs off. Cekat.AI answers availability and records court or class bookings straight from the conversation, and through API integration it can connect to the booking system you already use, so empty slots get filled instead of waiting on a reply tomorrow morning.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI covering court and class bookings outside admin hours in Cekat.AI"
+    },
+    {
+      "title": "Schedules, Prices, and Availability Answered Instantly",
+      "body": "\"Any court left Saturday at 7?\" \"Which morning classes do you run?\" \"Can I rent a racket?\" Cekat.AI answers from a knowledge base built on your schedule, prices, and house rules, in natural language that understands intent, so the asker gets certainty in seconds and takes the slot, instead of trying the venue next door.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering schedule and price questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "Remind Members Before Sessions, Cut the No-Shows",
+      "body": "A booked slot nobody shows up for is revenue you can't resell. Cekat.AI sends automatic reminders before a match or class starts, with confirm and reschedule options in the same chat, so cancellations surface early and the slot can still go to another member.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Automatic reminders sent ahead of session schedules in Cekat.AI"
+    },
+    {
+      "title": "Renewals Chased Automatically, Not After They Lapse",
+      "body": "A membership that expires quietly is a member who leaves quietly. Cekat.AI tracks each member's cycle in the CRM and sends renewal follow-ups before the expiry date, plus a relevant nudge for members who haven't shown up in a while, so renewals happen because someone was reminded on time, not remembered too late.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Member journey from active to renewal tracked in the Cekat.AI CRM"
+    },
+    {
+      "title": "Promos That Reach the Right Member Segment",
+      "body": "Blasting the same promo to every contact is the fastest way to get muted. Cekat.AI segments members by behavior, morning class regulars, weekend padel players, memberships about to expire, and sends broadcasts through the official WhatsApp Business API to the segment that cares, so an open court promo or a new class actually gets read.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Member segments by behavior for promo broadcasts in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats, reminders, and broadcasts run on the official WhatsApp Business API, alongside Instagram DM and Facebook Messenger, one inbox across every branch and court, compliant and reliable."
+    },
+    {
+      "title": "AI That Books and Reminds",
+      "body": "The AI answers schedules and prices, records court and class bookings, sends pre-session reminders, and chases renewals, then hands special cases to your team with full context."
+    },
+    {
+      "title": "Proven Across 3,000+ Businesses",
+      "body": "More than 3,000 businesses in Indonesia run their CS and bookings on Cekat.AI, from the first chat to the member coming back next week."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help gyms and sports businesses?",
+      "a": "It answers member chats instantly 24/7 on WhatsApp, Instagram, and web chat, covering court availability, class schedules, prices, and membership status, while recording every booking neatly in one platform. Your admins run the venue instead of answering the same chat all day."
+    },
+    {
+      "q": "Can members book a court or class straight from the chat?",
+      "a": "Yes. The AI answers which slots are open and records the booking from the conversation, with the member's details and schedule attached. Confirmation lands in the same chat, and a reminder follows automatically before the session starts."
+    },
+    {
+      "q": "Can it send reminders before a match or class?",
+      "a": "Yes. Automatic reminders go out over WhatsApp before the session, with confirm and reschedule options built in. Cancellations surface early, so the slot can be offered to another member instead of burning as a no-show."
+    },
+    {
+      "q": "How does Cekat.AI chase membership renewals?",
+      "a": "Every member is tracked in the CRM with their status and history, and renewal follow-ups go out automatically before the expiry date. Members who don't respond can be followed up again automatically, so renewals stop depending on an admin's memory."
+    },
+    {
+      "q": "Can it integrate with the booking system we already use?",
+      "a": "Yes. Through API integration, Cekat.AI connects to your existing booking or membership system, so the AI answers from the same data your system holds. If you don't run any system yet, bookings can be recorded and managed in Cekat.AI directly."
+    },
+    {
+      "q": "Does it use the official WhatsApp Business API?",
+      "a": "Yes. Cekat.AI is an Official Meta Business Partner, so chats, reminders, and broadcasts run on the official WhatsApp Business API, not a modified app that risks getting your number blocked. Instagram DM, Facebook Messenger, and website live chat flow into the same inbox."
+    },
+    {
+      "q": "How long does setup take for a gym or court venue?",
+      "a": "Building the AI agent takes around five minutes, paste your schedule, court rates, membership packages, and house rules into the knowledge base and it starts answering accurately. No coding required; as easy as briefing a new admin."
+    },
+    {
+      "q": "When does a chat hand over to staff?",
+      "a": "Whenever your rules say so, for example complaints, injury-related questions, or a member asking for a person. The conversation moves to staff with the full chat history attached, so the member never starts their story over."
+    },
+    {
+      "q": "Is member data secure?",
+      "a": "Cekat.AI complies with UU PDP, Indonesia's personal data protection law, and ISO 27001 certification is in progress. Team access is role-based, so member data is visible only to the staff authorized to see it."
+    }
+  ],
+  "cta": {
+    "heading": "Fill Every Court and Class on Your Schedule",
+    "body": "See how gyms and courts run bookings, reminders, and promos 24/7 on Cekat.AI, book a free consultation with our team."
+  }
+}

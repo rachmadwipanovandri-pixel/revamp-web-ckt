@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Software Klinik dengan AI, Booking Pasien 24/7 | CekatAI",
+    "description": "Lengkapi software klinik dan sistem booking klinik dengan AI yang jawab pendaftaran dan jadwal dokter 24/7, booking dari chat, dan tekan no-show."
+  },
+  "hero": {
+    "badge": "Klinik",
+    "title": "Pendaftaran dan Jadwal Dokter Terjawab, Tanpa Antre Telepon",
+    "subtitle": "Dari pertanyaan jadwal praktik sampai booking dan reminder janji temu, Cekat.AI membalas instan di WhatsApp dan Instagram, 24/7, jadi front desk fokus ke pasien yang ada di depan meja",
+    "useCases": [
+      "Pendaftaran lewat chat",
+      "Booking & reminder",
+      "Follow-up pasca kunjungan",
+      "Data pasien per cabang"
+    ]
+  },
+  "definition": "Cekat.AI untuk klinik adalah platform AI customer service untuk klinik umum, spesialis, dan estetika di Indonesia, melengkapi software klinik dan sistem booking klinik dengan AI yang menjawab pendaftaran dan jadwal dokter 24/7, mengatur janji temu langsung dari chat, dan menjaga data pasien tiap cabang tetap rapi.",
+  "stats": [
+    {
+      "value": "+30%",
+      "label": "kenaikan omzet di Glams Aesthetic Clinic dalam 3 bulan"
+    },
+    {
+      "value": "200+",
+      "label": "chat pelanggan tertangani per hari di Sociamedic Clinic"
+    },
+    {
+      "value": "24/7",
+      "label": "pendaftaran, jadwal dokter, dan booking terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Pendaftaran Nggak Lagi Antre di Telepon",
+      "body": "Telepon front desk yang sibuk bikin pasien nyerah dan cari klinik lain. AI agent Cekat.AI menjawab permintaan pendaftaran, jadwal praktik dokter, dan pertanyaan layanan begitu chat masuk, pagi sebelum buka atau malam setelah tutup, jadi pasien dapat kepastian tanpa nunggu telepon diangkat dan stafmu fokus ke pasien yang sudah di klinik.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI dan staf klinik di Cekat.AI"
+    },
+    {
+      "title": "Booking Beres di Chat, No-Show Ditekan Reminder",
+      "body": "Hubungkan Cekat.AI ke sistem booking klinik lewat API, dan AI bisa booking, konfirmasi, sampai reschedule tanpa keluar dari percakapan. Sebelum harinya tiba, reminder otomatis terkirim ke pasien, jadi slot dokter yang sudah dipesan beneran terisi, bukan kosong karena pasien lupa.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Integrasi API Cekat.AI dengan sistem booking klinik"
+    },
+    {
+      "title": "Follow-Up Pasca Kunjungan Jalan Sendiri",
+      "body": "Pasien yang harusnya kontrol ulang sering hilang begitu keluar pintu klinik. Cekat.AI mengirim follow-up otomatis berdasarkan riwayat kunjungan tiap pasien, jadwal kontrol, kelanjutan perawatan, sampai kabar hasil pemeriksaan siap diambil, jadi perawatan nggak putus di tengah dan slot dokter tetap terisi.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Pelacakan perjalanan pasien untuk follow-up di Cekat.AI"
+    },
+    {
+      "title": "Data Kontak Pasien Rapi per Cabang",
+      "body": "Nomor pasien yang tersimpan di HP admin bukan aset klinik, itu risiko. Cekat.AI menangkap setiap kontak dan percakapan ke CRM otomatis, terorganisir per cabang dengan akses berbasis peran, jadi tiap cabang pegang data pasiennya sendiri dan manajemen tetap melihat gambaran besarnya.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Data kontak pasien terorganisir di CRM Cekat.AI"
+    },
+    {
+      "title": "Yang Medis dan Sensitif Langsung ke Stafmu",
+      "body": "AI menangani pertanyaan rutin soal jadwal, layanan, dan pendaftaran. Begitu muncul keluhan medis atau kasus sensitif, percakapan dialihkan ke staf klinik lengkap dengan riwayat chat-nya, pasien nggak perlu mengulang cerita, dan keputusan medis selalu ada di tangan tenaga kesehatanmu.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Eskalasi percakapan dari AI ke staf klinik di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chat, booking, dan reminder jalan di WhatsApp Business API resmi, bareng Instagram DM dan Facebook Messenger, satu inbox untuk semua cabang klinik, compliant dan andal."
+    },
+    {
+      "title": "AI yang Kerja Seperti Front Desk",
+      "body": "AI menjawab pendaftaran dan jadwal dokter, booking dan reschedule langsung di chat, lalu mengoper kasus medis ke stafmu lengkap dengan konteks."
+    },
+    {
+      "title": "Aman untuk Data Pasien",
+      "body": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dengan akses berbasis peran, jadi data pasien hanya terlihat oleh staf yang memang berwenang."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu operasional front desk klinik?",
+      "a": "Cekat.AI menjawab chat pasien secara instan 24/7 di WhatsApp, Instagram, dan web chat, dari pendaftaran, jadwal praktik dokter, sampai pertanyaan layanan dan harga, sambil merapikan booking dan data pasien dalam satu platform. Telepon berkurang, dan front desk fokus ke pasien yang datang."
+    },
+    {
+      "q": "Pasien bisa booking dan reschedule jadwal dokter lewat chat?",
+      "a": "Bisa. Lewat integrasi API dengan sistem booking klinikmu, AI bisa booking, konfirmasi, dan reschedule langsung di percakapan, plus reminder otomatis sebelum jadwal untuk menekan angka no-show. Setiap janji temu tercatat lengkap dengan konteks percakapannya."
+    },
+    {
+      "q": "Apakah klinik harus mengganti software klinik yang sudah dipakai?",
+      "a": "Nggak perlu. Cekat.AI melengkapi software klinik dan sistem booking yang sudah ada lewat API dan webhook, AI membaca jadwal dan menulis booking ke sistemmu. Kalau klinikmu belum punya sistem, knowledge base Cekat.AI sudah cukup untuk mulai menjawab dan mencatat janji temu."
+    },
+    {
+      "q": "Nomor WhatsApp klinik yang sekarang bisa tetap dipakai?",
+      "a": "Bisa. Nomor yang sudah dikenal pasien dihubungkan ke WhatsApp Business API resmi, Cekat.AI adalah Official Meta Business Partner, jadi chat masuk ke satu inbox tim dengan riwayat lengkap, bukan tersebar di HP masing-masing admin."
+    },
+    {
+      "q": "Bagaimana AI tahu jadwal praktik dokter yang sering berubah?",
+      "a": "Jadwal praktik disimpan di knowledge base yang bisa kamu update kapan pun dan langsung live saat itu juga. Untuk jadwal yang berubah cepat, integrasi API membuat AI membaca data terbaru dari sistem klinikmu, jadi jawaban ke pasien selalu mengikuti kondisi terkini."
+    },
+    {
+      "q": "Kalau pasien bertanya soal keluhan medis, siapa yang menjawab?",
+      "a": "Stafmu. AI tidak memberi diagnosis atau saran medis; percakapan seperti itu otomatis dialihkan ke tim klinik lengkap dengan riwayat chat-nya, jadi pasien ditangani orang yang tepat tanpa mengulang cerita dari awal."
+    },
+    {
+      "q": "Bisa untuk klinik dengan banyak cabang atau poli?",
+      "a": "Bisa. Kamu bisa membuat AI agent per cabang atau lini layanan, mengarahkan percakapan ke tim yang tepat secara otomatis, dan mengatur akses berbasis peran, data pasien tiap cabang tetap terpisah rapi, sementara manajemen melihat semuanya dari satu dashboard."
+    },
+    {
+      "q": "Bagaimana keamanan data pasien di Cekat.AI?",
+      "a": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam mengelola data pengguna, dengan akses berbasis peran di dalam tim. Sertifikasi ISO 27001 sedang dalam proses. Data percakapan pasien hanya terlihat oleh staf yang berwenang."
+    },
+    {
+      "q": "Berapa lama setup untuk klinik, dan bagaimana soal harga?",
+      "a": "Membangun AI agent-nya hitungan menit, salin jadwal praktik, daftar layanan, harga, dan SOP ke knowledge base, tanpa coding. Harga mengikuti paket sesuai skala klinik dan volume chat, dan kamu bisa mulai dari trial gratis atau jadwalkan demo dulu bareng tim Cekat.AI."
+    }
+  ],
+  "cta": {
+    "heading": "Biarkan Front Desk Fokus ke Pasien di Depan Mata",
+    "body": "Lihat bagaimana klinik menjalankan pendaftaran, booking, dan follow-up 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

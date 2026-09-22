@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Government Customer Service AI for Public Services | CekatAI",
+    "description": "Government and public-service teams use Cekat.AI to answer citizens 24/7, route complaints to the right unit as tracked tickets, UU PDP compliant."
+  },
+  "hero": {
+    "badge": "Government & Public Services",
+    "title": "Serve Every Citizen Instantly, Around the Clock",
+    "subtitle": "Cekat.AI answers citizen questions 24/7 on WhatsApp and web chat, turns complaints into tracked tickets routed to the right unit, and keeps every case visible, compliant with Indonesia's UU PDP",
+    "useCases": [
+      "Repeat citizen questions",
+      "Service with no closing hours",
+      "Complaint tickets",
+      "One citizen inbox"
+    ]
+  },
+  "definition": "Cekat.AI for government is an AI customer service platform for public-service agencies and institutions in Indonesia, answering citizen questions 24/7, converting complaints into tracked tickets routed to the right unit, and giving officers full visibility, all compliant with UU PDP.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "citizen questions answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses and organizations run on Cekat.AI"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Answer the Same Questions, Thousands of Times, Instantly",
+      "body": "Public services field the same questions endlessly, required documents, procedures, office hours, service locations, application status. Cekat.AI answers each one the moment it arrives, in natural language, so citizens receive accurate information immediately and officers are freed from repetitive replies to focus on cases that genuinely need their attention.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering citizen questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "A Public Service That Never Closes",
+      "body": "Citizens often reach out after work, in the evening, or on weekends, long after service counters close. Cekat.AI responds at any hour with consistent, accurate answers, so no one waits until Monday for information they need today, and staff return to handled conversations rather than a growing backlog.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours routing between staff and AI agent in Cekat.AI"
+    },
+    {
+      "title": "Every Complaint Becomes a Tracked Ticket, Routed to the Right Unit",
+      "body": "A citizen complaint that gets lost erodes public trust. Cekat.AI labels each incoming report automatically, creates a ticket, and routes it to the responsible unit with a notification, so every complaint is tracked from first message to resolution, and accountability is built into the process rather than left to memory.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Complaints routed to the right unit as tracked tickets in Cekat.AI"
+    },
+    {
+      "title": "Full Visibility From Report to Resolution",
+      "body": "Every conversation's status, owner, and resolution path is visible in one place, with a record built automatically from each interaction, no manual logging. When a review or an audit asks what was handled and when, the trail already exists instead of being scattered across personal devices and channels.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Full visibility across every citizen case in Cekat.AI"
+    },
+    {
+      "title": "One Inbox for Every Channel Citizens Use",
+      "body": "WhatsApp, Instagram, Facebook Messenger, and website chat flow into a single inbox with one interaction history per citizen. A resident who asks on one channel and follows up on another keeps the same context, so nothing falls between platforms and no one is asked to repeat their case.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Citizen conversations from every channel unified in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Compliant by Design",
+      "body": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP), and role-based access ensures citizen data is visible only to authorized officers."
+    },
+    {
+      "title": "Accountable and Transparent",
+      "body": "Every report becomes a tracked ticket with full visibility from first message to resolution, so accountability is built into the process, not left to memory."
+    },
+    {
+      "title": "Human Where It Matters",
+      "body": "The AI handles routine questions; cases that require judgment route to the responsible officer with full context, so citizens never repeat themselves."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help government and public-service organizations?",
+      "a": "It answers citizen questions instantly 24/7 on WhatsApp, Instagram, and web chat, required documents, procedures, office hours, application status, while turning complaints into tracked tickets routed to the right unit. Routine, repetitive questions are handled automatically so officers focus on cases that need judgment."
+    },
+    {
+      "q": "Can it answer citizen questions around the clock?",
+      "a": "Yes. Cekat.AI responds instantly at any hour, so citizens get accurate information in the evening or on weekends rather than waiting for counters to reopen. It answers every incoming chat no matter how many arrive at once, keeping response time consistent even during peaks."
+    },
+    {
+      "q": "How are citizen complaints and reports handled?",
+      "a": "Each complaint is labeled automatically, converted into a ticket, and routed to the responsible unit with a notification. It is then tracked from the first message to resolution, so no report is lost in a busy inbox and accountability is built into the workflow."
+    },
+    {
+      "q": "Is citizen data handled securely and compliantly?",
+      "a": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling and managing user data, and ISO 27001 certification is in progress. Role-based access ensures conversation and citizen data is visible only to the officers authorized to see it."
+    },
+    {
+      "q": "Can inquiries be routed to the right department or unit?",
+      "a": "Yes. Conversations and complaints are routed automatically to the responsible team or unit, and you can create specialized AI agents for different services, each answering from its own knowledge base, so every inquiry reaches the right place without manual sorting."
+    },
+    {
+      "q": "Which channels can a public-service organization connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, website live chat, and API channels, all flowing into one unified inbox with a single interaction history per citizen, so a case that moves between channels keeps its full context."
+    },
+    {
+      "q": "What happens when a case needs a human officer?",
+      "a": "The AI handles routine questions and escalates anything that requires judgment to the responsible officer automatically, with the full conversation attached. With AI working hours, staff handle cases during service hours and the AI covers everything after, with an automatic handoff."
+    },
+    {
+      "q": "Can multiple agencies or departments use one platform?",
+      "a": "Yes. You can organize officers into teams with role-based access, create specialized AI agents per service or department, and route conversations to the correct unit automatically, so several services can operate on one platform while keeping their data separate."
+    },
+    {
+      "q": "How long does setup take for a public-service organization?",
+      "a": "Building the AI agent takes around five minutes, paste your procedures, requirements, and SOPs into the knowledge base and it begins answering accurately. No coding is required; Cekat.AI describes it as being as easy as briefing a new service admin."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Citizen Questions Into Instant, Tracked Service",
+    "body": "See how public-service teams serve citizens 24/7 on Cekat.AI, book a free consultation with our team."
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "WhatsApp Multi Device, Akses WA Bisnis dari Mana Saja | CekatAI",
+    "description": "Akses WhatsApp bisnismu dari HP, laptop, atau tablet mana pun lewat satu dashboard. Semua percakapan tetap tercatat 24/7. Dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "Akses dari Perangkat Mana Pun",
+    "title": "Buka WhatsApp Bisnismu dari Perangkat Mana Saja",
+    "subtitle": "Nomor WhatsApp Business kamu jalan di satu dashboard, buka dari HP, laptop, atau tablet mana pun, kapan pun. Admin gonta-ganti HP itu masa lalu, dan semua percakapan tetap tersimpan rapi"
+  },
+  "definition": "WhatsApp Multi Device adalah fitur Cekat.AI untuk mengakses nomor WhatsApp Business dari perangkat mana pun lewat satu dashboard, semua percakapan tersinkron dan tercatat otomatis, tanpa tergantung pada satu HP.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "AI bales walau HP mati" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Buka Nomormu dari HP, Laptop, atau Tablet",
+      "body": "Nomor WhatsApp Business kamu tidak lagi terjebak di satu HP. Semuanya jalan di dashboard Cekat.AI, jadi kamu bisa bales chat dari laptop di kantor, HP saat di jalan, atau tablet di rumah, cukup buka browser dan login. Pindah perangkat, percakapan tetap nyambung.",
+      "image": "/images/home/hero-dashboard.png",
+      "imageAlt": "Dashboard Cekat.AI dibuka dari berbagai perangkat"
+    },
+    {
+      "title": "Admin Gonta-Ganti HP Itu Masa Lalu",
+      "body": "Dulu satu HP jadi rebutan dan cuma satu orang yang bisa pegang. Sekarang nomor bisnis ada di dashboard, bukan di HP pribadi siapa pun. Admin bisa masuk dari perangkat masing-masing, dan kalau ada yang resign, nomor beserta seluruh chat-nya tetap aman di platform.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Nomor WA bisnis terhubung ke dashboard Cekat.AI"
+    },
+    {
+      "title": "Semua Percakapan Tetap Tercatat, Ke Mana Pun Kamu Pindah",
+      "body": "Ganti perangkat sering bikin chat hilang atau ketinggalan di HP lama. Di Cekat.AI, setiap percakapan tersinkron dan tercatat otomatis di satu tempat, terikat ke profil CRM customer. Buka dari perangkat mana pun, riwayat lengkap chat dan pembelian langsung ada di depanmu.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Percakapan tersinkron dan tercatat di seluruh perangkat"
+    },
+    {
+      "title": "AI Tetap Jalan Walau Semua Perangkat Mati",
+      "body": "Karena nomormu jalan di dashboard, bukan bergantung pada HP yang harus terus nyala, AI agent tetap membalas pesan meski semua perangkat tim sudah dimatikan. Dengan AI working hours, customer terlayani 24/7 dan tidak ada chat yang nganggur sampai besok pagi.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI membalas chat 24/7 dari dashboard Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Akses Web",
+      "title": "Satu Dashboard, Semua Perangkat",
+      "body": "Buka nomor WhatsApp Business kamu dari browser di HP, laptop, atau tablet mana pun. Tidak ada aplikasi khusus yang harus dipasang, tinggal login dan langsung bales dari perangkat yang lagi ada di tangan."
+    },
+    {
+      "label": "Anti Ribet HP",
+      "title": "Nomor Bisnis Lepas dari Satu HP",
+      "body": "Nomormu tinggal di platform, bukan di HP pribadi. Tidak ada lagi satu HP yang jadi rebutan, dan tidak ada drama saat perangkat rusak atau admin ganti, akses dipindah, percakapan tetap utuh."
+    },
+    {
+      "label": "Tersinkron",
+      "title": "Chat Tercatat dan Sinkron Otomatis",
+      "body": "Setiap percakapan tersimpan di satu tempat dan tersinkron ke semua perangkat secara real-time. Terikat ke profil CRM, jadi riwayat chat, pembelian, dan campaign selalu ikut ke mana pun kamu login."
+    },
+    {
+      "label": "Selalu Nyala",
+      "title": "Tetap Terima Pesan Tanpa HP Standby",
+      "body": "Nomor jalan di dashboard, jadi pesan tetap masuk dan AI tetap bales walau tidak ada HP yang standby. Customer tidak pernah kena centang satu berjam-jam cuma karena perangkat lagi off."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "WhatsApp Business API Resmi",
+      "body": "Nomormu jalan di WhatsApp Business API resmi lewat Meta Business Partner resmi, compliant dan aman, beda dengan trik multi-device tidak resmi yang berisiko kena blokir."
+    },
+    {
+      "title": "Satu Dashboard, Semua Perangkat",
+      "body": "Akses dari HP, laptop, atau tablet mana pun lewat browser. Tidak ada perangkat utama yang harus selalu nyala buat bikin nomornya tetap aktif."
+    },
+    {
+      "title": "Percakapan Tidak Pernah Hilang",
+      "body": "Semua chat tersinkron, tercatat, dan terikat ke profil CRM, jadi ganti perangkat atau ganti admin tidak pernah menghapus riwayat customer."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu WhatsApp multi device?",
+      "a": "WhatsApp multi device berarti kamu bisa mengakses nomor WhatsApp Business dari beberapa perangkat sekaligus. Di Cekat.AI, nomormu jalan di satu dashboard yang bisa dibuka dari HP, laptop, atau tablet mana pun lewat browser, dan semua percakapan tersinkron otomatis di setiap perangkat."
+    },
+    {
+      "q": "Bisa buka WhatsApp bisnis dari beberapa perangkat sekaligus?",
+      "a": "Bisa. Karena nomormu ada di dashboard Cekat.AI, kamu bisa login dari perangkat mana pun kapan saja. Buka dari laptop di kantor, HP saat di jalan, atau tablet di rumah, semuanya menampilkan inbox dan riwayat chat yang sama."
+    },
+    {
+      "q": "Kalau ganti HP atau HP-nya rusak, chat-nya hilang tidak?",
+      "a": "Tidak. Percakapan tidak tersimpan di HP, tapi di platform. Saat kamu ganti atau kehilangan perangkat, tinggal login dari perangkat lain dan seluruh riwayat chat beserta profil customer sudah ada di sana, utuh dan tersinkron."
+    },
+    {
+      "q": "Harus install aplikasi khusus?",
+      "a": "Tidak wajib. Cekat.AI dibuka lewat dashboard di browser, jadi kamu bisa mengaksesnya dari perangkat mana pun tanpa memasang aplikasi berat. Cukup login, dan nomor WhatsApp Business kamu langsung siap dibales dari perangkat itu."
+    },
+    {
+      "q": "HP harus tetap nyala biar bisa terima pesan?",
+      "a": "Tidak. Beda dengan WhatsApp biasa yang bergantung pada satu HP, nomormu di Cekat.AI jalan di dashboard. Pesan tetap masuk dan AI tetap membalas 24/7 walau semua perangkat tim sedang dimatikan."
+    },
+    {
+      "q": "Ini beda tidak dengan WhatsApp Web biasa?",
+      "a": "Beda jauh. WhatsApp Web cuma cerminan dari satu HP yang harus tetap terhubung. Cekat.AI menjalankan nomormu di WhatsApp Business API resmi, jadi banyak perangkat bisa akses mandiri, ada AI agent, CRM, label, dan otomatisasi yang tidak ada di WhatsApp Web."
+    },
+    {
+      "q": "Apakah cara ini aman dan resmi?",
+      "a": "Aman. Cekat.AI adalah Meta Business Partner resmi dan menjalankan nomormu di WhatsApp Business API resmi, cara compliant untuk multi device. Ini beda dengan aplikasi cloning atau trik tidak resmi yang berisiko membuat nomormu diblokir."
+    },
+    {
+      "q": "Percakapannya tersimpan di mana?",
+      "a": "Semua percakapan tersimpan di platform Cekat.AI dan terikat ke profil CRM masing-masing customer, bukan di memori HP. Ini juga membuat pengelolaan data sesuai UU PDP lebih terkontrol dibanding chat yang berserakan di HP pribadi staf."
+    },
+    {
+      "q": "Kalau admin resign, nomornya tetap aman?",
+      "a": "Tetap aman. Karena nomor dan seluruh chat ada di dashboard, bukan di HP pribadi admin, kamu tinggal cabut aksesnya. Nomor bisnis, riwayat percakapan, dan data customer tetap utuh di platform tanpa ikut terbawa staf yang keluar."
+    },
+    {
+      "q": "Berapa cepat bisa mulai?",
+      "a": "Cepat. Menghubungkan nomor tinggal klik lewat dashboard, dan bikin AI agent sekitar lima menit tanpa coding, semudah nge-brief admin CS. Kebanyakan bisnis sudah bisa mengakses nomornya dari berbagai perangkat di hari yang sama saat mulai."
+    }
+  ],
+  "testimonial": {
+    "quote": "Peluang closing sangat tinggi",
+    "name": "Wiji Astuti",
+    "role": "Head of Customer Experience, Rumah Zakat",
+    "image": "/images/home/testimonial-wiji-astuti.jpg"
+  },
+  "cta": {
+    "heading": "Ubah Satu HP Jadi Akses dari Mana Saja",
+    "body": "Jalankan nomor WhatsApp bisnismu di dashboard yang bisa dibuka dari perangkat mana pun, dengan semua percakapan tercatat dan AI yang tidak pernah mati."
+  }
+}

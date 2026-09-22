@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "AI Customer Service for Salons & Beauty Clinics | CekatAI",
+    "description": "Salons and beauty clinics use Cekat.AI to book and rebook clients from chat, answer treatment questions 24/7, and cut no-shows with automatic reminders."
+  },
+  "hero": {
+    "badge": "Beauty & Wellness",
+    "title": "Book More Clients, Chase Fewer Chats",
+    "subtitle": "From treatment questions to a confirmed booking, Cekat.AI replies instantly on WhatsApp and Instagram, 24/7, in natural language, without your front desk glued to the phone",
+    "useCases": [
+      "Treatment questions",
+      "Booking & rebooking",
+      "No-show reminders",
+      "Segmented promos"
+    ]
+  },
+  "definition": "Cekat.AI for beauty & wellness is an AI customer service platform for salons, aesthetic clinics, spas, and wellness studios in Indonesia, answering treatment questions 24/7, booking and rebooking clients from chat, and sending reminders that reduce no-shows.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "client questions answered and bookings taken"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Answer Treatment Questions the Moment They Ask",
+      "body": "A client deciding between treatments won't wait for opening hours. Cekat.AI answers questions about services, prices, downtime, and aftercare the second they arrive, in natural language, understanding what the client means rather than matching keywords, so interest turns into a booking instead of a scroll to the next salon.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering beauty treatment questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "Booking and Rebooking Done Inside the Chat",
+      "body": "Connect Cekat.AI to your scheduling system through API and the agent books, confirms, and reschedules appointments right in the conversation. No phone tag, no double-booked chairs, and after each visit it can nudge clients to rebook their next treatment before they forget.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "API integration for salon appointment booking in Cekat.AI"
+    },
+    {
+      "title": "Cut No-Shows With Reminders That Send Themselves",
+      "body": "An empty chair from a forgotten appointment is revenue you can't get back. Cekat.AI sends automatic reminders before each visit and follow-up nudges when it's time for the next one, each triggered by the client's actual booking history, not a manual list someone has to remember to send.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated appointment reminders in Cekat.AI"
+    },
+    {
+      "title": "Send Promos to the Right Clients, Not Everyone",
+      "body": "Campaigns go out through the official WhatsApp Business API to segments built from real data, regulars due for a touch-up, clients who tried one service but not another, lapsed bookings worth winning back. Names and history come straight from the CRM, so a promo lands like a personal invitation, not a mass blast.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Client segmentation for beauty promos in Cekat.AI"
+    },
+    {
+      "title": "Every Client Conversation, Organized in One Place",
+      "body": "WhatsApp, Instagram DM, and website chat flow into one inbox with a full history per client, past treatments, questions asked, promos received. Your front desk sees the whole picture instantly, and anything that needs a human touch escalates to your team with the conversation attached, so no client repeats themselves.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Client conversations organized in the Cekat.AI CRM"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats and promo broadcasts run on the official WhatsApp Business API, reliable and safe for the number your salon's bookings depend on."
+    },
+    {
+      "title": "One Platform, Front Desk to Follow-Up",
+      "body": "Inbox, CRM, booking, and broadcast live in one dashboard, no juggling a chat app, a paper appointment book, and a separate blast tool."
+    },
+    {
+      "title": "Human Where It Matters",
+      "body": "The AI handles routine questions and bookings; anything sensitive or complex routes to your team with full context, so clients always feel looked after."
+    }
+  ],
+  "testimonial": {
+    "quote": "Customer responses became faster",
+    "name": "Silica Brenda",
+    "role": "Founder, Moir Salon",
+    "image": "/images/home/testimonial-silica-brenda.jpg"
+  },
+  "faq": [
+    {
+      "q": "How does Cekat.AI help salons and beauty clinics?",
+      "a": "It answers client chats instantly 24/7 on WhatsApp, Instagram, and web chat, handling treatment questions, prices, and availability, then books the appointment inside the same conversation. Reminders go out automatically to reduce no-shows, so your front desk spends time on clients in the chair, not the phone."
+    },
+    {
+      "q": "Can clients book appointments through the AI?",
+      "a": "Yes. Through API integration with your scheduling system, the agent books, confirms, and reschedules appointments directly in the chat. After a visit it can nudge clients to rebook their next treatment, so your calendar stays full without anyone chasing bookings manually."
+    },
+    {
+      "q": "Will the AI reduce no-shows?",
+      "a": "It sends automatic reminders before each appointment and follow-up nudges when a client is due for their next visit. Each reminder is triggered by the client's real booking history, so fewer chairs sit empty and your team doesn't have to remember who to message."
+    },
+    {
+      "q": "Can the AI answer detailed treatment questions?",
+      "a": "Yes. You paste your service menu, prices, and aftercare notes into the knowledge base, and the agent answers from that, not guesses. It understands intent and context in natural language, so a client asking how long until they can wear makeup again gets a right answer, not a keyword match."
+    },
+    {
+      "q": "Which channels can my salon connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, and website live chat, all flowing into one inbox. Every client keeps a single conversation history, so a question that started on Instagram and a booking made on WhatsApp stay in one place."
+    },
+    {
+      "q": "Can I send promos to my clients?",
+      "a": "Yes. Broadcast campaigns go through the official WhatsApp Business API to segments built from activity and booking history, regulars, lapsed clients, or people who tried one service. Messages pull names and context from the CRM, so a touch-up reminder or seasonal promo feels personal, not spammy."
+    },
+    {
+      "q": "How long does it take to set up?",
+      "a": "Building the AI agent takes around five minutes and works like briefing a new front-desk admin, you paste your services, prices, and SOPs, and it starts answering. No coding is required at any step, so you don't need a developer to get running."
+    },
+    {
+      "q": "What happens when a question needs a real person?",
+      "a": "The conversation escalates to your team automatically with the full chat history attached. AI working hours let the agent cover chats after your staff log off, then hand back during opening hours, so clients always get an answer, day or night."
+    },
+    {
+      "q": "Is my clients' data handled safely?",
+      "a": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling and managing user data. Access within your team is role-based, so client contact details and conversation history are only visible to the people who should see them."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Chats Into Booked Chairs",
+    "body": "See how salons and clinics run 24/7 bookings and support on Cekat.AI, book a free consultation with our team."
+  }
+}

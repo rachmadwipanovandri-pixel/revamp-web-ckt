@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Facebook Messenger Bot, Answer Page Messages 24/7 | CekatAI",
+    "description": "A Facebook Messenger bot that answers your Page messages instantly 24/7 and unifies them with WhatsApp and Instagram in one AI inbox. Trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "AI for Facebook Messenger",
+    "title": "Answer Every Facebook Messenger Chat, Day and Night",
+    "subtitle": "Connect your Facebook Page to Cekat.AI and let an AI agent reply to Messenger conversations instantly, 24/7, in the same unified inbox as WhatsApp, Instagram DM, and website live chat"
+  },
+  "definition": "Facebook Messenger on Cekat.AI is a channel integration that connects your Facebook Page to an AI-powered inbox, a humanlike agent answers Messenger conversations automatically 24/7, and every message lands in the same unified inbox as your other channels.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "Messenger chats answered" },
+    { "value": "~5 min", "label": "to build your AI agent" }
+  ],
+  "benefits": [
+    {
+      "title": "Reply to Page Messages in Seconds, Not Hours",
+      "body": "A Facebook lead who waits hours for a reply has already messaged three competitors. Cekat.AI's humanlike agent answers Messenger conversations instantly, understanding intent and context, not keywords, and replying in the customer's own language. Questions about price, stock, or how to order get a real answer while interest is still hot.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI AI agent replying to a Facebook Messenger conversation"
+    },
+    {
+      "title": "One Inbox for Messenger, WhatsApp, and Instagram",
+      "body": "Jumping between the Facebook Page app, WhatsApp, and Instagram is how messages get missed. Cekat.AI pulls Messenger into one unified inbox alongside WhatsApp via the official Business API, Instagram DM, and website live chat, with fast search, auto-labeling, and case prioritization across every channel.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Facebook Messenger connected into the Cekat.AI unified inbox"
+    },
+    {
+      "title": "Every Messenger Chat Becomes a Lead in Your CRM",
+      "body": "Facebook conversations shouldn't disappear once the chat closes. Cekat.AI captures every Messenger conversation into the CRM automatically, no manual input, building a living customer record and moving each contact through Visitor, Lead, and Buyer stages with suggested next steps for your team.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Facebook Messenger leads captured in the Cekat.AI CRM"
+    },
+    {
+      "title": "Hand Off to Your Team With Full Context",
+      "body": "When a Messenger chat needs a person, the AI escalates with the complete history attached, so the customer never repeats themselves. Set AI working hours so your team handles chats while online and the AI covers nights and weekends, with automatic handoff carrying context both ways.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "AI-to-human handoff for Facebook Messenger with full context in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Connect Page",
+      "title": "Your Facebook Page, Answered by AI",
+      "body": "Connect your Facebook Page and the AI agent starts replying to Messenger conversations from the knowledge base you built. No coding, and building the agent is about as easy as briefing a new CS admin, most teams are live in about 5 minutes."
+    },
+    {
+      "label": "One Inbox",
+      "title": "Messenger Beside Every Other Channel",
+      "body": "Messenger conversations land in the same unified inbox as WhatsApp, Instagram DM, and website live chat. Your team works one dashboard with fast search, auto-labeling, private notes, and role-based access, instead of app-hopping."
+    },
+    {
+      "label": "Lead Capture",
+      "title": "From Page Message to CRM Lead",
+      "body": "Every Messenger conversation creates or updates a CRM card automatically, contact, chat history, and behavior in one living record. Customer Stages track each person from Visitor to Lead to Buyer, with next-step suggestions for your team."
+    },
+    {
+      "label": "Smart Handoff",
+      "title": "AI After Hours, Humans When Online",
+      "body": "AI working hours match your team's schedule: agents take chats during the day, the AI answers after hours, and every handoff carries the full conversation context in both directions, so nobody starts a Messenger chat over."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Humanlike, Not Scripted",
+      "body": "The AI understands what Facebook customers mean instead of matching keywords, so Messenger replies read like a real answer in the customer's language."
+    },
+    {
+      "title": "Truly Unified Inbox",
+      "body": "Messenger joins WhatsApp, Instagram, and website live chat in one dashboard, one customer profile, one team, no app-switching."
+    },
+    {
+      "title": "Answers That Turn Into Sales",
+      "body": "Every Messenger chat is captured as a lead, follow-ups fire automatically, and the AI can close the order right in the conversation."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a Facebook Messenger bot?",
+      "a": "A Facebook Messenger bot automatically replies to messages sent to your Facebook Page. With Cekat.AI, it's a humanlike AI agent that understands the customer's intent, answers with real information 24/7, and drops every conversation into the same unified inbox as your other channels."
+    },
+    {
+      "q": "How do I connect my Facebook Page to Cekat.AI?",
+      "a": "You connect your Facebook Page as a channel, then build an AI agent by pasting your SOPs and business information into the knowledge base. No coding is required, and building the agent takes about 5 minutes, it's about as easy as briefing a new CS admin."
+    },
+    {
+      "q": "Can the AI answer questions about my products in Messenger?",
+      "a": "Yes. The agent works from the knowledge base you build with your own product details, prices, and SOPs, and it understands intent and context rather than matching keywords. Anything it shouldn't handle is escalated to your team with the full chat history attached."
+    },
+    {
+      "q": "Does it answer Messenger messages outside business hours?",
+      "a": "Yes. The AI agent answers 24/7, so a customer messaging your Page at midnight gets an instant reply. With AI working hours, your team handles chats while online and the AI takes over nights and weekends automatically, with full context on every handoff."
+    },
+    {
+      "q": "Can I manage Messenger, WhatsApp, and Instagram together?",
+      "a": "Yes. Facebook Messenger is one channel in Cekat.AI's unified inbox, alongside WhatsApp via the official Business API, Instagram DM, website live chat, and API channels. Your team answers everything from one dashboard, and each customer's history stays in one profile."
+    },
+    {
+      "q": "Does it capture leads from Facebook conversations?",
+      "a": "Yes, automatically. Every Messenger conversation creates or updates a CRM card with no manual input: contact details, chat history, and behavior in one record. Customer Stages then track each contact from Visitor to Lead to Buyer, with suggested next steps."
+    },
+    {
+      "q": "What happens when a Messenger chat needs a human?",
+      "a": "The conversation is handed to your team with the complete history attached, so the customer never repeats themselves. With AI working hours, this runs on a schedule: the AI covers after-hours chats and your team takes over automatically when they come online."
+    },
+    {
+      "q": "Can it reply in more than one language?",
+      "a": "Yes. The AI agent is multilingual and replies in the language the customer uses. Minori Group, serving Japan and Indonesia, handles 100% of inquiries with multilingual AI on Cekat.AI, two languages and two timezones on one platform."
+    },
+    {
+      "q": "Is customer data from Messenger handled safely?",
+      "a": "Cekat.AI complies with UU PDP, Indonesia's personal data protection law, in handling user data. Messenger conversations and customer records live in one platform with role-based team access, so you control exactly who on your team can see what."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Facebook Page Messages Into Closed Deals",
+    "body": "Connect your Page to Cekat.AI and let AI answer every Messenger chat 24/7, while your CRM quietly fills with leads."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Customer Service for School Admissions | CekatAI",
+    "description": "Schools use Cekat.AI to answer admissions questions 24/7, fees, requirements, schedules, capture parent leads, and send deadline reminders."
+  },
+  "hero": {
+    "badge": "Schools",
+    "title": "Answer Every Parent in Admissions Season, Even at 10 PM",
+    "subtitle": "From fees to requirements to selection schedules, Cekat.AI replies to parents instantly on WhatsApp and Instagram all admissions season, and every prospective family becomes a tracked lead",
+    "useCases": [
+      "Admissions questions",
+      "After-hours answers",
+      "Open house leads",
+      "Document reminders"
+    ]
+  },
+  "definition": "Cekat.AI for schools is an AI customer service platform for private schools, international schools, boarding schools, and kindergartens in Indonesia, working as an online admissions (PSB) information system that answers parents 24/7, captures and qualifies enrollment leads, and reminds families about deadlines and documents in one platform.",
+  "stats": [
+    {
+      "value": "+60%",
+      "label": "increase in student enrolment at Matana University"
+    },
+    {
+      "value": "+90%",
+      "label": "increase in response rate to inquiries at Universitas Multimedia Nusantara"
+    },
+    {
+      "value": "24/7",
+      "label": "admissions questions from parents answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "The Same Fee, Requirement, and Schedule Questions? Handled",
+      "body": "The moment admissions open, your office answers identical questions hundreds of times, how much is the enrollment fee, which documents are required, when is the entrance test. Cekat.AI answers each one instantly with your school's official information, no matter how many chats arrive at once, so admins stop copy-pasting and focus on families ready to enroll.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering admissions questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "Parents Ask After the Kids Are Asleep, Your School Still Answers",
+      "body": "School decisions happen at the dinner table, not during office hours. Cekat.AI answers questions about fees, curriculum, and boarding facilities whenever they arrive, 9 PM or Sunday morning, so parents seriously comparing schools get certainty on the spot and your admissions team walks in to conversations already handled.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours covering chats outside school office hours in Cekat.AI"
+    },
+    {
+      "title": "Brochure and Open House Leads Stop Leaking",
+      "body": "A parent who requests a brochure and never hears back is a lost enrollment. Cekat.AI records every inquirer into a CRM card automatically, with target grade level and contact details, then organizes them in a pipeline from first question to re-registration, so your team knows exactly who needs just one more nudge.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Prospective parent leads organized in a pipeline in the Cekat.AI CRM"
+    },
+    {
+      "title": "Deadlines and Documents Chased Automatically",
+      "body": "An unfinished form, a report card never uploaded, a registration fee never paid, without reminders it all stalls midway. Cekat.AI sends automatic reminders before every deadline, triggered by schedule or an applicant's document status, so applications that are halfway done actually get finished instead of quietly fading out.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated admissions deadline reminder flow in Cekat.AI"
+    },
+    {
+      "title": "Open House Invites That Reach the Right Families",
+      "body": "Cekat.AI segments leads by grade level, interest, and application stage, then sends open house invitations or trial class info through official WhatsApp Business API broadcasts, with automatic follow-ups once the event is over. Your hall fills with parents genuinely considering your school, not a random contact list.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Lead segments powering open house broadcasts in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Admissions chats and broadcasts run on the official WhatsApp Business API, alongside Instagram DM and Facebook Messenger, one inbox from kindergarten to senior high, compliant and reliable."
+    },
+    {
+      "title": "Built for Peak Admissions Season",
+      "body": "When registration opens and chats surge, the AI answers everything instantly, response time stays flat whether ten or a thousand parents ask at once."
+    },
+    {
+      "title": "Staff Step In at the Moments That Matter",
+      "body": "The AI handles routine questions; anything needing a person, interviews, special cases, escalates to your team with full context, so parents never repeat their story."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help with school admissions?",
+      "a": "It answers parents instantly 24/7 on WhatsApp, Instagram, and web chat, fees, requirements, selection schedules, curriculum, while capturing every inquirer as a lead and reminding families about deadlines. Your admissions team stops drowning in repeated chats and focuses on the families closest to enrolling."
+    },
+    {
+      "q": "What questions can the AI answer for parents?",
+      "a": "Enrollment fees and tuition, requirements and application steps, test and announcement schedules, curriculum, extracurriculars, uniforms, school transport, and boarding facilities. The AI answers from the official information you provide, in natural language, however each parent phrases the question."
+    },
+    {
+      "q": "Can it handle the surge when admissions open?",
+      "a": "Yes. The AI answers every incoming chat instantly no matter how many arrive at once, so response time stays flat on opening day and in the final week before a wave closes. Complex questions escalate to your team with context, and AI working hours keep coverage running after the office closes."
+    },
+    {
+      "q": "How are prospective parent leads captured and qualified?",
+      "a": "Every inquirer is recorded into a CRM card automatically, with target grade level, the full conversation, and contact details, then organized in a pipeline by stage, just asking, requested a brochure, completed the test. Your team sees who is closest to enrolling instead of guessing from a crowded inbox."
+    },
+    {
+      "q": "Can it remind families about deadlines and documents?",
+      "a": "Yes. Automated follow-ups are triggered by schedule, chat keywords, or changes in an applicant's data, reminders before a registration wave closes, nudges for incomplete documents, test schedule updates. No student misses enrollment over one forgotten document."
+    },
+    {
+      "q": "Can we send open house invitations through WhatsApp?",
+      "a": "Yes. Broadcasts run through the official WhatsApp Business API to the segments you choose, by grade level, wave, or application stage, with automatic follow-ups after the event. Because it is the official API, bulk sending stays compliant with no risk of a blocked number."
+    },
+    {
+      "q": "When does school staff take over a conversation?",
+      "a": "Whenever a chat needs a person, fee assistance discussions, special cases, interview scheduling, it escalates to your team with the entire history attached. With AI working hours, staff handle chats during school hours and the AI covers evenings and weekends."
+    },
+    {
+      "q": "Is student and parent data safe with Cekat.AI?",
+      "a": "Conversation and lead data is stored encrypted with role-based access, so only authorized staff can see it. ISO 27001 certification is in progress, and the same security practices already serve 3,000+ businesses in Indonesia."
+    },
+    {
+      "q": "How long does setup take, and can we see a demo first?",
+      "a": "Building the AI agent takes around five minutes, paste your brochure, fee details, requirements, and admissions schedule into the knowledge base and it starts answering accurately, no coding. Before deciding, you can book a free demo and consultation with our team."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Parent Chats Into Completed Enrollments",
+    "body": "See how schools answer every parent and run online admissions on Cekat.AI, book a free consultation with our team."
+  }
+}

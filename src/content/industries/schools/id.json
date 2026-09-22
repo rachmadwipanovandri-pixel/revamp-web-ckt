@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Sistem Informasi PSB Sekolah, AI Jawab 24/7 | CekatAI",
+    "description": "Sekolah pakai Cekat.AI buat jawab pertanyaan PSB 24/7, biaya, syarat, jadwal, sambil menangkap leads orang tua dan mengingatkan deadline berkas."
+  },
+  "hero": {
+    "badge": "Sekolah",
+    "title": "Musim PSB Ramai, Admin Sekolah Tetap Tenang",
+    "subtitle": "Dari biaya, syarat, sampai jadwal seleksi, Cekat.AI menjawab orang tua secara instan di WhatsApp dan Instagram sepanjang musim PSB, dan tiap calon murid tercatat jadi leads",
+    "useCases": [
+      "Pertanyaan PSB",
+      "Jawab di luar jam sekolah",
+      "Leads open house",
+      "Reminder berkas"
+    ]
+  },
+  "definition": "Cekat.AI untuk sekolah adalah platform AI customer service untuk sekolah swasta, sekolah internasional, boarding school, dan TK di Indonesia, mendampingi PSB online sebagai sistem informasi PSB sekolah yang menjawab pertanyaan orang tua 24/7, menangkap leads calon murid, dan mengingatkan deadline berkas dalam satu platform.",
+  "stats": [
+    {
+      "value": "+60%",
+      "label": "kenaikan jumlah pendaftaran mahasiswa di Matana University"
+    },
+    {
+      "value": "+90%",
+      "label": "peningkatan tingkat respons pertanyaan masuk di Universitas Multimedia Nusantara"
+    },
+    {
+      "value": "24/7",
+      "label": "pertanyaan PSB dari orang tua terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Pertanyaan yang Sama Ratusan Kali, Dijawab Tanpa Ngeluh",
+      "body": "Begitu PSB dibuka, admin sekolah menjawab pertanyaan yang itu-itu lagi, berapa uang pangkal, syaratnya apa, kapan tes seleksi. Cekat.AI menjawab semuanya instan dengan info resmi dari sekolahmu, berapa pun chat yang masuk bersamaan, jadi admin berhenti jadi mesin copy-paste dan fokus ke keluarga yang udah siap daftar.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab pertanyaan PSB di inbox Cekat.AI"
+    },
+    {
+      "title": "Orang Tua Nanya Setelah Anak Tidur, Sekolah Tetap Jawab",
+      "body": "Keputusan pilih sekolah dibahas di meja makan, bukan di jam kerja TU. Cekat.AI menjawab pertanyaan biaya, kurikulum, dan fasilitas asrama kapan pun chat masuk, jam 9 malam atau Minggu pagi, jadi orang tua yang lagi serius membandingkan sekolah dapat kepastian saat itu juga dan panitia PSB datang pagi ke percakapan yang udah beres.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI dan admin sekolah di Cekat.AI"
+    },
+    {
+      "title": "Leads dari Brosur dan Open House Nggak Lagi Bocor",
+      "body": "Orang tua yang minta brosur lalu tidak pernah dikabari lagi adalah murid yang hilang. Cekat.AI mencatat tiap penanya ke kartu CRM otomatis, lengkap dengan jenjang yang dituju dan kontaknya, lalu menyusunnya dalam pipeline dari sekadar tanya sampai siap daftar ulang, jadi panitia tahu persis siapa yang tinggal didorong sedikit lagi.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads calon wali murid tersusun dalam pipeline CRM Cekat.AI"
+    },
+    {
+      "title": "Deadline dan Kelengkapan Berkas Diingetin Otomatis",
+      "body": "Formulir belum lengkap, rapor belum diunggah, biaya pendaftaran belum dibayar, tanpa reminder semuanya berhenti di tengah jalan. Cekat.AI mengirim pengingat otomatis sebelum tiap tenggat, dipicu jadwal atau status berkas pendaftar, jadi pendaftaran yang udah setengah jalan beneran selesai, bukan menguap diam-diam.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Alur reminder deadline PSB otomatis di Cekat.AI"
+    },
+    {
+      "title": "Undangan Open House Nyampe ke Keluarga yang Tepat",
+      "body": "Cekat.AI mensegmentasi leads dari jenjang, minat, dan tahap pendaftarannya, lalu mengirim undangan open house atau info trial class lewat broadcast WhatsApp Business API resmi, plus follow-up otomatis setelah acaranya selesai. Kursi aula terisi keluarga yang beneran mempertimbangkan sekolahmu, bukan daftar kontak acak.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi leads untuk broadcast open house di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chat PSB dan broadcast jalan di WhatsApp Business API resmi, bareng Instagram DM dan Facebook Messenger, satu inbox dari TK sampai SMA, compliant dan andal."
+    },
+    {
+      "title": "Kuat di Puncak Musim PSB",
+      "body": "Saat pendaftaran dibuka dan chat melonjak, AI menjawab semuanya instan, waktu respons tetap stabil, mau sepuluh atau seribu orang tua yang nanya bersamaan."
+    },
+    {
+      "title": "Panitia Masuk di Momen Penting",
+      "body": "AI menangani pertanyaan rutin; yang butuh manusia, wawancara, kasus khusus, dialihkan ke panitia lengkap dengan konteks, orang tua nggak mengulang cerita."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu PSB sekolah?",
+      "a": "Cekat.AI menjawab pertanyaan orang tua secara instan 24/7 di WhatsApp, Instagram, dan web chat, biaya, syarat, jadwal seleksi, kurikulum, sambil menangkap tiap penanya jadi leads dan mengingatkan deadline berkas. Panitia PSB berhenti kewalahan chat berulang dan fokus ke keluarga yang paling dekat mendaftar."
+    },
+    {
+      "q": "Pertanyaan apa saja yang bisa dijawab AI untuk orang tua?",
+      "a": "Uang pangkal dan SPP, syarat dan alur pendaftaran, jadwal tes dan pengumuman, kurikulum, ekstrakurikuler, seragam, antar jemput, sampai fasilitas asrama untuk boarding school. AI menjawab dari info resmi yang kamu berikan, dengan bahasa natural, walau tiap orang tua nanya dengan gayanya sendiri."
+    },
+    {
+      "q": "Kuat saat PSB baru dibuka dan chat melonjak?",
+      "a": "Kuat. AI menjawab setiap chat masuk secara instan berapa pun banyaknya sekaligus, jadi waktu respons tetap stabil di hari pertama pendaftaran maupun jelang penutupan gelombang. Pertanyaan kompleks dialihkan ke panitia lengkap dengan konteks, dan AI working hours menjaga coverage setelah kantor TU tutup."
+    },
+    {
+      "q": "Bagaimana leads calon wali murid ditangkap dan dikualifikasi?",
+      "a": "Setiap penanya dicatat ke kartu CRM otomatis, lengkap dengan jenjang yang dituju, percakapan, dan kontaknya, lalu tersusun dalam pipeline sesuai tahapnya, baru tanya, minta brosur, sudah ikut tes. Panitia melihat siapa yang paling siap daftar, bukan menebak dari inbox yang penuh."
+    },
+    {
+      "q": "Bisa mengingatkan deadline pendaftaran dan kelengkapan berkas?",
+      "a": "Bisa. Follow-up otomatis dipicu jadwal, keyword chat, atau perubahan data pendaftar, reminder sebelum gelombang ditutup, pengingat berkas yang belum lengkap, info jadwal tes. Nggak ada calon murid yang gagal daftar cuma karena lupa satu dokumen."
+    },
+    {
+      "q": "Bisa kirim undangan open house lewat WhatsApp?",
+      "a": "Bisa. Broadcast jalan lewat WhatsApp Business API resmi ke segmen yang kamu pilih, per jenjang, per gelombang, per tahap pendaftaran, lengkap dengan follow-up otomatis setelah acara. Karena lewat API resmi, pengiriman massal tetap compliant tanpa risiko nomor kena blokir."
+    },
+    {
+      "q": "Kapan panitia atau admin sekolah mengambil alih chat?",
+      "a": "Setiap kali percakapan butuh manusia, diskusi keringanan biaya, kasus khusus, penjadwalan wawancara, chat dialihkan ke panitia lengkap dengan seluruh riwayatnya. Dengan AI working hours, tim pegang chat di jam sekolah dan AI meng-cover malam serta akhir pekan."
+    },
+    {
+      "q": "Data calon murid dan orang tua aman di Cekat.AI?",
+      "a": "Data percakapan dan leads tersimpan dengan enkripsi dan akses yang diatur per role, jadi hanya panitia yang berwenang yang bisa melihatnya. Sertifikasi ISO 27001 sedang dalam proses, dan praktik keamanan yang sama sudah dipakai 3.000+ bisnis di Indonesia."
+    },
+    {
+      "q": "Berapa lama setup untuk sekolah, dan bisa lihat demo dulu?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin brosur, rincian biaya, syarat, dan jadwal PSB ke knowledge base, dan AI langsung menjawab akurat, tanpa coding. Sebelum memutuskan, kamu bisa jadwalkan demo dan konsultasi gratis dengan tim kami."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Chat Orang Tua Jadi Pendaftaran PSB",
+    "body": "Lihat bagaimana sekolah menjawab setiap orang tua dan mengawal PSB online di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

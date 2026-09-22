@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "AI Ticketing & Event Customer Service in Chat | CekatAI",
+    "description": "Cinemas, clubs, and event venues use Cekat.AI to answer showtimes, sell tickets, and manage guest lists in chat, 24/7, without extra admins."
+  },
+  "hero": {
+    "badge": "Entertainment",
+    "title": "Answer Every Ticket and Guest List Chat, Even at 2 AM",
+    "subtitle": "From showtimes and ticket prices to table bookings and guest lists, Cekat.AI replies instantly on WhatsApp and Instagram, 24/7, in natural language, without an admin on night shift",
+    "useCases": [
+      "Showtimes & pricing",
+      "In-chat ticketing",
+      "Guest list & tables",
+      "Event change broadcasts"
+    ]
+  },
+  "definition": "Cekat.AI for entertainment is an AI customer service platform for cinemas, clubs, live event venues, and promoters in Indonesia, working as a ticketing and event customer service system in one chat, answering showtimes and prices instantly, selling and confirming tickets, and handling table and guest list bookings 24/7.",
+  "stats": [
+    {
+      "value": "2×",
+      "label": "increase in booking revenue at Puffy Cotton Candy"
+    },
+    {
+      "value": "2×",
+      "label": "increase in chat handling capacity at Kezka Printing within 6 months"
+    },
+    {
+      "value": "24/7",
+      "label": "showtime, ticket, and booking questions answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Showtime and Price Questions Answered on the Spot",
+      "body": "\"What time is tonight's show?\" \"Any presale left?\" \"How much at the door?\" The same questions arrive by the hundreds as an event approaches, and the closer the show, the less patient the asker. Cekat.AI answers instantly in natural language from your venue's knowledge base, so would-be guests get certainty and commit, instead of drifting to another night out.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering showtime and ticket price questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "Sell and Confirm Tickets Inside the Chat",
+      "body": "Cekat.AI takes the ticket order inside the conversation, quantity, buyer details, and a payment QR, without sending guests to another app or an admin retyping orders into a spreadsheet. A guest goes from question to confirmed ticket in one chat, and every order lands complete and consistent.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Ticket order created and paid inside a chat conversation in Cekat.AI"
+    },
+    {
+      "title": "Guest Lists and Table Bookings Handled, No Night Shift Required",
+      "body": "Guest list and table DMs peak after midnight, exactly when your admins log off. Cekat.AI answers and records every request the moment it arrives, into a CRM card with the full chat history, so no name slips through and your door team opens a clean list instead of scrolling last night's DMs.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI covering guest list and booking chats outside working hours in Cekat.AI"
+    },
+    {
+      "title": "Event Changed? Tell Every Ticket Holder at Once",
+      "body": "A pushed schedule, a lineup change, a cancellation, and the inbox floods. Broadcast the announcement to the affected ticket holders through the official WhatsApp Business API first, then let the AI answer the refund questions that follow with one consistent answer based on your policy, instead of five panicked admins giving five different ones.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Audience segments for event announcement broadcasts in Cekat.AI"
+    }
+  ],
+  "caseStudy": {
+    "client": "Puffy Cotton Candy",
+    "title": "How Puffy Cotton Candy Doubled Booking Revenue — and Hit 2–4× in Peak Season",
+    "metrics": [
+      {
+        "value": "2×",
+        "label": "increase in booking revenue at Puffy Cotton Candy"
+      },
+      {
+        "value": "2×",
+        "label": "increase in chat handling capacity at Kezka Printing within 6 months"
+      }
+    ],
+    "body": "Puffy Cotton Candy runs 35 mall outlets and a home-service division that brings cotton-candy booths to birthdays, corporate events and parties. Event inquiries came in over WhatsApp and were answered by hand: slow, inconsistent, often missing the detail a host needed to decide. After moving the home-service line onto Cekat.AI, every inquiry gets an instant, informative reply. The result: more leads handled, faster handling time, booking revenue roughly double the pre-AI baseline, and 2–4× during Lebaran, Christmas and New Year."
+  },
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats, broadcasts, and ticket confirmations run on the official WhatsApp Business API, alongside Instagram DM and Facebook Messenger, one inbox across every venue and event, compliant and reliable."
+    },
+    {
+      "title": "AI That Sells Tickets and Books Tables",
+      "body": "The AI answers showtimes and prices, sells tickets in conversation, and records guest lists and table bookings, then hands tricky cases to your team with full context."
+    },
+    {
+      "title": "Proven in F&B and Entertainment",
+      "body": "Puffy Cotton Candy took event and party bookings from manual replies to instant AI handling: booking revenue doubled, and 2–4× in peak season."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help entertainment and event businesses?",
+      "a": "It works as your ticketing and event customer service system in one chat: answering showtimes, prices, and venue questions instantly 24/7 on WhatsApp, Instagram, and web chat, selling tickets in conversation, and recording guest lists and table bookings automatically. Your team runs the show instead of answering the same chat all night."
+    },
+    {
+      "q": "Can guests buy tickets straight from the chat?",
+      "a": "Yes. Cekat.AI creates the ticket order from the conversation, quantity, buyer details, and a payment QR, without the guest ever leaving the chat. Orders land complete and consistent, and nothing gets retyped by hand."
+    },
+    {
+      "q": "Can it handle guest lists and table bookings?",
+      "a": "Yes. Requests that arrive after midnight are answered and recorded by the AI on the spot, into a CRM card with the full chat history attached. Your door team opens a clean, complete list instead of scrolling through last night's DMs."
+    },
+    {
+      "q": "What happens when an event is postponed or cancelled?",
+      "a": "Announce it first with a broadcast on the official WhatsApp Business API to the affected ticket holders, then the AI answers the refund and exchange questions that follow with one consistent answer based on your policy. Cases that need a judgment call escalate to your team with full context."
+    },
+    {
+      "q": "Can the AI keep up when chats spike before a show?",
+      "a": "Yes. It answers every incoming chat instantly no matter how many arrive at once, so the hours before open gate stay fully covered. Response time doesn't queue, even when thousands ask at the same time."
+    },
+    {
+      "q": "Which channels can we connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, and website live chat, all flowing into one inbox with a single history per guest. Someone who DMs on Instagram then continues on WhatsApp never repeats themselves."
+    },
+    {
+      "q": "How long does setup take for a venue or promoter?",
+      "a": "Building the AI agent takes around five minutes, paste your show schedule, ticket prices, house rules, and SOPs into the knowledge base and it starts answering accurately. No coding required; as easy as briefing a new admin."
+    },
+    {
+      "q": "What results have entertainment businesses seen?",
+      "a": "Puffy Cotton Candy took event and party bookings from manual replies to instant AI handling: booking revenue doubled, and 2–4× in peak season."
+    },
+    {
+      "q": "Can we try it before committing?",
+      "a": "Yes. Book a free demo with our team, bring your own event scenarios, and watch the AI answer your guests' questions live. Pricing follows your channels and chat volume, and our team helps size the right plan."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Every Chat Into a Sold Ticket",
+    "body": "See how venues and promoters run ticketing, bookings, and event support 24/7 on Cekat.AI, book a free consultation with our team."
+  }
+}

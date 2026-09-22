@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Follow-Up Otomatis untuk Sales & Chat Customer | CekatAI",
+    "description": "Rezeki ada di follow-up, dan Cekat.AI tidak pernah lupa. Reminder otomatis untuk order belum dibayar, promo mau habis, dan leads yang diam, 24/7."
+  },
+  "hero": {
+    "badge": "Follow-Up Otomatis",
+    "title": "Setiap Follow-Up Terkirim Tepat Waktu, Tanpa Perlu Diingat",
+    "subtitle": "Aktifkan lagi leads yang ghosting, selamatkan order belum dibayar, dan ingatkan customer di momen yang tepat, otomatis, berdasarkan perilaku nyata, 24/7"
+  },
+  "definition": "Follow-up otomatis di Cekat.AI mengirim reminder dan ajakan ke customer secara otomatis, sebelum jatuh tempo pembayaran, saat promo berakhir, atau saat leads mulai diam, dipicu oleh perilaku nyata tiap customer, jadi tidak ada peluang hilang karena follow-up terlewat.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "follow-up terkirim otomatis" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Leads yang Ghosting Dapat Kesempatan Kedua, Otomatis",
+      "body": "Kebanyakan leads tidak bilang tidak; mereka cuma diam. Cekat.AI menyadari saat percakapan mandek dan mengirim ajakan yang relevan dengan sendirinya, jadi leads yang tadinya bakal hilang ditarik lagi menuju keputusan tanpa tim kamu angkat tangan.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Alur follow-up leads otomatis di Cekat.AI"
+    },
+    {
+      "title": "Selamatkan Order Belum Dibayar Sebelum Hilang",
+      "body": "Order yang belum dibayar itu revenue yang lagi kabur. Reminder otomatis terkirim sebelum jendela pembayaran tutup, ramah, tepat waktu, dan spesifik ke order itu, jadi lebih banyak keranjang berubah jadi penjualan, bukan diam-diam menghilang.",
+      "image": "/images/order/automation-triggers-instantly.png",
+      "imageAlt": "Reminder pembayaran otomatis di Cekat.AI"
+    },
+    {
+      "title": "Pesan yang Tepat, di Momen yang Tepat",
+      "body": "Reminder terkirim berdasarkan perilaku dan event, waktunya beli lagi, promo mau habis, booking yang mendekat. Karena dipicu oleh apa yang benar-benar customer lakukan, follow-up terasa membantu bukan spam, dan dibales.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Trigger follow-up berbasis perilaku di Cekat.AI"
+    },
+    {
+      "title": "Follow-Up yang Closing, Bukan Sekadar Mengingatkan",
+      "body": "Saat customer bales follow-up, AI agent langsung melanjutkan percakapan, jawab pertanyaan, cek ongkir, dan closing order langsung di chat. Follow-up bukan cuma mulai ulang percakapan, tapi menyelesaikannya.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menangani balasan follow-up di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Tidak Pernah Terlupa",
+      "body": "Otomatisasi mengirim setiap follow-up sesuai jadwal, jadi revenue tidak bocor gara-gara tim sibuk lupa balik lagi."
+    },
+    {
+      "title": "Berbasis Perilaku",
+      "body": "Reminder dipicu oleh aktivitas dan event nyata customer, jadi tiap pesan relevan dan tepat waktu, bukan blast generik."
+    },
+    {
+      "title": "Closing di Chat",
+      "body": "Balasan mengalir ke AI agent yang menyelesaikan penjualan, jadi follow-up berubah jadi order bukan cuma buka ulang percakapan."
+    }
+  ],
+  "testimonial": {
+    "quote": "Peluang closing sangat tinggi",
+    "name": "Wiji Astuti",
+    "role": "Head of Customer Experience - Rumah Zakat",
+    "image": "/images/home/testimonial-wiji-astuti.jpg"
+  },
+  "faq": [
+    {
+      "q": "Apa itu follow-up otomatis?",
+      "a": "Follow-up otomatis mengirim reminder dan ajakan ke customer tanpa kerja manual, untuk order belum dibayar, promo mau habis, atau leads yang diam. Di Cekat.AI, semuanya dipicu oleh perilaku nyata tiap customer jadi follow-up tepat waktu dan relevan."
+    },
+    {
+      "q": "Follow-up jenis apa saja yang bisa diotomatiskan?",
+      "a": "Reminder pembayaran untuk order pending, ajakan re-engagement untuk leads yang diam, ajakan beli lagi, dan reminder sebelum momen penting seperti booking atau promo yang mau berakhir, semua dipicu otomatis oleh perilaku atau jadwal."
+    },
+    {
+      "q": "Bagaimana ia tahu kapan harus follow-up?",
+      "a": "Follow-up dipicu oleh event dan perilaku customer, order belum dibayar, percakapan mandek, promo mau habis, pakai data dari CRM, jadi tiap reminder terkirim di momen yang tepat untuk customer itu."
+    },
+    {
+      "q": "Apakah follow-up otomatis akan terasa spam?",
+      "a": "Tidak, karena berbasis perilaku dan personal, bukan blast massal. Reminder hanya terkirim saat relevan untuk customer itu, dan menyebut order atau aktivitas mereka yang sebenarnya, jadi terbaca membantu."
+    },
+    {
+      "q": "Apa yang terjadi saat customer bales?",
+      "a": "AI agent langsung melanjutkan percakapan, menjawab pertanyaan, cek ongkir, dan closing order langsung di chat, 24/7. Follow-up bukan cuma mulai ulang percakapan, tapi mendorongnya menuju penjualan."
+    },
+    {
+      "q": "Apakah jalan di WhatsApp dan channel lain?",
+      "a": "Ya. Follow-up menjangkau customer di WhatsApp lewat Business API resmi dan di channel lain yang terhubung, dengan setiap interaksi tercatat di profil customer."
+    },
+    {
+      "q": "Perlu coding untuk setup alur follow-up?",
+      "a": "Tidak. Aturan dan trigger follow-up dibangun dengan otomatisasi visual Cekat.AI, jadi tim kamu bisa bikin dan atur alurnya tanpa coding sama sekali."
+    },
+    {
+      "q": "Bisa follow-up ke segmen customer tertentu?",
+      "a": "Bisa. Gabungkan follow-up otomatis dengan segmentasi untuk menargetkan reminder berdasarkan aktivitas, riwayat pembelian, atau event, jadi grup yang tepat dapat ajakan yang tepat di waktu yang tepat."
+    },
+    {
+      "q": "Bagaimana ini nyambung ke fitur Cekat.AI lain?",
+      "a": "Follow-up otomatis pakai data CRM untuk menentukan siapa yang dihubungi, AI agent menangani balasan, dan hasilnya update profil customer, satu loop terhubung dari trigger sampai penjualan closing."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Follow-Up yang Terlupa Jadi Revenue yang Kembali",
+    "body": "Biarkan otomatisasi mengirim setiap reminder tepat waktu dan AI menutup balasannya, 24/7, tanpa nambah tim."
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Lead Management, Capture, Qualify, Close Every Lead | CekatAI",
+    "description": "Capture leads from website, WhatsApp, and socials automatically. AI qualifies and follows up 24/7 so no lead slips away, trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "AI-Powered Lead Management",
+    "title": "Stop Losing Leads You Already Paid For",
+    "subtitle": "Capture every lead from your website, WhatsApp, and social media automatically, let AI qualify them, and follow up until they buy, with each lead's entry point tracked from first click to closed deal"
+  },
+  "definition": "Lead Management is a Cekat.AI feature that captures leads from your website, WhatsApp, and social media automatically, qualifies them with AI, tracks each lead's entry point, and follows up automatically until the deal closes.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "AI qualifies incoming leads" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Capture Every Lead Automatically, From Every Channel",
+      "body": "Leads arrive at midnight, on weekends, mid-lunch rush, and every unanswered one is ad budget wasted. Cekat.AI captures leads from your website, WhatsApp, and social media the moment they reach out, creating a CRM card automatically so nothing depends on an admin remembering to log it.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads captured and organized automatically in the Cekat.AI CRM"
+    },
+    {
+      "title": "Qualify With AI, Not Gut Feeling",
+      "body": "Not every inquiry deserves an hour of your sales team's day. Cekat.AI's AI agent engages each lead in natural conversation, understands intent and context rather than keywords, and moves contacts through Customer Stages, Visitor, Lead, Buyer, so humans step in only where they add value.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI AI agent qualifying leads in conversation"
+    },
+    {
+      "title": "Know Where Every Lead Came From",
+      "body": "When you can't see the entry point, you can't see which channel earns its budget. Cekat.AI tracks where each lead entered, website, WhatsApp, or socials, and logs their behavior and events on the profile, so doubling down on what works becomes a data decision, not a debate.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Tracking each lead's entry point and journey in Cekat.AI"
+    },
+    {
+      "title": "Focus on the Leads Most Likely to Convert",
+      "body": "A pile of unsorted inquiries hides the buyers inside it. With Customer Stages, next-step suggestions, and filters and boards, your team sees exactly who is closest to purchasing and what to do next, instead of working the list top to bottom and hoping.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Filtering and prioritizing high-intent leads in Cekat.AI"
+    },
+    {
+      "title": "Follow Up Automatically Until the Deal Closes",
+      "body": "Most leads don't say no, they just go quiet, and nobody circles back. Cekat.AI sends automatic follow-up nudges and reminders based on each lead's behavior, from pending payments to expiring promos, so every opportunity gets worked without your team keeping mental to-do lists.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated lead follow-up workflows in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Auto Capture",
+      "title": "Every Inquiry Becomes a Lead Record",
+      "body": "Leads from your website, WhatsApp, Instagram, Facebook Messenger, and live chat are captured into the CRM automatically, with a card created or updated from every interaction, no manual input required."
+    },
+    {
+      "label": "AI Qualification",
+      "title": "Intent Understood, Not Guessed",
+      "body": "The AI agent converses naturally with every lead, 24/7 and multilingual, understanding what they actually want. Qualified leads move forward through Customer Stages; casual browsers don't clog your sales queue."
+    },
+    {
+      "label": "Source Tracking",
+      "title": "Entry Point Logged on Every Lead",
+      "body": "Each lead's profile records where they came from and what they did, website behavior, event logs, campaigns received, so you always know which channels produce leads that actually convert."
+    },
+    {
+      "label": "Auto Follow-Up",
+      "title": "Nudges That Never Get Forgotten",
+      "body": "Workflow triggers fire on schedules, chat keywords, or customer-data changes, like a new lead arriving, to send follow-ups and reminders automatically, and notify your team when a human touch is needed."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "No Lead Left Behind",
+      "body": "The AI agent responds instantly around the clock, and AI working hours hand conversations to your team with full context when they're online, so a 2 AM inquiry gets the same treatment as a 2 PM one."
+    },
+    {
+      "title": "One Inbox, One CRM",
+      "body": "Website, WhatsApp, and social leads land in a single unified inbox and a single customer record, no lead lost between disconnected tools."
+    },
+    {
+      "title": "From Visitor to Buyer",
+      "body": "Customer Stages map every contact's journey from Visitor to Lead to Buyer, with next-step suggestions guiding each move forward."
+    }
+  ],
+  "testimonial": {
+    "quote": "Our revenue increased by more than 50%! Cekat AI allows us to secure property visits and close deals even while I'm asleep, because no leads are missed.",
+    "name": "Adam Sulaiman",
+    "role": "President Director, Threeland Property",
+    "image": "/images/crm/adam-sulaiman.png"
+  },
+  "faq": [
+    {
+      "q": "What is lead management?",
+      "a": "Lead management is the process of capturing potential customers, qualifying them, and following up until they buy. In Cekat.AI, leads from your website, WhatsApp, and social media are captured automatically, qualified by an AI agent in conversation, and followed up with automated nudges, with every step tracked in the CRM."
+    },
+    {
+      "q": "How does Cekat.AI capture leads automatically?",
+      "a": "Every inquiry from your website, WhatsApp, Instagram DM, Facebook Messenger, or live chat lands in one unified inbox, and a CRM card is created or updated automatically from the interaction. No forms to export, no spreadsheets to maintain, the lead exists in your database the moment they say hello."
+    },
+    {
+      "q": "How does AI qualify a lead?",
+      "a": "Cekat.AI's AI agent chats with each lead in natural language, understanding intent and context rather than matching keywords. Based on the conversation, contacts progress through Customer Stages, Visitor, Lead, Buyer, so your team can see at a glance who is genuinely interested and ready for a human follow-up."
+    },
+    {
+      "q": "Can I see which channel a lead came from?",
+      "a": "Yes. Cekat.AI tracks each lead's entry point, website, WhatsApp, or social media, and records their website behavior and event logs on the profile. Over time you see exactly which channels produce leads that convert, and which just produce noise."
+    },
+    {
+      "q": "What happens to leads that come in outside working hours?",
+      "a": "They get answered immediately. The AI agent works 24/7, qualifying and responding to leads whenever they arrive. With AI working hours, conversations hand off to your team when they come online, carrying the full chat history, so no lead waits and no context is lost."
+    },
+    {
+      "q": "How does automatic follow-up work?",
+      "a": "Workflow triggers respond to time-based schedules, chat keywords, or customer-data changes such as a new lead arriving. Cekat.AI then sends follow-up nudges and reminders, pending payment, expiring promo, replenishment time, automatically, and can notify the right team member when personal attention is needed."
+    },
+    {
+      "q": "How do I know which leads to prioritize?",
+      "a": "Customer Stages show where every contact sits, Visitor, Lead, or Buyer, and each profile carries next-step suggestions. Combine that with filters and boards, and your sales team starts each day with a sorted list of the highest-intent leads instead of an undifferentiated inbox."
+    },
+    {
+      "q": "Does lead management work with WhatsApp broadcast campaigns?",
+      "a": "Yes. Leads captured in the CRM can be segmented by activity, purchase history, or events and nurtured with personalized WhatsApp broadcasts through the official Business API. When they reply, the AI agent picks the conversation right back up, the whole loop runs on one platform."
+    },
+    {
+      "q": "Do I need technical skills to set up lead management?",
+      "a": "No. There's no coding anywhere in Cekat.AI, you connect your channels, brief the AI agent with your SOPs and business info, and lead capture starts working. Setting up the AI agent takes about five minutes and is as easy as briefing a CS admin."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Missed Chats Into Closed Deals",
+    "body": "Capture, qualify, and follow up every lead automatically, even while you sleep."
+  }
+}

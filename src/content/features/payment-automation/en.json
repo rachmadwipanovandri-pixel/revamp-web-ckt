@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Payment Automation, QR in Chat, Reminders on Autopilot | CekatAI",
+    "description": "Payment automation sends a QR in the chat and chases unpaid orders with automatic reminders, 3,000+ businesses close the payment loop without manual follow-up."
+  },
+  "hero": {
+    "badge": "In-Chat Payment Automation",
+    "title": "Send the Payment QR and Let AI Chase What's Unpaid",
+    "subtitle": "Cekat.AI's agent sends a payment QR right in the conversation and follows up on pending orders automatically, so payments get collected without your team chasing anyone"
+  },
+  "definition": "Payment Automation is a Cekat.AI feature that sends a payment QR directly inside the chat and follows up on unpaid orders with automatic reminders, closing the payment loop without manual chasing by your team.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "AI sends QRs and reminders" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Payment Happens Inside the Chat",
+      "body": "The moment an order is ready, Cekat.AI's agent sends a payment QR right in the conversation, no checkout link to copy, no app to switch to, no redirect that gives the buyer a reason to hesitate. The customer pays in the same chat where they decided to buy, while intent is still high.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI agent sending a payment QR inside a chat"
+    },
+    {
+      "title": "Unpaid Orders Get Chased Automatically",
+      "body": "Most lost sales aren't rejections, they're orders that quietly went unpaid while everyone got busy. Cekat.AI sends automatic reminders on pending payments, nudging the customer before the order goes cold. The follow-up your admin would have forgotten happens on its own, every time.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automatic payment reminder workflow in Cekat.AI"
+    },
+    {
+      "title": "No Team Chasing Payments by Hand",
+      "body": "Manually tracking who paid and who didn't, then messaging each one, burns hours your team doesn't have. Automation closes the loop: the QR goes out, reminders follow if payment stalls, and your people step in only when a case actually needs a human, not to send the fifth \"just checking\" message.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "End-to-end payment flow that removes manual chasing in Cekat.AI"
+    },
+    {
+      "title": "Every Payment Updates the Customer Record",
+      "body": "When an order is paid, the customer's CRM profile updates by itself, moving them along the Visitor → Lead → Buyer journey without manual input. Your team sees sales progress in real time, and future campaigns already know who's a paying customer and who still needs a nudge.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Paid orders logged automatically on customer profiles in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "QR in Chat",
+      "title": "Payment QR Sent in the Conversation",
+      "body": "As soon as the order is ready, the AI drops a payment QR into the chat. The customer scans and pays without leaving the conversation, no checkout link to chase down, no extra app, no drop-off between deciding and paying."
+    },
+    {
+      "label": "Auto Reminder",
+      "title": "Pending Payments Followed Up Automatically",
+      "body": "If a payment stays pending, Cekat.AI sends event-based reminders on its own, a polite nudge at the right moment instead of an order forgotten in the queue. Orders get settled instead of quietly disappearing."
+    },
+    {
+      "label": "No Chasing",
+      "title": "Your Team Stops Playing Debt Collector",
+      "body": "Automation handles the routine follow-ups, so your team isn't manually messaging every unpaid buyer. They step in only for the cases that genuinely need a person, and the rest close themselves."
+    },
+    {
+      "label": "CRM Sync",
+      "title": "Paid Orders Logged Automatically",
+      "body": "Each payment updates the customer's CRM card and their stage in the journey with no manual entry, so sales tracking stays accurate in real time and every profile reflects what the customer actually paid for."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Pay Without Leaving the Chat",
+      "body": "The QR arrives in the same conversation, so the customer pays on the spot instead of dropping off at a separate checkout."
+    },
+    {
+      "title": "The Follow-Up Never Gets Forgotten",
+      "body": "Automatic reminders chase pending payments on their own, the money is in the follow-up, and the platform never misses one."
+    },
+    {
+      "title": "Humans Only for the Hard Cases",
+      "body": "Automation clears the routine chasing, freeing your team to handle the conversations that actually need a person."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is payment automation?",
+      "a": "Payment automation is collecting payment for an order without manual work. In Cekat.AI, the AI agent sends a payment QR directly in the chat once the order is ready, then follows up on pending payments with automatic reminders, so the payment loop closes without your team chasing anyone by hand."
+    },
+    {
+      "q": "How does the payment QR work?",
+      "a": "When the order is ready, Cekat.AI's agent sends a payment QR straight into the conversation. The customer scans and pays without leaving the chat or switching apps, so there's no drop-off between deciding to buy and actually paying, which is where a lot of orders are normally lost."
+    },
+    {
+      "q": "What happens if a customer doesn't pay?",
+      "a": "Cekat.AI sends automatic reminders on pending payments. Event-based nudges go out at the right moments to prompt the customer before the order goes cold, the follow-up your admin might forget happens on its own, so unpaid orders get settled instead of quietly disappearing."
+    },
+    {
+      "q": "Do I still have to chase payments manually?",
+      "a": "No. Automation handles the routine follow-ups, the QR goes out and reminders continue if payment stalls. Your team steps in only when a case genuinely needs a person, instead of manually messaging every unpaid buyer to ask whether they've transferred yet."
+    },
+    {
+      "q": "Does a paid order update automatically?",
+      "a": "Yes. When payment comes in, the customer's CRM profile updates by itself, moving them along the Visitor → Lead → Buyer journey with no manual entry. Your team sees sales progress in real time and future campaigns know exactly who has already paid."
+    },
+    {
+      "q": "Which channels does payment automation work on?",
+      "a": "All channels connected to Cekat.AI: WhatsApp via the official Business API, Instagram DM, Facebook Messenger, website live chat, and API channels. The AI can send the payment QR and reminders on whichever channel the customer is already chatting on."
+    },
+    {
+      "q": "Is payment automation safe?",
+      "a": "Yes. Cekat.AI complies with UU PDP, Indonesia's personal data protection law, and is an official Meta Business Partner, so WhatsApp traffic runs through Meta's official infrastructure. Role-based team access controls who in your business can see customer and order data."
+    },
+    {
+      "q": "Does it keep working after hours?",
+      "a": "Yes. The AI sends payment QRs and reminders 24/7. With AI working hours, your team handles chats during office hours and the AI takes over after, so an order placed at night still gets its QR and follow-up without anyone on shift."
+    },
+    {
+      "q": "Do I need to code anything?",
+      "a": "No coding is needed. You set up the AI by pasting your business info into the knowledge base and shaping conversations with a visual drag-and-drop flow designer. Building an agent takes around five minutes, Cekat.AI describes it as being as easy as briefing a CS admin."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Pending Orders Into Paid Ones",
+    "body": "Let Cekat.AI send the QR and chase every unpaid order automatically, no manual follow-up, 24/7."
+  }
+}

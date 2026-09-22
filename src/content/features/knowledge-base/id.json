@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "AI Knowledge Base, Jawaban CS Akurat dari SOP-mu | CekatAI",
+    "description": "Buat knowledge base AI untuk bisnis Anda. Upload SOP dan FAQ, AI langsung jawab pertanyaan pelanggan secara akurat dan konsisten di semua channel. Coba gratis!"
+  },
+  "hero": {
+    "badge": "AI Knowledge Base",
+    "title": "Tempel SOP-mu, AI Langsung Jawab Akurat dari Hari Pertama",
+    "subtitle": "Knowledge base Cekat.AI mengubah SOP dan info bisnismu jadi jawaban akurat seketika, konsisten di semua agent, tim, dan channel. Update sekali, langsung berlaku di mana-mana"
+  },
+  "definition": "Knowledge base di Cekat.AI adalah tempat kamu menempel SOP dan info bisnis supaya AI agent menjawab pertanyaan customer secara akurat dan konsisten. Update satu jawaban, dan perubahannya berlaku di semua channel dan anggota tim, WhatsApp, Instagram, Messenger, dan live chat website semua menarik dari sumber yang sama.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "jawaban akurat, siang malam" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Jawab Akurat Sejak Menit Pertama Live",
+      "body": "Nggak ada fase training panjang. Tempel SOP, daftar harga, dan info bisnis ke knowledge base, dan AI langsung jawab dari situ, berdasarkan kebijakan aslimu, bukan nebak. Customer dapat jawaban benar dari hari pertama, dan tim kamu berhenti ngulang penjelasan yang sama terus.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "SOP dan info bisnis dimuat ke knowledge base Cekat.AI"
+    },
+    {
+      "title": "Satu Sumber Kebenaran, Jawaban Sama Setiap Saat",
+      "body": "Kalau jawaban cuma ada di kepala orang, tiap agent bales-nya beda-beda. Knowledge base ngasih AI dan tim kamu satu sumber bersama, jadi customer dapat jawaban benar yang sama entah nanya jam 2 siang atau jam 2 pagi, di WhatsApp atau Instagram. Konsistensi itu yang dibaca customer sebagai kepercayaan.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI menjawab konsisten dari knowledge base Cekat.AI"
+    },
+    {
+      "title": "Update Sekali, Langsung Berlaku di Mana-Mana",
+      "body": "Ubah harga, kebijakan, atau jam buka di satu tempat, dan semua jawaban ke depan langsung mengikutinya, di semua channel dan setiap agent. Nggak perlu training ulang, nggak perlu ubek-ubek script, nggak ada risiko AI nyebut promo yang habis bulan lalu. Knowledge base tetap sinkron sama bisnismu.",
+      "image": "/images/chat/train-your-ai-agent.png",
+      "imageAlt": "Update knowledge base Cekat.AI sekali biar berlaku di mana-mana"
+    },
+    {
+      "title": "Kasih Tiap Agent Khusus Pengetahuan yang Dia Butuh",
+      "body": "Sales, support, dan billing nggak jawab pertanyaan yang sama. Kasih tiap agent khusus bagian knowledge base yang cocok sama tugasnya, jadi tiap customer ketemu agent yang jawab akurat sesuai kebutuhannya, tanpa satu bot maksa tahu segalanya sekaligus.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Agent AI khusus menarik dari knowledge base Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Tempel SOP",
+      "title": "Dokumenmu Jadi Jawaban Seketika",
+      "body": "Masukin SOP, FAQ, detail produk, dan kebijakan, dan AI langsung jawab dari situ. Tanpa prompt engineering atau dataset, kalau tim kamu udah tahu, knowledge base bikin AI ikut tahu juga, dalam hitungan menit."
+    },
+    {
+      "label": "Konsisten",
+      "title": "Jawaban Benar yang Sama, Semua Channel",
+      "body": "Karena AI dan tim kamu narik dari satu sumber, customer dapat jawaban identik di WhatsApp, Instagram, Messenger, dan live chat website. Nggak ada lagi jawaban yang bertentangan tergantung siapa atau apa yang kebetulan bales."
+    },
+    {
+      "label": "Update Sekali",
+      "title": "Ubah di Satu Tempat, Berlaku di Mana-Mana",
+      "body": "Edit harga atau kebijakan sekali dan semua jawaban ikut ter-update, seketika dan di semua channel. AI nggak pernah nyebut info kedaluwarsa, karena cuma ada satu versi kebenaran yang perlu dijaga tetap terkini."
+    },
+    {
+      "label": "Akurat",
+      "title": "Berakar di Bisnismu, Bukan Nebak",
+      "body": "Jawaban datang dari SOP dan info yang kamu kasih, jadi AI tetap faktual dan sesuai brand, bukan berimprovisasi. Kalau pertanyaan di luar knowledge base, dia mengalihkan ke tim kamu dengan konteks lengkap, bukan ngarang jawaban."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Dibangun dari SOP-mu Sendiri",
+      "body": "AI menjawab dari kebijakan dan info yang kamu tempel, bukan model generik yang nebak. Tiap balasan mencerminkan cara bisnismu beneran jalan."
+    },
+    {
+      "title": "Konsisten antara Tim dan AI",
+      "body": "Satu sumber bersama berarti AI dan agent manusiamu ngasih jawaban yang sama, di setiap channel, di setiap jam. Konsistensi yang bisa dipercaya customer."
+    },
+    {
+      "title": "Selalu Terkini",
+      "body": "Update knowledge base sekali dan langsung berlaku di mana-mana. Nggak ada script basi, nggak ada harga kedaluwarsa, nggak ada siklus training ulang yang harus diurus."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu knowledge base dalam customer service?",
+      "a": "Knowledge base customer service adalah pusat penyimpanan SOP, FAQ, kebijakan, dan info produk yang jadi sumber jawaban. Di Cekat.AI, AI agent menarik dari knowledge base ini untuk membalas secara akurat dan konsisten, jadi customer dapat jawaban benar dan agent nggak ngulang penjelasan yang sama."
+    },
+    {
+      "q": "Gimana cara kerja AI knowledge base?",
+      "a": "Kamu tempel SOP dan info bisnis ke knowledge base, dan AI agent memakainya sebagai sumber jawabannya. Alih-alih nebak, AI membalas berdasarkan kebijakan dan detail aslimu, di WhatsApp, Instagram, Messenger, dan live chat website, semua dari satu sumber kebenaran yang sama."
+    },
+    {
+      "q": "Gimana cara setup knowledge base-nya?",
+      "a": "Kamu tempel SOP, daftar harga, FAQ, dan info bisnis apa pun, tanpa coding. AI mulai menjawab dari konten itu seketika, jadi kebanyakan tim udah punya jawaban akurat yang jalan di hari yang sama. Kamu rapikan dan tambahkan ke knowledge base seiring waktu pas ada pertanyaan baru."
+    },
+    {
+      "q": "Apakah AI langsung ngasih jawaban akurat?",
+      "a": "Ya. Karena jawaban berakar di SOP dan info yang kamu kasih, AI membalas akurat sejak live tanpa butuh masa training panjang. Kalau pertanyaan di luar isi knowledge base, dia mengalihkan ke tim kamu, bukan ngarang jawaban sendiri."
+    },
+    {
+      "q": "Gimana cara jaga jawabannya tetap terkini?",
+      "a": "Update knowledge base di satu tempat dan perubahannya berlaku di mana-mana seketika, di semua channel dan setiap agent. Ubah harga, kebijakan, atau jam buka sekali, dan semua jawaban ke depan mengikutinya, jadi AI nggak pernah nyebut info yang sudah kedaluwarsa."
+    },
+    {
+      "q": "Semua orang ngasih jawaban yang sama di semua channel?",
+      "a": "Ya. Karena AI dan tim kamu narik dari satu knowledge base bersama, customer dapat jawaban benar yang sama entah chat di WhatsApp, Instagram, Messenger, atau live chat website, dan entah yang bales AI atau manusia. Konsistensi itu yang membangun kepercayaan customer."
+    },
+    {
+      "q": "Bisa nggak agent berbeda pakai pengetahuan berbeda?",
+      "a": "Bisa. Kamu bisa kasih tiap agent khusus, sales, support, atau billing, bagian knowledge base yang cocok sama perannya, jadi tiap customer ketemu agent yang jawab akurat sesuai kebutuhannya. Satu bot nggak harus maksa tahu segalanya sekaligus."
+    },
+    {
+      "q": "Apa yang terjadi kalau pertanyaan nggak ada di knowledge base?",
+      "a": "AI mengalihkan percakapan ke tim kamu dengan konteks lengkap, bukan nebak. Kamu bisa nambahin jawaban yang kurang ke knowledge base setelahnya, jadi pertanyaan yang sama ditangani otomatis lain kali dan AI-nya makin pinter."
+    },
+    {
+      "q": "Knowledge base-nya nyambung sama produk Cekat.AI lainnya?",
+      "a": "Ya. Knowledge base yang sama menggerakkan AI agent di setiap channel, memberi makan agent khusus kamu, dan mendukung otomatisasi order serta follow-up. Ini sumber kebenaran bersama yang jadi andalan seluruh platform, jadi jawaban dan aksi selalu selaras di mana-mana."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah SOP-mu Jadi Jawaban Akurat, di Mana-Mana",
+    "body": "Tempel pengetahuanmu sekali dan biarin AI menjawab customer secara benar dan konsisten di setiap channel, 24/7."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Customer Service for Financial Services | CekatAI",
+    "description": "Financial firms use Cekat.AI to answer product, claim, and application questions 24/7, routine handled by AI, sensitive cases by staff, all UU PDP compliant."
+  },
+  "hero": {
+    "badge": "Financial Services",
+    "title": "Answer Every Customer Instantly, Handle Every Case Securely",
+    "subtitle": "Cekat.AI replies to product, application, and claim questions 24/7 on WhatsApp and web chat, routing sensitive cases to your team with full context, compliant with Indonesia's UU PDP",
+    "useCases": [
+      "High chat volume",
+      "Sensitive case escalation",
+      "Complaint tickets",
+      "Customer living record"
+    ]
+  },
+  "definition": "Cekat.AI for financial services is an AI customer service platform for banks, insurers, lenders, and fintech in Indonesia, answering routine product, application, and claim questions 24/7, routing sensitive cases to staff with full context, and tracking every complaint to resolution under UU PDP.",
+  "stats": [
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    },
+    {
+      "value": "24/7",
+      "label": "product, application, and claim questions answered"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Handle High Inquiry Volume Without Growing Headcount",
+      "body": "Product details, application status, claim procedures, branch hours, the same high-volume questions arrive all day, every day. Cekat.AI answers every one instantly on WhatsApp and web chat, in natural language, so response time stays flat during peaks and your team is freed for the cases that genuinely need a person.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering financial product questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "Routine to AI, Sensitive to Your Team, With Full Context",
+      "body": "Some financial conversations must be handled by a person. Cekat.AI answers routine questions and, the moment a case turns sensitive or complex, escalates to your staff with the entire conversation attached. With AI working hours, the handoff between team and AI is automatic, and the customer never repeats themselves.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Automatic escalation to staff with full context in Cekat.AI"
+    },
+    {
+      "title": "Every Complaint Becomes a Tracked Ticket",
+      "body": "A complaint lost in a busy inbox is a compliance and reputation risk. Cekat.AI labels incoming issues automatically, creates a ticket, and routes it to the right team with a notification, so every complaint is tracked from first message to resolution, and nothing quietly disappears.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Automatic ticket creation for financial complaints in Cekat.AI"
+    },
+    {
+      "title": "Full Visibility Across Every Case",
+      "body": "You see each conversation's status, owner, and resolution path in one place, with an interaction record built automatically from every touchpoint, no manual logging. When an audit or a review asks what happened and when, the trail is already there instead of scattered across personal chats.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Full visibility across every customer case in Cekat.AI"
+    },
+    {
+      "title": "One Living Record for Every Customer",
+      "body": "Every interaction auto-creates and updates a CRM card, no manual input, building a complete record of each customer's questions, applications, and history. Your team opens one profile and sees the full picture, instead of stitching context together from separate channels and spreadsheets.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Living customer records organized in the Cekat.AI CRM"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Compliant by Design",
+      "body": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP), and role-based access means conversation data is visible only to the people who should see it."
+    },
+    {
+      "title": "Human Where It Matters",
+      "body": "The AI handles routine volume; sensitive or complex cases route to your staff with full context, so people handle the conversations that require judgment."
+    },
+    {
+      "title": "Every Case Tracked to Resolution",
+      "body": "Complaints and requests become tickets, routed to the right team and tracked from first message to close, no issue quietly slips through."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help financial services businesses?",
+      "a": "It answers high-volume customer questions instantly 24/7 on WhatsApp, Instagram, and web chat, product details, application status, claim procedures, while routing sensitive cases to staff with full context and tracking every complaint to resolution. Routine volume is automated so your team handles what needs judgment."
+    },
+    {
+      "q": "How does it handle high inquiry volume?",
+      "a": "The AI answers every incoming chat instantly no matter how many arrive at once, so response time stays flat during peaks. It understands intent rather than matching keywords, and complex cases escalate to your team with full context, while AI working hours keep coverage running after staff log off."
+    },
+    {
+      "q": "Is customer data handled securely and compliantly?",
+      "a": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling and managing user data, and ISO 27001 certification is in progress. Access within your team is role-based, so conversation data is only visible to the people who should see it."
+    },
+    {
+      "q": "What happens with sensitive or complex requests?",
+      "a": "The AI handles routine questions and escalates anything sensitive or complex to your staff automatically, with the full conversation attached. A person handles the cases that require judgment, and the customer never has to repeat their information from the start."
+    },
+    {
+      "q": "How are complaints handled?",
+      "a": "A complaint captured in chat is labeled automatically, turned into a ticket, and routed to the right team with a notification. It is then tracked from first message to resolution, so no complaint gets buried in a busy inbox or lost between channels."
+    },
+    {
+      "q": "Can I control who on my team sees what?",
+      "a": "Yes. Cekat.AI uses role-based team access, so you decide which agents and teams can see which conversations and customer data. Combined with UU PDP compliance, this keeps sensitive financial information visible only to authorized staff."
+    },
+    {
+      "q": "Which channels can a financial firm connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, website live chat, and API channels, all flowing into one unified inbox with a single interaction history per customer, so a request that moves between channels keeps its full context."
+    },
+    {
+      "q": "Can the AI answer product and application questions accurately?",
+      "a": "Yes. You paste your product information, policies, and SOPs into the knowledge base, and the AI answers from that, not guesses. It understands intent rather than keywords, so customers get accurate answers even when they phrase questions in their own words."
+    },
+    {
+      "q": "How long does setup take for a financial services business?",
+      "a": "Building the AI agent takes around five minutes, paste your product details, procedures, and SOPs into the knowledge base and it starts answering accurately. No coding is required; Cekat.AI describes it as being as easy as briefing a new CS admin."
+    }
+  ],
+  "cta": {
+    "heading": "Turn High Chat Volume Into Handled Cases",
+    "body": "See how financial services teams answer instantly and handle every case securely on Cekat.AI, book a free consultation with our team."
+  }
+}

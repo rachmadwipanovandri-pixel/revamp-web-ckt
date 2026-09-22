@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Customer Segmentation, Campaigns People Actually Open | CekatAI",
+    "description": "Segment customers by activity, purchase history, and events, segments build themselves from CRM data. 3,000+ businesses send campaigns that get opened."
+  },
+  "hero": {
+    "badge": "CRM-Powered Segmentation",
+    "title": "Customer Segmentation That Builds Itself",
+    "subtitle": "Group customers by activity, purchase history, and events, using data your CRM collects automatically from every chat, order, and click, so every campaign reaches the people it was written for"
+  },
+  "definition": "Customer Segmentation is a Cekat.AI feature that groups customers by activity, purchase history, and events using CRM data collected automatically from every conversation, so campaigns go to exactly the people they were written for.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses segment customers with Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions feeding the data" },
+    { "value": "24/7", "label": "profiles update with every interaction" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Segments That Build Themselves From Every Interaction",
+      "body": "Most segmentation projects die in a spreadsheet nobody maintains. Cekat.AI creates and updates a CRM card from every interaction automatically, chats, purchases, campaigns received, website behavior, so your segments are always built on live data, with zero manual input from your team.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Customer profiles captured and organized automatically in the Cekat.AI CRM"
+    },
+    {
+      "title": "Slice Your List by Activity, Purchases, or Events",
+      "body": "Filters and boards turn one contact list into any audience you need: customers who bought last month, leads who asked about a product but never paid, everyone who joined your latest promo. Build the segment in a few clicks and it's ready to use in your next campaign.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Filtering customers into segments in Cekat.AI"
+    },
+    {
+      "title": "Follow Every Customer From Visitor to Lead to Buyer",
+      "body": "Customer Stages track exactly where each person stands, Visitor, Lead, or Buyer, with next-step suggestions for moving them forward. Instead of one flat list, you see a pipeline: who needs nurturing, who is ready to close, and who deserves a loyalty offer.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Customer Stages from Visitor to Lead to Buyer in Cekat.AI"
+    },
+    {
+      "title": "Relevant Campaigns Get Opened, Generic Ones Get Ignored",
+      "body": "The same message to everyone is why broadcast performance dies. With segments, a repeat buyer gets a loyalty reward, a ghosting lead gets a nudge back to checkout, and a new visitor gets an intro offer, each message personalized from CRM data, each one relevant enough to open.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Customer behavior insights powering campaign targeting in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Activity",
+      "title": "Segment by What Customers Actually Do",
+      "body": "Who chatted this week, who went quiet a month ago, who keeps browsing your website without buying, activity segmentation finds them all, so re-engagement campaigns target the silence instead of blasting everyone."
+    },
+    {
+      "label": "Purchases",
+      "title": "Segment by What Customers Have Bought",
+      "body": "Purchase history separates first-time buyers from loyal repeaters and big spenders from window shoppers. Send replenishment reminders to product buyers, upsells to repeat customers, and win-back offers to those who lapsed."
+    },
+    {
+      "label": "Events",
+      "title": "Segment by the Moments That Matter",
+      "body": "Everyone who joined a promo, registered for an event, or triggered a keyword in chat becomes an instant audience. Event-based segments make follow-up campaigns feel like a continuation, not an interruption."
+    },
+    {
+      "label": "Stages",
+      "title": "Segment by Position in the Funnel",
+      "body": "Customer Stages classify everyone as Visitor, Lead, or Buyer, with suggested next steps for each. Campaigns match the stage: education for visitors, closing nudges for leads, loyalty offers for buyers."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Zero Manual Tagging",
+      "body": "CRM cards are created and updated from every interaction automatically. No data entry, no stale spreadsheets, the segments maintain themselves."
+    },
+    {
+      "title": "One Living Customer Record",
+      "body": "Chats, purchases, campaigns received, and website behavior live on a single profile, so a segment reflects the whole customer, not one fragment of them."
+    },
+    {
+      "title": "Segments Feed Every Campaign",
+      "body": "Broadcasts, follow-up automations, and analytics all run on the same segments, build an audience once and use it across the entire platform."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is customer segmentation?",
+      "a": "Customer segmentation is the practice of dividing customers into groups that share something meaningful, recent activity, purchase history, or an event they joined, so each group receives messages that fit them. In Cekat.AI, those groups are built from CRM data that updates automatically with every interaction."
+    },
+    {
+      "q": "Why does customer segmentation matter for WhatsApp marketing?",
+      "a": "WhatsApp is a personal channel, and generic mass messages get ignored or reported there fast. Segmentation ensures a repeat buyer sees a loyalty offer while a new lead sees an intro promo, relevance that protects your sender reputation and turns campaigns into conversations instead of noise."
+    },
+    {
+      "q": "What data can I segment customers by in Cekat.AI?",
+      "a": "Segments can be built from activity, purchase history, and events, plus everything on the customer's CRM profile: chats, campaigns received, website behavior, and their Customer Stage from Visitor to Lead to Buyer. Filters and boards let you combine these into precisely the audience you need."
+    },
+    {
+      "q": "How do segments stay up to date?",
+      "a": "Automatically. Cekat.AI creates and updates CRM cards from every interaction, a new purchase, a chat, a campaign received, a website visit, without manual input. When a customer's data changes, they move into the segments that now fit them, so no audience goes stale."
+    },
+    {
+      "q": "Do I need to import spreadsheets or tag customers manually?",
+      "a": "No. Cekat.AI captures leads from your website, WhatsApp, and social channels, then builds each customer's profile from real interactions. The manual tagging work that kills most segmentation projects simply doesn't exist here, profiles and segments maintain themselves as customers engage."
+    },
+    {
+      "q": "What are Customer Stages?",
+      "a": "Customer Stages are Cekat.AI's built-in funnel classification: every contact is a Visitor, Lead, or Buyer, and the platform suggests the next step to move each one forward. Stages double as segments, so you can send closing nudges to leads and loyalty campaigns to buyers in a few clicks."
+    },
+    {
+      "q": "Can I use segments for WhatsApp broadcast campaigns?",
+      "a": "Yes, that's the main event. Every broadcast in Cekat.AI targets a segment, and every message is personalized from that customer's CRM data. Campaigns sent through the official WhatsApp Business API reach the exact audience you built, and results are tracked back to revenue."
+    },
+    {
+      "q": "Can a change in customer data trigger an automation?",
+      "a": "Yes. Workflow triggers in Cekat.AI fire on customer-data changes, for example, when a contact becomes a new lead or moves to a new stage. That change can automatically start a follow-up sequence, apply a label, notify your team, or create a ticket."
+    },
+    {
+      "q": "Is my customer data safe?",
+      "a": "Cekat.AI complies with UU PDP, Indonesia's personal data protection law, and offers role-based team access so people only see what their role allows. Your customer data powers your segments and campaigns inside the platform, it stays under your control."
+    }
+  ],
+  "cta": {
+    "heading": "Turn One Contact List Into a Hundred Right Messages",
+    "body": "Let your CRM build the segments and send campaigns that customers actually open."
+  }
+}

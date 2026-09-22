@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "CS Otomatis F&B & Restoran, Bales Chat 24/7 | CekatAI",
+    "description": "Restoran pakai Cekat.AI buat jawab chat reservasi, menu, dan event 24/7. Holywings Group capai 100% chat coverage & konversi naik sampai +70%."
+  },
+  "hero": {
+    "badge": "Food & Beverage",
+    "title": "Jawab Setiap Reservasi dan Order, Bahkan Setelah Tutup",
+    "subtitle": "Dari booking meja, pertanyaan menu, sampai inquiry event, Cekat.AI membalas instan di WhatsApp dan Instagram, 24/7, dengan bahasa natural, tanpa nambah staf",
+    "useCases": [
+      "Reservasi 24 jam",
+      "Menu, promo, harga",
+      "Inquiry event & catering",
+      "Chat jadi order"
+    ]
+  },
+  "definition": "Cekat.AI untuk F&B adalah platform AI customer service untuk restoran, kafe, bar, dan bisnis makanan di Indonesia, menjawab pertanyaan reservasi, menu, dan event 24/7, menerima order langsung dari chat, dan menjaga setiap booking tetap rapi dalam satu platform.",
+  "stats": [
+    {
+      "value": "+70%",
+      "label": "kenaikan konversi di Holywings Group"
+    },
+    {
+      "value": "100%",
+      "label": "chat ter-cover 24/7 di Holywings"
+    },
+    {
+      "value": "24/7",
+      "label": "reservasi, order, dan inquiry event terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Reservasi dan Booking Terjawab Jam Berapa Pun",
+      "body": "Pelanggan sering baru mau booking pas jam operasional udah lewat. AI agent Cekat.AI langsung jawab permintaan reservasi, jam buka, dan lokasi begitu chat masuk, siang atau malam, jadi tamu yang mau makan malam ini atau bikin acara minggu depan dapat kepastian, bukan didiamkan, dan timmu datang ke chat yang udah beres.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI dan staf di Cekat.AI"
+    },
+    {
+      "title": "Pertanyaan Menu, Promo, dan Harga Dijawab Instan",
+      "body": "\"Ada menu vegetarian?\" \"Set menu berapa?\" \"Malam ini ada promo?\" Cekat.AI menjawab dengan bahasa natural, paham maksud tamu, bukan cuma cocokin keyword, jadi tamu yang lagi lapar dapat kepastian dalam hitungan detik dan mutusin datang, bukan lanjut scroll ke tempat lain yang bales lebih cepat.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab pertanyaan menu dan promo di inbox Cekat.AI"
+    },
+    {
+      "title": "Inquiry Event dan Catering Nggak Ada yang Kelewat",
+      "body": "Ulang tahun, dinner kantor, booking private, inquiry bernilai tinggi yang dulu nyangkut belum kebaca sampai admin sempat. Cekat.AI menangkap tiap chat ke kartu CRM otomatis, lengkap dengan riwayat percakapan, jadi tim event follow-up ke leads beneran, bukan ngubek-ubek inbox yang penuh.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Inquiry event dan catering tertangkap di CRM Cekat.AI"
+    },
+    {
+      "title": "Ubah Chat Jadi Order yang Fix",
+      "body": "Untuk delivery dan takeaway, Cekat.AI mengambil order langsung di percakapan, item, data pelanggan, ongkir lewat cek ongkir, dan QR pembayaran, tanpa admin ngetik ulang ke spreadsheet. Tamu jalan dari nanya sampai order lunas dalam satu chat, dan tiap order masuk lengkap dan konsisten.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Order dibuat dan dibayar langsung dalam percakapan di Cekat.AI"
+    }
+  ],
+  "caseStudy": {
+    "client": "Holywings Group",
+    "metrics": [
+      {
+        "value": "100%",
+        "label": "chat ter-cover di jam ramai"
+      },
+      {
+        "value": "+70%",
+        "label": "kenaikan konversi"
+      }
+    ],
+    "body": "Holywings Group dulu menangani inquiry event, booking, dan harga secara manual, bales lambat pas jam ramai, pesan kelewat, booking hilang. Setelah pakai Cekat.AI, setiap chat dapat jawaban instan dan konsisten sepanjang hari. Hasilnya: 100% chat coverage 24/7, konversi naik sampai +70%, kepuasan tamu meningkat, dan revenue nambah dari inquiry yang dulu menguap begitu saja."
+  },
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chat dan campaign jalan di WhatsApp Business API resmi, bareng Instagram DM dan Facebook Messenger, satu inbox untuk semua outlet, compliant dan andal."
+    },
+    {
+      "title": "AI yang Booking dan Jualan",
+      "body": "AI menangani reservasi, menjawab menu, dan mengambil order di percakapan, lalu mengoper permintaan kompleks ke timmu lengkap dengan konteks."
+    },
+    {
+      "title": "Terbukti di F&B dan Entertainment",
+      "body": "Holywings Group naik dari inquiry manual jadi 100% chat coverage dan konversi sampai +70%, hasil nyata, dari percakapan tamu sungguhan."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu restoran dan bisnis F&B?",
+      "a": "Cekat.AI menjawab chat tamu secara instan 24/7 di WhatsApp, Instagram, dan web chat, dari reservasi, pertanyaan menu dan promo, jam operasional, sampai inquiry event, sambil merapikan semua booking dan order dalam satu platform. Tim front-of-house fokus ke tamu di tempat, bukan ke HP yang bunyi terus."
+    },
+    {
+      "q": "AI bisa menangani reservasi meja dan booking?",
+      "a": "Bisa. Cekat.AI menjawab permintaan reservasi sepanjang hari dan, lewat integrasi API dengan sistem booking-mu, bisa konfirmasi dan reschedule langsung di chat. Setiap booking tercatat lengkap dengan konteks, plus reminder otomatis sebelum tanggalnya untuk menekan no-show."
+    },
+    {
+      "q": "Pelanggan bisa order makanan lewat chat?",
+      "a": "Bisa. Cekat.AI membuat order otomatis dari percakapan, item, data pelanggan, ongkir lewat cek ongkir, dan QR pembayaran. Tamu jalan dari nanya sampai order delivery atau takeaway lunas tanpa keluar dari chat, dan nggak ada yang perlu diketik ulang manual."
+    },
+    {
+      "q": "Bagaimana dengan inquiry event, catering, atau booking private?",
+      "a": "Inquiry event dan catering yang bernilai tinggi ditangkap ke kartu CRM otomatis, lengkap dengan percakapannya. AI menjawab pertanyaan awal instan jam berapa pun, dan tim event follow-up ke leads terkualifikasi, bukan scroll inbox penuh buat cari yang penting."
+    },
+    {
+      "q": "Channel apa saja yang bisa dihubungkan restoran?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, dan live chat website, semua masuk ke satu inbox dengan satu riwayat interaksi per tamu. Tamu yang DM di Instagram lalu chat di WhatsApp tidak perlu mengulang cerita."
+    },
+    {
+      "q": "Hasil apa yang sudah dirasakan bisnis F&B dengan Cekat.AI?",
+      "a": "Holywings Group pindah dari menangani inquiry event, booking, dan harga secara manual jadi 100% chat coverage 24/7 setelah pakai Cekat.AI, dengan konversi naik sampai +70%, kepuasan tamu meningkat, dan revenue nambah dari inquiry yang dulu tidak terjawab."
+    },
+    {
+      "q": "AI-nya kuat pas jam makan malam lagi ramai?",
+      "a": "Kuat. AI menjawab setiap chat masuk secara instan berapa pun banyaknya sekaligus, jadi waktu respons tetap stabil saat volume melonjak. Yang kompleks dialihkan ke timmu lengkap dengan percakapannya, dan AI working hours menjaga coverage tetap jalan setelah staf logout."
+    },
+    {
+      "q": "Berapa lama setup untuk restoran?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin menu, harga, detail outlet, dan SOP ke knowledge base, dan AI langsung menjawab akurat. Tanpa coding sama sekali; semudah briefing admin CS baru."
+    },
+    {
+      "q": "Cekat.AI bisa kirim promo dan follow-up ke tamu?",
+      "a": "Bisa. Campaign broadcast menjangkau segmen tamu lewat WhatsApp Business API resmi, promo weekend, launching menu baru, reminder event, dibangun dari aktivitas dan riwayat order, dengan follow-up otomatis berdasarkan perilaku masing-masing tamu, bukan daftar manual."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Setiap Inquiry Jadi Meja yang Ke-Booking",
+    "body": "Lihat bagaimana restoran menjalankan reservasi, order, dan support 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

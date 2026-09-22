@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Client Intake & Consultation Booking System | CekatAI",
+    "description": "Law firms, tax consultants, and agencies use Cekat.AI for 24/7 client intake, consultation booking, prep reminders, and a pipeline per partner."
+  },
+  "hero": {
+    "badge": "Professional Services",
+    "title": "Answer Every Consultation Request, Even After the Office Closes",
+    "subtitle": "From first question to qualification to a confirmed consultation, Cekat.AI handles intake on WhatsApp and web chat 24/7, with automated reminders, so partners stop being the after-hours hotline",
+    "useCases": [
+      "Consultation requests",
+      "Automated intake",
+      "Consultation scheduling",
+      "Pipeline per service"
+    ]
+  },
+  "definition": "Cekat.AI for professional services is an AI customer service platform for law firms, notaries, tax and accounting consultants, agencies, and architects in Indonesia, handling client intake and qualification 24/7 through a consultation booking system with automated reminders and a pipeline per partner in one platform.",
+  "stats": [
+    {
+      "value": "28%",
+      "label": "conversion from lead to appointment at Wall Street English, up from 20%"
+    },
+    {
+      "value": "+8%",
+      "label": "increase in qualified leads at Multi Flashindo Karisma within 4 months"
+    },
+    {
+      "value": "24/7",
+      "label": "consultation requests and client intake answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Consultation Requests Answered at Any Hour",
+      "body": "People look for a lawyer or tax consultant the moment a problem starts keeping them up, often at night or on a weekend. Cekat.AI's agent replies the moment the chat arrives, explaining services, the documents to prepare, and the next step, so a serious inquiry never evaporates because the office opens Monday.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours routing between office staff and AI agent in Cekat.AI"
+    },
+    {
+      "title": "Repetitive Intake Questions Handled by AI",
+      "body": "\"Do you handle cases like mine?\" \"Which documents do I need?\" \"How long does the process take?\" The same intake questions arrive every day. Cekat.AI answers them in natural language from your firm's knowledge base, then asks about the need, urgency, and basic details, so what reaches a partner is a well-formed inquiry, not an empty chat.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent handling prospective client intake questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "Consultations Scheduled Straight from the Chat",
+      "body": "No more rounds of \"when are you free?\" over the phone. Cekat.AI offers slots and captures the consultation schedule inside the conversation, and through API integration it can connect to the calendar or booking system your office already uses, the client simply shows up at a confirmed time.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Cekat.AI API integration with office calendars and booking systems"
+    },
+    {
+      "title": "Automated Reminders That Cut No-Shows",
+      "body": "A quietly missed meeting is billable time gone. Cekat.AI sends a reminder before each consultation on WhatsApp, including the documents to bring, and when a client needs to move the time, rescheduling happens in the same chat, so the freed slot gets filled instead of wasted.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Automated consultation reminders and schedule notifications in Cekat.AI"
+    },
+    {
+      "title": "Every Inquiry Tracked in a Pipeline per Partner or Service Line",
+      "body": "Leads sitting in one partner's phone are revenue leaking out of the firm. Cekat.AI captures every inquiry into a CRM card automatically, with the chat history and stated need attached, organized in a pipeline per partner or service line, so the managing partner sees every prospect on one board instead of asking around.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Client inquiry pipeline per partner in the Cekat.AI CRM"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Client chats run on the official WhatsApp Business API, alongside Instagram DM and your website's live chat, one tidy inbox, compliant and reliable."
+    },
+    {
+      "title": "AI That Screens and Schedules",
+      "body": "The agent answers first questions, qualifies what the prospect needs, and locks in a consultation slot, then hands the matter to the right person with full context."
+    },
+    {
+      "title": "Running 3,000+ Businesses in Indonesia",
+      "body": "More than 3,000 businesses in Indonesia run customer service on Cekat.AI."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help law firms and professional practices?",
+      "a": "It answers consultation requests instantly 24/7 on WhatsApp and web chat, handles the intake questions that repeat every day, schedules consultations, and organizes every inquiry into a pipeline per partner or service line. Your team spends its hours on the actual work, not on answering the same chats."
+    },
+    {
+      "q": "Can the AI qualify prospective clients before a consultation?",
+      "a": "Yes. The AI asks what your intake staff would ask, the type of need, its urgency, and the basic details of the matter or project, then records it all on a lead card. Partners walk into consultations with a clear picture, and inquiries outside your services are politely redirected early."
+    },
+    {
+      "q": "Does the AI give legal or tax advice?",
+      "a": "No. The AI handles intake, answering general questions about services, process, and documents from a knowledge base your firm approves, and routes anything substantive to a consultation with the professional. You define those boundaries through the AI's instructions."
+    },
+    {
+      "q": "Can consultation bookings connect to our office calendar?",
+      "a": "Yes. Through API integration, schedules the AI captures in chat can flow into the calendar or booking system your office already uses, and automated reminders go out before each appointment to reduce no-shows. Rescheduling is handled in the same conversation."
+    },
+    {
+      "q": "How is prospective client confidentiality protected?",
+      "a": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling and managing user data, and ISO 27001 certification is in progress. Access within the office is role-based, so conversations and prospect data are visible only to the people who should see them."
+    },
+    {
+      "q": "When does a conversation move to a partner or staff member?",
+      "a": "Whenever your rules say so, for instance when a prospect starts discussing the substance of a matter, the case is sensitive, or they ask for a person. The conversation hands over to the right person with the chat history and intake results attached, so the client never repeats their story."
+    },
+    {
+      "q": "Which channels can we connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, and live chat on your office website, all flowing into one inbox with a single history per contact. A prospect who starts on your website chat and continues on WhatsApp still reads as one person."
+    },
+    {
+      "q": "How long does setup take for a professional office?",
+      "a": "Building the AI agent takes around five minutes, paste your list of services, processes, required documents, and intake SOPs into the knowledge base and it starts answering accurately. No coding is required; Cekat.AI describes it as being as easy as briefing a new receptionist."
+    },
+    {
+      "q": "Is there a trial, and how does pricing work?",
+      "a": "There is a 14-day free trial to test it on your own number. Pricing comes as plans that scale with team size and conversation volume, from a solo practice to a firm with many partners, book a free consultation and our team will help you pick the right fit."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Every Inquiry Into a Scheduled Consultation",
+    "body": "See how firms and consultancies run intake, booking, and follow-up 24/7 on Cekat.AI, book a free consultation with our team."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Software Apotek dengan AI, Jawab Chat 24/7 | CekatAI",
+    "description": "Jalankan apotek online via WhatsApp: AI jawab cek stok dan harga obat 24/7, terima pesan antar di chat, dan oper konsultasi ke apoteker."
+  },
+  "hero": {
+    "badge": "Apotek",
+    "title": "Cek Stok Terjawab Otomatis, Pesan Antar Beres di Chat",
+    "subtitle": "Dari cek stok dan harga obat sampai pesan antar dan reminder tebus ulang, Cekat.AI membalas instan di WhatsApp, 24/7, dan tahu kapan harus mengoper ke apoteker",
+    "useCases": [
+      "Stok & harga",
+      "Order pesan antar",
+      "Reminder tebus ulang",
+      "Konsultasi ke apoteker"
+    ]
+  },
+  "definition": "Cekat.AI untuk apotek adalah platform AI customer service untuk apotek dan bisnis farmasi di Indonesia, melengkapi software apotek dengan AI yang menjawab cek stok dan harga obat 24/7, menerima pesan antar langsung dari chat WhatsApp, dan mengoper konsultasi ke apoteker, semuanya dalam satu platform.",
+  "stats": [
+    {
+      "value": "5 detik",
+      "label": "waktu balas chat pelanggan di Lunica, turun dari 15 menit"
+    },
+    {
+      "value": "200+",
+      "label": "chat pelanggan tertangani per hari di Sociamedic Clinic"
+    },
+    {
+      "value": "24/7",
+      "label": "cek stok, harga obat, dan pesan antar terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Pertanyaan Stok dan Harga Dijawab dari Data, Bukan Tebakan",
+      "body": "\"Ada stok obat X? Harganya berapa?\" masuk puluhan kali sehari, dan tiap chat yang telat dibales artinya pembeli lari ke apotek sebelah. Cekat.AI menjawab dari daftar produk dan harga yang kamu berikan, bisa tersambung ke data stok lewat API, dan kalau infonya nggak ada, AI jujur lalu mengoper ke staf, bukan mengarang.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base produk apotek sebagai sumber jawaban AI di Cekat.AI"
+    },
+    {
+      "title": "Pesan Antar Masuk Sebagai Order Rapi, Bukan Catatan Kertas",
+      "body": "Cekat.AI mengubah chat jadi apotek online via WhatsApp. AI mencatat item, data pembeli, ongkir lewat cek ongkir, dan QR pembayaran langsung di percakapan, order masuk lengkap dan konsisten tanpa staf mengetik ulang, dan pembeli nggak perlu install aplikasi apa pun.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Order pesan antar dibuat dan dibayar dalam chat di Cekat.AI"
+    },
+    {
+      "title": "Pasien Kronis Diingatkan Tebus Ulang Tepat Waktu",
+      "body": "Pasien yang rutin menebus obat bulanan sering telat bukan karena pindah, tapi karena lupa. Cekat.AI mengirim reminder tebus ulang otomatis lewat WhatsApp Business API resmi berdasarkan riwayat pembelian tiap pasien, jadi terapi mereka jalan terus dan mereka kembali ke apotekmu, bukan ke yang lain.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Reminder tebus ulang dari riwayat pembelian di Cekat.AI"
+    },
+    {
+      "title": "Konsultasi Selalu Berakhir di Apoteker, Bukan di AI",
+      "body": "Soal dosis, interaksi obat, atau keluhan kesehatan, AI tidak menebak dan tidak memberi saran medis. Percakapan seperti itu otomatis dialihkan ke apoteker lengkap dengan riwayat chat-nya, jadi pembeli tetap dilayani cepat tanpa mengorbankan keamanan dan tanggung jawab profesi.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Eskalasi konsultasi dari AI ke apoteker di Cekat.AI"
+    },
+    {
+      "title": "Jam 11 Malam Tetap Ada yang Jawab, Tanpa Nambah Shift",
+      "body": "Pertanyaan obat nggak kenal jam tutup toko. Dengan pengaturan jam kerja AI, Cekat.AI menjawab stok, harga, dan cara pemesanan sepanjang malam, mencatat mana yang butuh apoteker, dan menyerahkannya lengkap dengan konteks begitu shift pagi mulai, nggak ada chat yang basi di inbox.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI dan staf apotek di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chat, order, dan reminder jalan di WhatsApp Business API resmi, bareng Instagram DM dan live chat website, satu inbox untuk semua outlet apotekmu."
+    },
+    {
+      "title": "AI yang Jawab dari Data Apotekmu",
+      "body": "Stok, harga, dan cara pemesanan dijawab dari knowledge base dan integrasi API. Kalau datanya tidak ada, AI mengoper ke staf, bukan mengarang jawaban."
+    },
+    {
+      "title": "Apoteker di Momen yang Penting",
+      "body": "AI menangani pertanyaan rutin. Dosis, interaksi obat, dan keluhan kesehatan selalu dialihkan ke apotekermu lengkap dengan konteks percakapannya."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu apotek?",
+      "a": "Cekat.AI menjawab chat pembeli secara instan 24/7 di WhatsApp, Instagram, dan web chat, dari cek stok dan harga obat, pesan antar, sampai reminder tebus ulang, sambil mengoper konsultasi ke apoteker. Staf melayani pembeli di konter, bukan sibuk bales chat yang itu-itu saja."
+    },
+    {
+      "q": "AI bisa menjawab \"ada stok obat X?\" dengan akurat?",
+      "a": "Bisa, selama datanya ada. AI menjawab dari daftar produk dan harga di knowledge base, atau membaca data stok langsung dari sistemmu lewat integrasi API. Kalau produk tidak ditemukan, AI bilang apa adanya dan mengoper ke staf, bukan menebak."
+    },
+    {
+      "q": "Pelanggan bisa pesan antar obat lewat WhatsApp?",
+      "a": "Bisa. AI mencatat pesanan langsung di percakapan, item, alamat, ongkir lewat cek ongkir, dan QR pembayaran, berjalan di WhatsApp Business API resmi. Apotekmu jalan seperti apotek online, tanpa pembeli harus install aplikasi tambahan."
+    },
+    {
+      "q": "Bagaimana dengan obat resep atau obat keras?",
+      "a": "Alurnya mengikuti SOP apotekmu. Permintaan obat resep otomatis dialihkan ke apoteker untuk verifikasi sesuai regulasi; AI hanya membantu mengumpulkan info awal seperti foto resep dan data pasien, keputusan tetap di tangan apoteker."
+    },
+    {
+      "q": "Apakah AI memberi saran obat atau dosis?",
+      "a": "Tidak. AI menjawab info yang sifatnya umum dari data apotekmu, stok, harga, cara pemesanan, jam buka. Pertanyaan soal pemilihan obat, dosis, atau keluhan kesehatan selalu dialihkan ke apoteker atau diarahkan untuk konsultasi ke dokter."
+    },
+    {
+      "q": "Bagaimana reminder tebus ulang untuk pasien kronis bekerja?",
+      "a": "Reminder dikirim otomatis lewat WhatsApp Business API resmi berdasarkan riwayat pembelian, kamu atur jadwal dan template-nya. Saat pasien membalas, AI langsung memproses pesanannya sampai jadi order, atau mengoper ke apoteker kalau ada pertanyaan."
+    },
+    {
+      "q": "Apakah harus mengganti software apotek atau POS yang dipakai?",
+      "a": "Nggak. Cekat.AI melengkapi software apotek dan POS yang ada lewat API dan webhook, membaca stok dan harga, menulis order. Kalau belum siap integrasi, mulai saja dari knowledge base berisi daftar produk, sudah cukup untuk menjawab mayoritas chat."
+    },
+    {
+      "q": "Bagaimana keamanan data pelanggan dan riwayat pembeliannya?",
+      "a": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam mengelola data pengguna, dengan akses berbasis peran di dalam tim. Sertifikasi ISO 27001 sedang dalam proses. Riwayat chat dan pembelian hanya terlihat oleh staf yang berwenang."
+    },
+    {
+      "q": "Berapa lama setup untuk apotek, dan bagaimana harganya?",
+      "a": "Hitungan menit, salin daftar produk, harga, dan SOP ke knowledge base, tanpa coding. Harga mengikuti paket sesuai skala apotek dan volume chat, dan kamu bisa mulai dari trial gratis atau jadwalkan demo dengan tim Cekat.AI."
+    }
+  ],
+  "cta": {
+    "heading": "Buka Apotekmu 24 Jam di WhatsApp",
+    "body": "Lihat bagaimana apotek menjalankan cek stok, pesan antar, dan reminder tebus ulang 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

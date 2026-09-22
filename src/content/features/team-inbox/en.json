@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "WhatsApp Multi-Agent, Your Whole Team on One Number | CekatAI",
+    "description": "Run one WhatsApp number with your whole team and AI, labels, private notes, role-based access, and fast search in one inbox. Trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "One Number, Whole Team",
+    "title": "Put Your Whole Team on One WhatsApp Number",
+    "subtitle": "Many agents and AI handle the same WhatsApp Business number together, with private notes, labels, role-based access, and case prioritization, so no chat goes unanswered and no reply gets doubled up"
+  },
+  "definition": "WhatsApp Multi-Agent is a Cekat.AI feature that lets multiple agents and AI work one WhatsApp Business number together in a shared inbox, with labels, private notes, collaborators, role-based access, and case prioritization.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "AI covers the inbox nonstop" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "One WhatsApp Number, Your Entire Team On It",
+      "body": "The days of one phone passed around the office are over. Cekat.AI lets your whole team log into the same WhatsApp Business number and work the inbox together. Conversations are assigned to the right agent, so everyone knows exactly which chats are theirs and nothing sits unanswered.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Team working one WhatsApp number in a shared Cekat.AI inbox"
+    },
+    {
+      "title": "Collaborate Without Leaving the Chat",
+      "body": "Need a second opinion before replying? Drop a private note only your team can see, tag a collaborator, or reassign the conversation, all inside the same chat. The customer sees one smooth thread while your team coordinates quietly behind it, so answers stay accurate and consistent.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Private notes and collaborator handoff inside a Cekat.AI conversation"
+    },
+    {
+      "title": "Prioritize Cases and Find Any Chat in Seconds",
+      "body": "When hundreds of chats pile up, the urgent ones can't wait behind the small talk. Case prioritization pushes the conversations that matter to the top, auto-labeling keeps the inbox sorted, and fast search pulls up any past chat instantly, no scrolling through weeks of history.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Case prioritization and fast search in the Cekat.AI inbox"
+    },
+    {
+      "title": "AI Works the Number Alongside Your Agents",
+      "body": "The AI agent is another teammate on the line, answering routine questions instantly so agents focus on the conversations that need a human. With AI working hours, it covers the number after your team logs off and hands cases back with full context when everyone's online again.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI and human agents sharing one WhatsApp number in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Shared Inbox",
+      "title": "One Number, Every Agent Logged In",
+      "body": "Your whole team works the same WhatsApp Business number from their own login. Conversations are assigned instead of guessed at, so two agents never reply to the same customer and no chat gets orphaned."
+    },
+    {
+      "label": "Private Notes",
+      "title": "Coordinate Behind Every Conversation",
+      "body": "Leave internal notes only your team can read, add a collaborator, or hand a chat to the right person, without the customer ever seeing the back-and-forth. Context travels with the conversation."
+    },
+    {
+      "label": "Roles & Access",
+      "title": "The Right Access for Every Role",
+      "body": "Role-based team access decides who can see, reply, assign, or manage settings. Sales, support, and billing each get what they need, and nothing they shouldn't, on the same number."
+    },
+    {
+      "label": "Case Priority",
+      "title": "Urgent Chats Rise to the Top",
+      "body": "Case prioritization and auto-labeling keep the queue ordered, while fast search surfaces any past conversation in seconds. Your team spends time replying, not hunting for the chat that needs them."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official WhatsApp Business API",
+      "body": "One official business number, many agents, compliant and reliable through the WhatsApp Business API, not a phone quietly shared between staff."
+    },
+    {
+      "title": "Team and AI, One Inbox",
+      "body": "Human agents and the AI agent work the same number together, with clean handoffs that carry full context in both directions."
+    },
+    {
+      "title": "Nothing Slips Through",
+      "body": "Assignment, labels, private notes, and case prioritization make sure every chat has an owner and every customer gets a timely reply."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is WhatsApp multi-agent?",
+      "a": "WhatsApp multi-agent lets several team members work one WhatsApp Business number at the same time. With Cekat.AI, agents and AI share one inbox, conversations are assigned to owners, and tools like private notes, labels, and role-based access keep the whole team coordinated."
+    },
+    {
+      "q": "Can multiple agents use one WhatsApp number at the same time?",
+      "a": "Yes. Your entire team logs into the same WhatsApp Business number, each with their own account, and works from one shared inbox. There's no passing a single phone around, everyone can see and reply to conversations at once."
+    },
+    {
+      "q": "How do agents avoid replying to the same customer twice?",
+      "a": "Conversations are assigned to a specific agent, so ownership is always clear. Combined with labels and status, your team can see who is handling what at a glance, which stops two people from answering the same chat."
+    },
+    {
+      "q": "Can I control what each team member can see or do?",
+      "a": "Yes. Role-based team access lets you decide who can reply, assign conversations, or change settings. Sales, support, and billing each get the access their role needs, and nothing beyond it, all on the same number."
+    },
+    {
+      "q": "Can agents leave internal notes on a conversation?",
+      "a": "Yes. Private notes are visible only to your team, not the customer. Agents can flag context, ask a colleague for input, or record what happened, so whoever picks up the chat next has the full story."
+    },
+    {
+      "q": "How do I make sure urgent chats get answered first?",
+      "a": "Case prioritization pushes important conversations to the top of the queue, and auto-labeling keeps the inbox sorted by type. Your team sees what needs attention now instead of working through chats in the order they happened to arrive."
+    },
+    {
+      "q": "Can I search past conversations quickly?",
+      "a": "Yes. Fast search pulls up any previous chat or customer in seconds, so agents don't scroll through weeks of history. Every conversation is also tied to the customer's CRM profile for full context before replying."
+    },
+    {
+      "q": "Does the AI work in the same inbox as my team?",
+      "a": "Yes. The AI agent answers routine questions on the number instantly, and with AI working hours it covers the inbox after your team logs off. Handoff between AI and agents carries the full conversation, so nothing is repeated."
+    },
+    {
+      "q": "Is this the official WhatsApp Business API?",
+      "a": "Yes. Cekat.AI is an official Meta Business Partner and runs your number on the official WhatsApp Business API, the compliant way to put a whole team on one business number, unlike unofficial multi-device workarounds."
+    },
+    {
+      "q": "How fast can I get my team set up?",
+      "a": "Quickly. Connecting the number is point-and-click, adding team members takes minutes, and building your AI agent runs about five minutes with no coding. Most teams are answering from a shared inbox the same day they start."
+    }
+  ],
+  "testimonial": {
+    "quote": "Customer responses became faster",
+    "name": "Silica Brenda",
+    "role": "Founder, Moir Salon",
+    "image": "/images/home/testimonial-silica-brenda.jpg"
+  },
+  "cta": {
+    "heading": "Turn One WhatsApp Number Into a Team Sport",
+    "body": "Give every agent and your AI one shared inbox, so replies are faster, cleaner, and never doubled up."
+  }
+}

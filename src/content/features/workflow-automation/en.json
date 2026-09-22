@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Workflow Automation, Business Logic Without Coding | CekatAI",
+    "description": "Workflow automation turns triggers, keywords, schedules, new leads, into labels, tickets, and alerts with no coding. 3,000+ businesses run operations on autopilot."
+  },
+  "hero": {
+    "badge": "No-Code Workflow Automation",
+    "title": "Run Your Business Logic on Autopilot, No Coding",
+    "subtitle": "Set triggers like chat keywords, schedules, or a new lead, and Cekat.AI fires the actions automatically, labels, tickets, notifications, and data sync, so routine operations run themselves"
+  },
+  "definition": "Workflow Automation is a Cekat.AI feature that runs multi-step business logic without coding, triggers like time-based schedules, chat keywords, or customer-data changes fire actions such as auto-labeling, tickets, notifications, and data sync across your tools.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "workflows run around the clock" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Trigger It Once, It Runs Every Time",
+      "body": "Set the rule and Cekat.AI never forgets it. A time-based schedule, a keyword in a chat, or a data change like a new lead kicks off a workflow automatically, no one remembering to label the conversation, open the ticket, or ping the right team. The routine steps happen the same way, every single time.",
+      "image": "/images/order/automation-triggers-instantly.png",
+      "imageAlt": "Automation triggers firing instantly in Cekat.AI"
+    },
+    {
+      "title": "No Coding, No Developer Backlog",
+      "body": "Building automations usually means waiting on a developer or wiring up brittle scripts. Cekat.AI does it without code, you connect triggers to actions visually, the same way you'd brief a process to a new hire. Operations people set up their own workflows instead of filing a ticket and waiting weeks.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "No-code business logic builder in Cekat.AI"
+    },
+    {
+      "title": "The Right Team Gets Notified Instantly",
+      "body": "When a workflow fires, the people who need to act know immediately. A complaint gets captured, labeled, turned into a ticket, and routed to the right team with an automatic notification, no message sitting unread, no case falling through a crack because it landed with the wrong person.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Automatic notifications routed to the right team in Cekat.AI"
+    },
+    {
+      "title": "Your Tools Stay in Sync by Themselves",
+      "body": "Workflows keep data moving between your systems without manual copying. A new lead, a status change, a completed order, the update syncs where it needs to go automatically, so your CRM, your team, and your other tools all reflect the same reality instead of drifting out of step.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Full visibility across every automation step in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Triggers",
+      "title": "Start From Time, Keywords, or Data",
+      "body": "Workflows fire on time-based schedules, specific keywords in a chat, or changes in customer data like a new lead. You choose what starts the automation, and Cekat.AI watches for it around the clock."
+    },
+    {
+      "label": "Actions",
+      "title": "Labels, Tickets, Notifications, Sync",
+      "body": "A trigger can auto-label a conversation, create a ticket, notify the right team, and sync data between tools, several steps chained into one automatic sequence instead of a person doing each by hand."
+    },
+    {
+      "label": "No Code",
+      "title": "Built Visually, Not Written",
+      "body": "You connect triggers to actions without writing a line of code. Setting up a workflow is closer to briefing a process than programming one, so your operations team can build and change automations themselves."
+    },
+    {
+      "label": "Visibility",
+      "title": "See Every Step That Ran",
+      "body": "Cekat.AI shows the full path of each automation, which trigger fired, which actions ran, where a case sits now, so you can trust the workflow and quickly spot anything that needs attention."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Triggers to Actions",
+      "body": "Time, keywords, or data changes set off labels, tickets, notifications, and sync, multi-step logic that runs without anyone pressing go."
+    },
+    {
+      "title": "No Coding Required",
+      "body": "Workflows are built visually, so operations people set them up themselves instead of waiting on a developer backlog."
+    },
+    {
+      "title": "Operations That Run Themselves",
+      "body": "Routine steps happen automatically and identically every time, freeing your team from the repetitive work that eats their day."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is workflow automation?",
+      "a": "Workflow automation is running multi-step business logic automatically instead of by hand. In Cekat.AI, a trigger, a time-based schedule, a chat keyword, or a data change like a new lead, fires actions such as auto-labeling, creating a ticket, notifying a team, and syncing data, all without coding."
+    },
+    {
+      "q": "What can trigger a workflow in Cekat.AI?",
+      "a": "Three kinds of triggers: time-based schedules, specific keywords in a chat conversation, and changes in customer data such as a new lead being created. You choose which event starts the workflow, and Cekat.AI watches for it continuously and fires the actions the moment it happens."
+    },
+    {
+      "q": "What actions can a workflow run?",
+      "a": "A workflow can auto-label conversations, create tickets, send notifications to the right team, and sync data between your tools. Several actions chain into one sequence, so a single trigger can move a case from captured to labeled to assigned without anyone doing the steps manually."
+    },
+    {
+      "q": "Do I need to code to build automations?",
+      "a": "No. Cekat.AI's workflows are built visually by connecting triggers to actions, no scripts, no developer required. It's closer to briefing a process than programming one, so your operations team can set up and adjust automations themselves instead of waiting on an engineering backlog."
+    },
+    {
+      "q": "Can workflows route complaints to the right team?",
+      "a": "Yes. A complaint captured in chat can be auto-labeled, turned into a ticket, and routed to the right team with an automatic notification, then tracked through to resolution. Nothing sits unread or lands with the wrong person, because the workflow assigns it the same way every time."
+    },
+    {
+      "q": "How is this different from a chatbot flow?",
+      "a": "A chat flow shapes a single conversation; workflow automation runs business logic across your operation. Triggers can be schedules or data changes, not just messages, and actions reach beyond the chat, tickets, team notifications, and data sync between tools, so whole processes run automatically, not just replies."
+    },
+    {
+      "q": "Can I see what a workflow actually did?",
+      "a": "Yes. Cekat.AI gives full visibility across every automation step, which trigger fired, which actions ran, and where a case sits now. You can trust that workflows are doing what you set them to and quickly spot anything that needs a human to step in."
+    },
+    {
+      "q": "Does workflow automation connect with my other tools?",
+      "a": "Yes. Workflows sync data between tools and can reach business systems through API integration, for example checking shipping costs or booking appointments. Combined with triggers and actions, that keeps your CRM, your team, and your connected systems reflecting the same up-to-date information."
+    },
+    {
+      "q": "Does it run outside business hours?",
+      "a": "Yes. Workflows run 24/7, a trigger at 3 AM fires its actions immediately, and with AI working hours the AI covers conversations after your team logs off. Routine operations keep moving overnight, so nothing waits for morning just because your team was offline."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Repetitive Steps Into Automatic Ones",
+    "body": "Set your triggers once and let Cekat.AI run the labels, tickets, and notifications, no coding, around the clock."
+  }
+}

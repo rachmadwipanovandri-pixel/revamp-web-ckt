@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "Chatbot AI WhatsApp Resmi, Jawab FAQ & Closing di Chat | CekatAI",
+    "description": "Pasang AI Chatbot WhatsApp Business API resmi. Jawab FAQ, kualifikasi leads, & closing 24/7 tanpa antrean. Dipercaya 3.000+ bisnis di Indonesia."
+  },
+  "hero": {
+    "badge": "WhatsApp Business API Resmi",
+    "title": "Chatbot AI WhatsApp yang Closing Order Sambil Kamu Tidur",
+    "subtitle": "Jawab semua FAQ, kualifikasi setiap leads, cek ongkir, sampai terima order, semuanya di dalam WhatsApp, ditangani AI humanlike di Business API resmi"
+  },
+  "definition": "Chatbot AI WhatsApp dari Cekat.AI adalah AI agent yang berjalan di WhatsApp Business API resmi untuk menjawab pertanyaan customer, mengkualifikasi leads, cek ongkir, dan closing order langsung di chat, 24/7 dengan bahasa natural layaknya manusia.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "chat WhatsApp dibales instan" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Jawab Semua FAQ Seketika, Jam 2 Pagi Sekalipun",
+      "body": "Tanya harga, cek stok, jam buka, cara pakai: dua puluh pertanyaan yang sama menghabiskan seharian admin. Paste SOP dan info produk ke knowledge base sekali saja, dan chatbot menjawab semuanya dengan akurat, instan, jam berapa pun, sementara timmu fokus ke kerjaan yang lebih penting.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base yang menjawab FAQ otomatis di Cekat.AI"
+    },
+    {
+      "title": "Kualifikasi Leads Sebelum Timmu Sempat Bilang Halo",
+      "body": "Nggak semua \"halo kak\" layak dapat perhatian yang sama. Chatbot bertanya hal yang tepat, memahami jawabannya, dan memprioritaskan pembeli serius, jadi saat percakapan sampai ke tim sales, statusnya sudah berlabel, terkualifikasi, dan tinggal closing, bukan mulai dari nol.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Chatbot AI mengkualifikasi leads di dalam WhatsApp"
+    },
+    {
+      "title": "Dari \"Berapa Ongkir?\" Sampai Order Dibayar dalam Satu Chat",
+      "body": "Ongkir adalah titik di mana jualan WhatsApp paling sering macet. Chatbot Cekat.AI cek ongkir real-time langsung di percakapan, konfirmasi detail order, lalu kirim QR pembayaran, customer nggak perlu keluar dari WhatsApp, dan penjualan nggak perlu nunggu admin bangun.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Integrasi API untuk cek ongkir di chat Cekat.AI"
+    },
+    {
+      "title": "Oper ke Tim Lengkap dengan Konteksnya",
+      "body": "Komplain rumit? Deal B2B gede? Chatbot mengeskalasi otomatis dan tim menerima percakapan yang sudah berisi riwayat lengkap, data customer, dan private notes. Dengan jam kerja AI, tim pegang siang hari dan bot yang jaga shift malam.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Eskalasi otomatis dari AI ke tim dengan konteks lengkap"
+    },
+    {
+      "title": "Pantau Kerja Chatbot-mu, Bukan Nebak-Nebak",
+      "body": "Setiap percakapan bisa dicari, terlabel otomatis, dan terprioritaskan dalam satu inbox. Review cara AI menjawab, lihat pertanyaan yang paling sering muncul, lalu pertajam knowledge base-nya dari waktu ke waktu, persis seperti membina admin baru yang menjanjikan jadi andalan.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "Dashboard analisis percakapan di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "API Resmi",
+      "title": "Dibangun di Infrastruktur Resmi Meta",
+      "body": "Cekat.AI adalah Meta Business Partner resmi, dan setiap chatbot berjalan di WhatsApp Business API resmi, cara yang compliant dan andal untuk otomatisasi WhatsApp skala besar, tanpa risiko akun seperti tool bot tidak resmi."
+    },
+    {
+      "label": "Knowledge Base",
+      "title": "Dilatih Soal Bisnismu dalam ±5 Menit",
+      "body": "Paste SOP, katalog, harga, dan kebijakan, tanpa coding, tanpa begadang bikin flowchart. Chatbot menjawab hanya dari yang kamu ajarkan, dan update pengetahuannya semudah mengedit teks."
+    },
+    {
+      "label": "Tools di Chat",
+      "title": "Ongkir, Pembayaran, dan Gambar Tanpa Keluar Chat",
+      "body": "AI bisa cek ongkir, membuat QR pembayaran, bahkan mengedit gambar langsung di dalam percakapan, semua yang customer butuhkan dari tanya-tanya sampai order dibayar, dalam satu thread."
+    },
+    {
+      "label": "Ringkasan Call",
+      "title": "Telepon WhatsApp Dirangkum AI",
+      "body": "WhatsApp Call diproses AI jadi ringkasan instan berisi poin penting dan rekomendasi langkah selanjutnya, percakapan telepon berubah jadi catatan yang bisa ditindaklanjuti, bukan ingatan yang harus direka ulang tim."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Meta Business Partner",
+      "body": "API resmi yang disetujui dan compliant, nomor WhatsApp bisnismu tetap aman sementara chatbot bekerja dalam skala penuh."
+    },
+    {
+      "title": "Humanlike, Bukan Bot Menu",
+      "body": "Paham maksud dan konteks dalam bahasa natural, jadi customer dapat jawaban beneran, bukan \"ketik 1 untuk info harga\"."
+    },
+    {
+      "title": "Jualan, Bukan Cuma Support",
+      "body": "Kualifikasi leads, cek ongkir, QR pembayaran, dan closing order terjadi di chat, revenue yang jelas jejaknya dari si bot."
+    }
+  ],
+  "testimonial": {
+    "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+    "name": "Tantan Supriatna",
+    "role": "Customer Relation Department Head, Rumah Zakat",
+    "image": "/images/chat/tantan-supriatna.png"
+  },
+  "faq": [
+    {
+      "q": "Apa itu chatbot AI WhatsApp?",
+      "a": "Chatbot AI WhatsApp adalah program yang membalas pesan customer di WhatsApp secara otomatis. Versi Cekat.AI adalah AI agent di WhatsApp Business API resmi yang paham bahasa natural, menjawab FAQ dari knowledge base bisnismu, mengkualifikasi leads, cek ongkir, dan closing order langsung di chat, 24/7."
+    },
+    {
+      "q": "Chatbot WhatsApp harus pakai Business API resmi?",
+      "a": "Kalau bisnismu mau otomatisasi yang aman dan bisa scale, iya. Cekat.AI adalah Meta Business Partner resmi dan menjalankan semua chatbot di WhatsApp Business API resmi, jalur yang didukung Meta, beda dengan bot berbasis aplikasi modifikasi yang membahayakan nomor bisnismu."
+    },
+    {
+      "q": "Chatbot-nya bakal kedengeran kaku nggak ke customer?",
+      "a": "Nggak. AI-nya memahami maksud dan konteks, bukan mencocokkan keyword, jadi santai saja menghadapi singkatan, typo, dan pertanyaan lanjutan, dalam berbagai bahasa pula. Customer ngetik seperti biasa dan dapat jawaban yang nyambung; banyak percakapan terasa seperti chat dengan admin terlatih."
+    },
+    {
+      "q": "Bisa terima order dan cek ongkir langsung di chat?",
+      "a": "Bisa. Di dalam percakapan, AI cek ongkir real-time, konfirmasi detail order, lalu kirim QR pembayaran supaya customer bisa bayar tanpa keluar dari WhatsApp. Seluruh perjalanan dari tanya-tanya sampai order lunas terjadi dalam satu thread chat."
+    },
+    {
+      "q": "Gimana cara melatih chatbot soal bisnisku?",
+      "a": "Paste SOP, katalog produk, harga, dan kebijakan ke knowledge base, rasanya seperti briefing admin CS baru dan selesai dalam sekitar lima menit. Tanpa coding, dan ada visual flow designer drag-and-drop untuk proses terstruktur seperti booking atau promo."
+    },
+    {
+      "q": "Kalau pertanyaannya terlalu rumit buat bot, gimana?",
+      "a": "Percakapan otomatis dieskalasi ke tim, membawa riwayat chat lengkap, konteks customer, dan private notes. Kamu juga bisa atur jam kerja AI: manusia pegang chat di jam kantor, chatbot ambil alih setelahnya, perpindahannya mulus dua arah."
+    },
+    {
+      "q": "Kuat nggak menghadapi banjir chat di hari promo?",
+      "a": "Kuat. Chatbot membalas semua percakapan secara bersamaan, jadi banjir pesan flash sale dilayani sama cepatnya dengan hari biasa. Di 3.000+ bisnis, Cekat.AI sudah menangani lebih dari 1.000.000 interaksi customer, volume memang masalah yang dia lahir untuk selesaikan."
+    },
+    {
+      "q": "Chatbot WhatsApp bisa kerja bareng tim manusia?",
+      "a": "Justru itu setup bawaannya. Percakapan hidup di satu inbox bersama dengan label otomatis, prioritas kasus, private notes, kolaborator, dan akses berbasis role. AI menangani volume, tim menangani keputusan penting, dan semua orang melihat riwayat customer yang sama."
+    },
+    {
+      "q": "Seberapa cepat bisa launching chatbot WhatsApp di Cekat.AI?",
+      "a": "Kebanyakan bisnis selesai bikin agent dalam sekitar lima menit: hubungkan WhatsApp lewat Business API resmi, paste pengetahuan bisnis ke knowledge base, dan chatbot mulai menjawab. Tanpa developer, tanpa coding, di semua langkahnya."
+    },
+    {
+      "q": "Data customer aman nggak di chatbot WhatsApp?",
+      "a": "Cekat.AI patuh pada UU PDP, undang-undang pelindungan data pribadi Indonesia, dan sertifikasi ISO 27001 sedang berjalan. Ditambah WhatsApp Business API resmi dan akses tim berbasis role, percakapan customer dikelola dengan tata kelola yang benar."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah WhatsApp-mu Jadi Mesin Jualan 24/7",
+    "body": "Pasang chatbot AI di Business API resmi dalam hitungan menit, dan berhenti kehilangan order gara-gara telat bales."
+  }
+}

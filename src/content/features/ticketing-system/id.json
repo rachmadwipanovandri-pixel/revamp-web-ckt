@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Sistem Manajemen Tiket, Tak Ada yang Telat Ditangani | CekatAI",
+    "description": "Chat prioritas tinggi otomatis jadi tiket, diarahkan ke tim yang tepat plus notifikasi dan status terpantau penuh. 3.000+ bisnis, tak ada yang telat ditangani."
+  },
+  "hero": {
+    "badge": "Tiket Otomatis",
+    "title": "Ubah Chat Mendesak Jadi Tiket Sebelum Kelewat",
+    "subtitle": "Cekat.AI mendeteksi percakapan prioritas tinggi, otomatis buka tiket, arahkan ke tim yang tepat plus notifikasi, dan lacak sampai selesai, jadi nggak ada hal penting yang telat ditangani"
+  },
+  "definition": "Sistem Manajemen Tiket adalah fitur Cekat.AI yang otomatis mengubah percakapan prioritas tinggi menjadi tiket, mengarahkan tiap tiket ke tim yang tepat lengkap dengan notifikasi, dan melacaknya sampai tuntas.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "masalah terpantau nonstop" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Percakapan Mendesak Jadi Tiket dengan Sendirinya",
+      "body": "Masalah yang paling nyakitin justru yang kependem di inbox yang sibuk. Cekat.AI memprioritaskan kasus dan otomatis buka tiket begitu percakapan prioritas tinggi masuk, komplain, eskalasi, permintaan mendesak. Nggak ada yang nunggu seseorang nyadar dulu lalu buka tiket manual.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Percakapan prioritas tinggi otomatis membuat tiket di Cekat.AI"
+    },
+    {
+      "title": "Tiap Tiket Mendarat di Tim yang Tepat",
+      "body": "Tiket yang nyangkut di orang yang salah itu tiket yang nggak ke mana-mana. Cekat.AI mengarahkan tiap tiket ke tim yang seharusnya megang dan langsung kirim notifikasi otomatis, jadi orang yang tepat tahu seketika. Nggak ada rantai forward, nggak ada \"ini siapa yang handle?\", masalahnya sampai ke pemiliknya begitu tiketnya kebuka.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Tiket diarahkan dan dinotifikasi ke tim yang tepat di Cekat.AI"
+    },
+    {
+      "title": "Status Tiap Tiket Kelihatan Sekali Lihat",
+      "body": "Kamu nggak bisa benerin bottleneck yang nggak kelihatan. Cekat.AI ngasih visibilitas penuh ke tiap tiket, mana yang open, siapa pemiliknya, dan posisinya di alur. Begitu masalah mulai numpuk di satu titik, langsung kelihatan, jadi kamu bisa nyeimbangin beban sebelum antrean berubah jadi customer yang marah.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Visibilitas penuh status tiket di setiap langkah di Cekat.AI"
+    },
+    {
+      "title": "Nggak Ada yang Lolos Kelewat",
+      "body": "Dari masuk sampai selesai, tiap tiket dilacak jadi nggak ada yang diam-diam hilang. Auto-labeling bikin masalah tetap rapi, notifikasi bikin pemiliknya terus gerak, dan jejak status nunjukin mana yang udah kelar dan mana yang masih perlu ditangani, jadi masalah yang dulu kelupaan sekarang beneran ditutup.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Tiket dilacak dari awal sampai tuntas di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Tiket Otomatis",
+      "title": "Chat Prioritas Buka Tiket",
+      "body": "Prioritisasi kasus nandain percakapan yang paling penting, dan Cekat.AI otomatis buka tiket untuknya. Komplain dan permintaan mendesak tertangkap begitu masuk, bukan pas admin kebetulan lihat."
+    },
+    {
+      "label": "Routing",
+      "title": "Dikirim ke Tim yang Megang",
+      "body": "Tiap tiket ditugaskan ke tim yang tepat saat dibuat, jadi nggak muter-muter nyari pemilik. Masalahnya mendarat di tempat yang bisa beneran nyelesain, sejak detik pertama tiketnya ada."
+    },
+    {
+      "label": "Notifikasi",
+      "title": "Notifikasi Otomatis, Tanpa Ngejar",
+      "body": "Begitu tiket kebuka atau pindah status, tim yang bertanggung jawab dapat notifikasi otomatis. Nggak ada yang harus terus refresh antrean atau forward pesan, sistemnya yang dorong alertnya ke orang yang harus gerak."
+    },
+    {
+      "label": "Visibilitas",
+      "title": "Status Penuh Tiap Tiket",
+      "body": "Lacak status tiap tiket dari open sampai selesai dalam satu tempat. Bottleneck jadi kelihatan jelas, jadi kamu tahu di mana kerjaan numpuk dan bisa gerak sebelum berubah jadi antrean customer yang kecewa."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Prioritas, Bukan Urut Datang",
+      "body": "Cekat.AI memprioritaskan kasus dan otomatis buka tiket buat yang mendesak, jadi masalah yang paling penting loncat antrean, bukan malah kependem."
+    },
+    {
+      "title": "Diarahkan Otomatis",
+      "body": "Tiap tiket ditugaskan ke tim yang tepat plus notifikasi otomatis, jadi sampai ke pemiliknya seketika, tanpa forward, tanpa ambigu."
+    },
+    {
+      "title": "Terlihat dari Awal ke Akhir",
+      "body": "Visibilitas penuh status tiket nunjukin mana yang open, selesai, atau mandek, jadi bottleneck ketahuan lebih awal dan nggak ada yang telat ditangani."
+    }
+  ],
+  "testimonial": {
+    "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+    "name": "Tantan Supriatna",
+    "role": "Customer Relation Department Head, Rumah Zakat",
+    "image": "/images/chat/tantan-supriatna.png"
+  },
+  "faq": [
+    {
+      "q": "Apa itu sistem manajemen tiket?",
+      "a": "Sistem manajemen tiket mengorganisasi masalah customer menjadi tiket yang bisa dilacak dan membawanya sampai tuntas. Di Cekat.AI, percakapan prioritas tinggi otomatis jadi tiket, diarahkan ke tim yang tepat plus notifikasi, dan dilacak dengan visibilitas penuh sejak dibuka sampai ditutup."
+    },
+    {
+      "q": "Gimana Cekat.AI bikin tiket otomatis?",
+      "a": "Cekat.AI memprioritaskan kasus dan otomatis buka tiket saat percakapan prioritas tinggi masuk, misalnya komplain atau permintaan mendesak. Masalahnya ditangkap langsung dari chat, di-auto-label, dan ditugaskan ke tim yang tepat, jadi nggak ada yang nunggu orang nyadar dulu lalu buka tiket manual."
+    },
+    {
+      "q": "Gimana tiket diarahkan ke tim yang tepat?",
+      "a": "Saat tiap tiket dibuat, Cekat.AI menugaskannya ke tim yang seharusnya megang dan mengirim notifikasi otomatis. Masalahnya sampai ke orang yang bisa nyelesain seketika, bukan muter di rantai forward atau nganggur di inbox bersama sementara semua ngira orang lain yang handle."
+    },
+    {
+      "q": "Bisa lihat status tiap tiket?",
+      "a": "Bisa. Cekat.AI ngasih visibilitas penuh ke tiap tiket, mana yang open, siapa pemiliknya, dan posisinya di alur. Tampilan itu bikin bottleneck jelas kelihatan, jadi begitu masalah mulai numpuk di satu titik kamu bisa nyeimbangin beban sebelum jadi antrean panjang."
+    },
+    {
+      "q": "Gimana sebuah tiket sampai selesai?",
+      "a": "Tiket dilacak dari masuk sampai tuntas. Di-auto-label dan ditugaskan ke tim yang tepat, notifikasi bikin pemiliknya terus gerak, dan jejak status mencatat progres sampai masalahnya ditutup. Karena tiap langkah kelihatan, tiket beneran kelar, bukan diam-diam kelupaan."
+    },
+    {
+      "q": "Percakapan seperti apa yang jadi tiket?",
+      "a": "Yang prioritas tinggi, komplain, eskalasi, dan permintaan mendesak yang ditandai prioritisasi kasus sebagai butuh perhatian khusus. Pertanyaan rutin yang bisa dibereskan AI agent di chat tetap di inbox, jadi antrean tiket tim kamu cuma berisi masalah yang beneran perlu dilacak dan dipegang."
+    },
+    {
+      "q": "Sistem tiketnya dapat notifikasi real-time?",
+      "a": "Iya. Begitu tiket dibuat atau berubah status, tim yang bertanggung jawab dapat notifikasi otomatis. Nggak ada yang harus melototin antrean atau forward pesan manual, jadi masalah cepat diambil dan yang dulu kelewat di luar jam kerja sekarang ketangkap."
+    },
+    {
+      "q": "Channel apa saja yang bisa memunculkan tiket?",
+      "a": "Channel apa pun yang tersambung ke Cekat.AI, WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, live chat website, dan channel API. Semua percakapan masuk ke satu inbox terpadu, dan masalah prioritas tinggi di mana pun bisa otomatis diubah jadi tiket yang terlacak."
+    },
+    {
+      "q": "Perlu coding buat setup tiket otomatis?",
+      "a": "Nggak perlu coding. Workflow trigger nyambungin auto-labeling, pembuatan tiket, dan notifikasi admin pakai aturan seperti keyword chat atau perubahan data customer, dan kamu atur tanpa nulis kode. Setup-nya semudah briefing admin CS soal cara menangani tiap jenis masalah."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Chat Mendesak Jadi Tiket yang Beneran Kelar",
+    "body": "Biarkan Cekat.AI membuka, mengarahkan, dan melacak tiap masalah prioritas tinggi otomatis, jadi nggak ada hal penting yang telat ditangani."
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Integrasi TikTok Ads: ke DM TikTok atau WhatsApp | Cekat.AI",
+    "description": "Hubungkan TikTok Ads ke Cekat.AI: klik iklan jadi chat di DM TikTok atau WhatsApp, dibalas AI, beratribusi kampanye, dan konversinya terkirim balik lewat Events API."
+  },
+  "hero": {
+    "badge": "Integrasi TikTok Ads",
+    "title": "Dari FYP Langsung Jadi Chat yang Closing",
+    "subtitle": "Dua rute dari satu iklan: masuk ke DM TikTok untuk konsultasi cepat, atau langsung ke WhatsApp untuk follow-up yang serius. Dua-duanya dibalas AI dan tercatat beratribusi kampanyenya."
+  },
+  "definition": "Integrasi TikTok Ads di Cekat.AI menghubungkan iklan TikTok ke percakapan: rute TikTok Inbox membawa pengklik ke DM TikTok, rute Click-to-WhatsApp membawanya ke WhatsApp Business, keduanya masuk satu inbox dengan atribusi kampanye dan sinyal konversi terkirim balik.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "leads dari iklan langsung dibalas"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi pelanggan ditangani"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis jalanin campaign di Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Dua Rute, Satu Inbox",
+      "body": "Iklan ke DM TikTok cocok untuk tanya-tanya cepat dan booking; iklan ke WhatsApp cocok untuk penjualan dengan follow-up panjang. Ke mana pun arahnya, chat mendarat di inbox yang sama.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Chat dari TikTok Ads masuk ke satu inbox"
+    },
+    {
+      "title": "Penonton Jadi Percakapan Tanpa Pindah Aplikasi",
+      "body": "Rute TikTok Inbox menjawab orang di aplikasi yang sedang mereka buka, lengkap dengan template pesan pembuka. Niat beli tidak hilang di perpindahan aplikasi.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "DM TikTok terhubung ke inbox Cekat.AI"
+    },
+    {
+      "title": "Rute WhatsApp untuk Deal yang Butuh Dikawal",
+      "body": "Click-to-WhatsApp memindahkan pembeli serius ke nomor bisnismu, tempat AI mengkualifikasi, tim melanjutkan, dan CRM mencatat semuanya sampai closing.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Leads TikTok masuk WhatsApp dan dibalas AI"
+    },
+    {
+      "title": "Kampanye Asal Menempel di Tiap Leads",
+      "body": "Setiap chat membawa nama campaign TikTok-nya ke CRM. Kontenmu yang viral kelihatan menghasilkan apa: penonton saja, atau pembeli.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads TikTok beratribusi kampanye di CRM"
+    },
+    {
+      "title": "Konversi Terkirim Balik ke TikTok",
+      "body": "Closing di chat dikirim kembali lewat pixel dan Events API, jadi TikTok mengoptimasi ke orang yang benar-benar membeli, bukan yang cuma berhenti scroll.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Sinyal konversi terkirim kembali ke TikTok"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Rute Mengikuti Niat",
+      "body": "Konsultasi ringan di DM TikTok, pembelian serius di WhatsApp. Kamu memilih per campaign."
+    },
+    {
+      "title": "Tidak Banyak Platform Punya Ini",
+      "body": "Di tabel perbandingan kami, integrasi TikTok termasuk baris yang paling jarang dicentang pesaing."
+    },
+    {
+      "title": "Lingkaran Penuh ke Algoritma",
+      "body": "Dari iklan ke chat ke closing, lalu sinyalnya kembali ke TikTok untuk optimasi berikutnya."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu integrasi TikTok Ads di Cekat.AI?",
+      "a": "Sambungan iklan TikTok ke percakapan lewat dua rute: TikTok Inbox Ads yang membuka DM TikTok, dan Click-to-WhatsApp yang membuka chat WhatsApp Business. Keduanya masuk satu inbox dengan atribusi kampanye."
+    },
+    {
+      "q": "Kapan sebaiknya pakai rute DM TikTok?",
+      "a": "Untuk lead generation ringan, konsultasi produk, dan booking, saat kamu ingin menjawab orang tanpa memindahkan mereka dari aplikasi yang sedang dibuka."
+    },
+    {
+      "q": "Kapan rute WhatsApp lebih tepat?",
+      "a": "Untuk penjualan yang butuh follow-up intensif. WhatsApp membawa percakapan ke nomor bisnismu dengan CRM, follow-up otomatis, dan riwayat yang menyatu."
+    },
+    {
+      "q": "Apakah keduanya bisa jalan bersamaan?",
+      "a": "Bisa. Rutenya dipilih per campaign, dan semua chat-nya tetap mendarat di inbox yang sama, jadi tim tidak berpindah alat."
+    },
+    {
+      "q": "Bagaimana atribusinya bekerja?",
+      "a": "Chat yang datang dari iklan membawa kampanye asalnya ke CRM, jadi kamu bisa membaca leads dan closing per campaign TikTok tanpa rekap manual."
+    },
+    {
+      "q": "Apakah konversi dikirim balik ke TikTok?",
+      "a": "Ya, lewat TikTok Pixel dan Events API. Penjualan yang terjadi di chat menjadi sinyal optimasi, jadi iklan berikutnya dicari dari orang yang mirip pembelimu."
+    },
+    {
+      "q": "Apakah AI membalas leads TikTok juga?",
+      "a": "Ya. Chat dari kedua rute diperlakukan sama: dibalas di detik pertama, dikualifikasi, dan diteruskan ke tim ketika siap closing."
+    },
+    {
+      "q": "Apakah pesaing juga punya integrasi TikTok?",
+      "a": "Sebagian besar belum. Di halaman perbandingan kami, TikTok DM dan TikTok Ads termasuk baris yang paling jarang dicentang platform lain."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Penonton TikTok Jadi Pembeli yang Tercatat",
+    "body": "Dua rute, satu inbox, atribusi penuh. Coba gratis atau tanya tim kami lewat WhatsApp."
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Complaint Management System for Customer Service | CekatAI",
+    "description": "Integrated complaint management app: turn chats into tracked tickets & auto-assign to the right team. Every customer issue has an assigned PIC!"
+  },
+  "hero": {
+    "badge": "Complaint Workflow",
+    "title": "No Complaint Gets Buried, No Customer Gets Forgotten",
+    "subtitle": "Complaints move through a structured workflow, captured in chat, labeled, assigned to the right team, and tracked to resolution, so every issue gets answered instead of lost in a busy inbox"
+  },
+  "definition": "Complaint management in Cekat.AI is a structured workflow that captures customer complaints from chat, auto-labels and turns them into tickets, assigns them to the right team, and tracks each one to resolution, so no issue is missed or handled too late.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "complaints captured automatically" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Complaints Captured the Moment They Arrive",
+      "body": "A complaint buried in a busy inbox becomes a lost customer. Cekat.AI captures complaints straight from the conversation and auto-labels them by intent, so an urgent issue is flagged the second it lands, not hours later when someone finally scrolls back.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Complaints auto-captured and labeled in Cekat.AI"
+    },
+    {
+      "title": "Routed to the Right Team Automatically",
+      "body": "Every complaint becomes a ticket and goes to the team that can actually resolve it, with automatic notifications so nothing waits in limbo. Clear ownership means no complaint bounces between people while the customer waits.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Automatic complaint routing and notifications in Cekat.AI"
+    },
+    {
+      "title": "Tracked From First Message to Resolution",
+      "body": "Each complaint has a status you can follow, captured, assigned, in progress, resolved. Teams see what's open and what's overdue in real time, so issues get closed instead of quietly forgotten.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Complaint status tracking in Cekat.AI"
+    },
+    {
+      "title": "Full Context, No Repeating",
+      "body": "When a complaint escalates to a human agent, the whole conversation history comes with it. Customers never have to repeat their story, and agents resolve faster because they see the full picture from the start.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Complaint escalation with full context in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Nothing Falls Through",
+      "body": "Auto-capture and ticketing mean every complaint is recorded and owned, not lost in the noise of a busy inbox."
+    },
+    {
+      "title": "Faster Resolution",
+      "body": "Automatic routing and full context get complaints to the right person immediately, cutting the time between problem and solution."
+    },
+    {
+      "title": "Accountability by Design",
+      "body": "Every ticket has an owner and a status, so managers see what's open, what's overdue, and where things get stuck."
+    }
+  ],
+  "testimonial": {
+    "quote": "Cekat.AI helps us serve people faster and has lifted our customer satisfaction.",
+    "name": "Wiji",
+    "role": "Customer Experience Department Head, Rumah Zakat",
+    "image": "/images/home/testimonial-wiji-astuti.jpg"
+  },
+  "faq": [
+    {
+      "q": "What is a complaint management system?",
+      "a": "It's a structured way to capture, route, track, and resolve customer complaints. In Cekat.AI, complaints are captured from chat, auto-labeled, turned into tickets, assigned to the right team, and tracked to resolution in one workflow."
+    },
+    {
+      "q": "How are complaints captured?",
+      "a": "Complaints are captured directly from customer conversations across WhatsApp, Instagram, Messenger, and live chat. Cekat.AI auto-labels messages by intent, so complaints are flagged the moment they arrive rather than found later."
+    },
+    {
+      "q": "How does a complaint get to the right team?",
+      "a": "Each complaint becomes a ticket that's automatically routed to the team responsible for that type of issue, with notifications so it's picked up quickly. Clear ownership prevents complaints from bouncing between people."
+    },
+    {
+      "q": "Can I track the status of every complaint?",
+      "a": "Yes. Every complaint has a status you can follow from captured to resolved, and teams see what's open and overdue in real time, so issues get closed instead of forgotten."
+    },
+    {
+      "q": "What happens when a complaint needs a human?",
+      "a": "The complaint escalates to a human agent with the full conversation history attached. The customer doesn't repeat anything, and the agent resolves faster because they have complete context from the start."
+    },
+    {
+      "q": "Does the AI handle complaints on its own?",
+      "a": "The AI handles routine issues instantly and captures the rest into the workflow. Sensitive or complex complaints are escalated to your team, so the AI reduces volume without leaving hard cases unattended."
+    },
+    {
+      "q": "Does this work across all my channels?",
+      "a": "Yes. Complaints from every connected channel flow into one workflow and one customer record, so a complaint is handled the same way whether it arrives on WhatsApp, Instagram, or your website chat."
+    },
+    {
+      "q": "Do I need coding to set up the workflow?",
+      "a": "No. Labeling rules, ticket creation, routing, and notifications are configured without code using Cekat.AI's visual automation, so your team can set up the complaint workflow themselves."
+    },
+    {
+      "q": "How does complaint data help my business improve?",
+      "a": "Tracked complaints show which issues recur, how fast they're resolved, and where bottlenecks are, turning complaints into data you can act on to improve products, service, and response times."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Complaints Into Resolved Cases, Not Lost Customers",
+    "body": "See how a structured complaint workflow gives every issue an owner and a resolution, automatically."
+  }
+}

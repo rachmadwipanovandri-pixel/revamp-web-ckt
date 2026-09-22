@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Sistem Booking Konsultasi & AI Intake Klien | CekatAI",
+    "description": "Firma hukum, konsultan pajak, dan agency pakai Cekat.AI buat intake klien 24/7, booking konsultasi, reminder otomatis, dan pipeline per partner."
+  },
+  "hero": {
+    "badge": "Jasa Profesional",
+    "title": "Jawab Setiap Permintaan Konsultasi, Bahkan Saat Kantor Tutup",
+    "subtitle": "Dari pertanyaan pertama, kualifikasi, sampai jadwal konsultasi yang fix, Cekat.AI menangani intake di WhatsApp dan web chat 24/7, lengkap dengan reminder otomatis, tanpa partner standby pegang HP tiap malam",
+    "useCases": [
+      "Permintaan konsultasi",
+      "Intake otomatis",
+      "Jadwal konsultasi",
+      "Pipeline per layanan"
+    ]
+  },
+  "definition": "Cekat.AI untuk jasa profesional adalah platform AI customer service untuk firma hukum, notaris, konsultan pajak dan akuntansi, agency, dan arsitek di Indonesia, menangani intake dan kualifikasi klien 24/7 lewat sistem booking konsultasi dengan reminder otomatis dan pipeline per partner dalam satu platform.",
+  "stats": [
+    {
+      "value": "28%",
+      "label": "konversi dari lead ke appointment di Wall Street English, naik dari 20%"
+    },
+    {
+      "value": "+8%",
+      "label": "kenaikan lead terkualifikasi di Multi Flashindo Karisma dalam 4 bulan"
+    },
+    {
+      "value": "24/7",
+      "label": "permintaan konsultasi dan intake klien terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Permintaan Konsultasi Dijawab Jam Berapa Pun",
+      "body": "Orang nyari pengacara atau konsultan pajak pas masalahnya lagi kepikiran, sering itu malam hari atau akhir pekan. AI agent Cekat.AI membalas begitu chat masuk, menjelaskan layanan, dokumen yang perlu disiapkan, dan langkah berikutnya, jadi inquiry serius nggak menguap gara-gara kantor baru buka hari Senin.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI dan staf kantor di Cekat.AI"
+    },
+    {
+      "title": "Pertanyaan Intake yang Berulang Ditangani AI",
+      "body": "\"Bisa tangani kasus seperti ini?\" \"Dokumennya apa saja?\" \"Prosesnya berapa lama?\" Pertanyaan intake yang sama datang tiap hari. Cekat.AI menjawabnya dengan bahasa natural dari knowledge base kantormu, lalu menanyakan kebutuhan, urgensi, dan detail dasarnya, jadi yang sampai ke partner sudah inquiry matang, bukan chat kosong.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menangani pertanyaan intake calon klien di inbox Cekat.AI"
+    },
+    {
+      "title": "Konsultasi Terjadwal Langsung dari Chat",
+      "body": "Nggak perlu lagi bolak-balik \"bisanya kapan?\" lewat telepon. Cekat.AI menawarkan slot dan mencatat jadwal konsultasi langsung di percakapan, dan lewat integrasi API bisa tersambung ke kalender atau sistem booking yang kantormu pakai, klien tinggal datang di jam yang sudah pasti.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Integrasi API Cekat.AI dengan kalender dan sistem booking kantor"
+    },
+    {
+      "title": "Reminder Otomatis, No-Show Turun",
+      "body": "Meeting yang batal diam-diam itu jam kerja partner yang hangus. Cekat.AI mengirim reminder sebelum jadwal konsultasi lewat WhatsApp, lengkap dengan dokumen yang perlu dibawa, dan kalau klien minta ganti waktu, reschedule beres di chat yang sama, slot yang kosong bisa langsung diisi.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Reminder dan notifikasi jadwal konsultasi otomatis di Cekat.AI"
+    },
+    {
+      "title": "Setiap Inquiry Masuk Pipeline per Partner atau Layanan",
+      "body": "Leads yang nyangkut di HP salah satu partner itu revenue kantor yang bocor. Cekat.AI menangkap tiap inquiry jadi kartu CRM otomatis, lengkap dengan riwayat chat dan kebutuhannya, tersusun di pipeline per partner atau lini layanan, jadi managing partner melihat semua prospek dalam satu papan, bukan nanya satu-satu.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Pipeline inquiry klien per partner di CRM Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chat klien jalan di WhatsApp Business API resmi, bareng Instagram DM dan live chat website kantormu, satu inbox yang rapi, compliant dan andal."
+    },
+    {
+      "title": "AI yang Intake dan Menjadwalkan",
+      "body": "AI menjawab pertanyaan awal, mengkualifikasi kebutuhan calon klien, dan mengunci jadwal konsultasi, lalu mengoper perkara ke orang yang tepat lengkap dengan konteks."
+    },
+    {
+      "title": "Dipakai 3.000+ Bisnis di Indonesia",
+      "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan customer service di Cekat.AI."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu firma dan kantor jasa profesional?",
+      "a": "Cekat.AI menjawab permintaan konsultasi secara instan 24/7 di WhatsApp dan web chat, menangani pertanyaan intake yang berulang, menjadwalkan konsultasi, dan merapikan tiap inquiry ke pipeline per partner atau lini layanan. Tim kantor fokus mengerjakan perkara, bukan membalas chat yang sama tiap hari."
+    },
+    {
+      "q": "AI bisa mengkualifikasi calon klien sebelum konsultasi?",
+      "a": "Bisa. AI menanyakan hal yang biasa ditanya staf intake, jenis kebutuhan, urgensi, dan detail dasar perkara atau proyeknya, lalu mencatatnya ke kartu leads. Partner masuk ke konsultasi dengan gambaran yang jelas, dan inquiry yang di luar layanan bisa diarahkan dengan sopan sejak awal."
+    },
+    {
+      "q": "Apakah AI memberi nasihat hukum atau pajak?",
+      "a": "Nggak. AI menangani intake, menjawab pertanyaan umum soal layanan, proses, dan dokumen dari knowledge base yang kantormu setujui, lalu mengarahkan pembahasan substansi ke konsultasi dengan profesionalnya langsung. Batasannya kamu yang tentukan lewat instruksi AI."
+    },
+    {
+      "q": "Booking konsultasi bisa nyambung ke kalender kantor?",
+      "a": "Bisa. Lewat integrasi API, jadwal yang diambil AI di chat bisa tersambung ke kalender atau sistem booking yang sudah dipakai kantormu, dan reminder otomatis terkirim sebelum jadwal untuk menekan no-show. Reschedule pun selesai di percakapan yang sama."
+    },
+    {
+      "q": "Bagaimana kerahasiaan data calon klien dijaga?",
+      "a": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam menangani dan mengelola data pengguna, dan sertifikasi ISO 27001 sedang dalam proses. Akses di dalam kantor diatur berbasis peran, jadi percakapan dan data calon klien hanya terlihat oleh orang yang berwenang."
+    },
+    {
+      "q": "Kapan percakapan dialihkan ke partner atau staf?",
+      "a": "Kapan pun aturanmu bilang begitu, misalnya saat calon klien mulai membahas substansi perkara, kasusnya sensitif, atau dia minta bicara langsung. Percakapan berpindah ke orang yang tepat lengkap dengan riwayat chat dan hasil intake-nya, jadi klien nggak mengulang cerita dari awal."
+    },
+    {
+      "q": "Channel apa saja yang bisa dihubungkan?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, dan live chat di website kantormu, semua masuk ke satu inbox dengan satu riwayat per kontak. Calon klien yang mulai chat dari website lalu lanjut di WhatsApp tetap terbaca sebagai orang yang sama."
+    },
+    {
+      "q": "Berapa lama setup untuk kantor jasa profesional?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin daftar layanan, proses, dokumen persyaratan, dan SOP intake ke knowledge base, dan AI langsung menjawab akurat. Tanpa coding sama sekali; semudah briefing resepsionis baru."
+    },
+    {
+      "q": "Ada trial dan gimana arah harganya?",
+      "a": "Ada free trial 14 hari buat mencoba langsung di nomor kantormu. Harganya berbentuk paket yang menyesuaikan ukuran tim dan volume percakapan, dari praktik solo sampai firma dengan banyak partner, jadwalkan konsultasi gratis dan tim kami bantu pilih yang paling pas."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Setiap Inquiry Jadi Konsultasi yang Terjadwal",
+    "body": "Lihat bagaimana firma dan konsultan menjalankan intake, booking, dan follow-up 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

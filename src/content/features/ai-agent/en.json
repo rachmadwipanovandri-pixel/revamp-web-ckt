@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "AI Chatbot That Chats Like a Human and Sells 24/7 | CekatAI",
+    "description": "An AI chatbot that chats like a human and sells like your top salesperson. It understands intent, handles thousands of chats at once, and closes 24/7."
+  },
+  "hero": {
+    "badge": "Humanlike AI Agent",
+    "title": "An AI Chatbot That Chats Like a Human and Sells Like Your Top Salesperson",
+    "subtitle": "Cekat.AI's humanlike agent understands what customers actually mean, answering thousands of chats at once, qualifying leads, and closing sales 24/7 on WhatsApp, Instagram, Messenger, and your website"
+  },
+  "definition": "An AI chatbot on Cekat.AI is a humanlike AI agent that understands customer intent and context, not just keywords, so it can answer questions, qualify leads, and close sales across WhatsApp, Instagram DM, Facebook Messenger, and website live chat, 24 hours a day.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "~5 min", "label": "to build your AI agent, no coding" },
+    { "value": "24/7", "label": "humanlike answers on every channel" }
+  ],
+  "benefits": [
+    {
+      "title": "Understands What Customers Mean, Not Just What They Type",
+      "body": "The chatbots of the past matched keywords and broke the moment a customer phrased something differently. Cekat.AI's agent reads intent and context in any language, so \"masih ada yang warna hitam?\" gets a real answer about stock, not a menu of buttons to press.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI agent handling a natural customer conversation"
+    },
+    {
+      "title": "Handle Thousands of Chats at Once Without Hiring",
+      "body": "One human admin handles one conversation at a time. Your AI agent handles all of them simultaneously, promo day, midnight, public holiday. Minori Group's multilingual agent took over 100% of inquiries across two languages and grew revenue 60% without adding a single hire.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "All chat channels connected to one Cekat.AI inbox"
+    },
+    {
+      "title": "Trained Like a New Admin, Ready in Minutes",
+      "body": "No scripts, no decision trees, no coding. Paste your SOPs, product info, and pricing into the knowledge base and the agent starts answering like someone who read the manual, because it did. Most businesses build their first agent in about five minutes.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Knowledge base setup in Cekat.AI using pasted SOPs"
+    },
+    {
+      "title": "Closes the Sale, Not Just the Conversation",
+      "body": "Answering questions is table stakes. Cekat.AI's agent qualifies the lead, checks shipping costs mid-chat, sends a payment QR, and walks the customer to a done deal, turning your busiest channel into your most reliable closer instead of a glorified FAQ page.",
+      "image": "/images/home/simpler-ai-builder.png",
+      "imageAlt": "Building a sales-ready AI agent in Cekat.AI"
+    },
+    {
+      "title": "Knows Exactly When to Hand Off to a Human",
+      "body": "Set AI working hours so your team takes chats during the day and the agent covers nights and weekends. When a conversation needs a person, the handoff is automatic and carries the full history, the customer never repeats themselves, and your team never starts blind.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours schedule with automatic human handoff"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Intent & Context",
+      "title": "Reads Meaning, Not Keywords",
+      "body": "The agent understands slang, typos, mixed languages, and follow-up questions that refer to earlier messages. Customers chat the way they chat with friends, and still get accurate answers pulled from your business knowledge."
+    },
+    {
+      "label": "Multi-Agent",
+      "title": "Specialized Agents for Sales, Support, and Billing",
+      "body": "Run multiple AI agents, each trained for a different job, one that sells, one that solves problems, one that handles billing questions. Every conversation is routed to the specialist, just like a well-run CS team."
+    },
+    {
+      "label": "Flow Designer",
+      "title": "Visual Flows When You Want Full Control",
+      "body": "For structured processes like bookings or promos, drag and drop a chat flow in the visual designer. AI flexibility where you want it, fixed steps where you need them, no coding either way."
+    },
+    {
+      "label": "Human Handoff",
+      "title": "Escalation That Carries the Whole Story",
+      "body": "When the AI hands a chat to your team, the full conversation, customer context, and private notes travel with it. Role-based access and collaborators keep the right people on the right cases."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Humanlike, Not Robotic",
+      "body": "Customers get natural, multilingual answers that understand intent, not the stiff keyword-bot experience that makes people ask for a human."
+    },
+    {
+      "title": "Every Channel, One Inbox",
+      "body": "WhatsApp via the official Business API, Instagram DM, Facebook Messenger, and website live chat all flow into one unified inbox."
+    },
+    {
+      "title": "From Answering to Closing",
+      "body": "The agent qualifies leads, checks shipping, sends payment QRs, and closes orders in chat, measurable revenue, not just faster replies."
+    }
+  ],
+  "testimonial": {
+    "quote": "The chance of closing the deal is very high",
+    "name": "Wiji Astuti",
+    "role": "Head of Customer Experience, Rumah Zakat",
+    "image": "/images/home/testimonial-wiji-astuti.jpg"
+  },
+  "faq": [
+    {
+      "q": "What is an AI chatbot?",
+      "a": "An AI chatbot is software that talks with customers automatically. Modern AI chatbots like Cekat.AI's agent understand intent and context in natural language, so they can answer real questions, qualify leads, and close sales, unlike older rule-based chatbots that only respond to preset keywords and menus."
+    },
+    {
+      "q": "How is Cekat.AI different from old rule-based chatbots?",
+      "a": "Rule-based chatbots follow rigid scripts: press 1 for pricing, press 2 for hours, and fail on anything unexpected. Cekat.AI's agent understands what the customer means, handles typos, slang, and multiple languages, and answers from your actual business knowledge. It converses like a trained admin, not a phone menu."
+    },
+    {
+      "q": "Can an AI chatbot really close sales, not just answer questions?",
+      "a": "Yes. The Cekat.AI agent qualifies leads, recommends products, checks shipping costs inside the chat, and sends a payment QR to finish the transaction. Holywings Group reached 100% chat coverage 24/7 and lifted conversion by up to 70% after moving inquiries to AI."
+    },
+    {
+      "q": "How long does it take to set up an AI chatbot with Cekat.AI?",
+      "a": "About five minutes for a working agent. You paste your SOPs, product details, and business info into the knowledge base, as easy as briefing a new CS admin, and the agent starts answering. No coding is required, and a visual drag-and-drop designer handles structured flows."
+    },
+    {
+      "q": "Which channels does the AI chatbot work on?",
+      "a": "WhatsApp through the official Business API, Instagram DM, Facebook Messenger, website live chat, and custom API channels. Every conversation from every channel lands in one unified inbox, so the AI and your team work from a single view of the customer."
+    },
+    {
+      "q": "What happens when the AI can't answer something?",
+      "a": "The conversation is handed to your team automatically, with the full chat history and context attached, the customer never has to repeat the story. You can also set AI working hours, so humans cover the day shift and the agent covers nights, weekends, and overflow."
+    },
+    {
+      "q": "Does the AI chatbot speak Indonesian and other languages?",
+      "a": "Yes. The agent is multilingual and detects the customer's language automatically. Minori Group uses it to serve customers across Indonesian and Japanese in two timezones, the AI handles 100% of inquiries in both languages, which helped grow revenue 60% without hiring."
+    },
+    {
+      "q": "How does the chatbot learn about my business?",
+      "a": "Through a knowledge base you fill by pasting SOPs, product catalogs, pricing, and policies, plain text, no technical formatting. The agent answers strictly from that knowledge, so responses stay accurate to your business. Updating it is as simple as editing the text."
+    },
+    {
+      "q": "Can it handle thousands of conversations at the same time?",
+      "a": "Yes, that is the core advantage over human-only teams. The agent answers every incoming chat simultaneously with no queue, and Cekat.AI has handled over 1,000,000 customer interactions across 3,000+ businesses. Volume spikes on promo days simply stop being a staffing problem."
+    },
+    {
+      "q": "Is customer data safe with an AI chatbot?",
+      "a": "Cekat.AI complies with UU PDP, Indonesia's personal data protection law, and is working toward ISO 27001 certification. Team access is role-based, so agents, supervisors, and admins each see only what their role allows, the same discipline you'd expect from a serious CS operation."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Every Incoming Chat Into a Closed Sale",
+    "body": "Build your humanlike AI agent in about five minutes and let it answer, qualify, and close, 24/7, without adding headcount."
+  }
+}

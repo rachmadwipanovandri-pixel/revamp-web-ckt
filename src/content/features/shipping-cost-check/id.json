@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Cek Ongkir Otomatis, Ongkir Instan di Chat | CekatAI",
+    "description": "Cek ongkir otomatis lewat AI: ongkir akurat muncul di chat via API dalam hitungan detik, bukan nunggu admin. 3.000+ bisnis closing lebih cepat, checkout gak kabur."
+  },
+  "hero": {
+    "badge": "Cek Ongkir Otomatis di Chat",
+    "title": "Customer Dapat Ongkir Persis Saat Mereka Nanya",
+    "subtitle": "AI agent Cekat.AI cek ongkir otomatis di dalam chat lewat integrasi API, ongkir akurat dalam hitungan detik, jadi gak ada customer yang kabur gara-gara nunggu admin"
+  },
+  "definition": "Cek Ongkir Otomatis adalah fitur Cekat.AI di mana AI agent mengecek ongkir secara otomatis di dalam percakapan chat lewat integrasi API, memberi customer ongkir akurat dalam hitungan detik, bukan nunggu admin cek manual.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "AI kasih ongkir sepanjang waktu" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Ongkir Akurat Sebelum Niat Beli Customer Dingin",
+      "body": "Jeda antara \"ongkirnya berapa?\" dan jawabannya itu tempat order mati. AI agent Cekat.AI cek ongkir begitu customer nanya dan langsung kasih angkanya di chat, jadi customer lihat total beneran selagi masih siap bayar, bukan sepuluh menit kemudian saat sudah keburu males.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI kasih ongkir di dalam percakapan chat"
+    },
+    {
+      "title": "Gak Ada Admin Bolak-Balik Buka Tab Kurir",
+      "body": "Cek ongkir manual berarti admin nyalin alamat, buka situs kurir, lalu ngetik tarifnya balik, buat tiap order. Cekat.AI melakukannya lewat integrasi API otomatis, jadi tim gak lagi jadi kalkulator berjalan dan customer gak nunggu tarif yang harusnya cuma sedetik.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Integrasi API cek tarif ongkir otomatis di Cekat.AI"
+    },
+    {
+      "title": "Checkout yang Kabur Jadi Lebih Sedikit",
+      "body": "Tiap pertanyaan ongkir yang gak terjawab itu calon order yang batal. Begitu ongkir muncul instan dan akurat di percakapan yang sama, customer lanjut terus, bukan kabur ke seller yang bales lebih cepat. Jawaban instan sepanjang waktu itu yang bikin bisnis di Cekat.AI naik konversi.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Alur order end-to-end yang menahan customer dari checkout kabur"
+    },
+    {
+      "title": "Ongkir Langsung Masuk ke Order",
+      "body": "Begitu ongkir dicek, AI menambahkannya ke total order dan lanjut jalan, mengumpulkan detail dan mengirim QR pembayaran tanpa jeda. Ongkir bukan pertanyaan buntu; itu satu langkah otomatis dalam chat yang berakhir di order lunas.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Ongkir masuk ke order otomatis di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Cek via API",
+      "title": "Tarif Ditarik Lewat Integrasi API",
+      "body": "Cekat.AI tersambung ke ekspedisi lewat integrasi API, jadi AI cek ongkir beneran saat percakapan, bukan nebak atau nyuruh customer nunggu. Tarifnya akurat dan muncul dalam hitungan detik."
+    },
+    {
+      "label": "Di Chat",
+      "title": "Jawaban Gak Keluar dari Percakapan",
+      "body": "Customer nanya ongkir dan dapat jawabannya di situ juga, gak dialihkan ke website, gak ada \"nanti saya cek dulu ya.\" Semua terjadi di dalam chat, di channel apa pun yang dia pakai."
+    },
+    {
+      "label": "Ke Order",
+      "title": "Ongkir Ditambahkan ke Total Otomatis",
+      "body": "Ongkir yang sudah dicek langsung masuk ke order yang lagi disusun AI, jadi customer lihat satu total jelas, barang plus ongkir, dan bisa langsung bayar pakai QR yang dikirim di chat yang sama."
+    },
+    {
+      "label": "24/7",
+      "title": "Ongkir Kapan Saja",
+      "body": "Customer nanya ongkir tengah malam juga. AI kasih tarifnya sepanjang waktu, jadi order yang masuk setelah tim log off tetap jalan, bukan mandek sampai pagi."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Instan, Bukan Nanti",
+      "body": "Ongkir muncul dalam hitungan detik di chat, selagi customer masih mempertimbangkan, bukan setelah admin sempat ngecek."
+    },
+    {
+      "title": "Akurat, Lewat API",
+      "body": "Tarif datang lewat integrasi API, jadi angka yang dilihat customer itu ongkir beneran, bukan tebakan kasar yang bikin masalah belakangan."
+    },
+    {
+      "title": "Satu Langkah dari Alur Besar",
+      "body": "Cek ongkir bagian dari otomatisasi order, AI mencatat detail, hitung ongkir, dan menagih pembayaran dalam satu percakapan utuh."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu cek ongkir otomatis?",
+      "a": "Cek ongkir otomatis adalah saat AI mengecek tarif pengiriman untuk customer sendiri, bukan admin yang cek manual. Di Cekat.AI, AI agent cek ongkir lewat integrasi API selama chat dan kasih tarif akurat dalam hitungan detik, lalu memasukkannya ke order."
+    },
+    {
+      "q": "Gimana cara Cekat.AI cek ongkir?",
+      "a": "Lewat integrasi API. Begitu customer nanya ongkir, AI membaca alamat tujuan dari percakapan, cek tarif lewat API ekspedisi yang tersambung, dan kasih angkanya langsung di chat, tanpa admin, tanpa cek manual, tanpa jeda bikin customer nunggu."
+    },
+    {
+      "q": "Ongkirnya akurat?",
+      "a": "Akurat. Karena tarif datang lewat integrasi API, bukan tebakan manual, customer lihat ongkir yang beneran. Akurasi itu penting, tarif salah bisa makan margin kamu atau bikin customer kaget pas bayar dan batal beli."
+    },
+    {
+      "q": "Berapa cepat customer dapat ongkirnya?",
+      "a": "Dalam hitungan detik. AI cek dan kasih ongkir begitu customer nanya, di percakapan yang sama. Gak ada antrean di belakang chat lain dan gak nunggu admin luang, dan itu yang bikin customer yang siap beli gak kabur."
+    },
+    {
+      "q": "Cek ongkir otomatis bikin order batal berkurang?",
+      "a": "Bantu banget. Banyak order hilang di keheningan setelah \"ongkirnya berapa?\" Begitu ongkir muncul instan dan akurat di chat yang sama, customer lanjut, bukan kabur ke seller yang lebih cepat, dan AI langsung lanjut ke pembayaran."
+    },
+    {
+      "q": "Cek ongkir jalan di channel apa saja?",
+      "a": "Semua. WhatsApp lewat Business API resmi, Instagram DM, Facebook Messenger, live chat website, dan API channel, semua percakapan masuk ke satu inbox dan AI bisa cek dan kasih ongkir di channel apa pun yang dipakai customer."
+    },
+    {
+      "q": "Ongkir otomatis masuk ke order?",
+      "a": "Masuk. Setelah cek ongkir, AI menambahkannya ke total order dan lanjut, mengumpulkan detail customer dan mengirim QR pembayaran di chat yang sama. Ongkir itu satu langkah otomatis menuju order yang lunas."
+    },
+    {
+      "q": "Jalan di luar jam kerja?",
+      "a": "Jalan. AI kasih ongkir 24/7. Dengan AI working hours, tim menangani chat saat jam kantor dan AI ambil alih setelahnya, jadi customer yang nanya ongkir malam hari dapat jawaban instan, bukan nunggu tim online lagi."
+    },
+    {
+      "q": "Perlu coding buat integrasi ongkirnya?",
+      "a": "Gak perlu coding dari sisimu. Cekat.AI menangani ongkir lewat integrasi API, dan kamu set up AI dengan menempel info bisnis ke knowledge base dan mengatur alur lewat visual drag-and-drop flow designer, bikin agent cuma sekitar lima menit."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah \"Ongkirnya Berapa?\" Jadi Order Lunas",
+    "body": "Biarkan Cekat.AI kasih ongkir akurat dalam hitungan detik dan bawa customer langsung ke pembayaran, 24/7."
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "AI Function Calling: AI That Acts in Your Systems | Cekat.AI",
+    "description": "Function calling lets the Cekat.AI agent act mid-chat: compose complete orders, send payment links, and call your own systems over API."
+  },
+  "hero": {
+    "badge": "AI Function Calling",
+    "title": "AI That Finishes the Transaction, Not Just the Conversation",
+    "subtitle": "Through function calling, your AI agent executes actions mid-chat: composing complete orders, sending payment links, and calling your own systems over API. Customers never get told to switch apps."
+  },
+  "definition": "Function calling in Cekat.AI is the AI agent's ability to invoke real functions while a conversation is happening: creating orders from chat content, issuing payment via payment links or manual transfer, and executing actions in external systems over API.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "AI executing orders and payments"
+    },
+    {
+      "value": "~5 min",
+      "label": "to set up a bot, no code"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Chat Becomes an Order Without Touching a Dashboard",
+      "body": "The moment a customer commits, the AI collects the name, address, and order details from the conversation and creates the order. No copy-paste into another system, no order lost to a busy admin.",
+      "image": "/images/order/automation-triggers-instantly.png",
+      "imageAlt": "AI creating an order straight from a conversation"
+    },
+    {
+      "title": "Shipping and Couriers Handled Inside the Conversation",
+      "body": "Make the shipping address mandatory or optional, choose the sender address and courier. The AI calculates and confirms all of it before the order is created, without leaving the chat.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Shipping configuration inside the AI order flow"
+    },
+    {
+      "title": "The Bill Goes Out the Moment They Say Yes",
+      "body": "Choose auto-generated payment links or route to the bank accounts and e-wallets you register. The riskiest gap in any sale, between agreeing and paying, shrinks to a single message.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Payment link sent automatically in chat"
+    },
+    {
+      "title": "Call Your Own APIs",
+      "body": "Function calling does not stop at orders. Connect your stock, booking, or internal system APIs and the AI can check and act on them mid-conversation, like an employee with system access.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "AI calling an external system API"
+    },
+    {
+      "title": "Every Channel, One Execution Path",
+      "body": "Orders from WhatsApp, Instagram, or website live chat run through the same flow. Configure the function once and every channel you sell on gets it.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Function calling running across every channel"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Action, Not Just Answers",
+      "body": "An AI that only replies still leaves work behind. Function calling means conversations end with something done."
+    },
+    {
+      "title": "You Hold the Rules",
+      "body": "Which functions can be called, when an address is mandatory, where payments route: all of it is yours to set."
+    },
+    {
+      "title": "Recorded in the Same System",
+      "body": "Every order and payment the AI executes lands in the CRM and the chat history, so the team can trace all of it."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is function calling in Cekat.AI?",
+      "a": "The AI agent's ability to invoke real functions mid-chat: creating orders from the conversation, issuing payment, and executing actions over API. The AI acts rather than only answering."
+    },
+    {
+      "q": "How is it different from Order Automation?",
+      "a": "Order Automation is the order flow itself; function calling is the machinery that lets the AI execute that flow and other actions beyond orders, including custom functions over API."
+    },
+    {
+      "q": "How does the AI know what data to collect?",
+      "a": "From the function's configuration. For orders, it asks for customer details, the address when you make it mandatory, and confirmation, then calls the function once everything is complete."
+    },
+    {
+      "q": "Which payment methods are supported?",
+      "a": "Two modes: a payment link generated automatically per order, or manual payment routed to the bank accounts and e-wallets you register yourself."
+    },
+    {
+      "q": "Can the AI call APIs beyond the built-in features?",
+      "a": "Yes. Through the Open API you register your own functions, stock checks, schedule bookings, or internal system queries, and the AI calls them when the conversation needs to."
+    },
+    {
+      "q": "What happens when a function call fails?",
+      "a": "The failure is visible in the conversation rather than swallowed silently, so the team can step in. The case can escalate to a human agent with full context."
+    },
+    {
+      "q": "Do we need a developer to turn it on?",
+      "a": "Not for orders and payments; enable it from the Integrations tab and set the options from the dashboard. A developer only comes in when you connect your own custom API."
+    },
+    {
+      "q": "Which channels support function calling?",
+      "a": "Every chat channel connected to Cekat.AI, including WhatsApp, Instagram, and website live chat. Configure a function once and it applies across channels."
+    }
+  ],
+  "cta": {
+    "heading": "Let the AI See the Transaction Through",
+    "body": "From chat to order, from order to payment, without switching apps. Try it free or ask our team."
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": "AI Solution for Operations Teams | Cekat.AI",
+    "description": "Orders recorded from chat, shipping calculated automatically, tickets routed to the right team, and every step visible. Operations without the copy-paste."
+  },
+  "hero": {
+    "badge": "Solution for Operations Teams",
+    "title": "Turn Orders Into Automated Workflows",
+    "subtitle": "Orders are recorded automatically, shipping is calculated, teams are notified, and every status stays easy to track."
+  },
+  "definition": "The Cekat.AI operations solution turns conversations into processes that run themselves: orders recorded from chat, shipping costs calculated automatically, tickets created and routed to the right team, and every step visible in one place.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "shipping quotes from AI, around the clock"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    },
+    {
+      "value": "~5 min",
+      "label": "from signup to a live bot"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "painPoints": {
+    "heading": "What Slows Operations Down",
+    "items": [
+      {
+        "icon": "Layers",
+        "title": "Orders copied by hand between apps",
+        "body": "From chat to spreadsheet, from spreadsheet to the warehouse system. Every copy is a chance for a typo and a skipped step."
+      },
+      {
+        "icon": "Radio",
+        "title": "Notifications blasted to everyone",
+        "body": "A group that gets every update ends up read by no one. The important news drowns with the trivial."
+      },
+      {
+        "icon": "LifeBuoy",
+        "title": "Problems surface after the complaint",
+        "body": "Stuck orders and hanging tickets only show when the customer asks. Every fix happens in emergency mode."
+      }
+    ]
+  },
+  "compare": {
+    "heading": "The Difference With and Without Cekat.AI",
+    "body": "The same order volume, a different load on the team. Switch tabs to compare the flow.",
+    "withLabel": "With Cekat.AI",
+    "withoutLabel": "Without Cekat.AI",
+    "with": {
+      "title": "Processes run themselves with a clear trail",
+      "bullets": [
+        "Orders recorded straight from chat, shipping calculated automatically",
+        "Tickets created and routed to the right team by your rules",
+        "Every step visible, failures caught while they are small"
+      ],
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Full visibility across automation steps in Cekat.AI"
+    },
+    "without": {
+      "title": "Everything routes through hands",
+      "bullets": [
+        "Copy-paste between apps with daily typo risk",
+        "Cross-team updates rely on a noisy group chat",
+        "Order status stays dark until the customer asks"
+      ]
+    }
+  },
+  "midCta": {
+    "heading": "Automate Your First Flow Today",
+    "body": "Start with the one process that eats the most time. Try it free or talk it through on WhatsApp first."
+  },
+  "benefits": [
+    {
+      "title": "From Chat to Order Without Manual Copying",
+      "body": "An order copied from chat into a spreadsheet is an order waiting for a typo. In Cekat.AI, orders are recorded straight from the conversation, shipping cost calculated automatically, and the next step in the process fires immediately.",
+      "image": "/images/order/automation-triggers-instantly.png",
+      "imageAlt": "An order from chat triggering automation instantly"
+    },
+    {
+      "title": "Every Channel Through One Door",
+      "body": "Orders and requests arrive from WhatsApp, Instagram, and the web at once. They all land in one queue in one format, so operations processes from a single place instead of combing five apps.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Requests from every channel landing in one queue"
+    },
+    {
+      "title": "Tickets That Create Themselves and Reach the Right Team",
+      "body": "Delivery complaints to logistics, payment issues to finance, defects to technicians. Tickets are created automatically from chat and routed by your rules, with nobody stuck playing human sorting machine.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Tickets created automatically and routed to the right team"
+    },
+    {
+      "title": "Notify the Right People, Not Everyone",
+      "body": "A group that receives every notification ends up read by no one. Cekat.AI automation alerts only the team that has to act: the warehouse when an order is paid, the courier when it is ready, CS when something goes wrong.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Automatic notifications sent to the team that must act"
+    },
+    {
+      "title": "Every Step Visible, Nothing Lost in the Middle",
+      "body": "Where an order is stuck, whose ticket is waiting, which automation failed: it all reads in one view. Problems surface while they are small, not after the customer complains.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Full visibility across every automation step"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Fewer Manual Points of Failure",
+      "body": "Copy-paste between apps becomes an automated flow, and the typos and skipped steps disappear with it."
+    },
+    {
+      "title": "The Same Process Every Time",
+      "body": "The same flow runs the same way whoever is on shift. The SOP lives in the system, not in someone's memory."
+    },
+    {
+      "title": "Scale Without the Drama",
+      "body": "Double the volume means the automation runs twice as often, not the team working twice as late."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the Cekat.AI operations solution?",
+      "a": "Automation that turns conversations into processes: orders recorded from chat, shipping calculated, tickets created and routed, notifications sent to the right team, and every step visible in one place."
+    },
+    {
+      "q": "Which processes can be automated?",
+      "a": "Order capture from chat, shipping cost calculation, ticket creation and routing, cross-team notifications, status follow-ups, and any flow you compose yourself with no-code workflow automation."
+    },
+    {
+      "q": "How does automatic shipping calculation work?",
+      "a": "The customer mentions an address, the AI quotes rates for Indonesia's major couriers right in the conversation, and the number is recorded on the order. No courier tabs, no manual lookup."
+    },
+    {
+      "q": "Can it connect to systems we already use?",
+      "a": "Yes, through APIs and webhooks, so orders and statuses can flow into internal systems, and internal systems can trigger outbound messages from Cekat.AI."
+    },
+    {
+      "q": "What about steps that need a human decision?",
+      "a": "Automation can pause at approval points: a ticket waits for confirmation, then continues once approved. Anything outside the pattern escalates to the team with full context."
+    },
+    {
+      "q": "Do we have to automate everything at once?",
+      "a": "No. Most teams start with the single most time-consuming flow, order capture for example, then add more once the first one is proven."
+    },
+    {
+      "q": "How long does setup take?",
+      "a": "From signup to a live bot is about 5 minutes. A first automation flow is usually done the same day, with no code."
+    },
+    {
+      "q": "What happens when an automation fails?",
+      "a": "The failed step shows in the automation view along with where it stopped, so it can be fixed and re-run. You learn about it from the system rather than from a customer complaint."
+    }
+  ],
+  "cta": {
+    "heading": "Routine Processes Don't Need People. They Need a Flow.",
+    "body": "Let orders, tickets, and notifications run themselves, and keep your team on the work that truly needs a human. Try it free, or chat with our team."
+  }
+}

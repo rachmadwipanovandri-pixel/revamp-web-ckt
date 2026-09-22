@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Auto Reply WA: Balas Pesan Otomatis 24/7 | CekatAI",
+    "description": "Auto reply WA yang jawab pertanyaan customer beneran, bukan pesan salam otomatis, AI bales 24/7 biar leads malam tidak lolos. Dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "Auto Reply WA Pintar",
+    "title": "Auto Reply yang Beneran Jawab, Bukan Cuma \"Pesanmu Kami Terima\"",
+    "subtitle": "Ganti pesan salam otomatis dengan AI yang baca tiap chat WhatsApp, paham maksud customer, dan langsung jawab, 24/7, pakai bahasa mereka, sambil menangkap setiap leads"
+  },
+  "definition": "Auto Reply WA adalah fitur Cekat.AI untuk membalas pesan WhatsApp masuk secara otomatis dengan AI agent yang humanlike, memahami maksud customer dan memberi jawaban asli 24/7, bukan sekadar mengirim pesan salam atau pesan di luar jam kerja.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "auto reply, tidak pernah offline" },
+    { "value": "~5 menit", "label": "bikin AI agent-mu" }
+  ],
+  "benefits": [
+    {
+      "title": "Jawab Pertanyaannya, Bukan Kirim Pesan Salam",
+      "body": "\"Terima kasih, pesanmu akan kami balas\" tidak menghasilkan penjualan apa pun. AI agent Cekat.AI baca apa yang sebenarnya ditanya customer, harga, stok, cara order, dan langsung jawab dalam hitungan detik. AI paham maksud dan konteks, bukan keyword, jadi balesnya kayak CS terlatih, bukan autoresponder.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI auto reply pertanyaan WhatsApp"
+    },
+    {
+      "title": "Jangan Kehilangan Leads Cuma Gara-Gara Chat Masuk Tengah Malam",
+      "body": "Kebanyakan leads chat di luar jam kerja, dan balesan yang baru masuk besok pagi sering jadi penjualan yang direbut yang bales duluan. Dengan AI working hours, tim jawab chat pas online dan AI ambil alih malam serta weekend otomatis, jadi tiap pesan WhatsApp langsung dibales, jam berapa pun masuknya.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan AI working hours untuk auto reply di luar jam kerja di Cekat.AI"
+    },
+    {
+      "title": "Setiap Auto Reply Jadi Leads di CRM",
+      "body": "Pertanyaan yang terjawab baru berarti kalau bisa di-follow-up. Cekat.AI menangkap setiap percakapan WhatsApp ke CRM secara otomatis, tanpa input manual, membentuk catatan customer yang hidup dan menggeser tiap kontak lewat stage Visitor, Lead, dan Buyer lengkap dengan saran langkah berikutnya buat timmu.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Leads WhatsApp tertangkap otomatis di CRM Cekat.AI"
+    },
+    {
+      "title": "Setup Cuma Sekitar 5 Menit, Tanpa Coding",
+      "body": "Kamu tidak perlu bikin ratusan aturan keyword. Tinggal tempel SOP dan info bisnis ke knowledge base, AI langsung siap jawab pertanyaan asli, bikinnya semudah nge-brief admin CS baru. Butuh alur bercabang? Pakai flow designer drag-and-drop visual, tetap tanpa coding.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Setup knowledge base yang menggerakkan auto reply WhatsApp di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Balasan Pintar",
+      "title": "Paham Maksud, Bukan Sekadar Keyword",
+      "body": "AI baca maksud customer dan jawab dengan bahasa natural, sesuai bahasa yang mereka pakai. AI bekerja dari knowledge base yang kamu susun, jadi balasannya akurat soal harga, produk, dan aturan bisnismu, bukan jawaban generik."
+    },
+    {
+      "label": "Luar Jam Kerja",
+      "title": "AI Jaga Shift Malam, Otomatis",
+      "body": "AI working hours menyesuaikan jadwal timmu: agent jawab chat siang hari, AI membalas di luar jam kerja, dan setiap handoff membawa konteks percakapan lengkap dua arah. Customer tidak perlu nunggu sampai besok pagi buat dibales."
+    },
+    {
+      "label": "Tangkap Leads",
+      "title": "Auto Reply yang Mengisi Pipeline",
+      "body": "Setiap percakapan otomatis bikin atau update kartu CRM, kontak, riwayat chat, dan perilaku dalam satu catatan hidup. Customer Stages melacak tiap orang dari Visitor ke Lead ke Buyer, jadi auto reply berujung follow-up, bukan jalan buntu."
+    },
+    {
+      "label": "Satu Inbox",
+      "title": "WhatsApp Sebelah Channel Lainnya",
+      "body": "WhatsApp jalan di Business API resmi dan masuk ke inbox terpadu yang sama dengan Instagram DM, Facebook Messenger, dan live chat website, satu dashboard dengan search cepat, auto-labeling, dan prioritas case di semua channel."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Jawaban Asli, Bukan Autoresponder",
+      "body": "AI agent yang humanlike paham pertanyaan dan memberi jawaban asli 24/7, kebalikan dari pesan salam yang cuma bikin customer nunggu."
+    },
+    {
+      "title": "WhatsApp Business API Resmi",
+      "body": "Cekat.AI adalah Meta Business Partner resmi, jadi auto reply jalan di WhatsApp Business API resmi, compliant dan andal saat scale."
+    },
+    {
+      "title": "Jawaban yang Berujung Penjualan",
+      "body": "Tiap balasan tertangkap jadi leads, follow-up jalan otomatis, dan AI bisa closing order langsung di chat, bukan dibiarkan menggantung."
+    }
+  ],
+  "testimonial": {
+    "quote": "Respon pelanggan menjadi lebih cepat",
+    "name": "Silica Brenda",
+    "role": "Founder, Moir Salon",
+    "image": "/images/home/testimonial-silica-brenda.jpg"
+  },
+  "faq": [
+    {
+      "q": "Apa itu auto reply WA?",
+      "a": "Auto reply WA adalah balasan otomatis yang terkirim saat customer chat ke bisnismu. Di Cekat.AI, ini bukan pesan salam yang kaku, AI agent yang humanlike baca pertanyaannya, paham maksudnya, dan memberi jawaban asli 24/7 lewat WhatsApp Business API resmi."
+    },
+    {
+      "q": "Apa bedanya dengan auto reply di WhatsApp Business biasa?",
+      "a": "Aplikasi WhatsApp Business gratis cuma kirim pesan salam dan pesan di luar jam kerja, teks yang sama apa pun pertanyaan customer. Cekat.AI benar-benar menjawab pertanyaannya: baca maksud, ambil dari knowledge base, jawab pakai bahasa customer, dan simpan percakapannya jadi leads di CRM."
+    },
+    {
+      "q": "Auto reply-nya jalan 24/7, termasuk malam?",
+      "a": "Ya, justru itu intinya. AI agent menjawab sepanjang waktu, jadi leads yang chat tengah malam dapat balasan secepat yang chat siang hari. Dengan AI working hours, tim jawab chat pas online dan AI ambil alih malam serta weekend secara otomatis."
+    },
+    {
+      "q": "AI-nya benar-benar bisa jawab pertanyaan soal bisnisku?",
+      "a": "Bisa. AI bekerja dari knowledge base yang kamu susun dari SOP, harga, dan detail produkmu sendiri, dan paham maksud serta konteks, bukan cuma cocokin keyword. Hal yang tidak seharusnya dia tangani dialihkan ke timmu lengkap dengan riwayat chat."
+    },
+    {
+      "q": "Perlu bikin aturan keyword buat tiap pertanyaan?",
+      "a": "Tidak. Kamu tidak perlu nulis balasan keyword satu per satu. Tinggal tempel info bisnis ke knowledge base dan AI menjawab natural, Cekat.AI menggambarkannya semudah nge-brief admin CS baru, dan kebanyakan tim sudah live sekitar 5 menit."
+    },
+    {
+      "q": "Kalau customer butuh manusia, gimana?",
+      "a": "Percakapan dialihkan ke timmu lengkap dengan riwayat chat, jadi customer tidak perlu mengulang cerita. Dengan AI working hours, ini jalan sesuai jadwal: AI menangani pesan di luar jam kerja dan tim ambil alih otomatis begitu online."
+    },
+    {
+      "q": "Auto reply lewat Cekat.AI aman buat nomor WhatsApp-ku?",
+      "a": "Aman. Cekat.AI adalah Meta Business Partner resmi dan menjalankan auto reply lewat WhatsApp Business API resmi, cara yang compliant untuk membalas customer dalam skala besar, beda dengan bot tidak resmi yang membahayakan nomormu."
+    },
+    {
+      "q": "Cuma jawab pertanyaan atau sekalian tangkap leads?",
+      "a": "Dua-duanya. Setiap percakapan WhatsApp tertangkap ke CRM otomatis tanpa input manual, kontak, riwayat chat, dan perilaku dalam satu catatan. Customer Stages melacak tiap kontak dari Visitor ke Lead ke Buyer, jadi jawaban berujung follow-up dan penjualan."
+    },
+    {
+      "q": "Bisa bales pakai lebih dari satu bahasa?",
+      "a": "Bisa. AI agent-nya multibahasa dan membalas sesuai bahasa yang dipakai customer. Minori Group, yang melayani Jepang dan Indonesia, menangani 100% inquiry dengan AI multibahasa di Cekat.AI, dua bahasa dan dua timezone dalam satu platform."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Tiap Pesan WhatsApp Jadi Jawaban Instan",
+    "body": "Matikan pesan salam otomatis dan biarkan AI bales dengan jawaban asli 24/7, sambil CRM-mu terisi leads yang bisa di-follow-up."
+  }
+}

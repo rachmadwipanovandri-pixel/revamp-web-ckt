@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Customer Service for ISPs, Support 24/7 | CekatAI",
+    "description": "ISPs use Cekat.AI to absorb outage complaint floods, answer billing questions, and book install visits 24/7 on WhatsApp. Fast replies, less churn."
+  },
+  "hero": {
+    "badge": "Internet Service Providers",
+    "title": "When the Network Goes Down, Every Chat Gets Answered",
+    "subtitle": "From outage reports to billing questions to installation bookings, Cekat.AI replies instantly on WhatsApp, 24/7, even when complaints flood in, without adding support admins",
+    "useCases": [
+      "Outage complaint surges",
+      "Billing & payments",
+      "Technician scheduling",
+      "WhatsApp notifications"
+    ]
+  },
+  "definition": "Cekat.AI for Internet Service Providers is an AI customer service platform for ISPs in Indonesia, from neighborhood RT/RW Net operators to regional fiber networks, handling outage reports, billing questions, and installation scheduling 24/7 in one platform.",
+  "stats": [
+    {
+      "value": "+30%",
+      "label": "increase in subscribers at Lintas Jaringan Nusantara"
+    },
+    {
+      "value": "5 sec",
+      "label": "reply time to customer chats at Lunica, down from 15 minutes"
+    },
+    {
+      "value": "24/7",
+      "label": "outage reports, billing, and install bookings answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Outage Complaint Floods Absorbed Automatically",
+      "body": "One fiber cut, hundreds of chats at once, and two admins on shift. Cekat.AI's agent answers every outage report instantly no matter the volume, sharing the handling status and recovery estimate you update in the knowledge base, so customers feel heard instead of taking the complaint to social media.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent absorbing a spike of outage reports in the Cekat.AI inbox"
+    },
+    {
+      "title": "Billing and Payment Questions Answered Instantly",
+      "body": "\"How much is my bill this month?\" \"Where do I pay?\" \"I already transferred, why am I still cut off?\" The same questions arrive every day and eat your admins' hours. Cekat.AI answers them from the knowledge base in natural language, sends payment details, and escalates odd payment cases to your team with the chat history attached.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Cekat.AI knowledge base answering customer billing questions"
+    },
+    {
+      "title": "New Installs and Tech Visits Booked from the Chat",
+      "body": "A prospect asks about coverage and gets an instant answer. Ready to install, the AI collects the address and details it needs, then books an installation slot or a technician visit right in the conversation. Every request is logged with full context, so the field team heads out informed instead of guessing from a half-read chat.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Installation and technician visits scheduled from a conversation in Cekat.AI"
+    },
+    {
+      "title": "Automatic Notifications to Customers on WhatsApp",
+      "body": "Due-date reminders, payment confirmations, scheduled maintenance announcements, and the update when an area comes back online, all sent automatically through the official WhatsApp Business API. Customers hear from you before they need to complain, and your billing team stops chasing payments one chat at a time.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Automatic Cekat.AI notifications delivered to customers on WhatsApp"
+    },
+    {
+      "title": "Complaints Become Tickets Routed to the Right Area Team",
+      "body": "Every incoming outage report is turned into a ticket automatically, complete with the customer's details and location, then forwarded to the technical team for that area. You see every open ticket in one view, so no complaint drowns in the inbox and no customer has to chat three times about the same problem.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Customer complaints automatically converted into tickets in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats, notifications, and broadcasts run on the official WhatsApp Business API, alongside Instagram DM and web chat, one inbox for every service area, compliant and reliable."
+    },
+    {
+      "title": "AI Built for Complaint Spikes",
+      "body": "During a mass outage the AI answers every chat at once with zero queue, then hands technical cases to your field team with full context and location attached."
+    },
+    {
+      "title": "Trusted by 3,000+ Businesses",
+      "body": "From local operators to large groups across Indonesia, Cekat.AI handles real customer conversations every day, proven at real chat volume."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help ISPs and local internet providers?",
+      "a": "It answers customer chats instantly 24/7 on WhatsApp, web chat, and social media, covering outage reports, billing and package questions, and new installation requests, while turning complaints into organized tickets. It fits RT/RW Net operators, local ISPs, and regional fiber providers whose admins are stretched thin."
+    },
+    {
+      "q": "Can the AI handle the complaint flood during a mass outage?",
+      "a": "Yes. It answers every incoming chat instantly no matter how many arrive at once, so response time stays flat when one area goes down and hundreds of customers message at the same time. Update the handling status once in the knowledge base and every customer gets the same consistent answer."
+    },
+    {
+      "q": "Can customers schedule installations or technician visits through the chat?",
+      "a": "Yes. The AI collects the address and requirements, then books a new installation slot or a technician visit inside the conversation. The request is logged as a ticket with complete details, and automated reminders can go out before the schedule so customers do not forget."
+    },
+    {
+      "q": "Does it use the official WhatsApp Business API?",
+      "a": "Yes. Cekat.AI is an Official Meta Business Partner, so your business number connects to the official WhatsApp Business API, safe from bans, eligible for the green tick, and able to send notifications and broadcasts at scale, not a regular WhatsApp passed around between admins."
+    },
+    {
+      "q": "Can it integrate with our billing system or existing tools?",
+      "a": "Yes. Through API integration, Cekat.AI connects to billing systems, CRMs, or internal tools, so the AI answers with relevant data and tickets flow into the workflow you already run, without rebuilding how your team works."
+    },
+    {
+      "q": "When does a chat hand over to a human?",
+      "a": "Whenever you need it to. You set the rules, field-level technical cases, billing disputes, or a customer asking for a person. The AI hands the conversation over with full history attached, so your team never asks the customer to start over, and keeps answering everything else."
+    },
+    {
+      "q": "How is our customer data secured?",
+      "a": "Conversation and customer data is stored securely and only accessible to team members you authorize, with role-based access controls. ISO 27001 certification is in progress, and data practices follow industry standards."
+    },
+    {
+      "q": "How long does setup take for an ISP?",
+      "a": "Building the AI agent takes around five minutes, paste your package list, prices, coverage areas, payment steps, and outage-handling SOPs into the knowledge base and it starts answering accurately. No coding required, as easy as briefing a new CS admin."
+    },
+    {
+      "q": "How does pricing work for a small ISP?",
+      "a": "Pricing follows your usage, so an RT/RW Net with hundreds of customers does not pay like a large operator. Start on a small plan and scale as your subscriber base grows. Book a free consultation and our team will help size the right plan for your business."
+    }
+  ],
+  "cta": {
+    "heading": "Turn the Complaint Flood Into Customers Who Stay",
+    "body": "See how ISPs run 24/7 customer service on Cekat.AI, book a free consultation with our team."
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Omnichannel Application, One Inbox for Every Channel | CekatAI",
+    "description": "Manage WhatsApp, Instagram, Messenger, live chat, and API channels in one omnichannel inbox. AI answers 24/7 across all, trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "One Inbox for Every Channel",
+    "title": "Every Customer Channel, Managed From One Inbox",
+    "subtitle": "WhatsApp, Instagram, Messenger, website live chat, and API channels flow into a single omnichannel inbox, where your team and AI answer every message with the same context, no phone-swapping or tab-juggling"
+  },
+  "definition": "Omnichannel Application is a Cekat.AI feature that unifies WhatsApp, Instagram, Facebook Messenger, website live chat, and API channels into one inbox, so every customer conversation is handled in a single place with shared context.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "AI answers across every channel" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Stop Juggling Phones, Tabs, and Apps",
+      "body": "Most teams answer WhatsApp on one phone, Instagram on another, and live chat in a browser tab, and messages slip through the cracks. Cekat.AI pulls WhatsApp, Instagram, Messenger, website chat, and API channels into one inbox, so nothing gets missed and no one switches devices just to reply.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "All customer channels connected to one Cekat.AI inbox"
+    },
+    {
+      "title": "Give Every Channel the Same Fast, On-Brand Reply",
+      "body": "A customer who asks on Instagram deserves the same answer they'd get on WhatsApp. Because every channel runs through one AI agent and one knowledge base, replies stay consistent, accurate, and on-brand, whether the message arrives as a DM, through the live chat widget, or in a WhatsApp thread.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI answering conversations from every channel in Cekat.AI"
+    },
+    {
+      "title": "Let AI Cover Every Channel 24/7",
+      "body": "Your team can't watch five channels around the clock, the AI agent can. It understands intent and context, replies in the customer's language, and works every channel day and night. When a message needs a human, it hands off to your team with the full conversation attached.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours covering every channel after the team logs off"
+    },
+    {
+      "title": "See the Whole Customer, Not Just One Chat",
+      "body": "The same customer might DM you today and WhatsApp you next week. Cekat.AI ties every channel to one CRM profile, so your team sees past chats, purchases, and campaigns no matter where the conversation started, and answers with full history instead of making customers repeat themselves.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Unified customer profile across every channel in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "All Channels",
+      "title": "WhatsApp, Instagram, Messenger, Chat, API",
+      "body": "Connect the official WhatsApp Business API, Instagram DM, Facebook Messenger, website live chat, and custom API channels. Every message from every channel lands in the same inbox, nothing is stranded on a separate app anymore."
+    },
+    {
+      "label": "One Inbox",
+      "title": "Every Conversation in a Single Place",
+      "body": "Instead of five queues to watch, your team works one shared inbox. Sort, search, label, and prioritize cases across all channels at once, so the fastest reply always goes to the customer who's been waiting longest."
+    },
+    {
+      "label": "AI + Team",
+      "title": "AI and Agents Working the Same Inbox",
+      "body": "The AI agent answers routine questions on every channel instantly, while your team handles the conversations that need a human touch. Handoff carries the full context, so customers never have to re-explain anything."
+    },
+    {
+      "label": "Shared Context",
+      "title": "One Customer Record Behind Every Channel",
+      "body": "Each channel feeds the same CRM profile, chat history, purchases, and campaigns received. Whether a customer wrote on Messenger last month or WhatsApp today, the next reply already knows the whole story."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "WhatsApp, Instagram, and Messenger connect through official Meta channels, so your business messaging stays compliant and reliable as your volume grows."
+    },
+    {
+      "title": "One Platform, Every Channel",
+      "body": "Inbox, AI agent, CRM, and analytics live together. Adding a new channel never means adding a new tool or another login for your team to learn."
+    },
+    {
+      "title": "AI Answers, Your Team Steps In",
+      "body": "AI handles routine questions on every channel 24/7 and escalates to a human, with full context, only when a conversation genuinely needs one."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is an omnichannel application?",
+      "a": "An omnichannel application brings every customer messaging channel into one place. With Cekat.AI, WhatsApp, Instagram, Facebook Messenger, website live chat, and API channels all feed a single inbox, so your team and AI answer every conversation from one screen with shared customer context."
+    },
+    {
+      "q": "Which channels can I connect to Cekat.AI?",
+      "a": "You can connect the official WhatsApp Business API, Instagram DM, Facebook Messenger, website live chat, and custom API channels. All of them route into one unified inbox, so no channel is left running on its own separate app or device."
+    },
+    {
+      "q": "Do I still need separate apps for WhatsApp, Instagram, and Messenger?",
+      "a": "No. That's the point of an omnichannel inbox, every channel lives in one place. Your team stops switching between phones and browser tabs, and messages from any channel are answered from the same Cekat.AI dashboard."
+    },
+    {
+      "q": "Does one AI agent work across all channels?",
+      "a": "Yes. The same AI agent answers on WhatsApp, Instagram, Messenger, and live chat, drawing from one knowledge base. It understands intent and context rather than keywords, so replies stay consistent and accurate no matter where the customer messages from."
+    },
+    {
+      "q": "Can my team and the AI work in the same inbox?",
+      "a": "Yes. The AI answers routine questions instantly on every channel, while agents handle conversations that need a human. Handoff carries the full conversation, plus tools like private notes, labels, and role-based access keep the team organized."
+    },
+    {
+      "q": "What happens to messages that come in after hours?",
+      "a": "With AI working hours, the AI agent covers every channel once your team logs off, then hands live cases back when the team is online again. Customers get answered 24/7, and no message sits unread until morning."
+    },
+    {
+      "q": "Does an omnichannel inbox keep customer history in one place?",
+      "a": "Yes. Every channel feeds the same CRM profile, so chats, purchases, campaigns received, and website behavior sit on one record. Wherever a customer starts a conversation, your team and AI already see the full history before replying."
+    },
+    {
+      "q": "Is connecting WhatsApp and Instagram safe and official?",
+      "a": "Yes. Cekat.AI is an official Meta Business Partner and connects WhatsApp through the official Business API, along with Instagram and Messenger through official Meta channels, the compliant way to manage business messaging at scale."
+    },
+    {
+      "q": "How long does it take to set up an omnichannel inbox?",
+      "a": "Connecting channels is point-and-click, and building your AI agent takes about five minutes with no coding, as easy as briefing a CS admin. Most teams have their channels unified and the AI answering the same day they start."
+    }
+  ],
+  "testimonial": {
+    "quote": "Our response rate increased by 90%",
+    "name": "Hargyo",
+    "role": "Director, Multimedia Nusantara Polytechnic",
+    "image": "/images/home/testimonial-hargyo.jpg"
+  },
+  "cta": {
+    "heading": "Turn Five Scattered Channels Into One Conversation",
+    "body": "Bring every channel into a single inbox and let AI answer around the clock, while your team keeps full context on every customer."
+  }
+}

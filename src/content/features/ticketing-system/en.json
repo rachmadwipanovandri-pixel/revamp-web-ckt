@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Ticketing Management System, Nothing Handled Too Late | CekatAI",
+    "description": "High-priority chats become tickets automatically, routed to the right team with alerts and full status visibility. 3,000+ businesses handle nothing too late."
+  },
+  "hero": {
+    "badge": "Automatic Ticketing",
+    "title": "Turn Urgent Conversations Into Tickets Before They Slip",
+    "subtitle": "Cekat.AI spots high-priority conversations, opens a ticket automatically, routes it to the right team with a notification, and tracks it to resolution, so nothing important gets handled too late"
+  },
+  "definition": "Ticketing Management System is a Cekat.AI feature that automatically turns high-priority conversations into tickets, routes each one to the right team with notifications, and tracks it through to resolution.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "issues caught around the clock" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Urgent Conversations Become Tickets on Their Own",
+      "body": "The issues that hurt most are the ones that get buried in a busy inbox. Cekat.AI prioritizes cases and auto-creates a ticket the moment a high-priority conversation comes in, a complaint, an escalation, an urgent request. Nothing waits for someone to notice it and manually open a ticket first.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "A high-priority conversation auto-creating a ticket in Cekat.AI"
+    },
+    {
+      "title": "Every Ticket Lands With the Right Team",
+      "body": "A ticket sitting with the wrong person is a ticket going nowhere. Cekat.AI routes each one to the team that should own it and fires an automatic notification, so the right people know immediately. No forwarding chains, no \"who's handling this?\", the issue reaches its owner the moment it opens.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "A ticket routed and notified to the right team in Cekat.AI"
+    },
+    {
+      "title": "See Every Ticket's Status at a Glance",
+      "body": "You can't fix a bottleneck you can't see. Cekat.AI gives you full visibility across every ticket, what's open, who owns it, and where it sits in the flow. When issues start piling up in one place, it shows, so you can rebalance the load before a backlog turns into angry customers.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Full visibility of ticket status across every step in Cekat.AI"
+    },
+    {
+      "title": "Nothing Falls Through the Cracks",
+      "body": "From capture to resolution, every ticket is tracked so none quietly disappears. Auto-labeling keeps issues organized, notifications keep owners moving, and the status trail shows what's been resolved and what still needs attention, so the problem that used to get forgotten now gets closed.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Tickets tracked end to end to resolution in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Auto-Ticket",
+      "title": "High-Priority Chats Open a Ticket",
+      "body": "Case prioritization flags the conversations that matter most, and Cekat.AI opens a ticket for them automatically. Complaints and urgent requests get captured the instant they arrive, not whenever an admin happens to spot them."
+    },
+    {
+      "label": "Routing",
+      "title": "Sent to the Team That Owns It",
+      "body": "Each ticket is assigned to the right team as it's created, so it never bounces around looking for an owner. The issue lands where it can actually be solved, from the first second it exists."
+    },
+    {
+      "label": "Alerts",
+      "title": "Automatic Notifications, No Chasing",
+      "body": "The moment a ticket opens or moves, the responsible team gets an automatic notification. Nobody has to keep refreshing a queue or forwarding messages, the system pushes the alert to the people who need to act."
+    },
+    {
+      "label": "Visibility",
+      "title": "Full Status Across Every Ticket",
+      "body": "Track each ticket's status from open to resolved in one place. Bottlenecks become obvious, so you see where work is stacking up and can act before it turns into a backlog of unhappy customers."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Priority, Not First-Come",
+      "body": "Cekat.AI prioritizes cases and auto-creates tickets for the urgent ones, so the issues that matter most jump the queue instead of getting buried."
+    },
+    {
+      "title": "Routed Automatically",
+      "body": "Every ticket is assigned to the right team with an automatic notification, so it reaches its owner instantly, no forwarding, no ambiguity."
+    },
+    {
+      "title": "Visible End to End",
+      "body": "Full visibility of ticket status shows what's open, resolved, or stuck, so bottlenecks surface early and nothing gets handled too late."
+    }
+  ],
+  "testimonial": {
+    "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+    "name": "Tantan Supriatna",
+    "role": "Customer Relation Department Head, Rumah Zakat",
+    "image": "/images/chat/tantan-supriatna.png"
+  },
+  "faq": [
+    {
+      "q": "What is a ticketing management system?",
+      "a": "A ticketing management system organizes customer issues into trackable tickets and moves them to resolution. In Cekat.AI, high-priority conversations automatically become tickets, get routed to the right team with notifications, and are tracked with full visibility from the moment they open until they're closed."
+    },
+    {
+      "q": "How does Cekat.AI create tickets automatically?",
+      "a": "Cekat.AI prioritizes cases and auto-creates a ticket when a high-priority conversation arrives, for example a complaint or an urgent request. The issue is captured straight from the chat, auto-labeled, and assigned to the right team, so nothing waits for a person to notice it and open a ticket by hand."
+    },
+    {
+      "q": "How are tickets routed to the right team?",
+      "a": "As each ticket is created, Cekat.AI assigns it to the team that should own it and sends an automatic notification. The issue reaches the people who can solve it immediately, instead of bouncing through forwarding chains or sitting in a shared inbox while everyone assumes someone else has it."
+    },
+    {
+      "q": "Can I see the status of every ticket?",
+      "a": "Yes. Cekat.AI gives you full visibility across every ticket, what's open, who owns it, and where it sits in the flow. That view makes bottlenecks obvious, so when issues start stacking up in one place you can rebalance the workload before it becomes a backlog."
+    },
+    {
+      "q": "How does a ticket get resolved?",
+      "a": "A ticket is tracked from capture to resolution. It's auto-labeled and assigned to the right team, notifications keep the owner moving, and the status trail records progress until the issue is closed. Because every step is visible, tickets get finished instead of quietly forgotten."
+    },
+    {
+      "q": "What kinds of conversations become tickets?",
+      "a": "High-priority ones, complaints, escalations, and urgent requests that case prioritization flags as needing dedicated attention. Routine questions the AI agent can resolve in chat stay in the inbox, so your team's ticket queue holds the issues that genuinely need tracking and ownership."
+    },
+    {
+      "q": "Does the ticketing system get notified in real time?",
+      "a": "Yes. The moment a ticket is created or changes, the responsible team receives an automatic notification. Nobody has to watch a queue or forward messages manually, so issues get picked up quickly and the ones that used to be missed after hours now get caught."
+    },
+    {
+      "q": "Which channels can raise a ticket?",
+      "a": "Any channel connected to Cekat.AI, WhatsApp (official Business API), Instagram DM, Facebook Messenger, website live chat, and API channels. All conversations flow into one unified inbox, and a high-priority issue on any of them can be turned into a tracked ticket automatically."
+    },
+    {
+      "q": "Do I need to code to set up automated ticketing?",
+      "a": "No coding is needed. Workflow triggers connect auto-labeling, ticket creation, and admin notifications using rules like chat keywords or customer-data changes, and you configure them without writing code. It's set up as easily as briefing a CS admin on how to handle each type of issue."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Urgent Chats Into Tickets That Get Closed",
+    "body": "Let Cekat.AI open, route, and track every high-priority issue automatically, so nothing important gets handled too late."
+  }
+}

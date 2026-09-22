@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "AI Customer Service untuk Travel & Tour | CekatAI",
+    "description": "Solusi AI & CRM travel Cekat.ai: jawab itinerary, paket, & harga 24/7 multi-bahasa. Minori Group sukses naikkan revenue +60% & konversi +80%!"
+  },
+  "hero": {
+    "badge": "Tour & Travel",
+    "title": "Layani Setiap Traveler, Bahasa Apa Pun, Timezone Mana Pun",
+    "subtitle": "Pertanyaan itinerary, paket, dan harga dibales instan di WhatsApp, Instagram, dan web chat, 24/7, pakai bahasa si traveler, tanpa harus nambah orang tiap peak season",
+    "useCases": [
+      "Lonjakan inquiry musiman",
+      "Multi-bahasa 24/7",
+      "Repeat booking",
+      "Data traveler & trip"
+    ]
+  },
+  "definition": "Cekat.AI untuk travel & tour adalah platform AI customer service untuk agen perjalanan, tour operator, dan OTA di Indonesia, menjawab pertanyaan itinerary, paket, dan harga 24/7 dalam banyak bahasa, menangani lonjakan inquiry musiman, dan mengubah traveler lama jadi repeat booking.",
+  "stats": [
+    {
+      "value": "+60%",
+      "label": "pertumbuhan revenue di Minori Group"
+    },
+    {
+      "value": "+80%",
+      "label": "kenaikan konversi di Minori Group"
+    },
+    {
+      "value": "100%",
+      "label": "inquiry ditangani AI"
+    },
+    {
+      "value": "24/7",
+      "label": "inquiry terjawab lintas timezone"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Tangani Lonjakan Inquiry Musiman Tanpa Nambah Orang",
+      "body": "Permintaan travel datang bergelombang, launching libur panjang atau destinasi viral bisa banjirin chat-mu semalaman. Cekat.AI jawab tiap pertanyaan itinerary, paket, dan harga begitu masuk, sebanyak apa pun yang datang bareng, jadi waktu respons tetap stabil pas peak season dan kamu nggak panik nyari staf musiman yang bakal dilepas akhir bulan.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menangani lonjakan inquiry travel di inbox Cekat.AI"
+    },
+    {
+      "title": "Bales Pakai Bahasa Si Traveler, Sepanjang Waktu",
+      "body": "Traveler nanya dari berbagai negara dan timezone, dalam bahasa berbeda-beda. AI Cekat.AI multibahasa dan paham maksud, bukan cuma keyword, jadi pertanyaan bahasa Jepang jam 2 pagi dan bahasa Indonesia jam 12 siang sama-sama dapat jawaban instan dan akurat. Coverage nggak pernah tidur, nggak ada inquiry yang nunggu agent online.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Coverage multibahasa 24/7 lintas timezone di Cekat.AI"
+    },
+    {
+      "title": "Ubah Traveler Lama Jadi Repeat Booking",
+      "body": "Broadcast dikirim lewat WhatsApp Business API resmi ke segmen dari data nyata, traveler lama, pemesan musiman, leads yang nanya tapi belum bayar, dengan nama dan riwayat trip dari CRM. Promo musiman yang timing-nya pas nyampe ke orang yang paling mungkin booking lagi, bukan blast yang diabaikan semua orang.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi traveler untuk promo musiman di Cekat.AI"
+    },
+    {
+      "title": "Semua Traveler dan Trip Rapi di Satu Tempat",
+      "body": "WhatsApp, Instagram DM, dan chat website masuk ke satu inbox, dan tiap chat meng-update kartu CRM traveler otomatis, trip sebelumnya, pertanyaan, campaign yang diterima. Tim langsung lihat konteks lengkap, dan booking kompleks atau bernilai besar dialihkan ke manusia beserta percakapannya, jadi nggak ada leads yang lolos di musim ramai.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Perjalanan traveler terlacak di CRM Cekat.AI"
+    }
+  ],
+  "caseStudy": {
+    "client": "Minori Group",
+    "metrics": [
+      {
+        "value": "+60%",
+        "label": "kenaikan revenue"
+      },
+      {
+        "value": "+80%",
+        "label": "kenaikan konversi"
+      }
+    ],
+    "body": "Minori Group melayani traveler di Jepang dan Indonesia, dua bahasa, dua timezone, dan tim CS kecil yang keteteran. Setelah pakai Cekat.AI, AI multibahasa kini menangani 100% inquiry sepanjang waktu, menjawab instan dalam bahasa masing-masing traveler. Hasilnya: revenue naik +60%, konversi naik +80%, dan bisa scale tanpa nambah staf."
+  },
+  "pillars": [
+    {
+      "title": "Multibahasa dari Sananya",
+      "body": "AI paham maksud dan membalas natural dalam banyak bahasa, jadi traveler dari pasar mana pun dapat jawaban akurat dengan bahasanya sendiri."
+    },
+    {
+      "title": "Meta Business Partner Resmi",
+      "body": "Chat dan broadcast promo jalan di atas WhatsApp Business API resmi, andal dan aman buat nomor tempat booking-mu masuk."
+    },
+    {
+      "title": "Scale Tanpa Nambah Orang",
+      "body": "Satu AI agent menangani chat serentak tanpa batas, jadi volume peak season nggak berarti gaji peak season atau balasan yang melambat."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Gimana Cekat.AI bantu bisnis travel dan tour?",
+      "a": "Cekat.AI jawab chat traveler instan 24/7 di WhatsApp, Instagram, dan web chat, itinerary, paket, harga, dan ketersediaan, dalam banyak bahasa dan lintas timezone. Semua percakapan tetap rapi dalam satu inbox, jadi lonjakan inquiry musiman tertangani tanpa tim keteteran atau leads jadi dingin."
+    },
+    {
+      "q": "AI bisa jawab dalam bahasa berbeda?",
+      "a": "Bisa. AI Cekat.AI multibahasa dan paham maksud serta konteks, bukan cuma cocok-cocokan keyword, jadi membalas natural dalam bahasa si traveler. Minori Group pakai ini buat melayani traveler di Jepang dan Indonesia dengan satu AI yang menangani 100% inquiry."
+    },
+    {
+      "q": "Hasil apa yang udah dirasakan bisnis travel?",
+      "a": "Minori Group mencatat revenue naik +60% dan konversi naik +80% setelah pakai Cekat.AI, dengan AI multibahasa menangani 100% inquiry sepanjang waktu di dua bahasa dan timezone, bikin tim CS kecil bisa scale tanpa nambah staf."
+    },
+    {
+      "q": "Bisa nangani lonjakan inquiry pas peak season?",
+      "a": "Bisa. AI jawab tiap chat masuk instan, sebanyak apa pun yang datang bareng, jadi waktu respons tetap stabil pas launching libur atau destinasi viral banjirin inbox. Yang kompleks dialihkan ke tim lengkap dengan konteks, dan coverage jalan 24/7."
+    },
+    {
+      "q": "Channel apa aja yang bisa dihubungkan bisnis travel?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, live chat website, dan channel API, semuanya masuk ke satu inbox. Tiap traveler punya satu riwayat percakapan, jadi inquiry yang lintas channel dan timezone tetap nyatu di satu tempat."
+    },
+    {
+      "q": "Bisa kirim promo musiman ke traveler lama?",
+      "a": "Bisa. Broadcast dikirim lewat WhatsApp Business API resmi ke segmen dari aktivitas dan riwayat trip, traveler lama, pemesan musiman, leads yang nanya tapi belum bayar. Pesannya ambil nama dan konteks dari CRM, jadi penawaran musiman terasa relevan, bukan generik."
+    },
+    {
+      "q": "AI-nya jalan lintas timezone?",
+      "a": "Ya. Coverage jalan 24/7, jadi traveler yang nanya jam 2 pagi di satu negara dan yang nanya jam 12 siang di negara lain sama-sama dapat jawaban instan. AI working hours bikin AI meng-cover chat setelah tim pulang dan balik ke tim lengkap dengan konteks pas jam kerja."
+    },
+    {
+      "q": "Gimana AI belajar paket dan itinerary kami?",
+      "a": "Kamu paste paket, itinerary, harga, dan SOP ke knowledge base, tanpa coding. Bikin agent-nya sekitar lima menit dan rasanya kayak briefing admin CS baru, dan sejak itu AI menjawab dari penawaran asli kamu, bukan ngarang."
+    },
+    {
+      "q": "Gimana kalau ada booking kompleks atau bernilai besar?",
+      "a": "Percakapan otomatis dialihkan ke tim lengkap dengan riwayatnya, jadi manusia yang nutup trip bernilai besar atau rumit sementara AI menangani volume pertanyaan rutin di sekitarnya. Traveler nggak perlu ngulang cerita pas dialihkan."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Inquiry Jadi Trip yang Ter-booking",
+    "body": "Lihat gimana bisnis travel menjalankan sales dan support multibahasa 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

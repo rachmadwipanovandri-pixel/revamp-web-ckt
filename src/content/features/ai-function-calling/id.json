@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "AI Function Calling: AI yang Bertindak di Sistemmu | Cekat.AI",
+    "description": "Function calling membuat AI agent Cekat.AI bertindak saat chat berlangsung: menyusun order, mengirim link pembayaran, dan memanggil API sistemmu sendiri."
+  },
+  "hero": {
+    "badge": "AI Function Calling",
+    "title": "AI yang Selesaikan Transaksinya, Bukan Cuma Percakapannya",
+    "subtitle": "Lewat function calling, AI agent-mu mengeksekusi tindakan di tengah chat: menyusun order lengkap, mengirim link pembayaran, sampai memanggil API sistemmu sendiri. Customer tidak pernah disuruh pindah aplikasi."
+  },
+  "definition": "Function calling di Cekat.AI adalah kemampuan AI agent memanggil fungsi nyata saat percakapan berlangsung, membuat order dari isi chat, menerbitkan pembayaran lewat payment link atau transfer manual, dan menjalankan aksi di sistem eksternal lewat API.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "AI mengeksekusi order dan pembayaran"
+    },
+    {
+      "value": "±5 menit",
+      "label": "setup bot, tanpa coding"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Chat Jadi Order Tanpa Menyentuh Dashboard",
+      "body": "Begitu customer bilang jadi, AI mengumpulkan nama, alamat, dan detail pesanan dari percakapan, lalu membuat ordernya. Tidak ada salin-tempel ke sistem lain, tidak ada order hilang karena admin sibuk.",
+      "image": "/images/order/automation-triggers-instantly.png",
+      "imageAlt": "AI membuat order langsung dari percakapan"
+    },
+    {
+      "title": "Ongkir dan Kurir Diurus di Dalam Percakapan",
+      "body": "Alamat pengiriman bisa kamu set wajib atau opsional, alamat pengirim dan kurirnya kamu tentukan. AI menghitung dan mengonfirmasi semuanya sebelum order dibuat, tanpa keluar dari chat.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Pengaturan pengiriman dalam alur order AI"
+    },
+    {
+      "title": "Tagihan Terkirim Begitu Customer Bilang Jadi",
+      "body": "Pilih payment link yang dibuat otomatis atau arahkan ke rekening bank dan e-wallet yang kamu daftarkan. Momen paling rawan hilang, antara sepakat dan bayar, dipersingkat jadi satu pesan.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Link pembayaran terkirim otomatis di chat"
+    },
+    {
+      "title": "Panggil API Sistemmu Sendiri",
+      "body": "Function calling tidak berhenti di order. Sambungkan API stok, booking, atau sistem internal lain, dan AI bisa cek serta bertindak atasnya di tengah percakapan, seperti karyawan yang punya akses sistem.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "AI memanggil API sistem eksternal"
+    },
+    {
+      "title": "Semua Channel, Satu Alur Eksekusi",
+      "body": "Order dari WhatsApp, Instagram, atau live chat web dieksekusi lewat alur yang sama. Kamu mengatur fungsinya sekali, dan setiap channel tempat kamu jualan langsung kebagian.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Function calling berjalan di semua channel"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Aksi, Bukan Sekadar Jawaban",
+      "body": "AI yang hanya menjawab tetap menyisakan pekerjaan. Function calling membuat percakapan berakhir dengan sesuatu yang selesai."
+    },
+    {
+      "title": "Kamu yang Pegang Aturannya",
+      "body": "Fungsi mana yang boleh dipanggil, kapan alamat wajib, dan ke mana pembayaran diarahkan, semuanya kamu yang tentukan."
+    },
+    {
+      "title": "Tercatat di Sistem yang Sama",
+      "body": "Setiap order dan pembayaran yang dieksekusi AI masuk ke CRM dan riwayat chat, jadi tim bisa menelusuri semuanya."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu function calling di Cekat.AI?",
+      "a": "Kemampuan AI agent memanggil fungsi nyata saat chat berlangsung: membuat order dari isi percakapan, menerbitkan pembayaran, dan menjalankan aksi lewat API. AI-nya bertindak, bukan hanya menjawab."
+    },
+    {
+      "q": "Apa bedanya dengan Otomatisasi Order?",
+      "a": "Otomatisasi Order adalah alur ordernya; function calling adalah mesin yang membuat AI bisa mengeksekusi alur itu dan aksi lain di luar order, termasuk fungsi custom lewat API."
+    },
+    {
+      "q": "Bagaimana AI tahu data apa saja yang harus dikumpulkan?",
+      "a": "Dari konfigurasi fungsinya. Untuk order misalnya, AI menanyakan detail customer, alamat bila kamu set wajib, dan konfirmasi pesanan, lalu memanggil fungsi begitu semuanya lengkap."
+    },
+    {
+      "q": "Metode pembayaran apa yang didukung?",
+      "a": "Dua mode: payment link yang dibuat otomatis untuk tiap order, atau pembayaran manual ke rekening bank dan e-wallet yang kamu daftarkan sendiri."
+    },
+    {
+      "q": "Bisakah AI memanggil API di luar fitur bawaan?",
+      "a": "Bisa. Lewat Open API, kamu mendaftarkan fungsi milikmu sendiri, cek stok, booking jadwal, atau query sistem internal, dan AI memanggilnya saat percakapan membutuhkan."
+    },
+    {
+      "q": "Bagaimana kalau eksekusi fungsinya gagal?",
+      "a": "Kegagalan terlihat di percakapan dan tidak dianggap selesai diam-diam, jadi tim bisa turun tangan. Kasusnya bisa dieskalasi ke agen manusia lengkap dengan konteks."
+    },
+    {
+      "q": "Apakah perlu developer untuk mengaktifkannya?",
+      "a": "Untuk order dan pembayaran tidak; aktifkan dari tab Integrations dan atur opsinya dari dashboard. Developer baru dibutuhkan bila kamu menyambungkan API custom milikmu."
+    },
+    {
+      "q": "Channel mana saja yang mendukung function calling?",
+      "a": "Semua channel chat yang terhubung ke Cekat.AI, termasuk WhatsApp, Instagram, dan live chat website. Fungsinya dikonfigurasi sekali dan berlaku lintas channel."
+    }
+  ],
+  "cta": {
+    "heading": "Biarkan AI Menyelesaikan Transaksinya Sampai Beres",
+    "body": "Dari chat jadi order, dari order jadi pembayaran, tanpa pindah aplikasi. Coba gratis atau tanya tim kami."
+  }
+}

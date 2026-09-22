@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "AI Multi-Bahasa, Satu AI Agent, Semua Bahasa | CekatAI",
+    "description": "Satu AI agent buat semua bahasa customer-mu, 24/7. Minori Group menangani 100% chat dari 2 negara, revenue naik 60%, konversi naik 80%, tanpa nambah tim."
+  },
+  "hero": {
+    "badge": "Customer Service Multi-Bahasa",
+    "title": "Satu AI Agent yang Bales Chat dalam Bahasa Customer-mu",
+    "subtitle": "Customer nanya pakai bahasa apa pun, AI-nya jawab natural dalam bahasa yang sama, di WhatsApp, Instagram, dan live chat website, 24/7, tanpa rekrut tim CS baru untuk tiap market"
+  },
+  "definition": "AI Multi-Bahasa adalah fitur Cekat.AI untuk melayani customer dalam berbagai bahasa dengan satu AI agent, memahami maksud dan konteks pertanyaan, membalas natural dalam bahasa yang dipakai customer, dan aktif 24/7 di WhatsApp, Instagram DM, Facebook Messenger, dan live chat website.",
+  "stats": [
+    { "value": "+60%", "label": "revenue Minori Group naik" },
+    { "value": "+80%", "label": "konversi meningkat dengan AI multi-bahasa" },
+    { "value": "100%", "label": "inquiry tertangani di 2 zona waktu" },
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" }
+  ],
+  "benefits": [
+    {
+      "title": "Bales Pakai Bahasa Customer, Bukan Bahasamu",
+      "body": "Customer paling nyaman belanja dalam bahasa yang dia pakai sehari-hari. AI agent Cekat.AI memahami maksud dan konteks, bukan sekadar keyword, jadi pertanyaan dalam bahasa Indonesia dibales natural dalam bahasa Indonesia, pertanyaan bahasa Inggris dibales bahasa Inggris. Satu agent, satu inbox, tanpa copy-paste ke translator.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI membalas customer dalam berbagai bahasa"
+    },
+    {
+      "title": "Dua Zona Waktu, Tanpa Shift Malam",
+      "body": "Timmu nggak mungkin melek di semua zona waktu tempat customer-mu tinggal. Dengan jam kerja AI, tim menangani chat saat online dan AI ambil alih di luar jam itu, lengkap dengan handoff otomatis yang membawa seluruh isi percakapan, jadi nggak ada yang mulai dari nol besok paginya.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jam kerja AI antara tim dan AI agent di Cekat.AI"
+    },
+    {
+      "title": "Semua Market, Satu Inbox",
+      "body": "WhatsApp, Instagram DM, Facebook Messenger, dan live chat website masuk ke satu inbox, dari bahasa dan negara mana pun pesannya datang. Pencarian cepat, auto-labeling, dan prioritas kasus bikin volume chat multi-market tetap rapi, dan akses berbasis role memastikan tiap tim cuma lihat percakapan bagiannya.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Semua channel customer terhubung ke satu inbox Cekat.AI"
+    },
+    {
+      "title": "Latih Sekali, Paham di Semua Bahasa",
+      "body": "Nggak ada training terpisah per bahasa. Paste SOP, detail produk, dan aturan bisnismu sekali saja, knowledge base itu yang jadi sumber jawaban akurat di setiap percakapan, apa pun bahasa yang dipakai customer. Bikin agent-nya cuma butuh sekitar 5 menit, tanpa coding.",
+      "image": "/images/chat/train-your-ai-agent.png",
+      "imageAlt": "Melatih AI agent Cekat.AI dengan paste SOP dan info bisnis"
+    },
+    {
+      "title": "Cara Minori Group Melayani Jepang dan Indonesia dengan Tim Kecil",
+      "body": "Minori Group melayani customer di dua bahasa dan dua zona waktu dengan tim CS yang kecil, chat di luar jam kerja sering lolos, dan tiap market baru berarti rekrut orang lagi. Setelah pakai AI multi-bahasa Cekat.AI, 100% inquiry tertangani, konversi naik +80%, dan revenue tumbuh +60%, tanpa nambah satu pun karyawan."
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Paham Maksud",
+      "title": "Ngerti Maksudnya, Bukan Cuma Keyword",
+      "body": "Bot keyword langsung bingung begitu customer nanya dengan gaya bahasa beda, apalagi lintas bahasa. AI Cekat.AI membaca maksud dan konteks, jadi pertanyaan yang sama ditanyakan lima cara dalam dua bahasa tetap dapat jawaban yang benar."
+    },
+    {
+      "label": "Auto Handoff",
+      "title": "Tim Ambil Alih dengan Konteks Lengkap",
+      "body": "Kalau percakapan butuh manusia, chat otomatis dialihkan ke timmu lengkap dengan seluruh riwayatnya, apa pun bahasanya. Customer nggak perlu mengulang cerita, dan timmu menjawab dengan semua konteks di depan mata."
+    },
+    {
+      "label": "Agent Spesialis",
+      "title": "Satu Agent per Tugas, Bukan per Bahasa",
+      "body": "Daripada menduplikasi agent untuk tiap bahasa, kamu cukup bikin agent spesialis per fungsi, sales, support, billing, dan masing-masing melayani customer secara multi-bahasa. Lebih sedikit yang diurus, nggak ada yang hilang di terjemahan."
+    },
+    {
+      "label": "AI Tools",
+      "title": "Closing Langsung di Dalam Chat",
+      "body": "AI-nya nggak cuma ngobrol. Tools AI di dalam chat bisa cek ongkir, bikin QR pembayaran, sampai edit gambar, jadi percakapan yang dimulai dalam bahasa apa pun bisa berakhir jadi order yang selesai."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Terbukti Lintas Negara",
+      "body": "Minori Group menjalankan customer service Jepang–Indonesia di Cekat.AI, 100% inquiry tertangani dalam dua bahasa, revenue +60%, konversi +80%."
+    },
+    {
+      "title": "Manusia di Momen Penting",
+      "body": "AI menangani volume rutin di semua bahasa; percakapan yang kompleks atau sensitif dialihkan ke timmu lengkap dengan konteksnya."
+    },
+    {
+      "title": "Compliant Sejak Awal",
+      "body": "Cekat.AI adalah Meta Business Partner resmi dan mematuhi UU PDP (Undang-Undang Pelindungan Data Pribadi) dalam mengelola data customer."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu AI agent multi-bahasa?",
+      "a": "AI agent multi-bahasa adalah AI customer service yang bisa memahami dan membalas customer dalam berbagai bahasa. Di Cekat.AI, satu agent membaca maksud tiap pesan dan menjawab natural dalam bahasa yang dipakai customer, di WhatsApp, Instagram DM, Facebook Messenger, dan live chat website, 24/7."
+    },
+    {
+      "q": "AI-nya bisa bahasa apa saja?",
+      "a": "Agent-nya memang dirancang multi-bahasa: dia membalas dalam bahasa yang ditulis customer, bukan terkunci di daftar bahasa tertentu. Minori Group, misalnya, memakainya untuk melayani customer di Jepang dan Indonesia, dua bahasa dan dua zona waktu, dengan satu tim CS kecil."
+    },
+    {
+      "q": "Perlu bikin AI agent terpisah untuk tiap bahasa?",
+      "a": "Nggak perlu. Satu agent Cekat.AI melayani semua bahasa yang dipakai customer-mu, dengan satu knowledge base. Kalau mau memisah agent, pisahnya per fungsi, sales, support, billing, bukan per bahasa, jadi jauh lebih sedikit yang harus dibangun dan dirawat."
+    },
+    {
+      "q": "Gimana cerita Minori Group pakai AI multi-bahasa?",
+      "a": "Minori Group beroperasi antara Jepang dan Indonesia, dua bahasa, dua zona waktu, dan tim CS kecil yang nggak sanggup jaga keduanya nonstop. Setelah pindah ke Cekat.AI, AI multi-bahasa menangani 100% inquiry, konversi naik +80%, dan revenue tumbuh +60%, semuanya tanpa rekrut tambahan."
+    },
+    {
+      "q": "Jawabannya natural atau kayak hasil translate?",
+      "a": "Natural. AI-nya dibangun humanlike: memahami maksud dan konteks alih-alih mencocokkan keyword, lalu menyusun jawaban langsung dalam bahasa customer. Beda dengan bot script yang ditempeli translator, jawabannya terbaca seperti ditulis admin CS yang fasih."
+    },
+    {
+      "q": "Kalau customer minta ngobrol sama manusia gimana?",
+      "a": "Percakapan otomatis dialihkan ke timmu, lengkap dengan seluruh riwayat chat apa pun bahasanya. Kamu juga bisa atur jam kerja AI, tim menjawab di jam online, AI meng-cover sisanya, jadi perpindahan manusia dan AI mulus dua arah."
+    },
+    {
+      "q": "Bisa dipakai di channel apa saja?",
+      "a": "WhatsApp lewat Business API resmi, Instagram DM, Facebook Messenger, live chat website, dan channel API custom, semua menyatu di satu inbox. Customer bisa bertanya dalam bahasa apa pun di channel mana pun dan dapat kualitas jawaban yang sama dari agent yang sama."
+    },
+    {
+      "q": "Cara melatih AI-nya buat bisnisku gimana?",
+      "a": "Paste SOP dan info bisnismu ke knowledge base, satu sumber itu yang menjawab semua percakapan di semua bahasa. Bikin agent yang langsung jalan cuma butuh sekitar 5 menit tanpa coding; semudah briefing admin CS baru."
+    },
+    {
+      "q": "AI-nya bisa layani customer beda zona waktu?",
+      "a": "Bisa. AI aktif 24/7, jadi customer yang chat dari negara lain jam 3 pagi waktu kamu tetap langsung dibales. Dengan jam kerja AI, kamu tentukan kapan tim manusia bertugas dan AI otomatis meng-cover semua jam di luar itu."
+    },
+    {
+      "q": "Data customer lintas negara aman?",
+      "a": "Cekat.AI mematuhi UU PDP (Undang-Undang Pelindungan Data Pribadi) dalam menangani dan mengelola data pengguna, dan merupakan Meta Business Partner resmi. Di dalam workspace, akses tim diatur berbasis role, percakapan hanya terlihat oleh yang berhak."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Kendala Bahasa Jadi Market Baru",
+    "body": "Biarkan satu AI agent melayani semua market bisnismu, dalam bahasa customer, 24/7, tanpa rekrut tim baru."
+  }
+}

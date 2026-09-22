@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "WhatsApp Call AI Summary, Every Call Documented Automatically | CekatAI",
+    "description": "Automatically summarize WhatsApp calls with AI: get instant summaries, key takeaways, & follow-up action items synced to your CRM. Try it for free!"
+  },
+  "hero": {
+    "badge": "WhatsApp Call + AI",
+    "title": "Every WhatsApp Call, Summarized by AI in Seconds",
+    "subtitle": "Take WhatsApp calls in the same platform as your chats, and let AI turn every conversation into instant summaries, key points, and the next step your team should take"
+  },
+  "definition": "WhatsApp Call AI Summary is a Cekat.AI feature that processes every WhatsApp call with AI to generate instant summaries, key points, and recommended next steps, so nothing said on a call gets lost, and every follow-up happens on time.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "15+", "label": "industries served" },
+    { "value": "24/7", "label": "conversations covered, chat and call" }
+  ],
+  "benefits": [
+    {
+      "title": "Calls Live Where Your Chats Live",
+      "body": "Customers who prefer talking to typing no longer disappear into a separate phone system. WhatsApp calls happen inside Cekat.AI, next to the same customer's chat history, one platform, one context, one record.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "WhatsApp channels connected into one Cekat.AI inbox"
+    },
+    {
+      "title": "AI Writes the Summary Before Your Team Forgets",
+      "body": "The details of a call fade within hours, the price discussed, the objection raised, the promise made. AI processes every call into an instant summary with key points, so what was said becomes a record, not a memory.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI-generated conversation summaries in Cekat.AI"
+    },
+    {
+      "title": "Recommended Next Steps, Not Just Transcripts",
+      "body": "A summary that ends with \"so what?\" doesn't help anyone. Cekat.AI recommends the concrete next step after each call, send the quote, schedule the visit, follow up Friday, so decisions accelerate instead of stalling.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "Call insights and recommended actions in Cekat.AI"
+    },
+    {
+      "title": "Everything Syncs to the Customer's CRM Profile",
+      "body": "Call summaries land on the same customer profile as chats, orders, and campaigns. The next person who opens that customer, human or AI agent, starts with the full story instead of asking the customer to repeat themselves.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Call context synced to the CRM in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Less Manual Work",
+      "body": "No one types call notes after the fact. AI documents every call automatically, and your team spends the saved hours actually selling."
+    },
+    {
+      "title": "More Accurate Records",
+      "body": "Human notes miss things; AI summaries capture the key points consistently. Fewer misunderstandings, fewer dropped commitments."
+    },
+    {
+      "title": "Faster Decisions",
+      "body": "Summaries and recommended next steps arrive the moment a call ends, managers and agents act on facts, not recollections."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is WhatsApp Call AI Summary?",
+      "a": "It's a Cekat.AI feature that processes every WhatsApp call with AI to produce an instant summary, the key points discussed, and a recommended next step. Calls stop being undocumented conversations and become actionable records in your CRM."
+    },
+    {
+      "q": "Why do call summaries matter for sales teams?",
+      "a": "Because deals stall in the gap between a call and its follow-up. When AI documents the price discussed, the objection raised, and the agreed next step, follow-ups happen on time and nothing a customer said gets forgotten."
+    },
+    {
+      "q": "Do I need a separate phone system?",
+      "a": "No. Calls happen through WhatsApp, the channel your customers already use daily, and are handled inside the same Cekat.AI platform as your chats, so there's no extra tool for your team to learn or switch to."
+    },
+    {
+      "q": "What exactly does the AI produce after a call?",
+      "a": "Three things: a concise summary of the conversation, the key points worth remembering, and a recommended next step for your team. That output lands immediately after the call ends, ready to act on."
+    },
+    {
+      "q": "Where do the summaries go?",
+      "a": "Onto the customer's profile in Cekat.AI's CRM, alongside their chat history, orders, and campaigns received. Anyone who handles that customer next, including your AI agent, starts with complete context."
+    },
+    {
+      "q": "Does this work together with the AI chat agent?",
+      "a": "Yes. Chats and calls share one customer record, so the AI agent that replies to messages knows what was discussed on the last call, and your human team sees the full conversation history across both."
+    },
+    {
+      "q": "Who is this feature for?",
+      "a": "Any team that closes or supports over WhatsApp calls: sales teams discussing deals, property and automotive consultants, clinics coordinating appointments, and support teams handling complex cases that need a voice conversation."
+    },
+    {
+      "q": "How do I start using WhatsApp Call with AI summaries?",
+      "a": "Book a demo or start free, connect your WhatsApp Business account, and calls handled in Cekat.AI are processed by AI automatically. There's no coding and no separate setup for the summaries."
+    }
+  ],
+  "cta": {
+    "heading": "Stop Losing What Customers Say on Calls",
+    "body": "Let AI document every WhatsApp call, summaries, key points, next steps, while your team focuses on closing."
+  }
+}

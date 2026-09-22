@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Open API, Connect Cekat.AI to Your Systems | CekatAI",
+    "description": "Open API connects Cekat.AI to your stack: API channels bring conversations in, API integrations let AI check shipping, book appointments, and hit your business systems."
+  },
+  "hero": {
+    "badge": "Open API",
+    "title": "Connect Cekat.AI to the Systems You Already Run",
+    "subtitle": "Bring conversations in through API channels and let the AI reach out through API integrations, checking shipping, booking appointments, and hitting your business systems from inside the chat"
+  },
+  "definition": "Open API is a Cekat.AI capability that connects the platform to your own systems, API channels bring conversations into the unified inbox, while API integrations let the AI check shipping costs, book appointments, and reach your business systems during a chat.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "5", "label": "channel types in one inbox" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Bring Any Channel Into One Inbox",
+      "body": "Beyond WhatsApp, Instagram, Messenger, and website chat, API channels let you pipe conversations from your own apps and systems into the same unified inbox. Wherever customers reach you, the messages land in one place where the AI answers and your team can step in, no separate tool to watch.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Connecting multiple channels including API channels into one Cekat.AI inbox"
+    },
+    {
+      "title": "Let the AI Act on Your Systems",
+      "body": "API integrations turn the AI from a talker into a doer. Mid-conversation, it can check a shipping cost, book an appointment, or pull and push data to the business systems you already run, so the customer gets a real answer or a completed action, not a promise that someone will look into it later.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "API integration letting the AI act on business systems in Cekat.AI"
+    },
+    {
+      "title": "Your Stack, Connected, Not Replaced",
+      "body": "You don't rip out the tools you depend on. Open API connects Cekat.AI to them, so customer conversations and your existing systems finally talk to each other. Data flows both ways, and the AI works with the same information your business already runs on instead of a siloed copy.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Two-way data flow between Cekat.AI and connected systems"
+    },
+    {
+      "title": "Automate Actions, Not Just Replies",
+      "body": "With systems connected, workflows and the AI can do more than send messages. Triggers fire real actions against your integrations, a booking made, a record updated, a system checked, so the whole process completes inside the conversation instead of ending with a handoff to another team and another wait.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "End-to-end automated actions across connected systems in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "API Channels",
+      "title": "Conversations In Through the API",
+      "body": "API channels let you connect your own apps and systems as message sources, feeding conversations into the same unified inbox as WhatsApp, Instagram, Messenger, and website chat, so nothing lives in a separate silo."
+    },
+    {
+      "label": "Integrations",
+      "title": "The AI Reaches Your Systems",
+      "body": "API integrations let the AI check shipping costs, book appointments, and hit other business systems during a chat. It doesn't just answer, it acts on your systems and comes back with a real result."
+    },
+    {
+      "label": "Two-Way Data",
+      "title": "Information Flows Both Ways",
+      "body": "Data moves between Cekat.AI and your connected tools in both directions, so your CRM, your systems, and your conversations stay in sync instead of holding separate versions of the same customer."
+    },
+    {
+      "label": "Automation",
+      "title": "Actions Wired Into Workflows",
+      "body": "Combined with workflow automation, API integrations let triggers fire real actions against your systems, bookings, updates, lookups, so entire processes complete automatically inside the chat."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Conversations In",
+      "body": "API channels bring messages from your own systems into the unified inbox, alongside every other channel you use."
+    },
+    {
+      "title": "Actions Out",
+      "body": "API integrations let the AI check shipping, book appointments, and reach your business systems mid-chat, real actions, not just answers."
+    },
+    {
+      "title": "One Connected Stack",
+      "body": "Cekat.AI links to the tools you already run, so conversations and systems share the same data instead of drifting apart."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the Cekat.AI Open API?",
+      "a": "Open API is how Cekat.AI connects to your own systems. API channels bring conversations from your apps into the unified inbox, and API integrations let the AI check shipping costs, book appointments, and reach your business systems during a chat, so the platform works with the tools you already run."
+    },
+    {
+      "q": "What are API channels?",
+      "a": "API channels are a way to connect your own apps or systems as message sources in Cekat.AI. Conversations from them land in the same unified inbox as WhatsApp, Instagram DM, Facebook Messenger, and website live chat, so every channel you support is handled in one place instead of separate tools."
+    },
+    {
+      "q": "What can API integrations let the AI do?",
+      "a": "API integrations let the AI take real actions during a conversation, checking a shipping cost, booking an appointment, or reaching other business systems to look up or update data. Instead of only answering questions, the AI completes actions against your systems and returns a real result in the chat."
+    },
+    {
+      "q": "Can I connect Cekat.AI to my existing tools?",
+      "a": "Yes. Open API is built to connect Cekat.AI to the systems you already run rather than replace them. Data flows both ways through the integration, so your CRM, your business systems, and your customer conversations share the same information instead of living in separate silos."
+    },
+    {
+      "q": "Do I need developers to use the Open API?",
+      "a": "Connecting systems through the API is a technical setup, but running Cekat.AI is not. Once integrations are in place, you build and adjust the AI by pasting business info into the knowledge base and using the visual flow designer, no coding to operate the agent day to day."
+    },
+    {
+      "q": "Is Open API only for shipping and appointments?",
+      "a": "No. Shipping-cost checks and appointment booking are common examples, but API integrations are built for whatever business systems you run, the AI can reach the systems you connect to check or update data mid-conversation, so the use cases follow your own stack, not a fixed list."
+    },
+    {
+      "q": "How does Open API work with automation?",
+      "a": "Together with workflow automation, API integrations let triggers fire real actions against your connected systems, a booking, a data update, a lookup. So a workflow doesn't stop at labeling a chat or sending a notification; it can complete an action in another system automatically, inside the conversation."
+    },
+    {
+      "q": "Is data safe when I connect my systems?",
+      "a": "Yes. Cekat.AI complies with UU PDP, Indonesia's personal data protection law, and is an official Meta Business Partner, so WhatsApp traffic runs through Meta's official infrastructure. Role-based team access controls who inside your business can see the customer data flowing through connected systems."
+    },
+    {
+      "q": "Does the API support all my channels?",
+      "a": "Cekat.AI unifies WhatsApp via the official Business API, Instagram DM, Facebook Messenger, and website live chat out of the box, and API channels let you add your own systems as sources. All of them feed one inbox, so the AI and your team work every conversation from a single place."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Your Stack Into One Connected System",
+    "body": "Bring conversations in through API channels and let the AI act on your systems, all from inside the chat."
+  }
+}

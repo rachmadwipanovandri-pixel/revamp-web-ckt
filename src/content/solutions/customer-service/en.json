@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "AI Solution for Customer Service | Cekat.AI",
+    "description": "One inbox for every channel, AI answering repeat questions 24/7, and hard cases reaching human agents with full context. Used by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "Solution for Customer Service Teams",
+    "title": "Answer Customers Faster, Anytime",
+    "subtitle": "Answer common questions 24/7, keep every conversation in one place, and let your team focus on the cases that need a human."
+  },
+  "definition": "The Cekat.AI customer service solution unifies WhatsApp, Instagram, and other channels into one inbox, lets AI answer repeat questions 24/7, and escalates hard cases to human agents complete with context and a ticket.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "customer questions answered"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    },
+    {
+      "value": "100%",
+      "label": "chats covered 24/7 at Holywings"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "painPoints": {
+    "heading": "What Quietly Drags Service Scores Down",
+    "items": [
+      {
+        "icon": "Clock",
+        "title": "Queues pile up at peak hours",
+        "body": "Chats arrive faster than the team can type. Customers wait, then ask again, and the queue grows on itself."
+      },
+      {
+        "icon": "Layers",
+        "title": "Separate channels, different answers",
+        "body": "WhatsApp, Instagram, and email sit with different people. The same question gets a different version of the answer."
+      },
+      {
+        "icon": "LifeBuoy",
+        "title": "Complaints vanish without a ticket",
+        "body": "Issues get forwarded through internal groups and sink. Nobody knows the status until the customer is angry."
+      }
+    ]
+  },
+  "compare": {
+    "heading": "The Difference With and Without Cekat.AI",
+    "body": "The same chat volume, a different customer experience. Switch tabs to compare.",
+    "withLabel": "With Cekat.AI",
+    "withoutLabel": "Without Cekat.AI",
+    "with": {
+      "title": "Everything answered, the hard cases reach humans",
+      "bullets": [
+        "Repeat questions answered by AI 24/7 from your official knowledge base",
+        "Every channel lands in one inbox with one unified history",
+        "Complaints become tickets automatically and stay tracked to resolution"
+      ],
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Smooth escalation from AI to agents in Cekat.AI"
+    },
+    "without": {
+      "title": "Customers wait and repeat themselves",
+      "bullets": [
+        "Peak-hour chats get answered hours later",
+        "Customers retell their story on every channel switch or agent change",
+        "Complaints get forwarded through groups and lose their status"
+      ]
+    }
+  },
+  "midCta": {
+    "heading": "Answer Customers Faster, Starting Today",
+    "body": "AI takes the repetitive, your team takes what matters. Try it free or chat with us first."
+  },
+  "benefits": [
+    {
+      "title": "Every Channel, One Screen",
+      "body": "WhatsApp, Instagram, Messenger, Telegram, and website live chat all land in the same inbox. Your team stops hopping between apps, and no channel gets forgotten.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Every chat channel arriving in one Cekat.AI inbox"
+    },
+    {
+      "title": "Repeat Questions Answered by AI, Not by Copy-Paste",
+      "body": "Shipping costs, order status, opening hours, returns: the same questions arrive hundreds of times a day. The AI answers them from your knowledge base, consistently and instantly, without touching the team's queue.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI answering repeat customer questions"
+    },
+    {
+      "title": "Hard Cases Reach Humans With Context",
+      "body": "Complaints and complex cases escalate automatically to an agent, chat history attached. Customers never repeat their story, and agents never start from zero.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Chat escalated from AI to a human agent with full history"
+    },
+    {
+      "title": "Tickets That Create and Route Themselves",
+      "body": "Customer reports become tickets automatically and go to the right team, whether that is technicians, the warehouse, or billing. Status is tracked to resolution instead of vanishing in an internal group chat.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Ticket created automatically from a customer conversation"
+    },
+    {
+      "title": "Know What Gets Asked the Most",
+      "body": "The dashboard shows top topics, busiest hours, and each agent's performance. You know which answers need fixing and when to add headcount, from data rather than gut feel.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "Customer service conversation analytics in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Fast at Peak Hours",
+      "body": "A long chat queue does not wait in line. AI answers in parallel, not one by one."
+    },
+    {
+      "title": "Humans for the Hard Moments",
+      "body": "Complaints and sensitive cases escalate to agents with full history, on rules you define."
+    },
+    {
+      "title": "Measurable Every Week",
+      "body": "Top topics, busiest hours, and agent performance sit on one dashboard, ready for review."
+    }
+  ],
+  "testimonial": {
+    "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+    "name": "Tantan Supriatna",
+    "role": "Customer Relation Department Head, Rumah Zakat",
+    "image": "/images/chat/tantan-supriatna.png"
+  },
+  "faq": [
+    {
+      "q": "What is the Cekat.AI customer service solution?",
+      "a": "One inbox for every chat channel, an AI agent answering repeat questions 24/7, a ticketing system, and a performance dashboard, all on the same platform."
+    },
+    {
+      "q": "How does the AI know answers about our business?",
+      "a": "From the knowledge base you upload: product documents, return policies, price lists, or website pages. The AI answers only from those sources, and you can update them anytime."
+    },
+    {
+      "q": "What if the AI does not know the answer?",
+      "a": "It does not make things up. Based on your rules, it either asks a clarifying question or hands over to a human agent with the full conversation history."
+    },
+    {
+      "q": "Can the AI work only outside business hours?",
+      "a": "Yes. Set AI working hours: your team handles chats during office hours and the AI takes over after, the way Rumah Zakat runs it."
+    },
+    {
+      "q": "Which channels are supported?",
+      "a": "WhatsApp, Instagram, Facebook Messenger, Telegram, and website live chat, all in the same inbox with one unified history."
+    },
+    {
+      "q": "Can many agents share one WhatsApp number?",
+      "a": "Yes. Through the WhatsApp Business API, one number serves many agents at once with clean conversation assignment, no fighting over a phone."
+    },
+    {
+      "q": "What metrics can we track?",
+      "a": "Chat volume per channel and per hour, most frequent topics, response speed, and each agent's load, all on one dashboard."
+    },
+    {
+      "q": "Can the AI answer in languages other than Indonesian?",
+      "a": "Yes. The AI replies in whatever language the customer writes in, so businesses serving customers across countries do not need a separate team per language."
+    }
+  ],
+  "cta": {
+    "heading": "Customers Hate Waiting. Now They Don't Have To.",
+    "body": "AI answers the repetitive, your team handles what matters. Try it free, or chat with our team on WhatsApp."
+  }
+}

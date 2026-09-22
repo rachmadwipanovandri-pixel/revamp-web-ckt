@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "WhatsApp Broadcast App, Turn Data Into Repeat Sales | CekatAI",
+    "description": "Run WhatsApp broadcast campaigns that bring buyers back, promos, event-based sends, and replenishment reminders from CRM data. Trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "Retarget & Retention Campaigns",
+    "title": "The WhatsApp Broadcast App That Brings Customers Back",
+    "subtitle": "Turn your customer data into repeat purchases, promo distribution, event-based campaigns, and replenishment reminders that land at exactly the right moment, all from one platform"
+  },
+  "definition": "WhatsApp Broadcast is a Cekat.AI feature that turns customer data into repeat purchases, sending promo campaigns, event-based messages, and replenishment reminders to precisely segmented audiences through the official WhatsApp Business API.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run campaigns on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "AI answers every campaign reply" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Sell Again to Customers You Already Won",
+      "body": "Winning a new customer is the expensive part, yet most businesses let past buyers sit untouched in a contact list. Cekat.AI keeps a living record of every customer's purchases, chats, and campaigns received, so you can broadcast the right offer to people who already trust you and need far less convincing to buy again.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Customer journey and purchase history tracked in the Cekat.AI CRM"
+    },
+    {
+      "title": "Time Campaigns to Events, Not Guesswork",
+      "body": "A promo pushed on a random Tuesday is a coin flip. Event-based broadcasts go out when something actually happens, a promo enters its final days, a customer joins a campaign, their data changes in the CRM, so every message arrives carrying a reason to open it.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Customer behavior and activity segmentation in Cekat.AI"
+    },
+    {
+      "title": "Replenishment Reminders That Arrive Right on Time",
+      "body": "If customers use up what you sell, skincare, coffee, supplements, lenses, the reorder is yours to lose. Cekat.AI reads purchase history and reminds each customer before they run out, turning one-time buyers into repeat revenue that behaves like a subscription you never had to build.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated replenishment reminder workflow in Cekat.AI"
+    },
+    {
+      "title": "Watch Broadcasts Turn Into Orders, Not Just Opens",
+      "body": "Delivery reports don't pay salaries. The analytics dashboard connects every campaign to replies, conversions, and revenue, and customer progression shows who moved from lead to buyer because of your broadcast. When customers reply, the AI agent takes the conversation and closes the order right in the chat.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Campaign revenue and conversion analytics in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Promos",
+      "title": "Promo Distribution Without the Copy-Paste Marathon",
+      "body": "Write the campaign once, pick the segment, and Cekat.AI delivers it personalized with each customer's name and context pulled from the CRM. No more forwarding the same promo to hundreds of chats by hand, and no customer getting an offer that has nothing to do with them."
+    },
+    {
+      "label": "Event-Based",
+      "title": "Broadcasts Triggered by What Customers Do",
+      "body": "Workflow triggers fire on time-based schedules, chat keywords, or customer-data changes, a new lead comes in, a promo nears its deadline, a status gets updated. Campaigns respond to real behavior instead of waiting for someone on your team to remember."
+    },
+    {
+      "label": "Replenishment",
+      "title": "Reorder Reminders Built From Purchase History",
+      "body": "Cekat.AI knows what each customer bought and when. Replenishment reminders go out before the product runs out, so the reorder conversation happens in your chat, not in a competitor's."
+    },
+    {
+      "label": "Reactivation",
+      "title": "Wake Up the Customers Who Went Quiet",
+      "body": "Filter your list by activity to find everyone who hasn't bought in a while, then send them a reason to come back. Ghosting leads get a nudge toward checkout; lapsed loyal buyers get a win-back offer that actually fits their history."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Repeat Revenue on Autopilot",
+      "body": "Promos, event-based campaigns, and replenishment reminders run on triggers, your customer list keeps producing revenue while your team works on something else."
+    },
+    {
+      "title": "Powered by a Living CRM",
+      "body": "Every chat, purchase, and campaign updates customer profiles automatically, no manual input, so every broadcast is targeted with data that is current, not last quarter's export."
+    },
+    {
+      "title": "Official WhatsApp Business API",
+      "body": "Cekat.AI is an official Meta Business Partner. Broadcasts travel the compliant route through Meta's infrastructure, at the scale your customer list deserves."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a WhatsApp broadcast application?",
+      "a": "A WhatsApp broadcast application sends one campaign to many customers at once on WhatsApp. Cekat.AI runs broadcasts through the official WhatsApp Business API, segments audiences by activity, purchase history, and events, personalizes every message from CRM data, and tracks each campaign through replies and conversions down to revenue."
+    },
+    {
+      "q": "How is this different from the broadcast list in the regular WhatsApp app?",
+      "a": "The broadcast list in the free WhatsApp Business app caps your audience and only reaches people who saved your number. A broadcast through the official API reaches your entire customer list, personalizes each message per recipient, and adds segmentation, automated reminders, and revenue analytics on top."
+    },
+    {
+      "q": "What's the difference between WhatsApp broadcast and WA blast?",
+      "a": "Both send messages at scale through the official WhatsApp Business API. In practice, a blast is usually a one-off announcement, while broadcast campaigns in Cekat.AI are ongoing programs, promo distribution, event-based sends, and replenishment reminders designed to turn existing customers into repeat buyers, campaign after campaign."
+    },
+    {
+      "q": "Can I send a broadcast only to customers who already bought?",
+      "a": "Yes. Segmentation by purchase history lets you target exactly the buyers you want, everyone who purchased last month, customers of one specific product, or repeat buyers due for a loyalty reward. The campaign reaches only the segment you choose, nobody else."
+    },
+    {
+      "q": "What is an event-based broadcast?",
+      "a": "An event-based broadcast is a campaign triggered by something happening rather than sent manually. In Cekat.AI, triggers include time-based schedules, chat keywords, and customer-data changes, for example, a message that goes out automatically when a promo enters its final day or when a contact becomes a new lead."
+    },
+    {
+      "q": "How do replenishment reminders work?",
+      "a": "Cekat.AI uses each customer's purchase history to time a reminder before their product runs out. The reminder arrives as a personal WhatsApp message, the customer replies, and the AI agent can take the reorder right in the chat, including shipping cost and payment details."
+    },
+    {
+      "q": "Who answers when customers reply to a broadcast?",
+      "a": "Cekat.AI's AI agent does, 24/7. It understands intent and context rather than just keywords, answers questions in natural language, checks shipping costs, and closes orders inside the chat, escalating to your team with full conversation context only when it's genuinely needed."
+    },
+    {
+      "q": "Won't frequent broadcasts feel like spam to my customers?",
+      "a": "Spam is the wrong message to the wrong person. Cekat.AI broadcasts are segmented by activity, purchase history, and events, and personalized from CRM data, so a repeat buyer sees a loyalty offer while a new lead sees an intro promo. Relevant messages get opened, not reported."
+    },
+    {
+      "q": "Can I prove a broadcast campaign actually made money?",
+      "a": "Yes. The analytics dashboard tracks every campaign from send to reply to conversion, showing revenue per campaign alongside customer progression from lead to buyer. You see which segments and messages generate orders, not just how many messages were delivered."
+    },
+    {
+      "q": "Do I need technical skills to run broadcast campaigns?",
+      "a": "No. Campaigns are point-and-click: choose a segment, write the message, send it or set the trigger. Automations are built in a visual drag-and-drop designer, and there is no coding anywhere in Cekat.AI, most teams launch their first campaign the same day."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Your Customer List Into Repeat Revenue",
+    "body": "Launch a segmented WhatsApp broadcast and let AI carry every reply through to checkout, 24/7."
+  }
+}

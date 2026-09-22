@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Customer Service for Logistics & Couriers | CekatAI",
+    "description": "Couriers and 3PLs use Cekat.AI to answer tracking, pickup, and COD questions 24/7 on WhatsApp. AI customer service built for logistics operations."
+  },
+  "hero": {
+    "badge": "Logistics",
+    "title": "Answer \"Where Is My Package?\" Instantly, Even at Midnight",
+    "subtitle": "From tracking checks to pickup scheduling to COD issues, Cekat.AI replies instantly on WhatsApp with live shipment data, 24/7, without adding CS agents",
+    "useCases": [
+      "Shipment tracking",
+      "Proactive status updates",
+      "Problem parcel escalation",
+      "Pickup scheduling"
+    ]
+  },
+  "definition": "Cekat.AI for logistics is an AI customer service platform for couriers, expedition companies, 3PLs, and freight forwarders in Indonesia, answering tracking and package-status questions 24/7 straight from order data, pushing delivery updates over WhatsApp, and routing problem shipments to the right team in one platform.",
+  "stats": [
+    {
+      "value": "+50%",
+      "label": "increase in revenue at GPS Supertrack"
+    },
+    {
+      "value": "2×",
+      "label": "increase in chat handling capacity at Kezka Printing within 6 months"
+    },
+    {
+      "value": "24/7",
+      "label": "tracking, pickup, and COD questions answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "\"Where Is My Package\" Answered Without an Agent",
+      "body": "Most chats hitting a logistics inbox ask one thing: where the package is. Through API integration with your order or tracking system, Cekat.AI reads the live shipment status and answers tracking checks instantly, 24/7, in natural language. Customers get certainty in seconds, and your agents stop copy-pasting waybill numbers all day.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Cekat.AI API integration answering tracking checks from order data"
+    },
+    {
+      "title": "Status Updates That Arrive Before the Question",
+      "body": "Package picked up, in transit at the hub, courier heading to the address, Cekat.AI pushes automatic updates over WhatsApp at every milestone you choose. Customers stop asking because they already know, inbound chat volume drops, and COD delivery failures shrink because recipients know when to be home.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Automatic delivery status notifications sent from Cekat.AI"
+    },
+    {
+      "title": "Problem Packages Escalate Instead of Sinking",
+      "body": "A failed COD, an address that cannot be found, a damaged or lost package, sensitive cases like these cannot wait in a queue. Cekat.AI creates a ticket from the conversation automatically, routes it to the right field or claims team with the full chat history, and keeps the customer informed while the case is worked.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Lost-package complaint auto-created as a ticket in Cekat.AI"
+    },
+    {
+      "title": "Pickup Scheduling Handled Inside the Chat",
+      "body": "Sellers and regular shippers should not need a phone call to book a pickup. The AI asks for the address, package count, and pickup window, then logs it as a clean order for your operations team. The flow follows business logic you define yourself, no coding needed, so pickups run consistently across every branch.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Pickup request flow automated with business logic in Cekat.AI"
+    },
+    {
+      "title": "Corporate Leads Qualified Automatically",
+      "body": "Buried among hundreds of tracking chats are companies asking about contract rates and recurring shipments. Cekat.AI recognizes these high-value inquiries, asks about volume, routes, and frequency, then captures them into a CRM card with the conversation attached, so your sales team follows up on serious leads instead of scrolling a crowded inbox.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Corporate shipping leads captured in the Cekat.AI CRM"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats, status updates, and broadcasts run on the official WhatsApp Business API, alongside Instagram DM and web chat, one inbox for every branch, compliant and reliable."
+    },
+    {
+      "title": "AI That Answers From Shipment Data",
+      "body": "The agent answers tracking and package-status questions straight from your order system through API integration, then hands complex cases to your team with full context."
+    },
+    {
+      "title": "Proven Across 3,000+ Businesses",
+      "body": "More than 3,000 businesses in Indonesia run customer service on Cekat.AI."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help logistics and courier businesses?",
+      "a": "It answers customer chats instantly 24/7 on WhatsApp, Instagram, and web chat, covering tracking checks, pickup scheduling, shipping rates, and COD issues, while routing problem shipments to the right team. Your agents focus on cases that need a human, not on copy-pasting waybill statuses."
+    },
+    {
+      "q": "Can the AI answer tracking checks straight from our system?",
+      "a": "Yes. Through API integration, Cekat.AI connects to the order, tracking, or TMS platform you already use, so package-status answers always come from live data rather than an empty template. A customer sends a waybill number in the chat and the AI replies with the package's current position."
+    },
+    {
+      "q": "Can it send delivery status updates automatically?",
+      "a": "Yes. Cekat.AI pushes automatic notifications through the official WhatsApp Business API at the milestones you define, picked up, arrived at the hub, out for delivery, or delivery failed. Customers hear the news first, so \"where is my package\" chats drop sharply."
+    },
+    {
+      "q": "How are lost or damaged package complaints handled?",
+      "a": "Sensitive cases like lost, damaged, or failed-COD packages are turned into tickets automatically and escalated to a human team with the full conversation attached. You define the escalation rules, so heavy cases always reach a person while the AI keeps answering routine questions in parallel."
+    },
+    {
+      "q": "Do I need the WhatsApp Business API to use Cekat.AI?",
+      "a": "For logistics-scale chat volume, the WhatsApp Business API is the right lane, and as an Official Meta Business Partner, Cekat.AI walks you through registration until it is live. Your business number gets verified, supports many agents at once, and is safe for broadcasts."
+    },
+    {
+      "q": "How long does setup take for a logistics business?",
+      "a": "Building the AI agent takes around five minutes, paste your rate card, coverage areas, and SOPs into the knowledge base and it starts answering. Connecting your tracking or order system follows through the API, assisted by our team, without disrupting live operations."
+    },
+    {
+      "q": "Can it handle the chat spike during Harbolnas or twin-date sales?",
+      "a": "Yes. The AI answers every incoming chat instantly no matter how many arrive at once, so response times stay flat when shipment volume surges. Cases that need a human escalate to your agents with full context, and everything else keeps getting answered automatically."
+    },
+    {
+      "q": "How secure is our customer and shipment data?",
+      "a": "Conversation and customer data are stored securely with role-based access, so each team only sees what is relevant to them. ISO 27001 certification is in progress, and our team is happy to walk through your company's specific compliance requirements."
+    },
+    {
+      "q": "How is Cekat.AI priced for logistics, and can we try it first?",
+      "a": "Pricing follows subscription tiers that scale with conversation volume and the features you use, so a small expedition service and a large 3PL both land on a plan that makes sense. Book a free consultation and our team will demo it with your own business scenarios before you commit."
+    }
+  ],
+  "cta": {
+    "heading": "Turn the Tracking Flood Into a CS Team That Never Sleeps",
+    "body": "See how logistics businesses run 24/7 tracking, pickups, and support on Cekat.AI, book a free consultation with our team."
+  }
+}

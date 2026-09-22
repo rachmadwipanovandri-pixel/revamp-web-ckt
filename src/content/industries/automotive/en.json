@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Automotive AI Customer Service & Dealer CRM | CekatAI",
+    "description": "Car and motorcycle dealers use Cekat.AI to answer ad leads 24/7, book test drives and service slots, and sync every lead to a CRM pipeline."
+  },
+  "hero": {
+    "badge": "Automotive",
+    "title": "Answer Every Ad Lead, Even the Ones That Arrive at Midnight",
+    "subtitle": "From price and trade-in questions to test-drive slots to service bookings, Cekat.AI replies instantly on WhatsApp and Instagram, 24/7, moving every lead into your CRM pipeline without adding admins",
+    "useCases": [
+      "Ad lead response",
+      "Budget & model qualifying",
+      "Test drive booking",
+      "Service reminders"
+    ]
+  },
+  "definition": "Cekat.AI for automotive is an AI customer service platform for car dealers, motorcycle dealers, brand principals, and service workshops in Indonesia, answering ad leads 24/7, scheduling test drives and service bookings, and keeping every dealer lead organized in an automotive CRM pipeline.",
+  "stats": [
+    {
+      "value": "2×",
+      "label": "increase in booked client visits per month at Graha Pesona Cikeas"
+    },
+    {
+      "value": "28%",
+      "label": "conversion from lead to appointment at Wall Street English, up from 20%"
+    },
+    {
+      "value": "24/7",
+      "label": "ad leads, test drives, and service bookings answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Ad Leads No Longer Go Cold Overnight",
+      "body": "A buyer clicks your car ad at 10 pm, asks for the price, and hears nothing until sales clock in, by then they have usually messaged another dealership. Cekat.AI's agent replies the second the chat arrives, at any hour, answering price, stock, and financing questions from your knowledge base while buying intent is still hot.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours routing between sales team and AI agent in Cekat.AI"
+    },
+    {
+      "title": "The AI Qualifies: Budget, Model, Trade-In",
+      "body": "Not every chat is a serious buyer. Cekat.AI asks what your sales team would ask first, which model, what budget or financing plan, whether there is a vehicle to trade in, in natural language, so salespeople pick up leads with a clear profile and go straight to the offer instead of starting from zero.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent qualifying car buyer leads in the Cekat.AI inbox"
+    },
+    {
+      "title": "Test Drives and Service Slots Booked from the Chat",
+      "body": "Test-drive scheduling stops being a game of phone tag, and service bookings stop piling up on one admin. Cekat.AI captures the schedule inside the conversation, notifies the right salesperson or service advisor, and through API integration can connect to your workshop's booking system, the customer just shows up on time.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Automatic test drive and service notifications to the right team in Cekat.AI"
+    },
+    {
+      "title": "Periodic Service Reminders Run on Autopilot",
+      "body": "Customers forget their service schedule, and the workshop loses its most predictable revenue. Cekat.AI sends periodic service reminders through the official WhatsApp Business API based on each customer's history, and opens a booking slot in the same chat, so the vehicle comes back to your workshop instead of whichever one is closer.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Service reminder campaigns based on customer history in Cekat.AI"
+    },
+    {
+      "title": "Every Lead Lands in a CRM Pipeline, Not a Salesperson's Phone",
+      "body": "Leads that live in individual phones are leads that leak. Cekat.AI captures every conversation into a CRM card automatically, with chat history, the model they want, and follow-up status, organized in a pipeline from new lead to deal, so supervisors see where every prospect stands without asking around.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Dealer lead pipeline from prospect to deal in the Cekat.AI CRM"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Leads from click-to-WhatsApp and Instagram ads arrive through the official WhatsApp Business API, one inbox for every dealership branch, compliant and reliable."
+    },
+    {
+      "title": "AI That Qualifies and Books",
+      "body": "The agent answers leads, asks about budget, model, and trade-in, schedules test drives and service slots, then hands negotiations to sales with full context."
+    },
+    {
+      "title": "Running 3,000+ Businesses in Indonesia",
+      "body": "More than 3,000 businesses in Indonesia run customer service on Cekat.AI."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help dealerships and workshops?",
+      "a": "It answers chats from buyers and service customers instantly 24/7 on WhatsApp, Instagram, and web chat, covering prices and stock, test-drive scheduling, and service bookings, while organizing every lead in an automotive CRM pipeline. Your sales team focuses on closing, not typing the same answers all day."
+    },
+    {
+      "q": "Can the AI qualify leads coming from ads?",
+      "a": "Yes. Leads from click-to-WhatsApp ads get an instant reply and the questions that matter up front, which model they want, their budget or financing plan, and whether there is a trade-in vehicle. Everything is recorded on the lead card, so sales picks up prospects with a clear profile instead of a blank chat."
+    },
+    {
+      "q": "Can prospects book a test drive through the chat?",
+      "a": "Yes. Cekat.AI offers slots, captures the test-drive schedule inside the conversation, and notifies the salesperson on duty. Automated reminders before the day reduce no-shows, and if the prospect needs a new time, rescheduling happens in the same chat."
+    },
+    {
+      "q": "How do service bookings and periodic reminders work?",
+      "a": "Customers pick a service slot right in the chat, and through API integration Cekat.AI can connect to your workshop's booking or queue system. After that, periodic service reminders go out automatically on WhatsApp based on each vehicle's history, so customers come back without anyone calling them one by one."
+    },
+    {
+      "q": "Does it connect to the CRM or dealer systems we already use?",
+      "a": "Yes. Cekat.AI ships with a built-in CRM pipeline that works out of the box, and through API and webhook integration lead data can flow into the CRM, DMS, or internal systems your dealership already runs, with no admin retyping chats into another tool."
+    },
+    {
+      "q": "When does a human salesperson take over?",
+      "a": "Whenever it matters. Price negotiations, credit applications, or sensitive complaints hand over to a salesperson or service advisor in one step, with the full chat history and qualification data attached. AI working hours are configurable too, so it is always clear when the AI answers and when your team does."
+    },
+    {
+      "q": "How long does setup take for a dealership?",
+      "a": "Building the AI agent takes around five minutes, paste your price list, vehicle specs, promos, and SOPs into the knowledge base and it starts answering accurately. No coding is required; Cekat.AI describes it as being as easy as briefing a new sales counter admin."
+    },
+    {
+      "q": "Is this the official WhatsApp API or a regular number?",
+      "a": "Cekat.AI is an Official Meta Business Partner, so chats and broadcasts run on the official WhatsApp Business API, not a regular WhatsApp account that risks getting blocked as volume grows. Instagram DM, Facebook Messenger, and website live chat flow into the same inbox."
+    },
+    {
+      "q": "Is there a trial, and how does pricing work?",
+      "a": "There is a 14-day free trial to test it on your own dealership flow. Pricing comes as plans that scale with team size and conversation volume, from a single showroom to a multi-branch network, book a free consultation and our team will help you pick the right fit."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Every Ad Lead Into a Test Drive on the Calendar",
+    "body": "See how dealerships run leads, test drives, and service bookings 24/7 on Cekat.AI, book a free consultation with our team."
+  }
+}

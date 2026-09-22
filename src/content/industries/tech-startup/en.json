@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Customer Service for Startups & Tech Companies | CekatAI",
+    "description": "Startups use Cekat.AI to scale support without hiring. One inbox for every channel, automation for repeat flows, analytics on it all. See how."
+  },
+  "hero": {
+    "badge": "Technology & Startups",
+    "title": "Your Users Keep Growing, Your Support Team Doesn't Have To",
+    "subtitle": "Cekat.AI answers customer chats 24/7 across WhatsApp, Instagram, and web chat from one inbox, automating the repetitive flows, so support scales without new hires and founders stop replying at midnight",
+    "useCases": [
+      "Scale without added cost",
+      "One inbox, every channel",
+      "Repeat flow automation",
+      "Support metrics"
+    ]
+  },
+  "definition": "Cekat.AI for technology and startups is an AI customer service platform for startups in Indonesia that are scaling fast, answering customer chats 24/7 across every channel, automating repetitive flows, and keeping support headcount flat while the user base grows.",
+  "stats": [
+    {
+      "value": "+70%",
+      "label": "conversion uplift at Holywings Group"
+    },
+    {
+      "value": "100%",
+      "label": "of chats covered 24/7 at Holywings"
+    },
+    {
+      "value": "24/7",
+      "label": "customer chats answered across every channel"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Chat Volume Keeps Climbing, Support Costs Don't",
+      "body": "Healthy growth usually gets paid for with a longer chat queue. Cekat.AI's agent answers every chat instantly at any volume, giving the same consistent answer at 2 pm and 2 am, so you add users without adding shifts, and response quality holds exactly when things get busiest.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI agent answering high chat volume instantly"
+    },
+    {
+      "title": "Every Channel in One Inbox, One History per Customer",
+      "body": "WhatsApp, Instagram DM, Facebook Messenger, and web chat flow into a single inbox with one history per customer. No more five open tabs and asking around whether someone already replied, your small team sees every conversation in one place, and customers who switch channels never repeat their story.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "All chat channels connected to one Cekat.AI inbox"
+    },
+    {
+      "title": "Repetitive Flows Run Themselves, Without Stealing Engineering Time",
+      "body": "Status checks, lead qualification, follow-ups, internal updates, the flows your team repeats daily can be automated with a drag and drop builder, no code. Your team stops being a copy paste machine, and the engineering roadmap stops getting cut up to build internal support tooling.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "No-code automation builder in Cekat.AI"
+    },
+    {
+      "title": "Founders Get Out of the Midnight Support Shift",
+      "body": "Early on, founders answer every chat themselves, the problem is that habit does not scale. With AI working hours, the AI takes over fully outside business hours and shares the load during peak times, important cases still escalate to a human with full context, and you open your laptop in the morning to an inbox that is already handled.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI and team working hours configured in Cekat.AI"
+    },
+    {
+      "title": "Support Numbers Ready for the Investor Question",
+      "body": "Conversations per month, how many resolve without a human, which topics come up most, all captured in the analytics dashboard. Answer questions about operational efficiency with data, and read product signals from real customer conversations instead of gut feel.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Customer conversation analytics dashboard in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "The official WhatsApp Business API, Instagram DM, Facebook Messenger, and web chat run from one inbox, compliant, reliable, and ready for volume that keeps growing."
+    },
+    {
+      "title": "Built to Scale",
+      "body": "The AI absorbs chat spikes with zero queue, automation handles the repetitive flows, and your team steps in only for cases that truly need a human."
+    },
+    {
+      "title": "Trusted by 3,000+ Businesses",
+      "body": "From early-stage startups to large groups across Indonesia, Cekat.AI handles real customer conversations every day, proven at real chat volume."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help fast-growing startups?",
+      "a": "It answers customer chats instantly 24/7 across every channel, automates repetitive flows, and hands complex cases to your team with full context. Chat volume can multiply, your support team does not have to."
+    },
+    {
+      "q": "Our chats spike after a campaign or a viral moment. Can the AI keep up?",
+      "a": "Yes. The AI answers every incoming chat instantly no matter how many arrive at once, so response time stays flat through product launches, big campaigns, and viral moments. No more lining up backup admins before every launch."
+    },
+    {
+      "q": "Which channels can we connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, and website live chat, all flowing into one inbox with a single history per customer. Someone who DMs on Instagram and follows up on WhatsApp never repeats their story."
+    },
+    {
+      "q": "Can we build automations without pulling engineers in?",
+      "a": "Yes. Flows like lead qualification, automated follow-ups, and internal notifications are built with a drag and drop builder, no code. Your ops or CS team assembles them independently, and engineering stays focused on the product."
+    },
+    {
+      "q": "Can it integrate with our internal tools or product?",
+      "a": "Yes. Through API integration, Cekat.AI connects to your CRM, database, or internal systems, so the AI answers with relevant data and conversations can trigger processes in the tools you already use."
+    },
+    {
+      "q": "When does a chat hand over to a human?",
+      "a": "By rules you set, for example sensitive complaints, enterprise pricing talks, or a user asking for a person. The AI hands the conversation over with full history, so your team continues right where it left off."
+    },
+    {
+      "q": "How is our customer data secured?",
+      "a": "Conversation and customer data is stored securely with role-based access, visible only to team members you authorize. ISO 27001 certification is in progress, and data practices follow industry standards."
+    },
+    {
+      "q": "How fast can we go live? We do not have spare cycles.",
+      "a": "Building the AI agent takes around five minutes, paste your FAQs, product descriptions, and SOPs into the knowledge base, connect your channels, and it starts answering. No coding, so you can be live this week instead of running a one-quarter project."
+    },
+    {
+      "q": "How does pricing work for a startup?",
+      "a": "Pricing follows usage, start on a small plan and grow as your conversation volume grows, so costs track your traction instead of jumping ahead of it. Book a free consultation and our team will help pick the right plan."
+    }
+  ],
+  "cta": {
+    "heading": "Scale Support Without Scaling Headcount",
+    "body": "See how startups run 24/7 customer service on Cekat.AI, book a free consultation with our team."
+  }
+}

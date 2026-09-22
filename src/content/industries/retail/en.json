@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Customer Service for Retail & E-Commerce | CekatAI",
+    "description": "Automate online store CS with Cekat.ai: answer product inquiries, process orders, check shipping, handle payments, & follow up 24/7. Try free!"
+  },
+  "hero": {
+    "badge": "Retail & E-Commerce",
+    "title": "Answer Every Buyer Before They Buy Somewhere Else",
+    "subtitle": "From \"is this in stock?\" to paid order, Cekat.AI replies instantly on WhatsApp, Instagram, and web chat, checks shipping costs, and closes the sale with a payment QR, 24/7",
+    "useCases": [
+      "Product questions",
+      "Shipping quote to paid",
+      "Abandoned checkout recovery",
+      "Segmented promo broadcasts"
+    ]
+  },
+  "definition": "Cekat.AI for retail & e-commerce is an AI customer service platform for online stores and retail brands in Indonesia, answering product questions instantly, processing orders inside the chat with shipping cost and payment QR, and recovering abandoned checkouts with automated follow-ups.",
+  "stats": [
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "customer interactions handled"
+    },
+    {
+      "value": "24/7",
+      "label": "buyer questions answered and orders processed"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Product Questions Answered While Buyers Are Still Deciding",
+      "body": "A buyer who waits is a buyer who checks a competitor's store. Cekat.AI answers stock, variant, price, and delivery questions the second they arrive, in natural language, understanding intent rather than keywords, so shoppers get certainty at the exact moment they are ready to spend.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering product questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "From \"How Much Is Shipping?\" to Paid, Inside One Chat",
+      "body": "Cekat.AI's agent checks the shipping cost, confirms the address, creates the order with the customer's details, and sends a payment QR, all inside the same conversation. No checkout links half your buyers never finish, no admin copying orders into a spreadsheet by hand.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Order created and paid inside a chat conversation in Cekat.AI"
+    },
+    {
+      "title": "Win Back the Checkouts Your Buyers Abandoned",
+      "body": "Most abandoned checkouts are not lost sales, they are unfinished ones. Cekat.AI follows up automatically when a payment is still pending, a promo is about to expire, or it is time to restock, with each nudge triggered by the customer's actual behavior instead of a manual reminder list.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated follow-up workflow for pending payments in Cekat.AI"
+    },
+    {
+      "title": "Broadcast Promos to the Buyers Most Likely to Buy",
+      "body": "Campaigns go out through the official WhatsApp Business API to segments built from real data, repeat buyers, lapsed customers, leads who clicked but never paid, with names and context pulled from the CRM. Relevant promos get opened and answered; generic ones get ignored.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Customer segmentation by purchase behavior in Cekat.AI"
+    },
+    {
+      "title": "Know Every Buyer's Stage, Visitor, Lead, or Repeat Customer",
+      "body": "Every chat, purchase, and campaign updates the customer's CRM card automatically, no manual input. Customer Stages track each contact from Visitor to Lead to Buyer with suggested next steps, so your team always knows who is browsing, who is deciding, and who is due a repeat-purchase nudge.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Customer journey stages tracked in the Cekat.AI CRM"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats and broadcast campaigns run on the official WhatsApp Business API, compliant, reliable, and safe for the number your store depends on."
+    },
+    {
+      "title": "One Platform From First Chat to Repeat Order",
+      "body": "Inbox, CRM, broadcast, and order automation live in one dashboard, no exporting contacts between a chat tool, a spreadsheet, and a blast app."
+    },
+    {
+      "title": "AI That Closes, Not Just Chats",
+      "body": "The agent checks shipping costs, creates orders, and sends payment QRs in conversation, and escalates to your team with full context when needed."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is AI customer service for retail and e-commerce?",
+      "a": "It is software that answers your store's chats automatically. Cekat.AI replies to product, stock, price, and delivery questions instantly on WhatsApp, Instagram, and web chat, 24/7, in natural language, and can process the order inside the conversation, from shipping cost to payment QR."
+    },
+    {
+      "q": "Can the AI actually process orders in the chat?",
+      "a": "Yes. Cekat.AI auto-creates orders from the conversation, including shipping cost, payment, and customer details. The agent can check ongkir through API integration and send a payment QR, so a buyer goes from question to paid order without ever leaving the chat."
+    },
+    {
+      "q": "How does abandoned checkout recovery work?",
+      "a": "Cekat.AI sends automatic reminders based on each customer's behavior, payment still pending, promo about to end, time to replenish. Follow-up nudges go out through the official WhatsApp API at the right moment, so unfinished checkouts turn into completed orders without your team chasing anyone manually."
+    },
+    {
+      "q": "Which channels can my store connect?",
+      "a": "WhatsApp (official Business API), Instagram DM, Facebook Messenger, website live chat, and API channels, all flowing into one unified inbox. Every buyer keeps a single conversation history, so no order or question falls between channels."
+    },
+    {
+      "q": "Can I send promo broadcasts to my customers?",
+      "a": "Yes. Broadcast campaigns are sent through the official WhatsApp Business API to segments built from activity, purchase history, or events, new buyers, loyal customers, ghosting leads. Messages pull names and context from the CRM, and results are tracked down to replies and revenue."
+    },
+    {
+      "q": "How does the AI learn my product catalog?",
+      "a": "You paste your product information, prices, and SOPs into the knowledge base, no coding required. Building the agent takes around five minutes and works like briefing a new CS admin; from then on it answers from your actual catalog, not guesses."
+    },
+    {
+      "q": "What happens during a flash sale or a sudden chat surge?",
+      "a": "The AI answers every incoming chat instantly, no matter how many arrive at once, so response time stays flat when volume spikes. Anything complex escalates to your team with the full conversation attached, and AI working hours keep coverage running after your admins log off."
+    },
+    {
+      "q": "Will customers notice they are chatting with AI?",
+      "a": "Cekat.AI's agent is humanlike, it understands intent and context rather than matching keywords, replies in natural language, and handles multiple languages. When a conversation needs a person, it hands off to your team automatically with the full history, so the customer never repeats themselves."
+    },
+    {
+      "q": "Can I see which campaigns actually make money?",
+      "a": "Yes. The analytics dashboard tracks ad spend, ROAS, cost, revenue, and customer progression in one place, and CAPI integration with Meta and TikTok feeds better signal quality back to your ads, so budget follows the campaigns that convert, not the ones that just deliver."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Browsing Chats Into Paid Orders",
+    "body": "See how online stores run 24/7 sales and support on Cekat.AI, book a free consultation with our team."
+  }
+}

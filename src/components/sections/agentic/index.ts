@@ -1,0 +1,9 @@
+export { Hero } from "./hero";
+export { SoundWords } from "./sound-words";
+export { Proof } from "./proof";
+export { Products } from "./products";
+export { Pricing } from "./pricing";
+export { Results } from "./results";
+export { OpenApi } from "./open-api";
+export { FinalCta } from "./final-cta";
+export { EcosystemHub } from "./ecosystem-hub";

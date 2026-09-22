@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "AI Working Hours, 24/7 Coverage Without Night Shifts | CekatAI",
+    "description": "AI working hours lets your team handle office-hour chats while AI takes over after, 24/7 customer service for 3,000+ businesses with no night shifts to staff."
+  },
+  "hero": {
+    "badge": "AI Working Hours",
+    "title": "Your Team by Day, AI After Hours, Automatically",
+    "subtitle": "Set the hours your team is online and Cekat.AI takes over the moment they log off, so customers get answered at 2 AM, on weekends, and over holidays without anyone working a night shift"
+  },
+  "definition": "AI Working Hours is a Cekat.AI feature that lets your team handle chats during set online hours while the AI agent takes over automatically after, giving customers 24/7 coverage with an automatic handoff that carries full context.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "coverage without night shifts" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "24/7 Coverage Without Staffing the Night",
+      "body": "Customers message when it suits them, late at night, on weekends, over holidays. AI Working Hours means those messages get answered instead of piling up until morning. Your team covers office hours, the AI covers everything else, and nobody has to work a graveyard shift to keep the business reachable around the clock.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours coverage handoff between team and AI in Cekat.AI"
+    },
+    {
+      "title": "The Handoff Carries Full Context",
+      "body": "When the AI takes over after hours, nothing gets dropped. The automatic handoff carries the full chat history, order details, and private notes, so the customer never has to repeat themselves. The same works in reverse, when your team logs back on, they pick up exactly where the AI left off.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Automatic handoff carrying full context in Cekat.AI"
+    },
+    {
+      "title": "No Lead Goes Cold Overnight",
+      "body": "A buyer ready at midnight won't wait until 9 AM, they'll message a competitor who replied first. With the AI answering after hours, that ready-to-buy lead gets a real response, quotes, and even a completed order overnight, instead of sitting unread in a queue while the sale cools off.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI answering a customer conversation after hours in Cekat.AI"
+    },
+    {
+      "title": "Escalate to a Human When It Matters",
+      "body": "After-hours AI doesn't mean customers get stuck with a bot on hard cases. When a conversation needs a person, it's flagged and waiting for your team the moment they're back, with all the context attached. Routine questions get handled instantly; the ones that need judgment reach a human without the customer losing the thread.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Specialized AI agents with clean escalation to a human in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Set Hours",
+      "title": "You Decide When the Team Is On",
+      "body": "Set the online hours for your team, and Cekat.AI handles the switch. During those hours, chats route to your people; outside them, the AI answers automatically, no manual toggling at the end of every shift."
+    },
+    {
+      "label": "Auto Handoff",
+      "title": "Context Follows the Conversation",
+      "body": "The switch between team and AI carries the full context, chat history, order details, private notes. Whoever picks up the conversation, human or AI, already knows what's going on, so the customer never repeats themselves."
+    },
+    {
+      "label": "After Hours",
+      "title": "The AI Covers Nights and Weekends",
+      "body": "Once your team logs off, the AI answers questions, quotes shipping, sends payment QRs, and closes orders, so the hours your business used to go silent become hours it keeps selling."
+    },
+    {
+      "label": "Escalation",
+      "title": "Hard Cases Wait for a Human",
+      "body": "When something genuinely needs a person, the AI flags it and holds the context, so your team can pick it up the moment they're back online, without the customer having to explain everything again."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Always Reachable",
+      "body": "Customers get answered at any hour, the AI covers the time your team can't, so the business is never truly closed."
+    },
+    {
+      "title": "Nothing Lost in the Switch",
+      "body": "The automatic handoff carries full context both ways, so no conversation restarts from scratch when hours change."
+    },
+    {
+      "title": "Humans Where They Count",
+      "body": "Your team spends office hours on the conversations that need them, while the AI handles the after-hours load."
+    }
+  ],
+  "testimonial": {
+    "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+    "name": "Tantan Supriatna",
+    "role": "Customer Relation Department Head, Rumah Zakat",
+    "image": "/images/chat/tantan-supriatna.png"
+  },
+  "faq": [
+    {
+      "q": "What is AI working hours?",
+      "a": "AI working hours is a Cekat.AI setting where your team handles chats during set online hours and the AI agent takes over automatically outside them. It gives customers 24/7 coverage without night shifts, and the handoff between team and AI carries full conversation context both ways."
+    },
+    {
+      "q": "How does after-hours customer service work with Cekat.AI?",
+      "a": "You set the hours your team is online. During those hours, chats go to your people; once they log off, the AI answers automatically, handling questions, quoting shipping, sending payment QRs, and closing orders. When your team returns, conversations hand back with all the context intact."
+    },
+    {
+      "q": "Does the AI handoff lose any context?",
+      "a": "No. The automatic handoff carries the full chat history, order details, and private notes when the AI takes over and when your team takes back. The customer never has to repeat themselves, and whoever is handling the chat always knows exactly what's happened so far."
+    },
+    {
+      "q": "Can customers still reach a human?",
+      "a": "Yes. When a conversation genuinely needs a person, the AI flags it and holds the context so your team can pick it up as soon as they're back online. Routine questions are handled instantly after hours; the cases that need human judgment are waiting, fully briefed, in the morning."
+    },
+    {
+      "q": "Do I need to staff a night shift?",
+      "a": "No, that's the point. AI working hours means the AI covers nights, weekends, and holidays, so you get 24/7 coverage without paying anyone to work overnight. Your team focuses on office hours, and the business stays reachable the rest of the time."
+    },
+    {
+      "q": "What can the AI actually do after hours?",
+      "a": "The AI answers questions in natural language, checks shipping costs through API integration, sends payment QRs, and completes orders, all inside the chat. It works across WhatsApp, Instagram DM, Facebook Messenger, website live chat, and API channels, so after-hours coverage spans every channel you sell on."
+    },
+    {
+      "q": "Will customers know they're talking to AI?",
+      "a": "The AI is humanlike and understands intent and context rather than keywords, so after-hours conversations feel natural rather than robotic. When a case needs a human, it escalates cleanly, customers get fast, helpful answers at any hour and a real person for the situations that call for one."
+    },
+    {
+      "q": "Is after-hours AI reliable for a business like ours?",
+      "a": "Cekat.AI runs 24/7 across 3,000+ businesses in 15+ industries and has handled over 1,000,000 customer interactions. Rumah Zakat, for example, relies on AI outside working hours to stay reachable around the clock, fully using the AI once their team's hours are over."
+    },
+    {
+      "q": "Is data handled safely after hours?",
+      "a": "Yes. Cekat.AI complies with UU PDP, Indonesia's personal data protection law, and is an official Meta Business Partner, so WhatsApp traffic runs through Meta's official infrastructure. Role-based team access controls who can see customer conversations, whether they come in during office hours or overnight."
+    }
+  ],
+  "cta": {
+    "heading": "Turn After-Hours Silence Into Answered Chats",
+    "body": "Set your team's hours and let Cekat.AI cover the rest, 24/7, with no night shift to staff."
+  }
+}

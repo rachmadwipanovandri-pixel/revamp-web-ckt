@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Pengaturan Lanjutan AI Agent: Memori, Gaya, Batasan | Cekat.AI",
+    "description": "Setel perilaku AI agent-mu: batas memori dan konteks, gaya jawaban dari konsisten sampai kreatif, watcher pengawas kualitas, jam operasional, dan batas pesan."
+  },
+  "hero": {
+    "badge": "Pengaturan Lanjutan AI",
+    "title": "AI yang Bisa Kamu Setel, Bukan Kotak Hitam",
+    "subtitle": "Berapa banyak percakapan yang diingat, seberapa kreatif jawabannya, kapan dia berhenti membalas, sampai pengawas yang memantau kualitasnya. Semua perilaku AI agent-mu terbuka untuk diatur, tanpa coding."
+  },
+  "definition": "Pengaturan lanjutan AI di Cekat.AI adalah kumpulan kontrol perilaku AI agent: batas riwayat, konteks, dan file yang dibaca, tingkat kreativitas jawaban, jeda dan batas pesan, watcher pemantau kualitas, timezone, serta memori khusus sesi.",
+  "stats": [
+    {
+      "value": "±5 menit",
+      "label": "setup bot, tanpa coding"
+    },
+    {
+      "value": "24/7",
+      "label": "perilaku AI konsisten dengan aturanmu"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Atur Seberapa Jauh AI Mengingat",
+      "body": "Batas riwayat pesan, batas konteks dari knowledge source, dan batas file yang dibaca kamu tentukan sendiri. Percakapan panjang tetap relevan tanpa AI terseret ke topik tiga hari lalu.",
+      "image": "/images/chat/train-your-ai-agent.png",
+      "imageAlt": "Pengaturan memori dan konteks AI agent"
+    },
+    {
+      "title": "Gaya Jawaban Ikut Bisnismu, Bukan Sebaliknya",
+      "body": "Tiga preset temperature: Consistent untuk jawaban yang sama setiap kali, Balanced untuk keseharian, Creative untuk percakapan yang lebih luwes. Klinik dan brand fashion tidak harus terdengar sama.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Preset gaya jawaban AI dari konsisten sampai kreatif"
+    },
+    {
+      "title": "Watcher Mengawasi Kualitas Jawaban",
+      "body": "Watcher memantau respons dan eksekusi tindakan AI-mu. Kalau ada yang melenceng dari harapan, kamu tahu dari sistem, bukan dari komplain customer seminggu kemudian.",
+      "image": "/images/chat/analyze-and-improve.png",
+      "imageAlt": "Watcher memantau kualitas respons AI"
+    },
+    {
+      "title": "Ritme Balasan yang Terasa Manusiawi",
+      "body": "Message wait memberi jeda sebelum AI membalas, jadi customer sempat menyelesaikan pesan beruntunnya. Batas jumlah respons per percakapan mencegah AI memonopoli obrolan yang butuh manusia.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan jeda dan batas pesan AI"
+    },
+    {
+      "title": "Memori Sesi dan Timezone yang Tepat",
+      "body": "Session-only memory membatasi ingatan AI ke percakapan berjalan, berguna untuk topik yang tidak boleh terbawa. Timezone memastikan janji jam dan penjadwalan mengikuti waktu bisnismu.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Pengaturan memori sesi dan zona waktu"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Kontrol Tanpa Coding",
+      "body": "Semua pengaturan diubah dari dashboard dengan preset yang jelas, bukan file konfigurasi."
+    },
+    {
+      "title": "Perilaku yang Bisa Diprediksi",
+      "body": "AI yang kamu setel hari ini menjawab dengan cara yang sama besok, karena aturannya tertulis, bukan kebetulan."
+    },
+    {
+      "title": "Berubah Kapan Saja",
+      "body": "Musim ramai butuh jawaban cepat dan ketat, musim sepi boleh lebih luwes. Setelannya mengikuti."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa saja yang bisa diatur di pengaturan lanjutan AI?",
+      "a": "Batas riwayat pesan, batas konteks knowledge source, batas file yang dibaca, temperature jawaban, jeda balasan, batas jumlah respons, watcher, timezone, dan memori khusus sesi."
+    },
+    {
+      "q": "Apa itu AI temperature?",
+      "a": "Tingkat variasi jawaban. Consistent membuat jawaban hampir sama setiap kali, cocok untuk kebijakan dan harga; Balanced untuk keseharian; Creative memberi ruang improvisasi untuk percakapan santai."
+    },
+    {
+      "q": "Apa fungsi watcher?",
+      "a": "Watcher memantau kualitas respons dan eksekusi tindakan AI. Dia lapisan pengawas yang membuat penyimpangan ketahuan dari sistem, bukan dari customer."
+    },
+    {
+      "q": "Kapan session-only memory dipakai?",
+      "a": "Saat kamu tidak ingin AI membawa informasi antar percakapan, misalnya data sensitif atau kasus yang selesai. Ingatannya dibatasi ke sesi yang sedang berjalan."
+    },
+    {
+      "q": "Untuk apa message wait?",
+      "a": "Memberi jeda sebelum AI membalas. Customer sering mengetik beberapa pesan beruntun; jeda membuat AI menjawab utuh sekali, bukan menyela tiap pesan."
+    },
+    {
+      "q": "Apakah pengaturan ini butuh developer?",
+      "a": "Tidak. Semuanya diubah dari dashboard AI agent dengan pilihan yang sudah diberi nama jelas, dan bisa diubah lagi kapan pun tanpa deploy ulang."
+    },
+    {
+      "q": "Apakah setelan berlaku per agent atau per akun?",
+      "a": "Per agent. AI sales dan AI support bisa punya memori, gaya, dan batasan berbeda meski berjalan di akun yang sama."
+    },
+    {
+      "q": "Bagaimana ini berhubungan dengan jam kerja AI?",
+      "a": "Jam Kerja AI mengatur kapan AI aktif; pengaturan lanjutan mengatur bagaimana dia berperilaku saat aktif. Keduanya dipakai bersama untuk kontrol penuh."
+    }
+  ],
+  "cta": {
+    "heading": "Setel AI-mu Seperti Melatih Karyawan Terbaik",
+    "body": "Memori, gaya jawab, dan batasan yang kamu tentukan sendiri. Coba gratis dan rasakan bedanya AI yang terkontrol."
+  }
+}

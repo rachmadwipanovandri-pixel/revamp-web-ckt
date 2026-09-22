@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "AI Customer Service untuk Salon & Klinik Kecantikan | CekatAI",
+    "description": "Salon & klinik kecantikan pakai Cekat.AI buat booking dan rebooking dari chat, jawab pertanyaan treatment 24/7, dan tekan no-show lewat reminder otomatis."
+  },
+  "hero": {
+    "badge": "Kecantikan & Wellness",
+    "title": "Booking Makin Banyak, Chat Nggak Perlu Dikejar",
+    "subtitle": "Dari pertanyaan treatment sampai jadwal fix, Cekat.AI bales instan di WhatsApp dan Instagram, 24/7, pakai bahasa natural, tanpa front desk-mu nempel terus di HP",
+    "useCases": [
+      "Tanya treatment",
+      "Booking & rebooking",
+      "Reminder no-show",
+      "Promo tersegmen"
+    ]
+  },
+  "definition": "Cekat.AI untuk kecantikan & wellness adalah platform AI customer service untuk salon, klinik estetika, spa, dan studio wellness di Indonesia, menjawab pertanyaan treatment 24/7, booking dan rebooking klien langsung dari chat, dan mengirim reminder yang menekan angka no-show.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "pertanyaan klien terjawab & booking masuk"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi pelanggan ditangani"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Jawab Pertanyaan Treatment Begitu Klien Nanya",
+      "body": "Klien yang lagi milih-milih treatment nggak bakal nunggu jam buka. Cekat.AI jawab soal layanan, harga, downtime, sampai perawatan setelahnya begitu chat masuk, pakai bahasa natural, paham maksud klien, bukan sekadar cocok-cocokan keyword. Minat pun langsung jadi booking, bukan malah kabur ke salon sebelah.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab pertanyaan treatment kecantikan di inbox Cekat.AI"
+    },
+    {
+      "title": "Booking dan Rebooking Langsung dari Chat",
+      "body": "Hubungkan Cekat.AI ke sistem jadwalmu lewat API, dan AI bisa booking, konfirmasi, sampai reschedule langsung di percakapan. Tanpa telepon bolak-balik, tanpa kursi dobel-booking, dan setiap selesai treatment, AI bisa ngingetin klien buat rebooking sesi berikutnya sebelum mereka lupa.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Integrasi API untuk booking jadwal salon di Cekat.AI"
+    },
+    {
+      "title": "Tekan No-Show dengan Reminder yang Jalan Sendiri",
+      "body": "Kursi kosong gara-gara janji yang kelupaan itu revenue yang nggak balik lagi. Cekat.AI kirim reminder otomatis sebelum tiap kunjungan dan follow-up pas waktunya kontrol ulang, semuanya dipicu dari riwayat booking klien, bukan daftar manual yang harus diingat satu-satu sama tim.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Reminder jadwal otomatis di Cekat.AI"
+    },
+    {
+      "title": "Kirim Promo ke Klien yang Tepat, Bukan ke Semua",
+      "body": "Campaign dikirim lewat WhatsApp Business API resmi ke segmen yang dibangun dari data nyata, pelanggan setia yang waktunya touch-up, klien yang baru coba satu layanan, atau yang lama nggak balik. Nama dan riwayatnya langsung dari CRM, jadi promo terasa kayak undangan personal, bukan blast massal.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi klien untuk promo kecantikan di Cekat.AI"
+    },
+    {
+      "title": "Semua Percakapan Klien Rapi di Satu Tempat",
+      "body": "WhatsApp, Instagram DM, dan chat website masuk ke satu inbox dengan riwayat lengkap per klien, treatment sebelumnya, pertanyaan yang pernah diajukan, promo yang sudah diterima. Front desk langsung paham konteks, dan yang butuh sentuhan manusia dialihkan ke tim beserta percakapannya. Klien nggak perlu ngulang cerita.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Percakapan klien terorganisir di CRM Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Meta Business Partner Resmi",
+      "body": "Chat dan broadcast promo jalan di atas WhatsApp Business API resmi, andal dan aman buat nomor yang jadi tumpuan booking salonmu."
+    },
+    {
+      "title": "Satu Platform, dari Front Desk sampai Follow-Up",
+      "body": "Inbox, CRM, booking, dan broadcast ada dalam satu dashboard, nggak perlu lompat-lompat antara aplikasi chat, buku janji, dan tools blast terpisah."
+    },
+    {
+      "title": "Manusia di Momen yang Penting",
+      "body": "AI menangani pertanyaan rutin dan booking; yang sensitif atau kompleks dialihkan ke tim lengkap dengan konteks, jadi klien selalu merasa diurus."
+    }
+  ],
+  "testimonial": {
+    "quote": "Respon pelanggan menjadi lebih cepat",
+    "name": "Silica Brenda",
+    "role": "Founder, Moir Salon",
+    "image": "/images/home/testimonial-silica-brenda.jpg"
+  },
+  "faq": [
+    {
+      "q": "Gimana Cekat.AI bantu salon dan klinik kecantikan?",
+      "a": "Cekat.AI jawab chat klien instan 24/7 di WhatsApp, Instagram, dan web chat, dari pertanyaan treatment, harga, sampai ketersediaan jadwal, lalu booking-nya langsung di percakapan yang sama. Reminder terkirim otomatis buat nekan no-show, jadi front desk fokus ke klien di kursi, bukan ke HP."
+    },
+    {
+      "q": "Klien bisa booking lewat AI?",
+      "a": "Bisa. Lewat integrasi API dengan sistem jadwalmu, AI bisa booking, konfirmasi, dan reschedule langsung di chat. Habis treatment, AI juga bisa ngajak klien rebooking sesi berikutnya, jadi kalender tetap penuh tanpa ada yang ngejar booking manual."
+    },
+    {
+      "q": "Beneran bisa nurunin no-show?",
+      "a": "Bisa. AI kirim reminder otomatis sebelum tiap janji dan follow-up pas klien waktunya balik lagi. Tiap reminder dipicu dari riwayat booking asli klien, jadi kursi yang kosong makin sedikit dan tim nggak perlu inget-inget siapa yang harus dichat."
+    },
+    {
+      "q": "AI bisa jawab pertanyaan treatment yang detail?",
+      "a": "Bisa. Kamu tinggal paste menu layanan, harga, dan catatan aftercare ke knowledge base, dan AI menjawab dari situ, bukan ngarang. AI paham maksud dan konteks pakai bahasa natural, jadi klien yang nanya kapan boleh pakai makeup lagi dapat jawaban yang benar, bukan asal cocok keyword."
+    },
+    {
+      "q": "Channel apa aja yang bisa dihubungkan?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, dan live chat website, semuanya masuk ke satu inbox. Tiap klien punya satu riwayat percakapan, jadi pertanyaan yang mulai di Instagram dan booking di WhatsApp tetap nyatu di satu tempat."
+    },
+    {
+      "q": "Bisa kirim promo ke klien?",
+      "a": "Bisa. Broadcast dikirim lewat WhatsApp Business API resmi ke segmen dari aktivitas dan riwayat booking, pelanggan setia, klien yang lama nggak balik, atau yang baru coba satu layanan. Pesannya ambil nama dan konteks dari CRM, jadi reminder touch-up atau promo musiman terasa personal, bukan spam."
+    },
+    {
+      "q": "Berapa lama setup-nya?",
+      "a": "Bikin AI agent-nya cuma sekitar lima menit dan rasanya kayak briefing admin front desk baru, kamu paste layanan, harga, dan SOP, lalu AI mulai menjawab. Nggak ada coding di langkah mana pun, jadi kamu nggak butuh developer buat mulai."
+    },
+    {
+      "q": "Kalau ada pertanyaan yang butuh orang beneran, gimana?",
+      "a": "Percakapan otomatis dialihkan ke tim lengkap dengan riwayat chat-nya. AI working hours bikin AI meng-cover chat setelah tim pulang, lalu balik lagi ke tim pas jam buka, jadi klien selalu dapat jawaban, siang atau malam."
+    },
+    {
+      "q": "Data klienku aman nggak?",
+      "a": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam menangani dan mengelola data pengguna. Akses di dalam tim diatur berbasis peran, jadi kontak dan riwayat percakapan klien cuma terlihat oleh orang yang memang berwenang."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Chat Jadi Kursi yang Terisi",
+    "body": "Lihat gimana salon dan klinik menjalankan booking dan support 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

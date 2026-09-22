@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Front Desk & Booking System for Clinics | CekatAI",
+    "description": "Pair your clinic software with Cekat.AI to answer registration and doctor-schedule chats 24/7, book from chat, and cut no-shows with reminders."
+  },
+  "hero": {
+    "badge": "Clinics",
+    "title": "Registration and Doctor Schedules Answered, No Phone Queue",
+    "subtitle": "From practice-schedule questions to bookings and appointment reminders, Cekat.AI replies instantly on WhatsApp and Instagram, 24/7, so your front desk can focus on the patients standing at the counter",
+    "useCases": [
+      "Chat registration",
+      "Booking & reminders",
+      "Post-visit follow-up",
+      "Patient data per branch"
+    ]
+  },
+  "definition": "Cekat.AI for clinics is an AI customer service platform for general, specialist, and aesthetic clinics in Indonesia, working alongside your clinic software and booking system to answer registration and doctor-schedule questions 24/7, manage appointments straight from the chat, and keep patient contact data tidy across branches.",
+  "stats": [
+    {
+      "value": "+30%",
+      "label": "increase in revenue at Glams Aesthetic Clinic within 3 months"
+    },
+    {
+      "value": "200+",
+      "label": "customer chats handled per day at Sociamedic Clinic"
+    },
+    {
+      "value": "24/7",
+      "label": "registration, doctor schedules, and bookings answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Registration Without the Hold Music",
+      "body": "A busy front-desk phone means patients give up and try another clinic. Cekat.AI's agent answers registration requests, doctor practice schedules, and service questions the moment a chat arrives, before opening or long after closing, so patients get certainty without waiting for someone to pick up, and your staff stay with the patients already in the room.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours routing between clinic staff and AI agent in Cekat.AI"
+    },
+    {
+      "title": "Bookings Confirmed in Chat, No-Shows Cut by Reminders",
+      "body": "Connect Cekat.AI to your clinic booking system through the API and the AI books, confirms, and reschedules without leaving the conversation. Automated reminders go out before every appointment, so the doctor slots you filled actually stay filled instead of going empty because someone forgot.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Cekat.AI API integration with a clinic booking system"
+    },
+    {
+      "title": "Post-Visit Follow-Up That Runs Itself",
+      "body": "Patients who should come back for a control visit often disappear the moment they walk out. Cekat.AI sends automated follow-ups based on each patient's visit history, control schedules, treatment continuations, or a note that results are ready for pickup, so care never breaks off halfway and doctor slots stay booked.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Patient journey tracking for follow-ups in Cekat.AI"
+    },
+    {
+      "title": "Patient Contact Data Tidy per Branch",
+      "body": "Patient numbers saved on an admin's personal phone are a risk, not an asset. Cekat.AI captures every contact and conversation into the CRM automatically, organized per branch with role-based access, so each branch owns its own patient data while management still sees the full picture.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Patient contact data organized in the Cekat.AI CRM"
+    },
+    {
+      "title": "Medical and Sensitive Cases Go Straight to Your Staff",
+      "body": "The AI handles routine questions about schedules, services, and registration. The moment a medical complaint or sensitive case appears, the conversation escalates to your clinic staff with the full chat history attached, so patients never repeat their story and medical decisions stay with your clinicians.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Conversation escalating from AI to clinic staff in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats, bookings, and reminders run on the official WhatsApp Business API, alongside Instagram DM and Facebook Messenger, one inbox for every clinic branch, compliant and reliable."
+    },
+    {
+      "title": "An AI That Works Like Your Front Desk",
+      "body": "It answers registration and doctor-schedule questions, books and reschedules inside the chat, then hands medical cases to your staff with full context."
+    },
+    {
+      "title": "Safe for Patient Data",
+      "body": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP), with role-based access so patient data is only visible to the people who should see it."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help a clinic's front desk?",
+      "a": "It answers patient chats instantly 24/7 on WhatsApp, Instagram, and web chat, covering registration, doctor practice schedules, services, and pricing, while keeping bookings and patient data organized in one platform. The phone rings less, and your front desk focuses on the patients who walked in."
+    },
+    {
+      "q": "Can patients book and reschedule doctor appointments through chat?",
+      "a": "Yes. Through API integration with your clinic booking system, the AI books, confirms, and reschedules inside the conversation, with automated reminders before each appointment to cut no-shows. Every booking is captured with its full conversation context."
+    },
+    {
+      "q": "Do we have to replace the clinic software we already use?",
+      "a": "No. Cekat.AI complements your existing clinic software and booking system through APIs and webhooks, the AI reads schedules and writes bookings into your system. If you have no system yet, the knowledge base is enough to start answering and recording appointments."
+    },
+    {
+      "q": "Can we keep the clinic's current WhatsApp number?",
+      "a": "Yes. The number your patients already know connects to the official WhatsApp Business API, Cekat.AI is an Official Meta Business Partner, so chats land in one team inbox with full history instead of being scattered across admins' phones."
+    },
+    {
+      "q": "How does the AI keep up with doctor schedules that change often?",
+      "a": "Practice schedules live in a knowledge base you can update anytime, and changes go live immediately. For fast-moving schedules, an API integration lets the AI read the latest data from your clinic system, so patients always get the current answer."
+    },
+    {
+      "q": "Who answers when a patient asks about a medical complaint?",
+      "a": "Your staff. The AI never gives a diagnosis or medical advice; those conversations escalate to your clinic team automatically with the full chat history attached, so the patient reaches the right person without repeating their story."
+    },
+    {
+      "q": "Does it work for clinics with multiple branches or departments?",
+      "a": "Yes. You can build an AI agent per branch or service line, route conversations to the right team automatically, and set role-based access, each branch keeps its own patient data tidy while management sees everything from one dashboard."
+    },
+    {
+      "q": "How is patient data secured on Cekat.AI?",
+      "a": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP) in handling user data, with role-based access inside your team. ISO 27001 certification is in progress. Patient conversations are only visible to authorized staff."
+    },
+    {
+      "q": "How long does setup take, and how is it priced?",
+      "a": "Building the AI agent takes minutes, paste your practice schedules, service list, prices, and SOPs into the knowledge base, no coding involved. Pricing follows subscription plans that scale with your clinic and chat volume, and you can start with a free trial or a demo with the Cekat.AI team."
+    }
+  ],
+  "cta": {
+    "heading": "Let Your Front Desk Focus on the Patient in Front of It",
+    "body": "See how clinics run registration, bookings, and follow-ups 24/7 on Cekat.AI, book a free consultation with our team."
+  }
+}

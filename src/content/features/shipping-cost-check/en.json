@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Shipping Cost Automation, Instant Ongkir in Chat | CekatAI",
+    "description": "Shipping cost automation checks ongkir in chat via API, so customers get accurate rates in seconds, not after waiting on an admin. 3,000+ businesses close faster."
+  },
+  "hero": {
+    "badge": "In-Chat Shipping Cost Check",
+    "title": "Customers Get the Shipping Cost the Moment They Ask",
+    "subtitle": "Cekat.AI's agent checks the shipping cost automatically inside the chat through API integration, accurate ongkir in seconds, so no buyer abandons the order waiting on an admin"
+  },
+  "definition": "Shipping Cost Automation is a Cekat.AI feature where an AI agent checks shipping costs automatically inside a chat conversation through API integration, giving customers an accurate ongkir in seconds instead of waiting for an admin to look it up.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "AI quotes shipping around the clock" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Accurate Ongkir Before the Buyer Cools Off",
+      "body": "The gap between \"how much is shipping?\" and an answer is where orders die. Cekat.AI's agent checks the shipping cost the instant a customer asks and quotes it inside the chat, so the buyer sees a real total while they're still ready to pay, not ten minutes later when they've already moved on.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI agent quoting a shipping cost inside a chat conversation"
+    },
+    {
+      "title": "No Admin Flipping Between Courier Tabs",
+      "body": "Manual shipping lookups mean an admin copying an address, opening a courier site, and typing the rate back, for every single order. Cekat.AI does it through API integration automatically, so your team stops being a human calculator and the customer never waits for a rate that should take one second.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "API integration checking shipping rates automatically in Cekat.AI"
+    },
+    {
+      "title": "Fewer Abandoned Checkouts",
+      "body": "Every unanswered shipping question is an abandoned order in the making. When the ongkir shows up instantly and accurately in the same conversation, buyers keep going instead of drifting off to a seller who replied faster. Instant answers around the clock are how businesses on Cekat.AI lift conversion.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "End-to-end order flow that keeps buyers from abandoning checkout"
+    },
+    {
+      "title": "Shipping Rolls Straight Into the Order",
+      "body": "Once the ongkir is checked, the AI adds it to the order total and keeps going, collecting details and sending a payment QR without a break. The shipping cost isn't a dead-end question; it's one automatic step in a chat that ends with a completed, paid order.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Shipping cost folded into an automated order in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "API Check",
+      "title": "Rates Pulled Through API Integration",
+      "body": "Cekat.AI connects to shipping through API integration, so the AI checks the real cost during the conversation instead of guessing or asking the customer to wait. The rate is accurate and it arrives in seconds."
+    },
+    {
+      "label": "In Chat",
+      "title": "The Quote Never Leaves the Conversation",
+      "body": "The customer asks about shipping and gets the answer right there, no redirect to a website, no \"let me check and get back to you.\" The whole exchange stays inside the chat on whatever channel they used."
+    },
+    {
+      "label": "Into Order",
+      "title": "Shipping Added to the Total Automatically",
+      "body": "The checked ongkir folds straight into the order the AI is building, so the customer sees one clear total, items plus shipping, and can pay immediately with the QR sent in the same chat."
+    },
+    {
+      "label": "24/7",
+      "title": "Quotes at Any Hour",
+      "body": "Buyers ask about shipping at midnight too. The AI quotes the cost around the clock, so an order placed after your team logs off still moves forward instead of stalling until morning."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Instant, Not Eventually",
+      "body": "The shipping cost arrives in seconds inside the chat, while the buyer is still deciding, not after an admin gets around to it."
+    },
+    {
+      "title": "Accurate, Through API",
+      "body": "Rates come through API integration, so the number the customer sees is the real cost, not a rough guess that causes problems later."
+    },
+    {
+      "title": "One Step in a Bigger Flow",
+      "body": "The shipping check is part of order automation, the AI captures details, quotes shipping, and collects payment in one unbroken conversation."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is shipping cost automation?",
+      "a": "Shipping cost automation is when an AI checks shipping rates for a customer automatically instead of an admin looking them up by hand. In Cekat.AI, the AI agent checks the ongkir through API integration during the chat and quotes an accurate cost in seconds, then folds it into the order."
+    },
+    {
+      "q": "How does Cekat.AI check the shipping cost?",
+      "a": "Through API integration. When a customer asks about shipping, the AI reads the destination from the conversation, checks the rate via the connected shipping API, and quotes the accurate cost right in the chat, no admin, no manual lookup, no delay while the buyer waits."
+    },
+    {
+      "q": "Is the shipping cost accurate?",
+      "a": "Yes. Because the rate comes through API integration rather than a manual estimate, the customer sees the real shipping cost. That accuracy matters, a wrong quote either eats your margin or surprises the buyer at payment and loses the sale entirely."
+    },
+    {
+      "q": "How fast do customers get the ongkir?",
+      "a": "In seconds. The AI checks and quotes the shipping cost the moment the customer asks, inside the same conversation. There's no queue behind other chats and no waiting for an admin to be free, which is exactly what keeps a ready buyer from abandoning the order."
+    },
+    {
+      "q": "Does automatic shipping check reduce abandoned orders?",
+      "a": "It helps. Many orders are lost in the silence after \"how much is shipping?\" When the ongkir appears instantly and accurately in the same chat, buyers keep going instead of leaving for a faster seller, and the AI moves straight on to collecting payment."
+    },
+    {
+      "q": "What channels does the shipping check work on?",
+      "a": "All of them. WhatsApp via the official Business API, Instagram DM, Facebook Messenger, website live chat, and API channels, every conversation lands in one unified inbox and the AI can check and quote shipping on whichever channel the customer used."
+    },
+    {
+      "q": "Does the shipping cost get added to the order automatically?",
+      "a": "Yes. After checking the ongkir, the AI adds it to the order total and continues the flow, collecting customer details and sending a payment QR in the same chat. The shipping quote is one automatic step toward a completed, paid order."
+    },
+    {
+      "q": "Does it work outside business hours?",
+      "a": "Yes. The AI quotes shipping 24/7. With AI working hours, your team handles chats during office hours and the AI takes over after, so a customer asking about ongkir at night gets an instant answer instead of waiting until your team is back online."
+    },
+    {
+      "q": "Do I need to code the shipping integration myself?",
+      "a": "No coding is required on your side. Cekat.AI handles shipping through API integration, and you set up the AI by pasting your business info into the knowledge base and shaping conversations with a visual drag-and-drop flow designer, building an agent takes around five minutes."
+    }
+  ],
+  "cta": {
+    "heading": "Turn \"How Much Is Shipping?\" Into a Paid Order",
+    "body": "Let Cekat.AI quote accurate ongkir in seconds and carry the customer straight through to payment, 24/7."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Sales Pipeline Management Software | CekatAI",
+    "description": "See every deal move through visual pipelines in real time. Cekat.AI auto-advances deals and triggers follow-ups so nothing stalls, trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "Sales Pipeline",
+    "title": "Every Deal Visible, Every Stage Moving Forward",
+    "subtitle": "Track deals across visual pipelines built for your process, with automation that advances stages and fires follow-ups, so no opportunity gets stuck in someone's head"
+  },
+  "definition": "Pipeline management in Cekat.AI is a visual system for tracking sales deals across customizable stages, where automation moves deals forward and triggers follow-ups automatically, giving teams real-time visibility into where every opportunity stands.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "deals tracked automatically" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "See Where Every Deal Actually Stands",
+      "body": "Deals hidden in chat threads and spreadsheets are deals you lose. Cekat.AI puts every opportunity on a visual pipeline, so you know at a glance which deals are close, which are stuck, and where revenue really sits, in real time.",
+      "image": "/images/crm/manage-work-with-boards.png",
+      "imageAlt": "Visual sales pipeline in Cekat.AI"
+    },
+    {
+      "title": "Build Boards Around Your Process",
+      "body": "Every business sells differently. Create boards and pipeline stages that match how your team actually works, from first contact to closed deal, so the pipeline reflects reality instead of forcing your process into a rigid template.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Custom pipeline boards in Cekat.AI"
+    },
+    {
+      "title": "Deals Move Themselves",
+      "body": "Automation advances deals between stages, assigns them to the right person, and triggers follow-ups when conditions are met. Instead of chasing status updates, your team sees the pipeline stay current on its own.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated pipeline stage movement in Cekat.AI"
+    },
+    {
+      "title": "Filter and Focus on What Closes",
+      "body": "Quickly filter and search deals by stage, value, source, or activity to spend your energy on the opportunities most likely to convert, not the ones already going cold.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Filtering deals in the Cekat.AI pipeline"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Real-Time Visibility",
+      "body": "Managers see exactly where revenue stands without asking for updates, the pipeline is always current because it updates from real activity."
+    },
+    {
+      "title": "Automation Built In",
+      "body": "Stage moves, assignments, and follow-ups happen automatically, so deals never stall waiting on someone to remember them."
+    },
+    {
+      "title": "Fed by Conversations",
+      "body": "Leads captured in chat flow straight into the pipeline, so nothing gets lost between a conversation and your sales process."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is sales pipeline management?",
+      "a": "Sales pipeline management is the process of tracking deals through defined stages from first contact to close. In Cekat.AI, deals live on a visual pipeline with automation that advances stages and triggers follow-ups, giving real-time visibility into every opportunity."
+    },
+    {
+      "q": "Can I customize the pipeline stages?",
+      "a": "Yes. Create boards and pipeline stages that match how your team actually sells, so the pipeline reflects your real process instead of a fixed template. Each board represents a clear workflow you define."
+    },
+    {
+      "q": "How does automation help my pipeline?",
+      "a": "Automation moves deals between stages, assigns them to the right team member, and fires follow-up reminders when conditions are met. Your pipeline stays current on its own, so deals don't stall waiting for a manual update."
+    },
+    {
+      "q": "Can I see where revenue stands in real time?",
+      "a": "Yes. Because the pipeline updates from real activity, managers see which deals are close, which are stuck, and total pipeline value at a glance, without chasing status reports from the team."
+    },
+    {
+      "q": "How do leads get into the pipeline?",
+      "a": "Leads captured from WhatsApp, Instagram, website chat, and other channels flow straight into the pipeline through the connected CRM, so no opportunity is lost between a conversation and your sales process."
+    },
+    {
+      "q": "Can I filter deals to focus on priorities?",
+      "a": "Yes. Filter and search deals by stage, value, source, or activity to focus on the opportunities most likely to convert, instead of treating every deal the same."
+    },
+    {
+      "q": "Does pipeline management work with the rest of Cekat.AI?",
+      "a": "Yes. It's part of the CRM, so deals connect to full customer profiles, AI-captured leads, and follow-up automation, one platform from first message to closed deal."
+    },
+    {
+      "q": "Do I need technical skills to set it up?",
+      "a": "No. Boards and stages are configured without code, and automations are set up with simple rules. Most teams have their pipeline organized on day one."
+    },
+    {
+      "q": "Can multiple teams use separate pipelines?",
+      "a": "Yes. Create multiple boards for different teams, products, or processes, with role-based access so each team focuses on the deals relevant to them."
+    }
+  ],
+  "cta": {
+    "heading": "Turn a Messy Deal List Into a Pipeline That Moves",
+    "body": "See how visual pipelines and automation keep every deal advancing, without chasing status updates."
+  }
+}

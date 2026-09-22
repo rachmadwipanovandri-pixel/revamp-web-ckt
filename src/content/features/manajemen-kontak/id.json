@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Manajemen Kontak Pelanggan, Database Rapi Otomatis | CekatAI",
+    "description": "Kontak customer berserakan di HP admin dan Excel? Satukan jadi satu database kontak rapi yang ter-update otomatis dari tiap chat. Dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "Database Kontak Otomatis",
+    "title": "Kontak Customer Masih Nyangkut di HP Admin?",
+    "subtitle": "Satukan kontak dari WhatsApp, Instagram, Facebook, dan live chat jadi satu database rapi milik bisnismu, yang nambah dan ter-update sendiri dari setiap percakapan, tanpa input manual"
+  },
+  "definition": "Manajemen kontak adalah fitur Cekat.AI untuk menyimpan semua kontak pelanggan dari WhatsApp, Instagram DM, Facebook Messenger, dan live chat dalam satu database terpusat yang otomatis terbentuk dan ter-update dari setiap percakapan.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi jadi kontak tercatat" },
+    { "value": "24/7", "label": "kontak nambah otomatis" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Satu Database, Bukan Tersebar di Lima Tempat",
+      "body": "Sebagian kontak di HP admin A, sebagian di Excel, sisanya cuma ada di riwayat chat, begitu dicari, hilang. Cekat.AI mengumpulkan semua kontak pelanggan dari semua channel ke satu database terpusat milik bisnis, bukan milik HP siapa-siapa, jadi tidak ada lagi customer yang raib bersama pergantian admin.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Kontak pelanggan terkumpul dan terorganisir dalam satu database Cekat.AI"
+    },
+    {
+      "title": "Kontak Baru Nyimpen Dirinya Sendiri",
+      "body": "Setiap chat yang masuk, dari WhatsApp, Instagram DM, Facebook Messenger, atau live chat website, otomatis jadi kartu kontak baru atau meng-update yang sudah ada. Admin tidak perlu save nomor satu-satu, tidak perlu rekap ke Excel tiap malam. Chat jalan, database beres sendiri.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Percakapan masuk dari semua channel dan tersimpan otomatis di Cekat.AI"
+    },
+    {
+      "title": "Cari Kontak Hitungan Detik, Bukan Scroll Sejam",
+      "body": "Ribuan kontak percuma kalau nyarinya lama. Dengan fast search, auto-labeling, dan filter, kamu bisa langsung nemu customer yang dicari, per label, per aktivitas, per riwayat belanja. Susun juga dalam boards biar tim langsung tahu kontak mana yang perlu ditangani duluan.",
+      "image": "/images/crm/filter-and-find-faster.png",
+      "imageAlt": "Pencarian dan filter kontak pelanggan yang cepat di Cekat.AI"
+    },
+    {
+      "title": "Kontak Rapi Itu Modal Jualan",
+      "body": "Database kontak yang rapi bukan cuma enak dilihat, itu bahan bakar promosi. Segmentasikan kontak berdasarkan aktivitas, riwayat pembelian, atau event, lalu kirim broadcast dan follow-up yang relevan ke tiap segmen. Kontak yang tadinya berserakan berubah jadi daftar prospek yang siap di-closing.",
+      "image": "/images/home/your-crm-built-for-growth-and-real-conversations.png",
+      "imageAlt": "Database kontak Cekat.AI yang siap dipakai untuk penjualan"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Auto Simpan",
+      "title": "Tersimpan Sendiri dari Setiap Chat",
+      "body": "Kartu kontak terbentuk dan ter-update otomatis dari setiap interaksi, nama, channel asal, riwayat chat, sampai pembeliannya. Tidak ada langkah 'jangan lupa save nomornya' yang biasanya kelupaan."
+    },
+    {
+      "label": "Label & Filter",
+      "title": "Rapi dengan Label, Ketemu dengan Filter",
+      "body": "Auto-labeling menandai kontak secara otomatis, dan filter plus boards membantu kamu memilah ribuan kontak jadi daftar yang actionable, pelanggan setia, leads baru, atau customer yang lama tidak belanja."
+    },
+    {
+      "label": "Semua Channel",
+      "title": "WhatsApp, IG, Messenger, Live Chat, Jadi Satu",
+      "body": "Kontak dari WhatsApp Business API resmi, Instagram DM, Facebook Messenger, live chat website, dan channel API terkumpul dalam satu database. Satu customer tetap satu kontak, dari channel mana pun dia menghubungi."
+    },
+    {
+      "label": "Akses Tim",
+      "title": "Milik Bisnis, Diatur per Role",
+      "body": "Akses berbasis role menentukan siapa yang boleh lihat dan kelola kontak. Database tetap jadi aset bisnis yang aman, bukan file Excel yang dicopy ke mana-mana atau kontak pribadi di HP admin."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Aset Bisnis, Bukan Aset HP Admin",
+      "body": "Semua kontak tersimpan terpusat di platform dengan akses berbasis role, admin boleh ganti, database pelanggan tetap utuh."
+    },
+    {
+      "title": "Ter-update Tanpa Disuruh",
+      "body": "Setiap percakapan baru otomatis menambah atau memperbarui kontak, jadi database tidak pernah ketinggalan sama kondisi asli."
+    },
+    {
+      "title": "Aman dan Patuh UU PDP",
+      "body": "Data kontak pelanggan dikelola sesuai UU PDP, undang-undang pelindungan data pribadi Indonesia, rapi iya, melanggar aturan tidak."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu aplikasi manajemen kontak pelanggan?",
+      "a": "Aplikasi manajemen kontak pelanggan adalah tool untuk menyimpan dan merapikan semua kontak customer di satu tempat. Di Cekat.AI, kontak dari WhatsApp, Instagram DM, Facebook Messenger, dan live chat otomatis terkumpul dalam satu database terpusat yang ter-update sendiri dari setiap percakapan."
+    },
+    {
+      "q": "Apa bedanya dengan menyimpan kontak di HP atau Excel?",
+      "a": "Kontak di HP nempel ke perangkat satu orang, dan Excel harus diisi manual, dua-duanya gampang hilang, dobel, atau basi. Di Cekat.AI, kontak tersimpan terpusat milik bisnis, terbentuk otomatis dari chat, dilengkapi riwayat percakapan dan pembelian, dan bisa diakses tim sesuai role masing-masing."
+    },
+    {
+      "q": "Apakah kontak dari WhatsApp dan Instagram otomatis tersimpan?",
+      "a": "Otomatis. Setiap orang yang chat lewat WhatsApp, Instagram DM, Facebook Messenger, atau live chat website langsung tercatat sebagai kontak di database, lengkap dengan channel asalnya dan isi percakapannya. Kalau kontaknya sudah ada, datanya ter-update, bukan dobel."
+    },
+    {
+      "q": "Kalau admin CS ganti atau resign, kontaknya ikut hilang?",
+      "a": "Tidak. Justru ini masalah yang diselesaikan Cekat.AI: kontak tersimpan di platform sebagai aset bisnis, bukan di HP pribadi admin. Siapa pun yang pegang inbox, database pelanggan tetap utuh, riwayat chat, label, dan datanya tinggal dilanjutkan tim berikutnya."
+    },
+    {
+      "q": "Bisa kasih label atau kategori ke kontak?",
+      "a": "Bisa, bahkan otomatis. Fitur auto-labeling menandai kontak berdasarkan percakapannya, dan kamu bisa memfilter serta menyusunnya dalam boards, misalnya memisahkan pelanggan setia, leads baru, atau customer komplain. Nyari satu kontak di antara ribuan cukup hitungan detik lewat fast search."
+    },
+    {
+      "q": "Kontaknya bisa langsung dipakai buat kirim promo?",
+      "a": "Bisa. Database kontak di Cekat.AI nyambung langsung ke fitur broadcast, segmentasikan berdasarkan aktivitas, riwayat pembelian, atau event, lalu kirim campaign yang personal ke tiap segmen lewat WhatsApp Business API resmi. Tidak perlu ekspor-impor file kontak antar aplikasi."
+    },
+    {
+      "q": "Apakah harus input data kontak satu-satu?",
+      "a": "Tidak perlu. Kartu kontak terbentuk dan ter-update otomatis dari setiap interaksi customer, tanpa input manual sama sekali. Tim kamu fokus membalas chat dan closing, sementara database merapikan dirinya sendiri di belakang layar."
+    },
+    {
+      "q": "Data kontak pelanggan aman tidak di Cekat.AI?",
+      "a": "Aman. Cekat.AI patuh pada UU PDP, undang-undang pelindungan data pribadi Indonesia, dan akses tim diatur berbasis role sehingga hanya orang yang berwenang yang bisa melihat atau mengelola data kontak. Lebih terkontrol daripada file Excel yang bebas dicopy siapa saja."
+    },
+    {
+      "q": "Perlu skill teknis buat mulai pakai?",
+      "a": "Tidak. Tanpa coding sama sekali, sambungkan channel bisnismu, dan kontak mulai terkumpul otomatis dari percakapan yang masuk. Filter, label, dan boards tinggal klik, jadi tim non-teknis pun bisa langsung kerja rapi dari hari pertama."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Kontak Berserakan Jadi Database yang Siap Jualan",
+    "body": "Sambungkan channel bisnismu dan biarkan setiap chat membangun database kontak yang rapi, otomatis, terpusat, tanpa input manual."
+  }
+}

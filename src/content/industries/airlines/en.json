@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Airline Customer Service AI That Answers 24/7 | CekatAI",
+    "description": "Airlines use Cekat.AI to answer schedule, baggage, and refund chats 24/7 in any language, and stay responsive when disruptions flood the inbox."
+  },
+  "hero": {
+    "badge": "Airlines",
+    "title": "Answer Every Passenger, Even When Schedules Change at Once",
+    "subtitle": "From reschedules to baggage rules to refund status, Cekat.AI replies instantly on WhatsApp and Instagram, 24/7, in each passenger's language, without scaling up the contact center",
+    "useCases": [
+      "Disruption chat surges",
+      "Fares, baggage, check-in",
+      "Multilingual 24/7",
+      "Proactive notifications"
+    ]
+  },
+  "definition": "Cekat.AI for airlines is an AI customer service platform for airlines and air travel operators in Indonesia, an airline customer service AI that answers schedule, baggage, and refund questions 24/7 in many languages, absorbs chat spikes during disruptions, and hands complex cases to your agents with full context.",
+  "stats": [
+    {
+      "value": "75%",
+      "label": "cost saving on Customer Service at Gamal Men by using AI agents"
+    },
+    {
+      "value": "5 sec",
+      "label": "reply time to customer chats at Lunica, down from 15 minutes"
+    },
+    {
+      "value": "24/7",
+      "label": "schedule, baggage, and refund questions answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Disruption Spikes Absorbed Automatically",
+      "body": "One delay can send hundreds of passengers into your inbox within minutes, and the next flight adds hundreds more. Cekat.AI answers every incoming chat instantly no matter how many arrive at once, so response time stays flat on your worst day, and agents work the cases that genuinely need a human instead of typing the same answer on repeat.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent absorbing a spike of passenger chats in the Cekat.AI inbox"
+    },
+    {
+      "title": "Fare, Baggage, and Check-in Questions Answered Instantly",
+      "body": "\"How many kilos of cabin baggage?\" \"Until when can I check in online?\" \"Can I bring a power bank?\" Cekat.AI answers from a knowledge base built on your fare rules, baggage policy, and procedures, in natural language that understands intent, so the thousandth chat gets an answer as consistent as the first.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Airline policies stored as a knowledge source in Cekat.AI"
+    },
+    {
+      "title": "Serve Passengers in Their Own Language, 24/7",
+      "body": "Your passengers message from different time zones and not all of them speak Indonesian. Cekat.AI detects each passenger's language and replies in kind, at any hour, so a traveler in Tokyo, Jeddah, or Amsterdam gets an answer as fast as one in Jakarta.",
+      "image": "/images/home/multiple-specialized-agents.png",
+      "imageAlt": "Multiple specialized AI agents serving passengers across languages in Cekat.AI"
+    },
+    {
+      "title": "Notify Passengers Before They Have to Ask",
+      "body": "Schedule changes, flight information, and refund progress can go out proactively to the affected passenger segment through broadcasts on the official WhatsApp Business API. Passengers who already know don't flood the inbox, so chat volume drops before it spikes, and the AI answers instantly whatever questions remain.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Automated notifications reaching the right passenger segment in Cekat.AI"
+    },
+    {
+      "title": "Complex Cases Escalate to Agents with Full Context",
+      "body": "Delay compensation, lost baggage, a refund stuck in process, some cases belong with a human. Cekat.AI hands these conversations to your agents with the full chat history and passenger details attached, and through API integration the AI can read from the booking systems you already run, so no passenger has to repeat their story.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Conversation escalated to a human agent with full context in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chats and notifications run on the official WhatsApp Business API, alongside Instagram DM and Facebook Messenger, one inbox across every route and passenger, compliant and reliable."
+    },
+    {
+      "title": "AI Built for Your Worst Day",
+      "body": "The AI absorbs disruption spikes, answers fares, baggage, and schedules instantly in many languages, then hands complex cases to agents with full context."
+    },
+    {
+      "title": "Connects to Your Existing Systems",
+      "body": "Through API integration, Cekat.AI plugs into your booking and operational systems, so the AI answers with live data and nothing in your stack has to change."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help airline customer service?",
+      "a": "It answers passenger chats instantly 24/7 on WhatsApp, Instagram, and web chat, covering schedules, fares, baggage, check-in, and refund status in many languages. When a disruption sends chat volume spiking, the AI absorbs it while your agents focus on cases that need human judgment."
+    },
+    {
+      "q": "Can the AI keep up when a delay triggers thousands of chats?",
+      "a": "Yes. It answers every incoming chat instantly no matter how many arrive at once, so response time stays flat at exactly the moment volume peaks. No queue, and no passenger left on read for hours."
+    },
+    {
+      "q": "Can it serve passengers in different languages?",
+      "a": "Yes. Cekat.AI detects each passenger's language and replies in the same one, so international passengers get the same speed as domestic ones, without building a separate CS team per language."
+    },
+    {
+      "q": "Can it send proactive notifications about schedule changes?",
+      "a": "Yes. Through broadcasts on the official WhatsApp Business API, you can notify the affected passenger segment about schedule changes, flight information, or refund updates. Passengers hear it from you first, and incoming chat volume drops with it."
+    },
+    {
+      "q": "How does it integrate with our existing booking and check-in systems?",
+      "a": "Cekat.AI provides API integration, so the AI can connect to the booking, check-in, or CRM systems you already run. A passenger asks in chat, the AI pulls the answer from your systems, and your existing stack stays exactly where it is."
+    },
+    {
+      "q": "When does a conversation hand over to a human agent?",
+      "a": "Whenever your rules say so, for example compensation claims, lost baggage reports, or a passenger asking for an agent. The conversation moves over with its full history attached, so your agent picks it up without asking the passenger to start over."
+    },
+    {
+      "q": "How long does setup take for an airline?",
+      "a": "Building the AI agent takes around five minutes, paste your baggage policy, fare rules, and SOPs into the knowledge base and it starts answering accurately. API integration with internal systems is rolled out in stages with our team, so you can go live without waiting for everything at once."
+    },
+    {
+      "q": "Is passenger data secure?",
+      "a": "Cekat.AI complies with UU PDP, Indonesia's personal data protection law, and ISO 27001 certification is in progress. Team access is role-based, so passenger data is visible only to the agents authorized to handle it."
+    },
+    {
+      "q": "How is pricing structured for airline chat volumes?",
+      "a": "Pricing follows your scale, number of agents, channels, and conversation volume, rather than one flat package. Book a free consultation with our team to size a plan that fits your passenger traffic."
+    }
+  ],
+  "cta": {
+    "heading": "Stay Responsive Through Every Disruption",
+    "body": "See how airlines run 24/7 passenger support on Cekat.AI, book a free consultation with our team."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Marketing Analytics & ROAS Dashboard | CekatAI",
+    "description": "See ad spend, ROAS, cost, revenue, and customer progression in one dashboard. Stop guessing which campaigns work, decide from data. Trusted by 3,000+ businesses."
+  },
+  "hero": {
+    "badge": "Marketing Analytics",
+    "title": "Know Exactly Which Campaigns Make You Money",
+    "subtitle": "One dashboard for ad spend, ROAS, revenue, and how customers progress from click to purchase, so every marketing decision is backed by data, not assumptions"
+  },
+  "definition": "Marketing analytics in Cekat.AI is a unified dashboard that tracks ad spend, ROAS, cost, revenue, and customer progression across your campaigns, connecting marketing activity to real business outcomes so teams can see what works and optimize with confidence.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "performance tracked in real time" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "One Dashboard, Not Ten Browser Tabs",
+      "body": "Ad spend in one place, revenue in another, chats somewhere else, that scatter is how insights get lost. Cekat.AI puts ad spend, ROAS, cost, and revenue in a single dashboard, so you see the full picture of marketing performance without stitching reports together.",
+      "image": "/images/marketing/review-all-meta-ads-in-one-dashboard.png",
+      "imageAlt": "Unified marketing analytics dashboard in Cekat.AI"
+    },
+    {
+      "title": "Connect Spend to Actual Revenue",
+      "body": "Clicks and impressions don't pay the bills. The dashboard ties campaign spend to the revenue it produced, so you finally see ROAS that reflects real sales, not vanity metrics, and know which campaigns earn their budget.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "ROAS and revenue tracking in Cekat.AI"
+    },
+    {
+      "title": "Watch Customers Progress From Click to Buyer",
+      "body": "See how customers move through stages, visitor, lead, buyer, after they engage your marketing. Understanding that progression shows you where people drop off and where to focus, instead of judging campaigns on clicks alone.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Customer progression tracking in Cekat.AI"
+    },
+    {
+      "title": "Allocate Budget With Confidence",
+      "body": "When you can see what each campaign actually earns, budget decisions stop being guesses. Double down on the audiences and campaigns that drive revenue, cut the ones that only look busy, and lower your acquisition cost over time.",
+      "image": "/images/marketing/allocate-budget-with-precision.png",
+      "imageAlt": "Budget allocation from analytics in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Everything in One View",
+      "body": "Ad spend, ROAS, cost, revenue, and customer progression sit together, so you understand performance at a glance instead of across tools."
+    },
+    {
+      "title": "Tied to Real Outcomes",
+      "body": "Metrics connect to actual sales, not just clicks, so decisions are grounded in what genuinely drives revenue."
+    },
+    {
+      "title": "Decisions From Data",
+      "body": "With clear numbers in front of you, campaign and budget calls become strategic instead of guesswork."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What does the marketing analytics dashboard show?",
+      "a": "It shows ad spend, ROAS, cost, revenue, and customer progression together in one place. Instead of checking separate tools, you see how your campaigns perform and how customers move from click to purchase in a single dashboard."
+    },
+    {
+      "q": "What is ROAS and how does Cekat.AI track it?",
+      "a": "ROAS (return on ad spend) measures revenue earned per unit of ad spend. Cekat.AI ties campaign spend to the actual revenue it generated, so your ROAS reflects real sales rather than clicks or impressions."
+    },
+    {
+      "q": "How is this different from the analytics inside each ad platform?",
+      "a": "Ad platforms show their own clicks and costs in isolation. Cekat.AI unifies spend and real revenue across campaigns and connects them to customer progression, giving you outcome-based insight the individual platforms can't show alone."
+    },
+    {
+      "q": "Can I see which campaigns actually drive sales?",
+      "a": "Yes. Because the dashboard connects marketing activity to real business outcomes, you can clearly see which campaigns generate leads, conversions, and revenue, and which ones only produce clicks."
+    },
+    {
+      "q": "Does it track customer behavior after the click?",
+      "a": "Yes. You can see how customers progress through stages like visitor, lead, and buyer after engaging your marketing, so you understand where they drop off and where to focus."
+    },
+    {
+      "q": "How does this help me lower acquisition cost?",
+      "a": "By showing what each campaign actually earns, the dashboard helps you shift budget to the audiences and campaigns that drive revenue and cut the ones that don't, reducing wasted spend and lowering CAC over time."
+    },
+    {
+      "q": "Does it work with Conversion API tracking?",
+      "a": "Yes. Real conversions sent to Meta and TikTok via Conversion API feed the same analytics, so the dashboard reflects accurate, complete performance data including sales that close in chat."
+    },
+    {
+      "q": "Do I need an analyst to use it?",
+      "a": "No. The dashboard presents ad spend, ROAS, revenue, and progression in a clear view any marketer or business owner can read, so you can make decisions without a dedicated data analyst."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Marketing Data Into Confident Decisions",
+    "body": "See ad spend, ROAS, and revenue in one place, and put your budget where it actually earns."
+  }
+}

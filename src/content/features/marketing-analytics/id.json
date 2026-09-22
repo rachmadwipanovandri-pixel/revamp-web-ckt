@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Dashboard Analitik Marketing & ROAS | CekatAI",
+    "description": "Lihat ad spend, ROAS, cost, revenue, dan progres customer dalam satu dashboard. Berhenti nebak campaign mana yang jalan, putuskan dari data. Dipercaya 3.000+ bisnis."
+  },
+  "hero": {
+    "badge": "Analitik Marketing",
+    "title": "Tahu Persis Campaign Mana yang Bikin Kamu Untung",
+    "subtitle": "Satu dashboard untuk ad spend, ROAS, revenue, dan bagaimana customer bergerak dari klik ke pembelian, jadi setiap keputusan marketing berpijak pada data, bukan asumsi"
+  },
+  "definition": "Analitik marketing di Cekat.AI adalah dashboard terpadu yang melacak ad spend, ROAS, cost, revenue, dan progres customer di seluruh campaign-mu, menghubungkan aktivitas marketing ke hasil bisnis nyata jadi tim bisa lihat apa yang jalan dan optimasi dengan percaya diri.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "performa terlacak real-time" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Satu Dashboard, Bukan Sepuluh Tab Browser",
+      "body": "Ad spend di satu tempat, revenue di tempat lain, chat di tempat lagi, kekacauan itu bikin insight hilang. Cekat.AI menaruh ad spend, ROAS, cost, dan revenue dalam satu dashboard, jadi kamu lihat gambaran penuh performa marketing tanpa menyatukan laporan sendiri.",
+      "image": "/images/marketing/review-all-meta-ads-in-one-dashboard.png",
+      "imageAlt": "Dashboard analitik marketing terpadu di Cekat.AI"
+    },
+    {
+      "title": "Hubungkan Spend ke Revenue Nyata",
+      "body": "Klik dan impression tidak bayar tagihan. Dashboard mengikat spend campaign ke revenue yang dihasilkannya, jadi kamu akhirnya lihat ROAS yang mencerminkan penjualan nyata, bukan metrik semu, dan tahu campaign mana yang layak budget-nya.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Pelacakan ROAS dan revenue di Cekat.AI"
+    },
+    {
+      "title": "Pantau Customer Bergerak dari Klik ke Pembeli",
+      "body": "Lihat bagaimana customer bergerak lewat tahapan, visitor, lead, buyer, setelah berinteraksi dengan marketing-mu. Memahami progres itu menunjukkan di mana orang drop off dan di mana harus fokus, bukan menilai campaign dari klik saja.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Pelacakan progres customer di Cekat.AI"
+    },
+    {
+      "title": "Alokasikan Budget dengan Percaya Diri",
+      "body": "Saat kamu bisa lihat apa yang tiap campaign benar-benar hasilkan, keputusan budget berhenti jadi tebakan. Gaspol di audiens dan campaign yang mendorong revenue, potong yang cuma kelihatan sibuk, dan turunkan biaya akuisisi seiring waktu.",
+      "image": "/images/marketing/allocate-budget-with-precision.png",
+      "imageAlt": "Alokasi budget dari analitik di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Semua dalam Satu Tampilan",
+      "body": "Ad spend, ROAS, cost, revenue, dan progres customer duduk bersama, jadi kamu paham performa sekali lihat bukan lintas tools."
+    },
+    {
+      "title": "Terikat ke Hasil Nyata",
+      "body": "Metrik terhubung ke penjualan sebenarnya, bukan cuma klik, jadi keputusan berpijak pada apa yang betul-betul mendorong revenue."
+    },
+    {
+      "title": "Keputusan dari Data",
+      "body": "Dengan angka yang jelas di depanmu, keputusan campaign dan budget jadi strategis bukan tebak-tebakan."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Dashboard analitik marketing menampilkan apa saja?",
+      "a": "Ia menampilkan ad spend, ROAS, cost, revenue, dan progres customer bersama dalam satu tempat. Alih-alih cek tools terpisah, kamu lihat performa campaign dan bagaimana customer bergerak dari klik ke pembelian dalam satu dashboard."
+    },
+    {
+      "q": "Apa itu ROAS dan bagaimana Cekat.AI melacaknya?",
+      "a": "ROAS (return on ad spend) mengukur revenue yang didapat per satuan ad spend. Cekat.AI mengikat spend campaign ke revenue nyata yang dihasilkannya, jadi ROAS-mu mencerminkan penjualan sebenarnya bukan klik atau impression."
+    },
+    {
+      "q": "Apa bedanya dengan analitik di dalam tiap platform iklan?",
+      "a": "Platform iklan menampilkan klik dan cost mereka sendiri secara terpisah. Cekat.AI menyatukan spend dan revenue nyata lintas campaign dan menghubungkannya ke progres customer, memberi insight berbasis hasil yang tidak bisa ditampilkan platform sendiri-sendiri."
+    },
+    {
+      "q": "Bisa lihat campaign mana yang benar-benar mendorong penjualan?",
+      "a": "Bisa. Karena dashboard menghubungkan aktivitas marketing ke hasil bisnis nyata, kamu bisa jelas lihat campaign mana yang menghasilkan leads, konversi, dan revenue, dan mana yang cuma menghasilkan klik."
+    },
+    {
+      "q": "Apakah melacak perilaku customer setelah klik?",
+      "a": "Ya. Kamu bisa lihat bagaimana customer bergerak lewat tahapan seperti visitor, lead, dan buyer setelah berinteraksi dengan marketing-mu, jadi kamu paham di mana mereka drop off dan di mana harus fokus."
+    },
+    {
+      "q": "Bagaimana ini membantu menurunkan biaya akuisisi?",
+      "a": "Dengan menunjukkan apa yang tiap campaign benar-benar hasilkan, dashboard membantu kamu memindahkan budget ke audiens dan campaign yang mendorong revenue dan memotong yang tidak, mengurangi spend terbuang dan menurunkan CAC seiring waktu."
+    },
+    {
+      "q": "Apakah nyambung dengan pelacakan Conversion API?",
+      "a": "Ya. Konversi nyata yang dikirim ke Meta dan TikTok lewat Conversion API menyuapi analitik yang sama, jadi dashboard mencerminkan data performa yang akurat dan lengkap termasuk penjualan yang closing di chat."
+    },
+    {
+      "q": "Perlu analis untuk memakainya?",
+      "a": "Tidak. Dashboard menyajikan ad spend, ROAS, revenue, dan progres dalam tampilan jelas yang bisa dibaca marketer atau pemilik bisnis mana pun, jadi kamu bisa mengambil keputusan tanpa analis data khusus."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Data Marketing Jadi Keputusan yang Yakin",
+    "body": "Lihat ad spend, ROAS, dan revenue dalam satu tempat, dan taruh budget-mu di tempat yang benar-benar menghasilkan."
+  }
+}

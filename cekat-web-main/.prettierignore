@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+coverage
+pnpm-lock.yaml
+.claude
+assets
+public
+docs
+next-env.d.ts

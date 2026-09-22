@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Cekat Tracker: Know Where Every Visit and Chat Began | Cekat.AI",
+    "description": "One JS script tracks every visitor's origin: ads, organic, any UTM, even referrals from AI like ChatGPT. Events read on dashboards and flow onward via API."
+  },
+  "hero": {
+    "badge": "Cekat Tracker",
+    "title": "Every Visit Has an Origin. Now You Know All of Them.",
+    "subtitle": "One script on your website records where each visitor came from: ads, organic search, any UTM, even referrals from AI assistants like ChatGPT, then ties that visit to its chat and its sale."
+  },
+  "definition": "Cekat Tracker is Cekat.AI's JS script and pixel installed on your website to record visits, CTA clicks, and form submissions along with their source, ads, organic, UTM parameters, or AI referrals, showing them on performance dashboards and passing them onward via API.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "every visit's source recorded"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "interactions became recorded contacts"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industries served"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "One Script, Every Source Readable",
+      "body": "Paste one JS snippet before the closing head tag and every visit is recorded with its origin: an ad campaign, organic search, or a UTM link you built yourself. No more source column full of guesses.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Traffic sources readable from one tracking script"
+    },
+    {
+      "title": "Referrals From ChatGPT and Other AIs, Tracked Too",
+      "body": "More buyers arrive because an AI mentioned you, and that traffic usually hides inside mysterious direct. Cekat Tracker recognizes referrals from AI assistants, so the newest channel finally shows its value.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Referrals from AI assistants recognized as a source"
+    },
+    {
+      "title": "Visits, CTAs, and Forms as One Storyline",
+      "body": "Visit, CTA click, and form submission are recorded as one journey, not three separate counts. You see which pages walk people to the point of contact, not just which pages are busy.",
+      "image": "/images/marketing/allocate-budget-with-precision.png",
+      "imageAlt": "The visitor journey from visit to form submission"
+    },
+    {
+      "title": "Custom Events Shaped to Your Business",
+      "body": "Define your own events, order_completed, booking_confirmed, anything, with up to ten typed properties. Fire them over the API and read them on the same dashboard as the built-ins.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Custom events sent over the API to Cekat Tracker"
+    },
+    {
+      "title": "Data That Flows Into Your CRM, Analytics, and Automations",
+      "body": "Visit sources attach to contacts in the CRM, read on the Sales, Leads, and Events dashboards, and pass onward via API to trigger automations or feed your analytics stack.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "Tracker data flowing to dashboards and other systems"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Install Once, Record Always",
+      "body": "One script in the site's head, and every page is covered without per-page setup."
+    },
+    {
+      "title": "Honest Sources",
+      "body": "Ads, organic, UTMs, and AI referrals are told apart clearly, so budget decisions stand on data."
+    },
+    {
+      "title": "Connected, Not Locked In",
+      "body": "Events send and read over the API, so your traffic data works in other systems too."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is Cekat Tracker?",
+      "a": "A JS script and pixel installed on your website to record visits, CTA clicks, and form submissions along with their traffic source, displayed on Cekat.AI's performance dashboards."
+    },
+    {
+      "q": "How is it installed?",
+      "a": "Copy the JS snippet and paste it in the site's head before the closing tag, then deploy. From then on, events across the page are detected with no per-page configuration."
+    },
+    {
+      "q": "Which traffic sources does it recognize?",
+      "a": "Ad campaigns, organic search, every UTM parameter including custom ones, and referrals from AI assistants like ChatGPT. Each is told apart rather than lumped into direct."
+    },
+    {
+      "q": "What are custom events?",
+      "a": "Events you define yourself with a label, a unique key, and up to ten typed properties, such as order_completed with its transaction value. Fired over the API and readable on the dashboard."
+    },
+    {
+      "q": "Where does the data show up?",
+      "a": "On the Performance dashboard, split into Sales, Leads, and Events. From there you monitor the funnel, lead quality, and event movement."
+    },
+    {
+      "q": "Does the data connect to chats and the CRM?",
+      "a": "Yes. A visit that turns into a chat carries its source with it, so the CRM contact knows its origin and a closing can be traced back to its first channel."
+    },
+    {
+      "q": "Can other systems use the data?",
+      "a": "Yes. Events send and read over the API, so you can pass them to your analytics stack or CDP, or use them to trigger automations in existing workflows."
+    },
+    {
+      "q": "Does installation need a developer?",
+      "a": "Pasting one script into the head is doable by anyone with website access. A developer only comes in when you define custom events fired from your own systems."
+    }
+  ],
+  "cta": {
+    "heading": "Stop Guessing Where Your Traffic Comes From",
+    "body": "One script, every source readable, all the way to the closing. Try it free or ask our team."
+  }
+}

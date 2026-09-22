@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Customer Service for EdTech & Online Courses | CekatAI",
+    "description": "EdTech teams use Cekat.AI to answer course and payment questions 24/7, onboard new learners, and win back inactive students before they churn."
+  },
+  "hero": {
+    "badge": "EdTech",
+    "title": "Turn Trial Signups Into Students Who Actually Learn",
+    "subtitle": "From course questions to login and payment issues to nudges for students going quiet, Cekat.AI replies instantly on WhatsApp and web chat, 24/7, without growing your support team",
+    "useCases": [
+      "Pre-exam peaks",
+      "Login & payments",
+      "Trial onboarding",
+      "Student churn prevention"
+    ]
+  },
+  "definition": "Cekat.AI for EdTech is an AI customer service platform for online course platforms, tutoring businesses, bootcamps, and LMS products in Indonesia, answering course and payment questions 24/7, guiding new learners through onboarding, and protecting online course user retention with automated follow-ups in one platform.",
+  "stats": [
+    {
+      "value": "+60%",
+      "label": "increase in student enrolment at Matana University"
+    },
+    {
+      "value": "+10%",
+      "label": "increase in membership revenue at Midas Cuan"
+    },
+    {
+      "value": "24/7",
+      "label": "course and payment questions answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Exam-Eve Question Floods, Answered While Your Team Sleeps",
+      "body": "Student questions peak at 11 PM before an assignment deadline or exam, exactly when support has gone home. Cekat.AI answers questions about materials, live class schedules, and course access instantly no matter how many arrive at once, so students keep studying that same night and your team walks in without a ticket backlog.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent answering course questions in the Cekat.AI inbox"
+    },
+    {
+      "title": "Login and Payment Issues Fixed in the First Chat",
+      "body": "A student who cannot log in or is unsure about a payment is not trying to complain, they are trying to learn. Cekat.AI resolves common issues on the spot, and for cases that need an engineer, a ticket is created automatically from the conversation and routed to the right team, so nothing sinks in the inbox.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Support ticket auto-created from a chat in Cekat.AI"
+    },
+    {
+      "title": "Trial Signups Walked All the Way to Their First Lesson",
+      "body": "Most trial users quit not because the product fell short, but because they never started. Cekat.AI greets new signups automatically, points them to their first lesson, and follows up with anyone who still has not logged in after a few days, flows you assemble without code, triggered by each user's behavior.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Automated new-user onboarding flow in Cekat.AI"
+    },
+    {
+      "title": "Students Going Quiet Get a Nudge Before They Churn",
+      "body": "Churn is rarely sudden; it starts with a week of unopened lessons. Cekat.AI tracks each user's journey in the CRM, from signup to active to going quiet, and sends personal nudges to bring them back before next month's renewal is at stake. Your team sees who is at risk instead of guessing.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Learner journeys tracked in the Cekat.AI CRM"
+    },
+    {
+      "title": "Campaigns by Segment, CSAT Always in View",
+      "body": "A new batch promo for alumni, renewal reminders for expiring access, free content for leads who have not bought yet. Cekat.AI segments users by course, activity, and payment status for official WhatsApp broadcasts, while measuring CSAT on every conversation so support quality shows up as a number, not a feeling.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "User segments powering EdTech campaigns in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Student chats and campaigns run on the official WhatsApp Business API, alongside Instagram DM and live chat in your website or app, one inbox for every channel."
+    },
+    {
+      "title": "AI That Drives Activation and Retention",
+      "body": "The agent answers instantly, walks new users to their first lesson, and re-engages the ones going quiet, from signup to renewal, running automatically."
+    },
+    {
+      "title": "Scales Without Growing Headcount",
+      "body": "Add thousands of users and response time stays flat. Complex cases escalate to your support team with the full chat history and user data attached."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help EdTech and online course platforms?",
+      "a": "It answers student questions instantly 24/7 on WhatsApp, Instagram, and live chat, materials, schedules, course access, payments, while running new-user onboarding and retention follow-ups automatically. Your support team focuses on cases that need a human, not the same question on repeat."
+    },
+    {
+      "q": "Can it help students stuck at login or payment?",
+      "a": "Yes. The AI resolves common issues on the spot, access recovery steps, payment status, available methods, and for technical cases, a ticket is created automatically from the conversation and routed to the right team with a notification. Students get certainty, and your team gets an orderly queue."
+    },
+    {
+      "q": "How does Cekat.AI improve trial activation?",
+      "a": "New signups get an automatic welcome, directions to their first lesson, and a follow-up if they still have not started after a few days. Flows are triggered by user behavior, signed up, logged in, finished a module, so each person gets a nudge that fits their stage, not the same blast for everyone."
+    },
+    {
+      "q": "Can it win back students who have gone inactive?",
+      "a": "Yes. Each user's journey is tracked in the CRM, and automated follow-ups fire when someone goes quiet, reminders about unfinished lessons, a personal check-in, or a tailored offer before access expires. Churn gets caught at the first signal, not regretted in the monthly report."
+    },
+    {
+      "q": "Can it integrate with our LMS or app?",
+      "a": "Yes. Through APIs and webhooks, Cekat.AI connects to your LMS, payment gateway, or backend, so the AI answers with real user data, subscription status, course progress, and automation flows can be triggered by events in your system."
+    },
+    {
+      "q": "How do we know support quality is actually good?",
+      "a": "CSAT is measured on every conversation, and the analytics dashboard shows chat volume, response times, the most asked topics, and per-agent performance, AI and human alike. You make decisions with numbers, not gut feeling."
+    },
+    {
+      "q": "Is student data safe with Cekat.AI?",
+      "a": "Conversation and user data is stored encrypted with role-based access, so only authorized team members can see it. ISO 27001 certification is in progress, and the same security practices already serve 3,000+ businesses in Indonesia."
+    },
+    {
+      "q": "How long does setup take for an EdTech platform?",
+      "a": "Building the AI agent takes around five minutes, paste your FAQ, course catalog, refund policy, and support SOPs into the knowledge base and it starts answering accurately. API integrations can come later in stages; instant answers alone already make the difference visible."
+    },
+    {
+      "q": "What does it cost, and can we try it first?",
+      "a": "Plans scale with your user base and the channels you need, and you can watch everything run in a live demo with our team before deciding. Book a free consultation, bring your use case, and we will show you the flow live."
+    }
+  ],
+  "cta": {
+    "heading": "Turn Signups Into Students Who Stay",
+    "body": "See how EdTech platforms run 24/7 support, onboarding, and retention on Cekat.AI, book a free consultation with our team."
+  }
+}

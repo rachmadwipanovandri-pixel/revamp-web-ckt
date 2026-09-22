@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Customer Journey Stages, Move Every Contact to Buyer | CekatAI",
+    "description": "Watch contacts move through Visitor, Lead, and Buyer automatically, with next-step suggestions that lift conversion. 3,000+ businesses know where each customer stands."
+  },
+  "hero": {
+    "badge": "Visitor → Lead → Buyer",
+    "title": "See Where Every Customer Is, and What Moves Them Forward",
+    "subtitle": "Cekat.AI stages each contact as Visitor, Lead, or Buyer automatically and suggests the next action to take, so nobody stalls halfway and more conversations end in a sale"
+  },
+  "definition": "Customer Journey Stages is a Cekat.AI feature that automatically moves each contact through Visitor, Lead, and Buyer stages and suggests the next action to move them toward a sale.",
+  "stats": [
+    { "value": "3,000+", "label": "businesses run on Cekat.AI" },
+    { "value": "1,000,000+", "label": "customer interactions handled" },
+    { "value": "24/7", "label": "stages update in real time" },
+    { "value": "15+", "label": "industries served" }
+  ],
+  "benefits": [
+    {
+      "title": "Know Exactly Where Every Customer Stands",
+      "body": "A flat contact list tells you nothing about who is close to buying. Cekat.AI stages every contact as Visitor, Lead, or Buyer, so a glance at your pipeline shows how many people are browsing, warming up, or ready to close, instead of one long list you have to decode by memory.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Customer journey stages from Visitor to Lead to Buyer in Cekat.AI"
+    },
+    {
+      "title": "The System Tells You What to Do Next",
+      "body": "Knowing a lead is warm is only useful if you know the next move. Each profile carries a suggested next step tuned to the customer's stage, a follow-up, an offer, a nudge back to checkout. Your team stops guessing what to send and starts acting on prompts built to increase conversion.",
+      "image": "/images/home/your-crm-built-for-growth-and-real-conversations.png",
+      "imageAlt": "Next-step suggestions on a Cekat.AI customer profile"
+    },
+    {
+      "title": "Stages Move Themselves as Customers Act",
+      "body": "You shouldn't have to drag cards between columns to keep a pipeline honest. As customers chat, buy, and browse, Cekat.AI advances them from Visitor to Lead to Buyer on its own. The journey reflects real behavior in real time, so the view is always accurate without manual upkeep.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Contacts advancing through journey stages automatically in Cekat.AI"
+    },
+    {
+      "title": "Spot the Leads About to Buy, and the Ones Slipping",
+      "body": "When every contact is staged, priorities become obvious. You see which leads are one nudge from buying and which buyers have gone quiet since their last order. Filters and boards let you pull each group in seconds and act while the moment is still open, not after it's gone.",
+      "image": "/images/crm/manage-work-with-boards.png",
+      "imageAlt": "Filtering leads and buyers by stage on boards in Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Three Stages",
+      "title": "Visitor, Lead, and Buyer",
+      "body": "Every contact sits in one of three clear stages, Visitor, Lead, or Buyer. It turns a shapeless contact list into a journey you can actually read, so the whole team shares one language for where a customer is."
+    },
+    {
+      "label": "Auto-Move",
+      "title": "Advances on Real Behavior",
+      "body": "Contacts move stages automatically as they interact, a first chat, a qualifying question, a completed order. No manual dragging, no stale pipeline, no card stuck in the wrong column because nobody updated it."
+    },
+    {
+      "label": "Next Step",
+      "title": "A Suggested Action on Every Profile",
+      "body": "Each stage comes with a recommended next step to push the relationship forward. Your team always knows the highest-value move for each customer, which is how more conversations turn into closed deals."
+    },
+    {
+      "label": "Pipeline",
+      "title": "Real-Time Sales Progress",
+      "body": "Stages roll up into a live sales pipeline, so you watch progress across the whole funnel in real time and see exactly where deals bunch up or stall, the insight you need to unblock revenue."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Every Stage Visible",
+      "body": "Visitor, Lead, and Buyer are shown at a glance, so your team always knows where each relationship stands without digging through chats."
+    },
+    {
+      "title": "Guided Next Actions",
+      "body": "Each stage suggests the next best step, turning a passive contact list into prompts that move customers toward a purchase."
+    },
+    {
+      "title": "Moves on Its Own",
+      "body": "Contacts advance through the stages automatically from real behavior, so the journey stays accurate without anyone maintaining it by hand."
+    }
+  ],
+  "testimonial": {
+    "quote": "The chance of closing the deal is very high",
+    "name": "Wiji Astuti",
+    "role": "Head of Customer Experience, Rumah Zakat",
+    "image": "/images/home/testimonial-wiji-astuti.jpg"
+  },
+  "faq": [
+    {
+      "q": "What are customer journey stages?",
+      "a": "Customer journey stages are the steps a contact passes through on the way to becoming a customer. In Cekat.AI, every contact is staged as a Visitor, Lead, or Buyer automatically, with a suggested next action on each profile, so you can see who is close to buying and what to do to move them there."
+    },
+    {
+      "q": "What are the stages in Cekat.AI?",
+      "a": "Cekat.AI uses three stages: Visitor, Lead, and Buyer. A Visitor is an early contact, a Lead is someone showing buying intent, and a Buyer has purchased. Each stage is paired with a suggested next step, so your team always knows the right move to advance the relationship."
+    },
+    {
+      "q": "How do customers move between stages?",
+      "a": "Automatically, based on real behavior. As a contact chats, asks about a product, or completes an order, Cekat.AI advances them from Visitor to Lead to Buyer on its own. There is no manual dragging between columns, so the pipeline reflects what actually happened rather than what someone remembered to update."
+    },
+    {
+      "q": "What are the next-step suggestions?",
+      "a": "Each customer profile carries a recommended next action tuned to their stage, a follow-up message, a targeted offer, or a nudge back to checkout. Instead of guessing what to send, your team acts on prompts designed to move the customer forward and increase conversion."
+    },
+    {
+      "q": "How do journey stages help me convert more?",
+      "a": "They make priorities obvious and remove guesswork. You instantly see which leads are one step from buying, and each profile tells you the next move to make. Focusing effort on the right contacts at the right moment is what lifts conversion instead of spreading follow-ups thin."
+    },
+    {
+      "q": "Can I see the whole pipeline at once?",
+      "a": "Yes. Stages roll up into a real-time sales pipeline, so you see how many contacts are Visitors, Leads, and Buyers and track progress across the funnel live. It's easy to spot where deals bunch up or stall, which is where your attention pays off most."
+    },
+    {
+      "q": "Do journey stages work with the AI agent?",
+      "a": "Yes. Cekat.AI's AI agent reads the same customer profile your team sees, including the current stage and history, so it handles each conversation with full context. As the customer acts, the agent's work also feeds the record that keeps the stage current."
+    },
+    {
+      "q": "Can I filter customers by stage?",
+      "a": "Yes. With filters and boards you can pull up any group in seconds, all your active Leads, Buyers who've gone quiet, or Visitors from a recent campaign. Those same segments power broadcast campaigns and follow-ups, so the stage view drives action, not just reporting."
+    },
+    {
+      "q": "Do I have to set the stages up manually?",
+      "a": "No. Contacts are captured and staged automatically from interactions across WhatsApp, Instagram, Messenger, and live chat, and advance on their own as behavior changes. There's no manual data entry to keep the journey current, so even on busy days the pipeline stays accurate."
+    }
+  ],
+  "cta": {
+    "heading": "Turn a Flat Contact List Into a Moving Pipeline",
+    "body": "Let Cekat.AI stage every customer automatically and suggest the next move, so more conversations end in a sale."
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Agentic AI buat Customer Service, AI yang Ambil Aksi | CekatAI",
+    "description": "Agentic AI nggak cuma ngobrol, dia bikin order, cek ongkir, buka tiket, dan update CRM otomatis di dalam chat. Dipercaya 3.000+ bisnis di 15+ industri."
+  },
+  "hero": {
+    "badge": "Agentic AI",
+    "title": "AI yang Nggak Cuma Bales, Tapi Ngerjain",
+    "subtitle": "Agentic AI Cekat.AI nggak berhenti di jawab pertanyaan. Dia bikin order, cek ongkir, buka tiket, trigger follow-up, dan update CRM, ambil aksi nyata di dalam setiap percakapan, 24/7"
+  },
+  "definition": "Agentic AI adalah AI yang bisa mengambil tindakan untuk menyelesaikan tugas, bukan sekadar menjawab pertanyaan, tapi benar-benar mengerjakan seperti membuat order, cek ongkir, dan membuka tiket. Di Cekat.AI, agentic AI bertindak langsung di dalam setiap percakapan WhatsApp, Instagram, Messenger, dan live chat website, jadi tiap chat berujung pada aksi yang selesai, bukan janji follow-up.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "AI ambil aksi di tiap chat" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Chat Berujung Order Jadi, Bukan Cuma Catatan",
+      "body": "Chatbot biasa cuma jawab \"iya, stok ada\" lalu berhenti. Agentic AI Cekat.AI lanjut kerja, dia bikin order-nya langsung di percakapan, lengkap sama ongkir, pembayaran, dan detail customer. Customer tinggal konfirmasi, order tercatat, dan tim kamu nggak perlu buka spreadsheet lagi.",
+      "image": "/images/order/automation-triggers-instantly.png",
+      "imageAlt": "Agentic AI membuat order otomatis di dalam percakapan Cekat.AI"
+    },
+    {
+      "title": "Cek Ongkir dan Booking Jadwal Tanpa Admin",
+      "body": "Customer nanya \"ongkir ke Surabaya berapa?\" atau \"bisa booking Jumat?\" tiap hari. Daripada nunggu admin, agentic AI manggil API yang kamu sambungin buat cek ongkir dan booking jadwal langsung di chat, jawabannya real-time, bukan template, jadi nggak ada reply yang digantung.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Agentic AI cek ongkir lewat API terhubung di Cekat.AI"
+    },
+    {
+      "title": "Setiap Komplain Otomatis Jadi Tiket Terlacak",
+      "body": "Begitu customer mengeluh, AI menangkapnya, otomatis bikin tiket, assign ke tim yang tepat, dan kirim notifikasi, tanpa input manual. Komplain terlacak sampai selesai, bukan hilang di inbox yang penuh, jadi nggak ada yang lolos dan customer benar-benar dapat solusi.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Agentic AI otomatis bikin dan mengarahkan tiket di Cekat.AI"
+    },
+    {
+      "title": "CRM Update Sendiri Setelah Tiap Percakapan",
+      "body": "Input CRM manual nggak pernah kejadian pas tim lagi sibuk. Agentic AI Cekat.AI bikin dan update kartu customer dari setiap interaksi, lalu menggeser tiap kontak lewat stage, Visitor ke Lead ke Buyer, plus saran langkah berikutnya. Pipeline-mu tetap akurat tanpa perlu diketik siapa-siapa.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Agentic AI menggeser kartu customer lewat stage CRM di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Ambil Aksi",
+      "title": "Dari Menjawab ke Benar-Benar Mengerjakan",
+      "body": "Agentic AI itu beda antara chatbot yang ngobrol dan yang kerja. Dalam satu percakapan dia bisa bikin order, cek ongkir, buka tiket, dan update CRM, menyelesaikan tugasnya, bukan balikin lagi ke tim kamu."
+    },
+    {
+      "label": "Follow-Up",
+      "title": "Dia Trigger Follow-Up yang Sering Kelupaan",
+      "body": "AI mengirim reminder dan follow-up sendiri, order belum dibayar, promo mau habis, waktunya beli lagi, sesuai perilaku nyata tiap customer. Revenue yang biasanya bocor karena nggak ada yang ngejar jadi ke-recover otomatis."
+    },
+    {
+      "label": "Trigger",
+      "title": "Aksi Jalan Sesuai Aturanmu",
+      "body": "Workflow trigger jalan berdasarkan jadwal waktu, keyword chat, atau perubahan data customer, misalnya muncul lead baru. Tiap trigger bisa menyambungkan auto-labeling, tiket, notifikasi admin, dan sinkronisasi data antar tools, jadi aksi yang tepat terjadi pas dibutuhkan."
+    },
+    {
+      "label": "Handoff",
+      "title": "Tahu Kapan Harus Panggil Manusia",
+      "body": "Kalau ada yang butuh orang, AI mengalihkan ke tim kamu dengan konteks percakapan lengkap, customer nggak perlu ngulang cerita. Pas jam kerja AI dia bertindak sendiri; di luar jam kerja dia tetap jalan dan meneruskan hal sensitif ke rekan yang tepat."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Lebih dari Sekadar Chatbot",
+      "body": "Kebanyakan bot cuma jawab lalu berhenti. Agentic AI menyelesaikan tugas, order, ongkir, tiket, follow-up, dan update CRM terjadi di dalam chat, bukan jadi to-do list buat nanti."
+    },
+    {
+      "title": "Satu Platform, Aksi Nyambung",
+      "body": "Order, tiket, CRM, dan follow-up semua ada di Cekat.AI, jadi satu aksi otomatis meng-update yang lain. Nggak ada lagi copy-paste antar tools yang terpisah."
+    },
+    {
+      "title": "Aman dan Terkendali",
+      "body": "Cekat.AI adalah Meta Business Partner resmi dan mematuhi UU PDP Indonesia. Kasus sensitif dialihkan ke manusia dengan konteks lengkap, jadi otomatisasi bukan berarti kehilangan kendali."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu agentic AI?",
+      "a": "Agentic AI adalah AI yang mengambil tindakan untuk menyelesaikan tugas, bukan cuma menjawab pertanyaan. Kalau chatbot biasa membalas dengan informasi, agentic AI mengerjakan tugasnya, seperti membuat order, cek ongkir, membuka tiket, atau update data customer, langsung di dalam percakapan."
+    },
+    {
+      "q": "Apa bedanya agentic AI sama chatbot biasa?",
+      "a": "Chatbot biasa mengenali pertanyaan lalu mengembalikan jawaban. Agentic AI memahami maksud lalu bertindak, menyelesaikan order, manggil API buat cek ongkir, mengarahkan komplain jadi tiket, dan update CRM. Customer dapat hasil yang beres, bukan sekadar jawaban yang menyuruh dia melakukan sesuatu sendiri."
+    },
+    {
+      "q": "Aksi apa saja yang bisa dilakukan agentic AI Cekat.AI?",
+      "a": "Dia bisa bikin order dari percakapan lengkap dengan ongkir dan pembayaran, cek ongkir dan booking jadwal lewat API terhubung, otomatis bikin dan mengarahkan tiket, trigger reminder dan follow-up, serta bikin atau update kartu CRM, menggeser kontak lewat stage Visitor, Lead, dan Buyer secara otomatis."
+    },
+    {
+      "q": "AI-nya bisa bikin order sendiri?",
+      "a": "Bisa. Saat chat, agentic AI bisa menyusun order lengkap dengan ongkir, pembayaran, dan detail customer, lalu mengonfirmasinya ke customer. Order tercatat tanpa tim kamu buka spreadsheet atau sistem lain, semuanya terjadi di dalam percakapan."
+    },
+    {
+      "q": "Apakah jalan di WhatsApp, Instagram, dan channel lain?",
+      "a": "Ya. Agentic AI bertindak di dalam percakapan WhatsApp, Instagram DM, Facebook Messenger, dan live chat website, semua lewat satu inbox terpadu. Aksi yang sama, order, tiket, follow-up, update CRM, tersedia dari channel mana pun customer chat."
+    },
+    {
+      "q": "Kalau ada tugas yang butuh manusia, gimana?",
+      "a": "AI mengalihkan ke anggota tim yang tepat dengan konteks percakapan lengkap, jadi customer nggak perlu ngulang cerita. Kamu atur kasus mana yang tetap di AI dan mana yang naik ke manusia, dan di jam kerja tim yang pegang chat sementara AI meng-cover di luar jam kerja."
+    },
+    {
+      "q": "Gimana AI menentukan kapan harus bertindak?",
+      "a": "Aksi jalan berdasarkan workflow trigger yang kamu atur, jadwal waktu, keyword chat tertentu, atau perubahan data customer seperti lead baru. Begitu trigger aktif, AI menjalankan aksi yang terhubung, entah itu kirim reminder, buka tiket, atau kasih notifikasi ke rekan tim."
+    },
+    {
+      "q": "Aman nggak datanya kalau AI bertindak sendiri?",
+      "a": "Cekat.AI adalah Meta Business Partner resmi dan mematuhi UU PDP Indonesia. Kamu mengontrol aksi mana yang boleh dilakukan AI dan kasus mana yang butuh persetujuan manusia, jadi otomatisasi tetap terkendali dan keputusan sensitif selalu sampai ke orang."
+    },
+    {
+      "q": "Perlu coding buat setup aksi agentic-nya?",
+      "a": "Nggak. Aksi dan workflow trigger diatur tanpa coding, kamu sambungin API yang kamu pakai, set aturannya, sisanya AI yang urus. Kebanyakan tim sudah bikin agent-nya ambil aksi nyata di hari yang sama, tanpa developer."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Tiap Percakapan Jadi Aksi yang Selesai",
+    "body": "Biar agentic AI bikin order, buka tiket, dan update CRM di dalam tiap chat, 24/7, tanpa nambah tim."
+  }
+}

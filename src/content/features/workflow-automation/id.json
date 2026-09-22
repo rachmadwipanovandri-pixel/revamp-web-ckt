@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Automasi Workflow, Logika Bisnis Tanpa Coding | CekatAI",
+    "description": "Automasi workflow menjalankan trigger, keyword chat, jadwal, leads baru, jadi label, tiket, dan notifikasi tanpa coding. 3.000+ bisnis jalan otomatis."
+  },
+  "hero": {
+    "badge": "Automasi Workflow Tanpa Coding",
+    "title": "Jalankan Logika Bisnismu Otomatis, Tanpa Coding",
+    "subtitle": "Atur trigger seperti keyword chat, jadwal, atau leads baru, dan Cekat.AI menembakkan actionnya otomatis, label, tiket, notifikasi, dan sinkron data, jadi operasi rutin jalan sendiri"
+  },
+  "definition": "Automasi Workflow adalah fitur Cekat.AI yang menjalankan logika bisnis multi-langkah tanpa coding, trigger seperti jadwal berbasis waktu, keyword chat, atau perubahan data customer menembakkan action seperti auto-labeling, tiket, notifikasi, dan sinkron data antar tools.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "workflow jalan sepanjang waktu" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Atur Sekali, Jalan Tiap Kali",
+      "body": "Atur aturannya dan Cekat.AI gak pernah lupa. Jadwal berbasis waktu, keyword di chat, atau perubahan data seperti leads baru langsung memicu workflow otomatis, gak ada yang perlu ingat buat kasih label, buka tiket, atau ping tim yang tepat. Langkah rutin terjadi dengan cara yang sama, tiap kali.",
+      "image": "/images/order/automation-triggers-instantly.png",
+      "imageAlt": "Trigger otomatisasi jalan instan di Cekat.AI"
+    },
+    {
+      "title": "Tanpa Coding, Tanpa Antre Developer",
+      "body": "Bikin otomatisasi biasanya berarti nunggu developer atau nyusun script yang rapuh. Cekat.AI melakukannya tanpa code, kamu menyambungkan trigger ke action secara visual, seperti mem-briefing sebuah proses ke karyawan baru. Tim operasional bikin workflow sendiri, bukan bikin tiket lalu nunggu berminggu-minggu.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Builder logika bisnis tanpa coding di Cekat.AI"
+    },
+    {
+      "title": "Tim yang Tepat Dinotifikasi Instan",
+      "body": "Begitu workflow jalan, orang yang perlu bertindak langsung tahu. Komplain ditangkap, dikasih label, diubah jadi tiket, dan diarahkan ke tim yang tepat dengan notifikasi otomatis, gak ada pesan yang mengendap gak terbaca, gak ada kasus yang jatuh ke celah karena nyasar ke orang yang salah.",
+      "image": "/images/order/automatic-notifications-to-the-right-team.png",
+      "imageAlt": "Notifikasi otomatis diarahkan ke tim yang tepat di Cekat.AI"
+    },
+    {
+      "title": "Tools-mu Tetap Sinkron Sendiri",
+      "body": "Workflow menjaga data terus bergerak antar sistem tanpa salin manual. Leads baru, perubahan status, order yang selesai, update-nya sinkron ke tempat yang perlu otomatis, jadi CRM, tim, dan tools lainmu mencerminkan kenyataan yang sama, bukan geser sendiri-sendiri.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Visibilitas penuh di tiap langkah otomatisasi di Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Trigger",
+      "title": "Mulai dari Waktu, Keyword, atau Data",
+      "body": "Workflow jalan lewat jadwal berbasis waktu, keyword tertentu di chat, atau perubahan data customer seperti leads baru. Kamu pilih apa yang memulai otomatisasinya, dan Cekat.AI mengawasinya sepanjang waktu."
+    },
+    {
+      "label": "Action",
+      "title": "Label, Tiket, Notifikasi, Sinkron",
+      "body": "Satu trigger bisa auto-label percakapan, bikin tiket, notifikasi tim yang tepat, dan sinkron data antar tools, beberapa langkah dirangkai jadi satu urutan otomatis, bukan orang yang ngerjain satu-satu."
+    },
+    {
+      "label": "Tanpa Code",
+      "title": "Dibangun Visual, Bukan Ditulis",
+      "body": "Kamu menyambungkan trigger ke action tanpa nulis satu baris code. Bikin workflow lebih mirip mem-briefing proses daripada memprogramnya, jadi tim operasional bisa bikin dan ubah otomatisasi sendiri."
+    },
+    {
+      "label": "Visibilitas",
+      "title": "Lihat Tiap Langkah yang Jalan",
+      "body": "Cekat.AI menampilkan jalur lengkap tiap otomatisasi, trigger mana yang jalan, action apa yang dijalankan, kasusnya sekarang di mana, jadi kamu bisa percaya workflow-nya dan langsung tahu yang butuh perhatian."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Trigger ke Action",
+      "body": "Waktu, keyword, atau perubahan data memicu label, tiket, notifikasi, dan sinkron, logika multi-langkah yang jalan tanpa ada yang pencet mulai."
+    },
+    {
+      "title": "Tanpa Coding",
+      "body": "Workflow dibangun visual, jadi tim operasional bikin sendiri, bukan nunggu antrean developer."
+    },
+    {
+      "title": "Operasi yang Jalan Sendiri",
+      "body": "Langkah rutin terjadi otomatis dan sama persis tiap kali, membebaskan tim dari kerja berulang yang menghabiskan hari mereka."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apa itu automasi workflow?",
+      "a": "Automasi workflow adalah menjalankan logika bisnis multi-langkah otomatis, bukan manual. Di Cekat.AI, sebuah trigger, jadwal berbasis waktu, keyword chat, atau perubahan data seperti leads baru, menembakkan action seperti auto-labeling, bikin tiket, notifikasi tim, dan sinkron data, semua tanpa coding."
+    },
+    {
+      "q": "Apa saja yang bisa jadi trigger di Cekat.AI?",
+      "a": "Tiga jenis trigger: jadwal berbasis waktu, keyword tertentu di percakapan chat, dan perubahan data customer seperti leads baru yang dibuat. Kamu pilih event mana yang memulai workflow, dan Cekat.AI mengawasinya terus lalu menembakkan action-nya begitu terjadi."
+    },
+    {
+      "q": "Action apa saja yang bisa dijalankan workflow?",
+      "a": "Workflow bisa auto-label percakapan, bikin tiket, kirim notifikasi ke tim yang tepat, dan sinkron data antar tools. Beberapa action dirangkai jadi satu urutan, jadi satu trigger bisa memindahkan kasus dari tertangkap, dikasih label, sampai ditugaskan tanpa ada yang ngerjain manual."
+    },
+    {
+      "q": "Perlu coding buat bikin otomatisasi?",
+      "a": "Gak. Workflow Cekat.AI dibangun visual dengan menyambungkan trigger ke action, tanpa script, tanpa developer. Lebih mirip mem-briefing proses daripada memprogramnya, jadi tim operasional bisa bikin dan sesuaikan otomatisasi sendiri, bukan nunggu antrean engineering."
+    },
+    {
+      "q": "Workflow bisa mengarahkan komplain ke tim yang tepat?",
+      "a": "Bisa. Komplain yang tertangkap di chat bisa auto-label, diubah jadi tiket, dan diarahkan ke tim yang tepat dengan notifikasi otomatis, lalu dilacak sampai selesai. Gak ada yang mengendap gak terbaca atau nyasar ke orang yang salah, karena workflow menugaskannya dengan cara yang sama tiap kali."
+    },
+    {
+      "q": "Apa bedanya dengan alur chatbot?",
+      "a": "Alur chat membentuk satu percakapan; automasi workflow menjalankan logika bisnis di seluruh operasi. Trigger bisa berupa jadwal atau perubahan data, bukan cuma pesan, dan action-nya menjangkau lebih dari chat, tiket, notifikasi tim, dan sinkron data antar tools, jadi proses utuh jalan otomatis, bukan cuma balasan."
+    },
+    {
+      "q": "Bisa lihat apa yang benar-benar dilakukan workflow?",
+      "a": "Bisa. Cekat.AI memberi visibilitas penuh di tiap langkah otomatisasi, trigger mana yang jalan, action apa yang dijalankan, dan kasusnya sekarang di mana. Kamu bisa percaya workflow melakukan yang kamu atur dan cepat tahu apa yang butuh manusia turun tangan."
+    },
+    {
+      "q": "Automasi workflow nyambung dengan tools lainku?",
+      "a": "Nyambung. Workflow sinkron data antar tools dan bisa menjangkau sistem bisnis lewat integrasi API, misalnya cek ongkir atau booking appointment. Digabung dengan trigger dan action, itu menjaga CRM, tim, dan sistem yang tersambung mencerminkan informasi terbaru yang sama."
+    },
+    {
+      "q": "Jalan di luar jam kerja?",
+      "a": "Jalan. Workflow jalan 24/7, trigger jam 3 pagi langsung menembakkan action-nya, dan dengan AI working hours, AI menutup percakapan setelah tim log off. Operasi rutin terus bergerak semalaman, jadi gak ada yang nunggu pagi cuma karena tim lagi offline."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Langkah Berulang Jadi Otomatis",
+    "body": "Atur trigger sekali dan biarkan Cekat.AI menjalankan label, tiket, dan notifikasi, tanpa coding, sepanjang waktu."
+  }
+}

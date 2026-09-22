@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "AI Customer Service untuk Hotel & Perhotelan | CekatAI",
+    "description": "Solusi AI & CRM perhotelan Cekat.ai: tangani reservasi, rate, & event 24/7. Holywings Group capai 100% chat coverage & konversi naik +70%!"
+  },
+  "hero": {
+    "badge": "Hotel & Perhotelan",
+    "title": "Nggak Ada Booking yang Kelewat, Bahkan Jam 3 Pagi",
+    "subtitle": "Pertanyaan reservasi, rate, dan event dijawab instan di WhatsApp, Instagram, dan web chat, 24/7, pakai bahasa natural, tanpa perlu shift malam di front desk",
+    "useCases": [
+      "Reservasi & rate",
+      "Booking event & venue",
+      "Satu inbox semua tamu",
+      "Promo tanggal sepi"
+    ]
+  },
+  "definition": "Cekat.AI untuk perhotelan adalah platform AI customer service untuk hotel, vila, restoran, dan venue event di Indonesia, menjawab pertanyaan reservasi, rate, dan event 24/7, menutup booking langsung di chat, dan menjaga setiap percakapan tamu tetap rapi dalam satu tempat.",
+  "stats": [
+    {
+      "value": "2×",
+      "label": "kenaikan omzet booking di Puffy Cotton Candy"
+    },
+    {
+      "value": "5 detik",
+      "label": "waktu balas chat pelanggan di Lunica, turun dari 15 menit"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Pertanyaan Reservasi dan Rate Terjawab Sepanjang Waktu",
+      "body": "Tamu suka rencanain trip tengah malam dan banding-bandingin rate dari HP. Cekat.AI jawab ketersediaan kamar, harga, detail check-in, dan fasilitas begitu pertanyaan masuk, pakai bahasa natural, jam berapa pun, jadi inquiry berubah jadi booking, bukan pesan yang nganggur sampai pagi, pas tamunya udah keburu booking di tempat lain.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "AI working hours meng-cover pertanyaan tamu di luar jam front desk di Cekat.AI"
+    },
+    {
+      "title": "Tutup Booking Event dan Venue Langsung di Chat",
+      "body": "Inquiry event dan rombongan dulu artinya tanya-jawab manual yang panjang. Cekat.AI ngumpulin detailnya, tanggal, jumlah orang, paket, budget, langsung di percakapan, terhubung ke sistemmu lewat API, dan nyerahin inquiry yang udah matang ke tim dengan semua info lengkap, jadi nggak ada yang mandek nunggu balasan.",
+      "image": "/images/home/api-integration.png",
+      "imageAlt": "Booking event ditangani lewat integrasi API di Cekat.AI"
+    },
+    {
+      "title": "Satu Inbox untuk Semua Tamu, dari Semua Channel",
+      "body": "WhatsApp, Instagram DM, Facebook Messenger, dan chat website masuk ke satu inbox dengan riwayat lengkap per tamu. Tim langsung lihat riwayat menginap, permintaan, dan pertanyaan sebelumnya, dan yang butuh manusia, permintaan khusus, komplain, dialihkan beserta seluruh percakapannya. Tamu nggak perlu ngulang cerita.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Percakapan tamu terorganisir di CRM Cekat.AI"
+    },
+    {
+      "title": "Isi Tanggal Sepi dengan Promo yang Beneran Dibuka Tamu",
+      "body": "Broadcast dikirim lewat WhatsApp Business API resmi ke segmen dari data nyata, tamu lama, klien event, booking yang lama nggak balik, dengan nama dan konteks dari CRM. Penawaran rate weekday atau paket musiman nyampe ke tamu yang paling mungkin bilang iya, bukan blast generik yang diabaikan semua orang.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi tamu untuk promo perhotelan di Cekat.AI"
+    }
+  ],
+  "caseStudy": {
+    "client": "Holywings Group",
+    "metrics": [
+      {
+        "value": "100%",
+        "label": "chat ter-cover di luar jam kerja"
+      },
+      {
+        "value": "+70%",
+        "label": "kenaikan konversi"
+      }
+    ],
+    "body": "Holywings Group dulu nangani inquiry event, booking, dan harga secara manual, dan kehilangan yang masuk di luar jam kerja. Setelah pakai Cekat.AI, chat ter-cover 100% sepanjang waktu: AI menjawab instan dan mengarahkan inquiry serius ke tim. Hasilnya: konversi naik sampai +70%, kepuasan tamu meningkat, dan revenue bertambah dari inquiry yang dulu nggak kejawab."
+  },
+  "pillars": [
+    {
+      "title": "Meta Business Partner Resmi",
+      "body": "Chat tamu dan broadcast promo jalan di atas WhatsApp Business API resmi, andal dan aman buat nomor tempat booking-mu masuk."
+    },
+    {
+      "title": "24/7 Tanpa Shift Malam",
+      "body": "AI meng-cover inquiry setelah front desk pulang dan balik lagi ke tim pas jam kerja, jadi coverage nggak pernah bolong dan biaya gaji nggak nambah."
+    },
+    {
+      "title": "Manusia di Momen yang Penting",
+      "body": "Pertanyaan rutin ditangani instan; permintaan VIP, komplain, dan booking rumit dialihkan ke tim lengkap dengan konteks."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Gimana Cekat.AI bantu hotel dan bisnis perhotelan?",
+      "a": "Cekat.AI jawab chat tamu instan 24/7 di WhatsApp, Instagram, dan web chat, reservasi, rate, fasilitas, detail check-in, sampai inquiry event, sambil merapikan semua percakapan dalam satu inbox. Tamu dapat jawaban instan jam berapa pun, dan front desk nggak kebanjiran pertanyaan yang itu-itu terus."
+    },
+    {
+      "q": "AI bisa nangani reservasi dan booking?",
+      "a": "Bisa. AI jawab pertanyaan ketersediaan dan rate lalu ngumpulin detail booking di percakapan. Lewat integrasi API, AI terhubung ke sistemmu, dan booking yang kompleks atau bernilai besar diarahkan ke tim dengan semua info lengkap, jadi nggak ada yang mandek nunggu balasan manual."
+    },
+    {
+      "q": "Bisa nangani inquiry event dan rombongan?",
+      "a": "Bisa. Cekat.AI ngumpulin detail event, tanggal, jumlah orang, paket, budget, di dalam chat dan nyerahin inquiry matang ke tim lengkap dengan konteks. Holywings Group pakai ini buat capai 100% coverage chat dan konversi naik sampai +70% pada inquiry yang dulu ditangani manual."
+    },
+    {
+      "q": "Hasil apa yang udah dirasakan bisnis perhotelan?",
+      "a": "Holywings Group pindah dari nangani inquiry event, booking, dan harga manual ke 100% coverage chat 24/7 setelah pakai Cekat.AI, dengan konversi naik sampai +70%, kepuasan tamu meningkat, dan revenue bertambah dari inquiry yang dulu nggak kejawab di luar jam kerja."
+    },
+    {
+      "q": "Channel apa aja yang bisa dihubungkan hotel atau venue?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, dan live chat website, semuanya masuk ke satu inbox. Tiap tamu punya satu riwayat percakapan, jadi inquiry yang mulai di Instagram dan lanjut di WhatsApp tetap nyatu di satu tempat."
+    },
+    {
+      "q": "Bisa jalan di luar jam kantor?",
+      "a": "Bisa. AI working hours bikin AI meng-cover chat sepanjang waktu, lalu balik ke tim pas jam kerja lengkap dengan konteks. Tamu yang booking tengah malam atau banding-bandingin rate larut malam tetap dapat jawaban instan, bukan nunggu sampai pagi."
+    },
+    {
+      "q": "Bisa kirim promo ke tamu lama?",
+      "a": "Bisa. Broadcast dikirim lewat WhatsApp Business API resmi ke segmen dari aktivitas dan riwayat menginap, tamu lama, klien event, booking yang lama nggak balik. Pesannya ambil nama dan konteks dari CRM, jadi penawaran weekday atau paket musiman terasa relevan, bukan generik."
+    },
+    {
+      "q": "Berapa lama setup-nya?",
+      "a": "Bikin AI agent-nya sekitar lima menit dan rasanya kayak briefing admin front desk baru, kamu paste rate, fasilitas, kebijakan, dan SOP, lalu AI mulai menjawab. Nggak butuh coding, jadi kamu nggak perlu developer atau proyek IT panjang buat mulai."
+    },
+    {
+      "q": "Gimana dengan komplain atau permintaan khusus?",
+      "a": "Komplain dilabeli otomatis, dijadikan tiket, dan diarahkan ke tim yang tepat lengkap dengan percakapannya, terlacak dari pesan pertama sampai selesai. Permintaan khusus dan percakapan VIP dialihkan ke manusia, jadi momen sensitif selalu dapat sentuhan personal."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Setiap Inquiry Jadi Booking",
+    "body": "Lihat gimana hotel dan venue menjalankan reservasi dan support 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

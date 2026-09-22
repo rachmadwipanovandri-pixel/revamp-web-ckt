@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Otomatisasi Order, AI Bikin Order dari Chat | CekatAI",
+    "description": "Otomatisasi order pakai AI: order lengkap dibuat langsung di chat, ongkir, QR pembayaran, detail customer. 3.000+ bisnis jualan 24/7 tanpa kasir manual."
+  },
+  "hero": {
+    "badge": "Otomatisasi Order AI",
+    "title": "AI yang Ambil Order Langsung dari Percakapan",
+    "subtitle": "AI agent Cekat.AI mencatat detail customer, cek ongkir, dan kirim QR pembayaran, mengubah chat jadi order lengkap 24/7, tanpa ada yang perlu ngetik ulang"
+  },
+  "definition": "Otomatisasi Order adalah fitur Cekat.AI yang membuat AI agent menyusun order lengkap langsung dari percakapan chat, detail customer, ongkir, dan pembayaran sekaligus, jadi penjualan closing 24/7 tanpa input manual.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "24/7", "label": "AI ambil order sepanjang waktu" },
+    { "value": "15+", "label": "industri terlayani" }
+  ],
+  "benefits": [
+    {
+      "title": "Order Masuk dari Semua Channel Tempat Kamu Jualan",
+      "body": "WhatsApp, Instagram DM, Facebook Messenger, live chat website, semua percakapan masuk ke satu inbox, dan AI memperlakukan tiap chat sebagai peluang penjualan. Begitu customer bilang mau beli, order langsung dimulai di situ juga, di channel apa pun yang dia pakai, tanpa perlu dialihkan ke mana-mana.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "Percakapan dari semua channel penjualan masuk ke satu inbox Cekat.AI"
+    },
+    {
+      "title": "Tanpa Kasir Manual, Tanpa Typo, Tanpa Order Hilang",
+      "body": "Catat order manual berarti ngetik ulang nama, alamat, dan total, dan order gampang hilang tiap admin lagi sibuk. AI agent Cekat.AI mencatat detail customer di dalam percakapan, cek ongkir, dan menyusun order otomatis. Tidak ada yang bergantung pada admin yang harus salin data ke spreadsheet sebelum keburu lupa.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent Cekat.AI menangani percakapan order otomatis"
+    },
+    {
+      "title": "Jualan Jam 2 Pagi Tanpa Harus Melek",
+      "body": "Niat beli tidak kenal jam kantor. AI agent menjawab, hitung ongkir, dan menyelesaikan order sepanjang waktu, jadi customer yang siap bayar tengah malam tidak perlu nunggu pagi, atau kabur ke kompetitor yang bales duluan. Holywings Group pakai coverage ini untuk menaikkan konversi sampai 70%.",
+      "image": "/images/order/end-to-end-operational-efficiency.png",
+      "imageAlt": "Alur order otomatis end-to-end di Cekat.AI"
+    },
+    {
+      "title": "Setiap Order Update CRM-mu Sendiri",
+      "body": "Tiap order yang selesai otomatis tercatat di profil CRM customer, bareng chat, campaign, dan riwayat pembeliannya. Tanpa input manual, tanpa catatan order terpisah. Tim memantau progres penjualan real-time, dan campaign broadcast berikutnya sudah tahu persis siapa beli apa dan kapan.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Visibilitas penuh tiap langkah order otomatis di dashboard Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Order In-Chat",
+      "title": "Seluruh Order Terjadi di Dalam Percakapan",
+      "body": "AI mengumpulkan item, jumlah, alamat, dan kontak sambil chat dengan natural, lalu membuat order dengan semuanya sudah terlampir. Customer tidak perlu keluar dari chat, dan tim tidak perlu ngetik ulang satu field pun."
+    },
+    {
+      "label": "Ongkir",
+      "title": "Ongkir Dicek Otomatis",
+      "body": "Lewat integrasi API, AI mengecek ongkir saat percakapan berlangsung dan langsung menambahkannya ke total order, tidak ada admin yang bolak-balik buka tab buat cek tarif sementara customer nunggu."
+    },
+    {
+      "label": "Pembayaran",
+      "title": "QR Pembayaran Dikirim di Chat",
+      "body": "Begitu order siap, AI mengirim QR pembayaran langsung di percakapan. Kalau pembayaran masih pending, reminder otomatis menyusul, jadi order dibayar, bukan dilupakan."
+    },
+    {
+      "label": "Sinkron CRM",
+      "title": "Order Tercatat di Tiap Profil Customer",
+      "body": "Setiap order otomatis membuat atau memperbarui kartu CRM customer dan menggesernya di journey Visitor → Lead → Buyer, lengkap dengan saran langkah berikutnya yang bisa ditindaklanjuti tim."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Dari Halo Sampai Lunas dalam Satu Chat",
+      "body": "Detail, ongkir, dan pembayaran semuanya terjadi di dalam percakapan, tidak ada link checkout yang ribet, tidak ada pindah-pindah aplikasi buat customer."
+    },
+    {
+      "title": "Nol Input Manual",
+      "body": "AI mencatat data order sambil chat. Tanpa spreadsheet, tanpa ngetik ulang, tanpa order hilang gara-gara human error atau sore yang sibuk."
+    },
+    {
+      "title": "Channel Penjualan yang Tidak Pernah Tutup",
+      "body": "Order masuk dan selesai 24/7, malam, akhir pekan, dan hari libur termasuk, tanpa nambah satu shift pun."
+    }
+  ],
+  "testimonial": {
+    "quote": "Peluang closing sangat tinggi",
+    "name": "Wiji Astuti",
+    "role": "Head of Customer Experience, Rumah Zakat",
+    "image": "/images/home/testimonial-wiji-astuti.jpg"
+  },
+  "faq": [
+    {
+      "q": "Apa itu otomatisasi order?",
+      "a": "Otomatisasi order adalah proses membuat dan menyelesaikan order customer tanpa kerja manual. Di Cekat.AI, AI agent menyusun order langsung dari percakapan chat, mencatat detail customer, cek ongkir lewat integrasi API, dan mengirim QR pembayaran, jadi penjualan closing tanpa admin ngetik apa pun."
+    },
+    {
+      "q": "Gimana AI bikin order dari chat?",
+      "a": "AI agent Cekat.AI paham maksud dan konteks, bukan cuma keyword. Sambil customer chat, AI mengumpulkan produk, jumlah, alamat, dan kontak, cek ongkir, lalu menyusun order lengkap, terus mengirim QR pembayaran untuk menyelesaikan penjualan di percakapan yang sama."
+    },
+    {
+      "q": "Otomatisasi order termasuk cek ongkir?",
+      "a": "Termasuk. AI mengecek ongkir otomatis lewat integrasi API saat percakapan berlangsung, lalu memasukkan nominalnya ke order. Customer dapat total yang akurat dalam hitungan detik, bukan nunggu admin cek tarif satu-satu secara manual."
+    },
+    {
+      "q": "Gimana customer bayar order otomatis?",
+      "a": "AI mengirim QR pembayaran langsung di chat begitu order siap, jadi customer bayar tanpa keluar dari percakapan. Kalau pembayaran masih pending, Cekat.AI mengirim reminder pembayaran otomatis sampai order lunas, tanpa tim harus nagih manual."
+    },
+    {
+      "q": "Kalau customer diam sebelum bayar gimana?",
+      "a": "Cekat.AI follow-up otomatis. Pembayaran pending memicu reminder berbasis event, dan nudge follow-up terkirim sesuai perilaku customer, jadi order yang tadinya bakal dilupakan admin tetap dapat dorongan sopan sampai selesai. Rezeki ada di follow-up, dan platform tidak pernah lupa."
+    },
+    {
+      "q": "Otomatisasi order jalan di channel apa saja?",
+      "a": "Semua channel yang tersambung ke Cekat.AI: WhatsApp lewat Business API resmi, Instagram DM, Facebook Messenger, live chat website, dan API channel custom. Semua percakapan masuk ke satu inbox, dan AI bisa ambil order di channel mana pun."
+    },
+    {
+      "q": "Tim masih bisa masuk ke order otomatis?",
+      "a": "Bisa. Percakapan dialihkan ke tim kapan pun perlu, dan handoff otomatis membawa konteks lengkap, riwayat chat, detail order, private notes. Tim bisa menambah collaborator, meninggalkan catatan internal, dan mengambil alih percakapan tanpa minta customer mengulang."
+    },
+    {
+      "q": "Perlu coding buat set up ini?",
+      "a": "Tidak perlu coding. Kamu melatih AI dengan menempel SOP dan info bisnis ke knowledge base, lalu mengatur alur percakapan lewat visual drag-and-drop flow designer. Bikin agent cuma sekitar lima menit, Cekat.AI menyebutnya semudah briefing admin CS."
+    },
+    {
+      "q": "Data order customer aman?",
+      "a": "Aman. Cekat.AI patuh UU PDP, undang-undang perlindungan data pribadi Indonesia, dan merupakan Meta Business Partner resmi, jadi trafik WhatsApp lewat infrastruktur resmi Meta. Role-based team access mengatur siapa di bisnismu yang bisa lihat dan kelola data customer."
+    },
+    {
+      "q": "Otomatisasi order tetap jalan di luar jam kerja?",
+      "a": "Ya, justru itu untung terbesarnya. Dengan AI working hours, tim menangani chat saat jam kantor dan AI ambil alih otomatis setelahnya, jadi order yang masuk malam atau akhir pekan tetap tercatat, dihitung ongkirnya, dan dibayar tanpa ada yang jaga shift."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Percakapan Jadi Order yang Selesai",
+    "body": "Biarkan AI agent Cekat.AI mencatat detail, cek ongkir, dan menagih pembayaran, 24/7, tanpa kasir."
+  }
+}

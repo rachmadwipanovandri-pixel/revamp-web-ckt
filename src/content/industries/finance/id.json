@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "CS Otomatis Keuangan, Bales 24/7, Aman & Compliant | CekatAI",
+    "description": "Bisnis keuangan pakai Cekat.AI buat jawab pertanyaan produk, klaim, & aplikasi 24/7, rutin oleh AI, kasus sensitif oleh staf, semua patuh UU PDP."
+  },
+  "hero": {
+    "badge": "Layanan Keuangan",
+    "title": "Jawab Setiap Nasabah Instan, Tangani Tiap Kasus dengan Aman",
+    "subtitle": "Cekat.AI membalas pertanyaan produk, aplikasi, dan klaim 24/7 di WhatsApp dan web chat, mengarahkan kasus sensitif ke timmu lengkap dengan konteks, patuh UU PDP",
+    "useCases": [
+      "Volume chat tinggi",
+      "Eskalasi kasus sensitif",
+      "Tiket komplain",
+      "Living record nasabah"
+    ]
+  },
+  "definition": "Cekat.AI untuk layanan keuangan adalah platform AI customer service untuk bank, asuransi, lembaga pembiayaan, dan fintech di Indonesia, menjawab pertanyaan rutin soal produk, aplikasi, dan klaim 24/7, mengarahkan kasus sensitif ke staf lengkap dengan konteks, dan melacak setiap komplain sampai selesai dengan patuh UU PDP.",
+  "stats": [
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "pertanyaan produk, aplikasi, dan klaim terjawab"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Tangani Volume Chat Tinggi Tanpa Nambah Headcount",
+      "body": "Detail produk, status aplikasi, prosedur klaim, jam operasional cabang, pertanyaan bervolume tinggi yang sama masuk sepanjang hari, tiap hari. Cekat.AI menjawab semuanya instan di WhatsApp dan web chat, dengan bahasa natural, jadi waktu respons tetap stabil saat puncak dan timmu bebas untuk kasus yang benar-benar butuh manusia.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab pertanyaan produk keuangan di inbox Cekat.AI"
+    },
+    {
+      "title": "Rutin ke AI, Sensitif ke Timmu, Lengkap dengan Konteks",
+      "body": "Sebagian percakapan keuangan wajib ditangani manusia. Cekat.AI menjawab pertanyaan rutin dan, begitu sebuah kasus jadi sensitif atau kompleks, langsung dialihkan ke stafmu lengkap dengan seluruh percakapannya. Dengan AI working hours, handoff antara tim dan AI berjalan otomatis, dan nasabah nggak perlu mengulang cerita.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Eskalasi otomatis ke staf lengkap dengan konteks di Cekat.AI"
+    },
+    {
+      "title": "Setiap Komplain Jadi Tiket yang Terlacak",
+      "body": "Komplain yang hilang di inbox sibuk adalah risiko compliance dan reputasi. Cekat.AI melabeli keluhan yang masuk secara otomatis, membuat tiket, dan mengarahkannya ke tim yang tepat beserta notifikasi, jadi setiap komplain terlacak dari pesan pertama sampai selesai, dan nggak ada yang diam-diam menghilang.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Pembuatan tiket otomatis untuk komplain keuangan di Cekat.AI"
+    },
+    {
+      "title": "Visibilitas Penuh di Setiap Kasus",
+      "body": "Kamu melihat status, penanggung jawab, dan jalur penyelesaian tiap percakapan di satu tempat, dengan catatan interaksi yang terbentuk otomatis dari setiap touchpoint, tanpa logging manual. Saat audit atau review nanya apa yang terjadi dan kapan, jejaknya sudah ada, bukan berserakan di chat pribadi.",
+      "image": "/images/order/full-visibility-across-every-automation-step.png",
+      "imageAlt": "Visibilitas penuh di setiap kasus customer di Cekat.AI"
+    },
+    {
+      "title": "Satu Living Record untuk Tiap Nasabah",
+      "body": "Setiap interaksi otomatis membuat dan memperbarui kartu CRM, tanpa input manual, membangun catatan lengkap pertanyaan, aplikasi, dan riwayat tiap nasabah. Timmu buka satu profil dan langsung lihat gambaran utuh, bukan menjahit konteks dari channel dan spreadsheet yang terpisah-pisah.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Living record nasabah terorganisir di CRM Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Compliant dari Awal",
+      "body": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP), dan akses berbasis peran memastikan data percakapan hanya terlihat oleh orang yang memang berwenang."
+    },
+    {
+      "title": "Manusia di Momen yang Penting",
+      "body": "AI menangani volume rutin; kasus sensitif atau kompleks dialihkan ke stafmu lengkap dengan konteks, jadi manusia menangani percakapan yang butuh pertimbangan."
+    },
+    {
+      "title": "Setiap Kasus Terlacak sampai Selesai",
+      "body": "Komplain dan permintaan jadi tiket, diarahkan ke tim yang tepat dan dilacak dari pesan pertama sampai tuntas, nggak ada isu yang diam-diam lolos."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu bisnis layanan keuangan?",
+      "a": "Cekat.AI menjawab pertanyaan nasabah bervolume tinggi secara instan 24/7 di WhatsApp, Instagram, dan web chat, detail produk, status aplikasi, prosedur klaim, sambil mengarahkan kasus sensitif ke staf lengkap dengan konteks dan melacak setiap komplain sampai selesai. Volume rutin diotomasi, tim fokus ke yang butuh pertimbangan."
+    },
+    {
+      "q": "Bagaimana Cekat.AI menangani volume chat tinggi?",
+      "a": "AI menjawab setiap chat masuk secara instan berapa pun banyaknya sekaligus, jadi waktu respons tetap stabil saat puncak. AI paham maksud, bukan cuma cocokin keyword, dan kasus kompleks dialihkan ke timmu lengkap dengan konteks, sementara AI working hours menjaga coverage tetap jalan setelah staf logout."
+    },
+    {
+      "q": "Apakah data nasabah ditangani dengan aman dan compliant?",
+      "a": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dalam menangani dan mengelola data pengguna, dan sertifikasi ISO 27001 sedang dalam proses. Akses di dalam tim diatur berbasis peran, jadi data percakapan hanya terlihat oleh orang yang memang berwenang."
+    },
+    {
+      "q": "Bagaimana dengan permintaan yang sensitif atau kompleks?",
+      "a": "AI menjawab pertanyaan rutin dan mengalihkan apa pun yang sensitif atau kompleks ke stafmu secara otomatis, lengkap dengan seluruh percakapannya. Manusia menangani kasus yang butuh pertimbangan, dan nasabah nggak perlu mengulang informasinya dari awal."
+    },
+    {
+      "q": "Bagaimana komplain ditangani?",
+      "a": "Komplain yang masuk lewat chat dilabeli otomatis, dijadikan tiket, dan diarahkan ke tim yang tepat beserta notifikasi. Setelah itu dilacak dari pesan pertama sampai selesai, jadi nggak ada komplain yang tenggelam di inbox sibuk atau hilang di antara channel."
+    },
+    {
+      "q": "Bisa mengatur siapa di tim yang boleh lihat apa?",
+      "a": "Bisa. Cekat.AI pakai akses tim berbasis peran, jadi kamu yang menentukan agen dan tim mana yang bisa melihat percakapan dan data nasabah tertentu. Dipadu kepatuhan UU PDP, informasi keuangan sensitif hanya terlihat oleh staf yang berwenang."
+    },
+    {
+      "q": "Channel apa saja yang bisa dihubungkan bisnis keuangan?",
+      "a": "WhatsApp (Business API resmi), Instagram DM, Facebook Messenger, live chat website, dan channel API, semua masuk ke satu inbox dengan satu riwayat interaksi per nasabah, jadi permintaan yang pindah antar channel tetap membawa konteks lengkapnya."
+    },
+    {
+      "q": "AI bisa menjawab pertanyaan produk dan aplikasi dengan akurat?",
+      "a": "Bisa. Kamu menyalin info produk, kebijakan, dan SOP ke knowledge base, dan AI menjawab dari situ, bukan menebak. AI paham maksud, bukan keyword, jadi nasabah dapat jawaban akurat walau nanya dengan gaya bahasa sendiri."
+    },
+    {
+      "q": "Berapa lama setup untuk bisnis layanan keuangan?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin detail produk, prosedur, dan SOP ke knowledge base, dan AI langsung menjawab akurat. Tanpa coding sama sekali; semudah briefing admin CS baru."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Volume Chat Tinggi Jadi Kasus yang Otomatis Tertangani",
+    "body": "Lihat bagaimana tim layanan keuangan menjawab instan dan menangani tiap kasus dengan aman di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

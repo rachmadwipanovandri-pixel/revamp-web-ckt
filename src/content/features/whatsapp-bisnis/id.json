@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "WhatsApp Bisnis, Saatnya Naik Kelas dari Aplikasi Gratis | CekatAI",
+    "description": "WA bisnis kamu kewalahan? Upgrade ke WhatsApp API resmi + AI: chat dibales 24/7, satu nomor untuk semua admin. Cara 3.000+ bisnis scale tanpa nambah tim."
+  },
+  "hero": {
+    "badge": "Level Berikutnya Setelah Aplikasi WA Business",
+    "title": "WA Bisnis Kamu Mulai Kewalahan? Itu Tanda Bagus",
+    "subtitle": "Chat numpuk, satu HP dipegang gantian, admin bales sampai tengah malam, artinya jualanmu tumbuh lebih cepat dari tools-nya. Cekat.AI meng-upgrade WA bisnismu ke API resmi dengan AI yang bales chat 24/7"
+  },
+  "definition": "WhatsApp bisnis adalah penggunaan WhatsApp sebagai kanal utama jualan dan layanan pelanggan sebuah usaha. Cekat.AI meng-upgrade WA bisnis dari aplikasi gratis satu HP ke WhatsApp Business API resmi, satu nomor untuk seluruh tim, ditambah AI agent yang membalas chat pelanggan 24/7.",
+  "stats": [
+    { "value": "3.000+", "label": "bisnis sudah upgrade ke Cekat.AI" },
+    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
+    { "value": "±5 menit", "label": "bikin AI agent, tanpa coding" },
+    { "value": "24/7", "label": "chat dibales, toko tutup pun" }
+  ],
+  "benefits": [
+    {
+      "title": "Berhenti Gantian Pegang Satu HP",
+      "body": "Di aplikasi WA Business gratis, satu nomor nempel di satu HP, admin pagi oper ke admin sore, chat kelewat, history hilang entah ke mana. Setelah upgrade, semua admin login bareng ke satu inbox dari laptop masing-masing: siapa pegang chat mana jelas, tidak ada customer yang jatuh di sela-sela shift.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Beberapa admin menangani satu nomor WhatsApp bersama di Cekat.AI"
+    },
+    {
+      "title": "Chat Jam 11 Malam Tetap Ada yang Bales",
+      "body": "Pelanggan tidak peduli jam operasional, mereka tanya harga saat kepikiran, sering di luar jam kerja. AI agent Cekat.AI standby 24/7: jawab pertanyaan produk, cek ongkir, kirim QR pembayaran, sampai bikin order langsung dari chat. Kamu bangun pagi, yang tersisa tinggal closing-an.",
+      "image": "/images/home/ai-working-hours.png",
+      "imageAlt": "Pengaturan AI working hours di Cekat.AI"
+    },
+    {
+      "title": "AI yang Paham Jualanmu, Bukan Robot Kaku",
+      "body": "Ini bukan bot menu tekan-satu-tekan-dua. AI Cekat.AI memahami maksud dan konteks pertanyaan, cukup tempel SOP dan info produk ke knowledge base, sekitar 5 menit kemudian dia sudah bisa melayani seperti admin CS yang sudah di-briefing. Kalau ada yang perlu manusia, dia oper ke timmu lengkap dengan konteksnya.",
+      "image": "/images/chat/train-your-ai-agent.png",
+      "imageAlt": "Melatih AI agent dengan SOP dan info bisnis di Cekat.AI"
+    },
+    {
+      "title": "Riwayat Pelanggan Rapi Tanpa Nyatet Manual",
+      "body": "Selama ini data pelanggan tersebar di chat, notes HP, dan ingatan admin. Di Cekat.AI, setiap interaksi otomatis membuat dan meng-update kartu CRM, pembelian, riwayat chat, sampai tahap customer dari Visitor, Lead, ke Buyer. Mau follow-up siapa pun, konteksnya sudah tersedia.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Profil pelanggan yang terisi otomatis di CRM Cekat.AI"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "Tanda Upgrade",
+      "title": "Kapan Aplikasi Gratis Sudah Tidak Cukup",
+      "body": "Chat mulai kelewat, balasan makin lama, admin rebutan HP, dan kamu tidak tahu berapa leads yang hangus tiap minggu. Kalau salah satunya terasa familiar, bisnismu sudah melewati kapasitas aplikasi gratis."
+    },
+    {
+      "label": "Nomor Resmi",
+      "title": "Nomor yang Sama, Fondasi yang Beda",
+      "body": "Upgrade lewat Cekat.AI membawa WA bisnismu ke WhatsApp Business API resmi, Cekat.AI adalah Meta Business Partner resmi, jadi operasionalmu compliant dan tidak bergantung pada satu perangkat."
+    },
+    {
+      "label": "AI Jualan",
+      "title": "Admin Terbaikmu yang Tidak Pernah Tidur",
+      "body": "AI agent bales chat dengan bahasa natural, multibahasa, dan bisa dipecah jadi beberapa agent spesialis, sales, support, billing. Jam kerja tim selesai, AI otomatis ambil alih."
+    },
+    {
+      "label": "Mulai Cepat",
+      "title": "Live Tanpa Proyek IT",
+      "body": "Tanpa coding: tempel SOP ke knowledge base, rangkai alur dengan visual drag-and-drop designer, dan tim Cekat mendampingi proses onboarding API-mu sampai jalan."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Dari Satu HP ke Satu Platform",
+      "body": "Satu nomor WA bisnis dipakai seluruh tim dengan role-based access, private notes, dan auto-labeling, bukan lagi rebutan satu perangkat."
+    },
+    {
+      "title": "Dibales Cepat, Ditutup Lebih Sering",
+      "body": "AI membalas dalam hitungan detik dan menggiring percakapan sampai order jadi, karena leads yang dibales duluan biasanya yang jadi beli."
+    },
+    {
+      "title": "Semua Channel Ikut Pindah",
+      "body": "Bukan cuma WhatsApp, Instagram DM, Facebook Messenger, dan live chat website masuk ke inbox yang sama, jadi upgrade sekali beres semua."
+    }
+  ],
+  "testimonial": {
+    "quote": "Respon pelanggan menjadi lebih cepat",
+    "name": "Silica Brenda",
+    "role": "Founder, Moir Salon",
+    "image": "/images/home/testimonial-silica-brenda.jpg"
+  },
+  "faq": [
+    {
+      "q": "Apa itu WhatsApp bisnis?",
+      "a": "WhatsApp bisnis adalah pemakaian WhatsApp sebagai kanal jualan dan layanan pelanggan, dari jawab pertanyaan produk, kirim katalog, sampai terima order. Kebanyakan usaha mulai dari aplikasi WhatsApp Business gratis, lalu pindah ke WhatsApp Business API lewat platform seperti Cekat.AI begitu volume chat melewati kemampuan satu admin dan satu HP."
+    },
+    {
+      "q": "Kapan bisnisku perlu upgrade dari aplikasi WA Business gratis?",
+      "a": "Tanda-tandanya jelas: chat mulai kelewat atau telat dibales, admin gantian pegang satu HP, pertanyaan yang sama dijawab berulang-ulang, dan chat di luar jam kerja baru dibales besoknya. Kalau leads makin banyak tapi closing tidak ikut naik, kapasitas balesnya yang jadi hambatan, itu waktunya upgrade."
+    },
+    {
+      "q": "Apa yang aku dapat setelah upgrade ke Cekat.AI?",
+      "a": "Satu nomor WhatsApp resmi yang bisa dipakai seluruh tim sekaligus, AI agent yang bales chat 24/7, CRM yang terisi otomatis dari setiap percakapan, broadcast tersegmentasi, dan otomatisasi follow-up. Semua channel lain, Instagram DM, Facebook Messenger, live chat website, ikut masuk ke inbox yang sama."
+    },
+    {
+      "q": "Satu nomor WA bisa dipegang berapa admin?",
+      "a": "Di WhatsApp Business API lewat Cekat.AI, seluruh tim bisa masuk ke inbox yang sama tanpa batasan perangkat seperti di aplikasi gratis. Aksesnya diatur per peran, ada private notes antar admin, dan kolaborator bisa ditambahkan ke percakapan tertentu, cocok untuk tim CS yang tumbuh."
+    },
+    {
+      "q": "AI-nya beneran bisa jualan, bukan cuma auto-reply?",
+      "a": "Bisa. AI Cekat.AI memahami maksud pertanyaan, bukan cuma keyword, dia menjawab pertanyaan produk, cek ongkir, mengirim QR pembayaran, dan membuat order lengkap dengan detail pengiriman langsung dari percakapan. Yang butuh sentuhan manusia dioper ke tim dengan konteks penuh, sisanya dia selesaikan sendiri."
+    },
+    {
+      "q": "Gimana AI-nya tahu soal produk dan aturan tokoku?",
+      "a": "Kamu tinggal menempelkan SOP, daftar produk, dan info bisnis ke knowledge base Cekat.AI, tidak perlu coding atau training rumit. Prosesnya sekitar 5 menit, semudah briefing admin CS baru. Alur percakapan tertentu bisa dirancang lewat visual drag-and-drop designer kalau kamu mau kontrol lebih detail."
+    },
+    {
+      "q": "Kalau pelanggan maunya ngobrol sama manusia gimana?",
+      "a": "AI otomatis mengoper percakapan ke timmu saat dibutuhkan, membawa seluruh riwayat chat supaya pelanggan tidak mengulang cerita. Kamu juga bisa mengatur AI working hours: selama tim online mereka yang pegang, di luar itu AI ambil alih, pergantiannya mulus dua arah."
+    },
+    {
+      "q": "Perlu ganti nomor atau bikin nomor baru?",
+      "a": "Upgrade-nya soal fondasi, bukan identitas, yang berubah adalah cara nomormu bekerja: dari terikat satu HP menjadi terhubung ke platform lewat WhatsApp Business API resmi. Tim Cekat.AI mendampingi proses registrasi dan verifikasi nomor di Meta sampai semuanya aktif."
+    },
+    {
+      "q": "Berapa lama proses upgrade sampai jalan?",
+      "a": "Bikin AI agent-nya sendiri sekitar 5 menit, tempel SOP, atur alur, selesai. Untuk akses WhatsApp Business API, ada proses verifikasi bisnis di Meta yang dikawal langsung tim Cekat.AI sebagai Meta Business Partner resmi, jadi kamu tidak perlu mengurus dokumen dan pengajuannya sendirian."
+    },
+    {
+      "q": "Data chat dan pelanggan aman di mana?",
+      "a": "Semua percakapan dan data pelanggan tersimpan di platform Cekat.AI yang patuh UU PDP, undang-undang pelindungan data pribadi Indonesia. Akses tim diatur per peran, jadi data pelanggan tidak lagi tersebar di HP pribadi admin yang bisa hilang atau berganti orang."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah WA Bisnismu dari Bales Manual Jadi Mesin Closing",
+    "body": "Upgrade ke WhatsApp API resmi plus AI agent 24/7, dan rasakan bedanya di minggu pertama."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Customer Service Edutech 24/7, Retensi User Naik | CekatAI",
+    "description": "Edutech pakai Cekat.AI buat jawab pertanyaan kelas dan pembayaran 24/7, onboarding user baru, dan ajak siswa yang mulai nggak aktif balik belajar."
+  },
+  "hero": {
+    "badge": "Edutech",
+    "title": "Ubah Pendaftar Trial Jadi Siswa yang Beneran Belajar",
+    "subtitle": "Dari pertanyaan kelas, kendala login dan pembayaran, sampai nudge buat siswa yang mulai menghilang, Cekat.AI membalas instan di WhatsApp dan web chat, 24/7, tanpa nambah tim support",
+    "useCases": [
+      "Jam sibuk pra-ujian",
+      "Login & pembayaran",
+      "Onboarding trial",
+      "Cegah churn siswa"
+    ]
+  },
+  "definition": "Cekat.AI untuk edutech adalah platform AI customer service untuk platform kursus online, bimbel online, bootcamp, dan produk LMS di Indonesia, menjawab pertanyaan kelas dan pembayaran 24/7, mengawal onboarding user baru, dan menjaga retensi pengguna kursus online lewat follow-up otomatis dalam satu platform.",
+  "stats": [
+    {
+      "value": "+60%",
+      "label": "kenaikan jumlah pendaftaran mahasiswa di Matana University"
+    },
+    {
+      "value": "+10%",
+      "label": "kenaikan omzet membership di Midas Cuan"
+    },
+    {
+      "value": "24/7",
+      "label": "pertanyaan kelas dan pembayaran terjawab"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Malam Sebelum Ujian, Pertanyaan Numpuk, AI yang Jaga",
+      "body": "Pertanyaan siswa paling deras justru jam 11 malam sebelum deadline tugas atau ujian, pas tim support udah pulang. Cekat.AI menjawab pertanyaan materi, jadwal live class, dan akses kelas secara instan berapa pun banyaknya yang masuk sekaligus, jadi siswa tetap bisa belajar malam itu juga dan timmu datang pagi tanpa tumpukan tiket.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "AI agent menjawab pertanyaan kelas di inbox Cekat.AI"
+    },
+    {
+      "title": "Kendala Login dan Pembayaran Beres di Chat Pertama",
+      "body": "Siswa yang gagal login atau bingung status pembayarannya bukan mau komplain, dia mau belajar. Cekat.AI menjawab kendala umum saat itu juga, dan untuk kasus yang butuh tim teknis, tiket dibuat otomatis dari percakapan lalu diarahkan ke tim yang tepat, jadi nggak ada masalah yang tenggelam di inbox.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Tiket kendala dibuat otomatis dari chat di Cekat.AI"
+    },
+    {
+      "title": "Pendaftar Trial Diantar Sampai Kelas Pertamanya",
+      "body": "Kebanyakan user trial berhenti bukan karena produknya kurang, tapi karena nggak pernah mulai. Cekat.AI menyapa pendaftar baru otomatis, mengarahkan ke kelas pertamanya, dan mem-follow-up yang belum juga login setelah beberapa hari, alurnya kamu rakit sendiri tanpa coding, dipicu perilaku masing-masing user.",
+      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
+      "imageAlt": "Alur onboarding user baru otomatis di Cekat.AI"
+    },
+    {
+      "title": "Siswa Mulai Menghilang? Disapa Sebelum Beneran Churn",
+      "body": "Churn jarang datang tiba-tiba; biasanya diawali seminggu materi nggak dibuka. Cekat.AI melacak perjalanan tiap user di CRM, dari daftar, aktif, sampai mulai diam, dan mengirim nudge personal buat ngajak balik belajar sebelum perpanjangan bulan berikutnya jadi taruhan. Timmu melihat siapa yang berisiko, bukan menebak.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Perjalanan belajar user terpantau di CRM Cekat.AI"
+    },
+    {
+      "title": "Campaign per Segmen, CSAT Kepantau Terus",
+      "body": "Promo batch baru buat alumni, reminder perpanjangan buat yang masa aksesnya mau habis, konten gratis buat leads yang belum beli. Cekat.AI mensegmentasi user dari kelas, aktivitas, dan status pembayarannya untuk broadcast WhatsApp resmi, sambil mengukur CSAT di tiap percakapan supaya kualitas support kelihatan sebagai angka, bukan perasaan.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Segmentasi user dan campaign edutech di Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Chat siswa dan campaign jalan di WhatsApp Business API resmi, bareng Instagram DM dan live chat di website atau aplikasimu, satu inbox untuk semua channel."
+    },
+    {
+      "title": "AI yang Jaga Aktivasi dan Retensi",
+      "body": "AI menjawab instan, mengantar user baru ke kelas pertamanya, dan menyapa yang mulai nggak aktif, dari sign-up sampai perpanjangan jalan otomatis."
+    },
+    {
+      "title": "Skalabel Tanpa Nambah Headcount",
+      "body": "User bertambah ribuan, waktu respons tetap stabil. Kasus rumit dialihkan ke tim support lengkap dengan riwayat chat dan data user-nya."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana Cekat.AI membantu platform edutech dan kursus online?",
+      "a": "Cekat.AI menjawab pertanyaan siswa secara instan 24/7 di WhatsApp, Instagram, dan live chat, materi, jadwal, akses kelas, pembayaran, sambil menjalankan onboarding user baru dan follow-up retensi otomatis. Tim support fokus ke kasus yang butuh manusia, bukan pertanyaan yang sama berulang-ulang."
+    },
+    {
+      "q": "Bisa bantu siswa yang stuck di login atau pembayaran?",
+      "a": "Bisa. AI menjawab kendala umum saat itu juga, cara pulihkan akses, status pembayaran, metode yang tersedia, dan untuk kasus teknis, tiket dibuat otomatis dari percakapan lalu diarahkan ke tim yang tepat dengan notifikasi. Siswa dapat kepastian, timmu dapat antrian yang rapi."
+    },
+    {
+      "q": "Gimana Cekat.AI menaikkan aktivasi user trial?",
+      "a": "Pendaftar baru disapa otomatis, diarahkan ke kelas pertamanya, dan di-follow-up kalau belum juga mulai setelah beberapa hari. Alurnya dipicu perilaku user, daftar, login, selesai modul, jadi tiap orang dapat dorongan yang sesuai tahapnya, bukan blast yang sama untuk semua."
+    },
+    {
+      "q": "Bisa ngajak siswa yang nggak aktif buat balik belajar?",
+      "a": "Bisa. Perjalanan tiap user terpantau di CRM, dan follow-up otomatis terpicu saat seseorang mulai diam, reminder materi yang belum selesai, sapaan personal, atau penawaran khusus sebelum masa akses habis. Churn dicegah dari tanda pertamanya, bukan disesali di laporan bulanan."
+    },
+    {
+      "q": "Bisa integrasi dengan LMS atau aplikasi kami?",
+      "a": "Bisa. Lewat API dan webhook, Cekat.AI terhubung dengan LMS, payment gateway, atau backend-mu, jadi AI bisa menjawab dengan data user yang sebenarnya, status langganan, progres kelas, dan alur otomatis bisa dipicu dari event di sistemmu."
+    },
+    {
+      "q": "Gimana kami tahu kualitas support-nya beneran bagus?",
+      "a": "CSAT terukur di tiap percakapan, dan dashboard analitik menampilkan volume chat, waktu respons, topik yang paling sering ditanya, sampai performa tiap agent, AI maupun manusia. Kamu mengambil keputusan pakai angka, bukan feeling."
+    },
+    {
+      "q": "Data siswa aman di Cekat.AI?",
+      "a": "Data percakapan dan user tersimpan dengan enkripsi dan akses yang diatur per role, jadi hanya tim yang berwenang yang bisa melihatnya. Sertifikasi ISO 27001 sedang dalam proses, dan praktik keamanan yang sama sudah dipakai 3.000+ bisnis di Indonesia."
+    },
+    {
+      "q": "Berapa lama setup untuk platform edutech?",
+      "a": "Membangun AI agent-nya sekitar lima menit, salin FAQ, katalog kelas, kebijakan refund, dan SOP support ke knowledge base, dan AI langsung menjawab akurat. Integrasi API bisa menyusul bertahap; mulai dari jawaban instan aja udah kerasa bedanya."
+    },
+    {
+      "q": "Berapa biayanya, dan bisa coba dulu?",
+      "a": "Paket mengikuti skala user dan kebutuhan channel-mu, dan kamu bisa lihat semuanya jalan lewat demo bareng tim kami sebelum memutuskan. Jadwalkan konsultasi gratis, bawa use case-mu, kami tunjukkan alurnya langsung."
+    }
+  ],
+  "cta": {
+    "heading": "Ubah Sign-up Jadi Siswa yang Bertahan",
+    "body": "Lihat bagaimana platform edutech menjalankan support, onboarding, dan retensi 24/7 di Cekat.AI, jadwalkan konsultasi gratis dengan tim kami."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "AI Customer Support for SaaS Companies, 24/7 | CekatAI",
+    "description": "SaaS teams use Cekat.AI to answer product questions from their docs 24/7, guide trial users to activation, and turn bugs into tickets. See how."
+  },
+  "hero": {
+    "badge": "SaaS",
+    "title": "Support That Knows Your Product, Without Growing the Team",
+    "subtitle": "From feature questions to login issues to bug reports, Cekat.AI answers from your product docs on web chat and WhatsApp, 24/7, so your small CS team stops drowning in repeat tickets",
+    "useCases": [
+      "Answers from your docs",
+      "Trial onboarding",
+      "Bug report tickets",
+      "User question analytics"
+    ]
+  },
+  "definition": "Cekat.AI for SaaS is an AI customer service platform for SaaS companies in Indonesia, running customer support for SaaS products 24/7, answering questions straight from your documentation, guiding trial users to activation, and turning bug reports into organized tickets in one platform.",
+  "stats": [
+    {
+      "value": "+30%",
+      "label": "increase in subscribers at Lintas Jaringan Nusantara"
+    },
+    {
+      "value": "+8%",
+      "label": "increase in qualified leads at Multi Flashindo Karisma within 4 months"
+    },
+    {
+      "value": "24/7",
+      "label": "product questions, onboarding, and tickets answered"
+    },
+    {
+      "value": "3,000+",
+      "label": "businesses run on Cekat.AI"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Docs Nobody Reads Become Instant Answers in Chat",
+      "body": "Users rarely open the documentation, they message you instead. Cekat.AI trains on your docs, FAQs, and knowledge base, then answers feature, pricing, and how-to questions in natural language within seconds. Update the docs once and the AI answers with the latest version, no more three admins giving three different answers.",
+      "image": "/images/home/knowledge-source.png",
+      "imageAlt": "Product knowledge base powering AI answers in Cekat.AI"
+    },
+    {
+      "title": "Trial Users Guided to Activation, Not Left to Drift",
+      "body": "Most trial users quit before they ever feel the value of your product. Cekat.AI greets new signups, answers setup questions at the exact moment they get stuck, and sends automated WhatsApp follow-ups based on each user's journey, so more trials reach the aha moment instead of silently disappearing on day two.",
+      "image": "/images/crm/track-customer-journey.png",
+      "imageAlt": "Trial user journey tracked in the Cekat.AI CRM"
+    },
+    {
+      "title": "Bug Reports Turn Into Tickets for Engineering",
+      "body": "Bugs reported in chat tend to vanish before they reach an engineer. Cekat.AI converts bug reports into tickets automatically, complete with the user's chronology, and routes them to the right team. Engineering gets full context without joining the support rotation, and users can ask for a status update anytime.",
+      "image": "/images/order/auto-create-ticket.png",
+      "imageAlt": "Bug reports automatically converted into tickets in Cekat.AI"
+    },
+    {
+      "title": "Complex Cases Hand Over to Your Team, Context Included",
+      "body": "The AI handles the repetitive questions, your team handles what needs a human. When a sensitive billing case or an enterprise request comes in, the conversation hands over to a human agent with the full history attached, the user never repeats themselves, and engineers only get pulled in when it is truly needed.",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Conversation escalating from AI to a human agent in Cekat.AI"
+    },
+    {
+      "title": "Know What Users Ask, and How Satisfied They Leave",
+      "body": "Every conversation becomes data. See the topics users ask about most, where they get stuck, and the CSAT score of each interaction, so roadmap calls and onboarding fixes start from real user conversations instead of guesses in a meeting.",
+      "image": "/images/marketing/understand-customer-behavior.png",
+      "imageAlt": "Conversation analytics and customer satisfaction in Cekat.AI"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Official Meta Business Partner",
+      "body": "Web chat in your app, the official WhatsApp Business API, Instagram DM, and Facebook Messenger flow into one inbox, one history per user, compliant and reliable."
+    },
+    {
+      "title": "AI That Speaks Your Product",
+      "body": "Trained on your documentation and knowledge base, the AI answers product questions accurately, then hands complex cases to your team with full context."
+    },
+    {
+      "title": "Trusted by 3,000+ Businesses",
+      "body": "From startups to large groups across Indonesia, Cekat.AI handles real customer conversations every day, proven at real chat volume."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How does Cekat.AI help SaaS companies?",
+      "a": "It answers product questions instantly 24/7 on web chat, WhatsApp, and social media, guides trial users to activation, and turns bug reports into organized tickets. Your small CS team focuses on cases that need a human, and engineers stay out of the support rotation."
+    },
+    {
+      "q": "How does the AI learn our product?",
+      "a": "Paste your documentation, FAQs, changelog, and SOPs into the knowledge base and the AI answers from that material. When the product changes, update the knowledge base once and the answers update with it, no retraining projects, no waiting on engineering."
+    },
+    {
+      "q": "Can it help onboard trial users?",
+      "a": "Yes. The AI greets new signups, answers setup questions at the moment they get stuck, and sends automated follow-ups on WhatsApp based on each user's behavior. The goal is simple, more trial users experiencing your product's value before the trial runs out."
+    },
+    {
+      "q": "How are bug reports handled?",
+      "a": "Bug reports from chat become tickets automatically, complete with the user's chronology and details, then route to the right team. You track every ticket's status in one view, so no bug drowns in the inbox and users hear back the moment it is fixed."
+    },
+    {
+      "q": "When does a conversation hand over from AI to our team?",
+      "a": "By rules you define, for example billing cases, refund requests, or an enterprise prospect asking for a demo. The AI hands the conversation to the right agent with full history attached, so users never have to start their story over."
+    },
+    {
+      "q": "Does it track customer satisfaction?",
+      "a": "Yes. CSAT is measured from conversations, and the analytics dashboard shows the most asked topics, peak hours, and how AI and human agents perform. You learn where users get stuck and which parts of the product generate the most questions."
+    },
+    {
+      "q": "How is our user data secured?",
+      "a": "Conversation and customer data is stored securely with role-based access, visible only to team members you authorize. ISO 27001 certification is in progress, and data practices follow industry standards."
+    },
+    {
+      "q": "How long does setup take? Do we need engineering time?",
+      "a": "Building the AI agent takes around five minutes, paste your product docs and FAQs into the knowledge base, install the web chat widget, and it starts answering. No coding to get started, with API integration available when you want to connect data from your app."
+    },
+    {
+      "q": "How does pricing work for an early-stage SaaS?",
+      "a": "Pricing follows usage, so you can start on a small plan while your user base is small and scale up as you grow. Book a free consultation and our team will help size a plan that matches your conversation volume."
+    }
+  ],
+  "cta": {
+    "heading": "Give Users Answers as Fast as Your Product",
+    "body": "See how SaaS companies run 24/7 customer support on Cekat.AI, book a free consultation with our team."
+  }
+}
