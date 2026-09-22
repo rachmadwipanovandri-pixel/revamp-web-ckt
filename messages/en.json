@@ -139,6 +139,32 @@
         "company": "Rumah Zakat",
         "metricValue": "24 hours",
         "metricLabel": "responses under 1 minute, up from weekdays only"
+      },
+      "videos": {
+        "moir": {
+          "name": "Silcia Brenda",
+          "role": "CEO & Founder - Moir Salon"
+        },
+        "rumahZakat": {
+          "name": "Tantan Supriantna",
+          "role": "Head Customer Relation - Rumah Zakat"
+        },
+        "mnp": {
+          "name": "Hargyo T. N. Ignatis, Ph.D",
+          "role": "Director - Multimedia Nusantara Polytechnic (MNP)"
+        },
+        "vio": {
+          "name": "Rianti Yahya",
+          "role": "CEO - VIO Optical Clinic"
+        },
+        "dokterhub": {
+          "name": "Gery Wilianto",
+          "role": "CEO & Founder - DokterHub"
+        },
+        "threeland": {
+          "name": "Adam Sulaiman",
+          "role": "President Director - Threeland Property"
+        }
       }
     },
     "featureAccordion": {

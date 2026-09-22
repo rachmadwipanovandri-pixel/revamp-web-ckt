@@ -9,7 +9,7 @@ const MESSAGES_PATH = join(process.cwd(), "messages", `${LOCALE}.json`);
 type Json = string | number | boolean | null | Json[] | { [k: string]: Json };
 
 /** Namespaces the wireframe editor may rewrite (homepage `/`). */
-const NAMESPACES = ["home", "agentic"] as const;
+const NAMESPACES = ["home", "agentic", "pricing"] as const;
 type Namespace = (typeof NAMESPACES)[number];
 
 function readMessages(): Record<string, Json> {

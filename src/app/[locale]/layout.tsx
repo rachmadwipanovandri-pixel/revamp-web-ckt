@@ -38,6 +38,7 @@ const CLIENT_MESSAGE_KEYS = [
   "footer",
   "pricing",
   "home",
+  "agentic",
   "contact",
   "wireframe",
   "chat",
