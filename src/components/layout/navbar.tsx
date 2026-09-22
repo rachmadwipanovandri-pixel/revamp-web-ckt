@@ -40,10 +40,8 @@ export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
 
   // Homepage and product pages get a transparent header over the hero by default; any other
   // route (or an explicit `variant` prop) keeps the solid one.
-  // `/new` is a design playground that shares the hero treatment.
   const transparentPaths = [
     "/",
-    "/new",
     "/chat",
     "/crm",
     "/marketing",

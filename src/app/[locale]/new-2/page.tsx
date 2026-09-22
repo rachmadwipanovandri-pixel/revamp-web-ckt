@@ -23,13 +23,13 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 /**
- * Second redesign pass for the homepage — isolated on /new-2 so /new stays
- * untouched. Direction: Sentry-lineage blue gradient hero with an isometric
+ * Second redesign pass for the homepage — isolated on /new-2 so the promoted
+ * `/` homepage stays untouched. Direction: Sentry-lineage blue gradient hero with an isometric
  * platform map, then airy light product chapters (two-tone display headings,
  * wireframe pillar glyphs, floating UI cards), closed by a reverse gradient.
  *
  * Chrome is exclusive: shared Navbar/Footer return null on this pathname, and
- * SiteHeader + SiteFooter render here only — never on `/` or `/new`.
+ * SiteHeader + SiteFooter render here only — never on `/`.
  *
  * Rhythm: site header → gradient hero → white pillars → wash workspace →
  * white capability rows → muted integrations → wash proof+pricing → muted

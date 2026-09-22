@@ -1,16 +1,26 @@
 import { setRequestLocale } from "next-intl/server";
-import { Hero } from "@/components/sections/home/hero";
-import { TrustedBy } from "@/components/sections/home/trusted-by";
-import { FeatureAccordion } from "@/components/sections/home/feature-accordion";
-import { IndustryCarousel } from "@/components/sections/home/industry-carousel";
-import { Integrations } from "@/components/sections/home/integrations";
-import { PlatformOverview } from "@/components/sections/home/platform-overview";
-import { BuildAIAgent } from "@/components/sections/home/build-ai-agent";
-import { AIAgentFlow } from "@/components/sections/home/ai-agent-flow";
-import { PricingTeaser } from "@/components/sections/home/pricing-teaser";
-import { RealResults } from "@/components/sections/home/real-results";
-import { FinalCTA } from "@/components/sections/home/final-cta";
+import {
+  Hero,
+  SoundWords,
+  Proof,
+  Products,
+  Pricing,
+  Results,
+  OpenApi,
+  FinalCta,
+} from "@/components/sections/agentic";
 
+/**
+ * Production homepage — Agentic AI Ecosystem story (promoted from `/new`).
+ *
+ * Chapter rhythm: void keynote hero (6-node hub) → light sound-words
+ * (Independent · Integrated · Open API) → soft proof strip → muted product
+ * grid (six agents) → brand-wash pricing → muted “Bukti Nyata” video wall →
+ * ink Open API + integrations → void closer.
+ *
+ * SEO lives on the locale layout (title, description, hreflang). Do not set
+ * `robots: noindex` here — this is the canonical homepage.
+ */
 export default async function HomePage({
   params,
 }: {
@@ -21,39 +31,27 @@ export default async function HomePage({
 
   return (
     <>
-      {/* Hero and TrustedBy render normally: they are above the fold, and
-          content-visibility there would delay the first paint rather than help
-          it. Everything below is skipped until scrolled near. */}
       <Hero />
-      <TrustedBy />
-      {/* Features then industries: what the product does, then who it is
-          for, then what it connects to. */}
       <div className="cv-auto">
-        <FeatureAccordion />
+        <SoundWords />
       </div>
       <div className="cv-auto">
-        <IndustryCarousel />
+        <Proof />
       </div>
       <div className="cv-auto">
-        <Integrations />
+        <Products />
       </div>
       <div className="cv-auto">
-        <PlatformOverview />
+        <Pricing />
       </div>
       <div className="cv-auto">
-        <BuildAIAgent />
+        <Results />
       </div>
       <div className="cv-auto">
-        <AIAgentFlow />
+        <OpenApi />
       </div>
       <div className="cv-auto">
-        <PricingTeaser />
-      </div>
-      <div className="cv-auto">
-        <RealResults />
-      </div>
-      <div className="cv-auto">
-        <FinalCTA />
+        <FinalCta />
       </div>
     </>
   );

@@ -7,7 +7,7 @@ import { SafeIcon } from "@/components/sections/new-home/safe-icon";
 import { SplitHeading, Eyebrow } from "./split-heading";
 
 /**
- * Light integrations constellation — same data as /new, inverted surface so
+ * Light integrations constellation — same data as the homepage, inverted surface so
  * the page stays in its airy middle chapters.
  */
 export async function Integrations() {

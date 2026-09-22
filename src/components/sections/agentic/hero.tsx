@@ -5,14 +5,12 @@ import { AppAnchor } from "@/components/shared/app-anchor";
 import { Button } from "@/components/ui/button";
 import { SafeIcon } from "@/components/sections/new-home/safe-icon";
 import { mdiWhatsapp } from "@/lib/icons";
-import { MarqueeStrip } from "@/components/sections/shared/marquee-strip";
-import { TRUSTED_LOGOS } from "@/components/sections/shared/trusted-logos";
 import { EcosystemHub } from "./ecosystem-hub";
 
 const KEYNOTE = ["Independent", "Integrated", "Open API"] as const;
 
 /**
- * Keynote void hero for the Agentic AI Ecosystem pass on /new — deep navy
+ * Keynote void hero for the Agentic AI Ecosystem homepage — deep navy
  * stage, display type, and a six-node ecosystem map that names every product
  * before the scroll begins.
  */
@@ -37,17 +35,6 @@ export function Hero() {
           className="animate-orb-drift absolute bottom-[8%] left-[38%] h-64 w-64 rounded-full bg-[#1352bf]/35 blur-[100px]"
           style={{ animationDelay: "-12s" }}
         />
-      </div>
-
-      <div className="absolute inset-x-0 top-16 z-20 border-b border-white/8 bg-white/4 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-7xl items-center gap-6 overflow-hidden px-4 py-3 sm:px-6 lg:px-8">
-          <span className="shrink-0 font-numeric text-[0.65rem] font-semibold tracking-[0.22em] text-sky-300 uppercase">
-            Our Amazing Clients
-          </span>
-          <div className="min-w-0 flex-1 opacity-70 [&_img]:h-4! [&_img]:opacity-100! [&_img]:grayscale-0!">
-            <MarqueeStrip logos={TRUSTED_LOGOS.slice(0, 8)} />
-          </div>
-        </div>
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pt-36 pb-16 sm:px-6 lg:px-8 lg:pt-40 lg:pb-20">

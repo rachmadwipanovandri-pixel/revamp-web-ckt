@@ -8,7 +8,7 @@ const MESSAGES_PATH = join(process.cwd(), "messages", `${LOCALE}.json`);
 
 type Json = string | number | boolean | null | Json[] | { [k: string]: Json };
 
-/** Namespaces the wireframe editor may rewrite (homepage `/` + redesign `/new`). */
+/** Namespaces the wireframe editor may rewrite (homepage `/`). */
 const NAMESPACES = ["home", "agentic"] as const;
 type Namespace = (typeof NAMESPACES)[number];
 
@@ -109,9 +109,8 @@ export async function POST(request: Request) {
 
   writeFileSync(MESSAGES_PATH, `${JSON.stringify(messages, null, 2)}\n`, "utf8");
 
-  // Statically rendered pages — bust them so the next visit rebuilds.
+  // Statically rendered homepage — bust it so the next visit rebuilds.
   revalidatePath("/", "layout");
-  revalidatePath("/new", "page");
 
   return NextResponse.json({
     ok: true,

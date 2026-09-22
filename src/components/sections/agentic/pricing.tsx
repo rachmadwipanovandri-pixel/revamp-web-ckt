@@ -8,7 +8,7 @@ import { SafeIcon } from "@/components/sections/new-home/safe-icon";
 import { PricingPlans } from "@/components/sections/new-home/pricing-plans";
 
 /**
- * Pricing act on /new — soft brand wash matching the agentic light chapters,
+ * Pricing act on the homepage — soft brand wash matching the agentic light chapters,
  * live PlanCards from the shared pricing registry.
  */
 export async function Pricing() {

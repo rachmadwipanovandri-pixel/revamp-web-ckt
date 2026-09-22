@@ -10,7 +10,7 @@ const NODES = [
 ] as const;
 
 /**
- * Six-node ecosystem map for the /new hero — pure SVG blueprint of the
+ * Six-node ecosystem map for the homepage hero — pure SVG blueprint of the
  * agentic stack around a Cekat core. Wireframe strokes keep it legible on
  * the void gradient.
  */

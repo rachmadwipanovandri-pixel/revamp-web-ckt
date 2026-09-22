@@ -1,15 +1,6 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
-import {
-  Hero,
-  SoundWords,
-  Proof,
-  Products,
-  Pricing,
-  Results,
-  OpenApi,
-  FinalCta,
-} from "@/components/sections/agentic";
+import { redirect } from "@/i18n/navigation";
 
 export function generateStaticParams() {
   return [{ locale: "id" }, { locale: "en" }];
@@ -17,19 +8,13 @@ export function generateStaticParams() {
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Agentic AI Ecosystem | CekatAI",
     robots: { index: false, follow: false },
   };
 }
 
 /**
- * Design playground for the homepage redesign — Agentic AI Ecosystem story
- * (Innov 25 Keynote). Production homepage stays on `sections/home/*`.
- *
- * Chapter rhythm: void keynote hero (6-node hub) → light sound-words
- * (Independent · Integrated · Open API) → soft proof strip → muted product
- * grid (six agents) → brand-wash pricing → muted “Bukti Nyata” video wall →
- * ink Open API + integrations → void closer.
+ * Former design playground for the homepage redesign. The agentic sections
+ * now live on `/`; this route only keeps old links working.
  */
 export default async function NewHomePage({
   params,
@@ -38,31 +23,5 @@ export default async function NewHomePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-
-  return (
-    <>
-      <Hero />
-      <div className="cv-auto">
-        <SoundWords />
-      </div>
-      <div className="cv-auto">
-        <Proof />
-      </div>
-      <div className="cv-auto">
-        <Products />
-      </div>
-      <div className="cv-auto">
-        <Pricing />
-      </div>
-      <div className="cv-auto">
-        <Results />
-      </div>
-      <div className="cv-auto">
-        <OpenApi />
-      </div>
-      <div className="cv-auto">
-        <FinalCta />
-      </div>
-    </>
-  );
+  redirect({ href: "/", locale });
 }
