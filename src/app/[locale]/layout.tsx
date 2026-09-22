@@ -120,7 +120,8 @@ export default async function LocaleLayout({
         {/*
           Preconnect is hoisted to <head> by Next. UTM / click-id capture
           already happened in proxy.ts (edge cookie) — tags below never block
-          first paint: GTM after hydration, Meta/HYROS/Cekat at idle.
+          first paint: GTM/Meta/HYROS/Cekat all wait for load or idle so the
+          lab TBT/LCP path stays free (see PageSpeed mobile run).
         */}
         <AnalyticsPreconnect />
         <AdParamsUrl />

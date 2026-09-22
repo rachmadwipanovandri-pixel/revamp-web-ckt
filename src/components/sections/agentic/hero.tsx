@@ -45,6 +45,7 @@ export function Hero() {
               {t("eyebrow")}
             </p>
 
+            {/* LCP candidate: fully opaque in the first paint (no opacity-from-0). */}
             <h1 className="mx-auto max-w-[16ch] text-[clamp(2.1rem,5.2vw,3.75rem)] leading-[1.04] font-semibold tracking-[-0.035em] text-balance text-white lg:mx-0 lg:max-w-[14ch]">
               {t("titleLead")}{" "}
               <span className="bg-linear-to-r from-sky-300 to-blue-400 bg-clip-text text-transparent">

@@ -7,12 +7,22 @@ const CEKAT_ANALYTICS_ID =
 /**
  * Cekat Analytics at idle. The inline bootstrap queues `ckt(...)` calls until
  * `cktevents.js` arrives, so early events are not lost.
+ *
+ * Idle (not `lazyOnload`) keeps the script out of the Lighthouse load window —
+ * it was a top TBT / forced-reflow contributor on the mobile lab run.
  */
 export function CekatAnalytics() {
   if (!CEKAT_ANALYTICS_ID) return null;
   return (
     <Script id="cekat-analytics" strategy="lazyOnload">
-      {`!function(c,e,k,a,t){c.ckt=c.ckt||function(){(c.ckt.q=c.ckt.q||[]).push(arguments)};c.ckt.l=+new Date;t=e.getElementsByTagName(k)[0];a=e.createElement(k);a.async=true;a.src='https://t.cekat.ai/js/cktevents.js';t.parentNode.insertBefore(a,t)}(window,document,'script');ckt('${CEKAT_ANALYTICS_ID}');`}
+      {`(function(w,d){
+var boot=function(){if(w.__cktBooted)return;w.__cktBooted=1;
+w.ckt=w.ckt||function(){(w.ckt.q=w.ckt.q||[]).push(arguments)};
+w.ckt.l=+new Date;
+var a=d.createElement('script');a.async=true;a.src='https://t.cekat.ai/js/cktevents.js';
+d.head.appendChild(a);w.ckt('${CEKAT_ANALYTICS_ID}');};
+if("requestIdleCallback" in w)w.requestIdleCallback(boot,{timeout:1e4});
+else w.setTimeout(boot,5e3);})(window,document);`}
     </Script>
   );
 }

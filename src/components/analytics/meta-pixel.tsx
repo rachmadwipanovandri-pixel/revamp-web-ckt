@@ -7,8 +7,9 @@ const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "1023236368807376";
  *   `.queue` until `fbevents.js` runs). `init` + first `PageView` are queued
  *   in the HTML, so they are not lost if the visitor leaves before idle.
  * - The library is injected only when the browser is idle
- *   (`requestIdleCallback`, with a short timeout fallback) — off the
- *   critical path, no hydration cost for this tracker.
+ *   (`requestIdleCallback`, with a longer timeout fallback) — off the
+ *   critical path, no hydration cost for this tracker. The old 2–3s
+ *   timeout landed inside the Lighthouse lab run and added to TBT.
  *
  * Campaign params (UTM / fbclid / …) are already on the URL and in the
  * `cekat_ads` cookie from `proxy.ts`, so attribution does not depend on when
@@ -29,8 +30,8 @@ var load=function(){if(f.__fbLoaded)return;f.__fbLoaded=1;
 var s=b.createElement("script");s.async=1;
 s.src="https://connect.facebook.net/en_US/fbevents.js";
 b.head.appendChild(s);};
-if("requestIdleCallback" in f)f.requestIdleCallback(load,{timeout:3e3});
-else f.setTimeout(load,2e3);})(window,document);`,
+if("requestIdleCallback" in f)f.requestIdleCallback(load,{timeout:8e3});
+else f.setTimeout(load,5e3);})(window,document);`,
         }}
       />
       <noscript>

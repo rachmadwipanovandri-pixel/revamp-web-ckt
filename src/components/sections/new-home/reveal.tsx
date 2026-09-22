@@ -6,7 +6,10 @@ import { cn } from "@/lib/utils";
 
 /**
  * One-shot scroll reveal. Latches after first entry. Motion language for the
- * radical pass: longer travel, soft blur, single expo-out curve.
+ * radical pass: longer travel, soft fade, single expo-out curve.
+ *
+ * Opacity + transform only — animating `filter` is non-composited and shows
+ * up in Lighthouse under “Avoid non-composited animations”.
  */
 export function Reveal({
   children,
@@ -32,8 +35,8 @@ export function Reveal({
     <Tag
       ref={ref as never}
       className={cn(
-        "reveal-on-scroll transition-all duration-[800ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none",
-        revealed ? "translate-y-0 opacity-100 blur-0" : "opacity-0 blur-[4px]",
+        "reveal-on-scroll transition-[opacity,transform] duration-[800ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none",
+        revealed ? "translate-y-0 opacity-100" : "opacity-0",
         className,
       )}
       style={

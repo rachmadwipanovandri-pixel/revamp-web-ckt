@@ -200,7 +200,7 @@ export function FeatureAccordionPanels({
                   "relative z-[1] object-contain transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]",
                   index === open
                     ? "translate-y-0 scale-100 opacity-100 blur-0"
-                    : "translate-y-3 scale-[1.02] opacity-0 blur-[4px]",
+                    : "translate-y-3 scale-[1.02] opacity-0",
                 )}
               />
             ) : null,

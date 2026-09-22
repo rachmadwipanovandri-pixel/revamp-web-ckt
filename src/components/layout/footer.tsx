@@ -145,8 +145,8 @@ export function Footer() {
       className={cn(
         "reveal-on-scroll relative overflow-hidden bg-linear-to-b from-[#08214c] via-primary-dark to-[#0c3f96] text-white transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none",
         revealed
-          ? "translate-y-0 opacity-100 blur-0"
-          : "translate-y-8 opacity-0 blur-[3px]",
+          ? "translate-y-0 opacity-100"
+          : "translate-y-8 opacity-0",
       )}
     >
       {/* Continuity edge from the closer above */}

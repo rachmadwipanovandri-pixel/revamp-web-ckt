@@ -119,12 +119,10 @@
     from {
       opacity: 0;
       transform: translateY(20px) scale(1.01);
-      filter: blur(6px);
     }
     to {
       opacity: 1;
       transform: none;
-      filter: blur(0);
     }
   }
 
@@ -139,16 +137,16 @@
     }
   }
 
+  /* Opacity + transform only — filter forces main-thread paint work, which
+     delayed LCP while third-party tags held the main thread. */
   @keyframes fadeInUpBlur {
     0% {
       opacity: 0;
       transform: translateY(12px);
-      filter: blur(4px);
     }
     100% {
       opacity: 1;
       transform: translateY(0);
-      filter: blur(0);
     }
   }
 
@@ -176,17 +174,16 @@
     }
   }
 
-  --animate-hero-in: heroIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  /* Transform-only so hero copy is fully opaque on first paint (LCP).
+     Opacity-from-0 + filter kept the H1 out of the LCP candidate set until
+     late in the lab run; transform still gives the entrance motion. */
+  --animate-hero-in: heroIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
   @keyframes heroIn {
     from {
-      opacity: 0;
-      transform: translateY(28px);
-      filter: blur(10px);
+      transform: translateY(16px);
     }
     to {
-      opacity: 1;
       transform: none;
-      filter: blur(0);
     }
   }
 
@@ -249,29 +246,30 @@
   }
 }
 
+/* Short delays so the H1 paints for LCP without waiting on a long stagger. */
 .hero-stagger > * {
-  animation: heroIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: heroIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 .hero-stagger > *:nth-child(1) {
-  animation-delay: 40ms;
+  animation-delay: 0ms;
 }
 .hero-stagger > *:nth-child(2) {
-  animation-delay: 140ms;
+  animation-delay: 40ms;
 }
 .hero-stagger > *:nth-child(3) {
-  animation-delay: 240ms;
+  animation-delay: 80ms;
 }
 .hero-stagger > *:nth-child(4) {
-  animation-delay: 340ms;
+  animation-delay: 120ms;
 }
 .hero-stagger > *:nth-child(5) {
-  animation-delay: 440ms;
+  animation-delay: 160ms;
 }
 .hero-stagger > *:nth-child(6) {
-  animation-delay: 540ms;
+  animation-delay: 200ms;
 }
 .hero-stagger > *:nth-child(7) {
-  animation-delay: 640ms;
+  animation-delay: 240ms;
 }
 
 .eyebrow-rule {
