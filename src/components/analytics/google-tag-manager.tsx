@@ -1,11 +1,11 @@
 import Script from "next/script";
-import { onTrackerReady } from "@/lib/defer-third-party";
+import { onTrackerReadyIdle } from "@/lib/defer-third-party";
 
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-5CWCQNBX";
 
 /**
- * GTM after first interaction, or by the hybrid fallback (≤3s / pagehide)
- * so idle visitors still get a pageview.
+ * GTM after first interaction / 9s fallback / pagehide, then idle so `gtm.js`
+ * and its tags (TikTok, gtag, …) stay off the critical main-thread window.
  *
  * `dataLayer` is primed in the HTML so early `push` calls buffer before
  * `gtm.js` arrives. UTM / gclid / fbclid stay on the landing URL and in the
@@ -23,7 +23,7 @@ export function GoogleTagManager() {
         }}
       />
       <Script id="google-tag-manager" strategy="lazyOnload">
-        {onTrackerReady(
+        {onTrackerReadyIdle(
           `(function(w,d,s,l,i){
 w[l]=w[l]||[];
 w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});

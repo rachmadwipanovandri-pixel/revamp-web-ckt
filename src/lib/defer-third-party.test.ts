@@ -1,9 +1,19 @@
 import { describe, it, expect } from "vitest";
-import { onTrackerReady, onUserInteraction, TRACKER_FALLBACK_MS } from "./defer-third-party";
+import {
+  onTrackerReady,
+  onTrackerReadyIdle,
+  onUserInteraction,
+  TRACKER_FALLBACK_MS,
+} from "./defer-third-party";
 
 const BOOT = `w.__ok=1;`;
 
 describe("onTrackerReady", () => {
+  it("uses a long enough fallback to stay out of Lighthouse early TBT", () => {
+    expect(TRACKER_FALLBACK_MS).toBeGreaterThanOrEqual(8000);
+    expect(TRACKER_FALLBACK_MS).toBeLessThanOrEqual(10000);
+  });
+
   it("inlines the start body", () => {
     const src = onTrackerReady(BOOT);
     expect(src).toContain("w.__ok=1;");
@@ -47,6 +57,21 @@ describe("onTrackerReady", () => {
     expect(src).toContain("if(done)return;");
     expect(src).toContain("w.clearTimeout(timer)");
     expect(src).toContain("removeEventListener");
+  });
+});
+
+describe("onTrackerReadyIdle", () => {
+  it("defers normal loads to requestIdleCallback but boots immediately on hide", () => {
+    const src = onTrackerReadyIdle(BOOT);
+    expect(src).toContain("requestIdleCallback");
+    expect(src).toContain("w.__ok=1;");
+    expect(src).toContain("function onHide(){boot(true);}");
+    expect(src).toContain(`w.setTimeout(run,${TRACKER_FALLBACK_MS})`);
+  });
+
+  it("falls back to setTimeout when requestIdleCallback is missing", () => {
+    const src = onTrackerReadyIdle(BOOT);
+    expect(src).toContain("if(immediate||!w.requestIdleCallback){go();return;}");
   });
 });
 

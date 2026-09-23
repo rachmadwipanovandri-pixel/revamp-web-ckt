@@ -118,7 +118,7 @@ export default async function LocaleLayout({
           Preconnect is hoisted to <head> by Next. UTM / click-id capture
           already happened in proxy.ts (edge cookie). GTM / Meta / HYROS /
           Cekat boot after first interaction, or via the hybrid fallback
-          (≤3s timeout / pagehide) so non-interacting visitors still count.
+          (≤9s timeout / pagehide) so non-interacting visitors still count.
         */}
         <AnalyticsPreconnect />
         <AdParamsUrl />

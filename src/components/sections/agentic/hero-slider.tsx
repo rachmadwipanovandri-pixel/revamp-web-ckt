@@ -2,18 +2,36 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { REGISTER_URL } from "@/lib/links";
 import { WhatsAppAnchor } from "@/components/shared/whatsapp-anchor";
 import { AppAnchor } from "@/components/shared/app-anchor";
 import { Button } from "@/components/ui/button";
 import { SafeIcon } from "@/components/sections/new-home/safe-icon";
 import { mdiWhatsapp } from "@/lib/icons";
-import { HeroChatDemo } from "@/components/sections/home/hero-chat-demo";
 import { cn } from "@/lib/utils";
 import type {
   HeroSlide,
   HeroSliderCopy,
 } from "@/components/sections/agentic/hero-slides";
+
+// Phone demo is ~70KB of client JS + Lucide icons; LCP is the left-hand
+// copy, not the stage. Split it out of the critical hydration chunk.
+const HeroChatDemo = dynamic(
+  () =>
+    import("@/components/sections/home/hero-chat-demo").then((m) => ({
+      default: m.HeroChatDemo,
+    })),
+  {
+    ssr: false,
+    loading: () => (
+      <div
+        aria-hidden
+        className="aspect-[9/16] w-full animate-pulse rounded-[1.55rem] bg-white/8 sm:aspect-[4/5]"
+      />
+    ),
+  },
+);
 
 type SlideDot = {
   key: string;

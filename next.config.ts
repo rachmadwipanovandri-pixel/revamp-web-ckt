@@ -4,11 +4,13 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
-  // experimental.inlineCss was measured and rejected on 2026-08-15. It inlines
-  // the sheet twice (SSR <style> + RSC payload), so the document grew 62->97KiB
-  // to drop a 17KiB stylesheet that was already loading in parallel. Median
-  // mobile FCP regressed 1064->1162ms over 5 runs with third-party blocked.
-  // Next's "atomic CSS stays small" premise does not hold at our sheet size.
+  // Re-enabled 2026-09-23 for Lighthouse mobile: render-blocking CSS was
+  // ~690ms of savings and LCP element render delay ~1.7s. An earlier 2026-08-15
+  // run saw FCP +~100ms from SSR+RSC duplication — watch FCP on the next
+  // PageSpeed pass and revert if lab FCP regresses again.
+  experimental: {
+    inlineCss: true,
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     // Next 16 narrowed the default to [75]. 50 is for large decorative

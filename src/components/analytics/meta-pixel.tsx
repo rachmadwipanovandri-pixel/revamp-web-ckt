@@ -1,4 +1,4 @@
-import { onTrackerReady } from "@/lib/defer-third-party";
+import { onTrackerReadyIdle } from "@/lib/defer-third-party";
 
 const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "1023236368807376";
 
@@ -7,9 +7,9 @@ const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "1023236368807376";
  *
  * - Inline queue (Meta's own contract: `fbq` buffers into `.queue` until
  *   `fbevents.js` runs). `init` + first `PageView` are queued in the HTML.
- * - Library injects on first interaction, hybrid timeout (≤3s), or
- *   pagehide — so idle and short-bounce visitors still flush the queued
- *   PageView when the library arrives.
+ * - Library injects on first interaction, 9s hybrid fallback, or pagehide,
+ *   then waits for a main-thread idle slot — so idle and short-bounce
+ *   visitors still flush the queued PageView when the library arrives.
  *
  * Campaign params (UTM / fbclid / …) are already on the URL and in the
  * `cekat_ads` cookie from `proxy.ts`, so attribution does not depend on when
@@ -26,7 +26,7 @@ export function MetaPixel() {
 var n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];
 n("init","${PIXEL_ID}");n("track","PageView");})(window,document);
-${onTrackerReady(`(function(f,b){
+${onTrackerReadyIdle(`(function(f,b){
 if(f.__fbLoaded)return;
 f.__fbLoaded=1;
 var s=b.createElement("script");

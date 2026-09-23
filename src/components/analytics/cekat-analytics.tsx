@@ -1,22 +1,20 @@
 import Script from "next/script";
-import { onTrackerReady } from "@/lib/defer-third-party";
+import { onTrackerReadyIdle } from "@/lib/defer-third-party";
 
 const CEKAT_ANALYTICS_ID =
   process.env.NEXT_PUBLIC_CEKAT_ANALYTICS_ID ??
   "0eb00dec-432c-42cf-ac47-04fb54f4a332";
 
 /**
- * Cekat Analytics after first interaction, or hybrid fallback (≤3s /
- * pagehide) so non-interacting visitors still send a pageview.
- *
- * The bootstrap queues `ckt(...)` until `cktevents.js` arrives, so events
- * pushed during the gap are not lost.
+ * Cekat Analytics after interaction / 9s / pagehide, then idle — `cktevents.js`
+ * was the top long-task source (~1.8s+ CPU). The bootstrap queues `ckt(...)`
+ * until the library arrives, so pageviews and events are not lost.
  */
 export function CekatAnalytics() {
   if (!CEKAT_ANALYTICS_ID) return null;
   return (
     <Script id="cekat-analytics" strategy="lazyOnload">
-      {onTrackerReady(
+      {onTrackerReadyIdle(
         `(function(w,d){
 if(w.__cktBooted)return;
 w.__cktBooted=1;
