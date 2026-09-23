@@ -8,10 +8,14 @@ function NavigationMenu({
   align = "start",
   anchor,
   className,
+  panelClassName,
   children,
   ...props
 }: NavigationMenuPrimitive.Root.Props &
-  Pick<NavigationMenuPrimitive.Positioner.Props, "align" | "anchor">) {
+  Pick<NavigationMenuPrimitive.Positioner.Props, "align" | "anchor"> & {
+    /** Restyles the floating popup shell (radius, surface, elevation). */
+    panelClassName?: string;
+  }) {
   return (
     <NavigationMenuPrimitive.Root
       data-slot="navigation-menu"
@@ -22,7 +26,11 @@ function NavigationMenu({
       {...props}
     >
       {children}
-      <NavigationMenuPositioner align={align} anchor={anchor} />
+      <NavigationMenuPositioner
+        align={align}
+        anchor={anchor}
+        panelClassName={panelClassName}
+      />
     </NavigationMenuPrimitive.Root>
   );
 }
@@ -98,12 +106,15 @@ function NavigationMenuContent({
 
 function NavigationMenuPositioner({
   className,
+  panelClassName,
   side = "bottom",
   sideOffset = 8,
   align = "start",
   alignOffset = 0,
   ...props
-}: NavigationMenuPrimitive.Positioner.Props) {
+}: NavigationMenuPrimitive.Positioner.Props & {
+  panelClassName?: string;
+}) {
   return (
     <NavigationMenuPrimitive.Portal>
       <NavigationMenuPrimitive.Positioner
@@ -117,7 +128,12 @@ function NavigationMenuPositioner({
         )}
         {...props}
       >
-        <NavigationMenuPrimitive.Popup className="data-[ending-style]:easing-[ease] xs:w-(--popup-width) relative h-(--popup-height) w-(--popup-width) origin-(--transform-origin) rounded-lg bg-popover text-popover-foreground shadow ring-1 ring-foreground/10 transition-[opacity,transform,width,height,scale,translate] duration-[0.35s] ease-[cubic-bezier(0.22,1,0.36,1)] outline-none data-ending-style:scale-90 data-ending-style:opacity-0 data-ending-style:duration-150 data-starting-style:scale-90 data-starting-style:opacity-0">
+        <NavigationMenuPrimitive.Popup
+          className={cn(
+            "data-[ending-style]:easing-[ease] xs:w-(--popup-width) relative h-(--popup-height) w-(--popup-width) origin-(--transform-origin) rounded-lg bg-popover text-popover-foreground shadow ring-1 ring-foreground/10 transition-[opacity,transform,width,height,scale,translate] duration-[0.35s] ease-[cubic-bezier(0.22,1,0.36,1)] outline-none data-ending-style:scale-90 data-ending-style:opacity-0 data-ending-style:duration-150 data-starting-style:scale-90 data-starting-style:opacity-0",
+            panelClassName,
+          )}
+        >
           <NavigationMenuPrimitive.Viewport className="relative size-full overflow-hidden" />
         </NavigationMenuPrimitive.Popup>
       </NavigationMenuPrimitive.Positioner>

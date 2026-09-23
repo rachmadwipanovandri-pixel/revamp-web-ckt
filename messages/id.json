@@ -1006,7 +1006,7 @@
           "eyebrow": "Cekat CRM",
           "titleLead": "Cekat CRM:",
           "titleAccent": "Catatan pelanggan terisi sendiri",
-          "subtitle": "Setiap chat, perubahan tahap, dan pembelian otomatis tersimpan. Tim fokus jualan — bukan input data tiap sore.",
+          "subtitle": "Setiap chat, perubahan tahap, dan pembelian otomatis tersimpan. Tim fokus jualan, bukan input data tiap sore.",
           "stageLabel": "Cekat CRM",
           "pill1": "Aktivitas tercatat otomatis",
           "pill2": "Pipeline selalu update",
@@ -1016,7 +1016,7 @@
           "eyebrow": "Mini Agent",
           "titleLead": "Mini Agent:",
           "titleAccent": "Bantuan kecil, hasil maksimal",
-          "subtitle": "Butuh agent khusus untuk tanya-jawab umum atau rapikan lead? Pasang yang ringan dulu — praktis, tanpa proyek panjang.",
+          "subtitle": "Butuh agent khusus untuk tanya-jawab umum atau rapikan lead? Pasang yang ringan dan praktis, tanpa proyek panjang.",
           "stageLabel": "Mini Agent",
           "pill1": "Cepat dipasang",
           "pill2": "Fokus satu tugas",
@@ -1046,7 +1046,7 @@
           "eyebrow": "Consulting Agent",
           "titleLead": "Consulting Agent:",
           "titleAccent": "Saran yang tersambung dengan bisnis Anda",
-          "subtitle": "Agent yang bantu baca pola dari data Anda sendiri dan usulkan langkah berikutnya — bukan tips umum dari internet.",
+          "subtitle": "Agent yang bantu baca pola dari data Anda sendiri dan usulkan langkah berikutnya, bukan tips umum dari internet.",
           "stageLabel": "Consulting Agent",
           "pill1": "Saran dari data Anda",
           "pill2": "Langkah yang jelas",
@@ -1109,7 +1109,7 @@
       "mini": {
         "title": "Mini Agent",
         "lead": "Bantuan kecil, hasil cepat",
-        "body": "Butuh agent khusus untuk tanya-jawab umum atau rapikan lead? Pasang yang ringan dulu — praktis, tanpa proyek panjang.",
+        "body": "Butuh agent khusus untuk tanya-jawab umum atau rapikan lead? Pasang yang ringan dan praktis, tanpa proyek panjang.",
         "pill1": "Cepat dipasang",
         "pill2": "Fokus satu tugas",
         "pill3": "Mudah digabung"
@@ -1125,7 +1125,7 @@
       "crm": {
         "title": "Cekat CRM",
         "lead": "Catatan pelanggan terisi sendiri",
-        "body": "Setiap chat, perubahan tahap, dan pembelian otomatis tersimpan. Tim fokus jualan — bukan input data tiap sore.",
+        "body": "Setiap chat, perubahan tahap, dan pembelian otomatis tersimpan. Tim fokus jualan, bukan input data tiap sore.",
         "pill1": "Aktivitas tercatat otomatis",
         "pill2": "Pipeline selalu update",
         "pill3": "Riwayat pelanggan lengkap"
@@ -1141,7 +1141,7 @@
       "consulting": {
         "title": "Consulting Agent",
         "lead": "Saran yang nyambung dengan bisnis Anda",
-        "body": "Agent yang bantu baca pola dari data Anda sendiri dan usulkan langkah berikutnya — bukan tips umum dari internet.",
+        "body": "Agent yang bantu baca pola dari data Anda sendiri dan usulkan langkah berikutnya, bukan tips umum dari internet.",
         "pill1": "Saran dari data Anda",
         "pill2": "Langkah yang jelas",
         "pill3": "Tetap diawasi tim"
