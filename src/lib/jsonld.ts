@@ -260,3 +260,38 @@ export function breadcrumbJsonLd(crumbs: Array<{ name: string; url?: string }>) 
     })),
   };
 }
+
+/** Author profile page — ProfilePage + Person for E-E-A-T bylines. */
+export function profilePageJsonLd({
+  url,
+  name,
+  description,
+  image,
+}: {
+  url: string;
+  name: string;
+  description?: string;
+  image?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${url}#profile`,
+    url,
+    name: `${name}`,
+    mainEntity: {
+      "@type": "Person",
+      "@id": `${url}#person`,
+      name,
+      ...(description ? { description } : {}),
+      ...(image ? { image } : {}),
+      url,
+    },
+    isPartOf: {
+      "@type": "Blog",
+      "@id": `${SITE_URL}/blog#blog`,
+      name: "CekatAI Blog",
+      url: `${SITE_URL}/blog`,
+    },
+  };
+}

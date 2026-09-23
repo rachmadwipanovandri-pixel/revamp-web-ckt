@@ -23,6 +23,8 @@ export function PageHero({
   className,
   /** Extra top padding when a solid navbar sits above (not transparent). */
   solidNav = false,
+  /** Copy + chips + children alignment. Industry heroes center; hubs stay left. */
+  align = "left",
 }: {
   eyebrow?: string;
   title: string;
@@ -38,8 +40,16 @@ export function PageHero({
   children?: React.ReactNode;
   className?: string;
   solidNav?: boolean;
+  align?: "left" | "center";
 }) {
   const hasImage = Boolean(image);
+  const alignCenter = align === "center";
+  const copyAlign = alignCenter
+    ? "text-center"
+    : "text-center lg:text-left";
+  const chipJustify = alignCenter
+    ? "justify-center"
+    : "justify-center lg:justify-start";
 
   return (
     <section
@@ -108,7 +118,7 @@ export function PageHero({
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-16 sm:px-6 lg:px-8 lg:pb-20">
-        <div className="hero-stagger mx-auto max-w-3xl text-center lg:max-w-4xl lg:text-left">
+        <div className={`hero-stagger mx-auto max-w-3xl lg:max-w-4xl ${copyAlign}`}>
           {eyebrow && (
             <p className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-1.5 font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-sky-200 uppercase backdrop-blur">
               <span
@@ -132,18 +142,24 @@ export function PageHero({
           </h1>
 
           {subtitle && (
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-sky-50/85 lg:mx-0 lg:text-lg">
+            <p
+              className={`mx-auto mt-6 max-w-2xl text-base leading-relaxed text-sky-50/85 lg:text-lg ${alignCenter ? "" : "lg:mx-0"}`}
+            >
               {subtitle}
             </p>
           )}
           {note && (
-            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-sky-100/70 lg:mx-0">
+            <p
+              className={`mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-sky-100/70 ${alignCenter ? "" : "lg:mx-0"}`}
+            >
               {note}
             </p>
           )}
 
           {chips && chips.length > 0 && (
-            <ul className="mt-7 flex flex-wrap items-center justify-center gap-2 lg:justify-start">
+            <ul
+              className={`mt-7 flex flex-wrap items-center gap-2 ${chipJustify}`}
+            >
               {chips.map((chip) => (
                 <li
                   key={chip}
@@ -157,7 +173,14 @@ export function PageHero({
         </div>
 
         {children && (
-          <div className="mt-12 lg:mt-14" data-page-hero-children>
+          <div
+            className={cn(
+              "mt-12 lg:mt-14",
+              alignCenter &&
+                "flex w-full flex-wrap items-center justify-center gap-3",
+            )}
+            data-page-hero-children
+          >
             {children}
           </div>
         )}

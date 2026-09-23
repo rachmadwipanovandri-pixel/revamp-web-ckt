@@ -46,8 +46,13 @@ export function toEnglishPath(pathname: string): string | null {
 
   // A blog article exists in whatever language it was written in, and whether a
   // translation exists is only knowable from WordPress. Never gamble a deep
-  // link on it.
-  if (parts[0] === "blog" && parts.length > 1) return null;
+  // link on it. Author profiles share one slug in both locales, so they are safe.
+  if (parts[0] === "blog") {
+    if (parts[1] === "author" && parts.length === 3) {
+      return `/en/blog/author/${parts[2]}`;
+    }
+    if (parts.length > 1) return null;
+  }
 
   if (parts.length === 1) {
     const translated = TRANSLATED_SEGMENTS[parts[0]];

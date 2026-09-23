@@ -220,7 +220,7 @@ export function Footer() {
               <div
                 role="tablist"
                 aria-label={t("officeHeading")}
-                className="flex w-fit max-w-full flex-wrap items-center gap-1 rounded-full border border-white/10 bg-white/6 p-1.5 backdrop-blur-md"
+                className="flex w-full max-w-full flex-nowrap items-center gap-1 overflow-x-auto rounded-full border border-white/10 bg-white/6 p-1.5 backdrop-blur-md [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:w-fit sm:flex-wrap"
               >
                 {OFFICE_COUNTRIES.map((c) => {
                   const isActive = activeCountry === c.key;
@@ -232,7 +232,7 @@ export function Footer() {
                       aria-selected={isActive}
                       onClick={() => setActiveCountry(c.key)}
                       className={cn(
-                        "inline-flex cursor-pointer items-center gap-1.5 rounded-full px-3.5 py-2 font-numeric text-sm transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] focus-visible:ring-3 focus-visible:ring-sky-400/50 focus-visible:outline-none sm:px-4",
+                        "inline-flex shrink-0 cursor-pointer items-center gap-1.5 rounded-full px-3 py-2 font-numeric text-sm whitespace-nowrap transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] focus-visible:ring-3 focus-visible:ring-sky-400/50 focus-visible:outline-none sm:px-4",
                         isActive
                           ? "bg-white text-primary-dark shadow-[0_8px_20px_-10px_rgba(255,255,255,0.35)]"
                           : "text-white/65 hover:bg-white/10 hover:text-white",

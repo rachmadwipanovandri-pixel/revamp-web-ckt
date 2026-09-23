@@ -33,8 +33,9 @@ export function LandingHero({
       chips={useCases}
       image={image}
       imageAlt={imageAlt}
+      align="center"
     >
-      <div className="flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+      <div className="flex w-full flex-wrap items-center justify-center gap-3">
         <Button
           size="lg"
           className="h-13 rounded-full bg-white px-8 text-sm text-ink-void shadow-[0_16px_40px_-16px_rgba(255,255,255,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-50"

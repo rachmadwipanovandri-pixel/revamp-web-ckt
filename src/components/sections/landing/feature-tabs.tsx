@@ -30,9 +30,12 @@ export function FeatureTabs({
 
         <div
           role="tablist"
+          aria-label={heading}
           className={cn(
-            "flex w-fit max-w-full flex-wrap items-center gap-1.5 rounded-full border border-foreground/10 bg-white/85 p-1.5 shadow-[0_16px_40px_-32px_rgba(16,24,40,0.35)] backdrop-blur",
-            heading && "mt-8",
+            // Mobile: one row, swipe if needed — wrapping inside a stadium pill
+            // left "Handoff" orphaned under a tall rounded shell.
+            "flex w-full max-w-full flex-nowrap items-center gap-1 overflow-x-auto rounded-full border border-foreground/10 bg-white/85 p-1.5 shadow-[0_16px_40px_-32px_rgba(16,24,40,0.35)] backdrop-blur [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:w-fit sm:flex-wrap sm:justify-start sm:gap-1.5",
+            heading && "mt-6 sm:mt-8",
           )}
         >
           {tabs.map((item, index) => (
@@ -42,7 +45,7 @@ export function FeatureTabs({
               aria-selected={active === index}
               onClick={() => setActive(index)}
               className={cn(
-                "inline-flex cursor-pointer items-center rounded-full px-5 py-2 font-numeric text-sm transition-all focus:outline-none",
+                "inline-flex shrink-0 cursor-pointer items-center rounded-full px-3.5 py-2 font-numeric text-sm whitespace-nowrap transition-all focus:outline-none sm:px-5",
                 active === index
                   ? "bg-ink-void font-semibold text-white shadow-[0_10px_24px_-14px_rgba(15,31,58,0.8)]"
                   : "text-muted-foreground hover:bg-surface-muted hover:text-foreground",
@@ -56,7 +59,7 @@ export function FeatureTabs({
         <div
           key={active}
           className={cn(
-            "mt-8 grid animate-swap-in grid-cols-1 items-center gap-8",
+            "mt-6 animate-swap-in grid grid-cols-1 items-center gap-6 sm:mt-8 sm:gap-8",
             tab.image && "md:grid-cols-2 md:gap-12",
           )}
         >

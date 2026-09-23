@@ -10,6 +10,10 @@ export async function GET(request: Request) {
   const categorySlug = searchParams.get("category") ?? undefined;
   const lang = searchParams.get("lang") ?? undefined;
   const search = searchParams.get("q") ?? undefined;
+  const authorParam = searchParams.get("author");
+  const author = authorParam
+    ? Math.max(1, Number.parseInt(authorParam, 10) || 0) || undefined
+    : undefined;
 
   let categoryIds: number[] | undefined;
   if (categorySlug) {
@@ -24,6 +28,7 @@ export async function GET(request: Request) {
       categories: categoryIds,
       lang,
       search,
+      author,
     });
 
     // Cards don't render the article body, drop it to shrink the client payload.

@@ -180,6 +180,15 @@ export default async function BlogPostPage({
             url,
             image: post.image,
             authorName: post.author.name,
+            authorUrl: post.author.slug
+              ? `${SITE_URL}${getPathname({
+                  href: {
+                    pathname: "/blog/author/[slug]",
+                    params: { slug: post.author.slug },
+                  },
+                  locale,
+                })}`
+              : undefined,
             datePublished: post.dateIso,
             dateModified: post.modifiedIso,
             section: post.category?.name,
@@ -282,7 +291,19 @@ export default async function BlogPostPage({
                 />
               )}
               <div className="font-numeric text-sm text-left">
-                <p className="font-semibold text-white">{post.author.name}</p>
+                {post.author.slug ? (
+                  <Link
+                    href={{
+                      pathname: "/blog/author/[slug]",
+                      params: { slug: post.author.slug },
+                    }}
+                    className="font-semibold text-white hover:text-sky-200"
+                  >
+                    {post.author.name}
+                  </Link>
+                ) : (
+                  <p className="font-semibold text-white">{post.author.name}</p>
+                )}
                 <p className="text-sky-100/75">
                   <time dateTime={post.dateIso}>
                     {formatDate(post.date, locale)}
@@ -354,6 +375,7 @@ export default async function BlogPostPage({
                 label={t("aboutAuthor")}
                 role={t("authorRole")}
                 fallbackBio={t("authorBio")}
+                profileLabel={t("viewAuthorProfile")}
               />
               <ShareButtons
                 url={url}

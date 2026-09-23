@@ -1,5 +1,9 @@
 import { describe, it, expect } from "vitest";
-import { articleJsonLd, breadcrumbJsonLd } from "./jsonld";
+import {
+  articleJsonLd,
+  breadcrumbJsonLd,
+  profilePageJsonLd,
+} from "./jsonld";
 
 describe("articleJsonLd", () => {
   it("emits BlogPosting with reciprocal-friendly absolute fields", () => {
@@ -58,5 +62,24 @@ describe("breadcrumbJsonLd", () => {
       },
       { "@type": "ListItem", position: 3, name: "Article title" },
     ]);
+  });
+});
+
+describe("profilePageJsonLd", () => {
+  it("emits ProfilePage with a Person mainEntity", () => {
+    const data = profilePageJsonLd({
+      url: "https://cekat.ai/blog/author/superadmin",
+      name: "Cekat AI",
+      description: "Writes about AI.",
+      image: "https://example.com/a.png",
+    });
+    expect(data["@type"]).toBe("ProfilePage");
+    expect(data.mainEntity).toMatchObject({
+      "@type": "Person",
+      name: "Cekat AI",
+      description: "Writes about AI.",
+      image: "https://example.com/a.png",
+      url: "https://cekat.ai/blog/author/superadmin",
+    });
   });
 });

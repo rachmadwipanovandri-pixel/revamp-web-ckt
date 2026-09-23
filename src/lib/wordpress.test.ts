@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import {
+  getAuthorBySlug,
   getPostBySlug,
   getPosts,
   getRelatedPosts,
@@ -104,5 +105,41 @@ describe("getRelatedPosts", () => {
       typeof getRelatedPosts
     >[0];
     await expect(getRelatedPosts(post, 3, "id")).resolves.toEqual([]);
+  });
+});
+
+describe("getAuthorBySlug", () => {
+  it("returns the author when WordPress has them", async () => {
+    fetchMock.mockResolvedValue(
+      json([
+        {
+          id: 1,
+          name: "Cekat AI",
+          slug: "author-profile-hit",
+          description: "Writes about AI.",
+          avatar_urls: { "96": "https://example.com/a.png" },
+        },
+      ]),
+    );
+    const author = await getAuthorBySlug("author-profile-hit");
+    expect(author).toMatchObject({
+      id: 1,
+      slug: "author-profile-hit",
+      name: "Cekat AI",
+      bio: "Writes about AI.",
+      avatar: "https://example.com/a.png",
+    });
+  });
+
+  it("returns null only when WordPress positively reports no such author", async () => {
+    fetchMock.mockResolvedValue(json([]));
+    await expect(getAuthorBySlug("no-such-writer")).resolves.toBeNull();
+  });
+
+  it("THROWS instead of returning null when WordPress is unavailable", async () => {
+    fetchMock.mockResolvedValue(json({}, 502));
+    await expect(getAuthorBySlug("author-unavailable")).rejects.toThrow(
+      WordPressUnavailableError,
+    );
   });
 });

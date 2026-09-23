@@ -21,7 +21,15 @@ export interface BlogPost {
   /** Same instants in UTC with a `Z` suffix, for metadata and JSON-LD. */
   dateIso: string;
   modifiedIso: string;
-  author: { name: string; avatar?: string; bio?: string };
+  author: {
+    name: string;
+    avatar?: string;
+    bio?: string;
+    /** WP author id — filters `getPosts({ author })`. */
+    id?: number;
+    /** WP author slug — builds `/blog/author/[slug]`. */
+    slug?: string;
+  };
   category?: { name: string; slug: string };
   categoryIds: number[];
   /** WP tag names, used as `keywords` in the BlogPosting JSON-LD. */
@@ -67,7 +75,9 @@ interface WpPost {
   };
   _embedded?: {
     author?: Array<{
+      id?: number;
       name?: string;
+      slug?: string;
       description?: string;
       avatar_urls?: Record<string, string>;
     }>;
@@ -175,6 +185,8 @@ function normalizePost(post: WpPost): BlogPost {
       name: author?.name ? decodeEntities(author.name) : "Cekat.AI",
       avatar: author?.avatar_urls?.["96"],
       bio: author?.description ? decodeEntities(author.description) : undefined,
+      id: author?.id,
+      slug: author?.slug,
     },
     category: category
       ? { name: decodeEntities(category.name), slug: category.slug }
@@ -259,6 +271,7 @@ export async function getPosts({
   categories,
   lang,
   search,
+  author,
 }: {
   page?: number;
   perPage?: number;
@@ -266,6 +279,8 @@ export async function getPosts({
   lang?: string;
   /** Free-text query, passed to WP's native `search` param. */
   search?: string;
+  /** WP author id — filters the listing to one writer. */
+  author?: number;
 } = {}): Promise<PostsPage> {
   // Throws WordPressUnavailableError upstream: an empty listing would render a
   // 200 "no articles" page, which reads as a soft 404 to search engines.
@@ -276,6 +291,7 @@ export async function getPosts({
     categories: categories?.length ? categories.join(",") : undefined,
     lang,
     search: search?.trim() || undefined,
+    author,
   });
   if (!res.ok) return { posts: [], totalPages: 0, total: 0 };
   const data = (await res.json()) as WpPost[];
@@ -302,6 +318,66 @@ export const getPostBySlug = cache(
     return data[0] ? normalizePost(data[0]) : null;
   },
 );
+
+/** Public profile fields for a blog writer. */
+export interface BlogAuthor {
+  id: number;
+  slug: string;
+  name: string;
+  bio?: string;
+  avatar?: string;
+}
+
+interface WpUser {
+  id: number;
+  name: string;
+  slug: string;
+  description?: string;
+  avatar_urls?: Record<string, string>;
+}
+
+function normalizeAuthor(user: WpUser): BlogAuthor {
+  return {
+    id: user.id,
+    slug: user.slug,
+    name: user.name ? decodeEntities(user.name) : "Cekat.AI",
+    bio: user.description ? decodeEntities(user.description) : undefined,
+    avatar: user.avatar_urls?.["96"] ?? user.avatar_urls?.["48"],
+  };
+}
+
+/**
+ * Writer profile by WP user slug, or null when WordPress positively reports
+ * no such author. Unreachable WordPress throws (same 5xx-vs-404 rule as posts)
+ * so a cold host never becomes a cached author 404.
+ */
+export const getAuthorBySlug = cache(
+  async (slug: string): Promise<BlogAuthor | null> => {
+    const res = await wpFetch("/users", { slug });
+    if (!res.ok) return null;
+    const data = (await res.json()) as WpUser[];
+    return data[0] ? normalizeAuthor(data[0]) : null;
+  },
+);
+
+/**
+ * Authors that have published posts (WP `who=authors` + non-empty). Used for
+ * the sitemap; degrades to [] so an upstream blip never breaks the sitemap.
+ */
+export const getAuthors = cache(async (): Promise<BlogAuthor[]> => {
+  try {
+    const res = await wpFetch("/users", {
+      per_page: 100,
+      who: "authors",
+      hide_empty: "true",
+    });
+    if (!res.ok) return [];
+    const data = (await res.json()) as WpUser[];
+    return data.map(normalizeAuthor);
+  } catch {
+    return [];
+  }
+});
 
 /**
  * Categories with posts, deduped by name (Polylang creates per-language ids).

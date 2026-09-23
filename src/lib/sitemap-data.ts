@@ -3,7 +3,7 @@ import { getPathname } from "@/i18n/navigation";
 import { localizedPath, SITE_URL } from "@/lib/seo";
 import { entryPaths, REGISTRY } from "@/lib/registry";
 import type { LandingKind } from "@/lib/registry/types";
-import { getAllPostSlugs, type PostSlugInfo } from "@/lib/wordpress";
+import { getAllPostSlugs, getAuthors, type PostSlugInfo } from "@/lib/wordpress";
 import type { SitemapUrl } from "@/lib/sitemap-xml";
 
 /**
@@ -125,6 +125,33 @@ export async function blogUrls(): Promise<SitemapUrl[]> {
   }
 
   return urls;
+}
+
+/**
+ * Author profile pages. Same slug in both locales → reciprocal hreflang.
+ * Degrades to [] when WordPress is down so the rest of the blog sitemap ships.
+ */
+export async function blogAuthorUrls(): Promise<SitemapUrl[]> {
+  const authors = await getAuthors();
+  return authors.flatMap((author) => {
+    const path = (locale: Locale) =>
+      getPathname({
+        href: {
+          pathname: "/blog/author/[slug]",
+          params: { slug: author.slug },
+        },
+        locale,
+      });
+    const paths = {
+      en: path("en"),
+      id: path("id"),
+    };
+    const languages = languagesFor(paths);
+    return LOCALE_ORDER.map((locale) => ({
+      url: `${SITE_URL}${paths[locale]}`,
+      languages,
+    }));
+  });
 }
 
 /** Most recent lastmod in a set, for the index entry. */

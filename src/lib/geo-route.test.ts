@@ -20,6 +20,12 @@ describe("toEnglishPath", () => {
     expect(toEnglishPath("/blog/any-slug-at-all")).toBeNull();
   });
 
+  it("still routes author profiles to the English locale (shared slug)", () => {
+    expect(toEnglishPath("/blog/author/superadmin")).toBe(
+      "/en/blog/author/superadmin",
+    );
+  });
+
   it("translates standalone pages whose slug differs per locale", () => {
     // /harga has an English twin at /en/pricing; sending it to /en/harga
     // would 404 for every visitor outside Indonesia.
