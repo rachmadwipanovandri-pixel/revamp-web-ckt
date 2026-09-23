@@ -998,8 +998,7 @@
       "subtitle": "Pakai AI agent, CRM Omnichannel, dan follow-up otomatis untuk mengubah lebih banyak percakapan jadi penjualan, sekaligus tahu persis iklan mana yang berujung closing, dan bikin customer balik lagi.",
       "hubLabel": "Full Ekosistem",
       "slideNav": {
-        "previous": "Slide sebelumnya",
-        "next": "Slide berikutnya"
+        "label": "Navigasi slide hero"
       },
       "slides": {
         "ecosystem": {},
@@ -1046,7 +1045,7 @@
         "consulting": {
           "eyebrow": "Consulting Agent",
           "titleLead": "Consulting Agent:",
-          "titleAccent": "Saran yang nyambung dengan bisnis Anda",
+          "titleAccent": "Saran yang tersambung dengan bisnis Anda",
           "subtitle": "Agent yang bantu baca pola dari data Anda sendiri dan usulkan langkah berikutnya — bukan tips umum dari internet.",
           "stageLabel": "Consulting Agent",
           "pill1": "Saran dari data Anda",

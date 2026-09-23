@@ -250,10 +250,69 @@
 .hero-stagger > * {
   animation: heroIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
-/* Re-triggers when the hero product slide key changes (React remount). */
-.hero-slide {
-  animation: heroIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+
+/* Slide remount enter — brand ease + duration band used by reveals (500–800ms).
+   Transform-only so the H1 stays a first-paint LCP candidate (no opacity-from-0).
+   data-slide-dir nudges left/right: next enters from +12px, prev from -12px. */
+.hero-slide,
+.hero-stagger > .hero-slide {
+  animation: heroSlideIn 0.72s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
+@keyframes heroSlideIn {
+  from {
+    transform: translate3d(
+        calc(12px * var(--slide-dir, 1)),
+        14px,
+        0
+      )
+      scale(0.985);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/* Non-LCP stage chrome (eyebrow, badge): soft crossfade with the copy. */
+.hero-slide-fade,
+.hero-stagger > .hero-slide-fade {
+  animation: heroSlideFade 0.78s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes heroSlideFade {
+  from {
+    opacity: 0;
+    transform: translate3d(calc(8px * var(--slide-dir, 1)), 10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Artwork settles a touch slower so the stage never pops between products. */
+.hero-slide-art {
+  animation: heroSlideArt 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 50ms;
+}
+@keyframes heroSlideArt {
+  from {
+    opacity: 0;
+    transform: translate3d(calc(16px * var(--slide-dir, 1)), 12px, 0)
+      scale(1.03);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* CSS custom property from React data-slide-dir (+1 next / -1 previous). */
+[data-slide-dir="-1"] {
+  --slide-dir: -1;
+}
+[data-slide-dir="1"] {
+  --slide-dir: 1;
+}
+
 .hero-stagger > *:nth-child(1) {
   animation-delay: 0ms;
 }
@@ -598,7 +657,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .hero-stagger > *,
-  .hero-slide {
+  .hero-slide,
+  .hero-slide-fade,
+  .hero-slide-art {
     animation: none !important;
   }
   .animate-float-soft,
@@ -656,6 +717,8 @@ body {
   .animate-progress,
   .animate-meteor,
   .animate-hero-in,
+  .hero-slide-fade,
+  .hero-slide-art,
   .animate-float-soft,
   .animate-float-slower,
   .animate-pulse-soft,

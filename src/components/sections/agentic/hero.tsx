@@ -38,7 +38,7 @@ export async function Hero() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pt-36 pb-16 sm:px-6 lg:px-8 lg:pt-40 lg:pb-20">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pt-28 pb-16 sm:px-6 lg:px-8 lg:pt-32 lg:pb-20">
         <HeroSlider copy={copy} />
       </div>
 

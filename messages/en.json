@@ -998,8 +998,7 @@
       "subtitle": "Six features that help your team reply faster, follow up cleanly, and close more — from first chat to fulfilled order. All in one place, without ripping out what already works.",
       "hubLabel": "Full Ecosystem",
       "slideNav": {
-        "previous": "Previous slide",
-        "next": "Next slide"
+        "label": "Hero slide navigation"
       },
       "slides": {
         "ecosystem": {},

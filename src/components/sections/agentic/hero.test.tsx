@@ -27,8 +27,7 @@ const messages = {
       subtitle: "Turn first chats into loyal customers.",
       hubLabel: "Full Ecosystem",
       slideNav: {
-        previous: "Previous slide",
-        next: "Next slide",
+        label: "Hero slide navigation",
       },
       slides: {
         ecosystem: {},
@@ -142,16 +141,21 @@ describe("agentic Hero", () => {
     );
   });
 
-  it("switches to Cekat CRM with next and does not auto-advance", async () => {
+  it("switches to Cekat CRM via a slide dot and does not auto-advance", async () => {
     const user = userEvent.setup();
     renderHero();
 
-    await user.click(screen.getByRole("button", { name: "Next slide" }));
+    // Two rails (desktop vertical + mobile horizontal) share the same labels.
+    const crmDots = screen.getAllByRole("button", { name: "Cekat CRM" });
+    await user.click(crmDots[0] as HTMLElement);
 
     expect(
       screen.getByRole("heading", { level: 1, name: /Notes fill themselves/ }),
     ).toBeInTheDocument();
-    expect(screen.getByText("02 / 06")).toBeInTheDocument();
+    expect(screen.getAllByRole("button", { name: "Cekat CRM" }).length).toBe(2);
+    expect(
+      screen.getAllByRole("button", { name: "Cekat CRM" })[0],
+    ).toHaveAttribute("aria-current", "true");
     expect(screen.queryByRole("tablist")).not.toBeInTheDocument();
 
     // No autoplay: title stays put after waiting past any plausible timer.
@@ -161,25 +165,42 @@ describe("agentic Hero", () => {
     ).toBeInTheDocument();
   });
 
-  it("wraps around with the next control", async () => {
+  it("jumps to any slide from the dot rail", async () => {
     const user = userEvent.setup();
     renderHero();
 
-    // From ecosystem, previous wraps to Consulting.
-    await user.click(screen.getByRole("button", { name: "Previous slide" }));
+    const consultingDots = screen.getAllByRole("button", {
+      name: "Consulting Agent",
+    });
+    await user.click(consultingDots[0] as HTMLElement);
     expect(
       screen.getByRole("heading", { level: 1, name: /Advice from your data/ }),
     ).toBeInTheDocument();
 
-    // Next wraps back to Ecosystem.
-    await user.click(screen.getByRole("button", { name: "Next slide" }));
+    const ecosystemDots = screen.getAllByRole("button", {
+      name: "Full Ecosystem",
+    });
+    await user.click(ecosystemDots[0] as HTMLElement);
     expect(
       screen.getByRole("heading", {
         level: 1,
         name: /AI Agent & Omnichannel CRM/,
       }),
     ).toBeInTheDocument();
-    expect(screen.getByText("01 / 06")).toBeInTheDocument();
+    expect(
+      screen.getAllByRole("button", { name: "Full Ecosystem" })[0],
+    ).toHaveAttribute("aria-current", "true");
+  });
+
+  it("renders one dot per slide on both rails", () => {
+    renderHero();
+    const rails = screen.getAllByRole("navigation", {
+      name: "Hero slide navigation",
+    });
+    expect(rails).toHaveLength(2);
+    for (const rail of rails) {
+      expect(rail.querySelectorAll("button")).toHaveLength(6);
+    }
   });
 
   it("still builds a full rail when a product key is missing", () => {
@@ -218,7 +239,7 @@ describe("agentic Hero", () => {
       expect(slide.visual, slide.key).toBeTruthy();
     }
     expect(copy.slides.find((slide) => slide.key === "mini")?.visual).toBe(
-      "/images/home/hero-mini-agent-automation.png",
+      "/images/home/mini-agent.jpeg",
     );
   });
 });

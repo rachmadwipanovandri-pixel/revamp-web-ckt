@@ -37,8 +37,8 @@ export type HeroSlide = {
 
 export type HeroSliderCopy = {
   slides: HeroSlide[];
-  previousLabel: string;
-  nextLabel: string;
+  /** Accessible name for the dot rail (`<nav aria-label>`). */
+  navLabel: string;
   ctaPrimary: string;
   ctaSecondary: string;
 };
@@ -57,13 +57,11 @@ const PRODUCT_ICONS: Record<HeroSlideKey, string | null> = {
 const PRODUCT_VISUALS: Record<HeroSlideKey, string | null> = {
   // Phone chat demo only on the ecosystem slide.
   ecosystem: null,
-  crm: "/images/home/your-crm-built-for-growth-and-real-conversations.png",
-  // User-supplied Cekat.AI Automation flow (lightweight agent).
-  mini: "/images/home/hero-mini-agent-automation.png",
-  oms: "/images/home/hero-dashboard.png",
-  marketing:
-    "/images/home/track-and-optimize-your-marketing-performance-in-one-unified-platform.png",
-  consulting: "/images/home/knowledge-source.png",
+  crm: "/images/home/cekat-crm.jpeg",
+  mini: "/images/home/mini-agent.jpeg",
+  oms: "/images/home/oms.jpeg",
+  marketing: "/images/home/cekat-marketing.jpeg",
+  consulting: "/images/home/consulting-agent.jpeg",
 };
 
 const KEYNOTE = ["Independent", "Integrated", "Open API"] as const;
@@ -129,8 +127,7 @@ export function buildHeroSliderCopy({
 
   return {
     slides,
-    previousLabel: read(hero, "slideNav.previous", "Slide sebelumnya"),
-    nextLabel: read(hero, "slideNav.next", "Slide berikutnya"),
+    navLabel: read(hero, "slideNav.label", "Navigasi slide"),
     ctaPrimary: read(home, "ctaPrimary", "WhatsApp Kami"),
     ctaSecondary: read(home, "ctaSecondary", "Coba Gratis"),
   };
