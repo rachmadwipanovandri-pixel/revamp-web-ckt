@@ -1,23 +1,22 @@
 import Script from "next/script";
-import { onUserInteraction } from "@/lib/defer-third-party";
+import { onTrackerReady } from "@/lib/defer-third-party";
 
 const CEKAT_ANALYTICS_ID =
   process.env.NEXT_PUBLIC_CEKAT_ANALYTICS_ID ??
   "0eb00dec-432c-42cf-ac47-04fb54f4a332";
 
 /**
- * Cekat Analytics after the first real user interaction. The bootstrap queues
- * `ckt(...)` calls until `cktevents.js` arrives, so early events are not lost.
+ * Cekat Analytics after first interaction, or hybrid fallback (≤3s /
+ * pagehide) so non-interacting visitors still send a pageview.
  *
- * Idle (and a 10s timeout) still fired inside the Lighthouse lab window —
- * `cktevents.js` was a top long-task / forced-reflow source. Interaction gating
- * keeps it out of lab TBT without losing on-site events for real visitors.
+ * The bootstrap queues `ckt(...)` until `cktevents.js` arrives, so events
+ * pushed during the gap are not lost.
  */
 export function CekatAnalytics() {
   if (!CEKAT_ANALYTICS_ID) return null;
   return (
     <Script id="cekat-analytics" strategy="lazyOnload">
-      {onUserInteraction(
+      {onTrackerReady(
         `(function(w,d){
 if(w.__cktBooted)return;
 w.__cktBooted=1;

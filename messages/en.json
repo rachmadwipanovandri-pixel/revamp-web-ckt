@@ -993,9 +993,9 @@
   "agentic": {
     "hero": {
       "eyebrow": "Cekat AI",
-      "titleLead": "The Agentic AI",
-      "titleAccent": "Ecosystem",
-      "subtitle": "Six features that help your team reply faster, follow up cleanly, and close more — from first chat to fulfilled order. All in one place, without ripping out what already works.",
+      "titleLead": "From First Chat to Lifetime Customer.",
+      "titleAccent": "",
+      "subtitle": "Use AI agents, CRM, and automated follow-ups to turn more conversations into sales, know exactly which ads end in a closed deal, and keep customers coming back.",
       "hubLabel": "Full Ecosystem",
       "slideNav": {
         "label": "Hero slide navigation"

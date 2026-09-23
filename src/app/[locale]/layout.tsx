@@ -117,8 +117,8 @@ export default async function LocaleLayout({
         {/*
           Preconnect is hoisted to <head> by Next. UTM / click-id capture
           already happened in proxy.ts (edge cookie). GTM / Meta / HYROS /
-          Cekat only boot after the first real user interaction — Lighthouse
-          never interacts, so they stay out of lab TBT.
+          Cekat boot after first interaction, or via the hybrid fallback
+          (≤3s timeout / pagehide) so non-interacting visitors still count.
         */}
         <AnalyticsPreconnect />
         <AdParamsUrl />
