@@ -33,6 +33,16 @@
       "label": "customer interactions handled"
     }
   ],
+  "caseStudy": {
+    "client": "Threeland Property",
+    "metrics": [
+      {
+        "value": ">50%",
+        "label": "revenue growth"
+      }
+    ],
+    "body": "Threeland Property closes deals even while its president director sleeps. After moving onto Cekat.AI, every chat lead is qualified and scheduled automatically, revenue grew by more than 50%, and no prospect is missed at any hour."
+  },
   "benefits": [
     {
       "title": "Ad Leads Get an Answer in Seconds, Not the Next Morning",

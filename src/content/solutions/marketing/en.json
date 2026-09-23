@@ -27,6 +27,16 @@
       "label": "ad leads answered instantly"
     }
   ],
+  "caseStudy": {
+    "client": "Holywings Group",
+    "metrics": [
+      {
+        "value": "+70%",
+        "label": "conversion lift"
+      }
+    ],
+    "body": "Holywings Group connected ad leads, WhatsApp broadcasts, and conversion signals in one platform. Inquiries that used to go unanswered after hours are now covered 24/7, and conversion rose by up to +70% on flows that were previously handled by hand."
+  },
   "painPoints": {
     "heading": "Where Ad Budget Quietly Leaks",
     "items": [

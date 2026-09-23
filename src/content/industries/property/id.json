@@ -33,6 +33,16 @@
       "label": "interaksi customer tertangani"
     }
   ],
+  "caseStudy": {
+    "client": "Threeland Property",
+    "metrics": [
+      {
+        "value": ">50%",
+        "label": "kenaikan revenue"
+      }
+    ],
+    "body": "Threeland Property menutup deal bahkan saat presiden direkturnya tidur. Setelah memakai Cekat.AI, setiap leads dari chat dikualifikasi dan dijadwalkan otomatis, revenue naik lebih dari 50%, dan tidak ada prospek yang terlewat di jam berapa pun."
+  },
   "benefits": [
     {
       "title": "Leads dari Iklan Dibales Hitungan Detik, Bukan Besok Pagi",

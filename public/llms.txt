@@ -13,10 +13,36 @@ Cekat.AI (PT. Teknologi Cekat Indonesia, launched August 2023) helps businesses 
 
 ## Key pages
 
-- [Features](https://cekat.ai/features): all feature landing pages (Bahasa Indonesia: https://cekat.ai/id/fitur)
-- [Industries](https://cekat.ai/industries): solutions per industry (Bahasa Indonesia: https://cekat.ai/id/industri)
+Indonesian is the default locale (no path prefix); English sits under `/en/`.
+
+- Features hub: [Indonesian](https://cekat.ai/fitur) · [English](https://cekat.ai/en/features) — AI agent, WhatsApp automation, omnichannel CRM, broadcast, order automation
+- Solutions hub: [Indonesian](https://cekat.ai/solusi) · [English](https://cekat.ai/en/solutions) — how sales, customer service, marketing, HR, and operations use the platform
+- Industries hub: [Indonesian](https://cekat.ai/industri) · [English](https://cekat.ai/en/industries) — use cases and results by vertical (healthcare, retail, F&B, education, and more)
+- Pricing: [Indonesian](https://cekat.ai/harga) · [English](https://cekat.ai/pricing)
+- Integrations: [Indonesian](https://cekat.ai/integrasi) · [English](https://cekat.ai/en/integrations)
 - [Contact](https://cekat.ai/contact): free consultation with the sales team
 - [Blog](https://cekat.ai/blog)
+
+## Selected feature pages (both locales)
+
+- WhatsApp blast: [id](https://cekat.ai/fitur/wa-blast) · [en](https://cekat.ai/en/features/whatsapp-blast)
+- AI chatbot: [id](https://cekat.ai/fitur/chatbot) · [en](https://cekat.ai/en/features/ai-chatbot)
+- WhatsApp Business API: [id](https://cekat.ai/fitur/whatsapp-business-api) · [en](https://cekat.ai/en/features/whatsapp-business-api)
+- Omnichannel inbox: [id](https://cekat.ai/fitur/aplikasi-omnichannel) · [en](https://cekat.ai/en/features/omnichannel-application)
+- CRM automation: [id](https://cekat.ai/fitur/crm-otomatis) · [en](https://cekat.ai/en/features/crm-automation)
+
+## Selected industry pages
+
+- Healthcare / klinik: [id](https://cekat.ai/industri/kesehatan) · [en](https://cekat.ai/en/industries/healthcare)
+- Retail & e-commerce: [id](https://cekat.ai/industri/ritel) · [en](https://cekat.ai/en/industries/retail-ecommerce)
+- Food & beverage: [id](https://cekat.ai/industri/fnb) · [en](https://cekat.ai/en/industries/food-beverage)
+- Education: [id](https://cekat.ai/industri/pendidikan) · [en](https://cekat.ai/en/industries/education)
+
+## Selected solution pages (by role)
+
+- Sales: [id](https://cekat.ai/solusi/sales) · [en](https://cekat.ai/en/solutions/sales)
+- Customer service: [id](https://cekat.ai/solusi/customer-service) · [en](https://cekat.ai/en/solutions/customer-service)
+- Marketing: [id](https://cekat.ai/solusi/marketing) · [en](https://cekat.ai/en/solutions/marketing)
 
 ## Facts
 

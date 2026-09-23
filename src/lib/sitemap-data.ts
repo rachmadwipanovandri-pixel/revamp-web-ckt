@@ -5,6 +5,8 @@ import { entryPaths, REGISTRY } from "@/lib/registry";
 import type { LandingKind } from "@/lib/registry/types";
 import { getAllPostSlugs, getAuthors, type PostSlugInfo } from "@/lib/wordpress";
 import type { SitemapUrl } from "@/lib/sitemap-xml";
+import { existsSync, statSync } from "node:fs";
+import path from "node:path";
 
 /**
  * Routes that exist as pages today, never list URLs that 404. Also never a URL
@@ -49,6 +51,33 @@ function languagesFor(paths: { en?: string; id?: string }) {
   };
 }
 
+/**
+ * Newest content-file mtime for one landing entry (either locale file).
+ * Only set when a file exists — a fabricated lastmod is worse than none.
+ */
+function landingLastModified(
+  kind: LandingKind,
+  entryId: string,
+  locales: Locale[],
+): string | undefined {
+  let latest = 0;
+  for (const locale of locales) {
+    const file = path.join(
+      process.cwd(),
+      "src",
+      "content",
+      kind,
+      entryId,
+      `${locale}.json`,
+    );
+    if (!existsSync(file)) continue;
+    const mtime = statSync(file).mtimeMs;
+    if (mtime > latest) latest = mtime;
+  }
+  if (!latest) return undefined;
+  return new Date(latest).toISOString();
+}
+
 /** Marketing pages: static routes plus every registry-driven landing page. */
 export function pageUrls(): SitemapUrl[] {
   const staticEntries: SitemapUrl[] = STATIC_ROUTES.flatMap((route) => {
@@ -68,9 +97,16 @@ export function pageUrls(): SitemapUrl[] {
     REGISTRY[kind].flatMap((entry) => {
       const paths = entryPaths(kind, entry);
       const languages = languagesFor(paths);
-      return LOCALE_ORDER.filter((locale) => paths[locale]).map((locale) => ({
+      const present = LOCALE_ORDER.filter((locale) => paths[locale]);
+      const lastModified = landingLastModified(
+        kind,
+        entry.id,
+        present as Locale[],
+      );
+      return present.map((locale) => ({
         url: `${SITE_URL}${paths[locale]}`,
         languages,
+        lastModified,
       }));
     }),
   );

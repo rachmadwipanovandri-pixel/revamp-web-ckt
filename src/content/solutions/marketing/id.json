@@ -27,6 +27,16 @@
       "label": "leads dari iklan langsung dibalas"
     }
   ],
+  "caseStudy": {
+    "client": "Holywings Group",
+    "metrics": [
+      {
+        "value": "+70%",
+        "label": "kenaikan konversi"
+      }
+    ],
+    "body": "Holywings Group menghubungkan leads iklan, broadcast WhatsApp, dan sinyal konversi di satu platform. Inquiry yang dulu menguap di luar jam kerja kini terjawab 24/7, dan konversi naik sampai +70% pada alur yang sebelumnya ditangani manual."
+  },
   "painPoints": {
     "heading": "Ke Mana Budget Iklan Bocor Diam-Diam",
     "items": [

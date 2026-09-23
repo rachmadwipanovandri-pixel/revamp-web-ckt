@@ -27,6 +27,16 @@
       "label": "bisnis pakai Cekat.AI"
     }
   ],
+  "caseStudy": {
+    "client": "Threeland Property",
+    "metrics": [
+      {
+        "value": ">50%",
+        "label": "kenaikan revenue"
+      }
+    ],
+    "body": "Tim sales Threeland Property membuka hari dengan leads yang sudah dikualifikasi AI, bukan tumpukan chat semalam. Follow-up berjalan otomatis, kunjungan properti terjadwal dari chat, dan revenue naik lebih dari 50% tanpa menambah headcount."
+  },
   "painPoints": {
     "heading": "Kenapa Deal Bisa Lepas Padahal Leads-nya Ada",
     "items": [

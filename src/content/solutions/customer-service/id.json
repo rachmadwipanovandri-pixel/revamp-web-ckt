@@ -27,6 +27,16 @@
       "label": "bisnis pakai Cekat.AI"
     }
   ],
+  "caseStudy": {
+    "client": "Holywings Group",
+    "metrics": [
+      {
+        "value": "100%",
+        "label": "chat ter-cover 24/7"
+      }
+    ],
+    "body": "Holywings Group memindahkan inquiry event, booking, dan harga dari balasan manual ke Cekat.AI. Chat ter-cover 100% sepanjang waktu, AI menjawab instan dan menyerahkan inquiry serius ke tim lengkap dengan konteks, konversi naik sampai +70%."
+  },
   "painPoints": {
     "heading": "Yang Membuat Skor Layanan Turun Pelan-Pelan",
     "items": [

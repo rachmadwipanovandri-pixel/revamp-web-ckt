@@ -2,13 +2,17 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import type { AppPathname, Locale } from "@/i18n/routing";
-import { alternates } from "@/lib/seo";
-import { REGISTRY } from "@/lib/registry";
+import { alternates, localizedPath, metaSnippet, SITE_URL } from "@/lib/seo";
+import { REGISTRY, entryPath } from "@/lib/registry";
 import type { FeatureCategory, LandingKind } from "@/lib/registry/types";
+import { breadcrumbJsonLd, collectionPageJsonLd } from "@/lib/jsonld";
+import { JsonLd } from "@/components/seo/json-ld";
 import { Container } from "@/components/layout/container";
 import { Reveal } from "@/components/sections/new-home/reveal";
 import { PageHero } from "@/components/sections/shared/page-hero";
 import { VoidFinalCta } from "@/components/sections/shared/void-final-cta";
+import { Breadcrumbs } from "./breadcrumbs";
+import { DefinitionBlock } from "./definition-block";
 import { EntryGrid } from "./entry-card";
 
 const HUB_TEMPLATE = {
@@ -16,6 +20,13 @@ const HUB_TEMPLATE = {
   industries: "/industries",
   solutions: "/solutions",
 } as const satisfies Record<LandingKind, AppPathname>;
+
+/** Per-hub social preview (1200×630). */
+const HUB_OG: Record<LandingKind, string> = {
+  features: "/images/og/features.jpg",
+  industries: "/images/og/industries.jpg",
+  solutions: "/images/og/solutions.jpg",
+};
 
 const FEATURE_CATEGORY: Record<
   FeatureCategory,
@@ -40,8 +51,8 @@ export async function hubMetadata(
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: `${kind}Hub` });
   const { canonical, languages } = alternates(locale, HUB_TEMPLATE[kind]);
-  const title = t("metaTitle");
-  const description = t("metaDescription");
+  const title = metaSnippet(t("metaTitle"), 70);
+  const description = metaSnippet(t("metaDescription"), 158);
 
   return {
     title,
@@ -55,14 +66,14 @@ export async function hubMetadata(
       locale: locale === "id" ? "id_ID" : "en_US",
       type: "website",
       images: [
-        { url: "/graph-image.jpg", width: 1200, height: 630, alt: title },
+        { url: HUB_OG[kind], width: 1200, height: 630, alt: title },
       ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/graph-image.jpg"],
+      images: [HUB_OG[kind]],
     },
   };
 }
@@ -80,11 +91,38 @@ export async function LandingHub({
   const t = await getTranslations({ locale, namespace: `${kind}Hub` });
   const tn = await getTranslations({ locale, namespace: "nav" });
   const tl = await getTranslations({ locale, namespace: "landing" });
+  const tb = await getTranslations({ locale, namespace: "breadcrumb" });
   const readMore = tl("readMore");
 
   const entries = REGISTRY[kind].filter((entry) => entry.slugs[locale]);
   const categories = [...new Set(entries.map((entry) => entry.category))];
   const pathname = `${HUB_TEMPLATE[kind]}/[slug]` as "/features/[slug]";
+  const hubPath = HUB_TEMPLATE[kind];
+  const canonical = `${SITE_URL}${localizedPath(locale, hubPath)}`;
+  const title = t("metaTitle");
+  const definition = t("definition");
+  const hubLabel = tb(kind);
+
+  const collectionItems = entries.flatMap((entry) => {
+    const path = entryPath(kind, entry, locale);
+    const name = entry.title[locale];
+    if (!path || !name) return [];
+    return [{ name, url: `${SITE_URL}${path}` }];
+  });
+
+  const jsonLd: object[] = [
+    breadcrumbJsonLd([
+      { name: tb("home"), url: `${SITE_URL}${localizedPath(locale, "/")}` },
+      // Last node: no item URL (current page).
+      { name: hubLabel },
+    ]),
+    collectionPageJsonLd({
+      url: canonical,
+      name: title,
+      description: definition,
+      items: collectionItems,
+    }),
+  ];
 
   // Headline is often one long sentence — put the closing clause on the accent.
   const heading = t("heading");
@@ -100,6 +138,7 @@ export async function LandingHub({
 
   return (
     <>
+      <JsonLd data={jsonLd} />
       <PageHero
         eyebrow={t("eyebrow")}
         title={headingLead}
@@ -107,6 +146,16 @@ export async function LandingHub({
         subtitle={t("body")}
         chips={[t("trust")]}
       />
+      <Breadcrumbs
+        items={[
+          { label: tb("home"), href: "/" as const },
+          { label: hubLabel },
+        ]}
+      />
+
+      <div className="cv-auto">
+        <DefinitionBlock definition={definition} />
+      </div>
 
       <section className="relative overflow-hidden bg-surface-muted py-16 md:py-20 lg:py-24">
         <div

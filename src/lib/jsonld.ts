@@ -247,6 +247,74 @@ export function faqPageJsonLd(items: Array<{ q: string; a: string }>) {
   };
 }
 
+/**
+ * Hub / listing pages: CollectionPage + ItemList so crawlers see the full
+ * child set as a list, not only as anchor soup in the HTML.
+ */
+export function collectionPageJsonLd({
+  url,
+  name,
+  description,
+  items,
+}: {
+  url: string;
+  name: string;
+  description: string;
+  items: Array<{ name: string; url: string }>;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${url}#collection`,
+    url,
+    name,
+    description,
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: items.length,
+      itemListElement: items.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.name,
+        url: item.url,
+      })),
+    },
+  };
+}
+
+/**
+ * Industry / role landing: Service (not SoftwareApplication — those are not
+ * separate apps). Provider is the site Organization.
+ */
+export function serviceJsonLd({
+  name,
+  description,
+  url,
+  serviceType,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  serviceType: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description,
+    url,
+    serviceType,
+    provider: { "@id": `${SITE_URL}/#organization` },
+    areaServed: [
+      { "@type": "Country", name: "Indonesia" },
+      { "@type": "Country", name: "Malaysia" },
+      { "@type": "Country", name: "Singapore" },
+    ],
+  };
+}
+
 export function breadcrumbJsonLd(crumbs: Array<{ name: string; url?: string }>) {
   return {
     "@context": "https://schema.org",

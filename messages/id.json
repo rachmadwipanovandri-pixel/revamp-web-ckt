@@ -771,26 +771,30 @@
     "rolesHeading": "Solusi untuk Setiap Tim di {industry}",
     "rolesBody": "Platform yang sama, dipakai dengan cara berbeda oleh tiap tim. Lihat alur kerja yang paling dekat dengan pekerjaanmu.",
     "caseStudyEyebrow": "Cerita Pelanggan",
-    "caseStudyAttribution": "Angka disampaikan langsung oleh pelanggan Cekat.AI."
+    "caseStudyAttribution": "Angka disampaikan langsung oleh pelanggan Cekat.AI.",
+    "relatedCrossEyebrow": "Lintas topik",
+    "relatedCross": "Jelajahi industri & peran terkait"
   },
   "featuresHub": {
     "metaTitle": "Fitur: AI Agent, Omnichannel CRM & Otomatisasi | CekatAI",
-    "metaDescription": "Jelajahi semua fitur Cekat.AI: AI agent, otomatisasi WhatsApp, omnichannel CRM, broadcast marketing, dan otomatisasi order, semua dalam satu platform.",
+    "metaDescription": "Katalog fitur Cekat.AI: AI agent, omnichannel CRM, otomatisasi WhatsApp, broadcast marketing, dan order, 47+ kemampuan dalam satu platform.",
     "eyebrow": "Fitur",
     "heading": "Semua yang Tim Kamu Butuhkan untuk Ubah Chat Jadi Penjualan",
     "body": "Dari AI agent yang bales chat dalam hitungan detik sampai CRM dan otomatisasi yang menjaga semua leads, jelajahi fitur yang dipakai 3.000+ bisnis Indonesia.",
-    "trust": "Dipercaya 3.000+ bisnis di 15+ industri"
+    "trust": "Dipercaya 3.000+ bisnis di 15+ industri",
+    "definition": "Fitur Cekat.AI adalah katalog kemampuan platform AI agent, omnichannel CRM, WhatsApp automation, broadcast marketing, dan otomatisasi order yang dipakai 3.000+ bisnis di Indonesia untuk membalas customer 24/7 dan mengubah percakapan jadi penjualan."
   },
   "industriesHub": {
     "metaTitle": "Industri: AI Customer Service untuk Semua Bisnis | CekatAI",
-    "metaDescription": "Lihat bagaimana bisnis di 15+ industri memakai Cekat.AI untuk otomatisasi customer service, menangkap leads, dan meningkatkan penjualan, kesehatan, ritel, F&B, pendidikan, dan lainnya.",
+    "metaDescription": "Lihat cara klinik, ritel, F&B, pendidikan, dan industri lain memakai Cekat.AI untuk CS 24/7, leads, dan penjualan.",
     "eyebrow": "Industri",
     "heading": "Dibangun untuk Industri Kamu",
     "body": "Dari klinik sampai brand ritel, Cekat.AI menyesuaikan dengan cara bisnismu berinteraksi dengan customer. Lihat hasil nyata dari industrimu.",
     "trust": "Hasil nyata dari bisnis seperti kamu",
     "category": {
       "industry": "Berdasarkan industri"
-    }
+    },
+    "definition": "Halaman industri Cekat.AI menjelaskan bagaimana AI customer service dan WhatsApp API dipakai di kesehatan, ritel, F&B, pendidikan, dan 15+ vertikal lain untuk menjawab customer 24/7, menangkap leads, dan menaikkan penjualan."
   },
   "solutionsHub": {
     "metaTitle": "Solusi per Peran Tim | Cekat.AI",
@@ -801,7 +805,8 @@
     "trust": "Dipercaya 3.000+ bisnis di Indonesia",
     "category": {
       "role": "Berdasarkan Peran"
-    }
+    },
+    "definition": "Solusi Cekat.AI per peran menjelaskan bagaimana tim sales, customer service, marketing, HRD, dan operasional memakai AI agent, CRM, dan automasi dalam satu platform untuk membalas lebih cepat dan menutup kerja tanpa proses manual."
   },
   "integrations": {
     "metaTitle": "Integrasi Cekat.AI: Channel, Platform Iklan, dan API | Cekat.AI",

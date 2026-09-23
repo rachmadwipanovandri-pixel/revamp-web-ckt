@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import {
   articleJsonLd,
   breadcrumbJsonLd,
+  collectionPageJsonLd,
   profilePageJsonLd,
 } from "./jsonld";
 
@@ -80,6 +81,27 @@ describe("profilePageJsonLd", () => {
       description: "Writes about AI.",
       image: "https://example.com/a.png",
       url: "https://cekat.ai/blog/author/superadmin",
+    });
+  });
+});
+
+describe("collectionPageJsonLd", () => {
+  it("emits CollectionPage with ItemList children", () => {
+    const data = collectionPageJsonLd({
+      url: "https://cekat.ai/fitur",
+      name: "Fitur",
+      description: "Katalog fitur.",
+      items: [
+        { name: "WA Blast", url: "https://cekat.ai/fitur/wa-blast" },
+        { name: "Chatbot", url: "https://cekat.ai/fitur/chatbot" },
+      ],
+    });
+    expect(data["@type"]).toBe("CollectionPage");
+    expect(data.mainEntity["@type"]).toBe("ItemList");
+    expect(data.mainEntity.numberOfItems).toBe(2);
+    expect(data.mainEntity.itemListElement[0]).toMatchObject({
+      position: 1,
+      name: "WA Blast",
     });
   });
 });

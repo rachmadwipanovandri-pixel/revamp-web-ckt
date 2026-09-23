@@ -27,6 +27,16 @@
       "label": "businesses run on Cekat.AI"
     }
   ],
+  "caseStudy": {
+    "client": "Holywings Group",
+    "metrics": [
+      {
+        "value": "100%",
+        "label": "chats covered 24/7"
+      }
+    ],
+    "body": "Holywings Group moved event, booking, and pricing inquiries off manual replies onto Cekat.AI. Chats are covered 100% around the clock, the AI answers instantly and hands serious inquiries to the team with full context, and conversion rose by up to +70%."
+  },
   "painPoints": {
     "heading": "What Quietly Drags Service Scores Down",
     "items": [

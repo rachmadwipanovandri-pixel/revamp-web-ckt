@@ -4,20 +4,21 @@ import path from "node:path";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type AppPathname, type Locale } from "@/i18n/routing";
-import { alternatesFor, localizedPath, SITE_URL } from "@/lib/seo";
+import { alternatesFor, localizedPath, metaSnippet, SITE_URL } from "@/lib/seo";
 import {
   entryPath,
   entryPaths,
   getEntryBySlug,
   relatedEntries,
   slugsFor,
+  REGISTRY,
 } from "@/lib/registry";
 import { loadLandingContent } from "@/lib/registry/content";
 import type { LandingKind } from "@/lib/registry/types";
 import {
   breadcrumbJsonLd,
   faqPageJsonLd,
-  softwareApplicationJsonLd,
+  serviceJsonLd,
 } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/json-ld";
 import { LogoMarquee } from "@/components/sections/shared/logo-marquee";
@@ -77,8 +78,8 @@ export async function landingMetadata(
     locale,
     entryPaths(kind, entry),
   );
-  const title = content.meta.title;
-  const description = content.meta.description;
+  const title = metaSnippet(content.meta.title, 70);
+  const description = metaSnippet(content.meta.description, 158);
 
   return {
     title,
@@ -141,6 +142,44 @@ export async function LandingPage({
     },
   }));
 
+  // Cross-cluster: same-kind related already covers peers; add one other kind
+  // so a feature page can reach industries (and vice versa) without a second hop.
+  const crossKind = kind === "industries" ? "solutions" : "industries";
+  const cross = REGISTRY[crossKind]
+    .filter((other) => other.slugs[locale] && !other.switcherFallbackId)
+    .slice(0, 4)
+    .map((other) => ({
+      title: other.title[locale] ?? other.id,
+      icon: other.icon,
+      tagline: other.tagline?.[locale],
+      href: {
+        pathname:
+          crossKind === "solutions"
+            ? ("/solutions/[slug]" as const)
+            : ("/industries/[slug]" as const),
+        params: { slug: other.slugs[locale]! },
+      },
+    }));
+  // Features should also surface roles, not only industries.
+  const crossSolutions =
+    kind === "features"
+      ? REGISTRY.solutions
+          .filter((other) => other.slugs[locale])
+          .slice(0, 3)
+          .map((other) => ({
+            title: other.title[locale] ?? other.id,
+            icon: other.icon,
+            tagline: other.tagline?.[locale],
+            href: {
+              pathname: "/solutions/[slug]" as const,
+              params: { slug: other.slugs[locale]! },
+            },
+          }))
+      : [];
+  const crossLinks = [...cross, ...crossSolutions];
+
+  const pagePath = entryPath(kind, entry, locale)!;
+  const pageUrl = `${SITE_URL}${pagePath}`;
   const jsonLd: object[] = [
     breadcrumbJsonLd([
       { name: tb("home"), url: `${SITE_URL}${localizedPath(locale, "/")}` },
@@ -148,16 +187,35 @@ export async function LandingPage({
         name: tb(kind),
         url: `${SITE_URL}${localizedPath(locale, hubTemplate)}`,
       },
-      { name: pageTitle, url: `${SITE_URL}${entryPath(kind, entry, locale)}` },
+      { name: pageTitle, url: pageUrl },
     ]),
     faqPageJsonLd(content.faq),
   ];
+  // Feature pages: one SoftwareApplication entity named for the platform (the
+  // feature is the page context, not a separate product name). Industries and
+  // roles are Services so schema matches what the page actually sells.
   if (kind === "features") {
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      name: "Cekat.AI",
+      description: content.definition,
+      url: pageUrl,
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      publisher: { "@id": `${SITE_URL}/#organization` },
+      featureList: pageTitle,
+    });
+  } else {
     jsonLd.push(
-      softwareApplicationJsonLd({
-        name: `Cekat.AI, ${pageTitle}`,
-        description: content.meta.description,
-        url: `${SITE_URL}${entryPath(kind, entry, locale)}`,
+      serviceJsonLd({
+        name: `${pageTitle} — Cekat.AI`,
+        description: content.definition,
+        url: pageUrl,
+        serviceType:
+          kind === "industries"
+            ? `AI customer service for ${pageTitle}`
+            : `AI automation for ${pageTitle} teams`,
       }),
     );
   }
@@ -243,6 +301,14 @@ export async function LandingPage({
         links={related}
         readMore={t("readMore")}
       />
+      {crossLinks.length > 0 && (
+        <RelatedLinks
+          eyebrow={t("relatedCrossEyebrow")}
+          heading={t("relatedCross")}
+          links={crossLinks}
+          readMore={t("readMore")}
+        />
+      )}
       <LandingCta heading={content.cta.heading} body={content.cta.body} />
     </>
   );

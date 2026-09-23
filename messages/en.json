@@ -771,7 +771,9 @@
     "rolesHeading": "Solutions for Every Team in {industry}",
     "rolesBody": "The same platform, put to work differently by each team. See the workflow closest to your own job.",
     "caseStudyEyebrow": "Customer Story",
-    "caseStudyAttribution": "Figures reported directly by Cekat.AI customers."
+    "caseStudyAttribution": "Figures reported directly by Cekat.AI customers.",
+    "relatedCrossEyebrow": "Across the site",
+    "relatedCross": "Explore related industries & roles"
   },
   "featuresHub": {
     "metaTitle": "Features: AI Agent, Omnichannel CRM & Automation | CekatAI",
@@ -779,18 +781,20 @@
     "eyebrow": "Features",
     "heading": "Everything Your Team Needs to Turn Chats Into Sales",
     "body": "From AI agents that reply in seconds to CRM and automation that never drop a lead, explore the features 3,000+ Indonesian businesses run on.",
-    "trust": "Trusted by 3,000+ businesses across 15+ industries"
+    "trust": "Trusted by 3,000+ businesses across 15+ industries",
+    "definition": "Cekat.AI features are the platform's AI agent, omnichannel CRM, WhatsApp automation, broadcast marketing, and order capabilities—used by 3,000+ businesses in Indonesia to answer customers 24/7 and turn conversations into sales."
   },
   "industriesHub": {
     "metaTitle": "Industries: AI Customer Service for Every Business | CekatAI",
-    "metaDescription": "See how businesses across 15+ industries use Cekat.AI to automate customer service, capture leads, and grow sales, healthcare, retail, F&B, education, and more.",
+    "metaDescription": "See how clinics, retail, F&B, education, and other industries use Cekat.AI for 24/7 support, lead capture, and sales growth.",
     "eyebrow": "Industries",
     "heading": "Built for Your Industry",
     "body": "From clinics to retail brands, Cekat.AI adapts to how your business actually talks to customers. See real results from your industry.",
     "trust": "Real results from businesses like yours",
     "category": {
       "industry": "By industry"
-    }
+    },
+    "definition": "Cekat.AI industry pages show how AI customer service and the WhatsApp API are used in healthcare, retail, F&B, education, and 15+ other verticals to answer customers 24/7, capture leads, and grow sales."
   },
   "solutionsHub": {
     "metaTitle": "Solutions by Team Role | Cekat.AI",
@@ -801,7 +805,8 @@
     "trust": "Trusted by 3,000+ businesses in Indonesia",
     "category": {
       "role": "By Role"
-    }
+    },
+    "definition": "Cekat.AI solutions by role explain how sales, customer service, marketing, HR, and operations teams use AI agents, CRM, and automation in one platform to reply faster and close work without manual busywork."
   },
   "integrations": {
     "metaTitle": "Cekat.AI Integrations: Channels, Ad Platforms, and APIs | Cekat.AI",
