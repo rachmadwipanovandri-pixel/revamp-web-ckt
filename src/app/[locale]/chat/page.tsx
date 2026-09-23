@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { alternates } from "@/lib/seo";
-import { FeatureHero } from "@/components/sections/features/feature-hero";
-import { WhatMakes } from "@/components/sections/features/what-makes";
-import { HowItWorks } from "@/components/sections/features/how-it-works";
-import { RealResult } from "@/components/sections/features/real-result";
-import { Faq } from "@/components/sections/features/faq";
-import { LogoMarquee } from "@/components/sections/shared/logo-marquee";
-import { TRUSTED_LOGOS } from "@/components/sections/shared/trusted-logos";
-import { FinalCTA } from "@/components/sections/home/final-cta";
+import { ProductLanding } from "@/components/sections/landing/product-landing";
 
 const HOW_IT_WORKS_STEPS = [
   { key: "step1", image: "/images/chat/connect-channels.png" },
@@ -16,7 +9,9 @@ const HOW_IT_WORKS_STEPS = [
   { key: "step3", image: "/images/chat/ai-handles-conversations.png" },
   { key: "step4", image: "/images/chat/escalate-and-sync.png" },
   { key: "step5", image: "/images/chat/analyze-and-improve.png" },
-];
+] as const;
+
+const FAQ_COUNT = 3;
 
 export async function generateMetadata({
   params,
@@ -59,29 +54,16 @@ export default async function ChatPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "home.trustedBy" });
+  const tn = await getTranslations({ locale, namespace: "nav" });
 
   return (
-    <>
-      <FeatureHero
-        namespace="chat"
-        backgroundSrc="/images/features/hero-background.png"
-      />
-      <LogoMarquee heading={t("heading")} logos={TRUSTED_LOGOS} />
-      <WhatMakes namespace="chat" />
-      <HowItWorks
-        namespace="chat"
-        backgroundSrc="/images/features/how-it-works-background.png"
-        steps={HOW_IT_WORKS_STEPS}
-      />
-      <RealResult
-        namespace="chat"
-        imageSrc="/images/chat/tantan-supriatna.png"
-        videoId="wvOip0Gkx30"
-      />
-      <Faq namespace="chat" />
-      <FinalCTA namespace="chat.cta" />
-    </>
+    <ProductLanding
+      locale={locale}
+      namespace="chat"
+      badge={tn("chat")}
+      steps={[...HOW_IT_WORKS_STEPS]}
+      testimonial={{ image: "/images/chat/tantan-supriatna.png" }}
+      faqCount={FAQ_COUNT}
+    />
   );
 }

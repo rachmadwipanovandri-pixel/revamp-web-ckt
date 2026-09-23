@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { alternates } from "@/lib/seo";
-import { FeatureHero } from "@/components/sections/features/feature-hero";
-import { WhatMakes } from "@/components/sections/features/what-makes";
-import { HowItWorks } from "@/components/sections/features/how-it-works";
-import { Faq } from "@/components/sections/features/faq";
-import { LogoMarquee } from "@/components/sections/shared/logo-marquee";
-import { TRUSTED_LOGOS } from "@/components/sections/shared/trusted-logos";
-import { FinalCTA } from "@/components/sections/home/final-cta";
+import { ProductLanding } from "@/components/sections/landing/product-landing";
 
 const HOW_IT_WORKS_STEPS = [
   {
@@ -24,7 +18,9 @@ const HOW_IT_WORKS_STEPS = [
     key: "step5",
     image: "/images/marketing/improve-performance-and-lower-cac.png",
   },
-];
+] as const;
+
+const FAQ_COUNT = 4;
 
 export async function generateMetadata({
   params,
@@ -67,24 +63,15 @@ export default async function MarketingPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "home.trustedBy" });
+  const tn = await getTranslations({ locale, namespace: "nav" });
 
   return (
-    <>
-      <FeatureHero
-        namespace="marketing"
-        backgroundSrc="/images/features/hero-background.png"
-      />
-      <LogoMarquee heading={t("heading")} logos={TRUSTED_LOGOS} />
-      <WhatMakes namespace="marketing" />
-      <HowItWorks
-        namespace="marketing"
-        backgroundSrc="/images/features/how-it-works-background.png"
-        steps={HOW_IT_WORKS_STEPS}
-      />
-      <Faq namespace="marketing" count={4} />
-      <FinalCTA namespace="marketing.cta" />
-    </>
+    <ProductLanding
+      locale={locale}
+      namespace="marketing"
+      badge={tn("marketing")}
+      steps={[...HOW_IT_WORKS_STEPS]}
+      faqCount={FAQ_COUNT}
+    />
   );
 }

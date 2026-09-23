@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { alternates } from "@/lib/seo";
-import { FeatureHero } from "@/components/sections/features/feature-hero";
-import { WhatMakes } from "@/components/sections/features/what-makes";
-import { HowItWorks } from "@/components/sections/features/how-it-works";
-import { RealResult } from "@/components/sections/features/real-result";
-import { Faq } from "@/components/sections/features/faq";
-import { LogoMarquee } from "@/components/sections/shared/logo-marquee";
-import { TRUSTED_LOGOS } from "@/components/sections/shared/trusted-logos";
-import { FinalCTA } from "@/components/sections/home/final-cta";
+import { ProductLanding } from "@/components/sections/landing/product-landing";
 
 const HOW_IT_WORKS_STEPS = [
   { key: "step1", image: "/images/crm/capture-and-organize-customers.png" },
   { key: "step2", image: "/images/crm/track-customer-journey.png" },
   { key: "step3", image: "/images/crm/filter-and-find-faster.png" },
   { key: "step4", image: "/images/crm/manage-work-with-boards.png" },
-];
+] as const;
+
+const FAQ_COUNT = 3;
 
 export async function generateMetadata({
   params,
@@ -58,25 +53,16 @@ export default async function CrmPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "home.trustedBy" });
+  const tn = await getTranslations({ locale, namespace: "nav" });
 
   return (
-    <>
-      <FeatureHero
-        namespace="crm"
-        backgroundSrc="/images/features/hero-background.png"
-      />
-      <LogoMarquee heading={t("heading")} logos={TRUSTED_LOGOS} />
-      <WhatMakes namespace="crm" />
-      <HowItWorks
-        namespace="crm"
-        backgroundSrc="/images/features/how-it-works-background.png"
-        steps={HOW_IT_WORKS_STEPS}
-      />
-      <RealResult namespace="crm" imageSrc="/images/crm/adam-sulaiman.png" videoId="IezNIgsGH5I" />
-      <Faq namespace="crm" />
-      <FinalCTA namespace="crm.cta" />
-    </>
+    <ProductLanding
+      locale={locale}
+      namespace="crm"
+      badge={tn("crm")}
+      steps={[...HOW_IT_WORKS_STEPS]}
+      testimonial={{ image: "/images/crm/adam-sulaiman.png" }}
+      faqCount={FAQ_COUNT}
+    />
   );
 }

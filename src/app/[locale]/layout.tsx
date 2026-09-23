@@ -30,8 +30,8 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cekat.ai";
  * this provider (and therefore the RSC/HTML payload) is subset. Shipping every
  * key cost ~57 KiB of serialized messages on every route.
  *
- * Dynamic product namespaces (`${ns}.faq`, `${ns}.howItWorks`, FinalCTA, …)
- * are why chat/crm/marketing/order/comparison stay listed.
+ * Product pages (chat/crm/marketing/order) compose shared sections server-side,
+ * so only comparison still needs its own namespace here (Faq + FinalCTA).
  */
 const CLIENT_MESSAGE_KEYS = [
   "nav",
@@ -41,10 +41,6 @@ const CLIENT_MESSAGE_KEYS = [
   "agentic",
   "contact",
   "wireframe",
-  "chat",
-  "crm",
-  "marketing",
-  "order",
   "comparison",
 ] as const;
 
