@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { existsSync } from "node:fs";
+import path from "node:path";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type AppPathname, type Locale } from "@/i18n/routing";
@@ -44,6 +46,17 @@ const HUB_TEMPLATE = {
 } as const satisfies Record<LandingKind, AppPathname>;
 
 type LandingParams = Promise<{ locale: string; slug: string }>;
+
+/**
+ * Homepage industry portraits reused in the industry hero when the file
+ * exists on disk. Only the eight curated rail photos ship today; other
+ * verticals keep the text-only void hero until art lands.
+ */
+function industryHeroImage(id: string): string | undefined {
+  const rel = `/images/industries/${id}.webp`;
+  const abs = path.join(process.cwd(), "public", rel);
+  return existsSync(abs) ? rel : undefined;
+}
 
 export function landingStaticParams(kind: LandingKind) {
   return routing.locales.flatMap((locale) =>
@@ -112,6 +125,7 @@ export async function LandingPage({
   const isIndustry = kind === "industries";
   const hubTemplate = HUB_TEMPLATE[kind];
   const pageTitle = entry.title[locale] ?? content.hero.title;
+  const heroImage = isIndustry ? industryHeroImage(entry.id) : undefined;
   const crumbs = [
     { label: tb("home"), href: "/" as const },
     { label: tb(kind), href: hubTemplate },
@@ -157,6 +171,8 @@ export async function LandingPage({
           title={content.hero.title}
           subtitle={content.hero.subtitle}
           useCases={content.hero.useCases}
+          image={heroImage}
+          imageAlt={pageTitle}
         />
       </div>
       <Breadcrumbs items={crumbs} />

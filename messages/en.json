@@ -205,6 +205,8 @@
     },
     "industries": {
       "heading": "One platform, tuned to how your industry works",
+      "headingLead": "One platform, tuned to how your",
+      "headingAccent": "industry works",
       "body": "Every industry has its own conversation patterns. Cekat.AI already understands the questions, booking flows, and order processes specific to your field.",
       "useCases": "Our Solutions",
       "learnMore": "Learn more",
@@ -994,7 +996,64 @@
       "titleLead": "The Agentic AI",
       "titleAccent": "Ecosystem",
       "subtitle": "Six features that help your team reply faster, follow up cleanly, and close more — from first chat to fulfilled order. All in one place, without ripping out what already works.",
-      "hubLabel": "Full Ecosystem"
+      "hubLabel": "Full Ecosystem",
+      "slideNav": {
+        "previous": "Previous slide",
+        "next": "Next slide"
+      },
+      "slides": {
+        "ecosystem": {},
+        "crm": {
+          "eyebrow": "Cekat CRM",
+          "titleLead": "Cekat CRM:",
+          "titleAccent": "Customer notes fill themselves",
+          "subtitle": "Every chat, stage change, and purchase is saved automatically. Your team sells — instead of typing data every evening.",
+          "stageLabel": "Cekat CRM",
+          "pill1": "Activity logged automatically",
+          "pill2": "Pipeline always current",
+          "pill3": "Full customer history"
+        },
+        "mini": {
+          "eyebrow": "Mini Agent",
+          "titleLead": "Mini Agent:",
+          "titleAccent": "Small help, fast results",
+          "subtitle": "Need a lightweight agent for FAQs or lead cleanup? Start light — practical, no long project.",
+          "stageLabel": "Mini Agent",
+          "pill1": "Quick to set up",
+          "pill2": "Focused on one task",
+          "pill3": "Easy to combine"
+        },
+        "oms": {
+          "eyebrow": "OMS",
+          "titleLead": "OMS:",
+          "titleAccent": "Orders finish inside the chat",
+          "subtitle": "Calculate shipping, send payment links, and track delivery without switching apps or logging orders by hand.",
+          "stageLabel": "Order Management",
+          "pill1": "Chat becomes an order",
+          "pill2": "Shipping & payment",
+          "pill3": "Lighter process"
+        },
+        "marketing": {
+          "eyebrow": "Cekat Marketing",
+          "titleLead": "Cekat Marketing:",
+          "titleAccent": "Know which ads actually pay off",
+          "subtitle": "Targeted broadcasts, scheduled follow-ups, and a clear picture of which ads truly drive sales.",
+          "stageLabel": "Cekat Marketing",
+          "pill1": "Segmented broadcasts",
+          "pill2": "See what profits",
+          "pill3": "Ready for ads"
+        },
+        "consulting": {
+          "eyebrow": "Consulting Agent",
+          "titleLead": "Consulting Agent:",
+          "titleAccent": "Advice that fits your business",
+          "subtitle": "An agent that reads patterns in your own data and suggests the next step — not generic tips from the internet.",
+          "stageLabel": "Consulting Agent",
+          "pill1": "Advice from your data",
+          "pill2": "Clear next steps",
+          "pill3": "Stays under team review"
+        }
+      }
     },
     "pillars": {
       "eyebrow": "Why Cekat",

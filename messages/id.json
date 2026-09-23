@@ -205,6 +205,8 @@
     },
     "industries": {
       "heading": "Satu platform, disesuaikan dengan industri Anda",
+      "headingLead": "Satu platform, disesuaikan dengan",
+      "headingAccent": "industri Anda",
       "body": "Setiap industri punya pola percakapan sendiri. Cekat.AI sudah memahami pertanyaan, alur booking, dan proses order yang khas di bidang Anda.",
       "useCases": "Solusi Kami",
       "learnMore": "Pelajari lebih lanjut",
@@ -991,10 +993,67 @@
   "agentic": {
     "hero": {
       "eyebrow": "Cekat AI",
-      "titleLead": "Ekosistem",
-      "titleAccent": "Agentic AI",
-      "subtitle": "Enam fitur yang bantu tim Anda balas lebih cepat, follow-up lebih rapi, dan close lebih banyak — dari chat pertama sampai order beres. Semuanya dalam satu tempat, tanpa ribet ganti sistem.",
-      "hubLabel": "Full Ekosistem"
+      "titleLead": "AI Agent & Omnichannel CRM: Dari Chat Pertama Jadi Pelanggan Seumur Hidup",
+      "titleAccent": "",
+      "subtitle": "Pakai AI agent, CRM Omnichannel, dan follow-up otomatis untuk mengubah lebih banyak percakapan jadi penjualan, sekaligus tahu persis iklan mana yang berujung closing, dan bikin customer balik lagi.",
+      "hubLabel": "Full Ekosistem",
+      "slideNav": {
+        "previous": "Slide sebelumnya",
+        "next": "Slide berikutnya"
+      },
+      "slides": {
+        "ecosystem": {},
+        "crm": {
+          "eyebrow": "Cekat CRM",
+          "titleLead": "Cekat CRM:",
+          "titleAccent": "Catatan pelanggan terisi sendiri",
+          "subtitle": "Setiap chat, perubahan tahap, dan pembelian otomatis tersimpan. Tim fokus jualan — bukan input data tiap sore.",
+          "stageLabel": "Cekat CRM",
+          "pill1": "Aktivitas tercatat otomatis",
+          "pill2": "Pipeline selalu update",
+          "pill3": "Riwayat pelanggan lengkap"
+        },
+        "mini": {
+          "eyebrow": "Mini Agent",
+          "titleLead": "Mini Agent:",
+          "titleAccent": "Bantuan kecil, hasil maksimal",
+          "subtitle": "Butuh agent khusus untuk tanya-jawab umum atau rapikan lead? Pasang yang ringan dulu — praktis, tanpa proyek panjang.",
+          "stageLabel": "Mini Agent",
+          "pill1": "Cepat dipasang",
+          "pill2": "Fokus satu tugas",
+          "pill3": "Mudah digabung"
+        },
+        "oms": {
+          "eyebrow": "OMS",
+          "titleLead": "OMS:",
+          "titleAccent": "Order selesai di dalam chat",
+          "subtitle": "Hitung ongkir, kirim link bayar, dan pantau pengiriman tanpa pindah aplikasi atau catat order manual.",
+          "stageLabel": "Order Management",
+          "pill1": "Chat langsung jadi order",
+          "pill2": "Ongkir & pembayaran",
+          "pill3": "Proses lebih ringan"
+        },
+        "marketing": {
+          "eyebrow": "Cekat Marketing",
+          "titleLead": "Cekat Marketing:",
+          "titleAccent": "Tahu iklan mana yang menghasilkan",
+          "subtitle": "Broadcast yang tepat sasaran, follow-up terjadwal, dan gambaran jelas iklan mana yang benar-benar menghasilkan penjualan.",
+          "stageLabel": "Cekat Marketing",
+          "pill1": "Broadcast tersegmen",
+          "pill2": "Lihat yang untung",
+          "pill3": "Siap untuk iklan"
+        },
+        "consulting": {
+          "eyebrow": "Consulting Agent",
+          "titleLead": "Consulting Agent:",
+          "titleAccent": "Saran yang nyambung dengan bisnis Anda",
+          "subtitle": "Agent yang bantu baca pola dari data Anda sendiri dan usulkan langkah berikutnya — bukan tips umum dari internet.",
+          "stageLabel": "Consulting Agent",
+          "pill1": "Saran dari data Anda",
+          "pill2": "Langkah yang jelas",
+          "pill3": "Tetap diawasi tim"
+        }
+      }
     },
     "pillars": {
       "eyebrow": "Kenapa Cekat",

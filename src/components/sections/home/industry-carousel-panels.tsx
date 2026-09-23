@@ -26,17 +26,17 @@ export type IndustryCarouselLabels = {
 /**
  * An expanding row of industry panels: the picked one opens wide and takes the
  * brand colour, the rest stay narrow and muted, and the copy underneath swaps
- * to whichever is open.
+ * to whichever is open. Hover (or click/focus) picks a panel, so the rail
+ * opens as soon as the pointer lands — no second click needed.
+ *
+ * Card language matches the homepage agentic grid: 1.35rem radius, soft
+ * hairline borders, brand-blue scrim on the open panel, and the detail row
+ * uses the same bordered pills / text tokens as Products and SoundWords.
  *
  * Closed panels hold their portrait in greyscale and the open one restores
- * colour, which is the reference's own device and, usefully, the reason eight
- * photographers' photos can sit together: only ever one is in colour, so their
- * palettes never appear side by side. The scrim under the label goes brand blue
- * on the open panel, so the photography still reads as ours.
- *
- * The row scrolls horizontally on phones, where eight panels cannot share a
- * viewport, and the active panel is scrolled into view whenever it changes so
- * the arrows work there too.
+ * colour so eight photographers' photos can sit together without clashing.
+ * The row scrolls horizontally on phones; the active panel is scrolled into
+ * view whenever it changes so the arrows work there too.
  */
 export function IndustryCarouselPanels({
   panels,
@@ -49,9 +49,7 @@ export function IndustryCarouselPanels({
   const panelRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const active = panels[activeIndex];
 
-  // Wraps in both directions, so neither arrow is ever a dead end.
-  const go = (target: number) => {
-    const index = (target + panels.length) % panels.length;
+  const select = (index: number) => {
     setActiveIndex(index);
     // Optional call: not every environment implements scrollIntoView, and
     // bringing a panel into view is a nicety, not the feature.
@@ -62,19 +60,26 @@ export function IndustryCarouselPanels({
     });
   };
 
+  // Wraps in both directions, so neither arrow is ever a dead end.
+  const go = (target: number) => {
+    select((target + panels.length) % panels.length);
+  };
+
   return (
-    <div className="mt-10">
+    <div>
       {/* Scrollbar hidden rather than styled: on phones this row is swiped,
           and a visible bar under the panels reads as a stray rule. */}
-      <ul className="flex [scrollbar-width:none] gap-2 overflow-x-auto pb-1 [&::-webkit-scrollbar]:hidden">
+      <ul className="flex [scrollbar-width:none] gap-2 overflow-x-auto pb-1 sm:gap-3 [&::-webkit-scrollbar]:hidden">
         {panels.map((panel, index) => {
           const isActive = index === activeIndex;
           return (
             <li
               key={panel.id}
               className={cn(
-                "shrink-0 transition-[flex-grow,width] duration-500 ease-out motion-reduce:transition-none sm:w-auto sm:shrink sm:basis-0",
-                isActive ? "w-56 sm:grow-[5]" : "w-24 sm:grow",
+                "shrink-0 transition-[flex-grow,width,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none sm:w-auto sm:shrink sm:basis-0",
+                isActive
+                  ? "w-56 shadow-[0_24px_48px_-28px_rgba(19,82,191,0.45)] sm:grow-[5]"
+                  : "w-24 sm:grow",
               )}
             >
               <button
@@ -83,8 +88,15 @@ export function IndustryCarouselPanels({
                 }}
                 type="button"
                 aria-pressed={isActive}
-                onClick={() => go(index)}
-                className="relative flex h-72 w-full cursor-pointer flex-col justify-end overflow-hidden rounded-xl bg-surface-muted p-4 text-left sm:h-[21rem]"
+                onClick={() => select(index)}
+                onMouseEnter={() => select(index)}
+                onFocus={() => select(index)}
+                className={cn(
+                  "relative flex h-72 w-full cursor-pointer flex-col justify-end overflow-hidden rounded-[1.35rem] border bg-surface-muted p-4 text-left transition-colors duration-500 focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none sm:h-[22rem]",
+                  isActive
+                    ? "border-primary/30"
+                    : "border-foreground/8 hover:border-primary/20",
+                )}
               >
                 {/* Sized for the open panel, which is the widest a given
                     photo ever renders (around 483px at desktop). Any panel can
@@ -97,8 +109,8 @@ export function IndustryCarouselPanels({
                   fill
                   sizes="(max-width: 640px) 224px, 500px"
                   className={cn(
-                    "object-cover transition-[filter] duration-500 motion-reduce:transition-none",
-                    !isActive && "grayscale",
+                    "object-cover transition-[filter,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none",
+                    isActive ? "scale-100 grayscale-0" : "scale-105 grayscale",
                   )}
                 />
                 <span
@@ -106,13 +118,13 @@ export function IndustryCarouselPanels({
                   className={cn(
                     "absolute inset-0 transition-colors duration-500 motion-reduce:transition-none",
                     isActive
-                      ? "bg-gradient-to-t from-primary-dark/90 via-primary-dark/25 to-transparent"
-                      : "bg-gradient-to-t from-foreground/85 via-foreground/25 to-transparent",
+                      ? "bg-linear-to-t from-primary-dark/95 via-primary-dark/35 to-transparent"
+                      : "bg-linear-to-t from-foreground/90 via-foreground/30 to-transparent",
                   )}
                 />
                 <span
                   className={cn(
-                    "relative font-numeric font-semibold text-white",
+                    "relative font-numeric font-semibold tracking-[-0.02em] text-white transition-all duration-500",
                     isActive
                       ? "text-xl leading-tight sm:text-2xl"
                       : "text-xs leading-snug sm:text-sm",
@@ -127,10 +139,11 @@ export function IndustryCarouselPanels({
       </ul>
 
       {/* What the open panel is about, what it handles, and the arrows: the
-          same three-part row the panels sit on top of. */}
-      <div className="mt-7 grid gap-7 lg:grid-cols-12 lg:items-start lg:gap-10">
+          same three-part row the panels sit on top of, using the agentic
+          card/pill tokens so it reads as one chapter with the grid above. */}
+      <div className="mt-8 grid gap-6 rounded-[1.35rem] border border-foreground/8 bg-surface-muted/60 p-5 md:p-6 lg:grid-cols-12 lg:items-start lg:gap-8">
         <div className="lg:col-span-5">
-          <p className="text-base text-muted-foreground">
+          <p className="text-base leading-relaxed text-muted-foreground">
             {active.description}
           </p>
           <Link
@@ -138,7 +151,7 @@ export function IndustryCarouselPanels({
               pathname: "/industries/[slug]",
               params: { slug: active.slug },
             }}
-            className="mt-4 inline-flex min-h-7 items-center gap-1.5 border-b border-primary/40 pb-0.5 font-numeric text-sm font-semibold text-primary transition-colors hover:border-primary"
+            className="mt-4 inline-flex min-h-10 items-center gap-2 rounded-full border border-primary/25 bg-white px-5 py-2 font-numeric text-sm font-semibold text-primary transition-all duration-300 hover:gap-3 hover:border-primary/50 hover:shadow-[0_16px_36px_-24px_rgba(19,82,191,0.5)]"
           >
             {labels.learnMore}
             <span aria-hidden>&rarr;</span>
@@ -146,14 +159,14 @@ export function IndustryCarouselPanels({
         </div>
 
         <div className="lg:col-span-5">
-          <p className="font-numeric text-sm font-semibold text-foreground">
+          <p className="font-numeric text-[0.68rem] font-semibold tracking-[0.16em] text-subtle-foreground uppercase">
             {labels.useCases}
           </p>
           <ul className="mt-3 flex flex-wrap gap-2">
             {active.useCases.map((useCase) => (
               <li
                 key={useCase}
-                className="rounded-full border border-border bg-surface-muted px-3 py-1.5 text-xs font-medium text-muted-foreground"
+                className="rounded-full border border-foreground/10 bg-white px-3 py-1.5 text-xs font-medium text-foreground/75"
               >
                 {useCase}
               </li>
@@ -166,7 +179,7 @@ export function IndustryCarouselPanels({
             type="button"
             aria-label={labels.previous}
             onClick={() => go(activeIndex - 1)}
-            className="grid size-10 cursor-pointer place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary"
+            className="grid size-11 cursor-pointer place-items-center rounded-full border border-foreground/15 text-foreground transition-all hover:border-primary/50 hover:text-primary focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
           >
             <ChevronLeft aria-hidden className="size-4" />
           </button>
@@ -174,7 +187,7 @@ export function IndustryCarouselPanels({
             type="button"
             aria-label={labels.next}
             onClick={() => go(activeIndex + 1)}
-            className="grid size-10 cursor-pointer place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary"
+            className="grid size-11 cursor-pointer place-items-center rounded-full border border-foreground/15 text-foreground transition-all hover:border-primary/50 hover:text-primary focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
           >
             <ChevronRight aria-hidden className="size-4" />
           </button>

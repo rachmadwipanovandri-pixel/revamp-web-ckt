@@ -1,9 +1,14 @@
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 /**
  * Void keynote hero for secondary pages — same ground language as the
  * homepage Hero: deep navy gradient, film noise, soft orbs, and a fade into
  * white so the first light chapter below feels continuous.
+ *
+ * When `image` is set (industry landings with a stock portrait), the photo
+ * fills the section as a background plate and the navy gradient rides over
+ * it as an overlay, so the copy stays legible on the same void stage.
  */
 export function PageHero({
   eyebrow,
@@ -12,6 +17,8 @@ export function PageHero({
   subtitle,
   note,
   chips,
+  image,
+  imageAlt,
   children,
   className,
   /** Extra top padding when a solid navbar sits above (not transparent). */
@@ -24,11 +31,16 @@ export function PageHero({
   subtitle?: string;
   note?: string;
   chips?: string[];
+  /** Optional industry photo used as the hero background. */
+  image?: string;
+  imageAlt?: string;
   /** Optional content (e.g. featured card) rendered under the copy block. */
   children?: React.ReactNode;
   className?: string;
   solidNav?: boolean;
 }) {
+  const hasImage = Boolean(image);
+
   return (
     <section
       className={cn(
@@ -37,18 +49,60 @@ export function PageHero({
         className,
       )}
     >
+      {image && (
+        <Image
+          src={image}
+          alt={imageAlt ?? ""}
+          fill
+          priority
+          quality={90}
+          sizes="100vw"
+          className="object-cover object-center brightness-115 saturate-110 contrast-105"
+        />
+      )}
+      {/* Photo path: only a light blue tint + edge gradients for type contrast —
+          the subject must stay visible, not a navy blur. */}
+      {hasImage ? (
+        <>
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 bg-[#0a1a3d]/30"
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 bg-linear-to-r from-[#050b18]/85 via-[#050b18]/35 to-[#050b18]/15"
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#050b18]/55 via-transparent to-[#0b1220]/70"
+          />
+        </>
+      ) : (
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#050b18] via-[#0a1a3d] to-[#0b1220]"
+        />
+      )}
+      {/* Grain sits on the stage, not on the photo — keep it subtle when art is under. */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#050b18] via-[#0a1a3d] to-[#0b1220]"
-      />
-      <div
-        aria-hidden
-        className="ink-noise pointer-events-none absolute inset-0 opacity-55"
+        className={cn(
+          "ink-noise pointer-events-none absolute inset-0",
+          hasImage ? "opacity-15" : "opacity-55",
+        )}
       />
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <span className="animate-orb-drift absolute top-[10%] left-[6%] h-72 w-72 rounded-full bg-primary/40 blur-[110px]" />
         <span
-          className="animate-orb-drift absolute top-[30%] right-[4%] h-80 w-80 rounded-full bg-accent-sky/25 blur-[120px]"
+          className={cn(
+            "animate-orb-drift absolute top-[10%] left-[6%] h-72 w-72 rounded-full blur-[110px]",
+            hasImage ? "bg-primary/15" : "bg-primary/40",
+          )}
+        />
+        <span
+          className={cn(
+            "animate-orb-drift absolute top-[30%] right-[4%] h-80 w-80 rounded-full blur-[120px]",
+            hasImage ? "bg-accent-sky/10" : "bg-accent-sky/25",
+          )}
           style={{ animationDelay: "-7s" }}
         />
       </div>

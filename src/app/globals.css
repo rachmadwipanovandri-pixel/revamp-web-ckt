@@ -250,6 +250,10 @@
 .hero-stagger > * {
   animation: heroIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
+/* Re-triggers when the hero product slide key changes (React remount). */
+.hero-slide {
+  animation: heroIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
 .hero-stagger > *:nth-child(1) {
   animation-delay: 0ms;
 }
@@ -593,7 +597,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-stagger > * {
+  .hero-stagger > *,
+  .hero-slide {
     animation: none !important;
   }
   .animate-float-soft,

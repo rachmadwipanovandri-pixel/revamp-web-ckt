@@ -12,11 +12,16 @@ export function LandingHero({
   title,
   subtitle,
   useCases,
+  image,
+  imageAlt,
 }: {
   badge?: string;
   title: string;
   subtitle: string;
   useCases?: string[];
+  /** Optional related photo used as the hero background (industry landings). */
+  image?: string;
+  imageAlt?: string;
 }) {
   const th = useTranslations("home.hero");
 
@@ -26,6 +31,8 @@ export function LandingHero({
       title={title}
       subtitle={subtitle}
       chips={useCases}
+      image={image}
+      imageAlt={imageAlt}
     >
       <div className="flex flex-wrap items-center justify-center gap-3 lg:justify-start">
         <Button

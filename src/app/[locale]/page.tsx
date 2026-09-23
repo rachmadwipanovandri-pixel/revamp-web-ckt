@@ -9,14 +9,16 @@ import {
   OpenApi,
   FinalCta,
 } from "@/components/sections/agentic";
+import { IndustryCarousel } from "@/components/sections/home/industry-carousel";
 
 /**
  * Production homepage — Agentic AI Ecosystem story (promoted from `/new`).
  *
- * Chapter rhythm: void keynote hero (6-node hub) → light sound-words
- * (Independent · Integrated · Open API) → soft proof strip → muted product
- * grid (six agents) → brand-wash pricing → Results (metric quotes + video
- * wall + logos) → ink Open API + integrations → void closer.
+ * Chapter rhythm: void keynote hero (staged phone chat demo) → light
+ * sound-words (Independent · Integrated · Open API) → soft proof strip →
+ * muted product grid (six agents) → industry hover rail → brand-wash
+ * pricing → Results (metric quotes + video wall + logos) → ink Open API +
+ * integrations → void closer.
  *
  * SEO lives on the locale layout (title, description, hreflang). Do not set
  * `robots: noindex` here — this is the canonical homepage.
@@ -40,6 +42,9 @@ export default async function HomePage({
       </div>
       <div className="cv-auto">
         <Products />
+      </div>
+      <div className="cv-auto">
+        <IndustryCarousel />
       </div>
       <div className="cv-auto">
         <Pricing />
