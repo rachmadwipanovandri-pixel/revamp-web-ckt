@@ -8,38 +8,47 @@ const STATS = [
 ] as const;
 
 /**
- * Slim proof strip between the sound-words and product grid — three keynote
- * metrics on a soft brand wash.
+ * Full-bleed metric band — Stripe-style authority strip. Giant tabular
+ * figures on a soft brand wash with hairline dividers instead of cards.
  */
 export async function Proof() {
   const t = await getTranslations("agentic.proof");
 
   return (
-    <section className="relative overflow-hidden bg-linear-to-b from-white via-primary/[0.04] to-white py-14 md:py-16">
+    <section className="relative overflow-hidden bg-linear-to-b from-white via-primary/[0.06] to-white py-16 md:py-20">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/25 to-transparent"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-30"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 1px 1px, rgba(19,82,191,0.18) 1px, transparent 0)",
+          backgroundSize: "22px 22px",
+        }}
       />
       <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
-          <p className="mb-8 text-center font-numeric text-[0.68rem] font-semibold tracking-[0.18em] text-subtle-foreground uppercase">
+          <p className="mb-10 text-center font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-subtle-foreground uppercase">
             {t("heading")}
           </p>
-          <div className="grid gap-4 sm:grid-cols-3">
+          <dl className="grid divide-y divide-foreground/10 border-y border-foreground/10 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
             {STATS.map((stat) => (
               <div
                 key={stat.key}
-                className="rounded-2xl border border-foreground/8 bg-white/85 px-5 py-6 text-center shadow-[0_16px_40px_-32px_rgba(19,82,191,0.45)] backdrop-blur"
+                className="px-4 py-8 text-center transition-colors duration-500 hover:bg-white/60 sm:px-6"
               >
-                <p className="font-numeric text-[clamp(1.5rem,3vw,2.25rem)] leading-none font-semibold tracking-[-0.04em] text-primary tabular-nums break-words">
+                <dd className="animate-metric-rise font-numeric text-[clamp(2.25rem,6vw,3.75rem)] leading-none font-semibold tracking-[-0.05em] text-primary tabular-nums break-words">
                   {t(stat.valueKey)}
-                </p>
-                <p className="mt-2.5 text-[0.72rem] leading-snug tracking-wide text-subtle-foreground uppercase">
+                </dd>
+                <dt className="mx-auto mt-3 max-w-[16rem] font-numeric text-[0.72rem] leading-snug tracking-wide text-subtle-foreground uppercase">
                   {t(stat.labelKey)}
-                </p>
+                </dt>
               </div>
             ))}
-          </div>
+          </dl>
         </Reveal>
       </div>
     </section>

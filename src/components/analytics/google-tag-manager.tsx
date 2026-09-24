@@ -1,27 +1,24 @@
+"use client";
+
 import Script from "next/script";
 import { onTrackerReadyIdle } from "@/lib/defer-third-party";
+import { DataLayerBuffer } from "@/components/analytics/data-layer-buffer";
 
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-5CWCQNBX";
 
 /**
- * GTM after first interaction / 9s fallback / pagehide, then idle so `gtm.js`
- * and its tags (TikTok, gtag, …) stay off the critical main-thread window.
+ * GTM after first interaction / 9s fallback / pagehide, then idle.
  *
- * `dataLayer` is primed in the HTML so early `push` calls buffer before
- * `gtm.js` arrives. UTM / gclid / fbclid stay on the landing URL and in the
- * `cekat_ads` cookie from `proxy.ts` — attribution does not depend on when
- * this script loads.
+ * `dataLayer` is primed by `DataLayerBuffer` (client, no script tag).
+ * The loader itself is `lazyOnload` — `next/script` injects that via
+ * `document.createElement`, never as a React `<script>` child.
+ * Attribution lives in the URL + `cekat_ads` cookie from `proxy.ts`.
  */
 export function GoogleTagManager() {
   if (!GTM_ID) return null;
   return (
     <>
-      <script
-        id="dataLayer-buffer"
-        dangerouslySetInnerHTML={{
-          __html: `(function(w){w.dataLayer=w.dataLayer||[];})(window);`,
-        }}
-      />
+      <DataLayerBuffer />
       <Script id="google-tag-manager" strategy="lazyOnload">
         {onTrackerReadyIdle(
           `(function(w,d,s,l,i){

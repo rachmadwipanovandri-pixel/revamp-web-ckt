@@ -1,9 +1,17 @@
 export { Hero } from "./hero";
+export { LogoStrip } from "./logo-strip";
 export { SoundWords } from "./sound-words";
 export { Proof } from "./proof";
 export { Products } from "./products";
+export { ProblemSolution } from "./problem-solution";
+export { HowItWorks } from "./how-it-works";
+export { CaseStudy } from "./case-study";
 export { Pricing } from "./pricing";
 export { Results } from "./results";
 export { OpenApi } from "./open-api";
+export { CipherBand } from "./cipher-band";
+export { Security } from "./security";
+export { Faq } from "./faq";
 export { FinalCta } from "./final-cta";
 export { EcosystemHub } from "./ecosystem-hub";
+export { ScrollProgress } from "./scroll-progress";

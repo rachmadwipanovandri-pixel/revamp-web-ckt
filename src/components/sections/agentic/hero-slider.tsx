@@ -143,7 +143,7 @@ export function HeroSlider({ copy }: { copy: HeroSliderCopy }) {
         </div>
       </div>
 
-      <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:gap-10 xl:gap-14">
+      <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:gap-10 xl:gap-14">
         <div className="hero-stagger text-center lg:pl-8 lg:text-left xl:pl-10">
           <p
             key={`eyebrow-${active.key}`}
@@ -165,7 +165,7 @@ export function HeroSlider({ copy }: { copy: HeroSliderCopy }) {
           >
             {/* Desktop clamp kept under ~2.75rem so a long localized H1 still
                 leaves the CTA row inside the first viewport. */}
-            <h1 className="mx-auto max-w-[16ch] text-[clamp(1.85rem,3.4vw,2.6rem)] leading-[1.08] font-semibold tracking-[-0.03em] text-balance text-white lg:mx-0 lg:max-w-[16ch]">
+            <h1 className="mx-auto max-w-[18ch] text-[clamp(1.7rem,5vw,2.6rem)] leading-[1.1] font-semibold tracking-[-0.03em] text-balance text-white sm:max-w-[16ch] lg:mx-0 lg:max-w-[16ch]">
               {active.titleLead}
               {active.titleAccent ? (
                 <>
@@ -199,7 +199,7 @@ export function HeroSlider({ copy }: { copy: HeroSliderCopy }) {
           <div className="mt-7 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
             <Button
               size="lg"
-              className="h-13 rounded-full bg-white px-8 text-sm text-ink-void shadow-[0_16px_40px_-16px_rgba(255,255,255,0.35)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-sky-50 active:scale-[0.98] motion-reduce:transition-none"
+              className="h-12 rounded-full bg-white px-5 text-sm text-ink-void shadow-[0_16px_40px_-16px_rgba(255,255,255,0.35)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-sky-50 active:scale-[0.98] motion-reduce:transition-none sm:h-13 sm:px-8"
               nativeButton={false}
               render={
                 <WhatsAppAnchor target="_blank" rel="noopener noreferrer" />
@@ -211,7 +211,7 @@ export function HeroSlider({ copy }: { copy: HeroSliderCopy }) {
             <Button
               variant="outline"
               size="lg"
-              className="h-13 rounded-full border-white/30 bg-white/8 px-8 text-sm text-white backdrop-blur transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:border-white/60 hover:bg-white/15 active:scale-[0.98] motion-reduce:transition-none"
+              className="h-12 rounded-full border-white/30 bg-white/8 px-5 text-sm text-white backdrop-blur transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:border-white/60 hover:bg-white/15 active:scale-[0.98] motion-reduce:transition-none sm:h-13 sm:px-8"
               nativeButton={false}
               render={<AppAnchor href={REGISTER_URL} />}
             >

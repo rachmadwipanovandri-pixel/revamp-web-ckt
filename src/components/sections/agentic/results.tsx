@@ -76,22 +76,28 @@ export function Results() {
   }, [activeId, autoRotate, inView]);
 
   return (
-    <section className="relative overflow-hidden bg-surface-muted py-20 md:py-28 lg:py-32">
+    <section className="relative overflow-hidden bg-surface-muted py-14 md:py-28 lg:py-32">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
       />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-40 left-1/4 h-80 w-80 rounded-full bg-primary/8 blur-[120px]"
+      />
       <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="eyebrow-rule mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
-              {t("eyebrow")}
-            </p>
-            <h2 className="text-[clamp(1.85rem,3.8vw,3rem)] leading-[1.08] font-semibold tracking-[-0.04em] text-balance text-foreground">
-              {t("headingLead")}{" "}
-              <span className="text-primary">{t("headingAccent")}</span>
-            </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <p className="eyebrow-rule mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
+                {t("eyebrow")}
+              </p>
+              <h2 className="text-[clamp(1.85rem,4vw,3.25rem)] leading-[1.06] font-semibold tracking-[-0.04em] text-balance text-foreground">
+                {t("headingLead")}{" "}
+                <span className="text-primary">{t("headingAccent")}</span>
+              </h2>
+            </div>
+            <p className="text-base leading-relaxed text-muted-foreground lg:col-span-5 lg:pb-2 lg:text-lg">
               {t("body")}
             </p>
           </div>

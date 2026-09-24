@@ -1206,6 +1206,178 @@
       "item1": "Free 14 days, no card",
       "item2": "Ready in minutes",
       "item3": "Can start with a single agent"
+    },
+    "logoStrip": {
+      "heading": "Trusted by brands across Indonesia",
+      "note": "Thousands of other businesses also run their daily conversations on Cekat.AI."
+    },
+    "howItWorks": {
+      "eyebrow": "How it works",
+      "headingLead": "From first chat",
+      "headingAccent": "to growth loop.",
+      "body": "Five clear steps — not a multi-month setup project. Start on the channels you already use, then add agents when your team is ready.",
+      "stageLabel": "Live stage",
+      "chat": {
+        "title": "Chats come in",
+        "body": "WhatsApp, Instagram, Messenger, and website live chat land in one inbox. Frontline AI answers 24/7; hard cases hand off to your team with full context.",
+        "hint": "The channels you already use today"
+      },
+      "crm": {
+        "title": "Saved in CRM",
+        "body": "Every conversation, deal stage, and purchase is logged to the customer profile automatically. No evening data entry.",
+        "hint": "Data fills itself from the chat"
+      },
+      "mini": {
+        "title": "Mini Agent",
+        "body": "Drop in a lightweight agent for FAQs or lead cleanup. One job, live fast, no long project.",
+        "hint": "Light setup, immediate result"
+      },
+      "consulting": {
+        "title": "Consulting Agent",
+        "body": "An agent that reads patterns in your own data and suggests the next step — advice that fits, not generic tips.",
+        "hint": "Decisions from your own data"
+      },
+      "marketing": {
+        "title": "Cekat Marketing",
+        "body": "Segmented broadcasts, scheduled follow-ups, and a clear view of which ads actually drive sales.",
+        "hint": "Close the loop: chat → sale → ads"
+      },
+      "footnote": "Start with one step. Add the rest when your team is ready — everything stays on the same platform."
+    },
+    "roles": {
+      "eyebrow": "Solutions by role",
+      "headingLead": "Enter through",
+      "headingAccent": "your team’s role.",
+      "body": "The same AI agents, CRM, and automation — used differently by every team. Pick your role and see the workflow.",
+      "readMore": "Learn more",
+      "swipeHint": "Swipe to see more roles →"
+    },
+    "problemSolution": {
+      "eyebrow": "Problem → solution",
+      "headingLead": "Messy chat",
+      "headingAccent": "becomes a system.",
+      "body": "Three frictions that leak revenue — and how Cekat closes them on one platform.",
+      "beforeLabel": "Before",
+      "afterLabel": "With Cekat",
+      "note": "One platform. Chat, CRM, agents, and marketing share the same customer.",
+      "p1": {
+        "title": "Chats scattered across phones",
+        "body": "One number fought over, slow replies, leads lost in personal history."
+      },
+      "p2": {
+        "title": "CRM filled by hand each evening",
+        "body": "The team burns time on data entry, the pipeline stays stale, follow-ups slip."
+      },
+      "p3": {
+        "title": "Ads run, attribution is fuzzy",
+        "body": "Hard to know which ads actually closed deals — budget becomes a guess."
+      },
+      "s1": {
+        "title": "One omnichannel inbox",
+        "body": "WA, IG, Messenger, and live chat in one place; AI answers 24/7, hard cases hand off with context."
+      },
+      "s2": {
+        "title": "CRM fills itself from chat",
+        "body": "Profiles, deal stages, and history log automatically — a live pipeline with no manual entry."
+      },
+      "s3": {
+        "title": "Chat → sale → ads loop",
+        "body": "Broadcasts, follow-ups, and ROAS connect to the same conversations that closed the deal."
+      }
+    },
+    "cipherBand": {
+      "label": "Cekat data motif",
+      "caption": "Encrypted paths · live agents · shared context"
+    },
+    "caseStudy": {
+      "eyebrow": "Short case study",
+      "client": "Nature Craft Indonesia",
+      "title": "Closing rate up, revenue up with it.",
+      "body": "Nature Craft’s customer service team used to answer chats by hand — closing rate under 20%. After Cekat.AI’s Frontline AI and CRM went live, low-quality leads were filtered earlier, responses became consistent, and closing rate climbed above 40%.",
+      "outcome": "Revenue rose about 50%. The figures on the left were reported directly by Nature Craft’s Director in a recorded interview.",
+      "metric1": {
+        "value": "+50%",
+        "label": "revenue, after closing rate rose from under 20% to over 40%"
+      },
+      "metric2": {
+        "value": "< 2 min",
+        "label": "chat response target, down from over 20 minutes in similar cases"
+      },
+      "metric3": {
+        "value": "24/7",
+        "label": "AI answers outside office hours, without adding a night shift"
+      },
+      "attribution": "Figures reported directly by Cekat.AI customers, not independently audited."
+    },
+    "pricingGlossary": {
+      "heading": "Pricing terms, short",
+      "body": "The six terms that most often confuse people on plan cards.",
+      "mau": {
+        "term": "MAU (Monthly Active User)",
+        "def": "A unique customer who interacts with your business in a given month. One person counts once, no matter how many messages they send."
+      },
+      "aiSimple": {
+        "term": "AI Simple",
+        "def": "AI answers from the knowledge base you provide — built for FAQs and standard info."
+      },
+      "aiFull": {
+        "term": "AI Full",
+        "def": "AI runs more complex flows: lead qualification, follow-ups, and next actions inside the chat."
+      },
+      "waba": {
+        "term": "WABA (WhatsApp Business API)",
+        "def": "Meta’s official channel for business messaging at scale. Cekat.AI is an official Meta Business Partner that walks you through verification."
+      },
+      "seats": {
+        "term": "Seats",
+        "def": "How many teammates can log in to the dashboard. Add seats as the team grows — no platform switch."
+      },
+      "credits": {
+        "term": "AI Credits",
+        "def": "Your AI usage quota per billing period. Larger plans carry larger quotas for higher chat volume."
+      },
+      "note": "Excludes VAT. Want a clearer walkthrough?",
+      "link": "See details on the Pricing page"
+    },
+    "security": {
+      "eyebrow": "Security & compliance",
+      "headingLead": "Ready for teams",
+      "headingAccent": "who take data seriously.",
+      "body": "Access controls, Indonesian law, and Meta’s official rails — the foundation you need before customer conversations live on a platform.",
+      "pdp": {
+        "title": "UU PDP compliant",
+        "body": "User data is handled under Indonesia’s Personal Data Protection Law, not just a marketing security claim."
+      },
+      "rbac": {
+        "title": "Role-based access",
+        "body": "RBAC decides who can see conversations, contacts, and pipeline. Sales, support, and billing each get what is relevant — nothing more."
+      },
+      "meta": {
+        "title": "Meta Business Partner",
+        "body": "Cekat.AI is an official Meta partner. WhatsApp traffic runs on the official Business API with approved templates, not unofficial gateways."
+      },
+      "iso": {
+        "title": "ISO 27001 in progress",
+        "body": "ISO 27001 certification is underway. We are open about your specific compliance needs during onboarding."
+      },
+      "note": "ISO 27001 status is a process in progress, not a claim of current accreditation. Deeper security detail is available in enterprise conversations."
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Questions before you start",
+      "body": "Straight answers to the doubts that show up most often around cost, setup, and data ownership.",
+      "q1": "How long until setup is usable?",
+      "a1": "Most businesses answer chats the same day. Connect WhatsApp, paste your knowledge base, turn the agent on — no coding and no multi-month implementation project.",
+      "q2": "Do we have to buy every product at once?",
+      "a2": "No. Start with Chat. CRM, Marketing, or other agents can follow once the team settles in — data still connects on the same platform.",
+      "q3": "We have no developers. Can this still work?",
+      "a3": "Yes. The builder is no-code: describe the agent’s role, paste your SOPs and business info, switch it on. Cekat.AI’s team supports onboarding, including WABA verification when you are ready for the official API.",
+      "q4": "Who owns our customer data?",
+      "a4": "You do. Conversations and customer profiles belong to your business, can be exported anytime, and access is controlled by role inside your team. Nothing locks you in.",
+      "q5": "What if the AI answers wrong?",
+      "a5": "You control the knowledge base and which actions the AI can take. Sensitive or out-of-scope cases hand off to a human with full chat history — automation never means losing control.",
+      "q6": "Are there setup fees or minimum contracts?",
+      "a6": "Regular plans carry no separate setup fee and no minimum contract. Custom terms are agreed with sales before you begin."
     }
   },
   "wireframe": {

@@ -10,12 +10,8 @@ import { SafeIcon } from "@/components/sections/new-home/safe-icon";
 const CHECKS = ["item1", "item2", "item3"] as const;
 
 /**
- * Closer for the agentic pass — reverse into deep void, three keynote
- * sound-words as the final beat, dual CTA.
- *
- * Server component: only the leaf `Reveal` / anchors need the client. Shipping
- * the whole section as `"use client"` forced its JSX through the RSC boundary
- * for no interactive reason.
+ * Void closer — oversized display type, dual CTAs with shine sweep,
+ * trust checklist as a horizontal rail.
  */
 export async function FinalCta() {
   const t = await getTranslations("agentic.finalCta");
@@ -28,21 +24,31 @@ export async function FinalCta() {
         className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#0b1220] via-[#0a1a3d] to-[#050b18]"
       />
       <div aria-hidden className="ink-noise pointer-events-none absolute inset-0 opacity-50" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-35"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(125,211,252,0.07) 1px, transparent 1px), linear-gradient(to bottom, rgba(125,211,252,0.07) 1px, transparent 1px)",
+          backgroundSize: "56px 56px",
+          maskImage: "radial-gradient(ellipse at 50% 40%, black 10%, transparent 70%)",
+        }}
+      />
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <span className="absolute -top-24 -right-16 h-72 w-72 rounded-full bg-primary/35 blur-[100px]" />
-        <span className="absolute -bottom-28 -left-16 h-80 w-80 rounded-full bg-sky-500/20 blur-[110px]" />
+        <span className="animate-orb-drift absolute -top-24 -right-16 h-72 w-72 rounded-full bg-primary/35 blur-[100px]" />
+        <span className="animate-orb-drift absolute -bottom-28 -left-16 h-80 w-80 rounded-full bg-sky-500/20 blur-[110px]" />
       </div>
 
-      <div className="relative mx-auto w-full max-w-7xl px-4 pt-24 pb-24 sm:px-6 md:pt-32 md:pb-28 lg:px-8 lg:pt-36 lg:pb-32">
+      <div className="relative mx-auto w-full max-w-7xl px-4 pt-16 pb-20 sm:px-6 md:pt-32 md:pb-28 lg:px-8 lg:pt-36 lg:pb-32">
         <Reveal>
           <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-8">
               <p className="eyebrow-rule-light mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-sky-300 uppercase">
                 {t("eyebrow")}
               </p>
-              <h2 className="text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] font-semibold tracking-[-0.04em] text-balance text-white">
+              <h2 className="text-[clamp(2.25rem,5.5vw,4rem)] leading-[1.04] font-semibold tracking-[-0.045em] text-balance text-white">
                 {t("headingLead")}{" "}
-                <span className="bg-linear-to-r from-sky-300 to-blue-400 bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-sky-300 via-blue-300 to-blue-500 bg-clip-text text-transparent">
                   {t("headingAccent")}
                 </span>
               </h2>
@@ -50,12 +56,15 @@ export async function FinalCta() {
                 {t("body")}
               </p>
 
-              <ul className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-3">
-                {CHECKS.map((key) => (
+              <ul className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-white/10 pt-7">
+                {CHECKS.map((key, index) => (
                   <li
                     key={key}
                     className="flex items-center gap-2.5 text-sm font-medium text-white/90"
                   >
+                    <span className="font-numeric text-[0.68rem] font-bold tracking-[0.14em] text-sky-300/70">
+                      0{index + 1}
+                    </span>
                     <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-sky-400/20 text-sky-200 ring-1 ring-sky-300/35">
                       <SafeIcon
                         icon={lucideCheck}
@@ -74,7 +83,7 @@ export async function FinalCta() {
                 <Button
                   nativeButton={false}
                   render={<AppAnchor href={REGISTER_URL} />}
-                  className="h-13 rounded-full bg-white px-8 text-sm text-ink-void shadow-[0_18px_40px_-18px_rgba(255,255,255,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-50"
+                  className="btn-shine h-13 rounded-full bg-white px-8 text-sm text-ink-void shadow-[0_18px_40px_-18px_rgba(255,255,255,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-50"
                 >
                   {th("ctaSecondary")}
                 </Button>

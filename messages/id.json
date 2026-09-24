@@ -1206,6 +1206,178 @@
       "item1": "Gratis 14 hari, tanpa kartu",
       "item2": "Siap dipakai dalam hitungan menit",
       "item3": "Bisa mulai dari satu agent"
+    },
+    "logoStrip": {
+      "heading": "Dipercaya brand di Indonesia",
+      "note": "Ribuan bisnis lain juga menjalankan percakapan harian di Cekat.AI."
+    },
+    "howItWorks": {
+      "eyebrow": "Cara kerja",
+      "headingLead": "Dari chat pertama",
+      "headingAccent": "sampai growth loop.",
+      "body": "Lima langkah yang jelas — bukan proyek setup berbulan-bulan. Mulai dari channel yang sudah Anda pakai, lalu tambah agent lain saat tim siap.",
+      "stageLabel": "Live stage",
+      "chat": {
+        "title": "Chat masuk",
+        "body": "WhatsApp, Instagram, Messenger, dan live chat website masuk ke satu inbox. AI Frontline menjawab 24/7; case sulit diserah ke tim dengan konteks penuh.",
+        "hint": "Channel yang sudah Anda pakai hari ini"
+      },
+      "crm": {
+        "title": "Tersimpan di CRM",
+        "body": "Setiap percakapan, tahap deal, dan pembelian otomatis tercatat ke profil pelanggan. Tidak ada input manual tiap sore.",
+        "hint": "Data mengisi sendiri dari chat"
+      },
+      "mini": {
+        "title": "Mini Agent",
+        "body": "Pasang agent ringan untuk tanya-jawab umum atau rapikan lead. Satu tugas, cepat jalan, tanpa proyek panjang.",
+        "hint": "Setup ringan, hasil langsung"
+      },
+      "consulting": {
+        "title": "Consulting Agent",
+        "body": "Agent membaca pola dari data Anda sendiri dan mengusulkan langkah berikutnya — saran yang nyambung, bukan tips umum.",
+        "hint": "Keputusan dari data bisnis Anda"
+      },
+      "marketing": {
+        "title": "Cekat Marketing",
+        "body": "Broadcast tersegmen, follow-up terjadwal, dan gambaran iklan mana yang benar-benar menghasilkan penjualan.",
+        "hint": "Tutup loop: chat → penjualan → iklan"
+      },
+      "footnote": "Mulai dari satu langkah. Tambah yang lain kapan pun tim siap — semuanya tetap di platform yang sama."
+    },
+    "roles": {
+      "eyebrow": "Solusi per peran",
+      "headingLead": "Masuk lewat",
+      "headingAccent": "peran tim Anda.",
+      "body": "AI agent, CRM, dan automasi yang sama dipakai dengan cara berbeda oleh tiap tim. Pilih peranmu dan lihat alur kerjanya.",
+      "readMore": "Selengkapnya",
+      "swipeHint": "Geser untuk melihat peran lain →"
+    },
+    "problemSolution": {
+      "eyebrow": "Masalah → solusi",
+      "headingLead": "Chat berantakan",
+      "headingAccent": "jadi sistem.",
+      "body": "Tiga gesekan yang paling sering bikin revenue bocor — dan bagaimana Cekat menutupnya di satu platform.",
+      "beforeLabel": "Sebelum",
+      "afterLabel": "Dengan Cekat",
+      "note": "Satu platform. Chat, CRM, agent, dan marketing saling kenal.",
+      "p1": {
+        "title": "Chat tercecer di banyak HP",
+        "body": "Satu nomor rebutan, balasan lambat, lead hilang di riwayat pribadi admin."
+      },
+      "p2": {
+        "title": "CRM diisi manual setiap sore",
+        "body": "Tim habis waktu input data, pipeline selalu basi, follow-up sering terlewat."
+      },
+      "p3": {
+        "title": "Iklan jalan, atribusi kabur",
+        "body": "Tidak jelas iklan mana yang benar-benar berujung closing — budget jadi tebakan."
+      },
+      "s1": {
+        "title": "Satu inbox omnichannel",
+        "body": "WA, IG, Messenger, dan live chat masuk ke satu tempat; AI balas 24/7, case sulit diserah ke tim."
+      },
+      "s2": {
+        "title": "CRM terisi sendiri dari chat",
+        "body": "Profil, tahap deal, dan riwayat tercatat otomatis — pipeline selalu hidup tanpa input manual."
+      },
+      "s3": {
+        "title": "Loop chat → penjualan → iklan",
+        "body": "Broadcast, follow-up, dan gambaran ROAS terhubung ke percakapan yang sama yang menutup deal."
+      }
+    },
+    "cipherBand": {
+      "label": "Cekat data motif",
+      "caption": "Encrypted paths · live agents · shared context"
+    },
+    "caseStudy": {
+      "eyebrow": "Studi kasus singkat",
+      "client": "Nature Craft Indonesia",
+      "title": "Closing rate naik, omzet ikut naik.",
+      "body": "Tim customer service Nature Craft dulu menjawab chat manual — closing rate di bawah 20%. Setelah AI Frontline dan CRM Cekat.AI berjalan, low-quality leads tersaring lebih awal, respons jadi konsisten, dan closing rate naik ke atas 40%.",
+      "outcome": "Hasilnya omzet naik sekitar 50%. Angka di sisi kiri disampaikan langsung oleh Direktur Nature Craft dalam wawancara terekam.",
+      "metric1": {
+        "value": "+50%",
+        "label": "omzet, setelah closing rate naik dari bawah 20% ke atas 40%"
+      },
+      "metric2": {
+        "value": "< 2 mnt",
+        "label": "target respons chat, dari sebelumnya lebih dari 20 menit di kasus serupa"
+      },
+      "metric3": {
+        "value": "24/7",
+        "label": "jawaban AI di luar jam kantor, tanpa menambah shift malam"
+      },
+      "attribution": "Angka disampaikan langsung oleh pelanggan Cekat.AI, tidak diaudit pihak ketiga."
+    },
+    "pricingGlossary": {
+      "heading": "Istilah harga, singkat",
+      "body": "Enam istilah yang paling sering bikin bingung di kartu paket.",
+      "mau": {
+        "term": "MAU (Monthly Active User)",
+        "def": "Pelanggan unik yang berinteraksi dengan bisnis Anda dalam satu bulan. Satu orang tetap dihitung satu meski kirim banyak pesan."
+      },
+      "aiSimple": {
+        "term": "AI Simple",
+        "def": "AI menjawab dari knowledge base yang Anda siapkan — cocok untuk FAQ dan info standar."
+      },
+      "aiFull": {
+        "term": "AI Full",
+        "def": "AI menjalankan alur lebih kompleks: kualifikasi lead, follow-up, dan aksi lanjutan di dalam chat."
+      },
+      "waba": {
+        "term": "WABA (WhatsApp Business API)",
+        "def": "Jalur resmi Meta untuk pesan bisnis skala besar. Cekat.AI adalah Meta Business Partner resmi yang mendampingi verifikasinya."
+      },
+      "seats": {
+        "term": "Seats",
+        "def": "Jumlah anggota tim yang bisa login ke dashboard. Tambah seat saat tim tumbuh, tanpa ganti platform."
+      },
+      "credits": {
+        "term": "AI Credits",
+        "def": "Kuota pemakaian AI per periode billing. Paket lebih besar memberi kuota lebih besar untuk volume chat yang lebih tinggi."
+      },
+      "note": "Belum termasuk PPN. Butuh penjelasan lebih lanjut?",
+      "link": "Lihat detail di halaman Harga"
+    },
+    "security": {
+      "eyebrow": "Keamanan & compliance",
+      "headingLead": "Siap untuk tim",
+      "headingAccent": "yang serius soal data.",
+      "body": "Kontrol akses, kepatuhan hukum Indonesia, dan jalur resmi Meta — fondasi yang dibutuhkan sebelum chat pelanggan dipercayakan ke platform.",
+      "pdp": {
+        "title": "Patuh UU PDP",
+        "body": "Pengelolaan data pengguna mengikuti UU Perlindungan Data Pribadi Indonesia, bukan sekadar janji keamanan di marketing."
+      },
+      "rbac": {
+        "title": "Akses berbasis peran",
+        "body": "RBAC menentukan siapa boleh melihat percakapan, kontak, dan pipeline. Sales, support, dan billing masing-masing dapat yang relevan — tidak lebih."
+      },
+      "meta": {
+        "title": "Meta Business Partner",
+        "body": "Cekat.AI mitra resmi Meta. Trafik WhatsApp lewat Business API resmi dengan template yang disetujui, bukan gateway abal-abal."
+      },
+      "iso": {
+        "title": "ISO 27001 berjalan",
+        "body": "Sertifikasi ISO 27001 sedang dalam proses. Kami terbuka membahas kebutuhan compliance spesifik perusahaan Anda saat onboarding."
+      },
+      "note": "Status sertifikasi ISO 27001 adalah proses berjalan, bukan klaim sudah terakreditasi. Detail keamanan lebih lanjut tersedia saat diskusi enterprise."
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Pertanyaan sebelum Anda mulai",
+      "body": "Jawaban singkat untuk keraguan yang paling sering muncul soal biaya, setup, dan kepemilikan data.",
+      "q1": "Berapa lama setup sampai bisa dipakai?",
+      "a1": "Kebanyakan bisnis sudah bisa menjawab chat di hari yang sama. Sambungkan nomor WhatsApp, tempel knowledge base, nyalakan agent — tanpa coding dan tanpa proyek implementasi berbulan-bulan.",
+      "q2": "Apakah harus beli semua produk sekaligus?",
+      "a2": "Tidak. Mulai dari paket Chat dulu. CRM, Marketing, atau agent lain menyusul saat tim sudah terbiasa — datanya tetap nyambung di platform yang sama.",
+      "q3": "Tim saya tidak ada developer. Bisa tetap jalan?",
+      "a3": "Bisa. Builder-nya no-code: jelaskan peran agent, tempel SOP dan info bisnis, lalu nyalakan. Tim Cekat.AI mendampingi onboarding, termasuk verifikasi WABA bila Anda siap naik ke API resmi.",
+      "q4": "Siapa yang memiliki data pelanggan kami?",
+      "a4": "Anda. Data percakapan dan profil pelanggan milik bisnis Anda, bisa diekspor kapan saja, dan diatur aksesnya per peran di dalam tim. Tidak ada kunci yang mengunci Anda di tempat.",
+      "q5": "Bagaimana kalau AI menjawab salah?",
+      "a5": "Anda kontrol knowledge base dan batas aksi AI. Case yang sensitif atau di luar cakupan diserah ke manusia lengkap dengan riwayat chat, jadi otomatisasi tidak berarti kehilangan kendali.",
+      "q6": "Ada biaya setup atau kontrak minimum?",
+      "a6": "Paket reguler tidak ada biaya setup terpisah dan tidak ada kontrak minimum. Paket Custom disepakati dulu bersama tim sales sebelum Anda mulai."
     }
   },
   "wireframe": {

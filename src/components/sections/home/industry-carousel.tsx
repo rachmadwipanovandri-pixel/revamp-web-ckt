@@ -64,24 +64,26 @@ export async function IndustryCarousel() {
       />
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="eyebrow-rule mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
-              {tn("industries")}
-            </p>
-            <h2 className="text-[clamp(1.85rem,3.8vw,3rem)] leading-[1.08] font-semibold tracking-[-0.04em] text-balance text-foreground">
-              {t("headingLead")}{" "}
-              <span className="text-primary">{t("headingAccent")}</span>
-            </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              {t("body")}
-            </p>
-            <Link
-              href="/industries"
-              className="mt-6 inline-flex min-h-10 items-center gap-2 rounded-full border border-primary/25 bg-white px-5 py-2.5 font-numeric text-sm font-semibold text-primary transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/50 hover:shadow-[0_16px_36px_-24px_rgba(19,82,191,0.55)]"
-            >
-              {tn("viewAllIndustries")}
-              <span aria-hidden>&rarr;</span>
-            </Link>
+          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-8">
+              <p className="eyebrow-rule mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
+                {tn("industries")}
+              </p>
+              <h2 className="text-[clamp(1.85rem,4vw,3.25rem)] leading-[1.06] font-semibold tracking-[-0.04em] text-balance text-foreground">
+                {t("headingLead")}{" "}
+                <span className="text-primary">{t("headingAccent")}</span>
+              </h2>
+              <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+                {t("body")}
+              </p>
+              <Link
+                href="/industries"
+                className="btn-shine mt-7 inline-flex min-h-11 items-center gap-2 rounded-full border border-primary/25 bg-white px-5 py-2.5 font-numeric text-sm font-semibold text-primary transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/50 hover:shadow-[0_16px_36px_-24px_rgba(19,82,191,0.55)]"
+              >
+                {tn("viewAllIndustries")}
+                <span aria-hidden>&rarr;</span>
+              </Link>
+            </div>
           </div>
         </Reveal>
 

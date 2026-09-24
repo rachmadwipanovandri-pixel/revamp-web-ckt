@@ -8,32 +8,34 @@ import { SafeIcon } from "@/components/sections/new-home/safe-icon";
 import { PricingPlans } from "@/components/sections/new-home/pricing-plans";
 
 /**
- * Pricing act on the homepage — soft brand wash matching the agentic light chapters,
- * live PlanCards from the shared pricing registry.
+ * Pricing chapter — asymmetric header (beehiiv display energy), live plan
+ * cards, shine-swept primary CTA.
  */
 export async function Pricing() {
   const t = await getTranslations("agentic.pricing");
   const tp = await getTranslations("pricing");
 
   return (
-    <section className="relative overflow-hidden bg-linear-to-b from-white via-primary/[0.05] to-white py-20 md:py-28 lg:py-32">
+    <section className="relative overflow-hidden bg-linear-to-b from-white via-primary/[0.05] to-white py-14 md:py-28 lg:py-32">
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <span className="absolute top-0 left-1/2 h-px w-full -translate-x-1/2 bg-linear-to-r from-transparent via-primary/25 to-transparent" />
-        <span className="absolute top-24 right-[8%] h-56 w-56 rounded-full bg-accent-sky/10 blur-[90px]" />
-        <span className="absolute bottom-16 left-[4%] h-48 w-48 rounded-full bg-primary/10 blur-[80px]" />
+        <span className="animate-orb-drift absolute top-24 right-[8%] h-56 w-56 rounded-full bg-accent-sky/10 blur-[90px]" />
+        <span className="animate-orb-drift absolute bottom-16 left-[4%] h-48 w-48 rounded-full bg-primary/10 blur-[80px]" />
       </div>
 
       <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="eyebrow-rule mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
-              {t("eyebrow")}
-            </p>
-            <h2 className="text-[clamp(1.85rem,3.8vw,3rem)] leading-[1.08] font-semibold tracking-[-0.04em] text-balance text-foreground">
-              {t("headingLead")}{" "}
-              <span className="text-primary">{t("headingAccent")}</span>
-            </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <p className="eyebrow-rule mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
+                {t("eyebrow")}
+              </p>
+              <h2 className="text-[clamp(1.85rem,4vw,3.25rem)] leading-[1.06] font-semibold tracking-[-0.04em] text-balance text-foreground">
+                {t("headingLead")}{" "}
+                <span className="text-primary">{t("headingAccent")}</span>
+              </h2>
+            </div>
+            <p className="text-base leading-relaxed text-muted-foreground lg:col-span-5 lg:pb-2 lg:text-lg">
               {t("body")}
             </p>
           </div>
@@ -49,7 +51,7 @@ export async function Pricing() {
         >
           <Button
             size="lg"
-            className="h-12 rounded-full bg-ink-void px-7 text-sm text-white shadow-[0_16px_36px_-18px_rgba(15,31,58,0.75)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-dark"
+            className="btn-shine h-12 rounded-full bg-ink-void px-7 text-sm text-white shadow-[0_16px_36px_-18px_rgba(15,31,58,0.75)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-dark"
             nativeButton={false}
             render={
               <WhatsAppAnchor target="_blank" rel="noopener noreferrer" />

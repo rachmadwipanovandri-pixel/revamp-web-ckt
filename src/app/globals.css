@@ -113,7 +113,7 @@
   --animate-progress: progressBarRun 5s linear forwards;
 
   --animate-panel-in: panelIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
-  --animate-swap-in: swapIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-swap-in: swapIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
 
   @keyframes panelIn {
     from {
@@ -129,11 +129,11 @@
   @keyframes swapIn {
     from {
       opacity: 0;
-      transform: translateY(8px);
+      transform: translateY(14px) scale(0.985);
     }
     to {
       opacity: 1;
-      transform: none;
+      transform: translateY(0) scale(1);
     }
   }
 
@@ -242,6 +242,100 @@
     }
     to {
       transform: translate3d(-35%, 0, 0);
+    }
+  }
+
+  /* ── Homepage redesign motion tokens ─────────────────────────────── */
+
+  /* Top scroll progress — transform-only, composited */
+  --animate-none: none;
+
+  /* Chapter rail pulse for sticky how-it-works */
+  --animate-rail-dot: railDot 1.8s ease-in-out infinite;
+  @keyframes railDot {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.35);
+      opacity: 0.7;
+    }
+  }
+
+  /* Soft ken-burns on industry / product art */
+  --animate-ken-burns: kenBurns 18s ease-in-out infinite alternate;
+  @keyframes kenBurns {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.06);
+    }
+  }
+
+  /* Grid sweep across void chapters */
+  --animate-grid-drift: gridDrift 28s linear infinite;
+  @keyframes gridDrift {
+    from {
+      background-position:
+        0 0,
+        0 0;
+    }
+    to {
+      background-position:
+        80px 0,
+        0 80px;
+    }
+  }
+
+  /* Horizontal logo ticker with edge fade */
+  --animate-logo-ticker: logoTicker 48s linear infinite;
+  @keyframes logoTicker {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* CTA shine sweep */
+  --animate-shine: shine 2.8s ease-in-out infinite;
+  @keyframes shine {
+    0% {
+      transform: translateX(-120%) skewX(-18deg);
+    }
+    55%,
+    100% {
+      transform: translateX(220%) skewX(-18deg);
+    }
+  }
+
+  /* Number / metric rise when revealed */
+  --animate-metric-rise: metricRise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  @keyframes metricRise {
+    from {
+      opacity: 0;
+      transform: translateY(28px) scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  /* Step card enter for sticky rail */
+  --animate-step-in: stepIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  @keyframes stepIn {
+    from {
+      opacity: 0.35;
+      transform: translateX(24px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
     }
   }
 }
@@ -667,7 +761,11 @@
   .animate-pulse-soft,
   .animate-orb-drift,
   .animate-marquee-x,
-  .animate-marquee-x-alt {
+  .animate-marquee-x-alt,
+  .animate-grid-drift,
+  .animate-logo-ticker,
+  .animate-shine,
+  .animate-ken-burns {
     animation: none !important;
   }
   .duo-device,
@@ -724,8 +822,20 @@ body {
   .animate-pulse-soft,
   .animate-orb-drift,
   .animate-marquee-x,
-  .animate-marquee-x-alt {
+  .animate-marquee-x-alt,
+  .animate-grid-drift,
+  .animate-logo-ticker,
+  .animate-shine,
+  .animate-ken-burns,
+  .animate-rail-dot,
+  .btn-shine::after {
     animation: none !important;
+  }
+  .animate-metric-rise,
+  .animate-step-in {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 
   .reveal-on-scroll {
@@ -735,3 +845,118 @@ body {
     opacity: 1 !important;
   }
 }
+
+/* ── Homepage redesign helpers ──────────────────────────────────────── */
+
+.scroll-progress-track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 80;
+  height: 2px;
+  pointer-events: none;
+  background: transparent;
+}
+.scroll-progress-bar {
+  height: 100%;
+  transform-origin: left center;
+  background: linear-gradient(90deg, var(--primary), var(--accent-sky), #7dd3fc);
+  will-change: transform;
+}
+
+.surface-grid {
+  background-image:
+    linear-gradient(to right, rgba(19, 82, 191, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(19, 82, 191, 0.07) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.spotlight-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.spotlight-card::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(
+    420px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+    rgba(19, 82, 191, 0.14),
+    transparent 55%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+.spotlight-card:hover::before,
+.spotlight-card:focus-within::before {
+  opacity: 1;
+}
+.spotlight-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: translateX(-120%) skewX(-18deg);
+  animation: shine 3.2s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.chapter-rail {
+  position: sticky;
+  top: 6.5rem;
+}
+.chapter-rail-line {
+  position: absolute;
+  top: 0.55rem;
+  bottom: 0.55rem;
+  left: 0.4rem;
+  width: 2px;
+  background: color-mix(in srgb, var(--primary) 18%, transparent);
+}
+.chapter-rail-fill {
+  position: absolute;
+  top: 0.55rem;
+  left: 0.4rem;
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary), var(--accent-sky));
+  transform-origin: top;
+  transition: height 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.logo-ticker-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+/* Bento spans live as Tailwind col-span utilities on the Reveal wrapper.
+   Do not reintroduce grid-row: span 2 with auto-rows-fr — that sizes the
+   featured cell to two equal rows while content only fills one, leaving a
+   large empty slab. */

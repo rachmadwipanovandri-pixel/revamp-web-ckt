@@ -3,12 +3,8 @@ import { HeroSlider } from "@/components/sections/agentic/hero-slider";
 import { buildHeroSliderCopy } from "@/components/sections/agentic/hero-slides";
 
 /**
- * Keynote void hero for the Agentic AI Ecosystem homepage — deep navy
- * stage, display type, and the staged phone chat demo on the right.
- *
- * Slide copy is resolved here on the server (full catalog from disk) and
- * passed into `HeroSlider` as props: the hero is a manual slide — ecosystem
- * first, then CRM / Mini Agent / OMS / Marketing / Consulting — and the
+ * Keynote void hero — blueprint grid + drifting orbs + staged phone demo.
+ * Slide copy is resolved on the server and passed into HeroSlider; the
  * client never looks up `agentic.hero.slides.*` itself.
  */
 export async function Hero() {
@@ -16,10 +12,6 @@ export async function Hero() {
   const home = await getTranslations("home.hero");
   const copy = buildHeroSliderCopy({ hero, home });
 
-  // Product slides (landscape art) are shorter than the phone demo, so
-  // without a floor the stage collapses and the next white section shows
-  // as a gap under the CTAs. min-h keeps every slide full-bleed; flex
-  // centers the shorter ones in the void.
   return (
     <section className="relative isolate flex min-h-svh flex-col overflow-hidden bg-ink-void text-white">
       <div
@@ -29,6 +21,18 @@ export async function Hero() {
       <div
         aria-hidden
         className="ink-noise pointer-events-none absolute inset-0 opacity-55"
+      />
+      {/* Blueprint grid — slow drift, masked to the center */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 animate-grid-drift opacity-40"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(125,211,252,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(125,211,252,0.08) 1px, transparent 1px)",
+          backgroundSize: "64px 64px",
+          maskImage:
+            "radial-gradient(ellipse at 50% 45%, black 0%, transparent 72%)",
+        }}
       />
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <span className="animate-orb-drift absolute top-[8%] left-[6%] h-80 w-80 rounded-full bg-primary/45 blur-[110px]" />
@@ -44,6 +48,19 @@ export async function Hero() {
 
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-4 pt-24 pb-14 sm:px-6 lg:px-8 lg:pt-24 lg:pb-16">
         <HeroSlider copy={copy} />
+      </div>
+
+      {/* Scroll cue */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-8 z-10 flex justify-center"
+      >
+        <span className="flex flex-col items-center gap-2 text-white/45">
+          <span className="font-numeric text-[0.6rem] tracking-[0.22em] uppercase">
+            Scroll
+          </span>
+          <span className="h-10 w-px bg-linear-to-b from-white/50 to-transparent" />
+        </span>
       </div>
 
       <div
