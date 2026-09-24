@@ -78,8 +78,8 @@ export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
       className={cn(
         "fixed top-0 z-50 w-full transition-colors duration-300",
         isTransparent
-          ? "bg-linear-to-b from-black/45 to-transparent"
-          : "border-b border-border bg-background/80 backdrop-blur",
+          ? "bg-linear-to-b from-black/35 to-transparent"
+          : "border-b border-[#0C111D]/[0.08] bg-white/90 backdrop-blur-md",
       )}
     >
       <Container
@@ -103,7 +103,7 @@ export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
           </nav>
         </div>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-2 md:flex">
           <LanguageSwitcher currentLocale={locale} inverted={isTransparent} />
           <AppAnchor href={LOGIN_URL} className={linkClass}>
             {t("masuk")}
@@ -111,7 +111,11 @@ export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
 
           <Button
             size="lg"
-            className="px-4 text-xs font-semibold"
+            className={cn(
+              "rounded-full px-4 text-xs font-semibold",
+              isTransparent &&
+                "border-white/25 bg-white/10 text-white hover:bg-white/15 hover:border-white/40",
+            )}
             nativeButton={false}
             render={
               <WhatsAppAnchor target="_blank" rel="noopener noreferrer" />
@@ -123,7 +127,11 @@ export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
           <Button
             variant="outline-primary"
             size="lg"
-            className="px-4 text-xs font-semibold"
+            className={cn(
+              "rounded-full px-4 text-xs font-semibold",
+              isTransparent &&
+                "border-white/35 bg-transparent text-white hover:bg-white/10 hover:text-white",
+            )}
             nativeButton={false}
             render={<AppAnchor href={REGISTER_URL} />}
           >

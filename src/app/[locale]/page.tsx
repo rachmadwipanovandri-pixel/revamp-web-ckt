@@ -11,7 +11,8 @@ import {
   Pricing,
   Results,
   OpenApi,
-  CipherBand,
+  Gallery,
+  PhotoBand,
   Security,
   Faq,
   FinalCta,
@@ -20,15 +21,15 @@ import {
 import { IndustryCarousel } from "@/components/sections/home/industry-carousel";
 
 /**
- * Production homepage — redesigned chapter rhythm.
+ * Production homepage — incident.io editorial rhythm.
  *
- * Order: void hero → logo ticker → pillars → giant proof → bento products →
- * problem/solution → sticky how-it-works with visual stage → industry rail →
- * editorial case study → pricing → results → open API → cipher band →
- * security vault + trust chips → FAQ → void closer.
+ * Order: hero → logo wall → proof metrics → pillars → problem/solution →
+ * platform products → sticky how-it-works → industries → featured case study
+ * → photo gallery → customer stories → photo band → pricing → integrations
+ * → security → FAQ → closer.
  *
- * Palette stays on brand tokens (#1352bf / ink-void / sky).
- * SEO lives on the locale layout. Do not set `robots: noindex` here.
+ * Hero is intentionally untouched. Palette: white canvas + #1352BF accent +
+ * clean ink bookends. SEO lives on the locale layout.
  */
 export default async function HomePage({
   params,
@@ -46,16 +47,16 @@ export default async function HomePage({
         <LogoStrip />
       </div>
       <div className="cv-auto">
-        <SoundWords />
-      </div>
-      <div className="cv-auto">
         <Proof />
       </div>
       <div className="cv-auto">
-        <Products />
+        <SoundWords />
       </div>
       <div className="cv-auto">
         <ProblemSolution />
+      </div>
+      <div className="cv-auto">
+        <Products />
       </div>
       {/* No cv-auto: content-visibility containment breaks position:sticky
           on the Live stage inside HowItWorks. */}
@@ -63,19 +64,22 @@ export default async function HomePage({
       <div className="cv-auto">
         <IndustryCarousel />
       </div>
-      {/* Case-study metrics also use sticky — keep off content-visibility. */}
+      {/* Featured story photography — keep off content-visibility for sticky polish. */}
       <CaseStudy />
       <div className="cv-auto">
-        <Pricing />
+        <Gallery />
       </div>
       <div className="cv-auto">
         <Results />
       </div>
       <div className="cv-auto">
-        <OpenApi />
+        <PhotoBand />
       </div>
       <div className="cv-auto">
-        <CipherBand />
+        <Pricing />
+      </div>
+      <div className="cv-auto">
+        <OpenApi />
       </div>
       <div className="cv-auto">
         <Security />

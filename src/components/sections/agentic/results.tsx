@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { useInViewport } from "@/hooks/use-in-viewport";
@@ -8,6 +9,12 @@ import { TestimonialVideoCard } from "@/components/sections/shared/testimonial-v
 import { MarqueeStrip } from "@/components/sections/shared/marquee-strip";
 import { TRUSTED_LOGOS } from "@/components/sections/shared/trusted-logos";
 import { Reveal } from "@/components/sections/new-home/reveal";
+import {
+  SectionBand,
+  SectionShell,
+  SectionHeading,
+  SoftCard,
+} from "@/components/sections/agentic/shell";
 
 const QUOTES = [
   "natureCraft",
@@ -50,11 +57,26 @@ const VIDEOS = [
   },
 ] as const;
 
+const STORY_COVERS = [
+  {
+    id: "natureCraft",
+    image: "/images/home/case-study-naturecraft.jpg",
+  },
+  {
+    id: "wallStreet",
+    image: "/images/home/story-lead-cs.jpg",
+  },
+  {
+    id: "putiih",
+    image: "/images/home/story-retail-owner.jpg",
+  },
+] as const;
+
 const ROTATE_MS = 7000;
 
 /**
- * One proof chapter: rotating metric quotes beside a dense 2×3 video wall
- * (stretched to match the quote column height), then the trusted-logo strip.
+ * Customer stories chapter — rotating metric quote + photo story cards +
+ * video wall, then a quiet logo marquee. Editorial, not a dashboard dump.
  */
 export function Results() {
   const t = useTranslations("agentic.results");
@@ -76,68 +98,51 @@ export function Results() {
   }, [activeId, autoRotate, inView]);
 
   return (
-    <section className="relative overflow-hidden bg-surface-muted py-14 md:py-28 lg:py-32">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-40 left-1/4 h-80 w-80 rounded-full bg-primary/8 blur-[120px]"
-      />
-      <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+    <SectionBand tone="soft" className="py-20 md:py-28 lg:py-32" id="stories">
+      <SectionShell>
         <Reveal>
-          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
-            <div className="lg:col-span-7">
-              <p className="eyebrow-rule mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
-                {t("eyebrow")}
-              </p>
-              <h2 className="text-[clamp(1.85rem,4vw,3.25rem)] leading-[1.06] font-semibold tracking-[-0.04em] text-balance text-foreground">
-                {t("headingLead")}{" "}
-                <span className="text-primary">{t("headingAccent")}</span>
-              </h2>
-            </div>
-            <p className="text-base leading-relaxed text-muted-foreground lg:col-span-5 lg:pb-2 lg:text-lg">
-              {t("body")}
-            </p>
-          </div>
+          <SectionHeading
+            eyebrow={t("eyebrow")}
+            lead={t("headingLead")}
+            accent={t("headingAccent")}
+            body={t("body")}
+          />
         </Reveal>
 
-        <div className="mt-14 grid items-stretch gap-10 lg:grid-cols-12 lg:gap-12">
+        <div className="mt-14 grid gap-10 lg:grid-cols-12 lg:gap-12">
           <div ref={quotesRef} className="lg:col-span-5">
             <Reveal className="flex h-full flex-col">
-              <p className="font-numeric text-[0.68rem] font-semibold tracking-[0.18em] text-subtle-foreground uppercase">
+              <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-[#667085] uppercase">
                 {tq("heading")}
               </p>
-              <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 max-w-md text-sm leading-[1.65] text-[#525C6B]">
                 {tq("body")}
               </p>
 
-              <article
-                key={activeId}
-                className="animate-fade-in-up-blur mt-6 flex-1 rounded-[1.35rem] border border-foreground/10 bg-white p-6 shadow-[0_24px_50px_-36px_rgba(16,24,40,0.4)] md:p-7"
-              >
-                <p className="font-numeric text-[clamp(1.75rem,3.5vw,2.5rem)] leading-none font-semibold tracking-[-0.05em] text-primary tabular-nums break-words">
-                  {tq(`${activeId}.metricValue`)}
-                </p>
-                <p className="mt-3 text-sm leading-snug text-muted-foreground">
-                  {tq(`${activeId}.metricLabel`)}
-                </p>
-                <blockquote className="mt-5 text-base leading-[1.45] font-medium tracking-[-0.02em] text-foreground md:text-lg">
-                  &ldquo;{tq(`${activeId}.quote`)}&rdquo;
-                </blockquote>
-                <footer className="mt-5 border-t border-foreground/10 pt-4">
-                  <p className="font-semibold text-foreground">
-                    {tq(`${activeId}.company`)}
+              <SoftCard hover={false} className="mt-6 flex-1 p-7 md:p-8">
+                <article key={activeId} className="animate-fade-in-up-blur">
+                  <p className="font-numeric text-[clamp(1.85rem,3.5vw,2.75rem)] leading-none font-semibold tracking-[-0.045em] text-primary tabular-nums">
+                    {tq(`${activeId}.metricValue`)}
                   </p>
-                  <p className="mt-0.5 text-sm text-muted-foreground">
-                    {tq(`${activeId}.name`)}, {tq(`${activeId}.role`)}
+                  <p className="mt-3 text-sm leading-snug text-[#525C6B]">
+                    {tq(`${activeId}.metricLabel`)}
                   </p>
-                  <p className="mt-1 text-xs text-subtle-foreground">
-                    {tq(`${activeId}.industry`)} · {tq(`${activeId}.function`)}
-                  </p>
-                </footer>
-              </article>
+                  <blockquote className="mt-5 text-base leading-[1.5] font-medium tracking-[-0.015em] text-[#0C111D] md:text-lg">
+                    &ldquo;{tq(`${activeId}.quote`)}&rdquo;
+                  </blockquote>
+                  <footer className="mt-5 border-t border-[#0C111D]/[0.08] pt-4">
+                    <p className="font-semibold text-[#0C111D]">
+                      {tq(`${activeId}.company`)}
+                    </p>
+                    <p className="mt-0.5 text-sm text-[#525C6B]">
+                      {tq(`${activeId}.name`)}, {tq(`${activeId}.role`)}
+                    </p>
+                    <p className="mt-1 text-xs text-[#98A2B3]">
+                      {tq(`${activeId}.industry`)} · {tq(`${activeId}.function`)}
+                    </p>
+                  </footer>
+                </article>
+              </SoftCard>
 
               <div className="mt-4 -ml-2 flex items-center gap-1">
                 {QUOTES.map((id) => {
@@ -160,7 +165,7 @@ export function Results() {
                           "rounded-full transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
                           isActive
                             ? "h-2.5 w-8 bg-primary"
-                            : "size-2.5 bg-foreground/20 hover:bg-foreground/40",
+                            : "size-2.5 bg-[#0C111D]/20 hover:bg-[#0C111D]/35",
                         )}
                       />
                     </button>
@@ -170,11 +175,40 @@ export function Results() {
             </Reveal>
           </div>
 
-          {/* Full-width stacked videos on phones; the dense 2×3 wall only
-              kicks in once there is room for it (lg tracks the quote column). */}
           <div className="lg:col-span-7 lg:h-full">
-            <div className="grid grid-cols-1 content-stretch gap-4 sm:grid-cols-2 sm:gap-5 lg:h-full lg:grid-rows-3 lg:gap-4">
-              {VIDEOS.map((video, index) => (
+            {/* Photo story grid — replace covers when real brand photography lands. */}
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
+              {STORY_COVERS.map((story) => (
+                <Reveal key={story.id} className="h-full">
+                  <SoftCard className="group h-full overflow-hidden" hover={false}>
+                    <div className="relative aspect-[4/5] overflow-hidden rounded-t-[1.3rem]">
+                      <Image
+                        src={story.image}
+                        alt=""
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                        sizes="(max-width: 640px) 50vw, 18vw"
+                      />
+                      <div className="absolute inset-0 bg-linear-to-t from-[#0B1220]/45 to-transparent" />
+                    </div>
+                    <div className="p-4">
+                      <p className="font-numeric text-sm font-semibold text-[#0C111D]">
+                        {tq(`${story.id}.company`)}
+                      </p>
+                      <p className="mt-1 font-numeric text-lg font-semibold tracking-[-0.03em] text-primary">
+                        {tq(`${story.id}.metricValue`)}
+                      </p>
+                      <p className="mt-1 text-xs leading-snug text-[#667085]">
+                        {tq(`${story.id}.metricLabel`)}
+                      </p>
+                    </div>
+                  </SoftCard>
+                </Reveal>
+              ))}
+            </div>
+
+            <div className="mt-4 grid grid-cols-1 content-stretch gap-4 sm:grid-cols-2 sm:gap-4 lg:grid-rows-2">
+              {VIDEOS.slice(0, 4).map((video, index) => (
                 <Reveal
                   key={video.videoId}
                   delay={index * 40}
@@ -197,8 +231,8 @@ export function Results() {
         </div>
 
         <Reveal delay={60} className="mt-14">
-          <div className="flex flex-col gap-5 rounded-[1.5rem] border border-foreground/8 bg-white px-6 py-6 shadow-[0_16px_40px_-32px_rgba(16,24,40,0.35)] md:flex-row md:items-center md:gap-10">
-            <h3 className="shrink-0 font-numeric text-sm font-bold tracking-[0.16em] text-foreground uppercase">
+          <div className="flex flex-col gap-5 rounded-[1.35rem] border border-[#0C111D]/[0.08] bg-white px-6 py-6 md:flex-row md:items-center md:gap-10">
+            <h3 className="shrink-0 font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-[#667085] uppercase">
               {t("brandTitle")}
             </h3>
             <div className="min-w-0 flex-1 overflow-hidden">
@@ -206,7 +240,7 @@ export function Results() {
             </div>
           </div>
         </Reveal>
-      </div>
-    </section>
+      </SectionShell>
+    </SectionBand>
   );
 }

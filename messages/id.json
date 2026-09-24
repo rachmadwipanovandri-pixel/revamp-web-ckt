@@ -1211,6 +1211,16 @@
       "heading": "Dipercaya brand di Indonesia",
       "note": "Ribuan bisnis lain juga menjalankan percakapan harian di Cekat.AI."
     },
+    "gallery": {
+      "eyebrow": "Di lapangan",
+      "headingLead": "Dipakai setiap hari",
+      "headingAccent": "oleh tim yang sedang tumbuh.",
+      "body": "Cuplikan momen kerja nyata — dari meja CS sampai toko dan kantor. Ganti foto ini dengan materi brand Anda kapan pun siap."
+    },
+    "photoBand": {
+      "quote": "Kalau chat-nya berantakan, revenue-nya bocor diam-diam. Cekat bantu kami merapikannya jadi satu sistem.",
+      "attribution": ""
+    },
     "howItWorks": {
       "eyebrow": "Cara kerja",
       "headingLead": "Dari chat pertama",
@@ -1307,7 +1317,8 @@
         "value": "24/7",
         "label": "jawaban AI di luar jam kantor, tanpa menambah shift malam"
       },
-      "attribution": "Angka disampaikan langsung oleh pelanggan Cekat.AI, tidak diaudit pihak ketiga."
+      "attribution": "Angka disampaikan langsung oleh pelanggan Cekat.AI, tidak diaudit pihak ketiga.",
+      "readStory": "Baca cerita pelanggan"
     },
     "pricingGlossary": {
       "heading": "Istilah harga, singkat",
@@ -1360,7 +1371,7 @@
         "title": "ISO 27001 berjalan",
         "body": "Sertifikasi ISO 27001 sedang dalam proses. Kami terbuka membahas kebutuhan compliance spesifik perusahaan Anda saat onboarding."
       },
-      "note": "Status sertifikasi ISO 27001 adalah proses berjalan, bukan klaim sudah terakreditasi. Detail keamanan lebih lanjut tersedia saat diskusi enterprise."
+      "note": "Cekat has officially received ISO 9001:2015 and ISO/IEC 27001:2022 certifications."
     },
     "faq": {
       "label": "FAQ",

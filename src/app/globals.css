@@ -960,3 +960,449 @@ body {
    Do not reintroduce grid-row: span 2 with auto-rows-fr — that sizes the
    featured cell to two equal rows while content only fills one, leaving a
    large empty slab. */
+
+/* ── Hero collage (incident.io-style unit stage, Cekat brand) ─────────
+   Design canvas is 800 × 520. Every offset is `calc(var(--u) * N)` so the
+   whole composition scales as one artwork from the container width.
+   Nested mockups keep their own px type scale so copy stays crisp. */
+.hero-collage-root {
+  container-type: inline-size;
+  width: 100%;
+}
+
+.hero-collage {
+  --u: min(calc(100cqw / 860), 1.2px);
+  --collage-scale: 1;
+  position: relative;
+  width: calc(var(--u) * 860);
+  height: calc(var(--u) * 560);
+  margin-inline: auto;
+  border-radius: calc(var(--u) * 18);
+  overflow: hidden;
+  isolation: isolate;
+  /* Light luminous canvas so product windows pop (incident.io pattern:
+     warm stage + saturated windows, not dark-on-dark). */
+  background: linear-gradient(165deg, #dff3ff 0%, #eef6ff 40%, #f5f0ff 100%);
+  box-shadow:
+    0 0 0 1px rgba(56, 189, 248, 0.35),
+    0 30px 70px -20px rgba(14, 116, 233, 0.35),
+    0 10px 30px rgba(56, 189, 248, 0.15);
+}
+
+/* Product focus — one window lifts per slide; the rest stay in the stack. */
+.hero-collage[data-focus] .hero-collage-win {
+  transition:
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.4s ease,
+    box-shadow 0.4s ease;
+}
+.hero-collage[data-focus] .hero-collage-win:not(.is-focus) {
+  opacity: 0.72;
+}
+.hero-collage .hero-collage-win.is-focus {
+  z-index: 7;
+  opacity: 1;
+  box-shadow:
+    0 22px 48px rgba(15, 40, 90, 0.28),
+    0 0 0 2px rgba(56, 189, 248, 0.45),
+    0 0 24px rgba(56, 189, 248, 0.2);
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-collage[data-focus] .hero-collage-win {
+    transition: none !important;
+  }
+}
+
+/* Phone notch */
+.hero-collage-phone-notch {
+  position: absolute;
+  top: calc(var(--u) * 8);
+  left: 50%;
+  z-index: 3;
+  width: calc(var(--u) * 72);
+  height: calc(var(--u) * 18);
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: #0a1628;
+}
+
+/* Order-synced panel state: skeleton → filled */
+.hero-collage-panel-pending {
+  opacity: 0.45;
+}
+.hero-collage-panel-live {
+  animation: collagePanelIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes collagePanelIn {
+  from {
+    opacity: 0.4;
+    transform: translateY(6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-collage-panel-live {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hero-collage-glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 65% 55% at 75% 25%,
+      rgba(56, 189, 248, 0.55) 0%,
+      transparent 68%
+    ),
+    radial-gradient(
+      ellipse 55% 50% at 15% 65%,
+      rgba(129, 140, 248, 0.45) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 55% 48% at 55% 90%,
+      rgba(34, 211, 238, 0.55) 0%,
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 40% 35% at 35% 15%,
+      rgba(251, 191, 36, 0.4) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 50% 40% at 90% 75%,
+      rgba(244, 114, 182, 0.28) 0%,
+      transparent 70%
+    ),
+    linear-gradient(160deg, #c7ebff 0%, #e0f2fe 50%, #e9d5ff 100%);
+  pointer-events: none;
+}
+
+.hero-collage-orbs {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 30%,
+    black 78%,
+    transparent 100%
+  );
+}
+
+.hero-collage-orb {
+  position: absolute;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  filter: blur(42px);
+  transform: translate(-50%, -50%);
+  will-change: transform, opacity;
+  animation: collageOrb 9s ease-in-out infinite;
+}
+
+@keyframes collageOrb {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(10px, -8px);
+  }
+}
+
+.hero-collage-sparks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero-collage-spark {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  animation: collageSpark 5.5s ease-in-out infinite;
+}
+
+@keyframes collageSpark {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(6px, -8px);
+    opacity: 0.45;
+  }
+}
+
+/* Floating product windows */
+.hero-collage-win {
+  position: absolute;
+  overflow: hidden;
+  border-radius: calc(var(--u) * 14);
+  box-shadow:
+    0 16px 36px rgba(15, 40, 90, 0.22),
+    0 2px 8px rgba(15, 40, 90, 0.12);
+  transform-origin: top left;
+}
+
+/* Main product window — content swaps per hero slide (CRM / Mini / OMS / …). */
+.hero-collage-win-product {
+  left: calc(var(--u) * 240);
+  top: calc(var(--u) * 32);
+  width: calc(var(--u) * 380);
+  height: calc(var(--u) * 470);
+  background: #ffffff;
+  border: 0.5px solid rgba(37, 99, 235, 0.12);
+  z-index: 4;
+}
+
+/* Solo product slides (CRM / Mini / OMS): one window fills the stage. */
+.hero-collage-win-product.is-solo {
+  left: calc(var(--u) * 60);
+  top: calc(var(--u) * 28);
+  width: calc(var(--u) * 740);
+  height: calc(var(--u) * 504);
+}
+
+.hero-collage-win-analytics {
+  left: calc(var(--u) * 430);
+  top: calc(var(--u) * 40);
+  width: calc(var(--u) * 250);
+  height: calc(var(--u) * 150);
+  background: #ffffff;
+  border: 0.5px solid rgba(37, 99, 235, 0.12);
+  z-index: 4;
+}
+
+.hero-collage-win-oms {
+  left: calc(var(--u) * 240);
+  top: calc(var(--u) * 310);
+  width: calc(var(--u) * 360);
+  height: calc(var(--u) * 170);
+  background: #ffffff;
+  border: 0.5px solid rgba(37, 99, 235, 0.12);
+  z-index: 4;
+}
+
+/* iPhone-ish proportion (~9:19.5). Wide cards read as tablets — keep this narrow. */
+.hero-collage-win-phone {
+  left: calc(var(--u) * 14);
+  top: calc(var(--u) * 48);
+  width: calc(var(--u) * 210);
+  height: calc(var(--u) * 456);
+  background: #0b1e3d;
+  border: 2px solid #0a1628;
+  border-radius: calc(var(--u) * 28);
+  z-index: 5;
+  box-shadow:
+    0 24px 48px rgba(12, 45, 100, 0.35),
+    inset 0 0 0 1px rgba(125, 211, 252, 0.25);
+}
+
+.hero-collage-win-agent {
+  left: calc(var(--u) * 620);
+  top: calc(var(--u) * 200);
+  width: calc(var(--u) * 220);
+  height: calc(var(--u) * 240);
+  background: #1e1b4b;
+  border: 0.5px solid rgba(165, 180, 252, 0.4);
+  z-index: 6;
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: rgba(238, 242, 255, 0.92);
+}
+
+/* Analytics + OMS — light product panels, fill in after the order lands. */
+.hero-collage-win-analytics {
+  left: calc(var(--u) * 430);
+  top: calc(var(--u) * 40);
+  width: calc(var(--u) * 250);
+  height: calc(var(--u) * 150);
+  background: #ffffff;
+  border: 0.5px solid rgba(37, 99, 235, 0.12);
+  z-index: 4;
+}
+
+/* First-slide multi-window: CRM (upper) + OMS (lower) stack in the center
+   column beside the phone and Mini Cekat Agent. */
+.hero-collage-win-crm {
+  left: calc(var(--u) * 240);
+  top: calc(var(--u) * 32);
+  width: calc(var(--u) * 360);
+  height: calc(var(--u) * 250);
+  background: #ffffff;
+  border: 0.5px solid rgba(37, 99, 235, 0.12);
+  z-index: 4;
+}
+
+.hero-collage-win-oms {
+  left: calc(var(--u) * 240);
+  top: calc(var(--u) * 310);
+  width: calc(var(--u) * 360);
+  height: calc(var(--u) * 170);
+  background: #ffffff;
+  border: 0.5px solid rgba(37, 99, 235, 0.12);
+  z-index: 4;
+}
+
+.hero-collage-pills {
+  position: absolute;
+  left: calc(var(--u) * 420);
+  bottom: calc(var(--u) * 18);
+  width: calc(var(--u) * 300);
+  height: calc(var(--u) * 46);
+  border-radius: calc(var(--u) * 14);
+  background: rgba(255, 255, 255, 0.95);
+  border: 0.5px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 12px 28px rgba(14, 116, 233, 0.18);
+  display: flex;
+  align-items: center;
+  gap: calc(var(--u) * 10);
+  padding: 0 calc(var(--u) * 14);
+  z-index: 8;
+  backdrop-filter: blur(10px);
+}
+
+.hero-collage-traffic {
+  display: flex;
+  gap: calc(var(--u) * 5);
+  padding: calc(var(--u) * 8) calc(var(--u) * 12);
+  height: calc(var(--u) * 26);
+  align-items: center;
+}
+
+.hero-collage-traffic i {
+  width: calc(var(--u) * 8);
+  height: calc(var(--u) * 8);
+  border-radius: 50%;
+  display: block;
+}
+
+.hero-collage-traffic i:nth-child(1) {
+  background: #ff5f57;
+}
+.hero-collage-traffic i:nth-child(2) {
+  background: #febc2e;
+}
+.hero-collage-traffic i:nth-child(3) {
+  background: #28c840;
+}
+
+.hero-collage-shimmer {
+  flex: 1;
+  font-size: calc(var(--u) * 12);
+  font-weight: 600;
+  white-space: nowrap;
+  background: linear-gradient(
+    90deg,
+    #0c4a6e 0%,
+    #0c4a6e 40%,
+    #0284c7 50%,
+    #0c4a6e 60%,
+    #0c4a6e 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: collageShimmer 2.8s linear infinite;
+}
+
+@keyframes collageShimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Staggered message reveal inside the chat mockup */
+.hero-collage-msg {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: collageMsgIn 0.55s cubic-bezier(0.2, 0, 0, 1) forwards;
+}
+
+@keyframes collageMsgIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Attribution bars grow in on each Marketing loop pass. */
+.hero-collage-bar {
+  transform-origin: left center;
+  animation: collageBarGrow 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes collageBarGrow {
+  from {
+    transform: scaleX(0.15);
+    opacity: 0.55;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+/* Typing dots for live panel streams. */
+.hero-collage-typing i {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: #94a3b8;
+  animation: collageTyping 1s ease-in-out infinite;
+}
+.hero-collage-typing i:nth-child(2) {
+  animation-delay: 120ms;
+}
+.hero-collage-typing i:nth-child(3) {
+  animation-delay: 240ms;
+}
+
+@keyframes collageTyping {
+  0%,
+  80%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.45;
+  }
+  40% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-collage-orb,
+  .hero-collage-spark,
+  .hero-collage-shimmer,
+  .hero-collage-msg,
+  .hero-collage-bar,
+  .hero-collage-typing i {
+    animation: none !important;
+  }
+  .hero-collage-msg {
+    opacity: 1;
+    transform: none;
+  }
+  .hero-collage-shimmer {
+    color: #0c4a6e;
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+  }
+}

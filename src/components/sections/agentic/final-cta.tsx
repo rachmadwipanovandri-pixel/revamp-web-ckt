@@ -6,66 +6,51 @@ import { lucideCheck, mdiWhatsapp } from "@/lib/icons";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/sections/new-home/reveal";
 import { SafeIcon } from "@/components/sections/new-home/safe-icon";
+import {
+  SectionBand,
+  SectionShell,
+  Eyebrow,
+  PhotoOverlay,
+} from "@/components/sections/agentic/shell";
 
 const CHECKS = ["item1", "item2", "item3"] as const;
 
 /**
- * Void closer — oversized display type, dual CTAs with shine sweep,
- * trust checklist as a horizontal rail.
+ * Closing chapter — oversized display type, dual CTAs, quiet checklist.
+ * Clean ink field (incident.io closer energy), no orbs.
  */
 export async function FinalCta() {
   const t = await getTranslations("agentic.finalCta");
   const th = await getTranslations("home.hero");
 
   return (
-    <section className="relative isolate overflow-hidden bg-ink-void text-white">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#0b1220] via-[#0a1a3d] to-[#050b18]"
+    <SectionBand tone="ink" className="relative isolate overflow-hidden border-t border-white/10">
+      <PhotoOverlay
+        src="/images/home/overlay-team.jpg"
+        wash="from-[#0B1220]/92 via-[#0B1220]/78 to-[#0B1220]/88"
       />
-      <div aria-hidden className="ink-noise pointer-events-none absolute inset-0 opacity-50" />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-35"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(125,211,252,0.07) 1px, transparent 1px), linear-gradient(to bottom, rgba(125,211,252,0.07) 1px, transparent 1px)",
-          backgroundSize: "56px 56px",
-          maskImage: "radial-gradient(ellipse at 50% 40%, black 10%, transparent 70%)",
-        }}
-      />
-      <div aria-hidden className="pointer-events-none absolute inset-0">
-        <span className="animate-orb-drift absolute -top-24 -right-16 h-72 w-72 rounded-full bg-primary/35 blur-[100px]" />
-        <span className="animate-orb-drift absolute -bottom-28 -left-16 h-80 w-80 rounded-full bg-sky-500/20 blur-[110px]" />
-      </div>
-
-      <div className="relative mx-auto w-full max-w-7xl px-4 pt-16 pb-20 sm:px-6 md:pt-32 md:pb-28 lg:px-8 lg:pt-36 lg:pb-32">
+      <SectionShell className="relative py-20 md:py-28 lg:py-32">
         <Reveal>
           <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-8">
-              <p className="eyebrow-rule-light mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-sky-300 uppercase">
+              <Eyebrow tone="light" className="mb-5">
                 {t("eyebrow")}
-              </p>
-              <h2 className="text-[clamp(2.25rem,5.5vw,4rem)] leading-[1.04] font-semibold tracking-[-0.045em] text-balance text-white">
+              </Eyebrow>
+              <h2 className="text-[clamp(2.35rem,5.5vw,4rem)] leading-[1.03] font-semibold tracking-[-0.045em] text-balance text-white">
                 {t("headingLead")}{" "}
-                <span className="bg-linear-to-r from-sky-300 via-blue-300 to-blue-500 bg-clip-text text-transparent">
-                  {t("headingAccent")}
-                </span>
+                <span className="text-[#8EC5FF]">{t("headingAccent")}</span>
               </h2>
-              <p className="mt-6 max-w-2xl text-base leading-relaxed text-sky-50/85 md:text-lg">
+              <p className="mt-6 max-w-2xl text-base leading-[1.65] text-white/70 md:text-lg">
                 {t("body")}
               </p>
 
               <ul className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-white/10 pt-7">
-                {CHECKS.map((key, index) => (
+                {CHECKS.map((key) => (
                   <li
                     key={key}
                     className="flex items-center gap-2.5 text-sm font-medium text-white/90"
                   >
-                    <span className="font-numeric text-[0.68rem] font-bold tracking-[0.14em] text-sky-300/70">
-                      0{index + 1}
-                    </span>
-                    <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-sky-400/20 text-sky-200 ring-1 ring-sky-300/35">
+                    <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-white/10 text-white/80 ring-1 ring-white/15">
                       <SafeIcon
                         icon={lucideCheck}
                         className="size-3.5"
@@ -83,14 +68,14 @@ export async function FinalCta() {
                 <Button
                   nativeButton={false}
                   render={<AppAnchor href={REGISTER_URL} />}
-                  className="btn-shine h-13 rounded-full bg-white px-8 text-sm text-ink-void shadow-[0_18px_40px_-18px_rgba(255,255,255,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-50"
+                  className="h-12 rounded-full bg-white px-8 text-sm text-[#0B1220] hover:bg-[#F0F4FF]"
                 >
                   {th("ctaSecondary")}
                 </Button>
                 <Button
                   variant="outline"
                   nativeButton={false}
-                  className="h-13 rounded-full border-white/35 bg-white/10 px-8 text-sm text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-white/70 hover:bg-white/15"
+                  className="h-12 rounded-full border-white/25 bg-white/[0.06] px-8 text-sm text-white hover:border-white/50 hover:bg-white/10"
                   render={
                     <WhatsAppAnchor target="_blank" rel="noopener noreferrer" />
                   }
@@ -106,7 +91,7 @@ export async function FinalCta() {
             </div>
           </div>
         </Reveal>
-      </div>
-    </section>
+      </SectionShell>
+    </SectionBand>
   );
 }

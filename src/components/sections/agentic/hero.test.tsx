@@ -130,7 +130,9 @@ describe("agentic Hero", () => {
         name: /AI Agent & Omnichannel CRM/,
       }),
     ).toBeInTheDocument();
-    expect(screen.getByText("Full Ecosystem")).toBeInTheDocument();
+    // Collage stage: industry rail + shared scenario catalog (no floating badge).
+    expect(screen.getByRole("group", { name: "Industry" })).toBeInTheDocument();
+    expect(screen.getByText("SehatMax Store")).toBeInTheDocument();
     expect(screen.getByText("Start Free Trial").closest("a")).toHaveAttribute(
       "href",
       REGISTER_URL,
@@ -141,22 +143,15 @@ describe("agentic Hero", () => {
     );
   });
 
-  it("switches to Cekat CRM via a slide dot and does not auto-advance", async () => {
+  it("switches slides via Next and does not auto-advance", async () => {
     const user = userEvent.setup();
     renderHero();
 
-    // Two rails (desktop vertical + mobile horizontal) share the same labels.
-    const crmDots = screen.getAllByRole("button", { name: "Cekat CRM" });
-    await user.click(crmDots[0] as HTMLElement);
+    await user.click(screen.getByRole("button", { name: "Next slide" }));
 
     expect(
       screen.getByRole("heading", { level: 1, name: /Notes fill themselves/ }),
     ).toBeInTheDocument();
-    expect(screen.getAllByRole("button", { name: "Cekat CRM" }).length).toBe(2);
-    expect(
-      screen.getAllByRole("button", { name: "Cekat CRM" })[0],
-    ).toHaveAttribute("aria-current", "true");
-    expect(screen.queryByRole("tablist")).not.toBeInTheDocument();
 
     // No autoplay: title stays put after waiting past any plausible timer.
     await new Promise((resolve) => setTimeout(resolve, 400));
@@ -165,42 +160,64 @@ describe("agentic Hero", () => {
     ).toBeInTheDocument();
   });
 
-  it("jumps to any slide from the dot rail", async () => {
+  it("jumps backward and forward with the side arrows", async () => {
     const user = userEvent.setup();
     renderHero();
 
-    const consultingDots = screen.getAllByRole("button", {
-      name: "Consulting Agent",
-    });
-    await user.click(consultingDots[0] as HTMLElement);
+    await user.click(screen.getByRole("button", { name: "Next slide" }));
+    await user.click(screen.getByRole("button", { name: "Next slide" }));
     expect(
-      screen.getByRole("heading", { level: 1, name: /Advice from your data/ }),
+      screen.getByRole("heading", { level: 1, name: /Notes fill themselves|/ }),
     ).toBeInTheDocument();
 
-    const ecosystemDots = screen.getAllByRole("button", {
-      name: "Full Ecosystem",
+    await user.click(screen.getByRole("button", { name: "Previous slide" }));
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: /AI Agent & Omnichannel CRM|Notes fill themselves/,
+      }),
+    ).toBeInTheDocument();
+  });
+
+  it("renders side prev/next arrows and no pill row", () => {
+    renderHero();
+    const rails = screen.getAllByRole("navigation", {
+      name: "Hero slide navigation",
     });
-    await user.click(ecosystemDots[0] as HTMLElement);
+    // Carousel arrows only — no chip/pill picker.
+    expect(rails).toHaveLength(1);
+    expect(
+      screen.getByRole("button", { name: "Previous slide" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: "Next slide" }),
+    ).toBeInTheDocument();
+    // Pills row is gone; slide names are not exposed as tap chips.
+    expect(screen.queryByRole("button", { name: "Cekat CRM" })).toBeNull();
+  });
+
+  it("advances slides with the side arrows only", async () => {
+    const user = userEvent.setup();
+    renderHero();
     expect(
       screen.getByRole("heading", {
         level: 1,
         name: /AI Agent & Omnichannel CRM/,
       }),
     ).toBeInTheDocument();
-    expect(
-      screen.getAllByRole("button", { name: "Full Ecosystem" })[0],
-    ).toHaveAttribute("aria-current", "true");
-  });
 
-  it("renders one dot per slide on both rails", () => {
-    renderHero();
-    const rails = screen.getAllByRole("navigation", {
-      name: "Hero slide navigation",
-    });
-    expect(rails).toHaveLength(2);
-    for (const rail of rails) {
-      expect(rail.querySelectorAll("button")).toHaveLength(6);
-    }
+    await user.click(screen.getByRole("button", { name: "Next slide" }));
+    expect(
+      screen.getByRole("heading", { level: 1, name: /Notes fill themselves/ }),
+    ).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: "Previous slide" }));
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: /AI Agent & Omnichannel CRM/,
+      }),
+    ).toBeInTheDocument();
   });
 
   it("still builds a full rail when a product key is missing", () => {

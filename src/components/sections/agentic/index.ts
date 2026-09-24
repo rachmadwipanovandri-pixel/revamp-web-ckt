@@ -9,7 +9,7 @@ export { CaseStudy } from "./case-study";
 export { Pricing } from "./pricing";
 export { Results } from "./results";
 export { OpenApi } from "./open-api";
-export { CipherBand } from "./cipher-band";
+export { Gallery, PhotoBand } from "./gallery";
 export { Security } from "./security";
 export { Faq } from "./faq";
 export { FinalCta } from "./final-cta";

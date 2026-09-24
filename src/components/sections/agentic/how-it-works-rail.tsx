@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { ProductMockFor } from "@/components/sections/agentic/product-ui";
 
 export type HowItWorksStep = {
   key: string;
@@ -263,7 +264,7 @@ export function HowItWorksRail({
   );
 }
 
-/** Shared stage chrome — compact on mobile (sticky), roomier on desktop. */
+/** Shared stage chrome — product UI frame (incident.io language). */
 function StagePanel({
   stageLabel,
   stepKey,
@@ -280,207 +281,37 @@ function StagePanel({
   stepCount: number;
 }) {
   return (
-    <div className="relative overflow-hidden rounded-[1.35rem] border border-foreground/10 bg-ink-void p-3 text-white shadow-[0_24px_50px_-36px_rgba(16,24,40,0.7)] sm:p-4 md:p-6">
-      <div className="flex items-center justify-between gap-3 border-b border-white/10 pb-2.5 md:pb-3">
-        <span className="font-numeric text-[0.65rem] font-semibold tracking-[0.16em] text-sky-300 uppercase">
+    <div className="relative overflow-hidden rounded-[1.35rem] border border-[#0C111D]/[0.08] bg-white shadow-[0_1px_2px_rgba(12,17,29,0.04),0_28px_56px_-32px_rgba(12,17,29,0.28)]">
+      <div className="flex items-center justify-between gap-3 border-b border-[#0C111D]/[0.06] bg-[#F6F7F9] px-4 py-2.5">
+        <span className="inline-flex items-center gap-2 font-numeric text-[0.7rem] font-semibold tracking-[0.12em] text-[#667085] uppercase">
+          <span aria-hidden className="flex gap-1">
+            <span className="size-2 rounded-full bg-[#FF5F57]" />
+            <span className="size-2 rounded-full bg-[#FEBC2E]" />
+            <span className="size-2 rounded-full bg-[#28C840]" />
+          </span>
           {stageLabel}
         </span>
-        <span className="font-numeric text-[0.65rem] text-white/45">
+        <span className="font-numeric text-[0.7rem] text-[#98A2B3]">
           {index} / {String(total).padStart(2, "0")}
         </span>
       </div>
-      <div className="mt-2.5 min-h-[8.5rem] sm:min-h-[10rem] md:mt-3 md:min-h-[18rem]">
+      <div className="min-h-[8.5rem] sm:min-h-[10rem] md:min-h-[18rem]">
         {/* key forces remount so animate-swap-in re-runs on every step change */}
-        <StepStage key={stepKey} stepKey={stepKey} />
+        <div key={stepKey} className="animate-swap-in h-full">
+          <ProductMockFor kind={stepKey} />
+        </div>
       </div>
-      <div className="mt-2.5 flex gap-1.5 border-t border-white/10 pt-2.5 md:mt-3 md:pt-3">
+      <div className="flex gap-1.5 border-t border-[#0C111D]/[0.06] px-4 py-2.5">
         {Array.from({ length: stepCount }, (_, i) => (
           <span
             key={i}
             aria-hidden
             className={cn(
               "h-1 flex-1 rounded-full transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]",
-              i === active ? "bg-sky-400" : "bg-white/15",
+              i === active ? "bg-primary" : "bg-[#0C111D]/10",
             )}
           />
         ))}
-      </div>
-    </div>
-  );
-}
-
-/** Pure-CSS micro-UI for each step — no extra network assets. */
-function StepStage({ stepKey }: { stepKey: string }) {
-  if (stepKey === "crm") {
-    return (
-      <div className="animate-swap-in space-y-3">
-        <div className="rounded-xl border border-white/10 bg-white/[0.06] p-4">
-          <p className="font-numeric text-[0.65rem] tracking-[0.14em] text-sky-300/80 uppercase">
-            Pipeline
-          </p>
-          <div className="mt-3 grid grid-cols-3 gap-2">
-            {["Lead", "Demo", "Won"].map((col, i) => (
-              <div
-                key={col}
-                className={cn(
-                  "rounded-lg border p-2 text-[0.7rem]",
-                  i === 2
-                    ? "border-emerald-400/30 bg-emerald-400/10 text-emerald-200"
-                    : "border-white/10 bg-white/5 text-white/70",
-                )}
-              >
-                {col}
-                <div className="mt-2 space-y-1.5">
-                  <div className="h-6 rounded bg-white/10" />
-                  <div
-                    className={cn(
-                      "h-6 rounded",
-                      i === 0 ? "bg-primary/40" : "bg-white/8",
-                    )}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="rounded-xl border border-white/10 bg-white/[0.06] px-4 py-3 text-xs text-white/70">
-          Contact auto-saved · stage updated · no manual entry
-        </div>
-      </div>
-    );
-  }
-
-  if (stepKey === "mini") {
-    return (
-      <div className="animate-swap-in space-y-3">
-        {[
-          { label: "FAQ agent", on: true },
-          { label: "Lead cleaner", on: true },
-          { label: "Shipping bot", on: false },
-        ].map((row) => (
-          <div
-            key={row.label}
-            className="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.06] px-4 py-3"
-          >
-            <span className="text-sm text-white/85">{row.label}</span>
-            <span
-              className={cn(
-                "relative h-6 w-11 rounded-full transition-colors",
-                row.on ? "bg-primary" : "bg-white/20",
-              )}
-            >
-              <span
-                className={cn(
-                  "absolute top-0.5 size-5 rounded-full bg-white transition-all",
-                  row.on ? "left-[1.35rem]" : "left-0.5",
-                )}
-              />
-            </span>
-          </div>
-        ))}
-        <p className="text-xs text-white/50">No-code · live in minutes</p>
-      </div>
-    );
-  }
-
-  if (stepKey === "consulting") {
-    return (
-      <div className="animate-swap-in space-y-3">
-        <div className="rounded-xl border border-white/10 bg-white/[0.06] p-4">
-          <p className="font-numeric text-[0.65rem] tracking-[0.14em] text-sky-300/80 uppercase">
-            Insight
-          </p>
-          <p className="mt-2 text-sm leading-snug text-white/85">
-            Weekend chats convert 2.1× higher — shift broadcast to Sat 10:00.
-          </p>
-        </div>
-        <div className="flex gap-2">
-          {[40, 65, 55, 90, 70, 95, 80].map((h, i) => (
-            <div
-              key={i}
-              className="flex-1 rounded-t bg-linear-to-t from-primary to-sky-400/80"
-              style={{ height: `${h}px`, opacity: 0.45 + i * 0.07 }}
-            />
-          ))}
-        </div>
-        <p className="text-xs text-white/50">From your data · next step suggested</p>
-      </div>
-    );
-  }
-
-  if (stepKey === "marketing") {
-    return (
-      <div className="animate-swap-in space-y-3">
-        <div className="grid grid-cols-2 gap-2">
-          {[
-            { k: "ROAS", v: "4.2×" },
-            { k: "Leads", v: "+38%" },
-          ].map((m) => (
-            <div
-              key={m.k}
-              className="rounded-xl border border-white/10 bg-white/[0.06] p-4"
-            >
-              <p className="text-[0.7rem] text-white/50">{m.k}</p>
-              <p className="mt-1 font-numeric text-2xl font-semibold text-sky-300">
-                {m.v}
-              </p>
-            </div>
-          ))}
-        </div>
-        <div className="rounded-xl border border-white/10 bg-white/[0.06] px-4 py-3">
-          <div className="flex items-center justify-between text-xs text-white/70">
-            <span>Broadcast · VIP segment</span>
-            <span className="text-emerald-300">Sent</span>
-          </div>
-          <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/10">
-            <div className="h-full w-[78%] rounded-full bg-linear-to-r from-primary to-sky-400" />
-          </div>
-        </div>
-        <p className="text-xs text-white/50">Ads → chat → sale loop closed</p>
-      </div>
-    );
-  }
-
-  // chat (default)
-  return (
-    <div className="animate-swap-in space-y-3">
-      <div className="space-y-2.5">
-        {[
-          { who: "Customer", text: "Masih ready size M?", me: false },
-          { who: "AI", text: "Ready! M warna navy. Mau saya reserve?", me: true },
-          { who: "Customer", text: "Boleh, jam 5 sore ambil.", me: false },
-        ].map((msg, i) => (
-          <div
-                key={i}
-                className={cn(
-                  "flex min-w-0",
-                  msg.me ? "justify-end" : "justify-start",
-                )}
-              >
-                <div
-                  className={cn(
-                    "min-w-0 max-w-[85%] rounded-2xl px-3.5 py-2.5 text-[0.82rem] leading-snug break-words",
-                    msg.me
-                      ? "rounded-br-md bg-primary text-white"
-                      : "rounded-bl-md border border-white/10 bg-white/8 text-white/85",
-                  )}
-                >
-              <span
-                className={cn(
-                  "mb-0.5 block font-numeric text-[0.6rem] tracking-wide",
-                  msg.me ? "text-white/65" : "text-white/45",
-                )}
-              >
-                {msg.who}
-              </span>
-              {msg.text}
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.06] px-3 py-2.5">
-        <span className="animate-pulse-soft size-1.5 rounded-full bg-sky-400" />
-        <span className="text-xs text-white/45">AI typing · 24/7 inbox</span>
       </div>
     </div>
   );

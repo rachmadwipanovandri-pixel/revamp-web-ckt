@@ -13,40 +13,53 @@ export async function Hero() {
   const copy = buildHeroSliderCopy({ hero, home });
 
   return (
-    <section className="relative isolate flex min-h-svh flex-col overflow-hidden bg-ink-void text-white">
+    <section className="relative isolate flex min-h-svh flex-col overflow-hidden bg-[#061a3a] text-white">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#050b18] via-[#0a1a3d] to-[#0b1220]"
+        className="pointer-events-none absolute inset-0 bg-linear-to-br from-[#0b2f78] via-[#0a1e4a] to-[#123a8a]"
+      />
+      {/* Vivid color washes — keep the void from reading as flat black. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 55% 45% at 80% 10%, rgba(56,189,248,0.35) 0%, transparent 65%), radial-gradient(ellipse 50% 40% at 15% 75%, rgba(99,102,241,0.3) 0%, transparent 65%), radial-gradient(ellipse 45% 35% at 55% 100%, rgba(34,211,238,0.25) 0%, transparent 70%)",
+        }}
       />
       <div
         aria-hidden
-        className="ink-noise pointer-events-none absolute inset-0 opacity-55"
+        className="ink-noise pointer-events-none absolute inset-0 opacity-40"
       />
       {/* Blueprint grid — slow drift, masked to the center */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 animate-grid-drift opacity-40"
+        className="pointer-events-none absolute inset-0 animate-grid-drift opacity-50"
         style={{
           backgroundImage:
-            "linear-gradient(to right, rgba(125,211,252,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(125,211,252,0.08) 1px, transparent 1px)",
+            "linear-gradient(to right, rgba(125,211,252,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(125,211,252,0.1) 1px, transparent 1px)",
           backgroundSize: "64px 64px",
           maskImage:
             "radial-gradient(ellipse at 50% 45%, black 0%, transparent 72%)",
         }}
       />
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <span className="animate-orb-drift absolute top-[8%] left-[6%] h-80 w-80 rounded-full bg-primary/45 blur-[110px]" />
+        <span className="animate-orb-drift absolute top-[8%] left-[6%] h-80 w-80 rounded-full bg-sky-400/40 blur-[110px]" />
         <span
-          className="animate-orb-drift absolute top-[28%] right-[4%] h-96 w-96 rounded-full bg-accent-sky/30 blur-[120px]"
+          className="animate-orb-drift absolute top-[20%] right-[4%] h-96 w-96 rounded-full bg-cyan-400/35 blur-[120px]"
           style={{ animationDelay: "-7s" }}
         />
         <span
-          className="animate-orb-drift absolute bottom-[8%] left-[38%] h-64 w-64 rounded-full bg-[#1352bf]/35 blur-[100px]"
+          className="animate-orb-drift absolute bottom-[8%] left-[38%] h-64 w-64 rounded-full bg-indigo-500/35 blur-[100px]"
           style={{ animationDelay: "-12s" }}
+        />
+        <span
+          className="animate-orb-drift absolute top-[55%] right-[18%] h-56 w-56 rounded-full bg-amber-300/20 blur-[100px]"
+          style={{ animationDelay: "-4s" }}
         />
       </div>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-4 pt-24 pb-14 sm:px-6 lg:px-8 lg:pt-24 lg:pb-16">
+      <div className="relative z-10 mx-auto flex w-full max-w-[92rem] flex-1 flex-col justify-center px-4 pt-24 pb-14 sm:px-6 lg:px-10 lg:pt-24 lg:pb-16">
         <HeroSlider copy={copy} />
       </div>
 

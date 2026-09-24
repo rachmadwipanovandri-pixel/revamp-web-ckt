@@ -206,10 +206,10 @@ export function HeroChatDemo({
             data-device-form={isInk ? "iphone" : device}
             data-mobile-device={isPhone ? "iphone" : "tablet"}
             className={cn(
-              // Match production mobile size on cekat.ai: fixed 600×~330 phone frame.
-              "relative isolate mx-auto flex h-[600px] w-full max-w-[330px] flex-col overflow-hidden bg-gradient-to-br from-slate-700 via-foreground to-slate-950 p-2.5 shadow-2xl ring-1 ring-black/10 rounded-[2.5rem] transition-[width,max-width,height,border-radius,padding] duration-900 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none will-change-[width,height,border-radius]",
+              // Smaller on phones so stacked hero copy + demo fit without a giant void.
+              "relative isolate mx-auto flex h-[min(400px,48svh)] w-full max-w-[280px] flex-col overflow-hidden bg-gradient-to-br from-slate-700 via-foreground to-slate-950 p-2 shadow-2xl ring-1 ring-black/10 rounded-[2rem] transition-[width,max-width,height,border-radius,padding] duration-900 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none will-change-[width,height,border-radius] sm:h-[min(500px,58svh)] sm:max-w-[300px] sm:rounded-[2.5rem] sm:p-2.5",
               isPhone
-                ? "sm:aspect-auto sm:h-[600px] sm:w-[330px] sm:max-w-[330px] sm:rounded-[2.75rem] lg:mx-0"
+                ? "sm:aspect-auto sm:h-[min(520px,62svh)] sm:w-[300px] sm:max-w-[300px] sm:rounded-[2.75rem] lg:mx-0"
                 : "sm:aspect-4.5/4 sm:h-auto sm:w-full sm:max-w-none sm:rounded-[2.25rem] lg:mx-0 lg:max-w-145",
             )}
           >

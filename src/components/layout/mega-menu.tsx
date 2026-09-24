@@ -31,9 +31,9 @@ const PRODUCT_COLUMNS: Array<{
   { key: "order", href: "/order" },
 ];
 
-/** Floating panel shell — brand wash, blue lift, soft top hairline (homepage). */
+/** Floating panel shell — clean white card, soft elevation (incident.io). */
 const PANEL_SHELL =
-  "overflow-hidden rounded-2xl border border-primary/15 bg-white text-popover-foreground shadow-[0_32px_64px_-32px_rgba(19,82,191,0.35),0_10px_28px_-16px_rgba(11,18,32,0.18)] ring-1 ring-primary/10";
+  "overflow-hidden rounded-2xl border border-[#0C111D]/[0.08] bg-white text-popover-foreground shadow-[0_1px_2px_rgba(12,17,29,0.04),0_28px_56px_-28px_rgba(12,17,29,0.28)]";
 
 /** Kill the primitive's double chrome so PANEL_SHELL + PanelChrome own the look. */
 const PANEL_CONTENT_RESET = "rounded-none bg-transparent p-0 shadow-none ring-0";
@@ -46,45 +46,17 @@ function triggerClass(isTransparent: boolean) {
     // block-level. Same display type puts all four nav items on one line.
     "relative flex h-auto gap-1 bg-transparent px-0 py-0 font-numeric text-xs font-semibold transition-colors hover:bg-transparent focus:bg-transparent data-open:bg-transparent data-popup-open:bg-transparent",
     isTransparent
-      ? "text-white hover:bg-transparent! hover:text-white/85 data-popup-open:text-white data-popup-open:[text-shadow:0_0_14px_rgba(147,197,253,0.65)]"
+      ? "text-white hover:bg-transparent! hover:text-white/85 data-popup-open:text-white"
       : "text-foreground hover:text-primary data-popup-open:text-primary",
   );
 }
 
 /**
- * Decorative plate shared by both mega panels: primary wash, corner glows,
- * products-section dot grid, and the hairline used by light homepage bands.
+ * Quiet plate shared by both mega panels — no glow orbs or dot grids.
  */
 function PanelChrome({ children }: { children: ReactNode }) {
   return (
-    <div className="relative isolate">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-b from-primary/[0.055] via-white to-white"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-px bg-linear-to-r from-transparent via-primary/30 to-transparent"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-24 -right-20 -z-10 size-56 rounded-full bg-primary/14 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-28 -left-16 -z-10 size-48 rounded-full bg-accent-sky/12 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 opacity-45"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 1px 1px, rgba(19,82,191,0.12) 1px, transparent 0)",
-          backgroundSize: "24px 24px",
-        }}
-      />
-      {children}
-    </div>
+    <div className="relative isolate bg-white">{children}</div>
   );
 }
 
@@ -98,10 +70,6 @@ function PanelLabel({
 }) {
   const body = (
     <span className="flex items-center gap-2 px-2.5 py-1.5 font-numeric text-[11px] font-semibold tracking-[0.14em] text-primary uppercase">
-      <span
-        aria-hidden
-        className="size-1.5 shrink-0 rounded-full bg-primary shadow-[0_0_0_3px_rgba(19,82,191,0.16)]"
-      />
       {children}
     </span>
   );
@@ -136,11 +104,11 @@ function MenuLink({
         <Link href={{ pathname, params: { slug: entry.slugs[locale]! } }} />
       }
       className={cn(
-        "group/mi gap-3 rounded-xl px-2.5 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-primary/[0.07] focus:bg-primary/[0.07]",
+        "group/mi gap-3 rounded-xl px-2.5 transition-colors duration-200 hover:bg-[#F6F7F9] focus:bg-[#F6F7F9]",
         withDescription ? "items-start py-2.5" : "items-center py-2",
       )}
     >
-      <span className="flex size-9 shrink-0 items-center justify-center rounded-xl border border-foreground/8 bg-white text-muted-foreground shadow-[0_8px_18px_-14px_rgba(19,82,191,0.45)] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover/mi:-translate-y-0.5 group-hover/mi:border-primary/30 group-hover/mi:bg-linear-to-b group-hover/mi:from-primary/12 group-hover/mi:to-primary/5 group-hover/mi:text-primary group-hover/mi:shadow-[0_14px_26px_-14px_rgba(19,82,191,0.55)]">
+      <span className="flex size-9 shrink-0 items-center justify-center rounded-xl border border-[#0C111D]/[0.06] bg-[#F6F7F9] text-[#525C6B] transition-colors duration-200 group-hover/mi:border-primary/20 group-hover/mi:bg-[#EEF4FF] group-hover/mi:text-primary">
         <RegistryIcon name={entry.icon} className="size-4" />
       </span>
       <span className={cn(withDescription && "flex flex-col gap-0.5")}>
@@ -167,7 +135,7 @@ function ViewAllLink({
   return (
     <NavigationMenuLink
       render={<Link href={href} />}
-      className="group/va inline-flex items-center gap-1.5 rounded-full border border-primary/15 bg-primary/[0.06] px-3.5 py-1.5 font-numeric text-sm font-semibold text-primary transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-primary/35 hover:bg-primary/12 hover:shadow-[0_10px_22px_-14px_rgba(19,82,191,0.55)] focus:bg-primary/12"
+      className="group/va inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-[#EEF4FF] px-3.5 py-1.5 font-numeric text-sm font-semibold text-primary transition-colors duration-200 hover:border-primary/40 hover:bg-primary/10"
     >
       {label}
       <span className="transition-transform duration-300 group-hover/va:translate-x-0.5">
@@ -259,22 +227,10 @@ export function MegaMenu({
                      tailwind-merge keeps them because bg-primary is a different
                      variant, so hovering this card repainted it near-white. These
                      pin the blue and leave brightness to signal the hover. */
-                  className="group/rail relative hidden w-64 shrink-0 flex-col justify-between overflow-hidden rounded-2xl border border-white/15 bg-linear-to-br from-primary via-[#0b50c4] to-[#0a2f7a] p-5 text-white transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-primary hover:brightness-105 focus:bg-primary lg:flex"
+                  className="group/rail relative hidden w-64 shrink-0 flex-col justify-between overflow-hidden rounded-2xl border border-white/15 bg-[#0B1220] p-5 text-white transition-colors duration-300 hover:bg-[#111827] focus:bg-[#111827] lg:flex"
                 >
-                  <div
-                    aria-hidden
-                    className="pointer-events-none absolute -top-16 -right-16 size-40 rounded-full bg-sky-400/25 blur-3xl"
-                  />
-                  <div
-                    aria-hidden
-                    className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/35 to-transparent"
-                  />
                   <div className="relative">
-                    <p className="inline-flex items-center gap-2 font-numeric text-[11px] font-semibold tracking-[0.14em] text-sky-200 uppercase">
-                      <span
-                        aria-hidden
-                        className="animate-pulse-soft size-1.5 rounded-full bg-sky-300"
-                      />
+                    <p className="inline-flex items-center gap-2 font-numeric text-[11px] font-semibold tracking-[0.14em] text-white/55 uppercase">
                       {t("megaFeaturedEyebrow")}
                     </p>
                     <p className="mt-3 font-numeric text-lg leading-tight font-semibold tracking-[-0.02em]">
@@ -339,13 +295,7 @@ export function MegaMenu({
                 </div>
                 <div className="flex-1">
                   <p className="mb-1.5 px-2.5 py-1 font-numeric text-[11px] font-semibold tracking-[0.14em] text-primary uppercase">
-                    <span className="inline-flex items-center gap-2">
-                      <span
-                        aria-hidden
-                        className="size-1.5 rounded-full bg-primary shadow-[0_0_0_3px_rgba(19,82,191,0.16)]"
-                      />
-                      {t("industriesByLabel")}
-                    </span>
+                    {t("industriesByLabel")}
                   </p>
                   <div className="grid grid-cols-1 gap-x-4 gap-y-0.5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {industries.map((entry) => (

@@ -57,28 +57,25 @@ export async function IndustryCarousel() {
   const panels: IndustryPanel[] = resolved.filter((panel) => panel !== null);
 
   return (
-    <section className="relative overflow-hidden bg-white py-20 md:py-28 lg:py-32">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/25 to-transparent"
-      />
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-[#F6F7F9] py-20 md:py-28 lg:py-32">
+      <div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
         <Reveal>
           <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-8">
-              <p className="eyebrow-rule mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
+              <p className="mb-5 inline-flex items-center gap-2.5 font-numeric text-[0.7rem] font-semibold tracking-[0.16em] text-primary uppercase">
+                <span aria-hidden className="h-px w-6 bg-primary/50" />
                 {tn("industries")}
               </p>
-              <h2 className="text-[clamp(1.85rem,4vw,3.25rem)] leading-[1.06] font-semibold tracking-[-0.04em] text-balance text-foreground">
+              <h2 className="text-[clamp(2rem,3.8vw,3.15rem)] leading-[1.05] font-semibold tracking-[-0.04em] text-balance text-[#0C111D]">
                 {t("headingLead")}{" "}
                 <span className="text-primary">{t("headingAccent")}</span>
               </h2>
-              <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+              <p className="mt-5 max-w-2xl text-base leading-[1.65] text-[#525C6B] md:text-[1.0625rem]">
                 {t("body")}
               </p>
               <Link
                 href="/industries"
-                className="btn-shine mt-7 inline-flex min-h-11 items-center gap-2 rounded-full border border-primary/25 bg-white px-5 py-2.5 font-numeric text-sm font-semibold text-primary transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/50 hover:shadow-[0_16px_36px_-24px_rgba(19,82,191,0.55)]"
+                className="mt-7 inline-flex min-h-11 items-center gap-2 rounded-full border border-primary/25 bg-white px-5 py-2.5 font-numeric text-sm font-semibold text-primary transition-all duration-300 hover:border-primary/50"
               >
                 {tn("viewAllIndustries")}
                 <span aria-hidden>&rarr;</span>

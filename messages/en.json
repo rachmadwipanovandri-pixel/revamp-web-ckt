@@ -1211,6 +1211,16 @@
       "heading": "Trusted by brands across Indonesia",
       "note": "Thousands of other businesses also run their daily conversations on Cekat.AI."
     },
+    "gallery": {
+      "eyebrow": "In the field",
+      "headingLead": "Used every day",
+      "headingAccent": "by teams that are growing.",
+      "body": "A few real working moments — from the CS desk to stores and offices. Swap these photos for your brand shots whenever you're ready."
+    },
+    "photoBand": {
+      "quote": "When chat is messy, revenue leaks quietly. Cekat helped us turn it into one system.",
+      "attribution": "Cekat.AI customer operations · placeholder photo, replace with your brand shots"
+    },
     "howItWorks": {
       "eyebrow": "How it works",
       "headingLead": "From first chat",
@@ -1307,7 +1317,8 @@
         "value": "24/7",
         "label": "AI answers outside office hours, without adding a night shift"
       },
-      "attribution": "Figures reported directly by Cekat.AI customers, not independently audited."
+      "attribution": "Figures reported directly by Cekat.AI customers, not independently audited.",
+      "readStory": "Read customer story"
     },
     "pricingGlossary": {
       "heading": "Pricing terms, short",
