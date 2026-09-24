@@ -344,9 +344,9 @@ describe("Hero", () => {
 
     const frame = document.querySelector("[data-ipad-frame]");
     expect(frame).toHaveClass(
-      "h-[min(400px,48svh)]",
-      "max-w-[280px]",
-      "rounded-[2rem]",
+      "h-[600px]",
+      "max-w-[330px]",
+      "rounded-[2.5rem]",
       "sm:aspect-4.5/4",
       "sm:h-auto",
       "sm:max-w-none",
@@ -375,7 +375,7 @@ describe("Hero", () => {
       expect(
         document.querySelector('[data-phone-hardware="island"]'),
       ).toHaveClass("opacity-100");
-      expect(frame).toHaveClass("sm:w-[300px]", "sm:h-[min(520px,62svh)]");
+      expect(frame).toHaveClass("sm:w-[330px]", "sm:h-[600px]");
 
       // Phone form collapses header pills and expands the stacked tabs.
       const desktopModeTabs = document.querySelector(
