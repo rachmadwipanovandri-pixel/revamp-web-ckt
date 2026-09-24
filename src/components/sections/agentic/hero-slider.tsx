@@ -148,7 +148,7 @@ export function HeroSlider({ copy }: { copy: HeroSliderCopy }) {
           <p
             key={`eyebrow-${active.key}`}
             data-slide-dir={direction}
-            className="hero-slide-fade mb-6 inline-flex items-center gap-2.5 rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-1.5 font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-sky-200 uppercase backdrop-blur"
+            className="hero-slide-fade mb-5 inline-flex items-center gap-2.5 rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-1.5 font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-sky-200 uppercase backdrop-blur"
           >
             <span
               aria-hidden
@@ -163,7 +163,9 @@ export function HeroSlider({ copy }: { copy: HeroSliderCopy }) {
             data-slide-dir={direction}
             className="hero-slide"
           >
-            <h1 className="mx-auto max-w-[16ch] text-[clamp(2.1rem,5.2vw,3.75rem)] leading-[1.04] font-semibold tracking-[-0.035em] text-balance text-white lg:mx-0 lg:max-w-[14ch]">
+            {/* Desktop clamp kept under ~2.75rem so a long localized H1 still
+                leaves the CTA row inside the first viewport. */}
+            <h1 className="mx-auto max-w-[16ch] text-[clamp(1.85rem,3.4vw,2.6rem)] leading-[1.08] font-semibold tracking-[-0.03em] text-balance text-white lg:mx-0 lg:max-w-[16ch]">
               {active.titleLead}
               {active.titleAccent ? (
                 <>
@@ -175,11 +177,11 @@ export function HeroSlider({ copy }: { copy: HeroSliderCopy }) {
               ) : null}
             </h1>
 
-            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-sky-50/85 lg:mx-0 lg:text-lg">
+            <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-sky-50/85 lg:mx-0 lg:text-lg">
               {active.subtitle}
             </p>
 
-            <ul className="mt-7 flex flex-wrap items-center justify-center gap-2 lg:justify-start">
+            <ul className="mt-5 flex flex-wrap items-center justify-center gap-2 lg:justify-start">
               {active.pills.map((word) => (
                 <li
                   key={word}
@@ -194,7 +196,7 @@ export function HeroSlider({ copy }: { copy: HeroSliderCopy }) {
           {/* Same pairing and order as the navbar: WhatsApp filled, trial
               outlined. Repeating the nav's hierarchy means a visitor who
               scrolled past the header meets the same primary action. */}
-          <div className="mt-9 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
             <Button
               size="lg"
               className="h-13 rounded-full bg-white px-8 text-sm text-ink-void shadow-[0_16px_40px_-16px_rgba(255,255,255,0.35)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-sky-50 active:scale-[0.98] motion-reduce:transition-none"

@@ -16,8 +16,12 @@ export async function Hero() {
   const home = await getTranslations("home.hero");
   const copy = buildHeroSliderCopy({ hero, home });
 
+  // Product slides (landscape art) are shorter than the phone demo, so
+  // without a floor the stage collapses and the next white section shows
+  // as a gap under the CTAs. min-h keeps every slide full-bleed; flex
+  // centers the shorter ones in the void.
   return (
-    <section className="relative isolate overflow-hidden bg-ink-void text-white">
+    <section className="relative isolate flex min-h-svh flex-col overflow-hidden bg-ink-void text-white">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#050b18] via-[#0a1a3d] to-[#0b1220]"
@@ -38,7 +42,7 @@ export async function Hero() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pt-28 pb-16 sm:px-6 lg:px-8 lg:pt-32 lg:pb-20">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-4 pt-24 pb-14 sm:px-6 lg:px-8 lg:pt-24 lg:pb-16">
         <HeroSlider copy={copy} />
       </div>
 
