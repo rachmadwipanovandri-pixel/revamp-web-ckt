@@ -59,7 +59,7 @@ export async function Hero() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-[92rem] flex-1 flex-col justify-center px-4 pt-24 pb-14 sm:px-6 lg:px-10 lg:pt-24 lg:pb-16">
+      <div className="relative z-10 mx-auto flex w-full max-w-[92rem] flex-1 flex-col justify-center px-4 pt-24 pb-14 sm:px-6 lg:px-10 lg:pt-24 lg:pb-36">
         <HeroSlider copy={copy} />
       </div>
 

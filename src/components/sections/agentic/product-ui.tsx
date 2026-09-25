@@ -33,8 +33,15 @@ export function ChatInboxMock({ className }: { className?: string }) {
   ];
 
   return (
-    <div className={cn("grid h-full min-h-[280px] grid-cols-[1.05fr_1.4fr]", className)}>
-      <div className="border-r border-[#0C111D]/[0.06] bg-[#FAFBFC] p-3">
+    <div
+      className={cn(
+        "grid h-full min-h-[280px] grid-cols-1 sm:grid-cols-[1.05fr_1.4fr]",
+        className,
+      )}
+    >
+      {/* Phone: drop the thread list — two panes squeeze both and push the
+          grid past the frame, which overflow-hidden then clips. */}
+      <div className="hidden min-w-0 border-r border-[#0C111D]/[0.06] bg-[#FAFBFC] p-3 sm:block">
         <div className="mb-3 flex items-center justify-between">
           <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.12em] text-[#667085] uppercase">
             Inbox
@@ -69,7 +76,7 @@ export function ChatInboxMock({ className }: { className?: string }) {
         </div>
       </div>
 
-      <div className="flex flex-col bg-white">
+      <div className="flex min-w-0 flex-col bg-white">
         <div className="flex items-center justify-between border-b border-[#0C111D]/[0.06] px-3.5 py-2.5">
           <div>
             <p className="font-numeric text-[0.78rem] font-semibold text-[#0C111D]">Ayu Prameswari</p>
@@ -141,7 +148,7 @@ export function CrmBoardMock({ className }: { className?: string }) {
           key={col.title}
           className={cn(
             "flex min-w-0 flex-1 flex-col rounded-xl border border-[#0C111D]/[0.06] bg-white p-2.5",
-            i === 3 && "hidden sm:flex",
+            i >= 2 && "hidden sm:flex",
           )}
         >
           <div className="mb-2.5 flex items-center justify-between">
@@ -183,8 +190,13 @@ export function MarketingMock({ className }: { className?: string }) {
   ];
 
   return (
-    <div className={cn("grid h-full min-h-[280px] grid-cols-[1.2fr_1fr] gap-3 bg-white p-3.5", className)}>
-      <div className="rounded-xl border border-[#0C111D]/[0.06] bg-[#FAFBFC] p-3">
+    <div
+      className={cn(
+        "grid h-full min-h-[280px] grid-cols-[1.2fr_1fr] gap-3 bg-white p-3.5",
+        className,
+      )}
+    >
+      <div className="min-w-0 rounded-xl border border-[#0C111D]/[0.06] bg-[#FAFBFC] p-3">
         <div className="mb-3 flex items-start justify-between">
           <div>
             <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.12em] text-[#667085] uppercase">
@@ -208,7 +220,7 @@ export function MarketingMock({ className }: { className?: string }) {
           ))}
         </div>
       </div>
-      <div className="rounded-xl border border-[#0C111D]/[0.06] p-3">
+      <div className="min-w-0 rounded-xl border border-[#0C111D]/[0.06] p-3">
         <p className="mb-3 font-numeric text-[0.7rem] font-semibold tracking-[0.12em] text-[#667085] uppercase">
           Campaign → penjualan
         </p>

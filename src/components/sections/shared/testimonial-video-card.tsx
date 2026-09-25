@@ -35,11 +35,9 @@ export function TestimonialVideoCard({
       <div
         className={cn(
           "relative w-full overflow-hidden bg-black",
-          // `fill` stretches to the parent height in dense walls, but stacked
-          // full-width cards still need a real aspect below lg or they collapse.
-          fill
-            ? "aspect-video min-h-0 flex-1 lg:aspect-auto"
-            : "aspect-square sm:aspect-video",
+          // `fill` keeps a real 16:9 aspect so the card always has intrinsic
+          // height; `flex-1` still stretches it when the parent is definite.
+          fill ? "aspect-video min-h-0 flex-1" : "aspect-square sm:aspect-video",
         )}
       >
         {playing ? (
