@@ -301,6 +301,17 @@
     }
   }
 
+  /* Feature-card ticker — one row running right → left, pauses on hover */
+  --animate-feature-ticker: featureTicker 70s linear infinite;
+  @keyframes featureTicker {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
   /* CTA shine sweep */
   --animate-shine: shine 2.8s ease-in-out infinite;
   @keyframes shine {
@@ -347,19 +358,15 @@
 
 /* Slide remount enter — brand ease + duration band used by reveals (500–800ms).
    Transform-only so the H1 stays a first-paint LCP candidate (no opacity-from-0).
-   data-slide-dir nudges left/right: next enters from +12px, prev from -12px. */
+   data-slide-dir steers direction: next enters from the right, prev from the
+   left — generous horizontal travel so the change reads at a glance. */
 .hero-slide,
 .hero-stagger > .hero-slide {
-  animation: heroSlideIn 0.72s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: heroSlideIn 0.78s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 @keyframes heroSlideIn {
   from {
-    transform: translate3d(
-        calc(12px * var(--slide-dir, 1)),
-        14px,
-        0
-      )
-      scale(0.985);
+    transform: translate3d(calc(40px * var(--slide-dir, 1)), 8px, 0) scale(0.97);
   }
   to {
     transform: none;
@@ -369,12 +376,12 @@
 /* Non-LCP stage chrome (eyebrow, badge): soft crossfade with the copy. */
 .hero-slide-fade,
 .hero-stagger > .hero-slide-fade {
-  animation: heroSlideFade 0.78s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: heroSlideFade 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 @keyframes heroSlideFade {
   from {
     opacity: 0;
-    transform: translate3d(calc(8px * var(--slide-dir, 1)), 10px, 0);
+    transform: translate3d(calc(20px * var(--slide-dir, 1)), 8px, 0);
   }
   to {
     opacity: 1;
@@ -382,16 +389,18 @@
   }
 }
 
-/* Artwork settles a touch slower so the stage never pops between products. */
+/* Artwork glides in a touch slower than the copy so the stage feels like it
+   carries the slide. Starts partly opaque (not 0) to avoid a blank flash —
+   the H1, not the art, is the LCP target. */
 .hero-slide-art {
-  animation: heroSlideArt 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
-  animation-delay: 50ms;
+  animation: heroSlideArt 0.95s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 70ms;
 }
 @keyframes heroSlideArt {
   from {
-    opacity: 0;
-    transform: translate3d(calc(16px * var(--slide-dir, 1)), 12px, 0)
-      scale(1.03);
+    opacity: 0.15;
+    transform: translate3d(calc(48px * var(--slide-dir, 1)), 16px, 0)
+      scale(1.045);
   }
   to {
     opacity: 1;
@@ -764,6 +773,7 @@
   .animate-marquee-x-alt,
   .animate-grid-drift,
   .animate-logo-ticker,
+  .animate-feature-ticker,
   .animate-shine,
   .animate-ken-burns {
     animation: none !important;
@@ -825,6 +835,7 @@ body {
   .animate-marquee-x-alt,
   .animate-grid-drift,
   .animate-logo-ticker,
+  .animate-feature-ticker,
   .animate-shine,
   .animate-ken-burns,
   .animate-rail-dot,
@@ -861,7 +872,12 @@ body {
 .scroll-progress-bar {
   height: 100%;
   transform-origin: left center;
-  background: linear-gradient(90deg, var(--primary), var(--accent-sky), #7dd3fc);
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--accent-sky),
+    #7dd3fc
+  );
   will-change: transform;
 }
 
@@ -956,6 +972,16 @@ body {
   );
 }
 
+.feature-ticker-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 4%,
+    black 96%,
+    transparent
+  );
+}
+
 /* Bento spans live as Tailwind col-span utilities on the Reveal wrapper.
    Do not reintroduce grid-row: span 2 with auto-rows-fr — that sizes the
    featured cell to two equal rows while content only fills one, leaving a
@@ -972,6 +998,9 @@ body {
 
 .hero-collage {
   --u: min(calc(100cqw / 860), 1.2px);
+  /* Phone-chat unit — identical to the canvas unit except on mobile, where
+     the phone runs at its own (larger) scale so the demo stays legible. */
+  --pu: var(--u);
   --collage-scale: 1;
   position: relative;
   width: calc(var(--u) * 860);
@@ -1193,15 +1222,16 @@ body {
   z-index: 4;
 }
 
-/* iPhone-ish proportion (~9:19.5). Wide cards read as tablets — keep this narrow. */
+/* iPhone-ish proportion (~9:19.5). Wide cards read as tablets — keep this narrow.
+   Sized in --pu so the phone scales with its chat content, not the canvas. */
 .hero-collage-win-phone {
   left: calc(var(--u) * 14);
   top: calc(var(--u) * 48);
-  width: calc(var(--u) * 210);
-  height: calc(var(--u) * 456);
+  width: calc(var(--pu) * 210);
+  height: calc(var(--pu) * 456);
   background: #0b1e3d;
   border: 2px solid #0a1628;
-  border-radius: calc(var(--u) * 28);
+  border-radius: calc(var(--pu) * 28);
   z-index: 5;
   box-shadow:
     0 24px 48px rgba(12, 45, 100, 0.35),
@@ -1216,8 +1246,7 @@ body {
   background: #1e1b4b;
   border: 0.5px solid rgba(165, 180, 252, 0.4);
   z-index: 6;
-  font-family:
-    ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   color: rgba(238, 242, 255, 0.92);
 }
 
@@ -1404,5 +1433,72 @@ body {
     background: none;
     -webkit-background-clip: unset;
     background-clip: unset;
+  }
+}
+
+/* ── Mobile collage pass (≤767px) ───────────────────────────────────────
+   The canvas scales with the container, which crushed the phone chat to
+   ~4px type. The phone runs at its own 2× scale (--pu) so the demo stays
+   legible; CRM / OMS / Mini Agent compress into the right column and
+   overlap each other, and panel type zooms down to fit the narrow windows. */
+@media (max-width: 767px) {
+  .hero-collage {
+    --pu: calc(var(--u) * 2);
+    height: calc(var(--u) * 1000);
+  }
+
+  .hero-collage-win-crm {
+    left: calc(var(--u) * 440);
+    top: calc(var(--u) * 45);
+    width: calc(var(--u) * 400);
+    height: calc(var(--u) * 400);
+  }
+
+  .hero-collage-win-oms {
+    left: calc(var(--u) * 435);
+    top: calc(var(--u) * 425);
+    width: calc(var(--u) * 405);
+    height: calc(var(--u) * 470);
+  }
+
+  /* Mini Cekat Agent is desktop-only — dropping it on mobile gives the
+     phone + CRM/OMS column room to breathe. */
+  .hero-collage-win-agent {
+    display: none;
+  }
+
+  /* Marketing slide keeps the phone beside one product window. */
+  .hero-collage-win-product {
+    left: calc(var(--u) * 440);
+    top: calc(var(--u) * 45);
+    width: calc(var(--u) * 400);
+    height: calc(var(--u) * 850);
+  }
+
+  /* Solo product slides (CRM / Mini / OMS / Consulting): fill the stage. */
+  .hero-collage-win-product.is-solo {
+    left: calc(var(--u) * 25);
+    top: calc(var(--u) * 40);
+    width: calc(var(--u) * 810);
+    height: calc(var(--u) * 920);
+  }
+
+  .hero-collage-pills {
+    left: calc(var(--u) * 440);
+    bottom: calc(var(--u) * 12);
+    width: calc(var(--u) * 360);
+    height: calc(var(--u) * 50);
+  }
+
+  .hero-collage-shimmer {
+    font-size: calc(var(--u) * 16);
+  }
+
+  /* Panel content lays out wider at a smaller render size, so more of each
+     window fits without clipping mid-word. */
+  .hero-collage-win-crm > div,
+  .hero-collage-win-oms > div,
+  .hero-collage-win-product > div {
+    zoom: 0.85;
   }
 }

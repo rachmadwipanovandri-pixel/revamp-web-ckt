@@ -27,15 +27,6 @@ function f(ns: Ns, path: string, label: string, multiline = false): FieldDef {
   return { ns, path, label, multiline };
 }
 
-const PRODUCT_IDS = [
-  "frontline",
-  "mini",
-  "oms",
-  "crm",
-  "marketing",
-  "consulting",
-] as const;
-
 const PILLAR_IDS = ["independent", "integrated", "openApi"] as const;
 
 const QUOTE_IDS = [
@@ -104,25 +95,6 @@ const SECTIONS: SectionDef[] = [
       f("agentic", "proof.stat2Label", "Stat 2 — label"),
       f("agentic", "proof.stat3Value", "Stat 3 — nilai"),
       f("agentic", "proof.stat3Label", "Stat 3 — label"),
-    ],
-  },
-  {
-    id: "products",
-    title: "04 · Enam agent",
-    hint: "Grid produk — lead, body, 3 pill",
-    fields: [
-      f("agentic", "products.eyebrow", "Eyebrow"),
-      f("agentic", "products.headingLead", "Heading — lead"),
-      f("agentic", "products.headingAccent", "Heading — accent"),
-      f("agentic", "products.body", "Body", true),
-      ...PRODUCT_IDS.flatMap((id) => [
-        f("agentic", `products.${id}.title`, `${id} — title`),
-        f("agentic", `products.${id}.lead`, `${id} — lead`, true),
-        f("agentic", `products.${id}.body`, `${id} — body`, true),
-        f("agentic", `products.${id}.pill1`, `${id} — pill 1`),
-        f("agentic", `products.${id}.pill2`, `${id} — pill 2`),
-        f("agentic", `products.${id}.pill3`, `${id} — pill 3`),
-      ]),
     ],
   },
   {

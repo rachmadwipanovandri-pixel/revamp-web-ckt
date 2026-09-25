@@ -41,7 +41,11 @@ type VisibleStep = {
   accent?: boolean;
 };
 
-function flattenStep(step: ChatStep, locale: "id" | "en", index: number): VisibleStep {
+function flattenStep(
+  step: ChatStep,
+  locale: "id" | "en",
+  index: number,
+): VisibleStep {
   const id = `s${index}`;
   if (step.kind === "user" || step.kind === "ai") {
     return {
@@ -91,9 +95,7 @@ function flattenStep(step: ChatStep, locale: "id" | "en", index: number): Visibl
       side: "ai",
       title: step.card.title[locale],
       text: step.card.meta[locale],
-      meta: step.card.status
-        ? `${step.card.status[locale]} · ${total}`
-        : total,
+      meta: step.card.status ? `${step.card.status[locale]} · ${total}` : total,
       time: step.time,
     };
   }
@@ -154,10 +156,7 @@ export function CollagePhoneChat({
   const mode = scenario.modes[modeKey];
   const steps = mode.steps;
   const visibleSteps = useMemo(
-    () =>
-      steps
-        .slice(0, cursor)
-        .map((s, i) => flattenStep(s, locale, i)),
+    () => steps.slice(0, cursor).map((s, i) => flattenStep(s, locale, i)),
     [steps, cursor, locale],
   );
 
@@ -242,21 +241,21 @@ export function CollagePhoneChat({
       {/* Phone hardware chrome */}
       <div
         aria-hidden
-        className="relative shrink-0 border-b border-white/8 bg-[#0a1628]/80 px-[calc(var(--u)*10)] pb-[calc(var(--u)*4)] pt-[calc(var(--u)*10)]"
+        className="relative shrink-0 border-b border-white/8 bg-[#0a1628]/80 px-[calc(var(--pu)*10)] pb-[calc(var(--pu)*4)] pt-[calc(var(--pu)*10)]"
       >
-        <div className="mx-auto mb-[calc(var(--u)*4)] h-[calc(var(--u)*6)] w-[calc(var(--u)*42)] rounded-full bg-black/80" />
-        <div className="flex items-center gap-[calc(var(--u)*3)] text-[calc(var(--u)*6)] text-white/50">
+        <div className="mx-auto mb-[calc(var(--pu)*4)] h-[calc(var(--pu)*6)] w-[calc(var(--pu)*42)] rounded-full bg-black/80" />
+        <div className="flex items-center gap-[calc(var(--pu)*3)] text-[calc(var(--pu)*6)] text-white/50">
           <span>9:41</span>
           <span className="ml-auto">▮▮▮ ᯤ ▰</span>
         </div>
       </div>
-      <div className="flex items-center gap-[calc(var(--u)*6)] border-b border-white/8 px-[calc(var(--u)*8)] py-[calc(var(--u)*5)]">
-        <span className="size-[calc(var(--u)*12)] shrink-0 rounded-full bg-[#25D366]" />
+      <div className="flex items-center gap-[calc(var(--pu)*6)] border-b border-white/8 px-[calc(var(--pu)*8)] py-[calc(var(--pu)*5)]">
+        <span className="size-[calc(var(--pu)*12)] shrink-0 rounded-full bg-[#25D366]" />
         <div className="min-w-0 flex-1">
-          <div className="truncate text-[calc(var(--u)*9)] leading-tight font-semibold text-white">
+          <div className="truncate text-[calc(var(--pu)*9)] leading-tight font-semibold text-white">
             {mode.business}
           </div>
-          <div className="text-[calc(var(--u)*7)] text-white/45">
+          <div className="text-[calc(var(--pu)*7)] text-white/45">
             {HERO_CHAT_UI.online[locale]}
           </div>
         </div>
@@ -265,7 +264,7 @@ export function CollagePhoneChat({
       <div
         role="group"
         aria-label={locale === "id" ? "Industri" : "Industry"}
-        className="flex shrink-0 items-center justify-between gap-[calc(var(--u)*4)] border-b border-white/6 bg-white/4 px-[calc(var(--u)*8)] py-[calc(var(--u)*5)]"
+        className="flex shrink-0 items-center justify-between gap-[calc(var(--pu)*4)] border-b border-white/6 bg-white/4 px-[calc(var(--pu)*8)] py-[calc(var(--pu)*5)]"
       >
         {HERO_CHAT_SCENARIOS.map((entry) => {
           const Icon = SCENARIO_ICONS[entry.key];
@@ -291,7 +290,7 @@ export function CollagePhoneChat({
                 });
               }}
               className={cn(
-                "grid size-[calc(var(--u)*22)] shrink-0 cursor-pointer place-items-center rounded-[calc(var(--u)*6)] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]",
+                "grid size-[calc(var(--pu)*22)] shrink-0 cursor-pointer place-items-center rounded-[calc(var(--pu)*6)] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]",
                 active
                   ? "bg-linear-to-b from-cyan-300 to-[#2563eb] text-white shadow-[0_4px_14px_-4px_rgba(34,211,238,0.7)]"
                   : "bg-white/10 text-sky-100/70 hover:bg-white/18 hover:text-white",
@@ -299,7 +298,7 @@ export function CollagePhoneChat({
             >
               <Icon
                 aria-hidden
-                className="size-[calc(var(--u)*12)]"
+                className="size-[calc(var(--pu)*12)]"
                 strokeWidth={2.2}
               />
             </button>
@@ -311,7 +310,7 @@ export function CollagePhoneChat({
         role="group"
         aria-label="Conversation type"
         data-conversation-mode-tabs="collage"
-        className="flex shrink-0 items-center gap-[calc(var(--u)*4)] border-b border-white/6 px-[calc(var(--u)*8)] py-[calc(var(--u)*4)]"
+        className="flex shrink-0 items-center gap-[calc(var(--pu)*4)] border-b border-white/6 px-[calc(var(--pu)*8)] py-[calc(var(--pu)*4)]"
       >
         {HERO_CHAT_MODES.map((entry) => {
           const active = entry.key === modeKey;
@@ -334,7 +333,7 @@ export function CollagePhoneChat({
                 });
               }}
               className={cn(
-                "min-h-[calc(var(--u)*18)] flex-1 cursor-pointer rounded-[calc(var(--u)*6)] px-[calc(var(--u)*4)] py-[calc(var(--u)*3)] text-[calc(var(--u)*7.5)] font-semibold whitespace-nowrap transition-colors duration-300",
+                "min-h-[calc(var(--pu)*18)] flex-1 cursor-pointer rounded-[calc(var(--pu)*6)] px-[calc(var(--pu)*4)] py-[calc(var(--pu)*3)] text-[calc(var(--pu)*7.5)] font-semibold whitespace-nowrap transition-colors duration-300",
                 active
                   ? "bg-linear-to-r from-[#2563eb] to-cyan-500 text-white shadow-[0_4px_14px_-4px_rgba(37,99,235,0.65)]"
                   : "bg-white/10 text-sky-100/70 hover:bg-white/18 hover:text-white",
@@ -349,10 +348,10 @@ export function CollagePhoneChat({
       {/* Full scripted thread — scrolls as the player advances. */}
       <div
         ref={scrollRef}
-        className="flex min-h-0 flex-1 flex-col gap-[calc(var(--u)*5)] overflow-y-auto px-[calc(var(--u)*8)] py-[calc(var(--u)*6)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="flex min-h-0 flex-1 flex-col gap-[calc(var(--pu)*5)] overflow-y-auto px-[calc(var(--pu)*8)] py-[calc(var(--pu)*6)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         aria-live="polite"
       >
-        <div className="mx-auto rounded-full bg-white/8 px-[calc(var(--u)*6)] py-[calc(var(--u)*1.5)] text-[calc(var(--u)*6.5)] text-white/45">
+        <div className="mx-auto rounded-full bg-white/8 px-[calc(var(--pu)*6)] py-[calc(var(--pu)*1.5)] text-[calc(var(--pu)*6.5)] text-white/45">
           {mode.date[locale]}
         </div>
 
@@ -361,13 +360,13 @@ export function CollagePhoneChat({
             return (
               <div
                 key={row.key}
-                className="hero-collage-msg my-[calc(var(--u)*2)] flex flex-col items-center gap-[calc(var(--u)*1)]"
+                className="hero-collage-msg my-[calc(var(--pu)*2)] flex flex-col items-center gap-[calc(var(--pu)*1)]"
               >
-                <span className="rounded-full bg-white/8 px-[calc(var(--u)*6)] py-[calc(var(--u)*1.5)] text-[calc(var(--u)*6.5)] text-white/50">
+                <span className="rounded-full bg-white/8 px-[calc(var(--pu)*6)] py-[calc(var(--pu)*1.5)] text-[calc(var(--pu)*6.5)] text-white/50">
                   {row.text}
                 </span>
                 {row.meta ? (
-                  <span className="text-[calc(var(--u)*6)] text-white/30">
+                  <span className="text-[calc(var(--pu)*6)] text-white/30">
                     {row.meta}
                   </span>
                 ) : null}
@@ -380,13 +379,13 @@ export function CollagePhoneChat({
               <div
                 key={row.key}
                 className={cn(
-                  "hero-collage-msg rounded-[calc(var(--u)*7)] border px-[calc(var(--u)*6)] py-[calc(var(--u)*3)] text-[calc(var(--u)*7)] leading-snug",
+                  "hero-collage-msg rounded-[calc(var(--pu)*7)] border px-[calc(var(--pu)*6)] py-[calc(var(--pu)*3)] text-[calc(var(--pu)*7)] leading-snug",
                   row.accent
                     ? "border-cyan-300/40 bg-cyan-400/15 text-cyan-50"
                     : "border-indigo-300/25 bg-indigo-400/12 text-indigo-50/85",
                 )}
               >
-                <span className="mr-[calc(var(--u)*3)] opacity-70">
+                <span className="mr-[calc(var(--pu)*3)] opacity-70">
                   {HERO_CHAT_UI.system[locale]}
                 </span>
                 {row.text}
@@ -404,47 +403,47 @@ export function CollagePhoneChat({
               )}
             >
               {row.kind === "product" ? (
-                <div className="rounded-[calc(var(--u)*9)] rounded-tl-[calc(var(--u)*2)] border border-amber-200/25 bg-amber-300/12 px-[calc(var(--u)*6)] py-[calc(var(--u)*4)]">
-                  <div className="text-[calc(var(--u)*8)] font-semibold text-amber-50">
+                <div className="rounded-[calc(var(--pu)*9)] rounded-tl-[calc(var(--pu)*2)] border border-amber-200/25 bg-amber-300/12 px-[calc(var(--pu)*6)] py-[calc(var(--pu)*4)]">
+                  <div className="text-[calc(var(--pu)*8)] font-semibold text-amber-50">
                     {row.title}
                   </div>
-                  <div className="text-[calc(var(--u)*8)] text-amber-200">
+                  <div className="text-[calc(var(--pu)*8)] text-amber-200">
                     {row.meta}
                   </div>
                 </div>
               ) : row.kind === "card" ? (
-                <div className="rounded-[calc(var(--u)*9)] rounded-tl-[calc(var(--u)*2)] border border-emerald-200/25 bg-emerald-300/12 px-[calc(var(--u)*6)] py-[calc(var(--u)*4)]">
-                  <div className="text-[calc(var(--u)*8)] font-semibold text-white">
+                <div className="rounded-[calc(var(--pu)*9)] rounded-tl-[calc(var(--pu)*2)] border border-emerald-200/25 bg-emerald-300/12 px-[calc(var(--pu)*6)] py-[calc(var(--pu)*4)]">
+                  <div className="text-[calc(var(--pu)*8)] font-semibold text-white">
                     {row.title}
                   </div>
                   {row.text ? (
-                    <div className="mt-[calc(var(--u)*1)] text-[calc(var(--u)*7)] text-sky-100/75">
+                    <div className="mt-[calc(var(--pu)*1)] text-[calc(var(--pu)*7)] text-sky-100/75">
                       {row.text}
                     </div>
                   ) : null}
-                  <div className="mt-[calc(var(--u)*2)] text-[calc(var(--u)*7)] font-medium text-emerald-300">
+                  <div className="mt-[calc(var(--pu)*2)] text-[calc(var(--pu)*7)] font-medium text-emerald-300">
                     {row.meta}
                   </div>
                 </div>
               ) : row.kind === "rating" ? (
-                <div className="rounded-[calc(var(--u)*9)] rounded-tl-[calc(var(--u)*2)] border border-white/12 bg-white/12 px-[calc(var(--u)*6)] py-[calc(var(--u)*4)]">
-                  <div className="text-[calc(var(--u)*8)] font-semibold text-white">
+                <div className="rounded-[calc(var(--pu)*9)] rounded-tl-[calc(var(--pu)*2)] border border-white/12 bg-white/12 px-[calc(var(--pu)*6)] py-[calc(var(--pu)*4)]">
+                  <div className="text-[calc(var(--pu)*8)] font-semibold text-white">
                     {row.title}
                   </div>
-                  <div className="mt-[calc(var(--u)*1)] text-[calc(var(--u)*7.5)] text-white/85">
+                  <div className="mt-[calc(var(--pu)*1)] text-[calc(var(--pu)*7.5)] text-white/85">
                     {row.text}
                   </div>
-                  <div className="mt-[calc(var(--u)*2)] text-[calc(var(--u)*6.5)] text-white/50">
+                  <div className="mt-[calc(var(--pu)*2)] text-[calc(var(--pu)*6.5)] text-white/50">
                     {row.meta}
                   </div>
                 </div>
               ) : (
                 <div
                   className={cn(
-                    "rounded-[calc(var(--u)*8)] px-[calc(var(--u)*6)] py-[calc(var(--u)*4)] text-[calc(var(--u)*8.5)] leading-snug",
+                    "rounded-[calc(var(--pu)*8)] px-[calc(var(--pu)*6)] py-[calc(var(--pu)*4)] text-[calc(var(--pu)*8.5)] leading-snug",
                     isUser
-                      ? "rounded-tr-[calc(var(--u)*2)] bg-gradient-to-br from-[#2563eb] to-[#1d4ed8] text-white shadow-[0_4px_12px_-4px_rgba(37,99,235,0.55)]"
-                      : "rounded-tl-[calc(var(--u)*2)] bg-white/16 text-white",
+                      ? "rounded-tr-[calc(var(--pu)*2)] bg-gradient-to-br from-[#2563eb] to-[#1d4ed8] text-white shadow-[0_4px_12px_-4px_rgba(37,99,235,0.55)]"
+                      : "rounded-tl-[calc(var(--pu)*2)] bg-white/16 text-white",
                   )}
                 >
                   {row.text}
@@ -453,7 +452,7 @@ export function CollagePhoneChat({
               {row.time ? (
                 <div
                   className={cn(
-                    "mt-[calc(var(--u)*1)] text-[calc(var(--u)*6)] text-white/35",
+                    "mt-[calc(var(--pu)*1)] text-[calc(var(--pu)*6)] text-white/35",
                     isUser ? "text-right" : "",
                   )}
                 >
@@ -465,9 +464,9 @@ export function CollagePhoneChat({
         })}
       </div>
 
-      <div className="mt-auto mb-[calc(var(--u)*5)] mx-[calc(var(--u)*7)] flex shrink-0 items-center gap-[calc(var(--u)*5)] rounded-full bg-white/8 px-[calc(var(--u)*6)] py-[calc(var(--u)*3)]">
-        <span className="size-[calc(var(--u)*5)] shrink-0 animate-pulse rounded-full bg-[#25D366]" />
-        <span className="truncate text-[calc(var(--u)*7)] text-white/55">
+      <div className="mt-auto mb-[calc(var(--pu)*5)] mx-[calc(var(--pu)*7)] flex shrink-0 items-center gap-[calc(var(--pu)*5)] rounded-full bg-white/8 px-[calc(var(--pu)*6)] py-[calc(var(--pu)*3)]">
+        <span className="size-[calc(var(--pu)*5)] shrink-0 animate-pulse rounded-full bg-[#25D366]" />
+        <span className="truncate text-[calc(var(--pu)*7)] text-white/55">
           {HERO_CHAT_UI.inputPlaceholder[locale]}
         </span>
       </div>

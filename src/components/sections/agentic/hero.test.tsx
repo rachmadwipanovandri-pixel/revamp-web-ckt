@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { NextIntlClientProvider } from "next-intl";
 import { HeroSlider } from "./hero-slider";
@@ -212,6 +212,92 @@ describe("agentic Hero", () => {
     ).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: "Previous slide" }));
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: /AI Agent & Omnichannel CRM/,
+      }),
+    ).toBeInTheDocument();
+  });
+
+  it("advances slides on a horizontal drag and ignores vertical drags", async () => {
+    renderHero();
+    const hero = screen.getByRole("navigation", {
+      name: "Hero slide navigation",
+    });
+
+    // Drag left → next slide (the track throws out before the swap lands).
+    fireEvent.pointerDown(hero, {
+      clientX: 300,
+      clientY: 300,
+      isPrimary: true,
+      pointerId: 1,
+    });
+    fireEvent.pointerMove(hero, {
+      clientX: 220,
+      clientY: 303,
+      isPrimary: true,
+      pointerId: 1,
+    });
+    fireEvent.pointerUp(hero, {
+      clientX: 120,
+      clientY: 308,
+      isPrimary: true,
+      pointerId: 1,
+    });
+    expect(
+      await screen.findByRole("heading", {
+        level: 1,
+        name: /Notes fill themselves/,
+      }),
+    ).toBeInTheDocument();
+
+    // Drag right → back to the first slide.
+    fireEvent.pointerDown(hero, {
+      clientX: 120,
+      clientY: 300,
+      isPrimary: true,
+      pointerId: 2,
+    });
+    fireEvent.pointerMove(hero, {
+      clientX: 220,
+      clientY: 297,
+      isPrimary: true,
+      pointerId: 2,
+    });
+    fireEvent.pointerUp(hero, {
+      clientX: 320,
+      clientY: 292,
+      isPrimary: true,
+      pointerId: 2,
+    });
+    expect(
+      await screen.findByRole("heading", {
+        level: 1,
+        name: /AI Agent & Omnichannel CRM/,
+      }),
+    ).toBeInTheDocument();
+
+    // Vertical-dominant drags must not navigate — they scroll the page.
+    fireEvent.pointerDown(hero, {
+      clientX: 200,
+      clientY: 100,
+      isPrimary: true,
+      pointerId: 3,
+    });
+    fireEvent.pointerMove(hero, {
+      clientX: 205,
+      clientY: 220,
+      isPrimary: true,
+      pointerId: 3,
+    });
+    fireEvent.pointerUp(hero, {
+      clientX: 212,
+      clientY: 300,
+      isPrimary: true,
+      pointerId: 3,
+    });
+    await new Promise((resolve) => setTimeout(resolve, 250));
     expect(
       screen.getByRole("heading", {
         level: 1,

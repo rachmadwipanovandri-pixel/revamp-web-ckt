@@ -1106,58 +1106,38 @@
       "stat3Value": "2Jt+",
       "stat3Label": "chat ditangani tiap hari"
     },
-    "products": {
-      "eyebrow": "Apa saja yang bisa dijalankan",
-      "headingLead": "Enam cara",
-      "headingAccent": "bantu bisnis Anda jalan.",
-      "body": "Dari balas chat sampai order beres — tiap agent punya peran jelas, dan semuanya saling kenal dengan pelanggan yang sama.",
-      "frontline": {
-        "title": "Frontline Chat Agent",
-        "lead": "Balas dan bantu pelanggan 24/7",
-        "body": "AI yang stand by di WhatsApp, IG, web, dan kanal lain. Pelanggan dapat jawaban cepat; tim Anda dapat lead yang memang siap diajak ngobrol.",
-        "pill1": "Semua kanal, satu inbox",
-        "pill2": "Serah ke tim saat perlu",
-        "pill3": "Siap kapan pun"
+    "features": {
+      "eyebrow": "Satu platform, selesai banyak pekerjaan",
+      "headingLead": "Chat, order, data, iklan,",
+      "headingAccent": "dan agent yang siap bantu.",
+      "body": "Semuanya jalan di konteks pelanggan yang sama — jawaban, order, catatan, promosi, sampai saran bisnis tidak pernah saling salah paham.",
+      "chat": {
+        "title": "Balas 24/7 di semua kanal",
+        "body": "WhatsApp, Instagram, dan live chat masuk ke satu inbox. AI menjawab dalam hitungan detik; tim Anda masuk saat butuh sentuhan manusia."
       },
-      "mini": {
-        "title": "Mini Agent",
-        "lead": "Bantuan kecil, hasil cepat",
-        "body": "Butuh agent khusus untuk tanya-jawab umum atau rapikan lead? Pasang yang ringan dan praktis, tanpa proyek panjang.",
-        "pill1": "Cepat dipasang",
-        "pill2": "Fokus satu tugas",
-        "pill3": "Mudah digabung"
-      },
-      "oms": {
-        "title": "OMS",
-        "lead": "Order selesai di dalam chat",
-        "body": "Hitung ongkir, kirim link bayar, dan pantau pengiriman tanpa pindah aplikasi atau catat order manual.",
-        "pill1": "Chat langsung jadi order",
-        "pill2": "Ongkir & pembayaran",
-        "pill3": "Proses lebih ringan"
+      "order": {
+        "title": "Order selesai di dalam chat",
+        "body": "Hitung ongkir, kirim link bayar, dan pantau pengiriman tanpa berpindah aplikasi atau mencatat order manual."
       },
       "crm": {
-        "title": "Cekat CRM",
-        "lead": "Catatan pelanggan terisi sendiri",
-        "body": "Setiap chat, perubahan tahap, dan pembelian otomatis tersimpan. Tim fokus jualan, bukan input data tiap sore.",
-        "pill1": "Aktivitas tercatat otomatis",
-        "pill2": "Pipeline selalu update",
-        "pill3": "Riwayat pelanggan lengkap"
+        "title": "CRM yang terisi sendiri",
+        "body": "Setiap percakapan dan tahap deal otomatis tersimpan. Tim fokus jualan, bukan mengetik data tiap sore."
       },
       "marketing": {
-        "title": "Cekat Marketing",
-        "lead": "Tahu iklan mana yang menghasilkan",
-        "body": "Broadcast yang tepat sasaran, follow-up terjadwal, dan gambaran jelas iklan mana yang benar-benar menghasilkan penjualan.",
-        "pill1": "Broadcast tersegmen",
-        "pill2": "Lihat yang untung",
-        "pill3": "Siap untuk iklan"
+        "title": "Tahu iklan mana yang untung",
+        "body": "Broadcast tersegmen, follow-up terjadwal, dan gambaran ROAS yang tersambung ke percakapan yang menutup deal."
       },
       "consulting": {
-        "title": "Consulting Agent",
-        "lead": "Saran yang nyambung dengan bisnis Anda",
-        "body": "Agent yang bantu baca pola dari data Anda sendiri dan usulkan langkah berikutnya, bukan tips umum dari internet.",
-        "pill1": "Saran dari data Anda",
-        "pill2": "Langkah yang jelas",
-        "pill3": "Tetap diawasi tim"
+        "title": "Tanya kondisi bisnis kapan saja",
+        "body": "Bingung penjualan minggu ini naik atau turun? Agent membaca data Anda dan menjawab dengan langkah yang jelas, bukan tebakan."
+      },
+      "mini": {
+        "title": "Mini agent untuk kerjaan kecil",
+        "body": "Tambahkan sendiri tugas ringan — rekap chat, reminder, follow-up — pasang cepat tanpa proyek panjang."
+      },
+      "oms": {
+        "title": "OMS menyimpan semua order",
+        "body": "Setiap order dan pembelian tercatat rapi di sistem: status, pembayaran, dan pengiriman selalu bisa ditelusuri."
       }
     },
     "pricing": {
@@ -1215,7 +1195,7 @@
       "eyebrow": "Di lapangan",
       "headingLead": "Dipakai setiap hari",
       "headingAccent": "oleh tim yang sedang tumbuh.",
-      "body": "Cuplikan momen kerja nyata — dari meja CS sampai toko dan kantor. Ganti foto ini dengan materi brand Anda kapan pun siap."
+      "body": "Semua terhubung dari meja CS sampai toko dan kantor. Cekat.ai siap bantu tim kamu secara penuh."
     },
     "photoBand": {
       "quote": "Kalau chat-nya berantakan, revenue-nya bocor diam-diam. Cekat bantu kami merapikannya jadi satu sistem.",
@@ -1261,39 +1241,6 @@
       "body": "AI agent, CRM, dan automasi yang sama dipakai dengan cara berbeda oleh tiap tim. Pilih peranmu dan lihat alur kerjanya.",
       "readMore": "Selengkapnya",
       "swipeHint": "Geser untuk melihat peran lain →"
-    },
-    "problemSolution": {
-      "eyebrow": "Masalah → solusi",
-      "headingLead": "Chat berantakan",
-      "headingAccent": "jadi sistem.",
-      "body": "Tiga gesekan yang paling sering bikin revenue bocor — dan bagaimana Cekat menutupnya di satu platform.",
-      "beforeLabel": "Sebelum",
-      "afterLabel": "Dengan Cekat",
-      "note": "Satu platform. Chat, CRM, agent, dan marketing saling kenal.",
-      "p1": {
-        "title": "Chat tercecer di banyak HP",
-        "body": "Satu nomor rebutan, balasan lambat, lead hilang di riwayat pribadi admin."
-      },
-      "p2": {
-        "title": "CRM diisi manual setiap sore",
-        "body": "Tim habis waktu input data, pipeline selalu basi, follow-up sering terlewat."
-      },
-      "p3": {
-        "title": "Iklan jalan, atribusi kabur",
-        "body": "Tidak jelas iklan mana yang benar-benar berujung closing — budget jadi tebakan."
-      },
-      "s1": {
-        "title": "Satu inbox omnichannel",
-        "body": "WA, IG, Messenger, dan live chat masuk ke satu tempat; AI balas 24/7, case sulit diserah ke tim."
-      },
-      "s2": {
-        "title": "CRM terisi sendiri dari chat",
-        "body": "Profil, tahap deal, dan riwayat tercatat otomatis — pipeline selalu hidup tanpa input manual."
-      },
-      "s3": {
-        "title": "Loop chat → penjualan → iklan",
-        "body": "Broadcast, follow-up, dan gambaran ROAS terhubung ke percakapan yang sama yang menutup deal."
-      }
     },
     "cipherBand": {
       "label": "Cekat data motif",

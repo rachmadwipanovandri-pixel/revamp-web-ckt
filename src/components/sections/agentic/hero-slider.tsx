@@ -1,6 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type PointerEvent as ReactPointerEvent,
+} from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { REGISTER_URL } from "@/lib/links";
 import { WhatsAppAnchor } from "@/components/shared/whatsapp-anchor";
@@ -32,8 +37,9 @@ const PRODUCT_SUITE = [
 /**
  * Slide picker — manual only (never auto-advances).
  *
- * One pair of arrows, responsive placement: page gutters on md+, compact
- * strip under the CTAs on small screens. Never sits on the collage.
+ * One pair of arrows, always floating: pinned to the hero block's left and
+ * right edges and vertically centered over it (every breakpoint). The rail
+ * itself is click-through; only the arrow buttons capture pointer events.
  */
 export function SlideDots({
   slides,
@@ -58,11 +64,10 @@ export function SlideDots({
       aria-label={label}
       data-hero-slide-dots="arrows"
       className={cn(
-        "z-20 flex items-center justify-between gap-4",
-        // Small screens: compact row under the CTAs.
-        // md+: dock to the page gutters beside the hero block (not on the collage).
-        "mx-auto mt-5 w-full max-w-[16rem]",
-        "md:pointer-events-none md:absolute md:top-1/2 md:right-0 md:left-0 md:mt-0 md:max-w-none md:-translate-y-1/2 md:px-3 lg:px-6 xl:px-10",
+        // Floating rail: full height of the hero block, arrows pushed to the
+        // left/right edges. Click-through so taps and swipes reach the content.
+        "pointer-events-none absolute inset-y-0 left-0 right-0 z-20 flex items-center justify-between",
+        "md:px-3 lg:px-6 xl:px-10",
         className,
       )}
     >
@@ -70,32 +75,49 @@ export function SlideDots({
         type="button"
         aria-label="Previous slide"
         onClick={() => pick(index - 1)}
-        className="pointer-events-auto grid size-12 shrink-0 cursor-pointer place-items-center rounded-full border border-white/25 bg-white/10 text-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.55)] backdrop-blur-md transition-all hover:scale-105 hover:bg-white/20 active:scale-95 motion-reduce:transition-none lg:size-14"
+        className="pointer-events-auto grid size-10 shrink-0 cursor-pointer place-items-center text-white/65 transition-all hover:scale-110 hover:text-white active:scale-95 motion-reduce:transition-none lg:size-12"
       >
-        <ChevronLeft aria-hidden className="size-6 lg:size-7" strokeWidth={2.4} />
+        <ChevronLeft
+          aria-hidden
+          className="size-7 lg:size-8"
+          strokeWidth={2.2}
+        />
       </button>
-
-      {/* Slide position — readable cue in the middle of the strip on mobile. */}
-      <span
-        aria-hidden
-        className="font-numeric text-xs text-white/60 tabular-nums md:hidden"
-      >
-        {index + 1} / {count}
-      </span>
-      {/* Spacer keeps arrows pinned to the gutters on desktop. */}
-      <span aria-hidden className="hidden flex-1 md:block" />
 
       <button
         type="button"
         aria-label="Next slide"
         onClick={() => pick(index + 1)}
-        className="pointer-events-auto grid size-12 shrink-0 cursor-pointer place-items-center rounded-full border border-white/25 bg-white/10 text-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.55)] backdrop-blur-md transition-all hover:scale-105 hover:bg-white/20 active:scale-95 motion-reduce:transition-none lg:size-14"
+        className="pointer-events-auto grid size-10 shrink-0 cursor-pointer place-items-center text-white/65 transition-all hover:scale-110 hover:text-white active:scale-95 motion-reduce:transition-none lg:size-12"
       >
-        <ChevronRight aria-hidden className="size-6 lg:size-7" strokeWidth={2.4} />
+        <ChevronRight
+          aria-hidden
+          className="size-7 lg:size-8"
+          strokeWidth={2.2}
+        />
       </button>
     </nav>
   );
 }
+
+/** Axis-lock threshold before the drag starts moving the hero track. */
+const DRAG_LOCK_PX = 6;
+/** Distance the gesture must travel horizontally to change the slide. */
+const DRAG_COMMIT_PX = 40;
+/** How long the outgoing hero flies out before the next slide mounts. */
+const DRAG_THROW_MS = 200;
+
+type HeroDrag = {
+  pointerId: number;
+  startX: number;
+  startY: number;
+  axis: "x" | "y" | null;
+};
+
+const prefersReducedMotion = () =>
+  typeof window !== "undefined" &&
+  typeof window.matchMedia === "function" &&
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 /**
  * Two-column homepage hero content: manual (never auto-advancing) product
@@ -116,117 +138,252 @@ export function HeroSlider({ copy }: { copy: HeroSliderCopy }) {
     label: slide.stageLabel,
   }));
 
+  /** Mirror of `index` so timers scheduled mid-drag read the live slide. */
+  const indexRef = useRef(0);
+  useEffect(() => {
+    indexRef.current = index;
+  }, [index]);
+
   /** Jump to a slide (dot click). Direction = shortest path around the rail. */
   const goTo = (to: number) => {
-    if (to === index || to < 0 || to >= slideCount) return;
-    const forward = (to - index + slideCount) % slideCount;
+    const current = indexRef.current;
+    if (to === current || to < 0 || to >= slideCount) return;
+    const forward = (to - current + slideCount) % slideCount;
     setDirection(forward <= slideCount / 2 ? 1 : -1);
     setIndex(to);
   };
 
+  /** Live drag — the track follows the pointer via direct style writes (no
+      re-renders), then throws out along the swipe before the slide swaps. */
+  const trackRef = useRef<HTMLDivElement>(null);
+  const dragRef = useRef<HeroDrag | null>(null);
+  const commitTimerRef = useRef<number | null>(null);
+
+  const setTrack = (transform: string, transition: string) => {
+    const track = trackRef.current;
+    if (!track) return;
+    track.style.transition = transition;
+    track.style.transform = transform;
+  };
+
+  const resetTrack = (animate: boolean) => {
+    if (animate && !prefersReducedMotion()) {
+      setTrack(
+        "translate3d(0, 0, 0)",
+        "transform 240ms cubic-bezier(0.22, 1, 0.36, 1)",
+      );
+    } else {
+      setTrack("", "");
+    }
+    if (trackRef.current) trackRef.current.style.willChange = "";
+  };
+
+  const handlePointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
+    if (!event.isPrimary) return;
+    // A re-press mid-throw wins: cancel the pending slide swap.
+    if (commitTimerRef.current !== null) {
+      window.clearTimeout(commitTimerRef.current);
+      commitTimerRef.current = null;
+    }
+    // Freeze any snap-back so the track never lags behind the finger.
+    if (trackRef.current) trackRef.current.style.transition = "";
+    dragRef.current = {
+      pointerId: event.pointerId,
+      startX: event.clientX,
+      startY: event.clientY,
+      axis: null,
+    };
+  };
+
+  const handlePointerMove = (event: ReactPointerEvent<HTMLDivElement>) => {
+    const drag = dragRef.current;
+    if (!drag || event.pointerId !== drag.pointerId) return;
+    const dx = event.clientX - drag.startX;
+    const dy = event.clientY - drag.startY;
+    if (!drag.axis) {
+      if (Math.abs(dx) < DRAG_LOCK_PX && Math.abs(dy) < DRAG_LOCK_PX) return;
+      if (Math.abs(dx) <= Math.abs(dy)) {
+        drag.axis = "y"; // vertical gesture — the page keeps scrolling
+        return;
+      }
+      drag.axis = "x";
+      const track = trackRef.current;
+      if (track) {
+        track.style.transition = "";
+        track.style.willChange = "transform";
+      }
+      try {
+        // Keep pointer events arriving even after the pointer leaves the hero.
+        event.currentTarget.setPointerCapture?.(event.pointerId);
+      } catch {
+        // Capture unsupported — moves that bubble still drive the track.
+      }
+    }
+    if (drag.axis !== "x") return;
+    setTrack(`translate3d(${dx}px, 0, 0)`, "");
+  };
+
+  const handlePointerUp = (event: ReactPointerEvent<HTMLDivElement>) => {
+    const drag = dragRef.current;
+    dragRef.current = null;
+    if (!drag || event.pointerId !== drag.pointerId || drag.axis !== "x")
+      return;
+
+    const dx = event.clientX - drag.startX;
+    const dy = event.clientY - drag.startY;
+    // Not far enough (or turned vertical at the last moment): settle back.
+    if (Math.abs(dx) < DRAG_COMMIT_PX || Math.abs(dx) <= Math.abs(dy)) {
+      resetTrack(true);
+      return;
+    }
+
+    const commit = () => {
+      commitTimerRef.current = null;
+      goTo(
+        dx < 0
+          ? (indexRef.current + 1) % slideCount
+          : (indexRef.current - 1 + slideCount) % slideCount,
+      );
+      resetTrack(false);
+    };
+
+    if (prefersReducedMotion()) {
+      commit();
+      return;
+    }
+
+    // Fly out along the swipe direction, then mount the next slide — the
+    // enter animation picks the same direction up from here.
+    const sign = dx < 0 ? -1 : 1;
+    setTrack(
+      `translate3d(${dx + sign * 140}px, 0, 0)`,
+      `transform ${DRAG_THROW_MS}ms cubic-bezier(0.55, 0, 1, 0.45)`,
+    );
+    commitTimerRef.current = window.setTimeout(commit, DRAG_THROW_MS);
+  };
+
+  // Pointer events cover touch, mouse, and pen in one path. `touch-pan-y`
+  // tells mobile browsers horizontal drags belong to us, select-none keeps a
+  // drag from highlighting the hero copy, and grab/grabbing advertises the
+  // drag on desktop (interactive children keep their own pointer cursors).
   return (
-    <div className="relative">
-      {/* Compact keynote copy so the product collage stays high in the fold. */}
-      <div className="hero-stagger mx-auto flex max-w-3xl flex-col items-center text-center">
-        <p
-          key={`eyebrow-${active.key}`}
-          data-slide-dir={direction}
-          className="hero-slide-fade mb-3 inline-flex items-center gap-2 rounded-full border border-sky-400/35 bg-sky-400/12 px-3 py-1 font-numeric text-[0.65rem] font-semibold tracking-[0.14em] text-sky-200 uppercase backdrop-blur"
-        >
-          <span
-            aria-hidden
-            className="animate-pulse-soft size-1.5 rounded-full bg-sky-300"
-          />
-          {active.eyebrow}
-        </p>
-
-        {/* LCP candidate: fully opaque in the first paint (no opacity-from-0). */}
-        <div
-          key={`copy-${active.key}`}
-          data-slide-dir={direction}
-          className="hero-slide"
-        >
-          <h1 className="mx-auto max-w-[32ch] text-[clamp(1.45rem,3.6vw,2.1rem)] leading-[1.1] font-semibold tracking-[-0.03em] text-balance text-white">
-            {active.titleLead}
-            {active.titleAccent ? (
-              <>
-                {" "}
-                <span className="bg-linear-to-r from-sky-300 via-cyan-300 to-blue-400 bg-clip-text text-transparent">
-                  {active.titleAccent}
-                </span>
-              </>
-            ) : null}
-          </h1>
-
-          <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-sky-50/85 sm:text-base">
-            {active.subtitle}
-          </p>
-
-          {/* Product suite context — static labels, not interactive pills. */}
+    <div
+      className="relative touch-pan-y select-none cursor-grab active:cursor-grabbing"
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
+      onPointerCancel={() => {
+        if (dragRef.current?.axis === "x") resetTrack(true);
+        dragRef.current = null;
+      }}
+    >
+      {/* Drag track — translated inline during a drag; the slide swap resets
+          it before paint so only the enter animation is visible. */}
+      <div ref={trackRef}>
+        {/* Compact keynote copy so the product collage stays high in the fold. */}
+        {/* Compact keynote copy so the product collage stays high in the fold. */}
+        <div className="hero-stagger mx-auto flex max-w-3xl flex-col items-center text-center">
           <p
-            aria-label="Product suite"
-            className="mx-auto mt-3 flex max-w-2xl flex-wrap items-center justify-center gap-x-2 gap-y-1 font-numeric text-[0.68rem] tracking-[0.08em] text-sky-200/70 uppercase"
+            key={`eyebrow-${active.key}`}
+            data-slide-dir={direction}
+            className="hero-slide-fade mb-3 inline-flex items-center gap-2 rounded-full border border-sky-400/35 bg-sky-400/12 px-3 py-1 font-numeric text-[0.65rem] font-semibold tracking-[0.14em] text-sky-200 uppercase backdrop-blur"
           >
-            {PRODUCT_SUITE.map((name, i) => (
-              <span key={name} className="inline-flex items-center gap-2">
-                {i > 0 ? (
-                  <span aria-hidden className="text-sky-300/40">
-                    ·
-                  </span>
-                ) : null}
-                {name}
-              </span>
-            ))}
+            <span
+              aria-hidden
+              className="animate-pulse-soft size-1.5 rounded-full bg-sky-300"
+            />
+            {active.eyebrow}
           </p>
-        </div>
 
-        {/* Same pairing and order as the navbar: WhatsApp filled, trial
+          {/* LCP candidate: fully opaque in the first paint (no opacity-from-0). */}
+          <div
+            key={`copy-${active.key}`}
+            data-slide-dir={direction}
+            className="hero-slide"
+          >
+            <h1 className="mx-auto max-w-[32ch] text-[clamp(1.45rem,3.6vw,2.1rem)] leading-[1.1] font-semibold tracking-[-0.03em] text-balance text-white">
+              {active.titleLead}
+              {active.titleAccent ? (
+                <>
+                  {" "}
+                  <span className="bg-linear-to-r from-sky-300 via-cyan-300 to-blue-400 bg-clip-text text-transparent">
+                    {active.titleAccent}
+                  </span>
+                </>
+              ) : null}
+            </h1>
+
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-sky-50/85 sm:text-base">
+              {active.subtitle}
+            </p>
+
+            {/* Product suite context — static labels, not interactive pills. */}
+            <p
+              aria-label="Product suite"
+              className="mx-auto mt-3 flex max-w-2xl flex-wrap items-center justify-center gap-x-2 gap-y-1 font-numeric text-[0.68rem] tracking-[0.08em] text-sky-200/70 uppercase"
+            >
+              {PRODUCT_SUITE.map((name, i) => (
+                <span key={name} className="inline-flex items-center gap-2">
+                  {i > 0 ? (
+                    <span aria-hidden className="text-sky-300/40">
+                      ·
+                    </span>
+                  ) : null}
+                  {name}
+                </span>
+              ))}
+            </p>
+          </div>
+
+          {/* Same pairing and order as the navbar: WhatsApp filled, trial
             outlined. Repeating the nav's hierarchy means a visitor who
             scrolled past the header meets the same primary action. */}
-        <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
-          <Button
-            size="lg"
-            className="h-12 rounded-full bg-white px-6 text-sm text-ink-void shadow-[0_16px_40px_-16px_rgba(255,255,255,0.4)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-sky-50 active:scale-[0.98] motion-reduce:transition-none sm:h-13 sm:px-8"
-            nativeButton={false}
-            render={
-              <WhatsAppAnchor target="_blank" rel="noopener noreferrer" />
-            }
-          >
-            <SafeIcon icon={mdiWhatsapp} className="size-4" size="1rem" />
-            {copy.ctaPrimary}
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="h-12 rounded-full border-sky-300/40 bg-sky-400/10 px-6 text-sm text-white backdrop-blur transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:border-sky-200/70 hover:bg-sky-400/20 active:scale-[0.98] motion-reduce:transition-none sm:h-13 sm:px-8"
-            nativeButton={false}
-            render={<AppAnchor href={REGISTER_URL} />}
-          >
-            {copy.ctaSecondary}
-          </Button>
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
+            <Button
+              size="lg"
+              className="h-12 cursor-pointer rounded-full bg-white px-6 text-sm text-ink-void shadow-[0_16px_40px_-16px_rgba(255,255,255,0.4)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-sky-50 active:scale-[0.98] motion-reduce:transition-none sm:h-13 sm:px-8"
+              nativeButton={false}
+              render={
+                <WhatsAppAnchor target="_blank" rel="noopener noreferrer" />
+              }
+            >
+              <SafeIcon icon={mdiWhatsapp} className="size-4" size="1rem" />
+              {copy.ctaPrimary}
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="h-12 cursor-pointer rounded-full border-sky-300/40 bg-sky-400/10 px-6 text-sm text-white backdrop-blur transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:border-sky-200/70 hover:bg-sky-400/20 active:scale-[0.98] motion-reduce:transition-none sm:h-13 sm:px-8"
+              nativeButton={false}
+              render={<AppAnchor href={REGISTER_URL} />}
+            >
+              {copy.ctaSecondary}
+            </Button>
+          </div>
+
+          {/* Floating arrows — pinned to the hero's left/right edges on every
+            breakpoint; the hero root also maps horizontal swipes to next/prev. */}
+          <SlideDots
+            slides={dots}
+            index={index}
+            onSelect={goTo}
+            label={copy.navLabel}
+          />
         </div>
 
-        {/* Mobile: compact strip under CTAs. md+: same pair docks to page gutters. */}
-        <SlideDots
-          slides={dots}
-          index={index}
-          onSelect={goTo}
-          label={copy.navLabel}
-        />
-      </div>
-
-      {/* Product stage — every slide is the live collage; `focus` lifts the
+        {/* Product stage — every slide is the live collage; `focus` lifts the
           product window for that slide (no flat screenshots). */}
-      <div
-        key={`stage-${active.key}`}
-        data-slide-dir={direction}
-        className="hero-slide-art relative mx-auto mt-6 w-full max-w-5xl sm:mt-8 lg:max-w-[58rem] xl:max-w-[64rem]"
-      >
         <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10 rounded-full bg-primary/40 blur-3xl"
-        />
-        <HeroCollage focus={active.key} />
+          key={`stage-${active.key}`}
+          data-slide-dir={direction}
+          className="hero-slide-art relative mx-auto mt-6 w-full max-w-5xl sm:mt-8 lg:max-w-[58rem] xl:max-w-[64rem]"
+        >
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 -z-10 rounded-full bg-primary/40 blur-3xl"
+          />
+          <HeroCollage focus={active.key} />
+        </div>
       </div>
     </div>
   );

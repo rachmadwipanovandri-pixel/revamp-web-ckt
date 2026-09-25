@@ -1106,58 +1106,38 @@
       "stat3Value": "2M+",
       "stat3Label": "chats handled daily"
     },
-    "products": {
-      "eyebrow": "What you can put to work",
-      "headingLead": "Six ways",
-      "headingAccent": "to keep business moving.",
-      "body": "From first reply to fulfilled order — each agent has a clear role, and they all know the same customer.",
-      "frontline": {
-        "title": "Frontline Chat Agent",
-        "lead": "Reply and help customers 24/7",
-        "body": "AI on WhatsApp, IG, web, and other channels. Customers get a fast answer; your team gets leads when they are ready to talk.",
-        "pill1": "Every channel, one inbox",
-        "pill2": "Hand off to the team when needed",
-        "pill3": "Ready anytime"
+    "features": {
+      "eyebrow": "One platform, many jobs done",
+      "headingLead": "Chat, orders, data, ads,",
+      "headingAccent": "and agents that help.",
+      "body": "Everything runs on the same customer context — answers, orders, notes, campaigns, and business advice never drift apart.",
+      "chat": {
+        "title": "Replies 24/7 on every channel",
+        "body": "WhatsApp, Instagram, and live chat land in one inbox. The AI answers in seconds; your team steps in when a human touch is needed."
       },
-      "mini": {
-        "title": "Mini Agent",
-        "lead": "Small helper, quick results",
-        "body": "Need a specialist for FAQs or tidying up leads? Start light — practical, no long project.",
-        "pill1": "Quick to set up",
-        "pill2": "One clear job",
-        "pill3": "Easy to combine"
-      },
-      "oms": {
-        "title": "OMS",
-        "lead": "Orders closed inside the chat",
-        "body": "Shipping, payment links, and delivery tracking without switching apps or logging orders by hand.",
-        "pill1": "Chat becomes an order",
-        "pill2": "Shipping & payments",
-        "pill3": "Lighter process"
+      "order": {
+        "title": "Orders closed inside the chat",
+        "body": "Shipping costs, payment links, and delivery tracking without leaving the conversation or logging orders by hand."
       },
       "crm": {
-        "title": "Cekat CRM",
-        "lead": "Customer notes fill themselves in",
-        "body": "Every chat, stage change, and purchase is saved automatically. Your team sells — nobody spends evenings on data entry.",
-        "pill1": "Activity logged for you",
-        "pill2": "Pipeline stays current",
-        "pill3": "Full customer history"
+        "title": "A CRM that fills itself",
+        "body": "Every conversation and deal stage saves automatically. Your team sells instead of typing data each evening."
       },
       "marketing": {
-        "title": "Cekat Marketing",
-        "lead": "See which ads actually pay off",
-        "body": "Well-targeted broadcasts, well-timed follow-ups, and a clear picture of which ads bring real sales.",
-        "pill1": "Targeted broadcasts",
-        "pill2": "See what profits",
-        "pill3": "Ready for ads"
+        "title": "See which ads actually pay off",
+        "body": "Segmented broadcasts, scheduled follow-ups, and ROAS tied back to the conversation that closed the deal."
       },
       "consulting": {
-        "title": "Consulting Agent",
-        "lead": "Advice that fits your business",
-        "body": "An agent that reads patterns in your own data and suggests the next step — not generic tips from the internet.",
-        "pill1": "Advice from your data",
-        "pill2": "Clear next steps",
-        "pill3": "Team stays in control"
+        "title": "Ask about your business anytime",
+        "body": "Wondering if sales are up this week? The agent reads your own data and answers with a clear next step, not a guess."
+      },
+      "mini": {
+        "title": "Mini agents for small jobs",
+        "body": "Add your own light tasks — chat recaps, reminders, follow-ups — quick to set up, no long project."
+      },
+      "oms": {
+        "title": "OMS keeps every order",
+        "body": "Every order and purchase is filed neatly in the system — status, payment, and delivery always traceable."
       }
     },
     "pricing": {
@@ -1261,39 +1241,6 @@
       "body": "The same AI agents, CRM, and automation — used differently by every team. Pick your role and see the workflow.",
       "readMore": "Learn more",
       "swipeHint": "Swipe to see more roles →"
-    },
-    "problemSolution": {
-      "eyebrow": "Problem → solution",
-      "headingLead": "Messy chat",
-      "headingAccent": "becomes a system.",
-      "body": "Three frictions that leak revenue — and how Cekat closes them on one platform.",
-      "beforeLabel": "Before",
-      "afterLabel": "With Cekat",
-      "note": "One platform. Chat, CRM, agents, and marketing share the same customer.",
-      "p1": {
-        "title": "Chats scattered across phones",
-        "body": "One number fought over, slow replies, leads lost in personal history."
-      },
-      "p2": {
-        "title": "CRM filled by hand each evening",
-        "body": "The team burns time on data entry, the pipeline stays stale, follow-ups slip."
-      },
-      "p3": {
-        "title": "Ads run, attribution is fuzzy",
-        "body": "Hard to know which ads actually closed deals — budget becomes a guess."
-      },
-      "s1": {
-        "title": "One omnichannel inbox",
-        "body": "WA, IG, Messenger, and live chat in one place; AI answers 24/7, hard cases hand off with context."
-      },
-      "s2": {
-        "title": "CRM fills itself from chat",
-        "body": "Profiles, deal stages, and history log automatically — a live pipeline with no manual entry."
-      },
-      "s3": {
-        "title": "Chat → sale → ads loop",
-        "body": "Broadcasts, follow-ups, and ROAS connect to the same conversations that closed the deal."
-      }
     },
     "cipherBand": {
       "label": "Cekat data motif",

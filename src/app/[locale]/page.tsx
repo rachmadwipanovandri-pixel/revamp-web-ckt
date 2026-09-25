@@ -4,8 +4,7 @@ import {
   LogoStrip,
   SoundWords,
   Proof,
-  Products,
-  ProblemSolution,
+  Features,
   HowItWorks,
   CaseStudy,
   Pricing,
@@ -23,8 +22,8 @@ import { IndustryCarousel } from "@/components/sections/home/industry-carousel";
 /**
  * Production homepage — incident.io editorial rhythm.
  *
- * Order: hero → logo wall → proof metrics → pillars → problem/solution →
- * platform products → sticky how-it-works → industries → featured case study
+ * Order: hero → logo wall → proof metrics → pillars → feature grid →
+ * sticky how-it-works → industries → featured case study
  * → photo gallery → customer stories → photo band → pricing → integrations
  * → security → FAQ → closer.
  *
@@ -53,10 +52,7 @@ export default async function HomePage({
         <SoundWords />
       </div>
       <div className="cv-auto">
-        <ProblemSolution />
-      </div>
-      <div className="cv-auto">
-        <Products />
+        <Features />
       </div>
       {/* No cv-auto: content-visibility containment breaks position:sticky
           on the Live stage inside HowItWorks. */}
