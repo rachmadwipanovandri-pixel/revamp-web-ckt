@@ -42,6 +42,7 @@ const CLIENT_MESSAGE_KEYS = [
   "contact",
   "wireframe",
   "comparison",
+  "events",
 ] as const;
 
 function pickClientMessages(messages: Record<string, unknown>) {

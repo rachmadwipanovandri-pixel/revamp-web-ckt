@@ -1,0 +1,223 @@
+[
+  {
+    "slug": "webinar-bisnis-travel-ai",
+    "status": "published",
+    "title": "Webinar Gratis: Dari Chat ke Booking, Sampai Booking Berikutnya",
+    "badge": "WEBINAR GRATIS · TOUR & TRAVEL",
+    "excerpt": "Peak season kewalahan, low season sepi. Pelajari cara AI membantu kamu maksimalkan booking di peak dan tetap dapat revenue di low season.",
+    "cover": "/images/events/webinar-travel-hero.jpg",
+    "startsAt": "2026-09-29T14:00:00+07:00",
+    "dateLabel": "Selasa, 29 September 2026",
+    "timeLabel": "14.00 – 15.00 WIB",
+    "locationLabel": "Google Meet",
+    "priceLabel": "Gratis",
+    "registrationWebhook": "https://docs.google.com/spreadsheets/d/15GQj1tggxoOmnjuk5_4lYmBD4HIvWSV4kfdSRcg3v2o/edit?gid=0#gid=0",
+    "updatedAt": "2026-09-25T07:20:38.067Z",
+    "sections": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "visible": true,
+        "eyebrow": "WEBINAR GRATIS · TOUR & TRAVEL",
+        "quote": "\"Dari Chat ke Booking, Sampai Booking Berikutnya\"",
+        "headline": "Revenue bisnis travel kamu tidak harus ikut musim.",
+        "body": "Peak season kewalahan, low season sepi. Pelajari cara AI membantu kamu maksimalkan booking di peak dan tetap dapat revenue di low season.",
+        "ctaLabel": "Daftar Sekarang, Gratis",
+        "image": "/images/events/webinar-travel-hero.jpg",
+        "imageAlt": "Bisnis travel dengan AI Cekat"
+      },
+      {
+        "id": "problems-1",
+        "type": "problems",
+        "visible": true,
+        "eyebrow": "KENALI SITUASIMU",
+        "heading": "Bisnis travel yang jalan sendiri. Masalahnya tetap sama.",
+        "intro": "Kalau kamu pernah merasakan salah satu ini, webinar ini untuk kamu.",
+        "items": [
+          {
+            "id": "p1",
+            "icon": "📱",
+            "title": "Peak season, WA meledak, leads kabur ke agen sebelah",
+            "body": "Lebaran, libur sekolah, akhir tahun. Ramai, tapi banyak yang nanya dan nggak dibalas tepat waktu. Mereka langsung cari agen lain yang lebih responsif."
+          },
+          {
+            "id": "p2",
+            "icon": "📉",
+            "title": "Low season, sepi total, nggak ada yang re-engage customer lama",
+            "body": "Nggak ada sistem yang otomatis ngehubungin customer tahun lalu. Revenue mati sampai musim ramai berikutnya. Padahal mereka sudah pernah booking sama kamu."
+          },
+          {
+            "id": "p3",
+            "icon": "🗒️",
+            "title": "Follow-up manual: lupa, ketinggalan, nggak ada visibility",
+            "body": "Siapa yang sudah dikonfirmasi? Siapa yang masih nunggu? Siapa yang ghosted? Semua ada di WA tapi nggak ada yang tahu statusnya."
+          },
+          {
+            "id": "p4",
+            "icon": "📢",
+            "title": "Broadcast promo jalan, tapi nggak tahu siapa yang beneran booking",
+            "body": "Kirim promo umroh, dapat reply. Tapi siapa yang closing? Promo mana yang kerja? Semua ditebak, bukan ditracking."
+          }
+        ]
+      },
+      {
+        "id": "takeaways-1",
+        "type": "takeaways",
+        "visible": true,
+        "eyebrow": "YANG AKAN KAMU BAWA PULANG",
+        "heading": "Bukan teori. Langkah konkret.",
+        "intro": "Selesai webinar, kamu tahu persis apa yang bisa langsung dijalankan minggu ini.",
+        "items": [
+          {
+            "id": "t1",
+            "title": "Cara otomasi response WA tanpa kehilangan sentuhan personal",
+            "body": "Customer tetap merasa dilayani, bahkan di jam 2 pagi."
+          },
+          {
+            "id": "t2",
+            "title": "Sistem follow-up otomatis dari tanya-tanya sampai booking dikonfirmasi",
+            "body": "Nggak ada leads yang jatuh dari celah karena lupa di-follow up."
+          },
+          {
+            "id": "t3",
+            "title": "Strategi re-engagement customer lama di low season",
+            "body": "Generate repeat booking dari database yang sudah kamu punya tapi belum dimaksimalkan."
+          },
+          {
+            "id": "t4",
+            "title": "Cara segmentasi pelanggan dan kirim penawaran yang relevan",
+            "body": "Orang yang pernah umroh vs. orang yang suka liburan keluarga, beda penawaran, beda timing."
+          },
+          {
+            "id": "t5",
+            "title": "Sesi tanya jawab + konsultasi singkat gratis",
+            "body": "Tanya langsung ke pembicara soal kondisi spesifik bisnis travel kamu."
+          }
+        ]
+      },
+      {
+        "id": "speakers-1",
+        "type": "speakers",
+        "visible": true,
+        "eyebrow": "PEMBICARA",
+        "heading": "Kamu belajar dari orang yang sudah di lapangan.",
+        "intro": "",
+        "items": [
+          {
+            "id": "s1",
+            "name": "Farrel Savero",
+            "role": "Head of Business Solutions, Cekat.AI",
+            "photo": "/images/events/speaker-farrel.jpg"
+          }
+        ]
+      },
+      {
+        "id": "stats-1",
+        "type": "stats",
+        "visible": true,
+        "eyebrow": "HASIL DARI KLIEN KAMI",
+        "heading": "Angka yang sudah terbukti.",
+        "items": [
+          {
+            "id": "st1",
+            "value": "+40%",
+            "label": "peningkatan konversi chat ke booking"
+          },
+          {
+            "id": "st2",
+            "value": "30%",
+            "label": "repeat customer dalam 3 bulan pertama"
+          },
+          {
+            "id": "st3",
+            "value": "24/7",
+            "label": "response otomatis tanpa tambah tim"
+          }
+        ]
+      },
+      {
+        "id": "faq-1",
+        "type": "faq",
+        "visible": true,
+        "eyebrow": "PERTANYAAN UMUM",
+        "heading": "Sebelum kamu daftar.",
+        "items": [
+          {
+            "id": "q1",
+            "question": "Apakah ini gratis?",
+            "answer": "Ya, 100% gratis. Tidak ada biaya tersembunyi."
+          },
+          {
+            "id": "q2",
+            "question": "Bagaimana cara bergabung?",
+            "answer": "Setelah daftar, link Google Meet dikirim ke email kamu sebelum acara."
+          },
+          {
+            "id": "q3",
+            "question": "Apakah ada rekamannya?",
+            "answer": "Rekaman akan dibagikan ke peserta terdaftar setelah acara selesai."
+          },
+          {
+            "id": "q4",
+            "question": "Cocok untuk bisnis seberapa besar?",
+            "answer": "Dari agen rumahan sampai TIM dengan beberapa cabang — selama masih handle chat sendiri, ini cocok."
+          }
+        ]
+      },
+      {
+        "id": "register-1",
+        "type": "register",
+        "visible": true,
+        "eyebrow": "DAFTAR SEKARANG",
+        "heading": "Amankan kursimu. Gratis.",
+        "quote": "\"Dari Chat ke Booking, Sampai Booking Berikutnya\"",
+        "submitLabel": "Daftar Sekarang, Gratis",
+        "successTitle": "Kamu terdaftar!",
+        "successBody": "Link Google Meet dikirim ke email kamu sebelum acara.",
+        "disclaimer": "Dengan mendaftar, kamu setuju untuk dihubungi oleh tim Cekat.AI.",
+        "fields": [
+          {
+            "id": "f1",
+            "name": "name",
+            "label": "Nama lengkap",
+            "type": "text",
+            "required": true,
+            "options": ""
+          },
+          {
+            "id": "f2",
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true,
+            "options": ""
+          },
+          {
+            "id": "f3",
+            "name": "whatsapp",
+            "label": "Nomor WhatsApp",
+            "type": "tel",
+            "required": true,
+            "options": ""
+          },
+          {
+            "id": "f4",
+            "name": "agency",
+            "label": "Nama travel agent",
+            "type": "text",
+            "required": false,
+            "options": ""
+          },
+          {
+            "id": "f5",
+            "name": "teamSize",
+            "label": "Berapa orang di tim kamu?",
+            "type": "select",
+            "required": false,
+            "options": "1 orang\n2–5 orang\n6–10 orang\nLebih dari 10 orang"
+          }
+        ]
+      }
+    ]
+  }
+]

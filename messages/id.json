@@ -34,7 +34,8 @@
     "harga": "Harga",
     "solutions": "Solusi",
     "viewAllSolutions": "Lihat semua solusi",
-    "solutionsByLabel": "Solusi berdasarkan peran"
+    "solutionsByLabel": "Solusi berdasarkan peran",
+    "events": "Event"
   },
   "footer": {
     "productHeading": "Produk",
@@ -60,7 +61,7 @@
   },
   "home": {
     "hero": {
-      "title": "AI Agent & Omnichannel CRM: Dari Chat Pertama Jadi Pelanggan Seumur Hidup",
+      "title": "Dari Leads Jadi Pelanggan Seumur Hidup",
       "subtitle": "Pakai AI agent, CRM Omnichannel, dan follow-up otomatis untuk mengubah lebih banyak percakapan jadi penjualan, sekaligus tahu persis iklan mana yang berujung closing, dan bikin customer balik lagi.",
       "ctaPrimary": "Ngobrol via WhatsApp",
       "ctaSecondary": "Coba Gratis 14 Hari",
@@ -1006,7 +1007,7 @@
   "agentic": {
     "hero": {
       "eyebrow": "Cekat AI",
-      "titleLead": "AI Agent & Omnichannel CRM: Dari Chat Pertama Jadi Pelanggan Seumur Hidup",
+      "titleLead": "Dari Leads Sampai Jadi Pelanggan Seumur Hidup",
       "titleAccent": "",
       "subtitle": "Pakai AI agent, CRM Omnichannel, dan follow-up otomatis untuk mengubah lebih banyak percakapan jadi penjualan, sekaligus tahu persis iklan mana yang berujung closing, dan bikin customer balik lagi.",
       "hubLabel": "Full Ekosistem",
@@ -1345,5 +1346,29 @@
     "saving": "Menyimpan…",
     "reset": "Batalkan perubahan",
     "openHome": "Buka beranda"
+  },
+  "events": {
+    "meta": {
+      "title": "Event & Webinar | CekatAI",
+      "description": "Ikuti webinar dan event gratis dari Cekat.AI untuk membantu bisnis kamu jalan lebih teratur."
+    },
+    "listing": {
+      "eyebrow": "EVENT & WEBINAR",
+      "title": "Agenda terbaru dari Cekat.AI",
+      "subtitle": "Webinar gratis, workshop, dan kelas singkat untuk bantu bisnis kamu nggak ngandelin feeling doang.",
+      "empty": "Belum ada event yang tayang. Cek lagi nanti ya.",
+      "view": "Lihat detail",
+      "past": "Selesai",
+      "upcoming": "Akan datang"
+    },
+    "detail": {
+      "back": "Semua event",
+      "registerCta": "Daftar"
+    },
+    "register": {
+      "submitting": "Mengirim…",
+      "errorFallback": "Terjadi kesalahan. Coba lagi atau hubungi kami langsung.",
+      "choose": "Pilih…"
+    }
   }
 }

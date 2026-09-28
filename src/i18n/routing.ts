@@ -20,6 +20,10 @@ export const routing = defineRouting({
     "/blog/[slug]": "/blog/[slug]",
     "/blog/author/[slug]": "/blog/author/[slug]",
     "/contact": "/contact",
+    "/events": "/events",
+    "/events/[slug]": "/events/[slug]",
+    // Marketing-only editor; not linked in the public nav.
+    "/events/admin": "/events/admin",
     "/pricing": { en: "/pricing", id: "/harga" },
     "/comparison": { en: "/comparison", id: "/perbandingan" },
     "/demo": "/demo",

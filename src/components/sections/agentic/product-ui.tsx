@@ -132,51 +132,65 @@ export function CrmBoardMock({ className }: { className?: string }) {
     {
       title: "Negotiation",
       count: 6,
-      cards: [{ name: "Maya Putri", value: "Rp 7,8jt", tag: "WA" }],
+      cards: [
+        { name: "Maya Putri", value: "Rp 7,8jt", tag: "WA" },
+        { name: "Dian Lestari", value: "Rp 3,2jt", tag: "IG" },
+      ],
     },
     {
       title: "Won",
       count: 24,
-      cards: [{ name: "Rumah Zakat", value: "Rp 22jt", tag: "WA" }],
+      cards: [
+        { name: "Rumah Zakat", value: "Rp 22jt", tag: "WA" },
+        { name: "Toko Melati", value: "Rp 6,4jt", tag: "Web" },
+      ],
     },
   ];
 
+  // Live Stage panel is ~360–520px wide — a 2×2 grid keeps stage titles,
+  // names, and value chips readable instead of crushing 4 skinny columns.
   return (
-    <div className={cn("flex h-full min-h-[280px] gap-2.5 overflow-hidden bg-[#F6F7F9] p-3.5", className)}>
-      {columns.map((col, i) => (
-        <div
-          key={col.title}
-          className={cn(
-            "flex min-w-0 flex-1 flex-col rounded-xl border border-[#0C111D]/[0.06] bg-white p-2.5",
-            i >= 2 && "hidden sm:flex",
-          )}
-        >
-          <div className="mb-2.5 flex items-center justify-between">
-            <p className="font-numeric text-[0.68rem] font-semibold tracking-[0.1em] text-[#667085] uppercase">
-              {col.title}
-            </p>
-            <span className="font-numeric text-[0.68rem] tabular-nums text-[#98A2B3]">{col.count}</span>
-          </div>
-          <div className="space-y-2">
-            {col.cards.map((card) => (
-              <div
-                key={card.name}
-                className="rounded-lg border border-[#0C111D]/[0.06] bg-[#FAFBFC] p-2.5"
-              >
-                <p className="truncate font-numeric text-[0.75rem] font-semibold text-[#0C111D]">
-                  {card.name}
-                </p>
-                <div className="mt-1.5 flex items-center justify-between">
-                  <span className="font-numeric text-[0.7rem] font-medium text-primary">{card.value}</span>
-                  <span className="rounded bg-[#E8F1FF] px-1.5 py-0.5 font-numeric text-[0.62rem] font-semibold text-primary">
-                    {card.tag}
-                  </span>
+    <div className={cn("h-full min-h-[280px] bg-[#F6F7F9] p-3 sm:p-3.5", className)}>
+      <div className="grid h-full grid-cols-2 gap-2.5">
+        {columns.map((col) => (
+          <div
+            key={col.title}
+            className="flex min-w-0 flex-col rounded-xl border border-[#0C111D]/[0.06] bg-white p-2.5"
+          >
+            <div className="mb-2 flex items-center justify-between gap-1.5">
+              <p className="min-w-0 truncate font-numeric text-[0.62rem] font-semibold tracking-[0.06em] text-[#667085] uppercase">
+                {col.title}
+              </p>
+              <span className="shrink-0 rounded-full bg-[#F2F4F7] px-1.5 py-0.5 font-numeric text-[0.62rem] tabular-nums text-[#667085]">
+                {col.count}
+              </span>
+            </div>
+            <div className="flex min-h-0 flex-1 flex-col gap-1.5">
+              {col.cards.map((card) => (
+                <div
+                  key={card.name}
+                  className="shrink-0 rounded-lg border border-[#0C111D]/[0.06] bg-[#FAFBFC] px-2.5 py-2"
+                >
+                  <p className="truncate font-numeric text-[0.72rem] font-semibold text-[#0C111D]">
+                    {card.name}
+                  </p>
+                  <div className="mt-1 flex items-center justify-between gap-1.5">
+                    <span className="min-w-0 truncate font-numeric text-[0.68rem] font-medium whitespace-nowrap text-primary">
+                      {card.value}
+                    </span>
+                    <span className="shrink-0 rounded bg-[#E8F1FF] px-1.5 py-0.5 font-numeric text-[0.62rem] font-semibold text-primary">
+                      {card.tag}
+                    </span>
+                  </div>
                 </div>
+              ))}
+              <div className="mt-auto rounded-md border border-dashed border-[#0C111D]/10 px-1.5 py-1 text-center font-numeric text-[0.62rem] text-[#98A2B3]">
+                +{Math.max(col.count - col.cards.length, 0)} lagi
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

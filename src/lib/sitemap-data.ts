@@ -20,6 +20,7 @@ const STATIC_ROUTES = [
   "/marketing",
   "/order",
   "/contact",
+  "/events",
   "/pricing",
   "/features",
   "/industries",

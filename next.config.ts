@@ -29,6 +29,12 @@ const nextConfig: NextConfig = {
         hostname: "**.onrender.com",
         pathname: "/wp-content/**",
       },
+      {
+        // Event covers/speaker photos are pasted by the marketing team in the
+        // admin, so the host can be anything https.
+        protocol: "https",
+        hostname: "**",
+      },
     ],
   },
 };

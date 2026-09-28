@@ -22,6 +22,7 @@ const PRODUCT_LINKS = [
   { key: "crm", href: "/crm" },
   { key: "marketing", href: "/marketing" },
   { key: "order", href: "/order" },
+  { key: "events", href: "/events" },
   { key: "harga", href: "/pricing" },
 ] as const;
 

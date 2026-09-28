@@ -34,7 +34,8 @@
     "harga": "Pricing",
     "solutions": "Solutions",
     "viewAllSolutions": "View all solutions",
-    "solutionsByLabel": "Solutions by role"
+    "solutionsByLabel": "Solutions by role",
+    "events": "Events"
   },
   "footer": {
     "productHeading": "Product",
@@ -1006,7 +1007,7 @@
   "agentic": {
     "hero": {
       "eyebrow": "Cekat AI",
-      "titleLead": "From First Chat to Lifetime Customer.",
+      "titleLead": "From Leads to Lifetime Customer.",
       "titleAccent": "",
       "subtitle": "Use AI agents, CRM, and automated follow-ups to turn more conversations into sales, know exactly which ads end in a closed deal, and keep customers coming back.",
       "hubLabel": "Full Ecosystem",
@@ -1345,5 +1346,29 @@
     "saving": "Saving…",
     "reset": "Discard changes",
     "openHome": "Open homepage"
+  },
+  "events": {
+    "meta": {
+      "title": "Events & Webinars | CekatAI",
+      "description": "Join free webinars and events from Cekat.AI to help your business run more predictably."
+    },
+    "listing": {
+      "eyebrow": "EVENTS & WEBINARS",
+      "title": "The latest from Cekat.AI",
+      "subtitle": "Free webinars, workshops and short classes to help your business stop running on guesswork.",
+      "empty": "No events are live right now. Check back soon.",
+      "view": "View details",
+      "past": "Ended",
+      "upcoming": "Upcoming"
+    },
+    "detail": {
+      "back": "All events",
+      "registerCta": "Register"
+    },
+    "register": {
+      "submitting": "Sending…",
+      "errorFallback": "Something went wrong. Please try again or contact us directly.",
+      "choose": "Choose…"
+    }
   }
 }
