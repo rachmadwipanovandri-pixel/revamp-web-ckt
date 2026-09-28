@@ -1339,14 +1339,6 @@
       "a6": "Paket reguler tidak ada biaya setup terpisah dan tidak ada kontrak minimum. Paket Custom disepakati dulu bersama tim sales sebelum Anda mulai."
     }
   },
-  "wireframe": {
-    "title": "Editor copy beranda",
-    "intro": "Ubah teks di bawah lalu klik Simpan. Beranda (/) akan memakai copy terbaru setelah revalidate.",
-    "save": "Simpan ke beranda",
-    "saving": "Menyimpan…",
-    "reset": "Batalkan perubahan",
-    "openHome": "Buka beranda"
-  },
   "events": {
     "meta": {
       "title": "Event & Webinar | CekatAI",

@@ -45,6 +45,11 @@ const ITEMS: GalleryItem[] = [
     className: "sm:col-span-2 min-h-[180px] sm:min-h-[200px]",
     alt: "",
   },
+  {
+    src: "/images/home/gallery-pack.png",
+    className: "sm:col-span-2 min-h-[180px] sm:min-h-[200px]",
+    alt: "",
+  },
 ];
 
 /**

@@ -1339,14 +1339,6 @@
       "a6": "Regular plans carry no separate setup fee and no minimum contract. Custom terms are agreed with sales before you begin."
     }
   },
-  "wireframe": {
-    "title": "Homepage copy editor",
-    "intro": "Edit the fields below and hit Save. The homepage picks up the new copy after revalidate.",
-    "save": "Save to homepage",
-    "saving": "Saving…",
-    "reset": "Discard changes",
-    "openHome": "Open homepage"
-  },
   "events": {
     "meta": {
       "title": "Events & Webinars | CekatAI",

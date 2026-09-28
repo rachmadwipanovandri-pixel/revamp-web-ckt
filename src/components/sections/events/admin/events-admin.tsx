@@ -54,8 +54,8 @@ export function EventsAdmin() {
   }, []);
 
   useEffect(() => {
-    // Inline fetch + setState-after-await (same shape as the wireframe editor);
-    // `load` stays for the post-login/logout/create refreshes.
+    // Inline fetch + setState-after-await; `load` stays for the
+    // post-login/logout/create refreshes.
     let cancelled = false;
     (async () => {
       try {

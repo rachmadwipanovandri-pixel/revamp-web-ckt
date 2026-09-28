@@ -1,8 +1,8 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
@@ -10,7 +10,9 @@ export type IndustryPanel = {
   id: string;
   slug: string;
   title: string;
-  /** Portrait behind the panel; see public/images/industries/CREDITS.md. */
+  /** One-line positioning from the registry nav — the row's scannable summary. */
+  tagline: string;
+  /** Portrait for the row thumbnail and the open detail; see public/images/industries/CREDITS.md. */
   photo: string;
   description: string;
   useCases: string[];
@@ -24,19 +26,20 @@ export type IndustryCarouselLabels = {
 };
 
 /**
- * An expanding row of industry panels: the picked one opens wide and takes the
- * brand colour, the rest stay narrow and muted, and the copy underneath swaps
- * to whichever is open. Hover (or click/focus) picks a panel, so the rail
- * opens as soon as the pointer lands — no second click needed.
+ * A ruled directory instead of a photo rail: every industry keeps its number,
+ * portrait and tagline on screen, and picking a row unfolds that industry's
+ * copy, use cases and portrait underneath it. The old rail left seven of the
+ * eight as unreadable slivers behind the open one.
  *
- * Card language matches the homepage agentic grid: 1.35rem radius, soft
- * hairline borders, brand-blue scrim on the open panel, and the detail row
- * uses the same bordered pills / text tokens as Products and SoundWords.
+ * Selection is click-driven, not hover-driven — a vertical accordion that
+ * reflows under the pointer strands the row the user was aiming for. Hover
+ * only tints the row and un-greys its thumbnail; the primary rule, tinted
+ * well and rotated chevron mark the open one. Portraits stay greyscale until
+ * their row opens so eight photographers' colours don't fight each other.
  *
- * Closed panels hold their portrait in greyscale and the open one restores
- * colour so eight photographers' photos can sit together without clashing.
- * The row scrolls horizontally on phones; the active panel is scrolled into
- * view whenever it changes so the arrows work there too.
+ * Card language still matches the homepage agentic grid: 1.35rem radius, soft
+ * hairline borders, the same bordered pills, and a footer carrying the
+ * 01 / 08 counter the arrows wrap around in both directions.
  */
 export function IndustryCarouselPanels({
   panels,
@@ -46,140 +49,164 @@ export function IndustryCarouselPanels({
   labels: IndustryCarouselLabels;
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const panelRefs = useRef<(HTMLButtonElement | null)[]>([]);
-  const active = panels[activeIndex];
-
-  const select = (index: number) => {
-    setActiveIndex(index);
-    // Optional call: not every environment implements scrollIntoView, and
-    // bringing a panel into view is a nicety, not the feature.
-    panelRefs.current[index]?.scrollIntoView?.({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "nearest",
-    });
-  };
 
   // Wraps in both directions, so neither arrow is ever a dead end.
   const go = (target: number) => {
-    select((target + panels.length) % panels.length);
+    setActiveIndex((target + panels.length) % panels.length);
   };
 
   return (
-    <div>
-      {/* Scrollbar hidden rather than styled: on phones this row is swiped,
-          and a visible bar under the panels reads as a stray rule. */}
-      <ul className="flex [scrollbar-width:none] gap-2 overflow-x-auto pb-1 sm:gap-3 [&::-webkit-scrollbar]:hidden">
+    <div className="overflow-hidden rounded-[1.35rem] border border-[#0C111D]/[0.08] bg-white shadow-[0_1px_2px_rgba(12,17,29,0.04),0_28px_56px_-36px_rgba(12,17,29,0.2)]">
+      <ul>
         {panels.map((panel, index) => {
           const isActive = index === activeIndex;
           return (
             <li
               key={panel.id}
               className={cn(
-                "shrink-0 transition-[flex-grow,width,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none sm:w-auto sm:shrink sm:basis-0",
-                isActive
-                  ? "w-56 shadow-[0_24px_48px_-28px_rgba(19,82,191,0.45)] sm:grow-[5]"
-                  : "w-24 sm:grow",
+                "transition-colors duration-300",
+                index > 0 && "border-t border-[#0C111D]/[0.07]",
+                isActive ? "bg-[#EFF4FD]" : "bg-white",
               )}
             >
-              <button
-                ref={(element) => {
-                  panelRefs.current[index] = element;
-                }}
-                type="button"
-                aria-pressed={isActive}
-                onClick={() => select(index)}
-                onMouseEnter={() => select(index)}
-                onFocus={() => select(index)}
-                className={cn(
-                  "relative flex h-72 w-full cursor-pointer flex-col justify-end overflow-hidden rounded-[1.35rem] border bg-surface-muted p-4 text-left transition-colors duration-500 focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none sm:h-[22rem]",
-                  isActive
-                    ? "border-primary/30"
-                    : "border-foreground/8 hover:border-primary/20",
-                )}
-              >
-                {/* Sized for the open panel, which is the widest a given
-                    photo ever renders (around 483px at desktop). Any panel can
-                    become the open one, so they all need that variant. The
-                    square source is what lets one file serve both this frame
-                    and the 96px sliver; see CREDITS.md before swapping one. */}
-                <Image
-                  src={panel.photo}
-                  alt=""
-                  fill
-                  sizes="(max-width: 640px) 224px, 500px"
+              <h3>
+                <button
+                  type="button"
+                  aria-pressed={isActive}
+                  onClick={() => setActiveIndex(index)}
                   className={cn(
-                    "object-cover transition-[filter,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none",
-                    isActive ? "scale-100 grayscale-0" : "scale-105 grayscale",
-                  )}
-                />
-                <span
-                  aria-hidden
-                  className={cn(
-                    "absolute inset-0 transition-colors duration-500 motion-reduce:transition-none",
-                    isActive
-                      ? "bg-linear-to-t from-primary-dark/95 via-primary-dark/35 to-transparent"
-                      : "bg-linear-to-t from-foreground/90 via-foreground/30 to-transparent",
-                  )}
-                />
-                <span
-                  className={cn(
-                    "relative font-numeric font-semibold tracking-[-0.02em] text-white transition-all duration-500",
-                    isActive
-                      ? "text-xl leading-tight sm:text-2xl"
-                      : "text-xs leading-snug sm:text-sm",
+                    "group relative grid w-full cursor-pointer grid-cols-[1.25rem_2.5rem_minmax(0,1fr)_1rem] items-center gap-2.5 px-4 py-3.5 text-left transition-colors duration-300 focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:ring-inset focus-visible:outline-none sm:grid-cols-[2.25rem_3.5rem_minmax(0,1fr)_1.25rem] sm:gap-4 sm:px-6 sm:py-4",
+                    !isActive && "hover:bg-[#F6F7F9]/70",
                   )}
                 >
-                  {panel.title}
-                </span>
-              </button>
+                  <span
+                    aria-hidden
+                    className={cn(
+                      "absolute inset-y-0 left-0 w-[3px] transition-colors duration-300",
+                      isActive ? "bg-primary" : "bg-transparent",
+                    )}
+                  />
+                  <span
+                    className={cn(
+                      "font-numeric text-[0.7rem] font-semibold tracking-[0.14em] tabular-nums transition-colors duration-300",
+                      isActive ? "text-primary" : "text-[#98A2B3]",
+                    )}
+                  >
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <span
+                    aria-hidden
+                    className={cn(
+                      "relative h-8 w-10 shrink-0 overflow-hidden rounded-md border transition-colors duration-300 sm:h-9 sm:w-12",
+                      isActive
+                        ? "border-primary/30"
+                        : "border-[#0C111D]/[0.08]",
+                    )}
+                  >
+                    <Image
+                      src={panel.photo}
+                      alt=""
+                      fill
+                      sizes="48px"
+                      className={cn(
+                        "object-cover transition-[filter] duration-500 motion-reduce:transition-none",
+                        isActive
+                          ? "grayscale-0"
+                          : "grayscale group-hover:grayscale-0",
+                      )}
+                    />
+                  </span>
+                  <span className="min-w-0">
+                    <span
+                      className={cn(
+                        "block truncate font-numeric text-[0.95rem] font-semibold tracking-[-0.02em] transition-colors duration-300 sm:text-base",
+                        isActive ? "text-[#0C111D]" : "text-[#0C111D]/85",
+                      )}
+                    >
+                      {panel.title}
+                    </span>
+                    {panel.tagline ? (
+                      <span className="mt-0.5 block truncate text-[0.8rem] leading-snug text-[#667085]">
+                        {panel.tagline}
+                      </span>
+                    ) : null}
+                  </span>
+                  <ChevronDown
+                    aria-hidden
+                    className={cn(
+                      "size-4 shrink-0 justify-self-end transition-transform duration-300 motion-reduce:transition-none",
+                      isActive
+                        ? "rotate-180 text-primary"
+                        : "text-[#98A2B3] group-hover:text-[#667085]",
+                    )}
+                  />
+                </button>
+              </h3>
+
+              {/* Only the open row's detail exists in the DOM — a collapsed row
+                  must not leak its copy into the page for find-in-page. */}
+              {isActive && (
+                <div className="animate-swap-in px-4 pt-4 pb-5 sm:px-6 sm:pt-5 sm:pb-6">
+                  <div className="grid gap-5 sm:grid-cols-12 sm:items-start sm:gap-6 lg:gap-8">
+                    <div className="sm:col-span-7">
+                      <p className="max-w-2xl text-[0.95rem] leading-[1.65] text-[#525C6B] md:text-base">
+                        {panel.description}
+                      </p>
+                      <p className="mt-5 font-numeric text-[0.68rem] font-semibold tracking-[0.16em] text-subtle-foreground uppercase">
+                        {labels.useCases}
+                      </p>
+                      <ul className="mt-3 flex flex-wrap gap-2">
+                        {panel.useCases.map((useCase) => (
+                          <li
+                            key={useCase}
+                            className="rounded-full border border-[#0C111D]/10 bg-white px-3 py-1.5 text-xs font-medium text-[#0C111D]/75"
+                          >
+                            {useCase}
+                          </li>
+                        ))}
+                      </ul>
+                      <Link
+                        href={{
+                          pathname: "/industries/[slug]",
+                          params: { slug: panel.slug },
+                        }}
+                        className="group mt-6 inline-flex min-h-10 items-center gap-2 rounded-full border border-primary/25 bg-white px-5 py-2 font-numeric text-sm font-semibold text-primary transition-all duration-300 hover:gap-3 hover:border-primary/50 hover:shadow-[0_16px_36px_-24px_rgba(19,82,191,0.5)] focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
+                      >
+                        {labels.learnMore}
+                        <span aria-hidden>&rarr;</span>
+                      </Link>
+                    </div>
+
+                    <div className="sm:col-span-5">
+                      <div className="relative aspect-[16/10] max-h-[16rem] w-full overflow-hidden rounded-xl border border-[#0C111D]/[0.08] bg-[#0C111D]/5 sm:aspect-auto sm:max-h-none sm:min-h-[16rem]">
+                        <Image
+                          src={panel.photo}
+                          alt=""
+                          fill
+                          sizes="(max-width: 640px) 100vw, 460px"
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </li>
           );
         })}
       </ul>
 
-      {/* What the open panel is about, what it handles, and the arrows: the
-          same three-part row the panels sit on top of, using the agentic
-          card/pill tokens so it reads as one chapter with the grid above. */}
-      <div className="mt-8 grid gap-6 rounded-[1.35rem] border border-foreground/8 bg-surface-muted/60 p-5 md:p-6 lg:grid-cols-12 lg:items-start lg:gap-8">
-        <div className="lg:col-span-5">
-          <p className="text-base leading-relaxed text-muted-foreground">
-            {active.description}
-          </p>
-          <Link
-            href={{
-              pathname: "/industries/[slug]",
-              params: { slug: active.slug },
-            }}
-            className="mt-4 inline-flex min-h-10 items-center gap-2 rounded-full border border-primary/25 bg-white px-5 py-2 font-numeric text-sm font-semibold text-primary transition-all duration-300 hover:gap-3 hover:border-primary/50 hover:shadow-[0_16px_36px_-24px_rgba(19,82,191,0.5)]"
-          >
-            {labels.learnMore}
-            <span aria-hidden>&rarr;</span>
-          </Link>
-        </div>
-
-        <div className="lg:col-span-5">
-          <p className="font-numeric text-[0.68rem] font-semibold tracking-[0.16em] text-subtle-foreground uppercase">
-            {labels.useCases}
-          </p>
-          <ul className="mt-3 flex flex-wrap gap-2">
-            {active.useCases.map((useCase) => (
-              <li
-                key={useCase}
-                className="rounded-full border border-foreground/10 bg-white px-3 py-1.5 text-xs font-medium text-foreground/75"
-              >
-                {useCase}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="flex items-center gap-2 lg:col-span-2 lg:justify-end">
+      <div className="flex items-center justify-between gap-4 border-t border-[#0C111D]/[0.07] bg-white px-4 py-3 sm:px-6">
+        <span className="font-numeric text-[0.7rem] font-semibold tracking-[0.16em] text-[#98A2B3] tabular-nums">
+          {String(activeIndex + 1).padStart(2, "0")} /{" "}
+          {String(panels.length).padStart(2, "0")}
+        </span>
+        <div className="flex items-center gap-2">
           <button
             type="button"
             aria-label={labels.previous}
             onClick={() => go(activeIndex - 1)}
-            className="grid size-11 cursor-pointer place-items-center rounded-full border border-foreground/15 text-foreground transition-all hover:border-primary/50 hover:text-primary focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
+            className="grid size-10 cursor-pointer place-items-center rounded-full border border-[#0C111D]/15 text-[#0C111D] transition-all hover:border-primary/50 hover:text-primary focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
           >
             <ChevronLeft aria-hidden className="size-4" />
           </button>
@@ -187,7 +214,7 @@ export function IndustryCarouselPanels({
             type="button"
             aria-label={labels.next}
             onClick={() => go(activeIndex + 1)}
-            className="grid size-11 cursor-pointer place-items-center rounded-full border border-foreground/15 text-foreground transition-all hover:border-primary/50 hover:text-primary focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
+            className="grid size-10 cursor-pointer place-items-center rounded-full border border-[#0C111D]/15 text-[#0C111D] transition-all hover:border-primary/50 hover:text-primary focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
           >
             <ChevronRight aria-hidden className="size-4" />
           </button>

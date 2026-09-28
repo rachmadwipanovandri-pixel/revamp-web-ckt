@@ -10,14 +10,15 @@ import {
 } from "@/components/sections/home/industry-carousel-panels";
 
 /**
- * Server half of the industry carousel: picks the eight industries the section
- * features and reads each one's own page copy, so the panel description and
- * chips are the same words the industry page opens with rather than a second
- * set written for the homepage. Order follows the registry's nav.order.
+ * Server half of the industry directory: picks the eight industries the
+ * section features and reads each one's own page copy, so the row tagline,
+ * description and chips are the same words the industry page opens with
+ * rather than a second set written for the homepage. Order follows the
+ * registry's nav.order.
  *
  * Loading eight content files costs nothing at runtime: this page is static,
  * so the reads happen once at build. Shell and type match the other light
- * agentic chapters (eyebrow-rule, clamp heading, Reveal, max-w-7xl).
+ * agentic chapters (eyebrow-rule, clamp heading, Reveal, max-w-6xl).
  */
 const INDUSTRY_IDS = [
   "healthcare",
@@ -46,6 +47,7 @@ export async function IndustryCarousel() {
         id,
         slug,
         title: entry.title[locale] ?? "",
+        tagline: entry.tagline?.[locale] ?? "",
         photo: `/images/industries/${id}.webp`,
         description: content.hero.subtitle,
         useCases: content.hero.useCases ?? [],
@@ -60,8 +62,8 @@ export async function IndustryCarousel() {
     <section className="relative overflow-hidden bg-[#F6F7F9] py-20 md:py-28 lg:py-32">
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
         <Reveal>
-          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
-            <div className="lg:col-span-8">
+          <div className="grid gap-6 lg:grid-cols-12 lg:items-end lg:gap-10">
+            <div className="lg:col-span-7">
               <p className="mb-5 inline-flex items-center gap-2.5 font-numeric text-[0.7rem] font-semibold tracking-[0.16em] text-primary uppercase">
                 <span aria-hidden className="h-px w-6 bg-primary/50" />
                 {tn("industries")}
@@ -70,12 +72,14 @@ export async function IndustryCarousel() {
                 {t("headingLead")}{" "}
                 <span className="text-primary">{t("headingAccent")}</span>
               </h2>
-              <p className="mt-5 max-w-2xl text-base leading-[1.65] text-[#525C6B] md:text-[1.0625rem]">
+            </div>
+            <div className="lg:col-span-5 lg:pb-1">
+              <p className="max-w-xl text-base leading-[1.65] text-[#525C6B] md:text-[1.0625rem]">
                 {t("body")}
               </p>
               <Link
                 href="/industries"
-                className="mt-7 inline-flex min-h-11 items-center gap-2 rounded-full border border-primary/25 bg-white px-5 py-2.5 font-numeric text-sm font-semibold text-primary transition-all duration-300 hover:border-primary/50"
+                className="group mt-6 inline-flex min-h-11 items-center gap-2 rounded-full border border-primary/25 bg-white px-5 py-2.5 font-numeric text-sm font-semibold text-primary transition-all duration-300 hover:gap-3 hover:border-primary/50 hover:shadow-[0_16px_36px_-24px_rgba(19,82,191,0.45)] focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
               >
                 {tn("viewAllIndustries")}
                 <span aria-hidden>&rarr;</span>
@@ -84,7 +88,7 @@ export async function IndustryCarousel() {
           </div>
         </Reveal>
 
-        <Reveal delay={60} className="mt-12">
+        <Reveal delay={60} className="mt-10 lg:mt-12">
           <IndustryCarouselPanels
             panels={panels}
             labels={{

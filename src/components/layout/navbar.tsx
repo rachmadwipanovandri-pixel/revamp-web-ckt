@@ -32,12 +32,6 @@ export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
   const scrolled = useScrolled();
   const navRef = useRef<HTMLDivElement>(null);
 
-  // Internal copy wireframe: no public site chrome (it would cover the editor toolbar).
-  // `/new-2` owns its exclusive SiteHeader — shared Navbar must stay off.
-  if (pathname === "/wireframe" || pathname === "/new-2") {
-    return null;
-  }
-
   // Pages whose first act is a void/keynote hero get a transparent header
   // until scroll. Locale pathnames differ (e.g. /harga vs /pricing).
   const transparentPaths = [

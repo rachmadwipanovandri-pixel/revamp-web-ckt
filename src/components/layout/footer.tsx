@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { REGISTRY } from "@/lib/registry";
 import { Icon } from "@iconify/react/offline";
@@ -109,15 +109,8 @@ export function Footer() {
   const t = useTranslations("footer");
   const tn = useTranslations("nav");
   const locale = useLocale() as Locale;
-  const pathname = usePathname();
   const [activeCountry, setActiveCountry] = useState<string>("indonesia");
   const shellRef = useRef<HTMLElement>(null);
-
-  // Internal editor page — keep the chrome off so the save toolbar owns the viewport.
-  // `/new-2` owns its exclusive SiteFooter — shared Footer must stay off.
-  if (pathname === "/wireframe" || pathname === "/new-2") {
-    return null;
-  }
 
   const featureLinks = REGISTRY.features
     .filter((entry) => entry.slugs[locale] && !entry.switcherFallbackId)

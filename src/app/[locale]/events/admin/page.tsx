@@ -25,7 +25,7 @@ export default async function EventsAdminPage({
 }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
-  // ID-first internal tool, same as the wireframe editor.
+  // ID-first internal tool.
   if (locale !== "id") notFound();
   setRequestLocale(locale);
 

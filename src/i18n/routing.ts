@@ -37,12 +37,8 @@ export const routing = defineRouting({
     "/integrations": { en: "/integrations", id: "/integrasi" },
     "/solutions": { en: "/solutions", id: "/solusi" },
     "/solutions/[slug]": { en: "/solutions/[slug]", id: "/solusi/[slug]" },
-    // Internal copy wireframe (ID-first). Not linked in the public nav.
-    "/wireframe": "/wireframe",
     // Legacy redesign URL — redirects to `/`. Not in the public nav.
     "/new": "/new",
-    // Second redesign pass (exclusive SiteHeader/Footer). Not in the public nav.
-    "/new-2": "/new-2",
   },
 });
 

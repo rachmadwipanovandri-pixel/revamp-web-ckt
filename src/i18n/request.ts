@@ -10,8 +10,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
     ? requested
     : routing.defaultLocale;
 
-  // Read from disk (not a bundler import) so the wireframe editor can rewrite
-  // messages/id.json and the next render picks it up after revalidatePath.
+  // Read from disk (not a bundler import) so edits to messages/*.json are
+  // picked up on the next render without a rebuild.
   const messages = JSON.parse(
     readFileSync(join(process.cwd(), "messages", `${locale}.json`), "utf8"),
   );

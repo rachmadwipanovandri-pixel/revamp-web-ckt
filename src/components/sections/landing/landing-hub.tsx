@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
@@ -27,6 +29,24 @@ const HUB_OG: Record<LandingKind, string> = {
   industries: "/images/og/industries.jpg",
   solutions: "/images/og/solutions.jpg",
 };
+
+/**
+ * Full-bleed plate behind the hero. Only the industry hub gets one — it is the
+ * only hub whose subject is already photographed (public/images/industries).
+ */
+const HUB_HERO: Partial<Record<LandingKind, string>> = {
+  industries: "/images/industries/property.webp",
+};
+
+/**
+ * The registry grows independently of the photo folder, so a cover is only
+ * shipped when the file is really there — otherwise the card falls back to its
+ * icon plate rather than rendering a broken image.
+ */
+function industryPhoto(id: string): string | undefined {
+  const file = join(process.cwd(), "public/images/industries", `${id}.webp`);
+  return existsSync(file) ? `/images/industries/${id}.webp` : undefined;
+}
 
 const FEATURE_CATEGORY: Record<
   FeatureCategory,
@@ -65,9 +85,7 @@ export async function hubMetadata(
       siteName: "CekatAI",
       locale: locale === "id" ? "id_ID" : "en_US",
       type: "website",
-      images: [
-        { url: HUB_OG[kind], width: 1200, height: 630, alt: title },
-      ],
+      images: [{ url: HUB_OG[kind], width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: "summary_large_image",
@@ -145,12 +163,10 @@ export async function LandingHub({
         accent={headingAccent}
         subtitle={t("body")}
         chips={[t("trust")]}
+        image={HUB_HERO[kind]}
       />
       <Breadcrumbs
-        items={[
-          { label: tb("home"), href: "/" as const },
-          { label: hubLabel },
-        ]}
+        items={[{ label: tb("home"), href: "/" as const }, { label: hubLabel }]}
       />
 
       <div className="cv-auto">
@@ -185,14 +201,14 @@ export async function LandingHub({
                 <div key={category}>
                   <Reveal>
                     <div className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b border-foreground/10 pb-5">
-                      <div className="min-w-0">
-                        <p className="eyebrow-rule mb-3 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
+                      <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-2">
+                        <p className="eyebrow-rule font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
                           {String(categoryIndex + 1).padStart(2, "0")} ·{" "}
                           {headingLabel}
                         </p>
-                        <p className="font-numeric text-sm font-medium text-subtle-foreground">
+                        <span className="rounded-full border border-foreground/10 bg-white px-2.5 py-1 font-numeric text-[0.68rem] font-semibold tabular-nums text-subtle-foreground">
                           {items.length}
-                        </p>
+                        </span>
                       </div>
                       {config?.href && (
                         <Link
@@ -216,6 +232,10 @@ export async function LandingHub({
                         icon: entry.icon,
                         title: entry.title[locale]!,
                         tagline: entry.tagline?.[locale],
+                        image:
+                          kind === "industries"
+                            ? industryPhoto(entry.id)
+                            : undefined,
                       }))}
                     />
                   </Reveal>

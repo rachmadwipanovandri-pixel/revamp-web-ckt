@@ -80,8 +80,8 @@ function read(t: Translate, key: string, fallback: string): string {
 }
 
 /**
- * Ecosystem slide reads the top-level hero keys so the wireframe editor keeps
- * driving the default H1; product slides live under `slides.*`.
+ * Ecosystem slide reads the top-level hero keys; product slides live under
+ * `slides.*`.
  */
 export function buildHeroSliderCopy({
   hero,

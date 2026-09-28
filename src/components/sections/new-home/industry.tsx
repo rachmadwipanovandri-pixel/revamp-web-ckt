@@ -31,6 +31,7 @@ export async function IndustryCarousel() {
         id,
         slug,
         title: entry.title[locale] ?? "",
+        tagline: entry.tagline?.[locale] ?? "",
         photo: `/images/industries/${id}.webp`,
         description: content.hero.subtitle,
         useCases: content.hero.useCases ?? [],

@@ -1,7 +1,6 @@
 "use client";
 
 import { Icon } from "@iconify/react/offline";
-import { usePathname } from "@/i18n/navigation";
 import { mdiWhatsapp } from "@/lib/icons";
 import { useWhatsAppUrl } from "@/hooks/use-whatsapp-url";
 
@@ -17,11 +16,6 @@ import { useWhatsAppUrl } from "@/hooks/use-whatsapp-url";
  */
 export function FloatingWhatsApp({ label }: { label: string }) {
   const href = useWhatsAppUrl();
-  const pathname = usePathname();
-  // Would sit on top of the wireframe editor's mobile save bar.
-  if (pathname === "/wireframe") {
-    return null;
-  }
   return (
     <a
       href={href}
