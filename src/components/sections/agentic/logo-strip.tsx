@@ -12,9 +12,9 @@ export async function LogoStrip() {
   const loop = [...TRUSTED_LOGOS.slice(0, 10), ...TRUSTED_LOGOS.slice(0, 10)];
 
   return (
-    <SectionBand tone="white" className="border-b border-[#0C111D]/[0.06]">
+    <SectionBand tone="white" className="border-b border-[#0B1220]/[0.06]">
       <SectionShell className="py-12 md:py-16">
-        <p className="text-center font-numeric text-[0.7rem] font-semibold tracking-[0.16em] text-[#667085] uppercase">
+        <p className="text-center font-numeric text-[0.7rem] font-semibold tracking-[0.16em] text-[#64748B] uppercase">
           {t("heading")}
         </p>
 
@@ -38,7 +38,7 @@ export async function LogoStrip() {
           </div>
         </div>
 
-        <p className="mt-8 text-center text-sm text-[#667085]">{t("note")}</p>
+        <p className="mt-8 text-center text-sm text-[#64748B]">{t("note")}</p>
       </SectionShell>
     </SectionBand>
   );

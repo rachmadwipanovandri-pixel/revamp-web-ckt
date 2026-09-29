@@ -33,7 +33,7 @@ const PRODUCT_COLUMNS: Array<{
 
 /** Floating panel shell — clean white card, soft elevation (incident.io). */
 const PANEL_SHELL =
-  "overflow-hidden rounded-2xl border border-[#0C111D]/[0.08] bg-white text-popover-foreground shadow-[0_1px_2px_rgba(12,17,29,0.04),0_28px_56px_-28px_rgba(12,17,29,0.28)]";
+  "overflow-hidden rounded-2xl border border-[#0B1220]/[0.08] bg-white text-popover-foreground shadow-[0_1px_2px_rgba(11,18,32,0.04),0_28px_56px_-28px_rgba(11,18,32,0.28)]";
 
 /** Kill the primitive's double chrome so PANEL_SHELL + PanelChrome own the look. */
 const PANEL_CONTENT_RESET = "rounded-none bg-transparent p-0 shadow-none ring-0";
@@ -104,11 +104,11 @@ function MenuLink({
         <Link href={{ pathname, params: { slug: entry.slugs[locale]! } }} />
       }
       className={cn(
-        "group/mi gap-3 rounded-xl px-2.5 transition-colors duration-200 hover:bg-[#F6F7F9] focus:bg-[#F6F7F9]",
+        "group/mi gap-3 rounded-xl px-2.5 transition-colors duration-200 hover:bg-[#F8FAFC] focus:bg-[#F8FAFC]",
         withDescription ? "items-start py-2.5" : "items-center py-2",
       )}
     >
-      <span className="flex size-9 shrink-0 items-center justify-center rounded-xl border border-[#0C111D]/[0.06] bg-[#F6F7F9] text-[#525C6B] transition-colors duration-200 group-hover/mi:border-primary/20 group-hover/mi:bg-[#EEF4FF] group-hover/mi:text-primary">
+      <span className="flex size-9 shrink-0 items-center justify-center rounded-xl border border-[#0B1220]/[0.06] bg-[#F8FAFC] text-[#4B5563] transition-colors duration-200 group-hover/mi:border-primary/20 group-hover/mi:bg-[#EEF4FF] group-hover/mi:text-primary">
         <RegistryIcon name={entry.icon} className="size-4" />
       </span>
       <span className={cn(withDescription && "flex flex-col gap-0.5")}>

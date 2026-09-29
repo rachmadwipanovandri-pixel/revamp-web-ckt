@@ -5,6 +5,7 @@ import {
   alternates,
   alternatesFor,
   metaSnippet,
+  metaTitle,
   reciprocalLanguages,
 } from "@/lib/seo";
 
@@ -98,6 +99,28 @@ describe("metaSnippet", () => {
   it("returns empty string for missing copy", () => {
     expect(metaSnippet(undefined)).toBe("");
     expect(metaSnippet("   ")).toBe("");
+  });
+});
+
+describe("metaTitle", () => {
+  it("leaves titles that already fit unchanged", () => {
+    expect(metaTitle("Contact | CekatAI")).toBe("Contact | CekatAI");
+  });
+
+  it("trims the head and keeps the brand suffix inside 60 chars", () => {
+    const result = metaTitle(
+      "CRM Berbasis AI untuk Sales & Leads | Kelola Pipeline Otomatis | CekatAI",
+    );
+    expect(result.endsWith("| CekatAI")).toBe(true);
+    expect(result.length).toBeLessThanOrEqual(60);
+  });
+
+  it("caps suffix-less titles at the same limit as metaSnippet", () => {
+    expect(metaTitle("word ".repeat(30)).length).toBeLessThanOrEqual(60);
+  });
+
+  it("returns empty string for missing copy", () => {
+    expect(metaTitle(undefined)).toBe("");
   });
 });
 

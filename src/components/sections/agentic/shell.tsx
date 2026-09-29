@@ -53,7 +53,7 @@ export function SectionBand({
       className={cn(
         "relative",
         tone === "white" && "bg-white text-foreground",
-        tone === "soft" && "bg-[#F6F7F9] text-foreground",
+        tone === "soft" && "bg-[#F8FAFC] text-foreground",
         tone === "ink" && "bg-[#0B1220] text-white",
         className,
       )}
@@ -91,7 +91,7 @@ export function Eyebrow({
       className={cn(
         "inline-flex items-center gap-2.5 font-numeric text-[0.7rem] font-semibold tracking-[0.16em] uppercase",
         tone === "brand" && "text-primary",
-        tone === "ink" && "text-[#667085]",
+        tone === "ink" && "text-[#64748B]",
         tone === "light" && "text-white/55",
         className,
       )}
@@ -133,7 +133,7 @@ export function SectionHeading({
     <h2
       className={cn(
         "text-[clamp(2rem,3.8vw,3.15rem)] leading-[1.05] font-semibold tracking-[-0.04em] text-balance",
-        tone === "light" ? "text-white" : "text-[#0C111D]",
+        tone === "light" ? "text-white" : "text-[#0B1220]",
       )}
     >
       {lead}
@@ -156,7 +156,7 @@ export function SectionHeading({
     <p
       className={cn(
         "max-w-xl text-base leading-[1.65] md:text-[1.0625rem]",
-        tone === "light" ? "text-white/70" : "text-[#525C6B]",
+        tone === "light" ? "text-white/70" : "text-[#4B5563]",
       )}
     >
       {body}
@@ -212,10 +212,10 @@ export function SoftCard({
   return (
     <div
       className={cn(
-        "rounded-[1.35rem] border border-[#0C111D]/[0.08] bg-white",
-        "shadow-[0_1px_2px_rgba(12,17,29,0.04),0_18px_40px_-28px_rgba(12,17,29,0.18)]",
+        "rounded-[1.35rem] border border-[#0B1220]/[0.08] bg-white",
+        "shadow-[0_1px_2px_rgba(11,18,32,0.04),0_18px_40px_-28px_rgba(11,18,32,0.18)]",
         hover &&
-          "transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_1px_2px_rgba(12,17,29,0.04),0_28px_56px_-30px_rgba(19,82,191,0.28)]",
+          "transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_1px_2px_rgba(11,18,32,0.04),0_28px_56px_-30px_rgba(19,82,191,0.28)]",
         className,
       )}
     >
@@ -239,9 +239,9 @@ export function BrowserFrame({
   return (
     <div
       className={cn(
-        "overflow-hidden rounded-[1.25rem] border shadow-[0_1px_2px_rgba(12,17,29,0.05),0_32px_64px_-36px_rgba(12,17,29,0.28)]",
+        "overflow-hidden rounded-[1.25rem] border shadow-[0_1px_2px_rgba(11,18,32,0.05),0_32px_64px_-36px_rgba(11,18,32,0.28)]",
         tone === "light"
-          ? "border-[#0C111D]/[0.08] bg-white"
+          ? "border-[#0B1220]/[0.08] bg-white"
           : "border-white/10 bg-[#111827]",
         className,
       )}
@@ -250,7 +250,7 @@ export function BrowserFrame({
         className={cn(
           "flex items-center gap-2 border-b px-3.5 py-2.5",
           tone === "light"
-            ? "border-[#0C111D]/[0.06] bg-[#F6F7F9]"
+            ? "border-[#0B1220]/[0.06] bg-[#F8FAFC]"
             : "border-white/10 bg-white/[0.04]",
         )}
       >
@@ -263,7 +263,7 @@ export function BrowserFrame({
           className={cn(
             "mx-auto max-w-[55%] truncate rounded-md px-2.5 py-0.5 font-numeric text-[0.7rem]",
             tone === "light"
-              ? "bg-white text-[#667085]"
+              ? "bg-white text-[#64748B]"
               : "bg-white/5 text-white/50",
           )}
         >
@@ -293,7 +293,7 @@ export function MetricChip({
         className={cn(
           "font-numeric text-[clamp(1.75rem,3vw,2.5rem)] leading-none font-semibold tracking-[-0.04em] tabular-nums",
           tone === "brand" && "text-primary",
-          tone === "ink" && "text-[#0C111D]",
+          tone === "ink" && "text-[#0B1220]",
           tone === "light" && "text-white",
         )}
       >
@@ -302,7 +302,7 @@ export function MetricChip({
       <p
         className={cn(
           "mt-2 max-w-[15rem] text-sm leading-snug",
-          tone === "light" ? "text-white/60" : "text-[#525C6B]",
+          tone === "light" ? "text-white/60" : "text-[#4B5563]",
         )}
       >
         {label}
@@ -331,7 +331,7 @@ export function TextLink({
         tone === "brand" &&
           "border-primary/25 bg-white text-primary hover:border-primary/50 hover:shadow-[0_12px_28px_-18px_rgba(19,82,191,0.45)]",
         tone === "ink" &&
-          "border-[#0C111D]/12 bg-white text-[#0C111D] hover:border-[#0C111D]/25 hover:bg-[#F6F7F9]",
+          "border-[#0B1220]/12 bg-white text-[#0B1220] hover:border-[#0B1220]/25 hover:bg-[#F8FAFC]",
         tone === "light" &&
           "border-white/20 bg-white/5 text-white hover:border-white/40 hover:bg-white/10",
         className,

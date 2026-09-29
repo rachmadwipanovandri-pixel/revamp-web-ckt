@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
@@ -10,9 +10,9 @@ export type IndustryPanel = {
   id: string;
   slug: string;
   title: string;
-  /** One-line positioning from the registry nav — the row's scannable summary. */
+  /** One-line positioning from the registry nav — the card's scannable summary. */
   tagline: string;
-  /** Portrait for the row thumbnail and the open detail; see public/images/industries/CREDITS.md. */
+  /** Portrait for the card thumbnail; see public/images/industries/CREDITS.md. */
   photo: string;
   description: string;
   useCases: string[];
@@ -25,21 +25,33 @@ export type IndustryCarouselLabels = {
   next: string;
 };
 
+/** Pixels of travel before a press becomes a drag instead of a click. */
+const DRAG_THRESHOLD = 5;
+
+const prefersReducedMotion = () =>
+  typeof window !== "undefined" &&
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const clamp01 = (value: number) => Math.min(1, Math.max(0, value));
+
 /**
- * A ruled directory instead of a photo rail: every industry keeps its number,
- * portrait and tagline on screen, and picking a row unfolds that industry's
- * copy, use cases and portrait underneath it. The old rail left seven of the
- * eight as unreadable slivers behind the open one.
+ * Horizontal scroll-snap rail. One card leads with a peek of the next at every
+ * breakpoint (84% / 56% / 37% of the rail), so it reads as a slider on a phone
+ * without collapsing into the unreadable slivers the earlier rail had.
  *
- * Selection is click-driven, not hover-driven — a vertical accordion that
- * reflows under the pointer strands the row the user was aiming for. Hover
- * only tints the row and un-greys its thumbnail; the primary rule, tinted
- * well and rotated chevron mark the open one. Portraits stay greyscale until
- * their row opens so eight photographers' colours don't fight each other.
+ * Position is reported by a scroll-linked progress bar rather than an
+ * `01 / 08` counter: with three cards in view the trailing cards never reach
+ * the snap start, so a counter read off snap position would stick at 06 while
+ * the rail is already at the end. Scroll percentage is honest at both extremes.
  *
- * Card language still matches the homepage agentic grid: 1.35rem radius, soft
- * hairline borders, the same bordered pills, and a footer carrying the
- * 01 / 08 counter the arrows wrap around in both directions.
+ * Three ways to move: arrows (wrap at both ends so neither is a dead end),
+ * native scroll for touch and two-finger trackpad, and pointer drag — a plain
+ * overflow container ignores mouse drags, which is the one gesture people
+ * reach for first on desktop. Drag suspends snapping so the mandatory snap
+ * does not fight the pointer, then settles back onto the nearest card.
+ *
+ * The whole card is the link — one large tap target per industry instead of a
+ * small pill stranded at the bottom of a tall card.
  */
 export function IndustryCarouselPanels({
   panels,
@@ -48,173 +60,233 @@ export function IndustryCarouselPanels({
   panels: IndustryPanel[];
   labels: IndustryCarouselLabels;
 }) {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const trackRef = useRef<HTMLUListElement>(null);
+  const frameRef = useRef<number | null>(null);
+  const dragRef = useRef({
+    pointerId: -1,
+    startX: 0,
+    startScroll: 0,
+    engaged: false,
+    moved: false,
+  });
+  const [dragging, setDragging] = useState(false);
+  const [progress, setProgress] = useState(0);
 
-  // Wraps in both directions, so neither arrow is ever a dead end.
-  const go = (target: number) => {
-    setActiveIndex((target + panels.length) % panels.length);
+  useEffect(
+    () => () => {
+      if (frameRef.current !== null) cancelAnimationFrame(frameRef.current);
+    },
+    [],
+  );
+
+  // Scroll position can be restored before hydration on a reload; read it once
+  // on mount so the bar is not stale until the first swipe.
+  useEffect(() => {
+    setProgress(scrollProgress(trackRef.current));
+  }, []);
+
+  const syncProgress = () => {
+    if (frameRef.current !== null) return;
+    frameRef.current = requestAnimationFrame(() => {
+      frameRef.current = null;
+      setProgress(scrollProgress(trackRef.current));
+    });
+  };
+
+  const go = (direction: 1 | -1) => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const max = track.scrollWidth - track.clientWidth;
+    if (max <= 0) return;
+
+    const behavior: ScrollBehavior = prefersReducedMotion() ? "auto" : "smooth";
+    // Wrap rather than stall: native scrolling cannot go past the ends, so an
+    // arrow that just called scrollBy would otherwise do nothing at all.
+    if (direction > 0 && track.scrollLeft >= max - 1) {
+      track.scrollTo({ left: 0, behavior });
+      return;
+    }
+    if (direction < 0 && track.scrollLeft <= 1) {
+      track.scrollTo({ left: max, behavior });
+      return;
+    }
+    track.scrollBy({ left: direction * cardStride(track), behavior });
+  };
+
+  const onPointerDown = (event: React.PointerEvent<HTMLUListElement>) => {
+    // Touch already scrolls natively — hijacking it only makes it worse.
+    if (event.pointerType === "touch" || event.button !== 0) return;
+    const track = trackRef.current;
+    if (!track || track.scrollWidth - track.clientWidth <= 0) return;
+
+    dragRef.current = {
+      pointerId: event.pointerId,
+      startX: event.clientX,
+      startScroll: track.scrollLeft,
+      engaged: false,
+      moved: false,
+    };
+  };
+
+  const onPointerMove = (event: React.PointerEvent<HTMLUListElement>) => {
+    const drag = dragRef.current;
+    const track = trackRef.current;
+    if (!track || drag.pointerId !== event.pointerId) return;
+
+    const delta = event.clientX - drag.startX;
+    if (!drag.engaged) {
+      if (Math.abs(delta) < DRAG_THRESHOLD) return;
+      drag.engaged = true;
+      drag.moved = true;
+      // Snap off while the pointer owns the scroll, otherwise mandatory
+      // snapping yanks the rail back to a card on every frame.
+      track.style.scrollSnapType = "none";
+      track.setPointerCapture?.(event.pointerId);
+      setDragging(true);
+    }
+    track.scrollLeft = drag.startScroll - delta;
+  };
+
+  const endDrag = (event: React.PointerEvent<HTMLUListElement>) => {
+    const drag = dragRef.current;
+    const track = trackRef.current;
+    if (!track || drag.pointerId !== event.pointerId) return;
+
+    if (drag.engaged) {
+      track.style.scrollSnapType = "";
+      settleToCard(track);
+      if (track.hasPointerCapture?.(event.pointerId)) {
+        track.releasePointerCapture(event.pointerId);
+      }
+      setDragging(false);
+    }
+    drag.pointerId = -1;
+    drag.engaged = false;
+  };
+
+  // A drag that ends on a card must not follow the link underneath it.
+  const onClickCapture = (event: React.MouseEvent<HTMLUListElement>) => {
+    if (!dragRef.current.moved) return;
+    dragRef.current.moved = false;
+    event.preventDefault();
+    event.stopPropagation();
   };
 
   return (
-    <div className="overflow-hidden rounded-[1.35rem] border border-[#0C111D]/[0.08] bg-white shadow-[0_1px_2px_rgba(12,17,29,0.04),0_28px_56px_-36px_rgba(12,17,29,0.2)]">
-      <ul>
-        {panels.map((panel, index) => {
-          const isActive = index === activeIndex;
-          return (
-            <li
-              key={panel.id}
-              className={cn(
-                "transition-colors duration-300",
-                index > 0 && "border-t border-[#0C111D]/[0.07]",
-                isActive ? "bg-[#EFF4FD]" : "bg-white",
-              )}
+    <div>
+      <ul
+        ref={trackRef}
+        onScroll={syncProgress}
+        onDragStart={(event) => event.preventDefault()}
+        onPointerDown={onPointerDown}
+        onPointerMove={onPointerMove}
+        onPointerUp={endDrag}
+        onPointerCancel={endDrag}
+        onClickCapture={onClickCapture}
+        className={cn(
+          "snap-rail flex gap-4 cursor-grab overflow-x-auto overscroll-x-contain select-none pb-1 sm:gap-5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden",
+          dragging && "[&_*]:cursor-grabbing",
+        )}
+      >
+        {panels.map((panel, index) => (
+          <li key={panel.id} className="w-[84%] shrink-0 sm:w-[56%] lg:w-[37%]">
+            <Link
+              href={{
+                pathname: "/industries/[slug]",
+                params: { slug: panel.slug },
+              }}
+              aria-label={`${labels.learnMore} — ${panel.title}`}
+              className="group flex h-full flex-col overflow-hidden rounded-[1.35rem] border border-[#0B1220]/[0.08] bg-white shadow-[0_1px_2px_rgba(11,18,32,0.04),0_18px_40px_-28px_rgba(11,18,32,0.18)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_1px_2px_rgba(11,18,32,0.04),0_28px_56px_-30px_rgba(19,82,191,0.28)] focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:ring-inset focus-visible:outline-none motion-reduce:transition-none"
             >
-              <h3>
-                <button
-                  type="button"
-                  aria-pressed={isActive}
-                  onClick={() => setActiveIndex(index)}
-                  className={cn(
-                    "group relative grid w-full cursor-pointer grid-cols-[1.25rem_2.5rem_minmax(0,1fr)_1rem] items-center gap-2.5 px-4 py-3.5 text-left transition-colors duration-300 focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:ring-inset focus-visible:outline-none sm:grid-cols-[2.25rem_3.5rem_minmax(0,1fr)_1.25rem] sm:gap-4 sm:px-6 sm:py-4",
-                    !isActive && "hover:bg-[#F6F7F9]/70",
-                  )}
+              <div className="relative aspect-[4/3] overflow-hidden bg-[#DCE7FC] sm:aspect-[16/10]">
+                <Image
+                  src={panel.photo}
+                  alt={panel.title}
+                  fill
+                  sizes="(max-width: 640px) 84vw, (max-width: 1024px) 56vw, 37vw"
+                  className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03] motion-reduce:transition-none"
+                />
+              </div>
+
+              <div className="flex flex-1 flex-col p-5 sm:p-6">
+                <span
+                  aria-hidden
+                  className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] tabular-nums text-[#94A3B8] transition-colors duration-300 group-hover:text-primary motion-reduce:transition-none"
                 >
-                  <span
-                    aria-hidden
-                    className={cn(
-                      "absolute inset-y-0 left-0 w-[3px] transition-colors duration-300",
-                      isActive ? "bg-primary" : "bg-transparent",
-                    )}
-                  />
-                  <span
-                    className={cn(
-                      "font-numeric text-[0.7rem] font-semibold tracking-[0.14em] tabular-nums transition-colors duration-300",
-                      isActive ? "text-primary" : "text-[#98A2B3]",
-                    )}
-                  >
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <span
-                    aria-hidden
-                    className={cn(
-                      "relative h-8 w-10 shrink-0 overflow-hidden rounded-md border transition-colors duration-300 sm:h-9 sm:w-12",
-                      isActive
-                        ? "border-primary/30"
-                        : "border-[#0C111D]/[0.08]",
-                    )}
-                  >
-                    <Image
-                      src={panel.photo}
-                      alt=""
-                      fill
-                      sizes="48px"
-                      className={cn(
-                        "object-cover transition-[filter] duration-500 motion-reduce:transition-none",
-                        isActive
-                          ? "grayscale-0"
-                          : "grayscale group-hover:grayscale-0",
-                      )}
-                    />
-                  </span>
-                  <span className="min-w-0">
-                    <span
-                      className={cn(
-                        "block truncate font-numeric text-[0.95rem] font-semibold tracking-[-0.02em] transition-colors duration-300 sm:text-base",
-                        isActive ? "text-[#0C111D]" : "text-[#0C111D]/85",
-                      )}
-                    >
-                      {panel.title}
-                    </span>
-                    {panel.tagline ? (
-                      <span className="mt-0.5 block truncate text-[0.8rem] leading-snug text-[#667085]">
-                        {panel.tagline}
-                      </span>
-                    ) : null}
-                  </span>
-                  <ChevronDown
-                    aria-hidden
-                    className={cn(
-                      "size-4 shrink-0 justify-self-end transition-transform duration-300 motion-reduce:transition-none",
-                      isActive
-                        ? "rotate-180 text-primary"
-                        : "text-[#98A2B3] group-hover:text-[#667085]",
-                    )}
-                  />
-                </button>
-              </h3>
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3 className="mt-2 font-numeric text-lg font-semibold tracking-[-0.02em] text-[#0B1220] sm:text-xl">
+                  {panel.title}
+                </h3>
+                {panel.tagline ? (
+                  <p className="mt-1 text-sm leading-snug font-medium text-primary/90">
+                    {panel.tagline}
+                  </p>
+                ) : null}
 
-              {/* Only the open row's detail exists in the DOM — a collapsed row
-                  must not leak its copy into the page for find-in-page. */}
-              {isActive && (
-                <div className="animate-swap-in px-4 pt-4 pb-5 sm:px-6 sm:pt-5 sm:pb-6">
-                  <div className="grid gap-5 sm:grid-cols-12 sm:items-start sm:gap-6 lg:gap-8">
-                    <div className="sm:col-span-7">
-                      <p className="max-w-2xl text-[0.95rem] leading-[1.65] text-[#525C6B] md:text-base">
-                        {panel.description}
-                      </p>
-                      <p className="mt-5 font-numeric text-[0.68rem] font-semibold tracking-[0.16em] text-subtle-foreground uppercase">
-                        {labels.useCases}
-                      </p>
-                      <ul className="mt-3 flex flex-wrap gap-2">
-                        {panel.useCases.map((useCase) => (
-                          <li
-                            key={useCase}
-                            className="rounded-full border border-[#0C111D]/10 bg-white px-3 py-1.5 text-xs font-medium text-[#0C111D]/75"
-                          >
-                            {useCase}
-                          </li>
-                        ))}
-                      </ul>
-                      <Link
-                        href={{
-                          pathname: "/industries/[slug]",
-                          params: { slug: panel.slug },
-                        }}
-                        className="group mt-6 inline-flex min-h-10 items-center gap-2 rounded-full border border-primary/25 bg-white px-5 py-2 font-numeric text-sm font-semibold text-primary transition-all duration-300 hover:gap-3 hover:border-primary/50 hover:shadow-[0_16px_36px_-24px_rgba(19,82,191,0.5)] focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
-                      >
-                        {labels.learnMore}
-                        <span aria-hidden>&rarr;</span>
-                      </Link>
-                    </div>
+                <p className="mt-3.5 text-sm leading-[1.65] text-[#4B5563] sm:text-[0.95rem]">
+                  {panel.description}
+                </p>
 
-                    <div className="sm:col-span-5">
-                      <div className="relative aspect-[16/10] max-h-[16rem] w-full overflow-hidden rounded-xl border border-[#0C111D]/[0.08] bg-[#0C111D]/5 sm:aspect-auto sm:max-h-none sm:min-h-[16rem]">
-                        <Image
-                          src={panel.photo}
-                          alt=""
-                          fill
-                          sizes="(max-width: 640px) 100vw, 460px"
-                          className="object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </li>
-          );
-        })}
+                {panel.useCases.length > 0 ? (
+                  <>
+                    <p className="mt-6 font-numeric text-[0.68rem] font-semibold tracking-[0.16em] text-subtle-foreground uppercase">
+                      {labels.useCases}
+                    </p>
+                    <ul className="mt-3 flex flex-wrap gap-2">
+                      {panel.useCases.map((useCase) => (
+                        <li
+                          key={useCase}
+                          className="rounded-full border border-[#0B1220]/10 bg-[#F8FAFC] px-3 py-1.5 text-xs font-medium text-[#0B1220]/75"
+                        >
+                          {useCase}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : null}
+
+                <span
+                  aria-hidden
+                  className="mt-7 inline-flex min-h-11 w-fit items-center gap-2 self-start rounded-full border border-primary/25 bg-white px-5 py-2.5 font-numeric text-sm font-semibold text-primary transition-all duration-300 group-hover:gap-3 group-hover:shadow-[0_16px_36px_-24px_rgba(19,82,191,0.5)] motion-reduce:transition-none"
+                >
+                  {labels.learnMore}
+                  <span>&rarr;</span>
+                </span>
+              </div>
+            </Link>
+          </li>
+        ))}
       </ul>
 
-      <div className="flex items-center justify-between gap-4 border-t border-[#0C111D]/[0.07] bg-white px-4 py-3 sm:px-6">
-        <span className="font-numeric text-[0.7rem] font-semibold tracking-[0.16em] text-[#98A2B3] tabular-nums">
-          {String(activeIndex + 1).padStart(2, "0")} /{" "}
-          {String(panels.length).padStart(2, "0")}
-        </span>
+      <div className="mt-5 flex items-center gap-4 sm:gap-5">
+        <div
+          aria-hidden
+          className="h-1.5 flex-1 overflow-hidden rounded-full bg-[#0B1220]/10"
+        >
+          <div
+            className={cn(
+              "h-full rounded-full bg-primary transition-[width] duration-500 ease-out motion-reduce:transition-none",
+              dragging && "transition-none",
+            )}
+            style={{ width: `${Math.round(progress * 1000) / 10}%` }}
+          />
+        </div>
         <div className="flex items-center gap-2">
           <button
             type="button"
             aria-label={labels.previous}
-            onClick={() => go(activeIndex - 1)}
-            className="grid size-10 cursor-pointer place-items-center rounded-full border border-[#0C111D]/15 text-[#0C111D] transition-all hover:border-primary/50 hover:text-primary focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
+            onClick={() => go(-1)}
+            className="grid size-11 cursor-pointer place-items-center rounded-full border border-[#0B1220]/15 bg-white text-[#0B1220] transition-all hover:border-primary/50 hover:text-primary focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none motion-reduce:transition-none"
           >
             <ChevronLeft aria-hidden className="size-4" />
           </button>
           <button
             type="button"
             aria-label={labels.next}
-            onClick={() => go(activeIndex + 1)}
-            className="grid size-10 cursor-pointer place-items-center rounded-full border border-[#0C111D]/15 text-[#0C111D] transition-all hover:border-primary/50 hover:text-primary focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
+            onClick={() => go(1)}
+            className="grid size-11 cursor-pointer place-items-center rounded-full border border-[#0B1220]/15 bg-white text-[#0B1220] transition-all hover:border-primary/50 hover:text-primary focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none motion-reduce:transition-none"
           >
             <ChevronRight aria-hidden className="size-4" />
           </button>
@@ -222,4 +294,34 @@ export function IndustryCarouselPanels({
       </div>
     </div>
   );
+}
+
+function scrollProgress(track: HTMLUListElement | null): number {
+  if (!track) return 0;
+  const max = track.scrollWidth - track.clientWidth;
+  return max > 0 ? clamp01(track.scrollLeft / max) : 0;
+}
+
+/** Distance between two card starts — exactly what one arrow press travels. */
+function cardStride(track: HTMLUListElement): number {
+  const first = track.children.item(0) as HTMLElement | null;
+  const second = track.children.item(1) as HTMLElement | null;
+  if (!first) return 0;
+  if (second) return second.offsetLeft - first.offsetLeft;
+  return first.offsetWidth;
+}
+
+/** Park the rail on the nearest card after a free drag. */
+function settleToCard(track: HTMLUListElement) {
+  const stride = cardStride(track);
+  if (stride <= 0) return;
+  const max = track.scrollWidth - track.clientWidth;
+  const target = Math.min(
+    max,
+    Math.max(0, Math.round(track.scrollLeft / stride) * stride),
+  );
+  track.scrollTo({
+    left: target,
+    behavior: prefersReducedMotion() ? "auto" : "smooth",
+  });
 }

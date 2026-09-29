@@ -17,29 +17,29 @@
   --ink-deep: #0a1628;
   --ink-panel: #0f1f3a;
 
-  /* Surfaces + text — brand Light (neutral) scale */
+  /* Surfaces + text — guideline neutral scale */
   --background: #ffffff;
-  --foreground: #101828; /* Light 900 */
-  --surface-muted: #f9fafb; /* Light 50 */
-  --surface-subtle: #f2f4f7; /* Light 100 */
+  --foreground: #101828; /* Gray 900 */
+  --surface-muted: #f8fafc; /* Slate 50 */
+  --surface-subtle: #f1f5f9; /* Slate 100 */
 
   --card: #ffffff;
   --card-foreground: #101828;
   --popover: #ffffff;
   --popover-foreground: #101828;
-  --secondary: #f2f4f7;
+  --secondary: #f1f5f9;
   --secondary-foreground: #101828;
-  --muted: #f2f4f7;
-  --muted-foreground: #475467;
-  --accent: #f2f4f7;
+  --muted: #f1f5f9;
+  --muted-foreground: #4b5563;
+  --accent: #f1f5f9;
   --accent-foreground: #101828;
   --destructive: #e2261f;
   --destructive-foreground: #ffffff;
-  --border: #e4e7ec;
-  --input: #e4e7ec;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
   --ring: #1352bf;
 
-  --subtle-foreground: #667085;
+  --subtle-foreground: #64748b;
 
   --accent-green: #089146;
   --accent-green-deep: #057c47;

@@ -31,10 +31,10 @@ export function Faq() {
               <Eyebrow tone="brand" className="mb-5">
                 {t("label")}
               </Eyebrow>
-              <h2 className="text-[clamp(2rem,3.5vw,2.85rem)] leading-[1.08] font-semibold tracking-[-0.04em] text-balance text-[#0C111D]">
+              <h2 className="text-[clamp(2rem,3.5vw,2.85rem)] leading-[1.08] font-semibold tracking-[-0.04em] text-balance text-[#0B1220]">
                 {t("heading")}
               </h2>
-              <p className="mt-5 max-w-md text-base leading-[1.65] text-[#525C6B]">
+              <p className="mt-5 max-w-md text-base leading-[1.65] text-[#4B5563]">
                 {t("body")}
               </p>
             </div>
@@ -49,8 +49,8 @@ export function Faq() {
                     className={cn(
                       "mt-3 rounded-[1.1rem] border transition-all duration-300",
                       isOpen
-                        ? "border-primary/25 bg-[#F6F7F9]"
-                        : "border-[#0C111D]/[0.08] bg-white hover:border-[#0C111D]/15",
+                        ? "border-primary/25 bg-[#F8FAFC]"
+                        : "border-[#0B1220]/[0.08] bg-white hover:border-[#0B1220]/15",
                     )}
                   >
                     <button
@@ -60,16 +60,16 @@ export function Faq() {
                       className="flex w-full cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left md:px-6 md:py-5"
                     >
                       <span className="flex items-baseline gap-3">
-                        <span className="font-numeric text-[0.7rem] font-semibold tracking-[0.12em] text-[#98A2B3] tabular-nums">
+                        <span className="font-numeric text-[0.7rem] font-semibold tracking-[0.12em] text-[#94A3B8] tabular-nums">
                           {String(index + 1).padStart(2, "0")}
                         </span>
-                        <span className="font-numeric text-base font-semibold tracking-[-0.02em] text-[#0C111D] md:text-lg">
+                        <span className="font-numeric text-base font-semibold tracking-[-0.02em] text-[#0B1220] md:text-lg">
                           {t(`q${item}`)}
                         </span>
                       </span>
                       <span
                         className={cn(
-                          "flex size-8 shrink-0 items-center justify-center rounded-full border border-[#0C111D]/10 bg-white text-primary transition-transform duration-300",
+                          "flex size-8 shrink-0 items-center justify-center rounded-full border border-[#0B1220]/10 bg-white text-primary transition-transform duration-300",
                           isOpen && "rotate-180 bg-primary/10",
                         )}
                       >
@@ -87,7 +87,7 @@ export function Faq() {
                       )}
                     >
                       <div className="overflow-hidden">
-                        <p className="max-w-3xl px-5 pb-5 text-base leading-[1.65] text-[#525C6B] md:px-6 md:pl-[calc(1.5rem+2.1rem)]">
+                        <p className="max-w-3xl px-5 pb-5 text-base leading-[1.65] text-[#4B5563] md:px-6 md:pl-[calc(1.5rem+2.1rem)]">
                           {t(`a${item}`)}
                         </p>
                       </div>

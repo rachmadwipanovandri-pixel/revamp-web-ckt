@@ -52,14 +52,14 @@ export async function Pricing() {
           </Button>
           <Link
             href="/pricing"
-            className="inline-flex min-h-12 items-center gap-2 rounded-full border border-[#0C111D]/12 bg-white px-6 py-3 font-numeric text-sm font-semibold text-[#0C111D] transition-all duration-300 hover:border-primary/40 hover:text-primary"
+            className="inline-flex min-h-12 items-center gap-2 rounded-full border border-[#0B1220]/12 bg-white px-6 py-3 font-numeric text-sm font-semibold text-[#0B1220] transition-all duration-300 hover:border-primary/40 hover:text-primary"
           >
             {t("cta")}
             <span aria-hidden>&rarr;</span>
           </Link>
         </Reveal>
 
-        <p className="mt-6 text-center text-sm text-[#667085]">
+        <p className="mt-6 text-center text-sm text-[#64748B]">
           {tp("excludesVat")}
         </p>
       </SectionShell>

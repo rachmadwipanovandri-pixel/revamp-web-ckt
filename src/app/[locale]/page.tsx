@@ -1,4 +1,6 @@
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { faqPageJsonLd } from "@/lib/jsonld";
+import { JsonLd } from "@/components/seo/json-ld";
 import {
   Hero,
   LogoStrip,
@@ -38,8 +40,17 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  // Homepage FAQ renders q1..q6 in agentic/faq.tsx (COUNT = 6) but never
+  // shipped FAQPage schema — same questions, now machine-readable.
+  const t = await getTranslations({ locale, namespace: "agentic.faq" });
+  const faqItems = Array.from({ length: 6 }, (_, index) => ({
+    q: t(`q${index + 1}`),
+    a: t(`a${index + 1}`),
+  }));
+
   return (
     <>
+      <JsonLd data={faqPageJsonLd(faqItems)} />
       <ScrollProgress />
       <Hero />
       <div className="cv-auto">

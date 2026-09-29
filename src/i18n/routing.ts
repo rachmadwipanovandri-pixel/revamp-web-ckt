@@ -26,7 +26,6 @@ export const routing = defineRouting({
     "/events/admin": "/events/admin",
     "/pricing": { en: "/pricing", id: "/harga" },
     "/comparison": { en: "/comparison", id: "/perbandingan" },
-    "/demo": "/demo",
     "/terms-and-conditions": "/terms-and-conditions",
     "/privacy-policy": "/privacy-policy",
     "/return-refund-delivery-policy": "/return-refund-delivery-policy",
@@ -37,8 +36,9 @@ export const routing = defineRouting({
     "/integrations": { en: "/integrations", id: "/integrasi" },
     "/solutions": { en: "/solutions", id: "/solusi" },
     "/solutions/[slug]": { en: "/solutions/[slug]", id: "/solusi/[slug]" },
-    // Legacy redesign URL — redirects to `/`. Not in the public nav.
-    "/new": "/new",
+    // `/new` and `/new-2` are gone: next.config.ts redirects() 308s them to
+    // `/` (config redirects run before this middleware, so a page-level 307
+    // shim would never fire anyway).
   },
 });
 

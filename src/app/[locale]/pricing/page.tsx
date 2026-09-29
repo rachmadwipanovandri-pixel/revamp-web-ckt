@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getPathname } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
-import { alternates, SITE_URL } from "@/lib/seo";
+import { alternates, metaSnippet, metaTitle, SITE_URL } from "@/lib/seo";
 import { priceRangeIDR, showsPrices } from "@/lib/pricing";
 import {
   breadcrumbJsonLd,
@@ -27,8 +27,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "pricing.meta" });
   const { canonical, languages } = alternates(locale, "/pricing");
-  const title = t("title");
-  const description = t("description");
+  const title = metaTitle(t("title"));
+  const description = metaSnippet(t("description"), 158);
 
   return {
     title,

@@ -4,6 +4,7 @@ import { localizedPath, SITE_URL } from "@/lib/seo";
 import { entryPaths, REGISTRY } from "@/lib/registry";
 import type { LandingKind } from "@/lib/registry/types";
 import { getAllPostSlugs, getAuthors, type PostSlugInfo } from "@/lib/wordpress";
+import { readEvents } from "@/lib/events/store";
 import type { SitemapUrl } from "@/lib/sitemap-xml";
 import { existsSync, statSync } from "node:fs";
 import path from "node:path";
@@ -53,6 +54,21 @@ function languagesFor(paths: { en?: string; id?: string }) {
 }
 
 /**
+ * Newest mtime among the given content files. Only set when a file exists —
+ * a fabricated lastmod is worse than none.
+ */
+function filesLastModified(files: string[]): string | undefined {
+  let latest = 0;
+  for (const file of files) {
+    if (!existsSync(file)) continue;
+    const mtime = statSync(file).mtimeMs;
+    if (mtime > latest) latest = mtime;
+  }
+  if (!latest) return undefined;
+  return new Date(latest).toISOString();
+}
+
+/**
  * Newest content-file mtime for one landing entry (either locale file).
  * Only set when a file exists — a fabricated lastmod is worse than none.
  */
@@ -61,22 +77,50 @@ function landingLastModified(
   entryId: string,
   locales: Locale[],
 ): string | undefined {
-  let latest = 0;
-  for (const locale of locales) {
-    const file = path.join(
-      process.cwd(),
-      "src",
-      "content",
-      kind,
-      entryId,
-      `${locale}.json`,
-    );
-    if (!existsSync(file)) continue;
-    const mtime = statSync(file).mtimeMs;
-    if (mtime > latest) latest = mtime;
-  }
-  if (!latest) return undefined;
-  return new Date(latest).toISOString();
+  return filesLastModified(
+    locales.map((locale) =>
+      path.join(
+        process.cwd(),
+        "src",
+        "content",
+        kind,
+        entryId,
+        `${locale}.json`,
+      ),
+    ),
+  );
+}
+
+/**
+ * Static route: lastmod from the page source itself, same rule as landings —
+ * the file exists only if the route does, and its mtime tracks the last edit.
+ */
+function staticLastModified(route: string): string | undefined {
+  return filesLastModified([
+    path.join(process.cwd(), "src", "app", "[locale]", route, "page.tsx"),
+  ]);
+}
+
+/**
+ * Published events. Same slug in both locales → reciprocal hreflang;
+ * `updatedAt` (written on every admin save) is an honest lastmod.
+ */
+function eventUrls(): SitemapUrl[] {
+  return readEvents()
+    .filter((event) => event.status === "published")
+    .flatMap((event) => {
+      const pathFor = (locale: Locale) =>
+        getPathname({
+          href: { pathname: "/events/[slug]", params: { slug: event.slug } },
+          locale,
+        });
+      const languages = languagesFor({ en: pathFor("en"), id: pathFor("id") });
+      return LOCALE_ORDER.map((locale) => ({
+        url: `${SITE_URL}${pathFor(locale)}`,
+        lastModified: event.updatedAt || undefined,
+        languages,
+      }));
+    });
 }
 
 /** Marketing pages: static routes plus every registry-driven landing page. */
@@ -86,9 +130,11 @@ export function pageUrls(): SitemapUrl[] {
       en: localizedPath("en", route),
       id: localizedPath("id", route),
     });
+    const lastModified = staticLastModified(route);
     return LOCALE_ORDER.map((locale) => ({
       url: `${SITE_URL}${localizedPath(locale, route)}`,
       languages,
+      lastModified,
     }));
   });
 
@@ -112,7 +158,7 @@ export function pageUrls(): SitemapUrl[] {
     }),
   );
 
-  return [...staticEntries, ...landingEntries];
+  return [...staticEntries, ...landingEntries, ...eventUrls()];
 }
 
 /**

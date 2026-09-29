@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Cekat Tracker: Tahu Asal Setiap Kunjungan dan Chat | Cekat.AI",
+    "title": "Cekat Tracker: Tahu Asal Setiap Kunjungan dan Chat | CekatAI",
     "description": "Satu script JS melacak asal tiap pengunjung: iklan, organik, UTM apa pun, sampai rujukan dari AI seperti ChatGPT. Event-nya terbaca di dashboard dan terkirim via API."
   },
   "hero": {

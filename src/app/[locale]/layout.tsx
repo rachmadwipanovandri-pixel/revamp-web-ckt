@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import { alternates, htmlLang } from "@/lib/seo";
+import { alternates, htmlLang, SITE_URL } from "@/lib/seo";
 import { fontSans } from "@/lib/fonts";
 import { organizationJsonLd, webSiteJsonLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -21,8 +21,6 @@ import {
   GoogleTagManagerNoScript,
 } from "@/components/analytics/google-tag-manager";
 import "../globals.css";
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cekat.ai";
 
 /**
  * Namespaces that `"use client"` modules actually call via `useTranslations`.

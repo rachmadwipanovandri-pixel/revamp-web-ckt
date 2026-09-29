@@ -113,7 +113,7 @@ export default async function ComparisonPage({
                   lazy default. */}
               <Image
                 src="/images/home/comparison.png"
-                alt=""
+                alt={t("heroImageAlt")}
                 width={1536}
                 height={1024}
                 loading="eager"
@@ -163,7 +163,7 @@ export default async function ComparisonPage({
                 <div className="relative aspect-square w-full bg-surface-muted">
                   <Image
                     src={image}
-                    alt=""
+                    alt={t(`${key}Title`)}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
                     className="object-contain"

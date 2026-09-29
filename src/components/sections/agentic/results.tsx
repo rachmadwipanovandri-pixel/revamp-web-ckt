@@ -112,10 +112,10 @@ export function Results() {
         <div className="mt-14 grid gap-10 lg:grid-cols-12 lg:gap-12">
           <div ref={quotesRef} className="lg:col-span-5">
             <Reveal className="flex h-full flex-col">
-              <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-[#667085] uppercase">
+              <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
                 {tq("heading")}
               </p>
-              <p className="mt-3 max-w-md text-sm leading-[1.65] text-[#525C6B]">
+              <p className="mt-3 max-w-md text-sm leading-[1.65] text-[#4B5563]">
                 {tq("body")}
               </p>
 
@@ -124,20 +124,20 @@ export function Results() {
                   <p className="font-numeric text-[clamp(1.85rem,3.5vw,2.75rem)] leading-none font-semibold tracking-[-0.045em] text-primary tabular-nums">
                     {tq(`${activeId}.metricValue`)}
                   </p>
-                  <p className="mt-3 text-sm leading-snug text-[#525C6B]">
+                  <p className="mt-3 text-sm leading-snug text-[#4B5563]">
                     {tq(`${activeId}.metricLabel`)}
                   </p>
-                  <blockquote className="mt-5 text-base leading-[1.5] font-medium tracking-[-0.015em] text-[#0C111D] md:text-lg">
+                  <blockquote className="mt-5 text-base leading-[1.5] font-medium tracking-[-0.015em] text-[#0B1220] md:text-lg">
                     &ldquo;{tq(`${activeId}.quote`)}&rdquo;
                   </blockquote>
-                  <footer className="mt-5 border-t border-[#0C111D]/[0.08] pt-4">
-                    <p className="font-semibold text-[#0C111D]">
+                  <footer className="mt-5 border-t border-[#0B1220]/[0.08] pt-4">
+                    <p className="font-semibold text-[#0B1220]">
                       {tq(`${activeId}.company`)}
                     </p>
-                    <p className="mt-0.5 text-sm text-[#525C6B]">
+                    <p className="mt-0.5 text-sm text-[#4B5563]">
                       {tq(`${activeId}.name`)}, {tq(`${activeId}.role`)}
                     </p>
-                    <p className="mt-1 text-xs text-[#98A2B3]">
+                    <p className="mt-1 text-xs text-[#94A3B8]">
                       {tq(`${activeId}.industry`)} · {tq(`${activeId}.function`)}
                     </p>
                   </footer>
@@ -165,7 +165,7 @@ export function Results() {
                           "rounded-full transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
                           isActive
                             ? "h-2.5 w-8 bg-primary"
-                            : "size-2.5 bg-[#0C111D]/20 hover:bg-[#0C111D]/35",
+                            : "size-2.5 bg-[#0B1220]/20 hover:bg-[#0B1220]/35",
                         )}
                       />
                     </button>
@@ -184,7 +184,7 @@ export function Results() {
                     <div className="relative aspect-[4/5] overflow-hidden rounded-t-[1.3rem]">
                       <Image
                         src={story.image}
-                        alt=""
+                        alt={tq(`${story.id}.company`)}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                         sizes="(max-width: 640px) 50vw, 18vw"
@@ -192,13 +192,13 @@ export function Results() {
                       <div className="absolute inset-0 bg-linear-to-t from-[#0B1220]/45 to-transparent" />
                     </div>
                     <div className="p-4">
-                      <p className="font-numeric text-sm font-semibold text-[#0C111D]">
+                      <p className="font-numeric text-sm font-semibold text-[#0B1220]">
                         {tq(`${story.id}.company`)}
                       </p>
                       <p className="mt-1 font-numeric text-lg font-semibold tracking-[-0.03em] text-primary">
                         {tq(`${story.id}.metricValue`)}
                       </p>
-                      <p className="mt-1 text-xs leading-snug text-[#667085]">
+                      <p className="mt-1 text-xs leading-snug text-[#64748B]">
                         {tq(`${story.id}.metricLabel`)}
                       </p>
                     </div>
@@ -231,8 +231,8 @@ export function Results() {
         </div>
 
         <Reveal delay={60} className="mt-14">
-          <div className="flex flex-col gap-5 rounded-[1.35rem] border border-[#0C111D]/[0.08] bg-white px-6 py-6 md:flex-row md:items-center md:gap-10">
-            <h3 className="shrink-0 font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-[#667085] uppercase">
+          <div className="flex flex-col gap-5 rounded-[1.35rem] border border-[#0B1220]/[0.08] bg-white px-6 py-6 md:flex-row md:items-center md:gap-10">
+            <h3 className="shrink-0 font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
               {t("brandTitle")}
             </h3>
             <div className="min-w-0 flex-1 overflow-hidden">

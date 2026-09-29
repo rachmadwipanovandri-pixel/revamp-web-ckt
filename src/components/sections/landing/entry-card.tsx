@@ -49,7 +49,7 @@ export function EntryCard({
             className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 motion-reduce:transition-none"
           />
           {icon && (
-            <span className="absolute top-3 left-3 flex size-9 items-center justify-center rounded-xl border border-white/70 bg-white/92 text-primary shadow-[0_6px_16px_-8px_rgba(12,17,29,0.45)] backdrop-blur-sm">
+            <span className="absolute top-3 left-3 flex size-9 items-center justify-center rounded-xl border border-white/70 bg-white/92 text-primary shadow-[0_6px_16px_-8px_rgba(11,18,32,0.45)] backdrop-blur-sm">
               <RegistryIcon name={icon} className="size-4" />
             </span>
           )}

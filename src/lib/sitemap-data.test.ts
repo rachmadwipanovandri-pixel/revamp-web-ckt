@@ -13,9 +13,9 @@ describe("pageUrls lastmod", () => {
     const landing = urls.find((u) => u.url.includes("/fitur/wa-blast"));
     expect(landing).toBeDefined();
     expect(landing?.lastModified).toMatch(/^\d{4}-\d{2}-\d{2}T/);
-    // Static routes stay without lastmod (no accurate source).
+    // Static routes use the same rule: the page source file's own mtime.
     const home = urls.find((u) => u.url === "https://cekat.ai/");
-    expect(home?.lastModified).toBeUndefined();
+    expect(home?.lastModified).toMatch(/^\d{4}-\d{2}-\d{2}T/);
   });
 
   it("lists every registry landing in both locales with hreflang", () => {

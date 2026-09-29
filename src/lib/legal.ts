@@ -6,6 +6,12 @@ export type LegalPageId = "terms" | "privacy" | "refund";
 export interface LegalContent {
   /** Document heading, mirrored from the source cekat.ai page. */
   title: string;
+  /**
+   * Curated meta description. When present it wins over the first-paragraph
+   * hoist — legal documents open with a letterhead ("Company: …"), which makes
+   * a useless 37-char snippet.
+   */
+  description?: string;
   /** "Last updated on …" line, or null when the source has none. */
   updated: string | null;
   /** Cleaned semantic HTML (headings, paragraphs, links) for the body. */

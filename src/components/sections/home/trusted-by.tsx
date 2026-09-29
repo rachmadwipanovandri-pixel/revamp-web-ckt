@@ -146,7 +146,7 @@ export function TrustedBy() {
       {/* Quote-led testimonials on the brand grey (Light 100). The shift in
           ground still marks the change of voice: everything above this is the
           brand talking, this is customers talking. Every text tone below was
-          checked against #f2f4f7 and clears AA. */}
+          checked against #F1F5F9 and clears AA. */}
       <div className="bg-surface-subtle">
         <Container
           ref={quotesRef}

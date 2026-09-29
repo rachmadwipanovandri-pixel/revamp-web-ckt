@@ -281,9 +281,9 @@ function StagePanel({
   stepCount: number;
 }) {
   return (
-    <div className="relative overflow-hidden rounded-[1.35rem] border border-[#0C111D]/[0.08] bg-white shadow-[0_1px_2px_rgba(12,17,29,0.04),0_28px_56px_-32px_rgba(12,17,29,0.28)]">
-      <div className="flex items-center justify-between gap-3 border-b border-[#0C111D]/[0.06] bg-[#F6F7F9] px-4 py-2.5">
-        <span className="inline-flex items-center gap-2 font-numeric text-[0.7rem] font-semibold tracking-[0.12em] text-[#667085] uppercase">
+    <div className="relative overflow-hidden rounded-[1.35rem] border border-[#0B1220]/[0.08] bg-white shadow-[0_1px_2px_rgba(11,18,32,0.04),0_28px_56px_-32px_rgba(11,18,32,0.28)]">
+      <div className="flex items-center justify-between gap-3 border-b border-[#0B1220]/[0.06] bg-[#F8FAFC] px-4 py-2.5">
+        <span className="inline-flex items-center gap-2 font-numeric text-[0.7rem] font-semibold tracking-[0.12em] text-[#64748B] uppercase">
           <span aria-hidden className="flex gap-1">
             <span className="size-2 rounded-full bg-[#FF5F57]" />
             <span className="size-2 rounded-full bg-[#FEBC2E]" />
@@ -291,7 +291,7 @@ function StagePanel({
           </span>
           {stageLabel}
         </span>
-        <span className="font-numeric text-[0.7rem] text-[#98A2B3]">
+        <span className="font-numeric text-[0.7rem] text-[#94A3B8]">
           {index} / {String(total).padStart(2, "0")}
         </span>
       </div>
@@ -301,14 +301,14 @@ function StagePanel({
           <ProductMockFor kind={stepKey} />
         </div>
       </div>
-      <div className="flex gap-1.5 border-t border-[#0C111D]/[0.06] px-4 py-2.5">
+      <div className="flex gap-1.5 border-t border-[#0B1220]/[0.06] px-4 py-2.5">
         {Array.from({ length: stepCount }, (_, i) => (
           <span
             key={i}
             aria-hidden
             className={cn(
               "h-1 flex-1 rounded-full transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]",
-              i === active ? "bg-primary" : "bg-[#0C111D]/10",
+              i === active ? "bg-primary" : "bg-[#0B1220]/10",
             )}
           />
         ))}

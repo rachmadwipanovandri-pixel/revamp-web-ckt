@@ -6,6 +6,7 @@ import { Link, getPathname } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import {
   metaSnippet,
+  metaTitle,
   reciprocalLanguages,
   SITE_URL,
 } from "@/lib/seo";
@@ -90,7 +91,7 @@ export async function generateMetadata({
     return { robots: { index: false, follow: false } };
   }
 
-  const title = metaSnippet(post.seo.title || post.title, 70);
+  const title = metaTitle(post.seo.title || post.title);
   const description = metaSnippet(
     post.seo.description || post.excerpt,
     158,
@@ -103,13 +104,28 @@ export async function generateMetadata({
   // not exist. Emit the pair only when the counterpart is actually published.
   // Keys are `en` / `id` (not `id-ID`) so they match the blog sitemap and
   // `alternates()` — mixed codes on one URL are a crawl-budget smell.
+  // Paths are RELATIVE: reciprocalLanguages prefixes SITE_URL itself, and
+  // passing canonicalFor()'s absolute URL here used to yield
+  // `https://cekat.aihttps://cekat.ai/...` (URL-parsed down to `...aihttps//...`).
   const other: Locale = locale === "id" ? "en" : "id";
   const counterpart = await counterpartPostSlug(slug, other);
   const languages =
     counterpart.kind === "translated"
       ? reciprocalLanguages({
-          en: canonicalFor("en", locale === "en" ? slug : counterpart.slug),
-          id: canonicalFor("id", locale === "id" ? slug : counterpart.slug),
+          en: getPathname({
+            href: {
+              pathname: "/blog/[slug]",
+              params: { slug: locale === "en" ? slug : counterpart.slug },
+            },
+            locale: "en",
+          }),
+          id: getPathname({
+            href: {
+              pathname: "/blog/[slug]",
+              params: { slug: locale === "id" ? slug : counterpart.slug },
+            },
+            locale: "id",
+          }),
         })
       : undefined;
 

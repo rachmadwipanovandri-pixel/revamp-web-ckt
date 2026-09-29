@@ -10,9 +10,10 @@ import {
 } from "@/lib/legal";
 import { PostBody } from "@/components/sections/blog/post-body";
 
-/** First paragraph's text, trimmed to a meta-description length. */
-function metaDescription(html: string): string {
-  const firstP = html.match(/<p>([\s\S]*?)<\/p>/)?.[1] ?? "";
+/** Meta description: curated copy first, else the first paragraph, trimmed. */
+function metaDescription(content: LegalContent): string {
+  if (content.description) return content.description;
+  const firstP = content.html.match(/<p>([\s\S]*?)<\/p>/)?.[1] ?? "";
   const text = firstP
     .replace(/<[^>]+>/g, "")
     .replace(/\s+/g, " ")
@@ -28,7 +29,7 @@ export async function legalMetadata(
   const content = await loadLegalContent(page, locale as Locale);
   const { canonical, languages } = alternates(locale, LEGAL_PATHNAME[page]);
   const title = `${content.title} | CekatAI`;
-  const description = metaDescription(content.html);
+  const description = metaDescription(content);
 
   return {
     title,

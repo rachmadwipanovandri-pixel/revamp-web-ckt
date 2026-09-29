@@ -88,11 +88,18 @@ export function deleteEvent(slug: string): boolean {
 /** Listing view model: published events, upcoming first, each with `isPast`. */
 export type ListedEvent = EventItem & { isPast: boolean };
 
+/**
+ * True once the start time has passed. Kept out of component code so render
+ * stays pure (Date.now() inline in a page trips react-hooks/purity).
+ */
+export function isPastEvent(event: EventItem): boolean {
+  return new Date(event.startsAt).getTime() < Date.now();
+}
+
 export function readListedEvents(): ListedEvent[] {
-  const now = Date.now();
   return readEvents()
     .filter((e) => e.status === "published")
-    .map((e) => ({ ...e, isPast: new Date(e.startsAt).getTime() < now }))
+    .map((e) => ({ ...e, isPast: isPastEvent(e) }))
     .sort((a, b) => {
       if (a.isPast !== b.isPast) return a.isPast ? 1 : -1;
       const ta = new Date(a.startsAt).getTime();

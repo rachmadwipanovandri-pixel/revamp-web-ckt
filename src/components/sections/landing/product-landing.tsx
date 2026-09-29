@@ -1,4 +1,9 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getPathname } from "@/i18n/navigation";
+import type { AppPathname } from "@/i18n/routing";
+import { SITE_URL } from "@/lib/seo";
+import { breadcrumbJsonLd, faqPageJsonLd, serviceJsonLd } from "@/lib/jsonld";
+import { JsonLd } from "@/components/seo/json-ld";
 import { LogoMarquee } from "@/components/sections/shared/logo-marquee";
 import { TRUSTED_LOGOS } from "@/components/sections/shared/trusted-logos";
 import { LandingHero } from "@/components/sections/landing/landing-hero";
@@ -12,6 +17,14 @@ export interface ProductStep {
   key: string;
   image: string;
 }
+
+/** What each product page actually sells, for Service.serviceType. */
+const SERVICE_TYPE = {
+  chat: "AI chat customer service",
+  crm: "AI sales CRM",
+  marketing: "WhatsApp marketing automation",
+  order: "AI order-taking automation",
+} as const;
 
 /**
  * Shared shell for the four product pages (chat, crm, marketing, order).
@@ -39,6 +52,30 @@ export async function ProductLanding({
   const tl = await getTranslations({ locale, namespace: "landing" });
   const tt = await getTranslations({ locale, namespace: "home.trustedBy" });
 
+  // Product pages render visible FAQs but shipped no schema — this is the
+  // FAQPage + Service + Breadcrumb set the four money pages were missing.
+  const tb = await getTranslations({ locale, namespace: "breadcrumb" });
+  const pathname = `/${namespace}` as Exclude<
+    AppPathname,
+    `${string}[slug]${string}`
+  >;
+  const url = `${SITE_URL}${getPathname({ href: pathname, locale })}`;
+  const jsonLd = [
+    serviceJsonLd({
+      name: `${badge} — Cekat.AI`,
+      description: t("meta.description"),
+      url,
+      serviceType: SERVICE_TYPE[namespace],
+    }),
+    breadcrumbJsonLd([
+      {
+        name: tb("home"),
+        url: `${SITE_URL}${getPathname({ href: "/", locale })}`,
+      },
+      { name: badge, url },
+    ]),
+  ];
+
   const pillars = ([1, 2, 3] as const).map((n) => ({
     title: t(`whatMakes.card${n}.title` as const),
     body: t(`whatMakes.card${n}.description` as const),
@@ -58,6 +95,7 @@ export async function ProductLanding({
 
   return (
     <>
+      <JsonLd data={[...jsonLd, faqPageJsonLd(faqItems)]} />
       <div className="cv-auto">
         <LandingHero
           badge={badge}

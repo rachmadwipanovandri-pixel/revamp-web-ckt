@@ -17,6 +17,7 @@
     "industries": "Industri",
     "blog": "Blog",
     "contact": "Kontak",
+    "integrations": "Integrasi",
     "masuk": "Login",
     "ctaWhatsapp": "WhatsApp Kami",
     "ctaTrial": "Coba Gratis",
@@ -286,7 +287,7 @@
   },
   "pricing": {
     "meta": {
-      "title": "Harga Cekat.AI | Paket Chat, CRM & Marketing untuk Semua Skala Bisnis",
+      "title": "Harga Cekat.AI | Paket Chat, CRM & Marketing | CekatAI",
       "description": "Lihat paket Cekat.AI: AI agent chat, omnichannel CRM, dan marketing automation. Paket transparan, tanpa biaya tersembunyi."
     },
     "hero": {
@@ -482,7 +483,7 @@
   },
   "crm": {
     "meta": {
-      "title": "CRM Berbasis AI untuk Sales & Leads | Kelola Pipeline Otomatis | CekatAI",
+      "title": "CRM AI untuk Sales & Leads | Pipeline Otomatis | CekatAI",
       "description": "Kelola sales pipeline, leads, dan relasi pelanggan dalam satu CRM AI terintegrasi. Set target, pantau deals, dan otomatisasi follow-up, semua dalam satu dashboard CekatAI."
     },
     "hero": {
@@ -547,7 +548,7 @@
   },
   "chat": {
     "meta": {
-      "title": "AI Agent Chat 24/7 | Super Agent yang Closing Otomatis | CekatAI",
+      "title": "AI Agent Chat 24/7 | Closing Otomatis Tanpa Libur | CekatAI",
       "description": "AI Agent CekatAI menjawab ribuan chat sekaligus, natural, akurat, dan siap closing 24/7. Layani pelanggan di WhatsApp, Instagram, dan semua channel tanpa tambah CS."
     },
     "hero": {
@@ -680,7 +681,7 @@
   },
   "order": {
     "meta": {
-      "title": "Transaksi & Order Otomatis via Chat | AI Sales Autopilot | CekatAI",
+      "title": "Order Otomatis via Chat | AI Sales Autopilot | CekatAI",
       "description": "Proses order, cek ongkir, dan closing langsung di chat, full otomatis tanpa kasir manual. AI CekatAI jualan 24/7 dan kirim followup pembayaran secara otomatis."
     },
     "hero": {
@@ -798,7 +799,7 @@
     "definition": "Halaman industri Cekat.AI menjelaskan bagaimana AI customer service dan WhatsApp API dipakai di kesehatan, ritel, F&B, pendidikan, dan 15+ vertikal lain untuk menjawab customer 24/7, menangkap leads, dan menaikkan penjualan."
   },
   "solutionsHub": {
-    "metaTitle": "Solusi per Peran Tim | Cekat.AI",
+    "metaTitle": "Solusi per Peran Tim | CekatAI",
     "metaDescription": "Lihat bagaimana Cekat.AI dipakai tim sales, customer service, marketing, HRD, dan operasional: AI agent, CRM, dan automasi dalam satu platform.",
     "eyebrow": "Solusi",
     "heading": "Satu Platform, Kerja Tiap Tim Jadi Lebih Ringan",
@@ -810,7 +811,7 @@
     "definition": "Solusi Cekat.AI per peran menjelaskan bagaimana tim sales, customer service, marketing, HRD, dan operasional memakai AI agent, CRM, dan automasi dalam satu platform untuk membalas lebih cepat dan menutup kerja tanpa proses manual."
   },
   "integrations": {
-    "metaTitle": "Integrasi Cekat.AI: Channel, Platform Iklan, dan API | Cekat.AI",
+    "metaTitle": "Integrasi Cekat.AI: Channel, Iklan & API | CekatAI",
     "metaDescription": "Hubungkan WhatsApp Business API, Instagram, TikTok, Telegram, dan email ke satu inbox, kirim konversi ke Meta dan TikTok, lalu sambungkan sistemmu lewat API.",
     "badge": "Integrasi",
     "heading": "Hubungkan Semua Tools Bisnismu dalam Satu Platform",
@@ -868,6 +869,9 @@
       "description": "Layani Pelanggan 24/7 dengan WhatsApp AI Agent dan Omnichannel CRM CekatAI"
     },
     "heading": "Mulai sesi konsultasi gratis Anda dengan tim sales kami sekarang",
+    "intro": "Punya pertanyaan soal harga, demo, atau integrasi? Tulis pesan lewat form ini — tim sales kami balas pada jam kerja, biasanya dalam hitungan jam. Untuk kendala produk, pakai tiga kanal bantuan di bawah form.",
+    "officesHeading": "Kantor Cekat.AI",
+    "officesBody": "Kunjungi kantor terdekat untuk konsultasi langsung dengan tim kami.",
     "form": {
       "nameLabel": "Nama Lengkap",
       "namePlaceholder": "Nama lengkap",
@@ -889,6 +893,7 @@
   },
   "comparison": {
     "metaTitle": "Perbandingan Cekat.AI vs Qontak, Sleekflow, Qiscus & Lainnya",
+    "heroImageAlt": "Ilustrasi perbandingan Cekat.AI dengan platform customer service lain",
     "metaDescription": "Bandingkan Cekat.AI dengan Mekari Qontak, SleekFlow, Qiscus, Halo AI, respond.io: fitur omnichannel, CRM WhatsApp, marketing automation, dan support.",
     "eyebrow": "Perbandingan",
     "heading": "Kenapa Cekat.AI Pilihan yang Lebih Tepat",
@@ -1348,6 +1353,7 @@
       "eyebrow": "EVENT & WEBINAR",
       "title": "Agenda terbaru dari Cekat.AI",
       "subtitle": "Webinar gratis, workshop, dan kelas singkat untuk bantu bisnis kamu nggak ngandelin feeling doang.",
+      "intro": "Setiap bulan Cekat.AI mengadakan webinar gratis, workshop, dan kelas singkat bersama praktisi customer service, sales, dan marketing. Daftar gratis, ikuti sesinya langsung, dan bawa pulang template serta strategi yang bisa langsung dipakai di bisnismu — tanpa harus jadi customer dulu.",
       "empty": "Belum ada event yang tayang. Cek lagi nanti ya.",
       "view": "Lihat detail",
       "past": "Selesai",

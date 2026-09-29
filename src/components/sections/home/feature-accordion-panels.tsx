@@ -146,7 +146,7 @@ export function FeatureAccordionPanels({
                       <div className="relative mt-4 aspect-4/5 w-full overflow-hidden rounded-lg bg-white lg:hidden">
                         <Image
                           src={product.image}
-                          alt=""
+                          alt={t(`${product.key}.title`)}
                           fill
                           sizes="(max-width: 1024px) 100vw, 560px"
                           className="object-contain"
@@ -210,7 +210,7 @@ export function FeatureAccordionPanels({
                 <Image
                   key={product.key}
                   src={product.image}
-                  alt=""
+                  alt={t(`${product.key}.title`)}
                   fill
                   sizes="(max-width: 1024px) 100vw, 560px"
                   className={cn(

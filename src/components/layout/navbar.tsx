@@ -73,7 +73,7 @@ export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
         "fixed top-0 z-50 w-full transition-colors duration-300",
         isTransparent
           ? "bg-linear-to-b from-black/35 to-transparent"
-          : "border-b border-[#0C111D]/[0.08] bg-white/90 backdrop-blur-md",
+          : "border-b border-[#0B1220]/[0.08] bg-white/90 backdrop-blur-md",
       )}
     >
       <Container

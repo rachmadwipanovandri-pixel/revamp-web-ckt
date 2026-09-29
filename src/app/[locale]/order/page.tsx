@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { alternates } from "@/lib/seo";
+import { alternates, metaSnippet, metaTitle } from "@/lib/seo";
 import { ProductLanding } from "@/components/sections/landing/product-landing";
 
 const HOW_IT_WORKS_STEPS = [
@@ -34,8 +34,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "order.meta" });
   const { canonical, languages } = alternates(locale, "/order");
-  const title = t("title");
-  const description = t("description");
+  const title = metaTitle(t("title"));
+  const description = metaSnippet(t("description"), 158);
 
   return {
     title,

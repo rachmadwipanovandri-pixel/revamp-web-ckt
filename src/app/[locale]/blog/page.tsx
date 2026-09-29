@@ -26,7 +26,9 @@ export async function generateMetadata({
   searchParams: Promise<{ category?: string; q?: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const query = (await searchParams).q?.trim();
+  const sp = await searchParams;
+  const query = sp.q?.trim();
+  const categorySlug = sp.category?.trim();
   const t = await getTranslations({ locale, namespace: "blog" });
   const { canonical, languages } = alternates(locale, "/blog");
   const title = query ? t("searchResults", { query }) : t("metaTitle");
@@ -34,9 +36,13 @@ export async function generateMetadata({
   return {
     title,
     description,
-    // Internal search results should not be indexed; the canonical still points
-    // at the clean /blog URL so link equity stays on the hub.
-    ...(query ? { robots: { index: false, follow: true } } : {}),
+    // Filtered views (?q= search AND ?category= archive) are the same nine
+    // cards under a canonical to /blog — keeping them out of the index stops
+    // two near-duplicate URLs per category competing with the hub. `follow`
+    // stays on so the in-page links still get crawled.
+    ...(query || categorySlug
+      ? { robots: { index: false, follow: true } }
+      : {}),
     alternates: { canonical, languages },
     openGraph: {
       title,

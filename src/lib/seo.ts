@@ -84,6 +84,30 @@ export function metaSnippet(text: string | undefined, maxLength = 158): string {
 }
 
 /**
+ * Search-result title, capped at 60 chars (Google's desktop truncation
+ * point). Titles carry a `| CekatAI` brand suffix that must survive the cap:
+ * truncating mid-sentence and losing the brand is how the 72-char titles
+ * shipped before. The head is trimmed instead, with an ellipsis, then the
+ * suffix is re-appended.
+ */
+const BRAND_SUFFIX = /\s*\|\s*(Cekat(?:\.AI|AI)?)\s*$/;
+
+export function metaTitle(text: string | undefined, maxLength = 60): string {
+  const cleaned = (text ?? "").replace(/\s+/g, " ").trim();
+  if (!cleaned) return "";
+  if (cleaned.length <= maxLength) return cleaned;
+
+  const suffix = cleaned.match(BRAND_SUFFIX);
+  if (!suffix) return metaSnippet(cleaned, maxLength);
+
+  const suffixText = `| ${suffix[1]}`;
+  const budget = maxLength - suffixText.length - 1; // room for the space
+  if (budget < 12) return metaSnippet(cleaned, maxLength); // degenerate title
+  const head = metaSnippet(cleaned.slice(0, suffix.index).trim(), budget);
+  return `${head} ${suffixText}`;
+}
+
+/**
  * Reciprocal hreflang for a page that exists in both locales. Keys match the
  * blog sitemap and `alternates()` (`en` / `id`), not `id-ID` — mixed codes on
  * the same URL are a manual-action-shaped inconsistency.

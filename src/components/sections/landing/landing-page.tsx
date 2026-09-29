@@ -4,7 +4,13 @@ import path from "node:path";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type AppPathname, type Locale } from "@/i18n/routing";
-import { alternatesFor, localizedPath, metaSnippet, SITE_URL } from "@/lib/seo";
+import {
+  metaSnippet,
+  metaTitle,
+  alternatesFor,
+  localizedPath,
+  SITE_URL,
+} from "@/lib/seo";
 import {
   entryPath,
   entryPaths,
@@ -78,7 +84,7 @@ export async function landingMetadata(
     locale,
     entryPaths(kind, entry),
   );
-  const title = metaSnippet(content.meta.title, 70);
+  const title = metaTitle(content.meta.title);
   const description = metaSnippet(content.meta.description, 158);
 
   return {

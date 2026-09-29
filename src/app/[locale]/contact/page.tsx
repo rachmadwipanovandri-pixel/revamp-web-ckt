@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { alternates } from "@/lib/seo";
+import { alternates, SITE_URL } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/json-ld";
 import { ContactHero } from "@/components/sections/contact/contact-hero";
 
 export async function generateMetadata({
@@ -45,6 +46,27 @@ export default async function ContactPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "contact.meta" });
+  const { canonical } = alternates(locale, "/contact");
 
-  return <ContactHero />;
+  return (
+    <>
+      {/* ContactPage schema — the one form-bearing family that had none.
+          The Organization itself (phones, addresses) lives in the global
+          organizationJsonLd, so this only points at it. */}
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            name: t("title"),
+            description: t("description"),
+            url: canonical,
+            about: { "@id": `${SITE_URL}/#organization` },
+          },
+        ]}
+      />
+      <ContactHero />
+    </>
+  );
 }

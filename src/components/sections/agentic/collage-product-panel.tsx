@@ -127,7 +127,7 @@ function SyncedCrm({
 
       <div className="mb-2 grid grid-cols-4 gap-1">
         {data.metrics.map((m, i) => (
-          <div key={m.label.en} className="rounded border border-[#e4e7ec] bg-white px-1 py-1 text-center">
+          <div key={m.label.en} className="rounded border border-[#E2E8F0] bg-white px-1 py-1 text-center">
             <div className="text-[7px] tracking-wide text-slate-500 uppercase">
               {m.label[locale]}
             </div>
@@ -211,7 +211,7 @@ function SyncedCrm({
           ].map((f) => (
             <div
               key={f.l}
-              className="rounded border border-[#e4e7ec] bg-white px-1 py-0.5 text-center"
+              className="rounded border border-[#E2E8F0] bg-white px-1 py-0.5 text-center"
             >
               <div className="text-[6.5px] tracking-wide text-slate-500 uppercase">{f.l}</div>
               <div
@@ -445,7 +445,7 @@ function LiveTile({
   hint?: string;
 }) {
   return (
-    <div className="rounded-md border border-[#e4e7ec] bg-white px-1.5 py-1.5">
+    <div className="rounded-md border border-[#E2E8F0] bg-white px-1.5 py-1.5">
       <div className="text-[7px] tracking-wide text-slate-500 uppercase">{l}</div>
       <div className="text-[11px] font-bold text-[#101828]">{v}</div>
       {hint ? <div className="text-[7px] text-emerald-600">{hint}</div> : null}
@@ -607,7 +607,7 @@ function CrmDetail() {
           ].map((f) => (
             <div
               key={f}
-              className="rounded-md border border-[#e4e7ec] bg-white px-1.5 py-1 text-[7.5px] font-medium text-[#101828]"
+              className="rounded-md border border-[#E2E8F0] bg-white px-1.5 py-1 text-[7.5px] font-medium text-[#101828]"
             >
               ✓ {f}
             </div>
@@ -961,7 +961,7 @@ function EcosystemMix({ orderPlaced }: { orderPlaced: boolean }) {
           { l: "Leads", v: "312" },
           { l: "Closed", v: "96" },
         ].map((m) => (
-          <div key={m.l} className="rounded-md border border-[#e4e7ec] bg-white px-1.5 py-1.5">
+          <div key={m.l} className="rounded-md border border-[#E2E8F0] bg-white px-1.5 py-1.5">
             <div className="text-[7px] tracking-wide text-slate-500 uppercase">{m.l}</div>
             <div className="text-[11px] font-bold text-[#101828]">{m.v}</div>
           </div>

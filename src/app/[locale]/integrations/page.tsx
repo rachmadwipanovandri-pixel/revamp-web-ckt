@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Icon } from "@iconify/react/offline";
 import type { Locale } from "@/i18n/routing";
-import { alternates } from "@/lib/seo";
+import { alternates, metaSnippet, metaTitle } from "@/lib/seo";
 import { INTEGRATION_GROUPS } from "@/lib/integrations";
 import { Container } from "@/components/layout/container";
 import { LandingHero } from "@/components/sections/landing/landing-hero";
@@ -16,8 +16,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "integrations" });
   const { canonical, languages } = alternates(locale, "/integrations");
-  const title = t("metaTitle");
-  const description = t("metaDescription");
+  const title = metaTitle(t("metaTitle"));
+  const description = metaSnippet(t("metaDescription"), 158);
 
   return {
     title,

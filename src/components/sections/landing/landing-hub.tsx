@@ -202,10 +202,13 @@ export async function LandingHub({
                   <Reveal>
                     <div className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b border-foreground/10 pb-5">
                       <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-2">
-                        <p className="eyebrow-rule font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
+                        {/* h2, not p: the hub h1 → category → card h3 chain was
+                            skipping h2 entirely (audit P1-8). Classes carry the
+                            eyebrow styling, so nothing changes visually. */}
+                        <h2 className="eyebrow-rule font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
                           {String(categoryIndex + 1).padStart(2, "0")} ·{" "}
                           {headingLabel}
-                        </p>
+                        </h2>
                         <span className="rounded-full border border-foreground/10 bg-white px-2.5 py-1 font-numeric text-[0.68rem] font-semibold tabular-nums text-subtle-foreground">
                           {items.length}
                         </span>

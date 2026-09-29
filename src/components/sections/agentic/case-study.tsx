@@ -49,16 +49,16 @@ export async function CaseStudy() {
 
               <div className="flex flex-col justify-between gap-8 p-7 md:p-10 lg:col-span-7">
                 <div>
-                  <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-[#667085] uppercase">
+                  <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
                     {t("client")}
                   </p>
-                  <h3 className="mt-3 text-[clamp(1.5rem,2.8vw,2.15rem)] leading-[1.12] font-semibold tracking-[-0.035em] text-balance text-[#0C111D]">
+                  <h3 className="mt-3 text-[clamp(1.5rem,2.8vw,2.15rem)] leading-[1.12] font-semibold tracking-[-0.035em] text-balance text-[#0B1220]">
                     {t("title")}
                   </h3>
-                  <p className="mt-5 max-w-xl text-base leading-[1.65] text-[#525C6B]">
+                  <p className="mt-5 max-w-xl text-base leading-[1.65] text-[#4B5563]">
                     {t("body")}
                   </p>
-                  <p className="mt-5 max-w-xl border-l-2 border-primary/40 pl-4 text-sm leading-[1.65] text-[#344054]">
+                  <p className="mt-5 max-w-xl border-l-2 border-primary/40 pl-4 text-sm leading-[1.65] text-[#4B5563]">
                     {t("outcome")}
                   </p>
                 </div>
@@ -74,7 +74,7 @@ export async function CaseStudy() {
                       />
                     ))}
                   </dl>
-                  <p className="mt-6 text-xs leading-relaxed text-[#98A2B3]">
+                  <p className="mt-6 text-xs leading-relaxed text-[#94A3B8]">
                     {t("attribution")}
                   </p>
                   <div className="mt-6">

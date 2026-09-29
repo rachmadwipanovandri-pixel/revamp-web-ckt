@@ -235,6 +235,60 @@ export function blogListingJsonLd({
   };
 }
 
+/**
+ * Published event detail. Attendance mode is inferred from the team-authored
+ * `locationLabel`; when it names no venue (empty label) the location block is
+ * omitted rather than inventing an address we do not have.
+ */
+export function eventJsonLd({
+  name,
+  description,
+  url,
+  startDate,
+  past,
+  image,
+  locationLabel,
+  language,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  startDate: string;
+  past: boolean;
+  image?: string;
+  locationLabel?: string;
+  language?: string;
+}) {
+  const label = (locationLabel ?? "").trim();
+  const online = /online|zoom|webinar|google meet|meet\.google|daring/i.test(label);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name,
+    description,
+    url,
+    startDate,
+    eventStatus: past
+      ? "https://schema.org/EventCompleted"
+      : "https://schema.org/EventScheduled",
+    ...(image ? { image } : {}),
+    ...(language ? { inLanguage: language } : {}),
+    // With no authored venue there is nothing truthful to assert about where
+    // it happens — schema validators prefer an absent block over a wrong one.
+    ...(label
+      ? {
+          eventAttendanceMode: online
+            ? "https://schema.org/OnlineEventAttendanceMode"
+            : "https://schema.org/OfflineEventAttendanceMode",
+          location: online
+            ? { "@type": "VirtualLocation", url }
+            : { "@type": "Place", name: label },
+        }
+      : {}),
+    organizer: { "@id": `${SITE_URL}/#organization` },
+  };
+}
+
 export function faqPageJsonLd(items: Array<{ q: string; a: string }>) {
   return {
     "@context": "https://schema.org",

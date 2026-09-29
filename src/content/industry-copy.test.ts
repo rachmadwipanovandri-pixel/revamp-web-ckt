@@ -407,6 +407,14 @@ const EXPECTED_STATS: Record<
           label:
             "increase in qualified leads at Multi Flashindo Karisma within 4 months",
         },
+        {
+          value: "+30%",
+          label: "increase in monthly revenue at Happy GSR",
+        },
+        {
+          value: "+30%",
+          label: "increase in revenue at Lintas Jaringan Nusantara",
+        },
       ],
       unchanged: [
         { value: "24/7", label: "[existing industry 24/7 line — leave as is]" },
@@ -424,6 +432,14 @@ const EXPECTED_STATS: Record<
           value: "+8%",
           label:
             "kenaikan lead terkualifikasi di Multi Flashindo Karisma dalam 4 bulan",
+        },
+        {
+          value: "+30%",
+          label: "kenaikan omzet bulanan di Happy GSR",
+        },
+        {
+          value: "+30%",
+          label: "kenaikan revenue di Lintas Jaringan Nusantara",
         },
       ],
       unchanged: [
@@ -444,6 +460,10 @@ const EXPECTED_STATS: Record<
           value: "200+",
           label: "customer chats handled per day at Sociamedic Clinic",
         },
+        {
+          value: "+30–40%",
+          label: "increase in revenue at Putih Skin Clinic within 5 months",
+        },
       ],
       unchanged: [
         {
@@ -462,6 +482,10 @@ const EXPECTED_STATS: Record<
         {
           value: "200+",
           label: "chat pelanggan tertangani per hari di Sociamedic Clinic",
+        },
+        {
+          value: "+30–40%",
+          label: "kenaikan omzet di Putih Skin Clinic dalam 5 bulan",
         },
       ],
       unchanged: [
@@ -640,8 +664,7 @@ const HANSEN_EDUCATION_PROOF = {
       role: "Head of Marketing, Admission & Sales of Matana University",
       image: "/images/home/hansen-iskandar.png",
     },
-    faq:
-      "Matana University increased student enrolment by nearly 60–70% with Cekat.AI, according to its Head of Marketing, Admission & Sales. Faster, more consistent responses helped build prospective-student engagement and let the team work more efficiently.",
+    faq: "Matana University increased student enrolment by nearly 60–70% with Cekat.AI, according to its Head of Marketing, Admission & Sales. Faster, more consistent responses helped build prospective-student engagement and let the team work more efficiently.",
   },
   id: {
     metaDescription:
@@ -663,8 +686,7 @@ const HANSEN_EDUCATION_PROOF = {
       role: "Head of Marketing, Admission & Sales of Matana University",
       image: "/images/home/hansen-iskandar.png",
     },
-    faq:
-      "Matana University meningkatkan jumlah mahasiswa hampir 60–70% dengan Cekat.AI, menurut Head of Marketing, Admission & Sales-nya. Respons yang lebih cepat dan konsisten membantu membangun engagement calon mahasiswa dan membuat tim bekerja lebih efisien.",
+    faq: "Matana University meningkatkan jumlah mahasiswa hampir 60–70% dengan Cekat.AI, menurut Head of Marketing, Admission & Sales-nya. Respons yang lebih cepat dan konsisten membantu membangun engagement calon mahasiswa dan membuat tim bekerja lebih efisien.",
   },
 } as const;
 
@@ -691,14 +713,15 @@ describe("industry replacement copy", () => {
     for (const [slug, locales] of Object.entries(EXPECTED_STATS)) {
       for (const locale of ["en", "id"] as const) {
         const content = readIndustry(slug, locale);
+        const { replacement, unchanged } = locales[locale];
         expect(
-          content.stats.slice(0, 2),
+          content.stats.slice(0, replacement.length),
           `${slug}/${locale} replacements`,
-        ).toEqual(locales[locale].replacement);
+        ).toEqual(replacement);
         expect(
-          content.stats.slice(2).map(({ value }) => value),
+          content.stats.slice(replacement.length).map(({ value }) => value),
           `${slug}/${locale} unchanged boxes`,
-        ).toEqual(locales[locale].unchanged.map(({ value }) => value));
+        ).toEqual(unchanged.map(({ value }) => value));
       }
     }
   });

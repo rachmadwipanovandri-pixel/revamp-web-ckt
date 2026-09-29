@@ -59,7 +59,7 @@ export async function IndustryCarousel() {
   const panels: IndustryPanel[] = resolved.filter((panel) => panel !== null);
 
   return (
-    <section className="relative overflow-hidden bg-[#F6F7F9] py-20 md:py-28 lg:py-32">
+    <section className="relative overflow-hidden bg-[#F8FAFC] py-20 md:py-28 lg:py-32">
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
         <Reveal>
           <div className="grid gap-6 lg:grid-cols-12 lg:items-end lg:gap-10">
@@ -68,13 +68,13 @@ export async function IndustryCarousel() {
                 <span aria-hidden className="h-px w-6 bg-primary/50" />
                 {tn("industries")}
               </p>
-              <h2 className="text-[clamp(2rem,3.8vw,3.15rem)] leading-[1.05] font-semibold tracking-[-0.04em] text-balance text-[#0C111D]">
+              <h2 className="text-[clamp(2rem,3.8vw,3.15rem)] leading-[1.05] font-semibold tracking-[-0.04em] text-balance text-[#0B1220]">
                 {t("headingLead")}{" "}
                 <span className="text-primary">{t("headingAccent")}</span>
               </h2>
             </div>
             <div className="lg:col-span-5 lg:pb-1">
-              <p className="max-w-xl text-base leading-[1.65] text-[#525C6B] md:text-[1.0625rem]">
+              <p className="max-w-xl text-base leading-[1.65] text-[#4B5563] md:text-[1.0625rem]">
                 {t("body")}
               </p>
               <Link

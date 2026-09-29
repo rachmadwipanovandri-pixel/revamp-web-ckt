@@ -39,7 +39,7 @@ export async function OpenApi() {
               {CAPABILITIES.map((cap, index) => (
                 <li
                   key={cap}
-                  className="flex items-start gap-3 rounded-2xl border border-[#0C111D]/[0.07] bg-[#F6F7F9] px-4 py-3.5"
+                  className="flex items-start gap-3 rounded-2xl border border-[#0B1220]/[0.07] bg-[#F8FAFC] px-4 py-3.5"
                 >
                   <span
                     aria-hidden
@@ -48,10 +48,10 @@ export async function OpenApi() {
                     0{index + 1}
                   </span>
                   <div>
-                    <p className="text-sm leading-snug font-semibold text-[#0C111D]">
+                    <p className="text-sm leading-snug font-semibold text-[#0B1220]">
                       {t(`${cap}.title`)}
                     </p>
-                    <p className="mt-1 text-xs leading-relaxed text-[#667085]">
+                    <p className="mt-1 text-xs leading-relaxed text-[#64748B]">
                       {t(`${cap}.body`)}
                     </p>
                   </div>
@@ -68,12 +68,12 @@ export async function OpenApi() {
 
           <Reveal className="lg:col-span-7" delay={80}>
             <SoftCard hover={false} className="overflow-hidden p-7 md:p-9">
-              <div className="mb-6 flex items-center justify-between gap-3 border-b border-[#0C111D]/[0.07] pb-4">
-                <span className="inline-flex items-center gap-2 font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-[#667085] uppercase">
+              <div className="mb-6 flex items-center justify-between gap-3 border-b border-[#0B1220]/[0.07] pb-4">
+                <span className="inline-flex items-center gap-2 font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
                   <SafeIcon icon={mdiApi} className="size-4 text-primary" size="1rem" />
                   {t("constellationLabel")}
                 </span>
-                <span className="font-numeric text-[0.7rem] text-[#98A2B3]">
+                <span className="font-numeric text-[0.7rem] text-[#94A3B8]">
                   REST · Webhook · OAuth
                 </span>
               </div>
@@ -83,14 +83,14 @@ export async function OpenApi() {
                     key={item.id}
                     className="flex min-w-0 flex-col items-center gap-2.5 text-center"
                   >
-                    <span className="flex size-14 items-center justify-center rounded-2xl border border-[#0C111D]/[0.07] bg-[#F6F7F9] text-[#344054] transition-all duration-400 hover:-translate-y-0.5 hover:border-primary/25 hover:bg-white">
+                    <span className="flex size-14 items-center justify-center rounded-2xl border border-[#0B1220]/[0.07] bg-[#F8FAFC] text-[#4B5563] transition-all duration-400 hover:-translate-y-0.5 hover:border-primary/25 hover:bg-white">
                       <SafeIcon
                         icon={item.icon}
                         className="h-6 w-auto"
                         size="1.5rem"
                       />
                     </span>
-                    <span className="font-numeric text-xs leading-snug font-medium break-words text-[#525C6B]">
+                    <span className="font-numeric text-xs leading-snug font-medium break-words text-[#4B5563]">
                       {item.name[locale]}
                     </span>
                   </li>

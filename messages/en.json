@@ -17,6 +17,7 @@
     "industries": "Industries",
     "blog": "Blog",
     "contact": "Contact",
+    "integrations": "Integrations",
     "masuk": "Log in",
     "ctaWhatsapp": "WhatsApp Us",
     "ctaTrial": "Free Trial",
@@ -286,7 +287,7 @@
   },
   "pricing": {
     "meta": {
-      "title": "Cekat.AI Pricing | Chat, CRM & Marketing Plans for Every Business Size",
+      "title": "Cekat.AI Pricing | Chat, CRM & Marketing Plans",
       "description": "See Cekat.AI pricing: AI chat agents, omnichannel CRM, and marketing automation. Transparent plans, no hidden fees."
     },
     "hero": {
@@ -482,7 +483,7 @@
   },
   "crm": {
     "meta": {
-      "title": "AI-Powered CRM for Sales & Leads | Automated Pipeline Management | CekatAI",
+      "title": "AI CRM for Sales & Leads | Automated Pipeline | CekatAI",
       "description": "Manage your sales pipeline, leads, and customer relationships in one integrated AI CRM. Set targets, monitor deals, and automate follow-ups, all in one CekatAI dashboard."
     },
     "hero": {
@@ -547,7 +548,7 @@
   },
   "chat": {
     "meta": {
-      "title": "24/7 AI Chat Agent | A Super Agent That Closes Automatically | CekatAI",
+      "title": "24/7 AI Chat Agent | Closes Automatically | CekatAI",
       "description": "CekatAI's AI Agent answers thousands of chats at once, natural, accurate, and ready to close 24/7. Serve customers on WhatsApp, Instagram, and every channel without adding CS staff."
     },
     "hero": {
@@ -680,7 +681,7 @@
   },
   "order": {
     "meta": {
-      "title": "Automated Orders & Transactions via Chat | AI Sales Autopilot | CekatAI",
+      "title": "Automated Orders via Chat | AI Sales Autopilot | CekatAI",
       "description": "Process orders, check shipping rates, and close deals right in chat, fully automated with no manual cashier. CekatAI's AI sells 24/7 and sends payment follow-ups automatically."
     },
     "hero": {
@@ -798,7 +799,7 @@
     "definition": "Cekat.AI industry pages show how AI customer service and the WhatsApp API are used in healthcare, retail, F&B, education, and 15+ other verticals to answer customers 24/7, capture leads, and grow sales."
   },
   "solutionsHub": {
-    "metaTitle": "Solutions by Team Role | Cekat.AI",
+    "metaTitle": "Solutions by Team Role | CekatAI",
     "metaDescription": "See how sales, customer service, marketing, HR, and operations teams use Cekat.AI: AI agents, CRM, and automation in one platform.",
     "eyebrow": "Solutions",
     "heading": "One Platform That Makes Every Team's Work Lighter",
@@ -810,7 +811,7 @@
     "definition": "Cekat.AI solutions by role explain how sales, customer service, marketing, HR, and operations teams use AI agents, CRM, and automation in one platform to reply faster and close work without manual busywork."
   },
   "integrations": {
-    "metaTitle": "Cekat.AI Integrations: Channels, Ad Platforms, and APIs | Cekat.AI",
+    "metaTitle": "Cekat.AI Integrations: Channels, Ads & APIs | CekatAI",
     "metaDescription": "Connect WhatsApp Business API, Instagram, TikTok, Telegram, and email to one inbox, send conversions to Meta and TikTok, then wire in your systems via API.",
     "badge": "Integrations",
     "heading": "Connect Every Business Tool in One Platform",
@@ -868,6 +869,9 @@
       "description": "Serve customers 24/7 with CekatAI's WhatsApp AI Agent and Omnichannel CRM."
     },
     "heading": "Start your free consultation session with our sales team today",
+    "intro": "Questions about pricing, a demo, or an integration? Send us a message through this form — our sales team replies during business hours, usually within hours. For product issues, use the three support channels below the form.",
+    "officesHeading": "Cekat.AI offices",
+    "officesBody": "Visit the nearest office for an in-person consultation with our team.",
     "form": {
       "nameLabel": "Name",
       "namePlaceholder": "Full name",
@@ -889,6 +893,7 @@
   },
   "comparison": {
     "metaTitle": "Cekat.AI vs Qontak, SleekFlow, Qiscus & Others Compared",
+    "heroImageAlt": "Illustration comparing Cekat.AI with other customer service platforms",
     "metaDescription": "Compare Cekat.AI with Mekari Qontak, SleekFlow, Qiscus, Halo AI and respond.io across omnichannel inbox, WhatsApp CRM, marketing automation and support.",
     "eyebrow": "Comparison",
     "heading": "Why Cekat.AI is the Smarter Choice",
@@ -1348,6 +1353,7 @@
       "eyebrow": "EVENTS & WEBINARS",
       "title": "The latest from Cekat.AI",
       "subtitle": "Free webinars, workshops and short classes to help your business stop running on guesswork.",
+      "intro": "Every month Cekat.AI runs free webinars, hands-on workshops, and short classes with practitioners from customer service, sales, and marketing. Register for free, join live, and take home templates and tactics you can use right away in your business — no purchase required.",
       "empty": "No events are live right now. Check back soon.",
       "view": "View details",
       "past": "Ended",

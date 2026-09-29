@@ -33,7 +33,7 @@ export async function Features() {
   const t = await getTranslations("agentic.features");
 
   return (
-    <SectionBand tone="soft" className="border-y border-[#0C111D]/[0.06]">
+    <SectionBand tone="soft" className="border-y border-[#0B1220]/[0.06]">
       <SectionShell className="pt-20 pb-10 md:pt-28 md:pb-14 lg:pt-32">
         <Reveal>
           <SectionHeading
@@ -53,7 +53,7 @@ export async function Features() {
               aria-hidden={index >= FEATURES.length || undefined}
               className="w-[260px] shrink-0 sm:w-[300px] lg:w-[340px]"
             >
-              <article className="group flex h-full flex-col overflow-hidden rounded-[1.35rem] border border-[#0C111D]/[0.08] bg-white shadow-[0_1px_2px_rgba(12,17,29,0.04),0_18px_40px_-28px_rgba(12,17,29,0.18)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-primary/25 hover:shadow-[0_1px_2px_rgba(12,17,29,0.04),0_28px_56px_-30px_rgba(19,82,191,0.28)]">
+              <article className="group flex h-full flex-col overflow-hidden rounded-[1.35rem] border border-[#0B1220]/[0.08] bg-white shadow-[0_1px_2px_rgba(11,18,32,0.04),0_18px_40px_-28px_rgba(11,18,32,0.18)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-primary/25 hover:shadow-[0_1px_2px_rgba(11,18,32,0.04),0_28px_56px_-30px_rgba(19,82,191,0.28)]">
                 <div className="relative aspect-square overflow-hidden bg-[#DCE7FC]">
                   <Image
                     src={feature.src}
@@ -65,10 +65,10 @@ export async function Features() {
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-5 md:p-6">
-                  <h3 className="text-base font-semibold tracking-[-0.02em] text-[#0C111D] md:text-lg">
+                  <h3 className="text-base font-semibold tracking-[-0.02em] text-[#0B1220] md:text-lg">
                     {t(`${feature.key}.title`)}
                   </h3>
-                  <p className="mt-2 text-sm leading-[1.6] text-[#525C6B]">
+                  <p className="mt-2 text-sm leading-[1.6] text-[#4B5563]">
                     {t(`${feature.key}.body`)}
                   </p>
                 </div>

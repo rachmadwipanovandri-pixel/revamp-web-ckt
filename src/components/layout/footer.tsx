@@ -24,6 +24,10 @@ const PRODUCT_LINKS = [
   { key: "order", href: "/order" },
   { key: "events", href: "/events" },
   { key: "harga", href: "/pricing" },
+  // Contact was an orphan (zero internal links sitewide) and integrations had
+  // no footer entry — both are money-page paths crawlers should reach.
+  { key: "contact", href: "/contact" },
+  { key: "integrations", href: "/integrations" },
 ] as const;
 
 // Legal pages are served on this site (localized), mirroring the cekat.ai copy.

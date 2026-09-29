@@ -76,7 +76,7 @@ export async function Gallery() {
             {ITEMS.map((item, index) => (
               <li
                 key={item.src}
-                className={`group relative overflow-hidden rounded-[1.25rem] border border-[#0C111D]/[0.06] bg-[#F6F7F9] ${item.className}`}
+                className={`group relative overflow-hidden rounded-[1.25rem] border border-[#0B1220]/[0.06] bg-[#F8FAFC] ${item.className}`}
               >
                 <Image
                   src={item.src}
@@ -86,7 +86,7 @@ export async function Gallery() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-[#0B1220]/35 via-transparent to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-50" />
-                <span className="absolute bottom-3 left-3 rounded-full bg-white/90 px-2.5 py-1 font-numeric text-[0.65rem] font-semibold tracking-[0.12em] text-[#0C111D] uppercase">
+                <span className="absolute bottom-3 left-3 rounded-full bg-white/90 px-2.5 py-1 font-numeric text-[0.65rem] font-semibold tracking-[0.12em] text-[#0B1220] uppercase">
                   {String(index + 1).padStart(2, "0")}
                 </span>
               </li>
