@@ -8,13 +8,21 @@ import { FloatingWhatsApp } from "@/components/layout/floating-whatsapp";
  * Global site chrome for every production route. Kept out of the [locale]
  * layout so standalone drafts (preview-home) that ship their own header and
  * footer don't render the site nav twice.
+ *
+ * The locale is passed explicitly: a locale-less `getTranslations()` falls
+ * back to reading request headers, which throws DYNAMIC_SERVER_USAGE while
+ * static-ISR pages (blog/[slug], author pages) render on demand — 500 in
+ * production while dev and build-time prerenders look fine.
  */
 export default async function SiteLayout({
   children,
+  params,
 }: {
   children: ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
-  const tn = await getTranslations("nav");
+  const { locale } = await params;
+  const tn = await getTranslations({ locale, namespace: "nav" });
 
   return (
     <>
