@@ -161,7 +161,7 @@ function secHero() {
       <a class="hero-pill hero-anim d1" href="${h.pill.href}"><span class="badge">${esc(h.pill.badge)}</span>${esc(h.pill.text)} <span class="arrow">→</span></a>
       <h1 class="hero-anim d2">${fmt(h.title)}</h1>
       <p class="hero-sub hero-anim d3">${esc(h.sub)}</p>
-      <form class="capture hero-anim d4" onsubmit="return false">
+      <form class="capture hero-anim d4">
         <input type="text" inputmode="email" placeholder="${esc(h.form.placeholder)}" aria-label="${esc(h.form.placeholder)}">
         <button class="btn btn-primary" type="submit">${esc(h.form.cta)}</button>
       </form>
@@ -534,13 +534,64 @@ function secVideos() {
         <p class="lead" style="text-align:center">${esc(v.lead)}</p>
       </div>
       <div class="vid-grid">${v.items.map((it, i) => `
-        <div class="vid-card reveal-media" style="--d:${i * 90}ms" data-vid>
-          <video preload="metadata" playsinline src="${it.src}"></video>
+        <div class="vid-card reveal-media" style="--d:${i * 90}ms" data-vid data-yt="${esc(it.yt)}">
+          <img class="vid-poster" src="https://i.ytimg.com/vi/${esc(it.yt)}/hqdefault.jpg" alt="" loading="lazy">
           <div class="vid-play" aria-hidden="true"></div>
           <div class="vid-veil"><div class="vid-co">${esc(it.co)}</div><div class="vid-who">${esc(it.who)}</div></div>
         </div>`).join("")}
       </div>
       <p class="note reveal">${esc(v.note)}</p>
+    </div>
+  </section>`;
+}
+function secIndustries() {
+  const s = DATA.industries;
+  return `<section class="industries" data-nav="light">
+    <div class="container">
+      <div class="head reveal">
+        <span class="eyebrow"><span class="dot"></span>${esc(s.eyebrow)}</span>
+        <h2 class="h2">${esc(s.heading)}</h2>
+        <p class="lead">${esc(s.lead)}</p>
+      </div>
+      <div class="ind-grid">${s.items.map((it, i) => `
+        <a class="ind-card reveal-media" style="--d:${(i % 4) * 70}ms" href="${esc(it.href)}">
+          <div class="ind-media"><img src="${esc(it.img)}" alt="${esc(it.name)}" loading="lazy"></div>
+          <div class="ind-body">
+            <h3>${esc(it.name)}</h3>
+            <p class="ind-tag">${esc(it.tag)}</p>
+            <div class="ind-chips">${it.chips.map((c) => `<span>${esc(c)}</span>`).join("")}</div>
+            <span class="ind-go">${esc(s.cta)} →</span>
+          </div>
+        </a>`).join("")}
+      </div>
+      <div class="ind-more reveal"><a class="textlink" href="${esc(s.more.href)}">${esc(s.more.label)} →</a></div>
+    </div>
+  </section>`;
+}
+function secPricing() {
+  const p = DATA.pricing;
+  const plan = (pl, i) => `
+    <article class="plan reveal${pl.popular ? " popular" : ""}" style="--d:${i * 70}ms">
+      ${pl.popular ? `<span class="plan-badge">${esc(p.popular)}</span>` : ""}
+      <div class="plan-top"><h3>${esc(pl.name)}</h3><span class="plan-idx">${String(i + 1).padStart(2, "0")}</span></div>
+      <p class="plan-tag">${esc(pl.tag)}</p>
+      <a class="btn ${pl.custom ? "btn-outline" : "btn-primary"} plan-cta" href="${esc(pl.href)}">${esc(pl.cta)}</a>
+      <ul class="plan-specs">${pl.specs.map((v, j) => `
+        <li><span class="tick" aria-hidden="true"></span><span><b>${esc(p.rows[j])}:</b> ${esc(v)}</span></li>`).join("")}
+      </ul>
+    </article>`;
+  return `<section class="pricing" data-nav="light">
+    <div class="container">
+      <div class="head reveal">
+        <span class="eyebrow"><span class="dot"></span>${esc(p.eyebrow)}</span>
+        <h2 class="h2">${esc(p.heading)}</h2>
+        <p class="lead">${esc(p.lead)}</p>
+      </div>
+      <p class="price-note reveal">${esc(p.note)}</p>
+      <div class="plan-grid">${p.plans.map(plan).join("")}</div>
+      <div class="plan-foot reveal">
+        <a class="textlink" href="${esc(p.compare.href)}">${esc(p.compare.label)} →</a>
+      </div>
     </div>
   </section>`;
 }
@@ -571,7 +622,7 @@ function secMidcta() {
     <span class="eyebrow reveal" style="color:#BFD4FF"><span class="dot"></span>${esc(m.eyebrow)}</span>
     <h2 class="reveal" style="--d:60ms">${fmt(m.title)}</h2>
     <p class="reveal" style="--d:120ms">${esc(m.sub)}</p>
-    <form class="capture reveal" style="--d:180ms" onsubmit="return false">
+    <form class="capture reveal" style="--d:180ms">
       <input type="text" inputmode="email" placeholder="${esc(m.form.placeholder)}" aria-label="${esc(m.form.placeholder)}">
       <button class="btn btn-light" type="submit">${esc(m.form.cta)}</button>
     </form>
@@ -610,8 +661,8 @@ function renderFooter() {
         <div class="brand">${brandSvg("ftr", "brand-logo")}</div>
         <p>${esc(f.about)}</p>
         <span class="f-partner">${ICON.shield}${esc(f.partner)}</span>
-        ${(f.apps && f.apps.length) ? `<div class="f-apps">${f.apps.map(a =>
-          `<a href="${a.href}" target="_blank" rel="noopener noreferrer">${esc(a.t)}</a>`).join("")}</div>` : ""}
+        ${(f.apps && f.apps.length) ? `<div class="f-apps-wrap"><h5>${esc(f.appsTitle)}</h5><div class="f-apps">${f.apps.map(a =>
+          `<a href="${a.href}" target="_blank" rel="noopener noreferrer">${esc(a.t)}</a>`).join("")}</div></div>` : ""}
         ${(f.countries && f.countries.length) ? `<div class="f-country">
           <h5>${esc(f.officeTitle)}</h5>
           <div class="f-tabs">${f.countries.map((c, i) =>
@@ -632,7 +683,7 @@ function renderFooter() {
 /* ===================== mount ===================== */
 const SECTIONS = { hero: secHero, logos: secLogos, proof: secProof, signals: secSignals,
   products: secProducts, personas: secPersonas, results: secResults, videos: secVideos,
-  love: secLove, midcta: secMidcta, blog: secBlog };
+  industries: secIndustries, love: secLove, pricing: secPricing, midcta: secMidcta, blog: secBlog };
 
 /** Susun seluruh halaman preview (progress + backdrop + header + main + footer). */
 export function buildPage(latestPosts, locale) {

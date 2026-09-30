@@ -9,7 +9,8 @@ function subscribe() {
   return () => {};
 }
 
-function readStored(): string {
+/** Client-only read of the ad-attribution query string captured on landing. */
+export function readStoredAdParams(): string {
   const match = document.cookie.match(
     new RegExp("(?:^|;\\s*)" + AD_COOKIE + "=([^;]*)"),
   );
@@ -25,7 +26,7 @@ function readStored(): string {
 export function useAppUrl(base: string): string {
   return useSyncExternalStore(
     subscribe,
-    () => appendAdParams(base, readStored()),
+    () => appendAdParams(base, readStoredAdParams()),
     () => base,
   );
 }

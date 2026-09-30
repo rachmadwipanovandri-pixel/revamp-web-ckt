@@ -8,6 +8,9 @@
 import { DATA as DATA_ID } from "./data";
 import { DATA_EN } from "./data-en";
 import { megaItems } from "./render";
+import { appendAdParams } from "@/lib/ad-params";
+import { REGISTER_URL } from "@/lib/links";
+import { readStoredAdParams } from "@/hooks/use-app-url";
 
 export function initPreviewHome(root: HTMLElement): () => void {
   const ac = new AbortController();
@@ -222,21 +225,40 @@ export function initPreviewHome(root: HTMLElement): () => void {
     /* Tanpa pause-IO: siklus34s diizinkan jalan terus agar selalu loop dari awal. */
   }
 
-  /* ---------- language switcher ---------- */
+  /* ---------- language switcher (hover di desktop, klik tetap jalan) ---------- */
+  const langRoot = q<HTMLElement>("#langSwitch");
   const langBtn = q<HTMLElement>("#langBtn");
   const langMenu = q<HTMLElement>("#langMenu");
+  const hoverable = matchMedia("(hover: hover) and (pointer: fine)");
+  function setLang(open: boolean) {
+    langMenu?.classList.toggle("open", open);
+    langBtn?.setAttribute("aria-expanded", String(open));
+  }
   langBtn?.addEventListener("click", (e) => {
     e.stopPropagation();
-    const on = !langMenu?.classList.contains("open");
-    langMenu?.classList.toggle("open", on);
-    langBtn.setAttribute("aria-expanded", String(on));
+    setLang(!langMenu?.classList.contains("open"));
   });
-  document.addEventListener("click", () => {
-    if (langMenu?.classList.contains("open")) {
-      langMenu.classList.remove("open");
-      langBtn?.setAttribute("aria-expanded", "false");
-    }
-  }, { signal });
+  langRoot?.addEventListener("mouseenter", () => {
+    if (hoverable.matches) setLang(true);
+  });
+  langRoot?.addEventListener("mouseleave", () => {
+    if (hoverable.matches) setLang(false);
+  });
+  document.addEventListener("click", () => setLang(false), { signal });
+
+  /* ---------- capture form (hero + mid-CTA) → halaman register ---------- */
+  qa("form.capture").forEach((form) =>
+    form.addEventListener(
+      "submit",
+      (e) => {
+        e.preventDefault();
+        const go = document.createElement("a");
+        go.href = appendAdParams(REGISTER_URL, readStoredAdParams());
+        go.click();
+      },
+      { signal },
+    ),
+  );
 
   /* ---------- footer: tab kantor (Indonesia / Singapura / Malaysia) ---------- */
   qa(".f-tab").forEach((tab) =>
@@ -378,26 +400,25 @@ export function initPreviewHome(root: HTMLElement): () => void {
     }),
   );
 
-  /* ---------- video cards ---------- */
+  /* ---------- video cards (YouTube embeds, same videos as the homepage) ---------- */
   qa("[data-vid]").forEach((card) => {
-    const vid = card.querySelector("video");
-    if (!vid) return;
+    const yt = card.getAttribute("data-yt");
+    if (!yt) return;
     card.addEventListener("click", () => {
-      if (vid.paused) {
-        qa("[data-vid] video").forEach((v) => {
-          if (v !== vid) (v as HTMLVideoElement).pause();
-        });
-        void vid.play().then(() => card.classList.add("playing")).catch(() => {});
-      } else {
-        vid.pause();
-      }
-    });
-    vid.addEventListener("pause", () => card.classList.remove("playing"));
-    vid.addEventListener("ended", () => card.classList.remove("playing"));
-    vid.addEventListener("play", () => {
-      qa("[data-vid]").forEach((c) => {
-        if (c !== card) c.classList.remove("playing");
+      if (card.classList.contains("playing")) return;
+      qa("[data-vid]").forEach((other) => {
+        if (other === card) return;
+        other.classList.remove("playing");
+        other.querySelector("iframe")?.remove();
       });
+      const frame = document.createElement("iframe");
+      frame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(yt)}?autoplay=1`;
+      const co = card.querySelector(".vid-co")?.textContent?.trim();
+      frame.title = co ? `${co} video testimonial` : "Customer video testimonial";
+      frame.allow = "accelerate-compute; autoplay; encrypted-media";
+      frame.allowFullscreen = true;
+      frame.className = "vid-frame";
+      card.append(frame);
       card.classList.add("playing");
     });
   });
@@ -405,6 +426,5 @@ export function initPreviewHome(root: HTMLElement): () => void {
   return () => {
     ac.abort();
     cleanups.forEach((fn) => fn());
-    qa("video").forEach((v) => (v as HTMLVideoElement).pause());
   };
 }

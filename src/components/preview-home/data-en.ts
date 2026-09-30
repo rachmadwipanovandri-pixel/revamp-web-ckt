@@ -335,10 +335,60 @@ export const DATA_EN = {
     lead: "Thirty seconds from business owners living it — no script, no drama.",
     note: "Click any video to play.",
     items: [
-      { src: "/videos/angelcakery.webm", co: "Angel Cakery", who: "Customer story" },
-      { src: "/videos/dariustour.webm", co: "Darius Tour", who: "Customer story" },
-      { src: "/videos/gamal.webm", co: "Putiih Skin Clinic", who: "Gamal · Founder & CEO" },
-      { src: "/videos/orangedental.webm", co: "Orange Dental", who: "Customer story" }
+      { yt: "ePdVgW7X01s", co: "Moir Salon", who: "Silcia Brenda · CEO & Founder" },
+      { yt: "wvOip0Gkx30", co: "Rumah Zakat", who: "Tantan Supriantna · Head Customer Relation" },
+      { yt: "O_xSafLehMQ", co: "Multimedia Nusantara Polytechnic", who: "Hargyo T. N. Ignatis, Ph.D · Director" },
+      { yt: "681luT0Aa68", co: "VIO Optical Clinic", who: "Rianti Yahya · CEO" }
+    ]
+  },
+
+  industries: {
+    eyebrow: "Industries",
+    heading: "One playbook, shaped to your industry",
+    lead: "From clinics to logistics — chat, orders, and automated follow-up run 24/7 on the flow your industry already works in.",
+    cta: "See the solution",
+    more: { label: "All industries", href: "/en/industries" },
+    items: [
+      { name: "Healthcare", tag: "24/7 patient answers and bookings", href: "/en/industries/healthcare", img: "/images/industries/healthcare.webp",
+        chips: ["24/7 patient answers", "Booking from chat", "Centralized patient history"] },
+      { name: "Retail & E-Commerce", tag: "Sell and support on every channel", href: "/en/industries/retail-ecommerce", img: "/images/industries/retail.webp",
+        chips: ["Product questions", "Shipping quote to paid", "Abandoned checkout recovery"] },
+      { name: "Food & Beverage", tag: "Reservations and orders, handled 24/7", href: "/en/industries/food-beverage", img: "/images/industries/fnb.webp",
+        chips: ["24-hour reservations", "Menu, promos, pricing", "Chat to order"] },
+      { name: "Education", tag: "Answer applicants around admission season", href: "/en/industries/education", img: "/images/industries/education.webp",
+        chips: ["Admission season", "Applicant lead capture", "Prospect nurturing"] },
+      { name: "Financial Services", tag: "Compliant service at high volume", href: "/en/industries/financial-services", img: "/images/industries/finance.webp",
+        chips: ["High chat volume", "Sensitive case escalation", "Complaint tickets"] },
+      { name: "Property", tag: "Qualify leads and book visits", href: "/en/industries/property", img: "/images/industries/property.webp",
+        chips: ["Ad lead response", "Lead qualification", "Viewing scheduling"] },
+      { name: "Beauty & Wellness", tag: "Bookings, reminders, fewer no-shows", href: "/en/industries/beauty-wellness", img: "/images/industries/beauty-wellness.webp",
+        chips: ["Treatment questions", "Booking & rebooking", "No-show reminders"] },
+      { name: "Logistics", tag: "Shipment updates and CS, 24/7", href: "/en/industries/logistics", img: "/images/industries/logistics.webp",
+        chips: ["Shipment tracking", "Proactive status updates", "Pickup scheduling"] }
+    ]
+  },
+
+  pricing: {
+    eyebrow: "Pricing & plans",
+    heading: "Plans that grow with your team",
+    lead: "Start with one product and add the rest when you're ready — chat, CRM, and marketing stay in one place. Every plan includes a 14-day free trial.",
+    note: "* 14-day free trial, no credit card required.",
+    popular: "Most Popular",
+    rows: ["WABA numbers", "MAU / month", "AI credits", "Seats", "AI type"],
+    compare: { label: "Compare all features & plans", href: "/en/pricing" },
+    plans: [
+      { name: "Starter", tag: "For small teams starting to drown in chats.",
+        cta: "Try Free for 14 Days", href: "https://chat.cekat.ai/register",
+        specs: ["1", "1,000", "5,000", "3", "AI Simple"] },
+      { name: "Pro", tag: "For full automation and tidy workflows at scale.",
+        cta: "Try Free for 14 Days", href: "https://chat.cekat.ai/register",
+        specs: ["1", "3,000", "15,000", "5", "AI Simple"] },
+      { name: "Business", popular: true, tag: "For high chat volumes with a structured CS team.",
+        cta: "Try Free for 14 Days", href: "https://chat.cekat.ai/register",
+        specs: ["3", "10,000", "50,000", "7", "AI Full"] },
+      { name: "Custom", custom: true, tag: "For custom integrations and enterprise scale.",
+        cta: "Contact Sales", href: "/en/contact",
+        specs: ["Custom", "Unlimited", "Custom", "Custom", "AI Full"] }
     ]
   },
 
@@ -400,6 +450,7 @@ export const DATA_EN = {
     about: "AI Agent & Omnichannel CRM for businesses in Indonesia — reply faster, follow up automatically, close more.",
     partner: "Official Meta Business Partner",
     officeTitle: "Our Offices",
+    appsTitle: "Download Cekat Mobile App",
     apps: [
       { t: "Google Play", href: "https://play.google.com/store/apps/details?id=com.cekatmobile" },
       { t: "App Store", href: "https://apps.apple.com/id/app/cekat-ai/id6499275234?l=id" }
@@ -455,5 +506,5 @@ export const DATA_EN = {
   /** "Read the story" CTA on the logo cards and the results bento. */
   readMore: "Read the story",
 
-  order: ["hero", "logos", "proof", "signals", "products", "personas", "results", "videos", "love", "midcta", "blog"]
+  order: ["hero", "logos", "proof", "signals", "products", "personas", "results", "videos", "industries", "love", "pricing", "midcta", "blog"]
 };

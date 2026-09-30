@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>footer mobile probe</title>
+    <style>
+      body { margin: 0; background: #d8d8d8; padding: 12px; display: flex; gap: 16px; align-items: flex-start; }
+      .col { display: flex; flex-direction: column; gap: 6px; }
+      .label { font: 600 13px/1.4 system-ui, sans-serif; color: #222; }
+      iframe { display: block; border: 0; background: #fff; width: 360px; }
+      #home { height: 2000px; }
+      #preview { height: 1500px; }
+    </style>
+  </head>
+  <body>
+    <div class="col">
+      <div class="label">BERANDA UTAMA (mobile 360)</div>
+      <iframe id="home" src="/" title="home"></iframe>
+    </div>
+    <div class="col">
+      <div class="label">/preview-home (mobile 360)</div>
+      <iframe id="preview" src="/preview-home" title="preview"></iframe>
+    </div>
+  </body>
+</html>

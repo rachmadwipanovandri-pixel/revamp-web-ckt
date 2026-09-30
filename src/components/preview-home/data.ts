@@ -333,10 +333,60 @@ export const DATA = {
     lead: "Tiga puluh detik dari pemilik bisnis yang sudah menjalankannya — tanpa skrip, tanpa drama.",
     note: "Klik salah satu video untuk memutar.",
     items: [
-      { src: "/videos/angelcakery.webm", co: "Angel Cakery", who: "Cerita pelanggan" },
-      { src: "/videos/dariustour.webm", co: "Darius Tour", who: "Cerita pelanggan" },
-      { src: "/videos/gamal.webm", co: "Putiih Skin Clinic", who: "Gamal · Founder & CEO" },
-      { src: "/videos/orangedental.webm", co: "Orange Dental", who: "Cerita pelanggan" }
+      { yt: "ePdVgW7X01s", co: "Moir Salon", who: "Silcia Brenda · CEO & Founder" },
+      { yt: "wvOip0Gkx30", co: "Rumah Zakat", who: "Tantan Supriantna · Head Customer Relation" },
+      { yt: "O_xSafLehMQ", co: "Multimedia Nusantara Polytechnic", who: "Hargyo T. N. Ignatis, Ph.D · Direktur" },
+      { yt: "681luT0Aa68", co: "VIO Optical Clinic", who: "Rianti Yahya · CEO" }
+    ]
+  },
+
+  industries: {
+    eyebrow: "Industri",
+    heading: "Cara kerja yang sama, disesuaikan industri Anda",
+    lead: "Dari klinik sampai logistik — chat, order, dan follow-up otomatis jalan 24/7 dengan alur yang memang dipakai industri Anda.",
+    cta: "Lihat solusi",
+    more: { label: "Semua industri", href: "/industri" },
+    items: [
+      { name: "Kesehatan", tag: "Jawab & booking pasien 24/7", href: "/industri/kesehatan", img: "/images/industries/healthcare.webp",
+        chips: ["Jawab pasien 24/7", "Booking dari chat", "Riwayat pasien terpusat"] },
+      { name: "Ritel & E-Commerce", tag: "Jualan & layani di semua channel", href: "/industri/ritel", img: "/images/industries/retail.webp",
+        chips: ["Tanya produk", "Cek ongkir sampai lunas", "Kejar checkout tertinggal"] },
+      { name: "F&B", tag: "Reservasi & order tertangani 24/7", href: "/industri/fnb", img: "/images/industries/fnb.webp",
+        chips: ["Reservasi 24 jam", "Menu, promo, harga", "Chat jadi order"] },
+      { name: "Pendidikan", tag: "Jawab calon siswa saat musim PMB", href: "/industri/pendidikan", img: "/images/industries/education.webp",
+        chips: ["Musim PMB", "Tangkap leads pendaftar", "Nurture calon siswa"] },
+      { name: "Keuangan", tag: "Layanan compliant, volume tinggi", href: "/industri/keuangan", img: "/images/industries/finance.webp",
+        chips: ["Volume chat tinggi", "Eskalasi kasus sensitif", "Tiket komplain"] },
+      { name: "Properti", tag: "Kualifikasi leads & atur kunjungan", href: "/industri/properti", img: "/images/industries/property.webp",
+        chips: ["Respons leads iklan", "Kualifikasi leads", "Jadwal kunjungan"] },
+      { name: "Salon & Kecantikan", tag: "Booking, reminder, minim no-show", href: "/industri/salon-kecantikan", img: "/images/industries/beauty-wellness.webp",
+        chips: ["Tanya treatment", "Booking & rebooking", "Reminder no-show"] },
+      { name: "Logistik", tag: "Update kiriman & CS 24/7", href: "/industri/logistik", img: "/images/industries/logistics.webp",
+        chips: ["Lacak kiriman", "Update status proaktif", "Jadwal pickup"] }
+    ]
+  },
+
+  pricing: {
+    eyebrow: "Harga & paket",
+    heading: "Paket jelas, tumbuh bersama tim Anda",
+    lead: "Mulai dari satu produk, tambah yang lain kapan saja — chat, CRM, dan marketing tetap di satu tempat. Semua paket termasuk uji coba gratis 14 hari.",
+    note: "* Uji coba gratis 14 hari, tanpa kartu kredit.",
+    popular: "Paling Dipilih",
+    rows: ["Nomor WABA", "MAU / bulan", "AI credits", "Seats", "Tipe AI"],
+    compare: { label: "Bandingkan semua fitur & paket", href: "/harga" },
+    plans: [
+      { name: "Pro", tag: "Untuk tim kecil yang mulai kewalahan balas chat.",
+        cta: "Coba Gratis 14 Hari", href: "https://chat.cekat.ai/register",
+        specs: ["1", "3.000", "15.000", "5", "AI Simple"] },
+      { name: "Business", popular: true, tag: "Untuk bisnis yang butuh otomatisasi penuh dan alur kerja rapi.",
+        cta: "Coba Gratis 14 Hari", href: "https://chat.cekat.ai/register",
+        specs: ["3", "10.000", "50.000", "7", "AI Full"] },
+      { name: "Enterprise", tag: "Untuk volume chat besar dengan tim CS terstruktur.",
+        cta: "Coba Gratis 14 Hari", href: "https://chat.cekat.ai/register",
+        specs: ["5", "30.000", "150.000", "10", "AI Full"] },
+      { name: "Custom", custom: true, tag: "Untuk kebutuhan khusus, integrasi, dan skala korporat.",
+        cta: "Hubungi Sales", href: "/contact",
+        specs: ["Custom", "Tanpa Batas", "Custom", "Custom", "AI Full"] }
     ]
   },
 
@@ -398,6 +448,7 @@ export const DATA = {
     about: "AI Agent & Omnichannel CRM untuk bisnis Indonesia — balas lebih cepat, follow-up otomatis, closing lebih banyak.",
     partner: "Meta Business Partner Resmi",
     officeTitle: "Kantor Kami",
+    appsTitle: "Unduh Aplikasi Mobile Cekat",
     apps: [
       { t: "Google Play", href: "https://play.google.com/store/apps/details?id=com.cekatmobile" },
       { t: "App Store", href: "https://apps.apple.com/id/app/cekat-ai/id6499275234?l=id" }
@@ -454,5 +505,5 @@ export const DATA = {
   readMore: "Baca cerita",
 
   /* urutan band — peta langsung ke komponen React saat implementasi */
-  order: ["hero", "logos", "proof", "signals", "products", "personas", "results", "videos", "love", "midcta", "blog"]
+  order: ["hero", "logos", "proof", "signals", "products", "personas", "results", "videos", "industries", "love", "pricing", "midcta", "blog"]
 };
