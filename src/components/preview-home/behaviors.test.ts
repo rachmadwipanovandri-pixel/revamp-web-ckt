@@ -97,8 +97,8 @@ describe("preview-home mega categories", () => {
 
   it("switches category panels by toggling display — no DATA import needed", () => {
     root.querySelector<HTMLButtonElement>('[data-cat="ai"]')!.click();
-    expect(root.querySelector('[data-cat-panel="chat"]')!.style.display).toBe("none");
-    expect(root.querySelector('[data-cat-panel="ai"]')!.style.display).toBe("");
+    expect(root.querySelector<HTMLElement>('[data-cat-panel="chat"]')!.style.display).toBe("none");
+    expect(root.querySelector<HTMLElement>('[data-cat-panel="ai"]')!.style.display).toBe("");
     expect(root.querySelector('[data-cat="ai"]')).toHaveClass("on");
     expect(root.querySelector('[data-cat="chat"]')).not.toHaveClass("on");
   });
