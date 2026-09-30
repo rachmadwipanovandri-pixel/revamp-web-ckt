@@ -183,15 +183,16 @@ export const DATA = {
     heading: "Mereka meninggalkan cara lama",
     lead: "Setiap cerita bermula dari masalah yang sama — balasan lambat, data berserakan, follow-up terlewat — dan bagaimana Cekat.AI menyelesaikannya.",
     more: "…dan ribuan bisnis lainnya di Indonesia, Singapura, & Malaysia",
+    go: "Lihat solusi",
     items: [
-      { src: "/images/home/logos/jago.png", alt: "Jago", caption: "Beralih dari balasan chat manual yang cuma jam kerja" },
-      { src: "/images/home/logos/siloam-logo.webp", alt: "Siloam Hospitals", caption: "Dari rekap janji temu di spreadsheet tiap malam" },
-      { src: "/images/home/logos/pln.webp", alt: "PLN", caption: "Dari 3 tools terpisah untuk chat, CRM, dan broadcast" },
-      { src: "/images/home/logos/tiki-logo.webp", alt: "TiKi", caption: "Dari follow-up kirim paket yang sering terlewat" },
-      { src: "/images/home/logos/yupi.webp", alt: "Yupi", caption: "Dari broadcast massal yang dibuka tapi tak dibalas" },
-      { src: "/images/home/logos/realfood.webp", alt: "Realfood", caption: "Dari orderan masuk yang harus diketik ulang satu-satu" },
-      { src: "/images/home/logos/kb-insurance.png", alt: "KB Insurance", caption: "Dari lead iklan yang dingin karena telat dihubungi" },
-      { src: "/images/home/logos/telkom-university.webp", alt: "Telkom University", caption: "Dari pertanyaan pendaftar yang berulang setiap hari" }
+      { src: "/images/home/logos/jago.png", alt: "Jago", caption: "Beralih dari balasan chat manual yang cuma jam kerja", href: "/industri/keuangan" },
+      { src: "/images/home/logos/siloam-logo.webp", alt: "Siloam Hospitals", caption: "Dari rekap janji temu di spreadsheet tiap malam", href: "/industri/kesehatan" },
+      { src: "/images/home/logos/pln.webp", alt: "PLN", caption: "Dari 3 tools terpisah untuk chat, CRM, dan broadcast", href: "/solusi" },
+      { src: "/images/home/logos/tiki-logo.webp", alt: "TiKi", caption: "Dari follow-up kirim paket yang sering terlewat", href: "/industri/logistik" },
+      { src: "/images/home/logos/yupi.webp", alt: "Yupi", caption: "Dari broadcast massal yang dibuka tapi tak dibalas", href: "/industri/fnb" },
+      { src: "/images/home/logos/realfood.webp", alt: "Realfood", caption: "Dari orderan masuk yang harus diketik ulang satu-satu", href: "/industri/fnb" },
+      { src: "/images/home/logos/kb-insurance.png", alt: "KB Insurance", caption: "Dari lead iklan yang dingin karena telat dihubungi", href: "/industri/keuangan" },
+      { src: "/images/home/logos/telkom-university.webp", alt: "Telkom University", caption: "Dari pertanyaan pendaftar yang berulang setiap hari", href: "/industri/pendidikan" }
     ]
   },
 
@@ -200,7 +201,8 @@ export const DATA = {
       { v: "10.000.000.000+", count: 10000000000, suffix: "+", l: "token diproses setiap hari" },
       { v: "2.000.000+", count: 2000000, suffix: "+", l: "percakapan diproses setiap hari" },
       { v: "3.000+", count: 3000, suffix: "+", l: "bisnis di Asia" }
-    ]
+    ],
+    footnote: "*Data internal platform Cekat.AI — token & percakapan yang diproses sistem kami, per September 2026."
   },
 
   signals: {
@@ -314,12 +316,12 @@ export const DATA = {
     heading: "Bukti nyata dari bisnis yang memakai Cekat.AI",
     lead: "Angka besar, nama bisnis, dan wajah di baliknya — semua disampaikan langsung oleh pelanggan dalam wawancara terekam.",
     cards: [
-      { type: "metric", bg: "bg-blue", big: "+50%", what: "omzet, setelah closing rate naik dari bawah 20% ke atas 40%", co: "Nature Craft Indonesia" },
+      { type: "metric", bg: "bg-blue", big: "+50%", what: "omzet, setelah closing rate naik dari bawah 20% ke atas 40%", co: "Nature Craft Indonesia", href: "/cerita/nature-craft" },
       { type: "quote", q: "“Response rate kami meningkat 90%.”",
         ava: { initials: "H", color: "#1352BF" }, nm: "Hargyo", rl: "Direktur · Multimedia Nusantara Polytechnic", logo: "MNP" },
-      { type: "metric", bg: "bg-green", big: "20→28%", what: "konversi leads, setelah leads low-quality difilter AI lebih dulu", co: "Wall Street English" },
-      { type: "metric", bg: "bg-purple", big: "+30-40%", what: "omzet, dengan balasan turun dari 20 menit ke bawah 2 menit", co: "Putiih Skin Clinic" },
-      { type: "metric", bg: "bg-amber", big: "~+50%", what: "peningkatan penjualan dari leads tengah malam yang dulu terlewat", co: "Threeland Property" },
+      { type: "metric", bg: "bg-green", big: "20→28%", what: "konversi leads, setelah leads low-quality difilter AI lebih dulu", co: "Wall Street English", href: "/cerita/wall-street" },
+      { type: "metric", bg: "bg-purple", big: "+30-40%", what: "omzet, dengan balasan turun dari 20 menit ke bawah 2 menit", co: "Putiih Skin Clinic", href: "/cerita/putiih" },
+      { type: "metric", bg: "bg-amber", big: "~+50%", what: "peningkatan penjualan dari leads tengah malam yang dulu terlewat", co: "Threeland Property", href: "/cerita/threeland" },
       { type: "quote", q: "“Tim First Contact kami sudah sampai titik di mana produktivitasnya tidak bisa naik lagi. Dengan Cekat AI, leads yang low quality difilter dulu, dan konversi kami naik dari sekitar 20% menjadi 28%.”",
         ava: { initials: "B", color: "#22C55E" }, nm: "Bayu", rl: "Head of Digital Marketing", logo: "Wall Street" },
       { type: "full", q: "“Contact center kami dulu hanya Senin sampai Jumat, jam 8 sampai jam 5. Sekarang AMIRA menjawab 24 jam, kurang dari 1 menit. Kami tidak kehilangan donatur.”",
@@ -422,6 +424,35 @@ export const DATA = {
     ]
   },
 
+  security: {
+    eyebrow: "Keamanan & compliance",
+    title: "Siap untuk tim {em:yang serius soal data}",
+    lead: "Kontrol akses, kepatuhan hukum Indonesia, dan jalur resmi Meta — fondasi yang dibutuhkan sebelum chat pelanggan dipercayakan ke platform.",
+    chips: ["UU PDP", "Meta Partner", "RBAC", "ISO 9001 & ISO 27001"],
+    cards: [
+      { idx: "01", title: "Patuh UU PDP", body: "Pengelolaan data pengguna mengikuti UU Perlindungan Data Pribadi Indonesia, bukan sekadar janji keamanan di marketing." },
+      { idx: "02", title: "Akses berbasis peran", body: "RBAC menentukan siapa boleh melihat percakapan, kontak, dan pipeline. Sales, support, dan billing masing-masing dapat yang relevan — tidak lebih." },
+      { idx: "03", title: "Meta Business Partner", body: "Cekat.AI mitra resmi Meta. Trafik WhatsApp lewat Business API resmi dengan template yang disetujui, bukan gateway abal-abal." },
+      { idx: "04", title: "Tersertifikasi ISO 9001 & ISO 27001", body: "Cekat.AI resmi memperoleh sertifikasi ISO 9001:2015 dan ISO/IEC 27001:2022. Kami terbuka membahas kebutuhan compliance spesifik perusahaan Anda saat onboarding." }
+    ],
+    note: "Cekat.AI resmi memperoleh sertifikasi ISO 9001:2015 dan ISO/IEC 27001:2022. Detail keamanan lebih dalam tersedia saat diskusi enterprise."
+  },
+
+  faq: {
+    eyebrow: "FAQ",
+    heading: "Pertanyaan sebelum Anda mulai",
+    lead: "Jawaban singkat untuk keraguan yang paling sering muncul soal biaya, setup, dan kepemilikan data.",
+    items: [
+      { q: "Berapa lama setup sampai bisa dipakai?", a: "Kebanyakan bisnis sudah bisa menjawab chat di hari yang sama. Sambungkan nomor WhatsApp, tempel knowledge base, nyalakan agent — tanpa coding dan tanpa proyek implementasi berbulan-bulan." },
+      { q: "Apakah harus beli semua produk sekaligus?", a: "Tidak. Mulai dari paket Chat dulu. CRM, Marketing, atau agent lain menyusul saat tim sudah terbiasa — datanya tetap nyambung di platform yang sama." },
+      { q: "Tim saya tidak ada developer. Bisa tetap jalan?", a: "Bisa. Builder-nya no-code: jelaskan peran agent, tempel SOP dan info bisnis, lalu nyalakan. Tim Cekat.AI mendampingi onboarding, termasuk verifikasi WABA bila Anda siap naik ke API resmi." },
+      { q: "Siapa yang memiliki data pelanggan kami?", a: "Anda. Data percakapan dan profil pelanggan milik bisnis Anda, bisa diekspor kapan saja, dan diatur aksesnya per peran di dalam tim. Tidak ada kunci yang mengunci Anda di tempat." },
+      { q: "Bagaimana kalau AI menjawab salah?", a: "Anda kontrol knowledge base dan batas aksi AI. Case yang sensitif atau di luar cakupan diserah ke manusia lengkap dengan riwayat chat, jadi otomatisasi tidak berarti kehilangan kendali." },
+      { q: "Ada biaya setup atau kontrak minimum?", a: "Paket reguler tidak ada biaya setup terpisah dan tidak ada kontrak minimum. Paket Custom disepakati dulu bersama tim sales sebelum Anda mulai." }
+    ],
+    cta: { label: "Masih ada pertanyaan? Chat kami", href: "/contact" }
+  },
+
   midcta: {
     eyebrow: "Mulai sekarang",
     title: "Coba gratis 14 hari — {em:langsung dari sini}",
@@ -436,11 +467,11 @@ export const DATA = {
     cta: { label: "Semua artikel", href: "/blog" },
     posts: [
       { cls: "t1", tt: "WhatsApp<br>Business API<br>untuk UMKM", meta: "Panduan · 12 min baca",
-        title: "Cara pasang WhatsApp Business API untuk bisnis kecil, langkah demi langkah", href: "/blog" },
+        title: "Cara pasang WhatsApp Business API untuk bisnis kecil, langkah demi langkah", href: "/blog", author: "Tim Cekat.AI" },
       { cls: "t2", tt: "7 alasan chat<br>lambat<br>turunkan closing", meta: "Conversion · 8 min baca",
-        title: "Kenapa balasan chat lambat membuat calon pembeli pergi ke kompetitor", href: "/blog" },
+        title: "Kenapa balasan chat lambat membuat calon pembeli pergi ke kompetitor", href: "/blog", author: "Tim Cekat.AI" },
       { cls: "t3", tt: "Apa itu<br>CAPI Meta?", meta: "Marketing · 10 min baca",
-        title: "Mengapa konversi dari chat harus dikirim balik ke iklan Meta Anda", href: "/blog" }
+        title: "Mengapa konversi dari chat harus dikirim balik ke iklan Meta Anda", href: "/blog", author: "Tim Cekat.AI" }
     ]
   },
 
@@ -488,6 +519,7 @@ export const DATA = {
       ]},
       { h: "Perusahaan", links: [
         { t: "Blog", href: "/blog" }, { t: "Event", href: "/events" },
+        { t: "Tentang Kami", href: "/tentang" },
         { t: "Kontak", href: "/contact" }, { t: "Integrasi", href: "/integrasi" },
         { t: "Bandingkan", href: "/perbandingan" }, { t: "Unduh Aplikasi", href: "https://play.google.com/store/apps/details?id=com.cekatmobile" }
       ]},
@@ -497,7 +529,7 @@ export const DATA = {
         { t: "Kebijakan Retur & Pengiriman", href: "/return-refund-delivery-policy" }
       ]}
     ],
-    copyright: "© 2025 PT Teknologi Cekat Indonesia · Seluruh hak cipta dilindungi.",
+    copyright: `© ${new Date().getFullYear()} PT Teknologi Cekat Indonesia · Seluruh hak cipta dilindungi.`,
     socials: ["Instagram", "LinkedIn", "YouTube"]
   },
 
@@ -505,5 +537,5 @@ export const DATA = {
   readMore: "Baca cerita",
 
   /* urutan band — peta langsung ke komponen React saat implementasi */
-  order: ["hero", "logos", "proof", "signals", "products", "personas", "results", "videos", "industries", "love", "pricing", "midcta", "blog"]
+  order: ["hero", "logos", "proof", "signals", "products", "personas", "results", "videos", "industries", "love", "pricing", "security", "faq", "midcta", "blog"]
 };

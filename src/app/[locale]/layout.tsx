@@ -8,9 +8,6 @@ import { alternates, htmlLang, SITE_URL } from "@/lib/seo";
 import { fontSans } from "@/lib/fonts";
 import { organizationJsonLd, webSiteJsonLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/json-ld";
-import { Navbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
-import { FloatingWhatsApp } from "@/components/layout/floating-whatsapp";
 import { MetaPixel } from "@/components/analytics/meta-pixel";
 import { CekatAnalytics } from "@/components/analytics/cekat-analytics";
 import { Hyros } from "@/components/analytics/hyros";
@@ -106,9 +103,11 @@ export default async function LocaleLayout({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
-  const tn = await getTranslations({ locale, namespace: "nav" });
   const clientMessages = pickClientMessages(await getMessages());
 
+  // Site chrome (Navbar / main / Footer / FloatingWhatsApp) lives in
+  // (site)/layout.tsx so route groups keep it off standalone drafts like
+  // preview-home, which renders its own header and footer.
   return (
     <html lang={htmlLang(locale)} className={fontSans.variable}>
       <body className="min-h-screen bg-background text-foreground">
@@ -127,10 +126,7 @@ export default async function LocaleLayout({
         <Hyros />
         <JsonLd data={[organizationJsonLd(), webSiteJsonLd()]} />
         <NextIntlClientProvider messages={clientMessages}>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-          <FloatingWhatsApp label={tn("ctaWhatsapp")} />
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>

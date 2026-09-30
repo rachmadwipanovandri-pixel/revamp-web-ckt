@@ -3,6 +3,28 @@
     "title": "CekatAI: AI Agent Platform for Customer Service & Sales",
     "description": "Scale customer support & automate sales with Cekat.ai AI Agent. Omnichannel CRM & WhatsApp AI trusted by 3,000+ businesses."
   },
+  "about": {
+    "metaTitle": "About Cekat.AI — PT Teknologi Cekat Indonesia",
+    "metaDescription": "The company behind Cekat.AI: founded August 2023, official Meta Business Partner, certified ISO 9001:2015 & ISO/IEC 27001:2022, trusted by 3,000+ businesses across Asia.",
+    "eyebrow": "About us",
+    "heroTitle": "AI Agent & Omnichannel CRM built for Asian businesses",
+    "heroSub": "Reply faster, follow up automatically, close more — from conversation to order, on one platform.",
+    "storyEyebrow": "Our story",
+    "storyP1": "Cekat.AI has been built since August 2023 by PT Teknologi Cekat Indonesia on one simple conviction: businesses across Asia grow out of conversations — on WhatsApp, Instagram, TikTok, and everywhere else — and those conversations deserve answers, follow-ups, and closed deals without exhausting the team.",
+    "storyP2": "Today the Cekat.AI platform combines AI customer service, omnichannel CRM, order automation, and broadcast marketing, used by 3,000+ businesses across Indonesia, Singapore, and Malaysia. The product ships as a web app and a mobile app on Google Play and the App Store.",
+    "factsEyebrow": "At a glance",
+    "facts": {
+      "founding": { "v": "August 2023", "l": "founded as PT Teknologi Cekat Indonesia" },
+      "businesses": { "v": "3,000+", "l": "businesses across Asia run on Cekat.AI" },
+      "countries": { "v": "3 countries", "l": "offices in Indonesia, Singapore & Malaysia" },
+      "partner": { "v": "Meta", "l": "official WhatsApp Business API Business Partner" }
+    },
+    "certEyebrow": "Security & compliance",
+    "certHeading": "The standards we hold",
+    "officesEyebrow": "Our offices",
+    "ctaLabel": "Talk to our team",
+    "ctaSub": "Think we might fit your business? Chat with us directly — no long decks."
+  },
   "common": {
     "cta": "Free Trial",
     "languageName": "English"
@@ -18,6 +40,7 @@
     "blog": "Blog",
     "contact": "Contact",
     "integrations": "Integrations",
+    "about": "About Us",
     "masuk": "Log in",
     "ctaWhatsapp": "WhatsApp Us",
     "ctaTrial": "Free Trial",
@@ -1321,10 +1344,10 @@
         "body": "Cekat.AI is an official Meta partner. WhatsApp traffic runs on the official Business API with approved templates, not unofficial gateways."
       },
       "iso": {
-        "title": "ISO 27001 in progress",
-        "body": "ISO 27001 certification is underway. We are open about your specific compliance needs during onboarding."
+        "title": "ISO 9001 & ISO 27001 certified",
+        "body": "Cekat.AI has officially received ISO 9001:2015 and ISO/IEC 27001:2022 certifications. We are open about your specific compliance needs during onboarding."
       },
-      "note": "ISO 27001 status is a process in progress, not a claim of current accreditation. Deeper security detail is available in enterprise conversations."
+      "note": "Cekat has officially received ISO 9001:2015 and ISO/IEC 27001:2022 certifications. Deeper security detail is available in enterprise conversations."
     },
     "faq": {
       "label": "FAQ",

@@ -5,6 +5,7 @@ import { entryPaths, REGISTRY } from "@/lib/registry";
 import type { LandingKind } from "@/lib/registry/types";
 import { getAllPostSlugs, getAuthors, type PostSlugInfo } from "@/lib/wordpress";
 import { readEvents } from "@/lib/events/store";
+import { STORIES } from "@/lib/stories";
 import type { SitemapUrl } from "@/lib/sitemap-xml";
 import { existsSync, statSync } from "node:fs";
 import path from "node:path";
@@ -28,6 +29,8 @@ const STATIC_ROUTES = [
   "/solutions",
   "/integrations",
   "/blog",
+  "/stories",
+  "/about",
   "/terms-and-conditions",
   "/privacy-policy",
   "/return-refund-delivery-policy",
@@ -94,9 +97,12 @@ function landingLastModified(
 /**
  * Static route: lastmod from the page source itself, same rule as landings —
  * the file exists only if the route does, and its mtime tracks the last edit.
+ * Production routes live in the (site) group; the bare [locale] path covers
+ * standalone routes that manage their own chrome (e.g. preview-home).
  */
 function staticLastModified(route: string): string | undefined {
   return filesLastModified([
+    path.join(process.cwd(), "src", "app", "[locale]", "(site)", route, "page.tsx"),
     path.join(process.cwd(), "src", "app", "[locale]", route, "page.tsx"),
   ]);
 }
@@ -121,6 +127,30 @@ function eventUrls(): SitemapUrl[] {
         languages,
       }));
     });
+}
+
+/**
+ * Customer stories. Shared slugs across locales → reciprocal hreflang;
+ * lastmod tracks the message catalogs the quotes live in.
+ */
+function storyUrls(): SitemapUrl[] {
+  const lastModified = filesLastModified([
+    path.join(process.cwd(), "messages", "id.json"),
+    path.join(process.cwd(), "messages", "en.json"),
+  ]);
+  return STORIES.flatMap((story) => {
+    const pathFor = (locale: Locale) =>
+      getPathname({
+        href: { pathname: "/stories/[slug]", params: { slug: story.slug } },
+        locale,
+      });
+    const languages = languagesFor({ en: pathFor("en"), id: pathFor("id") });
+    return LOCALE_ORDER.map((locale) => ({
+      url: `${SITE_URL}${pathFor(locale)}`,
+      languages,
+      lastModified,
+    }));
+  });
 }
 
 /** Marketing pages: static routes plus every registry-driven landing page. */
@@ -158,7 +188,7 @@ export function pageUrls(): SitemapUrl[] {
     }),
   );
 
-  return [...staticEntries, ...landingEntries, ...eventUrls()];
+  return [...staticEntries, ...landingEntries, ...eventUrls(), ...storyUrls()];
 }
 
 /**

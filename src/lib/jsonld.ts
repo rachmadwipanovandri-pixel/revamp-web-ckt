@@ -4,7 +4,7 @@ import { WHATSAPP_NUMBERS } from "@/lib/links";
 /**
  * schema.org JSON-LD builders. Facts stated here must stay accurate:
  * Cekat.AI is UU PDP compliant and an official Meta Business Partner;
- * ISO 27001 is IN PROGRESS, never claim certification.
+ * Cekat.AI holds ISO 9001:2015 and ISO/IEC 27001:2022 certifications; quote those standards exactly, never a stronger claim.
  */
 
 export function organizationJsonLd() {
@@ -286,6 +286,31 @@ export function eventJsonLd({
         }
       : {}),
     organizer: { "@id": `${SITE_URL}/#organization` },
+  };
+}
+
+/**
+ * Recorded customer interview on YouTube. `uploadDate` is deliberately
+ * omitted — we do not track publish dates for the channel and inventing one
+ * would be exactly the kind of claim this file must never make.
+ */
+export function videoJsonLd({
+  name,
+  description,
+  videoId,
+}: {
+  name: string;
+  description: string;
+  videoId: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name,
+    description,
+    thumbnailUrl: [`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`],
+    embedUrl: `https://www.youtube-nocookie.com/embed/${videoId}`,
+    publisher: { "@id": `${SITE_URL}/#organization` },
   };
 }
 

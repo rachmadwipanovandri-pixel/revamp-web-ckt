@@ -28,6 +28,8 @@ const PRODUCT_LINKS = [
   // no footer entry — both are money-page paths crawlers should reach.
   { key: "contact", href: "/contact" },
   { key: "integrations", href: "/integrations" },
+  // About was likewise an orphan risk — company pages need a steady internal path.
+  { key: "about", href: "/about" },
 ] as const;
 
 // Legal pages are served on this site (localized), mirroring the cekat.ai copy.

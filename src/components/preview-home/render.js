@@ -422,7 +422,7 @@ function secLogos() {
         <div class="logo-card reveal" style="--d:${(i % 4) * 70}ms">
           <div class="brandbox"><img src="${it.src}" alt="${esc(it.alt)}"${sized(it.src)} loading="lazy"></div>
           <div class="caption">${esc(it.caption)}</div>
-          <a class="go" href="${currentLocale() === "en" ? "/en/blog" : "/blog"}">${esc(DATA.readMore)} →</a>
+          <a class="go" href="${esc(it.href)}">${esc(l.go)} →</a>
         </div>`).join("")}
       </div>
       <span class="more reveal">${esc(l.more)}</span>
@@ -430,9 +430,12 @@ function secLogos() {
   </section>`;
 }
 function secProof() {
-  return `<section class="proof" data-nav="light"><div class="container"><div class="row">${DATA.proof.items.map(p => `
-    <div class="cell"><div class="v count" data-count="${p.count}" data-suffix="${p.suffix}">${esc(p.v)}</div>
-    <div class="l">${esc(p.l)}</div></div>`).join("")}</div></div></section>`;
+  const p = DATA.proof;
+  return `<section class="proof" data-nav="light"><div class="container"><div class="row">${p.items.map(x => `
+    <div class="cell"><div class="v count" data-count="${x.count}" data-suffix="${x.suffix}">${esc(x.v)}</div>
+    <div class="l">${esc(x.l)}</div></div>`).join("")}</div>
+    ${p.footnote ? `<p class="proof-note">${esc(p.footnote)}</p>` : ""}
+    </div></section>`;
 }
 function secSignals() {
   const s = DATA.signals;
@@ -529,7 +532,7 @@ function secResults() {
     const d = `--d:${(i % 3) * 80}ms`;
     if (c.type === "metric") return `<div class="b-card b-metric ${c.bg} reveal" style="${d}">
       <div class="big">${esc(c.big)}</div><div class="what">${esc(c.what)}</div>
-      <div class="co">${esc(c.co)}</div><a class="go" href="${currentLocale() === "en" ? "/en/blog" : "/blog"}">${esc(DATA.readMore)} →</a></div>`;
+      <div class="co">${esc(c.co)}</div><a class="go" href="${esc(c.href)}">${esc(DATA.readMore)} →</a></div>`;
     if (c.type === "quote") return `<div class="b-card b-quote reveal" style="${d}">
       <div class="q">${esc(c.q)}</div>
       <div class="who">${avatar(c.ava)}<span><span class="nm" style="display:block">${esc(c.nm)}</span>
@@ -658,8 +661,14 @@ function secMidcta() {
 function secBlog(latest) {
   const b = DATA.blog;
   const list = latest && latest.length ? latest.slice(0, 3) : b.posts;
+  /* Featured images live on the (free-tier) WordPress host — route them
+     through the Next image optimizer so the page never hotlinks raw
+     onrender.com bytes. Falls back hidden via onerror if the host is cold. */
+  const proxied = (src) => src.startsWith("http")
+    ? `/_next/image?url=${encodeURIComponent(src)}&w=750&q=75`
+    : src;
   const thumb = (p) => p.img
-    ? `<div class="thumb has-img"><img src="${p.img}" alt="" loading="lazy" onerror="this.style.display='none'"></div>`
+    ? `<div class="thumb has-img"><img src="${esc(proxied(p.img))}" alt="" loading="lazy" onerror="this.style.display='none'"></div>`
     : `<div class="thumb ${p.cls || "t1"}"><span class="tt">${p.tt || ""}</span></div>`;
   return `<section class="blog" data-nav="light">
     <div class="container">
@@ -671,10 +680,50 @@ function secBlog(latest) {
       <div class="blog-grid">${list.map((p, i) => `
         <a class="post reveal" style="--d:${i * 90}ms" href="${p.href}">
           ${thumb(p)}
-          <div class="meta">${esc(p.meta)}</div>
+          <div class="meta">${esc(p.meta)}${p.author ? ` · ${esc(p.author)}` : ""}</div>
           <div class="pt">${esc(p.title)}</div>
         </a>`).join("")}
       </div>
+    </div>
+  </section>`;
+}
+function secSecurity() {
+  const s = DATA.security;
+  return `<section class="security" data-nav="dark">
+    <div class="container">
+      <div class="head reveal">
+        <span class="eyebrow" style="color:#BFDBFE"><span class="dot"></span>${esc(s.eyebrow)}</span>
+        <h2 class="h2">${fmt(s.title)}</h2>
+        <p class="lead">${esc(s.lead)}</p>
+      </div>
+      <div class="sec-chips reveal">${s.chips.map(c => `<span>${esc(c)}</span>`).join("")}</div>
+      <div class="sec-grid">${s.cards.map((c, i) => `
+        <article class="sec-card reveal" style="--d:${i * 70}ms">
+          <span class="idx">${esc(c.idx)}</span>
+          <h3>${esc(c.title)}</h3>
+          <p>${esc(c.body)}</p>
+        </article>`).join("")}
+      </div>
+      <p class="sec-note reveal">${esc(s.note)}</p>
+    </div>
+  </section>`;
+}
+function secFaq() {
+  const f = DATA.faq;
+  return `<section class="faq" data-nav="light">
+    <div class="container">
+      <div class="head reveal">
+        <span class="eyebrow"><span class="dot"></span>${esc(f.eyebrow)}</span>
+        <h2 class="h2">${esc(f.heading)}</h2>
+        <p class="lead">${esc(f.lead)}</p>
+      </div>
+      <div class="faq-list">${f.items.map((it, i) => `
+        <details class="faq-item reveal" style="--d:${i * 50}ms"${i === 0 ? " open" : ""}>
+          <summary><span class="q">${esc(it.q)}</span><span class="fx" aria-hidden="true"></span></summary>
+          <div class="faq-a"><p>${esc(it.a)}</p></div>
+        </details>`).join("")}
+      </div>
+      <div class="faq-foot reveal"><a class="textlink" href="${f.cta.href}">${esc(f.cta.label)} →</a></div>
     </div>
   </section>`;
 }
@@ -708,7 +757,8 @@ function renderFooter() {
 /* ===================== mount ===================== */
 const SECTIONS = { hero: secHero, logos: secLogos, proof: secProof, signals: secSignals,
   products: secProducts, personas: secPersonas, results: secResults, videos: secVideos,
-  industries: secIndustries, love: secLove, pricing: secPricing, midcta: secMidcta, blog: secBlog };
+  industries: secIndustries, love: secLove, pricing: secPricing, security: secSecurity,
+  faq: secFaq, midcta: secMidcta, blog: secBlog };
 
 /** Susun seluruh halaman preview (progress + backdrop + header + main + footer). */
 export function buildPage(latestPosts, locale) {

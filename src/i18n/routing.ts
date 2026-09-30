@@ -36,6 +36,9 @@ export const routing = defineRouting({
     "/integrations": { en: "/integrations", id: "/integrasi" },
     "/solutions": { en: "/solutions", id: "/solusi" },
     "/solutions/[slug]": { en: "/solutions/[slug]", id: "/solusi/[slug]" },
+    "/stories": { en: "/stories", id: "/cerita" },
+    "/stories/[slug]": { en: "/stories/[slug]", id: "/cerita/[slug]" },
+    "/about": { en: "/about", id: "/tentang" },
     // `/new` and `/new-2` are gone: next.config.ts redirects() 308s them to
     // `/` (config redirects run before this middleware, so a page-level 307
     // shim would never fire anyway).

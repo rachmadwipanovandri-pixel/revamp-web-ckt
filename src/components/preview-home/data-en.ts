@@ -184,15 +184,16 @@ export const DATA_EN = {
     heading: "They left the old way behind",
     lead: "Every story starts the same — slow replies, scattered data, missed follow-ups — and how Cekat.AI fixed it.",
     more: "…and thousands more businesses across Indonesia, Singapore, and Malaysia",
+    go: "See the solution",
     items: [
-      { src: "/images/home/logos/jago.png", alt: "Jago", caption: "Switched from manual replies that only covered office hours" },
-      { src: "/images/home/logos/siloam-logo.webp", alt: "Siloam Hospitals", caption: "From appointment spreadsheets rebuilt every night" },
-      { src: "/images/home/logos/pln.webp", alt: "PLN", caption: "From 3 separate tools for chat, CRM, and broadcast" },
-      { src: "/images/home/logos/tiki-logo.webp", alt: "TiKi", caption: "From delivery follow-ups that kept slipping through" },
-      { src: "/images/home/logos/yupi.webp", alt: "Yupi", caption: "From mass broadcasts that were opened but never answered" },
-      { src: "/images/home/logos/realfood.webp", alt: "Realfood", caption: "From orders retyped one by one" },
-      { src: "/images/home/logos/kb-insurance.png", alt: "KB Insurance", caption: "From ad leads gone cold because outreach came too late" },
-      { src: "/images/home/logos/telkom-university.webp", alt: "Telkom University", caption: "From the same applicant questions repeating daily" }
+      { src: "/images/home/logos/jago.png", alt: "Jago", caption: "Switched from manual replies that only covered office hours", href: "/en/industries/financial-services" },
+      { src: "/images/home/logos/siloam-logo.webp", alt: "Siloam Hospitals", caption: "From appointment spreadsheets rebuilt every night", href: "/en/industries/healthcare" },
+      { src: "/images/home/logos/pln.webp", alt: "PLN", caption: "From 3 separate tools for chat, CRM, and broadcast", href: "/en/solutions" },
+      { src: "/images/home/logos/tiki-logo.webp", alt: "TiKi", caption: "From delivery follow-ups that kept slipping through", href: "/en/industries/logistics" },
+      { src: "/images/home/logos/yupi.webp", alt: "Yupi", caption: "From mass broadcasts that were opened but never answered", href: "/en/industries/food-beverage" },
+      { src: "/images/home/logos/realfood.webp", alt: "Realfood", caption: "From orders retyped one by one", href: "/en/industries/food-beverage" },
+      { src: "/images/home/logos/kb-insurance.png", alt: "KB Insurance", caption: "From ad leads gone cold because outreach came too late", href: "/en/industries/financial-services" },
+      { src: "/images/home/logos/telkom-university.webp", alt: "Telkom University", caption: "From the same applicant questions repeating daily", href: "/en/industries/education" }
     ]
   },
 
@@ -201,7 +202,8 @@ export const DATA_EN = {
       { v: "10,000,000,000+", count: 10000000000, suffix: "+", l: "tokens processed daily" },
       { v: "2,000,000+", count: 2000000, suffix: "+", l: "conversations processed daily" },
       { v: "3,000+", count: 3000, suffix: "+", l: "businesses in Asia" }
-    ]
+    ],
+    footnote: "Cekat.AI internal platform data — tokens & conversations processed by our system, as of September 2026."
   },
 
   signals: {
@@ -316,12 +318,12 @@ export const DATA_EN = {
     heading: "Real results from businesses running Cekat.AI",
     lead: "Big numbers, real names, real faces — straight from our customers in recorded interviews.",
     cards: [
-      { type: "metric", bg: "bg-blue", big: "+50%", what: "revenue, after close rate went from under 20% to over 40%", co: "Nature Craft Indonesia" },
+      { type: "metric", bg: "bg-blue", big: "+50%", what: "revenue, after close rate went from under 20% to over 40%", co: "Nature Craft Indonesia", href: "/en/stories/nature-craft" },
       { type: "quote", q: "“Our response rate improved by 90%.”",
         ava: { initials: "H", color: "#1352BF" }, nm: "Hargyo", rl: "Director · Multimedia Nusantara Polytechnic", logo: "MNP" },
-      { type: "metric", bg: "bg-green", big: "20→28%", what: "lead conversion, after low-quality leads were filtered by AI first", co: "Wall Street English" },
-      { type: "metric", bg: "bg-purple", big: "+30-40%", what: "revenue, as reply times dropped from 20 minutes to under 2", co: "Putiih Skin Clinic" },
-      { type: "metric", bg: "bg-amber", big: "~+50%", what: "sales growth from midnight leads that used to be missed", co: "Threeland Property" },
+      { type: "metric", bg: "bg-green", big: "20→28%", what: "lead conversion, after low-quality leads were filtered by AI first", co: "Wall Street English", href: "/en/stories/wall-street" },
+      { type: "metric", bg: "bg-purple", big: "+30-40%", what: "revenue, as reply times dropped from 20 minutes to under 2", co: "Putiih Skin Clinic", href: "/en/stories/putiih" },
+      { type: "metric", bg: "bg-amber", big: "~+50%", what: "sales growth from midnight leads that used to be missed", co: "Threeland Property", href: "/en/stories/threeland" },
       { type: "quote", q: "“Our First Contact team had hit a ceiling. With Cekat AI, low-quality leads are filtered first — and our conversion went from about 20% to 28%.”",
         ava: { initials: "B", color: "#22C55E" }, nm: "Bayu", rl: "Head of Digital Marketing", logo: "Wall Street" },
       { type: "full", q: "“Our contact center used to be Monday–Friday, 8 to 5. Now AMIRA answers 24 hours in under a minute. We don't lose donors.”",
@@ -424,6 +426,35 @@ export const DATA_EN = {
     ]
   },
 
+  security: {
+    eyebrow: "Security & compliance",
+    title: "Ready for teams {em:who take data seriously}",
+    lead: "Access controls, Indonesian law, and Meta's official rails — the foundation you need before customer conversations live on a platform.",
+    chips: ["UU PDP", "Meta Partner", "RBAC", "ISO 9001 & ISO 27001"],
+    cards: [
+      { idx: "01", title: "UU PDP compliant", body: "User data is handled under Indonesia's Personal Data Protection Law, not just a marketing security claim." },
+      { idx: "02", title: "Role-based access", body: "RBAC decides who can see conversations, contacts, and pipeline. Sales, support, and billing each get what is relevant — nothing more." },
+      { idx: "03", title: "Meta Business Partner", body: "Cekat.AI is an official Meta partner. WhatsApp traffic runs on the official Business API with approved templates, not unofficial gateways." },
+      { idx: "04", title: "ISO 9001 & ISO 27001 certified", body: "Cekat.AI has officially received ISO 9001:2015 and ISO/IEC 27001:2022 certifications. We are open about your specific compliance needs during onboarding." }
+    ],
+    note: "Cekat has officially received ISO 9001:2015 and ISO/IEC 27001:2022 certifications. Deeper security detail is available in enterprise conversations."
+  },
+
+  faq: {
+    eyebrow: "FAQ",
+    heading: "Questions before you start",
+    lead: "Straight answers to the doubts that show up most often around cost, setup, and data ownership.",
+    items: [
+      { q: "How long until setup is usable?", a: "Most businesses answer chats the same day. Connect WhatsApp, paste your knowledge base, turn the agent on — no coding and no multi-month implementation project." },
+      { q: "Do we have to buy every product at once?", a: "No. Start with Chat. CRM, Marketing, or other agents can follow once the team settles in — data still connects on the same platform." },
+      { q: "We have no developers. Can this still work?", a: "Yes. The builder is no-code: describe the agent's role, paste your SOPs and business info, switch it on. Cekat.AI's team supports onboarding, including WABA verification when you are ready for the official API." },
+      { q: "Who owns our customer data?", a: "You do. Conversations and customer profiles belong to your business, can be exported anytime, and access is controlled by role inside your team. Nothing locks you in." },
+      { q: "What if the AI answers wrong?", a: "You control the knowledge base and which actions the AI can take. Sensitive or out-of-scope cases hand off to a human with full chat history — automation never means losing control." },
+      { q: "Are there setup fees or minimum contracts?", a: "Regular plans carry no separate setup fee and no minimum contract. Custom terms are agreed with sales before you begin." }
+    ],
+    cta: { label: "Still have questions? Chat with us", href: "/en/contact" }
+  },
+
   midcta: {
     eyebrow: "Start now",
     title: "Try it free for 14 days — {em:right from here}",
@@ -438,11 +469,11 @@ export const DATA_EN = {
     cta: { label: "All articles", href: "/en/blog" },
     posts: [
       { cls: "t1", tt: "WHATSAPP<br/>BUSINESS API<br/>FOR SMBs", meta: "Guide · 12 min read",
-        title: "How to set up WhatsApp Business API for a small business, step by step", href: "/en/blog" },
+        title: "How to set up WhatsApp Business API for a small business, step by step", href: "/en/blog", author: "Cekat.AI Team" },
       { cls: "t2", tt: "7 REASONS SLOW<br/>CHATS<br/>KILL CLOSES", meta: "Conversion · 8 min read",
-        title: "Why slow chat replies send buyers to your competitor", href: "/en/blog" },
+        title: "Why slow chat replies send buyers to your competitor", href: "/en/blog", author: "Cekat.AI Team" },
       { cls: "t3", tt: "WHAT IS<br/>META CAPI?", meta: "Marketing · 10 min read",
-        title: "Why chat conversions should be sent back to your Meta ads", href: "/en/blog" }
+        title: "Why chat conversions should be sent back to your Meta ads", href: "/en/blog", author: "Cekat.AI Team" }
     ]
   },
 
@@ -490,6 +521,7 @@ export const DATA_EN = {
       ]},
       { h: "Company", links: [
         { t: "Blog", href: "/en/blog" }, { t: "Events", href: "/en/events" },
+        { t: "About Us", href: "/en/about" },
         { t: "Contact", href: "/en/contact" }, { t: "Integrations", href: "/en/integrations" },
         { t: "Compare", href: "/en/comparison" }, { t: "Download the app", href: "https://play.google.com/store/apps/details?id=com.cekatmobile" }
       ]},
@@ -499,12 +531,12 @@ export const DATA_EN = {
         { t: "Returns, Refunds & Delivery", href: "/en/return-refund-delivery-policy" }
       ]}
     ],
-    copyright: "© 2025 PT Teknologi Cekat Indonesia · All rights reserved.",
+    copyright: `© ${new Date().getFullYear()} PT Teknologi Cekat Indonesia · All rights reserved.`,
     socials: ["Instagram", "LinkedIn", "YouTube"]
   },
 
   /** "Read the story" CTA on the logo cards and the results bento. */
   readMore: "Read the story",
 
-  order: ["hero", "logos", "proof", "signals", "products", "personas", "results", "videos", "industries", "love", "pricing", "midcta", "blog"]
+  order: ["hero", "logos", "proof", "signals", "products", "personas", "results", "videos", "industries", "love", "pricing", "security", "faq", "midcta", "blog"]
 };

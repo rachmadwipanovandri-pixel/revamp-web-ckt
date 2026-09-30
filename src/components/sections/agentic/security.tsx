@@ -14,11 +14,11 @@ const ITEMS = [
   { key: "iso", index: "04" },
 ] as const;
 
-const TRUST = ["UU PDP", "Meta Partner", "RBAC", "ISO 27001 *"] as const;
+const TRUST = ["UU PDP", "Meta Partner", "RBAC", "ISO 9001 & ISO 27001"] as const;
 
 /**
  * Enterprise readiness — calm trust chapter on soft dark ink.
- * ISO status stays honest (in progress).
+ * Chips name the certifications Cekat.AI actually holds.
  */
 export async function Security() {
   const t = await getTranslations("agentic.security");

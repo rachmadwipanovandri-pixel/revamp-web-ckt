@@ -1,7 +1,29 @@
 {
   "seo": {
     "title": "CekatAI: Platform AI Agent Customer Service & Sales 24/7",
-    "description": "AI Agent & Omnichannel CRM Cekat.ai: layani ribuan pelanggan & closing otomatis via WhatsApp AI. Dipercaya 3.000+ bisnis. Garansi hasil!"
+    "description": "AI Agent & Omnichannel CRM Cekat.ai: layani ribuan pelanggan & closing otomatis via WhatsApp AI. Dipercaya 3.000+ bisnis. Coba gratis 14 hari."
+  },
+  "about": {
+    "metaTitle": "Tentang Cekat.AI — PT Teknologi Cekat Indonesia",
+    "metaDescription": "Perusahaan di balik Cekat.AI: berdiri sejak Agustus 2023, Meta Business Partner resmi, tersertifikasi ISO 9001:2015 & ISO/IEC 27001:2022, dipercaya 3.000+ bisnis di Asia.",
+    "eyebrow": "Tentang kami",
+    "heroTitle": "AI Agent & Omnichannel CRM untuk bisnis Indonesia",
+    "heroSub": "Balas lebih cepat, follow-up otomatis, closing lebih banyak — dari percakapan sampai order, dalam satu platform.",
+    "storyEyebrow": "Cerita kami",
+    "storyP1": "Cekat.AI dibangun sejak Agustus 2023 oleh PT Teknologi Cekat Indonesia, dengan satu keyakinan sederhana: bisnis di Asia tumbuh dari percakapan — di WhatsApp, Instagram, TikTok, dan kanal lainnya — dan percakapan itu harus dijawab, diikuti, dan diubah jadi penjualan tanpa tim yang kelelahan.",
+    "storyP2": "Hari ini platform Cekat.AI memadukan AI customer service, CRM omnichannel, otomatisasi order, dan broadcast marketing, dipakai oleh 3.000+ bisnis di Indonesia, Singapura, dan Malaysia. Produknya tersedia sebagai web app dan aplikasi mobile di Google Play dan App Store.",
+    "factsEyebrow": "Sekilas fakta",
+    "facts": {
+      "founding": { "v": "Agustus 2023", "l": "berdiri sebagai PT Teknologi Cekat Indonesia" },
+      "businesses": { "v": "3.000+", "l": "bisnis di Asia memakai Cekat.AI" },
+      "countries": { "v": "3 negara", "l": "kantor di Indonesia, Singapura & Malaysia" },
+      "partner": { "v": "Meta", "l": "Business Partner resmi WhatsApp Business API" }
+    },
+    "certEyebrow": "Keamanan & kepatuhan",
+    "certHeading": "Standar yang kami pegang",
+    "officesEyebrow": "Kantor kami",
+    "ctaLabel": "Bicara dengan tim kami",
+    "ctaSub": "Curiga kami cocok untuk bisnis Anda? Chat langsung — tanpa presentasi panjang."
   },
   "common": {
     "cta": "Coba Gratis",
@@ -18,6 +40,7 @@
     "blog": "Blog",
     "contact": "Kontak",
     "integrations": "Integrasi",
+    "about": "Tentang Kami",
     "masuk": "Login",
     "ctaWhatsapp": "WhatsApp Kami",
     "ctaTrial": "Coba Gratis",
@@ -1321,8 +1344,8 @@
         "body": "Cekat.AI mitra resmi Meta. Trafik WhatsApp lewat Business API resmi dengan template yang disetujui, bukan gateway abal-abal."
       },
       "iso": {
-        "title": "ISO 27001 berjalan",
-        "body": "Sertifikasi ISO 27001 sedang dalam proses. Kami terbuka membahas kebutuhan compliance spesifik perusahaan Anda saat onboarding."
+        "title": "Tersertifikasi ISO 9001 & ISO 27001",
+        "body": "Cekat.AI resmi memperoleh sertifikasi ISO 9001:2015 dan ISO/IEC 27001:2022. Kami terbuka membahas kebutuhan compliance spesifik perusahaan Anda saat onboarding."
       },
       "note": "Cekat has officially received ISO 9001:2015 and ISO/IEC 27001:2022 certifications."
     },
