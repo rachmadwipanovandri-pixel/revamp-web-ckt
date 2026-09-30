@@ -186,7 +186,7 @@ export const DATA_EN = {
     more: "…and thousands more businesses across Indonesia, Singapore, and Malaysia",
     go: "See the solution",
     items: [
-      { src: "/images/home/logos/jago.png", alt: "Jago", caption: "Switched from manual replies that only covered office hours", href: "/en/industries/financial-services" },
+      { src: "/images/home/logos/jago.webp", alt: "Jago", caption: "Switched from manual replies that only covered office hours", href: "/en/industries/financial-services" },
       { src: "/images/home/logos/siloam-logo.webp", alt: "Siloam Hospitals", caption: "From appointment spreadsheets rebuilt every night", href: "/en/industries/healthcare" },
       { src: "/images/home/logos/pln.webp", alt: "PLN", caption: "From 3 separate tools for chat, CRM, and broadcast", href: "/en/solutions" },
       { src: "/images/home/logos/tiki-logo.webp", alt: "TiKi", caption: "From delivery follow-ups that kept slipping through", href: "/en/industries/logistics" },

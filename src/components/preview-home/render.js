@@ -16,14 +16,14 @@ const fmt = (s) => esc(s).replace(/\{accent:(.+?)\}/g, '<span class="accent">$1<
 /* Dimensi file (px) untuk attribute width/height — menahan aspect-ratio
    sebelum gambar termuat (cLs) dan memenuhi audit unsized-images. */
 const IMG_DIMS = {
-  "/images/home/logos/jago.png": [780, 219],
+  "/images/home/logos/jago.webp": [399, 112],
   "/images/home/logos/kb-insurance.png": [512, 128],
-  "/images/home/logos/pln.webp": [467, 640],
+  "/images/home/logos/pln.webp": [82, 112],
   "/images/home/logos/realfood.webp": [236, 72],
-  "/images/home/logos/siloam-logo.webp": [640, 160],
-  "/images/home/logos/telkom-university.webp": [400, 140],
-  "/images/home/logos/tiki-logo.webp": [640, 208],
-  "/images/home/logos/yupi.webp": [350, 220],
+  "/images/home/logos/siloam-logo.webp": [448, 112],
+  "/images/home/logos/telkom-university.webp": [320, 112],
+  "/images/home/logos/tiki-logo.webp": [345, 112],
+  "/images/home/logos/yupi.webp": [178, 112],
   "/images/home/feature-chat-inbox.webp": [980, 980],
   "/images/home/feature-crm-pipeline.webp": [980, 980],
   "/images/home/feature-marketing-loop.webp": [980, 980],

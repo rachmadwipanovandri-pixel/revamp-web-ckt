@@ -4,12 +4,13 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
-  // Re-enabled 2026-09-23 for Lighthouse mobile: render-blocking CSS was
-  // ~690ms of savings and LCP element render delay ~1.7s. An earlier 2026-08-15
-  // run saw FCP +~100ms from SSR+RSC duplication — watch FCP on the next
-  // PageSpeed pass and revert if lab FCP regresses again.
+  // Measured on/off again 2026-09-30 (Lighthouse 13.5, local, both routes).
+  // inlineCss: true ships the sheet twice (SSR <style> + RSC payload) — with
+  // preview-home's 91 KiB route CSS the document hit 179 KiB gz and cost
+  // -3 performance points there (87 vs 90); /en scored 82 vs 83 with FCP
+  // 1897 vs 1560ms. Keep false; re-measure only if the sheets shrink a lot.
   experimental: {
-    inlineCss: true,
+    inlineCss: false,
   },
   // Checked before the proxy and the filesystem, so these win over any
   // in-app redirect (Next 16 execution order: headers → redirects → proxy).

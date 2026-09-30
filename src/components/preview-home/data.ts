@@ -185,7 +185,7 @@ export const DATA = {
     more: "…dan ribuan bisnis lainnya di Indonesia, Singapura, & Malaysia",
     go: "Lihat solusi",
     items: [
-      { src: "/images/home/logos/jago.png", alt: "Jago", caption: "Beralih dari balasan chat manual yang cuma jam kerja", href: "/industri/keuangan" },
+      { src: "/images/home/logos/jago.webp", alt: "Jago", caption: "Beralih dari balasan chat manual yang cuma jam kerja", href: "/industri/keuangan" },
       { src: "/images/home/logos/siloam-logo.webp", alt: "Siloam Hospitals", caption: "Dari rekap janji temu di spreadsheet tiap malam", href: "/industri/kesehatan" },
       { src: "/images/home/logos/pln.webp", alt: "PLN", caption: "Dari 3 tools terpisah untuk chat, CRM, dan broadcast", href: "/solusi" },
       { src: "/images/home/logos/tiki-logo.webp", alt: "TiKi", caption: "Dari follow-up kirim paket yang sering terlewat", href: "/industri/logistik" },
