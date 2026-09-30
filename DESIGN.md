@@ -7,19 +7,29 @@ Redesign the production homepage as a **modern, interactive, minimalist** market
 **Linear product marketing × Stripe dashboard clarity × diagram-first editorial.**
 Not the current dark "keynote void" stage. The page should feel like a product you can *understand in 30 seconds* — airy canvas, precise type, and living diagrams that explain the product instead of decorating it.
 
-## Palette (unchanged tokens)
+## Palette (aligned to `cekat-brand-guidelines.html`)
+Only documented tokens from the brand guidelines are used — no off-palette variants.
+See `~/Downloads/cekat-brand-guidelines.html` as the source of truth.
+
 | Role | Hex |
 |---|---|
-| Brand primary | `#1352BF` |
-| Primary deep | `#08214C` |
-| Ink | `#0C111D` / `#101828` |
-| Body muted | `#525C6B` / `#667085` |
-| Canvas | `#FFFFFF` |
-| Soft surface | `#F7F9FC` |
-| Soft blue wash | `#E8F0FE` / `#DCE7FC` |
-| Border | `#E4E7EC` |
-| Dark bookend (kept, lighter use) | `#061A3A` → `#0B2F78` |
-| Category accents | sky `#0EA5E9`, green `#22C55E`, teal `#13A8BF`, purple `#B64ABF` |
+| Brand primary | `#1352BF` (Brand Blue) |
+| Brand deep / dark bookends | `#0B1220` (Ink 900) · `#0F172A` (Slate 900) |
+| Heading / body text | `#101828` (Gray 900) |
+| Body muted | `#4B5563` (Slate 600) · `#64748B` (Slate 500) · `#94A3B8` (Slate 400) |
+| Canvas | `#FFFFFF` (White) |
+| Soft surface | `#F8FAFF` (Ice Blue) · `#FAFBFC` (Off White) · `#FAF9F5` (Cream) |
+| Soft blue wash | `#EFF6FF` (Blue 50) |
+| Light text on dark | `#F1F5F9` (Slate 100) · `#E2E8F0` (Border Light) |
+| Border | `#E2E8F0` (Border Light) · `#BFDBFE` (Border Blue) · `#BBF7D0` (Border Green) |
+| Blue ramp (hovers, charts, gradients) | `#2563EB` (Blue 600) · `#3B82F6` (Blue 500) |
+| Category accents | sky `#0EA5E9`, green `#22C55E` / `#4ABF5D`, teal `#4AB6BF`, indigo `#4A4ABF`, purple `#B64ABF`, pink `#EC4899` / `#F472B6` |
+| Status fills | Green 50 `#F0FDF4` bg + `#BBF7D0` border + Gray 900 text |
+
+Rules applied in `/preview-home`:
+- Dark bands (hero, signals, love, footer) use Ink 900 / Slate 900 grounds with Brand Blue radial glows — no invented navy shades.
+- Success/status chips: pale documented tints with Gray 900 text; solid dots/checks use Success Green `#22C55E`.
+- There is no amber/red in the brand file: former amber accents map to Indigo `#4A4ABF`, alert red maps to Pink `#EC4899`.
 
 ## Typography
 - Family: Inter / Google Sans Flex (same as product)

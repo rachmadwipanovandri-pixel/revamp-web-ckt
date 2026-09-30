@@ -1,40 +1,25 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { buildPage } from "./render";
+import { useEffect } from "react";
 import { initPreviewHome } from "./behaviors";
 
-export type PreviewPost = {
-  title: string;
-  href: string;
-  meta: string;
-  img?: string;
-  cls?: string;
-  tt?: string;
-};
-
 /**
- * Preview homepage (draft) — dirender penuh di client: string HTML dari
- * render.js + interaksi dari behaviors.ts. `posts` = artikel terbaru dari
- * WordPress (diambil server-side oleh page.tsx); kosong → fallback statis.
+ * Preview homepage (draft) — konten HTML-nya dibangun di server oleh
+ * page.tsx (buildPage) dan di-stream sebagai <div class="ph-root"> biasa,
+ * sehingga sudah ada di first paint dan tidak ikut ter-serialize dua kali
+ * lewat props client. Komponen ini hanya memasang interaksi (behaviors)
+ * setelah hydration.
  */
-export default function PreviewHome({ posts, locale }: { posts?: PreviewPost[]; locale: string }) {
-  const ref = useRef<HTMLDivElement>(null);
-
+export default function PreviewHome() {
   useEffect(() => {
-    const root = ref.current;
+    const root = document.querySelector<HTMLElement>(".ph-root");
     if (!root) return;
     try {
-      root.innerHTML = buildPage(posts, locale);
-      const cleanup = initPreviewHome(root);
-      return () => {
-        cleanup();
-        root.innerHTML = "";
-      };
+      return initPreviewHome(root);
     } catch (err) {
       console.error("[preview-home] init error", err);
     }
-  }, [posts, locale]);
+  }, []);
 
-  return <div ref={ref} className="ph-root" />;
+  return null;
 }

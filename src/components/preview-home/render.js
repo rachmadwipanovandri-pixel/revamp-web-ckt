@@ -13,10 +13,31 @@ const fmt = (s) => esc(s).replace(/\{accent:(.+?)\}/g, '<span class="accent">$1<
                          .replace(/\{em:(.+?)\}/g, "<em>$1</em>")
                          .replace(/\{b:(.+?)\}/g, "<b>$1</b>");
 
+/* Dimensi file (px) untuk attribute width/height — menahan aspect-ratio
+   sebelum gambar termuat (cLs) dan memenuhi audit unsized-images. */
+const IMG_DIMS = {
+  "/images/home/logos/jago.png": [780, 219],
+  "/images/home/logos/kb-insurance.png": [512, 128],
+  "/images/home/logos/pln.webp": [467, 640],
+  "/images/home/logos/realfood.webp": [236, 72],
+  "/images/home/logos/siloam-logo.webp": [640, 160],
+  "/images/home/logos/telkom-university.webp": [400, 140],
+  "/images/home/logos/tiki-logo.webp": [640, 208],
+  "/images/home/logos/yupi.webp": [350, 220],
+  "/images/home/feature-chat-inbox.webp": [980, 980],
+  "/images/home/feature-crm-pipeline.webp": [980, 980],
+  "/images/home/feature-marketing-loop.webp": [980, 980],
+  "/images/home/feature-oms-orders.webp": [980, 980],
+};
+const sized = (src) => {
+  const d = IMG_DIMS[src];
+  return d ? ` width="${d[0]}" height="${d[1]}"` : "";
+};
+
 const ICON = {
-  star: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7AA5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>',
-  shield: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7AA5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
-  clock: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7AA5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  star: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>',
+  shield: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+  clock: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
   phone: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1352BF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>',
   home: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1352BF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>',
   chat: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1352BF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
@@ -43,14 +64,18 @@ function renderMega(link) {
       `<button class="mega-cat${i === 0 ? " on" : ""}" data-cat="${c.id}" type="button">
          <span><span class="t">${esc(c.title)}</span><span class="d" style="display:block">${esc(c.desc)}</span></span>
          <span class="ch"></span></button>`).join("");
+    /* Semua panel dirender di server (yang non-aktif display:none) supaya
+       pergantian kategori cukup lewat toggle atribut di client — tanpa DATA. */
+    const panels = link.categories.map((c, i) =>
+      `<div class="mega-panel" data-cat-panel="${c.id}"${i === 0 ? "" : ' style="display:none"'}>
+         <div class="mega-panel-title">${esc(c.title)}</div>
+         ${megaItems(c.items)}
+       </div>`).join("");
     const f = link.featured;
     return `<div class="mega" id="mega-${link.id}" data-kind="cats">
       <div class="mega-cols k-cats">
         <div class="mega-side">${cats}</div>
-        <div class="mega-main">
-          <div class="mega-panel-title">${esc(link.categories[0].title)}</div>
-          <div id="mega-items-${link.id}">${megaItems(link.categories[0].items)}</div>
-        </div>
+        <div class="mega-main">${panels}</div>
       </div>
       <div class="mega-foot">
         <span class="fi">${ICON.phone}</span>
@@ -395,7 +420,7 @@ function secLogos() {
       </div>
       <div class="logo-grid">${l.items.map((it, i) => `
         <div class="logo-card reveal" style="--d:${(i % 4) * 70}ms">
-          <div class="brandbox"><img src="${it.src}" alt="${esc(it.alt)}" loading="lazy"></div>
+          <div class="brandbox"><img src="${it.src}" alt="${esc(it.alt)}"${sized(it.src)} loading="lazy"></div>
           <div class="caption">${esc(it.caption)}</div>
           <a class="go" href="${currentLocale() === "en" ? "/en/blog" : "/blog"}">${esc(DATA.readMore)} →</a>
         </div>`).join("")}
@@ -417,7 +442,7 @@ function secSignals() {
   }).join("");
   return `<section class="signals" data-nav="dark">
     <div class="container"><div class="head reveal">
-      <span class="eyebrow" style="color:#9EC1FF"><span class="dot"></span>${esc(s.eyebrow)}</span>
+      <span class="eyebrow" style="color:#BFDBFE"><span class="dot"></span>${esc(s.eyebrow)}</span>
       <h2 class="h2">${fmt(s.title)}</h2>
       <p class="lead">${esc(s.lead)}</p>
     </div></div>
@@ -447,24 +472,24 @@ function secProducts() {
       </div>
       <div class="doodle-hint" aria-hidden="true">${esc(p.doodle)}
         <svg width="46" height="38" viewBox="0 0 46 38" fill="none">
-          <path d="M4 4c14 2 26 10 32 26" stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 6"/>
-          <path d="M28 26l8 6 2-10" stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M4 4c14 2 26 10 32 26" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 6"/>
+          <path d="M28 26l8 6 2-10" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg></div>
       <div class="stack" id="stack">
-        ${rev.map(it => `
-        <article class="acc-card${it === p.items[0] ? " open" : ""}">
+        ${rev.map((it, i) => `
+        <article class="acc-card${it === p.items[0] ? " open" : ""}" data-pos="${i}">
           <button class="acc-head" type="button">
             <span class="acc-dot" style="--c:${it.dot}"></span>
             <span class="acc-label">${esc(it.title)}</span>
           </button>
           <div class="acc-body"><div class="acc-inner">
             <div>
-              <h4 class="pillar-h">${esc(it.headline)}</h4>
+              <h3 class="pillar-h">${esc(it.headline)}</h3>
               <p>${esc(it.body)}</p>
               <div class="acc-pills">${it.pills.map(x => `<span>${esc(x)}</span>`).join("")}</div>
               <a class="textlink acc-cta" href="${it.cta.href}">${esc(it.cta.label)}</a>
             </div>
-            <div class="pillar-media"><img src="${it.img}" alt="${esc(it.alt)}" loading="lazy"></div>
+            <div class="pillar-media"><img src="${it.img}" alt="${esc(it.alt)}"${sized(it.img)} loading="lazy"></div>
           </div></div>
         </article>`).join("")}
       </div>
@@ -607,9 +632,9 @@ function secLove() {
   return `<section class="love" data-nav="dark">
     <div class="container"><div class="head reveal">
       <svg class="love-spark" width="46" height="46" viewBox="0 0 46 46" fill="none" aria-hidden="true">
-        <path d="M23 4v10M23 32v10M4 23h10M32 23h10M9 9l7 7M30 30l7 7M37 9l-7 7M16 30l-7 7" stroke="#9EC1FF" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M23 4v10M23 32v10M4 23h10M32 23h10M9 9l7 7M30 30l7 7M37 9l-7 7M16 30l-7 7" stroke="#BFDBFE" stroke-width="2.4" stroke-linecap="round"/>
       </svg>
-      <span class="eyebrow" style="color:#9EC1FF"><span class="dot"></span>${esc(l.eyebrow)}</span>
+      <span class="eyebrow" style="color:#BFDBFE"><span class="dot"></span>${esc(l.eyebrow)}</span>
       <h2>${fmt(l.title)}</h2>
       <p class="lead">${esc(l.lead)}</p>
     </div></div>
@@ -619,7 +644,7 @@ function secLove() {
 function secMidcta() {
   const m = DATA.midcta;
   return `<section class="midcta" data-nav="dark"><div class="container">
-    <span class="eyebrow reveal" style="color:#BFD4FF"><span class="dot"></span>${esc(m.eyebrow)}</span>
+    <span class="eyebrow reveal" style="color:#BFDBFE"><span class="dot"></span>${esc(m.eyebrow)}</span>
     <h2 class="reveal" style="--d:60ms">${fmt(m.title)}</h2>
     <p class="reveal" style="--d:120ms">${esc(m.sub)}</p>
     <form class="capture reveal" style="--d:180ms">
@@ -661,10 +686,10 @@ function renderFooter() {
         <div class="brand">${brandSvg("ftr", "brand-logo")}</div>
         <p>${esc(f.about)}</p>
         <span class="f-partner">${ICON.shield}${esc(f.partner)}</span>
-        ${(f.apps && f.apps.length) ? `<div class="f-apps-wrap"><h5>${esc(f.appsTitle)}</h5><div class="f-apps">${f.apps.map(a =>
+        ${(f.apps && f.apps.length) ? `<div class="f-apps-wrap"><h3>${esc(f.appsTitle)}</h3><div class="f-apps">${f.apps.map(a =>
           `<a href="${a.href}" target="_blank" rel="noopener noreferrer">${esc(a.t)}</a>`).join("")}</div></div>` : ""}
         ${(f.countries && f.countries.length) ? `<div class="f-country">
-          <h5>${esc(f.officeTitle)}</h5>
+          <h3>${esc(f.officeTitle)}</h3>
           <div class="f-tabs">${f.countries.map((c, i) =>
             `<button class="f-tab${i === 0 ? " on" : ""}" type="button" data-fc="${c.key}">${esc(c.label)}</button>`).join("")}</div>
           <div class="f-panels">${f.countries.map((c, i) =>
@@ -672,7 +697,7 @@ function renderFooter() {
               `<div class="f-office"><span class="city">${esc(o.city)}</span><span class="addr">${esc(o.addr)}</span></div>`).join("")}</div>`).join("")}</div>
         </div>` : ""}
       </div>
-      ${f.cols.map(c => `<div class="f-col"><h5>${esc(c.h)}</h5>
+      ${f.cols.map(c => `<div class="f-col"><h3>${esc(c.h)}</h3>
         ${c.links.map(a => `<a href="${a.href}">${esc(a.t)}</a>`).join("")}</div>`).join("")}
     </div>
     <div class="f-bottom"><span>${esc(f.copyright)}</span>

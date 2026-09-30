@@ -185,13 +185,13 @@ export const DATA = {
     more: "…dan ribuan bisnis lainnya di Indonesia, Singapura, & Malaysia",
     items: [
       { src: "/images/home/logos/jago.png", alt: "Jago", caption: "Beralih dari balasan chat manual yang cuma jam kerja" },
-      { src: "/images/home/logos/siloam.webp", alt: "Siloam Hospitals", caption: "Dari rekap janji temu di spreadsheet tiap malam" },
-      { src: "/images/home/logos/pln.png", alt: "PLN", caption: "Dari 3 tools terpisah untuk chat, CRM, dan broadcast" },
-      { src: "/images/home/logos/tiki-logo.png", alt: "TiKi", caption: "Dari follow-up kirim paket yang sering terlewat" },
-      { src: "/images/home/logos/yupi.png", alt: "Yupi", caption: "Dari broadcast massal yang dibuka tapi tak dibalas" },
-      { src: "/images/home/logos/realfood.png", alt: "Realfood", caption: "Dari orderan masuk yang harus diketik ulang satu-satu" },
+      { src: "/images/home/logos/siloam-logo.webp", alt: "Siloam Hospitals", caption: "Dari rekap janji temu di spreadsheet tiap malam" },
+      { src: "/images/home/logos/pln.webp", alt: "PLN", caption: "Dari 3 tools terpisah untuk chat, CRM, dan broadcast" },
+      { src: "/images/home/logos/tiki-logo.webp", alt: "TiKi", caption: "Dari follow-up kirim paket yang sering terlewat" },
+      { src: "/images/home/logos/yupi.webp", alt: "Yupi", caption: "Dari broadcast massal yang dibuka tapi tak dibalas" },
+      { src: "/images/home/logos/realfood.webp", alt: "Realfood", caption: "Dari orderan masuk yang harus diketik ulang satu-satu" },
       { src: "/images/home/logos/kb-insurance.png", alt: "KB Insurance", caption: "Dari lead iklan yang dingin karena telat dihubungi" },
-      { src: "/images/home/logos/telkom-university.png", alt: "Telkom University", caption: "Dari pertanyaan pendaftar yang berulang setiap hari" }
+      { src: "/images/home/logos/telkom-university.webp", alt: "Telkom University", caption: "Dari pertanyaan pendaftar yang berulang setiap hari" }
     ]
   },
 
@@ -211,18 +211,18 @@ export const DATA = {
     rows: [
       [
         { c: "#B64ABF", t: "Customer tanya harga di DM Instagram" }, { c: "#22C55E", t: "Cart dibuang 2 jam lalu" },
-        { c: "#0EA5E9", t: "Lead dari iklan belum di-follow up" }, { c: "#13A8BF", t: "Chat masuk di luar jam kerja" },
-        { c: "#F59E0B", t: "Customer lama balik setelah 6 bulan" }, { c: "#EC4899", t: "Promo berakhir besok, belum diingatkan" }
+        { c: "#0EA5E9", t: "Lead dari iklan belum di-follow up" }, { c: "#4AB6BF", t: "Chat masuk di luar jam kerja" },
+        { c: "#4A4ABF", t: "Customer lama balik setelah 6 bulan" }, { c: "#EC4899", t: "Promo berakhir besok, belum diingatkan" }
       ],
       [
-        { c: "#F59E0B", t: "Pesanan belum dibayar lewat 1 hari" }, { c: "#EC4899", t: "Broadcast dibuka tapi belum dibalas" },
+        { c: "#4A4ABF", t: "Pesanan belum dibayar lewat 1 hari" }, { c: "#EC4899", t: "Broadcast dibuka tapi belum dibalas" },
         { c: "#1352BF", t: "Prospek tanya ongkir ke 3 kota" }, { c: "#22C55E", t: "Booking besok dikonfirmasi AI" },
-        { c: "#EF4444", t: "Komplain keterlambatan dikirim ke CS" }, { c: "#0EA5E9", t: "50 chat masuk dari iklan Meta hari ini" }
+        { c: "#F472B6", t: "Komplain keterlambatan dikirim ke CS" }, { c: "#0EA5E9", t: "50 chat masuk dari iklan Meta hari ini" }
       ],
       [
         { c: "#22C55E", t: "Follow-up otomatis terkirim H+1" }, { c: "#B64ABF", t: "Customer pindah ke paket premium" },
-        { c: "#13A8BF", t: "Jadwal demo dijadwalkan ulang" }, { c: "#0EA5E9", t: "AI menawarin produk relevan ke 128 customer" },
-        { c: "#F59E0B", t: "Besaran order naik 2x lipat" }, { c: "#EC4899", t: "Story dibuka 500x, klik link 40x" }
+        { c: "#4AB6BF", t: "Jadwal demo dijadwalkan ulang" }, { c: "#0EA5E9", t: "AI menawarin produk relevan ke 128 customer" },
+        { c: "#4A4ABF", t: "Besaran order naik 2x lipat" }, { c: "#EC4899", t: "Story dibuka 500x, klik link 40x" }
       ]
     ]
   },
@@ -238,25 +238,25 @@ export const DATA = {
         body: "AI membalas chat, mengualifikasi calon pembeli, dan meneruskan ke tim saat sudah siap closing. Semua channel masuk ke satu inbox — jalan 24/7 tanpa chat menumpuk.",
         pills: ["Semua channel satu inbox", "Auto-handoff ke tim", "Jalan 24/7"],
         cta: { label: "Jelajahi AI Sales Chat →", href: "/chat" },
-        img: "/images/home/feature-chat-inbox.png", alt: "Layar inbox percakapan Cekat.AI" },
+        img: "/images/home/feature-chat-inbox.webp", alt: "Layar inbox percakapan Cekat.AI" },
       { title: "CRM & Data Pelanggan", dot: "#22C55E",
         headline: "Data rapi tanpa input manual",
         body: "Setiap percakapan, pembelian, dan tahap pipeline tercatat sendiri dari chat. Tidak ada lagi rekap manual di akhir hari — semua tim melihat data yang sama.",
         pills: ["Terisi otomatis dari chat", "Pipeline real-time", "Riwayat lengkap"],
         cta: { label: "Jelajahi CRM →", href: "/crm" },
-        img: "/images/home/feature-crm-pipeline.png", alt: "Layar pipeline CRM Cekat.AI" },
+        img: "/images/home/feature-crm-pipeline.webp", alt: "Layar pipeline CRM Cekat.AI" },
       { title: "Marketing & Broadcast", dot: "#B64ABF",
         headline: "Tahu persis iklan yang closing",
         body: "Broadcast tersegmentasi, follow-up otomatis, dan atribusi yang menghubungkan belanja iklan ke penjualan nyata — dari klik iklan sampai chat jadi order.",
         pills: ["Broadcast tersegmentasi", "Dashboard ROAS", "Integrasi CAPI"],
         cta: { label: "Jelajahi Marketing →", href: "/marketing" },
-        img: "/images/home/feature-marketing-loop.png", alt: "Layar dashboard marketing Cekat.AI" },
-      { title: "Order & Automation", dot: "#F59E0B",
+        img: "/images/home/feature-marketing-loop.webp", alt: "Layar dashboard marketing Cekat.AI" },
+      { title: "Order & Automation", dot: "#4A4ABF",
         headline: "Order jalan langsung dari chat",
         body: "AI menghitung ongkir, mengirim tautan pembayaran, dan menjalankan alur lanjutan tanpa perlu coding — dari percakapan sampai pesanan beres.",
         pills: ["Cek ongkir otomatis", "Pembayaran QR", "Tanpa coding"],
         cta: { label: "Jelajahi Order →", href: "/order" },
-        img: "/images/home/feature-oms-orders.png", alt: "Layar order otomatis Cekat.AI" }
+        img: "/images/home/feature-oms-orders.webp", alt: "Layar order otomatis Cekat.AI" }
     ]
   },
   personas: {
@@ -399,7 +399,7 @@ export const DATA = {
         { q: "“Respon pelanggan menjadi lebih cepat”",
           ava: { img: "/images/home/testimonial-silica-brenda.jpg", initials: "S", color: "#1352BF" }, nm: "Silcia Brenda", rl: "CEO & Founder · Moir Salon" },
         { q: "“Dulu saya harus begadang membalas mereka. Sekarang saya tidur nyenyak, dan pagi-pagi sudah antre orang minta jadwal survei. Peningkatan penjualan hampir 50% lebih.”",
-          ava: { initials: "A", color: "#F59E0B" }, nm: "Adam Sulaiman", rl: "President Director · Threeland Property" }
+          ava: { initials: "A", color: "#4A4ABF" }, nm: "Adam Sulaiman", rl: "President Director · Threeland Property" }
       ]},
       { spd: "56s", dir: "down", cards: [
         { q: "“Closing rate di kami masih di bawah 20%. Sekarang sudah di atas 40%… karena closing rate naik, omzet kami juga naik drastis, bisa di angka 50%.”",
@@ -411,11 +411,11 @@ export const DATA = {
         { q: "“Peluang closing sangat tinggi”",
           ava: { img: "/images/home/testimonial-wiji-astuti.jpg", initials: "W", color: "#0EA5E9" }, nm: "Wiji Astuti", rl: "Head of Customer Experience · Rumah Zakat" },
         { q: "“Dengan Cekat AI, leads yang low quality difilter dulu, dan konversi kami naik dari sekitar 20% menjadi 28%.”",
-          ava: { initials: "B", color: "#13A8BF" }, nm: "Bayu", rl: "Head of Digital Marketing · Wall Street English" }
+          ava: { initials: "B", color: "#4AB6BF" }, nm: "Bayu", rl: "Head of Digital Marketing · Wall Street English" }
       ]},
       { spd: "60s", dir: "down", cards: [
         { q: "“Response rate kami meningkat 90%.”",
-          ava: { initials: "H", color: "#6366F1" }, nm: "Hargyo", rl: "Direktur · Multimedia Nusantara Polytechnic" },
+          ava: { initials: "H", color: "#3B82F6" }, nm: "Hargyo", rl: "Direktur · Multimedia Nusantara Polytechnic" },
         { q: "“Sekarang AMIRA menjawab 24 jam, kurang dari 1 menit. Kami tidak kehilangan donatur, dan peluang closing-nya besar sekali.”",
           ava: { img: "/images/home/testimonial-wiji-astuti.jpg", initials: "W", color: "#EC4899" }, nm: "Wiji Astuti", rl: "Customer Experience Dept. Head · Rumah Zakat" }
       ]}

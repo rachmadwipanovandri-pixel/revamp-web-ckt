@@ -5,9 +5,6 @@
  * Dipanggil sekali dari useEffect; semua listener window/document memakai
  * AbortSignal supaya aman di React StrictMode (mount → cleanup → mount).
  */
-import { DATA as DATA_ID } from "./data";
-import { DATA_EN } from "./data-en";
-import { megaItems } from "./render";
 import { appendAdParams } from "@/lib/ad-params";
 import { REGISTER_URL } from "@/lib/links";
 import { readStoredAdParams } from "@/hooks/use-app-url";
@@ -39,7 +36,7 @@ export function initPreviewHome(root: HTMLElement): () => void {
     requestAnimationFrame(() => {
       const y = scrollY;
       const h = document.documentElement.scrollHeight - innerHeight;
-      if (progress) progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
+      if (progress) progress.style.transform = "scaleX(" + (h > 0 ? y / h : 0) + ")";
       navBar.classList.toggle("pill", y > 40);
       const probeY = Math.round(innerBar.getBoundingClientRect().bottom + 4);
       let theme = navBar.classList.contains("t-dark") ? "dark" : "light";
@@ -151,34 +148,19 @@ export function initPreviewHome(root: HTMLElement): () => void {
     if (openMega && !navBar.contains(e.target as Node)) closeMega();
   }, { signal });
 
-  /* kategori pada mega Fitur */
-  type FiturLink = {
-    id: string;
-    categories?: Array<{
-      id: string;
-      title: string;
-      items: Array<{ t: string; href: string; d?: string }>;
-    }>;
-  };
-  const previewData =
-    typeof location !== "undefined" && location.pathname.startsWith("/en")
-      ? DATA_EN
-      : DATA_ID;
-  const fiturData = (previewData.nav.links as readonly FiturLink[]).find(
-    (l) => l.id === "fitur",
-  );
+  /* kategori pada mega Fitur — semua panel sudah dirender server-side
+     (lihat render.js), di sini cukup toggle `on` + display tanpa DATA. */
   qa(".mega-cat").forEach((btn) => {
     const switchTo = () => {
-      const cat = fiturData?.categories?.find(
-        (c) => c.id === (btn as HTMLElement).dataset.cat,
-      );
-      if (!cat) return;
-      qa(".mega-cat").forEach((b) => b.classList.toggle("on", b === btn));
+      const cat = (btn as HTMLElement).dataset.cat;
       const mega = btn.closest(".mega");
-      const title = mega?.querySelector(".mega-panel-title");
-      const box = document.getElementById("mega-items-fitur");
-      if (title) title.textContent = cat.title;
-      if (box) box.innerHTML = megaItems(cat.items);
+      if (!mega || !cat) return;
+      mega.querySelectorAll<HTMLElement>(".mega-cat").forEach((b) =>
+        b.classList.toggle("on", b === btn),
+      );
+      mega.querySelectorAll<HTMLElement>("[data-cat-panel]").forEach((panel) => {
+        panel.style.display = panel.dataset.catPanel === cat ? "" : "none";
+      });
     };
     btn.addEventListener("mouseenter", () => {
       if (matchMedia("(min-width: 961px)").matches) switchTo();

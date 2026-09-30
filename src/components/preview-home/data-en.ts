@@ -186,13 +186,13 @@ export const DATA_EN = {
     more: "…and thousands more businesses across Indonesia, Singapore, and Malaysia",
     items: [
       { src: "/images/home/logos/jago.png", alt: "Jago", caption: "Switched from manual replies that only covered office hours" },
-      { src: "/images/home/logos/siloam.webp", alt: "Siloam Hospitals", caption: "From appointment spreadsheets rebuilt every night" },
-      { src: "/images/home/logos/pln.png", alt: "PLN", caption: "From 3 separate tools for chat, CRM, and broadcast" },
-      { src: "/images/home/logos/tiki-logo.png", alt: "TiKi", caption: "From delivery follow-ups that kept slipping through" },
-      { src: "/images/home/logos/yupi.png", alt: "Yupi", caption: "From mass broadcasts that were opened but never answered" },
-      { src: "/images/home/logos/realfood.png", alt: "Realfood", caption: "From orders retyped one by one" },
+      { src: "/images/home/logos/siloam-logo.webp", alt: "Siloam Hospitals", caption: "From appointment spreadsheets rebuilt every night" },
+      { src: "/images/home/logos/pln.webp", alt: "PLN", caption: "From 3 separate tools for chat, CRM, and broadcast" },
+      { src: "/images/home/logos/tiki-logo.webp", alt: "TiKi", caption: "From delivery follow-ups that kept slipping through" },
+      { src: "/images/home/logos/yupi.webp", alt: "Yupi", caption: "From mass broadcasts that were opened but never answered" },
+      { src: "/images/home/logos/realfood.webp", alt: "Realfood", caption: "From orders retyped one by one" },
       { src: "/images/home/logos/kb-insurance.png", alt: "KB Insurance", caption: "From ad leads gone cold because outreach came too late" },
-      { src: "/images/home/logos/telkom-university.png", alt: "Telkom University", caption: "From the same applicant questions repeating daily" }
+      { src: "/images/home/logos/telkom-university.webp", alt: "Telkom University", caption: "From the same applicant questions repeating daily" }
     ]
   },
 
@@ -212,18 +212,18 @@ export const DATA_EN = {
     rows: [
       [
         { c: "#B64ABF", t: "Customer asked price in Instagram DM" }, { c: "#22C55E", t: "Cart abandoned 2 hours ago" },
-        { c: "#0EA5E9", t: "Ad lead not followed up yet" }, { c: "#13A8BF", t: "Chat arrived after hours" },
-        { c: "#F59E0B", t: "Past customer back after 6 months" }, { c: "#EC4899", t: "Promo ends tomorrow, not reminded" }
+        { c: "#0EA5E9", t: "Ad lead not followed up yet" }, { c: "#4AB6BF", t: "Chat arrived after hours" },
+        { c: "#4A4ABF", t: "Past customer back after 6 months" }, { c: "#EC4899", t: "Promo ends tomorrow, not reminded" }
       ],
       [
-        { c: "#F59E0B", t: "Order unpaid for 1 day" }, { c: "#EC4899", t: "Broadcast opened but unanswered" },
+        { c: "#4A4ABF", t: "Order unpaid for 1 day" }, { c: "#EC4899", t: "Broadcast opened but unanswered" },
         { c: "#1352BF", t: "Prospect asked shipping to 3 cities" }, { c: "#22C55E", t: "Tomorrow's booking confirmed by AI" },
-        { c: "#EF4444", t: "Delay complaint routed to CS" }, { c: "#0EA5E9", t: "50 chats came in from Meta ads today" }
+        { c: "#F472B6", t: "Delay complaint routed to CS" }, { c: "#0EA5E9", t: "50 chats came in from Meta ads today" }
       ],
       [
         { c: "#22C55E", t: "Auto follow-up sent on day+1" }, { c: "#B64ABF", t: "Customer upgraded to premium plan" },
-        { c: "#13A8BF", t: "Demo rescheduled" }, { c: "#0EA5E9", t: "AI recommended products to 128 customers" },
-        { c: "#F59E0B", t: "Average order value up 2×" }, { c: "#EC4899", t: "Story views 500, link clicks 40" }
+        { c: "#4AB6BF", t: "Demo rescheduled" }, { c: "#0EA5E9", t: "AI recommended products to 128 customers" },
+        { c: "#4A4ABF", t: "Average order value up 2×" }, { c: "#EC4899", t: "Story views 500, link clicks 40" }
       ]
     ]
   },
@@ -239,25 +239,25 @@ export const DATA_EN = {
         body: "AI answers chats, qualifies buyers, and hands over to your team when they're ready to close. Every channel in one inbox — running 24/7 without a backlog.",
         pills: ["All channels, one inbox", "Auto-handoff to team", "Runs 24/7"],
         cta: { label: "Explore AI Sales Chat →", href: "/en/chat" },
-        img: "/images/home/feature-chat-inbox.png", alt: "Cekat.AI chat inbox screen" },
+        img: "/images/home/feature-chat-inbox.webp", alt: "Cekat.AI chat inbox screen" },
       { title: "CRM & Customer Data", dot: "#22C55E",
         headline: "Clean data without manual entry",
         body: "Every conversation, purchase, and pipeline stage records itself from chat. No more end-of-day admin — the whole team sees the same data.",
         pills: ["Filled automatically from chat", "Real-time pipeline", "Complete history per customer"],
         cta: { label: "Explore CRM →", href: "/en/crm" },
-        img: "/images/home/feature-crm-pipeline.png", alt: "Cekat.AI CRM pipeline screen" },
+        img: "/images/home/feature-crm-pipeline.webp", alt: "Cekat.AI CRM pipeline screen" },
       { title: "Marketing & Broadcast", dot: "#B64ABF",
         headline: "Know which ads actually close",
         body: "Segmented broadcasts, automated follow-ups, and attribution that ties ad spend to real revenue — from ad click to chat to order.",
         pills: ["Segmented broadcast", "ROAS dashboard", "CAPI integration"],
         cta: { label: "Explore Marketing →", href: "/en/marketing" },
-        img: "/images/home/feature-marketing-loop.png", alt: "Cekat.AI marketing dashboard screen" },
-      { title: "Order & Automation", dot: "#F59E0B",
+        img: "/images/home/feature-marketing-loop.webp", alt: "Cekat.AI marketing dashboard screen" },
+      { title: "Order & Automation", dot: "#4A4ABF",
         headline: "Orders run straight from chat",
         body: "AI calculates shipping, sends payment links, and runs the follow-up flow — no code, from conversation to fulfilled order.",
         pills: ["Instant shipping quotes", "QR payments", "No code"],
         cta: { label: "Explore Orders →", href: "/en/order" },
-        img: "/images/home/feature-oms-orders.png", alt: "Cekat.AI order automation screen" }
+        img: "/images/home/feature-oms-orders.webp", alt: "Cekat.AI order automation screen" }
     ]
   },
 
@@ -401,7 +401,7 @@ export const DATA_EN = {
         { q: "“Customer responses got so much faster”",
           ava: { initials: "S", color: "#1352BF" }, nm: "Silcia Brenda", rl: "CEO & Founder · Moir Salon" },
         { q: "“I used to stay up replying to prospects. Now I sleep well — and wake up to a queue of survey requests. Sales up nearly 50%.”",
-          ava: { initials: "A", color: "#F59E0B" }, nm: "Adam Sulaiman", rl: "President Director · Threeland Property" }
+          ava: { initials: "A", color: "#4A4ABF" }, nm: "Adam Sulaiman", rl: "President Director · Threeland Property" }
       ]},
       { spd: "56s", dir: "down", cards: [
         { q: "“Our close rate used to be under 20%. Now it's over 40%… and because it climbed, revenue jumped to 50%.”",
@@ -413,11 +413,11 @@ export const DATA_EN = {
         { q: "“Closing opportunities are very high”",
           ava: { initials: "W", color: "#0EA5E9" }, nm: "Wiji Astuti", rl: "Head of Customer Experience · Rumah Zakat" },
         { q: "“With Cekat AI, low-quality leads are filtered first, and conversion rose from about 20% to 28%.”",
-          ava: { initials: "B", color: "#13A8BF" }, nm: "Bayu", rl: "Head of Digital Marketing · Wall Street English" }
+          ava: { initials: "B", color: "#4AB6BF" }, nm: "Bayu", rl: "Head of Digital Marketing · Wall Street English" }
       ]},
       { spd: "60s", dir: "down", cards: [
         { q: "“Our response rate improved by 90%.”",
-          ava: { initials: "H", color: "#6366F1" }, nm: "Hargyo", rl: "Director · Multimedia Nusantara Polytechnic" },
+          ava: { initials: "H", color: "#3B82F6" }, nm: "Hargyo", rl: "Director · Multimedia Nusantara Polytechnic" },
         { q: "“Now AMIRA answers 24 hours in under a minute. We don't lose donors — and the closing opportunity is huge.”",
           ava: { initials: "W", color: "#EC4899" }, nm: "Wiji Astuti", rl: "Customer Experience Dept. Head · Rumah Zakat" }
       ]}

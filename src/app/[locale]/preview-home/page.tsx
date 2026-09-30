@@ -1,8 +1,21 @@
 import { getPosts } from "@/lib/wordpress";
-import PreviewHome, { type PreviewPost } from "@/components/preview-home/PreviewHome";
+import { buildPage } from "@/components/preview-home/render";
+import PreviewHome from "@/components/preview-home/PreviewHome";
 
-/** Selalu segar: artikel terbaru diambil per request (seperti /api/blog). */
-export const dynamic = "force-dynamic";
+type PreviewPost = {
+  title: string;
+  href: string;
+  meta: string;
+  img?: string;
+};
+
+/**
+ * ISR 60 detik: kartu blog boleh maksimal satu menit tertinggal (fetch
+ * WordPress-nya sendiri sudah di-revalidate 300s), tapi HTML-nya disajikan
+ * dari cache Vercel alih-alih di-render ulang tiap request — TTFB jatuh dari
+ * ~800ms (render + fetch per kunjungan) ke hit edge/cache.
+ */
+export const revalidate = 60;
 
 export default async function PreviewHomePage({
   params,
@@ -26,5 +39,14 @@ export default async function PreviewHomePage({
   } catch {
     posts = undefined; // WordPress unreachable → kartu statis dari DATA
   }
-  return <PreviewHome posts={posts} locale={locale} />;
+  return (
+    <>
+      {/*
+        HTML murni hasil buildPage — dibuat di server, tidak melewati props
+        komponen client, jadi tidak ter-serialize ganda di flight payload.
+      */}
+      <div className="ph-root" dangerouslySetInnerHTML={{ __html: buildPage(posts, locale) }} />
+      <PreviewHome />
+    </>
+  );
 }
