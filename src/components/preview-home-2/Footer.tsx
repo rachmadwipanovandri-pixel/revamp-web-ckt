@@ -40,7 +40,7 @@ function Column({
 }) {
   return (
     <div>
-      <h2 className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-white/45 uppercase">
+      <h2 className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-white/50 uppercase">
         {title}
       </h2>
       <ul className="mt-4 flex flex-col gap-2.5">
@@ -115,7 +115,7 @@ export function Footer({ content }: { content: HomeContent["footer"] }) {
           </div>
 
           <div className="flex flex-col gap-5">
-            <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-white/45 uppercase">
+            <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-white/50 uppercase">
               {content.officesHeading}
             </p>
 
@@ -178,7 +178,7 @@ export function Footer({ content }: { content: HomeContent["footer"] }) {
         {/* Apps + link columns */}
         <div className="flex flex-col gap-10 lg:col-span-7 lg:pl-8">
           <div>
-            <h2 className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-white/45 uppercase">
+            <h2 className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-white/50 uppercase">
               {content.appsHeading}
             </h2>
             <div className="mt-4 flex flex-wrap items-center gap-3">
@@ -213,13 +213,14 @@ export function Footer({ content }: { content: HomeContent["footer"] }) {
         </div>
       </Shell>
 
-      {/* Bottom bar */}
+      {/* Bottom bar. white/50 is 5.30:1 on the ink ground; the /35 this used to
+          be is 3.20:1 and fails AA for 11px text. */}
       <div className="border-t border-white/8">
         <Shell className="flex flex-col items-center justify-between gap-4 py-7 sm:flex-row">
-          <p className="text-xs font-medium tracking-wide text-white/45">
+          <p className="text-xs font-medium tracking-wide text-white/50">
             {content.copyright} {content.rights}
           </p>
-          <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.16em] text-white/35 uppercase">
+          <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.16em] text-white/50 uppercase">
             CekatAI
           </p>
         </Shell>

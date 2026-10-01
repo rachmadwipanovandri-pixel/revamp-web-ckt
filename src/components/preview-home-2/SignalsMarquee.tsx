@@ -12,9 +12,17 @@ import type { HomeContent } from "./types";
  * Each row is duplicated exactly once so `translateX(-50%)` loops seamlessly;
  * the duplicate half is `aria-hidden` so assistive tech reads the list once.
  */
-export function SignalsMarquee({ content }: { content: HomeContent["signals"] }) {
+export function SignalsMarquee({
+  content,
+}: {
+  content: HomeContent["signals"];
+}) {
   return (
-    <Band tone="wash" labelledBy="ph2-signals-title" className="overflow-hidden">
+    <Band
+      tone="wash"
+      labelledBy="ph2-signals-title"
+      className="overflow-hidden"
+    >
       <Shell>
         <SectionHead
           id="ph2-signals-title"

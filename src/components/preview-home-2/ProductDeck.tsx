@@ -163,7 +163,14 @@ export function ProductDeck({ content }: { content: HomeContent["deck"] }) {
                       </Link>
                     </div>
 
-                    <div className="ph2-deck-media aspect-[4/3]">
+                    {/**
+                     * Square, because the four deck screenshots are 980×980.
+                     * Forcing 4:3 here crops them *and* costs ~127px of card
+                     * height, which left the open card 126px short of
+                     * /preview-home's and left dead space inside the 700px
+                     * stack box.
+                     */}
+                    <div className="ph2-deck-media aspect-square">
                       <Image
                         src={item.image.src}
                         alt={item.image.alt}

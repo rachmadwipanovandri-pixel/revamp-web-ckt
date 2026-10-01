@@ -319,7 +319,7 @@ export function HowItWorks({
                   />
                 ))}
               </div>
-              <p className="mt-2 text-[0.7rem] font-semibold text-[#94A3B8] tabular-nums">
+              <p className="mt-2 text-[0.7rem] font-semibold text-[#64748B] tabular-nums">
                 {active + 1} / {content.steps.length}
               </p>
 

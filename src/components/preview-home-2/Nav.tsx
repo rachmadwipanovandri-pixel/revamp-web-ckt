@@ -291,7 +291,7 @@ export function Nav({
                   <div className="pb-2">
                     {link.mega.map((column) => (
                       <div key={column.title} className="mb-2">
-                        <p className="px-3 pb-1 text-xs font-bold tracking-[0.09em] text-[#94A3B8] uppercase">
+                        <p className="px-3 pb-1 text-xs font-bold tracking-[0.09em] text-[#64748B] uppercase">
                           {column.title}
                         </p>
                         {column.items.map((item) => (

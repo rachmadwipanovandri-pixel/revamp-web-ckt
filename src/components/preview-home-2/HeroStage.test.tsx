@@ -24,17 +24,18 @@ describe("preview-home-2 hero stage", () => {
     mockReducedMotion(false);
   });
 
-  it("loops one card at a time and exposes no controls", () => {
+  it("loops one card at a time and renders a single set of cards", () => {
     const { container } = render(
       <HeroStage dashboard={dashboard} stage={stage} />,
     );
 
-    // Six cards for the desktop column, six for the mobile stack…
+    // One set of six cards, placed twice over by CSS grid (row 2 below `lg`,
+    // column 1 above it) rather than duplicated in the markup.
     const cards = container.querySelectorAll(".ph2-stage-card");
-    expect(cards).toHaveLength(stage.cards.length * 2);
+    expect(cards).toHaveLength(stage.cards.length);
 
-    // …but only the active one is visible in each stack (2, not 12).
-    expect(container.querySelectorAll(".opacity-100")).toHaveLength(2);
+    // Only the active one is visible.
+    expect(container.querySelectorAll(".opacity-100")).toHaveLength(1);
 
     // The loop runs on its own for as long as the visitor is on the page:
     // no arrows, no dots, no pause button.
@@ -81,7 +82,9 @@ describe("preview-home-2 hero stage", () => {
         }) as DOMRect;
       await act(async () => {
         window.dispatchEvent(new Event("scroll"));
-        await new Promise((resolve) => requestAnimationFrame(() => resolve(null)));
+        await new Promise((resolve) =>
+          requestAnimationFrame(() => resolve(null)),
+        );
       });
       return el.style.getPropertyValue("--stage");
     };
@@ -108,7 +111,9 @@ describe("preview-home-2 hero stage", () => {
     el.getBoundingClientRect = () => ({ top: window.innerHeight }) as DOMRect;
     await act(async () => {
       window.dispatchEvent(new Event("scroll"));
-      await new Promise((resolve) => requestAnimationFrame(() => resolve(null)));
+      await new Promise((resolve) =>
+        requestAnimationFrame(() => resolve(null)),
+      );
     });
 
     expect(el.style.getPropertyValue("--stage")).toBe("1");

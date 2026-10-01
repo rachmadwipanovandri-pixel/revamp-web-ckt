@@ -90,7 +90,7 @@ export function HeroForm({ form }: { form: HomeContent["hero"]["form"] }) {
           placeholder={form.placeholder}
           aria-invalid={error ? true : undefined}
           aria-describedby={error ? `${id}-error` : `${id}-note`}
-          className="h-12 min-w-0 rounded-full bg-transparent px-4 text-[0.95rem] text-[#101828] placeholder:text-[#94A3B8] sm:flex-1 sm:px-0"
+          className="h-12 min-w-0 rounded-full bg-transparent px-4 text-[0.95rem] text-[#101828] placeholder:text-[#64748B] sm:flex-1 sm:px-0"
         />
 
         <button

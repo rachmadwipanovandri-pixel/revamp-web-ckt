@@ -32,7 +32,9 @@ export function CaseStudy({ content }: { content: HomeContent["caseStudy"] }) {
               </p>
               <p className="mt-0.5 text-[1.35rem] font-bold tracking-[-0.02em] text-[#101828] tabular-nums">
                 {content.metrics[0]?.value}
-                <span className="text-primary">{content.metrics[0]?.suffix}</span>
+                <span className="text-primary">
+                  {content.metrics[0]?.suffix}
+                </span>
               </p>
             </div>
           </div>

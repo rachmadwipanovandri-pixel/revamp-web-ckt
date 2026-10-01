@@ -75,7 +75,7 @@ function ChatThread({
         style={at(90)}
       >
         {question}
-        <span className="mt-1 block text-[0.6rem] text-[#94A3B8]">09:41</span>
+        <span className="mt-1 block text-[0.6rem] text-[#64748B]">09:41</span>
       </p>
 
       {/* The typing bubble sits exactly where the reply will land, so nothing
@@ -174,7 +174,7 @@ function Steps({ steps, start = 900 }: { steps: string[]; start?: number }) {
           style={at(start + index * 110)}
         >
           {index > 0 ? (
-            <span aria-hidden className="text-[0.6rem] text-[#94A3B8]">
+            <span aria-hidden className="text-[0.6rem] text-[#64748B]">
               →
             </span>
           ) : null}
@@ -506,7 +506,7 @@ function CardBody({ card }: { card: StageCard }) {
                 {card.days.map((day, index) => (
                   <span
                     key={index}
-                    className="flex-1 text-center text-[0.54rem] text-[#94A3B8]"
+                    className="flex-1 text-center text-[0.54rem] text-[#64748B]"
                   >
                     {day}
                   </span>
@@ -861,10 +861,23 @@ export function HeroStage({
                   className="pointer-events-none absolute inset-x-10 top-4 bottom-4 hidden rounded-[48px] bg-[radial-gradient(55%_55%_at_50%_50%,rgba(19,82,191,0.10),transparent_72%)] lg:block"
                 />
 
-                <div className="relative lg:grid lg:grid-cols-[340px_minmax(0,1fr)] lg:items-center xl:grid-cols-[380px_minmax(0,1fr)]">
-                  {/* Desktop: all six cards share one grid cell, so the column is
-                  always as tall as the tallest card and the swap never jumps. */}
-                  <div className="ph2-anim relative z-20 hidden lg:grid">
+                {/*
+                  One card set, two placements — not two card sets.
+
+                  This used to render all six cards twice (a `hidden lg:grid`
+                  copy beside the dashboard and a `grid lg:hidden` copy below
+                  it), which cost 40 KB of HTML — 10% of the document — and made
+                  React reconcile every card twice per swap.
+
+                  Grid placement does the same job for free: the card cell is
+                  row 2 below `lg` (under the window) and column 1 from `lg` up
+                  (beside it, overlapping). Cells are placed explicitly rather
+                  than by DOM order, so the card markup stays a single set.
+                */}
+                <div className="relative grid grid-cols-1 lg:grid-cols-[340px_minmax(0,1fr)] lg:items-center xl:grid-cols-[380px_minmax(0,1fr)]">
+                  {/* Every card shares one cell, so this column is always as
+                      tall as the tallest card and the swap never jumps. */}
+                  <div className="ph2-anim relative z-20 col-start-1 row-start-2 -mt-6 grid w-[min(92vw,440px)] justify-self-center lg:col-start-1 lg:row-start-1 lg:mt-0 lg:w-full lg:justify-self-stretch">
                     {cards.map((card, index) => {
                       const isActive = index === active;
                       return (
@@ -878,24 +891,9 @@ export function HeroStage({
                     })}
                   </div>
 
-                  <div className="relative z-10 lg:-ml-10">
+                  <div className="relative z-10 col-start-1 row-start-1 lg:col-start-2 lg:row-start-1 lg:-ml-10">
                     <Dashboard dashboard={dashboard} />
                   </div>
-                </div>
-
-                {/* Below lg the card drops under the window and overlaps its edge. */}
-                <div className="ph2-anim relative z-20 -mt-6 grid lg:hidden">
-                  {cards.map((card, index) => {
-                    const isActive = index === active;
-                    return (
-                      <div
-                        key={`${card.label}-${isActive ? cycle : 0}`}
-                        className="col-start-1 row-start-1 w-[min(92vw,440px)] justify-self-center"
-                      >
-                        <StageCardView card={card} active={isActive} />
-                      </div>
-                    );
-                  })}
                 </div>
               </div>
             </div>

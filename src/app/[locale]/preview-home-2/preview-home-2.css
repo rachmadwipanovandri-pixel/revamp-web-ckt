@@ -460,9 +460,12 @@
 }
 
 @media (min-width: 1024px) {
-  /* Recessed cards read as "not the one you are looking at". */
+  /* Recessed cards read as "not the one you are looking at".
+     `--muted-2`, not a 42%-alpha ink: that composite lands at 2.69:1 and fails
+     WCAG AA for 16px text. #64748B is 4.76:1 and still clearly lighter than the
+     front card's #101828. */
   .ph2-deck-card:not(.ph2-front) .ph2-deck-label {
-    color: rgba(16, 24, 40, 0.42);
+    color: #64748b;
   }
 
   .ph2-deck-card.ph2-front .ph2-deck-label {

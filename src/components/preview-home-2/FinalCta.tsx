@@ -32,13 +32,18 @@ export function FinalCta({ content }: { content: HomeContent["finalCta"] }) {
         <div className="ph2-grid-bg relative overflow-hidden rounded-[28px] bg-gradient-to-br from-[#1352BF] to-[#0B1220] px-6 py-14 text-center sm:px-10 md:py-16">
           <div className="relative mx-auto flex max-w-[46rem] flex-col items-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-1.5 text-[0.75rem] font-semibold text-white">
-              <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-[#BFDBFE]" />
+              <span
+                aria-hidden
+                className="h-1.5 w-1.5 rounded-full bg-[#BFDBFE]"
+              />
               {content.eyebrow}
             </span>
 
             <h2 className="mt-5 text-[clamp(1.8rem,3.6vw,2.75rem)] leading-[1.12] font-bold tracking-[-0.03em] text-balance text-white">
               {content.titleLead}{" "}
-              <span className="text-[#BFDBFE] italic">{content.titleAccent}</span>
+              <span className="text-[#BFDBFE] italic">
+                {content.titleAccent}
+              </span>
             </h2>
 
             <p className="mt-4 max-w-[36rem] text-[1.0625rem] leading-[1.6] text-white/80">

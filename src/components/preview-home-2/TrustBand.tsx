@@ -40,7 +40,7 @@ export function TrustBand({ content }: { content: HomeContent["trust"] }) {
               {content.cards.map((card) => (
                 <li key={card.title}>
                   <Card className="h-full p-5">
-                    <span className="text-[0.7rem] font-bold tracking-[0.14em] text-[#94A3B8]">
+                    <span className="text-[0.7rem] font-bold tracking-[0.14em] text-[#64748B]">
                       {card.index}
                     </span>
                     <h3 className="mt-2 text-[1rem] font-bold tracking-[-0.02em] text-[#101828]">
@@ -88,7 +88,8 @@ export function TrustBand({ content }: { content: HomeContent["trust"] }) {
 
                 <div className="ph2-anim ph2-orbit absolute inset-0">
                   {nodes.map((label, index) => {
-                    const angle = (index / nodes.length) * Math.PI * 2 - Math.PI / 2;
+                    const angle =
+                      (index / nodes.length) * Math.PI * 2 - Math.PI / 2;
                     return (
                       <span
                         key={label}
