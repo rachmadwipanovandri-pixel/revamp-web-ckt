@@ -6,24 +6,6 @@ import { HeroStage } from "./HeroStage";
 import { Accent, Band, Shell } from "./ui";
 import type { HomeContent } from "./types";
 
-function CheckIcon() {
-  return (
-    <svg
-      width="15"
-      height="15"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="#22C55E"
-      strokeWidth="2.4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-    >
-      <path d="M20 6 9 17l-5-5" />
-    </svg>
-  );
-}
-
 /**
  * Band 2 — hero.
  *
@@ -75,6 +57,12 @@ export function Hero({ content }: { content: HomeContent }) {
 
           <HeroForm form={hero.form} />
 
+          {/*
+            The trust checklist used to render here, but it duplicated the
+            form's own note ("14 hari · tanpa kartu · 10 menit") almost
+            word-for-word — same promises twice within 100px. The form note
+            stays; this list goes.
+          */}
           <Link
             href={hero.form.secondary.href}
             className="group mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary"
@@ -87,15 +75,6 @@ export function Hero({ content }: { content: HomeContent }) {
               →
             </span>
           </Link>
-
-          <ul className="mt-7 flex flex-wrap items-center justify-center gap-x-6 gap-y-2.5 text-[0.85rem] text-[#4B5563]">
-            {hero.trust.map((item) => (
-              <li key={item} className="inline-flex items-center gap-2">
-                <CheckIcon />
-                {item}
-              </li>
-            ))}
-          </ul>
         </div>
       </Shell>
 

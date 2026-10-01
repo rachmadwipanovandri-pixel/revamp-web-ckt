@@ -292,7 +292,6 @@ export type HomeContent = {
       /** Quiet tertiary link under the form. */
       secondary: ContentLink;
     };
-    trust: string[];
   };
   /** Cekat app window + the looping product cards that float over it. */
   dashboard: HeroDashboard;

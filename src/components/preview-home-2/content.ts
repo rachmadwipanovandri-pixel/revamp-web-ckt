@@ -26,7 +26,8 @@ const ID: HomeContent = {
     links: [
       {
         label: "Produk",
-        megaIntro: "Satu tempat untuk balas chat, catat pelanggan, kirim promo, dan terima order.",
+        megaIntro:
+          "Satu tempat untuk balas chat, catat pelanggan, kirim promo, dan terima order.",
         mega: [
           {
             title: "Platform",
@@ -40,7 +41,10 @@ const ID: HomeContent = {
           {
             title: "Fitur populer",
             items: [
-              { label: "Telepon AI via WhatsApp", href: "/fitur/whatsapp-call-ai" },
+              {
+                label: "Telepon AI via WhatsApp",
+                href: "/fitur/whatsapp-call-ai",
+              },
               { label: "Chat Website", href: "/fitur/live-chat-website" },
               { label: "Satu Inbox untuk Tim", href: "/fitur/multichat-wa" },
               { label: "Sumber Jawaban AI", href: "/fitur/knowledge-base" },
@@ -83,7 +87,10 @@ const ID: HomeContent = {
   },
 
   hero: {
-    pill: { label: "Baru · Bisa telepon otomatis via WhatsApp", href: "/fitur/whatsapp-call-ai" },
+    pill: {
+      label: "Baru · Bisa telepon otomatis via WhatsApp",
+      href: "/fitur/whatsapp-call-ai",
+    },
     titleLead: "Dari chat pertama jadi",
     titleAccent: "pelanggan seumur hidup",
     sub: "Cekat.AI membalas otomatis chat WhatsApp, Instagram, dan TikTok, mengingatkan pelanggan yang belum bayar, dan mencatat semuanya rapi — supaya tiap chat bergerak ke penjualan, ketahuan iklan mana yang closing, dan pelanggan balik lagi.",
@@ -96,11 +103,6 @@ const ID: HomeContent = {
       errorInvalid: "Format email belum tepat. Contoh: nama@perusahaan.com",
       secondary: { label: "Lihat cara kerjanya", href: "#how-it-works" },
     },
-    trust: [
-      "Siap dalam 10 menit",
-      "Tanpa kartu kredit",
-      "Partner resmi Meta",
-    ],
   },
 
   dashboard: {
@@ -299,7 +301,12 @@ const ID: HomeContent = {
     eyebrow: "Aman & resmi",
     heading: "Aman untuk data pelanggan Anda",
     body: "Cekat.AI mengikuti hukum Indonesia, memakai jalur resmi WhatsApp dari Meta, dan mengatur siapa boleh lihat apa, dibangun sejak awal, tidak asal.",
-    chips: ["Sesuai UU PDP Indonesia", "Partner resmi Meta", "Akses diatur per peran", "ISO 9001 & 27001"],
+    chips: [
+      "Sesuai UU PDP Indonesia",
+      "Partner resmi Meta",
+      "Akses diatur per peran",
+      "ISO 9001 & 27001",
+    ],
     cards: [
       {
         index: "01",
@@ -513,7 +520,11 @@ const ID: HomeContent = {
         title: "Promosi & Broadcast",
         headline: "Ketahuan iklan mana yang jadi order",
         body: "Kirim promo ke orang yang tepat, ingatkan otomatis yang belum bayar, dan lihat jelas modal iklan vs omzetnya — dari klik iklan sampai chat jadi order.",
-        points: ["Promo ke yang tepat", "Terlihat modal vs omzet", "Nyambung ke iklan Meta"],
+        points: [
+          "Promo ke yang tepat",
+          "Terlihat modal vs omzet",
+          "Nyambung ke iklan Meta",
+        ],
         accent: "#B64ABF",
         image: {
           src: "/images/home/feature-marketing-loop.webp",
@@ -878,7 +889,8 @@ const EN: HomeContent = {
     links: [
       {
         label: "Product",
-        megaIntro: "One place to reply chats, record customers, send promos, and receive orders.",
+        megaIntro:
+          "One place to reply chats, record customers, send promos, and receive orders.",
         mega: [
           {
             title: "Platform",
@@ -970,11 +982,6 @@ const EN: HomeContent = {
         "That email address does not look right. Example: name@company.com",
       secondary: { label: "See how it works", href: "#how-it-works" },
     },
-    trust: [
-      "10-minute setup",
-      "No credit card",
-      "Official Meta Partner",
-    ],
   },
 
   dashboard: {
@@ -1172,7 +1179,12 @@ const EN: HomeContent = {
     eyebrow: "Safe & official",
     heading: "Safe for your customer data",
     body: "Cekat.AI follows Indonesian law, uses the official WhatsApp path from Meta, and controls who can see what — built in from the start, not bolted on later.",
-    chips: ["Follows Indonesia PDP Law", "Official Meta Partner", "Role-based access", "ISO 9001 & 27001"],
+    chips: [
+      "Follows Indonesia PDP Law",
+      "Official Meta Partner",
+      "Role-based access",
+      "ISO 9001 & 27001",
+    ],
     cards: [
       {
         index: "01",
@@ -1395,7 +1407,11 @@ const EN: HomeContent = {
         title: "Promos & Broadcast",
         headline: "Know exactly which ad closed",
         body: "Send promos to the right people, auto-remind unpaid orders, and see ad spend vs revenue clearly — from ad click to order.",
-        points: ["Promos to the right people", "Spend vs revenue visible", "Connects to Meta ads"],
+        points: [
+          "Promos to the right people",
+          "Spend vs revenue visible",
+          "Connects to Meta ads",
+        ],
         accent: "#B64ABF",
         image: {
           src: "/images/home/feature-marketing-loop.webp",

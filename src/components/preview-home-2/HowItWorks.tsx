@@ -204,34 +204,37 @@ function StepVisual({
 }
 
 /**
- * Deterministic scrollspy with direction-aware hysteresis.
+ * Stateful scrollspy with a dead zone around each step boundary.
  *
- * The previous version picked the intersecting card with the largest
+ * The first version picked the intersecting card with the largest
  * `intersectionRatio`. When a card boundary sits inside the center band, two
  * cards intersect with tiny, noisy ratios and the "winner" flips back and
  * forth — 1→2→1→3→2 on a single downward scroll. The eased Lenis glide lingers
- * in that ambiguous zone, which is why it reads as flicker.
+ * in that ambiguous zone, which is why it reads as flicker. A second attempt
+ * shifted one decision line by scroll direction, but re-anchoring the line on
+ * every direction flip still flaps under jitter that straddles it.
  *
- * This instead answers one question: which is the last card at or above a line
- * near viewport center? That has exactly one answer per scroll position, so it
- * cannot oscillate. The line shifts ±24px by direction — scrolling down
- * switches as the next card reaches just above center, scrolling up waits
- * until just below — so ±1px trackpad jitter around the boundary cannot flip
- * the step either. The 48px dead zone is far smaller than the 164px card
- * pitch, so no step can ever be skipped.
+ * This instead keys both transitions off the *boundary card's* top and
+ * separates them by 48px: from step `i`, the next card promotes when its top
+ * reaches `center + 24`, but the current card demotes only once its own top
+ * falls back past `center + 72`. Between those two lines the state is stable
+ * by construction — ±3px trackpad jitter cannot cross a 48px zone, and the
+ * zone is far smaller than the 164px card pitch, so no step can be skipped in
+ * either direction. The `while` loops let one call traverse several steps on a
+ * fast jump.
  *
- * Pure (takes rect tops, not elements) so the sweep behavior is unit-testable.
+ * Pure (takes rect tops plus the current step, not elements) so the sweep
+ * behavior is unit-testable.
  */
 export function resolveActiveStep(
   tops: number[],
-  down: boolean,
+  current: number,
   viewportHeight: number,
 ): number {
-  const line = viewportHeight / 2 + (down ? 24 : -24);
-  let next = 0;
-  tops.forEach((top, index) => {
-    if (top <= line) next = index;
-  });
+  const center = viewportHeight / 2;
+  let next = Math.max(0, Math.min(current, tops.length - 1));
+  while (next + 1 < tops.length && tops[next + 1] <= center + 24) next += 1;
+  while (next > 0 && tops[next] > center + 72) next -= 1;
   return next;
 }
 
@@ -251,23 +254,25 @@ export function HowItWorks({
   const [active, setActive] = useState(0);
   const stepRefs = useRef<Array<HTMLLIElement | null>>([]);
 
-  // Last seen scroll position. Feeds the hysteresis below; a ref, not state,
-  // because it changes every frame and must never re-render.
-  const lastY = useRef(0);
+  // Mirror of `active` for the observer callback below. The effect runs once,
+  // so reading state directly would see a stale value forever; a ref plus the
+  // functional `setActive` keeps the stateful scrollspy honest.
+  const activeRef = useRef(0);
 
   useEffect(() => {
-    lastY.current = window.scrollY;
     const nodes = stepRefs.current.filter((node): node is HTMLLIElement =>
       Boolean(node),
     );
     if (!nodes.length || typeof IntersectionObserver === "undefined") return;
 
     const decide = () => {
-      const y = window.scrollY;
-      const down = y >= lastY.current;
-      lastY.current = y;
       const tops = nodes.map((node) => node.getBoundingClientRect().top);
-      const next = resolveActiveStep(tops, down, window.innerHeight);
+      const next = resolveActiveStep(
+        tops,
+        activeRef.current,
+        window.innerHeight,
+      );
+      activeRef.current = next;
       setActive((prev) => (prev === next ? prev : next));
     };
 
