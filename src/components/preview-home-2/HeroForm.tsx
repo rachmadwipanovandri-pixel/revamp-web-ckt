@@ -51,19 +51,30 @@ export function HeroForm({ form }: { form: HomeContent["hero"]["form"] }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="mt-8 w-full max-w-[33rem]">
+    <form
+      onSubmit={handleSubmit}
+      noValidate
+      className="mt-8 w-full max-w-[33rem]"
+    >
       <label htmlFor={id} className="sr-only">
         {form.label}
       </label>
 
       <div
         className={cn(
-          "flex flex-col gap-1.5 rounded-[22px] border bg-white p-1.5 transition-[border-color,box-shadow] duration-200 sm:flex-row sm:items-center sm:rounded-full sm:pl-5",
+          "flex flex-col gap-2 rounded-[22px] border bg-white p-1.5 transition-[border-color,box-shadow] duration-200 sm:flex-row sm:items-center sm:gap-1.5 sm:rounded-full sm:pl-5",
           error
             ? "border-[#BE185D]"
             : "border-border shadow-[0_1px_2px_rgba(11,18,32,0.05),0_24px_48px_-32px_rgba(11,18,32,0.45)] focus-within:border-[#BFDBFE] focus-within:shadow-[0_1px_2px_rgba(11,18,32,0.05),0_24px_48px_-30px_rgba(19,82,191,0.45)]",
         )}
       >
+        {/*
+          `flex-1` is scoped to the row layout on purpose. In the mobile
+          `flex-col` stack it would apply to the *height* axis, and
+          `flex: 1 1 0%` sets `flex-basis: 0` — which collapses the field from
+          its 48px `h-12` down to its bare line-box height (~19px). Below `sm`
+          the field just stretches to the container's full width.
+        */}
         <input
           id={id}
           name="email"
@@ -79,7 +90,7 @@ export function HeroForm({ form }: { form: HomeContent["hero"]["form"] }) {
           placeholder={form.placeholder}
           aria-invalid={error ? true : undefined}
           aria-describedby={error ? `${id}-error` : `${id}-note`}
-          className="h-12 min-w-0 flex-1 rounded-full bg-transparent px-4 text-[0.95rem] text-[#101828] placeholder:text-[#94A3B8] sm:px-0"
+          className="h-12 min-w-0 rounded-full bg-transparent px-4 text-[0.95rem] text-[#101828] placeholder:text-[#94A3B8] sm:flex-1 sm:px-0"
         />
 
         <button

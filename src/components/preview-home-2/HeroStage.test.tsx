@@ -36,7 +36,8 @@ describe("preview-home-2 hero stage", () => {
     // …but only the active one is visible in each stack (2, not 12).
     expect(container.querySelectorAll(".opacity-100")).toHaveLength(2);
 
-    // The arrow navigation and the pause button are gone on purpose.
+    // The loop runs on its own for as long as the visitor is on the page:
+    // no arrows, no dots, no pause button.
     expect(container.querySelectorAll("button")).toHaveLength(0);
   });
 
@@ -46,7 +47,8 @@ describe("preview-home-2 hero stage", () => {
       <HeroStage dashboard={dashboard} stage={stage} />,
     );
 
-    // One card each, all visible, and nothing left to animate.
+    // One card each, all visible, and nothing left to animate. No controls
+    // either: there is no loop to control once it has been unfolded.
     const cards = container.querySelectorAll(".ph2-stage-card");
     expect(cards).toHaveLength(stage.cards.length);
     expect(container.querySelectorAll(".opacity-0")).toHaveLength(0);

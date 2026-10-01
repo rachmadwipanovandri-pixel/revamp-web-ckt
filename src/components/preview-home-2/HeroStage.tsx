@@ -742,10 +742,13 @@ function StageCardView({ card, active }: { card: StageCard; active: boolean }) {
  * One full-size card at a time (as in /preview-home), not six small ones: each
  * card plays its own mini UI in sequence — the chat shows a typing bubble that
  * is replaced by the reply and its read ticks, the order fills in its rows and
- * rail, the consulting chart grows its bars. There is no arrow navigation; the
- * loop just runs. The only control is pause/play, which WCAG 2.2.2 requires for
- * auto-moving content (and which doubles as the opt-in to start the loop when
- * `prefers-reduced-motion` is set).
+ * rail, the consulting chart grows its bars.
+ *
+ * There is no control bar: the loop runs continuously for as long as the
+ * visitor is on the page, and only the pointer resting on the stage (or focus
+ * inside it) holds the current card so it can be read. With
+ * `prefers-reduced-motion` the loop is replaced by a static gallery instead of a
+ * paused carousel, so no card is unreachable.
  */
 export function HeroStage({
   dashboard,

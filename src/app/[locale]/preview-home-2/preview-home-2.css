@@ -282,6 +282,308 @@
   }
 }
 
+/* ---------- Product deck ----------------------------------------------------
+ * Geometry ported 1:1 from /preview-home's `.stack` / `.acc-card`.
+ *
+ * The fan is the point of the band, and flow layout cannot express it: the four
+ * cards have to be *absolutely positioned* inside a fixed-height box, each
+ * stepping 32px down and 10% wider than the one behind it, so the open card
+ * visibly sits in front of a deck rather than on a list with a small overlap.
+ *
+ * `--ph2-pos` (0 = furthest back … 3 = front) is the only per-card input, so
+ * offset, width and z-order are derived here instead of repeated four times.
+ * ProductDeck.tsx sets it from the promote order.
+ *
+ * Below `lg` the fan is meaningless on a phone, so it becomes what
+ * /preview-home does there: a full-bleed horizontal snap carousel, one card per
+ * screen, every card expanded. The same breakpoint is read in JS
+ * (ProductDeck.tsx) because the collapsed panels are `inert`, and `inert` is a
+ * DOM property CSS cannot decide.
+ */
+.ph2-deck-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  /* The fan's positioning context. Without it the absolutely-positioned cards
+     resolve their `top` and their `width` percentages against the Band instead
+     of the stack, so the offsets and the 70→100% width ramp both come out
+     wrong. */
+  position: relative;
+  /* Owned by this file rather than a Tailwind margin utility, so the same
+     property is not fighting for the cascade across the breakpoints below. */
+  margin-top: 36px;
+}
+
+.ph2-deck-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow:
+    0 1px 2px rgba(11, 18, 32, 0.04),
+    0 8px 24px -16px rgba(11, 18, 32, 0.12);
+}
+
+/* --- fan: lg and up --- */
+@media (min-width: 1024px) {
+  .ph2-deck-stack {
+    display: block;
+    height: 700px;
+    overflow: visible;
+    max-width: 1020px;
+    margin: 44px auto 0;
+  }
+
+  .ph2-deck-card {
+    --ph2-pos: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    top: calc(var(--ph2-pos) * 32px);
+    width: calc(70% + var(--ph2-pos) * 10%);
+    z-index: calc(1 + var(--ph2-pos));
+    transition:
+      top 0.5s var(--ph2-ease),
+      width 0.5s var(--ph2-ease),
+      transform 0.35s var(--ph2-ease),
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
+  }
+
+  /* The two documented elevations. The front card lifts to --sh-2; hovering any
+     card warms the border to the brand blue. */
+  .ph2-deck-card:hover {
+    border-color: #bfdbfe;
+  }
+
+  .ph2-deck-card.ph2-front {
+    border-color: #bfdbfe;
+    box-shadow:
+      0 1px 2px rgba(11, 18, 32, 0.05),
+      0 24px 48px -28px rgba(19, 82, 191, 0.28);
+  }
+
+  /* The lift is what makes the fan read as a deck you can reach into: a card
+     behind the front one comes forward when you point at it. */
+  .ph2-deck-card:not(.ph2-front):hover {
+    transform: translateY(-14px);
+  }
+
+  /* The front card wins over the hover rule above when both apply. */
+  .ph2-deck-card.ph2-front:hover {
+    transform: none;
+  }
+}
+
+/* --- carousel: below lg --- */
+@media (max-width: 1023px) {
+  .ph2-deck-stack {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 16px;
+    max-width: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-top: 38px;
+  }
+
+  .ph2-deck-stack::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ph2-deck-card {
+    flex: 0 0 min(86%, 420px);
+    margin-top: 0;
+    scroll-snap-align: center;
+    align-self: flex-start;
+  }
+}
+
+/* The scroller is full-bleed so cards run to the screen edge; the padding puts
+   the first and last card back on the same inset as the rest of the page. The
+   inset has to track Shell's responsive padding (20 / 32). */
+@media (max-width: 1023px) {
+  .ph2-deck-stack {
+    margin-inline: -20px;
+    padding: 4px 20px 22px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .ph2-deck-stack {
+    margin-inline: -32px;
+    padding-inline: 32px;
+  }
+}
+
+/* --- header row: dot + label, mirroring `.acc-head` / `.acc-dot` / `.acc-label` */
+.ph2-deck-head {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  min-height: 47px;
+  padding: 14px 28px;
+  text-align: left;
+}
+
+.ph2-deck-dot {
+  flex: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  opacity: 0.45;
+  transform: rotate(45deg);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s var(--ph2-ease);
+}
+
+.ph2-deck-card:hover .ph2-deck-dot {
+  opacity: 1;
+  transform: rotate(45deg) scale(1.15);
+}
+
+.ph2-deck-card.ph2-front .ph2-deck-dot {
+  opacity: 1;
+}
+
+.ph2-deck-label {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #101828;
+  transition: color 0.2s ease;
+}
+
+@media (min-width: 1024px) {
+  /* Recessed cards read as "not the one you are looking at". */
+  .ph2-deck-card:not(.ph2-front) .ph2-deck-label {
+    color: rgba(16, 24, 40, 0.42);
+  }
+
+  .ph2-deck-card.ph2-front .ph2-deck-label {
+    font-weight: 700;
+    color: #0b1220;
+  }
+
+  @media (min-width: 992px) {
+    .ph2-deck-card:hover .ph2-deck-label {
+      color: #0b1220;
+    }
+  }
+}
+
+/* --- body: the collapse, and the open layout inside --- */
+.ph2-deck-body {
+  display: grid;
+  grid-template-rows: minmax(0, 0fr);
+  padding: 0 26px;
+}
+
+.ph2-deck-body.ph2-open,
+.ph2-deck-card.ph2-front .ph2-deck-body {
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.ph2-deck-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: center;
+  min-height: 0;
+  overflow: hidden;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 1024px) {
+  .ph2-deck-inner {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 38px;
+    padding-bottom: 30px;
+  }
+
+  /* The collapse only exists in the fan. In the carousel every panel is open
+     from the first frame, and animating `grid-template-rows` from `0px` to
+     `1fr` is not reliably interpolable — a panel that SSR'd collapsed can
+     settle at 0 and never show its body. */
+  .ph2-deck-body {
+    transition: grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* Below lg the panels are never collapsed, so the inner wrapper must not be
+   waiting on a `visibility` flip that only the fan used to trigger. */
+@media (max-width: 1023px) {
+  .ph2-deck-inner {
+    visibility: visible;
+  }
+}
+
+.ph2-deck-title {
+  max-width: 430px;
+  font-size: clamp(26px, 2.8vw, 36px);
+  line-height: 1.14;
+  font-weight: 700;
+  letter-spacing: -0.028em;
+  color: #101828;
+}
+
+.ph2-deck-text {
+  max-width: 440px;
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #64748b;
+}
+
+.ph2-deck-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.ph2-deck-pills > span {
+  padding: 6px 13px;
+  border-radius: 999px;
+  background: #eff6ff;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #1352bf;
+}
+
+.ph2-deck-media {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 34px 64px -34px rgba(11, 18, 32, 0.5);
+  transition: transform 0.4s var(--ph2-ease);
+}
+
+.ph2-deck-media:hover {
+  transform: translateY(-6px) scale(1.01);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ph2-deck-card,
+  .ph2-deck-dot,
+  .ph2-deck-body,
+  .ph2-deck-media {
+    transition: none !important;
+  }
+
+  .ph2-deck-card:not(.ph2-front):hover,
+  .ph2-deck-media:hover {
+    transform: none !important;
+  }
+}
+
 /* ---------- Live Stage: auto-advancing product cards (coverflow) ---------- */
 .ph2-stage-card {
   transition:
@@ -358,6 +660,20 @@
 @keyframes ph2-bar {
   from {
     transform: scaleY(0.08);
+  }
+}
+
+/* Horizontal twin of .ph2-bar, for the per-channel chart in the step rail.
+   Same contract: animates FROM a near-zero scale, so `animation: none` under
+   reduced motion leaves the bar at its full width instead of invisible. */
+.ph2-bar-x {
+  transform-origin: left center;
+  animation: ph2-bar-x 720ms var(--ph2-ease) both;
+}
+
+@keyframes ph2-bar-x {
+  from {
+    transform: scaleX(0.04);
   }
 }
 
@@ -478,6 +794,12 @@
     scroll-behavior: auto;
   }
 
+  /* Snapping is a scroll position, not an animation, so it stays — but the
+     scroll must not be smoothed into place. */
+  .ph2-deck-stack {
+    scroll-behavior: auto;
+  }
+
   .ph2-root .ph2-anim,
   .ph2-root .ph2-anim *,
   .ph2-root .ph2-orbit,
@@ -492,6 +814,10 @@
 
   .ph2-root .ph2-stage-card {
     transition: none !important;
+  }
+
+  .ph2-root .ph2-bar-x {
+    animation: none !important;
   }
 
   .ph2-root .ph2-float,

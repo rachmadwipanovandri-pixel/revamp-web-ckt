@@ -7,6 +7,16 @@ import { cn } from "@/lib/utils";
 import type { HomeContent } from "./types";
 
 /**
+ * The draft's two routes, one per locale. Declared once because both the
+ * desktop pill and the mobile panel render them — a language switcher that
+ * disappears on a phone is a dead end for half the visitors.
+ */
+const LOCALE_OPTIONS = [
+  { code: "id", href: "/preview-home-2" },
+  { code: "en", href: "/en/preview-home-2" },
+] as const;
+
+/**
  * Sticky nav for the draft. Fixes what preview-home's markup could not do:
  * real `aria-expanded`/`aria-controls` on the mega triggers, Escape closing
  * both surfaces, a scroll lock while the mobile panel is open, and a plain
@@ -158,12 +168,7 @@ export function Nav({
 
           <div className="ml-auto flex items-center gap-2 pr-2">
             <div className="hidden items-center gap-0.5 rounded-full border border-border p-0.5 sm:flex">
-              {(
-                [
-                  { code: "id", href: "/preview-home-2" },
-                  { code: "en", href: "/en/preview-home-2" },
-                ] as const
-              ).map((option) => (
+              {LOCALE_OPTIONS.map((option) => (
                 <Link
                   key={option.code}
                   href={option.href}
@@ -328,6 +333,35 @@ export function Nav({
               >
                 {content.cta.label}
               </a>
+            </div>
+
+            {/*
+              The desktop switcher is `hidden sm:flex`, so without this the
+              phone has no way to reach the other locale at all. Full-width
+              pills rather than a small pill pair, because this is the primary
+              row of the panel footer on a touch target.
+            */}
+            <div className="mt-3 flex gap-2 sm:hidden">
+              {LOCALE_OPTIONS.map((option) => {
+                const current = locale === option.code;
+                return (
+                  <Link
+                    key={option.code}
+                    href={option.href}
+                    lang={option.code}
+                    aria-current={current ? "page" : undefined}
+                    onClick={() => setMobileOpen(false)}
+                    className={cn(
+                      "inline-flex h-10 flex-1 items-center justify-center rounded-full border text-xs font-bold uppercase transition-colors duration-150",
+                      current
+                        ? "border-[#BFDBFE] bg-[#EFF6FF] text-primary"
+                        : "border-border bg-white text-[#64748B]",
+                    )}
+                  >
+                    {option.code}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         ) : null}

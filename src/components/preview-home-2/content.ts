@@ -197,7 +197,7 @@ const ID: HomeContent = {
 
   howItWorks: {
     eyebrow: "Cara kerja",
-    heading: "Satu lingkaran, lima langkah",
+    heading: "Satu akses, banyak kemudahan",
     body: "Setiap langkah mengisi langkah berikutnya. Anda tidak perlu mengganti seluruh cara kerja tim — cukup sambungkan satu per satu.",
     stageLabel: "Tahapan",
     steps: [
@@ -207,6 +207,7 @@ const ID: HomeContent = {
         body: "Hubungkan nomor WhatsApp Business, Instagram, TikTok, dan live chat website. Semua percakapan langsung mengalir ke satu inbox.",
         hint: "± 10 menit",
         accent: "#1352BF",
+        visual: "channels",
       },
       {
         index: "02",
@@ -214,6 +215,7 @@ const ID: HomeContent = {
         body: "Tempel SOP, daftar harga, dan pertanyaan yang sering muncul ke knowledge base. AI memakai jawaban Anda, bukan tebakan.",
         hint: "Tanpa coding",
         accent: "#0EA5E9",
+        visual: "knowledge",
       },
       {
         index: "03",
@@ -221,6 +223,7 @@ const ID: HomeContent = {
         body: "AI menjawab pertanyaan berulang, mengualifikasi calon pembeli, dan mengeskalasi ke manusia begitu kasusnya sensitif atau siap closing.",
         hint: "Aktif 24/7",
         accent: "#4AB6BF",
+        visual: "ai",
       },
       {
         index: "04",
@@ -228,6 +231,7 @@ const ID: HomeContent = {
         body: "Ongkir dihitung, link pembayaran dikirim, dan pesanan tercatat otomatis di OMS lengkap dengan status pengiriman.",
         hint: "Otomatis",
         accent: "#22C55E",
+        visual: "order",
       },
       {
         index: "05",
@@ -235,8 +239,44 @@ const ID: HomeContent = {
         body: "Dashboard menunjukkan ROAS, closing rate, dan performa tiap channel. Perbaiki yang lambat, perbesar yang bekerja.",
         hint: "Real-time",
         accent: "#4A4ABF",
+        visual: "chart",
       },
     ],
+    diagrams: {
+      channels: {
+        caption: "Empat channel masuk ke satu inbox tim",
+        inbox: "Satu inbox tim",
+        channels: ["WhatsApp", "Instagram", "TikTok", "Live chat"],
+      },
+      knowledge: {
+        caption: "Dokumen Anda menjadi satu sumber jawaban",
+        sources: ["SOP", "Daftar harga", "FAQ"],
+        base: "Knowledge base",
+        answer: "Jawaban pakai kata Anda sendiri",
+      },
+      ai: {
+        caption: "AI menangani sebagian besar, manusia menutup",
+        handled: "92% dijawab AI",
+        escalate: "Eskalasi saat sensitif",
+        human: "Tim manusia",
+      },
+      order: {
+        caption: "Dari chat menjadi order lunas dan terkirim",
+        chat: "Chat pelanggan",
+        steps: ["Ongkir", "Bayar", "Order", "Kirim"],
+        total: "Status pembayaran & pengiriman",
+      },
+      chart: {
+        caption: "Performa per channel dalam 30 hari",
+        series: [
+          { label: "WhatsApp", value: 88 },
+          { label: "Instagram", value: 71 },
+          { label: "Iklan", value: 64 },
+          { label: "Tokopedia", value: 47 },
+        ],
+        note: "Perbesar yang bekerja, perbaiki yang melambat",
+      },
+    },
   },
 
   caseStudy: {
@@ -619,6 +659,7 @@ const ID: HomeContent = {
           { label: "Nomor WABA", value: "1" },
           { label: "MAU / bulan", value: "3.000" },
           { label: "AI credits", value: "15.000" },
+          { label: "Seats", value: "5" },
           { label: "Tipe AI", value: "AI Simple" },
         ],
         cta: {
@@ -634,6 +675,7 @@ const ID: HomeContent = {
           { label: "Nomor WABA", value: "3" },
           { label: "MAU / bulan", value: "10.000" },
           { label: "AI credits", value: "50.000" },
+          { label: "Seats", value: "7" },
           { label: "Tipe AI", value: "AI Full" },
         ],
         cta: {
@@ -648,6 +690,23 @@ const ID: HomeContent = {
           { label: "Nomor WABA", value: "5" },
           { label: "MAU / bulan", value: "30.000" },
           { label: "AI credits", value: "150.000" },
+          { label: "Seats", value: "10" },
+          { label: "Tipe AI", value: "AI Full" },
+        ],
+        cta: {
+          label: "Coba Gratis 14 Hari",
+          href: "https://chat.cekat.ai/register",
+        },
+      },
+      {
+        name: "Custom",
+        custom: true,
+        tag: "Untuk kebutuhan khusus, integrasi, dan skala korporat.",
+        rows: [
+          { label: "Nomor WABA", value: "Custom" },
+          { label: "MAU / bulan", value: "Tanpa batas" },
+          { label: "AI credits", value: "Custom" },
+          { label: "Seats", value: "Custom" },
           { label: "Tipe AI", value: "AI Full" },
         ],
         cta: { label: "Hubungi Sales", href: "/contact" },
@@ -675,7 +734,53 @@ const ID: HomeContent = {
   footer: {
     about:
       "AI Agent & Omnichannel CRM untuk bisnis Indonesia — balas lebih cepat, follow-up otomatis, closing lebih banyak.",
-    partner: "Meta Business Partner Resmi",
+    partner: "Cekat.AI adalah Meta Business Partner Resmi",
+    officesHeading: "Kantor Kami",
+    appsHeading: "Unduh Aplikasi Mobile Cekat",
+    offices: [
+      {
+        flag: "🇮🇩",
+        label: "Indonesia",
+        entries: [
+          {
+            name: "Kantor Jakarta",
+            company: "PT. Teknologi Cekat Indonesia",
+            address:
+              "Prosperity Tower unit 16i, Jl. Jenderal Sudirman No.Kav. 52-53, District 8, SCBD, Jakarta Selatan 12190",
+          },
+          {
+            name: "Kantor Tangerang",
+            company: "PT. Teknologi Cekat Indonesia",
+            address:
+              "Ruko Hampton Avenue Blok A no.10, Paramount, Gading Serpong, Tangerang, 15810",
+          },
+        ],
+      },
+      {
+        flag: "🇸🇬",
+        label: "Singapura",
+        entries: [
+          {
+            name: "Kantor Singapura",
+            company: "Cekat Pte. LTD.",
+            address:
+              "101 Upper Cross Street, 05-16, People's Park Centre, Singapore, 058357",
+          },
+        ],
+      },
+      {
+        flag: "🇲🇾",
+        label: "Malaysia",
+        entries: [
+          {
+            name: "Kantor Kuala Lumpur",
+            company: "CekatAI Sdn. Bhd.",
+            address:
+              "Level 7, Mercu 3, No. 3, Jalan Bangsar, KL Eco City 59200, Kuala Lumpur W.P. Kuala Lumpur Malaysia",
+          },
+        ],
+      },
+    ],
     columns: [
       {
         title: "Produk",
@@ -684,6 +789,10 @@ const ID: HomeContent = {
           { label: "CRM & Data Pelanggan", href: "/crm" },
           { label: "Marketing & Broadcast", href: "/marketing" },
           { label: "Order & Automation", href: "/order" },
+          { label: "Events", href: "/events" },
+          { label: "Harga", href: "/harga" },
+          { label: "Kontak", href: "/contact" },
+          { label: "Integrasi", href: "/integrasi" },
         ],
       },
       {
@@ -692,7 +801,6 @@ const ID: HomeContent = {
           { label: "Semua fitur", href: "/fitur" },
           { label: "Semua industri", href: "/industri" },
           { label: "Solusi per peran", href: "/solusi" },
-          { label: "Integrasi", href: "/integrasi" },
         ],
       },
       {
@@ -701,24 +809,55 @@ const ID: HomeContent = {
           { label: "Tentang kami", href: "/tentang" },
           { label: "Cerita pelanggan", href: "/cerita" },
           { label: "Blog", href: "/blog" },
-          { label: "Kontak", href: "/contact" },
         ],
       },
       {
-        title: "Bandingkan & legal",
+        title: "Legal",
         links: [
-          { label: "Perbandingan", href: "/perbandingan" },
-          { label: "Kebijakan privasi", href: "/privacy-policy" },
-          { label: "Syarat & ketentuan", href: "/terms-and-conditions" },
-          { label: "Kebijakan retur", href: "/return-refund-delivery-policy" },
+          { label: "Syarat & Ketentuan", href: "/terms-and-conditions" },
+          { label: "Kebijakan Privasi", href: "/privacy-policy" },
+          {
+            label: "Kebijakan Retur & Pengiriman",
+            href: "/return-refund-delivery-policy",
+          },
         ],
       },
     ],
-    copyright: `© ${new Date().getFullYear()} PT Teknologi Cekat Indonesia. Seluruh hak cipta dilindungi.`,
+    copyright: `© ${new Date().getFullYear()} CekatAI.`,
+    rights: "Seluruh hak cipta dilindungi.",
     socials: [
-      { label: "Instagram", href: "#" },
-      { label: "LinkedIn", href: "#" },
-      { label: "YouTube", href: "#" },
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/company/cekatai/",
+        icon: "linkedin",
+      },
+      {
+        label: "Instagram",
+        href: "https://www.instagram.com/cekat.ai/",
+        icon: "instagram",
+      },
+      {
+        label: "YouTube",
+        href: "https://www.youtube.com/@cekatai",
+        icon: "youtube",
+      },
+      {
+        label: "Facebook",
+        href: "https://www.facebook.com/p/CekatAI-61551061527910/",
+        icon: "facebook",
+      },
+    ],
+    apps: [
+      {
+        kind: "play",
+        href: "https://play.google.com/store/apps/details?id=com.cekatmobile&pcampaignid=web_share&pli=1",
+        label: "Unduh di Google Play",
+      },
+      {
+        kind: "apple",
+        href: "https://apps.apple.com/id/app/cekat-ai/id6499275234?l=id",
+        label: "Unduh di App Store",
+      },
     ],
   },
 };
@@ -941,6 +1080,7 @@ const EN: HomeContent = {
         body: "Link your WhatsApp Business number, Instagram, TikTok, and website live chat. Every conversation starts flowing into a single inbox.",
         hint: "~10 minutes",
         accent: "#1352BF",
+        visual: "channels",
       },
       {
         index: "02",
@@ -948,6 +1088,7 @@ const EN: HomeContent = {
         body: "Paste your SOPs, price list, and recurring questions into the knowledge base. The AI answers with your words, not guesses.",
         hint: "No code",
         accent: "#0EA5E9",
+        visual: "knowledge",
       },
       {
         index: "03",
@@ -955,6 +1096,7 @@ const EN: HomeContent = {
         body: "AI handles repeat questions, qualifies buyers, and escalates to a human the moment a case turns sensitive or is ready to close.",
         hint: "Always on",
         accent: "#4AB6BF",
+        visual: "ai",
       },
       {
         index: "04",
@@ -962,6 +1104,7 @@ const EN: HomeContent = {
         body: "Shipping is calculated, the payment link goes out, and the order lands in the OMS with fulfilment status attached.",
         hint: "Automatic",
         accent: "#22C55E",
+        visual: "order",
       },
       {
         index: "05",
@@ -969,8 +1112,44 @@ const EN: HomeContent = {
         body: "Dashboards show ROAS, closing rate, and per-channel performance. Fix what drags, scale what works.",
         hint: "Real time",
         accent: "#4A4ABF",
+        visual: "chart",
       },
     ],
+    diagrams: {
+      channels: {
+        caption: "Four channels feeding one team inbox",
+        inbox: "One team inbox",
+        channels: ["WhatsApp", "Instagram", "TikTok", "Live chat"],
+      },
+      knowledge: {
+        caption: "Your documents become one source of answers",
+        sources: ["SOPs", "Price list", "FAQ"],
+        base: "Knowledge base",
+        answer: "Answers in your own words",
+      },
+      ai: {
+        caption: "AI handles most of it, people close it",
+        handled: "92% answered by AI",
+        escalate: "Escalates when sensitive",
+        human: "Your team",
+      },
+      order: {
+        caption: "From chat to a paid, shipped order",
+        chat: "Customer chat",
+        steps: ["Shipping", "Payment", "Order", "Delivery"],
+        total: "Payment & delivery status",
+      },
+      chart: {
+        caption: "Per-channel performance over 30 days",
+        series: [
+          { label: "WhatsApp", value: 88 },
+          { label: "Instagram", value: 71 },
+          { label: "Ads", value: 64 },
+          { label: "Tokopedia", value: 47 },
+        ],
+        note: "Scale what works, fix what drags",
+      },
+    },
   },
 
   caseStudy: {
@@ -1362,6 +1541,7 @@ const EN: HomeContent = {
           { label: "WABA numbers", value: "1" },
           { label: "MAU / month", value: "3,000" },
           { label: "AI credits", value: "15,000" },
+          { label: "Seats", value: "5" },
           { label: "AI type", value: "AI Simple" },
         ],
         cta: {
@@ -1377,6 +1557,7 @@ const EN: HomeContent = {
           { label: "WABA numbers", value: "3" },
           { label: "MAU / month", value: "10,000" },
           { label: "AI credits", value: "50,000" },
+          { label: "Seats", value: "7" },
           { label: "AI type", value: "AI Full" },
         ],
         cta: {
@@ -1391,6 +1572,23 @@ const EN: HomeContent = {
           { label: "WABA numbers", value: "5" },
           { label: "MAU / month", value: "30,000" },
           { label: "AI credits", value: "150,000" },
+          { label: "Seats", value: "10" },
+          { label: "AI type", value: "AI Full" },
+        ],
+        cta: {
+          label: "Start free for 14 days",
+          href: "https://chat.cekat.ai/register",
+        },
+      },
+      {
+        name: "Custom",
+        custom: true,
+        tag: "For bespoke requirements, integrations, and corporate scale.",
+        rows: [
+          { label: "WABA numbers", value: "Custom" },
+          { label: "MAU / month", value: "Unlimited" },
+          { label: "AI credits", value: "Custom" },
+          { label: "Seats", value: "Custom" },
           { label: "AI type", value: "AI Full" },
         ],
         cta: { label: "Contact sales", href: "/en/contact" },
@@ -1414,7 +1612,53 @@ const EN: HomeContent = {
   footer: {
     about:
       "AI Agent and Omnichannel CRM for Indonesian businesses — reply faster, follow up automatically, close more.",
-    partner: "Official Meta Business Partner",
+    partner: "Cekat.AI is Official Meta Business Partner",
+    officesHeading: "Our Office",
+    appsHeading: "Download Cekat Mobile App",
+    offices: [
+      {
+        flag: "🇮🇩",
+        label: "Indonesia",
+        entries: [
+          {
+            name: "Jakarta Office",
+            company: "PT. Teknologi Cekat Indonesia",
+            address:
+              "Prosperity Tower unit 16i, Jl. Jenderal Sudirman No.Kav. 52-53, District 8, SCBD, South Jakarta 12190",
+          },
+          {
+            name: "Tangerang Office",
+            company: "PT. Teknologi Cekat Indonesia",
+            address:
+              "Ruko Hampton Avenue Blok A no.10, Paramount, Gading Serpong, Tangerang, 15810",
+          },
+        ],
+      },
+      {
+        flag: "🇸🇬",
+        label: "Singapore",
+        entries: [
+          {
+            name: "Singapore Office",
+            company: "Cekat Pte. LTD.",
+            address:
+              "101 Upper Cross Street, 05-16, People's Park Centre, Singapore, 058357",
+          },
+        ],
+      },
+      {
+        flag: "🇲🇾",
+        label: "Malaysia",
+        entries: [
+          {
+            name: "Kuala Lumpur Office",
+            company: "CekatAI Sdn. Bhd.",
+            address:
+              "Level 7, Mercu 3, No. 3, Jalan Bangsar, KL Eco City 59200, Kuala Lumpur W.P. Kuala Lumpur Malaysia",
+          },
+        ],
+      },
+    ],
     columns: [
       {
         title: "Product",
@@ -1423,6 +1667,10 @@ const EN: HomeContent = {
           { label: "CRM & Customer Data", href: "/en/crm" },
           { label: "Marketing & Broadcast", href: "/en/marketing" },
           { label: "Order & Automation", href: "/en/order" },
+          { label: "Events", href: "/en/events" },
+          { label: "Pricing", href: "/en/pricing" },
+          { label: "Contact", href: "/en/contact" },
+          { label: "Integrations", href: "/en/integrations" },
         ],
       },
       {
@@ -1431,7 +1679,6 @@ const EN: HomeContent = {
           { label: "All features", href: "/en/features" },
           { label: "All industries", href: "/en/industries" },
           { label: "Solutions by role", href: "/en/solutions" },
-          { label: "Integrations", href: "/en/integrations" },
         ],
       },
       {
@@ -1440,24 +1687,55 @@ const EN: HomeContent = {
           { label: "About us", href: "/en/about" },
           { label: "Customer stories", href: "/en/stories" },
           { label: "Blog", href: "/en/blog" },
-          { label: "Contact", href: "/en/contact" },
         ],
       },
       {
-        title: "Compare & legal",
+        title: "Legal",
         links: [
-          { label: "Comparison", href: "/en/comparison" },
-          { label: "Privacy policy", href: "/en/privacy-policy" },
-          { label: "Terms & conditions", href: "/en/terms-and-conditions" },
-          { label: "Refund policy", href: "/en/return-refund-delivery-policy" },
+          { label: "Terms & Conditions", href: "/en/terms-and-conditions" },
+          { label: "Privacy Policy", href: "/en/privacy-policy" },
+          {
+            label: "Return, Refund & Delivery Policy",
+            href: "/en/return-refund-delivery-policy",
+          },
         ],
       },
     ],
-    copyright: `© ${new Date().getFullYear()} PT Teknologi Cekat Indonesia. All rights reserved.`,
+    copyright: `© ${new Date().getFullYear()} CekatAI.`,
+    rights: "All rights reserved.",
     socials: [
-      { label: "Instagram", href: "#" },
-      { label: "LinkedIn", href: "#" },
-      { label: "YouTube", href: "#" },
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/company/cekatai/",
+        icon: "linkedin",
+      },
+      {
+        label: "Instagram",
+        href: "https://www.instagram.com/cekat.ai/",
+        icon: "instagram",
+      },
+      {
+        label: "YouTube",
+        href: "https://www.youtube.com/@cekatai",
+        icon: "youtube",
+      },
+      {
+        label: "Facebook",
+        href: "https://www.facebook.com/p/CekatAI-61551061527910/",
+        icon: "facebook",
+      },
+    ],
+    apps: [
+      {
+        kind: "play",
+        href: "https://play.google.com/store/apps/details?id=com.cekatmobile&pcampaignid=web_share&pli=1",
+        label: "Get it on Google Play",
+      },
+      {
+        kind: "apple",
+        href: "https://apps.apple.com/id/app/cekat-ai/id6499275234?l=id",
+        label: "Download on the App Store",
+      },
     ],
   },
 };

@@ -49,6 +49,53 @@ export type Step = {
   body: string;
   hint: string;
   accent: string;
+  /** Selects the explainer diagram the sticky stage draws for this step. */
+  visual: StepVisualKind;
+};
+
+/**
+ * One explainer per step of the how-it-works rail. The point of the band is
+ * that a visitor can *see* each step, so the stage draws a diagram rather than
+ * repeating the paragraph.
+ */
+export type StepVisualKind =
+  "channels" | "knowledge" | "ai" | "order" | "chart";
+
+/** Copy for the five diagrams; every label is drawn inside the diagram. */
+export type StepDiagrams = {
+  /** Step 1 — many channels funnelling into one inbox. */
+  channels: {
+    caption: string;
+    inbox: string;
+    channels: string[];
+  };
+  /** Step 2 — source documents becoming one knowledge base. */
+  knowledge: {
+    caption: string;
+    sources: string[];
+    base: string;
+    answer: string;
+  };
+  /** Step 3 — AI first pass, then the hand-off to a human. */
+  ai: {
+    caption: string;
+    handled: string;
+    escalate: string;
+    human: string;
+  };
+  /** Step 4 — conversation turning into a paid, shipped order. */
+  order: {
+    caption: string;
+    chat: string;
+    steps: string[];
+    total: string;
+  };
+  /** Step 5 — per-channel performance bars. */
+  chart: {
+    caption: string;
+    series: { label: string; value: number }[];
+    note: string;
+  };
 };
 
 export type TrustCard = {
@@ -68,12 +115,42 @@ export type PricingTier = {
   rows: { label: string; value: string }[];
   cta: ContentLink;
   popular?: boolean;
+  /**
+   * The bespoke tier. Its spec values are negotiated, so the card shows an
+   * outline accent instead of pretending to be a comparable product.
+   */
+  custom?: boolean;
 };
 
 export type FooterColumn = {
   title: string;
   links: ContentLink[];
 };
+
+/** One office card inside a country's tab. */
+export type OfficeEntry = {
+  name: string;
+  company: string;
+  address: string;
+};
+
+/**
+ * Offices are grouped per country so the footer can hold one address block per
+ * location while showing exactly one country at a time.
+ */
+export type OfficeGroup = {
+  /** Emoji flag, rendered with the emoji font stack. */
+  flag: string;
+  label: string;
+  entries: OfficeEntry[];
+};
+
+/**
+ * Social icons are referenced by name rather than shipped as a component, so the
+ * bilingual content objects stay plain data (and `HomeContent` stays checkable
+ * by `tsc` without importing any React).
+ */
+export type SocialIcon = "instagram" | "linkedin" | "youtube" | "facebook";
 
 export type StageCardKind =
   "chat" | "order" | "crm" | "mini" | "consulting" | "marketing";
@@ -238,6 +315,7 @@ export type HomeContent = {
     body: string;
     stageLabel: string;
     steps: Step[];
+    diagrams: StepDiagrams;
   };
   caseStudy: {
     eyebrow: string;
@@ -291,8 +369,14 @@ export type HomeContent = {
   footer: {
     about: string;
     partner: string;
+    officesHeading: string;
+    appsHeading: string;
+    offices: OfficeGroup[];
     columns: FooterColumn[];
     copyright: string;
-    socials: ContentLink[];
+    rights: string;
+    socials: { label: string; href: string; icon: SocialIcon }[];
+    /** App store badges; `kind` picks which badge component renders. */
+    apps: { kind: "play" | "apple"; href: string; label: string }[];
   };
 };

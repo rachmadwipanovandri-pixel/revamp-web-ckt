@@ -7,6 +7,10 @@ import type { HomeContent } from "./types";
  * Band 10a — pricing teaser. Contact-led: the tiers show what is included
  * (capacity, credits, seats) without quoting numbers that the pricing page
  * would have to keep in sync.
+ *
+ * Four columns (Pro · Business · Enterprise · Custom), so the grid steps 1 → 2 →
+ * 4 rather than 3: three columns at this width would leave four tiers on one
+ * lonely row, and eight-at-a-row density would kill the spec table.
  */
 export function Pricing({ content }: { content: HomeContent["pricing"] }) {
   return (
@@ -19,13 +23,14 @@ export function Pricing({ content }: { content: HomeContent["pricing"] }) {
           body={content.body}
         />
 
-        <ul className="mt-12 grid items-stretch gap-5 md:grid-cols-3">
+        <ul className="mt-12 grid items-stretch gap-5 sm:grid-cols-2 xl:grid-cols-4">
           {content.tiers.map((tier) => (
             <li key={tier.name} className="flex">
               <Card
                 className={cn(
                   "relative flex w-full flex-col p-6",
-                  tier.popular && "border-primary/45 shadow-[0_1px_2px_rgba(11,18,32,0.05),0_30px_56px_-32px_rgba(19,82,191,0.5)]",
+                  tier.popular &&
+                    "border-primary/45 shadow-[0_1px_2px_rgba(11,18,32,0.05),0_30px_56px_-32px_rgba(19,82,191,0.5)]",
                 )}
               >
                 {tier.popular ? (
@@ -37,14 +42,17 @@ export function Pricing({ content }: { content: HomeContent["pricing"] }) {
                 <h3 className="text-[1.25rem] font-bold tracking-[-0.02em] text-[#101828]">
                   {tier.name}
                 </h3>
-                <p className="mt-2 min-h-[3rem] text-[0.875rem] leading-[1.55] text-[#4B5563]">
+                <p className="mt-2 mb-5 min-h-[3rem] text-[0.875rem] leading-[1.55] text-[#4B5563]">
                   {tier.tag}
                 </p>
 
+                {/* `mt-auto` pushes the CTA to the bottom of every card, so the
+                    four line up even though the tags are different lengths and
+                    the spec tables below have different row counts. */}
                 <Link
                   href={tier.cta.href}
                   className={cn(
-                    "mt-5 inline-flex h-11 items-center justify-center rounded-full px-5 text-sm font-semibold transition-[background-color,border-color,color,transform] duration-200 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0",
+                    "mt-auto inline-flex h-11 items-center justify-center rounded-full px-5 text-sm font-semibold transition-[background-color,border-color,color,transform] duration-200 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0",
                     tier.popular
                       ? "bg-primary text-white hover:bg-[#2563EB]"
                       : "border border-border bg-white text-[#101828] hover:border-[#BFDBFE] hover:text-primary",
@@ -73,8 +81,10 @@ export function Pricing({ content }: { content: HomeContent["pricing"] }) {
                           <path d="M10 3 4.5 9 2 6.5" />
                         </svg>
                       </span>
-                      <dt className="text-[0.85rem] text-[#4B5563]">{row.label}</dt>
-                      <dd className="ml-auto text-[0.85rem] font-semibold text-[#101828] tabular-nums">
+                      <dt className="text-[0.8rem] text-[#4B5563]">
+                        {row.label}
+                      </dt>
+                      <dd className="ml-auto text-right text-[0.8rem] font-semibold text-[#101828] tabular-nums">
                         {row.value}
                       </dd>
                     </div>
