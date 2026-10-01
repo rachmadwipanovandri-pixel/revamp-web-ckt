@@ -1,0 +1,505 @@
+/*
+ * /preview-home-2 — scoped design system.
+ *
+ * Layout and type live in Tailwind utilities (see the band components); this
+ * file owns only what utilities cannot express: the diagram animations, the
+ * off-screen pause gate, the blueprint backdrop, and the reduced-motion
+ * contract. Everything is scoped under `.ph2-root` so the draft can never leak
+ * into production routes.
+ */
+
+.ph2-root {
+  --ph2-primary: #1352bf;
+  --ph2-primary-ramp: #2563eb;
+  --ph2-ink: #101828;
+  --ph2-ink-deep: #0b1220;
+  --ph2-muted: #4b5563;
+  --ph2-muted-2: #64748b;
+  --ph2-border: #e2e8f0;
+  --ph2-surface: #f8faff;
+  --ph2-radius: 20px;
+  --ph2-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ph2-t-fast: 180ms;
+  --ph2-t-base: 260ms;
+  --ph2-t-slow: 420ms;
+
+  color: var(--ph2-ink);
+  background: #fff;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+  /* Inter is already loaded by the root layout via next/font; this only sets
+     the fallback stack for the draft. */
+  font-synthesis-weight: none;
+}
+
+/* ---------- focus: one visible ring for every interactive element ---------- */
+.ph2-root :focus-visible {
+  outline: 2px solid var(--ph2-primary);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* ---------- blueprint backdrop (light, hero + final CTA) ---------- */
+.ph2-grid-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(19, 82, 191, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(19, 82, 191, 0.07) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(900px 460px at 50% 0%, #000 20%, transparent 78%);
+  -webkit-mask-image: radial-gradient(900px 460px at 50% 0%, #000 20%, transparent 78%);
+}
+
+/* ---------- hero aurora: a slowly drifting colour field --------------------
+ * Amplemarket builds its hero background from a WebGL shader canvas
+ * (`.shader-canvas` driven by home-hero.min.js) behind a mask. That is a lot of
+ * machinery — and GPU/battery — for a soft colour wash, so this reaches the
+ * same read with the cheapest technique that is genuinely smooth:
+ *
+ *   • the soft falloff is baked into each radial-gradient, so there is no blur
+ *     filter to re-rasterise every frame;
+ *   • only `transform` is animated, which the compositor handles without
+ *     repainting anything.
+ *
+ * Four blobs at different sizes, colours and durations drift out of phase, so
+ * the field never visibly loops.
+ */
+.ph2-aurora-gate {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.ph2-aurora {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ph2-aurora-blob {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+  animation: ph2-drift 30s ease-in-out infinite alternate;
+}
+
+@keyframes ph2-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(7%, -6%, 0) scale(1.18);
+  }
+}
+
+.ph2-aurora-1 {
+  top: -18%;
+  left: -6%;
+  width: 44rem;
+  height: 44rem;
+  background: radial-gradient(
+    closest-side,
+    rgba(19, 82, 191, 0.2),
+    rgba(19, 82, 191, 0) 72%
+  );
+  animation-duration: 30s;
+}
+
+.ph2-aurora-2 {
+  top: -26%;
+  right: -10%;
+  width: 40rem;
+  height: 40rem;
+  background: radial-gradient(
+    closest-side,
+    rgba(14, 165, 233, 0.18),
+    rgba(14, 165, 233, 0) 72%
+  );
+  animation-duration: 38s;
+  animation-delay: -8s;
+}
+
+.ph2-aurora-3 {
+  top: 20%;
+  left: 30%;
+  width: 46rem;
+  height: 46rem;
+  background: radial-gradient(
+    closest-side,
+    rgba(74, 74, 191, 0.14),
+    rgba(74, 74, 191, 0) 72%
+  );
+  animation-duration: 44s;
+  animation-delay: -16s;
+}
+
+.ph2-aurora-4 {
+  bottom: -28%;
+  left: 6%;
+  width: 38rem;
+  height: 38rem;
+  background: radial-gradient(
+    closest-side,
+    rgba(74, 182, 191, 0.16),
+    rgba(74, 182, 191, 0) 72%
+  );
+  animation-duration: 34s;
+  animation-delay: -22s;
+}
+
+@media (max-width: 767px) {
+  .ph2-aurora-blob {
+    width: 26rem;
+    height: 26rem;
+  }
+}
+
+/* ---------- pause gate: nothing animates while off-screen or hidden ---------- */
+.ph2-gate[data-off="true"] .ph2-anim,
+.ph2-gate[data-off="true"] .ph2-anim * {
+  animation-play-state: paused !important;
+}
+
+/* ---------- sticky nav: scroll-linked morph -------------------------------
+ * Nav.tsx writes `--p` (0 → 1) on every animation frame, so the bar follows
+ * the scroll position instead of snapping across a 24px threshold — scrolling
+ * slowly now eases the pill in continuously, and scrolling back up reverses it
+ * just as smoothly.
+ *
+ * `backdrop-filter` is deliberately not used anywhere here: it forces the
+ * browser to re-blur everything behind the bar on every frame, which is what
+ * made slow scrolling feel rough. On this light page the background below is
+ * opaque enough that the difference is invisible.
+ */
+.ph2-nav {
+  --p: 0;
+}
+
+.ph2-nav-shell {
+  max-width: calc(1320px - 200px * var(--p));
+  padding: calc(16px - 4px * var(--p)) calc(20px - 4px * var(--p)) 0;
+}
+
+.ph2-nav-bar {
+  height: calc(70px - 14px * var(--p));
+  /* 16px → 28px is exactly half of the 56px end height, i.e. a full pill. */
+  border-radius: calc(16px + 12px * var(--p));
+  border-color: rgba(226, 232, 240, var(--p));
+  background-color: rgba(255, 255, 255, calc(0.72 + 0.24 * var(--p)));
+  box-shadow: 0 16px 44px -26px rgba(11, 18, 32, calc(0.42 * var(--p)));
+}
+
+/* ---------- hero stage: grows into place as it scrolls in ------------------
+ * HeroStage writes `--stage` (0.88 → 1) from the stage's distance to the
+ * viewport bottom, so the dashboard and its looping card swell as you scroll
+ * toward them and settle at their natural size.
+ *
+ * Two deliberate details: `transform-origin: center top` keeps the top edge
+ * fixed, so the measurement the component reads back never feeds into itself;
+ * and the ramp tops out at exactly 1, so the stage can never overflow into the
+ * section below.
+ */
+.ph2-stage-scale {
+  --stage: 1;
+  transform: scale(var(--stage));
+  transform-origin: center top;
+  will-change: transform;
+}
+
+/* ---------- floating context cards (hero stage) ---------- */
+.ph2-float {
+  animation: ph2-float 7s ease-in-out infinite;
+}
+
+.ph2-float-slow {
+  animation: ph2-float 10s ease-in-out infinite;
+  animation-delay: -2.5s;
+}
+
+@keyframes ph2-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ---------- logo wall ---------- */
+.ph2-ticker-mask {
+  mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+}
+
+.ph2-ticker {
+  animation: ph2-ticker 52s linear infinite;
+}
+
+.ph2-ticker-wrap:hover .ph2-ticker {
+  animation-play-state: paused;
+}
+
+@keyframes ph2-ticker {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- integration constellation ---------- */
+.ph2-orbit {
+  animation: ph2-orbit 64s linear infinite;
+}
+
+.ph2-orbit-counter {
+  animation: ph2-orbit 64s linear infinite reverse;
+}
+
+@keyframes ph2-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- mega menu / mobile panel / swap panel entrance ---------- */
+.ph2-mega-panel,
+.ph2-panel-in {
+  animation: ph2-panel-in 240ms var(--ph2-ease) both;
+}
+
+@keyframes ph2-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- Live Stage: auto-advancing product cards (coverflow) ---------- */
+.ph2-stage-card {
+  transition:
+    transform var(--ph2-t-slow) var(--ph2-ease),
+    opacity var(--ph2-t-slow) var(--ph2-ease);
+  will-change: transform, opacity;
+}
+
+/*
+ * Card content that plays when a card takes the stage.
+ *
+ * Every rule here animates FROM the hidden state only, so the element's base
+ * CSS is its settled look: `animation: none` (reduced motion) leaves the card
+ * fully readable instead of blank. All of this lives inside a `.ph2-anim`
+ * subtree, which is what the off-screen gate and the reduced-motion block key
+ * off — see `.ph2-gate` rules above.
+ */
+.ph2-in {
+  animation: ph2-in 420ms var(--ph2-ease) both;
+}
+
+@keyframes ph2-in {
+  from {
+    opacity: 0;
+    transform: translateY(9px) scale(0.975);
+  }
+}
+
+.ph2-dot {
+  animation: ph2-dot 0.9s ease-in-out infinite;
+}
+
+@keyframes ph2-dot {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+}
+
+/* The typing bubble holds the reply's spot, then gets out of the way. */
+.ph2-reply-slot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.ph2-reply-slot > .ph2-typing {
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+}
+
+.ph2-typing-out {
+  animation: ph2-typing-out 180ms ease forwards;
+}
+
+@keyframes ph2-typing-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.ph2-bar {
+  transform-origin: bottom;
+  animation: ph2-bar 620ms var(--ph2-ease) both;
+}
+
+@keyframes ph2-bar {
+  from {
+    transform: scaleY(0.08);
+  }
+}
+
+.ph2-draw {
+  stroke-dasharray: 420;
+  animation: ph2-draw 1100ms var(--ph2-ease) both;
+}
+
+@keyframes ph2-draw {
+  from {
+    stroke-dashoffset: 420;
+  }
+}
+
+/* ---------- customer-signal marquee (three rows, alternating direction) ------ */
+.ph2-mq-mask {
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+
+.ph2-mq-row {
+  display: flex;
+  width: max-content;
+  gap: 0.875rem;
+}
+
+.ph2-mq-left {
+  animation: ph2-mq-left 58s linear infinite;
+}
+
+.ph2-mq-right {
+  animation: ph2-mq-right 66s linear infinite;
+}
+
+.ph2-mq-wrap:hover .ph2-mq-row {
+  animation-play-state: paused;
+}
+
+@keyframes ph2-mq-left {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes ph2-mq-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ---------- testimonial wall (four columns, alternating vertical drift) ------ */
+.ph2-love-mask {
+  mask-image: linear-gradient(180deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.ph2-love-up {
+  animation: ph2-love-up var(--ph2-spd, 54s) linear infinite;
+}
+
+.ph2-love-down {
+  animation: ph2-love-down var(--ph2-spd, 62s) linear infinite;
+}
+
+.ph2-love-wrap:hover .ph2-love-col {
+  animation-play-state: paused;
+}
+
+@keyframes ph2-love-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes ph2-love-down {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/*
+ * Below md the wall stops drifting and unfolds into a plain grid of every
+ * card, so no testimonial is hidden on a phone (preview-home dropped three of
+ * its four columns here). The duplicated half exists only for the loop.
+ */
+@media (max-width: 767px) {
+  .ph2-love-wrap,
+  .ph2-love-viewport {
+    height: auto !important;
+  }
+
+  .ph2-love-viewport {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .ph2-love-col {
+    animation: none !important;
+  }
+
+  .ph2-love-dupe {
+    display: none !important;
+  }
+}
+
+/* ---------- reduced motion: hold every diagram on a static, readable frame -- */
+@media (prefers-reduced-motion: reduce) {
+  .ph2-root {
+    scroll-behavior: auto;
+  }
+
+  .ph2-root .ph2-anim,
+  .ph2-root .ph2-anim *,
+  .ph2-root .ph2-orbit,
+  .ph2-root .ph2-orbit-counter,
+  .ph2-root .ph2-ticker,
+  .ph2-root .ph2-mega-panel,
+  .ph2-root .ph2-panel-in,
+  .ph2-root .ph2-mq-row,
+  .ph2-root .ph2-love-col {
+    animation: none !important;
+  }
+
+  .ph2-root .ph2-stage-card {
+    transition: none !important;
+  }
+
+  .ph2-root .ph2-float,
+  .ph2-root .ph2-float-slow {
+    animation: none !important;
+  }
+
+  .ph2-root .ph2-mega-panel {
+    transform: none !important;
+  }
+}
