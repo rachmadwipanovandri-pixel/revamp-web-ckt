@@ -158,6 +158,38 @@
   }
 }
 
+/* ---------- Lenis smooth-scroll (desktop only) ------------------------------
+ * Mounted by SmoothScroll.tsx, which only instantiates on fine pointers
+ * without `prefers-reduced-motion` — so these classes never exist on mobile
+ * or for reduced-motion visitors, and the rules below are dead weight there.
+ *
+ * Two deliberate details: `scroll-behavior: auto` on the draft root while
+ * Lenis runs, so a CSS-smooth anchor jump never double-smooths on top of the
+ * Lenis glide; and `overflow: clip` (not `hidden`) for the stopped state, so
+ * freezing the scroll for the mobile panel cannot shift the layout via a
+ * disappearing scrollbar.
+ */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+html.lenis .ph2-root {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
 /* ---------- pause gate: nothing animates while off-screen or hidden ---------- */
 .ph2-gate[data-off="true"] .ph2-anim,
 .ph2-gate[data-off="true"] .ph2-anim * {
@@ -821,6 +853,13 @@
 
   .ph2-root .ph2-bar-x {
     animation: none !important;
+  }
+
+  /* Lenis is never instantiated under reduced motion, so `html.lenis` cannot
+     exist here — but if it somehow does, the glide must be gone. */
+  html.lenis,
+  html.lenis body {
+    scroll-behavior: auto !important;
   }
 
   .ph2-root .ph2-float,

@@ -1,6 +1,7 @@
 import "./preview-home-2.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { SmoothScroll } from "@/components/preview-home-2/SmoothScroll";
 
 /**
  * Route draft: redesign beranda kedua (kanvas terang, diagram-first).
@@ -19,5 +20,10 @@ export default function PreviewHome2Layout({
 }: {
   children: ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <SmoothScroll />
+      {children}
+    </>
+  );
 }

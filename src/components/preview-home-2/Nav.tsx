@@ -94,8 +94,11 @@ export function Nav({
     if (!mobileOpen) return;
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    // Freeze Lenis too: body overflow alone does not stop its virtual scroll.
+    window.__ph2Lenis?.stop();
     return () => {
       document.body.style.overflow = previous;
+      window.__ph2Lenis?.start();
     };
   }, [mobileOpen]);
 
