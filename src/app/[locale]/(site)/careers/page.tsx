@@ -82,6 +82,7 @@ export default async function CareersPage({
         accent={t("heroAccent")}
         subtitle={t("heroSub")}
         chips={(t.raw("heroChips") as string[]).map(String)}
+        align="center"
         solidNav
       />
 

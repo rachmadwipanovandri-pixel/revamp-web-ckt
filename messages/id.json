@@ -1387,7 +1387,7 @@
     "listing": {
       "eyebrow": "EVENT & WEBINAR",
       "title": "Agenda terbaru dari Cekat.AI",
-      "subtitle": "Webinar gratis, workshop, dan kelas singkat untuk bantu bisnis kamu nggak ngandelin feeling doang.",
+      "subtitle": "Webinar gratis, workshop, dan kelas singkat untuk bantu bisnis kamu berdasarkan data, fakta, dan angka.",
       "intro": "Setiap bulan Cekat.AI mengadakan webinar gratis, workshop, dan kelas singkat bersama praktisi customer service, sales, dan marketing. Daftar gratis, ikuti sesinya langsung, dan bawa pulang template serta strategi yang bisa langsung dipakai di bisnismu — tanpa harus jadi customer dulu.",
       "empty": "Belum ada event yang tayang. Cek lagi nanti ya.",
       "view": "Lihat detail",
@@ -1409,8 +1409,8 @@
     "metaDescription": "Cariat yang mau bangun produk AI Revenue Operating System. Lihat posisi yang sedang dibuka di Cekat.AI dan lamar langsung lewat LinkedIn.",
     "breadcrumb": "Karier",
     "eyebrow": "Karier",
-    "heroTitle": "Bangun produk",
-    "heroAccent": "bersama kami",
+    "heroTitle": "Open Roles",
+    "heroAccent": "",
     "heroSub": "Kami mencari orang yang senang membaca percakapan pelanggan, berpikir jernih soal apa yang bisa diotomatisasi, dan mau testified ke hasilnya di lapangan.",
     "heroChips": [
       "Product",
@@ -1419,7 +1419,7 @@
       "Jakarta · Tangerang"
     ],
     "openRoles": "Posisi yang sedang dibuka",
-    "openRolesNote": "Setiap posisi di bawah ini openness lewat halaman lowongan kami di LinkedIn — di situlah deskripsi lengkap, kualifikasi, dan formulir lamaran berada.",
+    "openRolesNote": "Setiap posisi di bawah ini terhubung dengan lowongan kami di LinkedIn, di situlah deskripsi lengkap, kualifikasi, dan formulir lamaran berada.",
     "apply": "Lamar",
     "emptyTitle": "Belum ada posisi yang terbuka saat ini",
     "emptyBody": "Kami tetap terbuka pada orang yang marathon. Kirim email ke hello@cekat.ai dengan portofolio atau hal yang pernah kamu kerjakan, dan kami akan menghubungi kalau ada yang cocok.",
