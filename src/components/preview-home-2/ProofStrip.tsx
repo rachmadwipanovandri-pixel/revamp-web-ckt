@@ -15,7 +15,7 @@ export function ProofStrip({ content }: { content: HomeContent["proof"] }) {
   const loop = [...half, ...half];
 
   return (
-    <Band tone="white" labelledBy="ph2-proof-title" className="py-16 md:py-20">
+    <Band tone="white" labelledBy="ph2-proof-title" className="py-16 md:py-20" defer>
       <Shell>
         <div className="flex flex-col items-center gap-3 text-center">
           <Eyebrow>{content.eyebrow}</Eyebrow>
@@ -60,6 +60,16 @@ export function ProofStrip({ content }: { content: HomeContent["proof"] }) {
                       alt={duplicate ? "" : logo.alt}
                       width={logo.width}
                       height={logo.height}
+                      /*
+                        Each logo paints into a 28px-tall box, but the natural
+                        widths here run to 160px, so without a `sizes` hint Next
+                        offers `w=384` — for a 28px mark. The ticker duplicates
+                        the set to loop, so that is twenty requests for ten
+                        files, and the whole strip sits far below the fold.
+                        Declared at the painted height, the same sources resolve
+                        to 64w/128w.
+                      */
+                      sizes="28px"
                       className="h-7 w-auto object-contain opacity-65 grayscale"
                     />
                   </span>

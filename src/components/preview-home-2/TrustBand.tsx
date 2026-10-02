@@ -14,7 +14,7 @@ export function TrustBand({ content }: { content: HomeContent["trust"] }) {
   const radius = 38;
 
   return (
-    <Band tone="white" labelledBy="ph2-trust-title" className="overflow-hidden">
+    <Band tone="white" labelledBy="ph2-trust-title" className="overflow-hidden" defer>
       <Shell>
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)] lg:gap-16">
           <div>

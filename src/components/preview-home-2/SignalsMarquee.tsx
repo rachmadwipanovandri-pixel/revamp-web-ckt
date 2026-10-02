@@ -22,6 +22,7 @@ export function SignalsMarquee({
       tone="wash"
       labelledBy="ph2-signals-title"
       className="overflow-hidden"
+      defer
     >
       <Shell>
         <SectionHead

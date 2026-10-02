@@ -571,6 +571,45 @@ const ID: HomeContent = {
     ],
   },
 
+  founders: {
+    eyebrow: "Cerita dari founder",
+    heading: "Dipercaya founder yang sedang membangun",
+    body: "Tiga puluh detik dari pemilik bisnis yang sudah menjalankan Cekat.AI setiap hari — bukan rekaman skrip, tapi cerita yang benar-benar terjadi.",
+    play: "Putar video",
+    close: "Tutup video",
+    previous: "Founder sebelumnya",
+    next: "Founder berikutnya",
+    pager: "Pilihan founder",
+    show: "Tampilkan",
+    channel: "Lihat channel YouTube",
+    items: [
+      {
+        yt: "ePdVgW7X01s",
+        name: "Silcia Brenda",
+        role: "CEO & Founder",
+        company: "Moir Salon",
+      },
+      {
+        yt: "wvOip0Gkx30",
+        name: "Tantan Supriantna",
+        role: "Head of Customer Relation",
+        company: "Rumah Zakat",
+      },
+      {
+        yt: "O_xSafLehMQ",
+        name: "Hargyo T. N. Ignatis, Ph.D",
+        role: "Direktur",
+        company: "Multimedia Nusantara Polytechnic",
+      },
+      {
+        yt: "681luT0Aa68",
+        name: "Rianti Yahya",
+        role: "CEO",
+        company: "VIO Optical Clinic",
+      },
+    ],
+  },
+
   deck: {
     eyebrow: "Yang Kita Lakukan",
     heading: "Satu tempat untuk semua urusan bisnis",
@@ -1551,6 +1590,45 @@ const EN: HomeContent = {
         { text: "Order value doubled", accent: "#4A4ABF" },
         { text: "Story seen 500×, link clicked 40×", accent: "#EC4899" },
       ],
+    ],
+  },
+
+  founders: {
+    eyebrow: "Founder stories",
+    heading: "Trusted by the founders building right now",
+    body: "Thirty seconds from the owners already running Cekat.AI every day — not a scripted read, just what actually happened.",
+    play: "Play video",
+    close: "Close video",
+    previous: "Previous founder",
+    next: "Next founder",
+    pager: "Founder picker",
+    show: "Show",
+    channel: "Open the YouTube channel",
+    items: [
+      {
+        yt: "ePdVgW7X01s",
+        name: "Silcia Brenda",
+        role: "CEO & Founder",
+        company: "Moir Salon",
+      },
+      {
+        yt: "wvOip0Gkx30",
+        name: "Tantan Supriantna",
+        role: "Head of Customer Relation",
+        company: "Rumah Zakat",
+      },
+      {
+        yt: "O_xSafLehMQ",
+        name: "Hargyo T. N. Ignatis, Ph.D",
+        role: "Director",
+        company: "Multimedia Nusantara Polytechnic",
+      },
+      {
+        yt: "681luT0Aa68",
+        name: "Rianti Yahya",
+        role: "CEO",
+        company: "VIO Optical Clinic",
+      },
     ],
   },
 

@@ -266,6 +266,45 @@ export type Signals = {
   cta: ContentLink;
 };
 
+/**
+ * One founder story in the rail.
+ *
+ * `yt` is the YouTube id and the *only* handle on the video: the poster is
+ * derived from it (`i.ytimg.com/vi/<id>/maxresdefault.jpg`) and the player is
+ * `youtube-nocookie.com/embed/<id>`. Deriving both means a reel cannot drift
+ * out of sync with its own thumbnail, and there is no second URL to keep
+ * correct.
+ */
+export type Founder = {
+  yt: string;
+  name: string;
+  role: string;
+  company: string;
+};
+
+export type Founders = {
+  eyebrow: string;
+  heading: string;
+  body: string;
+  /** Aria label for the play control on a card. */
+  play: string;
+  /** Lightbox close control. */
+  close: string;
+  /** Rail arrows, which are real controls and so need real labels. */
+  previous: string;
+  next: string;
+  /** Names the rail itself, for the carousel group and the arrow cluster. */
+  pager: string;
+  /**
+   * Verb for promoting a collapsed card. A slide's whole surface is one button
+   * that either promotes it or plays it, so its label has to say which.
+   */
+  show: string;
+  /** The company's YouTube channel, linked from the card. */
+  channel: string;
+  items: Founder[];
+};
+
 export type DeckItem = {
   title: string;
   headline: string;
@@ -407,6 +446,7 @@ export type HomeContent = {
   liveStage: LiveStage;
   signals: Signals;
   deck: Deck;
+  founders: Founders;
   love: Love;
   footer: {
     about: string;

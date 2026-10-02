@@ -1,7 +1,7 @@
 import { describe, expect, it, beforeEach, vi } from "vitest";
 import { act, fireEvent, render } from "@testing-library/react";
 import { CONTENT } from "./content";
-import { clampOffset } from "./HeroStage";
+import { clampOffset, loopTickMs } from "./HeroStage";
 import { HeroStage } from "./HeroStage";
 
 const stage = CONTENT.id.liveStage;
@@ -83,7 +83,6 @@ describe("preview-home-2 hero stage", () => {
       let guard = 0;
       while (bubbles().length < script.length && guard < 60) {
         guard += 1;
-        // eslint-disable-next-line no-await-in-loop
         await act(async () => {
           vi.advanceTimersByTime(1500);
         });
@@ -112,9 +111,13 @@ describe("preview-home-2 hero stage", () => {
     const { container } = render(
       <HeroStage dashboard={dashboard} stage={stage} />,
     );
-    const slots = [...container.querySelectorAll(".ph2-anim.absolute")];
-    const rhythm = slots.map((slot) => {
-      const style = (slot as HTMLElement).style;
+    // A slot is two elements: the shell carries the bob (a CSS animation, so it
+    // lives on the shell's own style) and the box inside it carries the drop
+    // position. Keeping them apart is what stops an animation from overwriting
+    // a dragged transform.
+    const shells = [...container.querySelectorAll(".ph2-anim.absolute")];
+    const rhythm = shells.map((shell) => {
+      const style = (shell as HTMLElement).style;
       return `${style.animationDuration}|${style.animationDelay}`;
     });
     expect(rhythm).toHaveLength(3);
@@ -265,7 +268,13 @@ describe("preview-home-2 hero stage", () => {
     );
     // The three absolutely-positioned desktop slots (the fourth card is the
     // below-`lg` single, which never drags).
-    const slots = [...container.querySelectorAll(".ph2-anim.absolute")];
+    // A slot is two elements: the shell carries the bob and owns the pointer
+    // handlers, the box inside it carries the drop position. Events go to the
+    // shell; the transform is asserted on the box.
+    const shells = [...container.querySelectorAll(".ph2-anim.absolute")];
+    const slots = shells.map((shell) =>
+      shell.querySelector<HTMLElement>(".ph2-pop-in > div")!,
+    );
     expect(slots).toHaveLength(3);
     const scale = container.querySelector(".ph2-stage-scale");
     if (!scale) throw new Error("stage wrapper missing");
@@ -298,9 +307,9 @@ describe("preview-home-2 hero stage", () => {
 
     // Press on the left slot, drag past the threshold, release: the slot
     // keeps the release offset as its new home while the others stay put.
-    fireEvent.pointerDown(slots[0], { button: 0, clientX: 10, clientY: 10 });
-    fireEvent.pointerMove(slots[0], { clientX: 450, clientY: 50 });
-    fireEvent.pointerUp(slots[0]);
+    fireEvent.pointerDown(shells[0], { button: 0, clientX: 10, clientY: 10 });
+    fireEvent.pointerMove(shells[0], { clientX: 450, clientY: 50 });
+    fireEvent.pointerUp(shells[0]);
     expect((slots[0] as HTMLElement).style.transform).toContain(
       "translate(440px, 40px)",
     );
@@ -316,7 +325,13 @@ describe("preview-home-2 hero stage", () => {
     const { container } = render(
       <HeroStage dashboard={dashboard} stage={stage} />,
     );
-    const slots = [...container.querySelectorAll(".ph2-anim.absolute")];
+    // A slot is two elements: the shell carries the bob and owns the pointer
+    // handlers, the box inside it carries the drop position. Events go to the
+    // shell; the transform is asserted on the box.
+    const shells = [...container.querySelectorAll(".ph2-anim.absolute")];
+    const slots = shells.map((shell) =>
+      shell.querySelector<HTMLElement>(".ph2-pop-in > div")!,
+    );
     const scale = container.querySelector(".ph2-stage-scale");
     if (!scale) throw new Error("stage wrapper missing");
     scale.getBoundingClientRect = () =>
@@ -371,32 +386,33 @@ describe("preview-home-2 hero stage", () => {
     });
 
     // Drag hard right: it pins with its right edge at the bound.
-    fireEvent.pointerDown(slots[0], { button: 0, clientX: 150, clientY: 100 });
-    fireEvent.pointerMove(slots[0], { clientX: 3000, clientY: 120 });
+    fireEvent.pointerDown(shells[0], { button: 0, clientX: 150, clientY: 100 });
+    fireEvent.pointerMove(shells[0], { clientX: 3000, clientY: 120 });
     const pinned = (slots[0] as HTMLElement).style.transform;
     // Painted left = 1012 - 300 = 712, so the translate is 712 - 100.
     expect(pinned).toBe("translate(612px, 20px)");
-    fireEvent.pointerUp(slots[0]);
+    fireEvent.pointerUp(shells[0]);
     placedX = 612;
 
     // Now pick the same window up again and shove it further right. Its rect
     // already carries the 612px placement, so a clamp that mixed translate and
     // painted space would hand back a large negative offset and the window
     // would jump the width of the stage on the first move.
-    fireEvent.pointerDown(slots[0], { button: 0, clientX: 800, clientY: 120 });
-    fireEvent.pointerMove(slots[0], { clientX: 3400, clientY: 140 });
+    fireEvent.pointerDown(shells[0], { button: 0, clientX: 800, clientY: 120 });
+    fireEvent.pointerMove(shells[0], { clientX: 3400, clientY: 140 });
     expect((slots[0] as HTMLElement).style.transform).toBe(
       "translate(612px, 40px)",
     );
-    fireEvent.pointerUp(slots[0]);
+    fireEvent.pointerUp(shells[0]);
 
-    // And dragging back inboard works normally rather than sticking.
-    fireEvent.pointerDown(slots[0], { button: 0, clientX: 800, clientY: 140 });
-    fireEvent.pointerMove(slots[0], { clientX: 300, clientY: 160 });
-    expect((slots[0] as HTMLElement).style.transform).toContain(
-      "translate(-300px, 60px)",
+    // And dragging back inboard works normally rather than sticking: the window
+    // tracks the pointer by the same 500px, from painted 712 to painted 212.
+    fireEvent.pointerDown(shells[0], { button: 0, clientX: 800, clientY: 140 });
+    fireEvent.pointerMove(shells[0], { clientX: 300, clientY: 160 });
+    expect((slots[0] as HTMLElement).style.transform).toBe(
+      "translate(112px, 60px)",
     );
-    fireEvent.pointerUp(slots[0]);
+    fireEvent.pointerUp(shells[0]);
   });
 
   it("brings the most recently grabbed slot to the front", () => {
@@ -407,19 +423,20 @@ describe("preview-home-2 hero stage", () => {
     const { container } = render(
       <HeroStage dashboard={dashboard} stage={stage} />,
     );
-    const slots = [...container.querySelectorAll(".ph2-anim.absolute")];
+    // Stacking is the shell's concern, and so is the pointer handling.
+    const shells = [...container.querySelectorAll(".ph2-anim.absolute")];
     const z = () =>
-      slots.map((slot) => Number((slot as HTMLElement).style.zIndex));
+      shells.map((shell) => Number((shell as HTMLElement).style.zIndex));
 
     // Grab the middle slot: it jumps above the rest…
-    fireEvent.pointerDown(slots[1], { button: 0, clientX: 410, clientY: 10 });
-    fireEvent.pointerUp(slots[1]);
+    fireEvent.pointerDown(shells[1], { button: 0, clientX: 410, clientY: 10 });
+    fireEvent.pointerUp(shells[1]);
     expect(z()[1]).toBeGreaterThan(z()[0]);
     expect(z()[1]).toBeGreaterThan(z()[2]);
 
     // …then grabbing the first slot puts that one on top instead.
-    fireEvent.pointerDown(slots[0], { button: 0, clientX: 10, clientY: 10 });
-    fireEvent.pointerUp(slots[0]);
+    fireEvent.pointerDown(shells[0], { button: 0, clientX: 10, clientY: 10 });
+    fireEvent.pointerUp(shells[0]);
     expect(z()[0]).toBeGreaterThan(z()[1]);
     expect(z()[0]).toBeGreaterThan(z()[2]);
   });
@@ -432,9 +449,15 @@ describe("preview-home-2 hero stage", () => {
     const { container } = render(
       <HeroStage dashboard={dashboard} stage={stage} />,
     );
-    const slots = [...container.querySelectorAll(".ph2-anim.absolute")];
-    fireEvent.pointerDown(slots[0], { button: 0, clientX: 10, clientY: 10 });
-    fireEvent.pointerUp(slots[0]);
+    // A slot is two elements: the shell carries the bob and owns the pointer
+    // handlers, the box inside it carries the drop position. Events go to the
+    // shell; the transform is asserted on the box.
+    const shells = [...container.querySelectorAll(".ph2-anim.absolute")];
+    const slots = shells.map((shell) =>
+      shell.querySelector<HTMLElement>(".ph2-pop-in > div")!,
+    );
+    fireEvent.pointerDown(shells[0], { button: 0, clientX: 10, clientY: 10 });
+    fireEvent.pointerUp(shells[0]);
     slots.forEach((slot) => {
       expect((slot as HTMLElement).style.transform).toBe("");
     });
@@ -448,7 +471,13 @@ describe("preview-home-2 hero stage", () => {
     const { container } = render(
       <HeroStage dashboard={dashboard} stage={stage} />,
     );
-    const slots = [...container.querySelectorAll(".ph2-anim.absolute")];
+    // A slot is two elements: the shell carries the bob and owns the pointer
+    // handlers, the box inside it carries the drop position. Events go to the
+    // shell; the transform is asserted on the box.
+    const shells = [...container.querySelectorAll(".ph2-anim.absolute")];
+    const slots = shells.map((shell) =>
+      shell.querySelector<HTMLElement>(".ph2-pop-in > div")!,
+    );
     const scale = container.querySelector(".ph2-stage-scale");
     if (!scale) throw new Error("stage wrapper missing");
     scale.getBoundingClientRect = () =>
@@ -481,9 +510,9 @@ describe("preview-home-2 hero stage", () => {
     // Horizontal bounds are the viewport (jsdom: 1024 wide), not the mocked
     // 1200-wide stage: slot 0 spans x 0–300, so shoving far right pins it at
     // the largest fitting offset (1024 − 12 − 300 = 712), never outside.
-    fireEvent.pointerDown(slots[0], { button: 0, clientX: 10, clientY: 10 });
-    fireEvent.pointerMove(slots[0], { clientX: 2000, clientY: 10 });
-    fireEvent.pointerUp(slots[0]);
+    fireEvent.pointerDown(shells[0], { button: 0, clientX: 10, clientY: 10 });
+    fireEvent.pointerMove(shells[0], { clientX: 2000, clientY: 10 });
+    fireEvent.pointerUp(shells[0]);
     expect((slots[0] as HTMLElement).style.transform).toContain(
       "translate(712px, 0px)",
     );
@@ -504,21 +533,41 @@ describe("preview-home-2 hero stage", () => {
             ".ph2-stage-scale .ph2-anim.absolute .ph2-stage-card",
           ),
         ].map((el) => Number((el as HTMLElement).dataset.loop));
+      // The cadence is derived, so this survives a change to how many cards
+      // share the beat.
+      const step = loopTickMs(4);
       const tick = async () => {
         await act(async () => {
-          vi.advanceTimersByTime(1400);
+          vi.advanceTimersByTime(step);
         });
       };
 
       // Three desktop slots, in slot order: 0 is the conversation, which drives
       // itself and is skipped, so the tick lands on slot 1 first, then 2.
       expect(passes()).toEqual([0, 0, 0]);
-      await tick();
-      expect(passes()).toEqual([0, 1, 0]);
-      await tick();
-      expect(passes()).toEqual([0, 1, 1]);
-      await tick();
-      expect(passes()).toEqual([1, 1, 1]);
+
+      // The assertion is about the *shape* of the beat, not one particular
+      // tick: the rotation covers every card that is not running a script,
+      // including ones currently closed, so some ticks land where nobody can
+      // see them. What must hold is that no tick ever moves two windows at
+      // once, and that every visible card does come round again.
+      let previous = passes();
+      let maxMovedPerTick = 0;
+      for (let i = 0; i < 8; i += 1) {
+        await tick();
+        const now = passes();
+        const moved = now.filter(
+          (value, index) => value !== previous[index],
+        ).length;
+        maxMovedPerTick = Math.max(maxMovedPerTick, moved);
+        previous = now;
+      }
+      // One at a time — the whole point of a stagger.
+      expect(maxMovedPerTick).toBe(1);
+      // Both static windows have restarted at least twice in eight ticks, so
+      // nothing is stranded while the scripted one runs its own clock.
+      expect(previous[1]).toBeGreaterThanOrEqual(2);
+      expect(previous[2]).toBeGreaterThanOrEqual(2);
     } finally {
       vi.useRealTimers();
     }
@@ -551,7 +600,7 @@ describe("preview-home-2 hero stage", () => {
           ),
         ].map((el) => Number((el as HTMLElement).dataset.loop));
       await act(async () => {
-        vi.advanceTimersByTime(1400);
+        vi.advanceTimersByTime(loopTickMs(4));
       });
       expect(passes()).toEqual([0, 1, 0]);
 
@@ -563,7 +612,7 @@ describe("preview-home-2 hero stage", () => {
         pill.dispatchEvent(new FocusEvent("focusin", { bubbles: true }));
       });
       await act(async () => {
-        vi.advanceTimersByTime(14000);
+        vi.advanceTimersByTime(loopTickMs(4) * 10);
       });
       expect(passes()).toEqual([0, 1, 0]);
 
@@ -571,7 +620,7 @@ describe("preview-home-2 hero stage", () => {
         pill.dispatchEvent(new FocusEvent("focusout", { bubbles: true }));
       });
       await act(async () => {
-        vi.advanceTimersByTime(1400);
+        vi.advanceTimersByTime(loopTickMs(4));
       });
       expect(passes()).toEqual([0, 1, 1]);
     } finally {
@@ -595,7 +644,13 @@ describe("preview-home-2 hero stage", () => {
             ".ph2-stage-scale .ph2-anim.absolute .ph2-stage-card",
           ),
         ].map((el) => Number((el as HTMLElement).dataset.loop));
-      const slots = [...container.querySelectorAll(".ph2-anim.absolute")];
+      // A slot is two elements: the shell carries the bob and owns the pointer
+      // handlers, the box inside it carries the drop position. Events go to the
+      // shell; the transform is asserted on the box.
+      const shells = [...container.querySelectorAll(".ph2-anim.absolute")];
+      const slots = shells.map((shell) =>
+        shell.querySelector<HTMLElement>(".ph2-pop-in > div")!,
+      );
       const scale = container.querySelector(".ph2-stage-scale");
       if (!scale) throw new Error("stage wrapper missing");
       scale.getBoundingClientRect = () =>
@@ -628,16 +683,16 @@ describe("preview-home-2 hero stage", () => {
       const before = passes();
       // Pick a card up and keep moving: the loop must not rebuild the body of
       // the thing being moved, which is what juddered the tallest windows.
-      fireEvent.pointerDown(slots[1], { button: 0, clientX: 10, clientY: 10 });
-      fireEvent.pointerMove(slots[1], { clientX: 200, clientY: 120 });
+      fireEvent.pointerDown(shells[1], { button: 0, clientX: 10, clientY: 10 });
+      fireEvent.pointerMove(shells[1], { clientX: 200, clientY: 120 });
       await act(async () => {
-        vi.advanceTimersByTime(14000);
+        vi.advanceTimersByTime(loopTickMs(4) * 10);
       });
       expect(passes()).toEqual(before);
 
-      fireEvent.pointerUp(slots[1]);
+      fireEvent.pointerUp(shells[1]);
       await act(async () => {
-        vi.advanceTimersByTime(1400);
+        vi.advanceTimersByTime(loopTickMs(4));
       });
       expect(passes()).not.toEqual(before);
     } finally {

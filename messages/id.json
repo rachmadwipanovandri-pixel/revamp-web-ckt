@@ -14,10 +14,22 @@
     "storyP2": "Hari ini platform Cekat.AI memadukan AI customer service, CRM omnichannel, otomatisasi order, dan broadcast marketing, dipakai oleh 3.000+ bisnis di Indonesia, Singapura, dan Malaysia. Produknya tersedia sebagai web app dan aplikasi mobile di Google Play dan App Store.",
     "factsEyebrow": "Sekilas fakta",
     "facts": {
-      "founding": { "v": "Agustus 2023", "l": "berdiri sebagai PT Teknologi Cekat Indonesia" },
-      "businesses": { "v": "3.000+", "l": "bisnis di Asia memakai Cekat.AI" },
-      "countries": { "v": "3 negara", "l": "kantor di Indonesia, Singapura & Malaysia" },
-      "partner": { "v": "Meta", "l": "Business Partner resmi WhatsApp Business API" }
+      "founding": {
+        "v": "Agustus 2023",
+        "l": "berdiri sebagai PT Teknologi Cekat Indonesia"
+      },
+      "businesses": {
+        "v": "3.000+",
+        "l": "bisnis di Asia memakai Cekat.AI"
+      },
+      "countries": {
+        "v": "3 negara",
+        "l": "kantor di Indonesia, Singapura & Malaysia"
+      },
+      "partner": {
+        "v": "Meta",
+        "l": "Business Partner resmi WhatsApp Business API"
+      }
     },
     "certEyebrow": "Keamanan & kepatuhan",
     "certHeading": "Standar yang kami pegang",
@@ -1390,6 +1402,37 @@
       "submitting": "Mengirim…",
       "errorFallback": "Terjadi kesalahan. Coba lagi atau hubungi kami langsung.",
       "choose": "Pilih…"
+    }
+  },
+  "careers": {
+    "metaTitle": "Karier di Cekat.AI — buka lowongan Product, Growth, dan People",
+    "metaDescription": "Cariat yang mau bangun produk AI Revenue Operating System. Lihat posisi yang sedang dibuka di Cekat.AI dan lamar langsung lewat LinkedIn.",
+    "breadcrumb": "Karier",
+    "eyebrow": "Karier",
+    "heroTitle": "Bangun produk",
+    "heroAccent": "bersama kami",
+    "heroSub": "Kami mencari orang yang senang membaca percakapan pelanggan, berpikir jernih soal apa yang bisa diotomatisasi, dan mau testified ke hasilnya di lapangan.",
+    "heroChips": [
+      "Product",
+      "Growth",
+      "People",
+      "Jakarta · Tangerang"
+    ],
+    "openRoles": "Posisi yang sedang dibuka",
+    "openRolesNote": "Setiap posisi di bawah ini openness lewat halaman lowongan kami di LinkedIn — di situlah deskripsi lengkap, kualifikasi, dan formulir lamaran berada.",
+    "apply": "Lamar",
+    "emptyTitle": "Belum ada posisi yang terbuka saat ini",
+    "emptyBody": "Kami tetap terbuka pada orang yang marathon. Kirim email ke hello@cekat.ai dengan portofolio atau hal yang pernah kamu kerjakan, dan kami akan menghubungi kalau ada yang cocok.",
+    "teams": {
+      "product": "Product & Design",
+      "growth": "Growth & Consulting",
+      "people": "People"
+    },
+    "types": {
+      "fullTime": "Penuh waktu"
+    },
+    "seniority": {
+      "associate": "Asosiasi"
     }
   }
 }

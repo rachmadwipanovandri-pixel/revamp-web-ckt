@@ -27,7 +27,7 @@ function CheckIcon() {
  */
 export function FinalCta({ content }: { content: HomeContent["finalCta"] }) {
   return (
-    <Band tone="white" className="pt-0 pb-20 md:pb-28">
+    <Band tone="white" className="pt-0 pb-20 md:pb-28" defer>
       <Shell>
         <div className="ph2-grid-bg relative overflow-hidden rounded-[28px] bg-gradient-to-br from-[#1352BF] to-[#0B1220] px-6 py-14 text-center sm:px-10 md:py-16">
           <div className="relative mx-auto flex max-w-[46rem] flex-col items-center">

@@ -14,10 +14,22 @@
     "storyP2": "Today the Cekat.AI platform combines AI customer service, omnichannel CRM, order automation, and broadcast marketing, used by 3,000+ businesses across Indonesia, Singapore, and Malaysia. The product ships as a web app and a mobile app on Google Play and the App Store.",
     "factsEyebrow": "At a glance",
     "facts": {
-      "founding": { "v": "August 2023", "l": "founded as PT Teknologi Cekat Indonesia" },
-      "businesses": { "v": "3,000+", "l": "businesses across Asia run on Cekat.AI" },
-      "countries": { "v": "3 countries", "l": "offices in Indonesia, Singapore & Malaysia" },
-      "partner": { "v": "Meta", "l": "official WhatsApp Business API Business Partner" }
+      "founding": {
+        "v": "August 2023",
+        "l": "founded as PT Teknologi Cekat Indonesia"
+      },
+      "businesses": {
+        "v": "3,000+",
+        "l": "businesses across Asia run on Cekat.AI"
+      },
+      "countries": {
+        "v": "3 countries",
+        "l": "offices in Indonesia, Singapore & Malaysia"
+      },
+      "partner": {
+        "v": "Meta",
+        "l": "official WhatsApp Business API Business Partner"
+      }
     },
     "certEyebrow": "Security & compliance",
     "certHeading": "The standards we hold",
@@ -1390,6 +1402,37 @@
       "submitting": "Sending…",
       "errorFallback": "Something went wrong. Please try again or contact us directly.",
       "choose": "Choose…"
+    }
+  },
+  "careers": {
+    "metaTitle": "Careers at Cekat.AI — open roles in Product, Growth, and People",
+    "metaDescription": "Join the team building an AI Revenue Operating System. See the roles open at Cekat.AI and apply directly through LinkedIn.",
+    "breadcrumb": "Careers",
+    "eyebrow": "Careers",
+    "heroTitle": "Build the product",
+    "heroAccent": "with us.",
+    "heroSub": "We look for people who enjoy reading customer conversations, think clearly about what can be automated, and want to see their work in the field.",
+    "heroChips": [
+      "Product",
+      "Growth",
+      "People",
+      "Jakarta · Tangerang"
+    ],
+    "openRoles": "Open roles",
+    "openRolesNote": "Every role below is hosted on our LinkedIn job board — that is where the full description, the requirements, and the application form live.",
+    "apply": "Apply",
+    "emptyTitle": "No open positions right now",
+    "emptyBody": "We are always open to meeting people. Email hello@cekat.ai with a portfolio or something you have built, and we will get in touch when there is a fit.",
+    "teams": {
+      "product": "Product & Design",
+      "growth": "Growth & Consulting",
+      "people": "People"
+    },
+    "types": {
+      "fullTime": "Full-time"
+    },
+    "seniority": {
+      "associate": "Associate"
     }
   }
 }

@@ -6,6 +6,7 @@ import { getContent } from "@/components/preview-home-2/content";
 import { Faq } from "@/components/preview-home-2/Faq";
 import { FinalCta } from "@/components/preview-home-2/FinalCta";
 import { Footer } from "@/components/preview-home-2/Footer";
+import { Founders } from "@/components/preview-home-2/Founders";
 import { Hero } from "@/components/preview-home-2/Hero";
 import { HowItWorks } from "@/components/preview-home-2/HowItWorks";
 import { LoveWall } from "@/components/preview-home-2/LoveWall";
@@ -43,8 +44,8 @@ export async function generateMetadata({
  * duplicated HTML builder.
  *
  * Band order: nav → hero (dashboard + looping cards) → proof → signals →
- * pillars → how it works → product deck → case study → testimonial wall →
- * trust → FAQ → pricing → closer → footer.
+ * pillars → how it works → product deck → case study → founder stories →
+ * testimonial wall → trust → FAQ → pricing → closer → footer.
  *
  * The hero's looping cards, the signal marquee, the product deck, and the
  * testimonial wall are ported from /preview-home (hero stage, sections 4, 5,
@@ -84,6 +85,7 @@ export default async function PreviewHome2Page({
         <HowItWorks content={content.howItWorks} />
         <ProductDeck content={content.deck} />
         <CaseStudy content={content.caseStudy} />
+        <Founders content={content.founders} />
         <LoveWall content={content.love} />
         <TrustBand content={content.trust} />
         <Faq content={content.faq} />

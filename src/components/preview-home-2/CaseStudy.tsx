@@ -10,16 +10,23 @@ import type { HomeContent } from "./types";
  */
 export function CaseStudy({ content }: { content: HomeContent["caseStudy"] }) {
   return (
-    <Band tone="white" labelledBy="ph2-case-title">
+    <Band tone="white" labelledBy="ph2-case-title" defer>
       <Shell>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="relative order-2 lg:order-1">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] border border-border bg-[#F8FAFF]">
+              {/*
+                The source is a 1536×1024 JPEG at 2 MB, one of the largest
+                assets on the site. `sizes` has to describe the real box or the
+                browser picks from a srcset that tops out at `w=3840` and
+                upscales it. The Shell's padding is subtracted so the mobile
+                case matches the 4:3 frame it is actually painted into.
+              */}
               <Image
                 src="/images/home/case-study-naturecraft.jpg"
                 alt=""
                 fill
-                sizes="(max-width: 1024px) 100vw, 560px"
+                sizes="(max-width: 639px) calc(100vw - 2.5rem), (max-width: 1023px) calc(100vw - 4rem), 560px"
                 className="object-cover"
               />
             </div>

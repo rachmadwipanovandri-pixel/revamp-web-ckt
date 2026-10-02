@@ -66,7 +66,7 @@ export function ProductDeck({ content }: { content: HomeContent["deck"] }) {
     setOrder((previous) => [...previous.filter((i) => i !== index), index]);
 
   return (
-    <Band tone="white" labelledBy="ph2-deck-title">
+    <Band tone="white" labelledBy="ph2-deck-title" defer>
       <Shell>
         <SectionHead
           id="ph2-deck-title"
@@ -188,13 +188,21 @@ export function ProductDeck({ content }: { content: HomeContent["deck"] }) {
                      * height, which left the open card 126px short of
                      * /preview-home's and left dead space inside the 700px
                      * stack box.
+                     *
+                     * `sizes` is the whole story for these four images. They are
+                     * 980×980 sources, so without it Next offers `w=3840` — an
+                     * upscale, and four of them on a page that only ever shows
+                     * one card at a time. The card is full-bleed on a phone and
+                     * half a two-column grid from `lg`, and the Shell's own
+                     * `px-5 sm:px-8 lg:px-10` is subtracted rather than ignored,
+                     * so the browser picks a source that matches what it paints.
                      */}
                     <div className="ph2-deck-media aspect-square">
                       <Image
                         src={item.image.src}
                         alt={item.image.alt}
                         fill
-                        sizes="(max-width: 1024px) 100vw, 520px"
+                        sizes="(max-width: 1023px) calc(100vw - 2.5rem), (max-width: 1023px) calc(100vw - 4rem), 520px"
                         className="object-cover"
                       />
                     </div>

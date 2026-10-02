@@ -14,7 +14,7 @@ import type { HomeContent } from "./types";
  */
 export function Pricing({ content }: { content: HomeContent["pricing"] }) {
   return (
-    <Band tone="white" labelledBy="ph2-pricing-title">
+    <Band tone="white" labelledBy="ph2-pricing-title" defer>
       <Shell>
         <SectionHead
           id="ph2-pricing-title"

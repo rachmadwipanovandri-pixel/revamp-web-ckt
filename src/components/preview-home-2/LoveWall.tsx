@@ -27,11 +27,21 @@ function TestimonialCard({
       </blockquote>
       <figcaption className="mt-4 flex items-center gap-3">
         {card.avatar ? (
+          /*
+            The avatars are 780×780 source photos painted into a 40px circle, and
+            the wall renders every card twice to make the drift loop seamless.
+            `sizes` is therefore the whole job: without it Next offers `w=256`
+            for a 40px box at DPR 1 and `w=384` at DPR 2 — 4–10× the pixels the
+            browser needs, on an image that is a decorative face next to the
+            name it duplicates. Declared at its true rendered size, the same
+            sources resolve to 64w/128w.
+          */
           <Image
             src={card.avatar}
             alt=""
             width={80}
             height={80}
+            sizes="40px"
             className="h-10 w-10 shrink-0 rounded-full object-cover"
           />
         ) : (
@@ -63,6 +73,14 @@ function TestimonialCard({
  * Fixes the responsive hole in the original, which hid three of four columns on
  * a phone: below `md` the drift stops, the mask lifts, the duplicated half is
  * removed, and the wall unfolds into a plain list of every testimonial.
+ *
+ * Deliberately NOT `defer`red (see `Band`): the drift is
+ * `translateY(-50%)` of the column's own measured height, and each column is
+ * `[...column, ...column]` — so the loop is only seamless because the duplicate
+ * is exactly half of what is laid out. Under `content-visibility` the band's
+ * height is a `contain-intrinsic-size` guess until it first scrolls in, and the
+ * animation would resolve its percentage against that guess. The other bands on
+ * this page are static flow content and defer safely; this one is not.
  */
 export function LoveWall({ content }: { content: HomeContent["love"] }) {
   return (

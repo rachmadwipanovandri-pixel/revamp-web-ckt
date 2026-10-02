@@ -7,7 +7,7 @@ import type { HomeContent } from "./types";
  */
 export function Pillars({ content }: { content: HomeContent["pillars"] }) {
   return (
-    <Band tone="white" labelledBy="ph2-pillars-title">
+    <Band tone="white" labelledBy="ph2-pillars-title" defer>
       <Shell>
         <SectionHead
           id="ph2-pillars-title"

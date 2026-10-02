@@ -44,6 +44,7 @@ export function Band({
   className,
   children,
   labelledBy,
+  defer,
 }: {
   id?: string;
   tone?: Tone;
@@ -51,11 +52,25 @@ export function Band({
   className?: string;
   children: ReactNode;
   labelledBy?: string;
+  /**
+   * Opt in to `content-visibility: auto` (see `.ph2-defer` in
+   * preview-home-2.css), which skips layout and paint for a band until it nears
+   * the viewport.
+   *
+   * Opt-in rather than automatic because `content-visibility` implies
+   * `contain: layout`, and layout containment makes the band a containing block
+   * for `position: fixed` and `position: absolute` descendants — so a band
+   * holding a modal, or a sticky panel measured against itself, breaks in ways
+   * that look like nothing at all until you scroll. Default to `false` and turn
+   * it on only for a band whose contents are entirely static flow content.
+   */
+  defer?: boolean;
 }) {
   return (
     <section
       id={id}
       aria-labelledby={labelledBy}
+      data-defer={defer ? "true" : undefined}
       className={cn(
         "relative py-20 md:py-28",
         TONE[tone],

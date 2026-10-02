@@ -112,6 +112,20 @@ const BEAT = 180;
  */
 const LOOP = 8000;
 
+/**
+ * How often the shared beat fires.
+ *
+ * Derived rather than fixed, and exported for tests: the cadence is `LOOP`
+ * shared between however many cards are actually on the beat, so dropping a
+ * scripted card out of the rotation necessarily speeds the rest up. Dividing by
+ * the total slot count instead would desynchronise the cadence from the
+ * rotation — each card would then get a share of the loop proportional to
+ * cards it has nothing to do with.
+ */
+export function loopTickMs(beatCount: number): number {
+  return beatCount > 0 ? LOOP / beatCount : LOOP;
+}
+
 /** Where this card sits in its own loop: a negative offset, applied to every
  * delay inside it, so a card that just mounted is already partway through its
  * story — and no two windows are ever on the same beat. */
@@ -318,23 +332,17 @@ function ChatThread({ turns }: { turns: StageThread }) {
   const box = useRef<HTMLDivElement>(null);
   const total = turns.length;
 
-  // Reading time comes from the shared clock, and the opening beat has nothing
-  // to read yet, so `turnPause` gives it just long enough to be noticed.
-  const pauseFor = turnPause;
-  // The last turn is the payoff — the order confirmed, the payment received —
-  // so the finished conversation is held before it starts again.
-  const hold = HOLD;
-
   useEffect(() => {
     if (total === 0 || document.hidden) return;
     const last = turns[Math.min(shown, total) - 1];
     const next = turns[shown];
     // After the last turn there is nothing left to type towards, so it is a
-    // hold rather than a beat before the next message.
+    // hold rather than a beat before the next message. `turnPause` covers the
+    // opening beat too, where there is nothing to read yet.
     const delay =
       shown >= total
-        ? hold
-        : pauseFor(last) + (next?.from === "agent" ? TYPE_BEAT : 0);
+        ? HOLD
+        : turnPause(last) + (next?.from === "agent" ? TYPE_BEAT : 0);
     const id = window.setTimeout(
       () => setShown((current) => (current >= total ? 0 : current + 1)),
       delay,
@@ -1263,7 +1271,17 @@ export function HeroStage({
   const reduce = usePrefersReducedMotion();
   const finePointer = useFinePointer();
   const stageRef = useRef<HTMLDivElement>(null);
+  /**
+   * The window box inside each slot: what gets measured and what the drag
+   * writes to.
+   */
   const slotRefs = useRef<Array<HTMLDivElement | null>>([]);
+  /**
+   * The shell that carries the bob. Kept separate from `slotRefs` because the
+   * bob and the drag both want `transform`, and a CSS animation wins over an
+   * inline style — so they live on different elements and cannot fight.
+   */
+  const bobRefs = useRef<Array<HTMLDivElement | null>>([]);
   // Which products show a popup. Independent per slot: summoning one never
   // touches the others, and each appearance remounts on its own timing — the
   // popups never move in lockstep.
@@ -1413,6 +1431,7 @@ export function HeroStage({
     if (!el || !stageEl) return;
     const anchor = el.getBoundingClientRect();
     const stage = stageEl.getBoundingClientRect();
+    const shell = bobRefs.current[s];
     const home = placed[s];
     // 12px breathing room so the window's shadow never kisses the screen edge.
     const margin = 12;
@@ -1420,7 +1439,7 @@ export function HeroStage({
     // float animation, so its computed transform is its own stored placement —
     // adding that on top of `home` again would move it twice as far as the
     // pointer on every pick-up after the first.
-    const bob = home ? { x: 0, y: 0 } : bobOffset(el);
+    const bob = home || !shell ? { x: 0, y: 0 } : bobOffset(shell);
     const bx = (home?.x ?? 0) + bob.x;
     const by = (home?.y ?? 0) + bob.y;
     // `clientWidth` rather than `innerWidth`: innerWidth counts the scrollbar,
@@ -1449,11 +1468,16 @@ export function HeroStage({
       },
     };
     gesture.current = g;
-    // Freeze the card exactly where it is painted. The float class comes off
-    // here rather than waiting for React: a running animation overrides the
-    // inline transform, so leaving it on for the frame between the press and
-    // the commit is a wobble under the pointer.
-    el.classList.remove(...FLOAT_CLASSES);
+    /*
+     * Take the bob onto the window box before stopping it.
+     *
+     * The shell's animation is about to be removed, which would drop the window
+     * by up to 8px where the pointer is not. Writing the same offset onto the
+     * box first — in the same synchronous block, so both land in one frame —
+     * means the bob is cancelled rather than dropped, and the window leaves the
+     * hand on exactly the pixel it was on.
+     */
+    if (shell) shell.classList.remove(...FLOAT_CLASSES);
     el.style.transition = "none";
     el.style.transform = `translate(${g.bx}px, ${g.by}px)`;
     setHeld(s);
@@ -1580,7 +1604,7 @@ export function HeroStage({
       { rootMargin: "120px 0px" },
     );
     io.observe(el);
-    const step = LOOP / SLOTS.length;
+    const step = loopTickMs(beatSlots.length);
     const id = window.setInterval(() => {
       if (document.hidden || !onScreen) return;
       const slot = beatSlots[turn.current % beatSlots.length];
@@ -1724,17 +1748,11 @@ export function HeroStage({
                 if (!visible[s]) return null;
                 const card = cards[s];
                 const isHeld = held === s;
-                const g = gesture.current;
-                // React keeps owning `transform` even mid-drag — it just tracks
-                // the live position instead of the stored one. That matters:
-                // dropping the property from the style prop while a card is held
-                // makes React *delete* the inline value it wrote earlier, and
-                // the card snaps back to its anchor for a frame. Because the
-                // gesture is a mutable ref, this also stays correct across any
-                // re-render that lands mid-drag — the value React writes is the
-                // value already on screen.
-                const dragging = isHeld && g !== null && g.slot === s;
-                const home = dragging ? { x: g.x, y: g.y } : placed[s];
+                // The stored drop point. React owns this value, and the drag
+                // writes over it imperatively mid-gesture and hands it back on
+                // release — a ref is never read during render, so the position
+                // has exactly one source of truth.
+                const home = placed[s];
                 // Stacking: the most recently grabbed slot sits on top (base
                 // 20 keeps every slot above the dashboard at z-10; the held
                 // window goes higher still while dragged).
@@ -1743,7 +1761,7 @@ export function HeroStage({
                   <div
                     key={`${slot.key}-${summon[s]}`}
                     ref={(el) => {
-                      slotRefs.current[s] = el;
+                      bobRefs.current[s] = el;
                     }}
                     onPointerDown={
                       canDrag ? (event) => beginDrag(event, s) : undefined
@@ -1753,31 +1771,25 @@ export function HeroStage({
                     }
                     onPointerUp={canDrag ? () => endDrag(s) : undefined}
                     onPointerCancel={canDrag ? () => endDrag(s) : undefined}
-                    // A placed window carries its position inline. The bob is
-                    // dropped while placed — a CSS animation would override the
-                    // inline transform and drag the window back to its anchor —
-                    // and while it *is* bobbing, the period and phase below are
-                    // this slot's own, which is what stops six windows breathing
-                    // in unison.
+                    /*
+                     * The shell's only job is the bob, so its `transform` is
+                     * left entirely to CSS. The period and phase below are this
+                     * slot's own, which is what stops six windows breathing in
+                     * unison; the drop position lives on the box inside, where
+                     * an animation cannot overwrite it.
+                     */
                     style={{
-                      ...(home
-                        ? {
-                            transform: `translate(${home.x}px, ${home.y}px)`,
-                            transition: "none",
-                          }
-                        : {
-                            animationDuration: slot.period,
-                            animationDelay: slot.phase,
-                          }),
-                      // Promoted only while moving: a permanent `will-change`
-                      // on six windows would hold six compositor layers open
-                      // for a drag that happens once in a while.
+                      animationDuration: slot.period,
+                      animationDelay: slot.phase,
+                      // Promoted only while moving: a permanent `will-change` on
+                      // six windows would hold six compositor layers open for a
+                      // drag that happens once in a while.
                       ...(isHeld ? { willChange: "transform" } : null),
                       zIndex: stackZ,
                     }}
                     className={cn(
                       "ph2-anim absolute hidden w-[320px] xl:w-[340px] lg:block",
-                      !home && slot.float,
+                      !home && !isHeld && slot.float,
                       slot.className,
                       canDrag && "lg:cursor-grab lg:touch-pan-y",
                       // The "picked up" cue is a shadow, not a scale: it follows
@@ -1788,13 +1800,26 @@ export function HeroStage({
                     )}
                   >
                     <div className="ph2-pop-in" style={at(slot.enter)}>
-                      <PopupWindow
-                        card={card}
-                        loop={loop[s]}
-                        phase={(s * LOOP) / SLOTS.length}
-                        closeLabel={stage.popups.close}
-                        onClose={() => toggleProduct(s)}
-                      />
+                      <div
+                        ref={(el) => {
+                          slotRefs.current[s] = el;
+                        }}
+                        style={
+                          home
+                            ? {
+                                transform: `translate(${home.x}px, ${home.y}px)`,
+                              }
+                            : undefined
+                        }
+                      >
+                        <PopupWindow
+                          card={card}
+                          loop={loop[s]}
+                          phase={(s * LOOP) / SLOTS.length}
+                          closeLabel={stage.popups.close}
+                          onClose={() => toggleProduct(s)}
+                        />
+                      </div>
                     </div>
                   </div>
                 );

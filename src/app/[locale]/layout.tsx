@@ -1,51 +1,22 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
-import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import { hasLocale } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { alternates, htmlLang, SITE_URL } from "@/lib/seo";
 import { fontSans } from "@/lib/fonts";
 import { organizationJsonLd, webSiteJsonLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/json-ld";
-import { MetaPixel } from "@/components/analytics/meta-pixel";
-import { CekatAnalytics } from "@/components/analytics/cekat-analytics";
-import { Hyros } from "@/components/analytics/hyros";
-import { AdParamsUrl } from "@/components/analytics/ad-params-url";
-import { AnalyticsPreconnect } from "@/components/analytics/analytics-preconnect";
-import {
-  GoogleTagManager,
-  GoogleTagManagerNoScript,
-} from "@/components/analytics/google-tag-manager";
 import "../globals.css";
 
 /**
- * Namespaces that `"use client"` modules actually call via `useTranslations`.
- * Server Components still read the full catalog from `i18n/request.ts`; only
- * this provider (and therefore the RSC/HTML payload) is subset. Shipping every
- * key cost ~57 KiB of serialized messages on every route.
- *
- * Product pages (chat/crm/marketing/order) compose shared sections server-side,
- * so only comparison still needs its own namespace here (Faq + FinalCTA).
+ * Namespaces that `"use client"` modules call via `useTranslations` used to be
+ * subset here and handed to a `NextIntlClientProvider` wrapping every route.
+ * That provider now lives in `(site)/layout.tsx`, beside the chrome whose client
+ * components are the only ones that call `useTranslations` — the draft routes
+ * under [locale] build their strings locally and were paying for the lot.
  */
-const CLIENT_MESSAGE_KEYS = [
-  "nav",
-  "footer",
-  "pricing",
-  "home",
-  "agentic",
-  "contact",
-  "comparison",
-  "events",
-] as const;
-
-function pickClientMessages(messages: Record<string, unknown>) {
-  const picked: Record<string, unknown> = {};
-  for (const key of CLIENT_MESSAGE_KEYS) {
-    if (messages[key] !== undefined) picked[key] = messages[key];
-  }
-  return picked;
-}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -103,7 +74,6 @@ export default async function LocaleLayout({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
-  const clientMessages = pickClientMessages(await getMessages());
 
   // Site chrome (Navbar / main / Footer / FloatingWhatsApp) lives in
   // (site)/layout.tsx so route groups keep it off standalone drafts like
@@ -111,23 +81,8 @@ export default async function LocaleLayout({
   return (
     <html lang={htmlLang(locale)} className={fontSans.variable}>
       <body className="min-h-screen bg-background text-foreground">
-        {/*
-          Preconnect is hoisted to <head> by Next. UTM / click-id capture
-          already happened in proxy.ts (edge cookie). GTM / Meta / HYROS /
-          Cekat boot after first interaction, or via the hybrid fallback
-          (≤9s timeout / pagehide) so non-interacting visitors still count.
-        */}
-        <AnalyticsPreconnect />
-        <AdParamsUrl />
-        <GoogleTagManagerNoScript />
-        <GoogleTagManager />
-        <MetaPixel />
-        <CekatAnalytics />
-        <Hyros />
         <JsonLd data={[organizationJsonLd(), webSiteJsonLd()]} />
-        <NextIntlClientProvider messages={clientMessages}>
-          {children}
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );

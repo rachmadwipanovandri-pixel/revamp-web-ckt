@@ -200,6 +200,38 @@ html.lenis .ph2-root {
   animation-play-state: paused !important;
 }
 
+/* ---------- skip layout for bands the visitor cannot see -------------------
+ * This page is fourteen bands of DOM — ~1,500 elements — and the browser lays
+ * out and paints every one of them at first paint, including the eleven that are
+ * three screens down. `content-visibility: auto` defers that work until a band is
+ * near the viewport, which is where the "Reduce main-thread work" cost on a
+ * mid-range phone actually goes.
+ *
+ * Applied per band via `data-defer` on `Band` (ui.tsx) rather than by a blanket
+ * `main > section` rule, because `content-visibility` implies `contain: layout`
+ * and layout containment makes the band a containing block for `position: fixed`
+ * and `position: absolute` descendants. The hero, the step rail and the FAQ hold
+ * sticky panels, and the founder rail holds a `position: fixed` dialog — all of
+ * which would silently misbehave. Opting in per band makes that a decision
+ * someone has to make rather than a rule that catches future bands by accident.
+ *
+ * `contain-intrinsic-size` is what makes this safe rather than a trade. With no
+ * intrinsic size the browser reserves *zero* height for an off-screen band, so
+ * the scrollbar is wrong and every band below jumps as the estimates are
+ * resolved one after another — main-thread time bought with CLS, which is
+ * weighted just as heavily. `auto 620px` assumes roughly a viewport per band
+ * until the real size is known, and the leading `auto` keeps the last measured
+ * size, so re-scrolling past a band does not re-pay its layout cost.
+ *
+ * The ~300px of scrollbar drift this can still cause is bounded by the estimate
+ * being close, and it only applies to bands below the fold on a phone — where
+ * there is no scrollbar to be wrong about in the first place.
+ */
+.ph2-root [data-defer="true"] {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 620px;
+}
+
 /* ---------- sticky nav: scroll-linked morph -------------------------------
  * Nav.tsx writes `--p` (0 → 1) on every animation frame, so the bar follows
  * the scroll position instead of snapping across a 24px threshold — scrolling
@@ -976,6 +1008,181 @@ html.lenis .ph2-root {
   }
 
   .ph2-root .ph2-mega-panel {
+    transform: none !important;
+  }
+}
+
+/* ---------- founder rail (fun.xyz "trusted by founders") ---------- */
+/*
+ * Desktop is not a scroll rail, it is a cascading row: one slide is active and
+ * takes the space, the rest collapse to slivers. Everything below is the part
+ * Tailwind utilities cannot express, and each rule earns its place.
+ *
+ * The cascade is `flex-grow`, never `width`, because the slivers have to absorb
+ * the space the active slide vacates. `width` would leave the row the same total
+ * width and shove the far cards sideways, which is the opposite of the effect.
+ */
+.ph2-rail-track {
+  /* fun.xyz's easing, verbatim: a standard curve that leaves fast and settles
+     slow. `ease-out` is close but starts slower, and on a 300ms property that
+     difference is visible — the card appears to hesitate, then snap. */
+  --ph2-cascade: cubic-bezier(0.4, 0, 0.2, 1);
+  --ph2-cascade-ms: 300ms;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-padding-inline: 1.25rem;
+}
+
+.ph2-rail-track::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+ * Only from `lg` up: below it the row is a fixed-width scroll-snap carousel and
+ * there is nothing to grow. The breakpoint deliberately matches fun.xyz's 992px,
+ * so the two layouts hand over at the same width.
+ */
+@media (min-width: 992px) {
+  .ph2-rail-track > .ph2-rail-card {
+    /*
+     * `min-width: 0` is the rule that makes this work at all, and it is not
+     * optional. A flex item's default `min-width` is `auto`, which floors it at
+     * its min-content size — here the width of the name and role text. Without
+     * this the slivers refuse to collapse, the row stays the width of its
+     * content, and the growth animation appears to stutter because it is
+     * fighting a floor it can never pass. With it, the card is free to go to
+     * whatever `flex-grow` hands it.
+     */
+    min-width: 0;
+    flex-shrink: 1;
+
+    /*
+     * The whole transition lives here rather than in the markup, so the grow,
+     * the content fade and the sliver's exit are timed against one clock.
+     * Splitting them across `transition-[flex-grow]` in Tailwind and `transition`
+     * in CSS is how they drift out of sync and the row stops reading as one
+     * gesture.
+     */
+    transition: flex-grow var(--ph2-cascade-ms) var(--ph2-cascade);
+  }
+
+  /*
+   * A sliver holds 169 shares of the free space and the active card holds 800 —
+   * fun.xyz's ratio. It leaves the active slide roughly two thirds of the row,
+   * which is enough for a name and role on one line without the row reading as
+   * a full-bleed hero that then collapses.
+   */
+  .ph2-rail-track > .ph2-rail-card:not([data-active="true"]) {
+    flex-grow: 169;
+    cursor: pointer;
+  }
+
+  /*
+   * Hover previews the open, so a sliver shows it is a control before the click
+   * commits. `focus-within` is the keyboard equivalent — a sliver is reachable by
+   * Tab and must preview itself identically, or the rail tells a keyboard user
+   * it is interactive while telling a mouse user it is not.
+   */
+  .ph2-rail-track > .ph2-rail-card:not([data-active="true"]):hover,
+  .ph2-rail-track > .ph2-rail-card:not([data-active="true"]):focus-within {
+    flex-grow: 220;
+  }
+
+  .ph2-rail-track > .ph2-rail-card[data-active="true"] {
+    flex-grow: 800;
+    cursor: default;
+  }
+
+  /*
+   * The poster is `object-fit: cover` inside a box that is itself resizing, so
+   * the crop would appear to stretch. A 5% scale on a collapsed slide, released
+   * to 1 as it opens, keeps the image's own proportions steady while its frame
+   * changes — the same trick a parallax poster uses, and the reason the
+   * expansion reads as a camera push rather than a squash.
+   *
+   * `brightness` does the second half of that job: a sliver steps back a little
+   * without being dimmed into a grey slab. A filter rather than another overlay
+   * because the face has to stay legible at 60px wide.
+   *
+   * Both are timed to the same 300ms as the grow. Left on a longer duration they
+   * finish after the card has, and the tail of the animation is a card that has
+   * stopped moving while its picture is still sliding — the exact
+   * "not-quite-smooth" feeling this block exists to avoid.
+   */
+  .ph2-rail-track > .ph2-rail-card img {
+    transform: scale(1);
+    filter: brightness(1);
+    transition:
+      transform var(--ph2-cascade-ms) var(--ph2-cascade),
+      filter var(--ph2-cascade-ms) var(--ph2-cascade);
+    will-change: transform, filter;
+  }
+
+  .ph2-rail-track > .ph2-rail-card:not([data-active="true"]) img {
+    transform: scale(1.05);
+    filter: brightness(0.72);
+  }
+
+  /*
+   * The story label waits for the card to finish growing, then arrives. The
+   * delay is one-sided on purpose: an opening card's text appears *after* its
+   * space has settled, but a closing card's text leaves *immediately*. A delay
+   * applied in both directions leaves the old label sitting in a sliver it no
+   * longer belongs in, on top of the incoming one.
+   */
+  .ph2-rail-track > .ph2-rail-card[data-active="true"] [data-founder-story] {
+    opacity: 1;
+    transition: opacity var(--ph2-cascade-ms) var(--ph2-cascade) 400ms;
+  }
+
+  .ph2-rail-track > .ph2-rail-card:not([data-active="true"]) [data-founder-story] {
+    opacity: 0;
+    transition: opacity var(--ph2-cascade-ms) var(--ph2-cascade) 0ms;
+  }
+
+  /*
+   * A sliver carries no text of its own, so its whole job is to show the face
+   * and recede. That means the scrim has to get out of the way far more than it
+   * does on an open card — a light scrim plus a small brightness drop reads as
+   * "same story, stepped back", where a heavy scrim reads as a disabled panel.
+   */
+  .ph2-rail-track > .ph2-rail-card .ph2-rail-scrim {
+    opacity: 0.35;
+    transition: opacity var(--ph2-cascade-ms) var(--ph2-cascade);
+  }
+
+  .ph2-rail-track > .ph2-rail-card[data-active="true"] .ph2-rail-scrim {
+    opacity: 1;
+  }
+
+  /*
+   * Hover on the *active* card must not disturb its content: fun.xyz kills the
+   * pointer on the play button only, so a drift across the open card does
+   * nothing. Kept as an explicit rule because `flex-grow` on hover is the one
+   * thing in this block that can fire on the slide the visitor is reading.
+   */
+  .ph2-rail-track > .ph2-rail-card[data-active="true"]:hover {
+    flex-grow: 800;
+  }
+}
+
+/*
+ * The cascade is a layout change, not a flourish. Under reduced motion it still
+ * happens — it is how the rail works, not decoration — but nothing eases, no
+ * picture slides or rescales, and the sliver stays dimmed rather than popping.
+ * `transform` and `filter` are reset because they are motion, not state: the
+ * brightness difference between a sliver and an open card has to survive.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .ph2-rail-track > .ph2-rail-card,
+  .ph2-rail-track > .ph2-rail-card img,
+  .ph2-rail-track > .ph2-rail-card [data-founder-story],
+  .ph2-rail-track > .ph2-rail-card .ph2-rail-scrim {
+    transition: none !important;
+  }
+
+  .ph2-rail-track > .ph2-rail-card img {
     transform: none !important;
   }
 }
