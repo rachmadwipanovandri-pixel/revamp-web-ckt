@@ -50,7 +50,11 @@
     linear-gradient(90deg, rgba(19, 82, 191, 0.07) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(900px 460px at 50% 0%, #000 20%, transparent 78%);
-  -webkit-mask-image: radial-gradient(900px 460px at 50% 0%, #000 20%, transparent 78%);
+  -webkit-mask-image: radial-gradient(
+    900px 460px at 50% 0%,
+    #000 20%,
+    transparent 78%
+  );
 }
 
 /* ---------- hero aurora: a slowly drifting colour field --------------------
@@ -242,7 +246,29 @@ html.lenis .ph2-root {
   will-change: transform;
 }
 
-/* ---------- floating context cards (hero stage) ---------- */
+/* ---------- hero copy: scroll-linked exit -----------------------------------
+ * HeroFade writes `--fade` (0 → 1) from how far the copy block has travelled
+ * up past the viewport top, so the headline, form and links dissolve upward
+ * as the visitor scrolls toward the stage — the attio-style handoff where the
+ * copy cedes the viewport to the interactive canvas.
+ *
+ * Composited only (opacity + transform), and the base state is fully opaque:
+ * with JS off, blocked, or under reduced motion the copy is plain content.
+ * `inert` (toggled from JS past halfway) handles tab order, not paint.
+ */
+.ph2-fade {
+  --fade: 0;
+  opacity: calc(1 - var(--fade));
+  transform: translateY(calc(var(--fade) * -36px))
+    scale(calc(1 - var(--fade) * 0.04));
+}
+
+/* ---------- floating context cards (hero stage) ----------
+ * The bob lives on the slot wrapper and the play-in on the window inside it, so
+ * the two never fight over `transform`. Each slot overrides the period and the
+ * phase inline (see SLOTS in HeroStage.tsx), which is what keeps six windows
+ * from breathing together.
+ */
 .ph2-float {
   animation: ph2-float 7s ease-in-out infinite;
 }
@@ -250,6 +276,17 @@ html.lenis .ph2-root {
 .ph2-float-slow {
   animation: ph2-float 10s ease-in-out infinite;
   animation-delay: -2.5s;
+}
+
+.ph2-pop-in {
+  animation: ph2-pop-in 480ms var(--ph2-ease) both;
+}
+
+@keyframes ph2-pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.94);
+  }
 }
 
 @keyframes ph2-float {
@@ -264,8 +301,20 @@ html.lenis .ph2-root {
 
 /* ---------- logo wall ---------- */
 .ph2-ticker-mask {
-  mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 7%,
+    #000 93%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 7%,
+    #000 93%,
+    transparent
+  );
 }
 
 .ph2-ticker {
@@ -575,20 +624,36 @@ html.lenis .ph2-root {
   color: #64748b;
 }
 
-.ph2-deck-pills {
+/* Feature checklist: one check per line, in the card's own accent (the stroke
+   travels inline from ProductDeck). Vertical, not wrapped, so it reads as a
+   contents list. Replaces the old wrapped pills — whose `> span` selector
+   never matched the real `li > span` DOM and left the points unstyled. */
+.ph2-deck-checks {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  flex-direction: column;
+  gap: 10px;
   margin-top: 18px;
+  list-style: none;
+  padding: 0;
 }
 
-.ph2-deck-pills > span {
-  padding: 6px 13px;
+.ph2-deck-checks > li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #101828;
+}
+
+.ph2-deck-check {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 20px;
+  height: 20px;
   border-radius: 999px;
   background: #eff6ff;
-  font-size: 12.5px;
-  font-weight: 600;
-  color: #1352bf;
 }
 
 .ph2-deck-media {
@@ -725,8 +790,20 @@ html.lenis .ph2-root {
 
 /* ---------- customer-signal marquee (three rows, alternating direction) ------ */
 .ph2-mq-mask {
-  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
 }
 
 .ph2-mq-row {
@@ -764,8 +841,20 @@ html.lenis .ph2-root {
 
 /* ---------- testimonial wall (four columns, alternating vertical drift) ------ */
 .ph2-love-mask {
-  mask-image: linear-gradient(180deg, transparent, #000 8%, #000 92%, transparent);
-  -webkit-mask-image: linear-gradient(180deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(
+    180deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
 }
 
 .ph2-love-up {
@@ -863,7 +952,8 @@ html.lenis .ph2-root {
   }
 
   .ph2-root .ph2-float,
-  .ph2-root .ph2-float-slow {
+  .ph2-root .ph2-float-slow,
+  .ph2-root .ph2-pop-in {
     animation: none !important;
   }
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AnimGate } from "./AnimGate";
 import { HeroAurora } from "./HeroAurora";
+import { HeroFade } from "./HeroFade";
 import { HeroForm } from "./HeroForm";
 import { HeroStage } from "./HeroStage";
 import { Accent, Band, Shell } from "./ui";
@@ -32,7 +33,9 @@ export function Hero({ content }: { content: HomeContent }) {
       </AnimGate>
 
       <Shell className="relative">
-        <div className="mx-auto flex max-w-[54rem] flex-col items-center text-center">
+        {/* Fades out on scroll (see HeroFade), handing the viewport to the
+            draggable stage below. */}
+        <HeroFade className="mx-auto flex max-w-[54rem] flex-col items-center text-center">
           <Link
             href={hero.pill.href}
             className="group inline-flex items-center gap-2.5 rounded-full border border-[#BFDBFE] bg-[#EFF6FF] px-4 py-1.5 text-[0.8rem] font-semibold text-[#101828] transition-colors duration-200 hover:border-primary/40"
@@ -75,10 +78,16 @@ export function Hero({ content }: { content: HomeContent }) {
               →
             </span>
           </Link>
-        </div>
+        </HeroFade>
       </Shell>
 
-      <Shell className="relative mt-12 md:mt-16">
+      {/*
+        Breaks out wider than the 1200px frame on purpose: the drag canvas
+        needs edge-to-edge room (cards park flush against the viewport), and a
+        960px+ dashboard cannot breathe inside 1120px of content. Every other
+        band stays on the frame; only this canvas goes full-bleed.
+      */}
+      <Shell className="relative mt-12 max-w-[1400px] md:mt-16">
         <HeroStage dashboard={content.dashboard} stage={content.liveStage} />
       </Shell>
     </Band>

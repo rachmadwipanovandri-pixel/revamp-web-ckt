@@ -191,9 +191,23 @@ export type LiveStage = {
   eyebrow: string;
   heading: string;
   body: string;
-  /** Accessible description of the auto-looping stage. */
+  /** Accessible description of the popup canvas. */
   caption: string;
   cards: StageCard[];
+  /**
+   * Copy for the popup layer: the strip of toggles in the dashboard chrome,
+   * each toggle's two states, and the close control inside a popup.
+   */
+  popups: {
+    /** Heading for the dashboard's strip of popup toggles. */
+    strip: string;
+    /** Aria prefix for a toggle that is about to summon its popup. */
+    show: string;
+    /** Aria prefix for a toggle that is about to put its popup away. */
+    hide: string;
+    /** Aria label for a popup's own close control. */
+    close: string;
+  };
 };
 
 export type SignalChip = { text: string; accent: string };

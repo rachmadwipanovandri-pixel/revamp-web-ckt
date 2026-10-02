@@ -142,10 +142,29 @@ export function ProductDeck({ content }: { content: HomeContent["deck"] }) {
                     <div>
                       <h4 className="ph2-deck-title">{item.headline}</h4>
                       <p className="ph2-deck-text">{item.body}</p>
-                      <ul className="ph2-deck-pills">
+                      {/*
+                        Feature checklist, not wrapped pills: each point gets a
+                        check in the card's own accent, so the list reads as
+                        "what's inside" rather than decoration.
+                      */}
+                      <ul className="ph2-deck-checks">
                         {item.points.map((point) => (
                           <li key={point}>
-                            <span>{point}</span>
+                            <span aria-hidden className="ph2-deck-check">
+                              <svg
+                                width="10"
+                                height="10"
+                                viewBox="0 0 12 12"
+                                fill="none"
+                                stroke={item.accent}
+                                strokeWidth="2.2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              >
+                                <path d="M10 3 4.5 9 2 6.5" />
+                              </svg>
+                            </span>
+                            {point}
                           </li>
                         ))}
                       </ul>

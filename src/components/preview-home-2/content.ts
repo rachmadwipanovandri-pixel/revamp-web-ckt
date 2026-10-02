@@ -91,7 +91,7 @@ const ID: HomeContent = {
       label: "Baru · Bisa telepon otomatis via WhatsApp",
       href: "/fitur/whatsapp-call-ai",
     },
-    titleLead: "Dari chat pertama jadi",
+    titleLead: "Dari klien baru jadi",
     titleAccent: "pelanggan seumur hidup",
     sub: "Cekat.AI membalas otomatis chat WhatsApp, Instagram, dan TikTok, mengingatkan pelanggan yang belum bayar, dan mencatat semuanya rapi — supaya tiap chat bergerak ke penjualan, ketahuan iklan mana yang closing, dan pelanggan balik lagi.",
     form: {
@@ -200,13 +200,13 @@ const ID: HomeContent = {
   howItWorks: {
     eyebrow: "Cara kerja",
     heading: "Dari chat masuk sampai repeat order",
-    body: "Lima langkah yang saling nyambung. Anda tidak perlu mengubah cara kerja tim — cukup sambungkan satu per satu.",
+    body: "Lima langkah yang saling terhubung. Anda tidak perlu mengubah cara kerja tim, cukup sambungkan satu per satu.",
     stageLabel: "Tahapan",
     steps: [
       {
         index: "01",
         title: "Sambungkan chat Anda",
-        body: "Hubungkan nomor WhatsApp bisnis, Instagram, TikTok, dan chat website. Semua chat langsung masuk ke satu tempat.",
+        body: "Hubungkan nomor WhatsApp bisnis, Instagram, TikTok, dan chat website. Semua chat masuk ke satu tempat.",
         hint: "± 10 menit",
         accent: "#1352BF",
         visual: "channels",
@@ -349,7 +349,13 @@ const ID: HomeContent = {
     heading: "Semua bekerja dalam satu chat",
     body: "Enam tampilan bergantian menunjukkan alur yang sama: chat masuk, data tercatat, order jalan, lalu promo menyusul.",
     caption:
-      "Enam kartu produk Cekat.AI yang bergantian tampil otomatis di atas dashboard — tanpa kontrol manual.",
+      "Enam tampilan produk Cekat.AI sebagai jendela di sekitar dashboard. Pilih satu lewat tombol di dalam jendela app, tutup lagi kapan saja.",
+    popups: {
+      strip: "Popup",
+      show: "Buka popup",
+      hide: "Sembunyikan popup",
+      close: "Tutup popup",
+    },
     cards: [
       {
         kind: "chat",
@@ -444,8 +450,8 @@ const ID: HomeContent = {
 
   signals: {
     eyebrow: "Tanda penting",
-    heading: "Tidak ada momen jualan yang kelewat",
-    body: "Setiap tanda dari chat, iklan, dan order tertangkap otomatis — tim tahu persis kapan harus bertindak, tanpa mengawasi semua chat sendiri.",
+    heading: "Tidak ada momen jualan yang terlewat",
+    body: "Setiap tanda dari chat, iklan, dan order tertangkap otomatis, tim tahu persis kapan harus bertindak, tanpa mengawasi semua chat sendiri.",
     cta: { label: "Lihat contohnya di chat", href: "/chat" },
     rows: [
       [
@@ -479,7 +485,7 @@ const ID: HomeContent = {
   },
 
   deck: {
-    eyebrow: "Isinya apa",
+    eyebrow: "Yang Kita Lakukan",
     heading: "Satu tempat untuk semua urusan bisnis",
     body: "Dari balas chat sampai terima order dan kirim promo — semuanya nyambung, tidak perlu pindah-pindah aplikasi.",
     hint: "Klik untuk lihat contoh layarnya",
@@ -969,7 +975,7 @@ const EN: HomeContent = {
       label: "New · Auto-calls via WhatsApp",
       href: "/en/features/whatsapp-call-ai-summary",
     },
-    titleLead: "Turn first chats into",
+    titleLead: "Turn new clients into",
     titleAccent: "lifelong customers",
     sub: "Cekat.AI auto-replies to WhatsApp, Instagram, and TikTok chats, reminds customers who have not paid, and keeps everything tidy — so every chat moves toward a sale, you see which ad closed, and customers come back.",
     form: {
@@ -1036,7 +1042,7 @@ const EN: HomeContent = {
 
   pillars: {
     eyebrow: "Why Cekat.AI",
-    heading: "Yours, connected, easy to connect",
+    heading: "Yours, easy to connect",
     body: "Three things that keep work simple even as chats grow and teams get bigger.",
     items: [
       {
@@ -1227,7 +1233,13 @@ const EN: HomeContent = {
     heading: "It all works inside one chat",
     body: "Six views take turns showing the same flow: a chat arrives, data is captured, the order moves, and the promo follows.",
     caption:
-      "Six Cekat.AI product cards taking turns automatically above the dashboard — no manual controls.",
+      "Six Cekat.AI product windows around the dashboard. Pick one from the switches inside the app window, close it whenever.",
+    popups: {
+      strip: "Popups",
+      show: "Open popup",
+      hide: "Hide popup",
+      close: "Close popup",
+    },
     cards: [
       {
         kind: "chat",
