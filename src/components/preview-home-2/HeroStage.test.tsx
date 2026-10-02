@@ -231,6 +231,35 @@ describe("preview-home-2 hero stage", () => {
     }
   });
 
+  it("brings a summoned window on screen promptly", () => {
+    mockReducedMotion(false);
+    const { container } = render(
+      <HeroStage dashboard={dashboard} stage={stage} />,
+    );
+    const pill = [...container.querySelectorAll("button[aria-pressed]")][4];
+    fireEvent.click(pill as HTMLElement);
+
+    // The entrance delay is expressed in beats, so a slot value left in
+    // milliseconds would turn into minutes of `opacity: 0` and read as a dead
+    // button. Anything past a second means that happened again.
+    const entrance = [
+      ...container.querySelectorAll(
+        ".ph2-stage-scale .ph2-anim.absolute .ph2-pop-in",
+      ),
+    ].map((el) => {
+      const raw = (el as HTMLElement).style.animationDelay;
+      const value = raw.includes("calc(")
+        ? raw.slice(raw.indexOf("+") + 1, raw.indexOf("ms)")).trim()
+        : raw.replace("ms", "");
+      return Number(value);
+    });
+    expect(entrance.length).toBeGreaterThan(0);
+    entrance.forEach((ms) => {
+      expect(ms).toBeGreaterThanOrEqual(0);
+      expect(ms).toBeLessThan(1000);
+    });
+  });
+
   it("clamps a drop inside the stage", () => {
     const anchor = { left: 100, top: 200, width: 300, height: 400 };
     const stage = { left: 0, top: 0, width: 1200, height: 800 };

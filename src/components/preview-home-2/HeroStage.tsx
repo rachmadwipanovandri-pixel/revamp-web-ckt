@@ -32,6 +32,7 @@ const SLOTS = [
     className: "lg:top-32 lg:left-0",
     period: "7.4s",
     phase: "-1.1s",
+    /** Beats, not milliseconds — see `at()`. */
     enter: 0,
   },
   {
@@ -40,7 +41,7 @@ const SLOTS = [
     className: "lg:top-32 lg:right-0",
     period: "9.6s",
     phase: "-4.3s",
-    enter: 240,
+    enter: 2,
   },
   {
     key: "crm",
@@ -48,7 +49,7 @@ const SLOTS = [
     className: "lg:right-0 lg:bottom-4 lg:left-0 lg:mx-auto",
     period: "6.8s",
     phase: "-2.7s",
-    enter: 500,
+    enter: 4,
   },
   {
     key: "mini",
@@ -56,7 +57,7 @@ const SLOTS = [
     className: "lg:bottom-4 lg:left-0",
     period: "8.8s",
     phase: "-6.1s",
-    enter: 120,
+    enter: 1,
   },
   {
     key: "consulting",
@@ -64,7 +65,7 @@ const SLOTS = [
     className: "lg:right-0 lg:bottom-4",
     period: "11.2s",
     phase: "-3.5s",
-    enter: 380,
+    enter: 3,
   },
   {
     key: "marketing",
@@ -72,7 +73,7 @@ const SLOTS = [
     className: "lg:right-0 lg:bottom-4 lg:left-0 lg:mx-auto",
     period: "7.9s",
     phase: "-5.2s",
-    enter: 660,
+    enter: 5,
   },
 ] as const;
 
