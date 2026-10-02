@@ -3,13 +3,20 @@
 import {
   useCallback,
   useEffect,
+  useMemo,
   useRef,
   useState,
   type CSSProperties,
 } from "react";
 import { cn } from "@/lib/utils";
 import { AnimGate } from "./AnimGate";
-import type { HeroDashboard, LiveStage, StageCard } from "./types";
+import type {
+  HeroDashboard,
+  LiveStage,
+  StageCard,
+  StageThread,
+  StageThreadTurn,
+} from "./types";
 
 /**
  * One floating slot per product, each with a fixed canvas anchor around the
@@ -112,6 +119,14 @@ const phase = (ms: number): CSSProperties => ({
   animationDelay: `calc(var(--ph2-phase, 0ms) + ${ms}ms)`,
 });
 
+/**
+ * The bob classes, named so `beginDrag` can strip one off an element before
+ * React has a chance to. They are the only classes that put an animation on the
+ * slot's `transform`, and an animation wins over an inline style — so leaving
+ * one attached for a frame would override the position being written.
+ */
+const FLOAT_CLASSES = ["ph2-float", "ph2-float-slow"];
+
 /** Staggered entry: base CSS is the settled state, so `animation: none` is safe. */
 const at = (beat: number): CSSProperties => phase(beat * BEAT);
 
@@ -146,40 +161,63 @@ function useFinePointer() {
 }
 
 /**
- * Clamp a drop offset so the held card stays inside the stage. Pure so the
- * bounds math is unit-testable without DOM.
+ * Clamp where a dragged window may be *painted*.
+ *
+ * Everything here is in screen space, on purpose, and the caller converts back
+ * to a translate. The distinction is the whole fix: `transform` is relative to a
+ * window's layout box, while `getBoundingClientRect` reports where it is painted
+ * right now — which, for a window that has already been placed, already includes
+ * the placement that is about to be replaced. Feeding a painted rect into a
+ * translate-space clamp makes a second pick-up compute a wildly negative
+ * allowance, and the window leaps across the stage on the first move.
+ *
+ * `size` is the window's painted box, so a window wider than the gap simply
+ * pins to `left` rather than flipping inside out.
+ *
+ * Pure, so the bounds are unit-testable without a DOM.
  */
 export function clampOffset(
-  dx: number,
-  dy: number,
-  anchor: { left: number; top: number; width: number; height: number },
-  stage: { left: number; top: number; width: number; height: number },
+  wanted: { x: number; y: number },
+  size: { width: number; height: number },
+  bounds: { left: number; top: number; right: number; bottom: number },
 ): { x: number; y: number } {
-  const clamp = (v: number, min: number, max: number) =>
-    Math.min(max, Math.max(min, v));
+  const clamp = (value: number, min: number, max: number) =>
+    Math.min(Math.max(value, min), max);
   return {
     x: clamp(
-      dx,
-      stage.left - anchor.left,
-      stage.left + stage.width - anchor.left - anchor.width,
+      wanted.x,
+      bounds.left,
+      Math.max(bounds.left, bounds.right - size.width),
     ),
     y: clamp(
-      dy,
-      stage.top - anchor.top,
-      stage.top + stage.height - anchor.top - anchor.height,
+      wanted.y,
+      bounds.top,
+      Math.max(bounds.top, bounds.bottom - size.height),
     ),
   };
 }
 
-/** An in-progress drag: which slot is held and its pointer offset from that
- * slot's anchor. On drop the offset persists as the slot's new home — the
- * card stays where it was put, like a placed object, instead of snapping
- * back. */
-type DragState = {
-  slot: number;
-  dx: number;
-  dy: number;
-};
+/**
+ * Where the float animation has moved a window right now, in pixels.
+ *
+ * `getComputedStyle` on an animating `transform` returns the current matrix, so
+ * this is the bob's live offset rather than a guess. Falls back to zero when
+ * the browser hands back `none` (no animation, or reduced motion) — which is the
+ * correct answer in both cases.
+ */
+export function bobOffset(el: Element): { x: number; y: number } {
+  const raw = window.getComputedStyle(el).transform;
+  if (!raw || raw === "none") return { x: 0, y: 0 };
+  // `matrix(a, b, c, d, tx, ty)` and `matrix3d(...)` both end in the
+  // translation; there is no rotate or scale on the bob, so tx/ty are the whole
+  // offset and no matrix maths is needed.
+  const parts = raw
+    .slice(raw.indexOf("(") + 1, raw.lastIndexOf(")"))
+    .split(",")
+    .map((value) => Number(value.trim()));
+  if (parts.length !== 6 || Number.isNaN(parts[4])) return { x: 0, y: 0 };
+  return { x: parts[4], y: parts[5] };
+}
 
 /** Movement before a press becomes a drag — lets plain presses (and text
  * selection starts) alone. */
@@ -217,53 +255,158 @@ function TypingDots() {
   );
 }
 
-/** Incoming bubble + typing indicator + the AI reply that replaces it. */
-function ChatThread({
-  question,
-  answer,
-  incomingFirst = true,
-}: {
-  question: string;
-  answer: string;
-  incomingFirst?: boolean;
-}) {
-  return (
-    <div className="mt-3 flex flex-col gap-2.5">
-      <p
-        className={cn(
-          "ph2-in max-w-[86%] self-start rounded-[14px] bg-[#F1F5F9] px-3 py-2 text-[0.76rem] leading-[1.45] text-[#101828]",
-          incomingFirst ? "rounded-tl-[5px]" : "rounded-tr-[5px]",
-        )}
-        style={at(1)}
-      >
-        {question}
-        <span className="mt-1 block text-[0.6rem] text-[#64748B]">09:41</span>
-      </p>
+/**
+ * The conversation clock, shared by the thread player and the mobile carousel.
+ *
+ * Both need the same answer to "how long does this card need?" — the player to
+ * schedule its next turn, the carousel to know when it may move on. Written once
+ * here so the two can never disagree, which is what would otherwise cut a
+ * conversation short as the next card slides in.
+ */
+const TURN_BASE = 800;
+const TURN_PER_CHAR = 12;
+const TURN_CAP_AGENT = 3600;
+const TURN_CAP_VISITOR = 2400;
+/** The dots before a business line: punctuation, not content. */
+const TYPE_BEAT = 900;
+/** The finished conversation is held before the script starts over. */
+const HOLD = 3800;
 
-      {/* The typing bubble sits exactly where the reply will land, so nothing
-          shifts when it swaps out — same trick as a real chat transcript. */}
-      <div className="ph2-reply-slot self-end">
-        <span className="ph2-typing ph2-typing-out" style={at(26)}>
-          <span
-            className="ph2-in inline-flex rounded-[14px] rounded-tl-[5px] bg-[#F1F5F9] px-3 py-2.5"
-            style={at(2)}
-          >
-            <TypingDots />
-          </span>
-        </span>
-        <p
-          className="ph2-in max-w-[86%] self-end rounded-[14px] rounded-tr-[5px] bg-primary px-3 py-2 text-[0.76rem] leading-[1.45] text-white"
-          style={at(22)}
+/** How long a revealed turn is read before the next one arrives. */
+export function turnPause(turn: StageThreadTurn | undefined): number {
+  if (turn === undefined) return 700;
+  return Math.min(
+    turn.from === "agent" ? TURN_CAP_AGENT : TURN_CAP_VISITOR,
+    TURN_BASE + turn.text.length * TURN_PER_CHAR,
+  );
+}
+
+/**
+ * How long a card wants on stage.
+ *
+ * A conversation runs its script to the end and is then held on its closing
+ * exchange; anything else gets one loop. The mobile carousel uses this as its
+ * slide interval, which is why the long scripts are never truncated.
+ */
+export function cardDuration(card: StageCard): number {
+  const script = card.thread;
+  if (!script?.length) return LOOP;
+  const total = script.reduce((sum, turn, index) => {
+    const next: StageThreadTurn | undefined = script[index + 1];
+    return sum + turnPause(turn) + (next?.from === "agent" ? TYPE_BEAT : 0);
+  }, 0);
+  return total + HOLD;
+}
+
+/**
+ * A real conversation, not an exchange.
+ *
+ * The script is walked one turn at a time: a visitor message appears, the
+ * business types (the dots), the reply replaces them, and so on — the same
+ * shape as the scripted WhatsApp conversation on the production homepage, cut
+ * down to what fits a 340px window. A turn can carry a note (the price, the
+ * order that was created), which is where the product work shows rather than
+ * just the words.
+ *
+ * This is JS-driven rather than the CSS beat clock the rest of the cards use,
+ * because a conversation has no fixed length: the script decides how many turns
+ * there are, so the player has to count them. It also owns its own restart,
+ * which is what keeps a 14-turn script from being cut off by the shared loop.
+ */
+function ChatThread({ turns }: { turns: StageThread }) {
+  const [shown, setShown] = useState(0);
+  const box = useRef<HTMLDivElement>(null);
+  const total = turns.length;
+
+  // Reading time comes from the shared clock, and the opening beat has nothing
+  // to read yet, so `turnPause` gives it just long enough to be noticed.
+  const pauseFor = turnPause;
+  // The last turn is the payoff — the order confirmed, the payment received —
+  // so the finished conversation is held before it starts again.
+  const hold = HOLD;
+
+  useEffect(() => {
+    if (total === 0 || document.hidden) return;
+    const last = turns[Math.min(shown, total) - 1];
+    const next = turns[shown];
+    // After the last turn there is nothing left to type towards, so it is a
+    // hold rather than a beat before the next message.
+    const delay =
+      shown >= total
+        ? hold
+        : pauseFor(last) + (next?.from === "agent" ? TYPE_BEAT : 0);
+    const id = window.setTimeout(
+      () => setShown((current) => (current >= total ? 0 : current + 1)),
+      delay,
+    );
+    return () => window.clearTimeout(id);
+  }, [shown, total, turns]);
+
+  // A real chat view sticks to the newest message. Doing it here rather than
+  // trusting the layout is what lets a long script scroll instead of spilling
+  // out of the window.
+  useEffect(() => {
+    const el = box.current;
+    if (el) el.scrollTop = el.scrollHeight;
+  }, [shown]);
+
+  if (total === 0) return null;
+
+  // The dots appear only while the next turn belongs to the business.
+  const typing = shown < total && turns[shown].from === "agent";
+
+  return (
+    <div ref={box} className="ph2-thread mt-3 flex flex-col gap-2">
+      {turns.slice(0, shown).map((turn, index) => (
+        <div
+          key={`${index}-${turn.text.slice(0, 12)}`}
+          className={cn(
+            "ph2-in max-w-[88%] rounded-[14px] px-3 py-2 text-[0.74rem] leading-[1.45]",
+            turn.from === "agent"
+              ? "self-end rounded-tr-[5px] bg-primary text-white"
+              : "self-start rounded-tl-[5px] bg-[#F1F5F9] text-[#101828]",
+          )}
         >
-          {answer}
-          <span className="mt-1 block text-[0.6rem] text-white/70">
-            09:41{" "}
-            <span className="tracking-[-2px] text-[#93C5FD]" aria-hidden>
-              ✓✓
+          {turn.text}
+          {turn.note ? (
+            <span
+              className={cn(
+                "mt-1.5 block rounded-[10px] px-2 py-1.5 text-[0.62rem] leading-[1.4] font-medium",
+                turn.from === "agent"
+                  ? "bg-white/18 text-white"
+                  : "border border-[#BFDBFE] bg-white text-[#101828]",
+              )}
+            >
+              {turn.note}
             </span>
+          ) : null}
+          <span
+            className={cn(
+              "mt-1 block text-[0.56rem]",
+              turn.from === "agent" ? "text-white/70" : "text-[#64748B]",
+            )}
+          >
+            {turn.from === "agent" ? (
+              <>
+                09:41{" "}
+                <span className="tracking-[-2px] text-[#93C5FD]" aria-hidden>
+                  ✓✓
+                </span>
+              </>
+            ) : (
+              "09:41"
+            )}
           </span>
-        </p>
-      </div>
+        </div>
+      ))}
+
+      {/* The dots stand in for the reply's own slot, so nothing jumps when the
+          real message lands. */}
+      {typing ? (
+        <span className="ph2-in inline-flex self-end rounded-[14px] rounded-tr-[5px] bg-[#F1F5F9] px-3 py-2.5">
+          <TypingDots />
+        </span>
+      ) : null}
     </div>
   );
 }
@@ -412,18 +555,7 @@ function CardBody({ card }: { card: StageCard }) {
             ) : null}
           </div>
 
-          <ChatThread question={card.lines[0]} answer={card.lines[1]} />
-
-          {card.quick ? (
-            <div className="ph2-in mt-3 flex flex-wrap gap-1.5" style={at(34)}>
-              <span className="rounded-full bg-primary px-2.5 py-1.5 text-[0.64rem] font-semibold text-white">
-                {card.quick[0]}
-              </span>
-              <span className="rounded-full border border-border bg-white px-2.5 py-1.5 text-[0.64rem] font-semibold text-[#4B5563]">
-                {card.quick[1]}
-              </span>
-            </div>
-          ) : null}
+          {card.thread ? <ChatThread turns={card.thread} /> : null}
         </>
       );
 
@@ -567,6 +699,32 @@ function CardBody({ card }: { card: StageCard }) {
             </dl>
           ) : null}
 
+          {/*
+            The timeline is what makes this card a CRM rather than a list of
+            numbers: each row is something Ceka figured out on its own, and the
+            `at` column says whether a person wrote it or the system inferred it.
+          */}
+          {card.notes ? (
+            <ul className="mt-3 flex flex-col gap-1.5">
+              {card.notes.map((note, index) => (
+                <li
+                  key={note.text}
+                  className="ph2-in flex items-start gap-2 text-[0.68rem] leading-[1.4] text-[#4B5563]"
+                  style={at(19 + index * 3)}
+                >
+                  <span
+                    aria-hidden
+                    className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"
+                  />
+                  <span className="min-w-0 flex-1">{note.text}</span>
+                  <span className="shrink-0 text-[0.54rem] text-[#94A3B8]">
+                    {note.at}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+
           {card.steps ? <Steps steps={card.steps} start={18} /> : null}
         </>
       );
@@ -576,43 +734,14 @@ function CardBody({ card }: { card: StageCard }) {
         <>
           <CardHeader card={card} icon="C" />
 
-          <ChatThread
-            question={card.lines[0]}
-            answer={card.lines[1]}
-            incomingFirst={false}
-          />
-
-          {card.rows ? (
-            <div className="mt-2.5 flex gap-2">
-              {card.rows.map((row, index) => (
-                <div
-                  key={row.label}
-                  className="ph2-in flex flex-1 items-center gap-2 rounded-xl border border-[#F1F5F9] bg-[#F8FAFF] px-2 py-2"
-                  style={at(32 + index * 3)}
-                >
-                  <span
-                    aria-hidden
-                    className={cn(
-                      "h-7 w-7 shrink-0 rounded-lg",
-                      index === 0
-                        ? "bg-gradient-to-br from-[#4ABF5D] to-[#22C55E]"
-                        : "bg-gradient-to-br from-[#FAF9F5] to-[#453F3D]",
-                    )}
-                  />
-                  <span className="min-w-0">
-                    <span className="block truncate text-[0.62rem] font-semibold text-[#101828]">
-                      {row.label}
-                    </span>
-                    <span className="block text-[0.56rem] font-bold text-primary">
-                      {row.value}
-                    </span>
-                  </span>
-                </div>
-              ))}
-            </div>
-          ) : null}
-
-          {card.quick ? <CtaPill label={card.quick[0]} delay={36} /> : null}
+          {/*
+            The conversation carries the product too — the variants it offered
+            and the cart it built arrive as `note`s inside the bubbles — so
+            nothing static sits under it. A second column of product cards here
+            would push the window taller than the conversation it is meant to
+            illustrate.
+          */}
+          {card.thread ? <ChatThread turns={card.thread} /> : null}
         </>
       );
 
@@ -685,11 +814,42 @@ function CardBody({ card }: { card: StageCard }) {
           <CardHeader card={card} icon="M" />
 
           <p
-            className="ph2-in mt-3 text-[0.68rem] text-[#64748B]"
+            className="ph2-in mt-3 text-[0.68rem] leading-[1.4] text-[#64748B]"
             style={at(1)}
           >
             {card.lines[0]}
           </p>
+          {card.lines[1] ? (
+            <p
+              className="ph2-in mt-1 text-[0.68rem] leading-[1.4] text-[#64748B]"
+              style={at(3)}
+            >
+              {card.lines[1]}
+            </p>
+          ) : null}
+
+          {/*
+            Who got it. A broadcast is only convincing if the audience is
+            visible — three named segments with their sizes, not just a total
+            that could be anyone.
+          */}
+          {card.segments ? (
+            <ul className="mt-2.5 flex flex-col gap-1.5">
+              {card.segments.map((segment, index) => (
+                <li
+                  key={segment}
+                  className="ph2-in flex items-center gap-2 rounded-lg border border-[#F1F5F9] bg-[#F8FAFF] px-2 py-1.5 text-[0.64rem] text-[#4B5563]"
+                  style={at(6 + index * 3)}
+                >
+                  <span
+                    aria-hidden
+                    className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#B64ABF]"
+                  />
+                  <span className="min-w-0 truncate">{segment}</span>
+                </li>
+              ))}
+            </ul>
+          ) : null}
 
           {card.rows ? (
             <dl className="mt-2.5 grid grid-cols-3 gap-1.5">
@@ -697,7 +857,7 @@ function CardBody({ card }: { card: StageCard }) {
                 <div
                   key={row.label}
                   className="ph2-in rounded-lg border border-[#F1F5F9] bg-[#F8FAFF] px-1.5 py-1.5 text-center"
-                  style={at(1 + index * 4)}
+                  style={at(16 + index * 2)}
                 >
                   <dd className="text-[0.72rem] font-bold text-[#101828] tabular-nums">
                     {row.value}
@@ -713,7 +873,7 @@ function CardBody({ card }: { card: StageCard }) {
           {card.metric ? (
             <div
               className="ph2-in mt-3 flex items-baseline gap-2"
-              style={at(8)}
+              style={at(24)}
             >
               <span className="text-[1.5rem] leading-none font-bold tracking-[-0.03em] text-[#101828] tabular-nums">
                 {card.metric.value}
@@ -811,13 +971,22 @@ function Dashboard({
         themselves rather than numbers, so the control reads as a list of what
         you can open.
 
-        `z-40` is load-bearing. Windows overlap the app by design, and with all
-        six open they do reach this row — so the one control that opens and
-        closes them all has to paint over them, or closing a popup would mean
-        first digging it out from under the others.
+        The row deliberately sits *under* the windows. Every slot starts at
+        `top-32`, so the three that open by default never reach it; and when a
+        card is dragged across it, the card passes over the row rather than
+        sliding beneath the pills — which is what made it look like the pills
+        were being dragged along with it. A window parked on top can always be
+        moved or closed from its own chrome, so nothing becomes unreachable.
+
+        Desktop only, and by breakpoint rather than in JS. Six pills are a
+        switchboard on a 1040px window and clutter on a 360px one — below `lg`
+        the stage is a single window that walks the products on its own, so the
+        controls would have nothing to switch between. Deciding it in CSS also
+        keeps the server and client markup identical, so nothing reflows when
+        the viewport is measured.
       */}
       {toggles ? (
-        <div className="relative z-40 flex items-start gap-2.5 border-b border-[#F1F5F9] px-4 py-2.5">
+        <div className="hidden items-start gap-2.5 border-b border-[#F1F5F9] px-4 py-2.5 lg:flex">
           <span className="mt-1 shrink-0 text-[0.58rem] font-bold tracking-[0.1em] text-[#64748B] uppercase">
             {toggles.label}
           </span>
@@ -1117,7 +1286,9 @@ export function HeroStage({
   // one is always on top — no more guessing which card you're holding.
   const [depth, setDepth] = useState<number[]>(() => SLOTS.map((_, i) => i));
   const zTop = useRef(SLOTS.length);
-  const [drag, setDrag] = useState<DragState | null>(null);
+  // Which window is in hand. One value per gesture, so unlike the old
+  // per-move drag state it costs a single render at press and one at release.
+  const [held, setHeld] = useState<number | null>(null);
   // Keyboard focus pauses the loop, the same way the pointer used to: someone
   // tabbing through the hero should not have a card rewound out from under
   // them mid-read. A mouse does not hold it — this is the page's main event,
@@ -1126,21 +1297,49 @@ export function HeroStage({
   // Which window the loop is up to. A ref, not state: the effect must not
   // re-subscribe every time it advances.
   const turn = useRef(0);
-  // Snapshot taken on press, before any transform is applied: pointer origin,
-  // the slot's home offset, and the rects for bounds math. Measuring here
-  // (not per move) keeps the move handler a pure arithmetic step.
-  //
-  // Horizontal bounds are the *viewport*, not the stage: cards can be parked
-  // flush against either screen edge. Vertical bounds stay the stage, so a
-  // card cannot be lost inside the bands above or below.
+  // The mobile carousel's position. Below `lg` there is no canvas to float on
+  // and no switchboard to choose from, so one window is on stage at a time and
+  // it walks the products by itself — a card holds for exactly as long as its
+  // own story needs, then the next takes over.
+  const [slide, setSlide] = useState(0);
+  /**
+   * Snapshot taken on press, before any transform is applied. Measuring here
+   * rather than per move keeps the move handler a pure arithmetic step.
+   *
+   * Two coordinate systems are kept apart on purpose:
+   *
+   * - `paintedX/Y` and `size` are *screen* coordinates, taken from the rect as
+   *   it looks at press time. That is the space the bounds live in.
+   * - `bx/by` are *translates*, what the inline `transform` is set to.
+   *
+   * A window's painted position moves 1:1 with its translate whatever the
+   * stage's scroll-linked scale is doing, so a move is "clamp the painted
+   * position, then apply the difference as a translate". Reading the rect as a
+   * translate — or clamping a translate against a painted rect — is what made
+   * a re-picked-up window leap, because the rect already carried the placement
+   * that was about to be replaced.
+   *
+   * Horizontal bounds are the viewport, so a window can be parked flush against
+   * either screen edge; vertical bounds are the stage, so one cannot be lost in
+   * the bands above or below.
+   */
   const gesture = useRef<{
     slot: number;
     x0: number;
     y0: number;
+    /** Translate in force at press time. */
     bx: number;
     by: number;
-    anchor: { left: number; top: number; width: number; height: number };
-    bounds: { left: number; top: number; width: number; height: number };
+    /** Painted top-left at press time, plus the painted size. */
+    paintedX: number;
+    paintedY: number;
+    width: number;
+    height: number;
+    /** Whether the press has become a drag, and the translate it sits at. */
+    moved: boolean;
+    x: number;
+    y: number;
+    bounds: { left: number; top: number; right: number; bottom: number };
   } | null>(null);
 
   // Drag is a desktop-only enhancement (attio-style): mouse/trackpad get
@@ -1186,16 +1385,25 @@ export function HeroStage({
     })),
   };
 
+  /**
+   * Take a window in hand.
+   *
+   * The bob is captured here rather than assumed to be zero. A card that has
+   * not been placed yet is mid-bob, so its painted position is up to 8px off
+   * its anchor; dropping the float animation on grab would otherwise snap it
+   * back by exactly that much the instant it was picked up — which is what
+   * makes a drag feel like it catches on something. Reading the live transform
+   * means the window leaves the hand at the exact pixel it was at.
+   */
   const beginDrag = (event: React.PointerEvent<HTMLDivElement>, s: number) => {
     if (event.button !== 0) return;
     // Front on grab: the touched slot jumps above the rest immediately, so a
     // half-buried card surfaces the moment you pick it up — not only after
     // you drop it somewhere.
     zTop.current += 1;
-    const z = zTop.current;
     setDepth((previous) => {
       const next = [...previous];
-      next[s] = z;
+      next[s] = zTop.current;
       return next;
     });
     const el = slotRefs.current[s];
@@ -1205,28 +1413,50 @@ export function HeroStage({
     if (!el || !stageEl) return;
     const anchor = el.getBoundingClientRect();
     const stage = stageEl.getBoundingClientRect();
-    const home = placed[s] ?? { x: 0, y: 0 };
-    // 12px breathing room so the card's shadow never kisses the chrome.
+    const home = placed[s];
+    // 12px breathing room so the window's shadow never kisses the screen edge.
     const margin = 12;
-    gesture.current = {
+    // Only a *floating* window needs its bob folded in. A placed one has no
+    // float animation, so its computed transform is its own stored placement —
+    // adding that on top of `home` again would move it twice as far as the
+    // pointer on every pick-up after the first.
+    const bob = home ? { x: 0, y: 0 } : bobOffset(el);
+    const bx = (home?.x ?? 0) + bob.x;
+    const by = (home?.y ?? 0) + bob.y;
+    // `clientWidth` rather than `innerWidth`: innerWidth counts the scrollbar,
+    // which is not a place a window can actually be seen, so using it let a
+    // window slide the width of a scrollbar past the right edge.
+    const viewportWidth =
+      document.documentElement.clientWidth || window.innerWidth;
+    const g = {
       slot: s,
       x0: event.clientX,
       y0: event.clientY,
-      bx: home.x,
-      by: home.y,
-      anchor: {
-        left: anchor.left,
-        top: anchor.top,
-        width: anchor.width,
-        height: anchor.height,
-      },
+      bx,
+      by,
+      paintedX: anchor.left,
+      paintedY: anchor.top,
+      width: anchor.width,
+      height: anchor.height,
+      moved: false,
+      x: bx,
+      y: by,
       bounds: {
         left: margin,
+        right: viewportWidth - margin,
         top: stage.top,
-        width: window.innerWidth - margin * 2,
-        height: stage.height,
+        bottom: stage.top + stage.height,
       },
     };
+    gesture.current = g;
+    // Freeze the card exactly where it is painted. The float class comes off
+    // here rather than waiting for React: a running animation overrides the
+    // inline transform, so leaving it on for the frame between the press and
+    // the commit is a wobble under the pointer.
+    el.classList.remove(...FLOAT_CLASSES);
+    el.style.transition = "none";
+    el.style.transform = `translate(${g.bx}px, ${g.by}px)`;
+    setHeld(s);
     // Capture keeps the move stream on this slot even when the pointer races
     // ahead of it. Guarded: jsdom and some embedded browsers lack it, and a
     // failed capture must never break the press itself.
@@ -1237,50 +1467,123 @@ export function HeroStage({
     }
   };
 
+  /**
+   * Track the pointer.
+   *
+   * The position is written straight onto the element, never through state.
+   * A pointermove can fire far more often than a card can usefully re-render,
+   * and routing it through React meant re-rendering the whole stage — six
+   * windows, their threads and the switchboard — for every single event. That
+   * is the difference between dragging a card and dragging a slideshow, and it
+   * showed worst on the tallest window (the weekly-tips card), which has the
+   * most to lay out.
+   *
+   * Only `held` goes through React, and that changes once per gesture.
+   */
   const moveDrag = (event: React.PointerEvent<HTMLDivElement>, s: number) => {
     const g = gesture.current;
     if (!g || g.slot !== s) return;
     const rawDx = event.clientX - g.x0;
     const rawDy = event.clientY - g.y0;
-    if (!drag && Math.hypot(rawDx, rawDy) < DRAG_THRESHOLD) return;
-    // Live-clamped, so the card visibly stops at the stage edge instead of
-    // sliding out and snapping back on release.
-    const at = clampOffset(g.bx + rawDx, g.by + rawDy, g.anchor, g.bounds);
-    setDrag({ slot: s, dx: at.x, dy: at.y });
+    if (g.moved === false && Math.hypot(rawDx, rawDy) < DRAG_THRESHOLD) return;
+    // Live-clamped, so the window visibly stops at the edge instead of sliding
+    // out and snapping back on release. The clamp works in painted space; the
+    // difference from where the window was at press time is what gets applied
+    // as a translate, which keeps the two coordinate systems from being mixed.
+    const at = clampOffset(
+      { x: g.paintedX + rawDx, y: g.paintedY + rawDy },
+      { width: g.width, height: g.height },
+      g.bounds,
+    );
+    const tx = g.bx + (at.x - g.paintedX);
+    const ty = g.by + (at.y - g.paintedY);
+    g.moved = true;
+    g.x = tx;
+    g.y = ty;
+    const el = slotRefs.current[s];
+    if (el) {
+      el.style.transform = `translate(${tx}px, ${ty}px)`;
+    }
   };
 
   const endDrag = (s: number) => {
     const g = gesture.current;
     gesture.current = null;
+    setHeld(null);
+    const el = slotRefs.current[s];
     // Persist the release point: the slot's new home until dragged again. A
-    // press without movement (`drag` still null) changes nothing.
-    if (g && g.slot === s && drag && drag.slot === s) {
-      const home = { x: drag.dx, y: drag.dy };
+    // press without movement changes nothing, so the window goes back to
+    // floating from its anchor and the inline transform is simply dropped.
+    if (g && g.slot === s && g.moved) {
+      const home = { x: g.x, y: g.y };
+      if (el) {
+        // Hand the value to React before the state update lands, so the frame
+        // where ownership changes hands shows no jump at all.
+        el.style.transform = `translate(${home.x}px, ${home.y}px)`;
+      }
       setPlaced((previous) => {
         const next = [...previous];
         next[s] = home;
         return next;
       });
+    } else if (el) {
+      el.style.transform = "";
+      el.style.transition = "";
     }
-    setDrag(null);
   };
 
   /**
+   * Slots that run on the shared beat.
+   *
+   * A card with a conversation script is deliberately left out: it drives itself,
+   * because only it knows how many turns the script has. Putting it on this
+   * timer too would cut a 30-second conversation off every eight seconds — and
+   * the symptom was worse than a restart, since the loop kept landing on the
+   * same cards and their scripts never got past the first exchange.
+   */
+  const beatSlots = useMemo(
+    () => cards.flatMap((card, index) => (card.thread ? [] : [index])),
+    [cards],
+  );
+
+  /**
    * The loop: one window restarts per tick, round-robin, so each card's story
-   * begins again every LOOP and the six restarts are spread evenly across it.
-   * A single shared timer rather than six is deliberate — one interval to clean
-   * up, and no chance of two windows landing on the same tick.
+   * begins again every LOOP and the restarts are spread evenly across it.
+   * A single shared timer rather than one per card is deliberate — one interval
+   * to clean up, and no chance of two windows landing on the same tick.
    *
    * Restarting means remounting the card body, which rewinds its CSS
    * animations; the chrome, the position and anything half-dragged are all left
-   * alone. Hidden tabs are skipped outright.
+   * alone.
    */
   useEffect(() => {
-    if (reduce || reading) return;
+    // A window in hand stops the clock entirely. Restarting rebuilds that card's
+    // body, and a rebuild mid-drag is a dropped frame right where the user is
+    // moving something — which is what made the two heaviest windows (weekly
+    // tips and broadcasts, both chart-and-tables tall) judder as they moved.
+    if (reduce || reading || held !== null || beatSlots.length === 0) return;
+    const el = stageRef.current;
+    // Only while the hero is actually on screen. Remounting six card bodies
+    // every beat for a visitor who has scrolled past is work with nobody to see,
+    // and it is work that lands the moment they scroll back.
+    //
+    // Starts optimistic and is corrected by the observer, not the other way
+    // round: where the observer never reports — an old browser, a stubbed one —
+    // the loop keeps running, which is the state a visitor actually wants. The
+    // off-screen gate in `AnimGate` still holds the paint either way.
+    if (!el) return;
+    let onScreen = true;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        onScreen = entry.isIntersecting;
+      },
+      { rootMargin: "120px 0px" },
+    );
+    io.observe(el);
     const step = LOOP / SLOTS.length;
     const id = window.setInterval(() => {
-      if (document.hidden) return;
-      const slot = turn.current % SLOTS.length;
+      if (document.hidden || !onScreen) return;
+      const slot = beatSlots[turn.current % beatSlots.length];
       turn.current += 1;
       setLoop((previous) => {
         const next = [...previous];
@@ -1288,8 +1591,27 @@ export function HeroStage({
         return next;
       });
     }, step);
-    return () => window.clearInterval(id);
-  }, [reduce, reading]);
+    return () => {
+      window.clearInterval(id);
+      io.disconnect();
+    };
+  }, [reduce, reading, held, beatSlots]);
+
+  /**
+   * The mobile carousel: hold the current window for `cardDuration`, then move
+   * on. Keyed to the card rather than a fixed beat, which is what lets a
+   * thirty-second conversation finish before the next one slides in.
+   *
+   * Skipped for a hidden tab, and only runs when the reduced-motion branch is
+   * not rendering the static gallery instead.
+   */
+  useEffect(() => {
+    if (reduce || document.hidden) return;
+    const id = window.setTimeout(() => {
+      setSlide((current) => (current + 1) % cards.length);
+    }, cardDuration(cards[slide]));
+    return () => window.clearTimeout(id);
+  }, [reduce, slide, cards]);
 
   /**
    * Scroll-linked growth: the stage swells from 88% to full size as it travels
@@ -1401,18 +1723,22 @@ export function HeroStage({
               {SLOTS.map((slot, s) => {
                 if (!visible[s]) return null;
                 const card = cards[s];
-                // The held window follows the pointer; a placed (previously
-                // dropped) one keeps its stored offset. Either way the position
-                // is inline, so it survives the entrance remount.
-                const heldDrag = drag !== null && drag.slot === s ? drag : null;
-                const held = heldDrag !== null;
-                const home = heldDrag
-                  ? { x: heldDrag.dx, y: heldDrag.dy }
-                  : placed[s];
+                const isHeld = held === s;
+                const g = gesture.current;
+                // React keeps owning `transform` even mid-drag — it just tracks
+                // the live position instead of the stored one. That matters:
+                // dropping the property from the style prop while a card is held
+                // makes React *delete* the inline value it wrote earlier, and
+                // the card snaps back to its anchor for a frame. Because the
+                // gesture is a mutable ref, this also stays correct across any
+                // re-render that lands mid-drag — the value React writes is the
+                // value already on screen.
+                const dragging = isHeld && g !== null && g.slot === s;
+                const home = dragging ? { x: g.x, y: g.y } : placed[s];
                 // Stacking: the most recently grabbed slot sits on top (base
                 // 20 keeps every slot above the dashboard at z-10; the held
                 // window goes higher still while dragged).
-                const stackZ = held ? 100 : 20 + depth[s];
+                const stackZ = isHeld ? 100 : 20 + depth[s];
                 return (
                   <div
                     key={`${slot.key}-${summon[s]}`}
@@ -1427,22 +1753,26 @@ export function HeroStage({
                     }
                     onPointerUp={canDrag ? () => endDrag(s) : undefined}
                     onPointerCancel={canDrag ? () => endDrag(s) : undefined}
-                    // Inline transform carries the position. The bob is dropped
-                    // while held or placed: a CSS animation would override the
-                    // inline transform, snapping the window back to its anchor
-                    // mid-drag (or after a drop). While it *is* bobbing, the
-                    // period and phase below are this slot's own — that inline
-                    // pair is what stops six windows breathing in unison.
+                    // A placed window carries its position inline. The bob is
+                    // dropped while placed — a CSS animation would override the
+                    // inline transform and drag the window back to its anchor —
+                    // and while it *is* bobbing, the period and phase below are
+                    // this slot's own, which is what stops six windows breathing
+                    // in unison.
                     style={{
                       ...(home
                         ? {
-                            transform: `translate(${home.x}px, ${home.y}px)${heldDrag ? " scale(1.04)" : ""}`,
+                            transform: `translate(${home.x}px, ${home.y}px)`,
                             transition: "none",
                           }
                         : {
                             animationDuration: slot.period,
                             animationDelay: slot.phase,
                           }),
+                      // Promoted only while moving: a permanent `will-change`
+                      // on six windows would hold six compositor layers open
+                      // for a drag that happens once in a while.
+                      ...(isHeld ? { willChange: "transform" } : null),
                       zIndex: stackZ,
                     }}
                     className={cn(
@@ -1450,7 +1780,11 @@ export function HeroStage({
                       !home && slot.float,
                       slot.className,
                       canDrag && "lg:cursor-grab lg:touch-pan-y",
-                      held && "select-none lg:cursor-grabbing",
+                      // The "picked up" cue is a shadow, not a scale: it follows
+                      // the window without touching its geometry, so there is
+                      // nothing to snap back when it is put down.
+                      isHeld &&
+                        "select-none lg:cursor-grabbing lg:drop-shadow-[0_20px_30px_rgba(11,18,32,0.22)]",
                     )}
                   >
                     <div className="ph2-pop-in" style={at(slot.enter)}>
@@ -1467,31 +1801,31 @@ export function HeroStage({
               })}
 
               {/*
-                Below `lg` there is no canvas to float on: the same popups stack
-                under the window instead, each still owning its own reel and its
-                own close dot, running its own loop.
+                Below `lg` there is no canvas to float on and no switchboard to
+                pick from, so this collapses to a single window under the app
+                that walks the six products by itself. `key` includes the slide
+                index, so each arrival is a fresh window — its story starts from
+                the top and its own phase keeps it off the beat the desktop
+                windows are on.
               */}
-              {visible.some(Boolean) ? (
-                <div className="relative z-20 -mt-6 grid justify-items-center gap-5 lg:hidden">
-                  {SLOTS.map((slot, s) =>
-                    visible[s] ? (
-                      <div
-                        key={`${slot.key}-${summon[s]}`}
-                        className="ph2-pop-in w-[min(92vw,420px)]"
-                        style={at(slot.enter)}
-                      >
-                        <PopupWindow
-                          card={cards[s]}
-                          loop={loop[s]}
-                          phase={(s * LOOP) / SLOTS.length}
-                          closeLabel={stage.popups.close}
-                          onClose={() => toggleProduct(s)}
-                        />
-                      </div>
-                    ) : null,
-                  )}
+              <div className="relative z-20 -mt-6 grid justify-items-center lg:hidden">
+                <div
+                  key={`slide-${slide}`}
+                  className="ph2-pop-in w-[min(92vw,420px)]"
+                >
+                  {/*
+                    No close control here, and deliberately so: this window
+                    replaces itself, so an X would promise something the
+                    carousel does not do. The traffic lights are chrome, as on a
+                    window you are only watching.
+                  */}
+                  <PopupWindow
+                    card={cards[slide]}
+                    loop={0}
+                    phase={(slide * LOOP) / SLOTS.length}
+                  />
                 </div>
-              ) : null}
+              </div>
             </div>
           </AnimGate>
         )}

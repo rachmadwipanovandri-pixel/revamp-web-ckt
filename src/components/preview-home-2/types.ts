@@ -152,6 +152,21 @@ export type OfficeGroup = {
  */
 export type SocialIcon = "instagram" | "linkedin" | "youtube" | "facebook";
 
+/**
+ * One turn in a scripted conversation. `from` is the speaker: the visitor on
+ * the left, the business (Cekat's AI) on the right. `note` is the product
+ * working — the price it quoted, the order it created — rendered inside the
+ * bubble so the card shows what happened, not just what was said.
+ */
+export type StageThreadTurn = {
+  from: "visitor" | "agent";
+  text: string;
+  note?: string;
+};
+
+/** A card's conversation, walked one turn at a time. */
+export type StageThread = StageThreadTurn[];
+
 export type StageCardKind =
   "chat" | "order" | "crm" | "mini" | "consulting" | "marketing";
 
@@ -183,8 +198,22 @@ export type StageCard = {
   /** Chart: bar heights in %, plus the labels under them. */
   bars?: number[];
   days?: string[];
+  /**
+   * What Cekat worked out about this customer on its own, newest first. `at` is
+   * when — either a real timestamp or the reason the note exists ("from chat"),
+   * which is the point: most of these rows are inferred, not typed by anyone.
+   */
+  notes?: { text: string; at: string }[];
+  /** The audiences a broadcast was split into, with the size of each. */
+  segments?: string[];
   /** Sparkline: values 0–100, higher sits higher. */
   spark?: number[];
+  /**
+   * A scripted conversation for this product. Cards that have one play it turn
+   * by turn instead of revealing a fixed set of rows, which is what lets the
+   * window hold a real exchange rather than one question and one answer.
+   */
+  thread?: StageThread;
 };
 
 export type LiveStage = {

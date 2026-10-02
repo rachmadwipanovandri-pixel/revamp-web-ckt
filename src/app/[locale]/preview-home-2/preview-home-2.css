@@ -728,6 +728,24 @@ html.lenis .ph2-root {
   }
 }
 
+/*
+ * The conversation viewport.
+ *
+ * A fixed height is the whole point: the script can be any length, and the
+ * window cannot grow with it. `flex-col` with the messages as children lets the
+ * newest sit at the bottom edge — which is where a real chat view keeps them —
+ * while the older ones scroll up and out of sight behind `overflow: hidden`.
+ * The fade is the only cue that there is more above; without it a clipped
+ * bubble looks like a rendering mistake rather than a scroll position.
+ */
+.ph2-thread {
+  height: 232px;
+  overflow: hidden;
+  justify-content: flex-end;
+  mask-image: linear-gradient(to bottom, transparent, #000 34px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 34px);
+}
+
 /* The typing bubble holds the reply's spot, then gets out of the way. */
 .ph2-reply-slot {
   position: relative;
