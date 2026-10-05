@@ -321,6 +321,16 @@ export function MegaMenu({
           </NavigationMenuContent>
         </NavigationMenuItem>
 
+        {/* ── Contact Sales (plain link, no dropdown) ───────────────── */}
+        <NavigationMenuItem>
+          <NavigationMenuLink
+            render={<Link href="/contact-sales" />}
+            className={triggerClass(isTransparent)}
+          >
+            {t("contactSales")}
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
         {/* ── Pricing + Blog (plain links, no dropdown) ─────────────── */}
         <NavigationMenuItem>
           <NavigationMenuLink

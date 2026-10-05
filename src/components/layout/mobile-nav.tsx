@@ -213,6 +213,13 @@ export function MobileNav() {
         </Section>
 
         <Link
+          href="/contact-sales"
+          className="flex items-center border-b border-border py-4 font-numeric text-base font-semibold text-foreground"
+        >
+          {t("contactSales")}
+        </Link>
+
+        <Link
           href="/pricing"
           className="flex items-center border-b border-border py-4 font-numeric text-base font-semibold text-foreground"
         >

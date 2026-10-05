@@ -133,6 +133,72 @@ export const mdiMessageText: IconifyIcon = {
   height: 24,
 };
 
+export const lucideAlertCircle: IconifyIcon = {
+  body: '<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></g>',
+  width: 24,
+  height: 24,
+};
+
+export const lucidePresentation: IconifyIcon = {
+  body: '<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 3h20m-1 0v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3m4 18l5-5l5 5"/>',
+  width: 24,
+  height: 24,
+};
+
+export const lucideTag: IconifyIcon = {
+  body: '<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></g>',
+  width: 24,
+  height: 24,
+};
+
+export const lucideSchool: IconifyIcon = {
+  body: '<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 21v-3a2 2 0 0 0-4 0v3m8-16.067V21M4 6l7.106-3.79a2 2 0 0 1 1.788 0L20 6"/><path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11M6 4.933V21"/><circle cx="12" cy="9" r="2"/></g>',
+  width: 24,
+  height: 24,
+};
+
+export const lucideShieldCheck: IconifyIcon = {
+  body: '<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12l2 2l4-4"/></g>',
+  width: 24,
+  height: 24,
+};
+
+export const mdiCheckDecagramOutline: IconifyIcon = {
+  body: '<path fill="currentColor" d="m23 12l-2.4-2.8l.3-3.7l-3.6-.8l-1.9-3.2L12 3L8.6 1.5L6.7 4.7l-3.6.8l.3 3.7L1 12l2.4 2.8l-.3 3.7l3.6.8l1.9 3.2L12 21l3.4 1.5l1.9-3.2l3.6-.8l-.3-3.7zm-4.3 4.9l-2.7.6l-1.4 2.4l-2.6-1.1l-2.6 1.1L8 17.5l-2.7-.6l.2-2.8L3.7 12l1.8-2.1l-.2-2.8L8 6.5l1.4-2.4L12 5.2l2.6-1.1L16 6.5l2.7.6l-.2 2.8l1.8 2.1l-1.8 2.1zm-2.1-9.3L18 9l-8 8l-4-4l1.4-1.4l2.6 2.6z"/>',
+  width: 24,
+  height: 24,
+};
+
+export const mdiEmailOutline: IconifyIcon = {
+  body: '<path fill="currentColor" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0-8 5l-8-5zm0 12H4V8l8 5l8-5z"/>',
+  width: 24,
+  height: 24,
+};
+
+export const mdiClockOutline: IconifyIcon = {
+  body: '<path fill="currentColor" d="M12 20a8 8 0 0 0 8-8a8 8 0 0 0-8-8a8 8 0 0 0-8 8a8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10a10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67l-.75 1.23L11 13V7z"/>',
+  width: 24,
+  height: 24,
+};
+
+export const mdiPhone: IconifyIcon = {
+  body: '<path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/>',
+  width: 24,
+  height: 24,
+};
+
+export const mdiDomain: IconifyIcon = {
+  body: '<path fill="currentColor" d="M18 15h-2v2h2m0-6h-2v2h2m2 6h-8v-2h2v-2h-2v-2h2v-2h-2V9h8M10 7H8V5h2m0 6H8V9h2m0 6H8v-2h2m0 6H8v-2h2M6 7H4V5h2m0 6H4V9h2m0 6H4v-2h2m0 6H4v-2h2m6-10V3H2v18h20V7z"/>',
+  width: 24,
+  height: 24,
+};
+
+export const mdiAccountMultipleOutline: IconifyIcon = {
+  body: '<path fill="currentColor" d="M13.07 10.41a5 5 0 0 0 0-5.82A3.4 3.4 0 0 1 15 4a3.5 3.5 0 0 1 0 7a3.4 3.4 0 0 1-1.93-.59M5.5 7.5A3.5 3.5 0 1 1 9 11a3.5 3.5 0 0 1-3.5-3.5m2 0A1.5 1.5 0 1 0 9 6a1.5 1.5 0 0 0-1.5 1.5M16 17v2H2v-2s0-4 7-4s7 4 7 4m-2 0c-.14-.78-1.33-2-5-2s-4.93 1.31-5 2m11.95-4A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4Z"/>',
+  width: 24,
+  height: 24,
+};
+
 // Full-colour brand marks for the integrations surfaces. Extracted from
 // the `logos` collection, whose icons carry their own fills and gradients,
 // so these render in brand colour rather than inheriting currentColor.

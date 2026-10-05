@@ -20,6 +20,10 @@ export const routing = defineRouting({
     "/blog/[slug]": "/blog/[slug]",
     "/blog/author/[slug]": "/blog/author/[slug]",
     "/contact": "/contact",
+    // Sales enquiry (Intercom-style lead form). Reached from both the
+    // production mega-menu and the /preview-home-2 header, so it lives in the
+    // (site) group: both navs link here, only one of them renders the chrome.
+    "/contact-sales": "/contact-sales",
     "/events": "/events",
     "/events/[slug]": "/events/[slug]",
     // Marketing-only editor; not linked in the public nav.

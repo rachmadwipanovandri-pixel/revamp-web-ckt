@@ -30,6 +30,7 @@ const CLIENT_MESSAGE_KEYS = [
   "home",
   "agentic",
   "contact",
+  "contactSales",
   "comparison",
   "events",
 ] as const;
