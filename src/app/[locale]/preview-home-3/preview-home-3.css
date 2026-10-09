@@ -1,0 +1,1302 @@
+@layer components {
+
+/*
+ * /preview-home-3 — "Precision Ledger".
+ *
+ * A US B2B SaaS marketing page built like a precision instrument: pure-white
+ * paper, near-black ink, hairline rules doing the structural work, monospace
+ * telemetry labels, and one near-black console band used as punctuation.
+ *
+ * Five decisions carry the whole design, and everything else follows from them:
+ *
+ *   1. RADIUS COLLAPSES. Pills and 20–32px cards gave the draft a friendly,
+ *      soft, "local SaaS" read. Buttons are 6px, cards 8px, full-bleed bands
+ *      are square. Geometry does more for tone than any colour choice.
+ *   2. THE PAPER IS NEUTRAL. `#FAFBFD` / `#EEF1F8` carried a blue cast that
+ *      made every band read as one tinted system. Paper is `#FFFFFF`, the
+ *      alternate band is warm-neutral `#FAFAFA`.
+ *   3. THE CONSOLE IS NEAR-BLACK, NOT NAVY. The old bands were a navy gradient
+ *      with a landscape illustration laid over it. The console is `#0A0A0B` —
+ *      ink, not a colour — and it carries a hairline grid instead of wallpaper.
+ *   4. BRAND BLUE IS A SIGNAL, NOT A WASH. It marks links, active states, one
+ *      headline word, and checkmarks. It is never a background tint behind body
+ *      copy. Primary actions are near-black; hovering one brings the brand in.
+ *   5. MONOSPACE LABELS. Section indices, step numbers, stat captions and nav
+ *      metadata use the platform `ui-monospace` stack — zero bytes downloaded,
+ *      and the single strongest cue that this page is machine-precise rather
+ *      than decorative.
+ *
+ * Layer placement is deliberate. These rules live in `@layer components` so
+ * Tailwind utilities (layer `utilities`, declared later by Tailwind v4) can
+ * still override them per element — that is what lets `text-white` beat
+ * `.ph3-display`'s colour on a dark band without `!important`.
+ */
+
+.ph3-root {
+  /* ---- surface ---- */
+  --ph3-paper: #ffffff;
+  --ph3-surface: #fafafa;
+  --ph3-surface-2: #f4f4f5;
+  --ph3-white: #ffffff;
+
+  /* ---- ink ---- */
+  --ph3-ink: #0a0a0b;
+  --ph3-ink-2: #17171a;
+  --ph3-muted: #55555d;
+  --ph3-muted-2: #64646c;
+  --ph3-muted-3: #6e6e77;
+
+  /* ---- hairlines ---- */
+  --ph3-line: #e4e4e8;
+  --ph3-line-2: #d3d3d9;
+  --ph3-line-3: #b9b9c1;
+
+  /* ---- brand signal ---- */
+  --ph3-accent: #1352bf;
+  --ph3-accent-2: #1e56d6;
+  --ph3-accent-tint: #edf2fd;
+  --ph3-accent-line: #c3d3f4;
+
+  /* ---- console (the near-black band) ---- */
+  --ph3-console: #0a0a0b;
+  --ph3-console-2: #131317;
+  --ph3-console-3: #1c1c21;
+  --ph3-console-line: #26262c;
+  --ph3-console-line-2: #34343c;
+  --ph3-on-console: #ffffff;
+  --ph3-on-console-2: #b4b4bd;
+  /* 4.62:1 on the console ground — the previous #75757f measured 4.34:1 and
+     failed AA for the 9–13px labels it was carrying. */
+  --ph3-on-console-3: #83838d;
+
+  /* ---- geometry: the collapse ---- */
+  --ph3-r-xs: 3px;
+  --ph3-r-sm: 4px;
+  --ph3-r: 6px;
+  --ph3-r-md: 8px;
+  --ph3-r-lg: 10px;
+
+  /* ---- motion ---- */
+  --ph3-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ph3-ease-sharp: cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--ph3-ink);
+  background: var(--ph3-paper);
+
+  /* The brand face (Google Sans Flex) is injected by next/font on <html> as
+     `--font-sans`. It is consumed here, never redefined, so the loader always
+     wins. The mono stack is the platform one: a technical voice for telemetry
+     labels at zero network cost. */
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-synthesis-weight: none;
+  font-synthesis-style: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  overflow-x: clip;
+}
+
+/* --------------------------------------------------------------------------
+   type primitives
+   -------------------------------------------------------------------------- */
+
+/*
+ * Every default colour below is written with `:where()` (specificity 0) so a
+ * Tailwind utility on the same element always wins. Without this, `text-white`
+ * on a console band would lose to `.ph3-display` and the headline would go
+ * black-on-black.
+ */
+
+/*
+ * Display — large and tight, but *light*.
+ *
+ * Weight here is the most consequential number on the page, and it was wrong.
+ * Measured across the five references: their display headings run 400 (Melius,
+ * Aira, Terminal X), 500 (Auxia), and 575 (Clay). Not one uses 700. Google Sans
+ * Flex carries a real `wght` axis, so 500 is a genuine cut rather than a
+ * synthesised one — and at display sizes a medium weight reads as *set*, where a
+ * bold one reads as *shouted*. Hierarchy comes from scale and tracking instead.
+ */
+:where(.ph3-root .ph3-display) {
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: -0.038em;
+  line-height: 1;
+  color: var(--ph3-ink);
+  text-wrap: balance;
+}
+
+/* Section headings sit one step down so the hero owns the largest optical size. */
+:where(.ph3-root .ph3-display-2) {
+  letter-spacing: -0.035em;
+  line-height: 1.04;
+}
+
+/*
+ * The hero headline alone gets the tighter setting and the full weight.
+ *
+ * At display sizes the difference between −0.038em and −0.045em is the gap
+ * between "set in a face" and "set by someone who tuned it": the sidebearings of
+ * every round letter start to look optically even. Line-height has to come down
+ * with it, or the tightened tracking just makes the leading look loose by
+ * comparison — which is the usual reason a big headline reads as unfinished.
+ *
+ * 600 rather than 700, because the hero is the one place where the extra weight
+ * is doing structural work: it is the only element on the page competing with a
+ * product window the size of a laptop, and the references make the same trade at
+ * the top of their pages (Clay's H1 is its heaviest cut at 575).
+ */
+:where(.ph3-root .ph3-display-hero) {
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.94;
+}
+
+/* Google Sans Flex has no italic; the browser would synthesise an oblique and
+   it would read as a different brand. Colour alone marks the accent word. */
+:where(.ph3-root .ph3-display) em {
+  font-style: normal;
+  color: var(--ph3-accent);
+}
+
+/* Monospace telemetry. Section indices, step numbers, stat captions, nav
+   metadata — anything that behaves like machine output rather than prose. */
+:where(.ph3-root .ph3-mono) {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ph3-muted-2);
+  font-variant-numeric: tabular-nums;
+}
+
+:where(.ph3-root .ph3-eyebrow) {
+  color: var(--ph3-accent);
+}
+
+/* Every figure on the page is tabular so columns of numbers align and a count-up
+   animation does not reflow its own column. */
+:where(.ph3-root .ph3-num) {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+}
+
+:where(.ph3-root .ph3-lede) {
+  color: var(--ph3-muted);
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   focus — one visible ring for the whole draft.
+
+   `textarea` was missing here. The composer in the hands-on demo is a textarea,
+   so the one control on the page that invites the most typing was also the one
+   control a keyboard user could not see focus on.
+   -------------------------------------------------------------------------- */
+
+.ph3-root a:focus-visible,
+.ph3-root button:focus-visible,
+.ph3-root summary:focus-visible,
+.ph3-root input:focus-visible,
+.ph3-root select:focus-visible,
+.ph3-root textarea:focus-visible {
+  outline: 2px solid var(--ph3-accent);
+  outline-offset: 2px;
+  border-radius: var(--ph3-r-sm);
+}
+
+/* --------------------------------------------------------------------------
+   actions
+   -------------------------------------------------------------------------- */
+
+/* Near-black, not brand blue. The blue arrives on hover, which keeps the
+   primary action reading as "confident default" and the brand present without
+   spending it on every button on the page. */
+.ph3-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 2.875rem;
+  padding: 0 1.125rem;
+  border-radius: var(--ph3-r);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.011em;
+  white-space: nowrap;
+  transition:
+    background-color 160ms var(--ph3-ease-sharp),
+    border-color 160ms var(--ph3-ease-sharp),
+    color 160ms var(--ph3-ease-sharp);
+}
+
+.ph3-btn-solid {
+  background: var(--ph3-ink);
+  color: var(--ph3-white);
+  border: 1px solid var(--ph3-ink);
+}
+.ph3-btn-solid:hover {
+  background: var(--ph3-accent);
+  border-color: var(--ph3-accent);
+}
+
+.ph3-btn-outline {
+  background: transparent;
+  color: var(--ph3-ink);
+  border: 1px solid var(--ph3-line-2);
+}
+.ph3-btn-outline:hover {
+  border-color: var(--ph3-ink);
+  background: var(--ph3-surface);
+}
+
+/* Inverted pair for the console band. */
+.ph3-btn-invert {
+  background: var(--ph3-white);
+  color: var(--ph3-ink);
+  border: 1px solid var(--ph3-white);
+}
+.ph3-btn-invert:hover {
+  background: var(--ph3-accent);
+  border-color: var(--ph3-accent);
+  color: var(--ph3-white);
+}
+
+.ph3-btn-ghost-invert {
+  background: transparent;
+  color: var(--ph3-on-console);
+  border: 1px solid var(--ph3-console-line-2);
+}
+.ph3-btn-ghost-invert:hover {
+  border-color: var(--ph3-on-console);
+  background: rgb(255 255 255 / 6%);
+}
+
+/* The arrow sits in a group so it travels with the label instead of
+   independently, and it swaps direction's worth of travel on hover. */
+.ph3-arrow {
+  transition: transform 200ms var(--ph3-ease);
+}
+.ph3-btn:hover .ph3-arrow,
+.ph3-link:hover .ph3-arrow {
+  transform: translateX(3px);
+}
+
+.ph3-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--ph3-accent);
+  font-weight: 500;
+  text-underline-offset: 4px;
+}
+.ph3-link:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   navigation
+   -------------------------------------------------------------------------- */
+
+.ph3-nav {
+  background: rgb(255 255 255 / 80%);
+  backdrop-filter: blur(16px) saturate(140%);
+  border-bottom: 1px solid transparent;
+  transition:
+    border-color 200ms var(--ph3-ease-sharp),
+    background-color 200ms var(--ph3-ease-sharp);
+}
+.ph3-nav.is-scrolled {
+  border-bottom-color: var(--ph3-line);
+  background: rgb(255 255 255 / 92%);
+}
+
+.ph3-nav-link {
+  font-size: 0.875rem;
+  font-weight: 450;
+  letter-spacing: -0.008em;
+  color: var(--ph3-muted);
+  padding: 0.5rem 0.625rem;
+  border-radius: var(--ph3-r-sm);
+  transition: color 150ms var(--ph3-ease-sharp);
+}
+.ph3-nav-link:hover {
+  color: var(--ph3-ink);
+}
+
+/* Locale switch — a two-state segmented control, not a pair of pills. */
+.ph3-locale {
+  display: inline-flex;
+  border: 1px solid var(--ph3-line);
+  border-radius: var(--ph3-r-sm);
+  overflow: hidden;
+}
+.ph3-locale a {
+  padding: 0.25rem 0.4375rem;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ph3-muted-2);
+  transition:
+    background-color 150ms var(--ph3-ease-sharp),
+    color 150ms var(--ph3-ease-sharp);
+}
+.ph3-locale a + a {
+  border-left: 1px solid var(--ph3-line);
+}
+.ph3-locale a[aria-current="page"] {
+  background: var(--ph3-ink);
+  color: var(--ph3-white);
+}
+
+.ph3-menu-panel {
+  animation: ph3-panel-in 200ms var(--ph3-ease-sharp) both;
+}
+
+/* --------------------------------------------------------------------------
+   hero
+   -------------------------------------------------------------------------- */
+
+.ph3-hero {
+  isolation: isolate;
+  background: var(--ph3-paper);
+}
+
+/* A hairline rule field, not a glow. The grid is what makes the page read as
+   ruled and engineered; it is masked out well before the fold so it never
+   competes with the headline. */
+.ph3-hero-grid {
+  z-index: -1;
+  background-image:
+    linear-gradient(to right, var(--ph3-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--ph3-line) 1px, transparent 1px);
+  background-size: 88px 88px;
+  mask-image: linear-gradient(to bottom, #000 0%, rgb(0 0 0 / 22%) 62%, transparent 92%);
+  opacity: 0.6;
+}
+
+/* A single tight glow, confined behind the headline only. Two or more of these
+   was the gradient-blob tell; one, at low alpha, reads as light on paper. */
+.ph3-hero-light {
+  z-index: -1;
+  background: radial-gradient(
+    ellipse 46% 40% at 34% 8%,
+    rgb(19 82 191 / 7%),
+    transparent 68%
+  );
+}
+
+.ph3-hero-stage {
+  perspective: 2000px;
+}
+
+/* The console window. Sharp corners, a single tight shadow — the product UI is
+   the hero image, so it has to look like an object, not a decoration. */
+.ph3-window {
+  border: 1px solid var(--ph3-line-2);
+  border-radius: var(--ph3-r-md);
+  background: var(--ph3-white);
+  box-shadow:
+    0 0 0 1px rgb(10 10 11 / 4%),
+    0 24px 48px -28px rgb(10 10 11 / 26%),
+    0 48px 96px -64px rgb(10 10 11 / 34%);
+}
+
+.ph3-window-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  height: 2.25rem;
+  padding: 0 0.75rem;
+  border-bottom: 1px solid var(--ph3-line);
+  background: var(--ph3-surface);
+  border-radius: var(--ph3-r-md) var(--ph3-r-md) 0 0;
+}
+
+.ph3-window-url {
+  flex: 1;
+  height: 1.375rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  border: 1px solid var(--ph3-line);
+  border-radius: var(--ph3-r-sm);
+  background: var(--ph3-white);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.01em;
+  color: var(--ph3-muted-2);
+}
+
+/* A live status dot with a single soft pulse — the one ambient loop on the
+   page, and it is a real product signal rather than ornament. */
+.ph3-pulse {
+  position: relative;
+}
+.ph3-pulse::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: currentColor;
+  animation: ph3-ping 2.4s var(--ph3-ease-sharp) infinite;
+}
+
+/* --------------------------------------------------------------------------
+   proof strip
+   -------------------------------------------------------------------------- */
+
+.ph3-logo-mask {
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.ph3-logo-track {
+  animation: ph3-marquee 64s linear infinite;
+}
+.ph3-logo-mask:hover .ph3-logo-track {
+  animation-play-state: paused;
+}
+/* Logos stay legible — a heavy desaturation filter reads as "we are hiding
+   these", which is the opposite of proof. */
+.ph3-logo-track img {
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition:
+    opacity 250ms var(--ph3-ease-sharp),
+    filter 250ms var(--ph3-ease-sharp);
+}
+.ph3-logo-mask:hover img {
+  opacity: 0.78;
+}
+.ph3-logo-track span:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   console band — the dark punctuation
+   -------------------------------------------------------------------------- */
+
+.ph3-console {
+  background: var(--ph3-console);
+  color: var(--ph3-on-console);
+}
+
+/* A hairline grid on ink, the same field as the hero but inverted. Two grids
+   bookending the page is a deliberate rhyme, not a repeated component. */
+.ph3-console-grid {
+  background-image:
+    linear-gradient(to right, var(--ph3-console-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--ph3-console-line) 1px, transparent 1px);
+  background-size: 88px 88px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000, transparent 78%);
+  opacity: 0.55;
+}
+
+.ph3-console-rule {
+  border-top: 1px solid var(--ph3-console-line);
+}
+
+/* --------------------------------------------------------------------------
+   rules, rows and shared surfaces
+   -------------------------------------------------------------------------- */
+
+/* Vertical column rails — the structural tell of the new grid. Drawn once on
+   the shell, never per card. */
+.ph3-rails {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.ph3-rails > span {
+  border-left: 1px solid var(--ph3-line);
+}
+.ph3-rails > span:last-child {
+  border-right: 1px solid var(--ph3-line);
+}
+
+.ph3-row {
+  border-top: 1px solid var(--ph3-line);
+  transition: background-color 250ms var(--ph3-ease-sharp);
+}
+.ph3-row:hover {
+  background: var(--ph3-surface);
+}
+.ph3-console .ph3-row:hover {
+  background: rgb(255 255 255 / 4%);
+}
+
+.ph3-panel {
+  border: 1px solid var(--ph3-line);
+  border-radius: var(--ph3-r-md);
+  background: var(--ph3-white);
+}
+
+.ph3-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3125rem;
+  height: 1.375rem;
+  padding: 0 0.4375rem;
+  border: 1px solid var(--ph3-line);
+  border-radius: var(--ph3-r-xs);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ph3-muted-2);
+}
+
+.ph3-chip-accent {
+  border-color: var(--ph3-accent-line);
+  background: var(--ph3-accent-tint);
+  color: var(--ph3-accent);
+}
+
+.ph3-icon-tile {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--ph3-line);
+  border-radius: var(--ph3-r);
+  color: var(--ph3-accent);
+  background: var(--ph3-white);
+}
+
+/* --------------------------------------------------------------------------
+   email capture
+   -------------------------------------------------------------------------- */
+
+.ph3-form {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+.ph3-form-input {
+  flex: 1;
+  min-width: 0;
+  height: 2.875rem;
+  padding: 0 0.875rem;
+  border: 1px solid var(--ph3-line-2);
+  border-radius: var(--ph3-r);
+  background: var(--ph3-white);
+  font-size: 0.9375rem;
+  color: var(--ph3-ink);
+  transition:
+    border-color 150ms var(--ph3-ease-sharp),
+    box-shadow 150ms var(--ph3-ease-sharp);
+}
+.ph3-form-input::placeholder {
+  color: var(--ph3-muted-3);
+}
+.ph3-form-input:hover {
+  border-color: var(--ph3-line-3);
+}
+.ph3-form-input[aria-invalid="true"] {
+  border-color: #c0362c;
+  box-shadow: 0 0 0 3px rgb(192 54 44 / 12%);
+}
+
+.ph3-form-error {
+  color: #b33128;
+}
+
+/* --------------------------------------------------------------------------
+   how it works
+   -------------------------------------------------------------------------- */
+
+.ph3-step-visual {
+  border: 1px solid var(--ph3-line);
+  border-radius: var(--ph3-r-md);
+  background:
+    linear-gradient(var(--ph3-surface), var(--ph3-surface)) padding-box,
+    var(--ph3-paper);
+  transition: border-color 250ms var(--ph3-ease-sharp);
+}
+.ph3-steps .ph3-row:hover .ph3-step-visual {
+  border-color: var(--ph3-line-2);
+}
+
+/* --------------------------------------------------------------------------
+   Field band — photographs of the product in use
+   --------------------------------------------------------------------------
+   These are NOT drained to monochrome, and that is a deliberate reversal of the
+   treatment this band carried when it held stock interiors.
+
+   The argument for draining was that full-bleed saturation reads as decoration.
+   It still does — but these frames are evidence, and the evidence is the screen
+   inside them. Desaturating turns a legible Cekat interface into a grey
+   rectangle, which is the one thing worth looking at.
+
+   So colour stays, and the frame stays structural instead: a hairline, a fixed
+   row height, and a barely-there lift on hover. The photographs sit at the same
+   weight as the rules around them and the page keeps its register.
+   -------------------------------------------------------------------------- */
+
+.ph3-field-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+/* One row height for every cell, so the grid resolves before the bytes arrive
+   and nothing reflows under the visitor as five images land in sequence. */
+@media (min-width: 1024px) {
+  .ph3-field-cell.lg\:col-span-2 .ph3-photo {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+.ph3-field .ph3-photo {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--ph3-r-md);
+  background: var(--ph3-surface);
+  transition: border-color 250ms var(--ph3-ease-sharp);
+}
+
+/* The two double cells are wider than tall, so their source is used at its own
+   shape instead of being cropped to the small cells' 4:3. */
+@media (min-width: 1024px) {
+  .ph3-field-cell.lg\:col-span-2 .ph3-photo {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ph3-field-cell:hover .ph3-photo {
+    outline: 1px solid var(--ph3-line-2);
+    outline-offset: -1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ph3-field .ph3-photo {
+    transition: none;
+  }
+}
+
+/* Connector strokes draw themselves once, when the row enters. */
+.ph3-draw {
+  stroke-dasharray: var(--len, 400);
+  stroke-dashoffset: var(--len, 400);
+  transition: stroke-dashoffset 1100ms var(--ph3-ease);
+}
+[data-ph3-in="true"] .ph3-draw {
+  stroke-dashoffset: 0;
+}
+
+/* --------------------------------------------------------------------------
+   product experience
+   -------------------------------------------------------------------------- */
+
+.ph3-app {
+  border: 1px solid var(--ph3-line-2);
+  border-radius: var(--ph3-r-lg);
+  background: var(--ph3-white);
+  box-shadow:
+    0 0 0 1px rgb(10 10 11 / 4%),
+    0 32px 64px -44px rgb(10 10 11 / 28%);
+  overflow: hidden;
+}
+
+.ph3-app-rail {
+  background: var(--ph3-surface);
+  border-right: 1px solid var(--ph3-line);
+}
+
+/* Nav items inside the product mock: a flat list with a left accent bar on the
+   active row — the way real dense app navigation is drawn, not a pill. */
+.ph3-app-nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 0.5rem 0.625rem;
+  border-radius: var(--ph3-r-sm);
+  font-size: 0.8125rem;
+  color: var(--ph3-muted);
+  text-align: left;
+  transition:
+    background-color 150ms var(--ph3-ease-sharp),
+    color 150ms var(--ph3-ease-sharp);
+}
+.ph3-app-nav-item:hover {
+  background: rgb(10 10 11 / 4%);
+  color: var(--ph3-ink);
+}
+.ph3-app-nav-item[aria-current="true"] {
+  background: var(--ph3-white);
+  color: var(--ph3-ink);
+  font-weight: 500;
+  box-shadow: inset 0 0 0 1px var(--ph3-line);
+}
+.ph3-app-nav-item[aria-current="true"]::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  translate: 0 -50%;
+  width: 2px;
+  height: 1.125rem;
+  background: var(--ph3-accent);
+  border-radius: 0 2px 2px 0;
+}
+
+.ph3-app-row {
+  display: flex;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 0.625rem;
+  border: 1px solid transparent;
+  border-radius: var(--ph3-r);
+  text-align: left;
+  transition:
+    background-color 150ms var(--ph3-ease-sharp),
+    border-color 150ms var(--ph3-ease-sharp);
+}
+.ph3-app-row:hover {
+  background: var(--ph3-surface);
+}
+.ph3-app-row[aria-current="true"] {
+  background: var(--ph3-accent-tint);
+  border-color: var(--ph3-accent-line);
+}
+
+/* Chat bubbles: a 6px radius with one squared corner, so the speaker is
+   readable without needing colour to carry it. */
+.ph3-bubble {
+  border-radius: var(--ph3-r-md);
+  padding: 0.625rem 0.75rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+.ph3-bubble-in {
+  background: var(--ph3-surface-2);
+  color: var(--ph3-ink-2);
+  border-bottom-left-radius: 2px;
+}
+.ph3-bubble-ai {
+  background: var(--ph3-accent-tint);
+  color: var(--ph3-ink);
+  border-bottom-right-radius: 2px;
+  box-shadow: inset 0 0 0 1px var(--ph3-accent-line);
+}
+
+/*
+ * Playback state for the hero conversation.
+ *
+ * The turn is *always* in the DOM and readable by assistive tech; only its
+ * opacity and offset change, and the resting state — no `.is-in` — is the
+ * un-played one. A visitor with reduced motion, a failed script, or a crawler
+ * therefore still gets the whole exchange as text.
+ *
+ * Only opacity and transform are animated, so the reveal stays on the compositor
+ * and never triggers layout.
+ */
+.ph3-bubble {
+  opacity: 0;
+  transform: translate3d(0, 6px, 0);
+  transition:
+    opacity 320ms var(--ph3-ease-sharp),
+    transform 320ms var(--ph3-ease);
+}
+.ph3-bubble.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/*
+ * The typing indicator. Three dots on a staggered loop, small enough that the
+ * whole thing reads as one movement rather than three.
+ */
+.ph3-typing {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  height: 1rem;
+}
+.ph3-typing > span {
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--ph3-muted-3);
+  animation: ph3-typing-dot 1.05s var(--ph3-ease-sharp) infinite;
+}
+.ph3-typing > span:nth-child(2) {
+  animation-delay: 0.14s;
+}
+.ph3-typing > span:nth-child(3) {
+  animation-delay: 0.28s;
+}
+
+/* The grounded-source strip under the AI reply: the single most credible
+   detail in the whole mock, so it gets a real hairline, not a tint. */
+.ph3-grounded {
+  margin-top: 0.625rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--ph3-accent-line);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.02em;
+  color: var(--ph3-accent);
+}
+
+.ph3-composer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--ph3-line);
+  border-radius: var(--ph3-r);
+  background: var(--ph3-white);
+  transition: border-color 150ms var(--ph3-ease-sharp);
+}
+.ph3-composer:hover {
+  border-color: var(--ph3-line-2);
+}
+
+/* --------------------------------------------------------------------------
+   product stage — the wide, dissolving grid
+   -------------------------------------------------------------------------- */
+
+/*
+ * A data grid that fades out rather than ending, with a detail card occupying
+ * the space the fade leaves behind.
+ *
+ * The mask is the whole effect. A grid with a hard right edge reads as a cropped
+ * table; a grid that dissolves reads as a surface continuing past the frame, and
+ * the empty space it leaves is what the floating card drops into. The card is a
+ * sibling rather than a child on purpose — as a child it would inherit the mask
+ * and fade with the grid, which is exactly what it must not do.
+ *
+ * The mask is decoration only: it never hides content that is needed to read the
+ * page, and it is off entirely below `lg`, where there is no room for the
+ * composition and a half-faded row would just look broken.
+ */
+.ph3-stage {
+  position: relative;
+}
+
+.ph3-grid-mask {
+  -webkit-mask-image: linear-gradient(to right, #000 58%, transparent 100%);
+  mask-image: linear-gradient(to right, #000 58%, transparent 100%);
+}
+
+.ph3-float-card {
+  position: absolute;
+  top: 12%;
+  left: 60%;
+  z-index: 10;
+  width: min(22rem, 38%);
+  border: 1px solid var(--ph3-line);
+  border-radius: var(--ph3-r-md);
+  background: var(--ph3-white);
+  box-shadow:
+    0 0 0 1px rgb(10 10 11 / 3%),
+    0 8px 24px -6px rgb(10 10 11 / 8%),
+    0 2px 6px -2px rgb(10 10 11 / 10%);
+}
+
+@media (max-width: 1023px) {
+  /* One column: the grid runs full width, nothing is masked, and the card sits
+     underneath as a normal block. */
+  .ph3-grid-mask {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .ph3-float-card {
+    position: static;
+    width: 100%;
+    margin-top: 1.25rem;
+  }
+}
+
+/*
+ * Rows arrive one after another.
+ *
+ * The delay is a CSS custom property per row rather than a JS stagger, so it
+ * costs nothing to run and collapses to nothing under `prefers-reduced-motion`
+ * (the global rule in this file clamps animation duration, and an element
+ * caught mid-fade simply lands on its final state).
+ */
+@keyframes ph3-row-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.ph3-row-in {
+  opacity: 0;
+  animation: ph3-row-in 420ms var(--ph3-ease) forwards;
+  animation-delay: calc(var(--ph3-i, 0) * 55ms);
+}
+
+/*
+ * The grid's column template.
+ *
+ * A real table needs its columns to line up between the header row and the body
+ * rows, and both are `display: grid`. Repeating the template in two places is
+ * how a table silently drifts, so it lives here once.
+ *
+ * The first column takes the slack because it holds a name plus a place; the
+ * middle columns are sized to their content (a channel name, a fixed-width
+ * score pill, an owner) and the last one absorbs the remainder because it holds
+ * a sentence.
+ */
+.ph3-grid-cols {
+  grid-template-columns:
+    minmax(7.5rem, 1.1fr) minmax(4.5rem, 0.7fr) 4.25rem
+    minmax(3.5rem, 0.55fr) minmax(0, 1.65fr);
+  gap: 0 0.875rem;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  /* Below `sm` the channel, owner and activity columns are dropped: a truncated
+     sentence is worse than no sentence, and the card underneath carries the
+     detail. That leaves the name and the score, so the template is two tracks —
+     three would leave an empty column and misalign every row. */
+  .ph3-grid-cols {
+    grid-template-columns: minmax(6rem, 1fr) 4.25rem;
+  }
+  .ph3-grid-cols > :nth-child(2),
+  .ph3-grid-cols > :nth-child(4),
+  .ph3-grid-cols > :nth-child(5) {
+    display: none;
+  }
+}
+
+/* A small figure pill, the way a CRM shows a score in a table cell. */
+.ph3-score {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.1rem;
+  height: 1.35rem;
+  padding: 0 0.375rem;
+  border: 1px solid var(--ph3-line);
+  border-radius: var(--ph3-r-xs);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+  color: var(--ph3-muted);
+  background: var(--ph3-white);
+}
+.ph3-score-accent {
+  border-color: var(--ph3-accent-line);
+  background: var(--ph3-accent-tint);
+  color: var(--ph3-accent);
+}
+
+/* Tab bar under the app — a real segmented control with a sliding-feeling
+   active state, keyboard operable, `aria-pressed` for the state. */
+.ph3-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--ph3-r-sm);
+  font-size: 0.8125rem;
+  color: var(--ph3-muted-2);
+  transition:
+    background-color 150ms var(--ph3-ease-sharp),
+    color 150ms var(--ph3-ease-sharp);
+}
+.ph3-tab:hover {
+  color: var(--ph3-ink);
+  background: var(--ph3-surface);
+}
+.ph3-tab[aria-selected="true"] {
+  background: var(--ph3-ink);
+  color: var(--ph3-white);
+}
+.ph3-tab[aria-selected="true"] .ph3-tab-num {
+  color: rgb(255 255 255 / 45%);
+}
+.ph3-tab-num {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  color: var(--ph3-muted-3);
+}
+
+/* --------------------------------------------------------------------------
+   story + data panel
+   -------------------------------------------------------------------------- */
+
+.ph3-quote {
+  font-size: clamp(1.375rem, 2.6vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.24;
+  color: var(--ph3-ink);
+  text-wrap: pretty;
+}
+
+/* Attribution without a portrait. Shipping an initials monogram where a real
+   person's photo belongs implies a likeness that does not exist, so the credit
+   is typographic — a name, a role, and the company set as a wordmark. */
+.ph3-credit-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  color: var(--ph3-ink);
+}
+.ph3-credit-role {
+  font-size: 0.8125rem;
+  color: var(--ph3-muted-2);
+}
+
+.ph3-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.375rem;
+  height: 7.5rem;
+}
+.ph3-bars > span {
+  flex: 1;
+  border-radius: var(--ph3-r-xs) var(--ph3-r-xs) 0 0;
+  background: var(--ph3-line-2);
+  transform-origin: bottom;
+  transition: background-color 250ms var(--ph3-ease-sharp);
+}
+.ph3-bars > span.is-now {
+  background: var(--ph3-accent);
+}
+
+/* --------------------------------------------------------------------------
+   trust
+   -------------------------------------------------------------------------- */
+
+.ph3-spec-cell {
+  padding: 1.75rem 1.5rem;
+  border-top: 1px solid var(--ph3-line);
+  transition: background-color 250ms var(--ph3-ease-sharp);
+}
+.ph3-spec-cell:hover {
+  background: var(--ph3-surface);
+}
+
+/* --------------------------------------------------------------------------
+   pricing
+   -------------------------------------------------------------------------- */
+
+.ph3-plan {
+  border: 1px solid var(--ph3-line-2);
+  border-radius: var(--ph3-r-lg);
+  background: var(--ph3-paper);
+  transition:
+    border-color 250ms var(--ph3-ease-sharp),
+    box-shadow 250ms var(--ph3-ease-sharp);
+}
+.ph3-plan:hover {
+  border-color: var(--ph3-line-3);
+  box-shadow: 0 20px 40px -32px rgb(10 10 11 / 3%);
+}
+.ph3-plan.is-featured {
+  background: var(--ph3-console);
+  border-color: var(--ph3-console);
+  color: var(--ph3-on-console);
+}
+
+.ph3-price {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.ph3-included {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.ph3-included svg {
+  flex-shrink: 0;
+  margin-top: 0.1875rem;
+  color: var(--ph3-accent);
+}
+.ph3-plan.is-featured .ph3-included svg {
+  color: #6f9ae8;
+}
+
+/* --------------------------------------------------------------------------
+   faq
+   -------------------------------------------------------------------------- */
+
+.ph3-root summary {
+  list-style: none;
+  cursor: pointer;
+  transition: color 150ms var(--ph3-ease-sharp);
+}
+.ph3-root summary::-webkit-details-marker {
+  display: none;
+}
+.ph3-root summary:hover {
+  color: var(--ph3-accent);
+}
+
+/* A 12px square that rotates 45° into a close. A circle here would undo the
+   geometry decision the whole page rests on. */
+.ph3-faq-toggle {
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  border: 1px solid var(--ph3-line-2);
+  border-radius: var(--ph3-r-sm);
+  color: var(--ph3-muted);
+  transition:
+    transform 250ms var(--ph3-ease),
+    border-color 200ms var(--ph3-ease-sharp),
+    color 200ms var(--ph3-ease-sharp);
+}
+.ph3-root details[open] .ph3-faq-toggle {
+  transform: rotate(45deg);
+  border-color: var(--ph3-accent);
+  color: var(--ph3-accent);
+}
+
+.ph3-root details[open] .ph3-faq-body {
+  animation: ph3-fade-in 240ms var(--ph3-ease-sharp) both;
+}
+
+/* --------------------------------------------------------------------------
+   footer
+   -------------------------------------------------------------------------- */
+
+.ph3-footer-tab {
+  padding: 0.3125rem 0.625rem;
+  border-radius: var(--ph3-r-sm);
+  font-size: 0.8125rem;
+  color: var(--ph3-on-console-2);
+  transition:
+    background-color 150ms var(--ph3-ease-sharp),
+    color 150ms var(--ph3-ease-sharp);
+}
+.ph3-footer-tab:hover {
+  background: rgb(255 255 255 / 8%);
+  color: var(--ph3-on-console);
+}
+.ph3-footer-tab[aria-selected="true"] {
+  background: rgb(255 255 255 / 12%);
+  color: var(--ph3-on-console);
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   motion contract
+   -------------------------------------------------------------------------- */
+
+/*
+ * Scroll entrances are driven by GSAP (see `Motion3.tsx`), which sets the
+ * start state at runtime. So the resting state in CSS is the *final* state:
+ * with JS disabled, or before GSAP boots, everything is already readable and
+ * nothing can be stranded invisible.
+ *
+ * The one exception is elements GSAP needs a measured start for, marked with
+ * `data-ph3-enter`; they are only hidden once the motion layer confirms it is
+ * running, via the `data-ph3-motion="on"` attribute set on the same tick.
+ */
+[data-ph3-motion="on"] [data-ph3-enter] {
+  opacity: 0;
+}
+
+@keyframes ph3-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes ph3-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes ph3-typing-dot {
+  0%,
+  60%,
+  100% {
+    opacity: 0.35;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes ph3-marquee {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes ph3-ping {
+  0% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  70%,
+  100% {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}
+
+@media (hover: none) {
+  .ph3-logo-track {
+    animation-duration: 90s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ph3-root *,
+  .ph3-root *::before,
+  .ph3-root *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  [data-ph3-motion="on"] [data-ph3-enter] {
+    opacity: 1;
+  }
+  .ph3-logo-track {
+    animation: none;
+  }
+  .ph3-draw {
+    stroke-dashoffset: 0;
+  }
+}
+
+}

@@ -72,7 +72,7 @@ export function CaseStudy({ content }: { content: HomeContent["caseStudy"] }) {
 
             <dl className="mt-7 grid gap-6 border-t border-[#F1F5F9] pt-6 sm:grid-cols-3">
               {content.metrics.map((metric) => (
-                <div key={metric.label}>
+                <div key={metric.label} className="flex flex-col">
                   <dd className="text-[clamp(1.5rem,2.6vw,1.9rem)] leading-none font-bold tracking-[-0.03em] text-[#101828] tabular-nums">
                     {metric.value}
                     <span className="text-primary">{metric.suffix}</span>

@@ -29,7 +29,10 @@ export function ProofStrip({ content }: { content: HomeContent["proof"] }) {
 
         <dl className="mt-10 grid gap-px overflow-hidden rounded-[20px] border border-border bg-border sm:grid-cols-3">
           {content.stats.map((stat) => (
-            <div key={stat.label} className="bg-white px-6 py-8 text-center">
+            <div
+              key={stat.label}
+              className="flex flex-col bg-white px-6 py-8 text-center"
+            >
               <dd className="text-[clamp(1.9rem,3.6vw,2.6rem)] leading-none font-bold tracking-[-0.035em] text-[#101828] tabular-nums">
                 {stat.value}
                 <span className="text-primary">{stat.suffix}</span>

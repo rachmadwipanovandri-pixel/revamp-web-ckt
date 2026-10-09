@@ -463,6 +463,295 @@ describe("preview-home-2 hero stage", () => {
     });
   });
 
+  it("a click on a placed window keeps its release point", () => {
+    mockMedia({
+      "(prefers-reduced-motion: reduce)": false,
+      "(pointer: fine)": true,
+    });
+    const { container } = render(
+      <HeroStage dashboard={dashboard} stage={stage} />,
+    );
+    const shells = [...container.querySelectorAll(".ph2-anim.absolute")];
+    const wheels = () =>
+      [...container.querySelectorAll(".ph2-anim.absolute")].map((shell) =>
+        shell.querySelector<HTMLElement>(".ph2-pop-in > div")!,
+      );
+    const scale = container.querySelector(".ph2-stage-scale");
+    if (!scale) throw new Error("stage wrapper missing");
+    scale.getBoundingClientRect = () =>
+      ({
+        left: 0,
+        right: 1200,
+        top: 0,
+        bottom: 800,
+        width: 1200,
+        height: 800,
+        x: 0,
+        y: 0,
+        toJSON: () => ({}),
+      }) as DOMRect;
+    wheels().forEach((el, i) => {
+      el.getBoundingClientRect = () =>
+        ({
+          left: i * 400,
+          right: i * 400 + 300,
+          top: 0,
+          bottom: 400,
+          width: 300,
+          height: 400,
+          x: i * 400,
+          y: 0,
+          toJSON: () => ({}),
+        }) as DOMRect;
+    });
+
+    // Place the first window, then click it without moving: the click fronts
+    // it but must not teleport it back to its anchor.
+    fireEvent.pointerDown(shells[0], { button: 0, clientX: 10, clientY: 10 });
+    fireEvent.pointerMove(shells[0], { clientX: 450, clientY: 50 });
+    fireEvent.pointerUp(shells[0]);
+    expect(wheels()[0].style.transform).toContain("translate(440px, 40px)");
+
+    const shellsAfter = [...container.querySelectorAll(".ph2-anim.absolute")];
+    const z = () =>
+      shellsAfter.map((shell) => Number((shell as HTMLElement).style.zIndex));
+    fireEvent.pointerDown(shellsAfter[0], {
+      button: 0,
+      clientX: 450,
+      clientY: 50,
+    });
+    fireEvent.pointerUp(shellsAfter[0]);
+    // Still fronted by the press…
+    expect(z()[0]).toBeGreaterThan(z()[1]);
+    expect(z()[0]).toBeGreaterThan(z()[2]);
+    // …and still where it was dropped.
+    expect(wheels()[0].style.transform).toBe("translate(440px, 40px)");
+  });
+
+  it("a release over another window leaves that window alone", () => {
+    mockMedia({
+      "(prefers-reduced-motion: reduce)": false,
+      "(pointer: fine)": true,
+    });
+    const { container } = render(
+      <HeroStage dashboard={dashboard} stage={stage} />,
+    );
+    const shells = [...container.querySelectorAll(".ph2-anim.absolute")];
+    const wheels = () =>
+      [...container.querySelectorAll(".ph2-anim.absolute")].map((shell) =>
+        shell.querySelector<HTMLElement>(".ph2-pop-in > div")!,
+      );
+    const scale = container.querySelector(".ph2-stage-scale");
+    if (!scale) throw new Error("stage wrapper missing");
+    scale.getBoundingClientRect = () =>
+      ({
+        left: 0,
+        right: 1200,
+        top: 0,
+        bottom: 800,
+        width: 1200,
+        height: 800,
+        x: 0,
+        y: 0,
+        toJSON: () => ({}),
+      }) as DOMRect;
+    wheels().forEach((el, i) => {
+      el.getBoundingClientRect = () =>
+        ({
+          left: i * 400,
+          right: i * 400 + 300,
+          top: 0,
+          bottom: 400,
+          width: 300,
+          height: 400,
+          x: i * 400,
+          y: 0,
+          toJSON: () => ({}),
+        }) as DOMRect;
+    });
+
+    // Place the second window first, so wiping it is observable.
+    fireEvent.pointerDown(shells[1], { button: 0, clientX: 410, clientY: 10 });
+    fireEvent.pointerMove(shells[1], { clientX: 600, clientY: 60 });
+    fireEvent.pointerUp(shells[1]);
+    expect(wheels()[1].style.transform).toBe("translate(190px, 50px)");
+
+    // Start dragging the first window, then release over the second one
+    // (no pointer capture, fast pointer, second finger — the up lands on a
+    // neighbour). The neighbour must not lose its placement, and the gesture
+    // still belongs to the first window.
+    fireEvent.pointerDown(shells[0], { button: 0, clientX: 10, clientY: 10 });
+    fireEvent.pointerMove(shells[0], { clientX: 100, clientY: 30 });
+    fireEvent.pointerUp(shells[1]);
+    expect(wheels()[1].style.transform).toBe("translate(190px, 50px)");
+
+    // Finishing the real gesture on its own window still drops it normally.
+    fireEvent.pointerMove(shells[0], { clientX: 150, clientY: 40 });
+    fireEvent.pointerUp(shells[0]);
+    expect(wheels()[0].style.transform).toBe("translate(140px, 30px)");
+    expect(wheels()[1].style.transform).toBe("translate(190px, 50px)");
+  });
+
+  it("closing a held window does not stick the next summon in hand", () => {
+    mockMedia({
+      "(prefers-reduced-motion: reduce)": false,
+      "(pointer: fine)": true,
+    });
+    const { container } = render(
+      <HeroStage dashboard={dashboard} stage={stage} />,
+    );
+    const shells = [...container.querySelectorAll(".ph2-anim.absolute")];
+    const close = container.querySelector(
+      `.ph2-stage-card button[aria-label="${stage.popups.close}"]`,
+    ) as HTMLElement;
+
+    // Press the first window (a real browser also routes this press through
+    // the shell when it starts on the close dot), then close it mid-gesture:
+    // the up that would have finished the drag never arrives.
+    fireEvent.pointerDown(close, { button: 0, clientX: 10, clientY: 10 });
+    fireEvent.click(close);
+    expect(shells[0].isConnected).toBe(false);
+
+    // Re-summon the same product: it must arrive as a plain window, not one
+    // that still thinks it is being dragged (held shadow, top z, loop held).
+    const pills = () => container.querySelectorAll("button[aria-pressed]");
+    fireEvent.click(pills()[0] as HTMLElement);
+    const reopened = [...container.querySelectorAll(".ph2-anim.absolute")][0];
+    expect((reopened as HTMLElement).className).not.toContain(
+      "cursor-grabbing",
+    );
+    expect(Number((reopened as HTMLElement).style.zIndex)).toBeLessThan(100);
+  });
+
+  it("gives every slot its own anchor, so no card buries another fully", () => {
+    mockMedia({
+      "(prefers-reduced-motion: reduce)": false,
+      "(pointer: fine)": true,
+    });
+    const { container } = render(
+      <HeroStage dashboard={dashboard} stage={stage} />,
+    );
+    // Open all six: column-mates used to share an anchor (crm/marketing were
+    // even identical), stacking two windows perfectly on top of each other so
+    // the back one had nothing clickable left.
+    const pills = () => container.querySelectorAll("button[aria-pressed]");
+    [3, 4, 5].forEach((index) => {
+      fireEvent.click(pills()[index] as HTMLElement);
+    });
+    const shells = [...container.querySelectorAll(".ph2-anim.absolute")];
+    expect(shells).toHaveLength(6);
+    const signature = (shell: Element) =>
+      [...(shell as HTMLElement).classList]
+        .map((token) => token.replace(/^lg:/, ""))
+        .filter((token) =>
+          /^(left|right|top|bottom|mx|ml|mr)-/.test(token),
+        )
+        .sort()
+        .join(" ");
+    const anchors = shells.map(signature);
+    // Every window sits on a different anchor — the cascade that keeps a grab
+    // strip of each buried card exposed.
+    expect(new Set(anchors).size).toBe(6);
+  });
+
+  it("hit-tests the painted card, never the shell's vacated anchor", () => {
+    mockMedia({
+      "(prefers-reduced-motion: reduce)": false,
+      "(pointer: fine)": true,
+    });
+    const { container } = render(
+      <HeroStage dashboard={dashboard} stage={stage} />,
+    );
+    const shells = [
+      ...container.querySelectorAll<HTMLElement>(".ph2-anim.absolute"),
+    ];
+    expect(shells.length).toBeGreaterThan(0);
+    shells.forEach((shell) => {
+      // The shell keeps the anchor (where the bob runs) even after a drop
+      // moves the box away. Hit-testing that rectangle would hand its clicks
+      // to whatever paints under it now — a ghost that steals from the card
+      // below — so the shell opts out and the box re-enables pointer events,
+      // making the painted card the hit region. Presses then bubble from the
+      // box back up to the handlers on the shell.
+      expect(shell.className).toContain("pointer-events-none");
+      const box = shell.querySelector<HTMLElement>(".ph2-pop-in > div");
+      expect(box?.className).toContain("pointer-events-auto");
+    });
+
+    // Capture rides on the box: the shell cannot be hit at all, so capturing
+    // there would not be reliably honoured by the browser.
+    const box = shells[0].querySelector<HTMLElement>(".ph2-pop-in > div")!;
+    const capture = vi.fn();
+    box.setPointerCapture = capture;
+    fireEvent.pointerDown(shells[0], {
+      button: 0,
+      pointerId: 7,
+      clientX: 10,
+      clientY: 10,
+    });
+    expect(capture).toHaveBeenCalledWith(7);
+  });
+
+  it("a plain click freezes the bob and resumes it without a restart", () => {
+    mockMedia({
+      "(prefers-reduced-motion: reduce)": false,
+      "(pointer: fine)": true,
+    });
+    const { container } = render(
+      <HeroStage dashboard={dashboard} stage={stage} />,
+    );
+    const shell = container.querySelector<HTMLElement>(".ph2-anim.absolute")!;
+    // The conversation card starts unplaced, so it is mid-bob.
+    expect(shell.className).toContain("ph2-float");
+    const box = shell.querySelector<HTMLElement>(".ph2-pop-in > div")!;
+
+    fireEvent.pointerDown(shell, { button: 0, clientX: 10, clientY: 10 });
+    // Paused, not stripped: if the class left during the gesture, releasing
+    // would re-attach it and restart the animation at another phase — the
+    // pressed card leaping the pixel it was clicked on.
+    expect(shell.className).toContain("ph2-float");
+    expect(shell.style.animationPlayState).toBe("paused");
+    // The box takes the (zero) placement, ready to track the hand.
+    expect(box.style.transform).toContain("translate(0px, 0px)");
+
+    fireEvent.pointerUp(shell);
+    // The same animation continues from its frozen phase…
+    expect(shell.style.animationPlayState).toBe("");
+    expect(shell.className).toContain("ph2-float");
+    // …and a click leaves no placement behind: nothing was dragged.
+    expect(box.style.transform).toBe("");
+  });
+
+  it("reopening a buried card surfaces it instead of reburying it", () => {
+    mockMedia({
+      "(prefers-reduced-motion: reduce)": false,
+      "(pointer: fine)": true,
+    });
+    const { container } = render(
+      <HeroStage dashboard={dashboard} stage={stage} />,
+    );
+    const shells = () =>
+      [...container.querySelectorAll(".ph2-anim.absolute")].map(
+        (shell) => shell as HTMLElement,
+      );
+    const z = (index: number) => Number(shells()[index].style.zIndex);
+
+    // Front the second card, burying the first one underneath it.
+    fireEvent.pointerDown(shells()[1], { button: 0, clientX: 410, clientY: 10 });
+    fireEvent.pointerUp(shells()[1]);
+    expect(z(1)).toBeGreaterThan(z(0));
+
+    // Close the buried card from its pill and bring it straight back: it must
+    // arrive on top, like a newly opened window, not back underneath.
+    const pills = () => container.querySelectorAll("button[aria-pressed]");
+    fireEvent.click(pills()[0] as HTMLElement);
+    expect(
+      container.querySelectorAll(".ph2-anim.absolute"),
+    ).toHaveLength(2);
+    fireEvent.click(pills()[0] as HTMLElement);
+    expect(z(0)).toBeGreaterThan(z(1));
+  });
+
   it("a drag past the stage edge pins to the edge", () => {
     mockMedia({
       "(prefers-reduced-motion: reduce)": false,
@@ -515,6 +804,76 @@ describe("preview-home-2 hero stage", () => {
     fireEvent.pointerUp(shells[0]);
     expect((slots[0] as HTMLElement).style.transform).toContain(
       "translate(712px, 0px)",
+    );
+  });
+
+  it("a drag tracks the pointer 1:1 through the stage's scroll scale", () => {
+    mockMedia({
+      "(prefers-reduced-motion: reduce)": false,
+      "(pointer: fine)": true,
+    });
+    const { container } = render(
+      <HeroStage dashboard={dashboard} stage={stage} />,
+    );
+    const shells = [...container.querySelectorAll(".ph2-anim.absolute")];
+    const slots = shells.map((shell) =>
+      shell.querySelector<HTMLElement>(".ph2-pop-in > div")!,
+    );
+    const scale = container.querySelector(".ph2-stage-scale");
+    if (!scale) throw new Error("stage wrapper missing");
+    scale.getBoundingClientRect = () =>
+      ({
+        left: 0,
+        right: 600,
+        top: 0,
+        bottom: 800,
+        width: 600, // the *scaled* rect …
+        height: 800,
+        x: 0,
+        y: 0,
+        toJSON: () => ({}),
+      }) as DOMRect;
+    // … against a 1200px layout width: the wrapper sits at scale 0.5, the way
+    // the real stage does when the scroll-linked scale is not all the way up.
+    Object.defineProperty(scale, "offsetWidth", {
+      value: 1200,
+      configurable: true,
+    });
+    slots.forEach((el, i) => {
+      el.getBoundingClientRect = () =>
+        ({
+          left: i * 400,
+          right: i * 400 + 300,
+          top: 0,
+          bottom: 400,
+          width: 300,
+          height: 400,
+          x: i * 400,
+          y: 0,
+          toJSON: () => ({}),
+        }) as DOMRect;
+    });
+
+    // The pointer travels 100 screen px; the box inside the scaled wrapper
+    // must travel 100 / 0.5 = 200 local px so the painted card keeps up.
+    // A raw 1:1 translate would trail the pointer by (1 − scale) of the
+    // distance and the drop would land short of the release point.
+    fireEvent.pointerDown(shells[0], { button: 0, clientX: 10, clientY: 10 });
+    fireEvent.pointerMove(shells[0], { clientX: 110, clientY: 10 });
+    expect((slots[0] as HTMLElement).style.transform).toContain(
+      "translate(200px, 0px)",
+    );
+
+    // Far past the right edge: the painted clamp (1024 − 12 − 300 = 712)
+    // converts back through the scale, so the local translate is double.
+    fireEvent.pointerMove(shells[0], { clientX: 3000, clientY: 10 });
+    expect((slots[0] as HTMLElement).style.transform).toContain(
+      "translate(1424px, 0px)",
+    );
+    fireEvent.pointerUp(shells[0]);
+    // The release point persists exactly — 712 painted px = 1424 local px.
+    expect((slots[0] as HTMLElement).style.transform).toContain(
+      "translate(1424px, 0px)",
     );
   });
 

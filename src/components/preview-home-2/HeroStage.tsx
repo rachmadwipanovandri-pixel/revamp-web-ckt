@@ -31,6 +31,25 @@ import type {
  * Centered slots use `left-0 right-0 mx-auto` on purpose: the slot carries an
  * inline `transform` for drag placement, which would override a
  * `-translate-x-1/2` utility.
+ *
+ * Column-mates never share an anchor, and the anchors step sideways on
+ * purpose: the top row hugs the two edges, the bottom row spreads across the
+ * stage (0% / 11% / ~50% from the left), the centre card sits on `mx-auto`.
+ * The windows are *meant* to overlap — six 320–340px cards cover more area
+ * than the canvas has, so some stacking on every pixel of the pile is forced
+ * by geometry, the way attio.com's canvas stacks. What these anchors hand out
+ * is the *share* of each card that gets covered: distributed so no window sits
+ * buried much past halfway, each keeping a grab strip and its own chrome
+ * visible.
+ *
+ * Overlap used to be a hit-testing hazard — the browser routes a press to
+ * whichever window paints on top, so a half-visible card behind could look
+ * clickable and receive nothing. Correctness no longer comes from keeping the
+ * rectangles apart; it comes from the paint itself: each shell is
+ * `pointer-events-none`, so a window's hit region is exactly the pixels it
+ * paints, wherever a drop has put it, and grabbing (even a plain click) fronts
+ * the touched window above the rest. That is what lets a visitor pile cards
+ * anywhere without ever losing a click.
  */
 const SLOTS = [
   {
@@ -61,7 +80,7 @@ const SLOTS = [
   {
     key: "mini",
     float: "ph2-float-slow",
-    className: "lg:bottom-4 lg:left-0",
+    className: "lg:bottom-4 lg:left-[11%]",
     period: "8.8s",
     phase: "-6.1s",
     enter: 1,
@@ -69,7 +88,7 @@ const SLOTS = [
   {
     key: "consulting",
     float: "ph2-float",
-    className: "lg:right-0 lg:bottom-4",
+    className: "lg:right-[11%] lg:bottom-4",
     period: "11.2s",
     phase: "-3.5s",
     enter: 3,
@@ -77,7 +96,7 @@ const SLOTS = [
   {
     key: "marketing",
     float: "ph2-float-slow",
-    className: "lg:right-0 lg:bottom-4 lg:left-0 lg:mx-auto",
+    className: "lg:bottom-12 lg:left-[50%]",
     period: "7.9s",
     phase: "-5.2s",
     enter: 5,
@@ -132,14 +151,6 @@ export function loopTickMs(beatCount: number): number {
 const phase = (ms: number): CSSProperties => ({
   animationDelay: `calc(var(--ph2-phase, 0ms) + ${ms}ms)`,
 });
-
-/**
- * The bob classes, named so `beginDrag` can strip one off an element before
- * React has a chance to. They are the only classes that put an animation on the
- * slot's `transform`, and an animation wins over an inline style — so leaving
- * one attached for a frame would override the position being written.
- */
-const FLOAT_CLASSES = ["ph2-float", "ph2-float-slow"];
 
 /** Staggered entry: base CSS is the settled state, so `animation: none` is safe. */
 const at = (beat: number): CSSProperties => phase(beat * BEAT);
@@ -233,9 +244,9 @@ export function bobOffset(el: Element): { x: number; y: number } {
   return { x: parts[4], y: parts[5] };
 }
 
-/** Movement before a press becomes a drag — lets plain presses (and text
- * selection starts) alone. */
-const DRAG_THRESHOLD = 6;
+/** Movement before a press becomes a drag — sub-pixel jitter and click wobble
+ * stay alone, while an intentional grab tracks the hand almost immediately. */
+const DRAG_THRESHOLD = 3;
 
 function Check({ light = false }: { light?: boolean }) {
   return (
@@ -391,13 +402,13 @@ function ChatThread({ turns }: { turns: StageThread }) {
           <span
             className={cn(
               "mt-1 block text-[0.56rem]",
-              turn.from === "agent" ? "text-white/70" : "text-[#64748B]",
+              turn.from === "agent" ? "text-white" : "text-[#475467]",
             )}
           >
             {turn.from === "agent" ? (
               <>
                 09:41{" "}
-                <span className="tracking-[-2px] text-[#93C5FD]" aria-hidden>
+                <span className="tracking-[-2px] text-white" aria-hidden>
                   ✓✓
                 </span>
               </>
@@ -548,7 +559,7 @@ function CardBody({ card }: { card: StageCard }) {
               <p className="truncate text-[0.8rem] font-bold text-[#101828]">
                 {card.title}
               </p>
-              <p className="flex items-center gap-1.5 text-[0.62rem] font-medium text-[#22C55E]">
+              <p className="flex items-center gap-1.5 text-[0.62rem] font-medium text-[#15803D]">
                 <span
                   aria-hidden
                   className="h-1.5 w-1.5 rounded-full bg-[#22C55E]"
@@ -615,7 +626,7 @@ function CardBody({ card }: { card: StageCard }) {
               className="ph2-in mt-3 flex items-center justify-center gap-1.5 rounded-xl border border-[#BBF7D0] bg-[#F0FDF4] px-3 py-2 text-[0.72rem] font-bold text-[#101828]"
               style={at(12)}
             >
-              <span className="grid h-4 w-4 place-items-center rounded-full bg-[#22C55E]">
+              <span className="grid h-4 w-4 place-items-center rounded-full bg-[#15803D]">
                 <Check />
               </span>
               {card.footnote}
@@ -631,7 +642,7 @@ function CardBody({ card }: { card: StageCard }) {
                   style={at(19 + index * 2)}
                 >
                   {chip}
-                  <span aria-hidden className="text-[#22C55E]">
+                  <span aria-hidden className="text-[#15803D]">
                     ✓
                   </span>
                 </span>
@@ -689,22 +700,22 @@ function CardBody({ card }: { card: StageCard }) {
           ) : null}
 
           {card.rows ? (
-            <dl className="mt-3 grid grid-cols-3 gap-1.5">
+            <div className="mt-3 grid grid-cols-3 gap-1.5">
               {card.rows.map((row, index) => (
                 <div
                   key={row.label}
-                  className="ph2-in rounded-xl border border-[#F1F5F9] bg-[#F8FAFF] px-2 py-2 text-center"
+                  className="ph2-in flex flex-col rounded-xl border border-[#F1F5F9] bg-[#F8FAFF] px-2 py-2 text-center"
                   style={at(12 + index * 2)}
                 >
-                  <dd className="text-[0.78rem] font-bold text-[#101828] tabular-nums">
+                  <p className="text-[0.78rem] font-bold text-[#101828] tabular-nums">
                     {row.value}
-                  </dd>
-                  <dt className="mt-0.5 text-[0.56rem] text-[#64748B]">
+                  </p>
+                  <p className="mt-0.5 text-[0.56rem] text-[#475467]">
                     {row.label}
-                  </dt>
+                  </p>
                 </div>
               ))}
-            </dl>
+            </div>
           ) : null}
 
           {/*
@@ -782,7 +793,7 @@ function CardBody({ card }: { card: StageCard }) {
                 <span className="text-[0.58rem] font-semibold text-[#4B5563]">
                   {card.metric.label}
                 </span>
-                <span className="text-[0.62rem] font-bold text-[#22C55E]">
+                <span className="text-[0.62rem] font-bold text-[#15803D]">
                   {card.metric.value}
                 </span>
               </div>
@@ -860,22 +871,22 @@ function CardBody({ card }: { card: StageCard }) {
           ) : null}
 
           {card.rows ? (
-            <dl className="mt-2.5 grid grid-cols-3 gap-1.5">
+            <div className="mt-2.5 grid grid-cols-3 gap-1.5">
               {card.rows.map((row, index) => (
                 <div
                   key={row.label}
                   className="ph2-in rounded-lg border border-[#F1F5F9] bg-[#F8FAFF] px-1.5 py-1.5 text-center"
                   style={at(16 + index * 2)}
                 >
-                  <dd className="text-[0.72rem] font-bold text-[#101828] tabular-nums">
+                  <p className="text-[0.72rem] font-bold text-[#101828] tabular-nums">
                     {row.value}
-                  </dd>
-                  <dt className="mt-px text-[0.54rem] text-[#64748B]">
+                  </p>
+                  <p className="mt-px text-[0.54rem] text-[#475467]">
                     {row.label}
-                  </dt>
+                  </p>
                 </div>
               ))}
-            </dl>
+            </div>
           ) : null}
 
           {card.metric ? (
@@ -1063,7 +1074,11 @@ function Dashboard({
               >
                 <span
                   aria-hidden
-                  className="grid h-7 w-7 shrink-0 place-items-center rounded-full text-[0.6rem] font-bold text-white"
+                  className={`grid h-7 w-7 shrink-0 place-items-center rounded-full text-[0.6rem] font-bold ${
+                    row.accent === "#22C55E"
+                      ? "text-[#052E16]"
+                      : "text-white"
+                  }`}
                   style={{ background: row.accent }}
                 >
                   {row.initials}
@@ -1279,7 +1294,10 @@ export function HeroStage({
   /**
    * The shell that carries the bob. Kept separate from `slotRefs` because the
    * bob and the drag both want `transform`, and a CSS animation wins over an
-   * inline style — so they live on different elements and cannot fight.
+   * inline style — so they live on different elements and cannot fight. Also
+   * the element a gesture pauses and resumes: freezing the animation is what
+   * keeps the bob's phase continuous across a press, so a plain click never
+   * makes the card leap when the float starts running again.
    */
   const bobRefs = useRef<Array<HTMLDivElement | null>>([]);
   // Which products show a popup. Independent per slot: summoning one never
@@ -1330,16 +1348,19 @@ export function HeroStage({
    *   it looks at press time. That is the space the bounds live in.
    * - `bx/by` are *translates*, what the inline `transform` is set to.
    *
-   * A window's painted position moves 1:1 with its translate whatever the
-   * stage's scroll-linked scale is doing, so a move is "clamp the painted
-   * position, then apply the difference as a translate". Reading the rect as a
-   * translate — or clamping a translate against a painted rect — is what made
-   * a re-picked-up window leap, because the rect already carried the placement
-   * that was about to be replaced.
+   * The stage's scroll-linked scale sits between the two: one pixel of
+   * translate moves the window by only `scale` pixels on screen, so a move is
+   * "clamp the painted position against the bounds, then divide the difference
+   * back out of the scale" — which is what makes the window follow the hand
+   * 1:1 and land on the exact release point at any scroll position. Reading
+   * the rect as a translate — or clamping a translate against a painted rect
+   * — is what made a re-picked-up window leap, because the rect already
+   * carried the placement that was about to be replaced.
    *
    * Horizontal bounds are the viewport, so a window can be parked flush against
-   * either screen edge; vertical bounds are the stage, so one cannot be lost in
-   * the bands above or below.
+   * either screen edge; vertical bounds are the hero band, so one cannot be
+   * lost in the bands above or below — nor yanked down from the space above the
+   * stage that several windows are designed to hang in.
    */
   const gesture = useRef<{
     slot: number;
@@ -1348,6 +1369,11 @@ export function HeroStage({
     /** Translate in force at press time. */
     bx: number;
     by: number;
+    /** The bob frozen at press time. A drop pays it into the home, because a
+     *  placed card's shell stops animating and would otherwise lose it. */
+    bob: { x: number; y: number };
+    /** Screen px per local px (the stage's scroll scale) at press time. */
+    scale: number;
     /** Painted top-left at press time, plus the painted size. */
     paintedX: number;
     paintedY: number;
@@ -1376,6 +1402,24 @@ export function HeroStage({
    * pop in from scratch once per loop.
    */
   const toggleProduct = useCallback((s: number) => {
+    // Closing the window that is currently in hand (its own red dot can be
+    // pressed mid-gesture): the release that would have finished the drag
+    // never arrives, so drop the gesture here or `held` sticks forever — the
+    // loop stays paused and the re-summoned window thinks it is held.
+    if (gesture.current?.slot === s) {
+      gesture.current = null;
+      setHeld(null);
+    }
+    // Surfacing: a toggled window jumps above the rest, like a newly opened
+    // OS window. Without this, reopening a buried card puts it back exactly
+    // where nobody could reach it — underneath everything else.
+    zTop.current += 1;
+    const top = zTop.current;
+    setDepth((previous) => {
+      const next = [...previous];
+      next[s] = top;
+      return next;
+    });
     setVisible((previous) => {
       const next = [...previous];
       next[s] = !next[s];
@@ -1406,12 +1450,15 @@ export function HeroStage({
   /**
    * Take a window in hand.
    *
-   * The bob is captured here rather than assumed to be zero. A card that has
+   * The bob is frozen here rather than assumed to be zero. A card that has
    * not been placed yet is mid-bob, so its painted position is up to 8px off
-   * its anchor; dropping the float animation on grab would otherwise snap it
-   * back by exactly that much the instant it was picked up — which is what
-   * makes a drag feel like it catches on something. Reading the live transform
-   * means the window leaves the hand at the exact pixel it was at.
+   * its anchor; letting the float animation run under the pointer would drag
+   * the window around out of sync with the hand, and *removing* it (the old
+   * approach) both snapped the card back by that much on grab and restarted
+   * the animation at another phase — so the next plain click made the card
+   * leap. Pausing keeps the shell's transform exactly where it is, which
+   * means the window leaves the hand at the exact pixel it was at and a
+   * press that turns out to be just a click changes nothing at all.
    */
   const beginDrag = (event: React.PointerEvent<HTMLDivElement>, s: number) => {
     if (event.button !== 0) return;
@@ -1431,17 +1478,43 @@ export function HeroStage({
     if (!el || !stageEl) return;
     const anchor = el.getBoundingClientRect();
     const stage = stageEl.getBoundingClientRect();
+    /*
+     * Vertical bounds are the hero band, not the stage: the stage is only the
+     * dashboard's holder, while several windows are *designed* to hang above
+     * it (the weekly-tips card sits ~80px over the top of it at xl). Clamping
+     * to the stage would yank such a card down by that much on its first move
+     * — a press that teleports. The band is the `<section>` around the stage,
+     * `overflow-hidden`, so it is also the largest rectangle a card can be
+     * seen in at all. Falls back to the stage when there is no section
+     * (component tests, where every rect is zero-sized anyway).
+     */
+    const band = stageEl.closest("section")?.getBoundingClientRect();
+    /*
+     * The stage is scroll-linked scaled (`transform: scale(var(--stage))`), and
+     * a translate written inside that wrapper moves the window by only
+     * `scale` of the amount on screen — so a raw 1:1 translate made every drag
+     * trail the pointer by (1 − scale) of the distance and land short of the
+     * release point (~7.5% at xl). The ratio comes from the wrapper's own rect
+     * against its layout width; no layout → 1, which is also what component
+     * tests see.
+     */
+    const scale =
+      stageEl.offsetWidth > 0 ? stage.width / stageEl.offsetWidth : 1;
     const shell = bobRefs.current[s];
     const home = placed[s];
     // 12px breathing room so the window's shadow never kisses the screen edge.
     const margin = 12;
-    // Only a *floating* window needs its bob folded in. A placed one has no
-    // float animation, so its computed transform is its own stored placement —
-    // adding that on top of `home` again would move it twice as far as the
-    // pointer on every pick-up after the first.
+    // Only a *floating* window's bob counts. A placed one has no float
+    // animation, so its computed transform is its own stored placement —
+    // reading that as a bob would move it twice as far as the pointer on
+    // every pick-up after the first.
     const bob = home || !shell ? { x: 0, y: 0 } : bobOffset(shell);
-    const bx = (home?.x ?? 0) + bob.x;
-    const by = (home?.y ?? 0) + bob.y;
+    // No fold: the shell keeps its frozen bob, so the box below carries the
+    // placement alone. `bob` rides along in the gesture for the drop, which
+    // has to make the animation go away (a placed card does not float)
+    // without the window moving a single pixel.
+    const bx = home?.x ?? 0;
+    const by = home?.y ?? 0;
     // `clientWidth` rather than `innerWidth`: innerWidth counts the scrollbar,
     // which is not a place a window can actually be seen, so using it let a
     // window slide the width of a scrollbar past the right edge.
@@ -1453,6 +1526,8 @@ export function HeroStage({
       y0: event.clientY,
       bx,
       by,
+      bob,
+      scale,
       paintedX: anchor.left,
       paintedY: anchor.top,
       width: anchor.width,
@@ -1463,29 +1538,32 @@ export function HeroStage({
       bounds: {
         left: margin,
         right: viewportWidth - margin,
-        top: stage.top,
-        bottom: stage.top + stage.height,
+        top: band?.top ?? stage.top,
+        bottom: band?.bottom ?? stage.top + stage.height,
       },
     };
     gesture.current = g;
     /*
-     * Take the bob onto the window box before stopping it.
-     *
-     * The shell's animation is about to be removed, which would drop the window
-     * by up to 8px where the pointer is not. Writing the same offset onto the
-     * box first — in the same synchronous block, so both land in one frame —
-     * means the bob is cancelled rather than dropped, and the window leaves the
-     * hand on exactly the pixel it was on.
+     * Freeze the bob and hand the box to the gesture, in the same synchronous
+     * block so both land in one frame. Pausing (rather than stripping the
+     * class) keeps the shell's transform where it is, so the window neither
+     * snaps back by its bob on grab nor restarts the animation at some other
+     * phase when the press turns out to be a plain click — the box's own
+     * translate and the shell's frozen bob add up to exactly the painted
+     * position the pointer went down on.
      */
-    if (shell) shell.classList.remove(...FLOAT_CLASSES);
+    if (shell) shell.style.animationPlayState = "paused";
     el.style.transition = "none";
     el.style.transform = `translate(${g.bx}px, ${g.by}px)`;
     setHeld(s);
     // Capture keeps the move stream on this slot even when the pointer races
-    // ahead of it. Guarded: jsdom and some embedded browsers lack it, and a
-    // failed capture must never break the press itself.
+    // ahead of it. Captured on the box, not on `currentTarget`: the shell is
+    // `pointer-events-none` — its rect is the anchor, not the painted card —
+    // and capturing on an element that cannot be hit is not reliably honoured.
+    // Guarded: jsdom and some embedded browsers lack it, and a failed capture
+    // must never break the press itself.
     try {
-      event.currentTarget.setPointerCapture(event.pointerId);
+      el.setPointerCapture(event.pointerId);
     } catch {
       /* no-op: moves still track by coordinates */
     }
@@ -1512,15 +1590,16 @@ export function HeroStage({
     if (g.moved === false && Math.hypot(rawDx, rawDy) < DRAG_THRESHOLD) return;
     // Live-clamped, so the window visibly stops at the edge instead of sliding
     // out and snapping back on release. The clamp works in painted space; the
-    // difference from where the window was at press time is what gets applied
-    // as a translate, which keeps the two coordinate systems from being mixed.
+    // difference from where the window was at press time is divided back out
+    // of the stage's scale before it becomes a translate, which keeps the two
+    // coordinate systems — and their pixel units — from being mixed.
     const at = clampOffset(
       { x: g.paintedX + rawDx, y: g.paintedY + rawDy },
       { width: g.width, height: g.height },
       g.bounds,
     );
-    const tx = g.bx + (at.x - g.paintedX);
-    const ty = g.by + (at.y - g.paintedY);
+    const tx = g.bx + (at.x - g.paintedX) / g.scale;
+    const ty = g.by + (at.y - g.paintedY) / g.scale;
     g.moved = true;
     g.x = tx;
     g.y = ty;
@@ -1532,14 +1611,31 @@ export function HeroStage({
 
   const endDrag = (s: number) => {
     const g = gesture.current;
+    // A release over a window that is not the one in hand is not ours. Without
+    // pointer capture (or with a second pointer) the up can land on a
+    // neighbour, and falling through would wipe that neighbour's box back to
+    // its anchor — a window nobody touched leaping across the stage.
+    if (!g || g.slot !== s) return;
     gesture.current = null;
     setHeld(null);
     const el = slotRefs.current[s];
+    // Let the bob breathe again from exactly where it was frozen: the class
+    // was never taken off, the animation is still there — merely paused — so
+    // unpausing continues its phase instead of restarting the cycle. This is
+    // what keeps a plain click from making the pressed card leap the moment
+    // the float starts running again.
+    const shell = bobRefs.current[s];
+    if (shell) shell.style.animationPlayState = "";
     // Persist the release point: the slot's new home until dragged again. A
-    // press without movement changes nothing, so the window goes back to
-    // floating from its anchor and the inline transform is simply dropped.
-    if (g && g.slot === s && g.moved) {
-      const home = { x: g.x, y: g.y };
+    // press without movement is a click, not a drop: the window goes back to
+    // exactly where it was — its stored home, or its anchor when never
+    // placed — instead of being wiped to the anchor.
+    if (g.moved) {
+      // A placed card does not float, so the shell's frozen bob disappears
+      // with this drop. Paying it into the home keeps the window painted on
+      // exactly the pixel the pointer let go of: box + home replaces
+      // shell-bob + box translate, one for one.
+      const home = { x: g.x + g.bob.x, y: g.y + g.bob.y };
       if (el) {
         // Hand the value to React before the state update lands, so the frame
         // where ownership changes hands shows no jump at all.
@@ -1551,7 +1647,10 @@ export function HeroStage({
         return next;
       });
     } else if (el) {
-      el.style.transform = "";
+      const home = placed[s];
+      el.style.transform = home
+        ? `translate(${home.x}px, ${home.y}px)`
+        : "";
       el.style.transition = "";
     }
   };
@@ -1772,11 +1871,19 @@ export function HeroStage({
                     onPointerUp={canDrag ? () => endDrag(s) : undefined}
                     onPointerCancel={canDrag ? () => endDrag(s) : undefined}
                     /*
-                     * The shell's only job is the bob, so its `transform` is
-                     * left entirely to CSS. The period and phase below are this
-                     * slot's own, which is what stops six windows breathing in
-                     * unison; the drop position lives on the box inside, where
-                     * an animation cannot overwrite it.
+                     * The shell's only job is the anchor and the bob, so its
+                     * `transform` is left entirely to CSS. The period and
+                     * phase below are this slot's own, which is what stops six
+                     * windows breathing in unison; the drop position lives on
+                     * the box inside, where an animation cannot overwrite it.
+                     *
+                     * It is deliberately *not* the hit region: a dropped
+                     * window's box moves away from this anchor, and
+                     * hit-testing the vacated rectangle would hand its clicks
+                     * to whatever paints underneath — a ghost that steals from
+                     * the card below. The box inside turns pointer events back
+                     * on, so a window's hit region is exactly the pixels it
+                     * paints.
                      */
                     style={{
                       animationDuration: slot.period,
@@ -1788,15 +1895,23 @@ export function HeroStage({
                       zIndex: stackZ,
                     }}
                     className={cn(
-                      "ph2-anim absolute hidden w-[320px] xl:w-[340px] lg:block",
-                      !home && !isHeld && slot.float,
+                      "ph2-anim absolute hidden w-[320px] xl:w-[340px] lg:block pointer-events-none",
+                      // Kept while held as well: beginDrag freezes the bob by
+                      // pausing the animation, never by removing the class —
+                      // taking it off and putting it back is what restarted the
+                      // bob at another phase and made the card leap when a
+                      // press turned out to be just a click.
+                      !home && slot.float,
                       slot.className,
-                      canDrag && "lg:cursor-grab lg:touch-pan-y",
+                      // select-none belongs to the whole gesture, not just its
+                      // held phase: the first few pixels of a drag used to
+                      // start a text selection before `held` landed.
+                      canDrag && "select-none lg:cursor-grab lg:touch-pan-y",
                       // The "picked up" cue is a shadow, not a scale: it follows
                       // the window without touching its geometry, so there is
                       // nothing to snap back when it is put down.
                       isHeld &&
-                        "select-none lg:cursor-grabbing lg:drop-shadow-[0_20px_30px_rgba(11,18,32,0.22)]",
+                        "lg:cursor-grabbing lg:drop-shadow-[0_20px_30px_rgba(11,18,32,0.22)]",
                     )}
                   >
                     <div className="ph2-pop-in" style={at(slot.enter)}>
@@ -1804,6 +1919,13 @@ export function HeroStage({
                         ref={(el) => {
                           slotRefs.current[s] = el;
                         }}
+                        // `pointer-events` is inherited, so the shell's `none`
+                        // would switch off this whole subtree too. Re-enabling
+                        // it here is what makes the painted card — not the
+                        // anchor rectangle behind it — the hit region, and it
+                        // keeps every handler on the shell working: presses
+                        // start on this box and bubble up.
+                        className="pointer-events-auto"
                         style={
                           home
                             ? {

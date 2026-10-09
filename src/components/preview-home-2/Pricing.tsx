@@ -63,7 +63,10 @@ export function Pricing({ content }: { content: HomeContent["pricing"] }) {
 
                 <dl className="mt-6 flex flex-col gap-3 border-t border-[#F1F5F9] pt-5">
                   {tier.rows.map((row) => (
-                    <div key={row.label} className="flex items-start gap-3">
+                    <div
+                      key={row.label}
+                      className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-start gap-x-3 gap-y-1"
+                    >
                       <span
                         aria-hidden
                         className="mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded-full bg-[#EFF6FF]"
@@ -81,10 +84,10 @@ export function Pricing({ content }: { content: HomeContent["pricing"] }) {
                           <path d="M10 3 4.5 9 2 6.5" />
                         </svg>
                       </span>
-                      <dt className="text-[0.8rem] text-[#4B5563]">
+                      <dt className="self-center text-[0.8rem] text-[#4B5563]">
                         {row.label}
                       </dt>
-                      <dd className="ml-auto text-right text-[0.8rem] font-semibold text-[#101828] tabular-nums">
+                      <dd className="self-center text-right text-[0.8rem] font-semibold text-[#101828] tabular-nums">
                         {row.value}
                       </dd>
                     </div>
