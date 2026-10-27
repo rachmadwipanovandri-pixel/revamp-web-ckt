@@ -39,6 +39,7 @@ export function Faq({ content }: { content: HomeContent["faq"] }) {
               return (
                 <li
                   key={item.q}
+                  data-ph2-enter=""
                   className={cn(
                     "overflow-hidden rounded-[16px] border bg-white transition-[border-color,box-shadow] duration-200 motion-reduce:transition-none",
                     isOpen

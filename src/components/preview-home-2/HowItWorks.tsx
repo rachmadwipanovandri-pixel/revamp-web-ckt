@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import { Band, Card, SectionHead, Shell } from "./ui";
+import { Band, Card, Rule, SectionHead, Shell } from "./ui";
 import type { HomeContent, StepVisualKind } from "./types";
 
 /**
@@ -332,7 +332,21 @@ export function HowItWorks({
           body={content.body}
         />
 
-        <div className="mt-12 grid gap-10 lg:grid-cols-[minmax(0,360px)_minmax(0,1fr)] lg:gap-14">
+        <Rule className="mt-10" />
+
+        {/*
+          The rule above is the band's entrance. The five step cards below
+          deliberately carry no `data-ph2-enter`: they are the scrollspy's
+          measurement targets, and an armed card is `translateY(20px)` — which
+          moves `getBoundingClientRect().top`, the one number
+          `resolveActiveStep` decides from. The reveal fires at 92% of the
+          viewport and the scrollspy decides at 50%, so a card can be mid-flight
+          while it crosses the decision line, and a 20px shift is enough to jump
+          the 48px dead zone this component needs to stop flickering. This band
+          already arrives through its heading; the cards arrive as the reader
+          scrolls them, which is what a step rail is for.
+        */}
+        <div className="mt-6 grid gap-10 lg:grid-cols-[minmax(0,360px)_minmax(0,1fr)] lg:gap-14">
           {/*
             The sticky stage is deliberately compact: its travel — the right
             column's height minus this card's — is what holds the explainer on

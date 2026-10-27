@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { ArrowText, Band, Card, SectionHead, Shell } from "./ui";
+import { ArrowText, Band, Card, Rule, SectionHead, Shell } from "./ui";
 import type { HomeContent } from "./types";
 
 /**
@@ -23,9 +23,11 @@ export function Pricing({ content }: { content: HomeContent["pricing"] }) {
           body={content.body}
         />
 
-        <ul className="mt-12 grid items-stretch gap-5 sm:grid-cols-2 xl:grid-cols-4">
+        <Rule className="mt-10" />
+
+        <ul className="mt-6 grid items-stretch gap-5 sm:grid-cols-2 xl:grid-cols-4">
           {content.tiers.map((tier) => (
-            <li key={tier.name} className="flex">
+            <li key={tier.name} data-ph2-enter="" className="flex">
               <Card
                 className={cn(
                   "relative flex w-full flex-col p-6",

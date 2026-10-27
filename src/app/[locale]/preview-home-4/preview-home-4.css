@@ -1,0 +1,2255 @@
+@layer components {
+
+/*
+ * /preview-home-4 — "The product is the proof".
+ *
+ * A US B2B SaaS marketing page whose argument is carried by the product rather
+ * than by diagrams. Every band is anchored on something the product actually
+ * does — a surface you can operate, a figure a customer reported, a photograph
+ * of the person who said it.
+ *
+ * The direction, and the reasoning behind it, are in
+ * `docs/preview-home-4.md`. What follows is only the design system, which is
+ * inherited from /preview-home-3 on purpose: the radius collapse, the neutral
+ * paper, the near-black console, blue as a signal and monospace telemetry are
+ * the voice that already reads as US B2B SaaS, and a fourth draft with a fourth
+ * identity would be a worse draft.
+ *
+ * Five decisions carry the whole design, and everything else follows from them:
+ *
+ *   1. RADIUS COLLAPSES. Pills and 20–32px cards gave the earlier drafts a
+ *      friendly, soft, "local SaaS" read. Buttons are 6px, cards 8px, full-bleed
+ *      bands are square. Geometry does more for tone than any colour choice.
+ *   2. THE PAPER IS NEUTRAL. A blue cast made every band read as one tinted
+ *      system. Paper is `#FFFFFF`, the alternate band is warm-neutral `#FAFAFA`.
+ *   3. THE CONSOLE IS NEAR-BLACK, NOT NAVY. `#0A0A0B` — ink, not a colour — and
+ *      it carries a hairline grid instead of wallpaper. It lands on the two
+ *      moments the page asks something of the reader: the use cases, and the
+ *      close.
+ *   4. BRAND BLUE IS A SIGNAL, NOT A WASH. It marks links, active states, one
+ *      headline word, and checkmarks. It is never a background tint behind body
+ *      copy. Primary actions are near-black; hovering one brings the brand in.
+ *   5. MONOSPACE LABELS. Section indices, step numbers, stat captions and nav
+ *      metadata use the platform `ui-monospace` stack — zero bytes downloaded,
+ *      and the single strongest cue that this page is machine-precise rather
+ *      than decorative.
+ *
+ * Layer placement is deliberate. These rules live in `@layer components` so
+ * Tailwind utilities (layer `utilities`, declared later by Tailwind v4) can
+ * still override them per element — that is what lets `text-white` beat
+ * `.ph4-display`'s colour on a dark band without `!important`.
+ */
+
+.ph4-root {
+  /* ---- surface ---- */
+  --ph4-paper: #ffffff;
+  --ph4-surface: #f8fafc;
+  --ph4-surface-2: #eef2f7;
+  --ph4-white: #ffffff;
+
+  /* ---- ink ---- */
+  --ph4-ink: #0b1220;
+  --ph4-ink-2: #111a2e;
+  --ph4-muted: #4b5563;
+  --ph4-muted-2: #64748b;
+  /* #67758c is the lightest gray that still holds 4.5:1 on white at the
+     9–13px sizes this token serves (captions, figure labels, placeholders). */
+  --ph4-muted-3: #67758c;
+
+  /* ---- hairlines ---- */
+  --ph4-line: #e6ebf2;
+  --ph4-line-2: #d7dfea;
+  --ph4-line-3: #b9c4d6;
+
+  /* ---- brand signal ---- */
+  --ph4-accent: #1352bf;
+  --ph4-accent-2: #1e56d6;
+  --ph4-accent-deep: #0e3f95;
+  --ph4-accent-tint: #edf2fd;
+  --ph4-accent-tint-2: #f4f8ff;
+  --ph4-accent-line: #c3d3f4;
+  --ph4-sky: #0ea5e9;
+  /* Success green from the brand guideline — status dots and checkmarks.
+     #16a34a (a 600-cut) keeps AA against white at the small sizes icons run. */
+  --ph4-ok: #16a34a;
+  --ph4-ok-dot: #22c55e;
+
+  /* ---- console (the dark band — the live site's ink) ---- */
+  --ph4-console: #0b1220;
+  --ph4-console-2: #131c33;
+  --ph4-console-3: #1b2542;
+  --ph4-console-line: #26314f;
+  --ph4-console-line-2: #38466e;
+  --ph4-on-console: #ffffff;
+  --ph4-on-console-2: #b6bdd0;
+  /* AA for the 9–13px labels it carries. */
+  --ph4-on-console-3: #8b93a9;
+  /* Light-blue accent for dark grounds — the live site's #8EC5FF. */
+  --ph4-on-dark-accent: #8ec5ff;
+
+  /* ---- geometry: soft, reference-scale radii ----
+     Every reference on the list (aira, arcade, godmode, spara, vapi,
+     synthesia) draws pills and 16–24px cards. The earlier "radius collapse"
+     read as a spec sheet next to them, which is exactly the gap this
+     revision closes. */
+  --ph4-r-xs: 6px;
+  --ph4-r-sm: 8px;
+  --ph4-r: 12px;
+  --ph4-r-md: 20px;
+  --ph4-r-lg: 22px;
+  --ph4-r-xl: 24px;
+  --ph4-r-pill: 999px;
+
+  /* ---- motion ---- */
+  --ph4-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ph4-ease-sharp: cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--ph4-ink);
+  background: var(--ph4-paper);
+
+  /* The brand face (Google Sans Flex) is injected by next/font on <html> as
+     `--font-sans`. It is consumed here, never redefined, so the loader always
+     wins. The mono stack is the platform one: a technical voice for telemetry
+     labels at zero network cost. */
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-synthesis-weight: none;
+  font-synthesis-style: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  overflow-x: clip;
+}
+
+/* --------------------------------------------------------------------------
+   type primitives
+   -------------------------------------------------------------------------- */
+
+/*
+ * Every default colour below is written with `:where()` (specificity 0) so a
+ * Tailwind utility on the same element always wins. Without this, `text-white`
+ * on a console band would lose to `.ph4-display` and the headline would go
+ * black-on-black.
+ */
+
+/*
+ * Display — semibold, open tracking, generous leading. This is the live
+ * site's heading voice (600 / -0.03em-ish / 1.05), not the earlier draft's
+ * tight grotesque (-0.045em / 0.94) that read as dense and "kusam".
+ */
+:where(.ph4-root .ph4-display) {
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.06;
+  color: var(--ph4-ink);
+  text-wrap: balance;
+}
+
+/* Section headings sit one step down so the hero owns the largest optical size. */
+:where(.ph4-root .ph4-display-2) {
+  letter-spacing: -0.012em;
+  line-height: 1.08;
+}
+
+/* The hero headline runs one step larger than section headings, same voice. */
+:where(.ph4-root .ph4-display-hero) {
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.04;
+}
+
+/* Google Sans Flex has no italic; the browser would synthesise an oblique and
+   it would read as a different brand. Colour alone marks the accent word. */
+:where(.ph4-root .ph4-display) em {
+  font-style: normal;
+  color: var(--ph4-accent);
+}
+
+/* The accent word in headings: flat brand blue on light grounds, light blue
+   on dark ones — the live site's treatment, no gradients. */
+.ph4-accent-word {
+  color: var(--ph4-accent);
+}
+.ph4-console .ph4-accent-word,
+.ph4-hero-photo .ph4-accent-word {
+  color: var(--ph4-on-dark-accent);
+}
+
+/* Monospace telemetry. Section indices, step numbers, stat captions, nav
+   metadata — anything that behaves like machine output rather than prose. */
+:where(.ph4-root .ph4-mono) {
+  font-family: inherit;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ph4-muted-2);
+  font-variant-numeric: tabular-nums;
+}
+
+:where(.ph4-root .ph4-eyebrow) {
+  color: var(--ph4-accent);
+}
+
+/* Every figure on the page is tabular so columns of numbers align and a count-up
+   animation does not reflow its own column. */
+:where(.ph4-root .ph4-num) {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+}
+
+:where(.ph4-root .ph4-lede) {
+  color: var(--ph4-muted);
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   focus — one visible ring for the whole draft.
+
+   `textarea` was missing here. The composer in the hands-on demo is a textarea,
+   so the one control on the page that invites the most typing was also the one
+   control a keyboard user could not see focus on.
+   -------------------------------------------------------------------------- */
+
+.ph4-root a:focus-visible,
+.ph4-root button:focus-visible,
+.ph4-root summary:focus-visible,
+.ph4-root input:focus-visible,
+.ph4-root select:focus-visible,
+.ph4-root textarea:focus-visible {
+  outline: 2px solid var(--ph4-accent);
+  outline-offset: 2px;
+  border-radius: var(--ph4-r-sm);
+}
+
+/* --------------------------------------------------------------------------
+   actions
+   -------------------------------------------------------------------------- */
+
+/* Pill actions, the references' shared control. Primary is brand blue —
+   arcade, godmode and spara all run a saturated blue pill as the page's one
+   repeated conversion control. */
+.ph4-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 2.875rem;
+  padding: 0 1.375rem;
+  border-radius: var(--ph4-r-pill);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.011em;
+  white-space: nowrap;
+  transition:
+    background-color 160ms var(--ph4-ease-sharp),
+    border-color 160ms var(--ph4-ease-sharp),
+    color 160ms var(--ph4-ease-sharp),
+    box-shadow 160ms var(--ph4-ease-sharp),
+    transform 160ms var(--ph4-ease-sharp);
+}
+.ph4-btn:active {
+  transform: translateY(1px);
+}
+
+.ph4-btn-solid {
+  background: var(--ph4-accent);
+  color: var(--ph4-white);
+  border: 1px solid var(--ph4-accent);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 16%),
+    0 1px 2px rgb(19 82 191 / 24%),
+    0 8px 20px -8px rgb(19 82 191 / 36%);
+}
+.ph4-btn-solid:hover {
+  background: var(--ph4-accent-2);
+  border-color: var(--ph4-accent-2);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 16%),
+    0 1px 2px rgb(19 82 191 / 28%),
+    0 12px 28px -8px rgb(19 82 191 / 44%);
+}
+
+.ph4-btn-outline {
+  background: var(--ph4-white);
+  color: var(--ph4-ink);
+  border: 1px solid var(--ph4-line-2);
+  box-shadow: 0 1px 2px rgb(10 10 11 / 5%);
+}
+.ph4-btn-outline:hover {
+  border-color: var(--ph4-line-3);
+  background: var(--ph4-surface);
+}
+
+/* Inverted pair for the console band. */
+.ph4-btn-invert {
+  background: var(--ph4-white);
+  color: var(--ph4-ink);
+  border: 1px solid var(--ph4-white);
+}
+.ph4-btn-invert:hover {
+  background: var(--ph4-accent);
+  border-color: var(--ph4-accent);
+  color: var(--ph4-white);
+}
+
+.ph4-btn-ghost-invert {
+  background: transparent;
+  color: var(--ph4-on-console);
+  border: 1px solid var(--ph4-console-line-2);
+}
+.ph4-btn-ghost-invert:hover {
+  border-color: var(--ph4-on-console);
+  background: rgb(255 255 255 / 6%);
+}
+
+/* The arrow sits in a group so it travels with the label instead of
+   independently, and it swaps direction's worth of travel on hover. */
+.ph4-arrow {
+  transition: transform 200ms var(--ph4-ease);
+}
+.ph4-btn:hover .ph4-arrow,
+.ph4-link:hover .ph4-arrow {
+  transform: translateX(3px);
+}
+
+.ph4-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--ph4-accent);
+  font-weight: 500;
+  text-underline-offset: 4px;
+}
+.ph4-link:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   navigation — scroll-linked morph, ported from /preview-home-2
+
+   Nav4.tsx writes `--p` (0 → 1) on every animation frame, so the bar follows
+   the scroll position instead of snapping across a threshold — scrolling
+   slowly eases the pill in continuously, scrolling back up reverses it.
+
+   `backdrop-filter` is deliberately not used anywhere here: it forces the
+   browser to re-blur everything behind the bar on every frame, which is what
+   made slow scrolling feel rough on /preview-home-2. The base width is this
+   draft's own 1240px shell, so the header stays on the same grid as every
+   band below it.
+   -------------------------------------------------------------------------- */
+
+.ph4-nav {
+  --p: 0;
+}
+
+.ph4-nav-shell {
+  max-width: calc(1240px - 200px * var(--p));
+  padding: calc(16px - 4px * var(--p)) calc(20px - 4px * var(--p)) 0;
+}
+
+.ph4-nav-bar {
+  height: calc(70px - 14px * var(--p));
+  /* 16px → 28px is exactly half of the 56px end height, i.e. a full pill. */
+  border-radius: calc(16px + 12px * var(--p));
+  border-color: rgba(226, 232, 240, var(--p));
+  background-color: rgba(255, 255, 255, calc(0.72 + 0.24 * var(--p)));
+  box-shadow: 0 16px 44px -26px rgba(11, 18, 32, calc(0.42 * var(--p)));
+}
+
+.ph4-menu-panel,
+.ph4-mega-panel {
+  animation: ph4-panel-in 200ms var(--ph4-ease-sharp) both;
+}
+
+/* --------------------------------------------------------------------------
+   hero
+   -------------------------------------------------------------------------- */
+
+.ph4-hero {
+  isolation: isolate;
+  background: var(--ph4-paper);
+  overflow: hidden;
+}
+
+/* Full-bleed photographic hero. The image is decorative (empty alt) — the
+   headline carries the meaning — and the scrim guarantees white-type
+   contrast over any frame the brand team swaps in later. */
+.ph4-hero-photo {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #0b1220;
+}
+
+.ph4-hero-photo-img {
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.88) saturate(0.95);
+}
+
+/* Ambient hero loop. Sits over the photograph (which still paints first and
+   remains the whole frame under reduced-motion). Darker than the photo's
+   treatment: the footage is backlit and would otherwise wash the navy scrim
+   into flat grey. */
+.ph4-hero-video {
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.62) saturate(0.85);
+}
+@media (prefers-reduced-motion: reduce) {
+  .ph4-hero-video {
+    display: none;
+  }
+}
+
+.ph4-hero-photo-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to bottom, rgb(11 18 32 / 72%), rgb(11 18 32 / 48%) 30%, rgb(11 18 32 / 58%) 62%, rgb(11 18 32 / 88%)),
+    radial-gradient(ellipse 90% 60% at 50% 110%, rgb(19 82 191 / 35%), transparent 65%);
+}
+
+/* Type over photography always carries its own shadow — the scrim evens the
+   exposure, the shadow cuts the letterforms out of whatever is left. */
+.ph4-hero-photo .ph4-display,
+.ph4-hero-photo .ph4-lede,
+.ph4-hero-photo .ph4-mono {
+  text-shadow: 0 1px 18px rgb(11 18 32 / 55%);
+}
+
+/* The atmosphere the references share: a soft blue wash pooling at the top of
+   the viewport (arcade's gradient field, godmode's glow, spara's warm pool).
+   Light, not wallpaper — it fades out before the product surface lands. */
+.ph4-hero-wash {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -12%, rgb(19 82 191 / 14%), transparent 62%),
+    radial-gradient(ellipse 45% 38% at 12% 18%, rgb(14 165 233 / 10%), transparent 72%),
+    radial-gradient(ellipse 45% 40% at 88% 12%, rgb(96 150 255 / 10%), transparent 72%),
+    linear-gradient(to bottom, var(--ph4-accent-tint-2), transparent 34%);
+}
+
+/* Kept for compatibility: an extra tight pool behind the headline. */
+.ph4-hero-light {
+  z-index: -1;
+  background: radial-gradient(
+    ellipse 46% 40% at 50% 8%,
+    rgb(19 82 191 / 6%),
+    transparent 68%
+  );
+}
+
+.ph4-hero-stage {
+  perspective: 2000px;
+}
+
+/* The console window. Sharp corners, a single tight shadow — the product UI is
+   the hero image, so it has to look like an object, not a decoration. */
+.ph4-window {
+  border: 1px solid var(--ph4-line-2);
+  border-radius: var(--ph4-r-md);
+  background: var(--ph4-white);
+  box-shadow:
+    0 0 0 1px rgb(10 10 11 / 4%),
+    0 24px 48px -28px rgb(10 10 11 / 26%),
+    0 48px 96px -64px rgb(10 10 11 / 34%);
+}
+
+.ph4-window-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  height: 2.25rem;
+  padding: 0 0.75rem;
+  border-bottom: 1px solid var(--ph4-line);
+  background: var(--ph4-surface);
+  border-radius: var(--ph4-r-md) var(--ph4-r-md) 0 0;
+}
+
+.ph4-window-url {
+  flex: 1;
+  min-width: 0;
+  height: 1.625rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.625rem;
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-pill);
+  background: var(--ph4-white);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.01em;
+  color: var(--ph4-muted-2);
+}
+
+/* A live status dot with a single soft pulse — the one ambient loop on the
+   page, and it is a real product signal rather than ornament. */
+.ph4-pulse {
+  position: relative;
+}
+.ph4-pulse::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: currentColor;
+  animation: ph4-ping 2.4s var(--ph4-ease-sharp) infinite;
+}
+
+/* --------------------------------------------------------------------------
+   proof strip
+   -------------------------------------------------------------------------- */
+
+.ph4-logo-mask {
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.ph4-logo-track {
+  animation: ph4-marquee 64s linear infinite;
+}
+.ph4-logo-mask:hover .ph4-logo-track {
+  animation-play-state: paused;
+}
+/* Logos stay legible — a heavy desaturation filter reads as "we are hiding
+   these", which is the opposite of proof. */
+.ph4-logo-track img {
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition:
+    opacity 250ms var(--ph4-ease-sharp),
+    filter 250ms var(--ph4-ease-sharp);
+}
+
+/* --------------------------------------------------------------------------
+   text marquee band
+   -------------------------------------------------------------------------- */
+
+.ph4-marquee-band {
+  overflow: hidden;
+  background: var(--ph4-paper);
+  border-block: 1px solid var(--ph4-line);
+}
+
+.ph4-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: ph4-marquee 42s linear infinite;
+}
+
+/* Each half is an identical group; -50% loop joins seamlessly. */
+.ph4-marquee-group {
+  display: flex;
+  flex: none;
+  align-items: center;
+}
+
+.ph4-marquee-word {
+  padding: 0.7rem 1.25rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ph4-ink-2);
+}
+
+/* Round separator dot — a fixed 5px circle, vertically centred. */
+.ph4-marquee-dot {
+  flex: none;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--ph4-accent);
+}
+.ph4-logo-mask:hover img {
+  opacity: 0.78;
+}
+.ph4-logo-track span:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   console band — the dark punctuation
+   -------------------------------------------------------------------------- */
+
+.ph4-console {
+  background: var(--ph4-console);
+  color: var(--ph4-on-console);
+}
+
+/* A soft brand glow on the dark ground — vapi's hero field and synthesia's
+   banner both light their dark bands from one side rather than ruling them. */
+.ph4-console-grid {
+  background:
+    radial-gradient(ellipse 70% 60% at 18% 0%, rgb(30 86 214 / 28%), transparent 60%),
+    radial-gradient(ellipse 60% 55% at 85% 100%, rgb(19 82 191 / 18%), transparent 65%),
+    radial-gradient(ellipse 40% 35% at 70% 20%, rgb(96 150 255 / 10%), transparent 70%);
+  opacity: 1;
+}
+
+.ph4-console-rule {
+  border-top: 1px solid var(--ph4-console-line);
+}
+
+/* --------------------------------------------------------------------------
+   rules, rows and shared surfaces
+   -------------------------------------------------------------------------- */
+
+/* Vertical column rails — the structural tell of the new grid. Drawn once on
+   the shell, never per card. */
+.ph4-rails {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.ph4-rails > span {
+  border-left: 1px solid var(--ph4-line);
+}
+.ph4-rails > span:last-child {
+  border-right: 1px solid var(--ph4-line);
+}
+
+.ph4-row {
+  border-top: 1px solid var(--ph4-line);
+  transition: background-color 250ms var(--ph4-ease-sharp);
+}
+.ph4-row:hover {
+  background: var(--ph4-surface);
+}
+.ph4-console .ph4-row:hover {
+  background: rgb(255 255 255 / 4%);
+}
+
+.ph4-panel {
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-md);
+  background: var(--ph4-white);
+}
+
+.ph4-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3125rem;
+  height: 1.5rem;
+  padding: 0 0.625rem;
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-pill);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ph4-muted-2);
+  background: var(--ph4-white);
+}
+
+.ph4-chip-accent {
+  border-color: var(--ph4-accent-line);
+  background: var(--ph4-accent-tint);
+  color: var(--ph4-accent);
+}
+
+.ph4-icon-tile {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r);
+  color: var(--ph4-accent);
+  background: var(--ph4-accent-tint-2);
+}
+
+/* --------------------------------------------------------------------------
+   email capture
+   -------------------------------------------------------------------------- */
+
+.ph4-form {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+.ph4-form-input {
+  flex: 1;
+  min-width: 0;
+  height: 2.875rem;
+  padding: 0 0.875rem;
+  border: 1px solid var(--ph4-line-2);
+  border-radius: var(--ph4-r);
+  background: var(--ph4-white);
+  font-size: 0.9375rem;
+  color: var(--ph4-ink);
+  transition:
+    border-color 150ms var(--ph4-ease-sharp),
+    box-shadow 150ms var(--ph4-ease-sharp);
+}
+.ph4-form-input::placeholder {
+  color: var(--ph4-muted-3);
+}
+.ph4-form-input:hover {
+  border-color: var(--ph4-line-3);
+}
+.ph4-form-input[aria-invalid="true"] {
+  border-color: #c0362c;
+  box-shadow: 0 0 0 3px rgb(192 54 44 / 12%);
+}
+
+.ph4-form-error {
+  color: #b33128;
+}
+
+/* --------------------------------------------------------------------------
+   how it works
+   -------------------------------------------------------------------------- */
+
+.ph4-step-visual {
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-md);
+  background:
+    linear-gradient(var(--ph4-surface), var(--ph4-surface)) padding-box,
+    var(--ph4-paper);
+  transition: border-color 250ms var(--ph4-ease-sharp);
+}
+.ph4-steps .ph4-row:hover .ph4-step-visual {
+  border-color: var(--ph4-line-2);
+}
+
+/* --------------------------------------------------------------------------
+   Field band — photographs of the product in use
+   --------------------------------------------------------------------------
+   These are NOT drained to monochrome, and that is a deliberate reversal of the
+   treatment this band carried when it held stock interiors.
+
+   The argument for draining was that full-bleed saturation reads as decoration.
+   It still does — but these frames are evidence, and the evidence is the screen
+   inside them. Desaturating turns a legible Cekat interface into a grey
+   rectangle, which is the one thing worth looking at.
+
+   So colour stays, and the frame stays structural instead: a hairline, a fixed
+   row height, and a barely-there lift on hover. The photographs sit at the same
+   weight as the rules around them and the page keeps its register.
+   -------------------------------------------------------------------------- */
+
+.ph4-field-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+/* One row height for every cell, so the grid resolves before the bytes arrive
+   and nothing reflows under the visitor as five images land in sequence. */
+@media (min-width: 1024px) {
+  .ph4-field-cell.lg\:col-span-2 .ph4-photo {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+.ph4-field .ph4-photo {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--ph4-r-md);
+  background: var(--ph4-surface);
+  transition: border-color 250ms var(--ph4-ease-sharp);
+}
+
+/* The two double cells are wider than tall, so their source is used at its own
+   shape instead of being cropped to the small cells' 4:3. */
+@media (min-width: 1024px) {
+  .ph4-field-cell.lg\:col-span-2 .ph4-photo {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ph4-field-cell:hover .ph4-photo {
+    outline: 1px solid var(--ph4-line-2);
+    outline-offset: -1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ph4-field .ph4-photo {
+    transition: none;
+  }
+}
+
+/* Connector strokes draw themselves once, when the row enters. */
+.ph4-draw {
+  stroke-dasharray: var(--len, 400);
+  stroke-dashoffset: var(--len, 400);
+  transition: stroke-dashoffset 1100ms var(--ph4-ease);
+}
+[data-ph4-in="true"] .ph4-draw {
+  stroke-dashoffset: 0;
+}
+
+/* --------------------------------------------------------------------------
+   product experience
+   -------------------------------------------------------------------------- */
+
+.ph4-app {
+  border: 1px solid var(--ph4-line-2);
+  border-radius: var(--ph4-r-lg);
+  background: var(--ph4-white);
+  box-shadow:
+    0 0 0 1px rgb(10 10 11 / 4%),
+    0 32px 64px -44px rgb(10 10 11 / 28%);
+  overflow: hidden;
+}
+
+.ph4-app-rail {
+  background: var(--ph4-surface);
+  border-right: 1px solid var(--ph4-line);
+}
+
+/* Nav items inside the product mock: a flat list with a left accent bar on the
+   active row — the way real dense app navigation is drawn, not a pill. */
+.ph4-app-nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 0.5rem 0.625rem;
+  border-radius: var(--ph4-r-sm);
+  font-size: 0.8125rem;
+  color: var(--ph4-muted);
+  text-align: left;
+  transition:
+    background-color 150ms var(--ph4-ease-sharp),
+    color 150ms var(--ph4-ease-sharp);
+}
+.ph4-app-nav-item:hover {
+  background: rgb(10 10 11 / 4%);
+  color: var(--ph4-ink);
+}
+.ph4-app-nav-item[aria-current="true"] {
+  background: var(--ph4-white);
+  color: var(--ph4-ink);
+  font-weight: 500;
+  box-shadow: inset 0 0 0 1px var(--ph4-line);
+}
+.ph4-app-nav-item[aria-current="true"]::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  translate: 0 -50%;
+  width: 2px;
+  height: 1.125rem;
+  background: var(--ph4-accent);
+  border-radius: 0 2px 2px 0;
+}
+
+.ph4-app-row {
+  display: flex;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 0.625rem;
+  border: 1px solid transparent;
+  border-radius: var(--ph4-r);
+  text-align: left;
+  transition:
+    background-color 150ms var(--ph4-ease-sharp),
+    border-color 150ms var(--ph4-ease-sharp);
+}
+.ph4-app-row:hover {
+  background: var(--ph4-surface);
+}
+.ph4-app-row[aria-current="true"] {
+  background: var(--ph4-accent-tint);
+  border-color: var(--ph4-accent-line);
+}
+
+/* Chat bubbles: a 6px radius with one squared corner, so the speaker is
+   readable without needing colour to carry it. */
+.ph4-bubble {
+  border-radius: var(--ph4-r-md);
+  padding: 0.625rem 0.75rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+.ph4-bubble-in {
+  background: var(--ph4-surface-2);
+  color: var(--ph4-ink-2);
+  border-bottom-left-radius: 2px;
+}
+.ph4-bubble-ai {
+  background: var(--ph4-accent-tint);
+  color: var(--ph4-ink);
+  border-bottom-right-radius: 2px;
+  box-shadow: inset 0 0 0 1px var(--ph4-accent-line);
+}
+
+/*
+ * Playback state for the hero conversation.
+ *
+ * The turn is *always* in the DOM and readable by assistive tech; only its
+ * opacity and offset change, and the resting state — no `.is-in` — is the
+ * un-played one. A visitor with reduced motion, a failed script, or a crawler
+ * therefore still gets the whole exchange as text.
+ *
+ * Only opacity and transform are animated, so the reveal stays on the compositor
+ * and never triggers layout.
+ */
+.ph4-bubble {
+  opacity: 0;
+  transform: translate3d(0, 6px, 0);
+  transition:
+    opacity 320ms var(--ph4-ease-sharp),
+    transform 320ms var(--ph4-ease);
+}
+.ph4-bubble.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/*
+ * The typing indicator. Three dots on a staggered loop, small enough that the
+ * whole thing reads as one movement rather than three.
+ */
+.ph4-typing {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  height: 1rem;
+}
+.ph4-typing > span {
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--ph4-muted-3);
+  animation: ph4-typing-dot 1.05s var(--ph4-ease-sharp) infinite;
+}
+.ph4-typing > span:nth-child(2) {
+  animation-delay: 0.14s;
+}
+.ph4-typing > span:nth-child(3) {
+  animation-delay: 0.28s;
+}
+
+/* The grounded-source strip under the AI reply: the single most credible
+   detail in the whole mock, so it gets a real hairline, not a tint. */
+.ph4-grounded {
+  margin-top: 0.625rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--ph4-accent-line);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.02em;
+  color: var(--ph4-accent);
+}
+
+.ph4-composer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r);
+  background: var(--ph4-white);
+  transition: border-color 150ms var(--ph4-ease-sharp);
+}
+.ph4-composer:hover {
+  border-color: var(--ph4-line-2);
+}
+
+/* --------------------------------------------------------------------------
+   product stage — the wide, dissolving grid
+   -------------------------------------------------------------------------- */
+
+/*
+ * A data grid that fades out rather than ending, with a detail card occupying
+ * the space the fade leaves behind.
+ *
+ * The mask is the whole effect. A grid with a hard right edge reads as a cropped
+ * table; a grid that dissolves reads as a surface continuing past the frame, and
+ * the empty space it leaves is what the floating card drops into. The card is a
+ * sibling rather than a child on purpose — as a child it would inherit the mask
+ * and fade with the grid, which is exactly what it must not do.
+ *
+ * The mask is decoration only: it never hides content that is needed to read the
+ * page, and it is off entirely below `lg`, where there is no room for the
+ * composition and a half-faded row would just look broken.
+ */
+.ph4-stage {
+  position: relative;
+}
+
+.ph4-grid-mask {
+  -webkit-mask-image: linear-gradient(to right, #000 58%, transparent 100%);
+  mask-image: linear-gradient(to right, #000 58%, transparent 100%);
+}
+
+.ph4-float-card {
+  position: absolute;
+  top: 12%;
+  left: 60%;
+  z-index: 10;
+  width: min(22rem, 38%);
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-md);
+  background: var(--ph4-white);
+  box-shadow:
+    0 0 0 1px rgb(10 10 11 / 3%),
+    0 8px 24px -6px rgb(10 10 11 / 8%),
+    0 2px 6px -2px rgb(10 10 11 / 10%);
+}
+
+@media (max-width: 1023px) {
+  /* One column: the grid runs full width, nothing is masked, and the card sits
+     underneath as a normal block. */
+  .ph4-grid-mask {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .ph4-float-card {
+    position: static;
+    width: 100%;
+    margin-top: 1.25rem;
+  }
+}
+
+/*
+ * Rows arrive one after another.
+ *
+ * The delay is a CSS custom property per row rather than a JS stagger, so it
+ * costs nothing to run and collapses to nothing under `prefers-reduced-motion`
+ * (the global rule in this file clamps animation duration, and an element
+ * caught mid-fade simply lands on its final state).
+ */
+@keyframes ph4-row-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.ph4-row-in {
+  opacity: 0;
+  animation: ph4-row-in 420ms var(--ph4-ease) forwards;
+  animation-delay: calc(var(--ph4-i, 0) * 55ms);
+}
+
+/*
+ * The grid's column template.
+ *
+ * A real table needs its columns to line up between the header row and the body
+ * rows, and both are `display: grid`. Repeating the template in two places is
+ * how a table silently drifts, so it lives here once.
+ *
+ * The first column takes the slack because it holds a name plus a place; the
+ * middle columns are sized to their content (a channel name, a fixed-width
+ * score pill, an owner) and the last one absorbs the remainder because it holds
+ * a sentence.
+ */
+.ph4-grid-cols {
+  grid-template-columns:
+    minmax(7.5rem, 1.1fr) minmax(4.5rem, 0.7fr) 4.25rem
+    minmax(3.5rem, 0.55fr) minmax(0, 1.65fr);
+  gap: 0 0.875rem;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  /* Below `sm` the channel, owner and activity columns are dropped: a truncated
+     sentence is worse than no sentence, and the card underneath carries the
+     detail. That leaves the name and the score, so the template is two tracks —
+     three would leave an empty column and misalign every row. */
+  .ph4-grid-cols {
+    grid-template-columns: minmax(6rem, 1fr) 4.25rem;
+  }
+  .ph4-grid-cols > :nth-child(2),
+  .ph4-grid-cols > :nth-child(4),
+  .ph4-grid-cols > :nth-child(5) {
+    display: none;
+  }
+}
+
+/* A small figure pill, the way a CRM shows a score in a table cell. */
+.ph4-score {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.1rem;
+  height: 1.35rem;
+  padding: 0 0.375rem;
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-xs);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+  color: var(--ph4-muted);
+  background: var(--ph4-white);
+}
+.ph4-score-accent {
+  border-color: var(--ph4-accent-line);
+  background: var(--ph4-accent-tint);
+  color: var(--ph4-accent);
+}
+
+/* Tab bar under the app — a real segmented control with a sliding-feeling
+   active state, keyboard operable, `aria-pressed` for the state. */
+.ph4-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--ph4-r-sm);
+  font-size: 0.8125rem;
+  color: var(--ph4-muted-2);
+  transition:
+    background-color 150ms var(--ph4-ease-sharp),
+    color 150ms var(--ph4-ease-sharp);
+}
+.ph4-tab:hover {
+  color: var(--ph4-ink);
+  background: var(--ph4-surface);
+}
+.ph4-tab[aria-selected="true"] {
+  background: var(--ph4-ink);
+  color: var(--ph4-white);
+}
+.ph4-tab[aria-selected="true"] .ph4-tab-num {
+  color: rgb(255 255 255 / 45%);
+}
+.ph4-tab-num {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  color: var(--ph4-muted-3);
+}
+
+/* --------------------------------------------------------------------------
+   story + data panel
+   -------------------------------------------------------------------------- */
+
+.ph4-quote {
+  font-size: clamp(1.375rem, 2.6vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.24;
+  color: var(--ph4-ink);
+  text-wrap: pretty;
+}
+
+/* Attribution without a portrait. Shipping an initials monogram where a real
+   person's photo belongs implies a likeness that does not exist, so the credit
+   is typographic — a name, a role, and the company set as a wordmark. */
+.ph4-credit-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  color: var(--ph4-ink);
+}
+.ph4-credit-role {
+  font-size: 0.8125rem;
+  color: var(--ph4-muted-2);
+}
+
+.ph4-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.375rem;
+  height: 7.5rem;
+}
+.ph4-bars > span {
+  flex: 1;
+  border-radius: var(--ph4-r-xs) var(--ph4-r-xs) 0 0;
+  background: var(--ph4-line-2);
+  transform-origin: bottom;
+  transition: background-color 250ms var(--ph4-ease-sharp);
+}
+.ph4-bars > span.is-now {
+  background: var(--ph4-accent);
+}
+
+/* --------------------------------------------------------------------------
+   trust
+   -------------------------------------------------------------------------- */
+
+.ph4-spec-cell {
+  padding: 1.75rem 1.5rem;
+  border-top: 1px solid var(--ph4-line);
+  transition: background-color 250ms var(--ph4-ease-sharp);
+}
+.ph4-spec-cell:hover {
+  background: var(--ph4-surface);
+}
+
+/* --------------------------------------------------------------------------
+   pricing
+   -------------------------------------------------------------------------- */
+
+.ph4-plan {
+  border: 1px solid var(--ph4-line-2);
+  border-radius: var(--ph4-r-lg);
+  background: var(--ph4-paper);
+  padding: 1.75rem 1.75rem 1.5rem;
+  transition:
+    border-color 250ms var(--ph4-ease-sharp),
+    box-shadow 250ms var(--ph4-ease-sharp);
+}
+.ph4-plan:hover {
+  border-color: var(--ph4-line-3);
+  box-shadow: 0 24px 48px -32px rgb(10 10 11 / 14%);
+}
+.ph4-plan.is-featured {
+  background: var(--ph4-console);
+  border-color: var(--ph4-console);
+  color: var(--ph4-on-console);
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 24%),
+    0 32px 72px -36px rgb(0 0 0 / 62%);
+}
+/* Everything inside the featured plan sits on ink, so all ink-driven
+   descendants flip to console tones. Plain selector (not :where) so it beats
+   the Tailwind text utilities on the note paragraph. */
+.ph4-plan.is-featured h3,
+.ph4-plan.is-featured p,
+.ph4-plan.is-featured li {
+  color: var(--ph4-on-console);
+}
+.ph4-plan.is-featured .ph4-included {
+  border-color: var(--ph4-console-line);
+}
+
+.ph4-price {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.ph4-included {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.ph4-included svg {
+  flex-shrink: 0;
+  margin-top: 0.1875rem;
+  color: var(--ph4-accent);
+}
+.ph4-plan.is-featured .ph4-included svg {
+  color: #7aa2f2;
+}
+
+/* --------------------------------------------------------------------------
+   faq
+   -------------------------------------------------------------------------- */
+
+.ph4-root summary {
+  list-style: none;
+  cursor: pointer;
+  transition: color 150ms var(--ph4-ease-sharp);
+}
+.ph4-root summary::-webkit-details-marker {
+  display: none;
+}
+.ph4-root summary:hover {
+  color: var(--ph4-accent);
+}
+
+/* A small circle that rotates 45° into a close — the "+" affordance the
+   references all use on their FAQ rows. The bars are plain spans; the open
+   rotation lives here, not in per-element utilities, so there is exactly one
+   animation on toggle. */
+.ph4-faq-toggle {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  border: 1px solid var(--ph4-line-2);
+  border-radius: var(--ph4-r-pill);
+  color: var(--ph4-muted);
+  transition:
+    transform 250ms var(--ph4-ease),
+    border-color 200ms var(--ph4-ease-sharp),
+    color 200ms var(--ph4-ease-sharp);
+}
+.ph4-faq-bar-x,
+.ph4-faq-bar-y {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  background: currentColor;
+  border-radius: 2px;
+}
+.ph4-faq-bar-x {
+  width: 10px;
+  height: 1.5px;
+}
+.ph4-faq-bar-y {
+  width: 1.5px;
+  height: 10px;
+}
+.ph4-root details[open] .ph4-faq-toggle {
+  transform: rotate(45deg);
+  border-color: var(--ph4-accent);
+  color: var(--ph4-accent);
+}
+
+.ph4-root details[open] .ph4-faq-body {
+  animation: ph4-fade-in 240ms var(--ph4-ease-sharp) both;
+}
+
+/* --------------------------------------------------------------------------
+   footer
+   -------------------------------------------------------------------------- */
+
+.ph4-footer-tab {
+  padding: 0.3125rem 0.625rem;
+  border-radius: var(--ph4-r-sm);
+  font-size: 0.8125rem;
+  color: var(--ph4-on-console-2);
+  transition:
+    background-color 150ms var(--ph4-ease-sharp),
+    color 150ms var(--ph4-ease-sharp);
+}
+.ph4-footer-tab:hover {
+  background: rgb(255 255 255 / 8%);
+  color: var(--ph4-on-console);
+}
+.ph4-footer-tab[aria-selected="true"] {
+  background: rgb(255 255 255 / 12%);
+  color: var(--ph4-on-console);
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   motion contract
+   -------------------------------------------------------------------------- */
+
+/*
+ * Scroll entrances are driven by GSAP (see `Motion3.tsx`), which sets the
+ * start state at runtime. So the resting state in CSS is the *final* state:
+ * with JS disabled, or before GSAP boots, everything is already readable and
+ * nothing can be stranded invisible.
+ *
+ * The one exception is elements GSAP needs a measured start for, marked with
+ * `data-ph4-enter`; they are only hidden once the motion layer confirms it is
+ * running, via the `data-ph4-motion="on"` attribute set on the same tick.
+ */
+[data-ph4-motion="on"] [data-ph4-enter] {
+  opacity: 0;
+}
+
+@keyframes ph4-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes ph4-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes ph4-typing-dot {
+  0%,
+  60%,
+  100% {
+    opacity: 0.35;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes ph4-marquee {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes ph4-ping {
+  0% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  70%,
+  100% {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}
+
+@media (hover: none) {
+  .ph4-logo-track {
+    animation-duration: 90s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ph4-root *,
+  .ph4-root *::before,
+  .ph4-root *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  [data-ph4-motion="on"] [data-ph4-enter] {
+    opacity: 1;
+  }
+  .ph4-logo-track {
+    animation: none;
+  }
+  .ph4-draw {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   use-case band — sticky scrollytelling
+   --------------------------------------------------------------------------
+   The product panel parks under the nav while four full-height steps travel
+   past it; the step mid-viewport owns the panel. Steps off-stage dim so the
+   eye knows which one is current. Desktop only — on narrow screens everything
+   flows and the steps are plain buttons.
+   */
+
+@media (min-width: 1024px) {
+  .ph4-uc-sticky {
+    position: sticky;
+    top: 7rem;
+  }
+  .ph4-uc-step {
+    opacity: 0.35;
+    transition: opacity 400ms var(--ph4-ease-sharp);
+  }
+  .ph4-uc-step[aria-current="true"] {
+    opacity: 1;
+  }
+}
+
+/* The panel is keyed on the active index so a swap restarts the row stagger
+   instead of leaving the previous surface's rows on screen. */
+.ph4-swap {
+  animation: ph4-panel-in 360ms var(--ph4-ease) both;
+}
+
+/* --------------------------------------------------------------------------
+   product surface
+   --------------------------------------------------------------------------
+   The four surfaces are real DOM, not pictures: there is no honest screenshot of
+   app.cekat.ai in the repo (see `content-types.ts`), so the product on this page
+   is built rather than photographed. That is also the only version a visitor can
+   actually operate.
+   */
+
+.ph4-surface {
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-sm);
+  background: var(--ph4-white);
+  /* `clip` after `hidden`: `hidden` would make this a scroll container, and a
+     scroll container is the scope a `view()` timeline measures against — the
+     floating cards' parallax would sit frozen instead of moving. */
+  overflow: hidden;
+  overflow: clip;
+}
+
+.ph4-surface-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--ph4-line);
+  background: var(--ph4-surface);
+}
+
+.ph4-surface-url {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 0.5625rem;
+  letter-spacing: 0.02em;
+  color: var(--ph4-muted-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ph4-dot {
+  width: 1px;
+  height: 1px;
+}
+
+.ph4-cell {
+  padding: 0.625rem 0.75rem;
+  border-bottom: 1px solid var(--ph4-line);
+}
+
+.ph4-cell:last-child {
+  border-bottom: 0;
+}
+
+.ph4-meter {
+  height: 3px;
+  border-radius: 999px;
+  background: var(--ph4-surface-2);
+  overflow: hidden;
+}
+
+.ph4-meter > span {
+  display: block;
+  height: 100%;
+  background: var(--ph4-accent);
+  border-radius: inherit;
+}
+
+/* --------------------------------------------------------------------------
+   workflow
+   -------------------------------------------------------------------------- */
+
+.ph4-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-md);
+  background: var(--ph4-white);
+  transition:
+    border-color 200ms var(--ph4-ease-sharp),
+    transform 200ms var(--ph4-ease);
+}
+
+.ph4-step:hover {
+  border-color: var(--ph4-line-2);
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ph4-step:hover {
+    transform: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   capability cards
+   -------------------------------------------------------------------------- */
+
+.ph4-cap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  height: 100%;
+  padding: 1.25rem;
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-md);
+  background: var(--ph4-white);
+  transition:
+    border-color 200ms var(--ph4-ease-sharp),
+    transform 200ms var(--ph4-ease);
+}
+
+.ph4-cap:hover {
+  border-color: var(--ph4-accent-line);
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ph4-cap:hover {
+    transform: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   case studies and voices
+   --------------------------------------------------------------------------
+   Every card here carries a photograph of the person. A quote without a face
+   reads as invented, which is the one thing proof cannot afford to look like —
+   and an initials tile is the exact shape of that tell, so there is no fallback.
+   */
+
+.ph4-case {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-md);
+  background: var(--ph4-white);
+  overflow: hidden;
+  transition:
+    border-color 200ms var(--ph4-ease-sharp),
+    transform 200ms var(--ph4-ease);
+}
+
+.ph4-case:hover {
+  border-color: var(--ph4-line-2);
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ph4-case:hover {
+    transform: none;
+  }
+}
+
+/* The figure band is the one place the case card uses a tint, so the number is
+   readable at a glance across a four-card row without four photographs doing the
+   same job. */
+.ph4-case-figure {
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--ph4-line);
+  background: var(--ph4-surface);
+}
+
+.ph4-case-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding: 1.25rem;
+}
+
+.ph4-face {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  object-fit: cover;
+  flex: none;
+}
+
+.ph4-face-lg {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.ph4-voice {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+  height: 100%;
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-md);
+  background: var(--ph4-white);
+}
+
+/* --------------------------------------------------------------------------
+   trust badges
+   --------------------------------------------------------------------------
+   Badges first, prose second. The references on this page's list never argue
+   that nothing bad will happen to your data — they attach a certificate. So the
+   band opens on four labels and only then explains what they mean.
+   */
+
+.ph4-badge {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  padding: 1rem 1.125rem;
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-sm);
+  background: var(--ph4-white);
+}
+
+.ph4-badge-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  color: var(--ph4-ink);
+}
+
+.ph4-badge-note {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 0.5625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ph4-muted-3);
+}
+
+/* --------------------------------------------------------------------------
+   hero
+   -------------------------------------------------------------------------- */
+
+.ph4-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid var(--ph4-line);
+  border-radius: var(--ph4-r-md);
+  background: var(--ph4-white);
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .ph4-hero-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ph4-hero-stat {
+  padding: 1rem 1.125rem;
+  border-right: 1px solid var(--ph4-line);
+}
+
+.ph4-hero-stat:last-child {
+  border-right: 0;
+}
+
+@media (max-width: 640px) {
+  .ph4-hero-stat {
+    border-right: 0;
+    border-bottom: 1px solid var(--ph4-line);
+  }
+  .ph4-hero-stat:last-child {
+    border-bottom: 0;
+  }
+}
+
+.ph4-shot {
+  /* Two shadows, and only here: the page's other surfaces
+     are held together by hairlines, and the one object that reads as physical
+     is the one that may cast one. */
+  box-shadow:
+    0 1px 2px rgb(10 10 11 / 6%),
+    0 24px 60px -34px rgb(10 10 11 / 35%);
+}
+
+/* --------------------------------------------------------------------------
+   announcement strip
+   -------------------------------------------------------------------------- */
+
+.ph4-announce {
+  position: relative;
+  z-index: 51;
+}
+
+/* --------------------------------------------------------------------------
+   full-bleed product showcase
+   --------------------------------------------------------------------------
+   The one band that gives the whole viewport width to the running product and
+   does nothing else. The padding is asymmetric on purpose — a band that does
+   nothing but show one thing should not be padded like a stack of sections, and
+   the tighter top edge is what tells the eye this is a window, not another
+   chapter.
+   */
+
+.ph4-live {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--ph4-console);
+  padding-block: clamp(2.5rem, 5vw, 4rem) clamp(3rem, 6vw, 5rem);
+}
+
+/* The console's hairline grid, not a wallpaper: it reads as a spec sheet's
+   ruling rather than as a background image. */
+.ph4-live > .ph4-console-grid {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.ph4-live-stage {
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 40%),
+    0 32px 80px -40px rgb(0 0 0 / 70%);
+}
+
+/* --------------------------------------------------------------------------
+   photography band
+   --------------------------------------------------------------------------
+   A four-column row where the cells' spans are declared per frame, so a panorama
+   runs the full width and the 16:10 frames pair off beside it. `overflow: clip`
+   rather than `hidden`, so the band's own drop-shadow is not clipped by its
+   scroll container.
+   -------------------------------------------------------------------------- */
+
+.ph4-photo-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1023px) {
+  .ph4-photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 639px) {
+  .ph4-photo-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.ph4-photo-cell {
+  position: relative;
+  /* `clip` after `hidden` for the same reason as `.ph4-clip`: the parallax
+     layer sits inside this cell, and `hidden` would make the cell the
+     scrollport its `view()` timeline measures against — a scrollport that
+     never moves, so the layer would sit frozen one offset from rest. */
+  overflow: hidden;
+  overflow: clip;
+  border-radius: var(--ph4-r-md);
+  background: var(--ph4-surface-2);
+}
+
+.ph4-photo-span-1 {
+  grid-column: span 1;
+}
+.ph4-photo-span-2 {
+  grid-column: span 2;
+}
+.ph4-photo-span-4 {
+  grid-column: span 4;
+}
+
+@media (max-width: 1023px) {
+  .ph4-photo-span-1 {
+    grid-column: span 1;
+  }
+  .ph4-photo-span-2 {
+    grid-column: span 2;
+  }
+  .ph4-photo-span-4 {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 639px) {
+  .ph4-photo-span-1,
+  .ph4-photo-span-2,
+  .ph4-photo-span-4 {
+    grid-column: span 1;
+  }
+}
+
+/*
+ * The frames keep their colour. A graded overlay sits on top only so the caption
+ * has something to sit on — it is a scrim, not a filter: `from-black/60` at the
+ * bottom third and nothing at all above it, so the photograph is not tinted on
+ * the half of the frame the reader actually looks at.
+ */
+.ph4-photo-cell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgb(0 0 0 / 62%) 0%,
+    rgb(0 0 0 / 18%) 28%,
+    transparent 52%
+  );
+}
+
+.ph4-photo-cap {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 0.875rem 1rem;
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: -0.008em;
+}
+
+.ph4-root pre code {
+  text-transform: none;
+  letter-spacing: 0;
+  font-variant-ligatures: none;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+}
+
+/* --------------------------------------------------------------------------
+   micro-interactions
+   --------------------------------------------------------------------------
+   Small, purposeful transitions that make the page feel alive without
+   distracting from the product. All are compositor-friendly (transform +
+   opacity) and respect prefers-reduced-motion.
+   -------------------------------------------------------------------------- */
+
+/* Buttons: lift + shadow on hover */
+.ph4-btn {
+  transition:
+    transform 180ms var(--ph4-ease-sharp),
+    box-shadow 180ms var(--ph4-ease-sharp),
+    background-color 180ms var(--ph4-ease-sharp),
+    border-color 180ms var(--ph4-ease-sharp),
+    color 180ms var(--ph4-ease-sharp);
+}
+
+/* Cards: subtle lift + border highlight */
+.ph4-cap:hover,
+.ph4-case:hover,
+.ph4-plan:hover {
+  transform: translateY(-3px);
+  transition:
+    transform 220ms var(--ph4-ease),
+    border-color 220ms var(--ph4-ease),
+    box-shadow 220ms var(--ph4-ease);
+}
+
+/* Arrow icons: nudge on parent hover */
+.ph4-arrow {
+  transition: transform 180ms var(--ph4-ease-sharp);
+}
+.ph4-btn:hover .ph4-arrow,
+.ph4-link:hover .ph4-arrow,
+a:hover > .ph4-arrow {
+  transform: translateX(3px);
+}
+
+/* Photo band images: slow zoom on hover. The overflow clip that keeps the
+   zoom inside the frame lives on the first `.ph4-photo-cell` rule — restating
+   `overflow: hidden` here would win on source order and turn the cell back
+   into a scroll container, which is the scrollport a `view()` timeline
+   measures against, freezing the parallax layer inside it. */
+.ph4-photo-cell img {
+  transition: transform 600ms var(--ph4-cubic-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+.ph4-photo-cell:hover img {
+  transform: scale(1.04);
+}
+
+/* Case study face photos: subtle scale on card hover */
+.ph4-face {
+  transition: transform 220ms var(--ph4-ease);
+}
+.ph4-case:hover .ph4-face {
+  transform: scale(1.06);
+}
+
+/* Marquee: pause on hover (already in base, reinforce here) */
+.ph4-logo-track,
+.ph4-marquee-track {
+  transition: opacity 200ms var(--ph4-ease-sharp);
+}
+.ph4-logo-mask:hover .ph4-logo-track,
+.ph4-marquee-band:hover .ph4-marquee-track {
+  animation-play-state: paused;
+  opacity: 0.85;
+}
+
+/* Pulse dot: gentle scale on hover of parent badge */
+.ph4-pulse {
+  transition: transform 200ms var(--ph4-ease-sharp);
+}
+.ph4-badge:hover .ph4-pulse,
+.ph4-plan:hover .ph4-pulse {
+  transform: scale(1.25);
+}
+
+/* FAQ rows: background sweep on hover */
+.ph4-root summary {
+  transition:
+    background-color 180ms var(--ph4-ease-sharp),
+    padding-left 180ms var(--ph4-ease-sharp);
+  border-radius: var(--ph4-r-sm);
+}
+.ph4-root summary:hover {
+  background: var(--ph4-surface);
+}
+
+/* Section headings: eyebrow fade-in on scroll (GSAP adds data-ph4-enter) */
+[data-ph4-enter] {
+  transition:
+    opacity 600ms var(--ph4-ease),
+    transform 600ms var(--ph4-ease);
+}
+[data-ph4-motion="on"] [data-ph4-enter] {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Reduced motion: disable all micro-interactions */
+@media (prefers-reduced-motion: reduce) {
+  .ph4-cap:hover,
+  .ph4-case:hover,
+  .ph4-plan:hover {
+    transform: none;
+  }
+  .ph4-photo-cell:hover img {
+    transform: none;
+  }
+  .ph4-case:hover .ph4-face {
+    transform: none;
+  }
+  .ph4-logo-mask:hover .ph4-logo-track,
+  .ph4-marquee-band:hover .ph4-marquee-track {
+    animation-play-state: running;
+    opacity: 1;
+  }
+  [data-ph4-enter] {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+}
+
+/* ===========================================================================
+   motion pass — depth, spotlight, scrub band, nav progress
+   ---------------------------------------------------------------------------
+   Four additions, one rule each:
+
+   1. Scroll depth is a *CSS scroll-driven* animation (`animation-timeline:
+      view()`), Solidroad's shape. There is no JS fallback on purpose: where the
+      API is missing the element keeps its resting state, which is the finished
+      state — the same contract the rest of this page runs on.
+   2. `overflow: hidden` creates a scroll container, and a scroll container is
+      what `view()` measures against. A section clipped with `hidden` would
+      therefore pin every descendant's timeline to a scroport that never moves,
+      and the parallax would sit frozen one step off. `overflow: clip` clips
+      without creating that scroport, so `.ph4-clip` declares `hidden` first and
+      `clip` second: browsers without `clip` keep the old behaviour, browsers
+      with it get a timeline that actually runs.
+   3. Nothing here reads layout per frame. The pointer writes two custom
+      properties, the scroll engine already exists.
+   4. Every animation below is switched off under `prefers-reduced-motion`.
+   */
+
+.ph4-clip {
+  overflow: hidden;
+  overflow: clip;
+}
+
+@keyframes ph4-parallax {
+  from {
+    transform: translate3d(0, var(--ph4-parallax-from, 16px), 0);
+  }
+  to {
+    transform: translate3d(0, var(--ph4-parallax-to, -16px), 0);
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .ph4-parallax {
+    will-change: transform;
+    animation: ph4-parallax linear both;
+    animation-timeline: view();
+    animation-range: entry 0% exit 100%;
+  }
+}
+
+/* Pointer spotlight. One listener writes --ph4-spot-x/y per card; the card
+   paints its own light at that point. The ::after sits above the card's
+   background and below its text, so nothing it touches is ever legible text —
+   the glow is decorative and marked as such by pointer-events. */
+.ph4-spot {
+  position: relative;
+}
+
+.ph4-spot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 240ms var(--ph4-ease-sharp);
+  background: radial-gradient(
+    190px circle at var(--ph4-spot-x, 50%) var(--ph4-spot-y, 0%),
+    rgb(19 82 191 / 0.07),
+    transparent 70%
+  );
+}
+
+.ph4-spot:hover::after {
+  opacity: 1;
+}
+
+/* The scrubbed statement band: a tall band, a statement parked under the nav,
+   and Motion4 filling the words in against the scroll position. `clip` is
+   deliberately not applied — the sticky child needs the viewport as its
+   scroport. */
+.ph4-scrub-band {
+  min-height: 215vh;
+}
+
+.ph4-scrub-sticky {
+  position: sticky;
+  top: 22vh;
+}
+
+@media (max-width: 639px) {
+  .ph4-scrub-band {
+    min-height: 170vh;
+  }
+}
+
+/* Reading position, not decoration: it tracks the reader's own scroll, so it
+   stays on under `prefers-reduced-motion`.
+   The fill is driven by `--ph4-progress`, written in the same rAF as `--p`.
+   `width` and not `scaleX`: a scaled element scales its own shadow, so at 5%
+   progress the bloom would collapse into a vertical smear instead of a halo. */
+
+/* The clipper clips again — it has to, because the curve is the whole point.
+   What changed is *where the glow lives*: `filter` here, on the parent, not on
+   the band below. Rendering applies a parent's filter to the child's finished
+   pixels, after that child's own clipping and masking. So by the time
+   `drop-shadow` reads the silhouette, the band has already been cut into the
+   pill's arc, and the bloom is cast from a shape that bends. On the band
+   itself the same shadow was trimmed away by this very `overflow` — which is
+   how the glow disappeared the first time round.
+   The spill past the edge is deliberate: `overflow` clips descendants, never
+   the element's own filter output, so the light reaches outside the pill.
+   Kept deliberately small. A wide, low-alpha halo reads as haze; a tight one
+   over a bright core reads as emitted light. Chained drop-shadows also
+   compound — each shadows the previous result including its own shadow — so
+   radius buys very little here and costs the crispness that makes it glow. */
+.ph4-nav-progress-clip {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  border-radius: calc(16px + 12px * var(--p));
+  filter:
+    drop-shadow(0 0 2px rgb(219 234 254 / 0.9))
+    drop-shadow(0 0 5px rgb(59 130 246 / 0.45));
+}
+
+/* A ring, not two bars. The shape is the pill's own outline — `padding` 2px
+   plus the content-box/xor mask leaves only that 2px band — so the light
+   follows the rounded ends instead of stopping short of them. That is what
+   "wrapping the caps" costs: two straight bars can never reach around a curve
+   that sits above and below them.
+   The ring is closed, so it spans the whole pill; `clip-path` is what makes it
+   progress. Revealed from the left, that means the light starts by wrapping the
+   left cap, then runs up the top edge and down the bottom edge together, and
+   finally closes round the right cap when it reaches 100% — both ends meeting
+   where they should.
+   `clip-path` and not `width`: nothing re-lays-out per frame, and unlike
+   `overflow` it does not eat the bloom the clipper casts below. */
+.ph4-nav-progress {
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: calc(16px + 12px * var(--p));
+  background: linear-gradient(
+    90deg,
+    var(--ph4-accent) 0%,
+    #3b82f6 55%,
+    #60a5fa 82%,
+    #dbeafe 100%
+  );
+  clip-path: inset(0 calc(100% - var(--ph4-progress, 0) * 100%) 0 0);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ph4-parallax {
+    animation: none;
+    will-change: auto;
+  }
+  .ph4-spot::after {
+    display: none;
+  }
+  .ph4-scrub-band {
+    min-height: 0;
+  }
+  .ph4-scrub-sticky {
+    position: static;
+  }
+}
+
+/*
+ * Split-text mask.
+ *
+ * The reveal is only a reveal if the word is *clipped* while it rises —
+ * without this the mask span in SplitHeading is a no-op and the words simply
+ * fade up in place, which is what this page did until now. Padding plus a
+ * matching negative margin gives descenders somewhere to live: an inline-block
+ * with `overflow: hidden` clips at its content box, and display type at 1.06
+ * leading puts `g`, `y` and `p` straight through it.
+ *
+ * Every word in a heading carries the mask, so the inline-block baseline shift
+ * that `overflow: hidden` causes is uniform — no word sits higher than its
+ * neighbour.
+ */
+.ph4-mask {
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 0.16em;
+  margin-bottom: -0.16em;
+  vertical-align: bottom;
+}
+
+/*
+ * Drag rail.
+ *
+ * The scrollbar is hidden because the rail is dragged, and a visible one under
+ * three cards reads as a broken widget rather than as an affordance. It stays
+ * scrollable — `scrollbar-width: none` hides it, it does not disable it — and
+ * `overscroll-behavior-x: contain` stops the drag from handing the gesture to
+ * the browser the moment it reaches the first or last card.
+ */
+.ph4-rail {
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  cursor: grab;
+}
+
+.ph4-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.ph4-rail[data-dragging="true"] {
+  cursor: grabbing;
+  /* The native drag ghost is a translucent image; this keeps the card from
+     being half-taken by the browser while the pointer writes scrollLeft. */
+  user-select: none;
+}
+
+/* The snap only applies where the cards actually overflow. On a wide screen
+   the rail fits, and a snap point on a non-scrolling container is a no-op
+   that still costs a scroll anchoring pass. */
+@media (max-width: 1023px) {
+  .ph4-rail > * {
+    scroll-snap-align: start;
+    flex: 0 0 min(78%, 22rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ph4-rail {
+    scroll-behavior: auto;
+  }
+}

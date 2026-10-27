@@ -17,6 +17,7 @@ import { ProductDeck } from "@/components/preview-home-2/ProductDeck";
 import { ProofStrip } from "@/components/preview-home-2/ProofStrip";
 import { ScrollProgress } from "@/components/preview-home-2/ScrollProgress";
 import { SignalsMarquee } from "@/components/preview-home-2/SignalsMarquee";
+import { TextMotion } from "@/components/preview-home-2/TextMotion";
 import { TrustBand } from "@/components/preview-home-2/TrustBand";
 
 export async function generateMetadata({
@@ -64,6 +65,9 @@ export default async function PreviewHome2Page({
   return (
     <div className="ph2-root">
       <ScrollProgress />
+      {/* Arms and releases the word-by-word heading entrances. Returns null and
+          touches nothing when reduced motion is on. */}
+      <TextMotion />
 
       <a
         href="#main"

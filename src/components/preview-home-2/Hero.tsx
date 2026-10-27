@@ -4,7 +4,8 @@ import { HeroAurora } from "./HeroAurora";
 import { HeroFade } from "./HeroFade";
 import { HeroForm } from "./HeroForm";
 import { HeroStage } from "./HeroStage";
-import { Accent, Band, Shell } from "./ui";
+import { SplitText } from "./SplitText";
+import { Band, Shell } from "./ui";
 import type { HomeContent } from "./types";
 
 /**
@@ -34,8 +35,14 @@ export function Hero({ content }: { content: HomeContent }) {
 
       <Shell className="relative">
         {/* Fades out on scroll (see HeroFade), handing the viewport to the
-            draggable stage below. */}
-        <HeroFade className="mx-auto flex max-w-[54rem] flex-col items-center text-center">
+            draggable stage below — and, on load, runs the entrance
+            (`ph2-hero-in`, see preview-home-2.css): the pill lifts, the
+            headline's masked words rise, then the lede, the form and the
+            secondary link follow on a stagger. Pure CSS on purpose: this block
+            is the LCP candidate, so its entrance must not wait for a script to
+            download, parse and hydrate. The child order below *is* the timing —
+            the selectors are nth-child over exactly these five. */}
+        <HeroFade className="ph2-hero-in mx-auto flex max-w-[54rem] flex-col items-center text-center">
           <Link
             href={hero.pill.href}
             className="group inline-flex items-center gap-2.5 rounded-full border border-[#BFDBFE] bg-[#EFF6FF] px-4 py-1.5 text-[0.8rem] font-semibold text-[#101828] transition-colors duration-200 hover:border-primary/40"
@@ -51,7 +58,10 @@ export function Hero({ content }: { content: HomeContent }) {
           </Link>
 
           <h1 className="mt-6 text-[clamp(2.35rem,5.2vw,4.15rem)] leading-[1.04] font-bold tracking-[-0.03em] text-balance text-[#101828]">
-            {hero.titleLead} <Accent>{hero.titleAccent}</Accent>
+            <SplitText
+              text={hero.titleLead}
+              accent={hero.titleAccent}
+            />
           </h1>
 
           <p className="mt-5 max-w-[38rem] text-[1.125rem] leading-[1.6] text-[#4B5563]">

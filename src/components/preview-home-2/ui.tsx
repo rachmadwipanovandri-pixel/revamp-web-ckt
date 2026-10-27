@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { SplitText } from "./SplitText";
 
 /**
  * Small server-side primitives for the redesign. Tailwind utilities only, so
@@ -116,13 +117,15 @@ export function SectionHead({
 }: {
   id?: string;
   eyebrow: ReactNode;
-  title: ReactNode;
+  /** A plain string: it is split into words by `SplitText` for the entrance. */
+  title: string;
   body?: ReactNode;
   align?: "left" | "center";
   className?: string;
 }) {
   return (
     <header
+      data-ph2-split=""
       className={cn(
         "flex flex-col gap-3",
         align === "center" ? "items-center text-center" : "items-start",
@@ -134,7 +137,7 @@ export function SectionHead({
         id={id}
         className="text-[clamp(1.75rem,3.4vw,2.5rem)] leading-[1.14] font-bold tracking-[-0.025em] text-balance text-[#101828]"
       >
-        {title}
+        <SplitText text={title} />
       </h2>
       {body ? (
         <p
@@ -147,6 +150,31 @@ export function SectionHead({
         </p>
       ) : null}
     </header>
+  );
+}
+
+/**
+ * A hairline that draws itself when it scrolls in.
+ *
+ * This is the one structural primitive borrowed wholesale from /preview-home-3:
+ * there, a band separates from its neighbour by a rule that scales out from the
+ * left edge rather than by a shadow or a boxed edge, and it is most of why that
+ * page reads as a spec sheet rather than a stack of cards. Placed explicitly by
+ * each band rather than added by `SectionHead`, because a hairline is a
+ * decision about the band's structure — a rule that appears everywhere reads as
+ * a divider, which is what it stops being.
+ *
+ * `aria-hidden` because it is decoration, and `data-ph2-rule` because a 1px box
+ * scaled to zero is invisible until `TextMotion` says it may arrive. Resting
+ * state is the drawn state, so with JS off it is simply a hairline.
+ */
+export function Rule({ className }: { className?: string }) {
+  return (
+    <div
+      data-ph2-rule=""
+      aria-hidden
+      className={cn("h-px w-full bg-border", className)}
+    />
   );
 }
 

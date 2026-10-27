@@ -295,6 +295,204 @@ html.lenis .ph2-root {
     scale(calc(1 - var(--fade) * 0.04));
 }
 
+/* ---------- text entrance: masked word rise ---------------------------------
+ * Ported from /preview-home-3's `SplitHeading` + `Motion3` word tween, minus
+ * the motion library. The split is done on the server by `SplitText`, the
+ * timing is a CSS delay computed off `--i`, and `TextMotion` has exactly one
+ * job left: deciding *when* a heading that is still below the fold gets to go.
+ *
+ * Two paths, one pair of keyframes:
+ *
+ *   - `.ph2-hero-in` is the hero copy. It runs from first paint, in CSS, with
+ *     no JavaScript at all — the hero is the LCP candidate, and an entrance
+ *     that waits for hydration is an entrance that paints the headline twice.
+ *   - `[data-ph2-split]` is every other heading. It is *visible by default*.
+ *     `TextMotion` writes `data-ph2-armed` only for blocks still ahead of the
+ *     visitor and `data-ph2-in` when they arrive, so nothing is ever hidden
+ *     until the script has said it can be hidden. JS off, JS crashing, or
+ *     `prefers-reduced-motion` all leave the page complete.
+ *
+ * The mask carries `padding-bottom: 0.14em` cancelled by the same negative
+ * margin: a snug `overflow: hidden` clips descenders, and at `leading-[1.04]`
+ * the descender of every `g`/`p` sits ~0.085em below the line box. The trailing
+ * space is a sibling text node *outside* the mask — a mask clips trailing
+ * whitespace, and the words would otherwise run together as
+ * `…LeadsSampaiJadi…`.
+ */
+.ph2-word-mask {
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 0.14em;
+  margin-bottom: -0.14em;
+  vertical-align: bottom;
+}
+
+.ph2-word {
+  display: inline-block;
+  will-change: transform;
+}
+
+/*
+ * Every keyframe here states its `to`, and that is load-bearing rather than
+ * tidy. A `from`-only keyframe has its `to` synthesized from the element's
+ * *underlying* value — the value the cascade gives it with animations ignored.
+ * On this page an armed block's resting value is deliberately `opacity: 0`
+ * (see the scroll-entrance contract below), so a `from`-only entrance would
+ * interpolate from 0 to 0 and never become visible however long it ran. Both
+ * the hero path and the scroll path are safe here because the endpoint is
+ * written down instead of being read back off a rule that hides things.
+ */
+@keyframes ph2-word-in {
+  from {
+    transform: translateY(108%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes ph2-block-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---- hero entrance: pure CSS, runs on load --------------------------------
+ * The children of `.ph2-hero-in`, in order: pill · h1 · lede · form ·
+ * secondary link. The h1 is deliberately excluded from the block lift — its
+ * words carry the movement themselves, so lifting the whole headline as well
+ * would double the travel and read as a wobble. The lede starts while the last
+ * words are still rising, which is the overlap that makes it feel composed
+ * rather than queued.
+ */
+.ph2-hero-in > * {
+  animation: ph2-block-in 700ms var(--ph2-ease) both;
+}
+
+.ph2-hero-in > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.ph2-hero-in > *:nth-child(2) {
+  animation: none;
+}
+
+.ph2-hero-in > *:nth-child(3) {
+  animation-delay: 700ms;
+}
+
+.ph2-hero-in > *:nth-child(4) {
+  animation-delay: 780ms;
+}
+
+.ph2-hero-in > *:nth-child(5) {
+  animation-delay: 860ms;
+}
+
+.ph2-hero-in h1 [data-ph2-word] {
+  animation: ph2-word-in 1.05s var(--ph2-ease) both;
+  animation-delay: calc(60ms + var(--i) * 45ms);
+}
+
+/* ---- scroll entrance: armed by TextMotion --------------------------------
+ * `data-ph2-armed` is the only rule that hides anything, and JS is the only
+ * thing that writes it. The reveal writes `data-ph2-in` and *drops* the armed
+ * attribute again (see `TextMotion`), so the block hands itself back to the
+ * cascade once the entrance is over rather than resting on a keyframe fill.
+ *
+ * The `to` in `ph2-block-in` being explicit is what makes any of this work —
+ * and the first version of this contract got it wrong. The reasoning was that
+ * `animation` outranks a normal declaration in the cascade, so the `both` fill
+ * would hold the block at its finished state with the armed values sitting
+ * harmlessly underneath. The cascade part is true; the conclusion does not
+ * follow, because an animation's endpoint is not read from the cascade at all
+ * when the keyframe does not state one — it is synthesized from the underlying
+ * value, which here *is* the armed `opacity: 0`. The animation therefore ran
+ * from 0 to 0 and every scroll entrance on the page stayed invisible. Measured,
+ * not theorised: `effect.getKeyframes()` returned `opacity: 0` at both offsets.
+ */
+.ph2-root [data-ph2-split][data-ph2-armed="true"] {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.ph2-root [data-ph2-split][data-ph2-armed="true"] [data-ph2-word] {
+  transform: translateY(108%);
+}
+
+.ph2-root [data-ph2-split][data-ph2-in="true"] {
+  animation: ph2-block-in 800ms var(--ph2-ease) both;
+}
+
+.ph2-root [data-ph2-split][data-ph2-in="true"] [data-ph2-word] {
+  animation: ph2-word-in 950ms var(--ph2-ease) both;
+  animation-delay: calc(var(--i) * 28ms);
+}
+
+/* ---- scroll entrance for everything that is not a heading ---------------
+ * The same contract as the split above, one keyframe further down the page's
+ * furniture: cards, rows, stat cells and panels arrive with the 20px lift and
+ * the fade, and a group that arrives together arrives in sequence rather than
+ * as one slab.
+ *
+ * `--ph2-i` is written by `TextMotion` at arm time, and only among siblings
+ * that are themselves armed. Counting every sibling instead would give a grid
+ * whose first two cards were already on screen a stagger that starts at 6, so
+ * the first visible card waits nearly half a second for no reason.
+ *
+ * `--ph2-ease` here is `cubic-bezier(0.22, 1, 0.36, 1)` — the same ease the
+ * hover lifts use, which is what keeps an entrance and a hover on this page
+ * feeling like the same hand.
+ */
+.ph2-root [data-ph2-enter][data-ph2-armed="true"] {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.ph2-root [data-ph2-enter][data-ph2-in="true"] {
+  animation: ph2-block-in 800ms var(--ph2-ease) both;
+  animation-delay: calc(var(--ph2-i, 0) * 80ms);
+}
+
+/* ---- hairlines that draw themselves ------------------------------------
+ * A rule that scales from its left edge reads as something being laid down;
+ * one that is simply there reads as a border. `transform-origin` belongs on the
+ * resting rule and not on the keyframe — the armed state collapses the box, and
+ * a origin applied only at the end of the animation would collapse it from the
+ * centre on the way in.
+ *
+ * Only ever put this on a dedicated 1px element. On a section, scaling the box
+ * scales every child with it.
+ */
+.ph2-root [data-ph2-rule] {
+  transform-origin: left center;
+}
+
+@keyframes ph2-rule-in {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.ph2-root [data-ph2-rule][data-ph2-armed="true"] {
+  transform: scaleX(0);
+}
+
+.ph2-root [data-ph2-rule][data-ph2-in="true"] {
+  animation: ph2-rule-in 1100ms cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
 /* ---------- floating context cards (hero stage) ----------
  * The bob lives on the slot wrapper and the play-in on the window inside it, so
  * the two never fight over `transform`. Each slot overrides the period and the
@@ -1008,6 +1206,32 @@ html.lenis .ph2-root {
   }
 
   .ph2-root .ph2-mega-panel {
+    transform: none !important;
+  }
+
+  /* Text entrance: both paths go to their resting state, which is the visible
+     one. The hero path only needs `animation: none` (the hidden state lives in
+     the keyframe fill, so removing the animation removes the hiding). The
+     armed path is different — `opacity: 0` there is a normal declaration, not
+     a keyframe, and an important declaration outranks an animation — so it is
+     explicitly reversed. `TextMotion` already refuses to arm under reduced
+     motion; this is the second line of defence for the case where the setting
+     flips *after* a heading was armed. */
+  .ph2-root .ph2-hero-in > *,
+  .ph2-root .ph2-hero-in h1 [data-ph2-word],
+  .ph2-root [data-ph2-split][data-ph2-in="true"],
+  .ph2-root [data-ph2-split][data-ph2-in="true"] [data-ph2-word],
+  .ph2-root [data-ph2-enter][data-ph2-in="true"],
+  .ph2-root [data-ph2-rule][data-ph2-in="true"] {
+    animation: none !important;
+  }
+
+  .ph2-root [data-ph2-split][data-ph2-armed="true"],
+  .ph2-root [data-ph2-split][data-ph2-armed="true"] [data-ph2-word],
+  .ph2-root [data-ph2-enter][data-ph2-armed="true"],
+  .ph2-root [data-ph2-rule][data-ph2-armed="true"] {
+    animation: none !important;
+    opacity: 1 !important;
     transform: none !important;
   }
 }

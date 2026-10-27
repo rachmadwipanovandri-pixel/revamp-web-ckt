@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { Band, SectionHead, Shell } from "./ui";
+import { Band, Rule, SectionHead, Shell } from "./ui";
 import type { HomeContent } from "./types";
 
 /**
@@ -79,7 +79,15 @@ export function ProductDeck({ content }: { content: HomeContent["deck"] }) {
           {content.hint}
         </p>
 
-        <div className="ph2-deck-stack">
+        <Rule className="mt-6" />
+
+        {/*
+          The stack, not the cards. The fan positions its cards absolutely
+          against this box and drives their width off `--ph2-pos`; a transform
+          on the box moves the whole fan, which is what we want, where a
+          transform per card would fight the CSS that lays the fan out.
+        */}
+        <div className="ph2-deck-stack" data-ph2-enter="">
           {order.map((itemIndex, position) => {
             const item = items[itemIndex];
             const isFront = itemIndex === front;

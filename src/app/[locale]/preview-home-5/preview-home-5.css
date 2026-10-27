@@ -1,0 +1,262 @@
+/* Layer placement is the whole trick of this sheet. ph4's stylesheet lives in
+ * `@layer components`, and the dark grounds we are overriding
+ * (`bg-[var(--ph4-console)]`, `text-[var(--ph4-on-console)]`, …) are Tailwind
+ * `utilities` — a later layer, so they beat same-specificity component rules
+ * every time. These overrides therefore live in `@layer utilities`, imported
+ * after both Tailwind and the ph4 sheet, so equal-specificity ties break our
+ * way and the higher-specificity selectors below win outright. Nothing here
+ * leaks into /preview-home-4: every rule is scoped under `.ph5-root`.
+ */
+@layer utilities {
+
+/*
+ * /preview-home-5 — ph4, light rhythm.
+ *
+ * The route reuses every preview-home-4 component (no fork), so this sheet
+ * only does two jobs:
+ *
+ *   1. Light overrides: the Live band, the API band and the featured plan
+ *      render on paper instead of console. The only dark left on the page is
+ *      the opening hero photo, the closer and the footer — the three moments
+ *      that frame the document rather than interrupt it.
+ *   2. iOS motion tokens: the spring curve the entrances run on.
+ *
+ * Specificity note: every rule below is scoped under `.ph5-root`, which sits
+ * beside `.ph4-root` on the same element — so these always beat the ph4 sheet
+ * without `!important` and never leak into /preview-home-4.
+ */
+
+.ph5-root {
+  /* iOS spring: fast attack, long soft settle — the curve behind every
+     entrance Motion5 runs. */
+  --ph5-spring: cubic-bezier(0.32, 0.72, 0, 1);
+  --ph5-spring-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* --------------------------------------------------------------------------
+   Live band — console → light
+   -------------------------------------------------------------------------- */
+
+.ph5-root .ph4-live {
+  background:
+    radial-gradient(ellipse 70% 50% at 50% -8%, rgb(19 82 191 / 8%), transparent 62%),
+    linear-gradient(to bottom, var(--ph4-accent-tint-2), var(--ph4-paper) 40%);
+  color: var(--ph4-ink);
+  border-bottom: 1px solid var(--ph4-line);
+}
+
+.ph5-root .ph4-live > .ph4-console-grid {
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 0%, rgb(30 86 214 / 10%), transparent 60%),
+    radial-gradient(ellipse 50% 45% at 85% 100%, rgb(14 165 233 / 8%), transparent 65%);
+}
+
+.ph5-root .ph4-live .ph4-display {
+  color: var(--ph4-ink);
+}
+
+.ph5-root .ph4-live .ph4-accent-word {
+  color: var(--ph4-accent);
+}
+
+.ph5-root .ph4-live dl {
+  border-color: var(--ph4-line-2);
+  background: var(--ph4-line);
+}
+
+.ph5-root .ph4-live dl > div {
+  background: var(--ph4-white);
+}
+
+.ph5-root .ph4-live dl dd {
+  color: var(--ph4-ink);
+}
+
+.ph5-root .ph4-live dl dt {
+  color: var(--ph4-muted-2);
+}
+
+.ph5-root .ph4-live-stage {
+  border-color: var(--ph4-line-2);
+  background: var(--ph4-white);
+  box-shadow:
+    0 0 0 1px rgb(10 10 11 / 4%),
+    0 24px 48px -28px rgb(10 10 11 / 18%),
+    0 48px 96px -64px rgb(10 10 11 / 22%);
+}
+
+.ph5-root .ph4-live-stage > div,
+.ph5-root .ph4-live-stage li,
+.ph5-root .ph4-live-stage ul {
+  border-color: var(--ph4-line);
+}
+
+.ph5-root .ph4-live-stage .ph4-surface-url {
+  color: var(--ph4-muted-3);
+}
+
+.ph5-root .ph4-live-stage [class*="text-[var(--ph4-on-console)]"] {
+  color: var(--ph4-ink);
+}
+
+.ph5-root .ph4-live-stage [class*="text-[var(--ph4-on-console-2)]"] {
+  color: var(--ph4-muted);
+}
+
+.ph5-root .ph4-live-stage [class*="text-[var(--ph4-on-console-3)]"] {
+  color: var(--ph4-muted-3);
+}
+
+.ph5-root .ph4-live-stage [class*="bg-[var(--ph4-console-line-2)]"] {
+  background-color: var(--ph4-line-2);
+}
+
+.ph5-root .ph4-live-stage [class*="border-[var(--ph4-console-line-2)]"] {
+  border-color: var(--ph4-line-2);
+}
+
+.ph5-root .ph4-live-stage [class*="bg-[var(--ph4-on-console)]"] {
+  background-color: var(--ph4-accent);
+  color: var(--ph4-white);
+}
+
+/* --------------------------------------------------------------------------
+   API band — console section → light section
+   -------------------------------------------------------------------------- */
+
+.ph5-root section#api.ph4-console {
+  background:
+    radial-gradient(ellipse 55% 45% at 85% 10%, rgb(19 82 191 / 7%), transparent 65%),
+    var(--ph4-surface);
+  color: var(--ph4-ink);
+  border-top: 1px solid var(--ph4-line);
+}
+
+.ph5-root section#api .ph4-display {
+  color: var(--ph4-ink) !important;
+}
+
+/* The component pins its word spans with an `!`-important utility, so the
+   override needs the same weight — except the accent word, which stays blue. */
+.ph5-root section#api .ph4-display span:not(.ph4-accent-word) {
+  color: var(--ph4-ink) !important;
+}
+
+.ph5-root section#api .ph4-accent-word {
+  color: var(--ph4-accent) !important;
+}
+
+.ph5-root section#api [class*="text-[var(--ph4-on-console-2)]"] {
+  color: var(--ph4-muted);
+}
+
+.ph5-root section#api [class*="text-[var(--ph4-on-console-3)]"] {
+  color: var(--ph4-muted-3);
+}
+
+.ph5-root section#api [class*="text-[var(--ph4-on-console)]"] {
+  color: var(--ph4-ink);
+}
+
+/* The snippet window: white card on the light band, syntax keeps its voice. */
+.ph5-root section#api [class*="bg-[var(--ph4-console-2)]"] {
+  background-color: var(--ph4-white);
+  border-color: var(--ph4-line-2);
+  box-shadow:
+    0 0 0 1px rgb(10 10 11 / 4%),
+    0 24px 48px -28px rgb(10 10 11 / 18%);
+}
+
+.ph5-root section#api [class*="border-[var(--ph4-console-line)]"] {
+  border-color: var(--ph4-line);
+}
+
+.ph5-root section#api [class*="bg-[var(--ph4-console-line-2)]"] {
+  background-color: var(--ph4-line-2);
+}
+
+.ph5-root section#api [class*="text-[var(--ph4-on-console-3)]"].ph4-mono {
+  color: var(--ph4-muted-3);
+}
+
+.ph5-root section#api pre [class*="text-[var(--ph4-on-console-3)]"] {
+  color: var(--ph4-muted-3);
+}
+
+.ph5-root section#api pre [class*="text-[var(--ph4-on-console-2)]"] {
+  color: var(--ph4-ink-2);
+}
+
+.ph5-root section#api pre [class*="text-[var(--ph4-accent)]"] {
+  color: var(--ph4-accent);
+}
+
+/* Ghost-invert action reads as outline on light. */
+.ph5-root section#api .ph4-btn-ghost-invert {
+  background: var(--ph4-white);
+  color: var(--ph4-ink);
+  border: 1px solid var(--ph4-line-2);
+}
+
+.ph5-root section#api .ph4-btn-ghost-invert:hover {
+  border-color: var(--ph4-line-3);
+  background: var(--ph4-paper);
+}
+
+/* --------------------------------------------------------------------------
+   Featured plan — ink card → light spotlight card
+   -------------------------------------------------------------------------- */
+
+.ph5-root .ph4-plan.is-featured {
+  background:
+    radial-gradient(ellipse 80% 55% at 50% -10%, rgb(19 82 191 / 10%), transparent 65%),
+    var(--ph4-white);
+  border-color: var(--ph4-accent-line);
+  border-width: 1.5px;
+  color: var(--ph4-ink);
+  box-shadow:
+    0 0 0 1px rgb(19 82 191 / 6%),
+    0 24px 48px -32px rgb(19 82 191 / 28%);
+}
+
+.ph5-root .ph4-plan.is-featured h3,
+.ph5-root .ph4-plan.is-featured p,
+.ph5-root .ph4-plan.is-featured li {
+  color: var(--ph4-ink);
+}
+
+.ph5-root .ph4-plan.is-featured .ph4-included {
+  border-color: var(--ph4-line);
+}
+
+.ph5-root .ph4-plan.is-featured .ph4-included svg {
+  color: var(--ph4-accent);
+}
+
+/* --------------------------------------------------------------------------
+   iOS motion — spring tokens for the whole route
+   --------------------------------------------------------------------------
+   Motion5 drives entrances with GSAP; what lives here is everything around
+   them: hover lifts and control transitions run on the same spring so the
+   page feels like one physics system, not two.
+   */
+
+.ph5-root .ph4-btn,
+.ph5-root .ph4-cap,
+.ph5-root .ph4-case,
+.ph5-root .ph4-plan,
+.ph5-root .ph4-step {
+  transition-timing-function: var(--ph5-spring);
+}
+
+.ph5-root .ph4-cap:hover,
+.ph5-root .ph4-case:hover,
+.ph5-root .ph4-plan:hover {
+  transform: translateY(-4px) scale(1.005);
+}
+
+.ph5-root .ph4-photo-cell img {
+  transition: transform 700ms var(--ph5-spring);
+}
+
+}

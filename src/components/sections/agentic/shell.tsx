@@ -289,7 +289,7 @@ export function MetricChip({
 }) {
   return (
     <div className={className}>
-      <p
+      <dt
         className={cn(
           "font-numeric text-[clamp(1.75rem,3vw,2.5rem)] leading-none font-semibold tracking-[-0.04em] tabular-nums",
           tone === "brand" && "text-primary",
@@ -298,15 +298,15 @@ export function MetricChip({
         )}
       >
         {value}
-      </p>
-      <p
+      </dt>
+      <dd
         className={cn(
           "mt-2 max-w-[15rem] text-sm leading-snug",
           tone === "light" ? "text-white/60" : "text-[#4B5563]",
         )}
       >
         {label}
-      </p>
+      </dd>
     </div>
   );
 }

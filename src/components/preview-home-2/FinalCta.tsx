@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SplitText } from "./SplitText";
 import { Band, Shell } from "./ui";
 import type { HomeContent } from "./types";
 
@@ -39,11 +40,15 @@ export function FinalCta({ content }: { content: HomeContent["finalCta"] }) {
               {content.eyebrow}
             </span>
 
-            <h2 className="mt-5 text-[clamp(1.8rem,3.6vw,2.75rem)] leading-[1.12] font-bold tracking-[-0.03em] text-balance text-white">
-              {content.titleLead}{" "}
-              <span className="text-[#BFDBFE] italic">
-                {content.titleAccent}
-              </span>
+            <h2
+              data-ph2-split=""
+              className="mt-5 text-[clamp(1.8rem,3.6vw,2.75rem)] leading-[1.12] font-bold tracking-[-0.03em] text-balance text-white"
+            >
+              <SplitText
+                text={content.titleLead}
+                accent={content.titleAccent}
+                accentClassName="text-[#BFDBFE] italic"
+              />
             </h2>
 
             <p className="mt-4 max-w-[36rem] text-[1.0625rem] leading-[1.6] text-white/80">
@@ -65,7 +70,10 @@ export function FinalCta({ content }: { content: HomeContent["finalCta"] }) {
               </Link>
             </div>
 
-            <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2.5 text-[0.85rem] text-white/85">
+            <ul
+              data-ph2-enter=""
+              className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2.5 text-[0.85rem] text-white/85"
+            >
               {content.checks.map((check) => (
                 <li key={check} className="inline-flex items-center gap-2">
                   <span className="text-[#BBF7D0]">

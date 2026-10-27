@@ -46,7 +46,8 @@ Indonesian is the default locale (no path prefix); English sits under `/en/`.
 
 ## Facts
 
-- 3,000+ businesses use Cekat.AI, including Hollywings Group, Vio Optical Clinic, Minori Group, Rumah Zakat, Moir Salon, and Threeland Property.
-- Customer results include up to 70% higher conversion rates, +60% revenue after implementation, and 100% chat coverage with 24/7 availability.
+- 3,000+ businesses use Cekat.AI, including Holywings Group, Vio Optical Clinic, Minori Group, Rumah Zakat, Moir Salon, and Threeland Property.
+- Scale: 10,000,000,000+ tokens and 2,000,000+ conversations processed every day, with 24/7 availability and 100% chat coverage.
+- Customer results include up to 70% higher conversion rates and +60% revenue after implementation.
 - AI agents can be built in about 5 minutes by pasting business SOPs, no coding needed.
-- Supported channels: WhatsApp Business API (official), Instagram, Facebook Messenger, web live chat, and custom API channels.
+- Supported channels: WhatsApp Business API (official), Instagram, TikTok, Facebook Messenger, Telegram, web live chat, email, and custom API channels.

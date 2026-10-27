@@ -1,5 +1,5 @@
 import { AnimGate } from "./AnimGate";
-import { Band, Card, SectionHead, Shell } from "./ui";
+import { Band, Card, Rule, SectionHead, Shell } from "./ui";
 import type { HomeContent } from "./types";
 
 /**
@@ -25,7 +25,7 @@ export function TrustBand({ content }: { content: HomeContent["trust"] }) {
               body={content.body}
             />
 
-            <ul className="mt-7 flex flex-wrap gap-2">
+            <ul data-ph2-enter="" className="mt-7 flex flex-wrap gap-2">
               {content.chips.map((chip) => (
                 <li
                   key={chip}
@@ -36,9 +36,11 @@ export function TrustBand({ content }: { content: HomeContent["trust"] }) {
               ))}
             </ul>
 
-            <ul className="mt-9 grid gap-4 sm:grid-cols-2">
+            <Rule className="mt-7" />
+
+            <ul className="mt-6 grid gap-4 sm:grid-cols-2">
               {content.cards.map((card) => (
-                <li key={card.title}>
+                <li key={card.title} data-ph2-enter="">
                   <Card className="h-full p-5">
                     <span className="text-[0.7rem] font-bold tracking-[0.14em] text-[#64748B]">
                       {card.index}

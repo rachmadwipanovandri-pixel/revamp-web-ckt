@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowText, Band, Eyebrow, Shell } from "./ui";
+import { SplitText } from "./SplitText";
 import type { HomeContent } from "./types";
 
 /**
@@ -13,7 +14,7 @@ export function CaseStudy({ content }: { content: HomeContent["caseStudy"] }) {
     <Band tone="white" labelledBy="ph2-case-title" defer>
       <Shell>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          <div className="relative order-2 lg:order-1">
+          <div className="relative order-2 lg:order-1" data-ph2-enter="">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] border border-border bg-[#F8FAFF]">
               {/*
                 The source is a 1536×1024 JPEG at 2 MB, one of the largest
@@ -53,9 +54,10 @@ export function CaseStudy({ content }: { content: HomeContent["caseStudy"] }) {
             </p>
             <h2
               id="ph2-case-title"
+              data-ph2-split=""
               className="mt-2 text-[clamp(1.6rem,3vw,2.25rem)] leading-[1.15] font-bold tracking-[-0.025em] text-balance text-[#101828]"
             >
-              {content.title}
+              <SplitText text={content.title} />
             </h2>
             <p className="mt-4 text-[1rem] leading-[1.65] text-[#4B5563]">
               {content.body}
@@ -70,7 +72,10 @@ export function CaseStudy({ content }: { content: HomeContent["caseStudy"] }) {
               </footer>
             </blockquote>
 
-            <dl className="mt-7 grid gap-6 border-t border-[#F1F5F9] pt-6 sm:grid-cols-3">
+            <dl
+              data-ph2-enter=""
+              className="mt-7 grid gap-6 border-t border-[#F1F5F9] pt-6 sm:grid-cols-3"
+            >
               {content.metrics.map((metric) => (
                 <div key={metric.label} className="flex flex-col">
                   <dd className="text-[clamp(1.5rem,2.6vw,1.9rem)] leading-none font-bold tracking-[-0.03em] text-[#101828] tabular-nums">

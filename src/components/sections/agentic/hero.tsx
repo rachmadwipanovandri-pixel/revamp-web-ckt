@@ -31,18 +31,33 @@ export async function Hero() {
         aria-hidden
         className="ink-noise pointer-events-none absolute inset-0 opacity-40"
       />
-      {/* Blueprint grid — slow drift, masked to the center */}
+      {/* Blueprint grid — slow drift, masked to the center. The mask sits on
+          the static wrapper so it doesn't travel with the drifting layers. */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 animate-grid-drift opacity-50"
+        className="pointer-events-none absolute inset-0 opacity-50"
         style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(125,211,252,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(125,211,252,0.1) 1px, transparent 1px)",
-          backgroundSize: "64px 64px",
           maskImage:
             "radial-gradient(ellipse at 50% 45%, black 0%, transparent 72%)",
         }}
-      />
+      >
+        <div
+          className="absolute inset-y-0 inset-x-[-80px] animate-grid-drift-x"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, rgba(125,211,252,0.1) 1px, transparent 1px)",
+            backgroundSize: "64px 64px",
+          }}
+        />
+        <div
+          className="absolute inset-x-0 inset-y-[-80px] animate-grid-drift-y"
+          style={{
+            backgroundImage:
+              "linear-gradient(to bottom, rgba(125,211,252,0.1) 1px, transparent 1px)",
+            backgroundSize: "64px 64px",
+          }}
+        />
+      </div>
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <span className="animate-orb-drift absolute top-[8%] left-[6%] h-80 w-80 rounded-full bg-sky-400/40 blur-[110px]" />
         <span

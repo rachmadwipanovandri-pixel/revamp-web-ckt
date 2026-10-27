@@ -275,18 +275,26 @@
     }
   }
 
-  /* Grid sweep across void chapters */
-  --animate-grid-drift: gridDrift 28s linear infinite;
-  @keyframes gridDrift {
+  /* Grid sweep across void chapters — split into two composited layers so
+     each axis animates with `transform` (GPU) instead of `background-position`
+     (main-thread repaint every frame). Layers are oversized by the drift
+     distance (80px) so no empty edge shows while translating. */
+  --animate-grid-drift-x: gridDriftX 28s linear infinite;
+  @keyframes gridDriftX {
     from {
-      background-position:
-        0 0,
-        0 0;
+      transform: translate3d(0, 0, 0);
     }
     to {
-      background-position:
-        80px 0,
-        0 80px;
+      transform: translate3d(80px, 0, 0);
+    }
+  }
+  --animate-grid-drift-y: gridDriftY 28s linear infinite;
+  @keyframes gridDriftY {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(0, 80px, 0);
     }
   }
 
@@ -771,7 +779,8 @@
   .animate-orb-drift,
   .animate-marquee-x,
   .animate-marquee-x-alt,
-  .animate-grid-drift,
+  .animate-grid-drift-x,
+  .animate-grid-drift-y,
   .animate-logo-ticker,
   .animate-feature-ticker,
   .animate-shine,
@@ -833,7 +842,8 @@ body {
   .animate-orb-drift,
   .animate-marquee-x,
   .animate-marquee-x-alt,
-  .animate-grid-drift,
+  .animate-grid-drift-x,
+  .animate-grid-drift-y,
   .animate-logo-ticker,
   .animate-feature-ticker,
   .animate-shine,

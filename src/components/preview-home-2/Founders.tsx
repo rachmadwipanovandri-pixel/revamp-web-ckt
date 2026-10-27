@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
 import { AnimGate } from "./AnimGate";
+import { SplitText } from "./SplitText";
 import { Eyebrow, Shell } from "./ui";
 import { cn } from "@/lib/utils";
 import type { Founder, Founders } from "./types";
@@ -99,9 +100,10 @@ export function Founders({ content }: { content: Founders }) {
             <Eyebrow tone="light">{content.eyebrow}</Eyebrow>
             <h2
               id="ph2-founders-title"
+              data-ph2-split=""
               className="mt-4 text-[clamp(1.6rem,3vw,2.4rem)] leading-[1.12] font-bold tracking-[-0.03em] text-balance"
             >
-              {content.heading}
+              <SplitText text={content.heading} />
             </h2>
             <p className="mt-4 text-[1rem] leading-[1.65] text-white/60">
               {content.body}

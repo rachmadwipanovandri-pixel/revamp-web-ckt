@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { TRUSTED_LOGOS } from "@/components/sections/shared/trusted-logos";
 import { AnimGate } from "./AnimGate";
-import { Band, Shell, Eyebrow } from "./ui";
+import { SplitText } from "./SplitText";
+import { Band, Rule, Shell, Eyebrow } from "./ui";
 import type { HomeContent } from "./types";
 
 /**
@@ -17,17 +18,29 @@ export function ProofStrip({ content }: { content: HomeContent["proof"] }) {
   return (
     <Band tone="white" labelledBy="ph2-proof-title" className="py-16 md:py-20" defer>
       <Shell>
-        <div className="flex flex-col items-center gap-3 text-center">
+        <div data-ph2-split="" className="flex flex-col items-center gap-3 text-center">
           <Eyebrow>{content.eyebrow}</Eyebrow>
           <h2
             id="ph2-proof-title"
             className="max-w-[38rem] text-[clamp(1.4rem,2.4vw,1.85rem)] leading-[1.25] font-bold tracking-[-0.02em] text-[#101828]"
           >
-            {content.heading}
+            <SplitText text={content.heading} />
           </h2>
         </div>
 
-        <dl className="mt-10 grid gap-px overflow-hidden rounded-[20px] border border-border bg-border sm:grid-cols-3">
+        <Rule className="mt-10" />
+
+        {/*
+          The whole grid enters as one object rather than cell by cell. The
+          cells are separated by `gap-px` over a grey `<dl>`, so a cell at
+          `opacity: 0` does not show the band behind it — it shows that grey,
+          and three staggered cells read as a skeleton loading. Lifting the
+          panel keeps the grey where it belongs: underneath.
+        */}
+        <dl
+          data-ph2-enter=""
+          className="mt-6 grid gap-px overflow-hidden rounded-[20px] border border-border bg-border sm:grid-cols-3"
+        >
           {content.stats.map((stat) => (
             <div
               key={stat.label}

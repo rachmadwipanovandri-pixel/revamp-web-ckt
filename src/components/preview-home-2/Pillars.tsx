@@ -1,4 +1,4 @@
-import { Band, Card, SectionHead, Shell } from "./ui";
+import { Band, Card, Rule, SectionHead, Shell } from "./ui";
 import type { HomeContent } from "./types";
 
 /**
@@ -16,9 +16,11 @@ export function Pillars({ content }: { content: HomeContent["pillars"] }) {
           body={content.body}
         />
 
-        <ul className="mt-12 grid gap-5 md:grid-cols-3">
+        <Rule className="mt-10" />
+
+        <ul className="mt-6 grid gap-5 md:grid-cols-3">
           {content.items.map((pillar) => (
-            <li key={pillar.title}>
+            <li key={pillar.title} data-ph2-enter="">
               <Card interactive className="flex h-full flex-col p-6">
                 <div className="flex items-center gap-3">
                   <span

@@ -27,11 +27,30 @@ import { SITE_URL } from "@/lib/seo";
 // so the /_next/ block costs them nothing.
 const RENDERS_BEFORE_JUDGING = ["Googlebot", "Bingbot", "Google-InspectionTool"];
 
+// AI search crawlers (ChatGPT, Claude, Perplexity, Gemini, Apple Intelligence)
+// extract text for citations rather than render, and our HTML is fully
+// server-rendered, so they need no asset exception — but they get an explicit
+// group anyway: falling through to the wildcard is ambiguous signal, and an
+// explicit Allow is how AI engines confirm a site wants to be cited.
+const AI_SEARCH_CRAWLERS = [
+  "GPTBot",
+  "ChatGPT-User",
+  "ClaudeBot",
+  "PerplexityBot",
+  "Google-Extended",
+  "Applebot-Extended",
+];
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       { userAgent: "*", allow: "/", disallow: ["/api/", "/_next/"] },
       ...RENDERS_BEFORE_JUDGING.map((userAgent) => ({
+        userAgent,
+        allow: "/",
+        disallow: "/api/",
+      })),
+      ...AI_SEARCH_CRAWLERS.map((userAgent) => ({
         userAgent,
         allow: "/",
         disallow: "/api/",
