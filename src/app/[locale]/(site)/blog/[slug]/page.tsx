@@ -185,6 +185,10 @@ export default async function BlogPostPage({
   const { html: bodyHtml, toc } = buildToc(post.content);
   const description = metaSnippet(post.seo.description || post.excerpt, 158);
   const showUpdated = post.modifiedIso !== post.dateIso;
+  const coverAspectRatio =
+    post.image?.width && post.image.height
+      ? `${post.image.width} / ${post.image.height}`
+      : "4 / 3";
 
   const homeUrl = `${SITE_URL}${getPathname({ href: "/", locale })}`;
   const blogUrl = `${SITE_URL}${getPathname({ href: "/blog", locale })}`;
@@ -244,7 +248,9 @@ export default async function BlogPostPage({
           />
         </div>
 
-        <Container className={`relative z-10 pt-16 pb-16 lg:pt-20 lg:pb-20 ${post.image ? "lg:grid lg:grid-cols-[1.15fr_1fr] lg:items-center lg:gap-14" : ""}`}>
+        <Container
+          className={`relative z-10 pt-16 pb-16 lg:pt-20 lg:pb-20 ${post.image ? "lg:grid lg:grid-cols-[1.15fr_1fr] lg:items-center lg:gap-14" : ""}`}
+        >
           <div className="max-w-[850px] text-left">
             <nav aria-label="Breadcrumb" className="mb-8 flex">
               <ol className="flex flex-wrap items-center gap-2 text-sm text-[#505f73]">
@@ -360,8 +366,18 @@ export default async function BlogPostPage({
           </div>
           {post.image && (
             <div className="article-cover-stage relative mt-10 rounded-[28px] border border-[#ccdaf1] bg-[#e4ebf9] p-5 lg:mt-0 lg:p-7">
-              <div className="relative aspect-square overflow-hidden rounded-[18px] bg-white shadow-[0_24px_50px_-30px_rgba(9,33,76,0.3)]">
-                <Image src={post.image.url} alt={post.image.alt || post.title} fill preload sizes="(max-width: 1024px) 90vw, 560px" className="object-contain" />
+              <div
+                className="relative aspect-[4/3] overflow-hidden rounded-[18px] bg-white shadow-[0_24px_50px_-30px_rgba(9,33,76,0.3)]"
+                style={{ aspectRatio: coverAspectRatio }}
+              >
+                <Image
+                  src={post.image.url}
+                  alt={post.image.alt || post.title}
+                  fill
+                  preload
+                  sizes="(max-width: 1024px) 90vw, 560px"
+                  className="object-cover"
+                />
               </div>
             </div>
           )}
