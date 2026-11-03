@@ -5,6 +5,7 @@ import type { Locale } from "@/i18n/routing";
 import type { Cell } from "@/lib/comparison";
 import { Logo } from "@/components/layout/logo";
 import { cn } from "@/lib/utils";
+import { localeValue } from "@/lib/locale-value";
 
 /**
  * What each mark means, for screen readers. The glyphs alone said nothing:
@@ -12,7 +13,10 @@ import { cn } from "@/lib/utils";
  * empty cells. Held here rather than in messages because this component takes
  * a locale rather than a translator, like the rest of the comparison code.
  */
-const CELL_LABELS = {
+const CELL_LABELS: Record<
+  "yes" | "no",
+  Partial<Record<Locale, string>> & { en: string; id: string }
+> = {
   yes: { id: "Tersedia", en: "Available" },
   no: { id: "Tidak tersedia", en: "Not available" },
 } as const;
@@ -36,7 +40,9 @@ export function ComparisonCell({
 }) {
   if (cell.kind === "text") {
     return (
-      <span className="text-sm text-foreground">{cell.value[locale]}</span>
+      <span className="text-sm text-foreground">
+        {localeValue(cell.value, locale)}
+      </span>
     );
   }
 
@@ -59,10 +65,12 @@ export function ComparisonCell({
           aria-hidden
         />
       </span>
-      <span className="sr-only">{CELL_LABELS[yes ? "yes" : "no"][locale]}</span>
+      <span className="sr-only">
+        {localeValue(CELL_LABELS[yes ? "yes" : "no"], locale)}
+      </span>
       {cell.note && (
         <span className="text-[11px] leading-tight text-subtle-foreground">
-          {cell.note[locale]}
+          {localeValue(cell.note, locale)}
         </span>
       )}
     </span>

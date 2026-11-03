@@ -10,10 +10,22 @@
   },
   "definition": "Manajemen lead adalah fitur Cekat.AI untuk menangkap leads dari website, WhatsApp, dan media sosial secara otomatis, mengkualifikasinya dengan AI, melacak jalur masuk tiap lead, dan menjalankan follow-up otomatis sampai closing.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "AI kualifikasi leads masuk" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "AI kualifikasi leads masuk"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -49,7 +61,7 @@
   ],
   "tabs": [
     {
-      "label": "Auto Capture",
+      "label": "Pencatatan Otomatis",
       "title": "Setiap Chat Masuk Jadi Data Lead",
       "body": "Leads dari website, WhatsApp, Instagram, Facebook Messenger, dan live chat tertangkap otomatis ke CRM, kartu terbentuk atau ter-update dari tiap interaksi, tanpa input manual sama sekali."
     },
@@ -64,7 +76,7 @@
       "body": "Profil tiap lead mencatat dia datang dari mana dan ngapain aja, aktivitas website, event log, campaign yang diterima, jadi kamu selalu tahu channel mana yang menghasilkan leads yang beneran konversi."
     },
     {
-      "label": "Auto Follow-Up",
+      "label": "Tindak Lanjut Otomatis",
       "title": "Follow-Up yang Tidak Pernah Kelupaan",
       "body": "Workflow trigger jalan berdasarkan jadwal, keyword chat, atau perubahan data customer, misalnya lead baru masuk, untuk mengirim follow-up dan reminder otomatis, plus notifikasi ke tim saat sentuhan manusia dibutuhkan."
     }
@@ -86,7 +98,7 @@
   "testimonial": {
     "quote": "Revenue kami naik lebih dari 50%! Cekat AI membantu kami mengamankan kunjungan properti dan closing bahkan saat saya tidur, karena tidak ada leads yang terlewat.",
     "name": "Adam Sulaiman",
-    "role": "President Director, Threeland Property",
+    "role": "Direktur Utama, Threeland Property",
     "image": "/images/crm/adam-sulaiman.png"
   },
   "faq": [

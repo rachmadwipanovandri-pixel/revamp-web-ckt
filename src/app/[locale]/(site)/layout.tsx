@@ -10,9 +10,7 @@ import {
   GoogleTagManagerNoScript,
 } from "@/components/analytics/google-tag-manager";
 import { NextIntlClientProvider } from "next-intl";
-import { Navbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
-import { FloatingWhatsApp } from "@/components/layout/floating-whatsapp";
+import { SiteChrome } from "@/components/layout/site-chrome";
 
 /**
  * Namespaces that `"use client"` modules under this group actually call via
@@ -45,16 +43,15 @@ function pickClientMessages(messages: Record<string, unknown>) {
 
 /**
  * Global site chrome for every production route. Kept out of the [locale]
- * layout so standalone drafts (preview-home-2) that ship their own header and
+ * layout so standalone drafts that ship their own header and
  * footer don't render the site nav twice.
  *
  * The client-side i18n provider lives here rather than in [locale]/layout for
  * the same reason the chrome does: it is only needed by this group's client
  * components. `NextIntlClientProvider` is itself a client component, so passing
  * it `messages` writes them into the flight payload and the HTML of *every*
- * route beneath [locale] — including the drafts, which build all their strings
- * locally in `content.ts` and call `useTranslations` zero times. That was ~42 KB
- * of parsed-and-discarded JSON on /preview-home-2's 439 KB document.
+ * route beneath [locale] — including standalone drafts, which build their strings
+ * locally in `content.ts` and call `useTranslations` zero times.
  *
  * The locale is passed explicitly: a locale-less `getTranslations()` falls
  * back to reading request headers, which throws DYNAMIC_SERVER_USAGE while
@@ -87,10 +84,7 @@ export default async function SiteLayout({
       <MetaPixel />
       <CekatAnalytics />
       <Hyros />
-      <Navbar />
-      <main>{children}</main>
-      <Footer />
-      <FloatingWhatsApp label={tn("ctaWhatsapp")} />
+       <SiteChrome whatsappLabel={tn("ctaWhatsapp")}>{children}</SiteChrome>
     </NextIntlClientProvider>
   );
 }

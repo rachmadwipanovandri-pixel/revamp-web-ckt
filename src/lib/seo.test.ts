@@ -10,9 +10,12 @@ import {
 } from "@/lib/seo";
 
 describe("htmlLang", () => {
-  it("maps id to id-ID and everything else to en", () => {
+  it("maps locale codes to valid HTML language tags", () => {
     expect(htmlLang("id")).toBe("id-ID");
-    expect(htmlLang("en")).toBe("en");
+    expect(htmlLang("en")).toBe("en-US");
+    expect(htmlLang("cn")).toBe("zh-CN");
+    expect(htmlLang("jp")).toBe("ja-JP");
+    expect(htmlLang("kr")).toBe("ko-KR");
   });
 });
 
@@ -30,9 +33,12 @@ describe("localizedPath", () => {
 describe("alternates", () => {
   it("builds the same hreflang languages map regardless of current locale", () => {
     const result = alternates("en", "/crm");
-    expect(result.languages).toEqual({
+    expect(result.languages).toMatchObject({
       en: "https://cekat.ai/en/crm",
       id: "https://cekat.ai/crm",
+      cn: "https://cekat.ai/cn/crm",
+      jp: "https://cekat.ai/jp/crm",
+      kr: "https://cekat.ai/kr/crm",
       "x-default": "https://cekat.ai/crm",
     });
   });

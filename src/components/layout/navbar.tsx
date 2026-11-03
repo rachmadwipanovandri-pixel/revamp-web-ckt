@@ -15,7 +15,6 @@ import { MobileNav } from "./mobile-nav";
 import { Logo, LogoWhite } from "./logo";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { useScrolled } from "@/hooks/use-scrolled";
 import {
   Sheet,
   SheetContent,
@@ -23,45 +22,24 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 
-export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
+export function Navbar({}: { variant?: "default" | "transparent" }) {
   const t = useTranslations("nav");
   const locale = useLocale();
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [lastPathname, setLastPathname] = useState(pathname);
-  const scrolled = useScrolled();
   const navRef = useRef<HTMLDivElement>(null);
 
   // Pages whose first act is a void/keynote hero get a transparent header
   // until scroll. Locale pathnames differ (e.g. /harga vs /pricing).
-  const transparentPaths = [
-    "/",
-    "/chat",
-    "/crm",
-    "/marketing",
-    "/order",
-    "/pricing",
-    "/harga",
-    "/features",
-    "/fitur",
-    "/industries",
-    "/industri",
-    "/blog",
-  ];
-  const resolvedVariant =
-    variant ??
-    (transparentPaths.includes(pathname) || pathname.startsWith("/blog/")
-      ? "transparent"
-      : "default");
-
   if (pathname !== lastPathname) {
     setLastPathname(pathname);
     setMenuOpen(false);
   }
 
-  const isTransparent = resolvedVariant === "transparent" && !scrolled;
+  const isTransparent = false;
   const linkClass = cn(
-    "text-xs py-2.5 px-3 font-semibold font-numeric transition-colors",
+    "rounded-full px-3 py-2 text-sm font-medium transition-colors",
     isTransparent
       ? "text-white hover:text-white/80"
       : "text-foreground hover:text-black",
@@ -70,10 +48,10 @@ export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
   return (
     <header
       className={cn(
-        "fixed top-0 z-50 w-full transition-colors duration-300",
+        "sticky top-0 z-50 w-full border-b border-[#e5e9ef] bg-white transition-colors duration-300",
         isTransparent
           ? "bg-linear-to-b from-black/35 to-transparent"
-          : "border-b border-[#0B1220]/[0.08] bg-white/90 backdrop-blur-md",
+          : "",
       )}
     >
       <Container
@@ -81,24 +59,24 @@ export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
         /* No lg:px-0 here. Every Container on the page carries lg:px-8, so
            zeroing it only in the navbar set the logo 32px left of the h1 and
            of every section heading below it. */
-        className="flex h-16 items-center justify-between"
+        className="flex h-[72px] max-w-[1248px] px-0 sm:px-6 lg:px-6"
       >
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-7">
           <Link href="/" className="flex items-center">
             {isTransparent ? (
               <LogoWhite className="h-6 w-auto" />
             ) : (
-              <Logo className="h-6 w-auto" />
+              <Logo className="h-[30px] w-auto" />
             )}
           </Link>
 
           <nav className="hidden items-center md:flex">
-            <MegaMenu isTransparent={isTransparent} anchor={navRef} />
+            <MegaMenu isTransparent={false} anchor={navRef} />
           </nav>
         </div>
 
         <div className="hidden items-center gap-2 md:flex">
-          <LanguageSwitcher currentLocale={locale} inverted={isTransparent} />
+          <LanguageSwitcher currentLocale={locale} inverted={false} />
           <AppAnchor href={LOGIN_URL} className={linkClass}>
             {t("masuk")}
           </AppAnchor>
@@ -106,7 +84,7 @@ export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
           <Button
             size="lg"
             className={cn(
-              "rounded-full px-4 text-xs font-semibold",
+              "rounded-full px-5 text-sm font-medium",
               isTransparent &&
                 "border-white/25 bg-white/10 text-white hover:bg-white/15 hover:border-white/40",
             )}
@@ -122,7 +100,7 @@ export function Navbar({ variant }: { variant?: "default" | "transparent" }) {
             variant="outline-primary"
             size="lg"
             className={cn(
-              "rounded-full px-4 text-xs font-semibold",
+              "rounded-full px-5 text-sm font-medium",
               isTransparent &&
                 "border-white/35 bg-transparent text-white hover:bg-white/10 hover:text-white",
             )}

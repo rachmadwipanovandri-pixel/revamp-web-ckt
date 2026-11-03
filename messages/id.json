@@ -102,7 +102,7 @@
       "subtitle": "Pakai AI agent, CRM Omnichannel, dan follow-up otomatis untuk mengubah lebih banyak percakapan jadi penjualan, sekaligus tahu persis iklan mana yang berujung closing, dan bikin customer balik lagi.",
       "ctaPrimary": "Ngobrol via WhatsApp",
       "ctaSecondary": "Coba Gratis 14 Hari",
-      "eyebrow": "#1 AI Agent Customer Service"
+      "eyebrow": "Layanan Pelanggan dengan Agen AI Terdepan"
     },
     "trustedBy": {
       "heading": "Dipercaya oleh 3.000+ bisnis di Asia.",
@@ -130,8 +130,8 @@
       "body": "Semua angka di bawah ini disampaikan langsung oleh pelanggan Cekat.AI dalam wawancara terekam.",
       "natureCraft": {
         "quote": "Yang sebelumnya closing rate di kami itu masih di bawah 20%. Minggu kemarin saya evaluasi dengan teman-teman, itu sudah di atas 40%, padahal standarnya 30%. Dan karena closing rate naik, omzet kami juga naik drastis, bisa di angka 50%.",
-        "industry": "Retail & Consumer Goods",
-        "function": "Customer Service",
+        "industry": "Ritel & Barang Konsumen",
+        "function": "Layanan Pelanggan",
         "name": "Hariyudi",
         "role": "Direktur",
         "company": "Nature Craft Indonesia",
@@ -140,28 +140,28 @@
       },
       "wallStreet": {
         "quote": "Sebelumnya kami benar-benar mengandalkan manusia. Tim First Contact kami sudah sampai titik di mana produktivitasnya tidak bisa naik lagi. Dengan Cekat AI, leads yang low quality difilter dulu, dan konversi kami naik dari sekitar 20% menjadi 28%. Itu angka riil yang kami lihat.",
-        "industry": "Education",
-        "function": "Digital Marketing",
+        "industry": "Pendidikan",
+        "function": "Pemasaran Digital",
         "name": "Bayu",
-        "role": "Head of Digital Marketing",
+        "role": "Kepala Pemasaran Digital",
         "company": "Wall Street English Indonesia",
         "metricValue": "20% → 28%",
         "metricLabel": "konversi leads, setelah yang low quality difilter lebih dulu"
       },
       "putiih": {
         "quote": "Dulu satu chat bisa kami balas lebih dari 20 menit, dan itu membuat calon customer kami lari. Sekarang balasan di bawah 2 menit, kami set di 30 detik. Sudah tidak ada lagi komplain soal balas chat lama, dan omzet naik sekitar 30 sampai 40%.",
-        "industry": "Healthcare & Aesthetics",
-        "function": "Operations",
+        "industry": "Kesehatan & Estetika",
+        "function": "Operasional",
         "name": "Gamal",
-        "role": "Founder & CEO",
+        "role": "Pendiri & CEO",
         "company": "Putiih Skin Clinic",
         "metricValue": "+30-40%",
         "metricLabel": "omzet, dengan balasan turun dari 20 menit ke bawah 2 menit"
       },
       "threeland": {
         "quote": "Konsumen properti itu lihat iklan jam 11 malam, jam 1 pagi. Dulu saya harus begadang membalas mereka. Sekarang saya tidur nyenyak, dan pagi-pagi sudah antre orang minta jadwal survei. Lokasi, cara bayar, bahkan simulasi KPR sudah dijawab semua. Peningkatan penjualan hampir 50% lebih.",
-        "industry": "Real Estate & Property",
-        "function": "Sales",
+        "industry": "Properti",
+        "function": "Penjualan",
         "name": "Adam Sulaiman",
         "role": "Direktur Utama",
         "company": "Threeland Property",
@@ -170,10 +170,10 @@
       },
       "rumahZakat": {
         "quote": "Contact center kami dulu hanya Senin sampai Jumat, jam 8 sampai jam 5. Di luar jam itu pesan donatur pasti delay, dan waktu kami balas hari Senin, mereka sudah tidak merespons lagi. Sekarang AMIRA menjawab 24 jam, kurang dari 1 menit. Kami tidak kehilangan donatur, dan peluang closing-nya besar sekali.",
-        "industry": "Non-Profit & Social Impact",
-        "function": "Customer Experience",
+        "industry": "Nirlaba & Dampak Sosial",
+        "function": "Pengalaman Pelanggan",
         "name": "Wiji Astuti",
-        "role": "Customer Experience Department Head",
+        "role": "Kepala Departemen Pengalaman Pelanggan",
         "company": "Rumah Zakat",
         "metricValue": "24 jam",
         "metricLabel": "respons di bawah 1 menit, dari sebelumnya hanya Senin sampai Jumat"
@@ -181,11 +181,11 @@
       "videos": {
         "moir": {
           "name": "Silcia Brenda",
-          "role": "CEO & Founder - Moir Salon"
+          "role": "CEO & Pendiri - Moir Salon"
         },
         "rumahZakat": {
           "name": "Tantan Supriantna",
-          "role": "Head Customer Relation - Rumah Zakat"
+          "role": "Kepala Relasi Pelanggan - Rumah Zakat"
         },
         "mnp": {
           "name": "Hargyo T. N. Ignatis, Ph.D",
@@ -197,11 +197,11 @@
         },
         "dokterhub": {
           "name": "Gery Wilianto",
-          "role": "CEO & Founder - DokterHub"
+          "role": "CEO & Pendiri - DokterHub"
         },
         "threeland": {
           "name": "Adam Sulaiman",
-          "role": "President Director - Threeland Property"
+          "role": "Direktur Utama - Threeland Property"
         }
       }
     },
@@ -901,7 +901,7 @@
   },
   "contact": {
     "meta": {
-      "title": "Contact | CekatAI",
+      "title": "Kontak | CekatAI",
       "description": "Layani Pelanggan 24/7 dengan WhatsApp AI Agent dan Omnichannel CRM CekatAI"
     },
     "heading": "Mulai sesi konsultasi gratis Anda dengan tim sales kami sekarang",
@@ -911,7 +911,7 @@
     "form": {
       "nameLabel": "Nama Lengkap",
       "namePlaceholder": "Nama lengkap",
-      "emailLabel": "Email",
+      "emailLabel": "Alamat Email",
       "emailPlaceholder": "contoh: Bryan.Smith@perusahaan.com",
       "whatsappLabel": "Nomor Whatsapp",
       "whatsappPlaceholder": "contoh: 0812 3456 7890",
@@ -922,9 +922,9 @@
     },
     "support": {
       "note": "Untuk kendala produk atau layanan, silakan hubungi customer support kami.",
-      "helpCentre": "Help Centre",
-      "emailSupport": "Email Support",
-      "contactCentre": "Whatsapp Contact Centre"
+      "helpCentre": "Pusat Bantuan",
+      "emailSupport": "Dukungan Email",
+      "contactCentre": "Pusat Kontak WhatsApp"
     }
   },
   "contactSales": {
@@ -989,23 +989,23 @@
       "body": "Cekat.AI melacak setiap lead sejak klik iklan pertama, closing jalan 24/7, dan pelanggan balik beli lagi. Ketiganya jalan di satu platform, bukan di tiga tools yang harus kamu sambung sendiri.",
       "diagramLabel": "Diagram tiga pilar Cekat.AI: Marketing, AI Percakapan, dan CRM yang saling beririsan",
       "circles": {
-        "marketing": "Marketing",
+        "marketing": "Pemasaran",
         "chatLine1": "AI",
         "chatLine2": "Percakapan",
         "crm": "CRM"
       },
       "awareness": {
-        "title": "Awareness",
+        "title": "Kesadaran",
         "lead": "Setiap lead terlacak.",
         "body": "Dari klik pertama sampai closing."
       },
       "conversion": {
-        "title": "Conversion",
+        "title": "Konversi",
         "lead": "Closing jalan 24/7.",
         "body": "AI-nya nggak pernah tidur, chat nggak numpuk."
       },
       "retention": {
-        "title": "Retention",
+        "title": "Retensi",
         "lead": "Pelanggan balik beli lagi.",
         "body": "Follow-up jalan otomatis. LTV naik, biaya akuisisi ulang turun."
       },
@@ -1046,7 +1046,7 @@
     "featureColumn": "Fitur",
     "tables": {
       "channels": {
-        "heading": "Chat & Omnichannel",
+        "heading": "Chat & Multisaluran",
         "intro": "Channel yang bisa ditangani dalam satu inbox. Semakin lengkap, semakin sedikit tab yang perlu dibuka tim Anda.",
         "rows": {
           "whatsapp": "WhatsApp",
@@ -1055,17 +1055,17 @@
           "sms": "SMS",
           "otherChannels": "WeChat / Telegram / Line / X",
           "webliveChat": "Live chat website",
-          "email": "Email"
+          "email": "Surel"
         }
       },
       "marketing": {
-        "heading": "Marketing",
+        "heading": "Pemasaran",
         "intro": "Kemampuan menjalankan campaign dan mengukur hasilnya, dari klik iklan sampai percakapan yang closing.",
         "rows": {
-          "tiktokAds": "TikTok Ads",
-          "metaAds": "Meta Ads",
-          "googleAds": "Google Ads",
-          "waBroadcast": "WhatsApp Broadcast",
+          "tiktokAds": "Iklan TikTok",
+          "metaAds": "Iklan Meta",
+          "googleAds": "Iklan Google",
+          "waBroadcast": "Siaran WhatsApp",
           "roasAnalytics": "Analitik ROAS",
           "segmentation": "Segmentasi & labeling customer"
         }
@@ -1457,27 +1457,27 @@
   },
   "careers": {
     "metaTitle": "Karier di Cekat.AI — buka lowongan Product, Growth, dan People",
-    "metaDescription": "Cariat yang mau bangun produk AI Revenue Operating System. Lihat posisi yang sedang dibuka di Cekat.AI dan lamar langsung lewat LinkedIn.",
+    "metaDescription": "Bergabunglah dengan tim yang membangun AI Revenue Operating System. Lihat lowongan di Cekat.AI dan lamar langsung melalui LinkedIn.",
     "breadcrumb": "Karier",
     "eyebrow": "Karier",
-    "heroTitle": "Open Roles",
+    "heroTitle": "Posisi yang Terbuka",
     "heroAccent": "",
-    "heroSub": "Kami mencari orang yang senang membaca percakapan pelanggan, berpikir jernih soal apa yang bisa diotomatisasi, dan mau testified ke hasilnya di lapangan.",
+    "heroSub": "Kami mencari orang yang senang memahami percakapan pelanggan, berpikir jernih tentang apa yang bisa diotomatisasi, dan ingin melihat hasil kerjanya diterapkan langsung.",
     "heroChips": [
-      "Product",
-      "Growth",
-      "People",
+      "Produk",
+      "Pertumbuhan",
+      "Tim dan Budaya",
       "Jakarta · Tangerang"
     ],
     "openRoles": "Posisi yang sedang dibuka",
     "openRolesNote": "Setiap posisi di bawah ini terhubung dengan lowongan kami di LinkedIn, di situlah deskripsi lengkap, kualifikasi, dan formulir lamaran berada.",
     "apply": "Lamar",
     "emptyTitle": "Belum ada posisi yang terbuka saat ini",
-    "emptyBody": "Kami tetap terbuka pada orang yang marathon. Kirim email ke hello@cekat.ai dengan portofolio atau hal yang pernah kamu kerjakan, dan kami akan menghubungi kalau ada yang cocok.",
+    "emptyBody": "Kami selalu terbuka untuk berkenalan dengan talenta baru. Kirim portofolio atau hasil karya Anda ke hello@cekat.ai; kami akan menghubungi jika ada posisi yang sesuai.",
     "teams": {
-      "product": "Product & Design",
-      "growth": "Growth & Consulting",
-      "people": "People"
+      "product": "Produk & Desain",
+      "growth": "Pertumbuhan & Konsultasi",
+      "people": "Tim dan Budaya"
     },
     "types": {
       "fullTime": "Penuh waktu"

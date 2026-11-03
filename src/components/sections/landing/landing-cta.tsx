@@ -18,7 +18,7 @@ export async function LandingCta({
   const th = await getTranslations("home.hero");
 
   return (
-    <section className="relative isolate overflow-hidden bg-ink-void text-white">
+    <section className="secondary-final-cta relative isolate overflow-hidden bg-ink-void text-white">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#0b1220] via-[#0a1a3d] to-[#050b18]"

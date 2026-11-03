@@ -10,10 +10,22 @@
   },
   "definition": "WhatsApp Business API adalah infrastruktur resmi dari Meta untuk bisnis yang melayani pelanggan lewat WhatsApp dalam skala besar. Lewat Cekat.AI, Meta Business Partner resmi, satu nomor WhatsApp terhubung ke inbox tim bersama, lengkap dengan template resmi, otomatisasi workflow, dan AI agent yang humanlike.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "AI standby di nomormu" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "AI standby di nomormu"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -87,7 +99,7 @@
     "heading": "WhatsApp Bisnis Tetap Responsif 24 Jam",
     "quote": "Response time lebih cepat, dan yang paling utama jam kerjanya 24 jam. Nomor WhatsApp bisnis kami tersambung dengan Cekat AI.",
     "name": "dr. Geri Wilianto",
-    "role": "Founder & CEO, Dokter Hub"
+    "role": "Pendiri & CEO, Dokter Hub"
   },
   "faq": [
     {

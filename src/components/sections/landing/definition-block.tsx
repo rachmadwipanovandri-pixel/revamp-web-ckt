@@ -21,12 +21,12 @@ export function DefinitionBlock({
           stats && stats.length > 0 ? "pb-0" : "pb-14 lg:pb-18",
         )}
       >
-        <p className="max-w-4xl text-[clamp(1.15rem,2.2vw,1.5rem)] leading-[1.55] font-medium tracking-[-0.02em] text-foreground">
+        <p className="max-w-5xl border-l-[3px] border-[#00b4c8] pl-6 text-[clamp(1.35rem,2.5vw,2rem)] leading-[1.45] font-medium tracking-[-0.03em] text-[#09214c] lg:pl-9">
           {definition}
         </p>
 
         {stats && stats.length > 0 && (
-          <dl className="mt-10 grid grid-cols-2 gap-4 border-t border-foreground/10 pt-8 md:grid-cols-4">
+          <dl className="mt-10 grid grid-cols-1 gap-4 border-t border-foreground/10 pt-8 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div
                 key={stat.label}

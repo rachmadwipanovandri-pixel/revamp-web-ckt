@@ -10,10 +10,22 @@
   },
   "definition": "WA Blast adalah fitur Cekat.AI untuk mengirim pesan broadcast ke ribuan pelanggan sekaligus lewat WhatsApp Business API resmi, lengkap dengan segmentasi audiens, reminder otomatis, dan pelacakan konversi dalam satu platform.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "AI bales setiap reply" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "AI bales setiap reply"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -53,7 +65,7 @@
       "body": "Segmentasi berdasarkan aktivitas, riwayat pembelian, atau event, pembeli baru, pelanggan setia, leads yang klik tapi belum bayar. Setiap campaign sampai ke orang yang memang jadi targetnya."
     },
     {
-      "label": "Auto Reminder",
+      "label": "Pengingat Otomatis",
       "title": "Reminder Berbasis Event, Jalan Sendiri",
       "body": "Pembayaran masih pending? Promo mau berakhir? Waktunya beli lagi? Cekat.AI mengirim reminder yang tepat di momen yang tepat secara otomatis, tidak ada revenue yang lolos karena tim lagi sibuk."
     },

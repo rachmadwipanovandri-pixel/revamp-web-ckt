@@ -21,11 +21,7 @@ import {
 } from "@/lib/registry";
 import { loadLandingContent } from "@/lib/registry/content";
 import type { LandingKind } from "@/lib/registry/types";
-import {
-  breadcrumbJsonLd,
-  faqPageJsonLd,
-  serviceJsonLd,
-} from "@/lib/jsonld";
+import { breadcrumbJsonLd, faqPageJsonLd, serviceJsonLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/json-ld";
 import { LogoMarquee } from "@/components/sections/shared/logo-marquee";
 import { TRUSTED_LOGOS } from "@/components/sections/shared/trusted-logos";
@@ -45,6 +41,8 @@ import { LandingTestimonial } from "./landing-testimonial";
 import { RichFaq } from "./rich-faq";
 import { RelatedLinks } from "./related-links";
 import { LandingCta } from "./landing-cta";
+import { PRODUCT_ART } from "./product-stage";
+import { localeValue } from "@/lib/locale-value";
 
 const HUB_TEMPLATE = {
   features: "/features",
@@ -131,17 +129,23 @@ export async function LandingPage({
 
   const isIndustry = kind === "industries";
   const hubTemplate = HUB_TEMPLATE[kind];
-  const pageTitle = entry.title[locale] ?? content.hero.title;
+  const pageTitle = localeValue(entry.title, locale) ?? content.hero.title;
   const heroImage = isIndustry ? industryHeroImage(entry.id) : undefined;
+  const heroProduct =
+    content.benefits.find((benefit) => benefit.image)?.image ??
+    PRODUCT_ART[entry.category] ??
+    (kind === "solutions" && entry.id.includes("sales")
+      ? PRODUCT_ART.crm
+      : PRODUCT_ART.chat);
   const crumbs = [
     { label: tb("home"), href: "/" as const },
     { label: tb(kind), href: hubTemplate },
     { label: pageTitle },
   ];
   const related = relatedEntries(kind, entry, locale).map((other) => ({
-    title: other.title[locale] ?? other.id,
+    title: localeValue(other.title, locale) ?? other.id,
     icon: other.icon,
-    tagline: other.tagline?.[locale],
+    tagline: other.tagline ? localeValue(other.tagline, locale) : undefined,
     href: {
       pathname: `${hubTemplate}/[slug]` as "/features/[slug]",
       params: { slug: other.slugs[locale]! },
@@ -155,9 +159,9 @@ export async function LandingPage({
     .filter((other) => other.slugs[locale] && !other.switcherFallbackId)
     .slice(0, 4)
     .map((other) => ({
-      title: other.title[locale] ?? other.id,
+      title: localeValue(other.title, locale) ?? other.id,
       icon: other.icon,
-      tagline: other.tagline?.[locale],
+      tagline: other.tagline ? localeValue(other.tagline, locale) : undefined,
       href: {
         pathname:
           crossKind === "solutions"
@@ -173,9 +177,11 @@ export async function LandingPage({
           .filter((other) => other.slugs[locale])
           .slice(0, 3)
           .map((other) => ({
-            title: other.title[locale] ?? other.id,
+            title: localeValue(other.title, locale) ?? other.id,
             icon: other.icon,
-            tagline: other.tagline?.[locale],
+            tagline: other.tagline
+              ? localeValue(other.tagline, locale)
+              : undefined,
             href: {
               pathname: "/solutions/[slug]" as const,
               params: { slug: other.slugs[locale]! },
@@ -237,6 +243,9 @@ export async function LandingPage({
           useCases={content.hero.useCases}
           image={heroImage}
           imageAlt={pageTitle}
+          productImage={heroProduct}
+          tone={entry.category}
+          visualLabel={content.benefits[0]?.title}
         />
       </div>
       <Breadcrumbs items={crumbs} />

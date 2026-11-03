@@ -10,10 +10,22 @@
   },
   "definition": "WhatsApp bisnis adalah penggunaan WhatsApp sebagai kanal utama jualan dan layanan pelanggan sebuah usaha. Cekat.AI meng-upgrade WA bisnis dari aplikasi gratis satu HP ke WhatsApp Business API resmi, satu nomor untuk seluruh tim, ditambah AI agent yang membalas chat pelanggan 24/7.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis sudah upgrade ke Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "±5 menit", "label": "bikin AI agent, tanpa coding" },
-    { "value": "24/7", "label": "chat dibales, toko tutup pun" }
+    {
+      "value": "3.000+",
+      "label": "bisnis sudah upgrade ke Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "±5 menit",
+      "label": "bikin AI agent, tanpa coding"
+    },
+    {
+      "value": "24/7",
+      "label": "chat dibales, toko tutup pun"
+    }
   ],
   "benefits": [
     {
@@ -80,7 +92,7 @@
   "testimonial": {
     "quote": "Respon pelanggan menjadi lebih cepat",
     "name": "Silica Brenda",
-    "role": "Founder, Moir Salon",
+    "role": "Pendiri, Moir Salon",
     "image": "/images/home/testimonial-silica-brenda.jpg"
   },
   "faq": [

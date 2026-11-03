@@ -10,10 +10,22 @@
   },
   "definition": "WhatsApp Bot dari Cekat.AI adalah AI agent di WhatsApp Business API resmi yang memahami bahasa natural customer, berbeda dari bot WA berbasis rule yang hanya merespons menu dan keyword tertentu, sehingga bisa menjawab, melayani, dan closing layaknya CS manusia, 24 jam sehari.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis sudah pindah ke Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer ditangani AI" },
-    { "value": "±5 menit", "label": "dari daftar sampai bot aktif" },
-    { "value": "24/7", "label": "bot standby tanpa lembur" }
+    {
+      "value": "3.000+",
+      "label": "bisnis sudah pindah ke Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer ditangani AI"
+    },
+    {
+      "value": "±5 menit",
+      "label": "dari daftar sampai bot aktif"
+    },
+    {
+      "value": "24/7",
+      "label": "bot standby tanpa lembur"
+    }
   ],
   "benefits": [
     {
@@ -48,12 +60,12 @@
       "body": "Singkatan, typo, bahasa gaul, campuran Indonesia-Inggris, bot tetap paham karena membaca maksud percakapan, bukan mencocokkan kata. Customer nggak perlu belajar \"cara ngomong sama bot\"."
     },
     {
-      "label": "Flow Designer",
+      "label": "Perancang Alur",
       "title": "Alur Terstruktur Kalau Kamu Butuh",
       "body": "Untuk proses yang harus rapi seperti booking atau pendaftaran, susun alurnya di visual designer drag-and-drop. Bot tetap luwes menjawab di luar alur, tapi patuh mengikuti langkah di dalam alur."
     },
     {
-      "label": "Multi-Agent",
+      "label": "Multi-Agen",
       "title": "Beberapa Bot Spesialis, Satu Inbox",
       "body": "Bikin bot khusus sales, bot khusus support, bot khusus billing, masing-masing dilatih untuk perannya. Semua percakapan tetap masuk satu inbox terpadu dengan label dan prioritas otomatis."
     },

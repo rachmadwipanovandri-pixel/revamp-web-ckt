@@ -297,9 +297,9 @@ describe("Hero", () => {
     expect(frame).toHaveClass("sm:aspect-4.5/4", "sm:h-auto");
     expect(frame).toHaveAttribute("data-ipad-frame", "true");
     // Island stays mounted at opacity-0 for a crossfade mid-morph.
-    expect(document.querySelector('[data-phone-hardware="island"]')).toHaveClass(
-      "opacity-0",
-    );
+    expect(
+      document.querySelector('[data-phone-hardware="island"]'),
+    ).toHaveClass("opacity-0");
     expect(document.querySelector('[data-ipad-hardware="camera"]')).toHaveClass(
       "opacity-100",
     );
@@ -339,19 +339,22 @@ describe("Hero", () => {
     ).toHaveAttribute("aria-pressed", "true");
   });
 
-  it("starts phone-shaped under sm and landscape on larger screens", () => {
+  it("uses a compact base frame and landscape tablet on larger screens", () => {
     renderHero();
 
     const frame = document.querySelector("[data-ipad-frame]");
     expect(frame).toHaveClass(
-      "h-[min(560px,72svh)]",
-      "max-w-[330px]",
-      "rounded-[2.75rem]",
+      "h-[min(400px,48svh)]",
+      "max-w-[280px]",
+      "rounded-[2rem]",
       "sm:aspect-4.5/4",
       "sm:h-auto",
+      "sm:w-full",
       "sm:max-w-none",
+      "sm:rounded-[2.25rem]",
     );
-    // Base form is tablet; the xs CSS still forces the phone silhouette.
+    // Base form is tablet; the responsive classes provide the compact mobile
+    // frame and landscape tablet treatment without changing the data state.
     expect(frame).toHaveAttribute("data-device-form", "tablet");
   });
 
@@ -361,9 +364,10 @@ describe("Hero", () => {
     try {
       renderHero();
 
-      expect(
-        document.querySelector("[data-ipad-frame]"),
-      ).toHaveAttribute("data-device-form", "tablet");
+      expect(document.querySelector("[data-ipad-frame]")).toHaveAttribute(
+        "data-device-form",
+        "tablet",
+      );
 
       act(() => {
         vi.advanceTimersByTime(7600);
@@ -375,7 +379,11 @@ describe("Hero", () => {
       expect(
         document.querySelector('[data-phone-hardware="island"]'),
       ).toHaveClass("opacity-100");
-      expect(frame).toHaveClass("sm:w-[300px]", "sm:h-[min(600px,68svh)]");
+      expect(frame).toHaveClass(
+        "sm:w-[300px]",
+        "sm:h-[min(520px,62svh)]",
+        "sm:max-w-[300px]",
+      );
 
       // Phone form collapses header pills and expands the stacked tabs.
       const desktopModeTabs = document.querySelector(
@@ -390,12 +398,13 @@ describe("Hero", () => {
       act(() => {
         vi.advanceTimersByTime(7600);
       });
-      expect(
-        document.querySelector("[data-ipad-frame]"),
-      ).toHaveAttribute("data-device-form", "tablet");
-      expect(document.querySelector('[data-phone-hardware="island"]')).toHaveClass(
-        "opacity-0",
+      expect(document.querySelector("[data-ipad-frame]")).toHaveAttribute(
+        "data-device-form",
+        "tablet",
       );
+      expect(
+        document.querySelector('[data-phone-hardware="island"]'),
+      ).toHaveClass("opacity-0");
     } finally {
       vi.useRealTimers();
     }

@@ -4,6 +4,7 @@ import type { Locale } from "@/i18n/routing";
 import { getEntryById } from "@/lib/registry";
 import { loadLandingContent } from "@/lib/registry/content";
 import { Reveal } from "@/components/sections/new-home/reveal";
+import { localeValue } from "@/lib/locale-value";
 import {
   IndustryCarouselPanels,
   type IndustryPanel,
@@ -46,8 +47,10 @@ export async function IndustryCarousel() {
       return {
         id,
         slug,
-        title: entry.title[locale] ?? "",
-        tagline: entry.tagline?.[locale] ?? "",
+        title: localeValue(entry.title, locale) ?? entry.id,
+        tagline: entry.tagline
+          ? (localeValue(entry.tagline, locale) ?? "")
+          : "",
         photo: `/images/industries/${id}.webp`,
         description: content.hero.subtitle,
         useCases: content.hero.useCases ?? [],

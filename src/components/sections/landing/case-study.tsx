@@ -32,6 +32,7 @@ export function CaseStudy({
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
       />
       <Container className="relative">
+        <div className="evidence-panel">
         <p className="eyebrow-rule mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
           {eyebrow}
         </p>
@@ -71,6 +72,7 @@ export function CaseStudy({
               {story.body}
             </p>
           </div>
+        </div>
         </div>
       </Container>
     </section>

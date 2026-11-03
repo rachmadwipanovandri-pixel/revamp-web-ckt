@@ -317,7 +317,7 @@ export function taglineSlot(index: number): (typeof TAGLINE_SLOTS)[number] {
  * shared.
  */
 export function plansFor(locale: Locale): Record<PlanId, Plan> {
-  return locale === "en" ? PLANS_INTL : PLANS;
+  return locale === "id" ? PLANS : PLANS_INTL;
 }
 
 /**
@@ -359,16 +359,32 @@ export function showsPrices(locale: Locale): boolean {
  */
 export function formatIDR(amount: number, locale: Locale): string {
   const formatted = new Intl.NumberFormat(
-    locale === "id" ? "id-ID" : "en-US",
+    locale === "id"
+      ? "id-ID"
+      : locale === "cn"
+        ? "zh-CN"
+        : locale === "jp"
+          ? "ja-JP"
+          : locale === "kr"
+            ? "ko-KR"
+            : "en-US",
   ).format(amount);
   return `Rp\u00A0${formatted}`;
 }
 
 /** Locale-aware plain integer, e.g. "10.000" (id) / "10,000" (en). */
 export function formatNumber(value: number, locale: Locale): string {
-  return new Intl.NumberFormat(locale === "id" ? "id-ID" : "en-US").format(
-    value,
-  );
+  return new Intl.NumberFormat(
+    locale === "id"
+      ? "id-ID"
+      : locale === "cn"
+        ? "zh-CN"
+        : locale === "jp"
+          ? "ja-JP"
+          : locale === "kr"
+            ? "ko-KR"
+            : "en-US",
+  ).format(value);
 }
 
 /** Lowest and highest advertised monthly price, for AggregateOffer JSON-LD. */

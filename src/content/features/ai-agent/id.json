@@ -10,10 +10,22 @@
   },
   "definition": "Chatbot di Cekat.AI adalah AI agent humanlike yang memahami maksud dan konteks percakapan, bukan sekadar mencocokkan keyword, sehingga bisa menjawab pertanyaan, mengkualifikasi leads, dan closing penjualan di WhatsApp, Instagram DM, Facebook Messenger, dan live chat website, 24 jam nonstop.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "±5 menit", "label": "bikin AI agent, tanpa coding" },
-    { "value": "24/7", "label": "jawaban humanlike di semua channel" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "±5 menit",
+      "label": "bikin AI agent, tanpa coding"
+    },
+    {
+      "value": "24/7",
+      "label": "jawaban humanlike di semua channel"
+    }
   ],
   "benefits": [
     {
@@ -54,12 +66,12 @@
       "body": "AI paham singkatan, typo, bahasa campur, sampai pertanyaan lanjutan yang nyambung ke chat sebelumnya. Customer bisa ngetik sesantai chat ke teman, jawabannya tetap akurat, diambil dari knowledge base bisnismu."
     },
     {
-      "label": "Multi-Agent",
+      "label": "Multi-Agen",
       "title": "Agent Khusus untuk Sales, Support, dan Billing",
       "body": "Jalankan beberapa AI agent sekaligus, masing-masing dilatih untuk tugas berbeda, ada yang jualan, ada yang menyelesaikan keluhan, ada yang mengurus tagihan. Setiap chat dialihkan ke spesialisnya, persis tim CS yang rapi."
     },
     {
-      "label": "Flow Designer",
+      "label": "Perancang Alur",
       "title": "Alur Visual Kalau Mau Kontrol Penuh",
       "body": "Untuk proses yang terstruktur seperti booking atau promo, tinggal drag-and-drop alur chat di visual designer. Fleksibilitas AI di bagian yang butuh luwes, langkah pasti di bagian yang butuh rapi, dua-duanya tanpa coding."
     },
@@ -86,7 +98,7 @@
   "testimonial": {
     "quote": "Peluang closing sangat tinggi",
     "name": "Wiji Astuti",
-    "role": "Head of Customer Experience, Rumah Zakat",
+    "role": "Kepala Pengalaman Pelanggan, Rumah Zakat",
     "image": "/images/home/testimonial-wiji-astuti.jpg"
   },
   "faq": [

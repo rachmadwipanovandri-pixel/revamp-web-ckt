@@ -2,6 +2,8 @@
 
 import { useCallback, useMemo, useState } from "react";
 import { useLocale } from "next-intl";
+import type { Locale } from "@/i18n/routing";
+import { localeValue } from "@/lib/locale-value";
 import { cn } from "@/lib/utils";
 import { CollagePhoneChat } from "@/components/sections/agentic/collage-phone-chat";
 import { CollageProductPanel } from "@/components/sections/agentic/collage-product-panel";
@@ -117,7 +119,7 @@ export function HeroCollage({
   className?: string;
   focus?: FocusKey;
 }) {
-  const locale = useLocale() === "en" ? "en" : "id";
+  const locale = useLocale() as Locale;
   const [chatSync, setChatSync] = useState<ChatSync>({
     scenario: "retail",
     mode: "lead",
@@ -154,7 +156,9 @@ export function HeroCollage({
   const solo = Boolean(SOLO_PRODUCT[focus]);
 
   const chatSteps = useMemo(() => {
-    const scenario = HERO_CHAT_SCENARIOS.find((s) => s.key === chatSync.scenario);
+    const scenario = HERO_CHAT_SCENARIOS.find(
+      (s) => s.key === chatSync.scenario,
+    );
     return scenario?.modes[chatSync.mode as ChatModeKey]?.steps ?? [];
   }, [chatSync.scenario, chatSync.mode]);
 
@@ -170,10 +174,14 @@ export function HeroCollage({
       return {
         cmd: ind.cmd,
         body: ind.body.map((row) => ({
-          label: row.label[locale],
-          value: row.value[locale],
+          label: localeValue(row.label, locale) ?? row.label.en,
+          value: localeValue(row.value, locale) ?? row.value.en,
         })),
-        done: (ind.doneByPhase[phase] ?? ind.doneByPhase.idle)?.[locale] ?? "…",
+        done:
+          localeValue(
+            ind.doneByPhase[phase] ?? ind.doneByPhase.idle ?? {},
+            locale,
+          ) ?? "…",
         live: phase !== "idle",
       };
     }
@@ -252,7 +260,9 @@ export function HeroCollage({
             <div
               className={cn(
                 "hero-collage-win hero-collage-win-oms",
-                omsLive ? "hero-collage-panel-live" : "hero-collage-panel-pending",
+                omsLive
+                  ? "hero-collage-panel-live"
+                  : "hero-collage-panel-pending",
               )}
               aria-hidden
             >
@@ -282,10 +292,19 @@ export function HeroCollage({
 
         {/* Phone — WhatsApp thread. Hidden on solo product slides. */}
         {!solo ? (
-          <div className={cn("hero-collage-win hero-collage-win-phone", sideClass("phone"))}>
+          <div
+            className={cn(
+              "hero-collage-win hero-collage-win-phone",
+              sideClass("phone"),
+            )}
+          >
             <CollagePhoneChat
               onOrderPlaced={onOrderPlaced}
-              onProgress={focus === "ecosystem" || focus === "marketing" ? onProgress : undefined}
+              onProgress={
+                focus === "ecosystem" || focus === "marketing"
+                  ? onProgress
+                  : undefined
+              }
             />
           </div>
         ) : null}
@@ -333,7 +352,8 @@ export function HeroCollage({
                 <span className="text-white/35">› </span>oms.queue order
               </div>
             </div>
-            {agent.live && (phase === "paid" || phase === "closed" || omsLive) ? (
+            {agent.live &&
+            (phase === "paid" || phase === "closed" || omsLive) ? (
               <div className="text-emerald-300">✳ {agent.done}</div>
             ) : (
               <div className="text-white/40">✳ {agent.done}</div>

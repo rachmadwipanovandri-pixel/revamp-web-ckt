@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "TikTok 광고 통합: DM 또는 WhatsApp에 | CekatAI",
+    "description": "TikTok 광고를 Cekat.AI에 연결: 광고 클릭은 TikTok DM 또는 WhatsApp의 채팅이 되고 AI가 답변하며 캠페인에 기여하며 Events API를 통해 전환이 다시 전송됩니다."
+  },
+  "hero": {
+    "badge": "TikTok 광고 통합",
+    "title": "FYP에서 바로 마무리 채팅으로",
+    "subtitle": "하나의 광고에서 두 가지 경로: 빠른 상담을 위한 TikTok DM 또는 심각한 후속 조치를 위한 WhatsApp으로 바로 연결됩니다. 둘 다 AI가 답변하고 캠페인이 첨부되어 기록됩니다."
+  },
+  "definition": "Cekat.AI의 TikTok Ads 통합은 TikTok 광고를 대화에 연결합니다. TikTok Inbox 경로는 클릭자를 TikTok DM으로 연결하고, Click-to-WhatsApp 경로는 클릭자를 WhatsApp Business로 연결하며, 둘 다 캠페인 속성 및 전환 신호가 다시 전송되는 하나의 받은 편지함에 들어갑니다.",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "광고 리드가 즉시 답변됨"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "고객 상호작용 처리"
+    },
+    {
+      "value": "3,000+",
+      "label": "기업은 Cekat.AI에서 캠페인을 운영합니다."
+    },
+    {
+      "value": "15+",
+      "label": "서비스를 제공하는 산업"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "두 개의 경로, 하나의 받은 편지함",
+      "body": "TikTok DM에 대한 광고는 빠른 질문과 예약에 적합합니다. 더 긴 후속 조치를 통해 WhatsApp 정장 판매에 광고를 게재합니다. 어느 쪽을 가리키든 채팅은 동일한 받은 편지함에 들어갑니다.",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "하나의 받은 편지함에 도착하는 TikTok Ads의 채팅"
+    },
+    {
+      "title": "시청자는 앱을 바꾸지 않고도 대화가 됩니다",
+      "body": "TikTok Inbox 경로는 열기 메시지 템플릿이 포함되어 이미 열려 있는 앱 내부의 사람들에게 응답합니다. 앱 전환으로 구매 의도가 사라지지 않습니다.",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Cekat.AI 받은 편지함에 연결된 TikTok DM"
+    },
+    {
+      "title": "육성이 필요한 거래를 위한 WhatsApp 경로",
+      "body": "Click-to-WhatsApp은 AI가 자격을 갖추고 팀이 인계받으며 CRM이 마감까지 모든 것을 기록하는 사업장 번호로 진지한 구매자를 이동시킵니다.",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "TikTok이 WhatsApp에 도착하고 AI가 답변함"
+    },
+    {
+      "title": "Origin 캠페인은 모든 리드를 추적합니다",
+      "body": "모든 채팅은 TikTok 캠페인 이름을 CRM에 전달합니다. 바이럴 콘텐츠가 실제로 무엇을 생산하는지(시청자 또는 구매자) 확인할 수 있습니다.",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "CRM의 캠페인에 기인한 TikTok 리드"
+    },
+    {
+      "title": "TikTok으로 다시 전송된 전환",
+      "body": "채팅에서 마감된 거래는 픽셀과 이벤트 API를 통해 다시 흐르므로 TikTok은 단순히 스크롤을 멈추는 사람이 아닌 실제로 구매하는 사람을 대상으로 최적화합니다.",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "TikTok으로 다시 전송되는 전환 신호"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "경로는 의도를 따릅니다.",
+      "body": "TikTok DM을 통한 가벼운 상담, WhatsApp을 통한 진지한 구매. 캠페인별로 선택하세요."
+    },
+    {
+      "title": "이 기능을 갖춘 플랫폼은 거의 없습니다",
+      "body": "비교표에서 TikTok 통합은 경쟁업체가 가장 거의 선택하지 않는 행에 속합니다."
+    },
+    {
+      "title": "알고리즘에 대한 전체 루프",
+      "body": "광고부터 채팅, 종료까지 신호는 다음 최적화를 위해 TikTok으로 돌아갑니다."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Cekat.AI의 TikTok 광고 통합이란 무엇입니까?",
+      "a": "TikTok 광고에서 대화로의 연결은 두 가지 경로, 즉 TikTok DM을 여는 TikTok Inbox Ads와 WhatsApp Business 채팅을 여는 Click-to-WhatsApp입니다. 두 가지 모두 캠페인 속성이 포함된 하나의 받은 편지함에 들어갑니다."
+    },
+    {
+      "q": "TikTok DM 경로는 언제 사용해야 합니까?",
+      "a": "가벼운 리드 생성, 상품 상담, 예약 등의 경우, 이미 열려 있는 앱 밖으로 이동하지 않고 사람들에게 답변하고 싶을 때."
+    },
+    {
+      "q": "WhatsApp 경로는 언제 더 적합합니까?",
+      "a": "집중적인 후속 조치가 필요한 판매에 적합합니다. WhatsApp은 CRM, 자동화된 후속 조치, 단일 통합 기록을 통해 비즈니스 전화번호로 대화를 가져옵니다."
+    },
+    {
+      "q": "두 노선이 동시에 운행될 수 있나요?",
+      "a": "그렇습니다. 경로는 캠페인별로 선택되며 모든 채팅은 여전히 ​​동일한 받은 편지함에 있으므로 팀에서는 도구를 전환하지 않습니다."
+    },
+    {
+      "q": "기여는 어떻게 작동하나요?",
+      "a": "광고에서 도착하는 채팅은 원래 캠페인을 CRM으로 전달하므로 수동으로 요약하지 않고도 TikTok 캠페인별로 리드와 마감을 읽을 수 있습니다."
+    },
+    {
+      "q": "전환이 TikTok으로 다시 전송되나요?",
+      "a": "예, TikTok Pixel 및 Events API를 통해 가능합니다. 채팅에서 발생하는 판매는 최적화 신호가 되어 다음 광고에서는 구매자와 유사한 사람들을 찾습니다."
+    },
+    {
+      "q": "AI가 TikTok 리드에도 응답합니까?",
+      "a": "그렇습니다. 두 경로의 채팅은 동일하게 처리됩니다. 즉, 첫 번째 순간에 답변되고 자격을 갖춘 후 종료 준비가 되면 팀에 전달됩니다."
+    },
+    {
+      "q": "경쟁사에도 TikTok 통합 기능이 있나요?",
+      "a": "아직은 대부분 그렇지 않습니다. 비교 페이지에서 TikTok DM과 TikTok Ads는 다른 플랫폼에서 가장 거의 선택되지 않는 행 사이에 있습니다."
+    }
+  ],
+  "cta": {
+    "heading": "TikTok 시청자를 기록된 구매자로 전환",
+    "body": "두 개의 경로, 하나의 받은 편지함, 전체 속성. 무료로 사용해 보거나 WhatsApp으로 우리 팀에 문의하세요."
+  }
+}

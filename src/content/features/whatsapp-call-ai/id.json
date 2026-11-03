@@ -4,16 +4,28 @@
     "description": "Rangkum panggilan WhatsApp otomatis dengan AI: dapatkan ringkasan instan, poin penting, & rincian follow-up langsung ke CRM. Coba fitur gratisnya!"
   },
   "hero": {
-    "badge": "WhatsApp Call + AI",
+    "badge": "Panggilan WhatsApp + AI",
     "title": "Setiap WhatsApp Call Dirangkum AI dalam Hitungan Detik",
     "subtitle": "Terima WhatsApp call di platform yang sama dengan chat, dan biarkan AI mengubah setiap percakapan jadi ringkasan instan, poin penting, dan langkah berikutnya untuk timmu"
   },
   "definition": "WhatsApp Call AI adalah fitur Cekat.AI yang memproses setiap panggilan WhatsApp dengan AI untuk menghasilkan ringkasan instan, poin-poin penting, dan rekomendasi langkah berikutnya, jadi tidak ada isi telepon yang hilang dan setiap follow-up jalan tepat waktu.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "15+", "label": "industri terlayani" },
-    { "value": "24/7", "label": "percakapan tercakup, chat dan call" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    },
+    {
+      "value": "24/7",
+      "label": "percakapan tercakup, chat dan call"
+    }
   ],
   "benefits": [
     {

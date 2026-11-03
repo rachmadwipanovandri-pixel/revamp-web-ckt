@@ -4,16 +4,10 @@ import { useParams } from "next/navigation";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Icon } from "@iconify/react/offline";
 import { solarGlobalLinear } from "@/lib/icons";
-import { routing, type Locale, LOCALE_COOKIE } from "@/i18n/routing";
+import { type Locale } from "@/i18n/routing";
 import { switchLocaleHref } from "@/lib/locale-switch";
+import { rememberLocaleChoice } from "@/lib/locale-preference";
 import { cn } from "@/lib/utils";
-
-const ONE_YEAR = 60 * 60 * 24 * 365;
-
-/** Persist an explicit language choice so the geo middleware honors it. */
-function rememberLocaleChoice(locale: string) {
-  document.cookie = `${LOCALE_COOKIE}=${locale}; path=/; max-age=${ONE_YEAR}; samesite=lax`;
-}
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -23,7 +17,17 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
-const LABELS: Record<string, string> = { en: "English", id: "Indonesian" };
+const LANGUAGES = [
+  { code: "en", label: "English", native: "EN", available: true },
+  { code: "id", label: "Indonesia", native: "ID", available: true },
+  { code: "kr", label: "한국어", native: "KR", available: true },
+  { code: "jp", label: "日本語", native: "JP", available: true },
+  { code: "cn", label: "中文", native: "CN", available: true },
+] as const;
+
+const LABELS: Record<string, string> = Object.fromEntries(
+  LANGUAGES.map(({ code, label }) => [code, label]),
+);
 
 export function LanguageSwitcher({
   currentLocale,
@@ -43,7 +47,7 @@ export function LanguageSwitcher({
         <NavigationMenuItem>
           <NavigationMenuTrigger
             className={cn(
-              "h-auto gap-1.5 bg-transparent px-0 py-0 text-xs font-semibold hover:bg-transparent focus:bg-transparent data-open:bg-transparent data-popup-open:bg-transparent",
+              "h-auto gap-1.5 rounded-full bg-transparent px-2 py-1 text-sm font-medium hover:bg-[#f3f6fd] focus:bg-[#f3f6fd] data-open:bg-[#f3f6fd] data-popup-open:bg-[#f3f6fd]",
               inverted
                 ? "text-white hover:bg-transparent! hover:text-white/80"
                 : "text-foreground hover:text-black",
@@ -53,27 +57,38 @@ export function LanguageSwitcher({
             {LABELS[currentLocale] ?? currentLocale.toUpperCase()}
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-40 gap-1">
-              {routing.locales.map((locale) => (
-                <li key={locale}>
-                  <NavigationMenuLink
-                    render={
-                      <Link
-                        href={switchLocaleHref(
-                          pathname,
-                          slug,
-                          currentLocale as Locale,
-                          locale,
-                        )}
-                        locale={locale}
-                        onClick={() => rememberLocaleChoice(locale)}
-                      />
-                    }
-                    aria-current={locale === currentLocale ? "true" : undefined}
-                    className={cn(locale === currentLocale && "bg-muted/50")}
-                  >
-                    {LABELS[locale] ?? locale.toUpperCase()}
-                  </NavigationMenuLink>
+            <ul className="grid w-48 gap-1 p-1">
+              {LANGUAGES.map((language) => (
+                <li key={language.code}>
+                  {language.available ? (
+                    <NavigationMenuLink
+                      render={
+                        <Link
+                          href={switchLocaleHref(
+                            pathname,
+                            slug,
+                            currentLocale as Locale,
+                            language.code as Locale,
+                          )}
+                          locale={language.code as Locale}
+                          onClick={() => rememberLocaleChoice(language.code)}
+                        />
+                      }
+                      aria-current={
+                        language.code === currentLocale ? "true" : undefined
+                      }
+                      className={cn(
+                        "flex items-center justify-between rounded-lg px-3 py-2 text-sm",
+                        language.code === currentLocale &&
+                          "bg-[#f3f6fd] text-primary",
+                      )}
+                    >
+                      <span>{language.label}</span>
+                      <span className="text-xs font-semibold text-muted-foreground">
+                        {language.native}
+                      </span>
+                    </NavigationMenuLink>
+                  ) : null}
                 </li>
               ))}
             </ul>

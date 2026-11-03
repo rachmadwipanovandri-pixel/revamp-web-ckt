@@ -4,16 +4,28 @@
     "description": "Pantau kontak bergerak dari Visitor, Lead, ke Buyer otomatis, plus saran langkah berikutnya biar konversi naik. 3.000+ bisnis tahu posisi tiap customer."
   },
   "hero": {
-    "badge": "Visitor → Lead → Buyer",
+    "badge": "Pengunjung → Prospek → Pembeli",
     "title": "Lihat Posisi Tiap Customer, dan Apa yang Bikin Dia Maju",
     "subtitle": "Cekat.AI otomatis nempatin tiap kontak sebagai Visitor, Lead, atau Buyer dan ngasih saran langkah berikutnya, jadi nggak ada yang mandek di tengah jalan dan makin banyak chat yang berujung closing"
   },
   "definition": "Tahapan Customer adalah fitur Cekat.AI yang otomatis menggerakkan tiap kontak melewati tahap Visitor, Lead, dan Buyer serta menyarankan langkah berikutnya untuk mendorongnya sampai closing.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "tahapan update real-time" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "tahapan update real-time"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -80,7 +92,7 @@
   "testimonial": {
     "quote": "Peluang closing sangat tinggi",
     "name": "Wiji Astuti",
-    "role": "Head of Customer Experience, Rumah Zakat",
+    "role": "Kepala Pengalaman Pelanggan, Rumah Zakat",
     "image": "/images/home/testimonial-wiji-astuti.jpg"
   },
   "faq": [

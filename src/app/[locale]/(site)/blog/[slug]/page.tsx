@@ -42,7 +42,10 @@ function canonicalFor(locale: Locale, slug: string) {
 
 function ogImage(post: NonNullable<Awaited<ReturnType<typeof getPostBySlug>>>) {
   const url = post.seo.ogImage || post.image?.url;
-  if (!url) return [{ url: "/graph-image.jpg", width: 1200, height: 630, alt: post.title }];
+  if (!url)
+    return [
+      { url: "/graph-image.jpg", width: 1200, height: 630, alt: post.title },
+    ];
   return [
     {
       url,
@@ -59,7 +62,10 @@ function ogImage(post: NonNullable<Awaited<ReturnType<typeof getPostBySlug>>>) {
  * still awaiting translation falls back to the blog index in that locale, and
  * an unknown slug 404s so we never soft-404 a bad URL into a listing page.
  */
-async function redirectToCounterpart(slug: string, locale: Locale): Promise<never> {
+async function redirectToCounterpart(
+  slug: string,
+  locale: Locale,
+): Promise<never> {
   const counterpart = await counterpartPostSlug(slug, locale);
   if (counterpart.kind === "translated") {
     redirect(
@@ -92,10 +98,7 @@ export async function generateMetadata({
   }
 
   const title = metaTitle(post.seo.title || post.title);
-  const description = metaSnippet(
-    post.seo.description || post.excerpt,
-    158,
-  );
+  const description = metaSnippet(post.seo.description || post.excerpt, 158);
   const canonical = canonicalFor(locale, slug);
   const images = ogImage(post);
 
@@ -223,50 +226,50 @@ export default async function BlogPostPage({
 
       <ArticleReadingBar title={post.title} backLabel={t("backToBlog")} />
 
-      {/* Void header — same keynote ground as the homepage / listing hero */}
-      <section className="relative isolate overflow-hidden bg-ink-void text-white">
+      {/* Editorial masthead: readable and consistent with the light site openings. */}
+      <section className="article-hero relative isolate overflow-hidden border-b border-[#e5e9ef] bg-[#f3f6fd] text-[#09214c]">
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#050b18] via-[#0a1a3d] to-[#0b1220]"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_12%_0%,rgba(0,180,200,0.13),transparent_42%),radial-gradient(circle_at_88%_10%,rgba(19,82,191,0.12),transparent_38%),linear-gradient(to_bottom,#f3f6fd,#fff)]"
         />
         <div
           aria-hidden
-          className="ink-noise pointer-events-none absolute inset-0 opacity-55"
+          className="pointer-events-none absolute inset-0 opacity-0"
         />
         <div aria-hidden className="pointer-events-none absolute inset-0">
-          <span className="animate-orb-drift absolute top-[10%] left-[8%] h-64 w-64 rounded-full bg-primary/35 blur-[110px]" />
+          <span className="absolute top-[10%] left-[8%] h-64 w-64 rounded-full bg-primary/5 blur-[110px]" />
           <span
-            className="animate-orb-drift absolute top-[30%] right-[6%] h-72 w-72 rounded-full bg-accent-sky/25 blur-[120px]"
+            className="absolute top-[30%] right-[6%] h-72 w-72 rounded-full bg-accent-sky/5 blur-[120px]"
             style={{ animationDelay: "-7s" }}
           />
         </div>
 
-        <Container className="relative z-10 pt-28 pb-20 lg:pt-32 lg:pb-24">
-          <div className="hero-stagger mx-auto max-w-3xl text-center lg:text-left">
-            <nav aria-label="Breadcrumb" className="mb-6 flex justify-center lg:justify-start">
-              <ol className="flex flex-wrap items-center justify-center gap-2 font-numeric text-xs text-sky-100/80">
+        <Container className={`relative z-10 pt-16 pb-16 lg:pt-20 lg:pb-20 ${post.image ? "lg:grid lg:grid-cols-[1.15fr_1fr] lg:items-center lg:gap-14" : ""}`}>
+          <div className="max-w-[850px] text-left">
+            <nav aria-label="Breadcrumb" className="mb-8 flex">
+              <ol className="flex flex-wrap items-center gap-2 text-sm text-[#505f73]">
                 <li>
                   <Link
                     href="/"
-                    className="rounded-full border border-white/15 bg-white/8 px-3 py-1 transition-colors hover:border-white/40 hover:text-white"
+                    className="rounded-full border border-[#ccdaf1] bg-white px-3 py-1 transition-colors hover:border-[#1352bf] hover:text-[#1352bf]"
                   >
                     {tb("home")}
                   </Link>
                 </li>
-                <li aria-hidden className="text-sky-200/50">
+                <li aria-hidden className="text-[#717b91]">
                   /
                 </li>
                 <li>
                   <Link
                     href="/blog"
-                    className="rounded-full border border-white/15 bg-white/8 px-3 py-1 transition-colors hover:border-white/40 hover:text-white"
+                    className="rounded-full border border-[#ccdaf1] bg-white px-3 py-1 transition-colors hover:border-[#1352bf] hover:text-[#1352bf]"
                   >
                     {t("heroTitle")}
                   </Link>
                 </li>
                 {post.category && (
                   <>
-                    <li aria-hidden className="text-sky-200/50">
+                    <li aria-hidden className="text-[#717b91]">
                       /
                     </li>
                     <li>
@@ -275,7 +278,7 @@ export default async function BlogPostPage({
                           pathname: "/blog",
                           query: { category: post.category.slug },
                         }}
-                        className="rounded-full border border-white/15 bg-white/8 px-3 py-1 transition-colors hover:border-white/40 hover:text-white"
+                        className="rounded-full border border-[#ccdaf1] bg-white px-3 py-1 transition-colors hover:border-[#1352bf] hover:text-[#1352bf]"
                       >
                         {post.category.name}
                       </Link>
@@ -285,24 +288,24 @@ export default async function BlogPostPage({
               </ol>
             </nav>
 
-            <h1 className="text-[clamp(1.85rem,4vw,3rem)] leading-[1.08] font-semibold tracking-[-0.035em] text-balance text-white">
+            <h1 className="text-[clamp(2.25rem,4.5vw,4rem)] leading-[1.1] font-semibold tracking-[-0.05em] text-balance text-[#09214c]">
               {post.title}
             </h1>
 
             {description && (
-              <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-sky-50/85 lg:mx-0">
+              <p className="mt-6 max-w-2xl text-lg leading-[1.6] text-[#3a4960]">
                 {description}
               </p>
             )}
 
-            <div className="mt-7 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 lg:justify-start">
+            <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2">
               {post.author.avatar && (
                 <Image
                   src={post.author.avatar}
                   alt={post.author.name}
                   width={44}
                   height={44}
-                  className="size-11 rounded-full ring-2 ring-white/20"
+                  className="size-11 rounded-full ring-2 ring-[#ccdaf1]"
                   unoptimized
                 />
               )}
@@ -313,21 +316,23 @@ export default async function BlogPostPage({
                       pathname: "/blog/author/[slug]",
                       params: { slug: post.author.slug },
                     }}
-                    className="font-semibold text-white hover:text-sky-200"
+                    className="font-semibold text-[#09214c] hover:text-[#1352bf]"
                   >
                     {post.author.name}
                   </Link>
                 ) : (
-                  <p className="font-semibold text-white">{post.author.name}</p>
+                  <p className="font-semibold text-[#09214c]">
+                    {post.author.name}
+                  </p>
                 )}
-                <p className="text-sky-100/75">
+                <p className="text-[#505f73]">
                   <time dateTime={post.dateIso}>
                     {formatDate(post.date, locale)}
                   </time>
                   {showUpdated && (
                     <>
                       <span aria-hidden> · </span>
-                      <span className="text-sky-100/60">
+                      <span className="text-[#717b91]">
                         {locale === "id" ? "Diperbarui" : "Updated"}{" "}
                       </span>
                       <time dateTime={post.modifiedIso}>
@@ -343,7 +348,7 @@ export default async function BlogPostPage({
                     <li key={tag}>
                       <Link
                         href={{ pathname: "/blog", query: { q: tag } }}
-                        className="rounded-full border border-white/15 bg-white/8 px-3 py-1 font-numeric text-[0.7rem] font-medium text-sky-100/90 backdrop-blur transition-colors hover:border-sky-300/50 hover:text-white"
+                        className="rounded-xl border border-[#ccdaf1] bg-white px-3 py-1 text-sm font-medium text-[#0a3173] transition-colors hover:border-[#1352bf]"
                       >
                         #{tag}
                       </Link>
@@ -353,29 +358,20 @@ export default async function BlogPostPage({
               )}
             </div>
           </div>
+          {post.image && (
+            <div className="article-cover-stage relative mt-10 rounded-[28px] border border-[#ccdaf1] bg-[#e4ebf9] p-5 lg:mt-0 lg:p-7">
+              <div className="relative aspect-square overflow-hidden rounded-[18px] bg-white shadow-[0_24px_50px_-30px_rgba(9,33,76,0.3)]">
+                <Image src={post.image.url} alt={post.image.alt || post.title} fill preload sizes="(max-width: 1024px) 90vw, 560px" className="object-contain" />
+              </div>
+            </div>
+          )}
         </Container>
 
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-20 bg-linear-to-b from-transparent to-white"
+          className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-12 bg-linear-to-b from-transparent to-white"
         />
       </section>
-
-      {/* Cover */}
-      {post.image && (
-        <Container className="relative z-10 -mt-8 px-4 sm:px-6 lg:px-8">
-          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[1.5rem] border border-white/10 bg-surface-subtle shadow-[0_32px_70px_-40px_rgba(11,18,32,0.55)]">
-            <Image
-              src={post.image.url}
-              alt={post.image.alt || post.title}
-              fill
-              priority
-              sizes="(max-width: 1280px) 100vw, 1280px"
-              className="object-cover"
-            />
-          </div>
-        </Container>
-      )}
 
       {/* Body + sticky sidebar (TOC · author · share) */}
       <article>

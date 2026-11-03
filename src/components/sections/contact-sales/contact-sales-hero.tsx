@@ -10,6 +10,7 @@ import {
   mdiClockOutline,
 } from "@/lib/icons";
 import { ContactSalesForm } from "./contact-sales-form";
+import { HighlightedText } from "../shared/highlighted-text";
 
 /**
  * Icons for the three sales reasons, paired with their translation keys so the
@@ -31,26 +32,18 @@ export function ContactSalesHero() {
   const t = useTranslations("contactSales");
 
   return (
-    <section className="relative overflow-hidden bg-white py-16 lg:py-24">
-      {/* Soft brand wash — the same blue-50 gradient the rest of the site uses,
-          so the page reads as part of Cekat.AI rather than a bolted-on
-          landing page. */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(60rem_32rem_at_15%_-10%,#EFF6FF,transparent_70%)]"
-      />
-
-      <Container className="relative">
-        <div className="mx-auto max-w-2xl text-center">
+    <section className="contact-studio contact-studio--sales relative overflow-hidden py-16 lg:py-24">
+      <Container className="relative lg:grid lg:grid-cols-2 lg:gap-x-16 lg:gap-y-10">
+        <div className="max-w-2xl text-left">
           {/* Brand glyph, not the wordmark: the header is 50px away and already
               carries the full logo, so repeating it here is noise. */}
-          <LogoMark className="mx-auto size-9 text-primary" />
+          <LogoMark className="size-9 text-primary" />
 
           <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-[#BFDBFE] bg-[#EFF6FF] px-3.5 py-1.5 font-numeric text-xs font-semibold tracking-[0.08em] text-primary uppercase">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            {t("heading")}
+          <h1 className="mt-4 text-[clamp(2.75rem,4.5vw,4rem)] leading-[1.07] font-semibold tracking-[-0.05em] text-[#09214c]">
+            <HighlightedText text={t("heading")} />
           </h1>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
             {t("intro")}
@@ -62,14 +55,14 @@ export function ContactSalesHero() {
           </p>
         </div>
 
-        <div className="mt-12 grid items-start gap-8 lg:mt-16 lg:grid-cols-2 lg:gap-14">
+        <div className="mt-10 grid items-start gap-8 lg:contents">
           {/* Reassurance rail */}
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:col-start-1 lg:row-start-2">
             <h2 className="font-numeric text-xl font-semibold text-foreground">
               {t("asideTitle")}
             </h2>
 
-            <ul className="mt-6 space-y-5">
+            <ul className="contact-studio__reasons mt-6 space-y-5">
               {POINTS.map(({ icon, n }) => (
                 <li key={n} className="flex gap-4">
                   <span className="flex size-10 shrink-0 items-center justify-center rounded-xl border border-[#BFDBFE] bg-[#EFF6FF] text-primary">
@@ -89,20 +82,20 @@ export function ContactSalesHero() {
 
             {/* Trust note — the 3,000+ figure the homepage already uses, so a
                 visitor arriving straight from an ad lands on the same claim. */}
-            <div className="mt-8 flex items-start gap-3 rounded-2xl border border-border bg-surface-muted p-5">
+            <div className="mt-8 flex items-start gap-3 rounded-2xl border border-[#09214c] bg-[#09214c] p-6">
               <Icon
                 icon={lucideShieldCheck}
-                className="mt-0.5 size-5 shrink-0 text-primary"
+                className="mt-0.5 size-5 shrink-0 text-[#78d1de]"
               />
-              <p className="text-sm leading-relaxed text-muted-foreground">
+              <p className="text-sm leading-relaxed text-white">
                 {t("trustNote")}
               </p>
             </div>
           </div>
 
           {/* Form */}
-          <div className="order-1 lg:order-2">
-            <div className="rounded-2xl border border-border bg-white p-6 shadow-[0_1px_2px_rgba(11,18,32,0.04),0_28px_56px_-28px_rgba(11,18,32,0.28)] sm:p-8">
+          <div className="order-1 lg:col-start-2 lg:row-span-2 lg:row-start-1">
+            <div className="contact-studio__form rounded-[28px] border border-[#ccdaf1] bg-white p-6 shadow-[0_1px_2px_rgba(11,18,32,0.04),0_28px_56px_-28px_rgba(11,18,32,0.28)] sm:p-10">
               <ContactSalesForm />
             </div>
           </div>

@@ -1,6 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { TEASER_INTEGRATIONS } from "@/lib/integrations";
+import { localeValue } from "@/lib/locale-value";
 import { Reveal } from "@/components/sections/new-home/reveal";
 import { SafeIcon } from "@/components/sections/new-home/safe-icon";
 import { mdiApi } from "@/lib/icons";
@@ -70,7 +71,11 @@ export async function OpenApi() {
             <SoftCard hover={false} className="overflow-hidden p-7 md:p-9">
               <div className="mb-6 flex items-center justify-between gap-3 border-b border-[#0B1220]/[0.07] pb-4">
                 <span className="inline-flex items-center gap-2 font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
-                  <SafeIcon icon={mdiApi} className="size-4 text-primary" size="1rem" />
+                  <SafeIcon
+                    icon={mdiApi}
+                    className="size-4 text-primary"
+                    size="1rem"
+                  />
                   {t("constellationLabel")}
                 </span>
                 <span className="font-numeric text-[0.7rem] text-[#94A3B8]">
@@ -91,7 +96,7 @@ export async function OpenApi() {
                       />
                     </span>
                     <span className="font-numeric text-xs leading-snug font-medium break-words text-[#4B5563]">
-                      {item.name[locale]}
+                      {localeValue(item.name, locale) ?? item.id}
                     </span>
                   </li>
                 ))}

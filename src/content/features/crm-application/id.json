@@ -10,10 +10,22 @@
   },
   "definition": "Aplikasi CRM Cekat.AI adalah customer relationship management berbasis percakapan, di mana setiap interaksi, chat, telepon, order, campaign, otomatis jadi catatan customer yang terlacak, menyatukan sales pipeline, follow-up, dan data customer dalam satu platform.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "catatan ter-update otomatis" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "catatan ter-update otomatis"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -43,7 +55,7 @@
   ],
   "tabs": [
     {
-      "label": "Living Record",
+      "label": "Catatan Aktif",
       "title": "Profil Customer yang Update Sendiri",
       "body": "Setiap pembelian, chat, campaign, dan aktivitas website masuk ke profil customer secara real-time. Catatan selalu terkini karena terbentuk sendiri dari aktivitas nyata, bukan dari orang yang harus ingat mencatatnya."
     },
@@ -81,7 +93,7 @@
     "heading": "Database Lebih Rapi, Follow-Up Tidak Terlewat",
     "quote": "Dengan Cekat AI, database konsumen jadi lebih termonitoring. Kami bisa klasifikasikan mana yang hot dan warm, jadi konsumen tidak lepas dan tetap bisa di-follow up.",
     "name": "Adam Sulaiman",
-    "role": "President Director, Threeland Property",
+    "role": "Direktur Utama, Threeland Property",
     "image": "/images/crm/adam-sulaiman.png"
   },
   "faq": [

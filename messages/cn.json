@@ -1,0 +1,1484 @@
+{
+  "seo": {
+    "title": "CekatAI：面向客户服务与销售的 AI Agent 平台",
+    "description": "用 Cekat.AI AI Agent 扩展客户支持并自动化销售。一个值得 3,000+ 家企业信赖的全渠道 CRM 与 WhatsApp AI 平台。"
+  },
+  "about": {
+    "metaTitle": "关于 Cekat.AI — PT Teknologi Cekat Indonesia",
+    "metaDescription": "了解 Cekat.AI：PT Teknologi Cekat Indonesia 于 2023 年 8 月成立，是 Meta 官方商业合作伙伴，获 ISO 9001:2015 与 ISO/IEC 27001:2022 认证，服务亚洲 3,000 多家企业。",
+    "eyebrow": "关于我们",
+    "heroTitle": "为亚洲企业打造的 AI Agent 与全渠道 CRM",
+    "heroSub": "更快回复，自动跟进，提升成交——从对话到订单，一个平台全部完成。",
+    "storyEyebrow": "我们的故事",
+    "storyP1": "Cekat.AI 由 PT Teknologi Cekat Indonesia 于 2023 年 8 月创立，源于一个简单的信念：亚洲企业通过对话发展业务——无论是在 WhatsApp、Instagram、TikTok 还是其他渠道。每段对话都值得及时回复、持续跟进并促成交易，而不应让团队疲于奔命。",
+    "storyP2": "如今，Cekat.AI 集 AI 客户服务、全渠道 CRM、订单自动化和营销群发于一体，已服务印度尼西亚、新加坡和马来西亚的 3,000 多家企业。产品提供网页版和 Google Play、App Store 移动应用。",
+    "factsEyebrow": "概览",
+    "facts": {
+      "founding": {
+        "v": "2023年8月",
+        "l": "成立为 PT Teknologi Cekat Indonesia"
+      },
+      "businesses": {
+        "v": "3,000+",
+        "l": "亚洲企业使用 Cekat.AI 开展业务"
+      },
+      "countries": {
+        "v": "3 个国家",
+        "l": "业务覆盖印度尼西亚、新加坡和马来西亚"
+      },
+      "partner": {
+        "v": "Meta",
+        "l": "WhatsApp Business API 官方商业合作伙伴"
+      }
+    },
+    "certEyebrow": "安全与合规",
+    "certHeading": "我们遵循的标准",
+    "officesEyebrow": "我们的办公室",
+    "ctaLabel": "联系我们的团队",
+    "ctaSub": "想了解 Cekat.AI 是否适合您的业务？直接与我们交流，无需冗长演示文稿。"
+  },
+  "common": {
+    "cta": "免费试用",
+    "languageName": "中文"
+  },
+  "nav": {
+    "fitur": "功能",
+    "crm": "CRM",
+    "chat": "Chat",
+    "ai": "AI",
+    "marketing": "Marketing",
+    "order": "Order",
+    "industries": "行业",
+    "blog": "博客",
+    "contact": "联系",
+    "contactSales": "联系销售",
+    "integrations": "集成",
+    "about": "关于我们",
+    "masuk": "登录",
+    "ctaWhatsapp": "联系 WhatsApp",
+    "ctaTrial": "免费试用",
+    "floatingWhatsapp": "咨询 Clara",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "viewAllFeatures": "查看所有功能",
+    "viewAllIndustries": "查看所有行业",
+    "industriesByLabel": "按行业",
+    "megaFeaturedEyebrow": "精选",
+    "megaFeaturedTitle": "WhatsApp Call AI",
+    "megaFeaturedBody": "Every call summarized by AI, key points and next steps, automatically.",
+    "megaFeaturedCta": "探索功能",
+    "megaTrust": "Trusted by 3,000+ businesses in Indonesia",
+    "harga": "价格",
+    "solutions": "解决方案",
+    "viewAllSolutions": "查看所有解决方案",
+    "solutionsByLabel": "按角色查看解决方案",
+    "events": "活动"
+  },
+  "footer": {
+    "productHeading": "产品",
+    "legalHeading": "法律信息",
+    "terms": "条款与条件",
+    "privacy": "隐私政策",
+    "refund": "退货、退款与配送政策",
+    "rights": "版权所有。",
+    "metaPartner": "Cekat.AI 是 Meta 官方商业合作伙伴",
+    "officeHeading": "我们的办公室",
+    "jakartaOfficeName": "雅加达办公室",
+    "jakartaOfficeAddress": "Prosperity Tower unit 16i, Jl. Jenderal Sudirman No.Kav. 52-53, District 8, SCBD, South Jakarta 12190",
+    "tangerangOfficeName": "丹格朗办公室",
+    "tangerangOfficeAddress": "Ruko Hampton Avenue Blok A no.10, Paramount, Gading Serpong, Tangerang, 15810",
+    "companyLegalName": "PT. Teknologi Cekat Indonesia",
+    "singaporeOfficeName": "新加坡办公室",
+    "singaporeCompanyName": "Cekat Pte. LTD.",
+    "singaporeOfficeAddress": "101 Upper Cross Street, 05-16, People's Park Centre, Singapore, 058357",
+    "malaysiaOfficeName": "吉隆坡办公室",
+    "malaysiaCompanyName": "CekatAI Sdn. Bhd.",
+    "malaysiaOfficeAddress": "Level 7, Mercu 3, No. 3, Jalan Bangsar, KL Eco City 59200, Kuala Lumpur W.P. Kuala Lumpur Malaysia",
+    "downloadApp": "下载 Cekat 移动应用"
+  },
+  "home": {
+    "hero": {
+      "title": "让每一次对话都带来更多增长",
+      "subtitle": "用 AI Agent、全渠道 CRM 和自动化跟进，将更多客户对话转化为销售。",
+      "ctaPrimary": "在 WhatsApp 上聊天",
+      "ctaSecondary": "免费试用 14 天",
+      "eyebrow": "Cekat.AI"
+    },
+    "trustedBy": {
+      "heading": "深受亚洲 3,000 多家企业信赖。",
+      "stat1Value": "10,000,000,000+",
+      "stat1Label": "每日处理的 tokens",
+      "stat2Value": "2,000,000+",
+      "stat2Label": "每日处理的聊天消息",
+      "partnersHeading": "深受合作伙伴与客户信赖",
+      "moreClients": "以及数千家其他企业",
+      "quote": "Customer responses became faster",
+      "quoteAuthorName": "Silica Brenda",
+      "quoteAuthorRole": "Founder",
+      "quoteAuthorCompany": "Moir Salon",
+      "quoteWiji": "The change of closing the deal are very high",
+      "quoteAuthorNameWiji": "Wiji Astuti",
+      "quoteAuthorRoleWiji": "Head of Customer Experience",
+      "quoteAuthorCompanyWiji": "Rumah Zakat",
+      "quoteHargyo": "Our response rate increased by 90%",
+      "quoteAuthorNameHargyo": "Hargyo",
+      "quoteAuthorRoleHargyo": "Director",
+      "quoteAuthorCompanyHargyo": "Multimedia Nusantara Polytechnic"
+    },
+    "testimonials": {
+      "heading": "营收最高增长 40%，不只是回复更快。",
+      "body": "以下数据均由 Cekat.AI 客户在录制访谈中直接提供。",
+      "natureCraft": {
+        "quote": "我们以前的成交率不到 20%。上周我和团队复盘时发现，成交率已超过 40%，而行业标准是 30%。成交率提升后，营收也大幅增长，最高达到 50%。",
+        "industry": "零售与消费品",
+        "function": "客户服务",
+        "name": "Hariyudi",
+        "role": "董事",
+        "company": "Nature Craft Indonesia",
+        "metricValue": "+50%",
+        "metricLabel": "成交率从不到 20% 提升至超过 40% 后的营收增长"
+      },
+      "wallStreet": {
+        "quote": "过去我们完全依赖人工。First Contact 团队的效率已经遇到瓶颈，很难再提升。Cekat.AI 先筛掉低质量线索后，我们的转化率从约 20% 提升到了 28%。这是我们实际看到的数据。",
+        "industry": "教育",
+        "function": "数字营销",
+        "name": "Bayu",
+        "role": "数字营销负责人",
+        "company": "Wall Street English Indonesia",
+        "metricValue": "20% → 28%",
+        "metricLabel": "先筛除低质量线索后，潜在客户转化率的变化"
+      },
+      "putiih": {
+        "quote": "过去我们回复一条消息要花 20 多分钟，这让潜在客户不断流失。现在回复用时不到 2 分钟，我们还把目标设为 30 秒。客户不再抱怨回复慢，营收也增长了约 30% 到 40%。",
+        "industry": "医疗与美容",
+        "function": "运营",
+        "name": "Gamal",
+        "role": "创始人兼首席执行官",
+        "company": "Putiih Skin Clinic",
+        "metricValue": "+30-40%",
+        "metricLabel": "回复时间从 20 分钟缩短至不到 2 分钟后的营收增长"
+      },
+      "threeland": {
+        "quote": "买房客户会在晚上 11 点、凌晨 1 点看到我们的广告。以前我整夜醒着回复他们。现在我能安睡一整晚，醒来时已有一队人预约看房。地点、付款条件，甚至房贷模拟都已得到答复。销售额增长了近 50%。",
+        "industry": "房地产",
+        "function": "销售",
+        "name": "Adam Sulaiman",
+        "role": "总经理",
+        "company": "Threeland Property",
+        "metricValue": "~+50%",
+        "metricLabel": "过去常在夜间错过潜在客户，如今带来的销售增长"
+      },
+      "rumahZakat": {
+        "quote": "我们的联络中心以前只在周一到周五上午 8 点至下午 5 点运营。其他时间收到的捐赠者消息总是延迟，等到周一回复时，对方往往已经不再回应。现在 AMIRA 全天候服务，能在一分钟内回复。我们不会再流失捐赠者，促成捐赠的机会也高得多。",
+        "industry": "非营利与社会影响",
+        "function": "客户体验",
+        "name": "Wiji Astuti",
+        "role": "客户体验部负责人",
+        "company": "Rumah Zakat",
+        "metricValue": "24 hours",
+        "metricLabel": "从仅工作日服务提升至一分钟内响应"
+      },
+      "videos": {
+        "moir": {
+          "name": "Silcia Brenda",
+          "role": "Moir Salon 首席执行官兼创始人"
+        },
+        "rumahZakat": {
+          "name": "Tantan Supriantna",
+          "role": "Rumah Zakat 客户关系负责人"
+        },
+        "mnp": {
+          "name": "Hargyo T. N. Ignatis, Ph.D",
+          "role": "Multimedia Nusantara Polytechnic (MNP) 校长"
+        },
+        "vio": {
+          "name": "Rianti Yahya",
+          "role": "VIO Optical Clinic 首席执行官"
+        },
+        "dokterhub": {
+          "name": "Gery Wilianto",
+          "role": "DokterHub 首席执行官兼创始人"
+        },
+        "threeland": {
+          "name": "Adam Sulaiman",
+          "role": "Threeland Property 总经理"
+        }
+      }
+    },
+    "featureAccordion": {
+      "heading": "Four products, one platform",
+      "body": "Explore how AI supports every part of your business, from sales through to operations.",
+      "chat": {
+        "title": "AI Sales Chat",
+        "lead": "Qualifying, closing, and follow-up run 24/7.",
+        "body": "AI replies, qualifies prospects, and hands over to your team once they are ready to close. Every channel lands in one inbox.",
+        "pill1": "Every channel, one inbox",
+        "pill2": "Auto-handoff to your team",
+        "pill3": "Runs 24/7"
+      },
+      "crm": {
+        "title": "CRM & Customer Data",
+        "lead": "Tidy data with no manual entry",
+        "body": "Every conversation, purchase, and pipeline stage records itself from chat. No more end-of-day catch-up.",
+        "pill1": "Fills itself from chat",
+        "pill2": "Real-time pipeline",
+        "pill3": "Full history per customer"
+      },
+      "marketing": {
+        "title": "Marketing & Broadcast",
+        "lead": "Know exactly which ads end in a closed deal.",
+        "body": "Segmented broadcasts, automatic follow-up, and attribution that ties ad spend to actual sales.",
+        "pill1": "Segmented broadcasts",
+        "pill2": "ROAS dashboard",
+        "pill3": "CAPI integration"
+      },
+      "order": {
+        "title": "Order & Automation",
+        "lead": "Orders processed straight from chat",
+        "body": "AI works out shipping, sends the payment link, and runs the follow-on steps with no coding required.",
+        "pill1": "Automatic shipping quotes",
+        "pill2": "QR payments",
+        "pill3": "No coding"
+      }
+    },
+    "industries": {
+      "heading": "One platform, tuned to how your industry works",
+      "headingLead": "One platform, tuned to how your",
+      "headingAccent": "industry works",
+      "body": "Every industry has its own conversation patterns. Cekat.AI already understands the questions, booking flows, and order processes specific to your field.",
+      "useCases": "Our Solutions",
+      "learnMore": "了解更多",
+      "previous": "Previous industry",
+      "next": "Next industry"
+    },
+    "integrations": {
+      "eyebrow": "集成",
+      "heading": "Connect Every Business Tool in One Platform",
+      "body": "WhatsApp Business API, Instagram, TikTok, Telegram, and email land in one inbox. Chat conversions flow to your ad platforms, and your internal systems connect over API.",
+      "cta": "See integrations"
+    },
+    "platformOverview": {
+      "feature1": {
+        "title": "Track and Optimize Your Marketing Performance in One Unified Platform",
+        "description": "Track campaign performance and conversions in real time, then activate automation to maximize your marketing results."
+      },
+      "feature2": {
+        "title": "Automate Your Business Logic, No Coding Needed",
+        "description": "Let AI reply to chats, manage leads, and follow up with customers automatically, 24/7."
+      },
+      "feature3": {
+        "title": "Your CRM, Built for Growth & Real Conversations",
+        "description": "All lead data stays organized, follow-ups run automatically, and sales progress is tracked in real time."
+      }
+    },
+    "buildAiAgent": {
+      "heading": "Build an AI Agent in 5 Minutes",
+      "body": "Manage every chat with an AI agent that's easy to build. Train it with your business data and connect it to other systems, hassle-free.",
+      "feature1": {
+        "title": "Simpler AI Builder",
+        "description": "Build a powerful AI agent without coding in just 5 minutes, as easy as briefing a CS admin."
+      },
+      "feature2": {
+        "title": "Knowledge Source",
+        "description": "Just paste your SOPs and business info, and the AI can answer accurately right away."
+      },
+      "feature3": {
+        "title": "API Integration",
+        "description": "Connect the AI to various APIs for shipping cost checks, scheduling, and other business needs."
+      }
+    },
+    "aiAgentFlow": {
+      "heading": "AI Agents & Chat Flow",
+      "body": "Easily set up chat flows and route customers to the right AI or human agent.",
+      "feature1": {
+        "title": "Multiple Specialized Agents",
+        "description": "Create dedicated AI agents for sales, support, billing, and more, each with its own data."
+      },
+      "feature2": {
+        "title": "Visual Flow Designer",
+        "description": "Design chat flows with drag and drop, no coding required."
+      },
+      "feature3": {
+        "title": "AI Working Hours",
+        "description": "Set the AI's working hours so your team handles chats while online, with automatic handoff to AI after hours."
+      }
+    },
+    "pricingTeaser": {
+      "heading": "Pricing that follows what you need",
+      "body": "The Chat plans below are the ones most businesses start with. CRM, Marketing and Cekat 360 have their own plans, and everything can be combined on a single contract.",
+      "cta": "See pricing details"
+    },
+    "realResults": {
+      "heading": "Real Proof From Businesses Using Cekat.AI",
+      "body": "Cekat.AI serves everyone from small businesses that need affordable AI customer service to growing brands that need a full omnichannel CRM, all in one platform built for Indonesian businesses.",
+      "brandTitle": "Covered By"
+    },
+    "finalCta": {
+      "heading": "准备好让对话推动增长了吗？",
+      "body": "See how AI helps your team reply faster, follow up automatically, and close more deals without growing headcount.",
+      "item1": "10-minute setup",
+      "item2": "14-day free trial",
+      "item3": "1-on-1 consultation"
+    }
+  },
+  "pricing": {
+    "meta": {
+      "title": "Cekat.AI 定价 |聊天、CRM 和营销计划",
+      "description": "请参阅 Cekat.AI 定价：AI 聊天代理、全渠道 CRM 和营销自动化。计划透明，无隐藏费用。"
+    },
+    "hero": {
+      "eyebrow": "定价",
+      "title": "适合您业务的清晰定价",
+      "subtitle": "选择您需要的：24/7 全天候应答聊天的 AI 代理、保持客户数据有序的 CRM，或者衡量每一卢比广告支出的营销自动化。随时组合它们。",
+      "note": "从一种产品开始，然后在准备好时添加其他产品。报价不含增值税。"
+    },
+    "tabs": {
+      "chat": "聊天",
+      "crm": "CRM",
+      "marketing": "营销",
+      "threeSixty": "Cekat.AI360"
+    },
+    "perMonth": "/月",
+    "popular": "最受欢迎",
+    "minBilling": "分钟。合同{金额}",
+    "customPrice": "风俗",
+    "customPriceNote": "围绕您的要求构建",
+    "ctaPrimary": "免费咨询",
+    "ctaSecondary": "免费试用 14 天",
+    "ctaCustom": "联系销售人员",
+    "ctaWhatsApp": "通过 WhatsApp 聊天",
+    "compareHeading": "比较每个功能",
+    "compareIntro": "每个计划的完整细节。横向滚动可查看每一列。",
+    "featureColumn": "特征",
+    "values": {
+      "custom": "风俗",
+      "unlimited": "无限",
+      "upTo": "最多",
+      "aiSimple": "人工智能简单",
+      "aiFull": "人工智能全",
+      "supportStarter": "热线支持",
+      "supportPro": "热线支持+客户经理",
+      "supportBusiness": "热线支持+总客户经理",
+      "supportEnterprise": "热线支持 + WA Group + 大客户经理",
+      "agentsUpgradable": "最多 3 个代理，可升级",
+      "included": "包括",
+      "notIncluded": "不包括在内"
+    },
+    "chat": {
+      "label": "聊天计划",
+      "intro": "一个 AI 代理，可以在 WhatsApp、Instagram 和所有其他渠道上进行回复、验证和关闭。整个团队的一个收件箱。",
+      "tiers": {
+        "starter": {
+          "name": "起动机"
+        },
+        "pro": {
+          "name": "专业版"
+        },
+        "business": {
+          "name": "商业"
+        },
+        "custom": {
+          "name": "风俗"
+        },
+        "enterprise": {
+          "name": "企业"
+        }
+      },
+      "taglines": {
+        "entry": "对于开始淹没在聊天中的小团队。",
+        "mid": "实现大规模的完全自动化和整洁的工作流程。",
+        "top": "用于与结构化 CS 团队进行大量聊天。",
+        "custom": "用于定制集成和企业规模。"
+      },
+      "rows": {
+        "channels": "多渠道",
+        "waba": "WhatsApp 商业 API (WABA)",
+        "mau": "MAU（每月活跃用户）",
+        "aiCredits": "人工智能学分",
+        "aiType": "人工智能型",
+        "seats": "座位数",
+        "openApi": "Open API",
+        "analytics": "分析",
+        "support": "支持",
+        "flow": "流程生成器",
+        "followUp": "自动跟进",
+        "ticketing": "售票处",
+        "automation": "自动化",
+        "csat": "CSAT"
+      }
+    },
+    "crm": {
+      "label": "客户关系管理计划",
+      "intro": "每个客户详细信息都集中在一个地方：对话、购买以及直接通过聊天进行自我更新的管道。",
+      "tiers": {
+        "pro": {
+          "name": "客户关系管理专业版"
+        },
+        "business": {
+          "name": "客户关系管理业务"
+        },
+        "enterprise": {
+          "name": "客户关系管理企业"
+        },
+        "custom": {
+          "name": "客户关系管理定制"
+        }
+      },
+      "taglines": {
+        "entry": "对于仍然手工跟踪交易的销售团队。",
+        "mid": "对于不断增长的客户数据库。",
+        "top": "适用于跨多个分支机构的大型客户群。",
+        "custom": "满足定制数据和集成需求。"
+      },
+      "rows": {
+        "contactList": "联系方式及公司名单",
+        "unifiedData": "统一的客户数据平台",
+        "boards": "无限板",
+        "views": "无限视野",
+        "contactStorage": "联系存储",
+        "agents": "代理商",
+        "automations": "客户关系管理自动化",
+        "openApi": "客户关系管理开放API"
+      }
+    },
+    "marketing": {
+      "label": "营销计划",
+      "intro": "您可以实际衡量广播、细分和重定向。准确了解哪些广告转化为销售额。",
+      "tiers": {
+        "pro": {
+          "name": "专业版"
+        },
+        "business": {
+          "name": "商业"
+        },
+        "enterprise": {
+          "name": "企业"
+        },
+        "custom": {
+          "name": "风俗"
+        }
+      },
+      "taglines": {
+        "entry": "开始广播并测量结果。",
+        "mid": "针对大量受众的定期活动。",
+        "top": "对于营销团队来说，可以同时开展多个营销活动。",
+        "custom": "满足定制的数量和集成要求。"
+      },
+      "rows": {
+        "mau": "MAU（每月活跃用户）",
+        "support": "支持",
+        "analytics": "绩效分析",
+        "adsTracking": "广告跟踪和归因",
+        "tools": "完整的 Cekat 营销工具",
+        "setup": "与广告分析师进行一对一设置"
+      }
+    },
+    "threeSixty": {
+      "eyebrow": "Cekat.AI360",
+      "heading": "一支团队、一套体系、一份合同",
+      "body": "聊天、CRM 和营销融为一体，由我们的团队为您构建。专为那些不愿意自己组装的企业而设计。",
+      "includesLabel": "你得到什么",
+      "include1": "一个平台上的所有聊天、CRM 和营销功能",
+      "include2": "全面入门：我们设置您的人工智能代理、聊天流程和管道",
+      "include3": "专门的成功经理关注您的表现",
+      "include4": "自定义集成到您已运行的系统中",
+      "include5": "优先支持以及与我们团队的直接 WhatsApp 群组",
+      "forLabel": "适合您，如果您",
+      "for1": "CS、销售和营销团队仍然使用不同的工具工作",
+      "for2": "已经使用了几种数据从未完全连接的工具",
+      "for3": "需要快速获得结果，而不会给内部团队增加负担",
+      "priceNote": "定价是根据您的团队规模和对话量而定的。",
+      "cta": "与我们的团队交谈",
+      "ctaNote": "30 分钟免费咨询，无需承诺。我们首先列出您真正需要的东西。"
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "定价问题",
+      "q1": "你们的报价包含增值税吗？",
+      "a1": "不会。根据当地法规的要求，我们销售团队的报价不含增值税，您在订阅前会获得完整的明细。",
+      "q2": "什么算作 MAU（每月活跃用户）？",
+      "a2": "MAU 是在指定月份与您的企业进行互动的独特客户。一名客户算一次，无论他们当月发送了多少条消息。",
+      "q3": "AI Simple 和 AI Full 有什么区别？",
+      "a3": "AI Simple 根据您提供的知识库回答问题。 AI Full 增加了运行更复杂流程的能力，例如潜在客户资格、跟进以及在聊天中采取行动。",
+      "q4": "我可以从一个计划开始吗？",
+      "a4": "是的。许多企业从聊天开始，一旦团队安顿下来，就添加 CRM 或营销。一切都在同一个平台上运行，因此您的数据在添加产品时就会连接。",
+      "q5": "如果我需要的不仅仅是最大的计划怎么办？",
+      "a5": "采取定制计划。我们根据您的要求确定容量、座位和集成，并首先与您确认商业条款。",
+      "q6": "有安装费或最低合同吗？",
+      "a6": "常规计划不收取单独的安装费，也没有最低合同。对于定制，商业条款在您开始之前与我们的销售团队达成一致。"
+    },
+    "cta": {
+      "heading": "不确定哪一个适合？",
+      "body": "告诉我们您的团队和聊天量。我们将为您指出真正有意义的计划，而不是最昂贵的计划。",
+      "item1": "30分钟咨询",
+      "item2": "满足您需求的计划推荐",
+      "item3": "没有承诺"
+    },
+    "excludesVat": "不含增值税",
+    "trustHeading": "受到印度尼西亚 3,000 多家企业和领先品牌的信赖"
+  },
+  "crm": {
+    "meta": {
+      "title": "面向销售和潜在客户的 AI CRM |自动化流水线|Cekat.AI",
+      "description": "在一个集成的 AI CRM 中管理您的销售渠道、销售线索和客户关系。设定目标、监控交易并自动跟进，所有这些都在一个 CekatAI 仪表板中完成。"
+    },
+    "hero": {
+      "title": "停止将客户流失给竞争对手",
+      "subtitle": "如果您的客户数据可以预测保留率怎么办？了解人工智能如何使之成为可能"
+    },
+    "whatMakes": {
+      "heading": "是什么让 Cekat.AI CRM 与众不同",
+      "card1": {
+        "title": "专为对话而打造",
+        "description": "与传统 CRM 不同，Cekat 直接连接到您的客户对话。每一次聊天、通话和互动都会自动成为可追踪的记录。"
+      },
+      "card2": {
+        "title": "CRM + 自动化合一系统",
+        "description": "自动触发跟进、分配销售线索并转移交易。减少手工工作并确保不错过任何机会。"
+      },
+      "card3": {
+        "title": "查看完整的客户旅程",
+        "description": "准确了解客户来自哪里：网站、广告、WhatsApp 或社交媒体。跟踪从第一次互动到转化的每一个操作。"
+      }
+    },
+    "howItWorks": {
+      "heading": "它是如何运作的",
+      "step1": {
+        "title": "捕获并组织客户",
+        "description": "Cekat CRM 从您的网站、WhatsApp 和社交媒体捕获潜在客户和客户数据。所有交互都组织在一个地方。"
+      },
+      "step2": {
+        "title": "追踪客户旅程",
+        "description": "了解客户来自哪里以及他们采取了哪些行动。跟踪从第一次接触到转化的完整旅程。"
+      },
+      "step3": {
+        "title": "更快地过滤和查找",
+        "description": "快速搜索和过滤客户、交易或活动。专注于最重要的线索。"
+      },
+      "step4": {
+        "title": "与董事会一起管理工作",
+        "description": "创建看板来组织您的工作流程、交易或管道。每个板都代表一个清晰的流程。"
+      }
+    },
+    "realResult": {
+      "heading": "成长型企业的实际成果",
+      "body": "了解各行业的团队如何使用 AI 来节省时间、增加收入并提供更好的客户体验。",
+      "quote": "我们的收入增长了 50% 以上！即使在我睡着的时候，Cekat.AI 也能让我们确保财产访问并完成交易，因为不会错过任何线索。",
+      "name": "亚当·苏莱曼",
+      "role": "总裁董事 - Threeland Property"
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "关于 Cekat.AI CRM 的常见问题",
+      "q1": "Cekat.AI CRM 如何帮助销售团队？",
+      "a1": "Cekat.AI CRM 帮助销售团队在一个仪表板中捕获和管理来自多个渠道的销售线索。团队可以跟踪对话、组织管道中的交易并关注最有可能转化的潜在客户。",
+      "q2": "Cekat.AI CRM 如何支持客户服务团队？",
+      "a2": "Cekat.AI CRM 将所有客户交互保留在一处，因此支持团队可以快速了解客户的历史记录和背景。这有助于代理更快地响应并更有效地解决问题。",
+      "q3": "我可以追踪我的线索来自哪里吗？",
+      "a3": "是的。 Cekat.AI CRM 记录每个潜在客户的入口点，例如您的网站、广告、WhatsApp 或社交渠道。这有助于您了解客户旅程并确定可带来最多转化的渠道。"
+    },
+    "cta": {
+      "heading": "将每次客户互动转化为您的下一笔交易",
+      "body": "查看每一次对话、跟踪每一次旅程并自动跟进，所有这些都在一个人工智能驱动的 CRM 中。"
+    }
+  },
+  "chat": {
+    "meta": {
+      "title": "24/7 人工智能聊天代理 |自动关闭 |Cekat.AI",
+      "description": "CekatAI 的 AI 代理可同时回答数千条聊天，自然、准确，并随时准备好关闭（24/7）。在 WhatsApp、Instagram 和每个渠道上为客户提供服务，而无需增加客户服务人员。"
+    },
+    "hero": {
+      "title": "利用 AI 超级代理将管理效率提高 10 倍",
+      "subtitle": "不错过任何一条消息。千万不要错过任何促销活动。 AI 24/7 处理每个通道"
+    },
+    "whatMakes": {
+      "heading": "是什么让 Cekat.AI 聊天与众不同",
+      "card1": {
+        "title": "理解意图的人工智能（不仅仅是关键词）",
+        "description": "Cekat.AI 的聊天代理可以理解自然语言和上下文，从而实现意图感知的多语言对话，让人感觉像是人性的，而不是机器人的。"
+      },
+      "card2": {
+        "title": "全渠道聊天覆盖",
+        "description": "Cekat.AI 通过 WhatsApp（官方 API）、Instagram、网站实时聊天和其他集成平台支持和吸引用户，所有交互都统一到一个集中的聊天界面中。"
+      },
+      "card3": {
+        "title": "无缝升级至人工代理",
+        "description": "如果人工智能检测到复杂或敏感的查询，它会将它们路由到具有完整上下文的人工代理，而无需重复以前的消息。"
+      }
+    },
+    "howItWorks": {
+      "heading": "它是如何运作的",
+      "step1": {
+        "title": "连接渠道",
+        "description": "将 WhatsApp、Instagram、网络聊天和其他平台同步到一个系统中，以便所有客户消息直接进入 Cekat.AI。"
+      },
+      "step2": {
+        "title": "训练你的人工智能代理",
+        "description": "配置 AI 以遵循您的业务规则和语气，无需编码。使用特定于您的业务的示例短语和意图对其进行训练。"
+      },
+      "step3": {
+        "title": "人工智能处理对话",
+        "description": "人工智能通过自动回答常见问题解答、阐明用户意图、捕获潜在客户详细信息并触发后续操作来实时响应，确保每条客户消息都是准确且符合上下文的。"
+      },
+      "step4": {
+        "title": "升级和同步",
+        "description": "需要时，对话会升级到具有完整上下文的实时代理，并且数据会同步回您的 CRM 或自动化工作流程。"
+      },
+      "step5": {
+        "title": "分析与改进",
+        "description": "跟踪消息量、响应准确性、用户满意度和意图类别，以便您可以持续优化 AI 性能并推动更好的业务成果。"
+      }
+    },
+    "realResult": {
+      "heading": "成长型企业的实际成果",
+      "body": "了解各行业的团队如何使用 AI 来节省时间、增加收入并提供更好的客户体验。",
+      "quote": "工作时间之外，我们依赖人工智能技术。 Rumah Zakat 可以达到 24/7，一旦工作时间结束，我们就会充分利用人工智能。",
+      "name": "坦坦·苏普里亚特纳",
+      "role": "客户关系部主管 - Rumah Zakat"
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "关于 Cekat.AI 聊天的常见问题",
+      "q1": "什么是 Cekat.AI 聊天？",
+      "a1": "Cekat.AI Chat 是一款人工智能驱动的对话代理，可以跨平台自动参与、理解和响应客户消息。",
+      "q2": "Cekat.AI Chat 可以处理多个渠道吗？",
+      "a2": "是的。它支持全渠道消息传递，包括 WhatsApp、Instagram 和网站实时聊天。",
+      "q3": "设置聊天自动化是否需要编码？",
+      "a3": "不需要。您可以使用业务规则和示例短语来配置和训练人工智能，无需任何编码技能。"
+    },
+    "cta": {
+      "heading": "将每一次聊天变成一次有转化率的对话",
+      "body": "通过人工智能支持的聊天更快地吸引客户、减少运营负载并扩展您的业务。"
+    }
+  },
+  "marketing": {
+    "meta": {
+      "title": "WhatsApp 广播和营销自动化 |Cekat.AI",
+      "description": "一键向 100,000 多个客户发送营销信息。 CekatAI 的人工智能会自动跟踪幽灵线索、追加销售并推动转化，无需额外的营销人员。"
+    },
+    "hero": {
+      "title": "了解哪些广告真正能增加您的销售额",
+      "subtitle": "通过数据（而不是假设）支持的见解来全面了解营销绩效"
+    },
+    "whatMakes": {
+      "heading": "是什么让 Cekat.AI 营销与众不同",
+      "card1": {
+        "title": "端到端广告归因",
+        "description": "Cekat.AI 将广告效果直接与实际业务成果联系起来。您可以查看哪些营销活动产生了潜在客户、转化和实际销售额，而不仅仅是点击次数。"
+      },
+      "card2": {
+        "title": "真实客户行为追踪",
+        "description": "跟踪客户在网站访问和按钮点击中点击您的广告后所做的操作，以形成提交和自定义事件。了解他们如何从广告转向转化。"
+      },
+      "card3": {
+        "title": "营销绩效的一个仪表板",
+        "description": "直接在 Cekat.AI 内查看您的元广告效果。营销活动数据、销售线索和转化洞察均集中进行，因此团队可以更快地进行分析和优化。"
+      }
+    },
+    "howItWorks": {
+      "heading": "它是如何运作的",
+      "step1": {
+        "title": "在一个仪表板中查看所有元广告",
+        "description": "直接在 Cekat.AI 中分析 Facebook、Instagram 和元广告，无需切换选项卡。所有活动数据都集中在一个视图中。"
+      },
+      "step2": {
+        "title": "了解客户行为",
+        "description": "了解用户点击您的广告后如何与您的网站、聊天和应用互动。您不仅看到流量，还看到意图。"
+      },
+      "step3": {
+        "title": "看看什么实际有效",
+        "description": "跟踪营销活动绩效、识别获胜广告并立即发现有利可图的角度。决策是实时发生的。"
+      },
+      "step4": {
+        "title": "精准分配预算",
+        "description": "使用真实的跟踪数据仅投资于可推动转化和收入的营销活动和受众。"
+      },
+      "step5": {
+        "title": "提高性能并降低 CAC",
+        "description": "通过将广告数据和客户行为相结合，您可以加速转化并显着降低客户获取成本 (CAC)。"
+      }
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "关于 Cekat.AI 营销的常见问题",
+      "q1": "什么是 Cekat.AI 营销？",
+      "a1": "Cekat.AI Marketing 是一个人工智能驱动的营销分析平台，可帮助您在一个统一的仪表板中跟踪广告效果、客户行为和投资回报率。",
+      "q2": "Cekat.AI 可以显示哪些广告可以增加销售额吗？",
+      "a2": "是的。 Cekat.AI 将广告数据与真实的客户行为和转化联系起来，因此您可以清楚地看到哪些广告活动可以带来收入。",
+      "q3": "Cekat.AI 是否跟踪广告之外的客户行为？",
+      "a3": "是的。 Cekat.AI 跟踪网站行为、聊天交互和自定义事件，以构建完整的客户档案。",
+      "q4": "我可以根据客户行为进行个性化营销吗？",
+      "a4": "绝对地。您可以根据行为对客户进行细分，并开展经证明行之有效的个性化营销活动和广播。"
+    },
+    "cta": {
+      "heading": "将您的营销数据转化为实际收入",
+      "body": "不要再猜测哪些活动有效。使用 Cekat.AI 跟踪广告、了解客户行为并优化每一笔营销费用。"
+    }
+  },
+  "order": {
+    "meta": {
+      "title": "通过聊天自动下订单 | AI销售自动驾驶仪|Cekat.AI",
+      "description": "直接在聊天中处理订单、检查运费并完成交易，完全自动化，无需人工收银。 CekatAI 的 AI 全天候 (24/7) 销售并自动发送付款后续信息。"
+    },
+    "hero": {
+      "title": "自动化复杂的操作并轻松扩展您的业务",
+      "subtitle": "从复杂的逻辑到无缝的自动化。探索 AI 如何让您的业务 24/7 持续运行"
+    },
+    "whatMakes": {
+      "heading": "是什么让 Cekat.AI 自动化与众不同",
+      "card1": {
+        "title": "强大的、可定制的工作流程逻辑",
+        "description": "自动化专为真正的运营复杂性而构建，通过多步骤逻辑、互联操作和上下文感知工作流程来适应您的业务。"
+      },
+      "card2": {
+        "title": "灵活的触发选项",
+        "description": "工作流程可以由基于时间的计划、特定事件（例如聊天关键字）或客户数据的变化（例如检测到新潜在客户时）触发。"
+      },
+      "card3": {
+        "title": "连接所有 Cekat.AI 功能",
+        "description": "自动化与自动标签、自动票证创建、管理通知和工具之间的自动数据同步等核心功能无缝协作，因此一切都可以在系统之间顺利流动。"
+      }
+    },
+    "howItWorks": {
+      "heading": "它是如何运作的",
+      "step1": {
+        "title": "对话来自各个渠道",
+        "description": "所有来自 WhatsApp、Instagram、Live Chat 和其他渠道的传入聊天均由 Cekat.AI 自动捕获，无需手动转发或切换工具。"
+      },
+      "step2": {
+        "title": "自动化立即触发",
+        "description": "当消息到达时，预定义的规则会立即采取行动，根据意图自动标记对话，并将重要消息转换为工单，无需手动操作。"
+      },
+      "step3": {
+        "title": "自动创建工单",
+        "description": "自动将高优先级对话转化为工单，因此不会错过任何请求、投诉或机会，也不会处理得太晚。"
+      },
+      "step4": {
+        "title": "自动通知合适的团队",
+        "description": "立即将每张票证和更新发送给正确的团队，确保更快的响应时间和跨工作流程的清晰所有权。"
+      },
+      "step5": {
+        "title": "每个自动化步骤的完全可见性",
+        "description": "实时跟踪数据流、工单状态和工作流程瓶颈，以便团队始终了解正在发生的情况，并在出现问题时立即采取行动。"
+      },
+      "step6": {
+        "title": "端到端运营效率",
+        "description": "通过完全自动化消除手动数据输入、分散的系统和重复性任务，因此团队可以减少错误并专注于真正推动增长的工作。"
+      }
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "关于 Cekat.AI 自动化的常见问题",
+      "q1": "什么是 Cekat.AI 自动化？",
+      "a1": "一个基于人工智能的可视化工作流程构建器，无需编码即可实现业务流程自动化，跨连接系统处理触发器和操作。",
+      "q2": "使用 Cekat.AI 可以实现哪些自动化？",
+      "a2": "从聊天流和潜在客户跟进到工单创建、团队通知和跨系统数据同步，一切都在一个无缝工作流程中。",
+      "q3": "我可以在没有技术知识的情况下实现工作流程自动化吗？",
+      "a3": "是的。拖放式视觉逻辑构建器允许任何人创建自动化工作流程。"
+    },
+    "cta": {
+      "heading": "准备好让您的业务进入自动驾驶模式了吗？",
+      "body": "让自动化处理重复性工作，以便您的团队可以专注于增长和客户体验。"
+    }
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "features": "功能",
+    "industries": "行业",
+    "solutions": "解决方案"
+  },
+  "landing": {
+    "readMore": "阅读更多",
+    "benefitsEyebrow": "工作方式",
+    "benefitsHeading": "让每段对话都创造收入",
+    "tabsEyebrow": "产品一览",
+    "tabsHeading": "核心能力",
+    "pillarsEyebrow": "选择 Cekat.AI 的理由",
+    "pillarsHeading": "企业选择 Cekat.AI 的理由",
+    "testimonialEyebrow": "客户实证",
+    "testimonialHeading": "助力企业成长的真实成果",
+    "faqLabel": "常见问题",
+    "faqHeading": "关于{title}的常见问题",
+    "relatedEyebrow": "继续探索",
+    "related": {
+      "features": "探索更多功能",
+      "industries": "探索更多行业",
+      "solutions": "探索更多解决方案"
+    },
+    "rolesEyebrow": "按团队角色",
+    "rolesHeading": "为{industry}中的每个团队提供解决方案",
+    "rolesBody": "同一平台，为不同团队匹配不同工作方式。找到最贴近您岗位的流程。",
+    "caseStudyEyebrow": "客户故事",
+    "caseStudyAttribution": "数据由 Cekat.AI 客户直接提供。",
+    "relatedCrossEyebrow": "探索更多内容",
+    "relatedCross": "探索相关行业与岗位"
+  },
+  "featuresHub": {
+    "metaTitle": "特点：人工智能代理、全渠道 CRM 和自动化 |Cekat.AI",
+    "metaDescription": "探索 Cekat.AI 的每一项功能：AI 聊天代理、WhatsApp 自动化、全渠道 CRM、广播营销和订单自动化，全部集中在一个平台上。",
+    "eyebrow": "特征",
+    "heading": "您的团队将聊天转化为销售所需的一切",
+    "body": "从几秒内回复的 AI 代理到永不掉线的 CRM 和自动化，探索 3,000 多家印度尼西亚企业所依赖的功能。",
+    "trust": "受到超过 15 个行业的 3,000 多家企业的信赖",
+    "definition": "Cekat.AI 的功能包括该平台的 AI 代理、全渠道 CRM、WhatsApp 自动化、广播营销和订单功能，印度尼西亚 3,000 多家企业使用该功能全天候 (24/7) 回答客户并将对话转化为销售。"
+  },
+  "industriesHub": {
+    "metaTitle": "行业：为每个企业提供人工智能客户服务 |Cekat.AI",
+    "metaDescription": "了解诊所、零售、餐饮、教育和其他行业如何使用 Cekat.AI 提供 24/7 支持、潜在客户捕获和销售增长。",
+    "eyebrow": "行业",
+    "heading": "专为您的行业打造",
+    "body": "从诊所到零售品牌，Cekat.AI 会适应您的企业与客户的实际对话方式。查看您所在行业的真实结果。",
+    "trust": "像您这样的企业的真实成果",
+    "category": {
+      "industry": "按行业分类"
+    },
+    "definition": "Cekat.AI 行业页面展示了如何在医疗保健、零售、餐饮、教育和 15 多个其他垂直行业中使用 AI 客户服务和 WhatsApp API，以 24/7 全天候答复客户、捕获潜在客户并增加销售额。"
+  },
+  "solutionsHub": {
+    "metaTitle": "按团队角色划分的解决方案 |Cekat.AI",
+    "metaDescription": "了解销售、客户服务、营销、人力资源和运营团队如何使用 Cekat.AI：在一个平台上集成 AI 代理、CRM 和自动化。",
+    "eyebrow": "解决方案",
+    "heading": "一个平台让每个团队的工作变得更轻松",
+    "body": "相同的人工智能代理、CRM、广播和自动化，每个团队的工作方式不同。选择您的角色并查看工作流程。",
+    "trust": "受到印度尼西亚 3,000 多家企业的信赖",
+    "category": {
+      "role": "按角色"
+    },
+    "definition": "Cekat.AI 解决方案按角色解释了销售、客户服务、营销、人力资源和运营团队如何在一个平台中使用 AI 代理、CRM 和自动化来更快、更密切地回复工作，而无需手动忙碌。"
+  },
+  "integrations": {
+    "metaTitle": "Cekat.AI 集成：渠道、广告与 API | CekatAI",
+    "metaDescription": "将 WhatsApp Business API、Instagram、TikTok、Telegram 和电子邮件接入统一收件箱，将转化数据发送至 Meta 和 TikTok，并通过 API 连接内部系统。",
+    "badge": "集成",
+    "heading": "在一个平台连接所有业务工具",
+    "subtitle": "将对话渠道、广告平台和内部系统汇集一处。无需替换现有工具，只需完成连接。",
+    "missingHeading": "找不到您使用的工具？",
+    "missingBody": "借助 Open API 和 Webhook，几乎任何系统都能接入，包括 ERP、仓储系统或自建数据库。告诉我们您使用的工具，我们会协助规划连接流程。",
+    "ctaHeading": "从今天开始连接您的系统",
+    "ctaBody": "几分钟内接入第一个渠道，并按需逐步添加其他工具。"
+  },
+  "notFound": {
+    "title": "页面未找到",
+    "description": "你访问的页面不存在。",
+    "backHome": "返回首页"
+  },
+  "blog": {
+    "metaTitle": "博客：AI、自动化与客户增长 | CekatAI",
+    "metaDescription": "来自 Cekat.AI 团队的实用指南，涵盖 AI 客户服务、WhatsApp 自动化、CRM 和销售增长。",
+    "eyebrow": "博客",
+    "heroTitle": "Cekat 博客",
+    "heroSubtitle": "关于 AI 客户服务、自动化以及将对话转化为收入的实用指南。",
+    "heroLede": "由帮助 3,000 多家印尼企业更快回复、提升销售的团队带来的指南与产品深度解析。",
+    "latest": "最新文章",
+    "latestSubtitle": "关于 AI、自动化和销售增长的最新见解。",
+    "featuredLabel": "精选",
+    "readMore": "阅读更多",
+    "allCategories": "全部",
+    "relatedHeading": "相关文章",
+    "backToBlog": "返回博客",
+    "share": "分享本文",
+    "copyLink": "复制链接",
+    "copied": "链接已复制！",
+    "onThisPage": "本页内容",
+    "aboutAuthor": "关于作者",
+    "authorRole": "内容团队",
+    "authorBio": "Cekat.AI 内容团队，专注为印尼企业分享 AI 客户服务、自动化和销售增长相关内容。",
+    "authorMetaTitle": "{name} — 作者 | Cekat 博客",
+    "authorMetaDescription": "Cekat 博客上 {name} 的文章：AI 客户服务、自动化与销售增长。",
+    "authorEyebrow": "作者",
+    "authorArticles": "{name} 的文章",
+    "authorArticlesSubtitle": "{name} 分享的 AI、自动化和客户增长内容。",
+    "authorPostCount": "{count, plural, =0 {暂无文章} other {# 篇文章}}",
+    "authorEmpty": "这位作者暂时还没有文章，请稍后再来查看。",
+    "viewAuthorProfile": "查看这位作者的所有文章",
+    "empty": "暂时还没有文章，请稍后再来查看。",
+    "searchPlaceholder": "搜索文章…",
+    "searchLabel": "搜索文章",
+    "searchClear": "清除搜索",
+    "searchResults": "“{query}”的搜索结果",
+    "searchSubtitle": "符合搜索条件的文章。",
+    "searchEmpty": "没有找到与“{query}”匹配的文章。请尝试其他关键词。"
+  },
+  "contact": {
+    "meta": {
+      "title": "联系 CekatAI | CekatAI",
+      "description": "借助 CekatAI 的 WhatsApp AI Agent 和全渠道 CRM，全天候服务客户。"
+    },
+    "heading": "立即预约销售团队的免费咨询",
+    "intro": "对价格、产品演示或集成有疑问？请通过此表单留言。销售团队通常会在工作时间内数小时内回复。产品问题请使用表单下方的三种支持渠道。",
+    "officesHeading": "Cekat.AI 办公室",
+    "officesBody": "欢迎前往离您最近的办公室，与我们的团队面对面交流。",
+    "form": {
+      "nameLabel": "姓名",
+      "namePlaceholder": "全名",
+      "emailLabel": "邮箱",
+      "emailPlaceholder": "例如：Bryan.Smith@perusahaan.com",
+      "whatsappLabel": "WhatsApp 号码",
+      "whatsappPlaceholder": "例如：0812 3456 7890",
+      "submit": "提交",
+      "submitting": "正在提交…",
+      "success": "感谢您的提交！我们的团队很快会与您联系。",
+      "error": "发生错误，请重试。"
+    },
+    "support": {
+      "note": "如遇产品或服务问题，请联系客户支持团队。",
+      "helpCentre": "帮助中心",
+      "emailSupport": "邮件支持",
+      "contactCentre": "联系中心"
+    }
+  },
+  "contactSales": {
+    "meta": {
+      "title": "联系销售 | CekatAI",
+      "description": "联系 CekatAI 销售团队，介绍您的业务。我们会在工作时间内回复，并为您安排演示和合适的方案。"
+    },
+    "eyebrow": "联系销售",
+    "heading": "介绍一下您的业务",
+    "intro": "请填写此表单，销售团队通常会在工作时间内数小时内回复。我们越了解您的需求，就越能做好准备。",
+    "trustNote": "印尼 3,000 多家企业使用 Cekat.AI 回复消息、记录客户并发送促销信息。",
+    "replyTime": "销售团队通常会在工作时间内数小时内回复。",
+    "whatsappCta": "通过 WhatsApp 与我们联系",
+    "logosHeading": "值得信赖",
+    "logosSubheading": "使用 Cekat.AI 开展销售和客户服务的企业",
+    "logosNote": "从回复 WhatsApp 消息的小店，到需要统一管理各渠道咨询的医院和大学。",
+    "asideTitle": "为什么要联系销售团队？",
+    "aside1Title": "贴合您工作流程的产品演示",
+    "aside1Body": "我们展示您实际使用的流程，而不是千篇一律的演示。",
+    "aside2Title": "价格透明",
+    "aside2Body": "在您做决定前，我们会清楚说明价格和功能。",
+    "aside3Title": "全程陪伴式导入",
+    "aside3Body": "我们的团队会协助完成设置，直到产品正式投入使用。",
+    "form": {
+      "emailLabel": "工作邮箱",
+      "emailPlaceholder": "email@company.com",
+      "companySizeLabel": "公司规模",
+      "companySizePlaceholder": "请选择公司规模",
+      "firstNameLabel": "名",
+      "firstNamePlaceholder": "名",
+      "lastNameLabel": "姓",
+      "lastNamePlaceholder": "姓",
+      "companyLabel": "公司名称",
+      "companyPlaceholder": "公司名称",
+      "countryLabel": "国家/地区",
+      "countryPlaceholder": "请选择国家/地区",
+      "phoneLabel": "WhatsApp 号码",
+      "phonePlaceholder": "812 3456 7890",
+      "optional": "选填",
+      "errorRequired": "此字段为必填项。",
+      "errorEmail": "请输入有效的邮箱地址。",
+      "errorPhone": "请输入有效的电话号码。",
+      "consent": "继续即表示您同意我们按照 Cekat.AI 隐私政策处理您的数据。",
+      "submit": "提交申请",
+      "submitting": "正在提交…",
+      "successTitle": "申请已发送",
+      "successBody": "销售团队会在工作时间内与您联系。在此期间，您可以免费试用 Cekat.AI。",
+      "whatsappCta": "通过 WhatsApp 与我们联系",
+      "error": "申请未能发送。",
+      "errorBody": "请稍后重试，或通过 WhatsApp 直接联系我们。"
+    }
+  },
+  "comparison": {
+    "metaTitle": "Cekat.AI 与 Qontak、SleekFlow、Qiscus 等平台对比",
+    "heroImageAlt": "Cekat.AI 与其他客户服务平台的对比插图",
+    "metaDescription": "从全渠道收件箱、WhatsApp CRM、营销自动化和支持服务等方面，对比 Cekat.AI、Mekari Qontak、SleekFlow、Qiscus、Halo AI 与 respond.io。",
+    "eyebrow": "对比",
+    "heading": "为什么 Cekat.AI 是更明智的选择",
+    "body": "我们将 Cekat.AI 与领先的全渠道和聊天机器人平台进行比较，帮助您看清差异。",
+    "pillars": {
+      "heading": "一个平台，覆盖认知、转化与留存",
+      "body": "Cekat.AI 从首次广告点击开始追踪每条潜在客户线索，全天候促成成交并让客户持续回购。三项能力集中在一个平台，无需自行拼接三种工具。",
+      "diagramLabel": "Cekat.AI 的三大重叠支柱示意图：营销、对话式 AI 和 CRM",
+      "circles": {
+        "marketing": "营销",
+        "chatLine1": "对话式",
+        "chatLine2": "AI",
+        "crm": "CRM"
+      },
+      "awareness": {
+        "title": "认知",
+        "lead": "追踪每一条线索。",
+        "body": "从首次点击到最终成交。"
+      },
+      "conversion": {
+        "title": "转化",
+        "lead": "全天候促成成交。",
+        "body": "服务不停歇，消息不积压。"
+      },
+      "retention": {
+        "title": "留存",
+        "lead": "让客户持续购买。",
+        "body": "自动跟进，提升客户终身价值（LTV），降低再次获客成本。"
+      },
+      "tagline": "让第一次对话带来长期收入。",
+      "coverage": "在下表中，Cekat.AI 在这三大支柱下满足 {total} 项能力中的 {ours} 项。",
+      "coverageLead": "在下表中，Cekat.AI 在这三大支柱下满足 {total} 项能力中的 {ours} 项，超过本页上的其他任何平台。"
+    },
+    "note": "根据截至 2026 年 8 月的公开信息整理。平台功能可能变化，请直接向各供应商确认最新情况。",
+    "legendYes": "支持",
+    "legendNo": "不支持",
+    "diffHeading": "Cekat.AI 的不同之处",
+    "diff1Title": "四款产品，一个订阅",
+    "diff1Body": "AI Agent、全渠道 CRM、营销自动化和订单自动化都可在一个控制台中使用。许多其他平台会将 CRM 或营销作为单独套餐销售，或仅向最高等级开放。",
+    "diff2Title": "不止 WhatsApp 和 Instagram，还支持 TikTok",
+    "diff2Body": "TikTok 私信和评论会进入同一个收件箱。目前这仍不常见：尽管 TikTok 已成为许多印尼品牌的主要获客渠道，本列表中的大多数平台仍不支持。",
+    "diff3Title": "一周内即可上线",
+    "diff3Body": "通过远程桌面获得引导式导入支持，而不是排队等待工单处理。最低合同期为 3 个月，短于此处多数平台要求的 6 个月至 1 年。",
+    "diff4Title": "专属客户经理持续跟进",
+    "diff4Body": "由了解您账户情况的客户经理提供季度和年度回顾。本表中的其他八个平台，没有一家将此项服务纳入标准服务。",
+    "honestHeading": "我们暂不支持的功能",
+    "honestBody": "Cekat.AI 暂不支持 Google Ads。如果 Google Ads 效果是您当前业务的核心，选择前请将这一点纳入考虑。TikTok Ads、Meta Ads、WhatsApp Broadcast 和 ROAS 分析均受支持。",
+    "faq": {
+      "label": "FAQ",
+      "heading": "选择平台时常见的问题",
+      "q1": "有哪些支持 TikTok 的 Mekari Qontak 替代方案？",
+      "a1": "Cekat.AI 将 TikTok 私信和评论与 WhatsApp、Instagram、电子邮件及网站在线聊天集中在同一个收件箱。根据截至 2026 年 8 月的公开信息，Mekari Qontak 不支持 TikTok 渠道。",
+      "q2": "Cekat.AI 与 SleekFlow 有什么不同？",
+      "a2": "两者都擅长聊天和自动化。主要区别在于 SleekFlow 不支持 TikTok 渠道；此外，Cekat.AI 通过远程桌面引导设置，并提供定期账户回顾。",
+      "q3": "哪款 WhatsApp CRM 平台上线最快？",
+      "a3": "Cekat.AI 的设置可在一周内完成，最低合同期为 3 个月。相比之下，Mekari Qontak 约需 3 周，Halo AI 约需 2 个月，Sierra 最长需 6 个月；它们的最低合同期为 6 个月至 1 年。",
+      "q4": "CRM 和营销需要分别订阅吗？",
+      "a4": "不需要。聊天、CRM、营销和订单自动化都包含在一个 Cekat.AI 订阅中。其他一些平台仅在 Pro 或 Enterprise 方案中提供 CRM，或按坐席单独收费。",
+      "q5": "Cekat.AI 支持 Google Ads 吗？",
+      "a5": "目前还不支持。Cekat.AI 支持 TikTok Ads、Meta Ads、WhatsApp Broadcast、ROAS 分析和客户细分，但尚未连接 Google Ads。",
+      "q6": "这些对比数据来自哪里？",
+      "a6": "数据来自各供应商官网公开信息，整理截至 2026 年 8 月。平台功能会随时间变化，请在决定前直接向供应商确认。"
+    },
+    "featureColumn": "功能",
+    "tables": {
+      "channels": {
+        "heading": "聊天与全渠道",
+        "intro": "哪些渠道可以汇入同一个收件箱。支持的渠道越多，团队需要打开的标签页就越少。",
+        "rows": {
+          "whatsapp": "WhatsApp",
+          "instagram": "Instagram 私信与评论",
+          "tiktok": "TikTok 私信与评论",
+          "sms": "短信",
+          "otherChannels": "微信 / Telegram / Line / X",
+          "webliveChat": "网站在线聊天",
+          "email": "邮箱"
+        }
+      },
+      "marketing": {
+        "heading": "营销",
+        "intro": "比较各平台从广告点击到促成成交的对话，能够执行和衡量哪些营销工作。",
+        "rows": {
+          "tiktokAds": "TikTok Ads",
+          "metaAds": "Meta Ads",
+          "googleAds": "Google Ads",
+          "waBroadcast": "WhatsApp 群发",
+          "roasAnalytics": "ROAS 分析",
+          "segmentation": "客户细分与标签"
+        }
+      },
+      "crm": {
+        "heading": "CRM",
+        "intro": "比较客户数据的管理和实际应用深度，而不只是将其保存在联系人列表中。",
+        "rows": {
+          "customerData": "端到端客户数据管理",
+          "leadManagement": "潜在客户管理",
+          "pipelineManagement": "销售管道管理",
+          "complaintManagement": "投诉管理"
+        }
+      },
+      "support": {
+        "heading": "导入与支持",
+        "intro": "比较时常被忽略，却决定了您何时能真正开始使用。",
+        "rows": {
+          "freeOnboarding": "免费导入与培训",
+          "remoteDesktop": "通过远程桌面引导设置",
+          "accountReview": "客户经理团队季度与年度回顾",
+          "whatsappGroup": "通过 WhatsApp 群组排查问题",
+          "freeSetup": "免费控制台设置",
+          "setupTime": "设置时间",
+          "minimumContract": "最低合同期"
+        }
+      }
+    }
+  },
+  "agentic": {
+    "hero": {
+      "eyebrow": "Cekat.AI",
+      "titleLead": "从线索到终身客户。",
+      "titleAccent": "",
+      "subtitle": "使用 AI Agent、CRM 和自动跟进，将更多对话转化为销售，准确了解哪些广告带来成交，并让客户持续回购。",
+      "hubLabel": "Full Ecosystem",
+      "slideNav": {
+        "label": "Hero slide navigation"
+      },
+      "slides": {
+        "ecosystem": {},
+        "crm": {
+          "eyebrow": "Cekat CRM",
+          "titleLead": "Cekat CRM:",
+          "titleAccent": "Customer notes fill themselves",
+          "subtitle": "Every chat, stage change, and purchase is saved automatically. Your team sells — instead of typing data every evening.",
+          "stageLabel": "Cekat CRM",
+          "pill1": "Activity logged automatically",
+          "pill2": "Pipeline always current",
+          "pill3": "Full customer history"
+        },
+        "mini": {
+          "eyebrow": "Mini Agent",
+          "titleLead": "Mini Agent:",
+          "titleAccent": "Small help, fast results",
+          "subtitle": "Need a lightweight agent for FAQs or lead cleanup? Start light — practical, no long project.",
+          "stageLabel": "Mini Agent",
+          "pill1": "Quick to set up",
+          "pill2": "Focused on one task",
+          "pill3": "Easy to combine"
+        },
+        "oms": {
+          "eyebrow": "OMS",
+          "titleLead": "OMS:",
+          "titleAccent": "Orders finish inside the chat",
+          "subtitle": "Calculate shipping, send payment links, and track delivery without switching apps or logging orders by hand.",
+          "stageLabel": "Order Management",
+          "pill1": "Chat becomes an order",
+          "pill2": "Shipping & payment",
+          "pill3": "Lighter process"
+        },
+        "marketing": {
+          "eyebrow": "Cekat Marketing",
+          "titleLead": "Cekat Marketing:",
+          "titleAccent": "Know which ads actually pay off",
+          "subtitle": "Targeted broadcasts, scheduled follow-ups, and a clear picture of which ads truly drive sales.",
+          "stageLabel": "Cekat Marketing",
+          "pill1": "Segmented broadcasts",
+          "pill2": "See what profits",
+          "pill3": "Ready for ads"
+        },
+        "consulting": {
+          "eyebrow": "Consulting Agent",
+          "titleLead": "Consulting Agent:",
+          "titleAccent": "Advice that fits your business",
+          "subtitle": "An agent that reads patterns in your own data and suggests the next step — not generic tips from the internet.",
+          "stageLabel": "Consulting Agent",
+          "pill1": "Advice from your data",
+          "pill2": "Clear next steps",
+          "pill3": "Stays under team review"
+        }
+      }
+    },
+    "pillars": {
+      "eyebrow": "Why Cekat",
+      "headingLead": "Independent. Connected.",
+      "headingAccent": "Open.",
+      "body": "Three simple things that make Cekat easy to use every day — start gradually, stay linked, stay flexible.",
+      "independent": {
+        "title": "Independent",
+        "lead": "Start with what you need most",
+        "body": "Use one agent first if that is what hurts today. Add the others when your team is ready — no need to rebuild everything at once.",
+        "tag1": "Start small first",
+        "tag2": "Grow gradually",
+        "tag3": "No giant project"
+      },
+      "integrated": {
+        "title": "Connected",
+        "lead": "Every agent shares the same context",
+        "body": "Chats, orders, campaigns, and customer data live in one place. Answers stay consistent, and handoffs to your team feel smooth.",
+        "tag1": "One customer record",
+        "tag2": "Smooth handoffs",
+        "tag3": "Always up to date"
+      },
+      "openApi": {
+        "title": "Open",
+        "lead": "Keep using your favorite tools",
+        "body": "Connect Cekat to the apps your team already uses every day. Your data stays with you, and nothing gets in the way of switching.",
+        "tag1": "Easy to connect",
+        "tag2": "Popular integrations",
+        "tag3": "Not locked in"
+      }
+    },
+    "proof": {
+      "heading": "Trusted by businesses across Asia",
+      "stat1Value": "3,000+",
+      "stat1Label": "businesses using Cekat",
+      "stat2Value": "10B+",
+      "stat2Label": "conversations processed daily",
+      "stat3Value": "2M+",
+      "stat3Label": "chats handled daily"
+    },
+    "features": {
+      "eyebrow": "One platform, many jobs done",
+      "headingLead": "Chat, orders, data, ads,",
+      "headingAccent": "and agents that help.",
+      "body": "Everything runs on the same customer context — answers, orders, notes, campaigns, and business advice never drift apart.",
+      "chat": {
+        "title": "Replies 24/7 on every channel",
+        "body": "WhatsApp, Instagram, and live chat land in one inbox. The AI answers in seconds; your team steps in when a human touch is needed."
+      },
+      "order": {
+        "title": "Orders closed inside the chat",
+        "body": "Shipping costs, payment links, and delivery tracking without leaving the conversation or logging orders by hand."
+      },
+      "crm": {
+        "title": "A CRM that fills itself",
+        "body": "Every conversation and deal stage saves automatically. Your team sells instead of typing data each evening."
+      },
+      "marketing": {
+        "title": "See which ads actually pay off",
+        "body": "Segmented broadcasts, scheduled follow-ups, and ROAS tied back to the conversation that closed the deal."
+      },
+      "consulting": {
+        "title": "Ask about your business anytime",
+        "body": "Wondering if sales are up this week? The agent reads your own data and answers with a clear next step, not a guess."
+      },
+      "mini": {
+        "title": "Mini agents for small jobs",
+        "body": "Add your own light tasks — chat recaps, reminders, follow-ups — quick to set up, no long project."
+      },
+      "oms": {
+        "title": "OMS keeps every order",
+        "body": "Every order and purchase is filed neatly in the system — status, payment, and delivery always traceable."
+      }
+    },
+    "pricing": {
+      "eyebrow": "Fair, clear pricing",
+      "headingLead": "Start Sharp.",
+      "headingAccent": "Grow Steady.",
+      "body": "Most businesses start with the Chat plans below. CRM or Marketing can come later if you need them — everything can still live in one place.",
+      "cta": "See all plans"
+    },
+    "results": {
+      "eyebrow": "Customer stories",
+      "headingLead": "Used by businesses",
+      "headingAccent": "like yours.",
+      "body": "From small teams that need customer service help to brands that need a full CRM — all on one platform built for Indonesian businesses.",
+      "brandTitle": "Trusted by"
+    },
+    "openApi": {
+      "eyebrow": "Yours to keep",
+      "headingLead": "Open.",
+      "headingAccent": "Your data and tools stay in your hands.",
+      "body": "Cekat is designed to plug easily into the apps you already use — from ads to internal systems. Nothing is locked shut.",
+      "constellationLabel": "Connects to",
+      "cta": "See integrations",
+      "cap1": {
+        "title": "Easy to Connect",
+        "body": "Access customer data, chats, orders, and campaigns."
+      },
+      "cap2": {
+        "title": "Real-time notifications",
+        "body": "Send updates to Slack, spreadsheets, or your team tools."
+      },
+      "cap3": {
+        "title": "Safe & controlled",
+        "body": "Limited permissions for third-party apps."
+      },
+      "cap4": {
+        "title": "Take it with you",
+        "body": "Export your data anytime — nothing keeps you stuck here."
+      }
+    },
+    "finalCta": {
+      "eyebrow": "Try it first, no hassle",
+      "headingLead": "Start with",
+      "headingAccent": "one agent.",
+      "body": "See how Frontline feels today. When it fits, add orders and CRM whenever your team is ready. You do not have to turn everything on at once.",
+      "item1": "Free 14 days, no card",
+      "item2": "Ready in minutes",
+      "item3": "Can start with a single agent"
+    },
+    "logoStrip": {
+      "heading": "Trusted by brands across Indonesia",
+      "note": "Thousands of other businesses also run their daily conversations on Cekat.AI."
+    },
+    "gallery": {
+      "eyebrow": "In the field",
+      "headingLead": "Used every day",
+      "headingAccent": "by teams that are growing.",
+      "body": "A few real working moments — from the CS desk to stores and offices. Swap these photos for your brand shots whenever you're ready."
+    },
+    "photoBand": {
+      "quote": "When chat is messy, revenue leaks quietly. Cekat helped us turn it into one system.",
+      "attribution": "Cekat.AI customer operations · placeholder photo, replace with your brand shots"
+    },
+    "howItWorks": {
+      "eyebrow": "工作方式",
+      "headingLead": "From first chat",
+      "headingAccent": "to growth loop.",
+      "body": "Five clear steps — not a multi-month setup project. Start on the channels you already use, then add agents when your team is ready.",
+      "stageLabel": "Live stage",
+      "chat": {
+        "title": "Chats come in",
+        "body": "WhatsApp, Instagram, Messenger, and website live chat land in one inbox. Frontline AI answers 24/7; hard cases hand off to your team with full context.",
+        "hint": "The channels you already use today"
+      },
+      "crm": {
+        "title": "Saved in CRM",
+        "body": "Every conversation, deal stage, and purchase is logged to the customer profile automatically. No evening data entry.",
+        "hint": "Data fills itself from the chat"
+      },
+      "mini": {
+        "title": "Mini Agent",
+        "body": "Drop in a lightweight agent for FAQs or lead cleanup. One job, live fast, no long project.",
+        "hint": "Light setup, immediate result"
+      },
+      "consulting": {
+        "title": "Consulting Agent",
+        "body": "An agent that reads patterns in your own data and suggests the next step — advice that fits, not generic tips.",
+        "hint": "Decisions from your own data"
+      },
+      "marketing": {
+        "title": "Cekat Marketing",
+        "body": "Segmented broadcasts, scheduled follow-ups, and a clear view of which ads actually drive sales.",
+        "hint": "Close the loop: chat → sale → ads"
+      },
+      "footnote": "Start with one step. Add the rest when your team is ready — everything stays on the same platform."
+    },
+    "roles": {
+      "eyebrow": "按角色查看解决方案",
+      "headingLead": "Enter through",
+      "headingAccent": "your team’s role.",
+      "body": "The same AI agents, CRM, and automation — used differently by every team. Pick your role and see the workflow.",
+      "readMore": "了解更多",
+      "swipeHint": "Swipe to see more roles →"
+    },
+    "cipherBand": {
+      "label": "Cekat data motif",
+      "caption": "Encrypted paths · live agents · shared context"
+    },
+    "caseStudy": {
+      "eyebrow": "客户案例",
+      "client": "Nature Craft Indonesia",
+      "title": "成交率提高，营收随之增长。",
+      "body": "Nature Craft 的客户服务团队过去需要手动回复消息，成交率不到 20%。Cekat.AI Frontline AI 和 CRM 上线后，低质量线索更早得到筛选，回复也更加一致，成交率提升至 40% 以上。",
+      "outcome": "营收增长约 50%。左侧数据由 Nature Craft 董事在录制访谈中直接提供。",
+      "metric1": {
+        "value": "+50%",
+        "label": "成交率从不到 20% 提升至 40% 以上后的营收增长"
+      },
+      "metric2": {
+        "value": "< 2 min",
+        "label": "消息响应目标从类似情况下的 20 多分钟降至不到 2 分钟"
+      },
+      "metric3": {
+        "value": "24/7",
+        "label": "非办公时间由 AI 全天候回复，无需增加夜班"
+      },
+      "attribution": "数据由 Cekat.AI 客户直接提供，未经独立审计。",
+      "readStory": "阅读客户案例"
+    },
+    "pricingGlossary": {
+      "heading": "Pricing terms, short",
+      "body": "The six terms that most often confuse people on plan cards.",
+      "mau": {
+        "term": "MAU (Monthly Active User)",
+        "def": "A unique customer who interacts with your business in a given month. One person counts once, no matter how many messages they send."
+      },
+      "aiSimple": {
+        "term": "AI Simple",
+        "def": "AI answers from the knowledge base you provide — built for FAQs and standard info."
+      },
+      "aiFull": {
+        "term": "AI Full",
+        "def": "AI runs more complex flows: lead qualification, follow-ups, and next actions inside the chat."
+      },
+      "waba": {
+        "term": "WABA (WhatsApp Business API)",
+        "def": "Meta’s official channel for business messaging at scale. Cekat.AI is an official Meta Business Partner that walks you through verification."
+      },
+      "seats": {
+        "term": "Seats",
+        "def": "How many teammates can log in to the dashboard. Add seats as the team grows — no platform switch."
+      },
+      "credits": {
+        "term": "AI Credits",
+        "def": "Your AI usage quota per billing period. Larger plans carry larger quotas for higher chat volume."
+      },
+      "note": "Excludes VAT. Want a clearer walkthrough?",
+      "link": "See details on the Pricing page"
+    },
+    "security": {
+      "eyebrow": "安全与合规",
+      "headingLead": "为重视数据安全的团队而打造",
+      "headingAccent": "值得信赖。",
+      "body": "访问控制、印尼法律合规和 Meta 官方渠道，为客户对话上云提供可靠基础。",
+      "pdp": {
+        "title": "符合印尼个人数据保护法",
+        "body": "用户数据依照印尼《个人数据保护法》处理，而不只是停留在营销宣传层面的安全承诺。"
+      },
+      "rbac": {
+        "title": "基于角色的访问控制",
+        "body": "RBAC 决定谁可以查看对话、联系人和销售管道。销售、支持和财务团队只能访问各自所需的信息。"
+      },
+      "meta": {
+        "title": "Meta 商业合作伙伴",
+        "body": "Cekat.AI 是 Meta 官方合作伙伴。WhatsApp 消息通过官方 Business API 和获批模板传输，而非非官方网关。"
+      },
+      "iso": {
+        "title": "通过 ISO 9001 与 ISO 27001 认证",
+        "body": "Cekat.AI 已正式获得 ISO 9001:2015 和 ISO/IEC 27001:2022 认证。导入期间，我们也会针对您的合规需求进行沟通。"
+      },
+      "note": "Cekat 已正式获得 ISO 9001:2015 和 ISO/IEC 27001:2022 认证。企业客户可进一步了解我们的安全实践。"
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "Questions before you start",
+      "body": "Straight answers to the doubts that show up most often around cost, setup, and data ownership.",
+      "q1": "How long until setup is usable?",
+      "a1": "Most businesses answer chats the same day. Connect WhatsApp, paste your knowledge base, turn the agent on — no coding and no multi-month implementation project.",
+      "q2": "Do we have to buy every product at once?",
+      "a2": "No. Start with Chat. CRM, Marketing, or other agents can follow once the team settles in — data still connects on the same platform.",
+      "q3": "We have no developers. Can this still work?",
+      "a3": "Yes. The builder is no-code: describe the agent’s role, paste your SOPs and business info, switch it on. Cekat.AI’s team supports onboarding, including WABA verification when you are ready for the official API.",
+      "q4": "Who owns our customer data?",
+      "a4": "You do. Conversations and customer profiles belong to your business, can be exported anytime, and access is controlled by role inside your team. Nothing locks you in.",
+      "q5": "What if the AI answers wrong?",
+      "a5": "You control the knowledge base and which actions the AI can take. Sensitive or out-of-scope cases hand off to a human with full chat history — automation never means losing control.",
+      "q6": "Are there setup fees or minimum contracts?",
+      "a6": "Regular plans carry no separate setup fee and no minimum contract. Custom terms are agreed with sales before you begin."
+    }
+  },
+  "events": {
+    "meta": {
+      "title": "活动与网络研讨会 | CekatAI",
+      "description": "参加 Cekat.AI 的免费网络研讨会和活动，让业务运营更有章可循。"
+    },
+    "listing": {
+      "eyebrow": "活动与网络研讨会",
+      "title": "Cekat.AI 最新动态",
+      "subtitle": "免费网络研讨会、工作坊和短期课程，帮助您的业务摆脱凭感觉运营。",
+      "intro": "Cekat.AI 每月邀请客户服务、销售和营销领域的从业者，举办免费网络研讨会、实操工作坊和短期课程。免费报名并在线参与，带走可立即用于业务的模板和方法，无需购买。",
+      "empty": "目前没有正在进行的活动，请稍后再来查看。",
+      "view": "查看详情",
+      "past": "已结束",
+      "upcoming": "即将开始"
+    },
+    "detail": {
+      "back": "所有活动",
+      "registerCta": "报名"
+    },
+    "register": {
+      "submitting": "正在发送…",
+      "errorFallback": "发生错误，请重试或直接联系我们。",
+      "choose": "请选择…"
+    }
+  },
+  "careers": {
+    "metaTitle": "加入 Cekat.AI — 产品、增长与人才团队职位",
+    "metaDescription": "加入打造 AI 营收运营系统的团队，查看 Cekat.AI 的开放职位并通过 LinkedIn 直接申请。",
+    "breadcrumb": "招聘",
+    "eyebrow": "招聘",
+    "heroTitle": "开放职位",
+    "heroAccent": "",
+    "heroSub": "我们期待善于理解客户对话、能清晰判断自动化机会，并希望看到工作成果真正落地的人才。",
+    "heroChips": ["产品", "增长", "人才与文化", "Jakarta · Tangerang"],
+    "openRoles": "开放职位",
+    "openRolesNote": "以下职位均发布在我们的 LinkedIn 招聘页面，完整职位说明、要求和申请表均可在那里查看。",
+    "apply": "申请",
+    "emptyTitle": "目前没有开放职位",
+    "emptyBody": "我们始终欢迎认识新人才。请将作品集或您参与打造的项目发送至 hello@cekat.ai；有合适机会时，我们会与您联系。",
+    "teams": {
+      "product": "产品与设计",
+      "growth": "增长与咨询",
+      "people": "人才与文化"
+    },
+    "types": {
+      "fullTime": "全职"
+    },
+    "seniority": {
+      "associate": "专员"
+    }
+  }
+}

@@ -18,13 +18,13 @@ export function RichFaq({
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="relative overflow-hidden border-t border-foreground/8 bg-white py-16 md:py-20">
+    <section className="secondary-faq relative overflow-hidden border-t border-foreground/8 bg-white py-16 md:py-20">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/25 to-transparent"
       />
-      <Container className="relative">
-        <div className="mx-auto max-w-3xl text-center">
+      <Container className="secondary-faq__layout relative">
+        <div className="secondary-faq__heading mx-auto max-w-3xl text-center">
           <p className="eyebrow-rule mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
             {label}
           </p>
@@ -33,7 +33,7 @@ export function RichFaq({
           </h2>
         </div>
 
-        <div className="mx-auto mt-12 max-w-3xl">
+        <div className="secondary-faq__questions mx-auto mt-12 max-w-3xl">
           {items.map((item, index) => {
             const isOpen = openIndex === index;
             return (

@@ -1,7 +1,7 @@
 import { defineRouting } from "next-intl/routing";
 
 export const routing = defineRouting({
-  locales: ["en", "id"],
+  locales: ["en", "id", "cn", "jp", "kr"],
   defaultLocale: "id",
   localePrefix: "as-needed",
   localeDetection: false,
@@ -20,30 +20,107 @@ export const routing = defineRouting({
     "/blog/[slug]": "/blog/[slug]",
     "/blog/author/[slug]": "/blog/author/[slug]",
     "/contact": "/contact",
-    // Sales enquiry (Intercom-style lead form). Reached from both the
-    // production mega-menu and the /preview-home-2 header, so it lives in the
-    // (site) group: both navs link here, only one of them renders the chrome.
-    "/contact-sales": "/contact-sales",
+    // Keep the internal route name for the sales form while exposing the
+    // public contact-us slug used by the live site.
+    "/contact-sales": "/contact-us",
     "/events": "/events",
     "/events/[slug]": "/events/[slug]",
     // Marketing-only editor; not linked in the public nav.
     "/events/admin": "/events/admin",
-    "/pricing": { en: "/pricing", id: "/harga" },
-    "/comparison": { en: "/comparison", id: "/perbandingan" },
+    "/pricing": {
+      en: "/pricing",
+      id: "/harga",
+      cn: "/pricing",
+      jp: "/pricing",
+      kr: "/pricing",
+    },
+    "/comparison": {
+      en: "/comparison",
+      id: "/perbandingan",
+      cn: "/comparison",
+      jp: "/comparison",
+      kr: "/comparison",
+    },
     "/terms-and-conditions": "/terms-and-conditions",
     "/privacy-policy": "/privacy-policy",
     "/return-refund-delivery-policy": "/return-refund-delivery-policy",
-    "/features": { en: "/features", id: "/fitur" },
-    "/features/[slug]": { en: "/features/[slug]", id: "/fitur/[slug]" },
-    "/industries": { en: "/industries", id: "/industri" },
-    "/industries/[slug]": { en: "/industries/[slug]", id: "/industri/[slug]" },
-    "/integrations": { en: "/integrations", id: "/integrasi" },
-    "/solutions": { en: "/solutions", id: "/solusi" },
-    "/solutions/[slug]": { en: "/solutions/[slug]", id: "/solusi/[slug]" },
-    "/stories": { en: "/stories", id: "/cerita" },
-    "/stories/[slug]": { en: "/stories/[slug]", id: "/cerita/[slug]" },
-    "/about": { en: "/about", id: "/tentang" },
-    "/careers": { en: "/careers", id: "/karier" },
+    "/features": {
+      en: "/features",
+      id: "/fitur",
+      cn: "/features",
+      jp: "/features",
+      kr: "/features",
+    },
+    "/features/[slug]": {
+      en: "/features/[slug]",
+      id: "/fitur/[slug]",
+      cn: "/features/[slug]",
+      jp: "/features/[slug]",
+      kr: "/features/[slug]",
+    },
+    "/industries": {
+      en: "/industries",
+      id: "/industri",
+      cn: "/industries",
+      jp: "/industries",
+      kr: "/industries",
+    },
+    "/industries/[slug]": {
+      en: "/industries/[slug]",
+      id: "/industri/[slug]",
+      cn: "/industries/[slug]",
+      jp: "/industries/[slug]",
+      kr: "/industries/[slug]",
+    },
+    "/integrations": {
+      en: "/integrations",
+      id: "/integrasi",
+      cn: "/integrations",
+      jp: "/integrations",
+      kr: "/integrations",
+    },
+    "/solutions": {
+      en: "/solutions",
+      id: "/solusi",
+      cn: "/solutions",
+      jp: "/solutions",
+      kr: "/solutions",
+    },
+    "/solutions/[slug]": {
+      en: "/solutions/[slug]",
+      id: "/solusi/[slug]",
+      cn: "/solutions/[slug]",
+      jp: "/solutions/[slug]",
+      kr: "/solutions/[slug]",
+    },
+    "/stories": {
+      en: "/stories",
+      id: "/cerita",
+      cn: "/stories",
+      jp: "/stories",
+      kr: "/stories",
+    },
+    "/stories/[slug]": {
+      en: "/stories/[slug]",
+      id: "/cerita/[slug]",
+      cn: "/stories/[slug]",
+      jp: "/stories/[slug]",
+      kr: "/stories/[slug]",
+    },
+    "/about": {
+      en: "/about",
+      id: "/tentang",
+      cn: "/about",
+      jp: "/about",
+      kr: "/about",
+    },
+    "/careers": {
+      en: "/careers",
+      id: "/karier",
+      cn: "/careers",
+      jp: "/careers",
+      kr: "/careers",
+    },
     // `/new` and `/new-2` are gone: next.config.ts redirects() 308s them to
     // `/` (config redirects run before this middleware, so a page-level 307
     // shim would never fire anyway).

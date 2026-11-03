@@ -105,6 +105,7 @@ export default async function PricingPage({
       />
 
       <PageHero
+        tone="pricing"
         eyebrow={t("hero.eyebrow")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}

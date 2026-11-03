@@ -41,7 +41,9 @@ export function whatsAppNumberForCountry(country?: string | null): string {
 
 /** Prefill message in the language of the page the visitor is reading. */
 function whatsAppMessageForLocale(locale?: string | null): string {
-  return locale === "en" ? WHATSAPP_MESSAGE_EN : WHATSAPP_MESSAGE_ID;
+  // SSR and callers that have not resolved a locale yet use the Indonesian
+  // default. Explicit non-default locales use the international message.
+  return !locale || locale === "id" ? WHATSAPP_MESSAGE_ID : WHATSAPP_MESSAGE_EN;
 }
 
 /**
@@ -62,4 +64,7 @@ export function whatsAppUrlFor(
 
 /** Default (Indonesian) link — used for SSR and before geo resolves client-side. */
 export const WHATSAPP_NUMBER = WHATSAPP_NUMBERS.id;
-export const WHATSAPP_URL = whatsAppUrl(WHATSAPP_NUMBERS.id, WHATSAPP_MESSAGE_ID);
+export const WHATSAPP_URL = whatsAppUrl(
+  WHATSAPP_NUMBERS.id,
+  WHATSAPP_MESSAGE_ID,
+);

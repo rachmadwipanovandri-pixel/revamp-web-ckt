@@ -10,10 +10,22 @@
   },
   "definition": "Aplikasi Broadcast WhatsApp adalah fitur Cekat.AI untuk mengubah data customer jadi pembelian berulang, menyebarkan promo, pesan event-based, dan reminder restock ke segmen yang tepat lewat WhatsApp Business API resmi.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis jalanin campaign di Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "AI bales setiap reply campaign" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis jalanin campaign di Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "AI bales setiap reply campaign"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -48,7 +60,7 @@
       "body": "Tulis campaign sekali, pilih segmennya, dan Cekat.AI mengirimkannya lengkap dengan nama dan konteks tiap customer dari CRM. Tidak ada lagi forward promo manual ke ratusan chat, dan tidak ada customer yang dapat penawaran yang tidak nyambung sama dia."
     },
     {
-      "label": "Event-Based",
+      "label": "Berbasis Peristiwa",
       "title": "Broadcast yang Nyala Sendiri Sesuai Perilaku Customer",
       "body": "Trigger otomatis jalan dari jadwal, keyword di chat, atau perubahan data customer, leads baru masuk, promo mau berakhir, status berubah. Campaign bereaksi ke perilaku nyata, bukan nunggu tim ingat."
     },

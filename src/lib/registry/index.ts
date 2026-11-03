@@ -5,11 +5,61 @@ import { FEATURES } from "./features";
 import { INDUSTRIES } from "./industries";
 import { SOLUTIONS } from "./solutions";
 import type { LandingKind, RegistryEntry } from "./types";
+import { localeValue } from "@/lib/locale-value";
+import localizedCopy from "./localized-copy.json";
+
+type LocalizedRegistryCopy = Partial<
+  Record<Locale, { title?: string; tagline?: string }>
+>;
+
+const LOCALIZED_COPY = localizedCopy as Record<string, LocalizedRegistryCopy>;
+
+/**
+ * The English/Indonesian registry remains the source of truth for page
+ * identity. Locale-specific navigation copy is kept separately so the large
+ * registry stays readable and the page body can be translated independently.
+ * Slugs intentionally remain the canonical English slug for cn/jp/kr until
+ * reviewed localized SEO slugs are available.
+ */
+function addLocaleFallbacks(
+  kind: LandingKind,
+  entries: readonly RegistryEntry[],
+): RegistryEntry[] {
+  return entries.map((entry) => {
+    const source = entry.slugs.en ? "en" : "id";
+    const sourceTitle = entry.title[source] ?? entry.id;
+    const sourceTagline = entry.tagline?.[source];
+    const copy = LOCALIZED_COPY[`${kind}:${entry.id}`];
+    return {
+      ...entry,
+      slugs: {
+        ...entry.slugs,
+        cn: entry.slugs.cn ?? entry.slugs[source],
+        jp: entry.slugs.jp ?? entry.slugs[source],
+        kr: entry.slugs.kr ?? entry.slugs[source],
+      },
+      title: {
+        ...entry.title,
+        cn: entry.title.cn ?? copy?.cn?.title ?? sourceTitle,
+        jp: entry.title.jp ?? copy?.jp?.title ?? sourceTitle,
+        kr: entry.title.kr ?? copy?.kr?.title ?? sourceTitle,
+      },
+      tagline: entry.tagline
+        ? {
+            ...entry.tagline,
+            cn: entry.tagline.cn ?? copy?.cn?.tagline ?? sourceTagline,
+            jp: entry.tagline.jp ?? copy?.jp?.tagline ?? sourceTagline,
+            kr: entry.tagline.kr ?? copy?.kr?.tagline ?? sourceTagline,
+          }
+        : entry.tagline,
+    };
+  });
+}
 
 export const REGISTRY: Record<LandingKind, readonly RegistryEntry[]> = {
-  features: FEATURES,
-  industries: INDUSTRIES,
-  solutions: SOLUTIONS,
+  features: addLocaleFallbacks("features", FEATURES),
+  industries: addLocaleFallbacks("industries", INDUSTRIES),
+  solutions: addLocaleFallbacks("solutions", SOLUTIONS),
 };
 
 const SLUG_TEMPLATE: Record<LandingKind, AppPathname> = {
@@ -140,7 +190,9 @@ export function allNavEntries(
       const orderA = a.nav?.order ?? Infinity;
       const orderB = b.nav?.order ?? Infinity;
       if (orderA !== orderB) return orderA - orderB;
-      return (a.title[locale] ?? "").localeCompare(b.title[locale] ?? "");
+      return (localeValue(a.title, locale) ?? "").localeCompare(
+        localeValue(b.title, locale) ?? "",
+      );
     });
 }
 

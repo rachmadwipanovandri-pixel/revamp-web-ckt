@@ -1,10 +1,17 @@
 import { getPathname } from "@/i18n/navigation";
-import type { AppPathname, Locale } from "@/i18n/routing";
+import { routing, type AppPathname, type Locale } from "@/i18n/routing";
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cekat.ai";
 
 export function htmlLang(locale: string): string {
-  return locale === "id" ? "id-ID" : "en";
+  return (
+    (
+      { id: "id-ID", cn: "zh-CN", jp: "ja-JP", kr: "ko-KR" } as Record<
+        string,
+        string
+      >
+    )[locale] ?? "en-US"
+  );
 }
 
 /**
@@ -24,13 +31,13 @@ export function alternates(locale: string, pathname: string) {
     // Self-referencing canonical per Google's hreflang guidance, each
     // locale variant points to itself, not to a single "master" URL.
     canonical: `${SITE_URL}${localizedPath(locale, pathname)}`,
-    languages: {
-      en: `${SITE_URL}${localizedPath("en", pathname)}`,
-      id: `${SITE_URL}${localizedPath("id", pathname)}`,
-      // Indonesian is the default locale (served at the root), so it is also
-      // the x-default target for unmatched languages.
-      "x-default": `${SITE_URL}${localizedPath("id", pathname)}`,
-    },
+    languages: Object.fromEntries([
+      ...routing.locales.map((target) => [
+        target,
+        `${SITE_URL}${localizedPath(target, pathname)}`,
+      ]),
+      ["x-default", `${SITE_URL}${localizedPath("id", pathname)}`],
+    ]),
   };
 }
 
@@ -48,11 +55,12 @@ export function alternatesFor(locale: Locale, paths: LocalePaths) {
   if (!own) throw new Error(`alternatesFor: no path for locale "${locale}"`);
   const languages =
     paths.en && paths.id
-      ? {
-          en: `${SITE_URL}${paths.en}`,
-          id: `${SITE_URL}${paths.id}`,
-          "x-default": `${SITE_URL}${paths.id}`,
-        }
+      ? Object.fromEntries([
+          ...routing.locales
+            .filter((target) => paths[target])
+            .map((target) => [target, `${SITE_URL}${paths[target]}`]),
+          ["x-default", `${SITE_URL}${paths.id}`],
+        ])
       : undefined;
   return { canonical: `${SITE_URL}${own}`, languages };
 }

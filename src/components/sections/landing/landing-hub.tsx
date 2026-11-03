@@ -16,6 +16,9 @@ import { VoidFinalCta } from "@/components/sections/shared/void-final-cta";
 import { Breadcrumbs } from "./breadcrumbs";
 import { DefinitionBlock } from "./definition-block";
 import { EntryGrid } from "./entry-card";
+import Image from "next/image";
+import { PRODUCT_ART } from "./product-stage";
+import { localeValue } from "@/lib/locale-value";
 
 const HUB_TEMPLATE = {
   features: "/features",
@@ -31,13 +34,9 @@ const HUB_OG: Record<LandingKind, string> = {
 };
 
 /**
- * Full-bleed plate behind the hero. Only the industry hub gets one — it is the
- * only hub whose subject is already photographed (public/images/industries).
+ * Industry photography lives in the cards where it can support scanning, not
+ * behind the hub heading where it used to compromise readability.
  */
-const HUB_HERO: Partial<Record<LandingKind, string>> = {
-  industries: "/images/industries/property.webp",
-};
-
 /**
  * The registry grows independently of the photo folder, so a cover is only
  * shipped when the file is really there — otherwise the card falls back to its
@@ -113,6 +112,20 @@ export async function LandingHub({
   const readMore = tl("readMore");
 
   const entries = REGISTRY[kind].filter((entry) => entry.slugs[locale]);
+  const panorama =
+    kind === "industries"
+      ? entries
+          .flatMap((entry) => {
+            const image = industryPhoto(entry.id);
+            return image
+              ? [{ image, label: localeValue(entry.title, locale) ?? entry.id }]
+              : [];
+          })
+          .slice(0, 3)
+      : ["chat", "crm", "marketing"].map((product) => ({
+          image: PRODUCT_ART[product],
+          label: tn(product),
+        }));
   const categories = [...new Set(entries.map((entry) => entry.category))];
   const pathname = `${HUB_TEMPLATE[kind]}/[slug]` as "/features/[slug]";
   const hubPath = HUB_TEMPLATE[kind];
@@ -123,7 +136,7 @@ export async function LandingHub({
 
   const collectionItems = entries.flatMap((entry) => {
     const path = entryPath(kind, entry, locale);
-    const name = entry.title[locale];
+    const name = localeValue(entry.title, locale);
     if (!path || !name) return [];
     return [{ name, url: `${SITE_URL}${path}` }];
   });
@@ -163,7 +176,25 @@ export async function LandingHub({
         accent={headingAccent}
         subtitle={t("body")}
         chips={[t("trust")]}
-        image={HUB_HERO[kind]}
+        tone={kind}
+        visual={
+          <div
+            className={`hub-panorama ${kind === "industries" ? "hub-panorama--photos" : ""}`}
+          >
+            {panorama.map((tile) => (
+              <div key={tile.label} className="hub-panorama__tile">
+                <Image
+                  src={tile.image}
+                  alt={tile.label}
+                  fill
+                  preload
+                  sizes="(max-width: 640px) 30vw, 380px"
+                />
+                <span className="hub-panorama__label">{tile.label}</span>
+              </div>
+            ))}
+          </div>
+        }
       />
       <Breadcrumbs
         items={[{ label: tb("home"), href: "/" as const }, { label: hubLabel }]}
@@ -173,10 +204,10 @@ export async function LandingHub({
         <DefinitionBlock definition={definition} />
       </div>
 
-      <section className="relative overflow-hidden bg-surface-muted py-16 md:py-20 lg:py-24">
+      <section className="relative overflow-hidden bg-[#f9fafb] py-20 md:py-24 lg:py-28">
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-40"
+          className="pointer-events-none absolute inset-0 opacity-0"
           style={{
             backgroundImage:
               "radial-gradient(circle at 1px 1px, rgba(19,82,191,0.1) 1px, transparent 0)",
@@ -184,7 +215,7 @@ export async function LandingHub({
           }}
         />
         <Container className="relative">
-          <div className="flex flex-col gap-14">
+          <div className="flex flex-col gap-16 md:gap-20">
             {categories.map((category, categoryIndex) => {
               const config =
                 kind === "features"
@@ -198,14 +229,18 @@ export async function LandingHub({
                 : t(`category.${category}`);
 
               return (
-                <div key={category}>
+                <div
+                  key={category}
+                  className="hub-chapter"
+                  data-chapter={categoryIndex % 3}
+                >
                   <Reveal>
-                    <div className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b border-foreground/10 pb-5">
+                    <div className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b border-[#d5d9e2] pb-5">
                       <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-2">
                         {/* h2, not p: the hub h1 → category → card h3 chain was
                             skipping h2 entirely (audit P1-8). Classes carry the
                             eyebrow styling, so nothing changes visually. */}
-                        <h2 className="eyebrow-rule font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
+                        <h2 className="eyebrow-rule text-lg font-semibold tracking-[-0.02em] text-[#09214c] md:text-xl">
                           {String(categoryIndex + 1).padStart(2, "0")} ·{" "}
                           {headingLabel}
                         </h2>
@@ -233,8 +268,10 @@ export async function LandingHub({
                           params: { slug: entry.slugs[locale]! },
                         },
                         icon: entry.icon,
-                        title: entry.title[locale]!,
-                        tagline: entry.tagline?.[locale],
+                        title: localeValue(entry.title, locale) ?? entry.id,
+                        tagline: entry.tagline
+                          ? localeValue(entry.tagline, locale)
+                          : undefined,
                         image:
                           kind === "industries"
                             ? industryPhoto(entry.id)

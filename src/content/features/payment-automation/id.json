@@ -10,10 +10,22 @@
   },
   "definition": "Pembayaran QR Otomatis adalah fitur Cekat.AI yang mengirim QR pembayaran langsung di dalam chat dan follow-up order belum lunas dengan reminder otomatis, menutup loop pembayaran tanpa tim harus nagih manual.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "AI kirim QR dan reminder" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "AI kirim QR dan reminder"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -48,7 +60,7 @@
       "body": "Begitu order siap, AI menjatuhkan QR pembayaran ke chat. Customer scan dan bayar tanpa keluar dari percakapan, tanpa link checkout yang harus dikejar, tanpa aplikasi tambahan, tanpa drop-off antara memutuskan dan membayar."
     },
     {
-      "label": "Auto Reminder",
+      "label": "Pengingat Otomatis",
       "title": "Pembayaran Pending Difollow-up Otomatis",
       "body": "Kalau pembayaran masih pending, Cekat.AI mengirim reminder berbasis event sendiri, dorongan sopan di momen yang tepat, bukan order yang terlupa di antrean. Order jadi lunas, bukan hilang diam-diam."
     },

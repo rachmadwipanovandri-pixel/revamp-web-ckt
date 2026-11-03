@@ -27,20 +27,17 @@ export function LandingTestimonial({
         <SectionHeading eyebrow={eyebrow} heading={heading} />
 
         <Reveal className="mt-10">
-          <figure className="max-w-3xl rounded-[1.5rem] border border-foreground/8 bg-white p-6 shadow-[0_28px_56px_-40px_rgba(16,24,40,0.45)] md:p-8">
-            <blockquote className="text-[clamp(1.1rem,2vw,1.35rem)] leading-[1.45] font-medium tracking-[-0.02em] text-foreground">
+          <figure className={`overflow-hidden rounded-[28px] border border-[#ccdaf1] bg-white ${testimonial.image ? "grid lg:grid-cols-[.7fr_1.3fr]" : ""}`}>
+            {testimonial.image && (
+              <div className="relative min-h-[300px] bg-[#e4ebf9] lg:min-h-[420px]">
+                <Image src={testimonial.image} alt={testimonial.name} fill sizes="(max-width: 1024px) 100vw, 450px" className="object-cover" />
+              </div>
+            )}
+            <div className="flex flex-col justify-center p-7 lg:p-12">
+            <blockquote className="text-[clamp(1.35rem,2.6vw,2.2rem)] leading-[1.4] font-medium tracking-[-0.03em] text-[#09214c]">
               &ldquo;{testimonial.quote}&rdquo;
             </blockquote>
             <figcaption className="mt-8 flex items-center gap-4 border-t border-foreground/10 pt-5">
-              {testimonial.image && (
-                <Image
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  width={64}
-                  height={64}
-                  className="size-14 shrink-0 rounded-full object-cover ring-2 ring-primary/15"
-                />
-              )}
               <div>
                 <p className="font-numeric text-base font-semibold text-foreground">
                   {testimonial.name}
@@ -50,6 +47,7 @@ export function LandingTestimonial({
                 </p>
               </div>
             </figcaption>
+            </div>
           </figure>
         </Reveal>
       </Container>

@@ -7,6 +7,7 @@ import type { Locale } from "@/i18n/routing";
 import { allNavEntries, megaMenuGroups } from "@/lib/registry";
 import type { FeatureCategory, RegistryEntry } from "@/lib/registry/types";
 import { cn } from "@/lib/utils";
+import { localeValue } from "@/lib/locale-value";
 import { RegistryIcon } from "./registry-icon";
 import {
   NavigationMenu,
@@ -36,7 +37,8 @@ const PANEL_SHELL =
   "overflow-hidden rounded-2xl border border-[#0B1220]/[0.08] bg-white text-popover-foreground shadow-[0_1px_2px_rgba(11,18,32,0.04),0_28px_56px_-28px_rgba(11,18,32,0.28)]";
 
 /** Kill the primitive's double chrome so PANEL_SHELL + PanelChrome own the look. */
-const PANEL_CONTENT_RESET = "rounded-none bg-transparent p-0 shadow-none ring-0";
+const PANEL_CONTENT_RESET =
+  "rounded-none bg-transparent p-0 shadow-none ring-0";
 
 function triggerClass(isTransparent: boolean) {
   return cn(
@@ -44,7 +46,7 @@ function triggerClass(isTransparent: boolean) {
     // inline-flex trigger sits on a text baseline and picks up the line box's
     // half-leading, landing 1.5px below the plain Harga/Blog links, which are
     // block-level. Same display type puts all four nav items on one line.
-    "relative flex h-auto gap-1 bg-transparent px-0 py-0 font-numeric text-xs font-semibold transition-colors hover:bg-transparent focus:bg-transparent data-open:bg-transparent data-popup-open:bg-transparent",
+    "relative flex h-auto gap-1 rounded-full bg-transparent px-3 py-2 text-sm font-medium transition-colors hover:bg-[#f3f6fd] focus:bg-[#f3f6fd] data-open:bg-[#f3f6fd] data-popup-open:bg-[#f3f6fd]",
     isTransparent
       ? "text-white hover:bg-transparent! hover:text-white/85 data-popup-open:text-white"
       : "text-foreground hover:text-primary data-popup-open:text-primary",
@@ -55,9 +57,7 @@ function triggerClass(isTransparent: boolean) {
  * Quiet plate shared by both mega panels — no glow orbs or dot grids.
  */
 function PanelChrome({ children }: { children: ReactNode }) {
-  return (
-    <div className="relative isolate bg-white">{children}</div>
-  );
+  return <div className="relative isolate bg-white">{children}</div>;
 }
 
 /** Eyebrow-style column / group label — matches homepage `eyebrow-rule`. */
@@ -113,13 +113,15 @@ function MenuLink({
       </span>
       <span className={cn(withDescription && "flex flex-col gap-0.5")}>
         <span className="font-numeric text-sm leading-snug font-medium text-foreground transition-colors group-hover/mi:text-primary">
-          {entry.title[locale]}
+          {localeValue(entry.title, locale)}
         </span>
-        {withDescription && entry.tagline?.[locale] && (
-          <span className="font-numeric text-xs leading-snug text-muted-foreground">
-            {entry.tagline[locale]}
-          </span>
-        )}
+        {withDescription &&
+          entry.tagline &&
+          localeValue(entry.tagline, locale) && (
+            <span className="font-numeric text-xs leading-snug text-muted-foreground">
+              {localeValue(entry.tagline, locale)}
+            </span>
+          )}
       </span>
     </NavigationMenuLink>
   );
@@ -170,7 +172,7 @@ export function MegaMenu({
 
   return (
     <NavigationMenu align="center" anchor={anchor} panelClassName={PANEL_SHELL}>
-      <NavigationMenuList className="gap-6">
+      <NavigationMenuList className="gap-1">
         {/* ── Features ─────────────────────────────────────────────── */}
         <NavigationMenuItem>
           <NavigationMenuTrigger

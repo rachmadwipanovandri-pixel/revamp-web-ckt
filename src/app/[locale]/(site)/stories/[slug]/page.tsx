@@ -10,12 +10,8 @@ import { Container } from "@/components/layout/container";
 import { Reveal } from "@/components/sections/new-home/reveal";
 import { PageHero } from "@/components/sections/shared/page-hero";
 import { TestimonialVideoCard } from "@/components/sections/shared/testimonial-video-card";
-import {
-  STORIES,
-  STORY_COPY,
-  getStory,
-  type StoryLocale,
-} from "@/lib/stories";
+import Image from "next/image";
+import { STORIES, getStory, storyCopyFor } from "@/lib/stories";
 
 export const revalidate = false;
 
@@ -34,13 +30,11 @@ export async function generateMetadata({
   if (!story) return { robots: { index: false, follow: false } };
 
   const t = await getTranslations({ locale, namespace: "home.testimonials" });
-  const copy = STORY_COPY[locale as StoryLocale];
+  const copy = storyCopyFor(locale);
   const company = t(`${story.key}.company`);
   const metricLabel = t(`${story.key}.metricLabel`);
 
-  const title = metaTitle(
-    `${company} — ${copy.metaTitleSuffix} Cekat.AI`,
-  );
+  const title = metaTitle(`${company} — ${copy.metaTitleSuffix} Cekat.AI`);
   const description = metaSnippet(
     `${company}: ${metricLabel}. ${t("body")}`,
     158,
@@ -105,7 +99,7 @@ export default async function StoryPage({
   const t = await getTranslations({ locale, namespace: "home.testimonials" });
   const tc = await getTranslations({ locale, namespace: "agentic.caseStudy" });
   const tb = await getTranslations({ locale, namespace: "breadcrumb" });
-  const copy = STORY_COPY[locale as StoryLocale];
+  const copy = storyCopyFor(locale);
 
   const company = t(`${story.key}.company`);
   const metricValue = t(`${story.key}.metricValue`);
@@ -166,6 +160,25 @@ export default async function StoryPage({
         title={company}
         subtitle={metricLabel}
         chips={[metricValue, industry, fn]}
+        split
+        visual={
+          <div className="story-proof">
+            {story.image && (
+              <Image
+                src={story.image}
+                alt={company}
+                fill
+                preload
+                sizes="(max-width: 1024px) 100vw, 600px"
+                className="object-cover"
+              />
+            )}
+            <div className="story-proof__copy">
+              <span className="story-proof__number">{metricValue}</span>
+              <p>{metricLabel}</p>
+            </div>
+          </div>
+        }
       />
 
       <section className="relative overflow-hidden bg-white py-16 md:py-20">
@@ -194,11 +207,11 @@ export default async function StoryPage({
                 <p className="eyebrow-rule mt-10 mb-4 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase first:mt-0">
                   {copy.quoteLabel}
                 </p>
-                <blockquote className="text-[clamp(1.15rem,2vw,1.45rem)] leading-[1.5] font-medium tracking-[-0.02em] text-balance text-foreground">
+                <blockquote className="border-l-4 border-[#00b4c8] pl-7 text-[clamp(1.35rem,2.8vw,2.15rem)] leading-[1.45] font-medium tracking-[-0.03em] text-balance text-[#09214c]">
                   &ldquo;{quote}&rdquo;
                 </blockquote>
                 <div className="mt-6 flex items-center gap-4">
-                  {story.image ? (
+                  {story.image && (
                     // eslint-disable-next-line @next/next/no-img-element -- customer photo asset served as-is, same as testimonial avatars
                     <img
                       src={story.image}
@@ -207,10 +220,6 @@ export default async function StoryPage({
                       height={56}
                       className="size-14 rounded-full object-cover ring-2 ring-primary/20"
                     />
-                  ) : (
-                    <span className="flex size-14 shrink-0 items-center justify-center rounded-full bg-primary/15 font-numeric text-xl font-semibold text-primary ring-2 ring-primary/20">
-                      {name.charAt(0)}
-                    </span>
                   )}
                   <div>
                     <p className="font-numeric font-semibold text-foreground">
@@ -235,8 +244,12 @@ export default async function StoryPage({
                   </p>
                   <TestimonialVideoCard
                     videoId={story.videoId}
-                    name={t(`videos.${story.slug === "rumah-zakat" ? "rumahZakat" : "threeland"}.name`)}
-                    role={t(`videos.${story.slug === "rumah-zakat" ? "rumahZakat" : "threeland"}.role`)}
+                    name={t(
+                      `videos.${story.slug === "rumah-zakat" ? "rumahZakat" : "threeland"}.name`,
+                    )}
+                    role={t(
+                      `videos.${story.slug === "rumah-zakat" ? "rumahZakat" : "threeland"}.role`,
+                    )}
                   />
                 </Reveal>
               )}
@@ -261,7 +274,10 @@ export default async function StoryPage({
             </div>
           </div>
 
-          <Reveal delay={60} className="mt-14 border-t border-foreground/10 pt-10">
+          <Reveal
+            delay={60}
+            className="mt-14 border-t border-foreground/10 pt-10"
+          >
             <h2 className="font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
               {copy.moreHeading}
             </h2>

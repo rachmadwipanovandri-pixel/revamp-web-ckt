@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react/offline";
 import type { Locale } from "@/i18n/routing";
 import { alternates, metaSnippet, metaTitle } from "@/lib/seo";
 import { INTEGRATION_GROUPS } from "@/lib/integrations";
+import { localeValue } from "@/lib/locale-value";
 import { Container } from "@/components/layout/container";
 import { LandingHero } from "@/components/sections/landing/landing-hero";
 import { LandingCta } from "@/components/sections/landing/landing-cta";
@@ -59,20 +60,26 @@ export default async function IntegrationsPage({
         badge={t("badge")}
         title={t("heading")}
         subtitle={t("subtitle")}
+        productImage="/images/chat/connect-channels.png"
+        imageAlt={t("heading")}
       />
 
       {/* One group per section rather than a single flat grid: what a WhatsApp
           connection does and what a webhook does are different promises, and
           the grouping is what keeps each honest. */}
-      {INTEGRATION_GROUPS.map((group) => (
-        <section key={group.id} className="border-t border-border bg-white">
-          <Container className="border-x border-border px-6 py-12 lg:py-16">
+      {INTEGRATION_GROUPS.map((group, index) => (
+        <section
+          key={group.id}
+          className="integration-chapter border-t border-[#e5e9ef]"
+          data-chapter={index % 3}
+        >
+          <Container className="py-20 lg:py-28">
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-12 lg:items-start lg:gap-12">
-              <h2 className="text-2xl font-semibold tracking-tight text-foreground lg:col-span-5 lg:text-3xl">
-                {group.title[locale]}
+              <h2 className="text-[clamp(2rem,3.8vw,3.25rem)] leading-[1.1] font-semibold tracking-[-0.045em] text-balance text-[#09214c] lg:col-span-5">
+                {localeValue(group.title, locale)}
               </h2>
-              <p className="text-base text-muted-foreground lg:col-span-7 lg:text-lg">
-                {group.body[locale]}
+              <p className="text-base leading-[1.6] text-[#3a4960] lg:col-span-7 lg:text-lg">
+                {localeValue(group.body, locale)}
               </p>
             </div>
 
@@ -80,7 +87,7 @@ export default async function IntegrationsPage({
               {group.items.map((item) => (
                 <li
                   key={item.id}
-                  className="flex gap-4 rounded-lg border border-border bg-surface-muted p-5"
+                  className="flex gap-4 rounded-[20px] border border-[#e5e9ef] bg-white p-6 transition-colors hover:border-[#9eb8e5]"
                 >
                   {/* Vendor logos ignore this tint, our own glyphs inherit
                       it; see the icon field on Integration. Height plus
@@ -90,10 +97,10 @@ export default async function IntegrationsPage({
                   </span>
                   <div>
                     <h3 className="font-numeric text-base font-semibold text-foreground">
-                      {item.name[locale]}
+                      {localeValue(item.name, locale)}
                     </h3>
                     <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                      {item.note[locale]}
+                      {localeValue(item.note, locale)}
                     </p>
                   </div>
                 </li>
@@ -104,7 +111,7 @@ export default async function IntegrationsPage({
       ))}
 
       <section className="border-t border-border bg-surface-muted">
-        <Container className="border-x border-border px-6 py-12 lg:py-16">
+        <Container className="py-20 lg:py-24">
           <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-foreground lg:text-3xl">
             {t("missingHeading")}
           </h2>

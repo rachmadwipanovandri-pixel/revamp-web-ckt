@@ -10,10 +10,22 @@
   },
   "definition": "AI Multi-Bahasa adalah fitur Cekat.AI untuk melayani customer dalam berbagai bahasa dengan satu AI agent, memahami maksud dan konteks pertanyaan, membalas natural dalam bahasa yang dipakai customer, dan aktif 24/7 di WhatsApp, Instagram DM, Facebook Messenger, dan live chat website.",
   "stats": [
-    { "value": "+60%", "label": "revenue Minori Group naik" },
-    { "value": "+80%", "label": "konversi meningkat dengan AI multi-bahasa" },
-    { "value": "100%", "label": "inquiry tertangani di 2 zona waktu" },
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" }
+    {
+      "value": "+60%",
+      "label": "revenue Minori Group naik"
+    },
+    {
+      "value": "+80%",
+      "label": "konversi meningkat dengan AI multi-bahasa"
+    },
+    {
+      "value": "100%",
+      "label": "inquiry tertangani di 2 zona waktu"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    }
   ],
   "benefits": [
     {
@@ -52,7 +64,7 @@
       "body": "Bot keyword langsung bingung begitu customer nanya dengan gaya bahasa beda, apalagi lintas bahasa. AI Cekat.AI membaca maksud dan konteks, jadi pertanyaan yang sama ditanyakan lima cara dalam dua bahasa tetap dapat jawaban yang benar."
     },
     {
-      "label": "Auto Handoff",
+      "label": "Pengalihan Otomatis",
       "title": "Tim Ambil Alih dengan Konteks Lengkap",
       "body": "Kalau percakapan butuh manusia, chat otomatis dialihkan ke timmu lengkap dengan seluruh riwayatnya, apa pun bahasanya. Customer nggak perlu mengulang cerita, dan timmu menjawab dengan semua konteks di depan mata."
     },
@@ -62,7 +74,7 @@
       "body": "Daripada menduplikasi agent untuk tiap bahasa, kamu cukup bikin agent spesialis per fungsi, sales, support, billing, dan masing-masing melayani customer secara multi-bahasa. Lebih sedikit yang diurus, nggak ada yang hilang di terjemahan."
     },
     {
-      "label": "AI Tools",
+      "label": "Alat AI",
       "title": "Closing Langsung di Dalam Chat",
       "body": "AI-nya nggak cuma ngobrol. Tools AI di dalam chat bisa cek ongkir, bikin QR pembayaran, sampai edit gambar, jadi percakapan yang dimulai dalam bahasa apa pun bisa berakhir jadi order yang selesai."
     }

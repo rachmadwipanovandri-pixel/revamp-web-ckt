@@ -10,10 +10,22 @@
   },
   "definition": "CRM Otomatis adalah fitur Cekat.AI yang otomatis membuat dan memperbarui kartu CRM setiap customer dari tiap interaksi, chat, order, campaign, sampai aktivitas website, tanpa input data manual.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tercatat" },
-    { "value": "24/7", "label": "data update real-time" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tercatat"
+    },
+    {
+      "value": "24/7",
+      "label": "data update real-time"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -43,12 +55,12 @@
   ],
   "tabs": [
     {
-      "label": "Auto-Capture",
+      "label": "Pencatatan Otomatis",
       "title": "Leads Tertangkap Begitu Masuk",
       "body": "Leads baru dari website, WhatsApp, dan channel sosmed otomatis masuk ke CRM, nggak perlu copy-paste kontak, nggak ada leads yang nyangkut di inbox nunggu dicatat sampai keburu kelupaan."
     },
     {
-      "label": "Auto-Update",
+      "label": "Pembaruan Otomatis",
       "title": "Tiap Interaksi Nulis ke Kartunya",
       "body": "Chat baru, order kelar, campaign diterima, aktivitas website, masing-masing update kartu CRM customer dengan sendirinya. Profilnya nggambarin semua yang terjadi tanpa satu pun edit manual."
     },
@@ -78,9 +90,9 @@
     }
   ],
   "testimonial": {
-    "quote": "Our revenue increased by more than 50%! Cekat AI allows us to secure property visits and close deals even while I'm asleep, because no leads are missed.",
+    "quote": "Pendapatan kami meningkat lebih dari 50%! Cekat AI membantu kami menjadwalkan kunjungan properti dan menutup transaksi bahkan saat saya tidur, karena tidak ada prospek yang terlewat.",
     "name": "Adam Sulaiman",
-    "role": "President Director, Threeland Property",
+    "role": "Direktur Utama, Threeland Property",
     "image": "/images/crm/adam-sulaiman.png"
   },
   "faq": [

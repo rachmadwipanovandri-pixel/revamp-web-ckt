@@ -70,13 +70,16 @@ describe("registry integrity", () => {
     }
   });
 
-  it("has a content file for every (entry, locale) and no orphan content", () => {
+  it("has a locale-specific content file for every entry and no orphan content", () => {
     for (const kind of KINDS) {
       for (const entry of REGISTRY[kind]) {
+        // Keyword twins intentionally reuse the canonical page's content and
+        // only exist to preserve an older Indonesian URL.
+        if (entry.switcherFallbackId) continue;
         for (const locale of Object.keys(entry.slugs) as Locale[]) {
           expect(
             fs.existsSync(contentFile(kind, entry.id, locale)),
-            `missing content: ${kind}/${entry.id}/${locale}.json`,
+            `missing locale content: ${kind}/${entry.id}/${locale}.json`,
           ).toBe(true);
         }
       }
@@ -154,9 +157,12 @@ describe("registry integrity", () => {
 
   it("builds localized paths with per-locale slugs", () => {
     const entry = getEntryById("features", "whatsapp-blast")!;
-    expect(entryPaths("features", entry)).toEqual({
+    expect(entryPaths("features", entry)).toMatchObject({
       en: "/en/features/whatsapp-blast",
       id: "/fitur/wa-blast",
+      cn: "/cn/features/whatsapp-blast",
+      jp: "/jp/features/whatsapp-blast",
+      kr: "/kr/features/whatsapp-blast",
     });
   });
 

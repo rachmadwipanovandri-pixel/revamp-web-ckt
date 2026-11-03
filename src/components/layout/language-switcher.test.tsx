@@ -40,6 +40,6 @@ describe("LanguageSwitcher", () => {
 
   it("shows the current language for the other locale too", () => {
     renderWithIntl("id");
-    expect(screen.getByText("Indonesian")).toBeInTheDocument();
+    expect(screen.getByText("Indonesia")).toBeInTheDocument();
   });
 });

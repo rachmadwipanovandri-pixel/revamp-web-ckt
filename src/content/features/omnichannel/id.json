@@ -10,10 +10,22 @@
   },
   "definition": "Aplikasi Omnichannel adalah fitur Cekat.AI untuk menyatukan WhatsApp, Instagram, Facebook Messenger, live chat website, dan channel API dalam satu inbox, jadi setiap percakapan customer ditangani di satu tempat dengan konteks yang lengkap.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "AI bales di semua channel" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "AI bales di semua channel"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -118,7 +130,7 @@
   "testimonial": {
     "quote": "Response rate kami meningkat 90%",
     "name": "Hargyo",
-    "role": "Director, Multimedia Nusantara Polytechnic",
+    "role": "Direktur, Multimedia Nusantara Polytechnic",
     "image": "/images/home/testimonial-hargyo.jpg"
   },
   "cta": {

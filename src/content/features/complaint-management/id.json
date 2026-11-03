@@ -10,10 +10,22 @@
   },
   "definition": "Manajemen komplain di Cekat.AI adalah alur terstruktur yang menangkap keluhan customer dari chat, otomatis melabeli dan mengubahnya jadi tiket, meng-assign ke tim yang tepat, dan melacak tiap komplain sampai selesai, jadi tidak ada keluhan yang terlewat atau tertangani terlambat.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "komplain tertangkap otomatis" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "komplain tertangkap otomatis"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -58,7 +70,7 @@
   "testimonial": {
     "quote": "Cekat.AI membantu kami memberikan layanan yang lebih cepat dan meningkatkan kepuasan customer.",
     "name": "Wiji",
-    "role": "Customer Experience Department Head, Rumah Zakat",
+    "role": "Kepala Departemen Pengalaman Pelanggan, Rumah Zakat",
     "image": "/images/home/testimonial-wiji-astuti.jpg"
   },
   "faq": [

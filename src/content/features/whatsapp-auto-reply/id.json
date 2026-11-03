@@ -10,10 +10,22 @@
   },
   "definition": "Auto Reply WA adalah fitur Cekat.AI untuk membalas pesan WhatsApp masuk secara otomatis dengan AI agent yang humanlike, memahami maksud customer dan memberi jawaban asli 24/7, bukan sekadar mengirim pesan salam atau pesan di luar jam kerja.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "auto reply, tidak pernah offline" },
-    { "value": "~5 menit", "label": "bikin AI agent-mu" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "auto reply, tidak pernah offline"
+    },
+    {
+      "value": "~5 menit",
+      "label": "bikin AI agent-mu"
+    }
   ],
   "benefits": [
     {
@@ -80,7 +92,7 @@
   "testimonial": {
     "quote": "Respon pelanggan menjadi lebih cepat",
     "name": "Silica Brenda",
-    "role": "Founder, Moir Salon",
+    "role": "Pendiri, Moir Salon",
     "image": "/images/home/testimonial-silica-brenda.jpg"
   },
   "faq": [

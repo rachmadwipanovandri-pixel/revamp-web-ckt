@@ -84,9 +84,24 @@ export default async function AboutPage({
       />
 
       <PageHero
+        tone="company"
         eyebrow={t("eyebrow")}
         title={t("heroTitle")}
         subtitle={t("heroSub")}
+        split
+        visual={
+          <div className="evidence-panel">
+            <p className="text-sm font-semibold">{t("factsEyebrow")}</p>
+            <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-10">
+              {FACTS.map((fact) => (
+                <div key={fact}>
+                  <dd className="text-[clamp(1.6rem,3vw,2.5rem)] leading-tight font-semibold tracking-[-0.04em]">{t(`facts.${fact}.v`)}</dd>
+                  <dt className="mt-3 text-sm leading-relaxed">{t(`facts.${fact}.l`)}</dt>
+                </div>
+              ))}
+            </dl>
+          </div>
+        }
       />
 
       {/* Story */}
@@ -129,27 +144,6 @@ export default async function AboutPage({
             </div>
           </div>
 
-          {/* Facts */}
-          <Reveal delay={60} className="mt-14">
-            <p className="eyebrow-rule inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
-              {t("factsEyebrow")}
-            </p>
-            <div className="mt-5 grid grid-cols-2 gap-4 lg:grid-cols-4">
-              {FACTS.map((fact) => (
-                <div
-                  key={fact}
-                  className="rounded-[1.25rem] border border-foreground/10 bg-slate-50 p-5"
-                >
-                  <p className="font-numeric text-[clamp(1.2rem,2vw,1.6rem)] leading-tight font-semibold tracking-[-0.03em] text-primary">
-                    {t(`facts.${fact}.v`)}
-                  </p>
-                  <p className="mt-2 text-sm leading-snug text-muted-foreground">
-                    {t(`facts.${fact}.l`)}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </Reveal>
         </Container>
       </section>
 

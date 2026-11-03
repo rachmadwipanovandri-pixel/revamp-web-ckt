@@ -4,6 +4,7 @@ import type { Locale } from "@/i18n/routing";
 import { REGISTRY } from "@/lib/registry";
 import { Container } from "@/components/layout/container";
 import { RegistryIcon } from "@/components/layout/registry-icon";
+import { localeValue } from "@/lib/locale-value";
 
 /**
  * "Solutions for every team in <industry>", the cross-section from the
@@ -65,11 +66,11 @@ export async function IndustryRoles({
               </span>
               <div>
                 <h3 className="font-numeric text-base font-semibold tracking-[-0.02em] text-foreground">
-                  {role.title[locale]}
+                  {localeValue(role.title, locale)}
                 </h3>
-                {role.tagline?.[locale] && (
+                {role.tagline && localeValue(role.tagline, locale) && (
                   <p className="mt-1 font-numeric text-sm leading-snug text-muted-foreground">
-                    {role.tagline[locale]}
+                    {localeValue(role.tagline, locale)}
                   </p>
                 )}
               </div>

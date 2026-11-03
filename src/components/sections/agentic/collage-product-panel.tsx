@@ -2,6 +2,8 @@
 
 import { useMemo } from "react";
 import { useLocale } from "next-intl";
+import type { Locale } from "@/i18n/routing";
+import { localeValue } from "@/lib/locale-value";
 import { cn } from "@/lib/utils";
 import type { HeroSlideKey } from "@/components/sections/agentic/hero-slides";
 import { useLoopCursor } from "@/components/sections/agentic/collage-live-hooks";
@@ -18,6 +20,89 @@ import {
   type ChatModeKey,
   type ChatStep,
 } from "@/lib/hero-chat";
+
+const PANEL_COPY = {
+  id: {
+    shipped: "Dikirim",
+    done: "Selesai",
+    today: "Hari ini",
+    new: "baru",
+    running: "Berjalan",
+    idle: "Diam",
+    waitingChat: "Menunggu chat",
+    automaticNotes: "Catatan otomatis",
+    syncing: "sync chat",
+    emptyCrm: "CRM terisi sendiri dari chat di sebelah…",
+    profile: "Profil",
+    nextAction: "Next best action",
+    orderLive: "Order live muncul dari chat…",
+    autoShipping: "Auto resi + QR",
+  },
+  en: {
+    shipped: "Shipped",
+    done: "Done",
+    today: "Today",
+    new: "new",
+    running: "Running",
+    idle: "Idle",
+    waitingChat: "Waiting for chat",
+    automaticNotes: "Automatic notes",
+    syncing: "sync chat",
+    emptyCrm: "CRM fills itself from the chat beside it…",
+    profile: "Profile",
+    nextAction: "Next best action",
+    orderLive: "Order appears live from chat…",
+    autoShipping: "Auto tracking + QR",
+  },
+  cn: {
+    shipped: "已发货",
+    done: "已完成",
+    today: "今天",
+    new: "新增",
+    running: "运行中",
+    idle: "空闲",
+    waitingChat: "等待聊天",
+    automaticNotes: "自动记录",
+    syncing: "同步聊天",
+    emptyCrm: "CRM 会从旁边的聊天自动填充…",
+    profile: "客户资料",
+    nextAction: "下一步行动",
+    orderLive: "订单实时来自聊天…",
+    autoShipping: "自动物流单号 + QR",
+  },
+  jp: {
+    shipped: "発送済み",
+    done: "完了",
+    today: "今日",
+    new: "新規",
+    running: "実行中",
+    idle: "待機中",
+    waitingChat: "チャット待ち",
+    automaticNotes: "自動メモ",
+    syncing: "チャット同期",
+    emptyCrm: "CRMは隣のチャットから自動入力されます…",
+    profile: "プロフィール",
+    nextAction: "次のアクション",
+    orderLive: "注文はチャットからリアルタイムで反映…",
+    autoShipping: "送り状 + QRを自動化",
+  },
+  kr: {
+    shipped: "배송 완료",
+    done: "완료",
+    today: "오늘",
+    new: "신규",
+    running: "실행 중",
+    idle: "대기",
+    waitingChat: "채팅 대기 중",
+    automaticNotes: "자동 메모",
+    syncing: "채팅 동기화",
+    emptyCrm: "CRM이 옆의 채팅에서 자동으로 채워집니다…",
+    profile: "프로필",
+    nextAction: "다음 액션",
+    orderLive: "주문이 채팅에서 실시간으로 반영됩니다…",
+    autoShipping: "운송장 + QR 자동화",
+  },
+} satisfies Record<Locale, Record<string, string>>;
 
 /**
  * Product-detail panel for each hero slide.
@@ -67,7 +152,9 @@ export function CollageProductPanel({
             <OmsFlow orderPlaced={orderPlaced} />
           )
         ) : null}
-        {focus === "marketing" ? <MarketingDetail orderPlaced={orderPlaced} /> : null}
+        {focus === "marketing" ? (
+          <MarketingDetail orderPlaced={orderPlaced} />
+        ) : null}
         {focus === "ecosystem" ? (
           <EcosystemMix orderPlaced={orderPlaced} />
         ) : null}
@@ -84,7 +171,7 @@ function SyncedCrm({
   chatSync: ChatSync;
   chatSteps: ChatStep[];
 }) {
-  const locale = useLocale() === "en" ? "en" : "id";
+  const locale = useLocale() as Locale;
   const phase = deriveChatPhase(chatSteps, chatSync.cursor);
   const data = INDUSTRY_CRM[chatSync.scenario];
   const note = pickPhaseNote(data.notes, phase);
@@ -98,7 +185,7 @@ function SyncedCrm({
       <PanelTitle
         label="Cekat CRM"
         tone="text-[#2563eb]"
-        badge={phase === "idle" ? "Menunggu chat" : phase}
+        badge={phase === "idle" ? PANEL_COPY[locale].waitingChat : phase}
         badgeTone={phase === "closed" || phase === "paid" ? "emerald" : "cyan"}
       />
       <div
@@ -108,28 +195,33 @@ function SyncedCrm({
         )}
       >
         <span className="grid size-6 place-items-center rounded-full bg-linear-to-br from-cyan-400 to-[#2563eb] text-[9px] font-bold text-white">
-          {data.customer[locale].charAt(0)}
+          {(localeValue(data.customer, locale) ?? "").charAt(0)}
         </span>
         <div className="min-w-0 flex-1">
           <div className="truncate text-[10px] font-semibold text-[#101828]">
-            {filled ? data.customer[locale] : "—"}
+            {filled ? localeValue(data.customer, locale) : "—"}
           </div>
           <div className="truncate text-[8px] text-slate-500">
-            {filled ? `${data.source[locale]} · ${data.stage[locale]}` : "menunggu chat masuk…"}
+            {filled
+              ? `${localeValue(data.source, locale)} · ${localeValue(data.stage, locale)}`
+              : "menunggu chat masuk…"}
           </div>
         </div>
         {filled ? (
           <span className="rounded bg-emerald-100 px-1 py-0.5 text-[7px] font-bold text-emerald-700">
-            {data.badge[locale]}
+            {localeValue(data.badge, locale)}
           </span>
         ) : null}
       </div>
 
       <div className="mb-2 grid grid-cols-4 gap-1">
         {data.metrics.map((m, i) => (
-          <div key={m.label.en} className="rounded border border-[#E2E8F0] bg-white px-1 py-1 text-center">
+          <div
+            key={m.label.en}
+            className="rounded border border-[#E2E8F0] bg-white px-1 py-1 text-center"
+          >
             <div className="text-[7px] tracking-wide text-slate-500 uppercase">
-              {m.label[locale]}
+              {localeValue(m.label, locale)}
             </div>
             <div
               className={cn(
@@ -147,7 +239,7 @@ function SyncedCrm({
       </div>
 
       <div className="mb-1 flex items-center justify-between text-[8px] font-semibold tracking-wide text-slate-500 uppercase">
-        <span>Catatan otomatis</span>
+        <span>{PANEL_COPY[locale].automaticNotes}</span>
         <span className="flex items-center gap-1 normal-case text-[7px] font-medium text-emerald-600">
           <span
             className={cn(
@@ -155,7 +247,7 @@ function SyncedCrm({
               filled ? "animate-pulse-soft bg-emerald-500" : "bg-slate-300",
             )}
           />
-          {filled ? "sync chat" : "idle"}
+          {filled ? PANEL_COPY[locale].syncing : PANEL_COPY[locale].idle}
         </span>
       </div>
       <div className="flex min-h-0 flex-1 flex-col justify-between gap-1">
@@ -172,34 +264,46 @@ function SyncedCrm({
                 )}
               >
                 <div className="text-[9px] text-[#101828]">
-                  <span className="font-semibold">{note.title[locale]}</span>
+                  <span className="font-semibold">
+                    {localeValue(note.title, locale)}
+                  </span>
                 </div>
-                <div className="text-[7.5px] text-slate-500">{note.body[locale]}</div>
+                <div className="text-[7.5px] text-slate-500">
+                  {localeValue(note.body, locale)}
+                </div>
               </div>
               <div className="hero-collage-msg rounded-md border border-sky-100 bg-white px-2 py-1.5">
                 <div className="text-[9px] text-[#101828]">
                   <span className="font-semibold">
-                    {data.notes.profile?.title[locale] ?? "Profil"}
+                    {data.notes.profile
+                      ? localeValue(data.notes.profile.title, locale)
+                      : PANEL_COPY[locale].profile}
                   </span>
                 </div>
                 <div className="text-[7.5px] text-slate-500">
-                  {data.notes.profile?.body[locale]}
+                  {data.notes.profile
+                    ? localeValue(data.notes.profile.body, locale)
+                    : null}
                 </div>
               </div>
               <div className="hero-collage-msg rounded-md border border-indigo-50 bg-indigo-50/40 px-2 py-1.5">
                 <div className="text-[9px] text-indigo-900">
                   <span className="font-semibold">
-                    {data.notes.offer?.title[locale] ?? "Next best action"}
+                    {data.notes.offer
+                      ? localeValue(data.notes.offer.title, locale)
+                      : PANEL_COPY[locale].nextAction}
                   </span>
                 </div>
                 <div className="text-[7.5px] text-indigo-700/80">
-                  {data.notes.offer?.body[locale]}
+                  {data.notes.offer
+                    ? localeValue(data.notes.offer.body, locale)
+                    : null}
                 </div>
               </div>
             </>
           ) : (
             <div className="rounded-md border border-dashed border-slate-200 px-2 py-2 text-[8px] text-slate-400">
-              CRM terisi sendiri dari chat di sebelah…
+              {PANEL_COPY[locale].emptyCrm}
             </div>
           )}
         </div>
@@ -213,7 +317,9 @@ function SyncedCrm({
               key={f.l}
               className="rounded border border-[#E2E8F0] bg-white px-1 py-0.5 text-center"
             >
-              <div className="text-[6.5px] tracking-wide text-slate-500 uppercase">{f.l}</div>
+              <div className="text-[6.5px] tracking-wide text-slate-500 uppercase">
+                {f.l}
+              </div>
               <div
                 className={cn(
                   "text-[8px] font-bold",
@@ -232,7 +338,8 @@ function SyncedCrm({
 
 /** OMS window on the ecosystem stage — order row follows chat phase. */
 function SyncedOms({ chatSync }: { chatSync: ChatSync }) {
-  const locale = useLocale() === "en" ? "en" : "id";
+  const locale = useLocale() as Locale;
+  const copy = PANEL_COPY[locale];
   const phase = deriveChatPhase(
     HERO_CHAT_SCENARIOS.find((s) => s.key === chatSync.scenario)?.modes[
       chatSync.mode as ChatModeKey
@@ -241,8 +348,8 @@ function SyncedOms({ chatSync }: { chatSync: ChatSync }) {
   );
   const pack = INDUSTRY_OMS[chatSync.scenario];
   const order = pack.orders[0]!;
-  const status =
-    order.statusByPhase[phase] ?? order.statusByPhase.quote ?? { id: "…", en: "…" };
+  const status = order.statusByPhase[phase] ??
+    order.statusByPhase.quote ?? { id: "…", en: "…" };
   const show = chatSync.cursor > 0;
 
   const extras = pack.orders.slice(1);
@@ -256,7 +363,7 @@ function SyncedOms({ chatSync }: { chatSync: ChatSync }) {
       <PanelTitle
         label="OMS · Orders"
         tone="text-amber-600"
-        badge={show ? status[locale] : "idle"}
+        badge={show ? (localeValue(status, locale) ?? "…") : copy.idle}
         badgeTone={phase === "paid" || phase === "closed" ? "emerald" : "amber"}
       />
       <div className="flex min-h-0 flex-1 flex-col justify-between gap-1">
@@ -278,12 +385,13 @@ function SyncedOms({ chatSync }: { chatSync: ChatSync }) {
                       : "bg-amber-100 text-amber-800",
                   )}
                 >
-                  {status[locale]}
+                  {localeValue(status, locale) ?? "…"}
                 </span>
               </div>
               <div className="mt-0.5 flex items-baseline justify-between gap-2">
                 <span className="min-w-0 flex-1 truncate text-[9px] font-medium text-[#101828]">
-                  {order.who[locale]} · {order.items[locale]}
+                  {localeValue(order.who, locale)} ·{" "}
+                  {localeValue(order.items, locale)}
                 </span>
                 <span className="shrink-0 text-[9px] font-bold text-amber-700">
                   {order.total}
@@ -292,7 +400,7 @@ function SyncedOms({ chatSync }: { chatSync: ChatSync }) {
             </div>
           ) : (
             <div className="rounded-md border border-dashed border-slate-200 px-2 py-2 text-center text-[8px] text-slate-400">
-              Order live muncul dari chat…
+              {copy.orderLive}
             </div>
           )}
           {[
@@ -301,14 +409,14 @@ function SyncedOms({ chatSync }: { chatSync: ChatSync }) {
               who: fallback.who,
               items: fallback.items,
               total: fallback.total,
-              st: locale === "id" ? "Dikirim" : "Shipped",
+              st: copy.shipped,
             },
             ...extras.map((e) => ({
               id: e.id,
               who: e.who,
               items: e.items,
               total: e.total,
-              st: locale === "id" ? "Selesai" : "Done",
+              st: copy.done,
             })),
           ].map((row) => (
             <div
@@ -325,7 +433,8 @@ function SyncedOms({ chatSync }: { chatSync: ChatSync }) {
               </div>
               <div className="flex items-baseline justify-between gap-2">
                 <span className="min-w-0 flex-1 truncate text-[8.5px] text-slate-600">
-                  {row.who[locale]} · {row.items[locale]}
+                  {localeValue(row.who, locale)} ·{" "}
+                  {localeValue(row.items, locale)}
                 </span>
                 <span className="shrink-0 text-[8.5px] font-semibold text-amber-700">
                   {row.total}
@@ -336,12 +445,9 @@ function SyncedOms({ chatSync }: { chatSync: ChatSync }) {
         </div>
         <div className="flex items-center justify-between rounded border border-amber-100 bg-amber-50/50 px-2 py-1 text-[7.5px] text-amber-900">
           <span className="font-semibold">
-            {locale === "id" ? "Hari ini" : "Today"} · {show ? "1+" : "0"}{" "}
-            {locale === "id" ? "baru" : "new"}
+            {copy.today} · {show ? "1+" : "0"} {copy.new}
           </span>
-          <span>
-            {locale === "id" ? "Auto resi + QR" : "Auto resi + QR"}
-          </span>
+          <span>{copy.autoShipping}</span>
         </div>
       </div>
     </div>
@@ -372,13 +478,21 @@ function PanelTitle({
   return (
     <div className="mb-2 flex items-center justify-between">
       <span
-        className={cn("text-[10px] font-semibold tracking-[0.12em] uppercase", tone)}
+        className={cn(
+          "text-[10px] font-semibold tracking-[0.12em] uppercase",
+          tone,
+        )}
       >
         {label}
       </span>
       <span className="flex items-center gap-1">
         <span className="size-1.5 animate-pulse-soft rounded-full bg-emerald-500" />
-        <span className={cn("rounded-full px-1.5 py-0.5 text-[8px] font-semibold", badgeCls)}>
+        <span
+          className={cn(
+            "rounded-full px-1.5 py-0.5 text-[8px] font-semibold",
+            badgeCls,
+          )}
+        >
           {badge}
         </span>
       </span>
@@ -417,7 +531,10 @@ function Sparks({ tone }: { tone: "sky" | "violet" | "cyan" | "amber" }) {
     amber: "bg-amber-400",
   };
   return (
-    <div className="hero-collage-sparks pointer-events-none absolute inset-0" aria-hidden>
+    <div
+      className="hero-collage-sparks pointer-events-none absolute inset-0"
+      aria-hidden
+    >
       <span
         className={cn("hero-collage-spark", colors[tone])}
         style={{ left: "12%", top: "18%", animationDelay: "0s" }}
@@ -435,18 +552,12 @@ function Sparks({ tone }: { tone: "sky" | "violet" | "cyan" | "amber" }) {
 }
 
 /** Live metric tile that can tick a suffix. */
-function LiveTile({
-  l,
-  v,
-  hint,
-}: {
-  l: string;
-  v: string;
-  hint?: string;
-}) {
+function LiveTile({ l, v, hint }: { l: string; v: string; hint?: string }) {
   return (
     <div className="rounded-md border border-[#E2E8F0] bg-white px-1.5 py-1.5">
-      <div className="text-[7px] tracking-wide text-slate-500 uppercase">{l}</div>
+      <div className="text-[7px] tracking-wide text-slate-500 uppercase">
+        {l}
+      </div>
       <div className="text-[11px] font-bold text-[#101828]">{v}</div>
       {hint ? <div className="text-[7px] text-emerald-600">{hint}</div> : null}
     </div>
@@ -623,6 +734,8 @@ function CrmDetail() {
  * workflow automation).
  */
 function MiniAgents() {
+  const locale = useLocale() as Locale;
+  const copy = PANEL_COPY[locale];
   const jobs = useMemo(
     () => [
       {
@@ -728,7 +841,7 @@ function MiniAgents() {
                         : "bg-slate-100 text-slate-400",
                   )}
                 >
-                  {done ? "Done" : active ? "Running" : "Idle"}
+                  {done ? copy.done : active ? copy.running : copy.idle}
                 </span>
               </div>
             );
@@ -738,7 +851,8 @@ function MiniAgents() {
         <div className="rounded-md border border-violet-100 bg-[#0f172a] px-2 py-1.5 font-mono text-[7.5px] leading-relaxed text-violet-100/80">
           <div className="text-white/40">› execution log</div>
           <div>
-            <span className="text-emerald-300">ok</span> webhook POST /cek-jadwal
+            <span className="text-emerald-300">ok</span> webhook POST
+            /cek-jadwal
           </div>
           <div>
             <span className="text-emerald-300">ok</span> sheets.get rows=8
@@ -754,8 +868,13 @@ function MiniAgents() {
             { l: "Data", v: "Sheets / API" },
             { l: "Billing", v: "Unlimited" },
           ].map((m) => (
-            <div key={m.l} className="rounded-md bg-white px-1.5 py-1.5 text-center">
-              <div className="text-[7px] tracking-wide text-slate-500 uppercase">{m.l}</div>
+            <div
+              key={m.l}
+              className="rounded-md bg-white px-1.5 py-1.5 text-center"
+            >
+              <div className="text-[7px] tracking-wide text-slate-500 uppercase">
+                {m.l}
+              </div>
               <div className="text-[9px] font-bold text-[#101828]">{m.v}</div>
             </div>
           ))}
@@ -855,8 +974,13 @@ function OmsFlow({ orderPlaced }: { orderPlaced: boolean }) {
             { l: "Bayar", v: "QR / link" },
             { l: "Resi", v: "Auto" },
           ].map((m) => (
-            <div key={m.l} className="rounded-md bg-white px-1 py-1 text-center">
-              <div className="text-[6.5px] tracking-wide text-slate-500 uppercase">{m.l}</div>
+            <div
+              key={m.l}
+              className="rounded-md bg-white px-1 py-1 text-center"
+            >
+              <div className="text-[6.5px] tracking-wide text-slate-500 uppercase">
+                {m.l}
+              </div>
               <div className="text-[8px] font-bold text-[#101828]">{m.v}</div>
             </div>
           ))}
@@ -961,8 +1085,13 @@ function EcosystemMix({ orderPlaced }: { orderPlaced: boolean }) {
           { l: "Leads", v: "312" },
           { l: "Closed", v: "96" },
         ].map((m) => (
-          <div key={m.l} className="rounded-md border border-[#E2E8F0] bg-white px-1.5 py-1.5">
-            <div className="text-[7px] tracking-wide text-slate-500 uppercase">{m.l}</div>
+          <div
+            key={m.l}
+            className="rounded-md border border-[#E2E8F0] bg-white px-1.5 py-1.5"
+          >
+            <div className="text-[7px] tracking-wide text-slate-500 uppercase">
+              {m.l}
+            </div>
             <div className="text-[11px] font-bold text-[#101828]">{m.v}</div>
           </div>
         ))}

@@ -23,9 +23,18 @@ import type { Locale } from "@/i18n/routing";
  */
 
 export type Cell =
-  | { kind: "yes"; note?: Record<Locale, string> }
-  | { kind: "no"; note?: Record<Locale, string> }
-  | { kind: "text"; value: Record<Locale, string> };
+  | {
+      kind: "yes";
+      note?: Partial<Record<Locale, string>> & { en: string; id: string };
+    }
+  | {
+      kind: "no";
+      note?: Partial<Record<Locale, string>> & { en: string; id: string };
+    }
+  | {
+      kind: "text";
+      value: Partial<Record<Locale, string>> & { en: string; id: string };
+    };
 
 const y: Cell = { kind: "yes" };
 const n: Cell = { kind: "no" };

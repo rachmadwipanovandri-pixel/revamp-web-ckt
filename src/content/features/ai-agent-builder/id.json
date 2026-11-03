@@ -10,10 +10,22 @@
   },
   "definition": "AI Agent Builder adalah tool no-code di Cekat.AI untuk bikin AI agent customer service yang langsung kerja dalam waktu sekitar 5 menit, segampang ngasih brief ke admin CS. Kamu tinggal tempel SOP dan info bisnis, sambungin API yang kamu pakai, dan agent-nya mulai menangani percakapan nyata di WhatsApp, Instagram, Messenger, dan live chat website, tanpa coding sama sekali.",
   "stats": [
-    { "value": "5 menit", "label": "buat agent siap kerja" },
-    { "value": "0", "label": "baris coding dibutuhkan" },
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "5 menit",
+      "label": "buat agent siap kerja"
+    },
+    {
+      "value": "0",
+      "label": "baris coding dibutuhkan"
+    },
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -58,7 +70,7 @@
       "body": "Sambungin API yang udah kamu pakai, ongkir, booking jadwal, dan lainnya, biar agent-nya bisa nyelesaiin tugas di dalam chat. Setup-nya dituntun, jadi kamu tinggal arahin ke yang kamu butuh tanpa nulis kode integrasi sendiri."
     },
     {
-      "label": "Chat Flow",
+      "label": "Alur Chat",
       "title": "Desain Percakapan Secara Visual Kalau Perlu",
       "body": "Buat alur yang butuh jalur tetap, chat-flow designer drag-and-drop visual bikin kamu bisa memetakan percakapan langkah demi langkah, lagi-lagi tanpa coding. Pakai pas kamu mau kontrol, dan biarin AI yang urus sisanya secara bebas pas nggak."
     }

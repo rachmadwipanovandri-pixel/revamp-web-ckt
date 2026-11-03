@@ -25,6 +25,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import type { Locale } from "@/i18n/routing";
+import { localeValue } from "@/lib/locale-value";
 import {
   HERO_CHAT_MODES,
   HERO_CHAT_SCENARIOS,
@@ -78,13 +79,13 @@ function textReadingPause(text: string, minimum: number, maximum: number) {
  * replies legible without making short messages feel sluggish. */
 function readingPause(step: ChatStep, locale: Locale) {
   if (step.kind === "user") {
-    return textReadingPause(step.text[locale], 1700, 2800);
+    return textReadingPause(step.text[locale] ?? step.text.en, 1700, 2800);
   }
   if (step.kind === "ai") {
-    return textReadingPause(step.text[locale], 2000, 4200);
+    return textReadingPause(step.text[locale] ?? step.text.en, 2000, 4200);
   }
   if (step.kind === "chip") {
-    return textReadingPause(step.text[locale], 1700, 2600);
+    return textReadingPause(step.text[locale] ?? step.text.en, 1700, 2600);
   }
   if (step.kind === "divider") return 1400;
   return 2200;
@@ -177,7 +178,7 @@ export function HeroChatDemo({
     <div
       ref={demoRef}
       role="group"
-      aria-label={HERO_CHAT_UI.demoLabel[locale]}
+      aria-label={localeValue(HERO_CHAT_UI.demoLabel, locale)}
       onMouseEnter={() => setMorphPaused(true)}
       onMouseLeave={() => setMorphPaused(false)}
       onFocus={() => setMorphPaused(true)}
@@ -280,11 +281,11 @@ export function HeroChatDemo({
                             className="size-3.5 shrink-0"
                           />
                           <span className="sr-only">
-                            {HERO_CHAT_UI.verified[locale]}
+                            {localeValue(HERO_CHAT_UI.verified, locale)}
                           </span>
                         </p>
                         <p className="mt-0.5 text-[11px] leading-tight text-primary-foreground-muted">
-                          {HERO_CHAT_UI.online[locale]}
+                          {localeValue(HERO_CHAT_UI.online, locale)}
                         </p>
                       </div>
                     </div>
@@ -345,11 +346,11 @@ export function HeroChatDemo({
                   <WhatsAppAnchor
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={HERO_CHAT_UI.inputLabel[locale]}
+                    aria-label={localeValue(HERO_CHAT_UI.inputLabel, locale)}
                     className="flex min-h-11 items-center justify-between gap-3 rounded-full border border-border bg-surface-muted py-1.5 pr-1.5 pl-4 transition-colors hover:border-primary/40"
                   >
                     <span className="truncate text-sm text-subtle-foreground">
-                      {HERO_CHAT_UI.inputPlaceholder[locale]}
+                      {localeValue(HERO_CHAT_UI.inputPlaceholder, locale)}
                     </span>
                     <span
                       aria-hidden
@@ -407,7 +408,7 @@ function IndustryTabs({
             <button
               key={entry.key}
               type="button"
-              aria-label={entry.label[locale]}
+              aria-label={localeValue(entry.label, locale)}
               aria-pressed={active}
               data-industry-tab={entry.key}
               onClick={() => onScenarioChange(entry.key)}
@@ -445,7 +446,7 @@ function IndustryTabs({
                   !isInk && "lg:pointer-events-none lg:left-full lg:ml-2.5",
                 )}
               >
-                {entry.label[locale]}
+                {localeValue(entry.label, locale)}
                 <span
                   aria-hidden
                   className={cn(
@@ -524,7 +525,7 @@ function ConversationModeTabs({
                     : "text-muted-foreground hover:text-foreground",
               )}
             >
-              {entry.label[locale]}
+              {localeValue(entry.label, locale)}
             </button>
           );
         })}
@@ -643,7 +644,7 @@ function ChatThread({
       <div className="flex min-h-full flex-col gap-2">
         <div className="mt-auto" />
         <DateChip>
-          <span className="font-numeric">{mode.date[locale]}</span>
+          <span className="font-numeric">{localeValue(mode.date, locale)}</span>
         </DateChip>
         {steps.slice(0, visible).map((step, index) => (
           <ChatMessage key={index} index={index} step={step} locale={locale} />
@@ -690,7 +691,7 @@ function ChatMessage({
           className="w-fit max-w-full rounded-[14px] rounded-bl-none bg-white px-3 py-1.5 shadow-xs"
         >
           <p className="text-xs leading-relaxed text-foreground">
-            {step.text[locale]}
+            {localeValue(step.text, locale)}
           </p>
         </div>
         <p className="mt-1 px-1 font-numeric text-[10px] text-subtle-foreground">
@@ -710,7 +711,7 @@ function ChatMessage({
           className="w-fit max-w-full rounded-[14px] rounded-br-none bg-primary px-3 py-1.5 shadow-xs"
         >
           <p className="text-xs leading-relaxed text-primary-foreground">
-            {step.text[locale]}
+            {localeValue(step.text, locale)}
           </p>
         </div>
         <Attribution
@@ -740,7 +741,7 @@ function ChatMessage({
               step.accent ? "text-primary-foreground" : "text-foreground/80",
             )}
           >
-            {step.text[locale]}
+            {localeValue(step.text, locale)}
           </p>
           <p
             className={cn(
@@ -751,7 +752,7 @@ function ChatMessage({
             )}
           >
             {step.time ? `${formatTime(step.time, locale)} · ` : ""}
-            {HERO_CHAT_UI.system[locale]}
+            {localeValue(HERO_CHAT_UI.system, locale)}
           </p>
         </div>
       </div>
@@ -761,9 +762,12 @@ function ChatMessage({
     return (
       <div data-step-index={index}>
         <DateChip>
-          {step.text[locale]}
+          {localeValue(step.text, locale)}
           {step.date && (
-            <span className="font-numeric"> &middot; {step.date[locale]}</span>
+            <span className="font-numeric">
+              {" "}
+              &middot; {localeValue(step.date, locale)}
+            </span>
           )}
         </DateChip>
       </div>
@@ -820,7 +824,8 @@ function Attribution({
   const verb = outreach ? HERO_CHAT_UI.sentBy : HERO_CHAT_UI.answeredBy;
   return (
     <p className="mt-0.5 px-1 font-numeric text-[10px] text-subtle-foreground">
-      {verb[locale]} {from ?? "Cekat.AI"} &middot; {formatTime(time, locale)}
+      {localeValue(verb, locale)} {from ?? "Cekat.AI"} &middot;{" "}
+      {formatTime(time, locale)}
     </p>
   );
 }
@@ -859,32 +864,32 @@ function ChatCardView({ card, locale }: { card: ChatCard; locale: Locale }) {
       className="w-full rounded-[14px] rounded-br-none bg-white p-2.5 shadow-xs sm:p-3"
     >
       <p className="text-xs font-semibold text-foreground">
-        {card.title[locale]}
+        {localeValue(card.title, locale)}
       </p>
       <p className="mt-0.5 font-numeric text-[11px] text-subtle-foreground">
-        {card.meta[locale]}
+        {localeValue(card.meta, locale)}
       </p>
       <dl className="mt-1.5">
         {card.rows.map((row) => (
           <div
-            key={row.label[locale]}
+            key={localeValue(row.label, locale)}
             className="flex items-center justify-between gap-3 border-b border-dashed border-border py-1"
           >
             <dt className="text-[11px] text-muted-foreground">
-              {row.label[locale]}
+              {localeValue(row.label, locale)}
             </dt>
             <dd className="text-right font-numeric text-[11px] font-medium text-foreground">
-              {row.value[locale]}
+              {localeValue(row.value, locale)}
             </dd>
           </div>
         ))}
         {card.total && (
           <div className="flex items-center justify-between gap-3 py-1">
             <dt className="text-xs font-semibold text-foreground">
-              {card.total.label[locale]}
+              {localeValue(card.total.label, locale)}
             </dt>
             <dd className="font-numeric text-xs font-bold text-foreground">
-              {card.total.value[locale]}
+              {localeValue(card.total.value, locale)}
             </dd>
           </div>
         )}
@@ -909,7 +914,7 @@ function ChatCardView({ card, locale }: { card: ChatCard; locale: Locale }) {
                     : "bg-accent-green",
               )}
             />
-            {card.status[locale]}
+            {localeValue(card.status, locale)}
           </span>
         </div>
       )}
@@ -931,17 +936,17 @@ function ProductCardView({
     >
       <Image
         src={product.image.src}
-        alt={product.image.alt[locale]}
+        alt={localeValue(product.image.alt, locale) ?? ""}
         width={344}
         height={292}
         className="h-28 w-full rounded-lg object-contain"
       />
       <div className="px-1 pt-1.5 pb-0.5">
         <p className="text-xs font-semibold text-foreground">
-          {product.title[locale]}
+          {localeValue(product.title, locale)}
         </p>
         <p className="mt-0.5 font-numeric text-xs font-medium text-primary">
-          {product.price[locale]}
+          {localeValue(product.price, locale)}
         </p>
       </div>
     </div>
@@ -961,15 +966,15 @@ function RatingCardView({
       className="w-full rounded-[14px] rounded-br-none bg-white p-3 shadow-xs"
     >
       <p className="text-xs font-semibold text-foreground">
-        {rating.title[locale]}
+        {localeValue(rating.title, locale)}
       </p>
       <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground">
-        {rating.prompt[locale]}
+        {localeValue(rating.prompt, locale)}
       </p>
       <div className="mt-2 grid grid-cols-2 gap-1.5">
         {rating.options.map((option, index) => (
           <span
-            key={option[locale]}
+            key={localeValue(option, locale)}
             className={cn(
               "rounded-md border px-2 py-1 text-center text-[10px] font-medium",
               index === 0
@@ -977,7 +982,7 @@ function RatingCardView({
                 : "border-border bg-surface-muted text-muted-foreground",
             )}
           >
-            {option[locale]}
+            {localeValue(option, locale)}
           </span>
         ))}
       </div>

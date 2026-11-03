@@ -683,7 +683,7 @@ const HANSEN_EDUCATION_PROOF = {
       quote:
         "Cekat.AI membantu kami merespons calon mahasiswa lebih cepat, membangun engagement, dan meningkatkan jumlah mahasiswa hampir 60–70%.",
       name: "Hansen Iskandar",
-      role: "Head of Marketing, Admission & Sales of Matana University",
+      role: "Kepala Pemasaran, Penerimaan & Penjualan, Matana University",
       image: "/images/home/hansen-iskandar.png",
     },
     faq: "Matana University meningkatkan jumlah mahasiswa hampir 60–70% dengan Cekat.AI, menurut Head of Marketing, Admission & Sales-nya. Respons yang lebih cepat dan konsisten membantu membangun engagement calon mahasiswa dan membuat tim bekerja lebih efisien.",

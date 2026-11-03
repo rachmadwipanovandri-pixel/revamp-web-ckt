@@ -10,10 +10,22 @@
   },
   "definition": "Otomatisasi Order adalah fitur Cekat.AI yang membuat AI agent menyusun order lengkap langsung dari percakapan chat, detail customer, ongkir, dan pembayaran sekaligus, jadi penjualan closing 24/7 tanpa input manual.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "AI ambil order sepanjang waktu" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "AI ambil order sepanjang waktu"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -80,7 +92,7 @@
   "testimonial": {
     "quote": "Peluang closing sangat tinggi",
     "name": "Wiji Astuti",
-    "role": "Head of Customer Experience, Rumah Zakat",
+    "role": "Kepala Pengalaman Pelanggan, Rumah Zakat",
     "image": "/images/home/testimonial-wiji-astuti.jpg"
   },
   "faq": [

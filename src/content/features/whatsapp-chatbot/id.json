@@ -10,10 +10,22 @@
   },
   "definition": "Chatbot AI WhatsApp dari Cekat.AI adalah AI agent yang berjalan di WhatsApp Business API resmi untuk menjawab pertanyaan customer, mengkualifikasi leads, cek ongkir, dan closing order langsung di chat, 24/7 dengan bahasa natural layaknya manusia.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "chat WhatsApp dibales instan" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "chat WhatsApp dibales instan"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -54,7 +66,7 @@
       "body": "Cekat.AI adalah Meta Business Partner resmi, dan setiap chatbot berjalan di WhatsApp Business API resmi, cara yang compliant dan andal untuk otomatisasi WhatsApp skala besar, tanpa risiko akun seperti tool bot tidak resmi."
     },
     {
-      "label": "Knowledge Base",
+      "label": "Basis Pengetahuan",
       "title": "Dilatih Soal Bisnismu dalam ±5 Menit",
       "body": "Paste SOP, katalog, harga, dan kebijakan, tanpa coding, tanpa begadang bikin flowchart. Chatbot menjawab hanya dari yang kamu ajarkan, dan update pengetahuannya semudah mengedit teks."
     },
@@ -84,9 +96,9 @@
     }
   ],
   "testimonial": {
-    "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+    "quote": "Di luar jam kerja, kami mengandalkan teknologi AI. Rumah Zakat tetap dapat dihubungi 24/7, dan kami memanfaatkan AI sepenuhnya setelah jam operasional berakhir.",
     "name": "Tantan Supriatna",
-    "role": "Customer Relation Department Head, Rumah Zakat",
+    "role": "Kepala Departemen Relasi Pelanggan, Rumah Zakat",
     "image": "/images/chat/tantan-supriatna.png"
   },
   "faq": [

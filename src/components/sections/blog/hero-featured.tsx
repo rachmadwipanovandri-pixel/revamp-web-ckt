@@ -22,9 +22,9 @@ export function HeroFeatured({
   return (
     <Link
       href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}
-      className="group grid grid-cols-1 overflow-hidden rounded-[1.5rem] border border-white/12 bg-white/95 shadow-[0_32px_70px_-40px_rgba(0,0,0,0.75)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:shadow-[0_36px_80px_-40px_rgba(19,82,191,0.55)] md:grid-cols-2"
+      className="editorial-feature group grid grid-cols-1 overflow-hidden rounded-[28px] border border-[#ccdaf1] bg-white transition-all duration-500 hover:shadow-[0_24px_60px_-35px_rgba(19,82,191,0.4)] lg:grid-cols-[1fr_1.15fr]"
     >
-      <div className="flex flex-col justify-center p-6 lg:p-8">
+      <div className="flex flex-col justify-center p-7 lg:p-12">
         <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-full bg-ink-void px-3 py-1 font-numeric text-[0.65rem] font-semibold tracking-[0.14em] text-sky-300 uppercase">
             {featuredLabel}
@@ -35,10 +35,10 @@ export function HeroFeatured({
             </span>
           )}
         </div>
-        <h2 className="mt-3 line-clamp-3 text-[clamp(1.25rem,2.4vw,1.75rem)] leading-[1.15] font-semibold tracking-[-0.03em] text-balance text-foreground">
+        <h2 className="mt-6 text-[clamp(1.65rem,3vw,2.5rem)] leading-[1.12] font-semibold tracking-[-0.045em] text-balance text-[#09214c]">
           {post.title}
         </h2>
-        <p className="mt-2 line-clamp-2 font-numeric text-sm leading-snug text-muted-foreground md:text-base">
+        <p className="mt-5 font-numeric text-base leading-relaxed text-muted-foreground">
           {post.excerpt}
         </p>
         <div className="mt-5 flex items-center gap-3">
@@ -66,7 +66,7 @@ export function HeroFeatured({
           </span>
         </span>
       </div>
-      <div className="relative order-first aspect-[16/10] overflow-hidden bg-surface-subtle md:order-last md:aspect-auto md:min-h-[20rem]">
+      <div className="relative order-first aspect-[16/10] overflow-hidden bg-surface-subtle lg:order-last lg:aspect-auto lg:min-h-[28rem]">
         {post.image ? (
           <Image
             src={post.image.url}

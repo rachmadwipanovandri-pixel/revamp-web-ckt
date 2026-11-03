@@ -109,10 +109,13 @@ export default async function BlogIndexPage({
       />
 
       <PageHero
+        tone="editorial"
         eyebrow={t("eyebrow")}
         title={t("heroTitle")}
         subtitle={t("heroSubtitle")}
         chips={[t("latest")]}
+        align="left"
+        className="editorial-index"
       >
         {featured && (
           <HeroFeatured

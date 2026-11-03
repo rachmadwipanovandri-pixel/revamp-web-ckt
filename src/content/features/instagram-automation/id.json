@@ -10,10 +10,22 @@
   },
   "definition": "Bot Instagram adalah fitur Cekat.AI yang membalas DM Instagram secara otomatis dengan AI agent humanlike lewat API resmi Instagram. DM dari ads, reply story, dan komentar masuk ke satu inbox terpadu bersama WhatsApp dan Facebook Messenger, lalu dijawab 24/7.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "DM dibales, jam 2 pagi pun" },
-    { "value": "±5 menit", "label": "setup bot, tanpa coding" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "DM dibales, jam 2 pagi pun"
+    },
+    {
+      "value": "±5 menit",
+      "label": "setup bot, tanpa coding"
+    }
   ],
   "benefits": [
     {
@@ -49,7 +61,7 @@
   ],
   "tabs": [
     {
-      "label": "Auto Reply",
+      "label": "Balasan Otomatis",
       "title": "Balasan yang Kayak Kamu, Bukan Kayak Robot",
       "body": "AI menjawab dengan bahasa natural dan multibahasa, followers luar negeri pun terlayani. Dia membaca maksud customer, bukan menunggu keyword persis untuk melempar balasan kaleng."
     },

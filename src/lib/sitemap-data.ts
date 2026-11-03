@@ -48,7 +48,7 @@ const LOCALE_ORDER: Locale[] = [
  * single-locale pages: hreflang requires 1:1 reciprocity, so advertising a
  * counterpart that does not exist would point crawlers at a 404.
  */
-function languagesFor(paths: { en?: string; id?: string }) {
+function languagesFor(paths: Partial<Record<Locale, string>>) {
   if (!paths.en || !paths.id) return undefined;
   return {
     en: `${SITE_URL}${paths.en}`,
@@ -221,7 +221,7 @@ export async function blogUrls(): Promise<SitemapUrl[]> {
       return translated ?? (post.lang === locale ? post : undefined);
     }).filter((entry): entry is PostSlugInfo => Boolean(entry));
 
-    const paths: { en?: string; id?: string } = {};
+    const paths: Partial<Record<Locale, string>> = {};
     for (const entry of group) {
       paths[entry.lang as Locale] = blogPath(entry.slug, entry.lang as Locale);
     }
@@ -256,7 +256,7 @@ export async function blogAuthorUrls(): Promise<SitemapUrl[]> {
         },
         locale,
       });
-    const paths = {
+    const paths: Partial<Record<Locale, string>> = {
       en: path("en"),
       id: path("id"),
     };

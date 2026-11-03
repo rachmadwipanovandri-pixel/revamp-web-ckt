@@ -1,6 +1,6 @@
 import type { Locale } from "@/i18n/routing";
 
-type L10n = Record<Locale, string>;
+type L10n = Partial<Record<Locale, string>> & { en: string; id: string };
 
 const l = (id: string, en = id): L10n => ({ id, en });
 

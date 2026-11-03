@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Facebook Messenger 机器人，24/7 应答页面消息 |Cekat.AI",
+    "description": "一款 Facebook Messenger 机器人，可 24/7 即时回复您的主页消息，并将其与 WhatsApp 和 Instagram 统一在一个 AI 收件箱中。受到 3,000 多家企业的信赖。"
+  },
+  "hero": {
+    "badge": "Facebook Messenger 的人工智能",
+    "title": "昼夜回复每一次 Facebook Messenger 聊天",
+    "subtitle": "将您的 Facebook 页面连接到 Cekat.AI，让 AI 代理在与 WhatsApp、Instagram DM 和网站实时聊天相同的统一收件箱中，24/7 即时回复 Messenger 对话"
+  },
+  "definition": "Cekat.AI 上的 Facebook Messenger 是一种渠道集成，可将您的 Facebook 页面连接到人工智能驱动的收件箱，类人代理 24/7 自动应答 Messenger 对话，并且每条消息都会与您的其他渠道发送到同一个统一收件箱中。",
+  "stats": [
+    {
+      "value": "3,000+",
+      "label": "企业在 Cekat.AI 上运行"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "处理客户互动"
+    },
+    {
+      "value": "24/7",
+      "label": "已回复 Messenger 聊天"
+    },
+    {
+      "value": "~5 min",
+      "label": "构建你的人工智能代理"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "在几秒钟而不是几小时内回复页面消息",
+      "body": "一位 Facebook 负责人等待了几个小时才得到回复，已经向三名竞争对手发送了消息。 Cekat.AI 的类人代理可以立即回答 Messenger 对话，理解意图和上下文，而不是关键字，并用客户自己的语言进行回复。有关价格、库存或如何订购的问题在人们的兴趣依然浓厚时得到真正的答案。",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "Cekat.AI AI 代理回复 Facebook Messenger 对话"
+    },
+    {
+      "title": "Messenger、WhatsApp 和 Instagram 的一个收件箱",
+      "body": "在 Facebook 主页应用程序、WhatsApp 和 Instagram 之间切换是消息丢失的原因。 Cekat.AI 通过官方 Business API、Instagram DM 和网站实时聊天，将 Messenger 与 WhatsApp 一起纳入一个统一的收件箱，并在每个渠道中提供快速搜索、自动标记和案例优先级排序。",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "Facebook Messenger 连接到 Cekat.AI 统一收件箱"
+    },
+    {
+      "title": "每一次 Messenger 聊天都会成为您 CRM 中的线索",
+      "body": "聊天结束后，Facebook 对话不应该消失。 Cekat.AI 自动将每个 Messenger 对话捕获到 CRM 中，无需手动输入，构建实时客户记录，并将每个联系人移动到访客、潜在客户和买家阶段，并为您的团队提供建议的后续步骤。",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "Cekat.AI CRM 中捕获的 Facebook Messenger 潜在客户"
+    },
+    {
+      "title": "将完整的背景信息交给您的团队",
+      "body": "当 Messenger 聊天需要有人时，人工智能会升级并附加完整的历史记录，因此客户永远不会重复自己。设置 AI 工作时间，以便您的团队在在线时处理聊天，并且 AI 覆盖夜间和周末，并自动切换以双向传递上下文。",
+      "image": "/images/chat/escalate-and-sync.png",
+      "imageAlt": "Facebook Messenger 的 AI 与人类切换，在 Cekat.AI 中提供完整上下文"
+    }
+  ],
+  "tabs": [
+    {
+      "label": "连接页面",
+      "title": "您的 Facebook 页面，由 AI 解答",
+      "body": "连接您的 Facebook 页面，AI 代理开始从您构建的知识库回复 Messenger 对话。无需编码，构建代理就像向新的 CS 管理员介绍情况一样简单，大多数团队在大约 5 分钟内即可上线。"
+    },
+    {
+      "label": "一个收件箱",
+      "title": "与其他渠道并驾齐驱的 Messenger",
+      "body": "Messenger 对话与 WhatsApp、Instagram DM 和网站实时聊天位于同一个统一收件箱中。您的团队使用一个仪表板，提供快速搜索、自动标签、私人注释和基于角色的访问，而不是应用程序跳转。"
+    },
+    {
+      "label": "潜在客户捕获",
+      "title": "从页面消息到 CRM 线索",
+      "body": "每个 Messenger 对话都会自动创建或更新一张 CRM 卡、联系人、聊天历史记录和行为记录。客户阶段跟踪从访客到潜在客户再到买家的每个人，并为您的团队提供下一步建议。"
+    },
+    {
+      "label": "智能切换",
+      "title": "下班后人工智能，在线时人类",
+      "body": "AI 工作时间与您团队的日程安排相匹配：座席在白天进行聊天，AI 在下班后进行答复，每次交接都会双向传送完整的对话上下文，因此没有人会重新开始 Messenger 聊天。"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "人性化，非脚本化",
+      "body": "AI 能够理解 Facebook 客户的意思，而不是匹配关键字，因此 Messenger 的回复读起来就像客户语言的真实答案。"
+    },
+    {
+      "title": "真正统一的收件箱",
+      "body": "Messenger 将 WhatsApp、Instagram 和网站实时聊天加入到一个仪表板、一份客户资料、一个团队中，无需切换应用程序。"
+    },
+    {
+      "title": "转化为销售的答案",
+      "body": "每个 Messenger 聊天都会被捕获为线索，后续聊天会自动触发，并且人工智能可以在对话中直接关闭订单。"
+    }
+  ],
+  "faq": [
+    {
+      "q": "什么是 Facebook Messenger 机器人？",
+      "a": "Facebook Messenger 机器人会自动回复发送到您的 Facebook 页面的消息。 Cekat.AI 是一个类人的人工智能代理，可以理解客户的意图，24/7 全天候回答真实信息，并将每个对话放入与其他渠道相同的统一收件箱中。"
+    },
+    {
+      "q": "如何将我的 Facebook 页面连接到 Cekat.AI？",
+      "a": "您将 Facebook 页面作为渠道连接，然后通过将 SOP 和业务信息粘贴到知识库中来构建 AI 代理。无需编码，构建代理大约需要 5 分钟，就像向新的 CS 管理员介绍情况一样简单。"
+    },
+    {
+      "q": "AI 可以在 Messenger 中回答有关我的产品的问题吗？",
+      "a": "是的。该代理根据您使用自己的产品详细信息、价格和 SOP 构建的知识库进行工作，它理解意图和上下文，而不是匹配关键字。它不应该处理的任何问题都会升级到您的团队，并附上完整的聊天历史记录。"
+    },
+    {
+      "q": "它会在工作时间之外回复 Messenger 消息吗？",
+      "a": "是的。 AI 代理全天候 (24/7) 响应，因此客户在午夜向您的主页发送消息时会得到即时回复。通过人工智能工作时间，您的团队可以在线处理聊天，人工智能会自动接管夜间和周末，并在每次交接时提供完整的上下文。"
+    },
+    {
+      "q": "我可以同时管理 Messenger、WhatsApp 和 Instagram 吗？",
+      "a": "是的。 Facebook Messenger 是 Cekat.AI 统一收件箱中的渠道之一，与 WhatsApp 一起通过官方 Business API、Instagram DM、网站实时聊天和 API 渠道。您的团队可以通过一个仪表板回答所有问题，并且每个客户的历史记录都保留在一份个人资料中。"
+    },
+    {
+      "q": "它能从 Facebook 对话中捕获线索吗？",
+      "a": "是的，自动的。每个 Messenger 对话都会创建或更新一张 CRM 卡，无需手动输入：一条记录​​中的联系人详细信息、聊天历史记录和行为。然后，客户阶段会跟踪从访客到潜在客户再到买家的每个联系，并提供建议的后续步骤。"
+    },
+    {
+      "q": "当 Messenger 聊天需要人工时会发生什么？",
+      "a": "对话将交给您的团队并附上完整的历史记录，因此客户永远不会重复自己的话。在人工智能工作时间中，这会按计划运行：人工智能涵盖下班后的聊天，您的团队在上线时会自动接管。"
+    },
+    {
+      "q": "它可以用多种语言回复吗？",
+      "a": "是的。人工智能代理支持多种语言，并以客户使用的语言进行回复。 Minori Group 服务于日本和印度尼西亚，在 Cekat.AI 上使用多语言 AI ​​处理 100% 的查询，在一个平台上实现两种语言和两个时区。"
+    },
+    {
+      "q": "Messenger 中的客户数据是否安全处理？",
+      "a": "Cekat.AI 在处理用户数据时遵守印度尼西亚个人数据保护法 UU PDP。 Messenger 对话和客户记录位于一个平台中，具有基于角色的团队访问权限，因此您可以准确控制团队中的哪些人可以查看哪些内容。"
+    }
+  ],
+  "cta": {
+    "heading": "将 Facebook 页面消息转化为成交",
+    "body": "将您的主页连接到 Cekat.AI，让 AI 24/7 回答每个 Messenger 聊天，同时您的 CRM 会悄悄地充满潜在客户。"
+  }
+}

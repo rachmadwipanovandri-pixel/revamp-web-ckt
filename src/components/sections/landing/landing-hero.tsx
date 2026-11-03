@@ -6,6 +6,7 @@ import { mdiWhatsapp } from "@/lib/icons";
 import { Button } from "@/components/ui/button";
 import { SafeIcon } from "@/components/sections/new-home/safe-icon";
 import { PageHero } from "@/components/sections/shared/page-hero";
+import { ProductStage } from "./product-stage";
 
 export function LandingHero({
   badge,
@@ -14,6 +15,9 @@ export function LandingHero({
   useCases,
   image,
   imageAlt,
+  productImage,
+  visualLabel,
+  tone,
 }: {
   badge?: string;
   title: string;
@@ -22,6 +26,9 @@ export function LandingHero({
   /** Optional related photo used as the hero background (industry landings). */
   image?: string;
   imageAlt?: string;
+  productImage?: string;
+  visualLabel?: string;
+  tone?: string;
 }) {
   const th = useTranslations("home.hero");
 
@@ -31,14 +38,16 @@ export function LandingHero({
       title={title}
       subtitle={subtitle}
       chips={useCases}
-      image={image}
-      imageAlt={imageAlt}
+      split={Boolean(productImage)}
+      visual={productImage ? <ProductStage image={productImage} imageAlt={imageAlt ?? title} photo={image} label={visualLabel ?? badge} tone={tone} /> : undefined}
       align="center"
+      compactCenter={Boolean(useCases?.length)}
+      tone={tone}
     >
-      <div className="flex w-full flex-wrap items-center justify-center gap-3">
+      <div className={`flex w-full flex-wrap items-center gap-3 ${productImage ? "justify-start" : "justify-center"}`}>
         <Button
           size="lg"
-          className="h-13 rounded-full bg-white px-8 text-sm text-ink-void shadow-[0_16px_40px_-16px_rgba(255,255,255,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-50"
+            className="h-13 rounded-full bg-[#1352bf] px-8 text-sm text-white shadow-[0_16px_34px_-16px_rgba(19,82,191,0.75)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0d439f]"
           nativeButton={false}
           render={
             <WhatsAppAnchor target="_blank" rel="noopener noreferrer" />
@@ -50,7 +59,7 @@ export function LandingHero({
         <Button
           variant="outline"
           size="lg"
-          className="h-13 rounded-full border-white/30 bg-white/8 px-8 text-sm text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-white/60 hover:bg-white/15"
+            className="h-13 rounded-full border-[#1352bf]/20 bg-white/85 px-8 text-sm text-[#09214c] shadow-[0_14px_28px_-20px_rgba(9,33,76,0.5)] backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-[#1352bf]/50 hover:bg-white"
           nativeButton={false}
           render={<AppAnchor href={REGISTER_URL} />}
         >

@@ -1,5 +1,7 @@
 import "server-only";
 import type { Locale } from "@/i18n/routing";
+import { existsSync } from "node:fs";
+import path from "node:path";
 
 export type LegalPageId = "terms" | "privacy" | "refund";
 
@@ -34,6 +36,12 @@ export async function loadLegalContent(
   page: LegalPageId,
   locale: Locale,
 ): Promise<LegalContent> {
-  const mod = await import(`../content/legal/${page}.${locale}.json`);
+  const root = path.join(process.cwd(), "src", "content", "legal");
+  const fileLocale = [locale, "en", "id"].find((candidate) =>
+    existsSync(path.join(root, `${page}.${candidate}.json`)),
+  );
+  if (!fileLocale)
+    throw new Error(`Missing legal content for ${page}/${locale}`);
+  const mod = await import(`../content/legal/${page}.${fileLocale}.json`);
   return mod.default as LegalContent;
 }

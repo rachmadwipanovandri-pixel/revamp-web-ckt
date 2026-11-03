@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { TEASER_INTEGRATIONS } from "@/lib/integrations";
 import { Container } from "@/components/layout/container";
+import { localeValue } from "@/lib/locale-value";
 
 /**
  * Copy left, the marks we actually connect to right.
@@ -71,7 +72,7 @@ export async function Integrations() {
                     />
                   </span>
                   <span className="font-numeric text-xs leading-snug font-medium text-foreground">
-                    {item.name[locale]}
+                    {localeValue(item.name, locale) ?? item.id}
                   </span>
                 </li>
               ))}

@@ -12,6 +12,7 @@ import { BenefitAccordion } from "@/components/sections/landing/benefit-accordio
 import { LandingTestimonial } from "@/components/sections/landing/landing-testimonial";
 import { RichFaq } from "@/components/sections/landing/rich-faq";
 import { LandingCta } from "@/components/sections/landing/landing-cta";
+import { PRODUCT_ART } from "./product-stage";
 
 export interface ProductStep {
   key: string;
@@ -101,6 +102,10 @@ export async function ProductLanding({
           badge={badge}
           title={t("hero.title")}
           subtitle={t("hero.subtitle")}
+          productImage={PRODUCT_ART[namespace]}
+          imageAlt={badge}
+          tone={namespace}
+          visualLabel={benefits[0]?.title}
         />
       </div>
 

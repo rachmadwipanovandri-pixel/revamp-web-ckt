@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { REGISTRY } from "@/lib/registry";
+import { localeValue } from "@/lib/locale-value";
 import { Icon } from "@iconify/react/offline";
 import {
   mdiInstagram,
@@ -63,10 +64,29 @@ const SOCIALS = [
 ] as const;
 
 const OFFICE_COUNTRIES = [
-  { flag: "🇮🇩", key: "indonesia", label: "Indonesia" },
-  { flag: "🇸🇬", key: "singapore", label: "Singapore" },
-  { flag: "🇲🇾", key: "malaysia", label: "Malaysia" },
+  { flag: "🇮🇩", key: "indonesia" },
+  { flag: "🇸🇬", key: "singapore" },
+  { flag: "🇲🇾", key: "malaysia" },
 ] as const;
+
+const OFFICE_COUNTRY_LABELS: Record<
+  Locale,
+  Record<(typeof OFFICE_COUNTRIES)[number]["key"], string>
+> = {
+  en: { indonesia: "Indonesia", singapore: "Singapore", malaysia: "Malaysia" },
+  id: { indonesia: "Indonesia", singapore: "Singapura", malaysia: "Malaysia" },
+  cn: { indonesia: "印度尼西亚", singapore: "新加坡", malaysia: "马来西亚" },
+  jp: {
+    indonesia: "インドネシア",
+    singapore: "シンガポール",
+    malaysia: "マレーシア",
+  },
+  kr: {
+    indonesia: "인도네시아",
+    singapore: "싱가포르",
+    malaysia: "말레이시아",
+  },
+};
 
 function LinkColumn({
   title,
@@ -141,7 +161,9 @@ export function Footer() {
           <span className="inline-flex items-center rounded-full border border-white/12 bg-white/6 px-3 py-1.5">
             <MetaLogo className="h-3 w-auto brightness-0 invert lg:h-4" />
           </span>
-          <p className="text-sm text-white/75 sm:text-base">{t("metaPartner")}</p>
+          <p className="text-sm text-white/75 sm:text-base">
+            {t("metaPartner")}
+          </p>
         </Container>
       </div>
 
@@ -193,7 +215,7 @@ export function Footer() {
                       )}
                     >
                       <span className="font-emoji">{c.flag}</span>
-                      <span>{c.label}</span>
+                      <span>{OFFICE_COUNTRY_LABELS[locale][c.key]}</span>
                     </button>
                   );
                 })}
@@ -319,7 +341,7 @@ export function Footer() {
                       params: { slug: entry.slugs[locale]! },
                     }}
                   >
-                    {entry.title[locale]}
+                    {localeValue(entry.title, locale)}
                   </FooterLink>
                 ))}
                 <li>
@@ -342,7 +364,7 @@ export function Footer() {
                       params: { slug: entry.slugs[locale]! },
                     }}
                   >
-                    {entry.title[locale]}
+                    {localeValue(entry.title, locale)}
                   </FooterLink>
                 ))}
                 <li>
@@ -365,7 +387,7 @@ export function Footer() {
                       params: { slug: entry.slugs[locale]! },
                     }}
                   >
-                    {entry.title[locale]}
+                    {localeValue(entry.title, locale)}
                   </FooterLink>
                 ))}
                 <li>

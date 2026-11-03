@@ -5,6 +5,7 @@ import {
   FeatureAccordionPanels,
   type FeatureLink,
 } from "@/components/sections/home/feature-accordion-panels";
+import { localeValue } from "@/lib/locale-value";
 
 /**
  * Server half of the accordion: resolves the twelve deep feature links here
@@ -31,7 +32,7 @@ export async function FeatureAccordion() {
         const entry = getEntryById("features", id);
         const slug = entry?.slugs[locale];
         return entry && slug
-          ? [{ id, slug, title: entry.title[locale] ?? "" }]
+          ? [{ id, slug, title: localeValue(entry.title, locale) ?? id }]
           : [];
       }),
     ]),

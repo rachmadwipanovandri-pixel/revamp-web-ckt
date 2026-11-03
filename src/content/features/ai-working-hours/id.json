@@ -10,10 +10,22 @@
   },
   "definition": "Jam Kerja AI adalah fitur Cekat.AI yang membuat tim menangani chat saat jam online yang diatur sementara AI agent ambil alih otomatis setelahnya, memberi customer coverage 24 jam dengan handoff otomatis yang membawa konteks lengkap.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "coverage tanpa shift malam" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "coverage tanpa shift malam"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -78,9 +90,9 @@
     }
   ],
   "testimonial": {
-    "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+    "quote": "Di luar jam kerja, kami mengandalkan teknologi AI. Rumah Zakat tetap dapat dihubungi 24/7, dan kami memanfaatkan AI sepenuhnya setelah jam operasional berakhir.",
     "name": "Tantan Supriatna",
-    "role": "Customer Relation Department Head, Rumah Zakat",
+    "role": "Kepala Departemen Relasi Pelanggan, Rumah Zakat",
     "image": "/images/chat/tantan-supriatna.png"
   },
   "faq": [

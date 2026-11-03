@@ -10,10 +10,22 @@
   },
   "definition": "Manajemen data pelanggan adalah fitur Cekat.AI untuk menyimpan pembelian, riwayat chat, campaign yang diterima, dan aktivitas website tiap customer dalam satu profil yang hidup, terbentuk dan ter-update otomatis dari setiap interaksi, tanpa input manual.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tercatat" },
-    { "value": "24/7", "label": "profil update real time" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tercatat"
+    },
+    {
+      "value": "24/7",
+      "label": "profil update real time"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -48,12 +60,12 @@
       "body": "Tiap profil menyimpan pembelian, riwayat chat lengkap lintas channel, semua campaign yang pernah diterima, plus aktivitas website dan event log. Tidak perlu buka-tutup aplikasi buat menyambung ceritanya."
     },
     {
-      "label": "Auto Update",
+      "label": "Pembaruan Otomatis",
       "title": "Terbentuk dan Ter-update dari Setiap Interaksi",
       "body": "Kartu customer terbentuk dan ter-update otomatis dari setiap percakapan di WhatsApp, Instagram, Messenger, dan live chat. Tanpa input manual, tanpa data basi, tanpa lembur ngisi CRM di akhir minggu."
     },
     {
-      "label": "Customer Stages",
+      "label": "Tahapan Pelanggan",
       "title": "Dari Visitor ke Lead sampai Buyer",
       "body": "Setiap customer terpetakan sebagai Visitor, Lead, atau Buyer, dengan saran langkah berikutnya di profilnya. Timmu selalu tahu posisi tiap hubungan dan aksi apa yang bikin maju ke tahap berikutnya."
     },
@@ -81,7 +93,7 @@
     "heading": "Data Customer Lengkap, Follow-Up Jadi Lebih Tepat",
     "quote": "Cekat AI sangat memudahkan tim kami membuat database pasien untuk follow-up serinci mungkin, tanpa admin harus mengetik satu per satu.",
     "name": "Gamal",
-    "role": "Founder & CEO, Putiih Skin Clinic"
+    "role": "Pendiri & CEO, Putiih Skin Clinic"
   },
   "faq": [
     {

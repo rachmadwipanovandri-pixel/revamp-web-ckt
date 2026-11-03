@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
+import { useId, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { Container } from "@/components/layout/container";
 import { cn } from "@/lib/utils";
 import { SectionHeading } from "./section-heading";
+import { WorkflowScene } from "./workflow-scene";
+import { sceneKind } from "./scene-art";
 
 type Benefit = {
   title: string;
@@ -21,9 +22,8 @@ type Benefit = {
  * whose five zigzag blocks left more whitespace than content.
  *
  * Closed panels stay mounted (hidden) so all five bodies remain in the DOM
- * for crawlers; artwork mounts only once a panel has been opened, and the
- * mobile in-panel copy shares the desktop well's sizes string so the two
- * CSS-hidden twins dedupe to a single fetch.
+ * for crawlers; only the active scene mounts. CSS-hidden desktop/mobile
+ * twins share image URLs, and offscreen scenes never start their motion.
  */
 export function BenefitAccordion({
   eyebrow,
@@ -35,19 +35,17 @@ export function BenefitAccordion({
   benefits: Benefit[];
 }) {
   const [open, setOpen] = useState(0);
-  const [seen, setSeen] = useState<number[]>([0]);
+  const id = useId();
 
   function select(index: number) {
     setOpen(index);
-    setSeen((current) =>
-      current.includes(index) ? current : [...current, index],
-    );
   }
 
   const active = benefits[open];
+  const hasArtwork = benefits.some((benefit) => benefit.image);
 
   return (
-    <section className="relative overflow-hidden bg-white py-16 md:py-20">
+    <section className="benefit-studio benefit-studio--playground relative overflow-hidden py-20 md:py-28" data-scene-kind={active?.image ? sceneKind(active.image) : "editorial"}>
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
@@ -55,13 +53,23 @@ export function BenefitAccordion({
       <Container className="relative">
         {heading && <SectionHeading eyebrow={eyebrow} heading={heading} />}
 
-        <div
+        {!hasArtwork ? (
+          <div className="benefit-editorial mt-12">
+            {benefits.map((benefit, index) => (
+              <article key={benefit.title}>
+                <span className="text-sm font-semibold text-primary">{String(index + 1).padStart(2, "0")}</span>
+                <h3>{benefit.title}</h3>
+                <p>{benefit.body}</p>
+              </article>
+            ))}
+          </div>
+        ) : <div
           className={cn(
             "grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12",
             heading && "mt-10",
           )}
         >
-          <div className="flex flex-col gap-3 lg:col-span-6">
+          <div className={cn("benefit-studio__steps flex flex-col gap-3", active?.image ? "lg:col-span-5" : "lg:col-span-12")}>
             {benefits.map((benefit, index) => {
               const isOpen = index === open;
               return (
@@ -70,8 +78,8 @@ export function BenefitAccordion({
                   className={cn(
                     "rounded-[1.25rem] border transition-all duration-300",
                     isOpen
-                      ? "border-primary/40 bg-ink-void shadow-[0_24px_48px_-32px_rgba(15,31,58,0.75)]"
-                      : "border-foreground/8 bg-surface-muted/60 hover:border-primary/25 hover:bg-white",
+                      ? "border-primary/35 bg-white shadow-[0_28px_56px_-36px_rgba(19,82,191,0.38)]"
+                      : "border-[#09214c]/8 bg-white/70 hover:border-primary/25 hover:bg-white",
                   )}
                 >
                   <h3>
@@ -79,23 +87,20 @@ export function BenefitAccordion({
                       type="button"
                       onClick={() => select(index)}
                       aria-expanded={isOpen}
-                      aria-controls={`benefit-panel-${index}`}
-                      id={`benefit-tab-${index}`}
+                      aria-controls={`${id}-benefit-panel-${index}`}
+                      id={`${id}-benefit-tab-${index}`}
                       className="flex w-full cursor-pointer items-center justify-between gap-4 p-5 text-left"
                     >
                       <span className="flex items-baseline gap-3">
                         <span
-                          className={cn(
-                            "font-numeric text-sm font-semibold tabular-nums",
-                            isOpen ? "text-sky-300" : "text-primary/60",
-                          )}
+                          className="font-numeric text-sm font-semibold text-primary tabular-nums"
                         >
                           {String(index + 1).padStart(2, "0")}
                         </span>
                         <span
                           className={cn(
                             "font-numeric text-base font-semibold tracking-[-0.02em]",
-                            isOpen ? "text-white" : "text-foreground",
+                            "text-foreground",
                           )}
                         >
                           {benefit.title}
@@ -106,7 +111,7 @@ export function BenefitAccordion({
                         className={cn(
                           "size-5 shrink-0 transition-transform",
                           isOpen
-                            ? "rotate-180 text-sky-200"
+                            ? "rotate-180 text-primary"
                             : "text-subtle-foreground",
                         )}
                       />
@@ -114,30 +119,24 @@ export function BenefitAccordion({
                   </h3>
 
                   <div
-                    id={`benefit-panel-${index}`}
+                    id={`${id}-benefit-panel-${index}`}
                     role="region"
-                    aria-labelledby={`benefit-tab-${index}`}
+                    aria-labelledby={`${id}-benefit-tab-${index}`}
                     hidden={!isOpen}
                     className="px-5 pb-5"
                   >
                     <p
                       className={cn(
                         "text-sm leading-relaxed",
-                        isOpen ? "text-sky-50/85" : "text-muted-foreground",
+                        "text-muted-foreground",
                       )}
                     >
                       {benefit.body}
                     </p>
 
-                    {benefit.image && seen.includes(index) && (
-                      <div className="relative mt-4 aspect-video w-full overflow-hidden rounded-xl bg-white lg:hidden">
-                        <Image
-                          src={benefit.image}
-                          alt={benefit.imageAlt ?? ""}
-                          fill
-                          sizes="(max-width: 1024px) 100vw, 560px"
-                          className="object-contain p-2"
-                        />
+                    {benefit.image && isOpen && (
+                      <div className="mt-6 lg:hidden">
+                        <WorkflowScene image={benefit.image} imageAlt={benefit.imageAlt ?? benefit.title} title={benefit.title} index={index} count={benefits.length} />
                       </div>
                     )}
                   </div>
@@ -150,27 +149,13 @@ export function BenefitAccordion({
               text-only benefit leaves no empty box beside it. */}
           <div
             className={cn(
-              "relative w-full overflow-hidden rounded-[1.35rem] border border-foreground/10 bg-surface-muted shadow-[0_24px_50px_-40px_rgba(16,24,40,0.45)] lg:col-span-6 lg:self-stretch",
-              active.image ? "hidden lg:block" : "hidden",
+               "benefit-studio__well benefit-studio__well--live relative w-full lg:col-span-7 lg:self-start lg:sticky lg:top-28",
+              active?.image ? "hidden lg:block" : "hidden",
             )}
           >
-            {benefits.map((benefit, index) =>
-              benefit.image && seen.includes(index) ? (
-                <Image
-                  key={benefit.title}
-                  src={benefit.image}
-                  alt={index === open ? (benefit.imageAlt ?? "") : ""}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 560px"
-                  className={cn(
-                    "object-contain p-6 transition-opacity duration-500",
-                    index === open ? "opacity-100" : "opacity-0",
-                  )}
-                />
-              ) : null,
-            )}
+            {active?.image && <WorkflowScene image={active.image} imageAlt={active.imageAlt ?? active.title} title={active.title} index={open} count={benefits.length} />}
           </div>
-        </div>
+        </div>}
       </Container>
     </section>
   );

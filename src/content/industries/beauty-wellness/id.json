@@ -9,7 +9,7 @@
     "subtitle": "Dari pertanyaan treatment sampai jadwal fix, Cekat.AI bales instan di WhatsApp dan Instagram, 24/7, pakai bahasa natural, tanpa front desk-mu nempel terus di HP",
     "useCases": [
       "Tanya treatment",
-      "Booking & rebooking",
+      "Pemesanan & pemesanan ulang",
       "Reminder no-show",
       "Promo tersegmen"
     ]
@@ -82,7 +82,7 @@
   "testimonial": {
     "quote": "Respon pelanggan menjadi lebih cepat",
     "name": "Silica Brenda",
-    "role": "Founder, Moir Salon",
+    "role": "Pendiri, Moir Salon",
     "image": "/images/home/testimonial-silica-brenda.jpg"
   },
   "faq": [

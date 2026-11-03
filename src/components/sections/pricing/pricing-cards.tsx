@@ -35,6 +35,7 @@ export function PricingCards({ plan }: { plan: Plan }) {
             style={{ animationDelay: `${index * 70}ms` }}
             className={cn(
               "group relative flex animate-fade-in-up-blur flex-col overflow-hidden rounded-[1.5rem] border bg-white transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:animate-none",
+              isPopular && "pricing-card--popular",
               isPopular
                 ? "z-10 border-primary/35 shadow-[0_28px_56px_-32px_rgba(19,82,191,0.55)] hover:-translate-y-1.5 hover:shadow-[0_36px_64px_-32px_rgba(19,82,191,0.6)] xl:-translate-y-2 xl:hover:-translate-y-3"
                 : "border-foreground/10 shadow-[0_18px_40px_-30px_rgba(16,24,40,0.4)] hover:-translate-y-1.5 hover:border-primary/30 hover:shadow-[0_28px_56px_-28px_rgba(19,82,191,0.35)]",

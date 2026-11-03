@@ -6,6 +6,7 @@ import { SectionShell } from "./section-shell";
 import { SectionHeading } from "./section-heading";
 import { Reveal } from "./reveal";
 import { SafeIcon } from "./safe-icon";
+import { localeValue } from "@/lib/locale-value";
 
 export async function Integrations() {
   const locale = (await getLocale()) as Locale;
@@ -13,7 +14,10 @@ export async function Integrations() {
 
   return (
     <SectionShell surface="gradient-brand">
-      <div aria-hidden className="ink-noise pointer-events-none absolute inset-0 opacity-40" />
+      <div
+        aria-hidden
+        className="ink-noise pointer-events-none absolute inset-0 opacity-40"
+      />
       <div className="relative grid gap-14 lg:grid-cols-12 lg:items-center lg:gap-16">
         <Reveal className="lg:col-span-5">
           <SectionHeading
@@ -65,7 +69,7 @@ export async function Integrations() {
                     />
                   </span>
                   <span className="font-numeric text-xs leading-snug font-medium break-words text-white/85">
-                    {item.name[locale]}
+                    {localeValue(item.name, locale) ?? item.id}
                   </span>
                 </li>
               ))}

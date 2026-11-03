@@ -32,7 +32,7 @@ export function EntryCard({
   return (
     <Link
       href={href}
-      className="group relative flex h-full flex-col overflow-hidden rounded-[1.35rem] border border-foreground/8 bg-white transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_28px_50px_-32px_rgba(19,82,191,0.4)] focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
+      className="secondary-entry-card group relative flex h-full flex-col overflow-hidden rounded-[20px] border border-[#e5e9ef] bg-white shadow-[0_1px_2px_rgba(9,33,76,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#9eb8e5] hover:shadow-[0_18px_40px_-22px_rgba(9,33,76,0.27)] focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none motion-reduce:transform-none"
     >
       <span
         aria-hidden
@@ -59,20 +59,20 @@ export function EntryCard({
       <div
         className={cn(
           "relative flex flex-1 flex-col gap-3",
-          image ? "p-5" : "p-6",
+          image ? "p-6" : "p-7",
         )}
       >
         {!image && (
-          <span className="flex size-12 items-center justify-center rounded-2xl border border-primary/20 bg-surface-muted text-primary shadow-[0_10px_24px_-16px_rgba(19,82,191,0.45)] transition-colors duration-300 group-hover:bg-white">
+          <span className="flex size-12 items-center justify-center rounded-xl bg-[#e4ebf9] text-[#1352bf] transition-colors duration-300 group-hover:bg-[#ccdaf1]">
             <RegistryIcon name={icon} className="size-5" />
           </span>
         )}
         <div>
-          <h3 className="font-numeric text-base font-semibold tracking-[-0.02em] text-foreground">
+          <h3 className="text-lg font-semibold tracking-[-0.03em] text-[#09214c]">
             {title}
           </h3>
           {tagline && (
-            <p className="mt-1 font-numeric text-sm leading-snug text-muted-foreground">
+            <p className="mt-2 text-sm leading-[1.6] text-[#505f73]">
               {tagline}
             </p>
           )}
@@ -107,7 +107,7 @@ export function EntryGrid({
   readMore?: string;
 }) {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="secondary-entry-grid grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {items.map((item) => (
         <EntryCard key={item.title} {...item} readMore={readMore} />
       ))}

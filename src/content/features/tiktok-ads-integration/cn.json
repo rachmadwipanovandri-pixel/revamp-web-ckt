@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "TikTok 广告集成：进入 DM 或 WhatsApp |Cekat.AI",
+    "description": "将 TikTok 广告连接到 Cekat.AI：广告点击变成 TikTok DM 或 WhatsApp 中的聊天，由 AI 应答，归因于他们的营销活动，并通过 Events API 发回转化。"
+  },
+  "hero": {
+    "badge": "TikTok 广告整合",
+    "title": "从五年规划直接进入闭幕式",
+    "subtitle": "一则广告有两条路线：进入 TikTok 私信进行快速咨询，或直接进入 WhatsApp 进行认真跟进。两者都由人工智能回答并记录并附上他们的活动。"
+  },
+  "definition": "Cekat.AI 中的 TikTok 广告集成将 TikTok 广告与对话连接起来：TikTok Inbox 路线将点击者带入 TikTok DM，Click-to-WhatsApp 路线将他们带到 WhatsApp Business，两者都进入一个收件箱，并发送回营销活动归因和转化信号。",
+  "stats": [
+    {
+      "value": "24/7",
+      "label": "广告线索立即得到答复"
+    },
+    {
+      "value": "1,000,000+",
+      "label": "处理客户互动"
+    },
+    {
+      "value": "3,000+",
+      "label": "企业在 Cekat.AI 上开展活动"
+    },
+    {
+      "value": "15+",
+      "label": "所服务的行业"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "两条路线，一个收件箱",
+      "body": "TikTok 私信中的广告适合快速提问和预订； WhatsApp 中的广告可以通过更长时间的跟进来提高销量。无论他们指向哪个方向，聊天内容都会出现在同一个收件箱中。",
+      "image": "/images/order/conversations-come-in-from-every-channel.png",
+      "imageAlt": "来自 TikTok 广告的聊天记录登陆一个收件箱"
+    },
+    {
+      "title": "观众无需切换应用程序即可进行对话",
+      "body": "TikTok收件箱路线在已经打开的应用程序内回答人们，其中包括打开消息模板。购买意愿不会因应用程序切换而消失。",
+      "image": "/images/chat/connect-channels.png",
+      "imageAlt": "连接到 Cekat.AI 收件箱的 TikTok DM"
+    },
+    {
+      "title": "需要培育的 WhatsApp 交易路线",
+      "body": "点击 WhatsApp 将重要的买家转移到您的企业号码上，人工智能符合条件，团队接管，CRM 记录直到成交的一切。",
+      "image": "/images/chat/ai-handles-conversations.png",
+      "imageAlt": "TikTok 线索抵达 WhatsApp，由 AI 应答"
+    },
+    {
+      "title": "Origin 活动坚持每一条线索",
+      "body": "每次聊天都会将其 TikTok 活动的名称带入 CRM 中。您可以看到您的病毒式传播内容实际产生了什么：观众或买家。",
+      "image": "/images/crm/capture-and-organize-customers.png",
+      "imageAlt": "TikTok 的销售线索归因于 CRM 中的营销活动"
+    },
+    {
+      "title": "转化发送回 TikTok",
+      "body": "聊天中完成的交易会通过 Pixel 和 Events API 回流，因此 TikTok 针对实际购买的人进行优化，而不是仅仅停止滚动的人。",
+      "image": "/images/marketing/see-what-actually-works.png",
+      "imageAlt": "转化信号发送回 TikTok"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "路线遵循意图",
+      "body": "在 TikTok 私信中进行少量咨询，在 WhatsApp 上进行大量购买。您可以根据广告系列进行选择。"
+    },
+    {
+      "title": "很少有平台有这个",
+      "body": "在我们的比较表中，TikTok 整合属于竞争对手最少勾选的行之一。"
+    },
+    {
+      "title": "算法的完整循环",
+      "body": "从广告到聊天再到关闭，然后信号返回TikTok进行下一步优化。"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Cekat.AI 中的 TikTok 广告集成是什么？",
+      "a": "TikTok 广告与对话的连接有两种途径：TikTok 收件箱广告打开 TikTok DM，以及 Click-to-WhatsApp 打开 WhatsApp Business 聊天。两者都包含在一个收件箱中，并带有营销活动归属。"
+    },
+    {
+      "q": "我们什么时候应该使用TikTok DM路线？",
+      "a": "对于少量潜在客户开发、产品咨询和预订，当您想要回答人们而不将他们移出他们已经打开的应用程序时。"
+    },
+    {
+      "q": "什么时候 WhatsApp 路线更适合？",
+      "a": "对于需要密集跟进的销售。 WhatsApp 通过 CRM、自动跟进和统一的历史记录将对话转移到您的企业号码上。"
+    },
+    {
+      "q": "两条路线可以同时运行吗？",
+      "a": "是的。该路线是根据活动选择的，所有聊天仍然位于同一个收件箱中，因此团队永远不会切换工具。"
+    },
+    {
+      "q": "归因如何发挥作用？",
+      "a": "来自广告的聊天会将其原始营销活动带入 CRM，因此您可以读取每个 TikTok 营销活动的销售线索和结案，而无需手动回顾。"
+    },
+    {
+      "q": "转化是否会发送回 TikTok？",
+      "a": "是的，通过 TikTok Pixel 和 Events API。聊天中发生的销售会成为优化信号，因此下一个广告会找到与您的买家相似的人。"
+    },
+    {
+      "q": "人工智能也能回答 TikTok 的线索吗？",
+      "a": "是的。两条路线的聊天都受到相同的处理：在第一秒内回答，合格，并在准备结束时移交给团队。"
+    },
+    {
+      "q": "竞争对手也整合了 TikTok 吗？",
+      "a": "大部分还没有。在我们的比较页面上，TikTok DM 和 TikTok Ads 位于其他平台很少勾选的行中。"
+    }
+  ],
+  "cta": {
+    "heading": "将 TikTok 观看者转变为记录买家",
+    "body": "两条路线，一个收件箱，完整归属。免费试用或通过 WhatsApp 询问我们的团队。"
+  }
+}

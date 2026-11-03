@@ -2,6 +2,7 @@
 
 import { useState, type ReactNode } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { localeValue } from "@/lib/locale-value";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { megaMenuGroups, allNavEntries } from "@/lib/registry";
@@ -157,7 +158,7 @@ export function MobileNav() {
                     params: { slug: entry.slugs[locale]! },
                   }}
                   icon={entry.icon}
-                  title={entry.title[locale]!}
+                  title={localeValue(entry.title, locale) ?? entry.id}
                 />
               ))}
             </div>
@@ -179,8 +180,10 @@ export function MobileNav() {
                 params: { slug: entry.slugs[locale]! },
               }}
               icon={entry.icon}
-              title={entry.title[locale]!}
-              description={entry.tagline?.[locale]}
+              title={localeValue(entry.title, locale) ?? entry.id}
+              description={
+                entry.tagline ? localeValue(entry.tagline, locale) : undefined
+              }
             />
           ))}
           <Link
@@ -200,8 +203,10 @@ export function MobileNav() {
                 params: { slug: entry.slugs[locale]! },
               }}
               icon={entry.icon}
-              title={entry.title[locale]!}
-              description={entry.tagline?.[locale]}
+              title={localeValue(entry.title, locale) ?? entry.id}
+              description={
+                entry.tagline ? localeValue(entry.tagline, locale) : undefined
+              }
             />
           ))}
           <Link

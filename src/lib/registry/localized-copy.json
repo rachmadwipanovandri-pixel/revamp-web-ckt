@@ -1,0 +1,1121 @@
+{
+  "features:ai-agent": {
+    "cn": {
+      "title": "人工智能聊天机器人",
+      "tagline": "类人人工智能可完成销售"
+    },
+    "jp": {
+      "title": "AIチャットボット",
+      "tagline": "営業を成立させる人間のようなAI"
+    },
+    "kr": {
+      "title": "AI 챗봇",
+      "tagline": "판매를 마감하는 인간과 같은 AI"
+    }
+  },
+  "features:whatsapp-chatbot": {
+    "cn": {
+      "title": "WhatsApp 聊天机器人",
+      "tagline": "在 WhatsApp 24/7 上销售的 AI"
+    },
+    "jp": {
+      "title": "WhatsApp チャットボット",
+      "tagline": "WhatsApp で年中無休で販売する AI"
+    },
+    "kr": {
+      "title": "WhatsApp 챗봇",
+      "tagline": "연중무휴 WhatsApp에서 판매하는 AI"
+    }
+  },
+  "features:whatsapp-bot": {
+    "cn": {
+      "tagline": "一个能听懂人话的 WhatsApp 机器人"
+    },
+    "jp": {
+      "tagline": "人間を理解する WhatsApp ボット"
+    },
+    "kr": {
+      "tagline": "사람을 이해하는 WhatsApp 봇"
+    }
+  },
+  "features:whatsapp-business-api": {
+    "cn": {
+      "title": "WhatsApp 商业 API",
+      "tagline": "适合您整个团队的官方 API"
+    },
+    "jp": {
+      "title": "WhatsApp ビジネス API",
+      "tagline": "チーム全体のための公式 API"
+    },
+    "kr": {
+      "title": "WhatsApp 비즈니스 API",
+      "tagline": "팀 전체를 위한 공식 API"
+    }
+  },
+  "features:whatsapp-bisnis": {
+    "cn": {
+      "tagline": "不再需要免费的 WhatsApp Business 应用程序"
+    },
+    "jp": {
+      "tagline": "無料の WhatsApp Business アプリを超える成長を遂げる"
+    },
+    "kr": {
+      "tagline": "무료 WhatsApp Business 앱의 성장"
+    }
+  },
+  "features:whatsapp-auto-reply": {
+    "cn": {
+      "title": "WhatsApp 自动回复",
+      "tagline": "即使在几个小时后也能立即得到答复"
+    },
+    "jp": {
+      "title": "WhatsApp自動返信",
+      "tagline": "時間外であっても即座に回答"
+    },
+    "kr": {
+      "title": "WhatsApp 자동 회신",
+      "tagline": "몇 시간 후에도 즉각적인 답변"
+    }
+  },
+  "features:instagram-automation": {
+    "cn": {
+      "title": "Instagram API",
+      "tagline": "自动回复每条 Instagram 私信"
+    },
+    "jp": {
+      "title": "インスタグラムAPI",
+      "tagline": "InstagramのDMごとに自動返信する"
+    },
+    "kr": {
+      "title": "인스타그램 API",
+      "tagline": "모든 Instagram DM 자동 회신"
+    }
+  },
+  "features:facebook-messenger": {
+    "cn": {
+      "title": "脸书信使",
+      "tagline": "在一个收件箱中回复 Messenger"
+    },
+    "jp": {
+      "title": "Facebookメッセンジャー",
+      "tagline": "1 つの受信箱でメッセンジャーに応答する"
+    },
+    "kr": {
+      "title": "페이스북 메신저",
+      "tagline": "하나의 받은편지함에서 메신저에 응답하세요"
+    }
+  },
+  "features:live-chat": {
+    "cn": {
+      "title": "嵌入式实时聊天",
+      "tagline": "您网站上的人工智能实时聊天"
+    },
+    "jp": {
+      "title": "埋め込み型ライブチャット",
+      "tagline": "ウェブサイト上の AI ライブチャット"
+    },
+    "kr": {
+      "title": "내장된 라이브 채팅",
+      "tagline": "웹사이트의 AI 라이브 채팅"
+    }
+  },
+  "features:omnichannel": {
+    "cn": {
+      "title": "全渠道应用",
+      "tagline": "一个收件箱中的每个频道"
+    },
+    "jp": {
+      "title": "オムニチャネル アプリケーション",
+      "tagline": "1 つの受信トレイ内のすべてのチャネル"
+    },
+    "kr": {
+      "title": "옴니채널 애플리케이션",
+      "tagline": "하나의 받은 편지함에 있는 모든 채널"
+    }
+  },
+  "features:team-inbox": {
+    "cn": {
+      "title": "WhatsApp 多代理",
+      "tagline": "一个号码，你的整个团队"
+    },
+    "jp": {
+      "title": "WhatsApp マルチエージェント",
+      "tagline": "1 つの番号でチーム全員が対応"
+    },
+    "kr": {
+      "title": "WhatsApp 다중 에이전트",
+      "tagline": "하나의 번호, 전체 팀"
+    }
+  },
+  "features:whatsapp-multi-device": {
+    "cn": {
+      "tagline": "您在任何设备上的公司号码"
+    },
+    "jp": {
+      "tagline": "どのデバイスでもあなたのビジネス番号"
+    },
+    "kr": {
+      "tagline": "어떤 기기에서나 비즈니스 전화번호를 사용할 수 있습니다."
+    }
+  },
+  "features:whatsapp-call-ai": {
+    "cn": {
+      "title": "WhatsApp 呼叫人工智能",
+      "tagline": "每一次通话都由AI总结"
+    },
+    "jp": {
+      "title": "WhatsApp通話AI",
+      "tagline": "すべての通話を AI が要約"
+    },
+    "kr": {
+      "title": "WhatsApp 통화 AI",
+      "tagline": "AI가 모든 통화를 요약"
+    }
+  },
+  "features:multilingual-ai": {
+    "cn": {
+      "title": "多语言AI代理",
+      "tagline": "以任何语言为客户提供服务"
+    },
+    "jp": {
+      "title": "多言語AIエージェント",
+      "tagline": "あらゆる言語で顧客にサービスを提供"
+    },
+    "kr": {
+      "title": "다국어 AI 에이전트",
+      "tagline": "모든 언어로 고객에게 서비스 제공"
+    }
+  },
+  "features:agentic-ai": {
+    "cn": {
+      "title": "代理人工智能",
+      "tagline": "人工智能会采取行动，而不仅仅是空谈"
+    },
+    "jp": {
+      "title": "エージェントAI",
+      "tagline": "話すだけでなく行動するAI"
+    },
+    "kr": {
+      "title": "에이전트 AI",
+      "tagline": "말만 하는 것이 아닌 행동으로 옮기는 AI"
+    }
+  },
+  "features:ai-agent-builder": {
+    "cn": {
+      "title": "无代码 AI 构建器",
+      "tagline": "5 分钟内构建 AI 代理"
+    },
+    "jp": {
+      "title": "コード不要の AI ビルダー",
+      "tagline": "AI エージェントを 5 分で構築する"
+    },
+    "kr": {
+      "title": "코드 없는 AI 빌더",
+      "tagline": "5분 안에 AI 에이전트 구축"
+    }
+  },
+  "features:chat-flow-designer": {
+    "cn": {
+      "title": "可视化聊天流程构建器",
+      "tagline": "通过拖放路由聊天"
+    },
+    "jp": {
+      "title": "ビジュアルチャットフロービルダー",
+      "tagline": "ドラッグアンドドロップでチャットをルーティングする"
+    },
+    "kr": {
+      "title": "시각적 채팅 흐름 빌더",
+      "tagline": "드래그 앤 드롭으로 채팅 라우팅"
+    }
+  },
+  "features:knowledge-base": {
+    "cn": {
+      "title": "知识库",
+      "tagline": "粘贴你的SOP，AI准确回答"
+    },
+    "jp": {
+      "title": "ナレッジベース",
+      "tagline": "SOP を貼り付けると、AI が正確に回答します"
+    },
+    "kr": {
+      "title": "기술 자료",
+      "tagline": "SOP 붙여넣기, AI가 정확하게 답변"
+    }
+  },
+  "features:customer-data-management": {
+    "cn": {
+      "title": "客户数据管理",
+      "tagline": "一份资料中的每个客户详细信息"
+    },
+    "jp": {
+      "title": "顧客データ管理",
+      "tagline": "1 つのプロファイルにすべての顧客の詳細が含まれています"
+    },
+    "kr": {
+      "title": "고객 데이터 관리",
+      "tagline": "하나의 프로필에 있는 모든 고객 세부 정보"
+    }
+  },
+  "features:manajemen-kontak": {
+    "cn": {
+      "tagline": "统一分散的客户联系人"
+    },
+    "jp": {
+      "tagline": "分散した顧客接点を一元化"
+    },
+    "kr": {
+      "tagline": "흩어져 있는 고객 연락처를 통합하세요"
+    }
+  },
+  "features:lead-management": {
+    "cn": {
+      "title": "潜在客户管理",
+      "tagline": "自动捕获并确定潜在客户资格"
+    },
+    "jp": {
+      "title": "リード管理",
+      "tagline": "リードを自動的に獲得し、特定する"
+    },
+    "kr": {
+      "title": "리드 관리",
+      "tagline": "자동으로 리드 포착 및 검증"
+    }
+  },
+  "features:pipeline-management": {
+    "cn": {
+      "title": "管道管理",
+      "tagline": "实时查看每笔交易动态"
+    },
+    "jp": {
+      "title": "パイプライン管理",
+      "tagline": "すべての取引の動きをリアルタイムで確認する"
+    },
+    "kr": {
+      "title": "파이프라인 관리",
+      "tagline": "모든 거래 움직임을 실시간으로 확인하세요"
+    }
+  },
+  "features:complaint-management": {
+    "cn": {
+      "title": "投诉管理",
+      "tagline": "将投诉转化为追踪票"
+    },
+    "jp": {
+      "title": "苦情管理",
+      "tagline": "苦情を追跡チケットに変える"
+    },
+    "kr": {
+      "title": "불만 관리",
+      "tagline": "불만 사항을 추적된 티켓으로 전환"
+    }
+  },
+  "features:crm-automation": {
+    "cn": {
+      "title": "客户关系管理自动化",
+      "tagline": "自我更新的 CRM 记录"
+    },
+    "jp": {
+      "title": "CRMオートメーション",
+      "tagline": "自身を更新する CRM レコード"
+    },
+    "kr": {
+      "title": "CRM 자동화",
+      "tagline": "스스로 업데이트되는 CRM 기록"
+    }
+  },
+  "features:customer-stages": {
+    "cn": {
+      "title": "客户旅程阶段",
+      "tagline": "跟踪访客以引导至买家"
+    },
+    "jp": {
+      "title": "カスタマージャーニーの段階",
+      "tagline": "訪問者を追跡して購入者に導く"
+    },
+    "kr": {
+      "title": "고객 여정 단계",
+      "tagline": "방문자를 추적하여 구매자로 연결"
+    }
+  },
+  "features:ticketing-system": {
+    "cn": {
+      "title": "票务管理系统",
+      "tagline": "不错过任何一个高优先级的请求"
+    },
+    "jp": {
+      "title": "発券管理システム",
+      "tagline": "優先度の高いリクエストを見逃すことはありません"
+    },
+    "kr": {
+      "title": "발권 관리 시스템",
+      "tagline": "우선순위가 높은 요청을 절대 놓치지 마세요"
+    }
+  },
+  "features:whatsapp-bulk": {
+    "cn": {
+      "tagline": "官方渠道群发消息"
+    },
+    "jp": {
+      "tagline": "公式ルートでの一括メッセージング"
+    },
+    "kr": {
+      "tagline": "공식 경로에서 대량 메시지 보내기"
+    }
+  },
+  "features:whatsapp-broadcast": {
+    "cn": {
+      "title": "WhatsApp 广播",
+      "tagline": "将客户数据转化为重复销售"
+    },
+    "jp": {
+      "title": "WhatsApp ブロードキャスト",
+      "tagline": "顧客データをリピート販売に変える"
+    },
+    "kr": {
+      "title": "WhatsApp 방송",
+      "tagline": "고객 데이터를 반복 판매로 전환"
+    }
+  },
+  "features:customer-segmentation": {
+    "cn": {
+      "title": "客户细分",
+      "tagline": "每次都瞄准正确的客户"
+    },
+    "jp": {
+      "title": "顧客のセグメンテーション",
+      "tagline": "毎回適切な顧客をターゲットにする"
+    },
+    "kr": {
+      "title": "고객 세분화",
+      "tagline": "항상 올바른 고객을 타겟팅하세요"
+    }
+  },
+  "features:follow-up-automation": {
+    "cn": {
+      "title": "自动跟进",
+      "tagline": "再也不会忘记跟进"
+    },
+    "jp": {
+      "title": "自動フォローアップ",
+      "tagline": "もうフォローアップを忘れることはありません"
+    },
+    "kr": {
+      "title": "자동화된 후속 조치",
+      "tagline": "다시는 후속 조치를 잊지 마세요"
+    }
+  },
+  "features:ads-conversion-api": {
+    "cn": {
+      "title": "转换API (CAPI)",
+      "tagline": "为您的广告提供真实转化"
+    },
+    "jp": {
+      "title": "変換 API (CAPI)",
+      "tagline": "実際のコンバージョンを広告にフィードする"
+    },
+    "kr": {
+      "title": "전환 API(CAPI)",
+      "tagline": "광고에 실제 전환을 제공하세요"
+    }
+  },
+  "features:marketing-analytics": {
+    "cn": {
+      "title": "营销分析和广告支出回报率",
+      "tagline": "了解哪些活动可以赚钱"
+    },
+    "jp": {
+      "title": "マーケティング分析とROAS",
+      "tagline": "どのキャンペーンが収益を上げているかを知る"
+    },
+    "kr": {
+      "title": "마케팅 분석 및 ROAS",
+      "tagline": "어떤 캠페인이 수익을 창출하는지 알아보세요."
+    }
+  },
+  "features:shipping-cost-check": {
+    "cn": {
+      "title": "运输成本自动化",
+      "tagline": "聊天中即时运输报价"
+    },
+    "jp": {
+      "title": "配送コストの自動化",
+      "tagline": "チャットでの即時配送見積もり"
+    },
+    "kr": {
+      "title": "배송비 자동화",
+      "tagline": "채팅으로 즉시 배송 견적 받기"
+    }
+  },
+  "features:payment-automation": {
+    "cn": {
+      "title": "支付自动化",
+      "tagline": "付款二维码和提醒，自动"
+    },
+    "jp": {
+      "title": "支払いの自動化",
+      "tagline": "支払いQRとリマインダー、自動"
+    },
+    "kr": {
+      "title": "결제 자동화",
+      "tagline": "결제 QR 및 알림, 자동"
+    }
+  },
+  "features:ai-working-hours": {
+    "cn": {
+      "title": "人工智能工作时间",
+      "tagline": "人工智能在下班后为您提供服务"
+    },
+    "jp": {
+      "title": "AIの労働時間",
+      "tagline": "AI が時間外もサポートします"
+    },
+    "kr": {
+      "title": "AI 근무시간",
+      "tagline": "몇 시간 후에는 AI가 도와드립니다."
+    }
+  },
+  "features:workflow-automation": {
+    "cn": {
+      "title": "工作流程自动化",
+      "tagline": "自动化多步操作，无需代码"
+    },
+    "jp": {
+      "title": "ワークフローの自動化",
+      "tagline": "コードなしで複数ステップの操作を自動化"
+    },
+    "kr": {
+      "title": "워크플로우 자동화",
+      "tagline": "코드 없이 다단계 작업을 자동화하세요"
+    }
+  },
+  "features:open-api": {
+    "cn": {
+      "title": "开放API",
+      "tagline": "将 Cekat.AI 连接到您的堆栈"
+    },
+    "jp": {
+      "title": "オープンAPI",
+      "tagline": "Cekat.AI をスタックに接続する"
+    },
+    "kr": {
+      "title": "오픈 API",
+      "tagline": "Cekat.AI를 스택에 연결"
+    }
+  },
+  "features:ai-function-calling": {
+    "cn": {
+      "title": "AI函数调用",
+      "tagline": "AI 行为：订单、支付、您的 API"
+    },
+    "jp": {
+      "title": "AI 関数の呼び出し",
+      "tagline": "AI の機能: 注文、支払い、API"
+    },
+    "kr": {
+      "title": "AI 함수 호출",
+      "tagline": "AI가 수행하는 작업: 주문, 결제, API"
+    }
+  },
+  "features:ai-agent-settings": {
+    "cn": {
+      "title": "高级人工智能设置",
+      "tagline": "调整记忆、音调和护栏"
+    },
+    "jp": {
+      "title": "高度な AI 設定",
+      "tagline": "メモリ、トーン、ガードレールを調整する"
+    },
+    "kr": {
+      "title": "고급 AI 설정",
+      "tagline": "메모리, 어조, 가드레일 조정"
+    }
+  },
+  "features:ai-evaluation": {
+    "cn": {
+      "title": "人工智能反馈与评估",
+      "tagline": "修正AI，它就会保持修正状态"
+    },
+    "jp": {
+      "title": "AIのフィードバックと評価",
+      "tagline": "AIを修正すると修正されたままになります"
+    },
+    "kr": {
+      "title": "AI 피드백 및 평가",
+      "tagline": "AI를 수정하면 계속 수정됩니다."
+    }
+  },
+  "features:meta-ads-integration": {
+    "cn": {
+      "title": "元广告集成",
+      "tagline": "CTWA 在广告贡献土地方面领先"
+    },
+    "jp": {
+      "title": "メタ広告の統合",
+      "tagline": "CTWA が広告に起因する土地をリード"
+    },
+    "kr": {
+      "title": "메타 광고 통합",
+      "tagline": "CTWA는 광고로 인한 토지를 리드합니다."
+    }
+  },
+  "features:tiktok-ads-integration": {
+    "cn": {
+      "title": "TikTok 广告整合",
+      "tagline": "TikTok 广告进入 DM 或 WhatsApp"
+    },
+    "jp": {
+      "title": "TikTok広告の統合",
+      "tagline": "DM または WhatsApp への TikTok 広告"
+    },
+    "kr": {
+      "title": "TikTok 광고 통합",
+      "tagline": "DM 또는 WhatsApp에 TikTok 광고"
+    }
+  },
+  "features:website-tracker": {
+    "cn": {
+      "title": "塞卡特追踪器",
+      "tagline": "了解每次访问和聊天从哪里开始"
+    },
+    "jp": {
+      "title": "セカットトラッカー",
+      "tagline": "すべての訪問とチャットがどこから始まったかを把握する"
+    },
+    "kr": {
+      "title": "세카트 트래커",
+      "tagline": "모든 방문과 채팅이 어디서 시작되었는지 파악"
+    }
+  },
+  "industries:healthcare": {
+    "cn": {
+      "title": "卫生保健",
+      "tagline": "24/7 患者解答和预约"
+    },
+    "jp": {
+      "title": "健康管理",
+      "tagline": "24時間年中無休の患者への回答と予約"
+    },
+    "kr": {
+      "title": "헬스케어",
+      "tagline": "연중무휴 환자 답변 및 예약"
+    }
+  },
+  "industries:retail": {
+    "cn": {
+      "title": "零售与电子商务",
+      "tagline": "在每个渠道上进行销售和支持"
+    },
+    "jp": {
+      "title": "小売と電子商取引",
+      "tagline": "あらゆるチャネルでの販売とサポート"
+    },
+    "kr": {
+      "title": "소매 및 전자상거래",
+      "tagline": "모든 채널에서 판매 및 지원"
+    }
+  },
+  "industries:fnb": {
+    "cn": {
+      "title": "食品及饮料",
+      "tagline": "预订和订单，24/7 处理"
+    },
+    "jp": {
+      "title": "食べ物と飲み物",
+      "tagline": "ご予約・ご注文は24時間365日対応"
+    },
+    "kr": {
+      "title": "음식 및 음료",
+      "tagline": "예약 및 주문, 연중무휴 24시간 처리"
+    }
+  },
+  "industries:education": {
+    "cn": {
+      "title": "教育",
+      "tagline": "在入学季节左右回答申请者"
+    },
+    "jp": {
+      "title": "教育",
+      "tagline": "入学シーズン前後に応募者に回答する"
+    },
+    "kr": {
+      "title": "교육",
+      "tagline": "입학 시즌에 지원자 답변"
+    }
+  },
+  "industries:finance": {
+    "cn": {
+      "title": "金融服务",
+      "tagline": "大批量合规服务"
+    },
+    "jp": {
+      "title": "金融サービス",
+      "tagline": "大量の準拠したサービス"
+    },
+    "kr": {
+      "title": "금융 서비스",
+      "tagline": "대용량의 규정 준수 서비스"
+    }
+  },
+  "industries:government": {
+    "cn": {
+      "title": "政府",
+      "tagline": "解答市民，追踪每一个案例"
+    },
+    "jp": {
+      "title": "政府",
+      "tagline": "国民に答え、すべての事件を追跡する"
+    },
+    "kr": {
+      "title": "정부",
+      "tagline": "시민에게 답변하고 모든 사건을 추적하세요"
+    }
+  },
+  "industries:property": {
+    "cn": {
+      "title": "财产",
+      "tagline": "确定潜在客户和图书访问资格"
+    },
+    "jp": {
+      "title": "財産",
+      "tagline": "見込み顧客を特定し、訪問を予約する"
+    },
+    "kr": {
+      "title": "재산",
+      "tagline": "리드 검증 및 도서 방문"
+    }
+  },
+  "industries:beauty-wellness": {
+    "cn": {
+      "title": "美容与健康",
+      "tagline": "预订、提醒、减少缺席"
+    },
+    "jp": {
+      "title": "ビューティー＆ウェルネス",
+      "tagline": "予約、リマインダー、ノーショウの減少"
+    },
+    "kr": {
+      "title": "뷰티 & 웰니스",
+      "tagline": "예약, 알림, 노쇼 감소"
+    }
+  },
+  "industries:hospitality": {
+    "cn": {
+      "title": "款待",
+      "tagline": "预订和客人问题，24/7"
+    },
+    "jp": {
+      "title": "ホスピタリティ",
+      "tagline": "予約やゲストからの質問は 24 時間年中無休"
+    },
+    "kr": {
+      "title": "환대",
+      "tagline": "예약 및 고객 질문, 연중무휴 24시간"
+    }
+  },
+  "industries:travel": {
+    "cn": {
+      "title": "旅游与旅游",
+      "tagline": "跨时区的多语言解答"
+    },
+    "jp": {
+      "title": "ツアー＆トラベル",
+      "tagline": "タイムゾーンを超えた多言語での回答"
+    },
+    "kr": {
+      "title": "투어 및 여행",
+      "tagline": "시간대에 따른 다국어 답변"
+    }
+  },
+  "industries:nonprofit": {
+    "cn": {
+      "title": "非营利组织",
+      "tagline": "回应捐助者，开展活动"
+    },
+    "jp": {
+      "title": "非営利",
+      "tagline": "寄付者に回答し、キャンペーンを実施する"
+    },
+    "kr": {
+      "title": "비영리",
+      "tagline": "기부자에게 답변하고 캠페인을 진행하세요"
+    }
+  },
+  "industries:fmcg": {
+    "cn": {
+      "title": "快速消费品",
+      "tagline": "服务经销商和消费者"
+    },
+    "jp": {
+      "title": "日用消費財",
+      "tagline": "流通業者と消費者にサービスを提供する"
+    },
+    "kr": {
+      "title": "FMCG",
+      "tagline": "유통업체와 소비자에게 서비스 제공"
+    }
+  },
+  "industries:isp": {
+    "cn": {
+      "title": "互联网服务提供商",
+      "tagline": "断电和计费支持，24/7"
+    },
+    "jp": {
+      "title": "インターネットサービスプロバイダー",
+      "tagline": "停止および請求サポート、24 時間年中無休"
+    },
+    "kr": {
+      "title": "인터넷 서비스 제공업체",
+      "tagline": "중단 및 청구 지원, 연중무휴"
+    }
+  },
+  "industries:airlines": {
+    "cn": {
+      "title": "航空公司",
+      "tagline": "跨时区回答旅客"
+    },
+    "jp": {
+      "title": "航空会社",
+      "tagline": "タイムゾーンを超えて乗客に応答する"
+    },
+    "kr": {
+      "title": "항공사",
+      "tagline": "시간대에 관계없이 승객에게 답변"
+    }
+  },
+  "industries:entertainment": {
+    "cn": {
+      "title": "娱乐",
+      "tagline": "门票和活动，无聊天队列"
+    },
+    "jp": {
+      "title": "エンターテインメント",
+      "tagline": "チケットとイベント、チャットキューなし"
+    },
+    "kr": {
+      "title": "오락",
+      "tagline": "티켓 및 이벤트, 채팅 대기열 없음"
+    }
+  },
+  "industries:gym-sports": {
+    "cn": {
+      "title": "健身与运动",
+      "tagline": "课程预订和会员资格"
+    },
+    "jp": {
+      "title": "フィットネス&スポーツ",
+      "tagline": "クラスの予約とメンバーシップ"
+    },
+    "kr": {
+      "title": "피트니스 및 스포츠",
+      "tagline": "수업 예약 및 멤버십"
+    }
+  },
+  "industries:saas": {
+    "cn": {
+      "title": "软件即服务",
+      "tagline": "用户引导和支持，24/7"
+    },
+    "jp": {
+      "title": "SaaS",
+      "tagline": "ユーザーのオンボーディングとサポート、24 時間年中無休"
+    },
+    "kr": {
+      "title": "SaaS",
+      "tagline": "연중무휴 사용자 온보딩 및 지원"
+    }
+  },
+  "industries:transport": {
+    "cn": {
+      "title": "运输服务",
+      "tagline": "聊天中的时刻表、票价和订单"
+    },
+    "jp": {
+      "title": "輸送サービス",
+      "tagline": "チャットでのスケジュール、運賃、注文"
+    },
+    "kr": {
+      "title": "운송 서비스",
+      "tagline": "채팅으로 일정, 요금, 주문 확인"
+    }
+  },
+  "industries:automotive": {
+    "cn": {
+      "title": "汽车",
+      "tagline": "试驾线索和服务预订"
+    },
+    "jp": {
+      "title": "自動車",
+      "tagline": "試乗見込み客とサービスの予約"
+    },
+    "kr": {
+      "title": "자동차",
+      "tagline": "시운전 리드 및 서비스 예약"
+    }
+  },
+  "industries:tech-startup": {
+    "cn": {
+      "title": "科技与初创公司",
+      "tagline": "无人员规模支持"
+    },
+    "jp": {
+      "title": "テクノロジーとスタートアップ",
+      "tagline": "従業員数を必要としない規模のサポート"
+    },
+    "kr": {
+      "title": "기술 및 스타트업",
+      "tagline": "인원수 없이 지원 확장"
+    }
+  },
+  "industries:outsourcing": {
+    "cn": {
+      "title": "外包和业务流程外包",
+      "tagline": "每个客户都有一个收件箱"
+    },
+    "jp": {
+      "title": "アウトソーシング&BPO",
+      "tagline": "各クライアントに 1 つの受信箱"
+    },
+    "kr": {
+      "title": "아웃소싱 및 BPO",
+      "tagline": "모든 고객을 위한 하나의 받은편지함"
+    }
+  },
+  "industries:professional-services": {
+    "cn": {
+      "title": "专业服务",
+      "tagline": "咨询和预约，已安排"
+    },
+    "jp": {
+      "title": "プロフェッショナルサービス",
+      "tagline": "相談と予約、予定"
+    },
+    "kr": {
+      "title": "전문 서비스",
+      "tagline": "상담 및 약속, 예정"
+    }
+  },
+  "industries:dental": {
+    "cn": {
+      "title": "牙科诊所",
+      "tagline": "预约和患者回忆"
+    },
+    "jp": {
+      "title": "歯科医院",
+      "tagline": "予約と患者のリコール"
+    },
+    "kr": {
+      "title": "치과 진료소",
+      "tagline": "예약 및 환자 리콜"
+    }
+  },
+  "industries:barbershop": {
+    "cn": {
+      "title": "理发店",
+      "tagline": "无需手动回复的主席预订"
+    },
+    "jp": {
+      "title": "理髪店",
+      "tagline": "手動応答のない議長の予約"
+    },
+    "kr": {
+      "title": "이발소",
+      "tagline": "수동 응답 없이 의자 예약"
+    }
+  },
+  "industries:pharmacy": {
+    "cn": {
+      "title": "药房",
+      "tagline": "通过聊天检查库存和补充"
+    },
+    "jp": {
+      "title": "薬局",
+      "tagline": "チャットによる在庫確認と補充"
+    },
+    "kr": {
+      "title": "약국",
+      "tagline": "채팅을 통한 재고 확인 및 리필"
+    }
+  },
+  "solutions:sales": {
+    "cn": {
+      "title": "销售量",
+      "tagline": "首先回复，获得资格并完成更多交易"
+    },
+    "jp": {
+      "title": "販売",
+      "tagline": "最初に返信し、条件を満たして、より多くの取引を成立させましょう"
+    },
+    "kr": {
+      "title": "매상",
+      "tagline": "먼저 회신하고, 조건을 충족하고, 더 많은 거래를 성사시키세요."
+    }
+  },
+  "solutions:customer-service": {
+    "cn": {
+      "title": "客户服务",
+      "tagline": "每个频道 24/7 全天候响应，人工负责"
+    },
+    "jp": {
+      "title": "顧客サービス",
+      "tagline": "すべてのチャネルが 24 時間年中無休で応答し、難しい問題には人間が対応しました"
+    },
+    "kr": {
+      "title": "고객 서비스",
+      "tagline": "모든 채널은 연중무휴 24시간 응답하고, 어려운 부분은 사람이 담당합니다."
+    }
+  },
+  "solutions:marketing": {
+    "cn": {
+      "title": "营销",
+      "tagline": "您可以追踪实际销售的活动"
+    },
+    "jp": {
+      "title": "マーケティング",
+      "tagline": "実際の売上まで追跡できるキャンペーン"
+    },
+    "kr": {
+      "title": "마케팅",
+      "tagline": "실제 판매까지 추적할 수 있는 캠페인"
+    }
+  },
+  "solutions:human-resources": {
+    "cn": {
+      "title": "人力资源",
+      "tagline": "候选人和员工问题，一个收件箱"
+    },
+    "jp": {
+      "title": "人事",
+      "tagline": "候補者と従業員の質問、1 つの受信箱"
+    },
+    "kr": {
+      "title": "인적 자원",
+      "tagline": "후보자 및 직원 질문, 하나의 받은 편지함"
+    }
+  },
+  "features:crm-application": {
+    "cn": {
+      "title": "CRM 应用",
+      "tagline": "为对话而构建的 CRM"
+    },
+    "jp": {
+      "title": "CRMアプリケーション",
+      "tagline": "会話のために構築されたCRM"
+    },
+    "kr": {
+      "title": "CRM 애플리케이션",
+      "tagline": "대화를 위해 구축된 CRM"
+    }
+  },
+  "features:order-automation": {
+    "cn": {
+      "title": "订单自动化",
+      "tagline": "AI 从聊天中创建订单"
+    },
+    "jp": {
+      "title": "注文の自動化",
+      "tagline": "AIがチャットから注文を作成"
+    },
+    "kr": {
+      "title": "주문 자동화",
+      "tagline": "AI가 채팅에서 주문을 생성합니다"
+    }
+  },
+  "features:utm-generator": {
+    "cn": {
+      "title": "UTM 和 wa.me 生成器",
+      "tagline": "创建可追踪的 UTM 和 wa.me 链接"
+    },
+    "jp": {
+      "title": "UTM と wa.me ジェネレーター",
+      "tagline": "追跡可能な UTM と wa.me リンクを作成"
+    },
+    "kr": {
+      "title": "UTM 및 wa.me 생성기",
+      "tagline": "추적 가능한 UTM 및 wa.me 링크 만들기"
+    }
+  },
+  "features:whatsapp-blast": {
+    "cn": {
+      "title": "WhatsApp 群发",
+      "tagline": "一次触达数千人"
+    },
+    "jp": {
+      "title": "WhatsApp一斉配信",
+      "tagline": "一度に数千人へリーチ"
+    },
+    "kr": {
+      "title": "WhatsApp 대량 발송",
+      "tagline": "한 번에 수천 명에게 도달"
+    }
+  },
+  "industries:clinics": {
+    "cn": {
+      "title": "诊所",
+      "tagline": "患者预约和提醒"
+    },
+    "jp": {
+      "title": "クリニック",
+      "tagline": "患者の予約とリマインダー"
+    },
+    "kr": {
+      "title": "클리닉",
+      "tagline": "환자 예약 및 알림"
+    }
+  },
+  "industries:edutech": {
+    "cn": {
+      "title": "教育科技",
+      "tagline": "激活并留住学习者"
+    },
+    "jp": {
+      "title": "EdTech",
+      "tagline": "学習者をアクティブ化し定着"
+    },
+    "kr": {
+      "title": "에듀테크",
+      "tagline": "학습자 활성화 및 유지"
+    }
+  },
+  "industries:logistics": {
+    "cn": {
+      "title": "物流",
+      "tagline": "货运更新和全天候客户服务"
+    },
+    "jp": {
+      "title": "物流",
+      "tagline": "配送状況の更新と24時間対応"
+    },
+    "kr": {
+      "title": "물류",
+      "tagline": "배송 업데이트 및 24시간 고객 지원"
+    }
+  },
+  "industries:schools": {
+    "cn": {
+      "title": "学校",
+      "tagline": "全天候回答招生咨询"
+    },
+    "jp": {
+      "title": "学校",
+      "tagline": "入学に関する質問に24時間対応"
+    },
+    "kr": {
+      "title": "학교",
+      "tagline": "입학 문의에 연중무휴 답변"
+    }
+  },
+  "solutions:operations": {
+    "cn": {
+      "title": "运营",
+      "tagline": "订单、工单和交接自动运行"
+    },
+    "jp": {
+      "title": "オペレーション",
+      "tagline": "注文、チケット、引き継ぎを自動化"
+    },
+    "kr": {
+      "title": "운영",
+      "tagline": "주문, 티켓 및 인수인계가 자동으로 실행됩니다"
+    }
+  }
+}

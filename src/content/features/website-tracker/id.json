@@ -4,7 +4,7 @@
     "description": "Satu script JS melacak asal tiap pengunjung: iklan, organik, UTM apa pun, sampai rujukan dari AI seperti ChatGPT. Event-nya terbaca di dashboard dan terkirim via API."
   },
   "hero": {
-    "badge": "Cekat Tracker",
+    "badge": "Pelacak Cekat",
     "title": "Setiap Kunjungan Punya Asal-Usul. Sekarang Kamu Tahu Semuanya.",
     "subtitle": "Satu script di website-mu mencatat dari mana tiap pengunjung datang: iklan, pencarian organik, UTM apa pun, sampai rujukan dari AI seperti ChatGPT, lalu mengikat kunjungan itu ke chat dan penjualannya."
   },

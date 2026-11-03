@@ -6,6 +6,7 @@ import { SectionShell } from "./section-shell";
 import { SectionHeading } from "./section-heading";
 import { Reveal } from "./reveal";
 import { FeatureAccordionPanels } from "./feature-accordion-panels";
+import { localeValue } from "@/lib/locale-value";
 
 const FEATURE_IDS = {
   chat: ["ai-agent", "whatsapp-chatbot", "omnichannel"],
@@ -25,7 +26,7 @@ export async function FeatureAccordion() {
         const entry = getEntryById("features", id);
         const slug = entry?.slugs[locale];
         return entry && slug
-          ? [{ id, slug, title: entry.title[locale] ?? "" }]
+          ? [{ id, slug, title: localeValue(entry.title, locale) ?? id }]
           : [];
       }),
     ]),
@@ -33,7 +34,10 @@ export async function FeatureAccordion() {
 
   return (
     <SectionShell surface="ink">
-      <div aria-hidden className="ink-noise pointer-events-none absolute inset-0 opacity-40" />
+      <div
+        aria-hidden
+        className="ink-noise pointer-events-none absolute inset-0 opacity-40"
+      />
       <div
         aria-hidden
         className="pointer-events-none absolute top-0 left-1/2 h-px w-full -translate-x-1/2 bg-linear-to-r from-transparent via-sky-400/40 to-transparent"

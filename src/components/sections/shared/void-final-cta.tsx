@@ -32,46 +32,49 @@ export async function VoidFinalCta({
   const th = await getTranslations("home.hero");
 
   const hasChecklist =
-    t.has(DEFAULT_CHECKS[0]) && t.has(DEFAULT_CHECKS[1]) && t.has(DEFAULT_CHECKS[2]);
+    t.has(DEFAULT_CHECKS[0]) &&
+    t.has(DEFAULT_CHECKS[1]) &&
+    t.has(DEFAULT_CHECKS[2]);
   const lead =
     headingLead ??
-    (t.has("heading") ? t("heading") : t.has("headingLead") ? t("headingLead") : "");
+    (t.has("heading")
+      ? t("heading")
+      : t.has("headingLead")
+        ? t("headingLead")
+        : "");
   const accent =
     headingAccent ?? (t.has("headingAccent") ? t("headingAccent") : undefined);
   const eyebrowText = eyebrow ?? (t.has("eyebrow") ? t("eyebrow") : null);
 
   return (
-    <section className="relative isolate overflow-hidden bg-ink-void text-white">
+    <section className="secondary-final-cta relative isolate overflow-hidden bg-[#09214c] text-white">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#0b1220] via-[#0a1a3d] to-[#050b18]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_90%_85%,rgba(0,180,200,0.2),transparent_35%),linear-gradient(135deg,#09214c,#0a3173)]"
       />
       <div
         aria-hidden
-        className="ink-noise pointer-events-none absolute inset-0 opacity-50"
+        className="pointer-events-none absolute inset-0 opacity-0"
       />
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <span className="absolute -top-24 -right-16 h-72 w-72 rounded-full bg-primary/35 blur-[100px]" />
-        <span className="absolute -bottom-28 -left-16 h-80 w-80 rounded-full bg-sky-500/20 blur-[110px]" />
+        <span className="absolute -top-24 -right-16 h-72 w-72 rounded-full bg-primary/15 blur-[100px]" />
       </div>
 
-      <div className="relative mx-auto w-full max-w-7xl px-4 pt-24 pb-24 sm:px-6 md:pt-32 md:pb-28 lg:px-8 lg:pt-36 lg:pb-32">
+      <div className="relative mx-auto w-full max-w-[1248px] px-5 py-20 sm:px-8 md:py-28 lg:px-6">
         <Reveal>
           <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-8">
               {eyebrowText && (
-                <p className="eyebrow-rule-light mb-5 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-sky-300 uppercase">
+                <p className="eyebrow-rule-light mb-5 inline-flex text-sm font-semibold text-[#a5e1e8]">
                   {eyebrowText}
                 </p>
               )}
-              <h2 className="text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] font-semibold tracking-[-0.04em] text-balance text-white">
+              <h2 className="max-w-[15ch] text-[clamp(2.25rem,4.5vw,4rem)] leading-[1.06] font-semibold tracking-[-0.05em] text-balance text-white">
                 {lead}
                 {accent ? (
                   <>
                     {" "}
-                    <span className="bg-linear-to-r from-sky-300 to-blue-400 bg-clip-text text-transparent">
-                      {accent}
-                    </span>
+                    <span className="text-[#a5e1e8]">{accent}</span>
                   </>
                 ) : null}
               </h2>
@@ -117,11 +120,7 @@ export async function VoidFinalCta({
                     <WhatsAppAnchor target="_blank" rel="noopener noreferrer" />
                   }
                 >
-                  <SafeIcon
-                    icon={mdiWhatsapp}
-                    className="size-4"
-                    size="1rem"
-                  />
+                  <SafeIcon icon={mdiWhatsapp} className="size-4" size="1rem" />
                   {th("ctaPrimary")}
                 </Button>
               </div>

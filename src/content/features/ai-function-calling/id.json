@@ -4,7 +4,7 @@
     "description": "Function calling membuat AI agent Cekat.AI bertindak saat chat berlangsung: menyusun order, mengirim link pembayaran, dan memanggil API sistemmu sendiri."
   },
   "hero": {
-    "badge": "AI Function Calling",
+    "badge": "Pemanggilan Fungsi AI",
     "title": "AI yang Selesaikan Transaksinya, Bukan Cuma Percakapannya",
     "subtitle": "Lewat function calling, AI agent-mu mengeksekusi tindakan di tengah chat: menyusun order lengkap, mengirim link pembayaran, sampai memanggil API sistemmu sendiri. Customer tidak pernah disuruh pindah aplikasi."
   },

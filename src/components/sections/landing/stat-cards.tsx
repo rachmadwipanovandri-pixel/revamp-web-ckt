@@ -22,13 +22,16 @@ export function StatCards({
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
       />
       <Container className="relative">
-        <dl className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <dl className="stat-rail grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat, index) => (
             <Reveal key={stat.label} delay={index * 50} className="h-full">
-              <div className="h-full rounded-[1.35rem] border border-foreground/8 bg-white p-6 shadow-[0_16px_40px_-36px_rgba(19,82,191,0.35)] transition-all duration-500 hover:-translate-y-1 hover:border-primary/25">
+              <div className="h-full border-t-2 border-[#ccdaf1] bg-white p-6">
                 <dd
                   className={cn(
-                    "font-numeric text-[clamp(1.5rem,3vw,2.25rem)] leading-none font-semibold tracking-[-0.04em] text-primary tabular-nums break-words",
+                    "font-numeric leading-none font-semibold tracking-[-0.055em] text-primary tabular-nums break-words",
+                    stat.value.length > 8
+                      ? "text-[clamp(2rem,3vw,2.4rem)]"
+                      : "text-[clamp(2rem,4vw,3.5rem)]",
                   )}
                 >
                   {stat.value}

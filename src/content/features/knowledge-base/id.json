@@ -4,16 +4,28 @@
     "description": "Buat knowledge base AI untuk bisnis Anda. Upload SOP dan FAQ, AI langsung jawab pertanyaan pelanggan secara akurat dan konsisten di semua channel. Coba gratis!"
   },
   "hero": {
-    "badge": "AI Knowledge Base",
+    "badge": "Basis Pengetahuan AI",
     "title": "Tempel SOP-mu, AI Langsung Jawab Akurat dari Hari Pertama",
     "subtitle": "Knowledge base Cekat.AI mengubah SOP dan info bisnismu jadi jawaban akurat seketika, konsisten di semua agent, tim, dan channel. Update sekali, langsung berlaku di mana-mana"
   },
   "definition": "Knowledge base di Cekat.AI adalah tempat kamu menempel SOP dan info bisnis supaya AI agent menjawab pertanyaan customer secara akurat dan konsisten. Update satu jawaban, dan perubahannya berlaku di semua channel dan anggota tim, WhatsApp, Instagram, Messenger, dan live chat website semua menarik dari sumber yang sama.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "jawaban akurat, siang malam" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "jawaban akurat, siang malam"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {

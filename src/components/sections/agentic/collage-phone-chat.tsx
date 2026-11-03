@@ -9,6 +9,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { useLocale } from "next-intl";
+import type { Locale } from "@/i18n/routing";
 import {
   HERO_CHAT_MODES,
   HERO_CHAT_SCENARIOS,
@@ -18,12 +19,21 @@ import {
   type ChatStep,
 } from "@/lib/hero-chat";
 import { cn } from "@/lib/utils";
+import { localeValue } from "@/lib/locale-value";
 
 const SCENARIO_ICONS: Record<ChatScenario["key"], LucideIcon> = {
   retail: ShoppingBag,
   travel: Plane,
   healthcare: Stethoscope,
   education: GraduationCap,
+};
+
+const INDUSTRY_LABEL: Record<Locale, string> = {
+  id: "Industri",
+  en: "Industry",
+  cn: "行业",
+  jp: "業界",
+  kr: "산업",
 };
 
 /** How long the finished conversation holds before replaying. */
@@ -43,7 +53,7 @@ type VisibleStep = {
 
 function flattenStep(
   step: ChatStep,
-  locale: "id" | "en",
+  locale: Locale,
   index: number,
 ): VisibleStep {
   const id = `s${index}`;
@@ -52,7 +62,7 @@ function flattenStep(
       key: `${id}-${step.kind}`,
       kind: step.kind,
       side: step.kind === "user" ? "user" : "ai",
-      text: step.text[locale],
+      text: localeValue(step.text, locale),
       time: step.time,
     };
   }
@@ -61,7 +71,7 @@ function flattenStep(
       key: `${id}-chip`,
       kind: "chip",
       side: "system",
-      text: step.text[locale],
+      text: localeValue(step.text, locale),
       accent: step.accent,
       time: step.time,
     };
@@ -71,8 +81,8 @@ function flattenStep(
       key: `${id}-div`,
       kind: "divider",
       side: "system",
-      text: step.text[locale],
-      meta: step.date?.[locale],
+      text: localeValue(step.text, locale),
+      meta: step.date ? localeValue(step.date, locale) : undefined,
     };
   }
   if (step.kind === "product") {
@@ -80,22 +90,24 @@ function flattenStep(
       key: `${id}-prod`,
       kind: "product",
       side: "ai",
-      title: step.product.title[locale],
-      meta: step.product.price[locale],
+      title: localeValue(step.product.title, locale),
+      meta: localeValue(step.product.price, locale),
       time: step.time,
     };
   }
   if (step.kind === "card") {
     const total = step.card.total
-      ? `${step.card.total.label[locale]} ${step.card.total.value[locale]}`
-      : step.card.meta[locale];
+      ? `${localeValue(step.card.total.label, locale)} ${localeValue(step.card.total.value, locale)}`
+      : localeValue(step.card.meta, locale);
     return {
       key: `${id}-card`,
       kind: "card",
       side: "ai",
-      title: step.card.title[locale],
-      text: step.card.meta[locale],
-      meta: step.card.status ? `${step.card.status[locale]} · ${total}` : total,
+      title: localeValue(step.card.title, locale),
+      text: localeValue(step.card.meta, locale),
+      meta: step.card.status
+        ? `${localeValue(step.card.status, locale)} · ${total}`
+        : total,
       time: step.time,
     };
   }
@@ -104,9 +116,9 @@ function flattenStep(
     key: `${id}-rate`,
     kind: "rating",
     side: "ai",
-    title: step.rating.title[locale],
-    text: step.rating.prompt[locale],
-    meta: step.rating.options.map((o) => o[locale]).join(" · "),
+    title: localeValue(step.rating.title, locale),
+    text: localeValue(step.rating.prompt, locale),
+    meta: step.rating.options.map((o) => localeValue(o, locale)).join(" · "),
     time: step.time,
   };
 }
@@ -138,7 +150,7 @@ export function CollagePhoneChat({
     loop: number;
   }) => void;
 }) {
-  const locale = useLocale() === "en" ? "en" : "id";
+  const locale = useLocale() as Locale;
   const [scenarioKey, setScenarioKey] = useState<ChatScenario["key"]>("retail");
   const [modeKey, setModeKey] = useState<ChatModeKey>("lead");
   const [cursor, setCursor] = useState(0);
@@ -256,14 +268,14 @@ export function CollagePhoneChat({
             {mode.business}
           </div>
           <div className="text-[calc(var(--pu)*7)] text-white/45">
-            {HERO_CHAT_UI.online[locale]}
+            {localeValue(HERO_CHAT_UI.online, locale)}
           </div>
         </div>
       </div>
 
       <div
         role="group"
-        aria-label={locale === "id" ? "Industri" : "Industry"}
+        aria-label={INDUSTRY_LABEL[locale]}
         className="flex shrink-0 items-center justify-between gap-[calc(var(--pu)*4)] border-b border-white/6 bg-white/4 px-[calc(var(--pu)*8)] py-[calc(var(--pu)*5)]"
       >
         {HERO_CHAT_SCENARIOS.map((entry) => {
@@ -273,9 +285,9 @@ export function CollagePhoneChat({
             <button
               key={entry.key}
               type="button"
-              aria-label={entry.label[locale]}
+              aria-label={localeValue(entry.label, locale)}
               aria-pressed={active}
-              title={entry.label[locale]}
+              title={localeValue(entry.label, locale)}
               onClick={() => {
                 setScenarioKey(entry.key);
                 setCursor(0);
@@ -339,7 +351,7 @@ export function CollagePhoneChat({
                   : "bg-white/10 text-sky-100/70 hover:bg-white/18 hover:text-white",
               )}
             >
-              {entry.label[locale]}
+              {localeValue(entry.label, locale)}
             </button>
           );
         })}
@@ -352,7 +364,7 @@ export function CollagePhoneChat({
         aria-live="polite"
       >
         <div className="mx-auto rounded-full bg-white/8 px-[calc(var(--pu)*6)] py-[calc(var(--pu)*1.5)] text-[calc(var(--pu)*6.5)] text-white/45">
-          {mode.date[locale]}
+          {localeValue(mode.date, locale)}
         </div>
 
         {visibleSteps.map((row) => {
@@ -386,7 +398,7 @@ export function CollagePhoneChat({
                 )}
               >
                 <span className="mr-[calc(var(--pu)*3)] opacity-70">
-                  {HERO_CHAT_UI.system[locale]}
+                  {localeValue(HERO_CHAT_UI.system, locale)}
                 </span>
                 {row.text}
               </div>
@@ -467,7 +479,7 @@ export function CollagePhoneChat({
       <div className="mt-auto mb-[calc(var(--pu)*5)] mx-[calc(var(--pu)*7)] flex shrink-0 items-center gap-[calc(var(--pu)*5)] rounded-full bg-white/8 px-[calc(var(--pu)*6)] py-[calc(var(--pu)*3)]">
         <span className="size-[calc(var(--pu)*5)] shrink-0 animate-pulse rounded-full bg-[#25D366]" />
         <span className="truncate text-[calc(var(--pu)*7)] text-white/55">
-          {HERO_CHAT_UI.inputPlaceholder[locale]}
+          {localeValue(HERO_CHAT_UI.inputPlaceholder, locale)}
         </span>
       </div>
     </div>

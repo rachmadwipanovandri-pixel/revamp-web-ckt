@@ -21,7 +21,7 @@ const ONE_YEAR = 60 * 60 * 24 * 365;
  * Geo-aware locale routing. On any default-locale (Indonesian, unprefixed)
  * page, visitors from outside Indonesia are sent to the English (/en)
  * equivalent of that page; everyone else gets the Indonesian default. An
- * explicit NEXT_LOCALE cookie (set by the language switcher) always wins, so a
+ * explicit locale_pref cookie (set by the language switcher) always wins, so a
  * manual choice is never overridden, and known crawlers are left on the
  * default so SEO/hreflang is unaffected. Already-prefixed paths (/en, /id) are
  * left to next-intl.
@@ -85,7 +85,13 @@ export default function proxy(request: NextRequest) {
     pathname === "/en" ||
     pathname.startsWith("/en/") ||
     pathname === "/id" ||
-    pathname.startsWith("/id/");
+    pathname.startsWith("/id/") ||
+    pathname === "/cn" ||
+    pathname.startsWith("/cn/") ||
+    pathname === "/jp" ||
+    pathname.startsWith("/jp/") ||
+    pathname === "/kr" ||
+    pathname.startsWith("/kr/");
 
   if (!isPrefixed) {
     // Only an EXPLICIT language choice (the switcher) overrides geo. We ignore
@@ -95,7 +101,11 @@ export default function proxy(request: NextRequest) {
     const ua = request.headers.get("user-agent") ?? "";
 
     const preferred =
-      choice === "en" || choice === "id"
+      choice === "en" ||
+      choice === "id" ||
+      choice === "cn" ||
+      choice === "jp" ||
+      choice === "kr"
         ? choice
         : !BOT_RE.test(ua) && country && country !== "ID" && country !== "XX"
           ? "en"
@@ -118,6 +128,16 @@ export default function proxy(request: NextRequest) {
   }
 
   const response = handleI18n(request);
+  // next-intl canonicalizes explicit /id URLs to the unprefixed default path.
+  // Preserve that explicit choice across the redirect so geo-routing doesn't
+  // immediately send the visitor to /en on the next request.
+  if (pathname === "/id" || pathname.startsWith("/id/")) {
+    response.cookies.set(LOCALE_COOKIE, "id", {
+      path: "/",
+      maxAge: ONE_YEAR,
+      sameSite: "lax",
+    });
+  }
   stampCountry(response, country, waCookie);
   captureAds(response, request, adCookie);
   return response;

@@ -1,36 +1,20 @@
+import Script from "next/script";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { faqPageJsonLd } from "@/lib/jsonld";
-import { JsonLd } from "@/components/seo/json-ld";
+import { revampHomeMarkup } from "@/components/sections/revamp-home-markup";
+import { localizeIndustryNav } from "@/lib/localize-industry-nav";
 import {
-  Hero,
-  LogoStrip,
-  SoundWords,
-  Proof,
-  Features,
-  HowItWorks,
-  CaseStudy,
-  Pricing,
-  Results,
-  OpenApi,
-  Gallery,
-  PhotoBand,
-  Security,
-  Faq,
-  FinalCta,
-  ScrollProgress,
-} from "@/components/sections/agentic";
-import { IndustryCarousel } from "@/components/sections/home/industry-carousel";
+  localizeRevampHomeMarkup,
+  localizeRevampHomeRoutes,
+} from "@/components/sections/revamp-home-i18n";
+import type { Locale } from "@/i18n/routing";
 
 /**
- * Production homepage — incident.io editorial rhythm.
+ * Direct Next.js migration of the approved revamp artifact.
  *
- * Order: hero → logo wall → proof metrics → pillars → feature grid →
- * sticky how-it-works → industries → featured case study
- * → photo gallery → customer stories → photo band → pricing → integrations
- * → security → FAQ → closer.
- *
- * Hero is intentionally untouched. Palette: white canvas + #1352BF accent +
- * clean ink bookends. SEO lives on the locale layout.
+ * The reference HTML is rendered in this route (not an iframe), while its
+ * original stylesheet and interaction file remain local public assets. Keeping
+ * the markup intact is deliberate: it preserves the approved visual design
+ * and all interaction hooks during the first migration pass.
  */
 export default async function HomePage({
   params,
@@ -39,63 +23,69 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-
-  // Homepage FAQ renders q1..q6 in agentic/faq.tsx (COUNT = 6) but never
-  // shipped FAQPage schema — same questions, now machine-readable.
-  const t = await getTranslations({ locale, namespace: "agentic.faq" });
-  const faqItems = Array.from({ length: 6 }, (_, index) => ({
-    q: t(`q${index + 1}`),
-    a: t(`a${index + 1}`),
-  }));
+  // The reference document uses English canonical paths. Swap only the routes
+  // whose Indonesian pathname differs, keeping all menu items on real pages.
+  const localeCode = locale as Locale;
+  const hero = await getTranslations({ locale, namespace: "home.hero" });
+  const finalCta = await getTranslations({
+    locale,
+    namespace: "home.finalCta",
+  });
+  const markup = localizeRevampHomeMarkup(
+    localizeIndustryNav(
+      localizeRevampHomeRoutes(revampHomeMarkup, localeCode),
+      locale,
+    ),
+    localeCode,
+  )
+    .replaceAll("From Leads to Lifetime Customer.", hero("title"))
+    .replaceAll("Dari Leads Jadi Pelanggan Seumur Hidup", hero("title"))
+    .replaceAll(
+      "Use AI agents, CRM, and automated follow-ups to turn more conversations into sales, know exactly which ads end in a closed deal, and keep customers coming back.",
+      hero("subtitle"),
+    )
+    .replaceAll("#1 AI-powered revenue technology", hero("eyebrow"))
+    .replaceAll(
+      "Ready for a more connected revenue journey?",
+      finalCta("heading"),
+    );
+  const languageLabel = {
+    en: "Choose language",
+    id: "Pilih bahasa",
+    cn: "选择语言",
+    jp: "言語を選択",
+    kr: "언어 선택",
+  }[localeCode];
+  const languageMenu = `
+    <details class="nav__languages">
+      <summary aria-label="${languageLabel}">${locale.toUpperCase()}<svg class="nav__language-chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5"></path></svg></summary>
+      <div class="nav__language-menu" role="menu">
+        <a href="/en" data-locale="en" role="menuitem">English <small>EN</small></a>
+        <a href="/id" data-locale="id" role="menuitem">Indonesia <small>ID</small></a>
+        <a href="/kr" data-locale="kr" role="menuitem">한국어 <small>KR</small></a>
+        <a href="/jp" data-locale="jp" role="menuitem">日本語 <small>JP</small></a>
+        <a href="/cn" data-locale="cn" role="menuitem">中文 <small>CN</small></a>
+      </div>
+    </details>`;
 
   return (
     <>
-      <JsonLd data={faqPageJsonLd(faqItems)} />
-      <ScrollProgress />
-      <Hero />
-      <div className="cv-auto">
-        <LogoStrip />
-      </div>
-      <div className="cv-auto">
-        <Proof />
-      </div>
-      <div className="cv-auto">
-        <SoundWords />
-      </div>
-      <div className="cv-auto">
-        <Features />
-      </div>
-      {/* No cv-auto: content-visibility containment breaks position:sticky
-          on the Live stage inside HowItWorks. */}
-      <HowItWorks />
-      <div className="cv-auto">
-        <IndustryCarousel />
-      </div>
-      {/* Featured story photography — keep off content-visibility for sticky polish. */}
-      <CaseStudy />
-      <div className="cv-auto">
-        <Gallery />
-      </div>
-      <div className="cv-auto">
-        <Results />
-      </div>
-      <div className="cv-auto">
-        <PhotoBand />
-      </div>
-      <div className="cv-auto">
-        <Pricing />
-      </div>
-      <div className="cv-auto">
-        <OpenApi />
-      </div>
-      <div className="cv-auto">
-        <Security />
-      </div>
-      {/* FAQ sticky title — no content-visibility wrapper. */}
-      <Faq />
-      <div className="cv-auto">
-        <FinalCta />
-      </div>
+      {/* The approved legacy stylesheet is deliberately kept as an isolated
+          public asset while its selectors are migrated to scoped CSS. */}
+      {/* eslint-disable-next-line @next/next/no-css-tags */}
+      <link rel="stylesheet" href="/revamp-web-cekat/styles.css" />
+      <style>{`.nav__language-menu{position:absolute!important;top:100%!important;right:0!important;width:170px!important;z-index:2147483000!important}.nav__languages:hover>.nav__language-menu,.nav__languages:focus-within>.nav__language-menu,.nav__languages[open]>.nav__language-menu{display:block!important}`}</style>
+      <div
+        className="reference-home"
+        data-locale={localeCode}
+        dangerouslySetInnerHTML={{
+          __html: markup.replace(
+            '<div class="nav__actions">',
+            `<div class="nav__actions">${languageMenu}`,
+          ),
+        }}
+      />
+      <Script src="/revamp-web-cekat/main.js" strategy="afterInteractive" />
     </>
   );
 }

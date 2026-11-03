@@ -10,10 +10,22 @@
   },
   "definition": "Desain Alur Chat adalah fitur Cekat.AI untuk merancang alur percakapan customer secara drag-and-drop, mengarahkan tiap chat ke AI atau agent manusia spesialis yang tepat (sales, support, atau billing) tanpa menulis satu baris kode pun.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis bikin alur di Cekat.AI" },
-    { "value": "~5 menit", "label": "bikin AI agent pertamamu" },
-    { "value": "1.000.000+", "label": "interaksi customer terarahkan" },
-    { "value": "15+", "label": "industri terlayani" }
+    {
+      "value": "3.000+",
+      "label": "bisnis bikin alur di Cekat.AI"
+    },
+    {
+      "value": "~5 menit",
+      "label": "bikin AI agent pertamamu"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer terarahkan"
+    },
+    {
+      "value": "15+",
+      "label": "industri terlayani"
+    }
   ],
   "benefits": [
     {
@@ -39,7 +51,7 @@
   ],
   "tabs": [
     {
-      "label": "Drag & Drop",
+      "label": "Seret & Lepas",
       "title": "Logika yang Kelihatan, Bukan Skrip yang Dibaca Susah",
       "body": "Tiap cabang alurmu ada di satu kanvas visual, apa yang AI tanya, ke mana tiap jawaban mengarah, siapa yang ambil alih kapan. Siapa pun di tim bisa baca, mempertanyakan, dan memperbaikinya tanpa buka satu baris kode."
     },

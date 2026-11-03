@@ -10,10 +10,22 @@
   },
   "definition": "Live Chat Website adalah fitur Cekat.AI yang memasang widget chat bertenaga AI di website-mu, menjawab pertanyaan pengunjung secara instan 24/7, menangkap setiap percakapan jadi leads di CRM bawaan, dan mengalihkannya ke timmu dengan konteks penuh saat sentuhan manusia dibutuhkan.",
   "stats": [
-    { "value": "3.000+", "label": "bisnis pakai Cekat.AI" },
-    { "value": "1.000.000+", "label": "interaksi customer tertangani" },
-    { "value": "24/7", "label": "pengunjung dijawab instan" },
-    { "value": "~5 menit", "label": "bikin AI agent-mu" }
+    {
+      "value": "3.000+",
+      "label": "bisnis pakai Cekat.AI"
+    },
+    {
+      "value": "1.000.000+",
+      "label": "interaksi customer tertangani"
+    },
+    {
+      "value": "24/7",
+      "label": "pengunjung dijawab instan"
+    },
+    {
+      "value": "~5 menit",
+      "label": "bikin AI agent-mu"
+    }
   ],
   "benefits": [
     {
@@ -80,7 +92,7 @@
   "testimonial": {
     "quote": "Response rate kami meningkat 90%",
     "name": "Hargyo",
-    "role": "Director, Multimedia Nusantara Polytechnic",
+    "role": "Direktur, Multimedia Nusantara Polytechnic",
     "image": "/images/home/testimonial-hargyo.jpg"
   },
   "faq": [

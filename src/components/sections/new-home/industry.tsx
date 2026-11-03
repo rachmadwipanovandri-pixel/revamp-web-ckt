@@ -4,6 +4,7 @@ import { getEntryById } from "@/lib/registry";
 import { loadLandingContent } from "@/lib/registry/content";
 import type { IndustryPanel } from "@/components/sections/home/industry-carousel-panels";
 import { IndustryRail } from "./industry-rail";
+import { localeValue } from "@/lib/locale-value";
 
 const INDUSTRY_IDS = [
   "healthcare",
@@ -30,8 +31,10 @@ export async function IndustryCarousel() {
       return {
         id,
         slug,
-        title: entry.title[locale] ?? "",
-        tagline: entry.tagline?.[locale] ?? "",
+        title: localeValue(entry.title, locale) ?? entry.id,
+        tagline: entry.tagline
+          ? (localeValue(entry.tagline, locale) ?? "")
+          : "",
         photo: `/images/industries/${id}.webp`,
         description: content.hero.subtitle,
         useCases: content.hero.useCases ?? [],
