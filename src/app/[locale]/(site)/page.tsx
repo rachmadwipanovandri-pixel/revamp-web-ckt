@@ -48,7 +48,10 @@ export default async function HomePage({
     .replaceAll(
       "Ready for a more connected revenue journey?",
       finalCta("heading"),
-    );
+    )
+    // The homepage's standalone reference markup has a compact legacy footer.
+    // Remove it so SiteChrome can render the same localized Footer as every page.
+    .replace(/<footer class="foot">[\s\S]*?<\/footer>/, "");
   const languageLabel = {
     en: "Choose language",
     id: "Pilih bahasa",

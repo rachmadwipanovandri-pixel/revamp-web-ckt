@@ -14,9 +14,10 @@ import {
   mdiFacebook,
 } from "@/lib/icons";
 import { Container } from "./container";
-import { LogoWhite } from "./logo";
+import { LogoBlack, LogoFooterGradient } from "./logo";
 import { AppStoreBadge, MetaLogo, PlayStoreBadge } from "./store-badges";
 import { cn } from "@/lib/utils";
+import { Meteors } from "@/components/ui/meteors";
 
 const PRODUCT_LINKS = [
   { key: "chat", href: "/chat" },
@@ -99,7 +100,7 @@ function LinkColumn({
 }) {
   return (
     <div className={className}>
-      <h3 className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-white/45 uppercase">
+      <h3 className="font-numeric text-base font-semibold text-foreground">
         {title}
       </h3>
       <ul className="mt-4 space-y-2.5">{children}</ul>
@@ -121,7 +122,7 @@ function FooterLink({
       <Link
         href={href}
         className={cn(
-          "text-sm leading-snug text-white/70 transition-colors duration-200 hover:text-white",
+          "text-xs leading-relaxed font-medium text-muted-foreground transition-colors duration-200 hover:text-foreground",
           className,
         )}
       >
@@ -153,27 +154,29 @@ export function Footer() {
   return (
     <footer
       ref={shellRef}
-      className="relative overflow-hidden bg-[#0B1220] text-white"
+      className="relative overflow-hidden border-t border-border bg-white text-foreground"
     >
       {/* Meta partner strip */}
-      <div className="border-b border-white/8">
-        <Container className="flex flex-col items-center gap-3 py-5 sm:flex-row sm:gap-4">
-          <span className="inline-flex items-center rounded-full border border-white/12 bg-white/6 px-3 py-1.5">
-            <MetaLogo className="h-3 w-auto brightness-0 invert lg:h-4" />
-          </span>
-          <p className="text-sm text-white/75 sm:text-base">
-            {t("metaPartner")}
-          </p>
+      <div className="border-b border-border">
+        <Container className="flex flex-col items-center gap-3 border-x border-border py-6 font-numeric text-base text-foreground lg:flex-row lg:gap-6">
+          <MetaLogo className="h-3 w-auto lg:h-5" />
+          <p>{t("metaPartner")}</p>
         </Container>
       </div>
 
-      <div>
-        <Container className="grid gap-12 py-14 lg:grid-cols-12 lg:gap-10 lg:py-16">
+      <div className="relative z-10 overflow-hidden pt-10 lg:pt-0">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 z-0"
+        >
+          <Meteors number={14} className="bg-[#64748b]" />
+        </div>
+        <Container className="relative z-20 grid gap-12 py-4 lg:grid-cols-12">
           {/* Brand + socials + offices */}
-          <div className="flex flex-col gap-10 lg:col-span-5 lg:pr-8">
-            <div>
-              <LogoWhite className="h-10 w-auto" />
-              <div className="mt-6 flex flex-wrap gap-2.5">
+          <div className="flex flex-col gap-8 lg:col-span-7">
+            <div className="flex flex-col items-center lg:items-start">
+              <LogoBlack className="h-11 w-auto" />
+              <div className="mt-4 flex gap-4">
                 {SOCIALS.map((s) => (
                   <a
                     key={s.label}
@@ -181,7 +184,7 @@ export function Footer() {
                     aria-label={s.label}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex size-10 items-center justify-center rounded-full border border-white/12 bg-white/5 text-white/70 transition-colors duration-200 hover:border-white/25 hover:bg-white/10 hover:text-white"
+                    className="inline-flex size-8 items-center justify-center rounded-full text-foreground transition-colors duration-200 hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
                   >
                     <Icon icon={s.icon} className="size-[1.15rem]" />
                   </a>
@@ -189,14 +192,14 @@ export function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-5">
-              <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-white/45 uppercase">
+            <div className="flex flex-col gap-6">
+              <p className="font-numeric text-xs text-foreground">
                 {t("officeHeading")}
               </p>
               <div
                 role="tablist"
                 aria-label={t("officeHeading")}
-                className="flex w-full max-w-full flex-nowrap items-center gap-1 overflow-x-auto rounded-full border border-white/10 bg-white/5 p-1.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:w-fit sm:flex-wrap"
+                className="flex w-full max-w-full flex-nowrap items-center gap-1.5 overflow-x-auto rounded-xl border border-border bg-surface-muted p-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:w-fit sm:flex-wrap"
               >
                 {OFFICE_COUNTRIES.map((c) => {
                   const isActive = activeCountry === c.key;
@@ -208,10 +211,10 @@ export function Footer() {
                       aria-selected={isActive}
                       onClick={() => setActiveCountry(c.key)}
                       className={cn(
-                        "inline-flex shrink-0 cursor-pointer items-center gap-1.5 rounded-full px-3 py-2 font-numeric text-sm whitespace-nowrap transition-colors duration-200 focus-visible:ring-3 focus-visible:ring-white/30 focus-visible:outline-none sm:px-4",
+                        "inline-flex min-h-10 shrink-0 cursor-pointer items-center gap-1.5 rounded-lg border px-3.5 py-1.5 font-numeric text-sm whitespace-nowrap transition-colors duration-200 focus-visible:ring-3 focus-visible:ring-primary/25 focus-visible:outline-none",
                         isActive
-                          ? "bg-white text-[#0B1220]"
-                          : "text-white/65 hover:bg-white/10 hover:text-white",
+                          ? "border-border/60 bg-white font-medium text-foreground shadow-xs"
+                          : "border-transparent text-muted-foreground hover:text-foreground",
                       )}
                     >
                       <span className="font-emoji">{c.flag}</span>
@@ -221,31 +224,31 @@ export function Footer() {
                 })}
               </div>
 
-              <div className="min-h-[7.5rem]">
+              <div className="min-h-[7.5rem] text-center lg:text-left">
                 {activeCountry === "indonesia" && (
                   <div
                     key="indonesia"
-                    className="animate-fade-in-up-blur grid grid-cols-1 gap-4 sm:grid-cols-2"
+                    className="animate-fade-in-up-blur grid grid-cols-1 gap-8 sm:grid-cols-2"
                   >
-                    <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4">
-                      <p className="text-xs text-white/50">
+                    <div>
+                      <p className="text-xs text-muted-foreground">
                         {t("jakartaOfficeName")}
                       </p>
-                      <h3 className="mt-1.5 text-sm font-semibold text-white">
+                      <h3 className="mt-1.5 text-base font-semibold text-foreground">
                         {t("companyLegalName")}
                       </h3>
-                      <p className="mt-1.5 text-sm leading-relaxed text-white/60">
+                      <p className="mt-1.5 text-sm leading-relaxed text-foreground">
                         {t("jakartaOfficeAddress")}
                       </p>
                     </div>
-                    <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4">
-                      <p className="text-xs text-white/50">
+                    <div>
+                      <p className="text-xs text-muted-foreground">
                         {t("tangerangOfficeName")}
                       </p>
-                      <h3 className="mt-1.5 text-sm font-semibold text-white">
+                      <h3 className="mt-1.5 text-base font-semibold text-foreground">
                         {t("companyLegalName")}
                       </h3>
-                      <p className="mt-1.5 text-sm leading-relaxed text-white/60">
+                      <p className="mt-1.5 text-sm leading-relaxed text-foreground">
                         {t("tangerangOfficeAddress")}
                       </p>
                     </div>
@@ -255,15 +258,15 @@ export function Footer() {
                 {activeCountry === "singapore" && (
                   <div
                     key="singapore"
-                    className="animate-fade-in-up-blur rounded-2xl border border-white/8 bg-white/[0.03] p-4 sm:max-w-md"
+                    className="animate-fade-in-up-blur sm:max-w-md"
                   >
-                    <p className="text-xs text-white/50">
+                    <p className="text-xs text-muted-foreground">
                       {t("singaporeOfficeName")}
                     </p>
-                    <h3 className="mt-1.5 text-sm font-semibold text-white">
+                    <h3 className="mt-1.5 text-base font-semibold text-foreground">
                       {t("singaporeCompanyName")}
                     </h3>
-                    <p className="mt-1.5 text-sm leading-relaxed text-white/60">
+                    <p className="mt-1.5 text-sm leading-relaxed text-foreground">
                       {t("singaporeOfficeAddress")}
                     </p>
                   </div>
@@ -272,15 +275,15 @@ export function Footer() {
                 {activeCountry === "malaysia" && (
                   <div
                     key="malaysia"
-                    className="animate-fade-in-up-blur rounded-2xl border border-white/8 bg-white/[0.03] p-4 sm:max-w-md"
+                    className="animate-fade-in-up-blur sm:max-w-md"
                   >
-                    <p className="text-xs text-white/50">
+                    <p className="text-xs text-muted-foreground">
                       {t("malaysiaOfficeName")}
                     </p>
-                    <h3 className="mt-1.5 text-sm font-semibold text-white">
+                    <h3 className="mt-1.5 text-base font-semibold text-foreground">
                       {t("malaysiaCompanyName")}
                     </h3>
-                    <p className="mt-1.5 text-sm leading-relaxed text-white/60">
+                    <p className="mt-1.5 text-sm leading-relaxed text-foreground">
                       {t("malaysiaOfficeAddress")}
                     </p>
                   </div>
@@ -290,9 +293,9 @@ export function Footer() {
           </div>
 
           {/* Apps + link columns */}
-          <div className="flex flex-col gap-10 lg:col-span-7 lg:pl-8">
+          <div className="flex flex-col gap-8 lg:col-span-5 lg:pl-12">
             <div>
-              <h3 className="font-numeric text-[0.7rem] font-semibold tracking-[0.14em] text-white/45 uppercase">
+              <h3 className="font-numeric text-xs text-foreground">
                 {t("downloadApp")}
               </h3>
               <div className="mt-4 flex flex-wrap items-center gap-3">
@@ -300,22 +303,22 @@ export function Footer() {
                   href="https://play.google.com/store/apps/details?id=com.cekatmobile&pcampaignid=web_share&pli=1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-xl ring-1 ring-white/15 transition-colors hover:ring-white/35"
+                  className="transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
                 >
-                  <PlayStoreBadge className="h-10 w-auto" />
+                  <PlayStoreBadge className="h-9 w-auto" />
                 </a>
                 <a
                   href="https://apps.apple.com/id/app/cekat-ai/id6499275234?l=id"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-xl ring-1 ring-white/15 transition-colors hover:ring-white/35"
+                  className="transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
                 >
-                  <AppStoreBadge className="h-10 w-auto" />
+                  <AppStoreBadge className="h-9 w-auto" />
                 </a>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-x-6 gap-y-9 sm:grid-cols-3">
+            <div className="grid grid-cols-2 gap-8">
               <LinkColumn title={t("productHeading")}>
                 {PRODUCT_LINKS.map((l) => (
                   <FooterLink key={l.key} href={l.href}>
@@ -347,7 +350,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/features"
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-white/85 transition-colors hover:text-white"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-primary/80"
                   >
                     {tn("viewAllFeatures")}
                     <span aria-hidden>→</span>
@@ -370,7 +373,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/industries"
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-white/85 transition-colors hover:text-white"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-primary/80"
                   >
                     {tn("viewAllIndustries")}
                     <span aria-hidden>→</span>
@@ -393,7 +396,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/solutions"
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-white/85 transition-colors hover:text-white"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-primary/80"
                   >
                     {tn("viewAllSolutions")}
                     <span aria-hidden>→</span>
@@ -405,15 +408,15 @@ export function Footer() {
         </Container>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/8">
-          <Container className="flex flex-col items-center justify-between gap-4 py-7 sm:flex-row">
-            <p className="text-xs font-medium tracking-wide text-white/45">
+        <div className="relative z-20 py-8">
+          <Container>
+            <p className="text-center text-xs font-medium text-muted-foreground">
               Copyright &copy; {new Date().getFullYear()} CekatAI. {t("rights")}
             </p>
-            <p className="font-numeric text-[0.7rem] font-semibold tracking-[0.16em] text-white/35 uppercase">
-              CekatAI
-            </p>
           </Container>
+        </div>
+        <div className="relative z-0 flex justify-center overflow-hidden py-4">
+          <LogoFooterGradient className="h-auto w-full max-w-5xl" />
         </div>
       </div>
     </footer>

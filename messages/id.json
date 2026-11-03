@@ -7,11 +7,33 @@
     "metaTitle": "Tentang Cekat.AI — PT Teknologi Cekat Indonesia",
     "metaDescription": "Perusahaan di balik Cekat.AI: berdiri sejak Agustus 2023, Meta Business Partner resmi, tersertifikasi ISO 9001:2015 & ISO/IEC 27001:2022, dipercaya 3.000+ bisnis di Asia.",
     "eyebrow": "Tentang kami",
-    "heroTitle": "AI Agent & Omnichannel CRM untuk bisnis Indonesia",
-    "heroSub": "Balas lebih cepat, follow-up otomatis, closing lebih banyak — dari percakapan sampai order, dalam satu platform.",
+    "heroTitle": "Dari chat pertama hingga pelanggan setia.",
+    "heroSub": "Cekat.AI menyatukan AI Agent, CRM omnichannel, otomatisasi order, dan follow-up agar setiap percakapan mendorong bisnis Anda maju.",
     "storyEyebrow": "Cerita kami",
-    "storyP1": "Cekat.AI dibangun sejak Agustus 2023 oleh PT Teknologi Cekat Indonesia, dengan satu keyakinan sederhana: bisnis di Asia tumbuh dari percakapan — di WhatsApp, Instagram, TikTok, dan kanal lainnya — dan percakapan itu harus dijawab, diikuti, dan diubah jadi penjualan tanpa tim yang kelelahan.",
+    "storyHeading": "Setiap percakapan adalah peluang untuk maju.",
+    "storyP1": "PT Teknologi Cekat Indonesia mulai membangun Cekat.AI pada Agustus 2023 dengan keyakinan sederhana: bisnis tumbuh lewat percakapan. Namun saat chat tersebar di banyak kanal, peluang untuk membalas, memahami kebutuhan, dan menindaklanjuti pelanggan mudah terlewat.",
     "storyP2": "Hari ini platform Cekat.AI memadukan AI customer service, CRM omnichannel, otomatisasi order, dan broadcast marketing, dipakai oleh 3.000+ bisnis di Indonesia, Singapura, dan Malaysia. Produknya tersedia sebagai web app dan aplikasi mobile di Google Play dan App Store.",
+    "journeyEyebrow": "Satu platform yang saling terhubung",
+    "journeyHeading": "Siklus pertumbuhan yang berpusat pada pelanggan",
+    "journeySub": "Setiap kanal terhubung ke konteks pelanggan yang sama—dari pertanyaan pertama hingga order berikutnya.",
+    "journey": {
+      "conversation": {
+        "title": "Temui pelanggan di kanal pilihan mereka",
+        "body": "Satukan chat WhatsApp, Instagram, TikTok, Messenger, dan website dalam satu inbox yang dibantu AI Agent."
+      },
+      "crm": {
+        "title": "Simpan semua konteks pelanggan",
+        "body": "Berikan tim satu profil pelanggan, riwayat percakapan, dan langkah berikutnya yang jelas di berbagai kanal."
+      },
+      "order": {
+        "title": "Ubah minat menjadi order",
+        "body": "Bantu pelanggan menemukan produk, mengonfirmasi detail, dan membuat order langsung dari percakapan."
+      },
+      "marketing": {
+        "title": "Ajak pelanggan kembali",
+        "body": "Kirim broadcast terarah dan follow-up otomatis untuk menjaga hubungan setelah pembelian pertama."
+      }
+    },
     "factsEyebrow": "Sekilas fakta",
     "facts": {
       "founding": {
@@ -34,6 +56,10 @@
     "certEyebrow": "Keamanan & kepatuhan",
     "certHeading": "Standar yang kami pegang",
     "officesEyebrow": "Kantor kami",
+    "officesHeading": "Dibangun di Asia, dekat dengan bisnis Anda.",
+    "trialLabel": "Mulai uji coba gratis",
+    "contactLinkLabel": "Hubungi tim kami",
+    "ctaHeading": "Mari tumbuh dari percakapan yang lebih baik.",
     "ctaLabel": "Bicara dengan tim kami",
     "ctaSub": "Curiga kami cocok untuk bisnis Anda? Chat langsung — tanpa presentasi panjang."
   },

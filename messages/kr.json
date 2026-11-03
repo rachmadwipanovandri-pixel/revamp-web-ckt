@@ -7,11 +7,33 @@
     "metaTitle": "Cekat.AI 소개 — PT Teknologi Cekat Indonesia",
     "metaDescription": "Cekat.AI 운영사 소개: 2023년 8월 설립, Meta 공식 비즈니스 파트너, ISO 9001:2015 및 ISO/IEC 27001:2022 인증, 아시아 3,000개 이상 기업이 이용합니다.",
     "eyebrow": "회사 소개",
-    "heroTitle": "아시아 비즈니스를 위한 AI Agent 및 옴니채널 CRM",
-    "heroSub": "더 빠르게 답변하고 자동으로 후속 조치하며 더 많이 성사시키세요. 대화부터 주문까지 하나의 플랫폼에서 처리합니다.",
+    "heroTitle": "첫 대화부터 오래 함께하는 고객까지.",
+    "heroSub": "Cekat.AI는 AI Agent, 옴니채널 CRM, 주문 자동화, 후속 관리를 하나로 연결해 모든 대화가 비즈니스 성장으로 이어지도록 돕습니다.",
     "storyEyebrow": "우리의 이야기",
-    "storyP1": "Cekat.AI는 PT Teknologi Cekat Indonesia가 2023년 8월 설립했습니다. 아시아의 비즈니스는 WhatsApp, Instagram, TikTok 등 다양한 채널의 대화에서 성장하며, 팀을 지치게 하지 않으면서 모든 대화에 답변하고 후속 조치해 거래로 이어지도록 해야 한다는 믿음에서 출발했습니다.",
+    "storyHeading": "모든 대화는 비즈니스를 앞으로 나아가게 합니다.",
+    "storyP1": "PT Teknologi Cekat Indonesia는 비즈니스가 대화를 통해 성장한다는 믿음으로 2023년 8월 Cekat.AI 개발을 시작했습니다. 하지만 채팅이 여러 채널에 흩어져 있으면 답변하고, 고객의 필요를 파악하고, 후속 조치를 할 기회를 놓치기 쉽습니다.",
     "storyP2": "현재 Cekat.AI는 AI 고객 서비스, 옴니채널 CRM, 주문 자동화, 마케팅 메시지 발송을 하나로 제공하며 인도네시아, 싱가포르, 말레이시아의 3,000개 이상 기업이 사용합니다. 웹 앱과 Google Play 및 App Store 모바일 앱을 제공합니다.",
+    "journeyEyebrow": "하나로 연결된 플랫폼",
+    "journeyHeading": "고객 중심으로 이어지는 성장의 흐름",
+    "journeySub": "첫 문의부터 다음 주문까지 모든 채널의 고객 정보를 하나로 연결합니다.",
+    "journey": {
+      "conversation": {
+        "title": "고객이 있는 곳에서 만나세요",
+        "body": "WhatsApp, Instagram, TikTok, Messenger, 웹사이트 채팅을 AI Agent가 지원하는 하나의 받은 편지함으로 모읍니다."
+      },
+      "crm": {
+        "title": "고객의 모든 맥락을 한곳에",
+        "body": "고객 프로필, 대화 기록, 다음 조치까지 팀이 여러 채널에서 한눈에 확인할 수 있습니다."
+      },
+      "order": {
+        "title": "관심을 주문으로 연결하세요",
+        "body": "대화 중에 상품을 안내하고 세부 정보를 확인해 바로 주문할 수 있도록 돕습니다."
+      },
+      "marketing": {
+        "title": "고객이 다시 찾아오도록",
+        "body": "맞춤형 메시지와 자동 후속 조치로 첫 구매 이후에도 고객 관계를 이어갑니다."
+      }
+    },
     "factsEyebrow": "한눈에 보기",
     "facts": {
       "founding": {
@@ -34,6 +56,10 @@
     "certEyebrow": "보안 및 규정 준수",
     "certHeading": "우리가 지키는 기준",
     "officesEyebrow": "오피스",
+    "officesHeading": "아시아에서 시작해, 고객 가까이에서 함께합니다.",
+    "trialLabel": "무료 체험 시작하기",
+    "contactLinkLabel": "팀에 문의하기",
+    "ctaHeading": "더 나은 대화에서 성장을 시작하세요.",
     "ctaLabel": "팀에 문의하기",
     "ctaSub": "Cekat.AI가 귀사에 적합할지 궁금하신가요? 긴 자료 대신 담당자와 직접 이야기해 보세요."
   },

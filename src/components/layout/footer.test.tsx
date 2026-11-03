@@ -65,4 +65,16 @@ describe("Footer", () => {
     expect(screen.getByText("Tangerang Office")).toBeInTheDocument();
     expect(screen.getByText("Download Cekat Mobile App")).toBeInTheDocument();
   });
+
+  it("uses the shared light footer treatment", () => {
+    render(
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <Footer />
+      </NextIntlClientProvider>,
+    );
+
+    expect(screen.getByRole("contentinfo")).toHaveClass("border-t", "bg-white");
+    expect(screen.getByRole("img", { name: "Meta" })).toBeInTheDocument();
+    expect(screen.getAllByRole("img", { name: "Cekat.AI" })).toHaveLength(2);
+  });
 });

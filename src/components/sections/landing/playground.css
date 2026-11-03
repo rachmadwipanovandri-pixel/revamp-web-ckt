@@ -222,6 +222,18 @@
 .cekat-page .editorial-feature > div:first-child { background: #fdf0cb; }
 .cekat-page .story-feature > div:last-child { background: #e6f7fa; }
 .cekat-page .secondary-hero[data-tone="company"] .evidence-panel { background: #1352bf; }
+.cekat-page .secondary-hero[data-tone="company"] .evidence-panel dt { color: #78d1de; }
+.cekat-page .secondary-hero[data-tone="company"] .evidence-panel dd { color: #d5e0f3; }
+.cekat-page .about-growth__card {
+  box-shadow: 0 14px 36px -30px #09214c55;
+  transition: transform .25s, border-color .25s, box-shadow .25s;
+}
+.cekat-page .about-growth__card:hover {
+  transform: translateY(-3px);
+  border-color: #bfdbfe;
+  box-shadow: 0 18px 38px -26px #09214c66;
+}
+.cekat-page .about-cta { background: linear-gradient(112deg, #1352bf, #0a3173); }
 .cekat-page .integration-chapter { background: #e6f7fa; }
 .cekat-page .integration-chapter[data-chapter="1"] { background: #fff9eb; }
 .cekat-page .integration-chapter[data-chapter="2"] { background: #e4ebf9; }

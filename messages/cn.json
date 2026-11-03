@@ -7,11 +7,33 @@
     "metaTitle": "关于 Cekat.AI — PT Teknologi Cekat Indonesia",
     "metaDescription": "了解 Cekat.AI：PT Teknologi Cekat Indonesia 于 2023 年 8 月成立，是 Meta 官方商业合作伙伴，获 ISO 9001:2015 与 ISO/IEC 27001:2022 认证，服务亚洲 3,000 多家企业。",
     "eyebrow": "关于我们",
-    "heroTitle": "为亚洲企业打造的 AI Agent 与全渠道 CRM",
-    "heroSub": "更快回复，自动跟进，提升成交——从对话到订单，一个平台全部完成。",
+    "heroTitle": "从第一次对话，到长久相伴的客户。",
+    "heroSub": "Cekat.AI 将 AI Agent、全渠道 CRM、订单自动化和客户跟进整合在一起，让每次对话都推动业务向前。",
     "storyEyebrow": "我们的故事",
-    "storyP1": "Cekat.AI 由 PT Teknologi Cekat Indonesia 于 2023 年 8 月创立，源于一个简单的信念：亚洲企业通过对话发展业务——无论是在 WhatsApp、Instagram、TikTok 还是其他渠道。每段对话都值得及时回复、持续跟进并促成交易，而不应让团队疲于奔命。",
+    "storyHeading": "每一次对话，都是推动业务前进的机会。",
+    "storyP1": "PT Teknologi Cekat Indonesia 于 2023 年 8 月开始打造 Cekat.AI，源于一个简单的信念：业务在对话中成长。但当聊天分散在不同渠道时，及时回复、了解客户需求并持续跟进的机会很容易被错过。",
     "storyP2": "如今，Cekat.AI 集 AI 客户服务、全渠道 CRM、订单自动化和营销群发于一体，已服务印度尼西亚、新加坡和马来西亚的 3,000 多家企业。产品提供网页版和 Google Play、App Store 移动应用。",
+    "journeyEyebrow": "彼此连接的一体化平台",
+    "journeyHeading": "以客户为中心的增长闭环",
+    "journeySub": "从首次咨询到再次下单，每个渠道共享同一份客户信息。",
+    "journey": {
+      "conversation": {
+        "title": "在客户所在的渠道与他们沟通",
+        "body": "将 WhatsApp、Instagram、TikTok、Messenger 和网站聊天汇集到一个由 AI Agent 辅助的收件箱。"
+      },
+      "crm": {
+        "title": "完整保留客户上下文",
+        "body": "让团队在不同渠道中共享一份客户档案、对话记录和清晰的下一步行动。"
+      },
+      "order": {
+        "title": "将购买意向转化为订单",
+        "body": "在对话中帮助客户了解产品、确认信息并直接下单。"
+      },
+      "marketing": {
+        "title": "让客户再次回来",
+        "body": "通过定向群发和自动跟进，在首次购买后继续维护客户关系。"
+      }
+    },
     "factsEyebrow": "概览",
     "facts": {
       "founding": {
@@ -34,6 +56,10 @@
     "certEyebrow": "安全与合规",
     "certHeading": "我们遵循的标准",
     "officesEyebrow": "我们的办公室",
+    "officesHeading": "扎根亚洲，陪伴您的业务成长。",
+    "trialLabel": "开始免费试用",
+    "contactLinkLabel": "联系团队",
+    "ctaHeading": "从更好的客户对话开始增长。",
     "ctaLabel": "联系我们的团队",
     "ctaSub": "想了解 Cekat.AI 是否适合您的业务？直接与我们交流，无需冗长演示文稿。"
   },
