@@ -2298,96 +2298,11 @@ const ONBOARDING_COPY_ROWS = [
   ],
 ] as const;
 
-/**
- * The hero thread: one WhatsApp conversation that runs the whole loop. Sample
- * names, links and amounts stay as they are; only the surrounding copy moves.
- */
-const HERO_THREAD_COPY_ROWS = [
-  [
-    "Illustration: one WhatsApp thread runs the whole revenue loop. Kirana arrives from a creator's Reel, the AI agent books her, the booking is saved to CRM with its source, analytics shows creator posts cost IDR 42K per booking, and Cekat suggests briefing more creators like her.",
-    "Ilustrasi: satu percakapan WhatsApp menjalankan seluruh siklus pendapatan. Kirana datang dari Reel kreator, AI agent membuatkan booking, booking tersimpan di CRM beserta sumbernya, analitik menunjukkan postingan kreator berbiaya IDR 42K per booking, lalu Cekat menyarankan brief untuk lebih banyak kreator seperti dia.",
-    "示意图：一段 WhatsApp 对话贯穿整个收入闭环。Kirana 通过创作者的 Reel 进来，AI 智能体为她完成预约，预约连同来源保存到 CRM，分析显示创作者帖子每次预约成本为 IDR 42K，Cekat 建议再为更多像她这样的创作者写简报。",
-    "イラスト：ひとつの WhatsApp スレッドで収益ループ全体が回ります。Kirana はクリエイターの Reel から流入し、AI エージェントが予約を受け付け、予約は流入元とともに CRM に保存されます。分析ではクリエイター投稿の予約単価が IDR 42K とわかり、Cekat は同じようなクリエイターの追加起用を提案します。",
-    "일러스트: 하나의 WhatsApp 대화로 전체 매출 루프가 돌아갑니다. Kirana가 크리에이터의 릴스로 유입되고, AI 에이전트가 예약을 잡고, 예약은 출처와 함께 CRM에 저장됩니다. 분석 결과 크리에이터 게시물의 예약당 비용은 IDR 42K이며, Cekat은 Kirana 같은 크리에이터를 더 섭외하도록 제안합니다.",
-  ],
-  [
-    "WhatsApp · Cekat inbox",
-    "WhatsApp · Inbox Cekat",
-    "WhatsApp · Cekat 收件箱",
-    "WhatsApp · Cekat 受信箱",
-    "WhatsApp · Cekat 받은편지함",
-  ],
-  [
-    "Came from Kirana's Reel",
-    "Datang dari Reel Kirana",
-    "来自 Kirana 的 Reel",
-    "Kirana の Reel から流入",
-    "Kirana의 릴스에서 유입",
-  ],
-  [
-    "Hi, any slot this Saturday?",
-    "Halo, ada slot Sabtu ini?",
-    "你好，这周六还有空位吗？",
-    "こんにちは、今週の土曜日に空きはありますか？",
-    "안녕하세요, 이번 토요일에 예약 가능한 시간 있나요?",
-  ],
-  [
-    "Yes, 14:00 is open. Shall I book it?",
-    "Ada, jam 14:00 masih kosong. Mau saya booking-kan?",
-    "有的，14:00 有空。要帮你预约吗？",
-    "はい、14:00 が空いています。ご予約しましょうか？",
-    "네, 14:00가 비어 있어요. 예약해 드릴까요?",
-  ],
-  ["14:00, please", "Jam 14:00, ya", "14:00，谢谢", "14:00 でお願いします", "14:00로 부탁해요"],
-  [
-    "Booked · Sat 14:00",
-    "Terpesan · Sab 14:00",
-    "已预约 · 周六 14:00",
-    "予約済み · 土 14:00",
-    "예약 완료 · 토 14:00",
-  ],
-  [
-    "Added to CRM · source: Kirana's Reel",
-    "Masuk ke CRM · sumber: Reel Kirana",
-    "已加入 CRM · 来源：Kirana 的 Reel",
-    "CRM に追加 · 流入元：Kirana の Reel",
-    "CRM에 추가됨 · 출처: Kirana의 릴스",
-  ],
-  [
-    "Creator posts: IDR 42K per booking",
-    "Postingan kreator: IDR 42K per booking",
-    "创作者帖子：每次预约 IDR 42K",
-    "クリエイター投稿：予約 1 件あたり IDR 42K",
-    "크리에이터 게시물: 예약당 IDR 42K",
-  ],
-  [
-    "Your cheapest source this month",
-    "Sumber termurah bulan ini",
-    "本月成本最低的来源",
-    "今月いちばん低コストな流入元",
-    "이번 달 가장 저렴한 유입 경로",
-  ],
-  ["Next campaign", "Kampanye berikutnya", "下一场活动", "次のキャンペーン", "다음 캠페인"],
-  [
-    "Brief 2 more creators like Kirana?",
-    "Brief 2 kreator lagi seperti Kirana?",
-    "再为 2 位像 Kirana 这样的创作者写简报？",
-    "Kirana のようなクリエイターをあと 2 人起用しますか？",
-    "Kirana 같은 크리에이터 2명에게 더 브리핑할까요?",
-  ],
-  ["Create brief", "Buat brief", "创建简报", "ブリーフを作成", "브리프 만들기"],
-] as const;
-
 const JOURNEY_COPY: Record<Locale, Copy> = Object.fromEntries(
   (["id", "cn", "jp", "kr"] as const).map((locale, localeIndex) => [
     locale,
     Object.fromEntries(
-      [
-        ...PAIN_COPY_ROWS,
-        ...JOURNEY_COPY_ROWS,
-        ...ONBOARDING_COPY_ROWS,
-        ...HERO_THREAD_COPY_ROWS,
-      ].map(
+      [...PAIN_COPY_ROWS, ...JOURNEY_COPY_ROWS, ...ONBOARDING_COPY_ROWS].map(
         ([source, ...translations]) => [source, translations[localeIndex]],
       ),
     ),
