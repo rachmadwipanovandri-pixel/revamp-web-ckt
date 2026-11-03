@@ -2,7 +2,8 @@
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 
-  // Hero rotating word (Notion pattern): erase, switch colour, type the next word; the pill width follows
+  // Hero rotating word (Notion pattern): the pill starts as its icon, types the word open, holds, backspaces
+  // back to the icon, swaps icon and colour, then types the next word. The pill width follows the text.
   const rot = $(".rot");
   if (rot && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     const word = $(".rot__word", rot);
@@ -10,41 +11,75 @@
     const locale = $(".reference-home")?.dataset.locale || "en";
     const WORDS_BY_LOCALE = {
       en: ["revenue", "leads", "traffic"],
-      id: ["pendapatan", "prospek", "lalu lintas"],
+      id: ["pendapatan", "prospek", "trafik"],
       cn: ["收入", "线索", "流量"],
       jp: ["収益", "リード", "トラフィック"],
       kr: ["매출", "리드", "트래픽"],
     };
+    // Keys stay English so the pill colours match in every locale
+    const KEYS = ["revenue", "leads", "traffic"];
     const WORDS = WORDS_BY_LOCALE[locale] || WORDS_BY_LOCALE.en;
     const fit = () => {
-      measure.textContent = word.textContent || " ";
-      word.style.width = `${measure.getBoundingClientRect().width}px`;
+      measure.textContent = word.textContent;
+      word.style.width = word.textContent ? `${measure.getBoundingClientRect().width}px` : "0px";
+      rot.classList.toggle("is-empty", !word.textContent);
     };
     const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+    const type = async () => {
+      rot.classList.remove("is-swap");
+      rot.classList.add("is-typing");
+      for (const ch of WORDS[n]) {
+        word.textContent += ch;
+        fit();
+        await wait(75);
+      }
+      rot.classList.remove("is-typing");
+    };
+    const erase = async () => {
+      rot.classList.add("is-typing");
+      while (word.textContent.length) {
+        word.textContent = word.textContent.slice(0, -1);
+        fit();
+        await wait(45);
+      }
+      rot.classList.remove("is-typing");
+    };
     let n = 0;
+    word.textContent = "";
     fit();
     const cycle = async () => {
+      await wait(700); // let the headline reveal land first
       for (;;) {
-        await wait(2600);
-        if (document.hidden) continue;
-        rot.classList.add("is-typing");
-        while (word.textContent.length) {
-          word.textContent = word.textContent.slice(0, -1);
-          fit();
-          await wait(45);
-        }
+        await type();
+        await wait(2000);
+        while (document.hidden) await wait(500);
+        await erase();
+        await wait(250);
         n = (n + 1) % WORDS.length;
-        rot.className = `rot rot--${WORDS[n]} is-typing`;
-        for (const ch of WORDS[n]) {
-          word.textContent += ch;
-          fit();
-          await wait(75);
-        }
-        rot.classList.remove("is-typing");
+        rot.className = `rot rot--${KEYS[n]} is-empty is-swap`;
+        await wait(400);
       }
     };
     document.fonts?.ready.then(fit);
     cycle();
+  }
+
+  // Hero loop: plays once on load (CSS). When the cards stack, each one waits until it scrolls into view.
+  const loop = $(".loop");
+  if (loop) {
+    const loopIO = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting) {
+            en.target.classList.add("is-in");
+            loopIO.unobserve(en.target);
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
+    $$(".loop__card, .loop__back", loop).forEach((el) => loopIO.observe(el));
+    loop.classList.add("is-ready");
   }
 
   // Nav: border once the page scrolls, mobile menu toggle
