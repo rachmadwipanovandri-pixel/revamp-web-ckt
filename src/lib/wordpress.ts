@@ -113,6 +113,8 @@ const NAMED_ENTITIES: Record<string, string> = {
 // the fingerprint of UTF-8 text that was stored as individual Latin-1 code points.
 const MOJIBAKE_SIGNATURE =
   /[\u0080-\u009F]|[\u00C2\u00C3\u00E2][\u0080-\u00BF]/;
+const AUTO_EXCERPT_THRESHOLD = 500;
+const MAX_FALLBACK_SUMMARY_LENGTH = 220;
 
 /**
  * Some WordPress posts arrive double-encoded: the UTF-8 bytes for smart quotes
@@ -142,7 +144,10 @@ function decodeEntities(input: string): string {
       String.fromCodePoint(Number.parseInt(hex, 16)),
     )
     .replace(/&#(\d+);/g, (_, dec) => String.fromCodePoint(Number(dec)))
-    .replace(/&([a-zA-Z]+);/g, (match, name) => NAMED_ENTITIES[name.toLowerCase()] ?? match);
+    .replace(
+      /&([a-zA-Z]+);/g,
+      (match, name) => NAMED_ENTITIES[name.toLowerCase()] ?? match,
+    );
 }
 
 function stripHtml(html: string): string {
@@ -150,6 +155,32 @@ function stripHtml(html: string): string {
     .replace(/\[\s*…\s*\]/g, "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function normalizeExcerpt(
+  excerpt: string,
+  seoDescription?: string,
+  lang?: string,
+): string {
+  // Some translated WordPress posts have the complete multilingual article in
+  // `excerpt`; their Yoast description is the concise, locale-matched summary.
+  // Keep the manually edited en/id excerpts unchanged.
+  const preferLocalizedSummary =
+    (lang === "cn" || lang === "jp" || lang === "kr") &&
+    Boolean(seoDescription);
+  if (!preferLocalizedSummary && excerpt.length <= AUTO_EXCERPT_THRESHOLD) {
+    return excerpt;
+  }
+
+  const summary = seoDescription?.trim();
+  if (!summary) return "";
+  if (summary.length <= MAX_FALLBACK_SUMMARY_LENGTH) return summary;
+
+  const shortened = summary.slice(0, MAX_FALLBACK_SUMMARY_LENGTH);
+  const wordBoundary = shortened.lastIndexOf(" ");
+  const compact =
+    wordBoundary > 0 ? shortened.slice(0, wordBoundary) : shortened;
+  return `${compact.trimEnd()}…`;
 }
 
 /**
@@ -161,11 +192,17 @@ function toUtcIso(gmt: string | undefined, fallback: string): string {
   return gmt.endsWith("Z") ? gmt : `${gmt}Z`;
 }
 
-function normalizePost(post: WpPost): BlogPost {
+function normalizePost(post: WpPost, lang?: string): BlogPost {
   const embedded = post._embedded ?? {};
   const author = embedded.author?.[0];
   const media = embedded["wp:featuredmedia"]?.[0];
   const category = embedded["wp:term"]?.[0]?.[0];
+  const rawExcerpt = stripHtml(post.excerpt.rendered);
+  const seoDescription = post.yoast_head_json?.description
+    ? decodeEntities(post.yoast_head_json.description)
+    : post.yoast_head_json?.og_description
+      ? decodeEntities(post.yoast_head_json.og_description)
+      : undefined;
   // wp:term groups terms by taxonomy: [0] categories, [1] tags.
   const tags = (embedded["wp:term"]?.[1] ?? []).map((term) =>
     decodeEntities(term.name),
@@ -175,7 +212,7 @@ function normalizePost(post: WpPost): BlogPost {
     id: post.id,
     slug: post.slug,
     title: stripHtml(post.title.rendered),
-    excerpt: stripHtml(post.excerpt.rendered),
+    excerpt: normalizeExcerpt(rawExcerpt, seoDescription, lang),
     content: fixMojibake(post.content.rendered),
     date: post.date,
     modified: post.modified,
@@ -205,11 +242,7 @@ function normalizePost(post: WpPost): BlogPost {
       title: post.yoast_head_json?.title
         ? decodeEntities(post.yoast_head_json.title)
         : undefined,
-      description: post.yoast_head_json?.description
-        ? decodeEntities(post.yoast_head_json.description)
-        : post.yoast_head_json?.og_description
-          ? decodeEntities(post.yoast_head_json.og_description)
-          : stripHtml(post.excerpt.rendered),
+      description: seoDescription ?? rawExcerpt,
       ogImage: post.yoast_head_json?.og_image?.[0]?.url || media?.source_url,
     },
   };
@@ -243,7 +276,9 @@ async function wpFetch(
   let reason = "unknown error";
   for (let attempt = 0; ; attempt += 1) {
     try {
-      const res = await fetch(url, { next: { revalidate: REVALIDATE_SECONDS } });
+      const res = await fetch(url, {
+        next: { revalidate: REVALIDATE_SECONDS },
+      });
       // 4xx is a definitive answer from WordPress (e.g. unknown slug); only
       // server errors and rate limits are worth retrying.
       if (res.ok || (res.status < 500 && res.status !== 429)) return res;
@@ -261,10 +296,7 @@ async function wpFetch(
   );
 }
 
-/**
- * Paginated posts. `lang` (Polylang) is accepted but unused by default so both
- * locales show the full catalogue for now, pass it to split later.
- */
+/** Paginated posts, optionally filtered by WordPress/Polylang language. */
 export async function getPosts({
   page = 1,
   perPage = 9,
@@ -296,7 +328,7 @@ export async function getPosts({
   if (!res.ok) return { posts: [], totalPages: 0, total: 0 };
   const data = (await res.json()) as WpPost[];
   return {
-    posts: data.map(normalizePost),
+    posts: data.map((post) => normalizePost(post, lang)),
     totalPages: Number(res.headers.get("x-wp-totalpages") ?? 1),
     total: Number(res.headers.get("x-wp-total") ?? data.length),
   };
@@ -315,7 +347,7 @@ export const getPostBySlug = cache(
     const res = await wpFetch("/posts", { slug, _embed: "1", lang });
     if (!res.ok) return null;
     const data = (await res.json()) as WpPost[];
-    return data[0] ? normalizePost(data[0]) : null;
+    return data[0] ? normalizePost(data[0], lang) : null;
   },
 );
 

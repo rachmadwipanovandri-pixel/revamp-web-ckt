@@ -91,9 +91,9 @@
     "industriesByLabel": "業界別",
     "megaFeaturedEyebrow": "注目",
     "megaFeaturedTitle": "WhatsApp Call AI",
-    "megaFeaturedBody": "Every call summarized by AI, key points and next steps, automatically.",
+    "megaFeaturedBody": "通話内容をAIが自動で要約し、要点と次のアクションを整理します。",
     "megaFeaturedCta": "機能を見る",
-    "megaTrust": "Trusted by 3,000+ businesses in Indonesia",
+    "megaTrust": "インドネシアの3,000社以上に選ばれています",
     "harga": "料金",
     "solutions": "ソリューション",
     "viewAllSolutions": "すべてのソリューションを見る",
@@ -1297,13 +1297,13 @@
       }
     },
     "finalCta": {
-      "eyebrow": "Try it first, no hassle",
-      "headingLead": "Start with",
-      "headingAccent": "one agent.",
-      "body": "See how Frontline feels today. When it fits, add orders and CRM whenever your team is ready. You do not have to turn everything on at once.",
-      "item1": "Free 14 days, no card",
-      "item2": "Ready in minutes",
-      "item3": "Can start with a single agent"
+      "eyebrow": "まずは気軽にお試しください",
+      "headingLead": "まずは",
+      "headingAccent": "1つのエージェントから。",
+      "body": "まずはFrontlineをお試しください。必要に応じて、チームの準備ができたタイミングで注文管理やCRMを追加できます。すべてを一度に導入する必要はありません。",
+      "item1": "14日間無料・カード不要",
+      "item2": "数分で利用開始",
+      "item3": "1つのエージェントから開始可能"
     },
     "logoStrip": {
       "heading": "Trusted by brands across Indonesia",

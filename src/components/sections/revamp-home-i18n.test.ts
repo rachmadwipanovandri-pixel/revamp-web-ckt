@@ -452,4 +452,153 @@ describe("revamp homepage localization", () => {
     expect(integrations).not.toContain("Ask about an integration");
     expect(integrations).not.toContain("Some integrations run through");
   });
+
+  it.each([
+    [
+      "id",
+      "Perjalanan pelanggan berbeda di setiap industri.",
+      "Arahkan setiap pertanyaan ke langkah berikutnya.",
+      "Perubahan saat perjalanan pelanggan saling terhubung",
+      "Hubungkan kanal, platform iklan, toko, pembayaran",
+      "Tanyakan tentang integrasi",
+      "Terbaru dari Cekat",
+      "Satukan pemasaran, percakapan, data pelanggan",
+    ],
+    [
+      "cn",
+      "每个行业的客户旅程都不一样。",
+      "让每一条咨询都顺利进入下一步。",
+      "客户旅程连贯后，会带来什么改变？",
+      "连接您的沟通渠道、广告平台、商店和支付方式",
+      "咨询集成方案",
+      "Cekat 最新动态",
+      "将营销、客户对话、客户数据、销售流程和业绩分析整合",
+    ],
+    [
+      "jp",
+      "顧客の体験は業界ごとに異なります。",
+      "すべての問い合わせを、次のアクションにつなげます。",
+      "顧客体験がつながると、何が変わるのか",
+      "チャネル、広告プラットフォーム、ストア、決済手段",
+      "連携について相談する",
+      "Cekatの最新情報",
+      "マーケティング、顧客対応、顧客データ、営業ワークフロー",
+    ],
+    [
+      "kr",
+      "고객 여정은 산업마다 다릅니다.",
+      "모든 문의가 다음 단계로 이어지도록 하세요.",
+      "연결된 고객 여정은 무엇을 바꿀까요?",
+      "채널, 광고 플랫폼, 스토어와 결제 수단",
+      "연동에 대해 문의하기",
+      "Cekat의 최신 소식",
+      "마케팅, 고객 대화, 고객 데이터, 영업 워크플로",
+    ],
+  ] as const)(
+    "localizes every remaining homepage section in %s",
+    (
+      locale,
+      industryIntro,
+      industryCard,
+      storyHeading,
+      integrationsIntro,
+      integrationsCta,
+      releasesHeading,
+      finalCtaBody,
+    ) => {
+      const localized = localizeRevampHomeMarkup(revampHomeMarkup, locale);
+
+      for (const translated of [
+        industryIntro,
+        industryCard,
+        storyHeading,
+        integrationsIntro,
+        integrationsCta,
+        releasesHeading,
+        finalCtaBody,
+      ]) {
+        expect(localized).toContain(translated);
+      }
+
+      for (const source of [
+        "Customer journeys look different across industries.",
+        "Make every patient conversation easier to continue.",
+        "What changes when the journey is connected",
+        "Your channels, ad platforms, store and payments",
+        "Latest from Cekat",
+        "Bring your marketing, conversations, customer data",
+      ]) {
+        expect(localized).not.toContain(source);
+      }
+    },
+  );
+
+  it.each([
+    [
+      "id",
+      "Ceritakan sedikit tentang bisnis Anda.",
+      "Mulai uji coba gratis 14 hari",
+      "Nama lengkap",
+      "Email kerja",
+      "Kirim ke tim sales",
+      "Permintaan diterima",
+      "Formulir ini masih berupa prototipe",
+      "tanpa kartu kredit.",
+    ],
+    [
+      "cn",
+      "请简单介绍一下您的业务。",
+      "开始 14 天免费试用",
+      "姓名",
+      "工作邮箱",
+      "发送给销售团队",
+      "已收到您的申请",
+      "此表单目前为原型",
+      "无需信用卡。",
+    ],
+    [
+      "jp",
+      "ビジネスについて簡単にお聞かせください。",
+      "14日間の無料トライアルを始める",
+      "氏名",
+      "勤務先メールアドレス",
+      "営業チームに送信",
+      "お問い合わせを受け付けました",
+      "このフォームは試作版のため",
+      "クレジットカードは不要です。",
+    ],
+    [
+      "kr",
+      "비즈니스에 대해 간단히 알려주세요.",
+      "14일 무료 체험 시작",
+      "이름",
+      "업무용 이메일",
+      "영업팀에 보내기",
+      "요청이 접수되었습니다",
+      "이 양식은 프로토타입이며",
+      "카드 정보가 필요하지 않습니다.",
+    ],
+  ] as const)(
+    "localizes the homepage sales dialog in %s",
+    (locale, ...copy) => {
+      const localized = localizeRevampHomeMarkup(revampHomeMarkup, locale);
+
+      for (const translated of copy) {
+        expect(localized).toContain(translated);
+      }
+
+      for (const source of [
+        "Tell us a little about your business.",
+        "Start a 14-day free trial",
+        "Full name",
+        "Work email",
+        "Send to sales",
+        "Request received",
+        "Prototype: this form is not connected",
+        "no credit card required.",
+      ]) {
+        expect(localized).not.toContain(source);
+      }
+    },
+  );
 });

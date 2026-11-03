@@ -90,6 +90,61 @@ describe("getPostBySlug", () => {
 });
 
 describe("getPosts", () => {
+  it("uses a concise localized SEO summary when WordPress returns a full article as the excerpt", async () => {
+    const localizedSummary =
+      "海外営業チームが案件ステージを実際の会話と次の行動に結びつける方法。";
+    const longExcerpt = `<p>${"Source: Unsplash 混合语言的文章正文。 ".repeat(50)}</p>`;
+    fetchMock.mockResolvedValue(
+      json([
+        wpPost({
+          excerpt: { rendered: longExcerpt },
+          yoast_head_json: { description: localizedSummary },
+        }),
+      ]),
+    );
+
+    const { posts } = await getPosts({ lang: "jp" });
+
+    expect(posts[0].excerpt).toBe(localizedSummary);
+  });
+
+  it("prefers the localized SEO summary for cn/jp/kr even when the excerpt is shorter", async () => {
+    const localizedSummary =
+      "해외 고객 문의에서 담당자 변경에도 대화 맥락을 유지하는 방법입니다.";
+    const mixedExcerpt =
+      "Source: Unsplash 핵심 답변：요약입니다. 問い合わせへの回答は、単に早ければよいわけではありません. ".repeat(
+        5,
+      );
+    fetchMock.mockResolvedValue(
+      json([
+        wpPost({
+          excerpt: { rendered: `<p>${mixedExcerpt}</p>` },
+          yoast_head_json: { description: localizedSummary },
+        }),
+      ]),
+    );
+
+    const { posts } = await getPosts({ lang: "kr" });
+
+    expect(posts[0].excerpt).toBe(localizedSummary);
+  });
+
+  it("preserves a normal editor-written excerpt when a separate SEO description exists", async () => {
+    const excerpt = "Ringkasan editorial yang sudah proporsional.";
+    fetchMock.mockResolvedValue(
+      json([
+        wpPost({
+          excerpt: { rendered: `<p>${excerpt}</p>` },
+          yoast_head_json: { description: "Deskripsi SEO terpisah." },
+        }),
+      ]),
+    );
+
+    const { posts } = await getPosts({ lang: "id" });
+
+    expect(posts[0].excerpt).toBe(excerpt);
+  });
+
   it("throws when WordPress is unavailable, rather than rendering an empty list", async () => {
     fetchMock.mockResolvedValue(json({}, 500));
     await expect(getPosts({ lang: "id" })).rejects.toThrow(

@@ -599,6 +599,44 @@
   const done = $(".demo__done", dlg);
   const err = $(".demo__err", dlg);
   let opener = null;
+  const DEMO_COPY = {
+    en: {
+      name: "your name",
+      email: "a valid work email",
+      company: "your company",
+      missing: (fields) => `Please add ${fields.join(", ")}.`,
+      sending: "Sending…",
+    },
+    id: {
+      name: "nama Anda",
+      email: "alamat email kerja yang valid",
+      company: "nama perusahaan Anda",
+      missing: (fields) => `Mohon lengkapi ${fields.join(", ")}.`,
+      sending: "Mengirim…",
+    },
+    cn: {
+      name: "姓名",
+      email: "有效的工作邮箱",
+      company: "公司名称",
+      missing: (fields) => `请补充${fields.join("、")}。`,
+      sending: "正在发送…",
+    },
+    jp: {
+      name: "お名前",
+      email: "有効な勤務先メールアドレス",
+      company: "会社名",
+      missing: (fields) => `次の項目を入力してください：${fields.join("、")}。`,
+      sending: "送信中…",
+    },
+    kr: {
+      name: "이름",
+      email: "유효한 업무용 이메일 주소",
+      company: "회사명",
+      missing: (fields) => `다음 항목을 입력해 주세요: ${fields.join(", ")}.`,
+      sending: "전송 중…",
+    },
+  };
+  const demoCopy = DEMO_COPY[pageLocale] || DEMO_COPY.en;
 
   const openDemo = (btn) => {
     opener = btn;
@@ -629,28 +667,29 @@
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const fields = [
-      [form.name, form.name.value.trim().length > 1, "your name"],
-      [form.email, emailOk(form.email.value.trim()), "a valid work email"],
-      [form.company, form.company.value.trim().length > 1, "your company"],
+      [form.name, form.name.value.trim().length > 1, demoCopy.name],
+      [form.email, emailOk(form.email.value.trim()), demoCopy.email],
+      [form.company, form.company.value.trim().length > 1, demoCopy.company],
     ];
     const bad = fields.filter(([el, ok]) => {
       el.setAttribute("aria-invalid", String(!ok));
       return !ok;
     });
     if (bad.length) {
-      err.textContent = `Please add ${bad.map((b) => b[2]).join(", ")}.`;
+      err.textContent = demoCopy.missing(bad.map((b) => b[2]));
       err.hidden = false;
       bad[0][0].focus();
       return;
     }
     err.hidden = true;
     const send = $(".demo__send", form);
+    const sendLabel = send.textContent;
     send.disabled = true;
-    send.textContent = "Sending…";
+    send.textContent = demoCopy.sending;
     // TODO: POST to the sales CRM endpoint. Until then, confirm locally after a short delay.
     setTimeout(() => {
       send.disabled = false;
-      send.textContent = "Send to sales";
+      send.textContent = sendLabel;
       $('[data-out="name"]', done).textContent = form.name.value
         .trim()
         .split(" ")[0];
