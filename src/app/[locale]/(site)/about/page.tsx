@@ -8,6 +8,12 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { Container } from "@/components/layout/container";
 import { Reveal } from "@/components/sections/new-home/reveal";
 import { PageHero } from "@/components/sections/shared/page-hero";
+import {
+  MessageCircle,
+  Megaphone,
+  ShoppingBag,
+  UsersRound,
+} from "lucide-react";
 
 export async function generateMetadata({
   params,
@@ -21,6 +27,13 @@ export async function generateMetadata({
   const title = metaTitle(t("metaTitle"));
   const description = metaSnippet(t("metaDescription"), 158);
   const { canonical, languages } = alternates(locale, "/about");
+  const openGraphLocale = {
+    id: "id_ID",
+    en: "en_US",
+    jp: "ja_JP",
+    kr: "ko_KR",
+    cn: "zh_CN",
+  }[locale];
 
   return {
     title,
@@ -32,9 +45,11 @@ export async function generateMetadata({
       description,
       url: canonical,
       siteName: "CekatAI",
-      locale: locale === "id" ? "id_ID" : "en_US",
+      locale: openGraphLocale,
       type: "website",
-      images: [{ url: "/graph-image.jpg", width: 1200, height: 630, alt: title }],
+      images: [
+        { url: "/graph-image.jpg", width: 1200, height: 630, alt: title },
+      ],
     },
     twitter: {
       card: "summary_large_image",
@@ -55,6 +70,13 @@ const OFFICES = [
 const FACTS = ["founding", "businesses", "countries", "partner"] as const;
 
 const TRUST_CARDS = ["pdp", "rbac", "meta", "iso"] as const;
+
+const JOURNEY_STEPS = [
+  { key: "conversation", number: "01", icon: MessageCircle },
+  { key: "crm", number: "02", icon: UsersRound },
+  { key: "order", number: "03", icon: ShoppingBag },
+  { key: "marketing", number: "04", icon: Megaphone },
+] as const;
 
 export default async function AboutPage({
   params,
@@ -95,14 +117,33 @@ export default async function AboutPage({
             <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-10">
               {FACTS.map((fact) => (
                 <div key={fact}>
-                  <dd className="text-[clamp(1.6rem,3vw,2.5rem)] leading-tight font-semibold tracking-[-0.04em]">{t(`facts.${fact}.v`)}</dd>
-                  <dt className="mt-3 text-sm leading-relaxed">{t(`facts.${fact}.l`)}</dt>
+                  <dt className="text-[clamp(1.6rem,3vw,2.5rem)] leading-tight font-semibold tracking-[-0.04em]">
+                    {t(`facts.${fact}.v`)}
+                  </dt>
+                  <dd className="mt-3 text-sm leading-relaxed">
+                    {t(`facts.${fact}.l`)}
+                  </dd>
                 </div>
               ))}
             </dl>
           </div>
         }
-      />
+      >
+        <div className="flex flex-wrap gap-3">
+          <a
+            className="inline-flex min-h-11 items-center justify-center rounded-full bg-primary px-6 text-sm font-semibold text-white transition-colors hover:bg-primary/90 focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-primary"
+            href="https://chat.cekat.ai/register"
+          >
+            {t("trialLabel")}
+          </a>
+          <Link
+            href="/contact"
+            className="inline-flex min-h-11 items-center justify-center rounded-full border border-foreground/15 bg-white px-6 text-sm font-semibold text-foreground transition-colors hover:border-primary/40 hover:text-primary focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-primary"
+          >
+            {t("contactLinkLabel")}
+          </Link>
+        </div>
+      </PageHero>
 
       {/* Story */}
       <section className="relative overflow-hidden bg-white py-16 md:py-20">
@@ -117,8 +158,8 @@ export default async function AboutPage({
                 <p className="eyebrow-rule inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
                   {t("storyEyebrow")}
                 </p>
-                <h2 className="mt-4 text-[clamp(1.65rem,3vw,2.25rem)] leading-[1.12] font-semibold tracking-[-0.035em] text-balance text-foreground">
-                  {t("heroTitle")}
+                <h2 className="mt-4 max-w-[18ch] text-[clamp(1.65rem,3vw,2.25rem)] leading-[1.12] font-semibold tracking-[-0.035em] text-balance text-foreground">
+                  {t("storyHeading")}
                 </h2>
               </Reveal>
             </div>
@@ -143,7 +184,50 @@ export default async function AboutPage({
               </Reveal>
             </div>
           </div>
+        </Container>
+      </section>
 
+      {/* One connected customer journey across Cekat.AI's core products. */}
+      <section className="about-growth bg-[#f8fafc] py-16 md:py-20">
+        <Container>
+          <Reveal className="max-w-2xl">
+            <p className="eyebrow-rule inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
+              {t("journeyEyebrow")}
+            </p>
+            <h2 className="mt-4 text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.12] font-semibold tracking-[-0.04em] text-balance text-foreground">
+              {t("journeyHeading")}
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              {t("journeySub")}
+            </p>
+          </Reveal>
+
+          <ol className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {JOURNEY_STEPS.map(({ key, number, icon: Icon }, index) => (
+              <Reveal key={key} delay={index * 60} as="li" className="h-full">
+                <article className="about-growth__card h-full rounded-[1.25rem] border border-[#dbe6f1] bg-white p-5 sm:p-6">
+                  <div className="flex items-center justify-between">
+                    <span className="grid size-11 place-items-center rounded-2xl bg-[#e4ebf9] text-primary">
+                      <Icon
+                        aria-hidden="true"
+                        className="size-5"
+                        strokeWidth={1.8}
+                      />
+                    </span>
+                    <span className="font-numeric text-xs font-semibold tracking-[0.12em] text-[#64748b]">
+                      {number}
+                    </span>
+                  </div>
+                  <h3 className="mt-6 text-lg font-semibold tracking-[-0.025em] text-foreground">
+                    {t(`journey.${key}.title`)}
+                  </h3>
+                  <p className="mt-3 text-sm leading-[1.7] text-muted-foreground">
+                    {t(`journey.${key}.body`)}
+                  </p>
+                </article>
+              </Reveal>
+            ))}
+          </ol>
         </Container>
       </section>
 
@@ -193,6 +277,9 @@ export default async function AboutPage({
             <p className="eyebrow-rule inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
               {t("officesEyebrow")}
             </p>
+            <h2 className="mt-4 max-w-[22ch] text-[clamp(1.65rem,3vw,2.25rem)] leading-[1.12] font-semibold tracking-[-0.035em] text-balance text-foreground">
+              {t("officesHeading")}
+            </h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {OFFICES.map((office) => (
                 <div
@@ -211,25 +298,28 @@ export default async function AboutPage({
           </Reveal>
 
           {/* CTA */}
-          <Reveal delay={80} className="mt-14 rounded-[1.5rem] border border-foreground/10 bg-white p-8 text-center md:p-10">
-            <h2 className="text-[clamp(1.4rem,2.5vw,1.9rem)] font-semibold tracking-[-0.03em] text-foreground">
-              {t("ctaLabel")}
+          <Reveal
+            delay={80}
+            className="about-cta mt-14 rounded-[1.5rem] p-8 text-center md:p-10"
+          >
+            <h2 className="text-[clamp(1.4rem,2.5vw,1.9rem)] font-semibold tracking-[-0.03em] text-white">
+              {t("ctaHeading")}
             </h2>
-            <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
+            <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-white/75">
               {t("ctaSub")}
             </p>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
               <a
-                className="inline-flex h-11 items-center justify-center rounded-full bg-primary px-6 text-sm font-semibold text-white transition-colors hover:bg-primary/90"
+                className="inline-flex min-h-11 items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-primary transition-colors hover:bg-[#f3f6fd] focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-white"
                 href="https://chat.cekat.ai/register"
               >
-                {t("ctaLabel")}
+                {t("trialLabel")}
               </a>
               <Link
                 href="/contact"
-                className="inline-flex h-11 items-center justify-center rounded-full border border-foreground/15 bg-white px-6 text-sm font-semibold text-foreground transition-colors hover:border-primary/40 hover:text-primary"
+                className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/50 bg-transparent px-6 text-sm font-semibold text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-white"
               >
-                {locale === "id" ? "Kontak" : "Contact"}
+                {t("contactLinkLabel")}
               </Link>
             </div>
           </Reveal>

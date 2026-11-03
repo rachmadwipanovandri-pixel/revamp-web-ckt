@@ -7,11 +7,33 @@
     "metaTitle": "Cekat.AIについて — PT Teknologi Cekat Indonesia",
     "metaDescription": "Cekat.AIを運営する会社について。2023年8月創業、Meta公式ビジネスパートナー、ISO 9001:2015およびISO/IEC 27001:2022認証取得。アジアの3,000社以上に利用されています。",
     "eyebrow": "私たちについて",
-    "heroTitle": "アジアのビジネスのための AI Agent とオムニチャネル CRM",
-    "heroSub": "より速く返信し、自動でフォローアップし、成約を増やす。会話から注文までを1つのプラットフォームで。",
+    "heroTitle": "最初のチャットから、生涯の顧客へ。",
+    "heroSub": "Cekat.AIはAI Agent、オムニチャネルCRM、注文自動化、フォローアップを一つにまとめ、すべての会話をビジネスの成長につなげます。",
     "storyEyebrow": "私たちの歩み",
-    "storyP1": "Cekat.AIは、PT Teknologi Cekat Indonesiaが2023年8月に設立しました。アジアのビジネスはWhatsApp、Instagram、TikTokなど、あらゆる場所で生まれる会話から成長する——その会話をチームの負担にせず、返信やフォローアップを通じて成約につなげるべきだという信念が出発点です。",
+    "storyHeading": "一つひとつの会話が、成長につながる。",
+    "storyP1": "PT Teknologi Cekat Indonesiaは、シンプルな信念のもと2023年8月にCekat.AIの開発を始めました。ビジネスは会話から成長します。しかしチャットが複数のチャネルに分散すると、返信し、ニーズを理解し、フォローアップする機会を逃しがちです。",
     "storyP2": "現在、Cekat.AIはAIカスタマーサービス、オムニチャネルCRM、注文自動化、メッセージ配信を1つに統合し、インドネシア、シンガポール、マレーシアの3,000社以上に利用されています。ウェブアプリとGoogle Play・App Storeのモバイルアプリを提供しています。",
+    "journeyEyebrow": "つながる一つのプラットフォーム",
+    "journeyHeading": "顧客を中心にした成長のサイクル",
+    "journeySub": "最初の質問から次の注文まで、すべてのチャネルを同じ顧客情報につなげます。",
+    "journey": {
+      "conversation": {
+        "title": "顧客がいる場所でつながる",
+        "body": "WhatsApp、Instagram、TikTok、Messenger、ウェブサイトのチャットを、AI Agentがサポートする一つの受信箱に集約します。"
+      },
+      "crm": {
+        "title": "顧客情報を一元管理",
+        "body": "顧客プロフィール、会話履歴、次に必要な対応を一つの画面でチームに共有します。"
+      },
+      "order": {
+        "title": "購入意欲を注文につなげる",
+        "body": "会話の中で商品を案内し、詳細を確認して、そのまま注文できるよう支援します。"
+      },
+      "marketing": {
+        "title": "顧客にまた戻ってきてもらう",
+        "body": "ターゲット配信と自動フォローアップで、初回購入後も顧客との関係を育てます。"
+      }
+    },
     "factsEyebrow": "概要",
     "facts": {
       "founding": {
@@ -34,6 +56,10 @@
     "certEyebrow": "セキュリティとコンプライアンス",
     "certHeading": "私たちが守る基準",
     "officesEyebrow": "オフィス",
+    "officesHeading": "アジアに根ざし、お客様の近くに。",
+    "trialLabel": "無料トライアルを始める",
+    "contactLinkLabel": "チームに相談",
+    "ctaHeading": "より良い会話から、成長を始めましょう。",
     "ctaLabel": "チームに相談",
     "ctaSub": "Cekat.AIがビジネスに合うか気になりませんか？長い資料ではなく、担当者と直接お話しいただけます。"
   },

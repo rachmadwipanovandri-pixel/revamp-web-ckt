@@ -7,11 +7,33 @@
     "metaTitle": "About Cekat.AI — PT Teknologi Cekat Indonesia",
     "metaDescription": "The company behind Cekat.AI: founded August 2023, official Meta Business Partner, certified ISO 9001:2015 & ISO/IEC 27001:2022, trusted by 3,000+ businesses across Asia.",
     "eyebrow": "About us",
-    "heroTitle": "AI Agent & Omnichannel CRM built for Asian businesses",
-    "heroSub": "Reply faster, follow up automatically, close more — from conversation to order, on one platform.",
+    "heroTitle": "From first chat to lifetime customer.",
+    "heroSub": "Cekat.AI brings AI agents, omnichannel CRM, automated ordering, and follow-ups together—so every conversation can move your business forward.",
     "storyEyebrow": "Our story",
-    "storyP1": "Cekat.AI has been built since August 2023 by PT Teknologi Cekat Indonesia on one simple conviction: businesses across Asia grow out of conversations — on WhatsApp, Instagram, TikTok, and everywhere else — and those conversations deserve answers, follow-ups, and closed deals without exhausting the team.",
+    "storyHeading": "Every conversation is a chance to move forward.",
+    "storyP1": "PT Teknologi Cekat Indonesia started building Cekat.AI in August 2023 around a simple belief: businesses grow through conversations. But when chats are scattered across channels, it is easy to miss the chance to reply, understand what customers need, and follow up.",
     "storyP2": "Today the Cekat.AI platform combines AI customer service, omnichannel CRM, order automation, and broadcast marketing, used by 3,000+ businesses across Indonesia, Singapore, and Malaysia. The product ships as a web app and a mobile app on Google Play and the App Store.",
+    "journeyEyebrow": "One connected platform",
+    "journeyHeading": "A growth loop built around the customer",
+    "journeySub": "Every channel feeds the same customer context—from the first question to the next order.",
+    "journey": {
+      "conversation": {
+        "title": "Meet customers where they are",
+        "body": "Bring WhatsApp, Instagram, TikTok, Messenger, and website chats into one shared inbox, with AI ready to help."
+      },
+      "crm": {
+        "title": "Keep every detail in context",
+        "body": "Give your team one customer profile, conversation history, and clear next steps across channels."
+      },
+      "order": {
+        "title": "Turn intent into an order",
+        "body": "Help customers discover products, confirm details, and place orders right in the conversation."
+      },
+      "marketing": {
+        "title": "Bring customers back",
+        "body": "Send targeted broadcasts and automated follow-ups that keep the relationship going after the first purchase."
+      }
+    },
     "factsEyebrow": "At a glance",
     "facts": {
       "founding": {
@@ -34,6 +56,10 @@
     "certEyebrow": "Security & compliance",
     "certHeading": "The standards we hold",
     "officesEyebrow": "Our offices",
+    "officesHeading": "Built in Asia, close to your business.",
+    "trialLabel": "Start your free trial",
+    "contactLinkLabel": "Talk to our team",
+    "ctaHeading": "Let's grow from a better conversation.",
     "ctaLabel": "Talk to our team",
     "ctaSub": "Think we might fit your business? Chat with us directly — no long decks."
   },

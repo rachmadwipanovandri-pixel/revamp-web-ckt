@@ -10,8 +10,8 @@ import { FloatingWhatsApp } from "./floating-whatsapp";
 import { SiteSmoothScroll } from "./site-smooth-scroll";
 
 /**
- * The revamp homepage owns its complete header, footer, and mobile CTA.
- * Rendering the legacy site chrome around it produced two stacked navbars.
+ * The revamp homepage owns its complete header and mobile CTA. The footer is
+ * shared across homepage and secondary routes so its content stays consistent.
  */
 export function SiteChrome({
   children,
@@ -37,6 +37,7 @@ export function SiteChrome({
       <>
         <SiteSmoothScroll />
         <main className="reference-home-main">{children}</main>
+        <Footer />
       </>
     );
   }

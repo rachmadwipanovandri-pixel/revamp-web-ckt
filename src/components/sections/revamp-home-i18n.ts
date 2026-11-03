@@ -202,7 +202,7 @@ const COPY: Record<Exclude<Locale, "en" | "id">, Copy> = {
     "Built around how your industry actually works":
       "실제 산업 업무 방식에 맞춰 구축",
     "Connect Cekat with the tools you already use":
-      "이미 사용하는 도구와 Cekat 연결",
+      "이미 사용하는 도구와 Cekat을 연결하세요",
     "Ready for a more connected revenue journey?":
       "더 연결된 매출 여정을 시작할 준비가 됐나요?",
     "Know which ads and creators bring revenue.":
@@ -233,6 +233,109 @@ const COPY: Record<Exclude<Locale, "en" | "id">, Copy> = {
     Education: "교육",
     Property: "부동산",
     "Explore all industries": "모든 산업 보기",
+    "Customer journeys look different across industries. Cekat connects conversations, data, workflows, and teams around the processes your business already runs.":
+      "고객 여정은 산업마다 다릅니다. Cekat은 비즈니스가 이미 운영하는 프로세스에 맞춰 대화, 데이터, 워크플로와 팀을 연결합니다.",
+    "Make every patient conversation easier to continue.":
+      "환자와의 모든 대화가 자연스럽게 이어지도록 하세요.",
+    "Keep customer conversations connected with every purchase.":
+      "구매 전후의 모든 고객 대화를 하나로 연결하세요.",
+    "Keep complex customer journeys structured and trackable.":
+      "복잡한 고객 여정을 체계적으로 관리하고 추적하세요.",
+    "Keep every inquiry moving toward the next action.":
+      "모든 문의가 다음 단계로 이어지도록 하세요.",
+    "Give customers clearer support from inquiry to resolution.":
+      "문의부터 해결까지 고객에게 명확한 지원을 제공하세요.",
+    "Stay connected before, during, and after the customer journey.":
+      "고객 여정의 전 과정에서 지속적으로 연결하세요.",
+    "Guide every applicant from first question to enrolment.":
+      "첫 문의부터 등록까지 모든 지원자를 안내하세요.",
+    "Turn every unit inquiry into a scheduled viewing.":
+      "모든 매물 문의를 방문 예약으로 연결하세요.",
+    "Talk to us": "문의하기",
+    "about Healthcare": "헬스케어 관련 문의",
+    "about Retail & F&B": "리테일 및 F&B 관련 문의",
+    "about Financial Services": "금융 서비스 관련 문의",
+    "about Automotive": "자동차 관련 문의",
+    "about Logistics": "물류 관련 문의",
+    "about Travel & Hospitality": "여행 및 호스피탈리티 관련 문의",
+    "about Education": "교육 관련 문의",
+    "about Property": "부동산 관련 문의",
+    "Also running on Cekat: beauty & wellness, e-commerce and non-profit teams.":
+      "Cekat은 뷰티·웰니스, 이커머스, 비영리 단체에서도 활용되고 있습니다.",
+    "Talk to us about your workflow": "업무 방식에 대해 문의하기",
+    "What changes when the journey is connected":
+      "연결된 고객 여정은 무엇을 바꿀까요?",
+    "Lumina Clinic · Healthcare": "Lumina Clinic · 헬스케어",
+    "Kopi Senja · Food & beverage": "Kopi Senja · 식음료",
+    "Arunika Residence · Property": "Arunika Residence · 부동산",
+    "Kirana Beauty · Retail": "Kirana Beauty · 리테일",
+    "Lintas Kirim · Logistics": "Lintas Kirim · 물류",
+    "Cendekia Academy · Education": "Cendekia Academy · 교육",
+    "Lumina Clinic keeps high-intent patients visible across the customer journey":
+      "Lumina Clinic은 구매 의사가 높은 환자를 고객 여정 전반에서 놓치지 않습니다",
+    "Kopi Senja turns every Instagram DM into a tracked order":
+      "Kopi Senja는 모든 Instagram DM을 추적 가능한 주문으로 전환합니다",
+    "Arunika Residence never lets a viewing request go cold":
+      "Arunika Residence는 방문 요청이 식지 않도록 빠르게 대응합니다",
+    "Kirana Beauty knows which creator posts actually sell":
+      "Kirana Beauty는 실제로 매출을 만드는 크리에이터 게시물을 파악합니다",
+    "Lintas Kirim answers delivery questions before customers chase them":
+      "Lintas Kirim은 고객이 재차 문의하기 전에 배송 관련 질문에 답변합니다",
+    "Cendekia Academy replies to every applicant within minutes":
+      "Cendekia Academy는 모든 지원자에게 몇 분 안에 답변합니다",
+    "Qualified lead rate": "적격 잠재 고객 비율",
+    "First response time": "첫 응답 시간",
+    "Pipeline conversion": "파이프라인 전환율",
+    "Repeat orders": "재주문 건수",
+    "Order conversion": "주문 전환율",
+    "Viewings booked": "방문 예약 건수",
+    "Creator ROAS": "크리에이터 광고 수익률",
+    "Cost per chat": "채팅당 비용",
+    "Cases resolved by AI": "AI 해결 문의",
+    "Customer satisfaction": "고객 만족도",
+    "Applications completed": "지원 완료율",
+    "Enrolment conversion": "등록 전환율",
+    "Show Lumina Clinic's story": "Lumina Clinic 사례 보기",
+    "Show Kopi Senja's story": "Kopi Senja 사례 보기",
+    "Show Arunika Residence's story": "Arunika Residence 사례 보기",
+    "Show Kirana Beauty's story": "Kirana Beauty 사례 보기",
+    "Show Lintas Kirim's story": "Lintas Kirim 사례 보기",
+    "Show Cendekia Academy's story": "Cendekia Academy 사례 보기",
+    "Show Lumina Clinic": "Lumina Clinic 사례 보기",
+    "Show Kopi Senja": "Kopi Senja 사례 보기",
+    "Show Arunika Residence": "Arunika Residence 사례 보기",
+    "Show Kirana Beauty": "Kirana Beauty 사례 보기",
+    "Show Lintas Kirim": "Lintas Kirim 사례 보기",
+    "Show Cendekia Academy": "Cendekia Academy 사례 보기",
+    "Previous story": "이전 사례",
+    "Next story": "다음 사례",
+    "1 of 6: Lumina Clinic": "6개 중 1번째: Lumina Clinic",
+    "2 of 6: Kopi Senja": "6개 중 2번째: Kopi Senja",
+    "3 of 6: Arunika Residence": "6개 중 3번째: Arunika Residence",
+    "4 of 6: Kirana Beauty": "6개 중 4번째: Kirana Beauty",
+    "5 of 6: Lintas Kirim": "6개 중 5번째: Lintas Kirim",
+    "6 of 6: Cendekia Academy": "6개 중 6번째: Cendekia Academy",
+    "A clinic receptionist in a hijab and blue uniform":
+      "히잡과 파란색 유니폼을 착용한 병원 접수 담당자",
+    "A smiling barista in an apron behind a café counter":
+      "카페 카운터 뒤에서 앞치마를 입고 미소 짓는 바리스타",
+    "A property agent in a blazer smiling outside a brick building":
+      "벽돌 건물 앞에서 미소 짓는 재킷 차림의 부동산 중개인",
+    "A shop owner in a green outfit and hijab":
+      "초록색 옷과 히잡을 착용한 매장 운영자",
+    "A team member standing in a warehouse aisle": "창고 통로에 서 있는 팀원",
+    "A young admissions officer seated at a desk":
+      "책상에 앉아 있는 젊은 입학 담당자",
+    "Sample stories with placeholder brands, data and photos, for layout review only. Replace with approved customer stories before launch.":
+      "레이아웃 검토용 임시 브랜드, 데이터 및 사진으로 구성된 사례입니다. 출시 전에 승인된 고객 사례로 교체하세요.",
+    "Your channels, ad platforms, store and payments, plus the apps your team works in every day. Cekat Automation connects even more, and our Open API and MCP let you build your own.":
+      "팀에서 매일 사용하는 앱은 물론, 채널, 광고 플랫폼, 스토어와 결제 수단까지 연결하세요. Cekat Automation으로 더 많은 도구를 연동하고 Open API와 MCP로 직접 구축할 수도 있습니다.",
+    "Ask about an integration": "연동에 대해 문의하기",
+    "Some integrations run through Cekat Automation. Third-party names and logos are trademarks of their respective owners; no partnership is implied unless stated.":
+      "일부 연동은 Cekat Automation을 통해 제공됩니다. 제3자 이름과 로고는 각 소유자의 상표이며, 별도 표기가 없는 한 파트너십을 의미하지 않습니다.",
+    "Website live chat": "웹사이트 실시간 채팅",
+    "Bring your marketing, conversations, customer data, sales workflows, and performance visibility into one connected ecosystem.":
+      "마케팅, 고객 대화, 고객 데이터, 영업 워크플로와 성과를 하나의 연결된 생태계로 통합하세요.",
   },
 };
 
@@ -2195,11 +2298,96 @@ const ONBOARDING_COPY_ROWS = [
   ],
 ] as const;
 
+/**
+ * The hero thread: one WhatsApp conversation that runs the whole loop. Sample
+ * names, links and amounts stay as they are; only the surrounding copy moves.
+ */
+const HERO_THREAD_COPY_ROWS = [
+  [
+    "Illustration: one WhatsApp thread runs the whole revenue loop. Kirana arrives from a creator's Reel, the AI agent books her, the booking is saved to CRM with its source, analytics shows creator posts cost IDR 42K per booking, and Cekat suggests briefing more creators like her.",
+    "Ilustrasi: satu percakapan WhatsApp menjalankan seluruh siklus pendapatan. Kirana datang dari Reel kreator, AI agent membuatkan booking, booking tersimpan di CRM beserta sumbernya, analitik menunjukkan postingan kreator berbiaya IDR 42K per booking, lalu Cekat menyarankan brief untuk lebih banyak kreator seperti dia.",
+    "示意图：一段 WhatsApp 对话贯穿整个收入闭环。Kirana 通过创作者的 Reel 进来，AI 智能体为她完成预约，预约连同来源保存到 CRM，分析显示创作者帖子每次预约成本为 IDR 42K，Cekat 建议再为更多像她这样的创作者写简报。",
+    "イラスト：ひとつの WhatsApp スレッドで収益ループ全体が回ります。Kirana はクリエイターの Reel から流入し、AI エージェントが予約を受け付け、予約は流入元とともに CRM に保存されます。分析ではクリエイター投稿の予約単価が IDR 42K とわかり、Cekat は同じようなクリエイターの追加起用を提案します。",
+    "일러스트: 하나의 WhatsApp 대화로 전체 매출 루프가 돌아갑니다. Kirana가 크리에이터의 릴스로 유입되고, AI 에이전트가 예약을 잡고, 예약은 출처와 함께 CRM에 저장됩니다. 분석 결과 크리에이터 게시물의 예약당 비용은 IDR 42K이며, Cekat은 Kirana 같은 크리에이터를 더 섭외하도록 제안합니다.",
+  ],
+  [
+    "WhatsApp · Cekat inbox",
+    "WhatsApp · Inbox Cekat",
+    "WhatsApp · Cekat 收件箱",
+    "WhatsApp · Cekat 受信箱",
+    "WhatsApp · Cekat 받은편지함",
+  ],
+  [
+    "Came from Kirana's Reel",
+    "Datang dari Reel Kirana",
+    "来自 Kirana 的 Reel",
+    "Kirana の Reel から流入",
+    "Kirana의 릴스에서 유입",
+  ],
+  [
+    "Hi, any slot this Saturday?",
+    "Halo, ada slot Sabtu ini?",
+    "你好，这周六还有空位吗？",
+    "こんにちは、今週の土曜日に空きはありますか？",
+    "안녕하세요, 이번 토요일에 예약 가능한 시간 있나요?",
+  ],
+  [
+    "Yes, 14:00 is open. Shall I book it?",
+    "Ada, jam 14:00 masih kosong. Mau saya booking-kan?",
+    "有的，14:00 有空。要帮你预约吗？",
+    "はい、14:00 が空いています。ご予約しましょうか？",
+    "네, 14:00가 비어 있어요. 예약해 드릴까요?",
+  ],
+  ["14:00, please", "Jam 14:00, ya", "14:00，谢谢", "14:00 でお願いします", "14:00로 부탁해요"],
+  [
+    "Booked · Sat 14:00",
+    "Terpesan · Sab 14:00",
+    "已预约 · 周六 14:00",
+    "予約済み · 土 14:00",
+    "예약 완료 · 토 14:00",
+  ],
+  [
+    "Added to CRM · source: Kirana's Reel",
+    "Masuk ke CRM · sumber: Reel Kirana",
+    "已加入 CRM · 来源：Kirana 的 Reel",
+    "CRM に追加 · 流入元：Kirana の Reel",
+    "CRM에 추가됨 · 출처: Kirana의 릴스",
+  ],
+  [
+    "Creator posts: IDR 42K per booking",
+    "Postingan kreator: IDR 42K per booking",
+    "创作者帖子：每次预约 IDR 42K",
+    "クリエイター投稿：予約 1 件あたり IDR 42K",
+    "크리에이터 게시물: 예약당 IDR 42K",
+  ],
+  [
+    "Your cheapest source this month",
+    "Sumber termurah bulan ini",
+    "本月成本最低的来源",
+    "今月いちばん低コストな流入元",
+    "이번 달 가장 저렴한 유입 경로",
+  ],
+  ["Next campaign", "Kampanye berikutnya", "下一场活动", "次のキャンペーン", "다음 캠페인"],
+  [
+    "Brief 2 more creators like Kirana?",
+    "Brief 2 kreator lagi seperti Kirana?",
+    "再为 2 位像 Kirana 这样的创作者写简报？",
+    "Kirana のようなクリエイターをあと 2 人起用しますか？",
+    "Kirana 같은 크리에이터 2명에게 더 브리핑할까요?",
+  ],
+  ["Create brief", "Buat brief", "创建简报", "ブリーフを作成", "브리프 만들기"],
+] as const;
+
 const JOURNEY_COPY: Record<Locale, Copy> = Object.fromEntries(
   (["id", "cn", "jp", "kr"] as const).map((locale, localeIndex) => [
     locale,
     Object.fromEntries(
-      [...PAIN_COPY_ROWS, ...JOURNEY_COPY_ROWS, ...ONBOARDING_COPY_ROWS].map(
+      [
+        ...PAIN_COPY_ROWS,
+        ...JOURNEY_COPY_ROWS,
+        ...ONBOARDING_COPY_ROWS,
+        ...HERO_THREAD_COPY_ROWS,
+      ].map(
         ([source, ...translations]) => [source, translations[localeIndex]],
       ),
     ),
@@ -2588,15 +2776,27 @@ export function localizeRevampHomeMarkup(markup: string, locale: Locale) {
   const entries = Object.entries(copy).sort(
     ([left], [right]) => right.length - left.length,
   );
+  const protectedDataAttributes: Array<[string, string]> = [];
+  result = result.replace(
+    /\b(data-[\w:-]+=")([^"]*)(")/g,
+    (_attribute, prefix: string, value: string, suffix: string) => {
+      const token = `\uE000cekat-data-${protectedDataAttributes.length}\uE001`;
+      protectedDataAttributes.push([token, value]);
+      return `${prefix}${token}${suffix}`;
+    },
+  );
   const replaceCopy = (from: string, to: string) => {
-    result = result.replaceAll(`>${from}<`, `>${to}<`);
-    result = result.replaceAll(`>${from} `, `>${to} `);
-    result = result.replaceAll(` ${from}<`, ` ${to}<`);
-    // The approved hero splits "... revenue technology" across nested spans.
-    result = result.replaceAll(`>${from}</span>`, `>${to}</span>`);
-    result = result.replaceAll(` ${from}</span>`, ` ${to}</span>`);
-    // Accessible names and image descriptions are part of the localized UI too.
-    result = result.replaceAll(`="${from}"`, `="${to}"`);
+    const variants = new Set([from, from.replaceAll("&", "&amp;")]);
+    for (const variant of variants) {
+      result = result.replaceAll(`>${variant}<`, `>${to}<`);
+      result = result.replaceAll(`>${variant} `, `>${to} `);
+      result = result.replaceAll(` ${variant}<`, ` ${to}<`);
+      // The approved hero splits "... revenue technology" across nested spans.
+      result = result.replaceAll(`>${variant}</span>`, `>${to}</span>`);
+      result = result.replaceAll(` ${variant}</span>`, ` ${to}</span>`);
+      // Accessible names and image descriptions are part of the localized UI too.
+      result = result.replaceAll(`="${variant}"`, `="${to}"`);
+    }
   };
   // Translate whole CTA phrases containing product names before shielding
   // those names from the shorter generic product/category translations.
@@ -2617,6 +2817,9 @@ export function localizeRevampHomeMarkup(markup: string, locale: Locale) {
   }
   for (const [token, name] of protectedProductNames) {
     result = result.replaceAll(token, name);
+  }
+  for (const [token, value] of protectedDataAttributes) {
+    result = result.replaceAll(token, value);
   }
   return result;
 }
