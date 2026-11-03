@@ -92,23 +92,24 @@ describe("revamp homepage localization", () => {
   });
 
   it.each([
-    ["id", "Sumber prospek", "Pelanggan baru"],
-    ["cn", "潜在客户来源", "新客户"],
-    ["jp", "リードの流入元", "新規顧客"],
-    ["kr", "리드 유입 경로", "신규 고객"],
+    ["id", "Datang dari Reel Kirana", "Kampanye berikutnya"],
+    ["cn", "来自 Kirana 的 Reel", "下一场活动"],
+    ["jp", "Kirana の Reel から流入", "次のキャンペーン"],
+    ["kr", "Kirana의 릴스에서 유입", "다음 캠페인"],
   ] as const)(
-    "localizes the homepage proof and hero illustration in %s",
-    (locale, leadSources, newCustomer) => {
+    "localizes the homepage proof and hero thread in %s",
+    (locale, cameFrom, nextCampaign) => {
       const localized = localizeRevampHomeMarkup(revampHomeMarkup, locale);
 
-      expect(localized).toContain(leadSources);
-      expect(localized).toContain(newCustomer);
-      expect(localized).not.toContain("Lead sources");
-      expect(localized).not.toContain("New customer");
+      expect(localized).toContain(cameFrom);
+      expect(localized).toContain(nextCampaign);
+      expect(localized).not.toContain("Came from Kirana's Reel");
+      expect(localized).not.toContain(">Next campaign<");
+      expect(localized).not.toContain("Hi, any slot this Saturday?");
       expect(localized).not.toContain("conversations processed every day");
-      expect(localized).not.toContain("Cost per booking, by source");
+      expect(localized).not.toContain("Creator posts: IDR 42K per booking");
       expect(localized).not.toContain(
-        'aria-label="Illustration of the revenue loop',
+        'aria-label="Illustration: one WhatsApp thread',
       );
       expect(localized).not.toContain('aria-label="Primary"');
       expect(localized).not.toContain('aria-label="Open menu"');

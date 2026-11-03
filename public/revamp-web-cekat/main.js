@@ -2,45 +2,78 @@
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 
-  // Hero rotating word (Notion pattern): erase, switch colour, type the next word; the pill width follows
+  // Hero rotating word (Notion pattern): the pill starts as its icon, types the word open, holds, backspaces
+  // back to the icon, swaps icon and colour, then types the next word. The pill width follows the text.
+  // Each word lights its stage in the hero thread; the thread switches with the icon, before the word types in.
   const rot = $(".rot");
+  const thread = $(".thread");
   if (rot && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     const word = $(".rot__word", rot);
     const measure = $(".rot__measure", rot);
     const locale = $(".reference-home")?.dataset.locale || "en";
+    // Keys stay English so the pill colours and thread stages match in every locale
     const WORDS_BY_LOCALE = {
-      en: ["revenue", "leads", "traffic"],
-      id: ["pendapatan", "prospek", "lalu lintas"],
-      cn: ["收入", "线索", "流量"],
-      jp: ["収益", "リード", "トラフィック"],
-      kr: ["매출", "리드", "트래픽"],
+      en: ["traffic", "leads", "revenue", "ROI"],
+      id: ["trafik", "prospek", "pendapatan", "ROI"],
+      cn: ["流量", "线索", "收入", "ROI"],
+      jp: ["トラフィック", "リード", "収益", "ROI"],
+      kr: ["트래픽", "리드", "매출", "ROI"],
     };
-    const WORDS = WORDS_BY_LOCALE[locale] || WORDS_BY_LOCALE.en;
+    const texts = WORDS_BY_LOCALE[locale] || WORDS_BY_LOCALE.en;
+    const WORDS = [
+      { key: "traffic", stage: "acquire" },
+      { key: "leads", stage: "engage" },
+      { key: "revenue", stage: "convert" },
+      { key: "roi", stage: "measure" },
+    ].map((w, i) => ({ ...w, text: texts[i] }));
+    let onScreen = true;
+    new IntersectionObserver(([en]) => {
+      onScreen = en.isIntersecting;
+    }).observe($(".hero"));
     const fit = () => {
-      measure.textContent = word.textContent || " ";
-      word.style.width = `${measure.getBoundingClientRect().width}px`;
+      measure.textContent = word.textContent;
+      word.style.width = word.textContent ? `${measure.getBoundingClientRect().width}px` : "0px";
+      rot.classList.toggle("is-empty", !word.textContent);
     };
     const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+    const type = async () => {
+      rot.classList.remove("is-swap");
+      rot.classList.add("is-typing");
+      for (const ch of WORDS[n].text) {
+        word.textContent += ch;
+        fit();
+        await wait(75);
+      }
+      rot.classList.remove("is-typing");
+    };
+    const erase = async () => {
+      rot.classList.add("is-typing");
+      while (word.textContent.length) {
+        word.textContent = word.textContent.slice(0, -1);
+        fit();
+        await wait(45);
+      }
+      rot.classList.remove("is-typing");
+    };
     let n = 0;
+    const show = () => {
+      rot.className = `rot rot--${WORDS[n].key} is-empty is-swap`;
+      if (thread) thread.dataset.stage = WORDS[n].stage;
+    };
+    word.textContent = "";
+    show();
     fit();
     const cycle = async () => {
+      await wait(700); // let the headline land first
       for (;;) {
-        await wait(2600);
-        if (document.hidden) continue;
-        rot.classList.add("is-typing");
-        while (word.textContent.length) {
-          word.textContent = word.textContent.slice(0, -1);
-          fit();
-          await wait(45);
-        }
+        await type();
+        await wait(2000);
+        while (document.hidden || !onScreen) await wait(500);
+        await erase();
+        await wait(250);
         n = (n + 1) % WORDS.length;
-        rot.className = `rot rot--${WORDS[n]} is-typing`;
-        for (const ch of WORDS[n]) {
-          word.textContent += ch;
-          fit();
-          await wait(75);
-        }
-        rot.classList.remove("is-typing");
+        show();
+        await wait(400);
       }
     };
     document.fonts?.ready.then(fit);
