@@ -393,4 +393,64 @@ describe("revamp homepage localization", () => {
       );
     },
   );
+
+  it("localizes Korean hero, industry, customer story, and integration copy", () => {
+    const localized = localizeRevampHomeMarkup(revampHomeMarkup, "kr");
+    const section = (className: string) =>
+      localized.match(
+        new RegExp(`<section class="${className}"[\\s\\S]*?<\\/section>`),
+      )?.[0] ?? "";
+    const industries = section("industries");
+    const stories = section("stories");
+    const integrations = section("integrations");
+
+    expect(localized).toContain(
+      "마케팅, 고객 대화, CRM, 자동화와 성과 데이터를 하나의 연결된 매출 생태계로 통합하세요.",
+    );
+    for (const translated of [
+      "고객 여정은 산업마다 다릅니다.",
+      "환자와의 모든 대화가 자연스럽게 이어지도록 하세요.",
+      "구매 전후의 모든 고객 대화를 하나로 연결하세요.",
+      "복잡한 고객 여정을 체계적으로 관리하고 추적하세요.",
+      "문의하기",
+      "헬스케어 관련 문의",
+      "업무 방식에 대해 문의하기",
+      "Cekat은 뷰티·웰니스, 이커머스, 비영리 단체에서도 활용되고 있습니다.",
+    ]) {
+      expect(industries).toContain(translated);
+    }
+    expect(industries).not.toContain("Make every patient conversation");
+    expect(industries).not.toContain("Talk to us");
+    expect(industries).not.toContain("Customer journeys look different");
+    expect(industries).toContain('data-industry="Healthcare"');
+    expect(industries).toContain('data-industry="Retail &amp; F&amp;B"');
+
+    for (const translated of [
+      "연결된 고객 여정은 무엇을 바꿀까요?",
+      "Lumina Clinic은 구매 의사가 높은 환자를 고객 여정 전반에서 놓치지 않습니다",
+      "적격 잠재 고객 비율",
+      "첫 응답 시간",
+      "고객 만족도",
+      "레이아웃 검토용 임시 브랜드, 데이터 및 사진으로 구성된 사례입니다.",
+    ]) {
+      expect(stories).toContain(translated);
+    }
+    expect(stories).not.toContain("What changes when the journey is connected");
+    expect(stories).not.toContain("Lumina Clinic keeps high-intent patients");
+    expect(stories).not.toContain("Qualified lead rate");
+    expect(stories).not.toContain("Show Lumina Clinic");
+    expect(stories).not.toContain("Sample stories with placeholder brands");
+
+    for (const translated of [
+      "이미 사용하는 도구와 Cekat을 연결하세요",
+      "팀에서 매일 사용하는 앱은 물론, 채널, 광고 플랫폼, 스토어와 결제 수단까지 연결하세요.",
+      "연동에 대해 문의하기",
+      "일부 연동은 Cekat Automation을 통해 제공됩니다.",
+    ]) {
+      expect(integrations).toContain(translated);
+    }
+    expect(integrations).not.toContain("Your channels, ad platforms");
+    expect(integrations).not.toContain("Ask about an integration");
+    expect(integrations).not.toContain("Some integrations run through");
+  });
 });

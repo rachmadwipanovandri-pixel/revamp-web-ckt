@@ -202,7 +202,7 @@ const COPY: Record<Exclude<Locale, "en" | "id">, Copy> = {
     "Built around how your industry actually works":
       "실제 산업 업무 방식에 맞춰 구축",
     "Connect Cekat with the tools you already use":
-      "이미 사용하는 도구와 Cekat 연결",
+      "이미 사용하는 도구와 Cekat을 연결하세요",
     "Ready for a more connected revenue journey?":
       "더 연결된 매출 여정을 시작할 준비가 됐나요?",
     "Know which ads and creators bring revenue.":
@@ -233,6 +233,109 @@ const COPY: Record<Exclude<Locale, "en" | "id">, Copy> = {
     Education: "교육",
     Property: "부동산",
     "Explore all industries": "모든 산업 보기",
+    "Customer journeys look different across industries. Cekat connects conversations, data, workflows, and teams around the processes your business already runs.":
+      "고객 여정은 산업마다 다릅니다. Cekat은 비즈니스가 이미 운영하는 프로세스에 맞춰 대화, 데이터, 워크플로와 팀을 연결합니다.",
+    "Make every patient conversation easier to continue.":
+      "환자와의 모든 대화가 자연스럽게 이어지도록 하세요.",
+    "Keep customer conversations connected with every purchase.":
+      "구매 전후의 모든 고객 대화를 하나로 연결하세요.",
+    "Keep complex customer journeys structured and trackable.":
+      "복잡한 고객 여정을 체계적으로 관리하고 추적하세요.",
+    "Keep every inquiry moving toward the next action.":
+      "모든 문의가 다음 단계로 이어지도록 하세요.",
+    "Give customers clearer support from inquiry to resolution.":
+      "문의부터 해결까지 고객에게 명확한 지원을 제공하세요.",
+    "Stay connected before, during, and after the customer journey.":
+      "고객 여정의 전 과정에서 지속적으로 연결하세요.",
+    "Guide every applicant from first question to enrolment.":
+      "첫 문의부터 등록까지 모든 지원자를 안내하세요.",
+    "Turn every unit inquiry into a scheduled viewing.":
+      "모든 매물 문의를 방문 예약으로 연결하세요.",
+    "Talk to us": "문의하기",
+    "about Healthcare": "헬스케어 관련 문의",
+    "about Retail & F&B": "리테일 및 F&B 관련 문의",
+    "about Financial Services": "금융 서비스 관련 문의",
+    "about Automotive": "자동차 관련 문의",
+    "about Logistics": "물류 관련 문의",
+    "about Travel & Hospitality": "여행 및 호스피탈리티 관련 문의",
+    "about Education": "교육 관련 문의",
+    "about Property": "부동산 관련 문의",
+    "Also running on Cekat: beauty & wellness, e-commerce and non-profit teams.":
+      "Cekat은 뷰티·웰니스, 이커머스, 비영리 단체에서도 활용되고 있습니다.",
+    "Talk to us about your workflow": "업무 방식에 대해 문의하기",
+    "What changes when the journey is connected":
+      "연결된 고객 여정은 무엇을 바꿀까요?",
+    "Lumina Clinic · Healthcare": "Lumina Clinic · 헬스케어",
+    "Kopi Senja · Food & beverage": "Kopi Senja · 식음료",
+    "Arunika Residence · Property": "Arunika Residence · 부동산",
+    "Kirana Beauty · Retail": "Kirana Beauty · 리테일",
+    "Lintas Kirim · Logistics": "Lintas Kirim · 물류",
+    "Cendekia Academy · Education": "Cendekia Academy · 교육",
+    "Lumina Clinic keeps high-intent patients visible across the customer journey":
+      "Lumina Clinic은 구매 의사가 높은 환자를 고객 여정 전반에서 놓치지 않습니다",
+    "Kopi Senja turns every Instagram DM into a tracked order":
+      "Kopi Senja는 모든 Instagram DM을 추적 가능한 주문으로 전환합니다",
+    "Arunika Residence never lets a viewing request go cold":
+      "Arunika Residence는 방문 요청이 식지 않도록 빠르게 대응합니다",
+    "Kirana Beauty knows which creator posts actually sell":
+      "Kirana Beauty는 실제로 매출을 만드는 크리에이터 게시물을 파악합니다",
+    "Lintas Kirim answers delivery questions before customers chase them":
+      "Lintas Kirim은 고객이 재차 문의하기 전에 배송 관련 질문에 답변합니다",
+    "Cendekia Academy replies to every applicant within minutes":
+      "Cendekia Academy는 모든 지원자에게 몇 분 안에 답변합니다",
+    "Qualified lead rate": "적격 잠재 고객 비율",
+    "First response time": "첫 응답 시간",
+    "Pipeline conversion": "파이프라인 전환율",
+    "Repeat orders": "재주문 건수",
+    "Order conversion": "주문 전환율",
+    "Viewings booked": "방문 예약 건수",
+    "Creator ROAS": "크리에이터 광고 수익률",
+    "Cost per chat": "채팅당 비용",
+    "Cases resolved by AI": "AI 해결 문의",
+    "Customer satisfaction": "고객 만족도",
+    "Applications completed": "지원 완료율",
+    "Enrolment conversion": "등록 전환율",
+    "Show Lumina Clinic's story": "Lumina Clinic 사례 보기",
+    "Show Kopi Senja's story": "Kopi Senja 사례 보기",
+    "Show Arunika Residence's story": "Arunika Residence 사례 보기",
+    "Show Kirana Beauty's story": "Kirana Beauty 사례 보기",
+    "Show Lintas Kirim's story": "Lintas Kirim 사례 보기",
+    "Show Cendekia Academy's story": "Cendekia Academy 사례 보기",
+    "Show Lumina Clinic": "Lumina Clinic 사례 보기",
+    "Show Kopi Senja": "Kopi Senja 사례 보기",
+    "Show Arunika Residence": "Arunika Residence 사례 보기",
+    "Show Kirana Beauty": "Kirana Beauty 사례 보기",
+    "Show Lintas Kirim": "Lintas Kirim 사례 보기",
+    "Show Cendekia Academy": "Cendekia Academy 사례 보기",
+    "Previous story": "이전 사례",
+    "Next story": "다음 사례",
+    "1 of 6: Lumina Clinic": "6개 중 1번째: Lumina Clinic",
+    "2 of 6: Kopi Senja": "6개 중 2번째: Kopi Senja",
+    "3 of 6: Arunika Residence": "6개 중 3번째: Arunika Residence",
+    "4 of 6: Kirana Beauty": "6개 중 4번째: Kirana Beauty",
+    "5 of 6: Lintas Kirim": "6개 중 5번째: Lintas Kirim",
+    "6 of 6: Cendekia Academy": "6개 중 6번째: Cendekia Academy",
+    "A clinic receptionist in a hijab and blue uniform":
+      "히잡과 파란색 유니폼을 착용한 병원 접수 담당자",
+    "A smiling barista in an apron behind a café counter":
+      "카페 카운터 뒤에서 앞치마를 입고 미소 짓는 바리스타",
+    "A property agent in a blazer smiling outside a brick building":
+      "벽돌 건물 앞에서 미소 짓는 재킷 차림의 부동산 중개인",
+    "A shop owner in a green outfit and hijab":
+      "초록색 옷과 히잡을 착용한 매장 운영자",
+    "A team member standing in a warehouse aisle": "창고 통로에 서 있는 팀원",
+    "A young admissions officer seated at a desk":
+      "책상에 앉아 있는 젊은 입학 담당자",
+    "Sample stories with placeholder brands, data and photos, for layout review only. Replace with approved customer stories before launch.":
+      "레이아웃 검토용 임시 브랜드, 데이터 및 사진으로 구성된 사례입니다. 출시 전에 승인된 고객 사례로 교체하세요.",
+    "Your channels, ad platforms, store and payments, plus the apps your team works in every day. Cekat Automation connects even more, and our Open API and MCP let you build your own.":
+      "팀에서 매일 사용하는 앱은 물론, 채널, 광고 플랫폼, 스토어와 결제 수단까지 연결하세요. Cekat Automation으로 더 많은 도구를 연동하고 Open API와 MCP로 직접 구축할 수도 있습니다.",
+    "Ask about an integration": "연동에 대해 문의하기",
+    "Some integrations run through Cekat Automation. Third-party names and logos are trademarks of their respective owners; no partnership is implied unless stated.":
+      "일부 연동은 Cekat Automation을 통해 제공됩니다. 제3자 이름과 로고는 각 소유자의 상표이며, 별도 표기가 없는 한 파트너십을 의미하지 않습니다.",
+    "Website live chat": "웹사이트 실시간 채팅",
+    "Bring your marketing, conversations, customer data, sales workflows, and performance visibility into one connected ecosystem.":
+      "마케팅, 고객 대화, 고객 데이터, 영업 워크플로와 성과를 하나의 연결된 생태계로 통합하세요.",
   },
 };
 
@@ -2673,15 +2776,27 @@ export function localizeRevampHomeMarkup(markup: string, locale: Locale) {
   const entries = Object.entries(copy).sort(
     ([left], [right]) => right.length - left.length,
   );
+  const protectedDataAttributes: Array<[string, string]> = [];
+  result = result.replace(
+    /\b(data-[\w:-]+=")([^"]*)(")/g,
+    (_attribute, prefix: string, value: string, suffix: string) => {
+      const token = `\uE000cekat-data-${protectedDataAttributes.length}\uE001`;
+      protectedDataAttributes.push([token, value]);
+      return `${prefix}${token}${suffix}`;
+    },
+  );
   const replaceCopy = (from: string, to: string) => {
-    result = result.replaceAll(`>${from}<`, `>${to}<`);
-    result = result.replaceAll(`>${from} `, `>${to} `);
-    result = result.replaceAll(` ${from}<`, ` ${to}<`);
-    // The approved hero splits "... revenue technology" across nested spans.
-    result = result.replaceAll(`>${from}</span>`, `>${to}</span>`);
-    result = result.replaceAll(` ${from}</span>`, ` ${to}</span>`);
-    // Accessible names and image descriptions are part of the localized UI too.
-    result = result.replaceAll(`="${from}"`, `="${to}"`);
+    const variants = new Set([from, from.replaceAll("&", "&amp;")]);
+    for (const variant of variants) {
+      result = result.replaceAll(`>${variant}<`, `>${to}<`);
+      result = result.replaceAll(`>${variant} `, `>${to} `);
+      result = result.replaceAll(` ${variant}<`, ` ${to}<`);
+      // The approved hero splits "... revenue technology" across nested spans.
+      result = result.replaceAll(`>${variant}</span>`, `>${to}</span>`);
+      result = result.replaceAll(` ${variant}</span>`, ` ${to}</span>`);
+      // Accessible names and image descriptions are part of the localized UI too.
+      result = result.replaceAll(`="${variant}"`, `="${to}"`);
+    }
   };
   // Translate whole CTA phrases containing product names before shielding
   // those names from the shorter generic product/category translations.
@@ -2702,6 +2817,9 @@ export function localizeRevampHomeMarkup(markup: string, locale: Locale) {
   }
   for (const [token, name] of protectedProductNames) {
     result = result.replaceAll(token, name);
+  }
+  for (const [token, value] of protectedDataAttributes) {
+    result = result.replaceAll(token, value);
   }
   return result;
 }
