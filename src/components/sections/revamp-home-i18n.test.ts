@@ -19,6 +19,16 @@ describe("revamp homepage localization", () => {
     expect(localized).not.toContain("technology");
   });
 
+  it("localizes the hero headline inside its reveal spans", () => {
+    const localized = localizeRevampHomeMarkup(revampHomeMarkup, "cn");
+
+    expect(localized).toContain(
+      '<span class="tr" style="--i:0">领先的 AI 驱动</span>',
+    );
+    expect(localized).toContain('<span class="tr" style="--i:2">技术</span>');
+    expect(localized).not.toContain(">#1 AI-powered<");
+  });
+
   it("keeps static homepage links in the active locale", () => {
     const markup =
       '<a href="/pricing">Pricing</a><a href="/features">Features</a><a href="/blog">Blog</a><a href="/contact-us">Talk to sales</a><a href="/">Home</a>';
