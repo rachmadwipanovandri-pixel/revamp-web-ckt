@@ -66,94 +66,59 @@
 
     <!-- 1. HERO -->
     <section class="hero">
-      <div class="wrap hero__copy">
-        <!-- TODO: cite the source for the "#1" claim before launch (owner is sourcing it; see DESIGN.md open decisions). -->
-        <h1 class="display"><span class="sr-only">#1 AI-powered revenue technology</span><span aria-hidden="true">#1 AI-powered <span class="rot rot--revenue"><span class="rot__icon"></span><span class="rot__word">revenue</span><span class="rot__measure"></span></span> technology</span></h1>
-        <p class="lede">Connect marketing, customer conversations, CRM, automation, and performance data in one connected revenue ecosystem.</p>
-        <div class="hero__ctas" id="hero-ctas">
-          <a class="btn btn--primary btn--lg" href="https://chat.cekat.ai/register" data-cta="hero">Start free trial</a>
-          <a class="btn btn--ghost btn--lg" href="#journey">See how it works</a>
-        </div>
-        <p class="assure">14-day free trial · No credit card required · Set up in about 10 minutes</p>
-        <p class="hero__sales">Prefer a walkthrough? <button class="link link--inline" type="button" data-demo>Talk to sales</button></p>
-        <ul class="proof" aria-label="Cekat in numbers">
-          <li><strong>2M+</strong> conversations processed every day</li>
-          <li><strong>15+</strong> industries served</li>
-          <li><img src="assets/icons/meta.svg" alt="" class="proof__meta" width="18" height="18">Official Meta Business Partner</li>
-        </ul>
-      </div>
-
-      <!-- One lead travelling through the loop: ad → chat → CRM → revenue -->
-      <div class="wrap">
-        <figure class="loop" aria-label="Illustration of the revenue loop: a creator's Instagram post brings a lead through its tracking link, the AI agent books them on WhatsApp, the CRM records the booking, analytics shows creator posts book customers at the lowest cost, and that insight shapes the next campaign">
-          <div class="loop__card loop__ad hue-orange">
-            <p class="ui-label"><span class="stage">Acquire</span>Lead sources</p>
-            <div class="src src--on">
-              <span class="src__avatar" aria-hidden="true">K</span>
-              <div class="src__txt">
-                <p class="src__name">Creator post <span class="ad__icon" style="--icon:var(--i-instagram)"></span></p>
-                <p class="src__meta">Kirana · Instagram Reel</p>
-              </div>
-            </div>
-            <p class="src__link"><span>Tracking link</span>glowclinic.ckt.link/kirana-ig</p>
-            <ol class="src__trail" aria-label="Tracked steps">
-              <li>Views</li><li>Link taps</li><li>Chats</li>
-            </ol>
-            <ul class="src__more" aria-label="Other tracked sources">
-              <li><span class="ad__icon" style="--icon:var(--i-meta)"></span>Click-to-WhatsApp ad</li>
-              <li><span class="ad__icon" style="--icon:var(--i-tiktok)"></span>TikTok creator</li>
-              <li><span class="src__web" aria-hidden="true"></span>Website visit</li>
-            </ul>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <!-- TODO: cite the source for the "#1" claim before launch (owner is sourcing it; see DESIGN.md open decisions). -->
+          <h1 class="display"><span class="sr-only">#1 AI-powered revenue technology</span><span aria-hidden="true">#1 AI-powered<br><span class="rot rot--revenue"><span class="rot__icon"></span><span class="rot__word">revenue</span><span class="rot__measure"></span></span><br>technology</span></h1>
+          <p class="lede">Connect marketing, customer conversations, CRM, automation, and performance data in one connected revenue ecosystem.</p>
+          <div class="hero__ctas" id="hero-ctas">
+            <a class="btn btn--primary btn--lg" href="https://chat.cekat.ai/register" data-cta="hero">Start free trial</a>
+            <a class="btn btn--ghost btn--lg" href="#journey">See how it works</a>
           </div>
+          <p class="assure">14-day free trial · No credit card required · Set up in about 10 minutes</p>
+          <p class="hero__sales">Prefer a walkthrough? <button class="link link--inline" type="button" data-demo>Talk to sales</button></p>
+          <ul class="proof" aria-label="Cekat in numbers">
+            <li><strong>2M+</strong> conversations processed every day</li>
+            <li><strong>15+</strong> industries served</li>
+            <li><img src="assets/icons/meta.svg" alt="" class="proof__meta" width="18" height="18">Official Meta Business Partner</li>
+          </ul>
+        </div>
 
-          <div class="loop__card loop__chat hue-cyan">
-            <p class="ui-label"><span class="stage">Engage</span>WhatsApp chat</p>
-            <div class="chat__head">
-              <span class="ad__icon ad__icon--wa" style="--icon:var(--i-whatsapp)"></span>
-              <div>
-                <p class="chat__who">New customer</p>
-                <p class="chat__via">From Kirana's Reel</p>
-              </div>
+        <!-- The whole loop in one WhatsApp thread. The pill word in the H1 lights its stage (main.js sets data-stage):
+             traffic → Acquire, leads → Engage, revenue → Convert, ROI → Measure, and the next-campaign card loops back. -->
+        <figure class="thread" aria-label="Illustration: one WhatsApp thread runs the whole revenue loop. Kirana arrives from a creator's Reel, the AI agent books her, the booking is saved to CRM with its source, analytics shows creator posts cost IDR 42K per booking, and Cekat suggests briefing more creators like her.">
+          <div class="thread__grid">
+            <ol class="thread__rail" aria-hidden="true">
+              <li class="tchip hue-orange" data-for="acquire">Acquire</li>
+              <li class="tchip hue-cyan" data-for="engage">Engage</li>
+              <li class="tchip hue-blue" data-for="convert">Convert</li>
+              <li class="tchip hue-measure" data-for="measure">Measure</li>
+              <li class="thread__ret"></li>
+            </ol>
+            <span class="thread__line" aria-hidden="true"></span>
+            <span class="thread__back" aria-hidden="true"></span>
+            <div class="thread__head">
+              <span class="src__avatar" aria-hidden="true">K</span>
+              <p><b>Kirana</b>WhatsApp · Cekat inbox</p>
             </div>
-            <div class="chat__body">
-              <p class="bubble bubble--in">Hi, do you have a treatment slot this Saturday?</p>
-              <p class="bubble bubble--out">Yes, we have 10:00 and 14:00 open. Which one should I book for you?<span class="bubble__by">Cekat AI agent</span></p>
+            <div class="tstage tstage--acquire hue-orange" data-stage="acquire">
+              <p class="tsys"><span><b>Came from Kirana's Reel</b>glowclinic.ckt.link/kirana-ig</span></p>
+            </div>
+            <div class="tstage tstage--engage hue-cyan" data-stage="engage">
+              <p class="bubble bubble--in">Hi, any slot this Saturday?</p>
+              <p class="bubble bubble--out">Yes, 14:00 is open. Shall I book it?<span class="bubble__by">Cekat AI agent</span></p>
               <p class="bubble bubble--in">14:00, please</p>
             </div>
-            <div class="chat__tags">
-              <span class="chip">Intent: booking</span>
-              <span class="chip">Qualified</span>
+            <div class="tstage tstage--convert hue-blue" data-stage="convert">
+              <p class="tsys"><span class="tsys__icon tsys__icon--check" aria-hidden="true"></span><span><b>Booked · Sat 14:00</b>Added to CRM · source: Kirana's Reel</span></p>
             </div>
-          </div>
-
-          <div class="loop__card loop__crm hue-blue">
-            <p class="ui-label"><span class="stage">Convert</span>CRM pipeline</p>
-            <ol class="stages" aria-label="Pipeline stage">
-              <li class="is-done">Inquiry</li>
-              <li class="is-done">Qualified</li>
-              <li class="is-now">Booked</li>
-              <li>Paid</li>
-            </ol>
-            <div class="crm__row">
-              <span>Follow-up</span><strong>Sat 13:00 reminder</strong>
+            <div class="tstage tstage--measure hue-measure" data-stage="measure">
+              <p class="tsys"><span class="tsys__icon tsys__icon--chart" aria-hidden="true"></span><span><b>Creator posts: IDR 42K per booking</b>Your cheapest source this month</span></p>
+              <div class="tnext">
+                <p><b>Next campaign</b>Brief 2 more creators like Kirana?</p>
+                <span class="tnext__btn" aria-hidden="true">Create brief</span>
+              </div>
             </div>
-            <div class="crm__row">
-              <span>Revenue source</span><strong>Kirana's Reel</strong>
-            </div>
-          </div>
-          <div class="loop__card loop__measure hue-measure">
-            <p class="ui-label"><span class="stage">Measure</span>Analytics</p>
-            <p class="an__title">Cost per booking, by source</p>
-            <ul class="an__bars">
-              <li class="is-best"><span>Creator posts</span><i style="--w:40%"></i><b>IDR 42K</b></li>
-              <li><span>Click-to-WhatsApp ads</span><i style="--w:66%"></i><b>IDR 69K</b></li>
-              <li><span>TikTok creators</span><i style="--w:84%"></i><b>IDR 88K</b></li>
-            </ul>
-            <p class="an__insight"><b>Insight</b>Creator posts book customers at the lowest cost.</p>
-          </div>
-
-          <div class="loop__back">
-            <p class="loop__next"><span class="loop__ret" aria-hidden="true">↺</span>Next campaign: brief more creators like Kirana, and Meta learns who booked</p>
           </div>
           <figcaption class="illus">Illustrative data</figcaption>
         </figure>
