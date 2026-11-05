@@ -17,8 +17,14 @@
     };
     const WORDS = WORDS_BY_LOCALE[locale] || WORDS_BY_LOCALE.en;
     const fit = () => {
-      measure.textContent = word.textContent || " ";
-      word.style.width = `${measure.getBoundingClientRect().width}px`;
+      let widest = 0;
+      for (const candidate of WORDS) {
+        measure.textContent = candidate;
+        widest = Math.max(widest, measure.getBoundingClientRect().width);
+      }
+      // Keep the headline's line breaks stable while the word is typed. Sizing
+      // to each character forced layout repeatedly and shifted the hero CTA.
+      word.style.width = `${widest}px`;
     };
     const wait = (ms) => new Promise((r) => setTimeout(r, ms));
     let n = 0;
@@ -30,14 +36,12 @@
         rot.classList.add("is-typing");
         while (word.textContent.length) {
           word.textContent = word.textContent.slice(0, -1);
-          fit();
           await wait(45);
         }
         n = (n + 1) % WORDS.length;
         rot.className = `rot rot--${WORDS[n]} is-typing`;
         for (const ch of WORDS[n]) {
           word.textContent += ch;
-          fit();
           await wait(75);
         }
         rot.classList.remove("is-typing");
@@ -501,6 +505,72 @@
     { threshold: 0.4 },
   );
   mcpIO.observe(mcp);
+
+  // On narrow screens the nodes stack and wrap, so redraw only the wire paths
+  // to meet their new positions without changing the mobile layout.
+  const mcpFlow = $(".mcp__flow", mcp);
+  const mcpWires = $(".mcp__wires", mcp);
+  const mcpClients = $$(".mcp__clients li", mcp);
+  const mcpHubImage = $(".mcp__hub img", mcp);
+  const mcpProducts = $$(".mcp__products li", mcp);
+  const mcpInPaths = $$(".mcp__in path", mcp);
+  const mcpOutPaths = $$(".mcp__out path", mcp);
+  const desktopMcpPaths = [...mcpInPaths, ...mcpOutPaths].map((path) =>
+    path.getAttribute("d"),
+  );
+  const mcpMobileQuery = window.matchMedia("(max-width: 960px)");
+  const updateMcpWires = () => {
+    if (!mcpMobileQuery.matches) {
+      [...mcpInPaths, ...mcpOutPaths].forEach((path, index) => {
+        path.setAttribute("d", desktopMcpPaths[index]);
+      });
+      mcpWires.setAttribute("viewBox", "0 0 600 240");
+      return;
+    }
+
+    const flowRect = mcpFlow.getBoundingClientRect();
+    if (!flowRect.width || !flowRect.height) return;
+
+    mcpWires.setAttribute("viewBox", `0 0 ${flowRect.width} ${flowRect.height}`);
+    const centerX = (rect) => rect.left - flowRect.left + rect.width / 2;
+    const topY = (rect) => rect.top - flowRect.top;
+    const bottomY = (rect) => rect.bottom - flowRect.top;
+    const hubRect = mcpHubImage.getBoundingClientRect();
+    const hubX = centerX(hubRect);
+
+    mcpClients.forEach((client, index) => {
+      const rect = client.getBoundingClientRect();
+      const startX = centerX(rect);
+      const startY = bottomY(rect);
+      const endY = topY(hubRect);
+      const gap = Math.max(0, endY - startY);
+      mcpInPaths[index]?.setAttribute(
+        "d",
+        `M ${startX} ${startY} C ${startX} ${startY + gap * 0.55}, ${hubX} ${endY - gap * 0.35}, ${hubX} ${endY}`,
+      );
+    });
+
+    const hubBottom = bottomY(hubRect);
+    mcpProducts.forEach((product, index) => {
+      const rect = product.getBoundingClientRect();
+      const endX = centerX(rect);
+      const endY = topY(rect);
+      const gap = Math.max(0, endY - hubBottom);
+      mcpOutPaths[index]?.setAttribute(
+        "d",
+        `M ${hubX} ${hubBottom} C ${hubX} ${hubBottom + gap * 0.65}, ${endX} ${endY - gap * 0.35}, ${endX} ${endY}`,
+      );
+    });
+  };
+  updateMcpWires();
+  window.addEventListener("resize", updateMcpWires);
+  mcpMobileQuery.addEventListener("change", updateMcpWires);
+  if ("ResizeObserver" in window) {
+    const mcpResizeObserver = new ResizeObserver(updateMcpWires);
+    [mcpFlow, ...mcpClients, mcpHubImage, ...mcpProducts].forEach((node) =>
+      mcpResizeObserver.observe(node),
+    );
+  }
 
   // Customer stories carousel: the open story sits in the middle, two neighbours on each side as slivers
   const reel = $(".reel");

@@ -9,7 +9,8 @@ type SlugTemplate =
   | "/blog/[slug]"
   | "/blog/author/[slug]"
   | "/events/[slug]"
-  | "/stories/[slug]";
+  | "/stories/[slug]"
+  | "/case-studies/[slug]";
 
 /** Bare route templates (no params) — valid as string hrefs for next-intl Link. */
 type StaticTemplate = Exclude<AppPathname, SlugTemplate>;
@@ -59,18 +60,22 @@ export function switchLocaleHref(
       ? resolveCounterpartSlug(template as AppPathname, slug, from, to)
       : undefined;
     if (counterpart) {
-      return { pathname: template as SlugTemplate, params: { slug: counterpart } };
+      return {
+        pathname: template as SlugTemplate,
+        params: { slug: counterpart },
+      };
     }
     // No counterpart in the target locale, land on the hub instead.
     return hub;
   }
-  // Blog posts, author profiles, event pages and customer stories share one
-  // slug across locales.
+  // Blog posts, author profiles, events, and published customer stories share
+  // one slug across locales.
   if (
     (template === "/blog/[slug]" ||
       template === "/blog/author/[slug]" ||
       template === "/events/[slug]" ||
-      template === "/stories/[slug]") &&
+      template === "/stories/[slug]" ||
+      template === "/case-studies/[slug]") &&
     slug
   ) {
     return { pathname: template as SlugTemplate, params: { slug } };

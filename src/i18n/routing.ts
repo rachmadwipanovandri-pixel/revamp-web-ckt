@@ -107,6 +107,20 @@ export const routing = defineRouting({
       jp: "/stories/[slug]",
       kr: "/stories/[slug]",
     },
+    "/case-studies": {
+      en: "/studi-kasus",
+      id: "/studi-kasus",
+      cn: "/case-studies",
+      jp: "/case-studies",
+      kr: "/case-studies",
+    },
+    "/case-studies/[slug]": {
+      en: "/studi-kasus/[slug]",
+      id: "/studi-kasus/[slug]",
+      cn: "/case-studies/[slug]",
+      jp: "/case-studies/[slug]",
+      kr: "/case-studies/[slug]",
+    },
     "/about": {
       en: "/about",
       id: "/tentang",

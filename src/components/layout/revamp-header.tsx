@@ -73,6 +73,7 @@ const HEADER_COPY: Record<string, Record<string, string>> = {
     "Clara, your AI setup agent": "Clara, agen penyiapan AI Anda",
     "By industry": "Berdasarkan industri",
     "Customer stories": "Kisah pelanggan",
+    "Case studies": "Studi kasus",
     "What's new": "Info terbaru",
     "Help center": "Pusat bantuan",
     Changelog: "Catatan perubahan",
@@ -120,6 +121,7 @@ const HEADER_COPY: Record<string, Record<string, string>> = {
     "Follow-ups and workflows that run themselves.": "自动运行的跟进和工作流。",
     "See what moves customers, end to end.": "端到端看清什么推动客户。",
     "Customer stories": "客户案例",
+    "Case studies": "案例研究",
     "What's new": "最新动态",
     "Help center": "帮助中心",
     Changelog: "更新日志",
@@ -168,6 +170,7 @@ const HEADER_COPY: Record<string, Record<string, string>> = {
     "See what moves customers, end to end.":
       "顧客を動かす要因を端から端まで可視化。",
     "Customer stories": "導入事例",
+    "Case studies": "導入事例一覧",
     "What's new": "最新情報",
     "Help center": "ヘルプセンター",
     Changelog: "変更履歴",
@@ -216,6 +219,7 @@ const HEADER_COPY: Record<string, Record<string, string>> = {
     "See what moves customers, end to end.":
       "고객을 움직이는 요소를 처음부터 끝까지 확인하세요.",
     "Customer stories": "고객 사례",
+    "Case studies": "사례 연구",
     "What's new": "새로운 소식",
     "Help center": "도움말 센터",
     Changelog: "변경 사항",
@@ -250,6 +254,14 @@ const ID_PATHS: Record<string, string> = {
   "/contact-sales": "/contact-us",
 };
 
+const CASE_STUDIES_PATHS: Record<Locale, string> = {
+  en: "/studi-kasus",
+  id: "/studi-kasus",
+  cn: "/case-studies",
+  jp: "/case-studies",
+  kr: "/case-studies",
+};
+
 const MENU_LABELS: Partial<Record<Locale, { open: string; close: string }>> = {
   id: { open: "Buka menu", close: "Tutup menu" },
   cn: { open: "打开菜单", close: "关闭菜单" },
@@ -259,7 +271,12 @@ const MENU_LABELS: Partial<Record<Locale, { open: string; close: string }>> = {
 
 export function localizeRevampHeaderMarkup(markup: string, locale: Locale) {
   const local = (path: string) => {
-    const localizedPath = locale === "id" ? (ID_PATHS[path] ?? path) : path;
+    const localizedPath =
+      path === "/case-studies"
+        ? CASE_STUDIES_PATHS[locale]
+        : locale === "id"
+          ? (ID_PATHS[path] ?? path)
+          : path;
     const pathname =
       localizedPath === "/contact-sales" ? "/contact-us" : localizedPath;
     return locale === "id"
@@ -269,6 +286,10 @@ export function localizeRevampHeaderMarkup(markup: string, locale: Locale) {
   let next = markup.replace(
     '<li class="mnav__item"><a class="mnav__link" href="/pricing">Pricing</a></li>',
     `<li class="mnav__item"><a class="mnav__link" href="${local("/blog")}">Blog</a></li><li class="mnav__item"><a class="mnav__link" href="/pricing">Pricing</a></li>`,
+  );
+  next = next.replace(
+    '<li><a class="mlink" href="/stories">Customer stories</a></li>',
+    '<li><a class="mlink" href="/stories">Customer stories</a></li><li><a class="mlink" href="/case-studies">Case studies</a></li>',
   );
 
   for (const path of [
@@ -280,6 +301,7 @@ export function localizeRevampHeaderMarkup(markup: string, locale: Locale) {
     "/integrations",
     "/industries",
     "/stories",
+    "/case-studies",
     "/pricing",
     "/blog",
     "/contact-sales",

@@ -3,9 +3,14 @@ import { getPathname } from "@/i18n/navigation";
 import { localizedPath, SITE_URL } from "@/lib/seo";
 import { entryPaths, REGISTRY } from "@/lib/registry";
 import type { LandingKind } from "@/lib/registry/types";
-import { getAllPostSlugs, getAuthors, type PostSlugInfo } from "@/lib/wordpress";
+import {
+  getAllPostSlugs,
+  getAuthors,
+  type PostSlugInfo,
+} from "@/lib/wordpress";
 import { readEvents } from "@/lib/events/store";
 import { STORIES } from "@/lib/stories";
+import { CASE_STUDIES } from "@/lib/case-studies";
 import type { SitemapUrl } from "@/lib/sitemap-xml";
 import { existsSync, statSync } from "node:fs";
 import path from "node:path";
@@ -31,6 +36,7 @@ const STATIC_ROUTES = [
   "/integrations",
   "/blog",
   "/stories",
+  "/case-studies",
   "/about",
   "/terms-and-conditions",
   "/privacy-policy",
@@ -154,6 +160,29 @@ function storyUrls(): SitemapUrl[] {
   });
 }
 
+/** Published case studies. Slugs are shared between the English and ID URLs. */
+function caseStudyUrls(): SitemapUrl[] {
+  const lastModified = filesLastModified([
+    path.join(process.cwd(), "src", "lib", "case-studies.ts"),
+  ]);
+  return CASE_STUDIES.flatMap((study) => {
+    const pathFor = (locale: Locale) =>
+      getPathname({
+        href: {
+          pathname: "/case-studies/[slug]",
+          params: { slug: study.slug },
+        },
+        locale,
+      });
+    const languages = languagesFor({ en: pathFor("en"), id: pathFor("id") });
+    return LOCALE_ORDER.map((locale) => ({
+      url: `${SITE_URL}${pathFor(locale)}`,
+      languages,
+      lastModified,
+    }));
+  });
+}
+
 /** Marketing pages: static routes plus every registry-driven landing page. */
 export function pageUrls(): SitemapUrl[] {
   const staticEntries: SitemapUrl[] = STATIC_ROUTES.flatMap((route) => {
@@ -189,7 +218,13 @@ export function pageUrls(): SitemapUrl[] {
     }),
   );
 
-  return [...staticEntries, ...landingEntries, ...eventUrls(), ...storyUrls()];
+  return [
+    ...staticEntries,
+    ...landingEntries,
+    ...eventUrls(),
+    ...storyUrls(),
+    ...caseStudyUrls(),
+  ];
 }
 
 /**

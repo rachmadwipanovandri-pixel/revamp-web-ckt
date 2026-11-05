@@ -13,4 +13,19 @@ describe("routing", () => {
     expect(routing.pathnames["/contact-sales"]).toBe("/contact-us");
     expect(routing.pathnames["/blog"]).toBe("/blog");
   });
+
+  it("exposes case-study listings and details at the studi-kasus paths", () => {
+    expect(routing.pathnames["/case-studies"]).toMatchObject({
+      en: "/studi-kasus",
+      id: "/studi-kasus",
+    });
+    expect(routing.pathnames["/case-studies/[slug]"]).toMatchObject({
+      en: "/studi-kasus/[slug]",
+      id: "/studi-kasus/[slug]",
+      jp: "/case-studies/[slug]",
+    });
+    expect(routing.pathnames["/case-studies"]).toMatchObject({
+      jp: "/case-studies",
+    });
+  });
 });

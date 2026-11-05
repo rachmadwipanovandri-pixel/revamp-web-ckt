@@ -12,6 +12,21 @@ const nextConfig: NextConfig = {
   experimental: {
     inlineCss: false,
   },
+  // Keep every response on the Vercel staging alias out of search indexes,
+  // including public assets and routes that do not pass through src/proxy.ts.
+  // The exact host match deliberately leaves cekat.ai indexable.
+  headers: async () => [
+    {
+      source: "/:path*",
+      has: [{ type: "host", value: "revamp-web-ckt.vercel.app" }],
+      headers: [
+        {
+          key: "X-Robots-Tag",
+          value: "noindex, nofollow",
+        },
+      ],
+    },
+  ],
   // Checked before the proxy and the filesystem, so these win over any
   // in-app redirect (Next 16 execution order: headers → redirects → proxy).
   redirects: async () => [

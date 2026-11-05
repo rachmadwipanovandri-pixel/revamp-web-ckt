@@ -6,6 +6,35 @@ import {
 import { revampHomeMarkup } from "./revamp-home-markup";
 
 describe("revamp homepage localization", () => {
+  it("reserves space for homepage images and defers below-the-fold assets", () => {
+    const images = [...revampHomeMarkup.matchAll(/<img\b[^>]*>/g)].map(
+      ([image]) => image,
+    );
+    const customerLogos = images.filter((image) =>
+      image.includes("/assets/logos/"),
+    );
+    const integrationIcons = images.filter((image) =>
+      image.includes("/assets/integrations/"),
+    );
+
+    expect(images.length).toBeGreaterThan(0);
+    expect(
+      images.every(
+        (image) => /\bwidth="\d+"/.test(image) && /\bheight="\d+"/.test(image),
+      ),
+    ).toBe(true);
+    expect(customerLogos.length).toBeGreaterThan(0);
+    expect(
+      customerLogos.every((image) => image.includes('loading="lazy"')),
+    ).toBe(true);
+    expect(integrationIcons.length).toBeGreaterThan(0);
+    expect(
+      integrationIcons.every((image) => image.includes('loading="lazy"')),
+    ).toBe(true);
+    expect(revampHomeMarkup).toContain("/assets/logos/rumah-zakat.webp");
+    expect(revampHomeMarkup).toContain("/assets/stories/lumina.webp");
+  });
+
   it("localizes split hero nodes, including the animated word", () => {
     const markup =
       '<h1><span class="sr-only">#1 AI-powered revenue technology</span><span aria-hidden="true">#1 AI-powered <span class="rot"><span class="rot__word">revenue</span></span> technology</span></h1>';

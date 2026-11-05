@@ -27,4 +27,20 @@ describe("pageUrls lastmod", () => {
       "x-default": "https://cekat.ai/fitur/wa-blast",
     });
   });
+
+  it("lists case-study hubs and all detail pages under the public aliases", () => {
+    const urls = pageUrls();
+    const hub = urls.find((u) => u.url === "https://cekat.ai/en/studi-kasus");
+    expect(hub?.languages).toEqual({
+      en: "https://cekat.ai/en/studi-kasus",
+      id: "https://cekat.ai/studi-kasus",
+      "x-default": "https://cekat.ai/studi-kasus",
+    });
+    expect(
+      urls.find((u) => u.url === "https://cekat.ai/en/studi-kasus/euromedica"),
+    ).toBeDefined();
+    expect(
+      urls.find((u) => u.url === "https://cekat.ai/studi-kasus/euromedica"),
+    ).toBeDefined();
+  });
 });

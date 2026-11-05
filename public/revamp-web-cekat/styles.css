@@ -1163,10 +1163,10 @@ button, input, select { font: inherit; color: inherit; }
 @keyframes mcp-pulse { 50% { box-shadow: 0 0 0 12px var(--cyan-50), var(--lift); } }
 
 @media (max-width: 960px) {
-  /* Stacked: clients, then Cekat MCP, then the products, without the wires */
+  /* Keep the stacked mobile layout; draw its connection wires as an overlay. */
   .mcp { grid-template-columns: 1fr; }
   .mcp__flow { aspect-ratio: auto; display: flex; flex-direction: column; align-items: center; gap: 14px; }
-  .mcp__wires { display: none; }
+  .mcp__wires { display: block; }
   .mcp__clients { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
   .mcp__clients li, .mcp__products li, .mcp__hub { position: static; transform: none; width: auto; }
   .mcp__products { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; }
